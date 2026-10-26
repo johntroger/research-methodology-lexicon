@@ -1,7 +1,4 @@
 {
-  "version": "10.2-peer-reviewed-cleaned",
-  "last_updated": "2026-10-26T08:45:42.317Z",
-  "total_terms": 1874,
   "terms": [
     {
       "id": "construct-validity",
@@ -977,25 +974,34 @@
     },
     {
       "id": "purposive-sampling",
-      "term": "Purposive Sampling",
+      "term": "Purposive Sampling (Patton Framework)",
       "ipa": "/ˈpɜːpəsɪv ˈsɑːmplɪŋ/",
-      "vietnamese": "Chọn mẫu có mục đích",
+      "vietnamese": "Chọn mẫu có mục đích / Lấy mẫu chủ đích",
       "vietnamese_variants": [
-        "Chọn mẫu chủ đích",
-        "Chọn mẫu phán đoán"
+        "Lấy mẫu có mục đích",
+        "Chọn mẫu định tính",
+        "Judgmental Sampling"
       ],
       "domain_tags": [
         "Nghiên cứu Định tính",
         "Thiết kế Chọn mẫu",
         "Khoa học Xã hội"
       ],
-      "core_definition": "Kỹ thuật chọn mẫu phi xác suất trong đó nhà nghiên cứu chủ động lựa chọn các cá nhân, địa bàn hoặc tài liệu dựa trên các tiêu chí cụ thể để đảm bảo họ có kinh nghiệm phong phú và sâu sắc nhất về hiện tượng cần nghiên cứu.",
+      "core_definition": "Purposive Sampling (Chọn mẫu có mục đích) là chiến lược chọn mẫu nền tảng trong nghiên cứu định tính do Michael Quinn Patton (2015) chuẩn hóa. Khác với chọn mẫu xác suất ngẫu nhiên nhằm mục đích đại diện thống kê, chọn mẫu có mục đích tập trung tuyển chọn những trường hợp giàu thông tin (information-rich cases) - những cá nhân, nhóm hoặc tổ chức nắm giữ sự hiểu biết sâu sắc, trải nghiệm trực tiếp hoặc góc nhìn đặc thù về hiện tượng nghiên cứu, từ đó cho phép nhà nghiên cứu học hỏi và khai thác tối đa chiều sâu ý nghĩa.",
       "paradigm_debates": "Trong nghiên cứu định tính, mẫu không cần lớn hay ngẫu nhiên mà cần 'giàu thông tin' (Information-rich cases). Tiêu chí dừng lấy mẫu là khi đạt 'Bão hòa dữ liệu' (Data Saturation - không còn phát hiện ý niệm mới).",
-      "benchmarks": "Bao gồm các chiến lược: Mẫu trường hợp điển hình (Typical case), Mẫu trường hợp cực đoan (Extreme/deviant case), Mẫu biến thiên tối đa (Maximum variation), Mẫu đồng nhất (Homogeneous).",
-      "pitfalls": "Lạm dụng chọn mẫu có mục đích nhưng không công khai tiêu chí chọn mẫu cụ thể trong bài báo, khiến hội đồng đánh giá là 'chọn mẫu thuận tiện vô kỷ luật' (Convenience sampling).",
-      "seminal_citation": "Patton, M. Q. (2015). Qualitative research & evaluation methods (4th ed.). SAGE Publications.",
+      "benchmarks": [
+        "Tiêu chí đưa vào/loại trừ (Inclusion/Exclusion Criteria) minh bạch: Bắt buộc phải công bố bằng bảng danh mục tiêu chuẩn rõ ràng trong bài báo khoa học.",
+        "Khái niệm 'Information-Rich Cases': Mỗi người tham gia được chọn phải chứng minh được họ sở hữu trải nghiệm trực tiếp phù hợp với mục tiêu nghiên cứu.",
+        "Tiêu chuẩn bão hòa dữ liệu: Tuyển chọn mẫu dừng lại khi không còn phát hiện thêm ý niệm hoặc chủ đề mới xuất hiện từ các cuộc phỏng vấn liên tiếp."
+      ],
+      "pitfalls": [
+        "Đội lốt chọn mẫu thuận tiện (Convenience sampling disguised as purposive): Nghiên cứu viên chọn người quen hoặc đối tượng dễ tiếp cận rồi gán nhãn 'chọn mẫu có mục đích' mà không có tiêu chuẩn học thuật.",
+        "Thiếu tiêu chí tuyển chọn định trước: Tiến hành chọn mẫu tùy hứng, không giải thích được lý do tại sao cá nhân A được chọn còn cá nhân B bị từ chối.",
+        "Tuyên bố mẫu mang tính đại diện thống kê: Đưa ra các phát biểu suy diễn về tỷ lệ % của quần thể dựa trên một mẫu có mục đích 15-20 người."
+      ],
+      "seminal_citation": "Patton, M. Q. (2015). Qualitative Research & Evaluation Methods: Integrating Theory and Practice (4th ed.). SAGE Publications.",
       "apa_intext": "(Creswell & Creswell, 2023, p. 192)",
-      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2023). Research design: Qualitative, quantitative, and mixed methods approaches (6th ed.). SAGE Publications.",
+      "apa_reference": "Patton, M. Q. (2015). Qualitative research & evaluation methods: Integrating theory and practice (4th ed.). SAGE Publications, Inc.",
       "corpus_variants": [
         {
           "v": "Chọn mẫu chủ đích",
@@ -1020,7 +1026,14 @@
         "benchmark": true,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "category": "Qualitative Research",
+      "subcategory": "Sampling",
+      "operational_mechanism": "Quy trình thực thi chiến lược Patton: (1) Xác định mục đích và câu hỏi nghiên cứu cốt lõi; (2) Thiết lập các tiêu chí tuyển chọn (inclusion/exclusion criteria) chặt chẽ xuất phát từ khung lý thuyết; (3) Lựa chọn chiến lược con phù hợp trong 16+ chiến lược chọn mẫu có mục đích của Patton (ví dụ: Maximum variation, Critical case, Extreme case, Criterion sampling); (4) Tiến hành thu thập dữ liệu song hành với đánh giá liên tục cho đến khi đạt điểm bão hòa dữ liệu (data saturation).",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "data-saturation",
@@ -1253,24 +1266,34 @@
     },
     {
       "id": "phenomenology",
-      "term": "Phenomenological Research",
+      "term": "Phenomenological Research Methodology",
       "ipa": "/fɪˌnɒmɪˈnɒlədʒi/",
-      "vietnamese": "Nghiên cứu hiện tượng luận",
+      "vietnamese": "Phương pháp luận nghiên cứu hiện tượng học",
       "vietnamese_variants": [
-        "Phương pháp hiện tượng học"
+        "Nghiên cứu hiện tượng học",
+        "Tiếp cận hiện tượng học",
+        "Phenomenological Inquiry"
       ],
       "domain_tags": [
         "Thiết kế Định tính",
         "Tâm lý học",
         "Bản chất Trải nghiệm"
       ],
-      "core_definition": "Thiết kế nghiên cứu định tính trong đó nhà nghiên cứu mô tả bản chất chung (essence) của một hiện tượng thông qua việc tìm hiểu sâu trải nghiệm sống (lived experiences) của một nhóm cá nhân cùng trải qua hiện tượng đó.",
+      "core_definition": "Phenomenological Research Methodology là một trong năm trường phái nghiên cứu định tính kinh điển (Creswell & Poth, 2018), chuyên sâu vào việc tìm hiểu và diễn giải ý nghĩa sâu xa của các trải nghiệm sống (lived experiences) của nhiều cá nhân đối với một khái niệm hoặc một hiện tượng cụ thể. Mục tiêu tối hậu của phương pháp là chuyển hóa những trải nghiệm cá thể mang tính cá biệt thành một bức tranh mô tả toàn diện về cấu trúc bản chất phổ quát của hiện tượng, giải đáp câu hỏi 'Bản chất của hiện tượng này được trải nghiệm như thế nào?'.",
       "paradigm_debates": "Bao gồm Hiện tượng học mô tả (Descriptive - Husserl, Moustakas) yêu cầu 'Gác lại định kiến' (Bracketing / Epoché); và Hiện tượng học diễn giải (Interpretive/Hermeneutic - Heidegger, van Manen) cho rằng không thể tách rời bối cảnh sống.",
-      "benchmarks": "Mô tả được cả 2 khía cạnh: Người tham gia trải nghiệm CÁI GÌ (Textural description) và trải nghiệm đó diễn ra trong ĐIỀU KIỆN / BỐI CẢNH NÀO (Structural description), từ đó đúc kết nên Bản chất cốt lõi.",
-      "pitfalls": "Không gác lại được giả định của nhà nghiên cứu, biến bài nghiên cứu hiện tượng luận thành bài phân tích tâm lý học định lượng hoặc chỉ là trích dẫn ý kiến thông thường.",
-      "seminal_citation": "Moustakas, C. (1994). Phenomenological research methods. SAGE Publications.",
+      "benchmarks": [
+        "Cỡ mẫu tiêu chuẩn: Thường dao động từ 3 đến 15 người tham gia có độ dày trải nghiệm cao (Creswell, 2018; Giorgi, 2009).",
+        "Tiêu chuẩn tuyển chọn người tham gia: Bắt buộc phải có kinh nghiệm trực tiếp (first-hand lived experience) đối với hiện tượng khảo sát.",
+        "Minh bạch trường phái triết học: Bắt buộc phải công bố rõ ràng nghiên cứu đi theo nhánh Hiện tượng học mô tả (Husserl/Giorgi/Moustakas) hay Hiện tượng học diễn giải/thông diễn (Heidegger/van Manen/Smith - IPA)."
+      ],
+      "pitfalls": [
+        "Mập mờ lập trường triết học: Trộn lẫn phương pháp Epoché của Husserl vào thông diễn học của Heidegger mà không giải thích được mâu thuẫn nhận thức luận.",
+        "Thu thập dữ liệu hời hợt: Sử dụng bảng hỏi mở khảo sát hàng loạt người hoặc phỏng vấn 15 phút, không thể chạm tới tầng sâu của trải nghiệm hiện tượng học.",
+        "Nhầm lẫn với Nghiên cứu trường hợp (Case Study): Tập trung phân tích bối cảnh tổ chức hay tiến trình sự kiện thay vì cấu trúc ý thức và ý nghĩa của trải nghiệm con người."
+      ],
+      "seminal_citation": "Giorgi, A. (2009). The Descriptive Phenomenological Method in Psychology. Duquesne University Press; Creswell, J. W., & Poth, C. N. (2018). Qualitative Inquiry and Research Design: Choosing Among Five Approaches (4th ed.). SAGE Publications.",
       "apa_intext": "(Creswell & Creswell, 2023, p. 14)",
-      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2023). Research design: Qualitative, quantitative, and mixed methods approaches (6th ed.). SAGE Publications.",
+      "apa_reference": "Creswell, J. W., & Poth, C. N. (2018). Qualitative inquiry and research design: Choosing among five approaches (4th ed.). SAGE Publications, Inc.",
       "corpus_variants": [
         {
           "v": "Transcendental Phenomenology (Husserl)",
@@ -1325,28 +1348,47 @@
         "benchmark": true,
         "pitfalls": false,
         "needs_edit": true
-      }
+      },
+      "category": "Qualitative Research",
+      "subcategory": "Phenomenology",
+      "operational_mechanism": "Khung quy trình chuẩn mực của nghiên cứu hiện tượng học bao gồm: (1) Xác định hiện tượng nghiên cứu phù hợp có ý nghĩa nhân văn sâu sắc; (2) Nhận diện các giả định triết học nền tảng (Descriptive vs. Interpretive); (3) Thu thập dữ liệu từ những cá nhân đã trực tiếp trải qua hiện tượng (chủ yếu qua phỏng vấn sâu nhiều đợt); (4) Tiến hành phân tích dữ liệu hiện tượng học (Horizonalization, tìm kiếm meaning units, clustering themes); (5) Xây dựng mô tả kết cấu (Textural) và cấu trúc (Structural); (6) Đúc kết bản chất của trải nghiệm và kiểm chứng tính xác thực qua phản hồi của người tham gia.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "case-study",
-      "term": "Case Study Research",
+      "term": "Case Study Research (Yin / Stake / Eisenhardt Framework)",
       "ipa": "/keɪs ˈstʌdi/",
-      "vietnamese": "Nghiên cứu trường hợp",
+      "vietnamese": "Nghiên cứu trường hợp điển cứu / Phương pháp nghiên cứu tình huống",
       "vietnamese_variants": [
-        "Nghiên cứu điển cứu"
+        "Nghiên cứu tình huống",
+        "Nghiên cứu trường hợp định tính",
+        "Case Study Methodology"
       ],
       "domain_tags": [
         "Thiết kế Định tính",
         "Quản trị Doanh nghiệp",
         "Nghiên cứu Sâu"
       ],
-      "core_definition": "Thiết kế nghiên cứu khảo sát sâu một hoặc nhiều trường hợp cụ thể (một cá nhân, một nhóm, một tổ chức, một chương trình) trong bối cảnh thực tế đời sống của nó, được giới hạn rõ ràng về mặt thời gian và không gian (bounded system).",
+      "core_definition": "Case Study Research là một phương pháp nghiên cứu thực nghiệm toàn diện chuyên sâu khảo sát một hiện tượng đương đại (a contemporary phenomenon - 'the case') trong bối cảnh thực tế đời sống của nó, đặc biệt khi ranh giới giữa hiện tượng và bối cảnh không hoàn toàn rõ ràng (Yin, 2018). Phương pháp này đặc biệt ưu việt để trả lời các câu hỏi mang tính 'Làm thế nào?' (How?) và 'Tại sao?' (Why?), cho phép thu thập và tích hợp đa nguồn bằng chứng (tài liệu, phỏng vấn, quan sát trực tiếp, hiện vật vật lý) theo nguyên tắc tam giác đạc chặt chẽ.",
       "paradigm_debates": "Robert Yin (hướng thực chứng, đề cao kiểm soát và thiết kế bài bản) vs Robert Stake (hướng diễn giải kiến tạo, nhấn mạnh trải nghiệm và bản sắc riêng biệt của trường hợp).",
-      "benchmarks": "Đòi hỏi thu thập đa nguồn dữ liệu (tài liệu nội bộ, phỏng vấn, quan sát, hiện vật). Phân loại: Điển cứu nội tại (Intrinsic), Điển cứu công cụ (Instrumental), Đa điển cứu so sánh (Multiple/Collective case study).",
-      "pitfalls": "Không xác định rõ ranh giới của trường hợp (Case boundary); hoặc nhầm lẫn giữa Case Study như một phương pháp nghiên cứu khoa học với các bài tập tình huống sư phạm (Teaching cases).",
-      "seminal_citation": "Yin, R. K. (2018). Case study research and applications: Design and methods (6th ed.). SAGE Publications.",
+      "benchmarks": [
+        "Xác định ranh giới trường hợp rõ ràng (Bounding the case): Giới hạn cụ thể về không gian, thời gian, chủ thể và phạm vi tổ chức.",
+        "Tối thiểu 3 nguồn dữ liệu độc lập: Phải kết hợp phỏng vấn sâu, tài liệu lưu trữ nội bộ và quan sát thực địa để đảm bảo tam giác đạc dữ liệu.",
+        "Thiết lập Case Study Protocol độc lập: Bắt buộc phải có đề cương chi tiết trước khi bước vào thực địa để đảm bảo độ tin cậy (reliability/dependability).",
+        "Chuỗi chứng cứ rõ ràng (Chain of Evidence): Độc giả có thể truy vết ngược từ kết luận cuối cùng về đến từng câu trích dẫn hoặc tài liệu thô trong cơ sở dữ liệu."
+      ],
+      "pitfalls": [
+        "Nhầm lẫn giữa khái quát hóa thống kê và khái quát hóa phân tích: Cố gắng suy rộng kết quả từ 1 hoặc vài case ra toàn bộ tổng thể quần thể xã hội (Statistical Generalization trap).",
+        "Trôi dạt đơn vị phân tích (drift in unit of analysis): Bắt đầu bằng việc nghiên cứu một tổ chức nhưng quá trình thu thập lại lạc sang phân tích hành vi của một cá nhân riêng lẻ mà không tái định hình thiết kế.",
+        "Thiếu tính khách quan và thiên vị xác nhận: Chỉ thu thập những câu chuyện hoặc chứng cứ ủng hộ định kiến ban đầu của nghiên cứu viên.",
+        "Không xây dựng cơ sở dữ liệu trường hợp (Case Study Database): Trộn lẫn báo cáo phân tích với dữ liệu thô, khiến các nhà thẩm định không thể kiểm toán độc lập quy trình."
+      ],
+      "seminal_citation": "Yin, R. K. (2018). Case Study Research and Applications: Design and Methods (6th ed.). SAGE Publications; Eisenhardt, K. M. (1989). Building theories from case study research. Academy of Management Review, 14(4), 532-550.",
       "apa_intext": "(Creswell & Creswell, 2023, p. 15)",
-      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2023). Research design: Qualitative, quantitative, and mixed methods approaches (6th ed.). SAGE Publications.",
+      "apa_reference": "Yin, R. K. (2018). Case study research and applications: Design and methods (6th ed.). SAGE Publications, Inc.",
       "corpus_variants": [
         {
           "v": "Nghiên cứu điển cứu",
@@ -1365,7 +1407,14 @@
         "benchmark": true,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "category": "Qualitative Research",
+      "subcategory": "Case Study",
+      "operational_mechanism": "Quy trình nghiên cứu trường hợp chuẩn mực: (1) Xác định câu hỏi nghiên cứu (How/Why) và mệnh đề lý thuyết sơ bộ (theoretical propositions); (2) Xác định đơn vị phân tích (Unit of Analysis - ranh giới của case); (3) Lựa chọn thiết kế trường hợp theo ma trận 2x2 của Yin: Đơn trường hợp vs. Đa trường hợp; Toàn diện (Holistic) vs. Lồng ghép (Embedded); (4) Thiết lập Đề cương nghiên cứu trường hợp (Case Study Protocol) và Cơ sở dữ liệu trường hợp (Case Study Database); (5) Thu thập đa nguồn bằng chứng; (6) Phân tích dữ liệu theo chuỗi bằng chứng (Chain of Evidence) và Khái quát hóa lý thuyết (Analytic Generalization).",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "discriminant-validity-htmt",
@@ -3940,25 +3989,34 @@
     },
     {
       "id": "theoretical-sampling",
-      "term": "Theoretical Sampling",
+      "term": "Theoretical Sampling in Qualitative & Case Study Research (Glaser & Strauss / Eisenhardt)",
       "ipa": "/θɪəˈrɛtɪkl ˈsɑːmplɪŋ/",
-      "vietnamese": "Lấy mẫu Lý thuyết (Chọn Mẫu Dẫn dắt bởi Khái niệm)",
+      "vietnamese": "Chọn mẫu lý thuyết trong nghiên cứu định tính & trường hợp điển cứu",
       "vietnamese_variants": [
-        "Chọn mẫu phát triển lý thuyết",
-        "Lấy mẫu có định hướng lý thuyết"
+        "Lấy mẫu lý thuyết",
+        "Lấy mẫu phát triển lý thuyết",
+        "Theoretical Sampling Protocol"
       ],
-      "category": "Qualitative Methodology",
+      "category": "Qualitative Research",
       "domain_tags": [
         "Nghiên cứu Định tính",
         "Grounded Theory",
         "Chiến lược Chọn Mẫu",
         "Bão hòa Tri thức"
       ],
-      "core_definition": "Quy trình thu thập dữ liệu để sinh lý thuyết, trong đó người phân tích cùng lúc thu thập, mã hóa và phân tích dữ liệu của mình, rồi tự quyết định dữ liệu nào cần thu thập tiếp theo và tìm chúng ở đâu, nhằm mục đích phát triển các thuộc tính lý thuyết khi chúng đang nổi lên (Glaser & Strauss, 1967; Charmaz, 2014). Đối tượng tiếp theo được chọn không phải vì tính đại diện xác suất hay nhân khẩu học, mà vì họ có khả năng làm rõ nhất các lỗ hổng lý thuyết của danh mục đang nghiên cứu.",
+      "core_definition": "Theoretical Sampling (Chọn mẫu lý thuyết) là quy trình thu thập dữ liệu phục vụ mục đích xây dựng lý thuyết, do Barney Glaser và Anselm Strauss (1967) khởi xướng trong Lý thuyết nền (Grounded Theory) và được Kathleen Eisenhardt (1989, 2007) mở rộng vào nghiên cứu trường hợp. Trong chọn mẫu lý thuyết, nhà nghiên cứu không thể xác định trước toàn bộ danh sách mẫu ngay từ đầu; thay vào đó, các trường hợp hoặc người tham gia kế tiếp được lựa chọn dựa trên chính các khái niệm lý thuyết và khoảng trống nhận thức vừa mới nảy sinh từ đợt phân tích dữ liệu trước đó, cho đến khi các phạm trù lý thuyết đạt đến độ bão hòa (theoretical saturation).",
       "paradigm_debates": "Đối lập bản chất với 'Lấy mẫu Thống kê' (Statistical/Probability Sampling): Lấy mẫu thống kê chọn cỡ mẫu cố định $N$ từ đầu để khái quát hóa cho quần thể; Lấy mẫu lý thuyết không bao giờ biết trước cỡ mẫu $N$ từ đầu mà chỉ dừng lại khi đạt 'Bão hòa lý thuyết' (Theoretical Saturation).",
-      "benchmarks": "Tác giả bắt buộc phải mô tả tường minh trong bản thảo: (1) Sự dịch chuyển của tiêu chí chọn mẫu qua từng đợt phỏng vấn; (2) Lý do tại sao chuyển sang nhóm đối tượng mới (dựa trên phát hiện chưa rõ của đợt phỏng vấn trước); (3) Bằng chứng chứng minh các danh mục cốt lõi đã đạt bão hòa.",
-      "pitfalls": "Bẫy nhầm lẫn với 'Chọn mẫu Tiện lợi' (Convenience sampling) hoặc 'Chọn mẫu Có mục đích thông thường' (Purposive sampling): Chọn mẫu lý thuyết bắt buộc phải là phản ứng kế tiếp trực tiếp sinh ra từ kết quả mã hóa của dữ liệu vừa thu thập.",
-      "apa_reference": "Charmaz, K. (2014). Constructing grounded theory (2nd ed.). SAGE Publications.",
+      "benchmarks": [
+        "Tính linh hoạt động (Dynamic Emergence): Kế hoạch chọn mẫu tiến hóa linh hoạt theo tiến trình phân tích chứ không đóng băng từ trước.",
+        "Sự liên kết hữu cơ giữa Mã hóa và Chọn mẫu: Mỗi quyết định chọn mẫu tiếp theo phải được biện minh rõ ràng bằng ghi chú lý thuyết (theoretical memo) từ dữ liệu đã phân tích.",
+        "Điểm dừng bão hòa lý thuyết (Theoretical Saturation): Thu thập mẫu chính thức dừng lại khi các dữ liệu mới không còn đóng góp thêm bất kỳ thuộc tính hay chiều kích mới nào cho khung lý thuyết."
+      ],
+      "pitfalls": [
+        "Nhầm lẫn chọn mẫu lý thuyết với chọn mẫu thuận tiện: Tự do chọn đối tượng tùy hứng nhưng biện minh là 'đang chọn mẫu lý thuyết'.",
+        "Lên danh sách chọn mẫu cố định trước khi nghiên cứu thực địa bắt đầu: Việc xác định cứng nhắc danh sách 20 đối tượng từ ngày đầu vi phạm bản chất tiến hóa của chọn mẫu lý thuyết.",
+        "Tuyên bố đạt bão hòa lý thuyết quá sớm: Dừng thu thập dữ liệu khi mới chỉ đạt bão hòa từ ngữ bề mặt (code saturation) chứ chưa làm sáng tỏ được các mối quan hệ cấu trúc giữa các phạm trù lý thuyết."
+      ],
+      "apa_reference": "Eisenhardt, K. M., & Graebner, M. E. (2007). Theory building from cases: Opportunities and challenges. Academy of Management Journal, 50(1), 25-32. https://doi.org/10.5465/amj.2007.24160888",
       "synonyms": [
         "Concept-Driven Sampling",
         "Iterative Qualitative Sampling",
@@ -3989,7 +4047,14 @@
         "benchmark": true,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "subcategory": "Sampling",
+      "operational_mechanism": "Chu trình lặp xoắn ốc (Iterative spiral): (1) Thu thập dữ liệu từ trường hợp ban đầu; (2) Phân tích và mã hóa dữ liệu ngay lập tức; (3) Phát hiện khái niệm mới hoặc mối quan hệ lý thuyết còn mơ hồ; (4) Quyết định có chủ đích trường hợp hoặc nhóm đối tượng tiếp theo cần khảo sát để làm sáng tỏ khái niệm đó; (5) Lặp lại chu trình cho đến khi không còn đặc tính lý thuyết mới nào xuất hiện (Theoretical Saturation).",
+      "seminal_citation": "Glaser, B. G., & Strauss, A. L. (1967). The Discovery of Grounded Theory: Strategies for Qualitative Research. Aldine de Gruyter; Eisenhardt, K. M., & Graebner, M. E. (2007). Theory building from cases: Opportunities and challenges. Academy of Management Journal, 50(1), 25-32.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "audit-trail",
@@ -5561,21 +5626,43 @@
     },
     {
       "id": "analytic-generalization-tong-quat-hoa-phan-tich",
-      "term": "Analytic Generalization",
-      "vietnamese": "Tổng quát hóa Phân tích trong Nghiên cứu Tình huống",
-      "vietnamese_variants": [],
+      "term": "Analytic Generalization (Yin Framework)",
+      "vietnamese": "Khái quát hóa phân tích / Khái quát hóa lý thuyết",
+      "vietnamese_variants": [
+        "Tổng quát hóa phân tích",
+        "Khái quát hóa lý thuyết (Theoretical Generalization)",
+        "Analytic vs Statistical Generalization"
+      ],
       "domain_tags": [
         "Case Study Research"
       ],
-      "core_definition": "Bản chất của nghiên cứu tình huống — mở rộng các phát hiện từ ca nghiên cứu lên các mệnh đề lý thuyết (Theoretical propositions), hoàn toàn khác với việc suy rộng thống kê.",
-      "seminal_citation": "Yin (2014)",
+      "core_definition": "Analytic Generalization (Khái quát hóa phân tích) là logic khái quát hóa nền tảng của nghiên cứu trường hợp và các phương pháp nghiên cứu định tính, đối lập hoàn toàn với Khái quát hóa thống kê (Statistical Generalization) của nghiên cứu định lượng khảo sát (Yin, 2018). Trong khái quát hóa phân tích, nhà nghiên cứu không suy rộng kết luận từ mẫu (sample) ra tổng thể quần thể (universe/population), mà khái quát hóa các kết quả thực nghiệm của một hoặc nhiều trường hợp lên một lý thuyết hoặc khung khái niệm trừu tượng rộng lớn hơn (generalizing to theory), tương tự như cách nhà khoa học tự nhiên khái quát hóa từ các thí nghiệm trong phòng lab lên các định luật vật lý.",
+      "seminal_citation": "Yin, R. K. (2018). Case Study Research and Applications: Design and Methods (6th ed.). SAGE Publications; Firestone, W. A. (1993). Alternative arguments for generalizing from data as applied to qualitative research. Educational Researcher, 22(4), 16-23.",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Analytic Generalization (Tổng quát hóa Phân tích) according to Yin (2014).",
       "domain_tags_en": [
         "Case Study Research"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Case Study",
+      "operational_mechanism": "Cơ chế 2 bước của khái quát hóa phân tích theo Yin (2018): (1) Xây dựng khung lý thuyết ban đầu chứa đựng các mệnh đề lý thuyết cụ thể; (2) Sử dụng các phát hiện thực nghiệm phong phú từ trường hợp để xác nhận, sửa đổi, bác bỏ hoặc mở rộng lý thuyết ban đầu đó. Mức độ khái quát hóa phụ thuộc vào sức mạnh giải thích của lý thuyết chứ không phụ thuộc vào số lượng đối tượng quan sát.",
+      "benchmarks": [
+        "Phân biệt rạch ròi với suy diễn thống kê: Bắt buộc phải khẳng định rõ ràng trong phần phương pháp luận rằng nghiên cứu theo đuổi Analytic Generalization, bác bỏ kỳ vọng đại diện thống kê.",
+        "Sự hiện diện của khung lý thuyết đối sánh: Phải có khung lý thuyết định hướng ban đầu hoặc khung lý thuyết mới được kiến tạo làm bến đỗ tiếp nhận kết quả khái quát hóa.",
+        "Giải trình cơ chế nhân quả: Phải chỉ rõ các điều kiện biên (boundary conditions) - nơi mà lý thuyết có thể áp dụng và nơi mà lý thuyết không còn đúng."
+      ],
+      "pitfalls": [
+        "Rơi vào bẫy ngụy biện thống kê: Tự biện minh rằng vì nghiên cứu đã chọn được 5 case nên kết quả 'mang tính đại diện cho các doanh nghiệp vừa và nhỏ tại Việt Nam'.",
+        "Khái quát hóa vô căn cứ (overgeneralization): Tuyên bố lý thuyết áp dụng cho toàn cầu trong khi các trường hợp chỉ được khảo sát trong một bối cảnh văn hóa đặc thù mà không nêu rõ điều kiện giới hạn.",
+        "Thiếu tính trừu tượng hóa lý thuyết: Báo cáo kết quả dừng lại ở mức độ chi tiết vụn vặt của case thực tế mà không nâng lên được tầm các khái niệm và mệnh đề lý thuyết có thể chuyển giao."
+      ],
+      "apa_reference": "Yin, R. K. (2018). Case study research and applications: Design and methods (6th ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "analytic-hierarchy-process-ahp",
@@ -6577,17 +6664,21 @@
     },
     {
       "id": "ban-chat",
-      "term": "Essence in Phenomenology & Measurement",
-      "vietnamese": "Bản chất Hiện tượng (Hiện tượng luận) & Bản chất Đo lường Tương quan",
-      "vietnamese_variants": [],
+      "term": "Essence of Experience (Wesen / Lived Experience in Phenomenology)",
+      "vietnamese": "Bản chất của trải nghiệm / Cốt lõi hiện tượng học",
+      "vietnamese_variants": [
+        "Bản chất hiện tượng",
+        "Bản chất phổ quát (Universal Essence)",
+        "Cấu trúc bản chất (Structural Essence)"
+      ],
       "domain_tags": [
         "Triết học Khoa học",
         "Phương pháp Định tính",
         "Hiện tượng luận",
         "Đo lường & Thang đo"
       ],
-      "core_definition": "(1) Trong Triết học Khoa học và Nghiên cứu Định tính Hiện tượng luận (Phenomenology): Bản chất (Essence / Wesen) là cấu trúc cốt lõi bất biến (invariant core structure) của một hiện tượng trải nghiệm con người — tức là thuộc tính nền tảng mà nếu thiếu nó thì hiện tượng không còn là chính nó nữa. Mục tiêu tối hậu của hiện tượng luận là khám phá và mô tả bản chất của trải nghiệm sống thông qua trực giác bản chất (eidetic reduction) và đình chỉ định kiến (epoché / bracketing). (2) Trong Đo lường Mô hình Cấu trúc (SEM): Thuật ngữ bản chất xuất hiện trong các đối sánh phương pháp đo lường để phân biệt bản chất của các loại tương quan: tỷ số giữa trung bình tương quan giữa các biến đo lường các khái niệm khác nhau (heterotrait-heteromethod) và trung bình tương quan giữa các biến đo lường cùng một khái niệm (monotrait-heteromethod) chính là bản chất toán học của chỉ số HTMT (Henseler et al., 2015).",
-      "seminal_citation": "Husserl, E. (1913). Ideas: General introduction to pure phenomenology. George Allen & Unwin; Moustakas, C. (1994). Phenomenological research methods. SAGE Publications; Henseler, J., Ringle, C. M., & Sarstedt, M. (2015). Journal of the Academy of Marketing Science, 43(1), 115–135.",
+      "core_definition": "Essence of Experience (tiếng Đức: Wesen) trong triết học hiện tượng học của Husserl và phương pháp nghiên cứu định tính (Moustakas, van Manen) là cấu trúc ý nghĩa cốt lõi, bất biến mà nếu không có nó thì hiện tượng không còn là chính nó nữa. Bản chất không phải là một thực thể vật lý trừu tượng, mà là sự chưng cất thấu đáo từ vô số các biến thể trải nghiệm cá nhân cụ thể để tìm ra bức tranh cấu trúc chung ('the invariant structure') định danh cho hiện tượng sống của con người.",
+      "seminal_citation": "Husserl, E. (1913/1982). Ideas Pertaining to a Pure Phenomenology and to a Phenomenological Philosophy. Kluwer; van Manen, M. (2014). Phenomenology of Practice. Left Coast Press.",
       "tier": "index",
       "expert_status": "verified",
       "expert_notes": "Trùng #183; tên mục không phải thuật ngữ",
@@ -6596,15 +6687,31 @@
         "PLS-SEM",
         "Discriminant Validity"
       ],
-      "benchmarks": "Trong nghiên cứu hiện tượng luận định tính: Bắt buộc tác giả phải tổng hợp từ các phát biểu ý nghĩa (significant statements) thành các đơn vị ý nghĩa (meaning units), cấu trúc kết cấu (textural description) và cấu trúc cấu trúc (structural description) để đạt đến Bản chất hợp nhất (Composite Essence) của hiện tượng (Moustakas, 1994).",
-      "pitfalls": "Nhầm lẫn bản chất hiện tượng (cấu trúc bất biến) với các biểu hiện tình huống cá biệt, nhất thời của một cá nhân; hoặc nhầm lẫn giữa định nghĩa bản chất triết học với việc trích xuất bảng so sánh kỹ thuật đo lường.",
+      "benchmarks": [
+        "Bản mô tả bản chất hoàn chỉnh: Phải là một văn bản liền mạch (thường dài 1 - 3 trang) lột tả được 'cảm giác thực sự khi trải nghiệm hiện tượng này là gì' mà bất kỳ ai đã từng trải qua đều thấy phản chiếu chính xác.",
+        "Tính bất biến (Invariance): Bản chất được đúc kết phải vượt qua phép thử 'imaginative variation' - không bị thay đổi bởi những biến thiên ngẫu nhiên về hoàn cảnh bề ngoài.",
+        "Sự kết hợp Noema và Noesis: Mô tả phải dung hợp được cả mặt khách quan của trải nghiệm (nội dung) và mặt chủ quan (cách thức ý thức cấu tạo nên trải nghiệm đó)."
+      ],
+      "pitfalls": [
+        "Nhầm bản chất với bản tóm tắt cơ học: Viết bản chất như một đoạn tóm tắt gạch đầu dòng các chủ đề khảo sát thay vì một bức tranh tích hợp sâu sắc về mặt bản thể học.",
+        "Khái quát hóa quá mức thành chân lý vĩnh cửu: Biến bản chất hiện tượng học thành một quy luật phổ quát cứng nhắc tách rời khỏi điều kiện nhân sinh lịch sử (human condition).",
+        "Thiếu tính thấu cảm và tiếng vang hiện tượng học: Mô tả bản chất quá trừu tượng, chứa toàn thuật ngữ kỹ thuật rỗng tuếch khiến người trong cuộc không nhận ra trải nghiệm sống của chính mình."
+      ],
       "expert_checks": {
         "vietnamese": true,
         "definition": true,
         "benchmark": true,
         "pitfalls": true,
         "needs_edit": false
-      }
+      },
+      "category": "Qualitative Research",
+      "subcategory": "Phenomenology",
+      "operational_mechanism": "Quá trình khám phá bản chất trải nghiệm đòi hỏi phương pháp biến đổi tưởng tượng (imaginative variation / eidetic reduction): Nhà nghiên cứu liên tục thay đổi các đặc tính cấu thành hiện tượng trong tư duy để xác định xem đặc tính nào bị bỏ đi thì hiện tượng sẽ sụp đổ hoặc biến thành hiện tượng khác. Sau đó, nhà nghiên cứu kết hợp mô tả kết cấu (Textural description - cái gì được trải nghiệm) và mô tả cấu trúc (Structural description - cách thức trải nghiệm diễn ra) để viết nên bản tổng hợp bản chất (Composite Description of the Essence of the phenomenon).",
+      "apa_reference": "van Manen, M. (2014). Phenomenology of practice: Meaning-giving methods in phenomenological research and writing. Left Coast Press.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "bandwidth-smoothing-parameter-h",
@@ -11231,21 +11338,43 @@
     },
     {
       "id": "convenience-sampling",
-      "term": "Convenience Sampling",
-      "vietnamese": "Chọn mẫu thuận tiện",
-      "vietnamese_variants": [],
+      "term": "Convenience Sampling & Its Methodological Pitfalls",
+      "vietnamese": "Chọn mẫu thuận tiện và các cạm bẫy phương pháp luận",
+      "vietnamese_variants": [
+        "Lấy mẫu thuận tiện",
+        "Lấy mẫu ngẫu nhiên tiện lợi",
+        "Accidental Sampling"
+      ],
       "domain_tags": [
         "Non-Probability Sampling"
       ],
-      "core_definition": "chọn các đối tượng dễ tiếp cận nhất tại thời điểm nghiên cứu.",
-      "seminal_citation": "Schindler (2022)",
+      "core_definition": "Convenience Sampling (Chọn mẫu thuận tiện) là phương pháp chọn mẫu phi xác suất trong đó đối tượng nghiên cứu được tuyển chọn hoàn toàn dựa trên sự sẵn có, vị trí địa lý thuận lợi và mức độ dễ dàng tiếp cận đối với nhà nghiên cứu (Bornstein et al., 2013). Mặc dù tiết kiệm chi phí và thời gian, đây là phương pháp có giá trị khoa học thấp nhất trong nghiên cứu học thuật, dễ gây ra các thiên kiến chọn mẫu nghiêm trọng (selection bias) và thường bị các hội đồng tiến sĩ hoặc tạp chí Q1 bác bỏ nếu tác giả không chứng minh được tính nghiêm cẩn phương pháp luận bổ trợ.",
+      "seminal_citation": "Bornstein, M. H., Jager, J., & Putnick, D. L. (2013). Sampling in developmental science: Situations, shortcomings, solutions, and standards. Developmental Review, 33(4), 357-394; Etikan, I., Musa, S. A., & Alkassim, R. S. (2016). Comparison of convenience sampling and purposive sampling. American Journal of Theoretical and Applied Statistics, 5(1), 1-4.",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Convenience Sampling according to Schindler (2022).",
       "domain_tags_en": [
         "Non-Probability Sampling"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Sampling",
+      "operational_mechanism": "Cơ chế vận hành: Lựa chọn những người có mặt ngay tại chỗ (ví dụ: sinh viên trong lớp học, người đi đường, bạn bè trên mạng xã hội). Để hạn chế tối đa khiếm khuyết mang tính bản chất của phương pháp này khi bắt buộc phải sử dụng (ví dụ trong nghiên cứu thí điểm - pilot study), nhà nghiên cứu phải: (1) Đo lường và báo cáo minh bạch đặc điểm nhân khẩu học so với quần thể; (2) Thực hiện phân tích kiểm tra độ nhạy (sensitivity analysis); (3) Tuyên bố rõ ràng các giới hạn nghiên cứu (limitations).",
+      "benchmarks": [
+        "Chỉ nên chấp nhận trong giai đoạn sơ cấp: Thích hợp cho nghiên cứu thử nghiệm công cụ đo lường (pilot test, pre-test bảng hỏi) hoặc các đề tài khám phá ban đầu.",
+        "Bắt buộc công bố ma trận thiên kiến (Bias disclosure): Phải so sánh cơ cấu mẫu với các tham số điều tra quốc gia để người đọc nhận biết độ lệch mẫu.",
+        "Cấm suy diễn thống kê ra quần thể: Tuyệt đối không sử dụng các kiểm định tham số để suy rộng kết quả ra toàn xã hội."
+      ],
+      "pitfalls": [
+        "Ngụy trang chọn mẫu thuận tiện thành chọn mẫu xác suất: Thu thập dữ liệu thuận tiện trên mạng xã hội nhưng viết trong bài báo là 'lấy mẫu ngẫu nhiên đơn giản'.",
+        "Thiên kiến người tình nguyện (Volunteer bias): Những người sẵn lòng trả lời thường có thái độ hoặc thời gian rảnh rỗi rất khác biệt so với người bình thường.",
+        "Tuyên bố kết quả có giá trị khái quát hóa cao: Đây là lỗi tử huyệt khiến bài báo bị Reject ngay lập tức tại vòng bình duyệt đầu tiên (Desk reject)."
+      ],
+      "apa_reference": "Bornstein, M. H., Jager, J., & Putnick, D. L. (2013). Sampling in developmental science: Situations, shortcomings, solutions, and standards. Developmental Review, 33(4), 357-394. https://doi.org/10.1016/j.dr.2013.08.003",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "convergent-design-565",
@@ -11968,21 +12097,43 @@
     },
     {
       "id": "critical-case-sampling",
-      "term": "Critical Case Sampling",
-      "vietnamese": "Chọn mẫu trường hợp then chốt",
-      "vietnamese_variants": [],
+      "term": "Critical Case Sampling (Patton Framework)",
+      "vietnamese": "Chọn mẫu trường hợp then chốt / Lấy mẫu tình huống quyết định",
+      "vietnamese_variants": [
+        "Lấy mẫu ca then chốt",
+        "Lấy mẫu trường hợp điển cứu quyết định",
+        "Strategic Critical Case Sampling"
+      ],
       "domain_tags": [
         "Qualitative Sampling"
       ],
-      "core_definition": "nếu hiện tượng đúng ở trường hợp này thì sẽ đúng ở mọi nơi khác.",
-      "seminal_citation": "Patton (2015)",
+      "core_definition": "Critical Case Sampling (Chọn mẫu trường hợp then chốt) là chiến lược chọn mẫu có mục đích mang tính chiến lược cao của Patton (2015) và Bent Flyvbjerg (2006). Phương pháp này nhắm vào việc lựa chọn một trường hợp duy nhất (hoặc rất ít trường hợp) có tầm quan trọng chiến lược mang tính quyết định đối với vấn đề nghiên cứu, cho phép rút ra kết luận logic theo mệnh đề: 'Nếu hiện tượng không xảy ra ở đây thì nó sẽ không xảy ra ở bất kỳ đâu' hoặc ngược lại 'Nếu nhóm này thành công thì mọi nhóm khác đều sẽ thành công'.",
+      "seminal_citation": "Patton, M. Q. (2015). Qualitative Research & Evaluation Methods: Integrating Theory and Practice (4th ed.). SAGE Publications; Flyvbjerg, B. (2006). Five misunderstandings about case-study research. Qualitative Inquiry, 12(2), 219-245.",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Critical Case Sampling according to Patton (2015).",
       "domain_tags_en": [
         "Qualitative Sampling"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Sampling",
+      "operational_mechanism": "Quy trình triển khai: (1) Phân tích sâu sắc bản chất lý thuyết của hiện tượng; (2) Xác định vị trí trọng yếu có tính chất thử nghiệm đòn bẩy (crucial test); (3) Thu thập toàn diện dữ liệu đa nguồn tại trường hợp then chốt đó; (4) Vận dụng suy luận logic Modus Tollens hoặc Modus Ponens để khẳng định hoặc bác bỏ mệnh đề lý thuyết tổng quát.",
+      "benchmarks": [
+        "Lập luận mệnh đề then chốt thuyết phục: Bắt buộc phải chứng minh bằng văn bản tại sao trường hợp này được coi là 'then chốt' (criticality justification).",
+        "Sức mạnh đòn bẩy thông tin tối đa: Giúp tiết kiệm chi phí và nguồn lực tối đa mà vẫn tạo ra tác động lý thuyết sâu rộng.",
+        "Kiểm toán độc lập quy trình: Do chỉ dựa trên 1-2 trường hợp mang tính quyết định, bằng chứng thực địa phải đạt độ tin cậy và minh bạch tuyệt đối."
+      ],
+      "pitfalls": [
+        "Nhận định sai tính then chốt của trường hợp: Chọn một trường hợp thông thường nhưng cường điệu hóa thành trường hợp then chốt mà không có căn cứ thực tế.",
+        "Suy luận quá đà vượt khỏi logic đòn bẩy: Áp dụng suy luận khái quát hóa sang các bối cảnh hoàn toàn không liên quan về mặt cấu trúc.",
+        "Thiếu bằng chứng xác thực đa nguồn: Chỉ phỏng vấn một vài cá nhân rồi vội vàng tuyên bố bác bỏ một học thuyết khoa học lớn."
+      ],
+      "apa_reference": "Flyvbjerg, B. (2006). Five misunderstandings about case-study research. Qualitative Inquiry, 12(2), 219-245. https://doi.org/10.1177/1077800405284363",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "critical-discourse-analysis-624",
@@ -12140,15 +12291,19 @@
     },
     {
       "id": "cross-case-synthesis",
-      "term": "Cross-case synthesis",
-      "vietnamese": "Tổng hợp xuyên ca trong nghiên cứu trường hợp",
-      "vietnamese_variants": [],
+      "term": "Cross-Case Synthesis (Yin Framework)",
+      "vietnamese": "Tổng hợp xuyên trường hợp / Phân tích tổng hợp đa tình huống",
+      "vietnamese_variants": [
+        "Phân tích so sánh đa trường hợp",
+        "Tổng hợp so sánh liên trường hợp",
+        "Cross-Case Analysis"
+      ],
       "domain_tags": [
         "Methodology",
         "Research Design"
       ],
-      "core_definition": "Kỹ thuật phân tích định tính áp dụng cho nghiên cứu đa trường hợp (Multiple Case Studies), đối chiếu và tổng hợp các phát hiện từ từng trường hợp riêng biệt để xác định các mẫu hình chung (patterns) và xây dựng lý thuyết khái quát hóa vững chắc hơn so với một ca đơn lẻ (Yin, 2018).",
-      "seminal_citation": "Yin (2014)",
+      "core_definition": "Cross-Case Synthesis là kỹ thuật phân tích dữ liệu chuyên biệt áp dụng riêng cho các thiết kế nghiên cứu đa trường hợp (từ 2 trường hợp trở lên) theo chuẩn mực của Robert K. Yin (2018). Kỹ thuật này đối chiếu các phát hiện độc lập từ từng trường hợp riêng lẻ nhằm phát hiện các mẫu hình chung (cross-case patterns), các điểm tương đồng hội tụ và các dị biệt có ý nghĩa lý thuyết, từ đó kiểm chứng logic nhân bản (replication logic) và xây dựng khung lý thuyết khái quát hóa cao hơn.",
+      "seminal_citation": "Yin, R. K. (2018). Case Study Research and Applications: Design and Methods (6th ed.). SAGE Publications; Miles, M. B., Huberman, A. M., & Saldaña, J. (2020). Qualitative Data Analysis: A Methods Sourcebook (4th ed.). SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "Đã cập nhật định nghĩa chuyên sâu từ tài liệu kinh điển.",
@@ -12156,7 +12311,25 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Case Study",
+      "operational_mechanism": "Kỹ thuật thực hiện theo Yin (2018) và Miles, Huberman & Saldaña (2020): (1) Hoàn thiện báo cáo phân tích nội tại cho từng case riêng biệt (within-case narrative); (2) Xây dựng các ma trận xuyên trường hợp (cross-case word tables / meta-matrices) tóm lược các biến số hoặc mệnh đề lý thuyết trọng yếu; (3) Kiểm tra sự xuất hiện của các quy luật: Xác định xem các trường hợp có hành vi tương tự nhau (Literal replication) hay khác biệt theo đúng điều kiện dự đoán (Theoretical replication); (4) Phân tích các trường hợp ngoại lệ hoặc mâu thuẫn để điều chỉnh mệnh đề lý thuyết.",
+      "benchmarks": [
+        "Điều kiện tiên quyết bắt buộc: Phải hoàn tất 100% phân tích Within-Case chi tiết trước khi tiến hành Cross-Case Synthesis.",
+        "Sử dụng bảng từ xuyên trường hợp (Cross-Case Word Tables): Trình bày minh bạch dữ liệu đối chiếu giữa các case theo từng biến cố hoặc chủ đề nghiên cứu.",
+        "Kiểm định đối chứng chặt chẽ: Phải có ít nhất 2 phương giải thích đối thủ (rival explanations) được xem xét và bác bỏ thông qua dữ liệu so sánh xuyên trường hợp."
+      ],
+      "pitfalls": [
+        "Gộp dữ liệu thô (pooling data) kiểu thống kê: Trộn lẫn dữ liệu của tất cả các case lại để phân tích chung ngay từ đầu, phá vỡ bối cảnh toàn vẹn của từng trường hợp cụ thể.",
+        "So sánh bề mặt (superficial cross-case comparison): Chỉ liệt kê điểm giống và khác nhau mang tính hình thức bên ngoài mà không liên kết được với cơ chế lý thuyết nhân quả.",
+        "Bỏ qua các trường hợp không khớp mô hình: Cố tình lờ đi trường hợp có phát hiện trái ngược với các trường hợp còn lại để tạo ra một kết luận đồng thuận giả tạo."
+      ],
+      "apa_reference": "Yin, R. K. (2018). Case study research and applications: Design and methods (6th ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "cross-lagged-latent-curve-model-with-structured-residuals",
@@ -15949,21 +16122,43 @@
     },
     {
       "id": "extreme-deviant-case-sampling",
-      "term": "Extreme / Deviant Case Sampling",
-      "vietnamese": "Chọn mẫu trường hợp dị biệt / cực đoan",
-      "vietnamese_variants": [],
+      "term": "Extreme / Deviant Case Sampling (Polar Types - Eisenhardt / Patton)",
+      "vietnamese": "Chọn mẫu trường hợp cực đoan / dị biệt (Các loại hình phân cực)",
+      "vietnamese_variants": [
+        "Lấy mẫu ca cực đoan",
+        "Lấy mẫu ca dị biệt",
+        "Polar Types Sampling"
+      ],
       "domain_tags": [
         "Qualitative Sampling"
       ],
-      "core_definition": "nghiên cứu những thành công xuất chúng hoặc thất bại nặng nề.",
-      "seminal_citation": "Patton (2015)",
+      "core_definition": "Extreme / Deviant Case Sampling (Chọn mẫu trường hợp cực đoan hoặc dị biệt, hay thiết kế các loại hình phân cực - Polar Types theo Eisenhardt, 1989) là chiến lược chọn mẫu định tính tập trung vào các trường hợp bất thường, xuất sắc vượt trội hoặc thất bại thảm hại, nằm ở hai đầu cùng của phân phối hiện tượng (ví dụ: các công ty tăng trưởng nhanh đột biến vs. các công ty phá sản nhanh chóng trong cùng một ngành). Bằng cách nghiên cứu các cực đoan này, các cơ chế tiềm ẩn và các biến số ngầm trở nên lộ diện rõ nét hơn rất nhiều so với khi nghiên cứu các trường hợp bình thường ở mức trung bình.",
+      "seminal_citation": "Eisenhardt, K. M. (1989). Building theories from case study research. Academy of Management Review, 14(4), 532-550; Pettigrew, A. M. (1990). Longitudinal field research on change: Theory and practice. Organization Science, 1(3), 267-292.",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Extreme / Deviant Case Sampling according to Patton (2015).",
       "domain_tags_en": [
         "Qualitative Sampling"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Sampling",
+      "operational_mechanism": "Quy trình thực thi: (1) Đo lường hoặc rà soát sơ bộ quần thể để xác định phân phối chuẩn của hiện tượng; (2) Chọn lọc các thực thể nằm ở phân vị cực cao (ví dụ: top 1%) và cực thấp (ví dụ: bottom 1%); (3) Phân tích chuyên sâu từng trường hợp phân cực; (4) Đối chiếu tương phản trực tiếp (stark contrast comparison) giữa hai cực để bóc tách các cơ chế quyết định tạo nên sự phân hóa.",
+      "benchmarks": [
+        "Minh chứng rõ ràng về tính cực đoan: Phải cung cấp số liệu thực nghiệm chứng minh các trường hợp được chọn thực sự nằm ở các điểm mút cực đoan.",
+        "Cấu trúc cặp phân cực (Paired Polar Types): Thường đi theo từng cặp tương phản trực tiếp (thành công rực rỡ vs. thất bại toàn diện) trong cùng một môi trường vĩ mô để kiểm soát biến ngoại lai.",
+        "Hiệu quả phát hiện lý thuyết: Làm nổi bật các quy trình và động năng mà các trường hợp điển hình thường che giấu."
+      ],
+      "pitfalls": [
+        "Xem trường hợp cực đoan là trường hợp tiêu biểu: Nhầm lẫn bản chất ngoại lệ của case cực đoan thành chuẩn mực hành vi chung của số đông.",
+        "Lãng quên yếu tố may mắn ngẫu nhiên: Bỏ qua các biến cố ngoại sinh ngẫu nhiên tạo nên thành công/thất bại cực đoan mà quy chụp hoàn toàn cho năng lực nội tại.",
+        "Thiên vị cảm xúc của người nghiên cứu: Quá ngưỡng mộ trường hợp cực kỳ thành công hoặc quá định kiến với trường hợp thất bại, làm sai lệch phân tích khách quan."
+      ],
+      "apa_reference": "Eisenhardt, K. M. (1989). Building theories from case study research. Academy of Management Review, 14(4), 532-550. https://doi.org/10.5465/amr.1989.4308385",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "extreme-case-sampling",
@@ -18537,15 +18732,19 @@
     },
     {
       "id": "hermeneutic-phenomenology",
-      "term": "Hermeneutic Phenomenology",
-      "vietnamese": "Hiện tượng luận thông diễn của Martin Heidegger tập trung vào diễn giải hiện hữu sống trong thế giới",
-      "vietnamese_variants": [],
+      "term": "Hermeneutic Phenomenology (Heidegger / van Manen Framework)",
+      "vietnamese": "Hiện tượng học thông diễn / Hiện tượng học diễn giải",
+      "vietnamese_variants": [
+        "Hiện tượng học giải thích Heidegger",
+        "Hiện tượng học thông diễn Max van Manen",
+        "Interpretive Phenomenology"
+      ],
       "domain_tags": [
         "Philosophy",
         "Qualitative"
       ],
-      "core_definition": "Hiện tượng luận thông diễn của Martin Heidegger tập trung vào diễn giải hiện hữu sống trong thế giới.",
-      "seminal_citation": "Heidegger (1927)",
+      "core_definition": "Hermeneutic Phenomenology là trường phái nghiên cứu định tính triết học xuất phát từ Martin Heidegger, Hans-Georg Gadamer và được Max van Manen (1990, 2014, 2016) hệ thống hóa thành phương pháp luận khoa học nhân văn ứng dụng. Khác với hiện tượng học siêu nghiệm mô tả thuần túy của Husserl, hiện tượng học thông diễn khẳng định rằng con người không thể tách rời khỏi bối cảnh lịch sử, ngôn ngữ và văn hóa ('Being-in-the-world' hay Dasein). Do đó, việc nghiên cứu trải nghiệm sống (lived experience) luôn luôn và tất yếu là một hành vi diễn giải (hermeneutic interpretation) thông qua ngôn ngữ học, văn bản và vòng tròn thông diễn (hermeneutic circle).",
+      "seminal_citation": "Heidegger, M. (1927/1962). Being and Time. Harper & Row; van Manen, M. (2016). Researching Lived Experience: Human Science for an Action Sensitive Pedagogy (2nd ed.). Routledge.",
       "tier": "curated",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #1179",
@@ -18553,7 +18752,27 @@
       "domain_tags_en": [
         "Philosophy",
         "Qualitative"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Phenomenology",
+      "operational_mechanism": "Phương pháp luận van Manen (2016) bao gồm việc tương tác năng động giữa 6 hoạt động nghiên cứu: (1) Hướng về một hiện tượng có ý nghĩa sâu sắc; (2) Điều tra trải nghiệm sống nguyên bản thay vì những khái niệm đã bị lý thuyết hóa; (3) Suy ngẫm về các chủ đề bản chất đặc trưng của hiện tượng thông qua 4 chiều kích tồn tại cơ bản (existentials): tính không gian sống (lived space / spatiality), tính thể xác sống (lived body / corporeality), tính thời gian sống (lived time / temporality), và tính quan hệ người sống (lived relation / relationality); (4) Nghệ thuật viết và viết lại văn bản hiện tượng học (hermeneutic writing); (5) Duy trì mối quan hệ chặt chẽ với câu hỏi nghiên cứu; (6) Cân bằng ngữ cảnh nghiên cứu bằng cách xem xét các bộ phận và toàn thể (hermeneutic circle).",
+      "benchmarks": [
+        "Quy mô mẫu chuẩn: 6 đến 12 người tham gia cung cấp câu chuyện tự sự (narrative accounts) phong phú và đa dạng về góc nhìn.",
+        "Khai thác trọn vẹn 4 chiều kích hiện sinh (4 Existentials): Phân tích phải rà soát qua Lived Space, Lived Body, Lived Time, và Lived Other.",
+        "Vận dụng vòng tròn thông diễn (Hermeneutic Circle): Thể hiện rõ sự dịch chuyển qua lại giữa cách hiểu bộ phận (câu chữ, tình tiết cụ thể) và cách hiểu toàn thể (bức tranh trải nghiệm tổng quan).",
+        "Chất lượng văn phong hiện tượng học: Bài viết phải đạt độ vang hiện tượng học (phenomenological nod), khiến người đọc đồng cảm và nhận ra chiều sâu bản chất của trải nghiệm."
+      ],
+      "pitfalls": [
+        "Đóng ngoặc cứng nhắc kiểu Husserl: Cố gắng triệt tiêu hoàn toàn góc nhìn của nhà nghiên cứu trong khi bản chất của thông diễn học là sự dung hòa các chân trời (fusion of horizons - Gadamer).",
+        "Mô tả bề mặt thiếu chiều sâu triết học: Báo cáo kết quả như một bản phỏng vấn kể chuyện đơn thuần mà không đào sâu vào các chiều kích hiện sinh (spatiality, temporality, corporeality, relationality).",
+        "Bỏ qua nghệ thuật viết diễn giải: Sử dụng ngôn ngữ kỹ thuật khô cứng, rập khuôn mà làm mất đi vẻ đẹp gợi cảm, nhân văn của văn bản hiện tượng học sống động.",
+        "Áp đặt khung lý thuyết có sẵn (theoretical forcing): Dùng một mô hình định lượng hoặc lý thuyết cấu trúc bên ngoài để gán nhãn cho trải nghiệm thay vì để ý nghĩa phát lộ từ văn bản."
+      ],
+      "apa_reference": "van Manen, M. (2016). Researching lived experience: Human science for an action sensitive pedagogy (2nd ed.). Routledge. https://doi.org/10.4324/9781315421056",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "hermeneutic-phenomenology-heidegger-gadamer",
@@ -18962,21 +19181,43 @@
     },
     {
       "id": "horizonalization-in-phenomenology",
-      "term": "Horizonalization in Phenomenology",
-      "vietnamese": "Thủ pháp Bình đẳng hóa Nhận định",
-      "vietnamese_variants": [],
+      "term": "Horizonalization in Phenomenology (Moustakas)",
+      "vietnamese": "Quy trình chân trời hóa dữ liệu hiện tượng học",
+      "vietnamese_variants": [
+        "Chân trời hóa ý nghĩa",
+        "San phẳng chân trời dữ liệu",
+        "Horizonalization of Perceptions"
+      ],
       "domain_tags": [
         "Phenomenological Method"
       ],
-      "core_definition": "Coi mọi phát biểu của người tham gia có giá trị ngang nhau ở bước mã hóa ban đầu.",
-      "seminal_citation": "Moustakas (1994)",
+      "core_definition": "Horizonalization (Chân trời hóa) là bước nền tảng đầu tiên trong quy trình phân tích dữ liệu hiện tượng học siêu nghiệm (Transcendental Phenomenology) do Clark Moustakas (1994) chuẩn hóa. Trong bước này, nhà nghiên cứu rà soát toàn bộ các bản gỡ băng phỏng vấn (transcripts) và coi mỗi câu phát ngôn hoặc nhận định của đối tượng nghiên cứu đều có giá trị, trọng số và vị thế bình đẳng như nhau (equal weight/value) trong việc soi sáng hiện tượng. Khái niệm này ví dữ liệu như một đường chân trời trải rộng vô tận, nơi không có yếu tố nào ban đầu bị coi là thứ yếu hay nổi trội hơn yếu tố khác.",
+      "seminal_citation": "Moustakas, C. (1994). Phenomenological Research Methods. SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Horizonalization in Phenomenology according to Moustakas (1994).",
       "domain_tags_en": [
         "Phenomenological Method"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Phenomenology",
+      "operational_mechanism": "Quy trình thực hiện Horizonalization gồm 4 bước kỹ thuật: (1) Rà soát toàn bộ văn bản và trích xuất mọi phát ngôn liên quan đến trải nghiệm về hiện tượng; (2) Đặt tất cả các phát ngôn lên một mặt phẳng phân tích với trọng số ngang nhau (treat every statement as having equal value); (3) Áp dụng 2 tiêu chí kiểm định để chọn lọc 'yếu tố bất biến' (invariant constituents): (a) Phát ngôn có chứa đựng một khoảnh khắc ý nghĩa cốt lõi của trải nghiệm không? (b) Phát ngôn có thể được trừu tượng hóa và gán nhãn mà không làm mất đi nghĩa gốc không?; (4) Loại bỏ các phát ngôn trùng lặp, mơ hồ hoặc nằm ngoài phạm vi hiện tượng, giữ lại danh sách chân trời ý nghĩa chuẩn xác.",
+      "benchmarks": [
+        "Tính bao quát tuyệt đối: Không được lược bỏ bất kỳ câu trần thuật nào trong giai đoạn sơ cấp trước khi thực hiện quy trình kiểm tra 2 tiêu chuẩn của Moustakas.",
+        "Tài liệu minh chứng kiểm toán: Phải lưu trữ bảng Horizonalization Matrix thể hiện trọn vẹn phát ngôn nguyên gốc, tiêu chí đánh giá giữ lại/loại bỏ, và đơn vị ý nghĩa tương ứng.",
+        "Nguyên tắc không thứ bậc ban đầu: Tuyệt đối không phân loại 'ý chính' hay 'ý phụ' dựa trên tần suất lặp lại ở bước này."
+      ],
+      "pitfalls": [
+        "Chọn lọc thiên vị từ trước (cherry-picking): Nhà nghiên cứu chỉ nhặt ra những câu nói phù hợp với kỳ vọng hoặc giả thuyết cá nhân và bỏ qua các phát ngôn khác.",
+        "Loại bỏ dữ liệu quá sớm: Vội vàng gộp hoặc cắt tỉa dữ liệu ngay từ lần đọc đầu tiên khi chưa hiểu trọn vẹn ngữ cảnh của người tham gia.",
+        "Nhầm lẫn giữa Horizonalization và mã hóa định lượng: Đếm tần suất xuất hiện của từ ngữ thay vì đánh giá giá trị ý nghĩa hiện tượng học của phát ngôn."
+      ],
+      "apa_reference": "Moustakas, C. (1994). Phenomenological research methods. SAGE Publications, Inc. https://doi.org/10.4135/9781412995658",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "hot-paper-esi-top-01",
@@ -23616,21 +23857,43 @@
     },
     {
       "id": "maximum-variation-sampling",
-      "term": "Maximum Variation Sampling",
-      "vietnamese": "Chọn mẫu biến thiên tối đa",
-      "vietnamese_variants": [],
+      "term": "Maximum Variation Sampling (Patton Framework)",
+      "vietnamese": "Chọn mẫu độ biến thiên tối đa / Chọn mẫu đa dạng hóa tối đa",
+      "vietnamese_variants": [
+        "Lấy mẫu biến thiên tối đa",
+        "Lấy mẫu tối đa hóa sự khác biệt",
+        "Heterogeneous Sampling"
+      ],
       "domain_tags": [
         "Qualitative Sampling"
       ],
-      "core_definition": "chọn các trường hợp cực đoan và đa dạng nhất để tìm ra mẫu hình cốt lõi.",
-      "seminal_citation": "Patton (2015)",
+      "core_definition": "Maximum Variation Sampling (Chọn mẫu biến thiên tối đa) là một trong những chiến lược chọn mẫu có mục đích quyền năng nhất trong nghiên cứu định tính do Michael Quinn Patton (2015) đề xuất. Chiến lược này chủ động tìm kiếm và tuyển chọn các trường hợp có sự khác biệt tối đa trên các chiều kích hoặc đặc tính then chốt (ví dụ: quy mô tổ chức, vị trí địa lý, thâm niên, mức độ thành công). Bất kỳ mẫu hình chung (common pattern) nào nổi lên xuyên suốt các trường hợp cực kỳ dị biệt này đều có giá trị phi thường vì chúng đại diện cho các nguyên lý cốt lõi, bất biến của hiện tượng.",
+      "seminal_citation": "Patton, M. Q. (2015). Qualitative Research & Evaluation Methods: Integrating Theory and Practice (4th ed.). SAGE Publications; Sandelowski, M. (1995). Sample size in qualitative research. Research in Nursing & Health, 18(2), 179-183.",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Maximum Variation Sampling according to Patton (2015).",
       "domain_tags_en": [
         "Qualitative Sampling"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Sampling",
+      "operational_mechanism": "Quy trình thực hiện: (1) Xác định trước các tiêu chí hoặc chiều kích phân hóa quan trọng nhất liên quan đến câu hỏi nghiên cứu; (2) Thiết lập ma trận chọn mẫu đa dạng (Sampling Grid) bao quát các thái cực khác nhau; (3) Tuyển chọn ít nhất một trường hợp đại diện cho từng ô thái cực trong ma trận; (4) Thu thập và phân tích dữ liệu nhằm tìm kiếm hai tầng phát hiện: (a) Các bản mô tả chi tiết phong phú độc nhất của từng trường hợp; (b) Các chủ đề cốt lõi chung xuất hiện xuyên suốt mọi trường hợp.",
+      "benchmarks": [
+        "Xây dựng Ma trận biến thiên (Variation Matrix): Phải hiển thị bảng ma trận các chiều kích biến thiên được sử dụng để tuyển chọn đối tượng.",
+        "Giá trị của các mẫu hình hội tụ: Các chủ đề xuất hiện ở tất cả các trường hợp đa dạng được coi là bằng chứng vững chắc nhất về bản chất của hiện tượng.",
+        "Quy mô mẫu: Thường yêu cầu quy mô mẫu lớn hơn các dạng chọn mẫu định tính khác (thường từ 15 đến 30 người tham gia hoặc 6 đến 10 ca điển cứu) để bao quát đủ các cực biến thiên."
+      ],
+      "pitfalls": [
+        "Biến thiên không có kiểm soát: Lựa chọn các trường hợp khác nhau ngẫu hứng mà không dựa trên các chiều kích lý thuyết có ý nghĩa.",
+        "Bỏ quên các phát hiện chung: Chỉ tập trung mô tả sự khác biệt giữa các case mà thất bại trong việc chưng cất ra các mẫu hình xuyên suốt (cross-cutting themes).",
+        "Cỡ mẫu quá nhỏ không đủ lấp đầy các ô ma trận: Đặt ra 5 chiều kích biến thiên nhưng chỉ phỏng vấn 6 người, dẫn đến tình trạng các cực biến thiên không được khảo sát thỏa đáng."
+      ],
+      "apa_reference": "Patton, M. Q. (2015). Qualitative research & evaluation methods: Integrating theory and practice (4th ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "mccrary-density-test",
@@ -33424,15 +33687,19 @@
     },
     {
       "id": "snowball-sampling",
-      "term": "Snowball sampling",
-      "vietnamese": "Chọn mẫu quả cầu tuyết (đối tượng được phỏng vấn giới thiệu tiếp các đối tượng khác).",
-      "vietnamese_variants": [],
+      "term": "Snowball Sampling / Chain-Referral Sampling",
+      "vietnamese": "Chọn mẫu quả cầu tuyết / Chọn mẫu giới thiệu dây chuyền",
+      "vietnamese_variants": [
+        "Lấy mẫu dây chuyền",
+        "Lấy mẫu theo mạng lưới",
+        "Chain-Referral Sampling"
+      ],
       "domain_tags": [
         "Research Onion",
         "Strategy"
       ],
-      "core_definition": "Chọn mẫu quả cầu tuyết (đối tượng được phỏng vấn giới thiệu tiếp các đối tượng khác).",
-      "seminal_citation": "Saunders et al. (2019); Saunders (2019); Goodman (1961)",
+      "core_definition": "Snowball Sampling (Chọn mẫu quả cầu tuyết hoặc giới thiệu dây chuyền) là kỹ thuật chọn mẫu phi xác suất chuyên biệt, bắt nguồn từ phân tích mạng lưới xã hội của Leo Goodman (1961) và được ứng dụng sâu rộng trong nghiên cứu định tính và xã hội học (Noy, 2008). Kỹ thuật này khởi đầu với một số ít người tham gia hạt giống (seed participants) thỏa mãn các tiêu chí nghiên cứu, sau đó dựa vào chính mạng lưới quan hệ xã hội của họ để được giới thiệu tiếp đến các đối tượng tiềm năng khác có cùng đặc điểm. Đây là phương pháp tối ưu để tiếp cận các quần thể ẩn (hidden/hard-to-reach populations) hoặc các chủ đề nhạy cảm.",
+      "seminal_citation": "Goodman, L. A. (1961). Snowball sampling. The Annals of Mathematical Statistics, 32(1), 148-170; Noy, C. (2008). Sampling knowledge: The hermeneutics of snowball sampling in qualitative research. International Journal of Social Research Methodology, 11(4), 327-344.",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
@@ -33440,7 +33707,25 @@
       "domain_tags_en": [
         "Research Onion",
         "Strategy"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Sampling",
+      "operational_mechanism": "Quy trình thực hiện: (1) Xác định và tuyển chọn các 'hạt giống' ban đầu (initial seeds) có mạng lưới xã hội đa dạng; (2) Thu thập dữ liệu và phỏng vấn người tham gia; (3) Đề nghị người tham gia giới thiệu 1-3 cá nhân khác thỏa mãn tiêu chí; (4) Kiểm tra tính độc lập và đa dạng của các mắt xích để tránh hiện tượng quẩn quanh trong một nhóm bạn bè khép kín (homophily bias); (5) Lặp lại quy trình đến khi đạt độ bão hòa thông tin.",
+      "benchmarks": [
+        "Sự đa dạng của các hạt giống ban đầu (Multiple Seeds Diversity): Phải xuất phát từ ít nhất 3-5 hạt giống độc lập, không quen biết nhau để tránh thiên kiến mạng lưới.",
+        "Ghi chép ma trận chuỗi giới thiệu (Referral Chain Tracking): Phải lưu giữ sơ đồ phả hệ giới thiệu (sociogram / referral tree) thể hiện độ sâu của từng chuỗi dây chuyền.",
+        "Quy tắc bảo mật và tự nguyện: Người được giới thiệu phải chủ động liên hệ hoặc người giới thiệu phải xin phép trước khi cung cấp thông tin liên lạc."
+      ],
+      "pitfalls": [
+        "Thiên kiến đồng nhất mạng lưới (Homophily / Bubble bias): Mẫu chỉ phản ánh một nhóm bạn bè hoặc đồng nghiệp cùng chung quan điểm, bỏ sót các phân khúc khác của quần thể.",
+        "Chỉ dùng 1 hạt giống duy nhất (Single-seed trap): Toàn bộ mẫu bắt nguồn từ 1 người duy nhất, làm méo mó nghiêm trọng góc nhìn dữ liệu.",
+        "Lạm dụng cho các quần thể dễ tiếp cận: Sử dụng chọn mẫu quả cầu tuyết cho sinh viên hoặc nhân viên công sở bình thường vì lý do lười biếng thay vì lý do quần thể ẩn."
+      ],
+      "apa_reference": "Noy, C. (2008). Sampling knowledge: The hermeneutics of snowball sampling in qualitative research. International Journal of Social Research Methodology, 11(4), 327-344. https://doi.org/10.1080/13645570701401305",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "sobel-test-for-indirect-effects",
@@ -36604,15 +36889,19 @@
     },
     {
       "id": "transcendental-phenomenology",
-      "term": "Transcendental Phenomenology",
-      "vietnamese": "Hiện tượng luận siêu nghiệm của Edmund Husserl tập trung vào mô tả bản chất trải nghiệm thuần túy",
-      "vietnamese_variants": [],
+      "term": "Transcendental Phenomenology (Husserl / Moustakas Framework)",
+      "vietnamese": "Hiện tượng học siêu nghiệm / Hiện tượng học mô tả",
+      "vietnamese_variants": [
+        "Hiện tượng học thuần túy",
+        "Hiện tượng học mô tả Husserl",
+        "Transcendental Descriptive Phenomenology"
+      ],
       "domain_tags": [
         "Philosophy",
         "Qualitative"
       ],
-      "core_definition": "Hiện tượng luận siêu nghiệm của Edmund Husserl tập trung vào mô tả bản chất trải nghiệm thuần túy.",
-      "seminal_citation": "Husserl (1913)",
+      "core_definition": "Transcendental Phenomenology là trường phái nghiên cứu định tính triết học bắt nguồn từ Edmund Husserl và được cụ thể hóa thành phương pháp luận nghiên cứu xã hội/tâm lý học bởi Clark Moustakas (1994). Khung tiếp cận này tập trung mô tả bản chất cấu trúc (structural essence) của một hiện tượng thông qua trải nghiệm trực tiếp của người tham gia, trong đó nhà nghiên cứu phải chủ động thực hiện 'epoché' (phenomenological bracketing) - đình chỉ mọi thiên kiến, phán đoán bản thể học và tri thức tiên nghiệm về thế giới tự nhiên để tiếp cận trải nghiệm dưới dạng thức nguyên sơ, thuần khiết nhất (noema - cái được trải nghiệm, và noesis - cách thức trải nghiệm).",
+      "seminal_citation": "Husserl, E. (1913/1982). Ideas Pertaining to a Pure Phenomenology and to a Phenomenological Philosophy. Kluwer Academic Publishers; Moustakas, C. (1994). Phenomenological Research Methods. SAGE Publications.",
       "tier": "curated",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #2632",
@@ -36620,7 +36909,27 @@
       "domain_tags_en": [
         "Philosophy",
         "Qualitative"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Phenomenology",
+      "operational_mechanism": "Quy trình phân tích hiện tượng học siêu nghiệm gồm 6 giai đoạn nghiêm ngặt của Moustakas (1994): (1) Epoché: Gác lại định kiến và lập nhật ký phản tư cá nhân; (2) Horizonalization (Chân trời hóa): Liệt kê mọi phát ngôn có nghĩa của người tham gia với trọng số bình đẳng; (3) Elimination of Overlap: Loại bỏ các câu trùng lặp, giữ lại các đơn vị ý nghĩa cốt lõi (invariant constituents/meaning units); (4) Clustering into Themes: Nhóm các đơn vị ý nghĩa thành các chủ đề hiện tượng học cốt lõi; (5) Textural & Structural Description: Xây dựng mô tả cấu trúc kết cấu ('noema' - cái gì đã xảy ra) và mô tả cấu trúc trải nghiệm ('noesis' - hiện tượng đã được trải nghiệm như thế nào trong không gian, thời gian, thể xác); (6) Synthesis of Essence: Tổng hợp bản chất phổ quát đại diện cho hiện tượng nghiên cứu.",
+      "benchmarks": [
+        "Quy mô mẫu chuẩn hiện tượng học: 3 đến 15 người tham gia có trải nghiệm sâu sắc, trực tiếp về hiện tượng (Creswell & Poth, 2018; Polkinghorne, 1989).",
+        "Yêu cầu phỏng vấn chuyên sâu: 2 - 3 vòng phỏng vấn trên mỗi người tham gia, thời lượng 60 - 120 phút/buổi nhằm đào sâu lớp kết cấu (textural) và cấu trúc (structural) của trải nghiệm.",
+        "Thực hiện Epoché / Bracketing minh bạch: Phải có bảng trần thuật phản tư (reflexive statement) hoặc ma trận giải mã định kiến trước khi bước vào phỏng vấn và phân tích dữ liệu.",
+        "Nguyên tắc Horizonalization: 100% câu trích dẫn thô ban đầu phải được coi là có giá trị ngang nhau (equal value) trước khi tiến hành chọn lọc các yếu tố bất biến (invariant constituents)."
+      ],
+      "pitfalls": [
+        "Lẫn lộn với Hiện tượng học thông diễn (Hermeneutic Phenomenology): Cố gắng 'diễn giải' động cơ ngầm hoặc bối cảnh lịch sử xã hội thay vì tập trung 'mô tả thuần túy' (pure description) bản chất trải nghiệm.",
+        "Thực hiện Epoché chiếu lệ (superficial bracketing): Chỉ tuyên bố bãi bỏ định kiến trong một câu văn ngắn mà không cung cấp quy trình tự chất vấn, nhật ký phản tư hoặc kiểm toán dấu vết phản tư.",
+        "Thiếu tổng hợp bản chất (Synthesis of Essence): Dừng lại ở việc báo cáo các chủ đề (themes) rời rạc giống như phân tích chủ đề (thematic analysis) thông thường mà không viết đoạn tổng hợp bản chất chung (structural synthesis).",
+        "Đối tượng nghiên cứu thiếu trải nghiệm trực tiếp (second-hand experience): Chọn người tham gia chỉ nghe kể lại hoặc quan sát từ xa, làm mất đi tính nguyên bản của hiện tượng sống (lived experience)."
+      ],
+      "apa_reference": "Moustakas, C. (1994). Phenomenological research methods. SAGE Publications, Inc. https://doi.org/10.4135/9781412995658",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "transcendental-phenomenology-husserl",
@@ -37174,75 +37483,163 @@
     },
     {
       "id": "type-1-single-case-holistic-design",
-      "term": "Type 1: Single-case (holistic) design",
-      "vietnamese": "Nghiên cứu đơn ca toàn diện.",
-      "vietnamese_variants": [],
+      "term": "Type 1: Single-Case (Holistic) Design (Yin Framework)",
+      "vietnamese": "Thiết kế đơn trường hợp toàn diện (Loại 1 - Khung Robert K. Yin)",
+      "vietnamese_variants": [
+        "Nghiên cứu một trường hợp đơn vị phân tích đơn nhất",
+        "Single-case holistic design",
+        "Thiết kế tình huống đơn toàn diện"
+      ],
       "domain_tags": [
         "Case Study Research"
       ],
-      "core_definition": "Nghiên cứu đơn ca toàn diện.",
-      "seminal_citation": "Yin (2014)",
+      "core_definition": "Type 1 Single-Case (Holistic) Design là một trong bốn dạng thiết kế nghiên cứu trường hợp kinh điển theo ma trận của Robert K. Yin (2018). Thiết kế này khảo sát duy nhất một trường hợp cụ thể (single case) và chỉ duy trì một đơn vị phân tích tổng thể duy nhất ở cấp độ vĩ mô (single global unit of analysis - ví dụ: toàn bộ một tổ chức, một chương trình can thiệp hoặc một cuộc sáp nhập doanh nghiệp) mà không phân chia thành các tiểu đơn vị cấp dưới.",
+      "seminal_citation": "Yin, R. K. (2018). Case Study Research and Applications: Design and Methods (6th ed.). SAGE Publications.",
       "tier": "index",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Type 1: Single-case (holistic) design according to Yin (2014).",
       "domain_tags_en": [
         "Case Study Research"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Case Study",
+      "operational_mechanism": "Cơ sở hợp lý hóa việc chọn thiết kế Đơn trường hợp theo Yin gồm 5 trường hợp trọng yếu: (1) Trường hợp then chốt (Critical case) để kiểm chứng một lý thuyết đã định hình rõ; (2) Trường hợp cực đoan hoặc độc nhất (Extreme or unique case) hiếm thấy trong thực tiễn; (3) Trường hợp tiêu biểu hoặc điển hình (Representative or typical case) phản ánh điều kiện phổ biến; (4) Trường hợp mang tính mặc khải (Revelatory case) mở ra cơ hội tiếp cận một hiện tượng trước đây không thể thâm nhập; (5) Trường hợp theo chiều dọc (Longitudinal case) nghiên cứu cùng một đối tượng qua nhiều mốc thời gian. Toàn bộ phân tích tập trung vào bức tranh tổng thể của tổ chức.",
+      "benchmarks": [
+        "Bắt buộc phải thỏa mãn ít nhất 1 trong 5 cơ sở duy lý luận của Yin (Critical, Unique, Typical, Revelatory, Longitudinal).",
+        "Duy trì tính toàn diện ở cấp vĩ mô: Không đi sâu mổ xẻ nội bộ các phòng ban như các thực thể phân tích tách biệt.",
+        "Độ sâu của thâm nhập thực địa: Đòi hỏi khối lượng dữ liệu phỏng vấn và tài liệu lưu trữ đồ sộ để bao quát toàn cảnh tổ chức."
+      ],
+      "pitfalls": [
+        "Trừu tượng hóa quá mức (high level of abstractness): Phân tích giữ ở mức độ quá chung chung, không nắm bắt được các tương tác cụ thể của hiện tượng.",
+        "Trôi dạt câu hỏi nghiên cứu không có tiểu đơn vị kiểm soát: Khi hiện tượng bộc lộ các mâu thuẫn nội bộ, nhà nghiên cứu lúng túng vì không thiết lập sẵn các đơn vị phân tích nhánh.",
+        "Rủi ro trường hợp đổ vỡ (case failure): Đặt cược toàn bộ công trình nghiên cứu vào 1 tổ chức duy nhất; nếu đối tượng rút lui hoặc thay đổi lãnh đạo từ chối hợp tác, nghiên cứu sẽ bị phá sản hoàn toàn."
+      ],
+      "apa_reference": "Yin, R. K. (2018). Case study research and applications: Design and methods (6th ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "type-2-single-case-embedded-design",
-      "term": "Type 2: Single-case (embedded) design",
-      "vietnamese": "Nghiên cứu đơn ca lồng ghép (có các tiểu đơn vị phân tích con bên trong).",
-      "vietnamese_variants": [],
+      "term": "Type 2: Single-Case (Embedded) Design (Yin Framework)",
+      "vietnamese": "Thiết kế đơn trường hợp lồng ghép (Loại 2 - Khung Robert K. Yin)",
+      "vietnamese_variants": [
+        "Nghiên cứu một trường hợp đa đơn vị phân tích",
+        "Single-case embedded design",
+        "Thiết kế tình huống đơn lồng ghép"
+      ],
       "domain_tags": [
         "Case Study Research"
       ],
-      "core_definition": "Nghiên cứu đơn ca lồng ghép (có các tiểu đơn vị phân tích con bên trong).",
-      "seminal_citation": "Yin (2014)",
+      "core_definition": "Type 2 Single-Case (Embedded) Design là thiết kế nghiên cứu trường hợp theo khung Yin (2018), trong đó nghiên cứu tập trung vào một trường hợp tổng thể duy nhất (single case - ví dụ: một bệnh viện đa khoa), nhưng bao hàm bên trong nó nhiều tiểu đơn vị phân tích lồng ghép (multiple embedded subunits of analysis - ví dụ: các khoa lâm sàng, nhóm bác sĩ, hoặc hồ sơ bệnh án của các nhóm bệnh nhân khác nhau). Thiết kế này tạo ra năng lực phân tích đa tầng cực kỳ sâu sắc.",
+      "seminal_citation": "Yin, R. K. (2018). Case Study Research and Applications: Design and Methods (6th ed.). SAGE Publications.",
       "tier": "index",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Type 2: Single-case (embedded) design according to Yin (2014).",
       "domain_tags_en": [
         "Case Study Research"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Case Study",
+      "operational_mechanism": "Quy trình thực hiện: (1) Xác định ranh giới trường hợp lớn (Main case / Context level); (2) Xác định rõ các tiểu đơn vị lồng ghép (Embedded subunits) cần khảo sát và phương pháp thu thập dữ liệu riêng cho từng tiểu đơn vị; (3) Phân tích dữ liệu ở từng tiểu đơn vị trước; (4) Tích hợp dữ liệu từ các tiểu đơn vị ngược trở lên để lý giải cho hiện tượng tổng thể của trường hợp lớn.",
+      "benchmarks": [
+        "Phân tầng đơn vị phân tích minh bạch: Phải có sơ đồ cấu trúc thể hiện ranh giới giữa Đơn vị phân tích chính (Primary Case) và Các đơn vị lồng ghép (Subunits).",
+        "Tính nhất quán trong phương pháp đo lường giữa các đơn vị con: Các tiểu đơn vị cần được khảo sát theo cùng một bộ tiêu chí/công cụ để có thể so sánh chéo.",
+        "Đóng góp kép: Vừa cung cấp phát hiện sâu sắc ở cấp vi mô của từng tiểu đơn vị, vừa giải thích được động năng của hệ thống vĩ mô."
+      ],
+      "pitfalls": [
+        "Sa lầy vào cấp tiểu đơn vị (subunits trap): Nghiên cứu viên tập trung quá mức vào chi tiết của từng phòng ban con mà quên mất việc kết nối, quay trở lại giải quyết câu hỏi tổng thể của trường hợp lớn.",
+        "Hiểu nhầm là nghiên cứu đa trường hợp (multiple cases): Lầm tưởng việc khảo sát 3 phòng ban trong 1 công ty là nghiên cứu 3 trường hợp độc lập, dẫn đến sai lệch trong logic nhân bản (replication logic).",
+        "Bất cân xứng dữ liệu: Thu thập quá nhiều dữ liệu ở tiểu đơn vị này nhưng lại sơ sài ở tiểu đơn vị khác, làm suy yếu tính đại diện nội bộ của case."
+      ],
+      "apa_reference": "Yin, R. K. (2018). Case study research and applications: Design and methods (6th ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "type-3-multiple-case-holistic-design",
-      "term": "Type 3: Multiple-case (holistic) design",
-      "vietnamese": "Nghiên cứu đa ca toàn diện.",
-      "vietnamese_variants": [],
+      "term": "Type 3: Multiple-Case (Holistic) Design (Yin Framework)",
+      "vietnamese": "Thiết kế đa trường hợp toàn diện (Loại 3 - Khung Robert K. Yin)",
+      "vietnamese_variants": [
+        "Nghiên cứu nhiều trường hợp đơn vị phân tích đơn nhất",
+        "Multiple-case holistic design",
+        "Thiết kế đa tình huống toàn diện"
+      ],
       "domain_tags": [
         "Case Study Research"
       ],
-      "core_definition": "Nghiên cứu đa ca toàn diện.",
-      "seminal_citation": "Yin (2014)",
+      "core_definition": "Type 3 Multiple-Case (Holistic) Design là thiết kế nghiên cứu trường hợp khảo sát từ 2 trường hợp trở lên (multiple cases), trong đó mỗi trường hợp được nghiên cứu như một thực thể toàn vẹn duy nhất ở cấp độ vĩ mô (holistic unit of analysis) mà không phân nhỏ thành các tiểu đơn vị. Thiết kế này vận hành dựa trên 'logic nhân bản' (replication logic - gồm nhân bản trực tiếp để khẳng định kết quả hoặc nhân bản lý thuyết để giải thích sự khác biệt) chứ không dựa trên logic chọn mẫu xác suất.",
+      "seminal_citation": "Yin, R. K. (2018). Case Study Research and Applications: Design and Methods (6th ed.). SAGE Publications; Eisenhardt, K. M. (1989). Building theories from case study research. Academy of Management Review, 14(4), 532-550.",
       "tier": "index",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Type 3: Multiple-case (holistic) design according to Yin (2014).",
       "domain_tags_en": [
         "Case Study Research"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Case Study",
+      "operational_mechanism": "Khung vận hành theo Yin (2018): (1) Phát triển khung lý thuyết ban đầu; (2) Lựa chọn các trường hợp theo logic nhân bản: Literal Replication (chọn các case dự kiến sẽ cho ra kết quả tương đồng) hoặc Theoretical Replication (chọn các case dự kiến sẽ tạo ra kết quả đối lập vì những lý do có thể dự đoán trước theo lý thuyết); (3) Viết báo cáo chi tiết cho từng trường hợp đơn lẻ (individual case report); (4) Tiến hành tổng hợp xuyên trường hợp (cross-case synthesis) để tinh chỉnh lý thuyết.",
+      "benchmarks": [
+        "Số lượng trường hợp khuyến nghị: Thường từ 4 đến 10 trường hợp để đạt độ bão hòa lý thuyết và sức mạnh nhân bản (Eisenhardt, 1989; Yin, 2018).",
+        "Áp dụng chuẩn mực Replication Logic: Bắt buộc phải biện minh lý do chọn từng case dựa trên Literal Replication hay Theoretical Replication trong phần phương pháp.",
+        "Tính nhất quán trong giao thức: Toàn bộ các trường hợp phải tuân thủ nghiêm ngặt cùng một Case Study Protocol chuẩn hóa."
+      ],
+      "pitfalls": [
+        "Áp dụng tư duy lấy mẫu điều tra (sampling logic): Tuyên bố chọn 6 doanh nghiệp 'để mang tính đại diện cho nền kinh tế', vi phạm nghiêm trọng bản chất của nghiên cứu định tính.",
+        "Phân tích xuyên trường hợp quá vội vàng: Bỏ qua bước viết báo cáo thấu đáo từng trường hợp (within-case analysis), vội vàng so sánh chéo dẫn đến các kết luận phiến diện, hời hợt.",
+        "Thiếu nguồn lực quản trị nghiên cứu: Không đủ thời gian và nhân lực để thâm nhập sâu vào nhiều trường hợp, khiến dữ liệu ở từng case đều mỏng và thiếu độ tin cậy."
+      ],
+      "apa_reference": "Yin, R. K. (2018). Case study research and applications: Design and methods (6th ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "type-4-multiple-case-embedded-design",
-      "term": "Type 4: Multiple-case (embedded) design",
-      "vietnamese": "Nghiên cứu đa ca lồng ghép.",
-      "vietnamese_variants": [],
+      "term": "Type 4: Multiple-Case (Embedded) Design (Yin Framework)",
+      "vietnamese": "Thiết kế đa trường hợp lồng ghép (Loại 4 - Khung Robert K. Yin)",
+      "vietnamese_variants": [
+        "Nghiên cứu nhiều trường hợp đa đơn vị phân tích",
+        "Multiple-case embedded design",
+        "Thiết kế đa tình huống lồng ghép"
+      ],
       "domain_tags": [
         "Case Study Research"
       ],
-      "core_definition": "Nghiên cứu đa ca lồng ghép.",
-      "seminal_citation": "Yin (2014)",
+      "core_definition": "Type 4 Multiple-Case (Embedded) Design là thiết kế phức tạp và chặt chẽ nhất trong ma trận phân loại của Robert K. Yin (2018). Nghiên cứu đồng thời khảo sát nhiều trường hợp (multiple cases) theo logic nhân bản, và bên trong mỗi trường hợp lại chứa đựng nhiều tiểu đơn vị phân tích lồng ghép (multiple embedded subunits). Thiết kế này kết hợp sức mạnh của việc so sánh xuyên trường hợp ở cấp độ vĩ mô với độ sâu sắc của việc phân tích định lượng/định tính ở các tiểu đơn vị vi mô.",
+      "seminal_citation": "Yin, R. K. (2018). Case Study Research and Applications: Design and Methods (6th ed.). SAGE Publications.",
       "tier": "index",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Type 4: Multiple-case (embedded) design according to Yin (2014).",
       "domain_tags_en": [
         "Case Study Research"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Case Study",
+      "operational_mechanism": "Cấu trúc phân tích ma trận 2 chiều: (1) Chiều ngang: So sánh đối chiếu giữa các trường hợp lớn (Cross-case comparison); (2) Chiều dọc: Phân tích sâu từng tiểu đơn vị bên trong từng trường hợp (Subunit analysis within case); (3) Tích hợp ma trận: So sánh đối chiếu giữa các tiểu đơn vị tương đương xuyên suốt các trường hợp (Cross-subunit cross-case synthesis - ví dụ: so sánh cách thức vận hành của ban giám đốc tài chính tại 4 tập đoàn khác nhau).",
+      "benchmarks": [
+        "Cấu trúc dữ liệu phân tầng nghiêm ngặt: Phải lưu trữ hồ sơ tách biệt giữa dữ liệu cấp case vĩ mô và dữ liệu cấp subunit vi mô.",
+        "Ma trận so sánh chéo đa chiều: Báo cáo kết quả phải có bảng tổng hợp tích hợp cả cấp độ tiểu đơn vị và cấp độ toàn thể trường hợp.",
+        "Sức mạnh khái quát hóa lý thuyết vượt trội: Kết quả rút ra có độ tin cậy và giá trị nội tại/ngoại tại cao nhất trong các thiết kế nghiên cứu trường hợp."
+      ],
+      "pitfalls": [
+        "Quá tải dữ liệu (data overload catastrophe): Khối lượng dữ liệu khổng lồ từ nhiều trường hợp và nhiều tiểu đơn vị khiến nghiên cứu viên bị ngập ngụa, dẫn đến phân tích chậm trễ hoặc bỏ cuộc.",
+        "Độ phức tạp vượt ngoài tầm kiểm soát: Không duy trì được cấu trúc báo cáo mạch lạc, khiến người đọc bị lạc lối giữa dữ liệu của case lớn và các phân tích của từng case con.",
+        "Bỏ quên mục tiêu lý thuyết cốt lõi: Mải mê mô tả sự khác biệt giữa các tiểu đơn vị mà làm lu mờ câu trả lời cho câu hỏi nghiên cứu trung tâm."
+      ],
+      "apa_reference": "Yin, R. K. (2018). Case study research and applications: Design and methods (6th ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "type-i-construct-superordinate-construct",
@@ -38510,21 +38907,43 @@
     },
     {
       "id": "within-case-analysis-vs-cross-case-synthesis",
-      "term": "Within-Case Analysis vs. Cross-Case Synthesis",
-      "vietnamese": "Phân tích Nội tại Từng trường hợp vs. Tổng hợp Đối chiếu Đa trường hợp",
-      "vietnamese_variants": [],
+      "term": "Within-Case Analysis (Eisenhardt / Miles & Huberman Framework)",
+      "vietnamese": "Phân tích nội tại trường hợp / Phân tích bên trong tình huống",
+      "vietnamese_variants": [
+        "Phân tích nội trường hợp",
+        "Đối chiếu Within-Case và Cross-Case",
+        "Within-Case Analysis Protocol"
+      ],
       "domain_tags": [
         "Case Study Rigour"
       ],
-      "core_definition": "Phân tích Nội tại Từng trường hợp vs. Tổng hợp Đối chiếu Đa trường hợp.",
-      "seminal_citation": "Yin (2018)",
+      "core_definition": "Within-Case Analysis là giai đoạn phân tích dữ liệu nền tảng và bắt buộc trong nghiên cứu trường hợp (đặc biệt là nghiên cứu xây dựng lý thuyết theo Kathleen Eisenhardt, 1989). Phương pháp này đòi hỏi nhà nghiên cứu phải đắm chìm sâu sắc vào từng trường hợp đơn lẻ như một thực thể độc lập, xây dựng bản mô tả trường hợp chi tiết (thick case write-up) nhằm nhận diện toàn bộ các động năng nội tại, mối quan hệ nhân quả và các mẫu hình đặc thù của riêng trường hợp đó trước khi tìm kiếm sự khái quát hóa giữa các trường hợp.",
+      "seminal_citation": "Eisenhardt, K. M. (1989). Building theories from case study research. Academy of Management Review, 14(4), 532-550; Miles, M. B., Huberman, A. M., & Saldaña, J. (2020). Qualitative Data Analysis: A Methods Sourcebook (4th ed.). SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Within-Case Analysis vs. Cross-Case Synthesis according to Yin (2018).",
       "domain_tags_en": [
         "Case Study Rigour"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Case Study",
+      "operational_mechanism": "Quy trình thực hiện theo Eisenhardt (1989): (1) Thu thập toàn bộ bằng chứng liên quan đến một trường hợp cụ thể; (2) Viết bản trần thuật trường hợp toàn diện (Case Write-Up) - thường thuần túy mang tính mô tả chi tiết dòng sự kiện, bối cảnh, con người và quyết định; (3) Nhận diện các mẫu hình và cơ chế vận hành độc nhất của case; (4) Khóa lại bản hiểu biết sâu sắc về trường hợp đó trước khi mở dữ liệu của trường hợp kế tiếp.",
+      "benchmarks": [
+        "Độ dày của báo cáo trường hợp: Mỗi case write-up thường dài từ 10 đến 30 trang tài liệu phân tích nội bộ phản ánh trung thực toàn cảnh thực địa.",
+        "Tính độc lập trong phân tích ban đầu: Không để các phát hiện hoặc ấn tượng từ trường hợp thứ nhất làm thiên vị cách mã hóa và nhìn nhận ở trường hợp thứ hai.",
+        "Tạo lập dòng thời gian sự kiện (Event Timeline/Chronology): Bắt buộc lập sơ đồ chuỗi thời gian các sự kiện quan trọng trong nội bộ trường hợp để làm rõ cơ chế nhân quả."
+      ],
+      "pitfalls": [
+        "Làm qua loa để nhảy cóc sang so sánh: Viết tóm tắt trường hợp hời hợt chỉ vài đoạn văn rồi vội vã đối chiếu so sánh xuyên trường hợp (cross-case comparison).",
+        "Chết ngập trong dữ liệu mô tả (data asphyxiation): Báo cáo Within-case biến thành một cuốn tiểu thuyết tự sự dài dòng không có tiêu điểm phân tích, thiếu tính kết nối với các khái niệm lý thuyết.",
+        "Thiếu tính nhất quán về cấu trúc giữa các bản write-up: Mỗi trường hợp được phân tích theo một khung ngẫu hứng khác nhau, khiến việc tổng hợp xuyên trường hợp sau đó trở nên bất khả thi."
+      ],
+      "apa_reference": "Eisenhardt, K. M. (1989). Building theories from case study research. Academy of Management Review, 14(4), 532-550. https://doi.org/10.5465/amr.1989.4308385",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "within-case-and-cross-case-design",

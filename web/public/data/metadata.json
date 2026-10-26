@@ -1,6 +1,6 @@
 {
   "version": "10.2-peer-reviewed-cleaned",
-  "last_updated": "2026-10-26T08:45:42.346Z",
+  "last_updated": "2026-10-26",
   "statistics": {
     "total_flagship_terms": 82,
     "total_corpus_terms": 2571,
@@ -8,7 +8,7 @@
     "total_acronyms": 148,
     "total_scholarly_items": 2801
   },
-  "flagship_terms": "data/methodology_terms.json",
+  "flagship_terms": 217,
   "acronyms": "data/acronyms.json",
   "editorial_board": {
     "lead_reviewer": "ThS. Trần Thanh Tùng",
