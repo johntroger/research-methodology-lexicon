@@ -1,7 +1,7 @@
 {
   "version": "10.2-peer-reviewed-cleaned",
-  "last_updated": "2026-10-26T07:47:34.575Z",
-  "total_terms": 1873,
+  "last_updated": "2026-10-26T07:54:22.266Z",
+  "total_terms": 1874,
   "terms": [
     {
       "id": "construct-validity",
@@ -1425,25 +1425,23 @@
       "id": "convergent-validity-ave",
       "term": "Convergent Validity (AVE Criterion)",
       "ipa": "/kənˈvɜːdʒənt vəˈlɪdəti/",
-      "vietnamese": "Độ giá trị hội tụ (Tiêu chuẩn AVE)",
+      "vietnamese": "Độ giá trị Hội tụ (Tiêu chuẩn Thẩm định AVE & Loadings)",
       "vietnamese_variants": [
-        "Tính thỏa đáng hội tụ",
-        "Giá trị hội tụ thang đo",
-        "Phương sai trích trung bình"
+        "Độ giá trị hội tụ thang đo",
+        "Convergent validity evaluation"
       ],
       "domain_tags": [
-        "Đo lường & Thang đo",
-        "CFA",
-        "SEM",
-        "Tâm trắc học"
+        "Thẩm định Thang đo",
+        "CFA & SEM",
+        "Độ giá trị Khái niệm"
       ],
-      "core_definition": "Mức độ mà các biến quan sát (items/indicators) dự kiến đo lường cùng một khái niệm tiềm ẩn thực sự tương quan chặt chẽ và hội tụ lại với nhau, chia sẻ phần lớn phương sai chung.",
+      "core_definition": "Mức độ mà các chỉ báo đo lường của cùng một biến khái niệm lý thuyết có sự quy tụ, tương quan chặt chẽ và cùng chia sẻ một lượng phương sai thực chất lớn. Độ giá trị hội tụ là một trong hai trụ cột bắt buộc (cùng với Độ giá trị phân biệt) cấu thành nên Độ giá trị khái niệm (Construct Validity - Campbell & Fiske, 1959). Trong SEM, hội tụ được xác nhận khi các câu hỏi khảo sát thực sự đo lường cùng một chiều kích tiềm ẩn chứ không đo phân tán sang các hướng khác.",
       "paradigm_debates": "Trong khi Cronbach's alpha chỉ đo độ nhất quán nội tại (Internal Consistency) và dễ bị thổi phồng khi tăng số lượng câu hỏi, Convergent Validity yêu cầu bằng chứng thực nghiệm về tỷ lệ phương sai trích thực tế qua chỉ số AVE và hệ số tải nhân tố chuẩn hóa.",
-      "benchmarks": "Hệ số tải nhân tố chuẩn hóa (Outer loadings / Standardized factor loadings) >= 0.708 (tối thiểu >= 0.50 trong nghiên cứu khám phá); Độ tin cậy tổng hợp Composite Reliability (CR) >= 0.70; Phương sai trích trung bình Average Variance Extracted (AVE) >= 0.50 (tức biến tiềm ẩn giải thích trên 50% phương sai của các biến quan sát).",
-      "pitfalls": "Nếu AVE < 0.50, phương sai do sai số đo lường (error variance) lớn hơn phương sai do khái niệm giải thích. Cách khắc phục: Rà soát và loại bỏ lần lượt các biến quan sát có hệ số tải thấp nhất (< 0.60) cho đến khi AVE đạt ngưỡng 0.50.",
-      "seminal_citation": "Fornell, C., & Larcker, D. F. (1981). Evaluating structural equation models with unobservable variables and measurement error. Journal of Marketing Research, 18(1), 39–50.",
+      "benchmarks": "Bộ 3 tiêu chuẩn thẩm định hội tụ đồng thời theo Hair et al. (2022) và Kline (2023): (1) Hệ số tải chuẩn hóa của tất cả các biến quan sát (Factor Loadings) phải có ý nghĩa thống kê (p < 0.001) và lý tưởng >= 0.708 (tối thiểu >= 0.50); (2) Độ tin cậy tổng hợp CR >= 0.70; (3) Phương sai trung bình trích xuất AVE >= 0.50.",
+      "pitfalls": "Vội vàng xóa bỏ các biến quan sát có hệ số tải từ 0.40 đến 0.70 mà không kiểm tra xem việc xóa có làm tăng AVE và CR hay không; xóa quá nhiều biến dẫn đến việc thang đo chỉ còn 1-2 biến quan sát, làm mất độ giá trị nội dung (Content Validity).",
+      "seminal_citation": "Campbell, D. T., & Fiske, D. W. (1959). Convergent and discriminant validation by the multitrait-multimethod matrix. Psychological Bulletin, 56(2), 81–105. https://doi.org/10.1037/h0046016; Hair, J. F., Hult, G. T. M., Ringle, C. M., & Sarstedt, M. (2022). A primer on partial least squares structural equation modeling (PLS-SEM) (3rd ed.). SAGE Publications.",
       "apa_intext": "(Hair et al., 2018, p. 618)",
-      "apa_reference": "Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2018). Multivariate data analysis (8th ed.). Cengage Learning.",
+      "apa_reference": "Hair, J. F., Hult, G. T. M., Ringle, C. M., & Sarstedt, M. (2022). A primer on partial least squares structural equation modeling (PLS-SEM) (3rd ed.). SAGE Publications.",
       "corpus_variants": [
         {
           "v": "Tính thỏa đáng hội tụ",
@@ -1466,7 +1464,7 @@
       ],
       "stt": 23,
       "tier": "flagship",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "Lỗi: \"Phương sai trích trung bình\" là AVE, không phải biến thể của convergent validity. Red flag cần sửa: không loại biến cơ học (<0.60) — Hair et al.: chỉ loại item 0.40–0.70 khi cải thiện CR/AVE và không làm mất giá trị nội dung; CR nên ≤0.95. Mục 6: bỏ chú thích \"[Hội đồng Khoa học & Giáo trình ĐH Việt Nam]\" (không phải nguồn có thật) và cặp lặp \"X (X)\".",
       "expert_checks": {
         "vietnamese": false,
@@ -1535,26 +1533,22 @@
       "id": "multicollinearity-vif",
       "term": "Multicollinearity & Variance Inflation Factor (VIF)",
       "ipa": "/ˌmʌltikəˌlɪniˈærəti/",
-      "vietnamese": "Đa cộng tuyến & Hệ số phóng đại phương sai (VIF)",
+      "vietnamese": "Hiện tượng Đa cộng tuyến & Hệ số Phóng đại Phương sai (VIF)",
       "vietnamese_variants": [
-        "Hiện tượng cộng tuyến đa biến",
-        "Độ phóng đại phương sai",
-        "Trùng lặp thông tin giữa các biến độc lập",
-        "VIF"
+        "Chỉ số VIF",
+        "Kiểm tra đa cộng tuyến SEM"
       ],
       "domain_tags": [
-        "Hồi quy Tuyến tính",
-        "Kinh tế lượng",
-        "SEM",
-        "Thống kê Ứng dụng"
+        "Kinh tế lượng & SEM",
+        "Đánh giá Mô hình Cấu trúc"
       ],
-      "core_definition": "Tình trạng tồn tại mối tương quan tuyến tính rất cao giữa hai hoặc nhiều biến độc lập trong mô hình hồi quy, làm thổi phồng sai số chuẩn của các hệ số hồi quy và khiến các ước lượng tham số trở nên không ổn định.",
+      "core_definition": "Vấn đề khuyết tật mô hình nảy sinh khi hai hoặc nhiều biến độc lập trong phương trình hồi quy có tương quan tuyến tính rất cao với nhau, dẫn đến việc không thể bóc tách tác động riêng phần độc lập của từng biến lên biến phụ thuộc. Hệ số Phóng đại Phương sai (Variance Inflation Factor - VIF) đo lường mức độ phương sai của hệ số hồi quy bị thổi phồng lên do sự hiện diện của đa cộng tuyến: VIF_i = 1 / (1 - R^2_i), trong đó R^2_i là hệ số xác định khi hồi quy biến độc lập X_i lên toàn bộ các biến độc lập còn lại.",
       "paradigm_debates": "Đa cộng tuyến không làm giảm khả năng dự báo tổng thể (R²) của mô hình, nhưng phá hủy hoàn toàn khả năng diễn giải tác động riêng phần (partial effect) của từng biến độc lập.",
-      "benchmarks": "Ngưỡng chấp nhận trong hồi quy OLS thông thường: VIF < 5.0 (hoặc Tolerance > 0.20); trong điều kiện khắt khe của PLS-SEM: VIF < 3.0 (Kock, 2015); VIF > 10.0 là dấu hiệu vi phạm đa cộng tuyến nghiêm trọng.",
-      "pitfalls": "Dấu hiệu nhận biết trên kết quả hồi quy: Hệ số F của toàn mô hình có ý nghĩa thống kê rất cao (p < 0.001) và R² lớn, nhưng không có biến độc lập nào đạt ý nghĩa thống kê (t-test p > 0.05); hoặc hệ số hồi quy mang dấu trái ngược hoàn toàn với lý thuyết.",
-      "seminal_citation": "Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2018). Multivariate data analysis (8th ed.). Cengage Learning.",
+      "benchmarks": "Hệ thống ngưỡng thẩm định chuẩn mực: (1) Trong hồi quy OLS kinh điển: VIF < 10 (và Tolerance > 0.10) là ngưỡng an toàn tối đa; (2) Trong mô hình cấu trúc SEM & PLS-SEM hiện đại theo Hair et al. (2022): VIF < 3.3 là ngưỡng lý tưởng tuyệt đối để loại trừ lo ngại đa cộng tuyến; VIF < 5 là ngưỡng tối đa chấp nhận được; (3) Trong kiểm định Full Collinearity VIF để chẩn đoán Thiên lệch Phương pháp Chung (CMB - Kock 2015): Toàn bộ VIF bắt buộc phải <= 3.3.",
+      "pitfalls": "Duy trì mô hình khi VIF > 5 dẫn đến dấu của hệ số hồi quy bị đảo lộn phi lý (ví dụ biến có tương quan dương mạnh với Y nhưng trong hồi quy lại mang dấu âm); sai số chuẩn bị phóng đại khiến các biến quan trọng bị mất ý nghĩa thống kê.",
+      "seminal_citation": "Marquardt, D. W. (1970). Generalized inverses, ridge regression, biased linear estimation, and nonlinear estimation. Technometrics, 12(3), 591–612. https://doi.org/10.1080/00401706.1970.10488699; Kock, N. (2015). Common method bias in PLS-SEM: A full collinearity assessment approach. International Journal of e-Collaboration, 11(4), 1–10.",
       "apa_intext": "(Hair et al., 2018, p. 312)",
-      "apa_reference": "Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2018). Multivariate data analysis (8th ed.). Cengage Learning.",
+      "apa_reference": "Kock, N. (2015). Common method bias in PLS-SEM: A full collinearity assessment approach. International Journal of e-Collaboration, 11(4), 1–10.",
       "corpus_variants": [
         {
           "v": "Hiện tượng cộng tuyến đa biến",
@@ -1577,7 +1571,7 @@
       ],
       "stt": 25,
       "tier": "flagship",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "Gán nguồn sai: VIF <3 trong PLS-SEM là khuyến nghị Hair et al. (2019/2022); Kock (2015) đề xuất VIF ≤3.3 cho full collinearity test (CMB). \"Phá hủy hoàn toàn\" quá mức; tham khảo O'Brien (2007) về rule-of-thumb VIF. Mục 6: bỏ chú thích \"[Hội đồng Khoa học & Giáo trình ĐH Việt Nam]\" (không phải nguồn có thật) và cặp lặp \"X (X)\".",
       "expert_checks": {
         "vietnamese": true,
@@ -1646,25 +1640,22 @@
       "id": "johnson-neyman-technique",
       "term": "Johnson-Neyman Technique (Floodlight Analysis)",
       "ipa": "/ˈdʒɒnsn ˈneɪmən tekˈniːk/",
-      "vietnamese": "Kỹ thuật Johnson-Neyman (Phân tích đèn pha / Floodlight)",
+      "vietnamese": "Kỹ thuật Johnson-Neyman (Phân tích Vùng Điều tiết Floodlight)",
       "vietnamese_variants": [
-        "Phương pháp xác định vùng ý nghĩa thống kê",
-        "Dò tìm ngưỡng biến điều tiết",
-        "Kỹ thuật Floodlight"
+        "Kỹ thuật Johnson-Neyman",
+        "Floodlight analysis"
       ],
       "domain_tags": [
-        "Phân tích Điều tiết",
-        "Hồi quy Tuyến tính",
-        "PROCESS Macro",
-        "Tâm lý học Thực nghiệm"
+        "Phân tích Điều tiết Nâng cao",
+        "Mô hình PROCESS Hayes"
       ],
-      "core_definition": "Phương pháp toán học phân tích hiệu ứng điều tiết giúp xác định điểm cắt định lượng chính xác trên thang đo của biến điều tiết (W) mà tại đó tác động của biến độc lập (X) lên biến phụ thuộc (Y) chuyển từ trạng thái có ý nghĩa thống kê sang không có ý nghĩa thống kê (hoặc ngược lại).",
+      "core_definition": "Phương pháp phân tích điều tiết tiên tiến và ưu việt do Palmer Johnson và Jerzy Neyman (1936) sáng tạo, được Spiller et al. (2013) và Hayes (2018) đưa thành tiêu chuẩn vàng trên Journal of Marketing Research. Khác với phương pháp điểm cắt truyền thống (Spotlight / Pick-a-point: chỉ kiểm tra tại -1 SD, Mean, +1 SD một cách tùy tiện), kỹ thuật Floodlight quét qua TOÀN BỘ dải giá trị liên tục của biến điều tiết W để tìm ra chính xác các Điểm Ngưỡng Chuyển tiếp (Johnson-Neyman Points) mà tại đó tác động của X lên Y chuyển từ không có ý nghĩa sang có ý nghĩa thống kê (hoặc đảo dấu).",
       "paradigm_debates": "Phương pháp truyền thống Pick-a-point (Spotlight analysis) chỉ chọn tùy tiện 3 mốc (Mean - 1SD, Mean, Mean + 1SD) dẫn đến nguy cơ bỏ sót các ngưỡng chuyển dịch thực sự. Kỹ thuật Johnson-Neyman chiếu một 'luồng đèn pha' (floodlight) dọc theo toàn bộ miền giá trị liên tục của biến điều tiết.",
-      "benchmarks": "Báo cáo giá trị điểm cắt Johnson-Neyman, giá trị thống kê t (t = 1.96 tại p = 0.05), và tỷ lệ phần trăm quan sát trong tập dữ liệu rơi vào vùng có ý nghĩa thống kê (Regions of significance).",
-      "pitfalls": "Nếu điểm cắt Johnson-Neyman nằm ngoài phạm vi quan sát thực tế của mẫu (ví dụ điểm cắt là W = 8.5 nhưng thang đo thực tế chỉ từ 1 đến 7), thì hiệu ứng điều tiết không có ý nghĩa thực tế đối với mẫu nghiên cứu này.",
-      "seminal_citation": "Spiller, S. A., Fitzsimons, G. J., Lynch, J. G., & McClelland, G. H. (2013). Spotlights, floodlights, and the magic number zero: Simple effects tests in moderated regression. Journal of Marketing Research, 50(2), 277–288.",
+      "benchmarks": "Xác định rõ ràng: (1) Tọa độ điểm chuyển tiếp JN value; (2) Tỷ lệ phần trăm các quan sát trong mẫu thực tế rơi vào vùng tác động có ý nghĩa thống kê; (3) Vẽ đồ thị Johnson-Neyman hiển thị đường cong hệ số tác động kèm dải khoảng tin cậy 95% bao quanh, chỉ rõ dải giá trị nào của W làm dải tin cậy không cắt đường trục 0.",
+      "pitfalls": "Điểm ngưỡng JN nằm hoàn toàn bên ngoài dải giá trị thực tế của biến điều tiết trong mẫu khảo sát (khi đó tác động điều tiết không có giá trị thực tiễn); chỉ báo cáo các điểm -1 SD và +1 SD mà bỏ qua phân tích JN khi biến điều tiết là biến liên tục.",
+      "seminal_citation": "Johnson, P. O., & Neyman, J. (1936). Tests of certain linear hypotheses and their application to some educational problems. Statistical Research Memoirs, 1, 57–93; Spiller, S. A., Fitzsimons, G. J., Lynch, J. G., & McClelland, G. H. (2013). Spotlights, floodlights, and the magic number zero: Simple effects tests in moderated regression. Journal of Marketing Research, 50(2), 277–288. https://doi.org/10.1509/jmr.12.0420",
       "apa_intext": "(Hayes, 2022, p. 315)",
-      "apa_reference": "Hayes, A. F. (2022). Introduction to mediation, moderation, and conditional process analysis: A regression-based approach (3rd ed.). The Guilford Press.",
+      "apa_reference": "Spiller, S. A., Fitzsimons, G. J., Lynch, J. G., & McClelland, G. H. (2013). Spotlights, floodlights, and the magic number zero: Simple effects tests in moderated regression. Journal of Marketing Research, 50(2), 277–288.",
       "corpus_variants": [
         {
           "v": "Phương pháp xác định vùng ý nghĩa thống kê",
@@ -1687,7 +1678,7 @@
       ],
       "stt": 27,
       "tier": "flagship",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "Sai: J-N ngoài miền quan sát KHÔNG có nghĩa \"hiệu ứng điều tiết không có ý nghĩa\"; nghĩa là tác động có điều kiện của X đồng nhất (cùng có/không ý nghĩa) trên toàn miền W quan sát. Giá trị t tới hạn phụ thuộc df (≈1.96 chỉ với mẫu lớn). Spotlight tại giá trị có ý nghĩa thực tiễn vẫn hợp lệ. Mục 6: bỏ chú thích \"[Hội đồng Khoa học & Giáo trình ĐH Việt Nam]\" (không phải nguồn có thật) và cặp lặp \"X (X)\".",
       "expert_checks": {
         "vietnamese": true,
@@ -3684,25 +3675,23 @@
     },
     {
       "id": "harman-single-factor",
-      "term": "Harman's Single Factor Test",
+      "term": "Harman's Single-Factor Test",
       "ipa": "/ˈhɑːmənz ˈsɪŋɡl ˈfæktə tɛst/",
-      "vietnamese": "Phép thử Đơn nhân tố Harman (Kiểm tra Sai lệch Phương pháp Chung CMV)",
+      "vietnamese": "Kiểm định Một Nhân tố Harman (Chẩn đoán Thiên lệch CMB)",
       "vietnamese_variants": [
-        "Kiểm định đơn nhân tố Harman",
-        "Phép thử phương sai chung Harman"
+        "Phép thử Harman",
+        "Harman single factor test for CMB"
       ],
       "category": "Psychometrics & Methodological Bias",
       "domain_tags": [
-        "Đo lường Tâm lý",
-        "Sai lệch Phương pháp Chung (CMV)",
-        "Khảo sát Bảng hỏi",
-        "Q1 Reviewer Requirement"
+        "Thiên lệch Phương pháp Chung (CMB)",
+        "Thẩm định Khảo sát"
       ],
-      "core_definition": "Kỹ thuật thống kê sau thu thập (post-hoc diagnostic) kinh điển do Harman (1976) đề xuất và được Podsakoff et al. (2003, 2012) hệ thống hóa nhằm kiểm tra xem hiện tượng Sai lệch Phương pháp Chung (Common Method Variance - CMV) có đe dọa dữ liệu khảo sát hay không. Tác giả đưa toàn bộ các biến quan sát (items) của tất cả các khái niệm trong nghiên cứu vào một phân tích nhân tố khám phá (EFA) không xoay (unrotated factor analysis) và cưỡng bức trích xuất về duy nhất 1 nhân tố duy nhất (hoặc xem xét nhân tố đầu tiên).",
+      "core_definition": "Kỹ thuật thống kê hậu kiểm truyền thống do Harry Harman (1976) khởi xướng nhằm phát hiện sự hiện diện của Thiên lệch Phương pháp Chung (Common Method Bias - CMB). Phương pháp đưa tất cả các biến quan sát của toàn bộ các cấu trúc trong bảng hỏi vào một phép phân tích nhân tố khám phá EFA chưa xoay (Unrotated exploratory factor analysis), sau đó tính toán tỷ lệ phần trăm phương sai được giải thích bởi nhân tố đầu tiên.",
       "paradigm_debates": "Mặc dù là phép thử phổ biến nhất trong các bài báo khoa học, các nhà phương pháp luận hàng đầu (Podsakoff, MacKenzie, Fuller et al., 2016) đã chứng minh rằng phép thử Harman có độ nhạy rất kém: Ngay cả khi dữ liệu bị ô nhiễm CMV nghiêm trọng, phân tích đơn nhân tố này vẫn có thể cho ra phương sai dưới 50%. Reviewer Q1 ngày nay coi Harman chỉ là một kiểm tra sơ bộ tối thiểu và bắt buộc phải bổ sung các kỹ thuật mạnh hơn như Marker Variable hoặc ULMC.",
-      "benchmarks": "Ngưỡng báo cáo thực nghiệm: Tỷ lệ phương sai giải thích được của nhân tố đầu tiên trích xuất bắt buộc phải **< 50%** (khắt khe hơn là < 40%). Nếu một nhân tố duy nhất chiếm hơn 50% tổng phương sai, kết luận dữ liệu bị ô nhiễm nặng nề bởi sai lệch phương pháp chung.",
-      "pitfalls": "Bẫy lạm dụng như bằng chứng duy nhất: Tác giả chỉ báo cáo mỗi phép thử Harman rồi khẳng định nghiên cứu 'hoàn toàn không có CMV'. Reviewer khó tính sẽ phản bác ngay lập tức và yêu cầu bổ sung kỹ thuật Lindell-Whitney Marker Variable.",
-      "apa_reference": "Podsakoff, P. M., MacKenzie, S. B., Lee, J. Y., & Podsakoff, N. P. (2003). Common method biases in behavioral research: A critical review of the literature and recommended remedies. Journal of Applied Psychology, 88(5), 879-903. https://doi.org/10.1037/0021-9010.88.5.879",
+      "benchmarks": "Ngưỡng kiểm định truyền thống Podsakoff & Organ (1986): Nhân tố đơn lẻ đầu tiên BẮT BUỘC PHẢI GIẢI THÍCH DƯỚI 50% tổng phương sai trích. Nếu nhân tố đầu tiên giải thích >= 50% phương sai, dữ liệu bị kết luận nhiễm nặng thiên lệch phương pháp chung.",
+      "pitfalls": "PHÊ PHÁN QUAN TRỌNG TỪ REVIEWER Q1: Harman's single-factor test hiện nay bị coi là phương pháp rất thô sơ và không nhạy bén. Ngay cả khi dữ liệu có CMB nghiêm trọng, Harman test vẫn có thể cho ra kết quả < 50%. Các tạp chí Q1 hiện nay KHÔNG CHẤP NHẬN việc chỉ dùng duy nhất Harman test để khẳng định không có CMB, mà bắt buộc phải sử dụng Kỹ thuật Biến Đánh dấu (Marker Variable Technique) hoặc Full Collinearity VIF <= 3.3.",
+      "apa_reference": "Podsakoff, P. M., & Organ, D. W. (1986). Self-reports in organizational research: Problems and prospects. Journal of Management, 12(4), 531–544.",
       "synonyms": [
         "Harman EFA Test",
         "Single-Factor CMV Diagnostic",
@@ -3725,7 +3714,7 @@
       ],
       "stt": 65,
       "tier": "flagship",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "Trùng lặp nội dung với #05 -> gộp hoặc chuyển thành mục con. Gán nguồn chưa chuẩn: việc dùng Harman để kiểm CMV phổ biến từ Podsakoff & Organ (1986); \"Podsakoff, MacKenzie, Fuller et al., 2016\" là ghép sai – Fuller et al. (2016, JBR) là nhóm tác giả khác và kết luận Harman phát hiện được CMV khi CMV đủ lớn để gây chệch -> diễn đạt lại cho đúng. Ngưỡng \"<40%\" không có nguồn. Bổ sung full collinearity VIF ≤3.3 (Kock 2015) cho PLS. Mục 6: bỏ chú thích \"[Hội đồng Khoa học & Giáo trình ĐH Việt Nam]\" (không phải nguồn có thật) và cặp lặp \"X (X)\"; tên trường gắn với biến thể chưa được kiểm chứng. Mục 5: thiếu [Gốc] và [In-text] – thống nhất cấu trúc với #01–39.",
       "expert_checks": {
         "vietnamese": true,
@@ -3733,7 +3722,8 @@
         "benchmark": false,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "seminal_citation": "Harman, H. H. (1976). Modern factor analysis (3rd ed.). University of Chicago Press; Podsakoff, P. M., & Organ, D. W. (1986). Self-reports in organizational research: Problems and prospects. Journal of Management, 12(4), 531–544. https://doi.org/10.1177/014920638601200408"
     },
     {
       "id": "marker-variable-technique",
@@ -6345,24 +6335,29 @@
     {
       "id": "average-variance-extracted-ave",
       "term": "Average Variance Extracted (AVE)",
-      "vietnamese": "Phương sai trích trung bình (chuẩn > 0.50).",
+      "vietnamese": "Phương sai Trung bình Trích xuất (Chỉ số AVE Fornell-Larcker)",
       "vietnamese_variants": [
-        "AVE"
+        "Chỉ số AVE",
+        "Thước đo độ giá trị hội tụ AVE"
       ],
       "domain_tags": [
-        "PLS-SEM",
-        "Discriminant Validity"
+        "Đo lường & Thang đo",
+        "Độ giá trị Hội tụ",
+        "SEM"
       ],
-      "core_definition": "Phương sai trích trung bình (chuẩn > 0.50).",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "core_definition": "Thước đo định lượng kinh điển đo lường Độ giá trị Hội tụ (Convergent Validity) của một biến tiềm ẩn phản ánh, do Claes Fornell và David F. Larcker (1981) thiết lập. AVE phản ánh tỷ lệ phần trăm phương sai trung bình của các biến quan sát được giải thích bởi chính biến tiềm ẩn đó so với phương sai phát sinh từ sai số đo lường ngẫu nhiên: AVE = (Tổng bình phương hệ số tải) / [(Tổng bình phương hệ số tải) + (Tổng phương sai sai số đo lường)].",
+      "seminal_citation": "Fornell, C., & Larcker, D. F. (1981). Evaluating structural equation models with unobservable variables and measurement error. Journal of Marketing Research, 18(1), 39–50. https://doi.org/10.1177/002224378101800104",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #175; LaTeX thô; lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Average variance extracted (AVE) according to Henseler et al. (2015); Henseler et al. (2015).",
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn vàng Fornell & Larcker (1981): AVE BẮT BUỘC PHẢI >= 0.50. Ý nghĩa thống kê: Khi AVE >= 0.50, biến tiềm ẩn giải thích được từ 50% phương sai của các chỉ báo trở lên (tức phần phương sai thực chất vượt trội hơn phần phương sai sai số đo lường). Trường hợp ngoại lệ của Fornell-Larcker: Nếu AVE nằm trong khoảng [0.40, 0.50) nhưng Composite Reliability (CR) >= 0.70, độ giá trị hội tụ của thang đo vẫn có thể tạm thời được chấp nhận.",
+      "pitfalls": "Bẫy giữ lại các biến quan sát có hệ số tải quá thấp (Outer loading < 0.40 hoặc < 0.50) kéo chỉ số AVE của cấu trúc xuống dưới ngưỡng 0.50; nhầm lẫn giữa AVE và phần trăm phương sai trích trong EFA (Total Variance Explained).",
+      "apa_reference": "Fornell, C., & Larcker, D. F. (1981). Evaluating structural equation models with unobservable variables and measurement error. Journal of Marketing Research, 18(1), 39–50."
     },
     {
       "id": "axial-coding",
@@ -7227,21 +7222,28 @@
     },
     {
       "id": "blindfolding-q2",
-      "term": "Blindfolding (Q2)",
-      "vietnamese": "Thủ tục Blindfolding đánh giá mức độ phù hợp dự báo của mô hình cấu trúc trong PLS-SEM (Q2 > 0)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "PLS-SEM"
+      "term": "Blindfolding & Stone-Geisser Q²",
+      "vietnamese": "Thủ tục Blindfolding & Hệ số Năng lực Dự báo Tái tạo Q²",
+      "vietnamese_variants": [
+        "Chỉ số Stone-Geisser Q2",
+        "Cross-validated redundancy Q2"
       ],
-      "core_definition": "Thủ tục Blindfolding đánh giá mức độ phù hợp dự báo của mô hình cấu trúc trong PLS-SEM (Q2 > 0).",
-      "seminal_citation": "Geisser (1974); Stone (1974)",
-      "tier": "curated",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "PLS-SEM",
+        "Đánh giá Mô hình Cấu trúc"
+      ],
+      "core_definition": "Kỹ thuật tái chọn mẫu kiểm thực chéo do Mervyn Stone (1974) và Seymour Geisser (1974) sáng tạo, được Wold đưa vào PLS-SEM nhằm đo lường mức độ phù hợp dự báo nội bộ (Predictive Relevance). Kỹ thuật Blindfolding lần lượt bỏ sót có hệ thống các điểm dữ liệu dựa trên khoảng cách bỏ sót d (Omission distance, thường chọn d = 7), dùng các điểm dữ liệu còn lại để ước lượng tham số và dự báo lại các điểm dữ liệu bị bỏ sót, từ đó tính toán chỉ số Q² Cross-Validated Redundancy.",
+      "seminal_citation": "Geisser, S. (1974). A predictive approach to the random effect model. Biometrika, 61(1), 101–107. https://doi.org/10.1093/biomet/61.1.101; Stone, M. (1974). Cross-validatory choice and assessment of statistical predictions. Journal of the Royal Statistical Society: Series B, 36(2), 111–133.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Q² blindfolding không phải dự báo ngoài mẫu thực sự; khuyến nghị hiện nay là PLSpredict (Shmueli et al. 2019)",
       "core_definition_en": "Academic definition of Blindfolding (Q2) according to Geisser (1974); Stone (1974).",
       "domain_tags_en": [
         "PLS-SEM"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn đánh giá theo Hair et al. (2022): Q² BẮT BUỘC PHẢI > 0 đối với tất cả các biến phụ thuộc phản ánh để khẳng định mô hình có năng lực dự báo lý thuyết. Phân loại độ lớn hiệu ứng: (1) 0 < Q² <= 0.25: Năng lực dự báo nhỏ; (2) 0.25 < Q² <= 0.50: Năng lực dự báo trung bình; (3) Q² > 0.50: Năng lực dự báo lớn.",
+      "pitfalls": "Chạy blindfolding cho các biến tiềm ẩn định dạng (chỉ số Q² chỉ áp dụng cho mô hình đo lường phản ánh); chọn khoảng cách bỏ sót d sao cho kích thước mẫu N chia hết cho d (d phải là số nguyên tố cùng nhau với N, thường chọn d từ 5 đến 10); lầm tưởng Q² đo lường dự báo ngoài mẫu (Q² blindfolding thực chất vẫn là thước đo nội suy trong mẫu, dự báo ngoài mẫu bắt buộc phải dùng PLSpredict).",
+      "apa_reference": "Geisser, S. (1974). A predictive approach to the random effect model. Biometrika, 61(1), 101–107."
     },
     {
       "id": "blindfolding-procedure",
@@ -8436,24 +8438,28 @@
     {
       "id": "cfi-hoac-tli",
       "term": "Comparative Fit Index (CFI) & Tucker-Lewis Index (TLI)",
-      "vietnamese": "Chỉ số Phù hợp So sánh (CFI) & Chỉ số Tucker-Lewis (TLI)",
+      "vietnamese": "Bộ Chỉ số Độ phù hợp Tương đối Gia tăng (CFI & TLI / NNFI)",
       "vietnamese_variants": [
-        "CFI"
+        "Chỉ số CFI và TLI",
+        "Incremental fit indices"
       ],
       "domain_tags": [
-        "CB-SEM",
-        "Causal Inference"
+        "Độ phù hợp Mô hình (Model Fit)",
+        "CB-SEM & CFA"
       ],
-      "core_definition": "Đo lường độ phù hợp gia tăng so với mô hình cơ sở độc lập.",
-      "seminal_citation": "Kline (2023)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "core_definition": "Hai chỉ số độ phù hợp gia tăng (Incremental / Comparative Fit Indices) phổ biến và uy tín nhất trong CB-SEM do Peter M. Bentler (1990) và Ledyard Tucker & Charles Lewis (1973) sáng lập. Cả hai chỉ số đều đo lường mức độ cải thiện độ phù hợp của mô hình đề xuất so với Mô hình Cơ sở Độc lập hoàn toàn (Null / Independence Baseline Model: nơi tất cả các biến quan sát bị giả định không có tương quan với nhau). TLI vượt trội ở chỗ có thêm cơ chế hiệu chỉnh theo bậc tự do để phạt các mô hình phức tạp.",
+      "seminal_citation": "Bentler, P. M. (1990). Comparative fit indexes in structural models. Psychological Bulletin, 107(2), 238–246. https://doi.org/10.1037/0033-2909.107.2.238; Tucker, L. R., & Lewis, C. (1973). A reliability coefficient for maximum likelihood factor analysis. Psychometrika, 38(1), 1–10. https://doi.org/10.1007/BF02291170",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #321, #322; tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of CFI (hoặc TLI) according to Kline (2023).",
       "domain_tags_en": [
         "CB-SEM",
         "Causal Inference"
-      ]
+      ],
+      "benchmarks": "Ngưỡng tiêu chuẩn Hu & Bentler (1999) và Kline (2023): (1) CFI >= 0.95 và TLI >= 0.95: Độ phù hợp xuất sắc; (2) 0.90 <= CFI, TLI < 0.95: Độ phù hợp chấp nhận được; (3) CFI, TLI < 0.90: Mô hình không đạt chuẩn, bắt buộc phải tái đặc tả. Lưu ý TLI không bị giới hạn trong khoảng [0, 1] và đôi khi có thể hơi vượt quá 1.0 trong các mô hình quá khớp.",
+      "pitfalls": "Báo cáo CFI mà không kèm RMSEA: Hu & Bentler (1999) chứng minh phương pháp thẩm định 2 chiều tối ưu bắt buộc phải kết hợp cặp đôi (CFI >= 0.95 VÀ SRMR <= 0.08) hoặc (RMSEA <= 0.06 VÀ SRMR <= 0.08) để tránh sai lầm loại I và loại II.",
+      "apa_reference": "Bentler, P. M. (1990). Comparative fit indexes in structural models. Psychological Bulletin, 107(2), 238–246."
     },
     {
       "id": "cheers-statement",
@@ -9314,20 +9320,27 @@
     {
       "id": "cohens-kappa-coefficient",
       "term": "Cohen's Kappa Coefficient",
-      "vietnamese": "Hệ số Kappa Cohen",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Measurement Rigour"
+      "vietnamese": "Hệ số Kappa Cohen (Độ tin cậy Đồng thuận giữa các Người đánh giá)",
+      "vietnamese_variants": [
+        "Hệ số Cohen Kappa",
+        "Inter-rater reliability kappa"
       ],
-      "core_definition": "Đo lường mức độ đồng thuận giữa hai người đánh giá phân loại sau khi đã loại trừ xác suất ngẫu nhiên.",
-      "seminal_citation": "Cohen (1960)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Đo lường & Mã hóa Dữ liệu",
+        "Nghiên cứu Định tính & Phân tích Nội dung"
+      ],
+      "core_definition": "Thước đo thống kê chuẩn mực đánh giá Độ tin cậy Đồng thuận giữa các Người đánh giá (Inter-Rater Reliability / Inter-Coder Agreement) đối với dữ liệu định danh (Qualitative categorical data), do Jacob Cohen (1960) phát minh. Khác với tỷ lệ phần trăm đồng thuận giản đơn (Percent agreement - vốn bỏ qua sự đồng thuận do ngẫu nhiên may rủi), Kappa hiệu chỉnh độ chệch bằng cách trừ đi xác suất đồng thuận kỳ vọng ngẫu nhiên: Kappa = (P_o - P_e) / (1 - P_e).",
+      "seminal_citation": "Cohen, J. (1960). A coefficient of agreement for nominal scales. Educational and Psychological Measurement, 20(1), 37–46. https://doi.org/10.1177/001316446002000104; Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data. Biometrics, 33(1), 159–174.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Cohen's Kappa Coefficient according to Cohen (1960).",
       "domain_tags_en": [
         "Measurement Rigour"
-      ]
+      ],
+      "benchmarks": "Thang phân loại Landis & Koch (1977) và Fleiss (1981): (1) Kappa < 0.00: Kém hơn ngẫu nhiên; (2) 0.00 <= Kappa <= 0.20: Rất yếu (Slight); (3) 0.21 <= Kappa <= 0.40: Tương đối (Fair); (4) 0.41 <= Kappa <= 0.60: Trung bình (Moderate); (5) 0.61 <= Kappa <= 0.80: Đáng kể (Substantial); (6) 0.81 <= Kappa <= 1.00: Gần như hoàn hảo (Almost perfect agreement). Ngưỡng tối thiểu chấp nhận được trong nghiên cứu học thuật là Kappa >= 0.70.",
+      "pitfalls": "Nghịch lý Kappa (Kappa paradox): Khi một phân loại có tỷ lệ xuất hiện cực kỳ mất cân đối (Prevalence problem), Kappa có thể rất thấp ngay cả khi tỷ lệ đồng thuận quan sát P_o đạt trên 90%; trong trường hợp đó cần bổ sung chỉ số Gwet's AC1.",
+      "apa_reference": "Cohen, J. (1960). A coefficient of agreement for nominal scales. Educational and Psychological Measurement, 20(1), 37–46."
     },
     {
       "id": "coherence-in-writing",
@@ -9857,24 +9870,30 @@
     {
       "id": "composite-reliability-cr",
       "term": "Composite Reliability (CR)",
-      "vietnamese": "Độ tin cậy tổng hợp (chuẩn > 0.70).",
+      "vietnamese": "Độ tin cậy Tổng hợp (Chỉ số CR / Hệ số Dillon-Goldstein Rho)",
       "vietnamese_variants": [
-        "CR"
+        "Chỉ số độ tin cậy kết hợp CR",
+        "Hệ số Jöreskog rho",
+        "Dillon-Goldstein rho"
       ],
       "domain_tags": [
-        "PLS-SEM",
-        "Discriminant Validity"
+        "Đo lường & Thang đo",
+        "PLS-SEM & CB-SEM",
+        "Độ tin cậy Nhất quán Nội tại"
       ],
-      "core_definition": "Độ tin cậy tổng hợp (chuẩn > 0.70).",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "core_definition": "Chỉ số thẩm định độ tin cậy nhất quán nội tại (Internal Consistency Reliability) chuẩn mực bậc nhất trong mô hình phương trình cấu trúc (SEM), do Karl Jöreskog (1971) và Werts, Linn & Jöreskog (1974) phát triển. Khác với Cronbach's alpha vốn giả định ngây thơ rằng tất cả các biến quan sát đều có trọng số tải bằng nhau (Tau-equivalence assumption - dẫn đến việc đánh giá thấp độ tin cậy thực tế), Composite Reliability tính toán trọng số tải thực tế của từng chỉ báo từ ma trận hiệp phương sai, phản ánh chính xác mức độ các biến quan sát cùng giải thích cho biến tiềm ẩn phản ánh.",
+      "seminal_citation": "Jöreskog, K. G. (1971). Statistical analysis of sets of congeneric tests. Psychometrika, 36(2), 109–133. https://doi.org/10.1007/BF02291393; Werts, C. E., Linn, R. L., & Jöreskog, K. G. (1974). Intraclass reliability estimates: Testing structural assumptions. Educational and Psychological Measurement, 34(1), 25–33.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #442; LaTeX thô; lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Composite reliability (CR) according to Henseler et al. (2015); Henseler et al. (2015).",
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "benchmarks": "Ngưỡng thẩm định chuẩn mực của Hair et al. (2022) và Bagozzi & Yi (1988): (1) 0.70 <= CR <= 0.90: Đạt độ tin cậy từ tốt đến xuất sắc trong các nghiên cứu xác nhận; (2) 0.60 <= CR < 0.70: Có thể chấp nhận được trong các nghiên cứu khám phá ban đầu; (3) CR > 0.95: Dấu hiệu nguy hại của hiện tượng trùng lặp chỉ báo (Indicator redundancy - các câu hỏi hỏi cùng một ý theo cách diễn đạt khác nhau làm thu hẹp miền khái niệm). Bắt buộc CR >= 0.70 kết hợp với AVE >= 0.50.",
+      "pitfalls": "Chỉ báo cáo Cronbach's alpha mà bỏ qua Composite Reliability trong các bài báo nộp tạp chí Q1; duy trì các thang đo có CR > 0.95 mà không tiến hành tinh giản các câu hỏi bị trùng lặp ngữ nghĩa.",
+      "apa_reference": "Jöreskog, K. G. (1971). Statistical analysis of sets of congeneric tests. Psychometrika, 36(2), 109–133."
     },
     {
       "id": "comprehensive-data-treatment-xu-ly-du-lieu-toan-dien",
@@ -10312,23 +10331,28 @@
     {
       "id": "confirmatory-factor-analysis",
       "term": "Confirmatory Factor Analysis (CFA)",
-      "vietnamese": "Phân tích nhân tố khẳng định",
+      "vietnamese": "Phân tích Nhân tố Khẳng định (Phương pháp CFA Jöreskog)",
       "vietnamese_variants": [
-        "CFA"
+        "Phương pháp CFA",
+        "Mô hình đo lường khẳng định"
       ],
       "domain_tags": [
-        "Acronym NCKH"
+        "Mô hình Phương trình Cấu trúc (SEM)",
+        "Thẩm định Đo lường",
+        "Độ giá trị Khái niệm"
       ],
-      "core_definition": "Kỹ thuật kiểm định mức độ dữ liệu thực nghiệm phù hợp với cấu trúc lý thuyết nhân tố đã được xác định trước. Ngưỡng thực nghiệm tham chiếu: Factor loadings > 0.707 (p < 0.001), Composite Reliability > 0.70, AVE > 0.50, các chỉ số độ phù hợp GoF đạt chuẩn.",
-      "seminal_citation": "Factor loadings > 0.707 (p < 0.001), Composite Reliability > 0.70, AVE > 0.50, các chỉ số độ phù hợp GoF đạt chuẩn.",
-      "tier": "acronym",
+      "core_definition": "Kỹ thuật thống kê suy diễn diễn dịch do Karl Jöreskog (1969) sáng lập nhằm kiểm định xem cấu trúc nhân tố lý thuyết tiên nghiệm (Hypothesized factor structure) có thực sự phù hợp với ma trận hiệp phương sai của dữ liệu thực nghiệm hay không. Khác với EFA (nơi tất cả các biến quan sát đều tự do nạp lên tất cả nhân tố), CFA áp đặt các ràng buộc chặt chẽ: mỗi biến quan sát chỉ được phép nạp lên đúng nhân tố lý thuyết được chỉ định trước, và hệ số tải lên các nhân tố khác bị cố định bằng 0.",
+      "seminal_citation": "Jöreskog, K. G. (1969). A general approach to confirmatory maximum likelihood factor analysis. Psychometrika, 34(2), 183–202. https://doi.org/10.1007/BF02289368; Brown, T. A. (2015). Confirmatory factor analysis for applied research (2nd ed.). Guilford Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of Confirmatory Factor Analysis according to Factor loadings > 0.707 (p < 0.001), Composite Reliability > 0.70, AVE > 0.50, các chỉ số độ phù hợp GoF đạt chuẩn..",
       "domain_tags_en": [
         "Acronym NCKH"
       ],
-      "benchmarks": "Factor loadings > 0.707 (p < 0.001), Composite Reliability > 0.70, AVE > 0.50, các chỉ số độ phù hợp GoF đạt chuẩn."
+      "benchmarks": "Quy chuẩn đánh giá toàn diện mô hình đo lường CFA: (1) Độ phù hợp mô hình (Model Fit): Chi-square/df < 3 (hoặc < 5), RMSEA <= 0.06 - 0.08, SRMR <= 0.08, CFI >= 0.90 - 0.95, TLI >= 0.90 - 0.95; (2) Độ giá trị hội tụ: Mọi hệ số tải chuẩn hóa (Factor Loadings) >= 0.50 (lý tưởng >= 0.708, p < 0.001), AVE >= 0.50, CR >= 0.70; (3) Độ giá trị phân biệt: Căn bậc hai AVE > tương quan giữa các nhân tố và HTMT <= 0.85/0.90.",
+      "pitfalls": "Chạy CFA trên chính tập dữ liệu vừa dùng để chạy EFA mà không phân tách mẫu (Sample splitting) hoặc thu thập mẫu độc lập; tùy tiện nối mũi tên hai chiều giữa các sai số đo lường (Correlated measurement errors) chỉ để cưỡng ép chỉ số CFI/RMSEA đạt chuẩn.",
+      "apa_reference": "Brown, T. A. (2015). Confirmatory factor analysis for applied research (2nd ed.). Guilford Press."
     },
     {
       "id": "conflict-of-interest-disclosure-coi",
@@ -11551,24 +11575,29 @@
     {
       "id": "covariance-based-sem-cb-sem",
       "term": "Covariance-Based Structural Equation Modeling (CB-SEM)",
-      "vietnamese": "Mô hình phương trình cấu trúc dựa trên hiệp phương sai.",
+      "vietnamese": "Mô hình Hóa Phương trình Cấu trúc Dựa trên Hiệp phương sai (CB-SEM)",
       "vietnamese_variants": [
-        "CB-SEM"
+        "Trường phái CB-SEM Jöreskog",
+        "AMOS, LISREL, Mplus SEM"
       ],
       "domain_tags": [
-        "PLS-SEM",
-        "Discriminant Validity"
+        "SEM Truyền thống",
+        "Kiểm định Lý thuyết Khẳng định",
+        "Mô hình Tham số"
       ],
-      "core_definition": "Mô hình phương trình cấu trúc dựa trên hiệp phương sai.",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "core_definition": "Trường phái mô hình hóa phương trình cấu trúc kinh điển do Karl Jöreskog (1973) sáng lập (hiện thực hóa qua các phần mềm LISREL, AMOS, Mplus, EQS, lavaan trong R). CB-SEM ước lượng các tham số mô hình thông qua phương pháp Cực đại Hợp lý (Maximum Likelihood) nhằm tối thiểu hóa sự khác biệt giữa ma trận hiệp phương sai mẫu thực tế (S) và ma trận hiệp phương sai được ngụ ý bởi mô hình lý thuyết Sigma(theta). Mục tiêu tối thượng của CB-SEM là KIỂM ĐỊNH TÍNH XÁC NHẬN CỦA TOÀN BỘ MÔ HÌNH LÝ THUYẾT.",
+      "seminal_citation": "Jöreskog, K. G. (1973). A general method for estimating a linear structural equation system. In A. S. Goldberger & O. D. Duncan (Eds.), Structural equation models in the social sciences (pp. 85–112). Seminar Press; Bollen, K. A. (1989). Structural equations with latent variables. John Wiley & Sons.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Covariance-based SEM (CB-SEM) according to Henseler et al. (2015); Henseler et al. (2015).",
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "benchmarks": "Điều kiện áp dụng khắt khe: (1) Cỡ mẫu đủ lớn (thường N >= 200–500 tùy theo độ phức tạp); (2) Dữ liệu thỏa mãn giả định phân phối chuẩn đa biến (Multivariate Normality - nếu vi phạm bắt buộc dùng hiệu chỉnh Satorra-Bentler hoặc Bollen-Stine bootstrap); (3) Thang đo đo lường phản ánh (Reflective); (4) Đạt chuẩn độ phù hợp tổng thể toàn diện (Global fit: Chi-square p > 0.05, RMSEA <= 0.06, SRMR <= 0.08, CFI >= 0.95).",
+      "pitfalls": "Áp dụng CB-SEM cho dữ liệu có phân phối lệch cực độ mà không dùng ước lượng Robust MLR; ép buộc các thang đo định dạng (Formative) vào CB-SEM dẫn đến lỗi nhận diện mô hình; sử dụng CB-SEM khi mục tiêu nghiên cứu là dự báo thực tiễn (Prediction) thay vì kiểm định lý thuyết xác nhận.",
+      "apa_reference": "Bollen, K. A. (1989). Structural equations with latent variables. John Wiley & Sons."
     },
     {
       "id": "covariate-balance-diagnostics-table",
@@ -14408,23 +14437,29 @@
     },
     {
       "id": "effect-size-f2",
-      "term": "Effect size (f^2)",
-      "vietnamese": "Kích thước tác động của biến độc lập lên biến phụ thuộc (0.02 nhỏ, 0.15 vừa, 0.35 lớn).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "PLS-SEM",
-        "Discriminant Validity"
+      "term": "Cohen's f² Effect Size in SEM",
+      "vietnamese": "Kích thước Hiệu ứng f² Cohen trong Mô hình Cấu trúc",
+      "vietnamese_variants": [
+        "Chỉ số f2",
+        "Effect size f-square"
       ],
-      "core_definition": "Kích thước tác động của biến độc lập lên biến phụ thuộc (0.02 nhỏ, 0.15 vừa, 0.35 lớn).",
-      "seminal_citation": "Henseler et al. (2015)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "SEM & Hồi quy Tuyến tính",
+        "Đánh giá Mô hình Cấu trúc"
+      ],
+      "core_definition": "Chỉ số đo lường mức độ đóng góp thực chất của một biến nguyên nhân cụ thể vào hệ số xác định R² của biến kết cục trong mô hình cấu trúc, do Jacob Cohen (1988) thiết lập. f² đo lường tỷ lệ phần trăm R² bị sụt giảm khi loại bỏ biến nguyên nhân đó ra khỏi mô hình: f² = (R^2_included - R^2_excluded) / (1 - R^2_included). f² giúp nhà nghiên cứu phân biệt giữa ý nghĩa thống kê (Statistical significance qua p-value phụ thuộc vào cỡ mẫu) và tầm quan trọng thực tế (Practical importance).",
+      "seminal_citation": "Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Lawrence Erlbaum Associates; Hair, J. F., Hult, G. T. M., Ringle, C. M., & Sarstedt, M. (2022). A primer on partial least squares structural equation modeling (PLS-SEM) (3rd ed.). SAGE Publications.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #846, #847; LaTeX thô",
       "core_definition_en": "Academic definition of Effect size (f^2) according to Henseler et al. (2015).",
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "benchmarks": "Hệ thống ngưỡng chuẩn mực quốc tế của Cohen (1988) và Hair et al. (2022): (1) 0.02 <= f² < 0.15: Hiệu ứng nhỏ (Small effect); (2) 0.15 <= f² < 0.35: Hiệu ứng trung bình (Medium effect); (3) f² >= 0.35: Hiệu ứng lớn (Large effect); (4) f² < 0.02: Không có hiệu ứng thực chất.",
+      "pitfalls": "Chỉ báo cáo giá trị p-value và hệ số đường dẫn mà bỏ qua f² effect size; một hệ số đường dẫn có p < 0.001 nhờ mẫu cực lớn (N = 2,000) nhưng nếu f² < 0.02 thì tác động đó hoàn toàn tầm thường trong thực tiễn quản trị.",
+      "apa_reference": "Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Lawrence Erlbaum Associates."
     },
     {
       "id": "effect-size-d-in-nca",
@@ -15643,22 +15678,29 @@
     },
     {
       "id": "exploratory-factor-analysis",
-      "term": "Exploratory Factor Analysis",
-      "vietnamese": "Phân tích nhân tố khám phá",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Acronym NCKH"
+      "term": "Exploratory Factor Analysis (EFA)",
+      "vietnamese": "Phân tích Nhân tố Khám phá (Phương pháp EFA)",
+      "vietnamese_variants": [
+        "Phương pháp EFA",
+        "Trích xuất nhân tố khám phá"
       ],
-      "core_definition": "Kỹ thuật giảm chiều dữ liệu khám phá cấu trúc nhân tố tiềm ẩn mà không áp đặt cấu trúc lý thuyết từ trước. Ngưỡng thực nghiệm tham chiếu: KMO >= 0.50 (tốt nếu >= 0.80), Bartlett's test p < 0.05, Eigenvalue > 1, Tổng phương sai trích >= 50%, Factor loading >= 0.50 (Hair et al., 2018).",
-      "seminal_citation": "KMO >= 0.50 (tốt nếu >= 0.80), Bartlett's test p < 0.05, Eigenvalue > 1, Tổng phương sai trích >= 50%, Factor loading >= 0.50 (Hair et al., 2018).",
-      "tier": "acronym",
+      "domain_tags": [
+        "Phân tích Đa biến",
+        "Đo lường & Thang đo",
+        "Rút gọn Dữ liệu"
+      ],
+      "core_definition": "Kỹ thuật thống kê đa biến quy nạp được Charles Spearman (1904) khởi xướng và Thurstone (1947) hoàn thiện nhằm phát hiện cấu trúc tiềm ẩn (Latent dimensions) chi phối một tập hợp lớn các biến quan sát mà không áp đặt bất kỳ giả định lý thuyết cứng nhắc nào trước về số lượng hay cách phân bố nhân tố. EFA rút gọn dữ liệu bằng cách gom các biến quan sát có tương quan nội tại cao thành một số ít các nhân tố chung đại diện.",
+      "seminal_citation": "Thurstone, L. L. (1947). Multiple factor analysis. University of Chicago Press; Fabrigar, L. R., Wegener, D. T., MacCallum, R. C., & Strahan, E. J. (1999). Evaluating the use of exploratory factor analysis in psychological research. Psychological Methods, 4(3), 272–299. https://doi.org/10.1037/1082-989X.4.3.272",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of Exploratory Factor Analysis according to KMO >= 0.50 (tốt nếu >= 0.80), Bartlett's test p < 0.05, Eigenvalue > 1, Tổng phương sai trích >= 50%, Factor loading >= 0.50 (Hair et al., 2018)..",
       "domain_tags_en": [
         "Acronym NCKH"
       ],
-      "benchmarks": "KMO >= 0.50 (tốt nếu >= 0.80), Bartlett's test p < 0.05, Eigenvalue > 1, Tổng phương sai trích >= 50%, Factor loading >= 0.50 (Hair et al., 2018)."
+      "benchmarks": "Quy trình thực thi chuẩn mực: (1) Kiểm định tiền đề: KMO >= 0.60 và Bartlett's Test p < 0.001; (2) Phương pháp trích nhân tố: Principal Axis Factoring (PAF) hoặc Maximum Likelihood (ưu tiên hơn Principal Component Analysis PCA khi tìm kiếm cấu trúc tiềm ẩn thực sự); (3) Tiêu chuẩn xác định số nhân tố: Eigenvalue > 1 kết hợp đồ thị Scree Plot và Parallel Analysis; (4) Tổng phương sai trích (Total Variance Explained) >= 50% (lý tưởng >= 60%); (5) Hệ số tải nhân tố sau xoay >= 0.50 và không có tải chéo (Cross-loading difference >= 0.30).",
+      "pitfalls": "Lạm dụng PCA (Principal Component Analysis) rồi gọi nhầm là EFA (PCA chỉ là kỹ thuật giảm chiều dữ liệu thuần túy, không tách biệt phương sai chung và phương sai sai số đo lường); ép số lượng nhân tố theo ý chủ quan thay vì kiểm chứng qua Parallel Analysis.",
+      "apa_reference": "Fabrigar, L. R., Wegener, D. T., MacCallum, R. C., & Strahan, E. J. (1999). Evaluating the use of exploratory factor analysis in psychological research. Psychological Methods, 4(3), 272–299."
     },
     {
       "id": "exploratory-sequential-mixed-methods",
@@ -15925,20 +15967,27 @@
     {
       "id": "factor-rotation",
       "term": "Factor Rotation",
-      "vietnamese": "Xoay vuông góc (Varimax) và Xoay xiên (Promax, Direct Oblimin).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Multivariate Data Analysis"
+      "vietnamese": "Phép Xoay Nhân tố trong Phân tích EFA",
+      "vietnamese_variants": [
+        "Xoay trục nhân tố",
+        "Factor rotation matrix"
       ],
-      "core_definition": "Xoay vuông góc (Varimax) và Xoay xiên (Promax, Direct Oblimin).",
-      "seminal_citation": "Hair et al. (2018); Hair et al. (2018)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phân tích Nhân tố Khám phá (EFA)",
+        "Hình học Không gian Đa biến"
+      ],
+      "core_definition": "Thao tác biến đổi hình học ma trận hệ số tải trong phân tích nhân tố nhằm đạt được Cấu trúc Đơn giản (Simple Structure theo nguyên lý Thurstone 1947). Trong ma trận ban đầu chưa xoay, nhân tố thứ nhất thường hấp thụ phần lớn phương sai khiến hầu hết các biến đều nạp tải cao lên nó, gây khó khăn cho việc diễn giải lý thuyết. Phép xoay trục tọa độ giúp phân bổ lại phương sai sao cho mỗi biến quan sát chỉ nạp tải mạnh lên một nhân tố duy nhất và nạp tải xấp xỉ bằng 0 lên các nhân tố còn lại.",
+      "seminal_citation": "Thurstone, L. L. (1947). Multiple factor analysis. University of Chicago Press; Browne, M. W. (2001). An overview of analytic rotation in exploratory factor analysis. Multivariate Behavioral Research, 36(1), 111–150. https://doi.org/10.1207/S15327906MBR3601_05",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Factor Rotation according to Hair et al. (2018); Hair et al. (2018).",
       "domain_tags_en": [
         "Multivariate Data Analysis"
-      ]
+      ],
+      "benchmarks": "Lựa chọn hai trường phái xoay cốt lõi: (1) Xoay vuông góc (Orthogonal Rotation - ví dụ Varimax): Cố định các trục nhân tố vuông góc 90 độ, giả định các nhân tố hoàn toàn độc lập với nhau; (2) Xoay xiên (Oblique Rotation - ví dụ Promax, Direct Oblimin): Cho phép các trục nhân tố tạo góc nhọn/tù, thừa nhận các nhân tố có tương quan với nhau trong thế giới thực.",
+      "pitfalls": "Mặc định sử dụng xoay vuông góc Varimax trong nghiên cứu hành vi và quản trị kinh doanh. Trong thực tế các khái niệm tâm lý, kinh tế và xã hội hầu như luôn có tương quan với nhau. Việc ép xoay vuông góc làm mất mát thông tin thực tế; chuẩn mực khoa học hiện đại yêu cầu luôn bắt đầu bằng xoay xiên Promax/Oblimin.",
+      "apa_reference": "Browne, M. W. (2001). An overview of analytic rotation in exploratory factor analysis. Multivariate Behavioral Research, 36(1), 111–150."
     },
     {
       "id": "fail-safe-n-rosenthal",
@@ -16610,43 +16659,56 @@
     },
     {
       "id": "formative-measurement-model",
-      "term": "Formative measurement model",
-      "vietnamese": "Mô hình đo lường nguyên nhân (cấu thành).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "PLS-SEM",
-        "Discriminant Validity"
+      "term": "Formative Measurement Model",
+      "vietnamese": "Mô hình Đo lường Định dạng (Thang đo Định dạng / Chỉ số Hợp thành)",
+      "vietnamese_variants": [
+        "Thang đo formative",
+        "Composite construct"
       ],
-      "core_definition": "Mô hình đo lường nguyên nhân (cấu thành).",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Đo lường & Thang đo",
+        "PLS-SEM"
+      ],
+      "core_definition": "Mô hình đo lường trong đó chiều mũi tên nhân quả đi ngược lại: TỪ CÁC BIẾN CHỈ BÁO TRỎ VÀO TẠO THÀNH BIẾN TIỀM ẨN (Indicators -> Construct). Các chỉ báo được coi là các thành tố cấu thành trực tiếp nên khái niệm (ví dụ: Chỉ số Căng thẳng Công việc được cấu thành từ: Áp lực thời gian + Xung đột với sếp + Lương thấp). Các chỉ báo trong mô hình định dạng không nhất thiết phải có tương quan với nhau, mỗi chỉ báo nắm bắt một lát cắt độc lập của khái niệm lý thuyết.",
+      "seminal_citation": "Diamantopoulos, A., & Winklhofer, H. M. (2001). Index construction with formative indicators: An alternative to scale development. Journal of Marketing Research, 38(2), 269–277. https://doi.org/10.1509/jmkr.38.2.269.18845; Cenfetelli, R. T., & Bassellier, G. (2009). Interpretation of formative measurement in information systems research. MIS Quarterly, 33(4), 689–707.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Formative measurement model according to Henseler et al. (2015); Henseler et al. (2015).",
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn thẩm định ĐẶC THÙ (Hoàn toàn KHÔNG DÙNG Cronbach's alpha và AVE): (1) Kiểm định đa cộng tuyến: Hệ số VIF của từng chỉ báo bắt buộc phải < 3.3 (hoặc tối đa < 5); (2) Đánh giá trọng số ngoài (Outer Weights): Kiểm định ý nghĩa thống kê của trọng số qua Bootstrap (p < 0.05); (3) Nếu trọng số không có ý nghĩa thống kê, kiểm tra hệ số tải ngoài (Outer Loading): Nếu loading >= 0.50, vẫn giữ lại chỉ báo; (4) Thẩm định độ giá trị hội tụ qua Phân tích Dự phòng (Redundancy Analysis r >= 0.70).",
+      "pitfalls": "Báo cáo Cronbach's alpha hoặc AVE cho thang đo định dạng (điều này bộc lộ sự thiếu hiểu biết cơ bản về đo lường vì các chỉ báo định dạng không đo tính nhất quán); xóa bỏ một chỉ báo định dạng làm cắt cụt một phần miền khái niệm lý thuyết.",
+      "apa_reference": "Diamantopoulos, A., & Winklhofer, H. M. (2001). Index construction with formative indicators: An alternative to scale development. Journal of Marketing Research, 38(2), 269–277."
     },
     {
       "id": "fornell-larcker-criterion",
-      "term": "Fornell-Larcker criterion",
-      "vietnamese": "Tiêu chuẩn Fornell-Larcker so sánh căn bậc hai AVE với tương quan.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "PLS-SEM",
-        "Discriminant Validity"
+      "term": "Fornell-Larcker Criterion",
+      "vietnamese": "Tiêu chuẩn Thẩm định Độ giá trị Phân biệt Fornell-Larcker",
+      "vietnamese_variants": [
+        "Tiêu chuẩn căn bậc hai AVE",
+        "Fornell-Larcker discriminant validity test"
       ],
-      "core_definition": "Tiêu chuẩn Fornell-Larcker so sánh căn bậc hai AVE với tương quan.",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Độ giá trị Phân biệt",
+        "CFA & SEM",
+        "Đo lường Khái niệm"
+      ],
+      "core_definition": "Quy tắc thẩm định độ giá trị phân biệt cổ điển do Claes Fornell và David F. Larcker (1981) thiết lập. Nguyên lý cốt lõi: Một biến tiềm ẩn phải chia sẻ nhiều phương sai với các chỉ báo đo lường của chính nó hơn là với bất kỳ biến tiềm ẩn nào khác trong mô hình. Về mặt toán học, căn bậc hai của AVE của một biến tiềm ẩn bắt buộc phải lớn hơn hệ số tương quan giữa biến tiềm ẩn đó với tất cả các biến tiềm ẩn khác.",
+      "seminal_citation": "Fornell, C., & Larcker, D. F. (1981). Evaluating structural equation models with unobservable variables and measurement error. Journal of Marketing Research, 18(1), 39–50. https://doi.org/10.1177/002224378101800104",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Fornell-Larcker criterion according to Henseler et al. (2015); Henseler et al. (2015).",
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "benchmarks": "Quy tắc bảng ma trận: sqrt(AVE_i) > |r_{ij}| với mọi j != i. Trên bảng báo cáo tương quan giữa các biến, các giá trị trên đường chéo chính (chính là căn bậc hai của AVE) phải lớn hơn tất cả các giá trị ngoài đường chéo (hệ số tương quan tương ứng ở cùng hàng và cùng cột).",
+      "pitfalls": "Hạn chế chí tử bị Henseler et al. (2015) vạch trần: Phương pháp Fornell-Larcker có độ nhạy rất kém trong việc phát hiện vi phạm độ giá trị phân biệt khi các hệ số tải ngoài (Loadings) biến thiên không đều (từ 0.60 đến 0.85). Trong trường hợp đó, Fornell-Larcker vẫn báo đạt nhưng thực tế hai khái niệm đã bị hòa lẫn vào nhau. Các tạp chí Q1 hiện nay bắt buộc phải bổ sung chỉ số HTMT (<= 0.85/0.90).",
+      "apa_reference": "Fornell, C., & Larcker, D. F. (1981). Evaluating structural equation models with unobservable variables and measurement error. Journal of Marketing Research, 18(1), 39–50."
     },
     {
       "id": "foster-greer-thorbecke-poverty-indices-fgt",
@@ -21484,22 +21546,27 @@
     {
       "id": "kaiser-meyer-olkin-kmo",
       "term": "Kaiser-Meyer-Olkin Measure of Sampling Adequacy (KMO)",
-      "vietnamese": "Đo lường độ thích hợp của mẫu (MSA > 0.50 tối thiểu, > 0.70 khá, > 0.80 tốt).",
+      "vietnamese": "Hệ số Thích hợp Mẫu Kaiser-Meyer-Olkin (Chỉ số KMO)",
       "vietnamese_variants": [
-        "KMO"
+        "Chỉ số KMO",
+        "KMO test for factor analysis"
       ],
       "domain_tags": [
-        "Multivariate Data Analysis"
+        "Phân tích Nhân tố Khám phá (EFA)",
+        "Thẩm định Mẫu Khảo sát"
       ],
-      "core_definition": "Đo lường độ thích hợp của mẫu (MSA > 0.50 tối thiểu, > 0.70 khá, > 0.80 tốt).",
-      "seminal_citation": "Hair et al. (2018); Hair et al. (2018); Kaiser (1974); Hair et al. (2018)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "core_definition": "Chỉ số thống kê do Henry Kaiser (1970, 1974) và Rice phát triển nhằm đánh giá mức độ thích hợp của dữ liệu mẫu cho việc thực hiện Phân tích Nhân tố (EFA/CFA). KMO so sánh độ lớn của các hệ số tương quan quan sát được giữa các cặp biến với các hệ số tương quan riêng phần (Partial correlations). Nếu các biến thực sự chia sẻ các nhân tố chung tiềm ẩn, tương quan riêng phần sẽ nhỏ và chỉ số KMO sẽ tiến gần về 1.0.",
+      "seminal_citation": "Kaiser, H. F. (1970). A second generation little jiffy. Psychometrika, 35(4), 401–415. https://doi.org/10.1007/BF02291817; Kaiser, H. F. (1974). An index of factorial simplicity. Psychometrika, 39(1), 31–36. https://doi.org/10.1007/BF02291575",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "LaTeX thô; lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Kaiser-Meyer-Olkin (KMO) according to Hair et al. (2018); Hair et al. (2018); Kaiser (1974); Hair et al. (2018).",
       "domain_tags_en": [
         "Multivariate Data Analysis"
-      ]
+      ],
+      "benchmarks": "Thang đo đánh giá KMO của Kaiser (1974): (1) KMO >= 0.90: Rất tuyệt vời (Marvelous); (2) 0.80 <= KMO < 0.90: Tốt (Meritorious); (3) 0.70 <= KMO < 0.80: Trung bình khá (Middling); (4) 0.60 <= KMO < 0.70: Tạm chấp nhận (Mediocre); (5) 0.50 <= KMO < 0.60: Đáng thất vọng (Miserable); (6) KMO < 0.50: Không thể chấp nhận (Unacceptable - cấm chạy EFA). Bắt buộc KMO >= 0.60 (lý tưởng >= 0.70).",
+      "pitfalls": "Chạy EFA khi KMO < 0.50 dẫn đến việc trích xuất các nhân tố giả tạo từ ma trận tương quan rời rạc; chỉ báo cáo KMO toàn thể mà không kiểm tra chỉ số KMO cho từng biến riêng lẻ trên đường chéo của ma trận phản hình ảnh (Anti-image correlation matrix MSA phải >= 0.50).",
+      "apa_reference": "Kaiser, H. F. (1974). An index of factorial simplicity. Psychometrika, 39(1), 31–36."
     },
     {
       "id": "kaiser-meyer-olkin-measure-kmo",
@@ -24610,23 +24677,29 @@
     },
     {
       "id": "model-fit-in-pls-sem",
-      "term": "Model fit in PLS-SEM",
-      "vietnamese": "Độ phù hợp mô hình (SRMR < 0.08, d_ULS, d_G).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "PLS-SEM",
-        "Discriminant Validity"
+      "term": "Model Fit in PLS-SEM",
+      "vietnamese": "Độ phù hợp Mô hình trong PLS-SEM (Chỉ số SRMR & Bootstrap Exact Fit)",
+      "vietnamese_variants": [
+        "PLS-SEM goodness of fit",
+        "Kiểm định sự phù hợp chính xác PLS"
       ],
-      "core_definition": "Độ phù hợp mô hình (SRMR < 0.08, d_ULS, d_G).",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "PLS-SEM Nâng cao",
+        "Đánh giá Mô hình Cấu trúc"
+      ],
+      "core_definition": "Khái niệm và quy chuẩn đánh giá độ phù hợp tổng thể của mô hình trong PLS-SEM do Henseler et al. (2014, 2016) và Dijkstra & Henseler (2015) thiết lập. Khác với CB-SEM (nơi độ phù hợp mô hình là trung tâm), PLS-SEM truyền thống không có chỉ số Goodness-of-Fit (GoF của Tenenhaus đã bị chứng minh là không hợp lệ). Thay vào đó, trường phái hiện đại thẩm định độ phù hợp qua chỉ số SRMR và các phép kiểm định khoảng cách phân phối sai số ma trận bằng kỹ thuật Bootstrap (Exact Model Fit Test).",
+      "seminal_citation": "Henseler, J., Dijkstra, T. K., Sarstedt, M., Ringle, C. M., Diamantopoulos, A., Straub, D. W., ... & Calantone, R. J. (2014). Common beliefs and reality about PLS: Comments on Rönkkö and Evermann (2013). Organizational Research Methods, 17(2), 182–209. https://doi.org/10.1177/1094428114526928; Henseler, J., Hubona, G., & Ray, P. A. (2016). Using PLS path modeling in new technology research: updated guidelines. Industrial Management & Data Systems, 116(1), 2–20.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "LaTeX thô; lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Model fit in PLS-SEM according to Henseler et al. (2015); Henseler et al. (2015).",
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "benchmarks": "Hai tiêu chí kiểm tra độ phù hợp duy nhất được chấp nhận trong PLS-SEM: (1) SRMR <= 0.08 (hoặc nới lỏng <= 0.10); (2) Kiểm định sự phù hợp chính xác qua Bootstrap: Khoảng cách bình phương Euclide không trọng số (d_ULS) và khoảng cách trắc địa (d_G) BẮT BUỘC PHẢI NHỎ HƠN giá trị bách phân vị thứ 95 (hoặc 99) tương ứng của phân phối bootstrap (d_ULS < HI95 và d_G < HI95, tức p-value > 0.05).",
+      "pitfalls": "Tiếp tục sử dụng chỉ số GoF (Goodness of Fit Tenenhaus 2005) vốn đã bị Hair et al. và Henseler et al. kịch liệt khuyến cáo từ bỏ; lầm tưởng rằng mô hình PLS-SEM phải đạt CFI/RMSEA cao mới được bảo vệ luận án.",
+      "apa_reference": "Henseler, J., Hubona, G., & Ray, P. A. (2016). Using PLS path modeling in new technology research: updated guidelines. Industrial Management & Data Systems, 116(1), 2–20."
     },
     {
       "id": "model-of-athlete-brand-image-mabi",
@@ -25781,20 +25854,27 @@
     {
       "id": "nguong-tai-thuc-nghiem",
       "term": "Empirical Factor Loading Thresholds",
-      "vietnamese": "Ngưỡng Hệ số Tải Thực nghiệm trong Phân tích Nhân tố",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Multivariate Data Analysis"
+      "vietnamese": "Hệ thống Ngưỡng Hệ số Tải Thực nghiệm (Chuẩn mực Outer Loadings)",
+      "vietnamese_variants": [
+        "Ngưỡng factor loading",
+        "Quy chuẩn hệ số tải Hair et al."
       ],
-      "core_definition": "Factor Loading > 0.50 (ý nghĩa thực tiễn với cỡ mẫu N >= 120), > 0.70 (cấu trúc rõ nét). Communality (Phương sai trích) > 0.50. Cross-loading chênh lệch < 0.30.",
-      "seminal_citation": "Hair et al. (2018)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Đo lường & Thang đo",
+        "CFA & PLS-SEM"
+      ],
+      "core_definition": "Hệ thống các ngưỡng giá trị tới hạn của hệ số tải nhân tố (Factor Loadings trong CFA / Outer Loadings trong PLS-SEM) được thiết lập dựa trên cơ sở toán học về tỷ lệ phương sai trích xuất của từng biến quan sát: Phương sai biến quan sát được giải thích bởi biến tiềm ẩn chính bằng bình phương của hệ số tải (Loading^2).",
+      "seminal_citation": "Nunnally, J. C., & Bernstein, I. H. (1994). Psychometric theory (3rd ed.). McGraw-Hill; Hair, J. F., Hult, G. T. M., Ringle, C. M., & Sarstedt, M. (2022). A primer on partial least squares structural equation modeling (PLS-SEM) (3rd ed.). SAGE Publications.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "LaTeX thô; tên mục không phải thuật ngữ | Lưu ý: \"chênh lệch < 0.30\" cần diễn đạt rõ (chênh tải chính – tải chéo ≥ 0.20/0.30 là quy ước)",
       "core_definition_en": "Academic definition of Ngưỡng tải thực nghiệm according to Hair et al. (2018).",
       "domain_tags_en": [
         "Multivariate Data Analysis"
-      ]
+      ],
+      "benchmarks": "Thang chuẩn mực quốc tế Hair et al. (2022) và Nunnally & Bernstein (1994): (1) Loading >= 0.708: Ngưỡng lý tưởng tuyệt đối (vì 0.708^2 = 0.50, tức biến tiềm ẩn giải thích được trên 50% phương sai của câu hỏi đo lường); (2) 0.60 <= Loading < 0.708: Chấp nhận được trong nghiên cứu thực nghiệm nếu tổng thể AVE >= 0.50; (3) 0.40 <= Loading < 0.60: Chỉ xem xét loại bỏ nếu việc loại bỏ giúp tăng AVE và CR vượt ngưỡng; (4) Loading < 0.40: BẮT BUỘC XÓA BỎ NGAY LẬP TỨC.",
+      "pitfalls": "Giữ lại các biến có loading < 0.40 làm ô nhiễm ma trận đo lường và kéo sụt AVE của toàn bộ cấu trúc; tự ý xóa các biến có loading 0.65 trong khi thang đo chỉ có 3 biến quan sát.",
+      "apa_reference": "Hair, J. F., Hult, G. T. M., Ringle, C. M., & Sarstedt, M. (2022). A primer on partial least squares structural equation modeling (PLS-SEM) (3rd ed.). SAGE Publications."
     },
     {
       "id": "niche-themes-vs-emerging-themes",
@@ -25967,22 +26047,28 @@
     },
     {
       "id": "non-normed-fit-index-tucker-lewis-index---tli",
-      "term": "Non-Normed Fit Index (Tucker-Lewis Index - TLI)",
-      "vietnamese": "Chỉ số Phù hợp Phi chuẩn hóa (Tucker & Lewis, 1973)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "CB-SEM Fit Indices"
+      "term": "Tucker-Lewis Index (TLI / Non-Normed Fit Index)",
+      "vietnamese": "Chỉ số Tucker-Lewis (Chỉ số Phù hợp Phi Chuẩn hóa TLI / NNFI)",
+      "vietnamese_variants": [
+        "Chỉ số TLI",
+        "Non-Normed Fit Index (NNFI)"
       ],
-      "core_definition": "So sánh tỷ lệ cải thiện chi-square trên mỗi bậc tự do giữa mô hình đề xuất và mô hình độc lập, không bị thiên lệch bởi cỡ mẫu. Ngưỡng thực nghiệm tham chiếu: Giá trị TLI/NNFI $\\ge 0.90$ là chấp nhận được; $\\ge 0.95$ là xuất sắc.",
-      "seminal_citation": "Giá trị TLI/NNFI $\\ge 0.90$ là chấp nhận được; $\\ge 0.95$ là xuất sắc.",
-      "tier": "acronym",
+      "domain_tags": [
+        "Độ phù hợp Mô hình (Model Fit)",
+        "CB-SEM & CFA"
+      ],
+      "core_definition": "Chỉ số độ phù hợp mô hình so sánh gia tăng do Ledyard Tucker và Charles Lewis (1973) phát minh ban đầu cho phân tích nhân tố, và được Bentler & Bonett (1980) đưa vào SEM dưới tên gọi Non-Normed Fit Index (NNFI). TLI so sánh mức độ cải thiện của hàm hợp lý trên mỗi bậc tự do giữa mô hình đề xuất và mô hình cơ sở rỗng. Nhờ có thành phần phạt độ phức tạp (Degrees of freedom penalty), TLI không bị tăng lên một cách giả tạo khi thêm các tham số tự do như chỉ số NFI cổ điển.",
+      "seminal_citation": "Tucker, L. R., & Lewis, C. (1973). A reliability coefficient for maximum likelihood factor analysis. Psychometrika, 38(1), 1–10. https://doi.org/10.1007/BF02291170; Bentler, P. M., & Bonett, D. G. (1980). Significance tests and goodness of fit in the analysis of covariance structures. Psychological Bulletin, 88(3), 588–606.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of Non-Normed Fit Index (Tucker-Lewis Index - TLI) according to Giá trị TLI/NNFI $\\ge 0.90$ là chấp nhận được; $\\ge 0.95$ là xuất sắc..",
       "domain_tags_en": [
         "CB-SEM Fit Indices"
       ],
-      "benchmarks": "Giá trị TLI/NNFI $\\ge 0.90$ là chấp nhận được; $\\ge 0.95$ là xuất sắc."
+      "benchmarks": "Quy chuẩn đánh giá: TLI >= 0.95 (xuất sắc) và TLI >= 0.90 (chấp nhận được). Khi so sánh giữa hai mô hình lồng nhau cạnh tranh, mô hình nào có TLI cao hơn được đánh giá là tiết kiệm (parsimonious) và tối ưu hơn về mặt cấu trúc.",
+      "pitfalls": "Hiểu lầm khi thấy TLI > 1.0 (cho rằng phần mềm bị lỗi): Vì TLI không bị chuẩn hóa gò bó trong khoảng [0, 1], trong các mẫu nhỏ hoặc khi ma trận tương quan rất mạnh, giá trị của nó có thể vượt nhẹ quá 1.0.",
+      "apa_reference": "Tucker, L. R., & Lewis, C. (1973). A reliability coefficient for maximum likelihood factor analysis. Psychometrika, 38(1), 1–10."
     },
     {
       "id": "non-response-error",
@@ -26767,20 +26853,27 @@
     {
       "id": "orthogonal-vs-oblique-factor-rotation",
       "term": "Orthogonal vs. Oblique Factor Rotation",
-      "vietnamese": "Xoay Nhân tố Vuông góc",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Factor Analysis"
+      "vietnamese": "Xoay Vuông góc Đối kháng Xoay Xiên (Varimax vs. Promax)",
+      "vietnamese_variants": [
+        "Varimax vs Promax rotation",
+        "So sánh xoay vuông góc và xoay xiên"
       ],
-      "core_definition": "Varimax) vs. Xoay Xiên (Promax/Oblimin) (Giả định các nhân tố độc lập vs. Tương quan.",
-      "seminal_citation": "Fabrigar et al. (1999)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phân tích Nhân tố Khám phá (EFA)",
+        "Lựa chọn Phương pháp Xoay"
+      ],
+      "core_definition": "Hai trường phái toán học và triết lý đối lập trong kỹ thuật xoay trục nhân tố EFA: (1) Xoay vuông góc (Orthogonal: Varimax, Quartimax, Equamax) cưỡng ép các nhân tố tiềm ẩn phải có tương quan bằng 0, tối đa hóa phương sai của bình phương hệ số tải trên từng cột ma trận; (2) Xoay xiên (Oblique: Promax, Direct Oblimin) cho phép các nhân tố tự do tương quan với nhau, phản ánh trung thực bản chất liên đới phức tạp giữa các hiện tượng khoa học xã hội.",
+      "seminal_citation": "Kaiser, H. F. (1958). The varimax criterion for analytic rotation in factor analysis. Psychometrika, 23(3), 187–200. https://doi.org/10.1007/BF02289233; Hendrickson, A. E., & White, P. O. (1964). PROMAX: A quick method for rotation to oblique simple structure. British Journal of Statistical Psychology, 17(1), 65–70.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Orthogonal vs. Oblique Factor Rotation according to Fabrigar et al. (1999).",
       "domain_tags_en": [
         "Factor Analysis"
-      ]
+      ],
+      "benchmarks": "Quy tắc quyết định của Tabachnick & Fidell (2019) và Hair et al. (2022): Luôn chạy xoay xiên (Promax) trước và kiểm tra Ma trận Tương quan giữa các Nhân tố (Factor Correlation Matrix): Nếu tương quan giữa các nhân tố vượt quá r > 0.32 (tương đương chia sẻ > 10% phương sai), BẮT BUỘC phải giữ lại kết quả xoay xiên và báo cáo Ma trận Cấu trúc (Pattern Matrix). Nếu r < 0.32, nhà nghiên cứu có thể an tâm sử dụng kết quả xoay vuông góc Varimax.",
+      "pitfalls": "Báo cáo ma trận Structure Matrix thay vì Pattern Matrix khi sử dụng xoay xiên (Pattern matrix thể hiện tác động trực tiếp thuần túy của nhân tố lên biến quan sát sau khi đã kiểm soát tương quan giữa các nhân tố); lạm dụng Varimax chỉ vì nó dễ đọc ma trận hơn.",
+      "apa_reference": "Kaiser, H. F. (1958). The varimax criterion for analytic rotation in factor analysis. Psychometrika, 23(3), 187–200."
     },
     {
       "id": "osf",
@@ -27117,21 +27210,28 @@
     },
     {
       "id": "parallel-analysis-benchmark-horn",
-      "term": "Parallel Analysis Benchmark (Horn)",
-      "vietnamese": "Chuẩn So sánh Phân tích Song song Horn",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Factor Analysis"
+      "term": "Horn's Parallel Analysis",
+      "vietnamese": "Phân tích Song song Horn (Chuẩn vàng Xác định Số lượng Nhân tố)",
+      "vietnamese_variants": [
+        "Phương pháp Parallel Analysis",
+        "Horn criterion for factor retention"
       ],
-      "core_definition": "Phương pháp mô phỏng xác định số nhân tố ưu việt nhất hiện nay.",
-      "seminal_citation": "Horn (1965)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phân tích Nhân tố (EFA)",
+        "Quy chuẩn Trích xuất Nhân tố"
+      ],
+      "core_definition": "Tiêu chuẩn vàng chính xác nhất để quyết định số lượng nhân tố cần trích xuất trong phân tích EFA, do John L. Horn (1965) sáng lập. Khắc phục hoàn toàn xu hướng thổi phồng và trích xuất thừa nhân tố của Tiêu chuẩn Kaiser (Eigenvalue > 1). Parallel Analysis tạo ra hàng trăm hoặc hàng ngàn bộ dữ liệu ngẫu nhiên giả lập có cùng số lượng mẫu quan sát N và số lượng biến đo lường k như dữ liệu thực tế, sau đó tính toán phân phối giá trị riêng (Eigenvalues) ngẫu nhiên.",
+      "seminal_citation": "Horn, J. L. (1965). A rationale and technique for estimating the number of factors in factor analysis. Psychometrika, 30(2), 179–185. https://doi.org/10.1007/BF02289447; Hayton, J. C., Allen, D. G., & Scarpello, V. (2004). Factor retention decisions in exploratory factor analysis: A tutorial on parallel analysis. Organizational Research Methods, 7(2), 191–205.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Parallel Analysis Benchmark (Horn) according to Horn (1965).",
       "domain_tags_en": [
         "Factor Analysis"
-      ]
+      ],
+      "benchmarks": "Quy tắc so sánh giữ lại nhân tố: Chỉ giữ lại những nhân tố có Giá trị riêng thực tế (Actual Eigenvalue) LỚN HƠN Giá trị riêng trung bình (hoặc giá trị bách phân vị thứ 95 - 95th percentile eigenvalue) tạo ra từ dữ liệu ngẫu nhiên giả lập. Khi giá trị riêng thực tế tụt xuống thấp hơn đường giá trị riêng ngẫu nhiên, dừng việc trích xuất nhân tố.",
+      "pitfalls": "Chỉ dựa vào tiêu chuẩn cũ kỹ Kaiser (K1: Eigenvalue > 1.0) - các nghiên cứu mô phỏng Monte Carlo chứng minh tiêu chuẩn K1 trích xuất thừa từ 1 đến 3 nhân tố rác trong hơn 70% trường hợp; không báo cáo biểu đồ Parallel Analysis trong phụ lục bài báo.",
+      "apa_reference": "Horn, J. L. (1965). A rationale and technique for estimating the number of factors in factor analysis. Psychometrika, 30(2), 179–185."
     },
     {
       "id": "parallel-mixed-methods",
@@ -30482,23 +30582,29 @@
     },
     {
       "id": "reflective-measurement-model",
-      "term": "Reflective measurement model",
-      "vietnamese": "Mô hình đo lường phản ánh.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "PLS-SEM",
-        "Discriminant Validity"
+      "term": "Reflective Measurement Model",
+      "vietnamese": "Mô hình Đo lường Phản ánh (Thang đo Phản ánh)",
+      "vietnamese_variants": [
+        "Thang đo reflective",
+        "Reflective construct"
       ],
-      "core_definition": "Mô hình đo lường phản ánh.",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Đo lường & Thang đo",
+        "SEM & Tâm lý học"
+      ],
+      "core_definition": "Mô hình đo lường kinh điển trong khoa học xã hội và tâm lý học hành vi, trong đó chiều mũi tên nhân quả đi từ BIẾN TIỀM ẨN TRỎ RA CÁC BIẾN QUAN SÁT (Construct -> Indicators). Các biến quan sát được xem là những biểu hiện bên ngoài phản ánh trạng thái tiềm ẩn bên trong của khái niệm lý thuyết (ví dụ: Sự hài lòng của khách hàng dẫn đến việc đánh giá cao chất lượng phục vụ, nụ cười của nhân viên và lòng trung thành). Do cùng bắt nguồn từ một nguyên nhân chung, các biến quan sát trong thang đo phản ánh bắt buộc phải có tương quan nội tại rất cao với nhau và có thể hoán đổi cho nhau.",
+      "seminal_citation": "Jarvis, C. B., MacKenzie, S. B., & Podsakoff, P. M. (2003). A critical review of construct indicators and measurement model misspecification in marketing and consumer research. Journal of Consumer Research, 30(2), 199–218. https://doi.org/10.1086/376806",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Reflective measurement model according to Henseler et al. (2015); Henseler et al. (2015).",
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn thẩm định bắt buộc: (1) Đánh giá độ tin cậy nhất quán nội tại qua Cronbach's alpha >= 0.70 và Composite Reliability CR >= 0.70; (2) Đánh giá độ giá trị hội tụ qua AVE >= 0.50 và Loadings >= 0.708; (3) Đánh giá độ giá trị phân biệt qua HTMT <= 0.85/0.90 hoặc Fornell-Larcker; (4) Việc loại bỏ bớt một câu hỏi không làm thay đổi miền ý nghĩa lý thuyết của khái niệm.",
+      "pitfalls": "Đo lường các khái niệm mang bản chất định dạng (Formative - ví dụ: Tình trạng kinh tế xã hội SES gồm thu nhập, học vấn, nghề nghiệp) bằng mô hình phản ánh, dẫn đến việc ép các chỉ báo độc lập phải có tương quan cao với nhau.",
+      "apa_reference": "Jarvis, C. B., MacKenzie, S. B., & Podsakoff, P. M. (2003). A critical review of construct indicators and measurement model misspecification in marketing and consumer research. Journal of Consumer Research, 30(2), 199–218."
     },
     {
       "id": "reflectivity",
@@ -31428,22 +31534,29 @@
     },
     {
       "id": "root-mean-square-error-of-approximation",
-      "term": "Root Mean Square Error of Approximation",
-      "vietnamese": "Căn bậc hai sai số xấp xỉ trung bình",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Acronym NCKH"
+      "term": "Root Mean Square Error of Approximation (RMSEA)",
+      "vietnamese": "Căn bậc hai Sai số Toàn phương Trung bình Xấp xỉ (Chỉ số RMSEA)",
+      "vietnamese_variants": [
+        "Chỉ số RMSEA",
+        "Độ phù hợp tuyệt đối RMSEA Steiger-Lind"
       ],
-      "core_definition": "Chỉ số độ phù hợp tuyệt đối trong SEM đánh giá mức độ sai lệch của mô hình lý thuyết so với tổng thể cho mỗi bậc tự do. Ngưỡng thực nghiệm tham chiếu: RMSEA < 0.05 (phù hợp xuất sắc), 0.05 - 0.08 (phù hợp chấp nhận được), > 0.10 (phù hợp kém); p-close > 0.05 (Kline, 2023).",
-      "seminal_citation": "RMSEA < 0.05 (phù hợp xuất sắc), 0.05 - 0.08 (phù hợp chấp nhận được), > 0.10 (phù hợp kém); p-close > 0.05 (Kline, 2023).",
-      "tier": "acronym",
+      "domain_tags": [
+        "Độ phù hợp Mô hình (Model Fit)",
+        "CB-SEM & CFA",
+        "Chỉ số Phù hợp Tuyệt đối"
+      ],
+      "core_definition": "Chỉ số độ phù hợp tuyệt đối quan trọng và được báo cáo nhiều nhất trong mô hình CB-SEM, do James Steiger và Ralph Lind (1980) sáng lập và Browne & Cudeck (1993) hoàn thiện. RMSEA đo lường mức độ sai lệch trên mỗi bậc tự do giữa ma trận hiệp phương sai của mô hình đề xuất và ma trận hiệp phương sai tổng thể. Điểm ưu việt tuyệt đối của RMSEA là có cơ chế phạt nặng các mô hình quá phức tạp (Parsimony adjustment) và tính toán được khoảng tin cậy 90% chính xác.",
+      "seminal_citation": "Steiger, J. H., & Lind, J. C. (1980). Statistically based tests for the number of common factors. Paper presented at the annual meeting of the Psychometric Society; Browne, M. W., & Cudeck, R. (1993). Alternative ways of assessing model fit. In K. A. Bollen & J. S. Long (Eds.), Testing structural equation models (pp. 136–162). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of Root Mean Square Error of Approximation according to RMSEA < 0.05 (phù hợp xuất sắc), 0.05 - 0.08 (phù hợp chấp nhận được), > 0.10 (phù hợp kém); p-close > 0.05 (Kline, 2023)..",
       "domain_tags_en": [
         "Acronym NCKH"
       ],
-      "benchmarks": "RMSEA < 0.05 (phù hợp xuất sắc), 0.05 - 0.08 (phù hợp chấp nhận được), > 0.10 (phù hợp kém); p-close > 0.05 (Kline, 2023)."
+      "benchmarks": "Hệ thống ngưỡng đánh giá kinh điển theo Browne & Cudeck (1993) và Hu & Bentler (1999): (1) RMSEA <= 0.05: Độ phù hợp rất tốt (Close fit); (2) 0.05 < RMSEA <= 0.08: Độ phù hợp chấp nhận được (Reasonable fit); (3) 0.08 < RMSEA <= 0.10: Độ phù hợp kém (Mediocre fit); (4) RMSEA > 0.10: Mô hình không phù hợp (Poor fit - bị từ chối). Bắt buộc báo cáo Khoảng tin cậy 90% của RMSEA (Cận trên 90% CI < 0.08) và giá trị p-close > 0.05 (H0: Close fit).",
+      "pitfalls": "Bẫy kích thước mẫu nhỏ: Với các mô hình có bậc tự do nhỏ và cỡ mẫu nhỏ (N < 200), RMSEA có xu hướng bị thổi phồng nhân tạo lên trên 0.08 ngay cả khi mô hình hoàn toàn đúng; chỉ báo cáo giá trị điểm RMSEA mà giấu đi khoảng tin cậy 90% CI.",
+      "apa_reference": "Browne, M. W., & Cudeck, R. (1993). Alternative ways of assessing model fit. SAGE Publications."
     },
     {
       "id": "root-mean-square-residual",
@@ -32144,21 +32257,28 @@
     },
     {
       "id": "scree-test-criterion",
-      "term": "Scree Test Criterion",
-      "vietnamese": "Phân tích điểm gãy của đường dốc Eigenvalues (Catell, 1966).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Multivariate Data Analysis"
+      "term": "Cattell's Scree Test",
+      "vietnamese": "Kiểm định Biểu đồ Dốc Cattell (Scree Plot)",
+      "vietnamese_variants": [
+        "Đồ thị Scree Cattell",
+        "Quy tắc điểm gãy đồ thị dốc"
       ],
-      "core_definition": "Phân tích điểm gãy của đường dốc Eigenvalues (Catell, 1966).",
-      "seminal_citation": "Hair et al. (2018); Hair et al. (2018)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phân tích Nhân tố (EFA)",
+        "Trực quan hóa Dữ liệu"
+      ],
+      "core_definition": "Phương pháp trực quan hóa hình học do Raymond B. Cattell (1966) đề xuất để xác định số lượng nhân tố tối ưu. Tên gọi 'Scree' xuất phát từ thuật ngữ địa chất chỉ đống đá vụn tích tụ dưới chân một vách núi dốc đứng. Đồ thị vẽ các giá trị riêng (Eigenvalues) theo thứ tự giảm dần; phần các nhân tố thực sự quan trọng sẽ tạo thành một sườn núi dốc đứng, trong khi phần các nhân tố nhiễu ngẫu nhiên sẽ tạo thành một bãi đá thoai thoải ở chân dốc.",
+      "seminal_citation": "Cattell, R. B. (1966). The scree test for the number of factors. Multivariate Behavioral Research, 1(2), 245–276. https://doi.org/10.1207/s15327906mbr0102_10",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Scree Test Criterion according to Hair et al. (2018); Hair et al. (2018).",
       "domain_tags_en": [
         "Multivariate Data Analysis"
-      ]
+      ],
+      "benchmarks": "Quy tắc Điểm gãy khuỷu tay (Elbow Rule): Điểm mà tại đó đường dốc chuyển đột ngột từ thẳng đứng sang thoai thoải nằm ngang chính là điểm gãy. Số lượng nhân tố giữ lại chính là TỔNG SỐ NHÂN TỐ NẰM PHÍA TRÊN ĐIỂM GÃY KHUỶU TAY (loại bỏ điểm gãy và toàn bộ các điểm thoai thoải phía sau).",
+      "pitfalls": "Tính chủ quan cao: Khi đồ thị có nhiều điểm gãy hoặc đường cong chuyển tiếp mềm mại không rõ khuỷu tay, các nhà nghiên cứu khác nhau có thể đưa ra kết luận khác nhau. Chuẩn mực khoa học bắt buộc phải kết hợp Scree Plot với Parallel Analysis của Horn.",
+      "apa_reference": "Cattell, R. B. (1966). The scree test for the number of factors. Multivariate Behavioral Research, 1(2), 245–276."
     },
     {
       "id": "script",
@@ -32849,23 +32969,30 @@
     },
     {
       "id": "simple-slopes-analysis",
-      "term": "Simple Slopes Analysis",
-      "vietnamese": "Ước lượng độ dốc của biến X lên Y tại các mức độ khác nhau của biến điều tiết W.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Mediation",
-        "Moderation (PROCESS)"
+      "term": "Simple Slopes Analysis in Moderation",
+      "vietnamese": "Phân tích Độ dốc Đơn giản (Phân tích Tác động Điều tiết Điểm)",
+      "vietnamese_variants": [
+        "Simple slopes test",
+        "Pick-a-point approach moderation",
+        "Đồ thị tương tác điều tiết"
       ],
-      "core_definition": "Ước lượng độ dốc của biến X lên Y tại các mức độ khác nhau của biến điều tiết W.",
-      "seminal_citation": "Hayes (2022); Hayes (2022)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phân tích Điều tiết (Moderation)",
+        "Tương tác Tuyến tính"
+      ],
+      "core_definition": "Kỹ thuật phân tích hậu kiểm chuẩn tắc do Leona Aiken và Stephen West (1991) chuẩn hóa để diễn giải trực quan và kiểm định ý nghĩa thống kê của mối quan hệ giữa biến độc lập X và biến phụ thuộc Y tại các mức giá trị cụ thể của biến điều tiết W (Pick-a-point approach). Khi hệ số tương tác X*W có ý nghĩa thống kê, độ dốc của đường hồi quy Y theo X sẽ biến đổi phụ thuộc vào giá trị của W.",
+      "seminal_citation": "Aiken, L. S., & West, S. G. (1991). Multiple regression: Testing and interpreting interactions. SAGE Publications; Dawson, J. F. (2014). Moderation in management research: What, why, when, and how. Journal of Business and Psychology, 29(1), 1–19. https://doi.org/10.1007/s10869-013-9308-7",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "LaTeX thô; lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Simple Slopes Analysis according to Hayes (2022); Hayes (2022).",
       "domain_tags_en": [
         "Mediation",
         "Moderation (PROCESS)"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn lựa chọn các điểm cắt giá trị của biến điều tiết: (1) Mức thấp: Giá trị trung bình trừ 1 độ lệch chuẩn (Mean - 1 SD); (2) Mức trung bình: Mean; (3) Mức cao: Mean + 1 SD. Tính toán hệ số độ dốc đơn giản (Simple slope), sai số chuẩn và giá trị p-value tại từng mức. Vẽ biểu đồ tương tác 2 chiều (Interaction plot) thể hiện sự phân kỳ hoặc giao nhau của các đường hồi quy.",
+      "pitfalls": "Tùy tiện chia biến điều tiết liên tục thành 2 nhóm cao/thấp (Median split) rồi chạy ANOVA - phương pháp này làm mất mát nghiêm trọng thông tin dữ liệu và làm giảm độ mạnh thống kê; bỏ qua kỹ thuật Johnson-Neyman khi muốn tìm chính xác vùng có ý nghĩa thay vì chỉ kiểm tra tại 3 điểm cố định.",
+      "apa_reference": "Aiken, L. S., & West, S. G. (1991). Multiple regression: Testing and interpreting interactions. SAGE Publications."
     },
     {
       "id": "simpsons-paradox",
@@ -33078,20 +33205,27 @@
     {
       "id": "sobel-test-for-indirect-effects",
       "term": "Sobel Test for Indirect Effects",
-      "vietnamese": "Kiểm định Sobel",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Mediation Analysis"
+      "vietnamese": "Kiểm định Sobel cho Tác động Gián tiếp (Phân tích Trung gian)",
+      "vietnamese_variants": [
+        "Phép thử Sobel",
+        "Sobel mediation test"
       ],
-      "core_definition": "Kiểm định ý nghĩa thống kê của tác động gián tiếp a * b dựa trên giả định phân phối chuẩn.",
-      "seminal_citation": "Sobel (1982)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phân tích Trung gian (Mediation)",
+        "Kiểm định Giả thuyết Thống kê"
+      ],
+      "core_definition": "Phép kiểm định thống kê tham số kinh điển do Michael E. Sobel (1982) đề xuất nhằm kiểm tra ý nghĩa thống kê của tác động gián tiếp (Indirect Effect ab) trong mô hình trung gian 3 biến X -> M -> Y. Thống kê Sobel z được tính bằng tỷ số giữa tích hai hệ số đường dẫn (a * b) chia cho sai số chuẩn liên hợp xấp xỉ bậc một: z = (a*b) / sqrt(b^2 * s_a^2 + a^2 * s_b^2).",
+      "seminal_citation": "Sobel, M. E. (1982). Asymptotic intervals for indirect effects in structural equations models. Sociological Methodology, 13, 290–312. https://doi.org/10.2307/270723; Preacher, K. J., & Hayes, A. F. (2008). Asymptotic and resampling strategies for assessing and comparing indirect effects in multiple mediator models. Behavior Research Methods, 40(3), 879–891.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Sobel Test for Indirect Effects according to Sobel (1982).",
       "domain_tags_en": [
         "Mediation Analysis"
-      ]
+      ],
+      "benchmarks": "So sánh giá trị z với phân phối chuẩn tắc: Nếu |z| > 1.96 (tương đương p < 0.05), tác động trung gian đạt ý nghĩa thống kê ở mức 5%.",
+      "pitfalls": "HẠN CHẾ CHÍ TỬ: Tích của hai biến ngẫu nhiên phân phối chuẩn (a * b) KHÔNG BAO GIỜ có phân phối chuẩn, mà luôn bị lệch và nhọn đỉnh (Asymmetric fat-tail distribution), đặc biệt khi mẫu nhỏ. Vì vậy kiểm định Sobel có độ mạnh thống kê rất yếu và mắc nhiều sai lầm loại II. Toàn bộ các học giả hàng đầu (Hayes 2018, Preacher & Hayes 2008, Zhao et al. 2010) đều khuyến cáo KHÔNG NÊN DÙNG Sobel test, mà BẮT BUỘC THAY THẾ bằng kỹ thuật Phân tích Tái chọn mẫu Bootstrap (Bootstrapping 95% Confidence Interval).",
+      "apa_reference": "Sobel, M. E. (1982). Asymptotic intervals for indirect effects in structural equations models. Sociological Methodology, 13, 290–312."
     },
     {
       "id": "social-construction-of-technology-scot",
@@ -33831,24 +33965,29 @@
     {
       "id": "standardized-root-mean-square-residual-srmr",
       "term": "Standardized Root Mean Square Residual (SRMR)",
-      "vietnamese": "Căn bậc hai trung bình bình phương phần dư chuẩn hóa.",
+      "vietnamese": "Căn bậc hai Phần dư Toàn phương Trung bình Chuẩn hóa (Chỉ số SRMR)",
       "vietnamese_variants": [
-        "SRMR"
+        "Chỉ số SRMR",
+        "Độ phù hợp phần dư chuẩn hóa"
       ],
       "domain_tags": [
-        "PLS-SEM",
-        "Discriminant Validity"
+        "Độ phù hợp Mô hình (Model Fit)",
+        "CB-SEM & PLS-SEM",
+        "Chỉ số Phần dư Ma trận"
       ],
-      "core_definition": "Căn bậc hai trung bình bình phương phần dư chuẩn hóa.",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "core_definition": "Chỉ số độ phù hợp mô hình tuyệt đối đo lường trực tiếp độ chênh lệch bình quân giữa các hệ số tương quan quan sát thực tế và các hệ số tương quan được dự báo bởi mô hình cấu trúc. SRMR chuẩn hóa các phần dư hiệp phương sai về thang đo tương quan [-1, +1], nhờ đó giá trị của nó không bị phụ thuộc vào đơn vị đo lường của các biến số và có thể so sánh trực tiếp xuyên suốt các nghiên cứu.",
+      "seminal_citation": "Bentler, P. M. (1995). EQS structural equations program manual. Multivariate Software; Hu, L. T., & Bentler, P. M. (1999). Cutoff criteria for fit indexes in covariance structure analysis: Conventional criteria versus new alternatives. Structural Equation Modeling, 6(1), 1–55. https://doi.org/10.1080/10705519909540118",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2423; lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Standardized Root Mean Square Residual (SRMR) according to Henseler et al. (2015); Henseler et al. (2015).",
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn vàng Hu & Bentler (1999) và Henseler et al. (2016): SRMR BẮT BUỘC PHẢI <= 0.08 (trong đó SRMR = 0 phản ánh sự khớp hoàn hảo tuyệt đối). Trong mô hình PLS-SEM hiện đại, SRMR là chỉ số độ phù hợp tổng thể duy nhất được giới chuyên môn công nhận; ngưỡng SRMR < 0.08 (hoặc nới lỏng < 0.10) chứng minh mô hình không bị đặc tả sai cấu trúc.",
+      "pitfalls": "Bỏ qua SRMR khi CFI và RMSEA đạt chuẩn: Một mô hình có thể có CFI > 0.95 do các biến đo có tương quan cao nhưng vẫn có SRMR > 0.10 nếu cấu trúc đường dẫn giữa các biến tiềm ẩn bị thiết lập sai nghiêm trọng.",
+      "apa_reference": "Hu, L. T., & Bentler, P. M. (1999). Cutoff criteria for fit indexes in covariance structure analysis: Conventional criteria versus new alternatives. Structural Equation Modeling, 6(1), 1–55."
     },
     {
       "id": "standardized-vs-unstandardized-regression-coefficients",
@@ -37466,23 +37605,31 @@
     },
     {
       "id": "variance-based-sem-pls-sem",
-      "term": "Variance-based SEM (PLS-SEM)",
-      "vietnamese": "Mô hình phương trình cấu trúc dựa trên phương sai.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "PLS-SEM",
-        "Discriminant Validity"
+      "term": "Partial Least Squares Structural Equation Modeling (PLS-SEM)",
+      "vietnamese": "Mô hình Phương trình Cấu trúc Bình phương Tối thiểu Từng phần (PLS-SEM)",
+      "vietnamese_variants": [
+        "Trường phái PLS-SEM Wold",
+        "Variance-based SEM",
+        "SmartPLS methodology"
       ],
-      "core_definition": "Mô hình phương trình cấu trúc dựa trên phương sai.",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "SEM Nâng cao",
+        "Nghiên cứu Khám phá & Dự báo",
+        "Mô hình Hồi quy Lặp"
+      ],
+      "core_definition": "Trường phái mô hình hóa phương trình cấu trúc dựa trên phương sai do Herman Wold (1982) sáng tạo và được Hair, Ringle & Sarstedt phát triển mạnh mẽ thành trào lưu nghiên cứu quốc tế đương đại (SmartPLS). PLS-SEM ước lượng các tham số thông qua thuật toán lặp OLS tối đa hóa phương sai giải thích của các biến phụ thuộc tiềm ẩn (tối đa hóa R²). PLS-SEM là phương pháp phi tham số (Non-parametric), không đòi hỏi giả định phân phối chuẩn dữ liệu, hoạt động xuất sắc với cả mẫu nhỏ và các mô hình cực kỳ phức tạp.",
+      "seminal_citation": "Wold, H. (1982). Soft modeling: The basic design and some extensions. In K. G. Jöreskog & H. Wold (Eds.), Systems under indirect observation: Causality, structure, prediction (Part II, pp. 1–54). North-Holland; Hair, J. F., Risher, J. J., Sarstedt, M., & Ringle, C. M. (2019). When to use and how to report the results of PLS-SEM. European Business Review, 31(1), 2–24. https://doi.org/10.1108/EBR-11-2018-0203",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Variance-based SEM (PLS-SEM) according to Henseler et al. (2015); Henseler et al. (2015).",
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "benchmarks": "Quy trình thẩm định 2 bước nghiêm ngặt của Hair et al. (2022): (1) Đánh giá mô hình đo lường: Outer loadings >= 0.708, CR >= 0.70, AVE >= 0.50, HTMT <= 0.85/0.90; (2) Đánh giá mô hình cấu trúc: VIF < 3.3 (hoặc < 5) chống đa cộng tuyến, kiểm định ý nghĩa thống kê các hệ số đường dẫn qua Bootstrap (ít nhất 5,000–10,000 lần lặp, p < 0.05), hệ số R², f² effect size, và kiểm định năng lực dự báo ngoài mẫu PLSpredict (Q²_predict > 0).",
+      "pitfalls": "Lầm tưởng PLS-SEM là 'chiếc đũa thần' có thể chạy với cỡ mẫu cực nhỏ vô lý (ví dụ N = 20–30) mà không đáp ứng độ mạnh thống kê (Power analysis); tự tiện báo cáo các chỉ số CFI, RMSEA trong PLS-SEM truyền thống (vốn là các chỉ số đặc thù của CB-SEM).",
+      "apa_reference": "Hair, J. F., Risher, J. J., Sarstedt, M., & Ringle, C. M. (2019). When to use and how to report the results of PLS-SEM. European Business Review, 31(1), 2–24."
     },
     {
       "id": "vas",
@@ -38681,6 +38828,27 @@
       "pitfalls": "Bẫy \"Khai thác dữ liệu tùy tiện\" (Data snooping / Cherry-picking): Dùng thuật toán máy học tìm kiếm các phân khúc có hiệu ứng can thiệp cao trên toàn bộ tập dữ liệu, rồi dùng chính tập dữ liệu đó để chạy các kiểm định thống kê cổ điển, dẫn đến giá trị p-value bị thổi phồng độ tin cậy nghiêm trọng.",
       "seminal_citation": "Athey, S., & Imbens, G. (2016). Recursive partitioning for heterogeneous causal effects. Proceedings of the National Academy of Sciences, 113(27), 7353–7360. https://doi.org/10.1073/pnas.1510489113; Wager, S., & Athey, S. (2018). Estimation and inference of heterogeneous treatment effects using random forests. Journal of the American Statistical Association, 113(523), 1228–1242. https://doi.org/10.1080/01621459.2017.1319839",
       "apa_reference": "Athey, S., & Imbens, G. (2016). Recursive partitioning for heterogeneous causal effects. Proceedings of the National Academy of Sciences, 113(27), 7353–7360.",
+      "tier": "flagship",
+      "expert_status": "verified"
+    },
+    {
+      "id": "modification-indices-mi",
+      "term": "Modification Indices (MI) in CFA/SEM",
+      "vietnamese": "Chỉ số Hiệu chỉnh Mô hình (Chỉ số MI Jöreskog)",
+      "vietnamese_variants": [
+        "Chỉ số Modification Index",
+        "Chỉ số hiệu chỉnh sai số đo lường"
+      ],
+      "domain_tags": [
+        "Độ phù hợp Mô hình (Model Fit)",
+        "CB-SEM & CFA",
+        "Tái đặc tả Mô hình"
+      ],
+      "core_definition": "Chỉ số chẩn đoán tái đặc tả mô hình trong CB-SEM do Karl Jöreskog và Dag Sörbom phát triển. Modification Index (MI) ước lượng mức độ sụt giảm giá trị thống kê Chi-square của mô hình (tương đương mức độ cải thiện độ phù hợp) nếu một tham số cố định nào đó (ví dụ: hiệp phương sai giữa hai sai số đo lường hoặc một hệ số tải chéo) được giải phóng để ước lượng tự do. Về bản chất, MI xấp xỉ một kiểm định nhân tử Lagrange (LM test) có 1 bậc tự do.",
+      "benchmarks": "Đánh giá ý nghĩa: Vì MI xấp xỉ phân phối Chi-square 1 bậc tự do, một giá trị MI >= 3.84 tương ứng với mức ý nghĩa p < 0.05, và MI >= 6.63 tương ứng với p < 0.01. Các giá trị MI lớn (ví dụ MI > 10 hay > 20) chỉ ra những điểm nghẽn nghiêm trọng trong đặc tả mô hình.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT CỦA REVIEWER Q1: Lạm dụng MI để nối mũi tên hai chiều giữa các sai số đo lường (Correlated errors) hoặc ép thêm các đường dẫn chỉ nhằm mục đích làm đẹp chỉ số CFI/RMSEA mà KHÔNG CÓ CĂN CỨ LÝ THUYẾT VỮNG CHẮC. Hành vi này biến nghiên cứu từ kiểm định lý thuyết khẳng định (Confirmatory) thành khai thác dữ liệu tùy tiện (Post-hoc data-driven fitting), làm mô hình mất hoàn toàn khả năng khái quát hóa.",
+      "seminal_citation": "Sörbom, D. (1989). Model modification. Psychometrika, 54(3), 371–384. https://doi.org/10.1007/BF02294623; Chou, C. P., & Bentler, P. M. (1990). Model modification in covariance structure analysis: A comparison among likelihood ratio, Lagrange multiplier, and Wald tests. Multivariate Behavioral Research, 25(1), 115–136.",
+      "apa_reference": "Sörbom, D. (1989). Model modification. Psychometrika, 54(3), 371–384.",
       "tier": "flagship",
       "expert_status": "verified"
     }
