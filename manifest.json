@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Research Methodology Lexicon (Anh - Việt)",
+  "version": "1.0.0",
+  "description": "Từ điển thuật ngữ Phương pháp Nghiên cứu Khoa học (Song ngữ Anh - Việt) tra cứu tức thì khi đọc tài liệu Word & PDF.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Từ điển Phương pháp NCKH",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"],
+      "css": ["content/content.css"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "data/methodology_terms.json",
+        "data/acronyms.json",
+        "data/awl_vocabulary.json",
+        "data/search_index.json",
+        "icons/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

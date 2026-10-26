@@ -1,0 +1,17 @@
+{
+  "name": "research-methodology-lexicon",
+  "version": "1.0.0",
+  "description": "Từ điển thuật ngữ Phương pháp Nghiên cứu Khoa học (Song ngữ Anh - Việt) tra cứu tức thì khi đọc tài liệu Word & PDF.",
+  "scripts": {
+    "test": "node test_suite.js"
+  },
+  "keywords": [
+    "research-methodology",
+    "academic-lexicon",
+    "chrome-extension",
+    "edge-extension",
+    "creswell"
+  ],
+  "author": "",
+  "license": "MIT"
+}

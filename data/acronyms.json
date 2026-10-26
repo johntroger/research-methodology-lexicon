@@ -1,0 +1,987 @@
+{
+  "version": "2.0.0",
+  "last_updated": "2026-10-25T08:01:16.688Z",
+  "acronyms": {
+    "PLS-SEM": {
+      "full_name": "Partial Least Squares Structural Equation Modeling",
+      "vietnamese": "Mô hình phương trình cấu trúc bình phương bé nhất từng phần",
+      "purpose": "Phương pháp SEM dựa trên phương sai (variance-based), tập trung vào dự báo (prediction) và phát triển lý thuyết, phù hợp với mẫu nhỏ và mô hình phức tạp.",
+      "benchmark": "Hệ số R² cao, Q² > 0, hệ số f² (0.02 nhỏ, 0.15 vừa, 0.35 lớn), HTMT < 0.85/0.90."
+    },
+    "CB-SEM": {
+      "full_name": "Covariance-Based Structural Equation Modeling",
+      "vietnamese": "Mô hình phương trình cấu trúc dựa trên hiệp phương sai",
+      "purpose": "Phương pháp SEM truyền thống (Jöreskog, Kline), tập trung vào kiểm định lý thuyết và mức độ phù hợp mô hình tổng thể (Goodness of Fit).",
+      "benchmark": "Chi-square p > 0.05, RMSEA < 0.06 - 0.08, CFI > 0.95, TLI > 0.95, SRMR < 0.08."
+    },
+    "SEM": {
+      "full_name": "Structural Equation Modeling",
+      "vietnamese": "Mô hình phương trình cấu trúc",
+      "purpose": "Kỹ thuật phân tích đa biến thế hệ hai kết hợp phân tích nhân tố khẳng định (CFA) và phân tích đường dẫn (path analysis) để kiểm định đồng thời các mối quan hệ phức tạp.",
+      "benchmark": "Mô hình đo lường đạt độ tin cậy và giá trị hội tụ/phân biệt trước khi đánh giá mô hình cấu trúc."
+    },
+    "AVE": {
+      "full_name": "Average Variance Extracted",
+      "vietnamese": "Phương sai trích trung bình",
+      "purpose": "Thước đo mức độ biến thiên mà biến tiềm ẩn giải thích được từ các biến quan sát so với phương sai do sai số đo lường.",
+      "benchmark": "AVE > 0.50 (Fornell & Larcker, 1981; Hair et al., 2018)."
+    },
+    "HTMT": {
+      "full_name": "Heterotrait-Monotrait Ratio of Correlations",
+      "vietnamese": "Tỷ số tương quan dị biệt - đồng nhất",
+      "purpose": "Tiêu chuẩn hiện đại đánh giá giá trị phân biệt (discriminant validity) trong PLS-SEM và CB-SEM, vượt trội so với Fornell-Larcker và Cross-loadings.",
+      "benchmark": "HTMT < 0.85 (nghiêm ngặt / khái niệm khác biệt rõ) hoặc HTMT < 0.90 (các khái niệm có quan hệ gần) (Henseler et al., 2015)."
+    },
+    "CR": {
+      "full_name": "Composite Reliability",
+      "vietnamese": "Độ tin cậy tổng hợp",
+      "purpose": "Đánh giá độ tin cậy nhất quán nội tại của thang đo, không giả định tải trọng nhân tố bằng nhau như Cronbach's alpha.",
+      "benchmark": "CR >= 0.70 (chấp nhận trong nghiên cứu khám phá), >= 0.80 (nghiên cứu khẳng định), không nên > 0.95 vì có thể trùng lặp câu hỏi (Hair et al., 2018)."
+    },
+    "VIF": {
+      "full_name": "Variance Inflation Factor",
+      "vietnamese": "Hệ số phóng đại phương sai",
+      "purpose": "Kiểm tra hiện tượng đa cộng tuyến (multicollinearity) giữa các biến dự báo trong hồi quy hoặc giữa các chỉ báo formative.",
+      "benchmark": "VIF < 3.0 (lý tưởng trong PLS-SEM / Kock, 2015), VIF < 5.0 (chấp nhận được / Hair et al., 2018), VIF > 10.0 (đa cộng tuyến nghiêm trọng)."
+    },
+    "CMB": {
+      "full_name": "Common Method Bias",
+      "vietnamese": "Sai lệch phương pháp chung",
+      "purpose": "Sai số phương sai giả tạo sinh ra do sử dụng cùng một phương pháp đo lường (như cùng người trả lời, cùng một bảng hỏi tại một thời điểm).",
+      "benchmark": "Harman's single factor < 50% phương sai, kiểm định Full Collinearity VIF < 3.3 (Kock, 2015), hoặc Marker Variable technique (Lindell & Whitney, 2001)."
+    },
+    "CMV": {
+      "full_name": "Common Method Variance",
+      "vietnamese": "Phương sai phương pháp chung",
+      "purpose": "Lượng phương sai phương pháp chung chia sẻ giữa các biến số do công cụ đo lường gây ra.",
+      "benchmark": "Khuyến nghị áp dụng cả biện pháp thủ tục (procedural remedies) và kỹ thuật thống kê (statistical remedies / Podsakoff et al., 2003, 2011)."
+    },
+    "2SLS": {
+      "full_name": "Two-Stage Least Squares",
+      "vietnamese": "Bình phương bé nhất hai giai đoạn",
+      "purpose": "Phương pháp hồi quy kinh tế lượng giải quyết vấn đề nội sinh (endogeneity) bằng cách sử dụng các biến công cụ (Instrumental Variables - IV).",
+      "benchmark": "Kiểm định biến công cụ yếu F-statistic > 10 (Stock & Yogo, 2005), kiểm định ngoại sinh Sargan/Hansen p > 0.05."
+    },
+    "GMM": {
+      "full_name": "Generalized Method of Moments",
+      "vietnamese": "Phương pháp mô-men tổng quát",
+      "purpose": "Kỹ thuật ước lượng kinh tế lượng động (System GMM / Difference GMM) xử lý nội sinh, tự tương quan và tính không đồng nhất không quan sát được.",
+      "benchmark": "Kiểm định tự tương quan Arellano-Bond AR(1) p < 0.05, AR(2) p > 0.05, Hansen test p > 0.05 (nhưng không được p = 1.000)."
+    },
+    "DID": {
+      "full_name": "Difference-in-Differences",
+      "vietnamese": "Khác biệt trong khác biệt (Sai phân kép)",
+      "purpose": "Phương pháp bán thực nghiệm kinh tế lượng đánh giá tác động chính sách bằng cách so sánh sự thay đổi theo thời gian giữa nhóm can thiệp và nhóm đối chứng.",
+      "benchmark": "Giả định xu thế song song (Parallel Trends Assumption) bắt buộc phải được kiểm định thỏa mãn trước can thiệp."
+    },
+    "PSM": {
+      "full_name": "Propensity Score Matching",
+      "vietnamese": "Ghép cặp điểm xu hướng",
+      "purpose": "Kỹ thuật giảm thiểu sai lệch chọn mẫu trong nghiên cứu quan sát bằng cách ghép các cá thể nhóm can thiệp và đối chứng có xác suất nhận can thiệp tương đương.",
+      "benchmark": "Độ lệch chuẩn hóa cân bằng (Standardized Mean Difference / Rubin's B < 25%), tỷ lệ phương sai (Rubin's R từ 0.5 đến 2.0)."
+    },
+    "RDD": {
+      "full_name": "Regression Discontinuity Design",
+      "vietnamese": "Thiết kế hồi quy gián đoạn",
+      "purpose": "Phương pháp bán thực nghiệm gần với thử nghiệm ngẫu nhiên nhất, phân bổ can thiệp dựa trên một điểm cắt (cutoff score) định lượng.",
+      "benchmark": "Sharp RDD (tuân thủ 100%), Fuzzy RDD (dùng IV); kiểm định tính liên tục của hàm mật độ McCrary density test."
+    },
+    "ITS": {
+      "full_name": "Interrupted Time-Series Design",
+      "vietnamese": "Thiết kế chuỗi thời gian gián đoạn",
+      "purpose": "Thiết kế bán thực nghiệm theo dõi chuỗi số liệu định kỳ liên tục trước và sau điểm can thiệp để đánh giá sự thay đổi cấp độ và độ dốc.",
+      "benchmark": "Cần tối thiểu 10-15 điểm quan sát trước và sau can thiệp; kiểm soát tự tương quan qua mô hình ARIMA / Newey-West."
+    },
+    "RCT": {
+      "full_name": "Randomized Controlled Trial",
+      "vietnamese": "Thử nghiệm ngẫu nhiên có đối chứng",
+      "purpose": "Chuẩn vàng (Gold standard) trong nghiên cứu thực nghiệm nhằm thiết lập mối quan hệ nhân quả tuyệt đối giữa biến can thiệp và biến kết quả.",
+      "benchmark": "Phân bổ ngẫu nhiên (random assignment), nhóm đối chứng tương đương, làm mù (blinding), phân tích theo dự định ban đầu (ITT)."
+    },
+    "ITT": {
+      "full_name": "Intention-to-Treat Analysis",
+      "vietnamese": "Phân tích theo dự định can thiệp",
+      "purpose": "Nguyên tắc phân tích thực nghiệm bắt buộc đưa tất cả đối tượng vào phân tích theo đúng nhóm phân bổ ngẫu nhiên ban đầu, bất kể có bỏ cuộc hay không.",
+      "benchmark": "Bảo toàn tính ngẫu nhiên ban đầu, tránh sai lệch hao hụt mẫu (attrition bias); đối lập với Per-protocol analysis."
+    },
+    "CACE": {
+      "full_name": "Complier Average Causal Effect",
+      "vietnamese": "Hiệu ứng nhân quả trung bình trên nhóm tuân thủ",
+      "purpose": "Ước lượng tác động nhân quả cục bộ (LATE) trên nhóm đối tượng thực sự tuân thủ can thiệp khi có hiện tượng không tuân thủ trong thử nghiệm ngẫu nhiên.",
+      "benchmark": "Ước lượng qua biến công cụ (Instrumental Variable): CACE = ITT_Y / ITT_D."
+    },
+    "LATE": {
+      "full_name": "Local Average Treatment Effect",
+      "vietnamese": "Hiệu ứng can thiệp trung bình cục bộ",
+      "purpose": "Tác động nhân quả đo lường riêng trên nhóm đối tượng bị thay đổi trạng thái can thiệp bởi biến công cụ (Imbens & Angrist, Nobel 2021).",
+      "benchmark": "Áp dụng trong các mô hình IV và Fuzzy RDD dưới giả định tính đơn điệu (monotonicity)."
+    },
+    "SUTVA": {
+      "full_name": "Stable Unit Treatment Value Assumption",
+      "vietnamese": "Giả định giá trị can thiệp đơn vị ổn định",
+      "purpose": "Giả định nền tảng của Mô hình nhân quả tiềm năng Rubin: Trạng thái can thiệp của đối tượng này không gây ảnh hưởng lan tỏa sang đối tượng khác.",
+      "benchmark": "Vi phạm SUTVA khi có hiệu ứng lan tỏa (spillover effects), tương tác xã hội hoặc lây nhiễm giữa các nhóm."
+    },
+    "DAG": {
+      "full_name": "Directed Acyclic Graph",
+      "vietnamese": "Biểu đồ có hướng không chu trình",
+      "purpose": "Công cụ toán học và hình học của Judea Pearl (và Rex Kline) biểu diễn các giả định nhân quả, phân biệt biến gây nhiễu, biến trung gian và biến va chạm.",
+      "benchmark": "Tiêu chuẩn chặn cổng sau (Back-door criterion) để chọn tập hợp biến kiểm soát tối thiểu nhằm loại bỏ sai lệch gây nhiễu."
+    },
+    "CTT": {
+      "full_name": "Classical Test Theory",
+      "vietnamese": "Lý thuyết đo lường cổ điển",
+      "purpose": "Lý thuyết đo lường tâm trắc học nền tảng dựa trên phương trình điểm số quan sát: X = T + E (Điểm quan sát = Điểm thực + Sai số).",
+      "benchmark": "Các giả định: Trung bình sai số bằng 0, không có tương quan giữa điểm thực và sai số, các bài kiểm tra song song có cùng phương sai sai số."
+    },
+    "IRT": {
+      "full_name": "Item Response Theory",
+      "vietnamese": "Lý thuyết ứng đáp câu hỏi",
+      "purpose": "Lý thuyết đo lường hiện đại mô hình hóa xác suất một người trả lời đúng/đồng ý với một câu hỏi dựa trên năng lực tiềm ẩn (theta) và đặc tính câu hỏi.",
+      "benchmark": "Mô hình 1PL (Rasch), 2PL (độ khó + độ phân biệt), 3PL (+ tham số đoán mò); hàm thông tin câu hỏi (IIF) và bài thi (TIF)."
+    },
+    "1PL": {
+      "full_name": "One-Parameter Logistic Model (Rasch Model)",
+      "vietnamese": "Mô hình logistic một tham số (Mô hình Rasch)",
+      "purpose": "Mô hình IRT chỉ ước lượng tham số độ khó của câu hỏi (bi), cố định độ phân biệt (ai) bằng nhau cho tất cả các câu hỏi.",
+      "benchmark": "Kiểm định mức độ vừa vặn của câu hỏi: Infit MNSQ và Outfit MNSQ trong khoảng 0.7 đến 1.3 (Bond & Fox, 2015)."
+    },
+    "2PL": {
+      "full_name": "Two-Parameter Logistic Model",
+      "vietnamese": "Mô hình logistic hai tham số",
+      "purpose": "Mô hình IRT ước lượng đồng thời cả độ khó câu hỏi (bi) và độ phân biệt câu hỏi (ai).",
+      "benchmark": "Độ phân biệt a > 0.65 (vừa), a > 1.35 (rất cao); độ khó b thường nằm trong dải từ -3.0 đến +3.0."
+    },
+    "3PL": {
+      "full_name": "Three-Parameter Logistic Model",
+      "vietnamese": "Mô hình logistic ba tham số",
+      "purpose": "Mô hình IRT ước lượng độ khó (bi), độ phân biệt (ai) và tham số đoán mò giả ngẫu nhiên (ci) trong các bài trắc nghiệm lựa chọn.",
+      "benchmark": "Tham số đoán mò c thường dao động quanh 0.20 cho câu hỏi trắc nghiệm 5 lựa chọn (1/5 = 0.20)."
+    },
+    "ICC": {
+      "full_name": "Item Characteristic Curve",
+      "vietnamese": "Đường cong đặc trưng câu hỏi",
+      "purpose": "Đồ thị toán học dạng sigmoid biểu diễn xác suất trả lời đúng của một mục hỏi theo mức độ năng lực tiềm ẩn (theta) của người trả lời.",
+      "benchmark": "Đường cong dốc hơn thể hiện câu hỏi có độ phân biệt cao hơn; vị trí dịch sang phải thể hiện câu hỏi khó hơn."
+    },
+    "IIF": {
+      "full_name": "Item Information Function",
+      "vietnamese": "Hàm thông tin câu hỏi",
+      "purpose": "Biểu diễn lượng thông tin (độ chuẩn xác đo lường) mà một câu hỏi đóng góp tại từng ngưỡng năng lực tiềm ẩn theta cụ thể.",
+      "benchmark": "Thông tin cực đại tại ngưỡng độ khó của câu hỏi: I(theta) = a² * P * (1-P)."
+    },
+    "TIF": {
+      "full_name": "Test Information Function",
+      "vietnamese": "Hàm thông tin toàn bài kiểm tra",
+      "purpose": "Tổng các hàm thông tin của tất cả các câu hỏi trong thang đo, phản ánh độ chuẩn xác đo lường tổng thể trên toàn bộ dải năng lực theta.",
+      "benchmark": "Sai số chuẩn đo lường SE(theta) = 1 / sqrt(TIF(theta)); TIF càng cao thì sai số đo lường càng nhỏ."
+    },
+    "CVR": {
+      "full_name": "Content Validity Ratio",
+      "vietnamese": "Tỷ lệ giá trị nội dung (Lawshe)",
+      "purpose": "Chỉ số định lượng mức độ đồng thuận của hội đồng chuyên gia về mức độ thiết yếu của từng mục hỏi trong thang đo.",
+      "benchmark": "Ngưỡng chấp nhận CVR tối thiểu của Lawshe (1975) phụ thuộc số chuyên gia: N=5 cần CVR=0.99, N=10 cần CVR=0.62, N=20 cần CVR=0.42."
+    },
+    "CVI": {
+      "full_name": "Content Validity Index",
+      "vietnamese": "Chỉ số giá trị nội dung",
+      "purpose": "Đánh giá mức độ phù hợp nội dung theo từng biến (I-CVI) và toàn bộ thang đo (S-CVI) bởi hội đồng chuyên gia.",
+      "benchmark": "I-CVI >= 0.78 (đối với hội đồng 6-10 chuyên gia), S-CVI/Ave >= 0.90 (Lynn, 1986; Polit & Beck, 2006)."
+    },
+    "VAS": {
+      "full_name": "Visual Analog Scale",
+      "vietnamese": "Thang đo tương tự trực quan",
+      "purpose": "Thang đo liên tục dạng đường thẳng 100mm với hai mốc cực ở hai đầu, người trả lời đánh dấu một điểm trên đoạn thẳng để đo cảm giác/thái độ.",
+      "benchmark": "Thường dùng đo cường độ đau đớn, mức độ hài lòng hoặc cảm xúc; dữ liệu xấp xỉ mức đo tỷ lệ (ratio scale)."
+    },
+    "EDA": {
+      "full_name": "Exploratory Data Analysis",
+      "vietnamese": "Phân tích dữ liệu khám phá (Tukey)",
+      "purpose": "Phương pháp tiếp cận dữ liệu trực quan bằng đồ họa để nhận diện mẫu hình, cấu trúc phân phối, kiểm tra ngoại lai và vi phạm giả định.",
+      "benchmark": "Công cụ chính: Boxplot, Stem-and-leaf, Histogram, Normal Q-Q plot, Scatterplot matrix (Tukey, 1977; Schindler, 2022)."
+    },
+    "EFA": {
+      "full_name": "Exploratory Factor Analysis",
+      "vietnamese": "Phân tích nhân tố khám phá",
+      "purpose": "Kỹ thuật giảm chiều dữ liệu khám phá cấu trúc nhân tố tiềm ẩn mà không áp đặt cấu trúc lý thuyết từ trước.",
+      "benchmark": "KMO >= 0.50 (tốt nếu >= 0.80), Bartlett's test p < 0.05, Eigenvalue > 1, Tổng phương sai trích >= 50%, Factor loading >= 0.50 (Hair et al., 2018)."
+    },
+    "CFA": {
+      "full_name": "Confirmatory Factor Analysis",
+      "vietnamese": "Phân tích nhân tố khẳng định",
+      "purpose": "Kỹ thuật kiểm định mức độ dữ liệu thực nghiệm phù hợp với cấu trúc lý thuyết nhân tố đã được xác định trước.",
+      "benchmark": "Factor loadings > 0.707 (p < 0.001), Composite Reliability > 0.70, AVE > 0.50, các chỉ số độ phù hợp GoF đạt chuẩn."
+    },
+    "PCA": {
+      "full_name": "Principal Component Analysis",
+      "vietnamese": "Phân tích thành phần chính",
+      "purpose": "Phương pháp toán học trích xuất các thành phần trực giao giải thích tối đa tổng phương sai của tập biến số gốc, khác với EFA (chỉ trích phương sai chung).",
+      "benchmark": "Dùng để nén biến và chống đa cộng tuyến; không phải là mô hình nhân tố tiềm ẩn thực thụ."
+    },
+    "ANOVA": {
+      "full_name": "Analysis of Variance",
+      "vietnamese": "Phân tích phương sai",
+      "purpose": "Kiểm định so sánh giá trị trung bình của biến phụ thuộc liên tục giữa 3 nhóm độc lập trở lên.",
+      "benchmark": "Giả định: Phân phối chuẩn, phương sai đồng nhất (Levene test p > 0.05). F-statistic ý nghĩa p < 0.05, kiểm định sau phân tích (Post-hoc Tukey / Scheffe)."
+    },
+    "ANCOVA": {
+      "full_name": "Analysis of Covariance",
+      "vietnamese": "Phân tích hiệp phương sai",
+      "purpose": "Kết hợp ANOVA và hồi quy, so sánh giá trị trung bình các nhóm sau khi đã kiểm soát và hiệu chỉnh tác động của biến hiệp biến (covariate).",
+      "benchmark": "Giả định bắt buộc: Tính đồng nhất của các độ dốc hồi quy (Homogeneity of regression slopes / p > 0.05 cho tương tác nhóm * covariate)."
+    },
+    "MANOVA": {
+      "full_name": "Multivariate Analysis of Variance",
+      "vietnamese": "Phân tích phương sai đa biến",
+      "purpose": "Kiểm định sự khác biệt giữa các nhóm trên nhiều biến phụ thuộc liên tục cùng một lúc.",
+      "benchmark": "Thống kê Wilks' Lambda, Pillai's Trace, Hotelling's Trace; kiểm định tính đồng nhất ma trận hiệp phương sai Box's M test."
+    },
+    "HLM": {
+      "full_name": "Hierarchical Linear Modeling",
+      "vietnamese": "Mô hình tuyến tính phân cấp (Mô hình đa tầng / Multilevel Modeling)",
+      "purpose": "Phân tích dữ liệu có cấu trúc lồng ghép (nested data: ví dụ nhân viên lồng trong nhóm, học sinh lồng trong trường) mà các quan sát không độc lập.",
+      "benchmark": "Hệ số tương quan nội lớp ICC (Intraclass Correlation Coefficient) > 0.05 hoặc 0.10 chỉ ra sự cần thiết phải dùng mô hình đa tầng."
+    },
+    "RMSEA": {
+      "full_name": "Root Mean Square Error of Approximation",
+      "vietnamese": "Căn bậc hai sai số xấp xỉ trung bình",
+      "purpose": "Chỉ số độ phù hợp tuyệt đối trong SEM đánh giá mức độ sai lệch của mô hình lý thuyết so với tổng thể cho mỗi bậc tự do.",
+      "benchmark": "RMSEA < 0.05 (phù hợp xuất sắc), 0.05 - 0.08 (phù hợp chấp nhận được), > 0.10 (phù hợp kém); p-close > 0.05 (Kline, 2023)."
+    },
+    "CFI": {
+      "full_name": "Comparative Fit Index",
+      "vietnamese": "Chỉ số phù hợp so sánh",
+      "purpose": "Chỉ số phù hợp gia tăng trong SEM so sánh mô hình giả thuyết với mô hình cơ sở không có tương quan (null model).",
+      "benchmark": "CFI >= 0.95 (lý tưởng), CFI >= 0.90 (chấp nhận được / Hu & Bentler, 1999; Hair et al., 2018)."
+    },
+    "TLI": {
+      "full_name": "Tucker-Lewis Index (Non-Normed Fit Index / NNFI)",
+      "vietnamese": "Chỉ số Tucker-Lewis",
+      "purpose": "Chỉ số phù hợp so sánh có phạt độ phức tạp của mô hình (thưởng cho mô hình cô đọng / parsimonious).",
+      "benchmark": "TLI >= 0.95 (lý tưởng), TLI >= 0.90 (chấp nhận được)."
+    },
+    "SRMR": {
+      "full_name": "Standardized Root Mean Square Residual",
+      "vietnamese": "Phần dư căn bậc hai trung bình chuẩn hóa",
+      "purpose": "Độ đo mức chênh lệch trung bình chuẩn hóa giữa ma trận hiệp phương sai quan sát và ma trận hiệp phương sai ước lượng của mô hình.",
+      "benchmark": "SRMR < 0.08 (Hu & Bentler, 1999; Kline, 2023)."
+    },
+    "AIC": {
+      "full_name": "Akaike Information Criterion",
+      "vietnamese": "Tiêu chuẩn thông tin Akaike",
+      "purpose": "Tiêu chuẩn so sánh giữa các mô hình cạnh tranh không lồng ghép (non-nested models), cân bằng giữa độ khớp dữ liệu và số lượng tham số.",
+      "benchmark": "Mô hình có giá trị AIC nhỏ hơn là mô hình vượt trội hơn."
+    },
+    "BIC": {
+      "full_name": "Bayesian Information Criterion (Schwarz Criterion)",
+      "vietnamese": "Tiêu chuẩn thông tin Bayes",
+      "purpose": "Tương tự AIC nhưng phạt nặng hơn đối với các mô hình phức tạp có nhiều tham số khi cỡ mẫu lớn.",
+      "benchmark": "Chênh lệch Delta BIC > 10 cho thấy bằng chứng rất mạnh ủng hộ mô hình có BIC nhỏ hơn (Raftery, 1995)."
+    },
+    "GoF": {
+      "full_name": "Goodness of Fit",
+      "vietnamese": "Độ phù hợp của mô hình",
+      "purpose": "Mức độ mà ma trận hiệp phương sai ngụ ý bởi mô hình lý thuyết tái tạo chính xác ma trận hiệp phương sai dữ liệu thực nghiệm quan sát được.",
+      "benchmark": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = sqrt(AVE_tb * R²_tb)."
+    },
+    "MIMIC": {
+      "full_name": "Multiple Indicators, Multiple Causes Model",
+      "vietnamese": "Mô hình nhiều chỉ báo, nhiều nguyên nhân",
+      "purpose": "Mô hình SEM đặc biệt trong đó biến tiềm ẩn được tạo thành từ nhiều biến nguyên nhân (formative causes) và đồng thời phát ra nhiều biến kết quả (reflective indicators).",
+      "benchmark": "Giải quyết vấn đề xác định mô hình (identification) cho các biến formative (Jarvis et al., 2003; MacKenzie et al., 2011)."
+    },
+    "CAQDAS": {
+      "full_name": "Computer-Assisted Qualitative Data Analysis Software",
+      "vietnamese": "Phần mềm hỗ trợ phân tích dữ liệu định tính",
+      "purpose": "Hệ thống các phần mềm chuyên dụng hỗ trợ nhà nghiên cứu định tính trong việc lưu trữ, lập chỉ mục, mã hóa, tìm kiếm và mô hình hóa dữ liệu văn bản, âm thanh, hình ảnh.",
+      "benchmark": "Các phần mềm tiêu chuẩn toàn cầu: ATLAS.ti, MAXQDA, NVivo (Flick et al., 2004)."
+    },
+    "TSE": {
+      "full_name": "Total Survey Error",
+      "vietnamese": "Tổng sai số khảo sát",
+      "purpose": "Khung lý thuyết toàn diện đánh giá mọi nguồn sai số tiềm ẩn trong nghiên cứu khảo sát, chia thành Sai số đo lường (Measurement error) và Sai số đại diện (Representation error).",
+      "benchmark": "Bao gồm sai số đặc tả, sai số người hỏi, sai số bảng hỏi, sai số người trả lời, sai số khung mẫu, sai số không trả lời và sai số trọng số (Groves et al.; Wiley 2020)."
+    },
+    "IRB": {
+      "full_name": "Institutional Review Board",
+      "vietnamese": "Hội đồng Đạo đức Nghiên cứu",
+      "purpose": "Hội đồng độc lập thẩm định và giám sát các đề cương nghiên cứu liên quan đến đối tượng con người nhằm bảo vệ quyền lợi, an toàn và phúc lợi của người tham gia.",
+      "benchmark": "Đánh giá sự đồng thuận tự nguyện (Informed consent), bảo mật danh tính, giảm thiểu rủi ro và tỷ lệ lợi ích/rủi ro."
+    },
+    "CAT": {
+      "full_name": "Computerized Adaptive Testing",
+      "vietnamese": "Kiểm tra thích ứng trên máy tính",
+      "purpose": "Hệ thống kiểm tra trắc nghiệm thông minh dựa trên IRT, tự động lựa chọn câu hỏi tiếp theo phù hợp với ước lượng năng lực theta hiện tại của thí sinh.",
+      "benchmark": "Rút ngắn 50% thời gian thi nhưng vẫn đảm bảo độ chuẩn xác đo lường đồng đều trên toàn bộ dải năng lực."
+    },
+    "IV": {
+      "full_name": "Independent Variable / Instrumental Variable",
+      "vietnamese": "Biến độc lập (hoặc Biến công cụ trong kinh tế lượng)",
+      "purpose": "Biến đóng vai trò nguyên nhân tác động lên biến phụ thuộc; trong kinh tế lượng, biến công cụ là biến ngoại sinh tương quan với biến nội sinh nhưng không tương quan với sai số.",
+      "benchmark": "Kiểm định F > 10 cho biến công cụ; phân biệt rõ biến độc lập thực nghiệm với biến đồng biến (covariate)."
+    },
+    "DV": {
+      "full_name": "Dependent Variable",
+      "vietnamese": "Biến phụ thuộc",
+      "purpose": "Biến đóng vai trò kết quả chịu tác động của biến độc lập, là đối tượng chính cần được giải thích hoặc dự báo trong mô hình nghiên cứu.",
+      "benchmark": "Cần được đo lường với độ chuẩn xác cao, kiểm tra dạng hàm phân phối và tránh sai số đo lường."
+    },
+    "MV": {
+      "full_name": "Mediating Variable / Moderating Variable",
+      "vietnamese": "Biến trung gian (Mediator) hoặc Biến điều tiết (Moderator)",
+      "purpose": "Biến trung gian giải thích cơ chế 'Làm thế nào và Tại sao' (How/Why); biến điều tiết giải thích điều kiện biên 'Khi nào và Cho ai' (When/For whom).",
+      "benchmark": "Kiểm định trung gian qua KTC Bootstrap gián tiếp (Hayes); kiểm định điều tiết qua tương tác tích số và Johnson-Neyman."
+    },
+    "ATE": {
+      "full_name": "Average Treatment Effect",
+      "vietnamese": "Hiệu ứng can thiệp trung bình",
+      "purpose": "Đo lường mức độ tác động trung bình của một chính sách, biện pháp can thiệp trên toàn bộ tổng thể nghiên cứu trong kinh tế lượng nhân quả.",
+      "benchmark": "Ước lượng không chệch (unbiased) khi giả định gán ngẫu nhiên (random assignment) hoặc conditional independence được thỏa mãn.",
+      "domain": "Causal Inference & Econometrics"
+    },
+    "ATT": {
+      "full_name": "Average Treatment Effect on the Treated",
+      "vietnamese": "Hiệu ứng can thiệp trung bình trên nhóm được xử lý",
+      "purpose": "Đo lường mức độ tác động thực tế của can thiệp chỉ riêng trên nhóm đối tượng đã thực sự nhận sự can thiệp (ví dụ: nhóm tham gia khóa đào tạo).",
+      "benchmark": "Mục tiêu ước lượng cốt lõi trong phương pháp Propensity Score Matching (PSM) và Difference-in-Differences (DID).",
+      "domain": "Causal Inference & Econometrics"
+    },
+    "ATU": {
+      "full_name": "Average Treatment Effect on the Untreated",
+      "vietnamese": "Hiệu ứng can thiệp trung bình trên nhóm không xử lý",
+      "purpose": "Ước tính hiệu ứng giả định nếu nhóm đối chứng (chưa nhận can thiệp) được chuyển sang nhận can thiệp.",
+      "benchmark": "Dùng trong đánh giá tiềm năng mở rộng chính sách công hoặc can thiệp y tế/giáo dục.",
+      "domain": "Causal Inference & Econometrics"
+    },
+    "SCM": {
+      "full_name": "Synthetic Control Method",
+      "vietnamese": "Phương pháp Kiểm soát Tổng hợp",
+      "purpose": "Xây dựng một đơn vị đối chứng nhân tạo bằng tổ hợp lồi có trọng số của các đơn vị không nhận can thiệp (Abadie et al., 2010), dùng trong nghiên cứu tình huống so sánh cấp vĩ mô.",
+      "benchmark": "Trọng số các đơn vị thành phần nằm trong đoạn [0, 1] và tổng bằng 1. Kiểm định độ vững bằng Placebo Test (In-space & In-time placebos).",
+      "domain": "Causal Inference & Policy Evaluation"
+    },
+    "DWH": {
+      "full_name": "Durbin-Wu-Hausman Test",
+      "vietnamese": "Kiểm định Durbin-Wu-Hausman về tính nội sinh",
+      "purpose": "Kiểm định xem biến giải thích có tương quan với sai số ngẫu nhiên hay không (nội sinh), giúp quyết định nên dùng OLS hay 2SLS/IV.",
+      "benchmark": "P-value < 0.05: Bác bỏ giả thuyết H0 (biến ngoại sinh), kết luận có hiện tượng nội sinh và bắt buộc phải dùng biến công cụ (IV / 2SLS).",
+      "domain": "Econometrics"
+    },
+    "FE": {
+      "full_name": "Fixed Effects Model",
+      "vietnamese": "Mô hình Tác động Cố định (Dữ liệu bảng)",
+      "purpose": "Kiểm soát các đặc tính bất biến theo thời gian của từng thực thể (ví dụ: văn hóa công ty, vị trí địa lý, tính cách bẩm sinh) có thể gây nội sinh do biến bị bỏ sót.",
+      "benchmark": "Lựa chọn qua kiểm định Hausman Test (P < 0.05 ưu tiên dùng FE thay vì RE).",
+      "domain": "Panel Data Econometrics"
+    },
+    "RE": {
+      "full_name": "Random Effects Model",
+      "vietnamese": "Mô hình Tác động Ngẫu nhiên (Dữ liệu bảng)",
+      "purpose": "Ước lượng mô hình dữ liệu bảng khi giả định rằng sai số đặc thù của từng cá thể không tương quan với bất kỳ biến giải thích nào trong mô hình.",
+      "benchmark": "Được chọn khi kiểm định Hausman có p-value > 0.05; cho phép ước lượng hệ số của các biến không thay đổi theo thời gian (time-invariant variables).",
+      "domain": "Panel Data Econometrics"
+    },
+    "POLS": {
+      "full_name": "Pooled Ordinary Least Squares",
+      "vietnamese": "Bình phương bé nhất gộp",
+      "purpose": "Ước lượng dữ liệu bảng bằng cách gộp tất cả các quan sát theo thời gian mà bỏ qua cấu trúc bảng (thực thể).",
+      "benchmark": "Kiểm định Breusch-Pagan Lagrange Multiplier (LM test): Nếu P < 0.05, mô hình POLS bị bác bỏ, bắt buộc dùng Panel Models (FE hoặc RE).",
+      "domain": "Panel Data Econometrics"
+    },
+    "SUR": {
+      "full_name": "Seemingly Unrelated Regressions",
+      "vietnamese": "Hệ phương trình hồi quy dường như không liên quan (Zellner, 1962)",
+      "purpose": "Ước lượng đồng thời nhiều phương trình hồi quy tuyến tính có sai số tương quan với nhau (contemporaneous correlation).",
+      "benchmark": "Hiệu quả hơn OLS độc lập từng phương trình khi các phần dư có tương quan chéo đáng kể (Breusch-Pagan test of independence P < 0.05).",
+      "domain": "Econometrics"
+    },
+    "VAR": {
+      "full_name": "Vector Autoregression",
+      "vietnamese": "Mô hình Tự hồi quy Vectơ",
+      "purpose": "Mô hình hóa mối quan hệ tương hỗ động giữa nhiều chuỗi thời gian mà không cần phân định tiên nghiệm biến nào là nội sinh hay ngoại sinh.",
+      "benchmark": "Yêu cầu các chuỗi phải dừng I(0); lựa chọn độ trễ tối ưu qua AIC, BIC hoặc HQIC; kiểm định độ ổn định (stability condition) qua nghiệm của đa thức đặc trưng nằm trong đường tròn đơn vị.",
+      "domain": "Time Series Econometrics"
+    },
+    "VECM": {
+      "full_name": "Vector Error Correction Model",
+      "vietnamese": "Mô hình Vectơ Hiệu chỉnh Sai số",
+      "purpose": "Mô hình hóa các chuỗi thời gian không dừng I(1) nhưng có quan hệ đồng liên kết (cointegration) trong dài hạn.",
+      "benchmark": "Hệ số hiệu chỉnh sai số (ECT) phải mang dấu âm và có ý nghĩa thống kê (p < 0.05), biểu thị tốc độ điều chỉnh về trạng thái cân bằng dài hạn.",
+      "domain": "Time Series Econometrics"
+    },
+    "ARDL": {
+      "full_name": "Autoregressive Distributed Lag",
+      "vietnamese": "Mô hình Tự hồi quy Phân phối Trễ (Pesaran et al., 2001)",
+      "purpose": "Kiểm định đồng liên kết (Bounds Test) khi các biến số có bậc tích hợp hỗn hợp gồm cả I(0) và I(1), nhưng tuyệt đối không được chứa biến I(2).",
+      "benchmark": "F-statistic trong Bounds Test vượt qua giá trị tới hạn Upper Bound I(1) ở mức ý nghĩa 5%: Kết luận có quan hệ đồng liên kết dài hạn vững chắc.",
+      "domain": "Time Series Econometrics"
+    },
+    "ADF": {
+      "full_name": "Augmented Dickey-Fuller Test",
+      "vietnamese": "Kiểm định Dickey-Fuller Mở rộng (Kiểm định nghiệm đơn vị)",
+      "purpose": "Kiểm tra tính dừng (stationarity) của chuỗi thời gian nhằm tránh hiện tượng hồi quy giả mạo (spurious regression).",
+      "benchmark": "P-value < 0.05 (hoặc t-statistic nhỏ hơn giá trị tới hạn MacKinnon): Bác bỏ giả thuyết H0 (có nghiệm đơn vị), chuỗi thời gian là chuỗi dừng.",
+      "domain": "Time Series Econometrics"
+    },
+    "KPSS": {
+      "full_name": "Kwiatkowski-Phillips-Schmidt-Shin Test",
+      "vietnamese": "Kiểm định KPSS về tính dừng",
+      "purpose": "Kiểm định tính dừng bổ trợ cho ADF, với giả thuyết H0 ngược lại: chuỗi thời gian là dừng quanh một xu thế hoặc dừng quanh trung bình.",
+      "benchmark": "P-value > 0.05: Không thể bác bỏ H0, xác nhận chuỗi thời gian dừng. Kết hợp ADF và KPSS giúp kiểm định chéo độ tin cậy.",
+      "domain": "Time Series Econometrics"
+    },
+    "PRISMA": {
+      "full_name": "Preferred Reporting Items for Systematic Reviews and Meta-Analyses",
+      "vietnamese": "Bộ tiêu chuẩn báo cáo ưu tiên cho Tổng quan hệ thống và Meta-Analysis (Phiên bản PRISMA 2020)",
+      "purpose": "Khung chuẩn mực 27 tiêu chí và sơ đồ dòng chảy (flow diagram 4 giai đoạn: Identification, Screening, Eligibility, Included) bắt buộc tuân thủ khi viết bài tổng quan hệ thống trên tạp chí ISI/Scopus.",
+      "benchmark": "Bắt buộc công khai checklist 27 mục và sơ đồ 4 bước chi tiết số lượng bài báo bị loại trừ kèm lý do cụ thể.",
+      "domain": "Systematic Review & Meta-Analysis"
+    },
+    "SLR": {
+      "full_name": "Systematic Literature Review",
+      "vietnamese": "Tổng quan Tài liệu Hệ thống",
+      "purpose": "Phương pháp tổng hợp tài liệu khoa học theo quy trình tường minh, nghiêm ngặt, lặp lại được để trả lời câu hỏi nghiên cứu cụ thể, giảm thiểu thiên lệch chọn nguồn.",
+      "benchmark": "Bắt buộc có chuỗi tìm kiếm (Search String), cơ sở dữ liệu xác định (Scopus, WoS), tiêu chí đưa vào/loại trừ (Inclusion/Exclusion criteria) và quy trình lọc độc lập.",
+      "domain": "Research Synthesis & Methodology"
+    },
+    "PROSPERO": {
+      "full_name": "International Prospective Register of Systematic Reviews",
+      "vietnamese": "Cơ sở dữ liệu Đăng ký trước Đề cương Tổng quan Hệ thống Quốc tế",
+      "purpose": "Đăng ký trước đề cương tổng quan hệ thống nhằm ngăn ngừa thiên lệch xuất bản (publication bias), trùng lắp đề tài và điều chỉnh tiêu chí tùy tiện trong quá trình thực hiện.",
+      "benchmark": "Số đăng ký PROSPERO (CRD420...) được các tạp chí y học, xã hội học và quản trị uy tín yêu cầu cung cấp ngay trong phần Phương pháp.",
+      "domain": "Open Science & Meta-Analysis"
+    },
+    "ROBINS-I": {
+      "full_name": "Risk Of Bias In Non-randomized Studies - of Interventions",
+      "vietnamese": "Công cụ Đánh giá Nguy cơ Thiên lệch trong Nghiên cứu Không ngẫu nhiên hóa",
+      "purpose": "Thẩm định độ tin cậy và các nguồn sai lệch tiềm ẩn (confounding, selection, classification, missing data) trong các nghiên cứu quan sát hoặc bán thực nghiệm.",
+      "benchmark": "Đánh giá qua 7 miền (domains), phân loại rủi ro: Low, Moderate, Serious, Critical, hoặc No information.",
+      "domain": "Evidence-Based Research"
+    },
+    "RoB 2": {
+      "full_name": "Cochrane Risk of Bias Tool for Randomized Trials (Version 2)",
+      "vietnamese": "Công cụ Cochrane Đánh giá Nguy cơ Thiên lệch cho Thử nghiệm Ngẫu nhiên",
+      "purpose": "Đánh giá chất lượng phương pháp luận của các thử nghiệm ngẫu nhiên có đối chứng (RCT) trong nghiên cứu tổng quan hệ thống.",
+      "benchmark": "Thẩm định 5 miền rủi ro: Quá trình ngẫu nhiên hóa, sai lệch do can thiệp, dữ liệu thiếu, đo lường kết quả, và báo cáo chọn lọc.",
+      "domain": "Experimental & Clinical Research"
+    },
+    "GRADE": {
+      "full_name": "Grading of Recommendations Assessment, Development and Evaluation",
+      "vietnamese": "Hệ thống Phân loại Đánh giá và Phát triển Khuyến nghị",
+      "purpose": "Khung tiếp cận minh bạch để đánh giá chất lượng của bằng chứng khoa học (High, Moderate, Low, Very Low) và độ mạnh của khuyến nghị chính sách.",
+      "benchmark": "Hạ bậc chất lượng bằng chứng khi phát hiện: Risk of Bias, Inconsistency, Indirectness, Imprecision, hoặc Publication Bias.",
+      "domain": "Evidence-Based Policy & Medicine"
+    },
+    "PICO": {
+      "full_name": "Population, Intervention, Comparison, Outcome",
+      "vietnamese": "Khung xác định câu hỏi nghiên cứu thực chứng: Quần thể - Can thiệp - So sánh - Kết quả",
+      "purpose": "Cấu trúc hóa câu hỏi nghiên cứu định lượng, thử nghiệm lâm sàng và tìm kiếm tài liệu tổng quan hệ thống.",
+      "benchmark": "Bắt buộc xác định rõ ràng cả 4 thành tố trước khi xây dựng từ khóa tìm kiếm trên Web of Science / PubMed / Scopus.",
+      "domain": "Research Design & Evidence-Based Research"
+    },
+    "SPIDER": {
+      "full_name": "Sample, Phenomenon of Interest, Design, Evaluation, Research type",
+      "vietnamese": "Khung xác định câu hỏi nghiên cứu định tính và hỗn hợp (Cooke et al., 2012)",
+      "purpose": "Khung tìm kiếm tài liệu thay thế cho PICO, được tối ưu riêng cho các nghiên cứu định tính và phương pháp hỗn hợp (Mixed Methods).",
+      "benchmark": "Được các reviewer Q1 đánh giá cao khi xây dựng tiêu chí sàng lọc tài liệu định tính thay vì ép dùng khung PICO của nghiên cứu y sinh.",
+      "domain": "Qualitative Synthesis & Methodology"
+    },
+    "CONSORT": {
+      "full_name": "Consolidated Standards of Reporting Trials",
+      "vietnamese": "Tiêu chuẩn Báo cáo Hợp nhất cho các Thử nghiệm Lâm sàng & Thực nghiệm",
+      "purpose": "Hướng dẫn tiêu chuẩn hóa nhằm nâng cao tính minh bạch khi báo cáo các nghiên cứu thực nghiệm ngẫu nhiên có đối chứng (RCT).",
+      "benchmark": "Checklist 25 tiêu chí kèm biểu đồ dòng chảy phân bổ người tham gia (Enrolment, Allocation, Follow-up, Analysis).",
+      "domain": "Experimental Methodology"
+    },
+    "STROBE": {
+      "full_name": "Strengthening the Reporting of Observational Studies in Epidemiology",
+      "vietnamese": "Tăng cường Báo cáo Nghiên cứu Quan sát (Đoàn hệ, Bệnh-chứng, Cắt ngang)",
+      "purpose": "Bộ tiêu chuẩn hướng dẫn cách trình bày rõ ràng, minh bạch cho các nghiên cứu quan sát không can thiệp (Cohort, Case-control, Cross-sectional).",
+      "benchmark": "Checklist 22 mục bao gồm tiêu đề, tóm tắt, phương pháp chọn mẫu, kiểm soát biến gây nhiễu và xử lý dữ liệu khuyết.",
+      "domain": "Observational & Epidemiological Research"
+    },
+    "COREQ": {
+      "full_name": "Consolidated Criteria for Reporting Qualitative Research",
+      "vietnamese": "Tiêu chuẩn Hợp nhất Báo cáo Nghiên cứu Định tính (Tong et al., 2007)",
+      "purpose": "Bảng tiêu chí 32 mục thẩm định độ chặt chẽ trong phỏng vấn sâu (In-depth interviews) và thảo luận nhóm (Focus groups).",
+      "benchmark": "Bắt buộc báo cáo 3 miền: Đặc điểm nhóm nghiên cứu & tính phản tư (reflexivity), thiết kế nghiên cứu, và phân tích dữ liệu.",
+      "domain": "Qualitative Research Standards"
+    },
+    "SRQR": {
+      "full_name": "Standards for Reporting Qualitative Research",
+      "vietnamese": "Bộ Tiêu chuẩn Báo cáo Nghiên cứu Định tính (O'Brien et al., 2014)",
+      "purpose": "Khung chuẩn mực 21 tiêu chí nâng cao tính minh bạch cho tất cả các thể loại nghiên cứu định tính (Hiện tượng luận, Dân tộc học, Lý thuyết nền).",
+      "benchmark": "Tập trung giải trình rõ ràng mối quan hệ giữa câu hỏi nghiên cứu, lập trường nhận thức luận (epistemology) và kỹ thuật phân tích.",
+      "domain": "Qualitative Research Standards"
+    },
+    "OSF": {
+      "full_name": "Open Science Framework",
+      "vietnamese": "Nền tảng Khoa học Mở (Center for Open Science)",
+      "purpose": "Nền tảng đám mây mở cho phép nhà khoa học đăng ký trước thiết kế nghiên cứu (Preregistration), chia sẻ dữ liệu mở (Open Data), mã lệnh (Open Code) và tiền ấn phẩm (Preprints).",
+      "benchmark": "Tạo DOI vĩnh viễn và timestamp không thể chỉnh sửa, chứng minh giả thuyết nghiên cứu được xác lập trước khi thu thập số liệu.",
+      "domain": "Open Science & Research Ethics"
+    },
+    "COPE": {
+      "full_name": "Committee on Publication Ethics",
+      "vietnamese": "Ủy ban Đạo đức Xuất bản Quốc tế",
+      "purpose": "Tổ chức thiết lập các chuẩn mực và hướng dẫn xử lý các vấn đề đạo đức xuất bản: đạo văn, trùng lặp ấn phẩm, ngụy tạo số liệu, tác giả ma và xung đột lợi ích.",
+      "benchmark": "Mọi tạp chí Scopus/WoS uy tín đều cam kết tuân thủ quy tắc và lưu đồ giải quyết tranh chấp (flowcharts) của COPE.",
+      "domain": "Publication Ethics"
+    },
+    "CRediT": {
+      "full_name": "Contributor Roles Taxonomy",
+      "vietnamese": "Bảng phân loại vai trò đóng góp của tác giả (14 vai trò NISO)",
+      "purpose": "Quy chuẩn minh bạch hóa đóng góp cụ thể của từng đồng tác giả: Conceptualization, Methodology, Software, Formal Analysis, Investigation, Writing, v.v.",
+      "benchmark": "Bắt buộc khai báo tại các nhà xuất bản hàng đầu (Elsevier, Springer Nature, Wiley, PLOS) nhằm xóa bỏ tình trạng 'tác giả danh dự' (gift authorship).",
+      "domain": "Academic Publishing"
+    },
+    "MGA": {
+      "full_name": "Multi-Group Analysis",
+      "vietnamese": "Phân tích Đa nhóm trong Mô hình SEM",
+      "purpose": "Kiểm định xem các hệ số đường dẫn (path coefficients) hoặc mối quan hệ giữa các khái niệm có khác biệt có ý nghĩa thống kê giữa các nhóm mẫu phụ hay không (ví dụ: Nam vs Nữ, Gen Z vs Gen Y).",
+      "benchmark": "Yêu cầu tiên quyết: Phải đạt bất biến đo lường (Measurement Invariance) trước khi so sánh tham số cấu trúc giữa các nhóm (Henseler's MGA, PLS-MGA p < 0.05 hoặc > 0.95).",
+      "domain": "SEM & Advanced Quantitative Analysis"
+    },
+    "IPMA": {
+      "full_name": "Importance-Performance Map Analysis",
+      "vietnamese": "Phân tích Ma trận Tầm quan trọng - Hiệu quả (Ma trận Ưu tiên)",
+      "purpose": "Kỹ thuật mở rộng trong PLS-SEM kết hợp trọng số tác động tổng thể (Importance - tổng tác động) và giá trị thực tế trung bình của biến tiềm ẩn (Performance: 0 - 100) để đưa ra khuyến nghị quản trị thực chiến.",
+      "benchmark": "Xác định các yếu tố nằm ở góc 'Tầm quan trọng cao nhưng Hiệu quả thấp' (High importance, Low performance) là ưu tiên hành động số 1.",
+      "domain": "PLS-SEM & Managerial Applications"
+    },
+    "FIMIX-PLS": {
+      "full_name": "Finite Mixture Partial Least Squares",
+      "vietnamese": "Phân đoạn Hỗn hợp Hữu hạn trong PLS-SEM",
+      "purpose": "Kỹ thuật phân cụm dựa trên mô hình nhằm phát hiện tính không đồng nhất chưa quan sát được (unobserved heterogeneity) trong dữ liệu SEM.",
+      "benchmark": "Đánh giá số lượng phân đoạn tối ưu ($K$) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC.",
+      "domain": "PLS-SEM & Segmentation"
+    },
+    "PLSpredict": {
+      "full_name": "Partial Least Squares Prediction Assessment",
+      "vietnamese": "Quy trình Đánh giá Khả năng Dự báo Ngoài Mẫu trong PLS-SEM (Shmueli et al., 2016)",
+      "purpose": "Đo lường năng lực dự báo thực sự của mô hình cấu trúc trên các mẫu dữ liệu mới chưa từng thấy bằng kỹ thuật $k$-fold cross-validation.",
+      "benchmark": "So sánh RMSE (hoặc MAE) của PLS-SEM với mô hình hồi quy tuyến tính LM: Nếu đa số chỉ báo có sai số nhỏ hơn LM $\\rightarrow$ Mô hình đạt năng lực dự báo cao (High predictive power).",
+      "domain": "PLS-SEM & Predictive Analytics"
+    },
+    "ULMC": {
+      "full_name": "Unmeasured Latent Marker Construct",
+      "vietnamese": "Biến Tiềm ẩn Đánh dấu Không đo lường (Kỹ thuật kiểm soát CMV)",
+      "purpose": "Phương pháp thống kê sau thu thập số liệu (post-hoc statistical remedy) dùng một biến tiềm ẩn đại diện để kiểm soát sai lệch phương pháp chung (CMV) trong CB-SEM.",
+      "benchmark": "So sánh Model Fit giữa Baseline Model và Constrained Model: Nếu các hệ số đường dẫn chính vẫn giữ nguyên ý nghĩa thống kê thì nghiên cứu không bị CMV đe dọa.",
+      "domain": "Psychometrics & SEM"
+    },
+    "QRP": {
+      "full_name": "Questionable Research Practices",
+      "vietnamese": "Các Thực hành Nghiên cứu Đáng ngờ / Thiếu Chuẩn mực",
+      "purpose": "Khái niệm bao trùm các hành vi làm sai lệch kết quả nghiên cứu khoa học ở ranh giới giữa vô tình và cố ý: p-hacking, loại bỏ outliers không giải trình, ngừng thu thập mẫu khi p < .05, và HARKing.",
+      "benchmark": "Bị các tạp chí quốc tế hàng đầu áp dụng các biện pháp trừng phạt, yêu cầu nộp mã nguồn R/Stata và file dữ liệu thô để kiểm chứng độc lập.",
+      "domain": "Research Ethics & Integrity"
+    },
+    "HARK": {
+      "full_name": "Hypothesizing After the Results are Known",
+      "vietnamese": "Đặt Giả thuyết sau khi đã Biết Kết quả (Kerr, 1998)",
+      "purpose": "Hành vi phi đạo đức khi nhà nghiên cứu giả vờ rằng một phát hiện tình cờ (sau khi chạy số) chính là giả thuyết tiên nghiệm (a priori hypothesis) được suy ra từ lý thuyết ban đầu.",
+      "benchmark": "Bị triệt tiêu khi bài báo thực hiện đăng ký trước thiết kế nghiên cứu (Preregistration) tại Open Science Framework.",
+      "domain": "Research Integrity & Epistemology"
+    },
+    "FDR": {
+      "full_name": "False Discovery Rate",
+      "vietnamese": "Tỷ lệ Khám phá Sai (Benjamini-Hochberg, 1995)",
+      "purpose": "Tỷ lệ kỳ vọng của các giả thuyết bị bác bỏ sai (sai lầm loại I) trên tổng số các giả thuyết bị bác bỏ, dùng khi thực hiện đồng thời hàng chục hoặc hàng trăm kiểm định thống kê.",
+      "benchmark": "Thường kiểm soát ở mức $q = 0.05$ hoặc $0.10$; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power).",
+      "domain": "Multiple Testing & Biostatistics"
+    },
+    "FWER": {
+      "full_name": "Family-Wise Error Rate",
+      "vietnamese": "Tỷ lệ Sai số Nhóm (Kiểm định Đa giả thuyết)",
+      "purpose": "Xác suất mắc ít nhất một sai lầm loại I (bác bỏ đúng giả thuyết H0) trong một tập hợp gồm nhiều phép kiểm định thống kê đồng thời.",
+      "benchmark": "Quy tắc Bonferroni: Chia mức ý nghĩa $\\alpha$ (0.05) cho số lượng kiểm định ($m$), mức ý nghĩa mới là $\\alpha / m$.",
+      "domain": "Multiple Testing & Statistics"
+    },
+    "LASSO": {
+      "full_name": "Least Absolute Shrinkage and Selection Operator",
+      "vietnamese": "Kỹ thuật Co cụm Tuyệt đối Tối thiểu và Chọn Lựa Biến (Tibshirani, 1996)",
+      "purpose": "Phương pháp hồi quy có kiểm soát (regularization) sử dụng hình phạt chuẩn $L_1$, có khả năng ép các hệ số hồi quy của biến không quan trọng về đúng bằng 0, giúp tự động chọn biến tối ưu.",
+      "benchmark": "Tham số phạt $\\lambda$ được tinh chỉnh tối ưu thông qua $k$-fold Cross-Validation nhằm tối thiểu hóa sai số dự báo.",
+      "domain": "Machine Learning & Data Science in Research"
+    },
+    "LDA": {
+      "full_name": "Latent Dirichlet Allocation",
+      "vietnamese": "Mô hình Phân bổ Dirichlet Tiềm ẩn (Blei et al., 2003)",
+      "purpose": "Mô hình xác suất sinh (generative probabilistic model) dùng trong xử lý ngôn ngữ tự nhiên để tự động khám phá các chủ đề tiềm ẩn (latent topics) từ tập hợp lớn các văn bản khoa học.",
+      "benchmark": "Đánh giá chất lượng chủ đề qua chỉ số Topic Coherence (Cv score > 0.50) và Perplexity.",
+      "domain": "Text Mining & Computational Social Science"
+    },
+    "XAI": {
+      "full_name": "Explainable Artificial Intelligence",
+      "vietnamese": "Trí tuệ Nhân tạo có Thể Giải thích được",
+      "purpose": "Các kỹ thuật và phương pháp giúp mở 'hộp đen' (black box) của các thuật toán máy học phức tạp, giải trình lý do mô hình đưa ra dự báo trong nghiên cứu thực nghiệm.",
+      "benchmark": "Bắt buộc áp dụng trong các nghiên cứu ra quyết định y khoa, tài chính và chính sách công (SHAP values, LIME).",
+      "domain": "AI & Computational Research"
+    },
+    "SHAP": {
+      "full_name": "Shapley Additive Explanations",
+      "vietnamese": "Giải thích Cộng gộp dựa trên Lý thuyết Trò chơi Shapley (Lundberg & Lee, 2017)",
+      "purpose": "Đo lường mức độ đóng góp biên (marginal contribution) công bằng của từng biến số vào dự báo của bất kỳ mô hình máy học phức tạp nào.",
+      "benchmark": "Đáp ứng đầy đủ 3 tính chất tiên nghiệm toán học: Local accuracy, Missingness, và Consistency.",
+      "domain": "Explainable AI & Econometrics"
+    },
+    "TA": {
+      "full_name": "Thematic Analysis",
+      "vietnamese": "Phân tích Chủ đề (Braun & Clarke, 2006/2019)",
+      "purpose": "Phương pháp định tính nền tảng dùng để xác định, phân tích và báo cáo các mẫu hình ý nghĩa (themes) xuyên suốt bộ dữ liệu phỏng vấn, tài liệu hoặc văn bản.",
+      "benchmark": "Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu $\\rightarrow$ Tạo mã ban đầu $\\rightarrow$ Tìm chủ đề $\\rightarrow$ Rà soát chủ đề $\\rightarrow$ Định nghĩa & đặt tên $\\rightarrow$ Viết báo cáo.",
+      "domain": "Qualitative Research Methodology"
+    },
+    "GT": {
+      "full_name": "Grounded Theory",
+      "vietnamese": "Lý thuyết Nền tảng (Glaser & Strauss, 1967)",
+      "purpose": "Phương pháp nghiên cứu định tính quy nạp nhằm xây dựng một lý thuyết mới bắt nguồn sâu xa từ chính dữ liệu thực tế thu thập được tại thực địa.",
+      "benchmark": "Yêu cầu quy trình so sánh liên tục (Constant Comparative Method), lấy mẫu lý thuyết (Theoretical Sampling) và dừng lại khi đạt điểm bão hòa lý thuyết (Theoretical Saturation).",
+      "domain": "Qualitative Research Methodology"
+    },
+    "CDA": {
+      "full_name": "Critical Discourse Analysis",
+      "vietnamese": "Phân tích Diễn ngôn Phê phán (Fairclough / Wodak)",
+      "purpose": "Nghiên cứu cách thức mà quyền lực xã hội, sự thống trị và bất bình đẳng được thực thi, tái sản xuất và thách thức thông qua văn bản và lời nói trong bối cảnh văn hóa xã hội.",
+      "benchmark": "Phân tích đa tầng theo mô hình 3 chiều của Fairclough: Văn bản (Text) $\\rightarrow$ Thực hành diễn ngôn (Discursive practice) $\\rightarrow$ Thực hành xã hội (Social practice).",
+      "domain": "Qualitative & Critical Studies"
+    },
+    "NGT": {
+      "full_name": "Nominal Group Technique",
+      "vietnamese": "Kỹ thuật Nhóm Danh nghĩa (Kỹ thuật Đồng thuận Chuyên gia)",
+      "purpose": "Phương pháp cấu trúc nhóm có điều phối viên nhằm tạo ý tưởng và đạt đồng thuận nhanh chóng, đảm bảo mọi thành viên đều có tiếng nói bình đẳng (Delbecq & Van de Ven, 1971).",
+      "benchmark": "Quy trình 4 pha: Tạo ý tưởng thầm lặng $\\rightarrow$ Thu thập vòng tròn $\\rightarrow$ Thảo luận làm rõ $\\rightarrow$ Bỏ phiếu xếp hạng độc lập.",
+      "domain": "Group Decision & Qualitative Consensus"
+    },
+    "ROC": {
+      "full_name": "Receiver Operating Characteristic",
+      "vietnamese": "Đường cong Đặc trưng Hoạt động của Bộ thu",
+      "purpose": "Đồ thị biểu diễn hiệu năng của mô hình phân loại nhị phân ở mọi ngưỡng quyết định (vẽ tỷ lệ True Positive Rate theo False Positive Rate).",
+      "benchmark": "Diện tích dưới đường cong (AUC) $\\ge 0.80$ biểu thị khả năng phân loại tốt; $\\ge 0.90$ là xuất sắc; $0.50$ tương đương đoán mò ngẫu nhiên.",
+      "domain": "Diagnostic & Predictive Modeling"
+    },
+    "AUC": {
+      "full_name": "Area Under the ROC Curve",
+      "vietnamese": "Diện tích Dưới Đường cong ROC",
+      "purpose": "Chỉ số tổng hợp đo lường mức độ phân tách giữa hai nhóm của mô hình dự báo phân loại trong kinh tế lượng và khoa học dữ liệu.",
+      "benchmark": "AUC = 0.5 (không có giá trị phân biệt); AUC = 0.7 - 0.8 (chấp nhận được); AUC > 0.8 (tốt); AUC > 0.9 (rất xuất sắc).",
+      "domain": "Predictive Analytics & Statistics"
+    },
+    "RMSE": {
+      "full_name": "Root Mean Square Error",
+      "vietnamese": "Căn bậc hai Sai số Toàn phương Trung bình",
+      "purpose": "Thước đo độ lớn của sai số dự báo giữa giá trị ước lượng và giá trị thực tế quan sát được trong mô hình hồi quy, rất nhạy cảm với các sai số lớn (outliers).",
+      "benchmark": "Càng nhỏ càng tốt; dùng để so sánh hiệu năng dự báo ngoài mẫu giữa các mô hình cạnh tranh trên cùng một tập dữ liệu.",
+      "domain": "Model Evaluation & Predictive Statistics"
+    },
+    "MAE": {
+      "full_name": "Mean Absolute Error",
+      "vietnamese": "Sai số Tuyệt đối Trung bình",
+      "purpose": "Đo độ lệch tuyệt đối trung bình giữa giá trị dự báo và thực tế, phản ánh trung thực mức độ sai số trung bình mà không thổi phồng trọng số của outliers như RMSE.",
+      "benchmark": "Dùng kết hợp với RMSE; khoảng cách giữa RMSE và MAE càng lớn chứng tỏ dữ liệu có phương sai sai số lớn hoặc nhiều điểm ngoại lai.",
+      "domain": "Model Evaluation & Predictive Statistics"
+    },
+    "WLS": {
+      "full_name": "Weighted Least Squares",
+      "vietnamese": "Bình phương Bé nhất có Trọng số",
+      "purpose": "Kỹ thuật ước lượng hồi quy hiệu chỉnh hiện tượng phương sai sai số thay đổi (heteroskedasticity) bằng cách gán trọng số nghịch đảo với phương sai sai số của từng quan sát.",
+      "benchmark": "Khôi phục tính chất BLUE (Best Linear Unbiased Estimator) của ước lượng hồi quy khi cấu trúc của phương sai sai số đã được biết trước.",
+      "domain": "Econometrics"
+    },
+    "GLS": {
+      "full_name": "Generalized Least Squares",
+      "vietnamese": "Bình phương Bé nhất Tổng quát (Aitken, 1935)",
+      "purpose": "Ước lượng hồi quy khi ma trận hiệp phương sai của sai số có hiện tượng cả phương sai thay đổi lẫn tự tương quan (autocorrelation).",
+      "benchmark": "Hiệu quả hơn OLS thông thường; được hiện thực hóa qua Feasible Generalized Least Squares (FGLS) khi ma trận hiệp phương sai sai số chưa biết.",
+      "domain": "Econometrics"
+    },
+    "3SLS": {
+      "full_name": "Three-Stage Least Squares",
+      "vietnamese": "Phương pháp Bình phương Bé nhất Ba giai đoạn (Zellner & Theil, 1962)",
+      "purpose": "Ước lượng hệ phương trình đồng thời kết hợp 2SLS để giải quyết nội sinh và SUR để giải quyết tương quan giữa các sai số của các phương trình khác nhau.",
+      "benchmark": "Hiệu quả hơn 2SLS khi các phần dư có tương quan chéo đáng kể và toàn bộ hệ phương trình được định dạng chuẩn xác.",
+      "domain": "Econometrics"
+    },
+    "MLE": {
+      "full_name": "Maximum Likelihood Estimation",
+      "vietnamese": "Phương pháp Ước lượng Hợp lý Cực đại",
+      "purpose": "Phương pháp ước lượng tham số thống kê bằng cách tìm giá trị tham số làm tối đa hóa hàm hợp lý của mẫu dữ liệu quan sát được.",
+      "benchmark": "Đạt tính chất tiệm cận tối ưu (Asymptotically efficient và Consistent) khi cỡ mẫu đủ lớn và thỏa mãn giả định phân phối chuẩn đa biến.",
+      "domain": "Statistical Estimation & CB-SEM"
+    },
+    "QMLE": {
+      "full_name": "Quasi-Maximum Likelihood Estimation",
+      "vietnamese": "Phương pháp Ước lượng Tựa Hợp lý Cực đại",
+      "purpose": "Ước lượng tham số khi hàm hợp lý được xác định dưới giả định phân phối chuẩn nhưng phân phối thực tế của dữ liệu có thể không chuẩn.",
+      "benchmark": "Cho ước lượng vững về các hệ số ngay cả khi vi phạm phân phối chuẩn, miễn là hàm kỳ vọng có điều kiện được định dạng đúng; bắt buộc dùng sai số chuẩn vững (Huber-White Sandwich standard errors).",
+      "domain": "Econometrics & Non-linear Models"
+    },
+    "LAD": {
+      "full_name": "Least Absolute Deviations",
+      "vietnamese": "Phương pháp Độ lệch Tuyệt đối Tối thiểu (Hồi quy Trung vị)",
+      "purpose": "Ước lượng hồi quy mạnh (robust regression) bằng cách tối thiểu hóa tổng độ lệch tuyệt đối thay vì tổng bình phương, ước lượng trung vị có điều kiện thay vì trung bình.",
+      "benchmark": "Rất vững trước các điểm ngoại lai (outliers) cực đoan và phân phối đuôi dày (heavy-tailed distributions).",
+      "domain": "Robust Statistics & Econometrics"
+    },
+    "RESET": {
+      "full_name": "Ramsey Regression Equation Specification Error Test",
+      "vietnamese": "Kiểm định Lỗi Định dạng Phương trình Hồi quy Ramsey (1969)",
+      "purpose": "Kiểm tra xem mô hình hồi quy tuyến tính có bị sai sót định dạng dạng hàm phi tuyến hoặc bỏ sót biến số bậc cao hay không bằng cách đưa lũy thừa của giá trị dự báo vào phương trình.",
+      "benchmark": "P-value > 0.05: Không bác bỏ giả thuyết H0, kết luận mô hình không có bằng chứng vi phạm dạng hàm.",
+      "domain": "Econometrics Diagnostics"
+    },
+    "CUSUM": {
+      "full_name": "Cumulative Sum Control Chart Test",
+      "vietnamese": "Kiểm định Tổng Tích lũy Phần dư Đệ quy (Brown et al., 1975)",
+      "purpose": "Kiểm định tính ổn định của các hệ số hồi quy theo thời gian nhằm phát hiện các bước gãy cấu trúc (structural breaks).",
+      "benchmark": "Đường biểu diễn CUSUM và CUSUMSQ phải nằm hoàn toàn bên trong hai dải biên tới hạn ở mức ý nghĩa 5%.",
+      "domain": "Time Series Econometrics"
+    },
+    "GARCH": {
+      "full_name": "Generalized Autoregressive Conditional Heteroskedasticity",
+      "vietnamese": "Mô hình Phương sai Thay đổi có Điều kiện Tự hồi quy Tổng quát (Bollerslev, 1986)",
+      "purpose": "Mô hình hóa sự biến động phương sai (volatility clustering) theo thời gian trong tài chính và kinh tế vĩ mô.",
+      "benchmark": "Tổng các hệ số ARCH và GARCH ($\\alpha + \\beta$) phải nhỏ hơn 1 để đảm bảo tính dừng của phương sai có điều kiện.",
+      "domain": "Financial Econometrics"
+    },
+    "CEM": {
+      "full_name": "Coarsened Exact Matching",
+      "vietnamese": "Phương pháp Ghép cặp Chính xác Thu thô (Iacus, King, & Porro, 2012)",
+      "purpose": "Phương pháp ghép cặp bán thực nghiệm làm thô hóa các biến quan sát thành các khoảng rời rạc rồi ghép cặp chính xác, vượt trội hơn PSM về việc giảm thiểu mất cân bằng biến.",
+      "benchmark": "Giảm thiểu chỉ số mất cân bằng đa biến $\\mathcal{L}_1$ ($L_1$ statistic sau ghép cặp phải nhỏ hơn đáng kể so với trước ghép cặp).",
+      "domain": "Causal Inference"
+    },
+    "IPW": {
+      "full_name": "Inverse Probability Weighting",
+      "vietnamese": "Phương pháp Gán Trọng số Nghịch đảo Xác suất",
+      "purpose": "Phương pháp suy luận nhân quả tạo ra một quần thể giả định bằng cách gán trọng số cho từng quan sát bằng nghịch đảo của điểm xu hướng (Propensity score).",
+      "benchmark": "Kết hợp với mô hình kết quả tạo thành 'Ước lượng Vững kép' (Doubly Robust Estimator: chỉ cần một trong hai mô hình đúng thì ước lượng nhân quả vẫn không chệch).",
+      "domain": "Causal Inference & Biostatistics"
+    },
+    "ESEM": {
+      "full_name": "Exploratory Structural Equation Modeling",
+      "vietnamese": "Mô hình Phương trình Cấu trúc Khám phá (Asparouhov & Muthén, 2009)",
+      "purpose": "Tích hợp tính linh hoạt của EFA (cho phép hệ số tải chéo tự do) vào khuôn khổ kiểm định chặt chẽ của CFA/SEM, giải quyết tình trạng chỉ số Fit bị méo khi ép tải chéo về 0.",
+      "benchmark": "So sánh Model Fit giữa CFA truyền thống và ESEM; ESEM thường cho hệ số tương quan giữa các nhân tố thực tế hơn và chỉ số fit vượt trội (CFI tăng, RMSEA giảm).",
+      "domain": "Advanced Psychometrics & SEM"
+    },
+    "CLF": {
+      "full_name": "Common Latent Factor",
+      "vietnamese": "Nhân tố Tiềm ẩn Chung (Kỹ thuật Thẩm định CMV trong AMOS)",
+      "purpose": "Đưa thêm một nhân tố tiềm ẩn chung nối tới tất cả các chỉ báo trong mô hình CFA nhằm ước lượng và bóc tách trực tiếp phần trăm phương sai do phương pháp đo lường chung tạo ra.",
+      "benchmark": "So sánh các hệ số tải chuẩn hóa (standardized factor loadings) trước và sau khi có CLF: nếu độ lệch $\\Delta \\lambda < 0.20$, kết luận CMV không làm thay đổi bản chất thang đo.",
+      "domain": "CB-SEM & Psychometrics"
+    },
+    "DIF": {
+      "full_name": "Differential Item Functioning",
+      "vietnamese": "Chức năng Câu hỏi Khác biệt trong Lý thuyết Ứng đáp Câu hỏi IRT",
+      "purpose": "Phát hiện câu hỏi trắc nghiệm hoặc thang đo có tính thiên vị (bias) đối với một nhóm nhân khẩu học cụ thể dù hai nhóm có cùng mức năng lực tiềm ẩn $\\theta$.",
+      "benchmark": "Kiểm định Mantel-Haenszel hoặc mô hình hồi quy Logistic IRT có $p < .05$ và độ lệch kích thước hiệu ứng lớn (ETS delta classification: Class C biểu thị DIF nghiêm trọng).",
+      "domain": "Item Response Theory & Psychometrics"
+    },
+    "PAR": {
+      "full_name": "Participatory Action Research",
+      "vietnamese": "Nghiên cứu Hành động có Sự tham gia",
+      "purpose": "Cách tiếp cận nghiên cứu dân chủ trong đó các thành viên cộng đồng cùng đóng vai trò là đồng nghiên cứu viên để điều tra và giải quyết vấn đề bất bình đẳng của chính họ.",
+      "benchmark": "Chu trình xoắn ốc lặp lặp 4 pha: Lập kế hoạch $\\rightarrow$ Hành động can thiệp $\\rightarrow$ Quan sát $\\rightarrow$ Phản tư đánh giá (Lewin / Kemmis & McTaggart).",
+      "domain": "Qualitative & Community-Based Research"
+    },
+    "MMAT": {
+      "full_name": "Mixed Methods Appraisal Tool",
+      "vietnamese": "Công cụ Đánh giá Chất lượng Nghiên cứu Phương pháp Hỗn hợp (Hong et al., 2018)",
+      "purpose": "Bảng thẩm định chất lượng phương pháp luận dùng trong các bài tổng quan hệ thống bao gồm cả nghiên cứu định tính, định lượng và hỗn hợp.",
+      "benchmark": "5 tiêu chuẩn cốt lõi đánh giá phần tích hợp: Lý do dùng hỗn hợp, sự kết hợp dữ liệu, tích hợp kết quả, sự giải thích mâu thuẫn, và tuân thủ chuẩn mực từng nhánh.",
+      "domain": "Mixed Methods & Systematic Review"
+    },
+    "CASP": {
+      "full_name": "Critical Appraisal Skills Programme",
+      "vietnamese": "Chương trình Kỹ năng Đánh giá Phản biện Tài liệu Y sinh & Xã hội",
+      "purpose": "Bộ 8 danh mục kiểm tra thẩm định có cấu trúc giúp đánh giá nhanh độ tin cậy và giá trị của các bài báo nghiên cứu (RCT, Định tính, Đoàn hệ, Bệnh chứng, Tổng quan hệ thống).",
+      "benchmark": "10 câu hỏi cốt lõi sàng lọc tính giá trị kết quả, phương pháp luận chặt chẽ và khả năng áp dụng tại địa phương.",
+      "domain": "Evidence-Based Practice"
+    },
+    "NOS": {
+      "full_name": "Newcastle-Ottawa Scale",
+      "vietnamese": "Thang đo Newcastle-Ottawa Đánh giá Chất lượng Nghiên cứu Không ngẫu nhiên",
+      "purpose": "Công cụ chấm điểm chất lượng của các nghiên cứu đoàn hệ (Cohort) và bệnh-chứng (Case-Control) đưa vào phân tích gộp Meta-Analysis.",
+      "benchmark": "Hệ thống xếp hạng sao (tối đa 9 sao) qua 3 nhóm tiêu chí: Lựa chọn nhóm nghiên cứu (4 sao), Tính so sánh được (2 sao), và Đo lường kết quả/phơi nhiễm (3 sao). Nghiên cứu $\\ge 7$ sao được xếp loại chất lượng cao.",
+      "domain": "Meta-Analysis & Epidemiology"
+    },
+    "JIF": {
+      "full_name": "Journal Impact Factor",
+      "vietnamese": "Hệ số Tác động của Tạp chí (Clarivate Analytics - Web of Science)",
+      "purpose": "Thước đo tần suất trích dẫn trung bình của một bài báo được xuất bản trên tạp chí trong hai năm trước đó, dùng để đánh giá tầm ảnh hưởng của tạp chí khoa học.",
+      "benchmark": "Tính bằng: Tổng số trích dẫn trong năm hiện tại cho các bài báo xuất bản trong 2 năm trước chia cho tổng số bài báo có thể trích dẫn được xuất bản trong 2 năm đó.",
+      "domain": "Scientometrics & Academic Publishing"
+    },
+    "SJR": {
+      "full_name": "SCImago Journal Rank",
+      "vietnamese": "Chỉ số Xếp hạng Tạp chí SCImago (Scopus / Elsevier)",
+      "purpose": "Thước đo ảnh hưởng khoa học của tạp chí dựa trên thuật toán PageRank của Google, gán trọng số trích dẫn cao hơn cho các trích dẫn đến từ những tạp chí có uy tín lớn.",
+      "benchmark": "Phân chia thứ hạng tạp chí thành 4 phân vị: Q1 (top 25%), Q2 (25% - 50%), Q3 (50% - 75%), và Q4 (bottom 25%) theo từng lĩnh vực chuyên ngành.",
+      "domain": "Scientometrics & Scopus Indexing"
+    },
+    "SNIP": {
+      "full_name": "Source Normalized Impact per Paper",
+      "vietnamese": "Tác động Chuẩn hóa theo Nguồn của Bài báo (CWTS Leiden)",
+      "purpose": "Đo lường tác động trích dẫn theo ngữ cảnh bằng cách chuẩn hóa theo tiềm năng trích dẫn đặc thù của từng ngành khoa học (giúp so sánh công bằng giữa Toán học và Y sinh).",
+      "benchmark": "SNIP = 1.0 biểu thị tạp chí đạt mức trích dẫn trung bình của toàn bộ lĩnh vực; SNIP > 1.5 biểu thị tạp chí có tác động vượt trội so với mức bình quân chuyên ngành.",
+      "domain": "Scientometrics & Library Science"
+    },
+    "GFI": {
+      "full_name": "Goodness of Fit Index",
+      "vietnamese": "Chỉ số Mức độ Phù hợp Mô hình trong CB-SEM (Jöreskog & Sörbom)",
+      "purpose": "Đo lường tỷ lệ tương đối của phương sai và hiệp phương sai chung được giải thích bởi mô hình CFA/SEM.",
+      "benchmark": "Giá trị GFI $\\ge 0.90$ (hoặc khắt khe $\\ge 0.95$) biểu thị mô hình phù hợp tốt với dữ liệu thực tế.",
+      "domain": "CB-SEM Fit Indices"
+    },
+    "AGFI": {
+      "full_name": "Adjusted Goodness of Fit Index",
+      "vietnamese": "Chỉ số Phù hợp Mô hình có Hiệu chỉnh theo Bậc Tự do",
+      "purpose": "Hiệu chỉnh chỉ số GFI dựa trên số bậc tự do của mô hình nhằm phạt các mô hình đưa vào quá nhiều tham số tự do.",
+      "benchmark": "Giá trị AGFI $\\ge 0.85$ hoặc $\\ge 0.90$ biểu thị mô hình đạt chuẩn phù hợp.",
+      "domain": "CB-SEM Fit Indices"
+    },
+    "NFI": {
+      "full_name": "Normed Fit Index",
+      "vietnamese": "Chỉ số Phù hợp Chuẩn hóa (Bentler & Bonett, 1980)",
+      "purpose": "Đánh giá mức độ cải thiện độ phù hợp của mô hình đề xuất so với mô hình cơ sở rỗng (Null/Independence Model).",
+      "benchmark": "Giá trị NFI $\\ge 0.90$ hoặc $\\ge 0.95$ biểu thị mô hình phù hợp tốt; nhược điểm là bị đánh giá thấp khi cỡ mẫu nhỏ.",
+      "domain": "CB-SEM Fit Indices"
+    },
+    "NNFI": {
+      "full_name": "Non-Normed Fit Index (Tucker-Lewis Index - TLI)",
+      "vietnamese": "Chỉ số Phù hợp Phi chuẩn hóa (Tucker & Lewis, 1973)",
+      "purpose": "So sánh tỷ lệ cải thiện chi-square trên mỗi bậc tự do giữa mô hình đề xuất và mô hình độc lập, không bị thiên lệch bởi cỡ mẫu.",
+      "benchmark": "Giá trị TLI/NNFI $\\ge 0.90$ là chấp nhận được; $\\ge 0.95$ là xuất sắc.",
+      "domain": "CB-SEM Fit Indices"
+    },
+    "IFI": {
+      "full_name": "Incremental Fit Index",
+      "vietnamese": "Chỉ số Phù hợp Gia tăng (Bollen, 1989)",
+      "purpose": "Chỉ số phù hợp tương đối giải quyết vấn đề kích thước mẫu nhỏ của NFI và độ dao động của TLI.",
+      "benchmark": "Giá trị IFI $\\ge 0.90$ biểu thị mô hình cấu trúc phù hợp tốt với dữ liệu khảo sát.",
+      "domain": "CB-SEM Fit Indices"
+    },
+    "RMR": {
+      "full_name": "Root Mean Square Residual",
+      "vietnamese": "Căn bậc hai Phần dư Toàn phương Trung bình",
+      "purpose": "Đo độ lớn trung bình của phần dư giữa ma trận hiệp phương sai quan sát và ma trận hiệp phương sai do mô hình ước lượng.",
+      "benchmark": "Càng nhỏ càng tốt; tuy nhiên vì phụ thuộc vào đơn vị đo của các biến nên ngày nay hầu hết reviewer yêu cầu dùng phiên bản chuẩn hóa SRMR (< 0.08).",
+      "domain": "CB-SEM Diagnostics"
+    },
+    "RRA": {
+      "full_name": "Randomized Response Analysis",
+      "vietnamese": "Phân tích Phản hồi Ngẫu nhiên hóa (Kỹ thuật Khảo sát Nhạy cảm)",
+      "purpose": "Bảo vệ danh tính tuyệt đối cho người trả lời các câu hỏi hành vi sai phạm (gian lận thuế, hối lộ) qua cơ chế xúc xắc ngẫu nhiên.",
+      "benchmark": "Cho phép ước lượng tỷ lệ thực tế của quần thể mà không ai có thể biết chính xác từng cá nhân đã trả lời Có hay Không.",
+      "domain": "Survey Methodology"
+    },
+    "DOR": {
+      "full_name": "Diagnostic Odds Ratio",
+      "vietnamese": "Tỷ số Chênh Chẩn đoán (Meta-Analysis Thử nghiệm Chẩn đoán)",
+      "purpose": "Thước đo hiệu năng tổng hợp của một xét nghiệm hoặc công cụ chẩn đoán, kết hợp cả độ nhạy (Sensitivity) và độ đặc hiệu (Specificity).",
+      "benchmark": "DOR = 1 biểu thị công cụ không có khả năng phân biệt bệnh tật; DOR càng lớn hơn 1 biểu thị độ chính xác chẩn đoán càng vượt trội.",
+      "domain": "Diagnostic Meta-Analysis"
+    },
+    "SROC": {
+      "full_name": "Summary Receiver Operating Characteristic",
+      "vietnamese": "Đường cong Đặc trưng Hoạt động Bộ thu Tổng hợp",
+      "purpose": "Đồ thị biểu diễn mối quan hệ đánh đổi giữa độ nhạy và độ đặc hiệu tổng hợp của các nghiên cứu đưa vào phân tích gộp chẩn đoán.",
+      "benchmark": "Diện tích dưới đường cong SROC (AUC) tiệm cận 1.0 biểu thị công cụ đo lường đạt độ tin cậy chẩn đoán tối ưu.",
+      "domain": "Diagnostic Meta-Analysis"
+    },
+    "IPD": {
+      "full_name": "Individual Participant Data",
+      "vietnamese": "Dữ liệu Cá thể Từng Người tham gia (Tiêu chuẩn Vàng Meta-Analysis)",
+      "purpose": "Tổng hợp dữ liệu thô cấp bệnh nhân/cá thể từ mọi tác giả gốc thay vì chỉ dùng dữ liệu tóm tắt trên bài báo, cho phép chuẩn hóa phân tích ở mức cao nhất.",
+      "benchmark": "Loại bỏ hoàn toàn thiên lệch sinh thái (Ecological fallacy) và cho phép phân tích tương tác điều tiết ở cấp độ cá thể chính xác 100%.",
+      "domain": "Advanced Meta-Analysis"
+    },
+    "NMA": {
+      "full_name": "Network Meta-Analysis",
+      "vietnamese": "Phân tích Gộp Mạng lưới (So sánh Đa can thiệp Đồng thời)",
+      "purpose": "Kỹ thuật phân tích gộp tiên tiến kết hợp cả bằng chứng trực tiếp (Direct evidence) và bằng chứng gián tiếp (Indirect evidence) qua mạng lưới can thiệp chung.",
+      "benchmark": "Bắt buộc kiểm tra giả định chuyển tiếp (Transitivity assumption) và tính nhất quán (Inconsistency test giữa direct và indirect p > .05). Xếp hạng can thiệp qua diện tích SUCRA (Surface Under the Cumulative Ranking Curve).",
+      "domain": "Advanced Meta-Analysis"
+    },
+    "SUCRA": {
+      "full_name": "Surface Under the Cumulative Ranking Curve",
+      "vietnamese": "Diện tích Dưới Đường cong Xếp hạng Tích lũy trong Network Meta-Analysis",
+      "purpose": "Tỷ lệ phần trăm diện tích đo lường xác suất một biện pháp can thiệp là biện pháp tốt nhất trong số tất cả các can thiệp được so sánh trong mạng lưới.",
+      "benchmark": "SUCRA = 100%: Can thiệp chắc chắn là tốt nhất; SUCRA = 0%: Can thiệp chắc chắn là tồi tệ nhất.",
+      "domain": "Network Meta-Analysis"
+    },
+    "QCA": {
+      "full_name": "Qualitative Comparative Analysis",
+      "vietnamese": "Phân tích So sánh Định tính (Charles Ragin)",
+      "purpose": "Phương pháp tiếp cận dựa trên tập hợp và đại số Boole phân tích quan hệ nhân quả phức tạp (nhân quả phức hợp, bất đối xứng và đồng kết).",
+      "benchmark": "Đánh giá qua hai chỉ số cốt lõi: Độ nhất quán (Consistency > 0.80) và Độ bao phủ (Coverage).",
+      "domain": "Configural Comparative Methods"
+    },
+    "csQCA": {
+      "full_name": "Crisp-Set Qualitative Comparative Analysis",
+      "vietnamese": "Phân tích So sánh Định tính Tập rõ (Biến nhị phân 0 hoặc 1)",
+      "purpose": "Dạng QCA cơ bản trong đó các điều kiện và kết quả được mã hóa nhị phân nghiêm ngặt (0: không thuộc về tập hợp, 1: hoàn toàn thuộc về tập hợp).",
+      "benchmark": "Xây dựng Bảng Chân lý (Truth Table) và giải mã bằng thuật toán tối thiểu hóa Quine-McCluskey.",
+      "domain": "Configural Comparative Methods"
+    },
+    "fsQCA": {
+      "full_name": "Fuzzy-Set Qualitative Comparative Analysis",
+      "vietnamese": "Phân tích So sánh Định tính Tập mờ (Ragin, 2008)",
+      "purpose": "Mở rộng csQCA cho phép gán mức độ thuộc về tập hợp từ 0.0 đến 1.0 (Direct calibration qua 3 điểm cắt: Full membership 0.95, Crossover 0.50, Full non-membership 0.05).",
+      "benchmark": "Khám phá các cấu hình điều kiện đủ (Sufficient configurations) và điều kiện cần (Necessary conditions, Consistency > 0.90).",
+      "domain": "Configural Comparative Methods"
+    },
+    "mvQCA": {
+      "full_name": "Multi-Value Qualitative Comparative Analysis",
+      "vietnamese": "Phân tích So sánh Định tính Đa giá trị (Cronqvist, 2005)",
+      "purpose": "Dạng QCA mở rộng cho phép các biến số nhận các giá trị rời rạc có thứ bậc (0, 1, 2, 3...) mà không cần ép về biến nhị phân.",
+      "benchmark": "Giảm thiểu tổn thất thông tin khi phân loại các biến thể chế hoặc chính sách có nhiều trạng thái rõ ràng.",
+      "domain": "Configural Comparative Methods"
+    },
+    "SEM-PLS": {
+      "full_name": "Partial Least Squares Structural Equation Modeling",
+      "vietnamese": "Mô hình Phương trình Cấu trúc Bình phương Bé nhất Từng phần (PLS-SEM)",
+      "purpose": "Phương pháp SEM dựa trên phương sai tối đa hóa phương sai giải thích được của các biến phụ thuộc (Wold, 1982; Hair et al., 2022).",
+      "benchmark": "Lựa chọn số 1 cho các nghiên cứu dự báo, mô hình có cấu trúc phức tạp, thang đo kết hợp Formative, hoặc dữ liệu không phân phối chuẩn.",
+      "domain": "Structural Equation Modeling"
+    },
+    "MABI": {
+      "full_name": "Model of Athlete Brand Image",
+      "vietnamese": "Mô hình Hình ảnh Thương hiệu Vận động viên (Arai, Ko & Ross, 2014)",
+      "purpose": "Khung phân tích định lượng và định tính hình ảnh thương hiệu cá nhân vận động viên qua 3 chiều kích: Athletic Performance, Attractive Appearance và Marketable Lifestyle.",
+      "benchmark": "Được áp dụng chuẩn mực trong quản trị thể thao và tiếp thị mạng xã hội (Instagram, Twitter).",
+      "domain": "Marketing & Sports Management"
+    },
+    "SPT": {
+      "full_name": "Self-Presentation Theory",
+      "vietnamese": "Lý thuyết Tự Thể hiện Bản thân (Erving Goffman, 1959)",
+      "purpose": "Khung xã hội học kịch nghệ phân tích cách cá nhân quản trị ấn tượng (Impression Management) thông qua tín hiệu hữu ý và vô ý trên sân khấu trước và sân khấu sau.",
+      "benchmark": "Lý thuyết nền tảng trong nghiên cứu hành vi người dùng mạng xã hội và xây dựng thương hiệu cá nhân.",
+      "domain": "Sociology & Consumer Behavior"
+    },
+    "SPAR-4-SLR": {
+      "full_name": "Scientific Procedures and Rationales for Systematic Literature Reviews",
+      "vietnamese": "Quy trình Khoa học Chuẩn mực cho Tổng quan Hệ thống (Paul et al., 2021)",
+      "purpose": "Khung hướng dẫn 3 giai đoạn (Assembling, Arranging, Assessing) và 6 bước thực thi tổng quan hệ thống minh bạch, có thể tái lập trong khoa học quản trị và kinh doanh.",
+      "benchmark": "Tiêu chuẩn báo cáo phương pháp luận xuất sắc cho các bài báo Literature Review trên các tạp chí Q1 (JBR, IJCS).",
+      "domain": "Systematic Review Protocol"
+    },
+    "CEBs": {
+      "full_name": "Consumer Engagement Behaviors",
+      "vietnamese": "Các Hành vi Gắn kết của Khách hàng (van Doorn et al., 2010)",
+      "purpose": "Đo lường các hành vi của khách hàng hướng đến thương hiệu hoặc doanh nghiệp nằm ngoài hành vi mua sắm thuần túy (eWOM, đồng sáng tạo, phản hồi, ủng hộ cộng đồng).",
+      "benchmark": "Khung lý thuyết nền tảng trong tiếp thị số và nghiên cứu cộng đồng mạng xã hội.",
+      "domain": "Consumer Behavior"
+    },
+    "OBC": {
+      "full_name": "Online Brand Community",
+      "vietnamese": "Cộng đồng Thương hiệu Trực tuyến (Muñiz & O'Guinn, 2001)",
+      "purpose": "Cộng đồng trực tuyến gồm những người tiêu dùng có chung sự gắn bó và ngưỡng mộ đối với một thương hiệu, nơi diễn ra các hoạt động đồng sáng tạo giá trị.",
+      "benchmark": "Đối tượng nghiên cứu trọng tâm trong phương pháp Dân tộc học mạng (Netnography).",
+      "domain": "Marketing & Virtual Communities"
+    }
+  }
+}

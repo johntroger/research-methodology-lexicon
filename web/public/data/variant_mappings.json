@@ -1,0 +1,3529 @@
+{
+  "version": "1.0.0",
+  "description": "Hệ thống Ánh xạ Biến thể Toàn diện (Corpus Variant Mapping) kết nối 11.084 khái niệm từ 18 giáo trình kinh điển về các mục từ chuẩn mực",
+  "updated_at": "2026-10-25T09:14:33.175Z",
+  "statistics": {
+    "total_canonical_hubs": 24,
+    "total_mapped_variants": 348
+  },
+  "canonical_to_variants": {
+    "Construct Validity": [
+      {
+        "v": "Convergent Validity",
+        "vn": "Độ giá trị hội tụ",
+        "rel": "Thành tố con bắt buộc (AVE > 0.50, Loadings > 0.708)",
+        "src": "Hair et al. (2018), DeVellis (2016)"
+      },
+      {
+        "v": "Discriminant Validity",
+        "vn": "Độ giá trị phân biệt",
+        "rel": "Thành tố con bắt buộc (HTMT < 0.85/0.90, Fornell-Larcker)",
+        "src": "Henseler et al. (2015), Hair et al. (2018)"
+      },
+      {
+        "v": "Nomological Validity",
+        "vn": "Độ giá trị pháp quy / quy luật",
+        "rel": "Đánh giá mức độ thang đo liên hệ đúng lý thuyết với các biến khác",
+        "src": "Cronbach & Meehl (1955), MacKenzie et al. (2011)"
+      },
+      {
+        "v": "Face Validity",
+        "vn": "Độ giá trị bề mặt",
+        "rel": "Đánh giá chủ quan xem thang đo thoạt nhìn có vẻ đo đúng khái niệm",
+        "src": "Nunnally & Bernstein (1994), Schindler (2022)"
+      },
+      {
+        "v": "Content Validity",
+        "vn": "Độ giá trị nội dung",
+        "rel": "Đánh giá của hội đồng chuyên gia về độ bao quát miền khái niệm",
+        "src": "Lawshe (1975), MacKenzie et al. (2011)"
+      },
+      {
+        "v": "Criterion-Related Validity",
+        "vn": "Độ giá trị tiêu chí",
+        "rel": "Tương quan với một tiêu chuẩn chuẩn mực bên ngoài",
+        "src": "American Psychological Association (2014)"
+      },
+      {
+        "v": "Concurrent Validity",
+        "vn": "Độ giá trị đồng thời",
+        "rel": "Đo lường cùng lúc với thang đo tiêu chuẩn hiện hành",
+        "src": "DeVellis (2016)"
+      },
+      {
+        "v": "Predictive Validity",
+        "vn": "Độ giá trị dự báo",
+        "rel": "Năng lực dự báo hành vi hoặc kết cục trong tương lai",
+        "src": "DeVellis (2016)"
+      },
+      {
+        "v": "Multitrait-Multimethod Matrix (MTMM)",
+        "vn": "Ma trận Đa đặc tính - Đa phương pháp",
+        "rel": "Kỹ thuật thực nghiệm thẩm định hội tụ và phân biệt đồng thời",
+        "src": "Campbell & Fiske (1959)"
+      },
+      {
+        "v": "Known-Groups Validity",
+        "vn": "Độ giá trị nhóm đã biết",
+        "rel": "Khả năng phân biệt chính xác giữa các nhóm có đặc tính đối lập",
+        "src": "DeVellis (2016)"
+      },
+      {
+        "v": "Incremental Validity",
+        "vn": "Độ giá trị gia tăng",
+        "rel": "Mức độ thang đo giải thích thêm phương sai vượt trên thang đo cũ",
+        "src": "Hunsley & Meyer (2003)"
+      },
+      {
+        "v": "Credibility / Trustworthiness",
+        "vn": "Tính đáng tin cậy / Đáng tin cậy định tính",
+        "rel": "Khái niệm tương đương trong nghiên cứu định tính",
+        "src": "Lincoln & Guba (1985)"
+      }
+    ],
+    "Internal Validity": [
+      {
+        "v": "Internal Validity Threats",
+        "vn": "Các mối đe dọa giá trị nội tại",
+        "rel": "Hệ thống các yếu tố ngoại lai làm sai lệch suy luận nhân quả",
+        "src": "Campbell & Stanley (1963), Shadish et al. (2002)"
+      },
+      {
+        "v": "History Threat",
+        "vn": "Nguy cơ lịch sử",
+        "rel": "Biến cố ngoại cảnh xảy ra giữa pretest và posttest",
+        "src": "Shadish, Cook & Campbell (2002)"
+      },
+      {
+        "v": "Maturation Threat",
+        "vn": "Nguy cơ trưởng thành",
+        "rel": "Sự thay đổi tự nhiên về thể chất hoặc tâm lý theo thời gian",
+        "src": "Shadish et al. (2002)"
+      },
+      {
+        "v": "Testing Threat / Practice Effects",
+        "vn": "Nguy cơ kiểm tra lặp",
+        "rel": "Người tham gia làm bài kiểm tra lần 2 tốt hơn do đã quen bài lần 1",
+        "src": "Shadish et al. (2002)"
+      },
+      {
+        "v": "Instrumentation Threat",
+        "vn": "Nguy cơ dụng cụ đo",
+        "rel": "Sự thay đổi về thước đo hoặc độ mệt mỏi của người chấm điểm",
+        "src": "Shadish et al. (2002)"
+      },
+      {
+        "v": "Statistical Regression to the Mean",
+        "vn": "Hiện tượng hồi quy về giá trị trung bình",
+        "rel": "Điểm số cực đoan ở lần 1 tự động dịch về trung bình ở lần 2",
+        "src": "Campbell & Stanley (1963)"
+      },
+      {
+        "v": "Selection Threat",
+        "vn": "Nguy cơ chọn mẫu",
+        "rel": "Sự khác biệt nền tảng giữa các nhóm từ trước khi can thiệp bắt đầu",
+        "src": "Shadish et al. (2002)"
+      },
+      {
+        "v": "Attrition Threat / Experimental Mortality",
+        "vn": "Nguy cơ mất mẫu / Suy giảm mẫu",
+        "rel": "Tỷ lệ bỏ dở nghiên cứu giữa các nhóm so sánh khác biệt nhau",
+        "src": "Shadish et al. (2002)"
+      },
+      {
+        "v": "Diffusion of Treatments",
+        "vn": "Sự lan tỏa can thiệp",
+        "rel": "Nhóm can thiệp chia sẻ tài liệu/thông tin cho nhóm đối chứng",
+        "src": "Shadish et al. (2002)"
+      },
+      {
+        "v": "Compensatory Equalization",
+        "vn": "Sự bù trừ tương đương",
+        "rel": "Nhà quản lý hỗ trợ thêm nguồn lực cho nhóm đối chứng vì thấy thiệt",
+        "src": "Shadish et al. (2002)"
+      },
+      {
+        "v": "Compensatory Rivalry (John Henry Effect)",
+        "vn": "Sự ganh đua bù trừ",
+        "rel": "Nhóm đối chứng nỗ lực thi đấu phi thường để không bị coi là thua",
+        "src": "Saretsky (1972)"
+      },
+      {
+        "v": "Resentful Demoralization",
+        "vn": "Sự thoái chí bất mãn",
+        "rel": "Nhóm đối chứng cảm thấy bất công và buông xuôi nỗ lực",
+        "src": "Shadish et al. (2002)"
+      },
+      {
+        "v": "Ambiguity About Causal Direction",
+        "vn": "Mơ hồ về chiều hướng nhân quả",
+        "rel": "Không xác định rõ X sinh ra Y hay Y sinh ra X",
+        "src": "Shadish et al. (2002)"
+      }
+    ],
+    "External Validity": [
+      {
+        "v": "Population Validity",
+        "vn": "Độ giá trị quần thể",
+        "rel": "Khả năng khái quát hóa kết quả từ mẫu nghiên cứu sang toàn bộ quần thể mục tiêu",
+        "src": "Bracht & Glass (1968), Schindler (2022)"
+      },
+      {
+        "v": "Ecological Validity",
+        "vn": "Độ giá trị sinh thái",
+        "rel": "Khả năng áp dụng kết quả từ phòng thí nghiệm ra bối cảnh thế giới thực tế",
+        "src": "Brunswik (1955), Shadish et al. (2002)"
+      },
+      {
+        "v": "Temporal Validity",
+        "vn": "Độ giá trị thời gian",
+        "rel": "Khả năng kết luận nghiên cứu vẫn đúng ở các thời kỳ lịch sử khác nhau",
+        "src": "Shadish et al. (2002)"
+      },
+      {
+        "v": "Interaction of Selection and Treatment",
+        "vn": "Tương tác giữa chọn mẫu và can thiệp",
+        "rel": "Hiệu quả can thiệp chỉ đúng trên nhóm đối tượng đặc biệt đã chọn",
+        "src": "Campbell & Stanley (1963)"
+      },
+      {
+        "v": "Interaction of Setting and Treatment",
+        "vn": "Tương tác giữa bối cảnh và can thiệp",
+        "rel": "Kết quả chỉ đúng ở địa điểm thực nghiệm mà không đúng ở nơi khác",
+        "src": "Shadish et al. (2002)"
+      },
+      {
+        "v": "Analytical Generalization",
+        "vn": "Khái quát hóa phân tích lý thuyết",
+        "rel": "Khái quát hóa từ case study lên khung lý thuyết (đối lập khái quát thống kê)",
+        "src": "Yin (2014/2018)"
+      },
+      {
+        "v": "Transferability",
+        "vn": "Tính chuyển giao",
+        "rel": "Khái niệm tương đương trong nghiên cứu định tính nhờ mô tả đậm đặc",
+        "src": "Lincoln & Guba (1985)"
+      }
+    ],
+    "reliability": [
+      {
+        "v": "Internal Consistency Reliability",
+        "vn": "Độ tin cậy nhất quán nội tại",
+        "rel": "Mức độ các câu hỏi trong cùng một thang đo liên kết chặt chẽ với nhau",
+        "src": "Cronbach (1951), Hair et al. (2018)"
+      },
+      {
+        "v": "Cronbach's Alpha",
+        "vn": "Hệ số Alpha Cronbach",
+        "rel": "Chỉ số nhất quán nội tại truyền thống (chuẩn >= 0.70)",
+        "src": "Cronbach (1951)"
+      },
+      {
+        "v": "Composite Reliability (CR)",
+        "vn": "Độ tin cậy tổng hợp CR",
+        "rel": "Chỉ số tin cậy chuẩn mực trong SEM dựa trên factor loadings (chuẩn >= 0.70)",
+        "src": "Werts et al. (1974), Hair et al. (2018)"
+      },
+      {
+        "v": "McDonald's Omega (ω)",
+        "vn": "Hệ số Omega McDonald",
+        "rel": "Độ tin cậy hiện đại ưu việt hơn Cronbach alpha khi vi phạm tau-equivalence",
+        "src": "McDonald (1999)"
+      },
+      {
+        "v": "Dijkstra-Henseler's Rho_A",
+        "vn": "Hệ số Rho_A Dijkstra-Henseler",
+        "rel": "Thước đo độ tin cậy nhất quán tiệm cận chuẩn xác nhất trong PLS-SEM",
+        "src": "Dijkstra & Henseler (2015)"
+      },
+      {
+        "v": "Test-Retest Reliability",
+        "vn": "Độ tin cậy kiểm tra - kiểm tra lại",
+        "rel": "Đo lường độ ổn định của điểm số qua hai thời điểm khác nhau",
+        "src": "DeVellis (2016)"
+      },
+      {
+        "v": "Split-Half Reliability",
+        "vn": "Độ tin cậy chia đôi",
+        "rel": "Chia ngẫu nhiên thang đo làm hai nửa để kiểm tra tương quan",
+        "src": "Spearman (1904)"
+      },
+      {
+        "v": "Spearman-Brown Prophecy Formula",
+        "vn": "Công thức tiên tri Spearman-Brown",
+        "rel": "Dự báo độ tin cậy khi thay đổi độ dài số lượng câu hỏi",
+        "src": "Spearman (1910)"
+      },
+      {
+        "v": "Inter-Rater Reliability",
+        "vn": "Độ tin cậy giữa những người đánh giá",
+        "rel": "Mức độ đồng thuận điểm số giữa các giám khảo/người chấm độc lập",
+        "src": "Shrout & Fleiss (1979)"
+      },
+      {
+        "v": "Cohen's Kappa (κ)",
+        "vn": "Hệ số Kappa Cohen",
+        "rel": "Đo độ đồng thuận phân loại giữa 2 người sau khi loại trừ xác suất ngẫu nhiên",
+        "src": "Cohen (1960)"
+      },
+      {
+        "v": "Fleiss' Kappa",
+        "vn": "Hệ số Kappa Fleiss",
+        "rel": "Đo độ đồng thuận phân loại giữa từ 3 người đánh giá trở lên",
+        "src": "Fleiss (1971)"
+      },
+      {
+        "v": "Krippendorff's Alpha (α)",
+        "vn": "Hệ số Alpha Krippendorff",
+        "rel": "Độ tin cậy mã hóa nội dung tổng quát chấp nhận mọi thang đo và dữ liệu thiếu",
+        "src": "Krippendorff (2018)"
+      },
+      {
+        "v": "Dependability",
+        "vn": "Tính ổn định phụ thuộc",
+        "rel": "Khái niệm tương đương trong nghiên cứu định tính qua lưu vết kiểm toán",
+        "src": "Lincoln & Guba (1985)"
+      }
+    ],
+    "Common Method Bias": [
+      {
+        "v": "Common Method Variance (CMV)",
+        "vn": "Phương sai phương pháp chung",
+        "rel": "Biến thiên nhân tạo sinh ra do dùng cùng một phương pháp đo lường",
+        "src": "Podsakoff et al. (2003)"
+      },
+      {
+        "v": "Same-Source Bias / Monomethod Bias",
+        "vn": "Thiên lệch cùng nguồn đánh giá",
+        "rel": "Dữ liệu cả biến độc lập và phụ thuộc đều lấy từ một người trả lời",
+        "src": "Podsakoff et al. (2012)"
+      },
+      {
+        "v": "Social Desirability Bias",
+        "vn": "Thiên lệch mong muốn xã hội",
+        "rel": "Xu hướng chọn đáp án đẹp lòng xã hội thay vì sự thật",
+        "src": "Crowne & Marlowe (1960)"
+      },
+      {
+        "v": "Acquiescence Bias (Yeah-Saying)",
+        "vn": "Thiên lệch đồng thuận",
+        "rel": "Xu hướng luôn đồng ý với mọi nhận định bất kể nội dung",
+        "src": "Podsakoff et al. (2003)"
+      },
+      {
+        "v": "Straightlining",
+        "vn": "Hành vi đánh dấu thẳng hàng",
+        "rel": "Chọn cùng một cột đáp án từ trên xuống dưới trong khảo sát trực tuyến",
+        "src": "Kim et al. (2019)"
+      },
+      {
+        "v": "Harman's Single-Factor Test",
+        "vn": "Kiểm định đơn nhân tố Harman",
+        "rel": "Kiểm tra xem nhân tố đầu tiên trong EFA có giải thích > 50% phương sai không",
+        "src": "Harman (1976), Podsakoff et al. (2003)"
+      },
+      {
+        "v": "Marker Variable Technique",
+        "vn": "Kỹ thuật biến đánh dấu",
+        "rel": "Sử dụng biến lý thuyết không liên quan để hiệu chỉnh tương quan ảo",
+        "src": "Lindell & Whitney (2001)"
+      },
+      {
+        "v": "Unmeasured Latent Method Construct (ULMC)",
+        "vn": "Biến tiềm ẩn phương pháp không đo lường",
+        "rel": "Mô hình hóa một nhân tố chung kết nối tất cả các biến quan sát trong CFA",
+        "src": "Podsakoff et al. (2003)"
+      },
+      {
+        "v": "Full Collinearity Test (Kock)",
+        "vn": "Kiểm định toàn đa cộng tuyến trong PLS-SEM",
+        "rel": "Đánh giá VIF toàn diện cho tất cả các biến tiềm ẩn (chuẩn VIF <= 3.3)",
+        "src": "Kock (2015)"
+      }
+    ],
+    "Endogeneity": [
+      {
+        "v": "Omitted Variable Bias (OVB)",
+        "vn": "Thiên lệch do bỏ sót biến quan trọng",
+        "rel": "Biến độc lập tương quan với sai số vì mô hình thiếu biến then chốt",
+        "src": "Wooldridge (2010), Greene (2018)"
+      },
+      {
+        "v": "Simultaneity Bias / Reverse Causality",
+        "vn": "Thiên lệch đồng thời / Quan hệ nhân quả đảo ngược",
+        "rel": "X tác động lên Y đồng thời Y cũng tác động ngược lại lên X",
+        "src": "Wooldridge (2010)"
+      },
+      {
+        "v": "Measurement Error in Regressors",
+        "vn": "Sai số đo lường trong biến giải thích",
+        "rel": "Làm hệ số hồi quy bị ép về 0 (Attenuation bias)",
+        "src": "Greene (2018)"
+      },
+      {
+        "v": "Two-Stage Least Squares (2SLS)",
+        "vn": "Bình phương tối thiểu hai giai đoạn",
+        "rel": "Phương pháp ước lượng biến công cụ IV cổ điển",
+        "src": "Angrist & Imbens (1995)"
+      },
+      {
+        "v": "Three-Stage Least Squares (3SLS)",
+        "vn": "Bình phương tối thiểu ba giai đoạn",
+        "rel": "Kết hợp 2SLS và SUR ước lượng hệ phương trình đồng thời",
+        "src": "Zellner & Theil (1962)"
+      },
+      {
+        "v": "Generalized Method of Moments (GMM)",
+        "vn": "Phương pháp moment tổng quát",
+        "rel": "Ước lượng vững với phương sai sai số thay đổi và bảng động",
+        "src": "Hansen (1982), Arellano & Bond (1991)"
+      },
+      {
+        "v": "Instrument Relevance Condition",
+        "vn": "Điều kiện liên quan của biến công cụ",
+        "rel": "Biến công cụ Z phải tương quan mạnh với biến nội sinh X (F > 10)",
+        "src": "Stock & Yogo (2005)"
+      },
+      {
+        "v": "Exclusion Restriction",
+        "vn": "Ràng buộc loại trừ của biến công cụ",
+        "rel": "Z chỉ tác động lên Y gián tiếp duy nhất qua X, không tác động trực tiếp",
+        "src": "Angrist, Imbens & Rubin (1996)"
+      },
+      {
+        "v": "Durbin-Wu-Hausman Test (DWH)",
+        "vn": "Kiểm định nội sinh Durbin-Wu-Hausman",
+        "rel": "So sánh ước lượng OLS và IV để xác nhận biến có thực sự nội sinh không",
+        "src": "Hausman (1978)"
+      },
+      {
+        "v": "Sargan-Hansen Test",
+        "vn": "Kiểm định ràng buộc nhận dạng quá mức",
+        "rel": "Kiểm tra tính hợp lệ ngoại sinh của các biến công cụ bổ sung",
+        "src": "Sargan (1958), Hansen (1982)"
+      }
+    ],
+    "Moderating Variable": [
+      {
+        "v": "Interaction Effect",
+        "vn": "Hiệu ứng tương tác",
+        "rel": "Tác động tích số X * W lên biến phụ thuộc Y",
+        "src": "Aiken & West (1991), Cohen et al. (2003)"
+      },
+      {
+        "v": "Simple Slopes Analysis",
+        "vn": "Phân tích độ dốc đơn giản",
+        "rel": "Kiểm tra độ dốc của X lên Y tại các mức độ của biến điều tiết (-1SD, Mean, +1SD)",
+        "src": "Aiken & West (1991)"
+      },
+      {
+        "v": "Spotlight Analysis (Pick-a-Point)",
+        "vn": "Phương pháp soi rọi chọn điểm",
+        "rel": "Đánh giá ý nghĩa tác động tại các giá trị cụ thể được định trước",
+        "src": "Spiller et al. (2013)"
+      },
+      {
+        "v": "Floodlight Analysis (Johnson-Neyman)",
+        "vn": "Phương pháp đèn pha Johnson-Neyman",
+        "rel": "Xác định vùng giá trị liên tục mà tại đó tác động chuyển sang có ý nghĩa",
+        "src": "Johnson & Neyman (1936), Spiller et al. (2013)"
+      },
+      {
+        "v": "Moderated Mediation",
+        "vn": "Trung gian bị điều tiết",
+        "rel": "Tác động gián tiếp của X lên Y qua M thay đổi theo biến điều tiết W",
+        "src": "Preacher, Rucker & Hayes (2007)"
+      },
+      {
+        "v": "Conditional Indirect Effect",
+        "vn": "Tác động gián tiếp có điều kiện",
+        "rel": "Độ lớn của tác động gián tiếp phụ thuộc vào giá trị của biến điều tiết",
+        "src": "Hayes (2018/2022)"
+      },
+      {
+        "v": "Index of Moderated Mediation",
+        "vn": "Chỉ số trung gian bị điều tiết",
+        "rel": "Kiểm định thống kê trực tiếp xem trung gian có bị điều tiết hay không",
+        "src": "Hayes (2015)"
+      },
+      {
+        "v": "Mediated Moderation",
+        "vn": "Điều tiết bị trung gian",
+        "rel": "Hiệu ứng tương tác X * W được giải thích gián tiếp qua biến M",
+        "src": "Muller, Judd & Yzerbyt (2005)"
+      }
+    ],
+    "Mediating Variable": [
+      {
+        "v": "Indirect Effect",
+        "vn": "Tác động gián tiếp",
+        "rel": "Tác động của X lên Y truyền qua biến trung gian M (a * b)",
+        "src": "Baron & Kenny (1986), Hayes (2018)"
+      },
+      {
+        "v": "Direct Effect",
+        "vn": "Tác động trực tiếp",
+        "rel": "Tác động của X lên Y sau khi đã kiểm soát biến trung gian M (c')",
+        "src": "Baron & Kenny (1986)"
+      },
+      {
+        "v": "Total Effect",
+        "vn": "Tác động toàn phần",
+        "rel": "Tổng tác động trực tiếp và gián tiếp: c = c' + a * b",
+        "src": "Hayes (2018)"
+      },
+      {
+        "v": "Baron and Kenny Approach",
+        "vn": "Quy trình trung gian 4 bước Baron & Kenny",
+        "rel": "Phương pháp cổ điển kiểm tra trung gian qua 4 phương trình OLS",
+        "src": "Baron & Kenny (1986)"
+      },
+      {
+        "v": "Sobel Test",
+        "vn": "Kiểm định Sobel",
+        "rel": "Kiểm định ý nghĩa thống kê của tích số a * b dựa trên giả định chuẩn",
+        "src": "Sobel (1982)"
+      },
+      {
+        "v": "Bootstrapped Indirect Effect",
+        "vn": "Tác động gián tiếp tái lấy mẫu Bootstrap",
+        "rel": "Chuẩn mực vàng hiện đại không dựa vào giả định phân phối chuẩn",
+        "src": "Preacher & Hayes (2004/2008)"
+      },
+      {
+        "v": "Parallel Multiple Mediation",
+        "vn": "Mô hình trung gian song song",
+        "rel": "X tác động đồng thời lên nhiều biến trung gian M1, M2 độc lập",
+        "src": "Hayes (2018)"
+      },
+      {
+        "v": "Serial Multiple Mediation",
+        "vn": "Mô hình trung gian nối tiếp",
+        "rel": "Chuỗi nhân quả nối tiếp: X -> M1 -> M2 -> Y",
+        "src": "Hayes (2018)"
+      },
+      {
+        "v": "Natural Direct Effect (NDE)",
+        "vn": "Tác động trực tiếp tự nhiên",
+        "rel": "Khái niệm trung gian nhân quả theo khung potential outcomes",
+        "src": "Pearl (2001), Imai et al. (2010)"
+      },
+      {
+        "v": "Natural Indirect Effect (NIE)",
+        "vn": "Tác động gián tiếp tự nhiên",
+        "rel": "Khái niệm trung gian nhân quả phân tách trong Pearl causal mediation",
+        "src": "Pearl (2001), Imai et al. (2010)"
+      }
+    ],
+    "multicollinearity": [
+      {
+        "v": "Variance Inflation Factor (VIF)",
+        "vn": "Hệ số phóng đại phương sai VIF",
+        "rel": "Đo lường mức độ phương sai hệ số hồi quy bị thổi phồng (chuẩn < 5.0 hoặc < 3.3)",
+        "src": "Hair et al. (2018), Wooldridge (2010)"
+      },
+      {
+        "v": "Tolerance Value",
+        "vn": "Hệ số dung sai",
+        "rel": "Nghịch đảo của VIF (Tolerance = 1 / VIF; chuẩn > 0.10 hoặc > 0.20)",
+        "src": "Hair et al. (2018)"
+      },
+      {
+        "v": "Condition Index (CI) & Condition Number",
+        "vn": "Chỉ số điều kiện và Số điều kiện",
+        "rel": "Chẩn đoán đa cộng tuyến dựa trên ma trận trị riêng (CI > 30 là nghiêm trọng)",
+        "src": "Belsley, Kuh & Welsch (1980)"
+      },
+      {
+        "v": "Variance Decomposition Proportions (VDP)",
+        "vn": "Tỷ lệ phân rã phương sai",
+        "rel": "Xác định chính xác cặp biến độc lập gây ra đa cộng tuyến cao",
+        "src": "Belsley et al. (1980)"
+      },
+      {
+        "v": "Mean-Centering Predictors",
+        "vn": "Trừ trung bình biến độc lập",
+        "rel": "Biện pháp kỹ thuật giảm đa cộng tuyến cấu trúc khi có biến tương tác hoặc đa thức",
+        "src": "Aiken & West (1991)"
+      },
+      {
+        "v": "Ridge Regression",
+        "vn": "Hồi quy Ridge (L2 penalty)",
+        "rel": "Kỹ thuật hồi quy phạt co hệ số để xử lý đa cộng tuyến nghiêm trọng",
+        "src": "Hoerl & Kennard (1970)"
+      }
+    ],
+    "Difference-in-Differences (DID)": [
+      {
+        "v": "Two-Way Fixed Effects (TWFE)",
+        "vn": "Mô hình tác động cố định hai chiều",
+        "rel": "Đặc tả kinh điển của DiD kiểm soát cố định đơn vị và thời gian",
+        "src": "Angrist & Pischke (2009)"
+      },
+      {
+        "v": "Parallel Trends Assumption",
+        "vn": "Giả định xu hướng song song",
+        "rel": "Điều kiện nhận dạng tối thượng: hai nhóm cùng xu hướng nếu không có can thiệp",
+        "src": "Angrist & Pischke (2009)"
+      },
+      {
+        "v": "Event Study Specification (Leads & Lags)",
+        "vn": "Mô hình nghiên cứu sự kiện (Độ trễ và Dẫn trước)",
+        "rel": "Kiểm tra động thái tác động trước và sau can thiệp để chứng minh parallel trends",
+        "src": "Freedman (2008), Sun & Abraham (2021)"
+      },
+      {
+        "v": "Placebo In-Time Test",
+        "vn": "Kiểm định giả dược theo thời gian",
+        "rel": "Đặt thời điểm can thiệp giả định lùi về quá khứ để kiểm tra xu hướng trước can thiệp",
+        "src": "Angrist & Pischke (2009)"
+      },
+      {
+        "v": "Staggered Adoption DiD",
+        "vn": "Mô hình DiD thời điểm áp dụng so le",
+        "rel": "Các đơn vị bắt đầu nhận chính sách tại các mốc thời gian khác nhau",
+        "src": "Callaway & Sant'Anna (2021)"
+      },
+      {
+        "v": "Goodman-Bacon Decomposition",
+        "vn": "Phân rã Goodman-Bacon",
+        "rel": "Chứng minh TWFE DiD so le chứa các cặp so sánh dùng nhóm đã can thiệp làm đối chứng",
+        "src": "Goodman-Bacon (2021)"
+      },
+      {
+        "v": "Negative Weights Problem",
+        "vn": "Vấn đề trọng số âm trong DiD",
+        "rel": "Hệ quả của TWFE khi tác động can thiệp biến thiên theo thời gian làm lệch dấu hệ số",
+        "src": "de Chaisemartin & D'Haultfœuille (2020)"
+      },
+      {
+        "v": "Callaway and Sant'Anna Estimator",
+        "vn": "Ước lượng Callaway & Sant'Anna",
+        "rel": "Ước lượng nhóm - thời điểm (Group-Time ATT) giải quyết triệt để trọng số âm",
+        "src": "Callaway & Sant'Anna (2021)"
+      },
+      {
+        "v": "Synthetic Difference-in-Differences (SDID)",
+        "vn": "Mô hình DiD kết hợp đối chứng tổng hợp",
+        "rel": "Kết hợp sức mạnh tái đánh trọng số đơn vị SCM và sai phân kép DiD",
+        "src": "Arkhangelsky et al. (2021)"
+      }
+    ],
+    "Synthetic Control Method (SCM)": [
+      {
+        "v": "Donor Pool",
+        "vn": "Nhóm đơn vị tài trợ",
+        "rel": "Tập hợp các quốc gia hoặc đơn vị không bị ảnh hưởng bởi chính sách can thiệp",
+        "src": "Abadie, Diamond & Hainmueller (2010)"
+      },
+      {
+        "v": "Convex Combination Weights",
+        "vn": "Trọng số tổ hợp lồi",
+        "rel": "Trọng số không âm W cộng lại bằng 1 dùng để ghép thành đơn vị tổng hợp",
+        "src": "Abadie et al. (2010)"
+      },
+      {
+        "v": "In-Space Placebo Test",
+        "vn": "Kiểm định giả dược trong không gian",
+        "rel": "Lần lượt gán chính sách cho từng đơn vị trong donor pool để xây dựng phân phối kiểm định",
+        "src": "Abadie et al. (2010)"
+      },
+      {
+        "v": "Post-to-Pre RMSPE Ratio",
+        "vn": "Tỷ số RMSPE sau và trước can thiệp",
+        "rel": "Thước đo mức độ bất thường vượt trội của đơn vị can thiệp so với các phép thử giả dược",
+        "src": "Abadie et al. (2010)"
+      },
+      {
+        "v": "Generalized Synthetic Control (GSynth)",
+        "vn": "Đối chứng tổng hợp tổng quát",
+        "rel": "Mở rộng SCM áp dụng mô hình nhân tố tiềm ẩn tương tác cho nhiều đơn vị can thiệp",
+        "src": "Xu (2017)"
+      }
+    ],
+    "regression-discontinuity-design": [
+      {
+        "v": "Running Variable / Forcing Variable",
+        "vn": "Biến điều kiện / Biến chạy",
+        "rel": "Biến số liên tục quyết định việc đối tượng có vượt qua ngưỡng để nhận can thiệp hay không",
+        "src": "Imbens & Lemieux (2008), Lee & Lemieux (2010)"
+      },
+      {
+        "v": "Cutoff Threshold",
+        "vn": "Điểm cắt ngưỡng chính sách",
+        "rel": "Mốc điểm số chia ranh giới nhận can thiệp (ví dụ: điểm thi chuẩn 20 điểm)",
+        "src": "Lee & Lemieux (2010)"
+      },
+      {
+        "v": "Sharp RDD",
+        "vn": "Thiết kế RDD sắc nét",
+        "rel": "Xác suất nhận can thiệp nhảy vọt tuyệt đối từ 0 lên 1 tại điểm cắt",
+        "src": "Trochim (1984), Imbens & Lemieux (2008)"
+      },
+      {
+        "v": "Fuzzy RDD",
+        "vn": "Thiết kế RDD mờ",
+        "rel": "Xác suất nhận can thiệp tăng vọt một bước nhảy nhưng không tuyệt đối (cần ước lượng dạng 2SLS)",
+        "src": "Imbens & Lemieux (2008)"
+      },
+      {
+        "v": "Optimal Bandwidth Selection",
+        "vn": "Lựa chọn băng thông tối ưu",
+        "rel": "Độ rộng khoảng dữ liệu sát hai bên điểm cắt (Imbens-Kalyanaraman hoặc CCT)",
+        "src": "Imbens & Kalyanaraman (2012), Calonico et al. (2014)"
+      },
+      {
+        "v": "McCrary Density Test",
+        "vn": "Kiểm định mật độ McCrary",
+        "rel": "Kiểm tra tính liên tục của hàm mật độ tại điểm cắt để phát hiện hành vi gian lận điểm số",
+        "src": "McCrary (2008)"
+      },
+      {
+        "v": "Covariate Smoothness Check",
+        "vn": "Kiểm tra tính trơn của các biến hiệp biến",
+        "rel": "Đảm bảo các biến kiểm soát nền tảng không bị nhảy vọt tại điểm cắt",
+        "src": "Lee & Lemieux (2010)"
+      }
+    ],
+    "Propensity Score Matching (PSM)": [
+      {
+        "v": "Propensity Score",
+        "vn": "Điểm xu hướng",
+        "rel": "Xác suất có điều kiện đối tượng nhận can thiệp dựa trên các đặc điểm quan sát được e(X)",
+        "src": "Rosenbaum & Rubin (1983)"
+      },
+      {
+        "v": "Common Support Region",
+        "vn": "Vùng hỗ trợ chung / Vùng giao thoa",
+        "rel": "Khoảng giá trị propensity score mà cả nhóm can thiệp và đối chứng đều có quan sát",
+        "src": "Heckman, Ichimura & Todd (1997)"
+      },
+      {
+        "v": "Caliper Matching",
+        "vn": "Ghép cặp theo cữ caliper",
+        "rel": "Chỉ cho phép ghép cặp nếu khoảng cách propensity score nằm trong một ngưỡng dung sai hẹp",
+        "src": "Cochran & Rubin (1973)"
+      },
+      {
+        "v": "Nearest Neighbor Matching (1:1 & 1:k)",
+        "vn": "Ghép cặp láng giềng gần nhất",
+        "rel": "Chọn đối chứng có điểm xu hướng gần nhất với từng đối tượng can thiệp",
+        "src": "Austin (2011)"
+      },
+      {
+        "v": "Kernel Matching",
+        "vn": "Ghép cặp theo hàm nhân",
+        "rel": "Tất cả các đối chứng đều được dùng và gán trọng số giảm dần theo khoảng cách",
+        "src": "Heckman et al. (1997)"
+      },
+      {
+        "v": "Mahalanobis Distance Matching",
+        "vn": "Ghép cặp khoảng cách Mahalanobis",
+        "rel": "Ghép cặp trực tiếp dựa trên ma trận hiệp phương sai của các biến kiểm soát",
+        "src": "Rubin (1980)"
+      },
+      {
+        "v": "Standardized Mean Difference (SMD)",
+        "vn": "Độ lệch trung bình chuẩn hóa",
+        "rel": "Chỉ số đánh giá độ cân bằng (chuẩn SMD < 0.10 biểu thị cân bằng tốt)",
+        "src": "Austin (2009)"
+      },
+      {
+        "v": "Love Plot Balance Diagnostic",
+        "vn": "Biểu đồ kiểm tra cân bằng Love Plot",
+        "rel": "Trực quan hóa độ suy giảm SMD của tất cả các biến trước và sau khi ghép cặp",
+        "src": "Austin (2011)"
+      },
+      {
+        "v": "Coarsened Exact Matching (CEM)",
+        "vn": "Ghép cặp chính xác làm mịn",
+        "rel": "Phân khoảng rời rạc biến số để triệt tiêu hoàn toàn mất cân bằng mà không cần mô hình hóa",
+        "src": "Iacus, King & Porro (2012)"
+      },
+      {
+        "v": "Entropy Balancing",
+        "vn": "Cân bằng Entropy",
+        "rel": "Tối ưu hóa trọng số để ép trực tiếp trung bình và phương sai đối chứng khớp với can thiệp",
+        "src": "Hainmueller (2012)"
+      }
+    ],
+    "Grounded Theory": [
+      {
+        "v": "Classic Glaserian Grounded Theory",
+        "vn": "Lý thuyết nền tảng cổ điển Glaser",
+        "rel": "Nhấn mạnh sự nảy sinh thuần túy từ dữ liệu, phản đối ép khung lý thuyết ban đầu",
+        "src": "Glaser & Strauss (1967)"
+      },
+      {
+        "v": "Straussian Grounded Theory",
+        "vn": "Lý thuyết nền tảng Straussian",
+        "rel": "Quy trình mã hóa bán cấu trúc 3 bước: Open, Axial, và Selective Coding",
+        "src": "Strauss & Corbin (1990/1998)"
+      },
+      {
+        "v": "Constructivist Grounded Theory (Charmaz)",
+        "vn": "Lý thuyết nền tảng kiến tạo Charmaz",
+        "rel": "Coi lý thuyết là sản phẩm đồng kiến tạo giữa tác giả và người tham gia",
+        "src": "Charmaz (2006/2014)"
+      },
+      {
+        "v": "Constant Comparative Method",
+        "vn": "Phương pháp so sánh liên tục",
+        "rel": "So sánh liên tục sự kiện với sự kiện, sự kiện với mã, và mã với mã",
+        "src": "Glaser (1965)"
+      },
+      {
+        "v": "Theoretical Sampling",
+        "vn": "Chọn mẫu lý thuyết",
+        "rel": "Việc thu thập dữ liệu tiếp theo được dẫn dắt bởi sự phát triển của lý thuyết đang nổi lên",
+        "src": "Glaser & Strauss (1967)"
+      },
+      {
+        "v": "Theoretical Saturation",
+        "vn": "Bão hòa lý thuyết",
+        "rel": "Thời điểm không còn thuộc tính hoặc quan hệ mới nào xuất hiện trong dữ liệu",
+        "src": "Saunders et al. (2018)"
+      },
+      {
+        "v": "Open Coding",
+        "vn": "Mã hóa mở",
+        "rel": "Bóc tách dữ liệu văn bản thô thành các mã khái niệm ban đầu",
+        "src": "Strauss & Corbin (1998)"
+      },
+      {
+        "v": "Axial Coding",
+        "vn": "Mã hóa trục",
+        "rel": "Liên kết các tiểu mục xoay quanh một mục chính theo mô hình nhân quả - bối cảnh",
+        "src": "Strauss & Corbin (1998)"
+      },
+      {
+        "v": "Selective Coding",
+        "vn": "Mã hóa chọn lọc",
+        "rel": "Tích hợp và tinh chỉnh toàn bộ hệ thống xoay quanh một Danh mục cốt lõi (Core Category)",
+        "src": "Strauss & Corbin (1998)"
+      },
+      {
+        "v": "Theoretical Memos",
+        "vn": "Ghi chú lý thuyết (Memos)",
+        "rel": "Văn bản ghi chép tức thời dòng suy nghĩ và giả định lý thuyết của tác giả trong khi mã hóa",
+        "src": "Glaser (1978)"
+      },
+      {
+        "v": "Substantive Theory vs. Formal Theory",
+        "vn": "Lý thuyết thực chất vs. Lý thuyết hình thức",
+        "rel": "Lý thuyết cho một bối cảnh thực nghiệm cụ thể vs. Khái quát hóa cho nhiều lĩnh vực",
+        "src": "Glaser & Strauss (1967)"
+      }
+    ],
+    "Thematic Analysis": [
+      {
+        "v": "Inductive Thematic Analysis",
+        "vn": "Phân tích chủ đề quy nạp",
+        "rel": "Chủ đề nổi lên gắn kết chặt chẽ từ dữ liệu thực nghiệm không ép khung",
+        "src": "Braun & Clarke (2006)"
+      },
+      {
+        "v": "Deductive Thematic Analysis",
+        "vn": "Phân tích chủ đề diễn dịch",
+        "rel": "Phân tích dữ liệu dựa trên một khung lý thuyết hoặc khái niệm định trước",
+        "src": "Braun & Clarke (2006)"
+      },
+      {
+        "v": "Semantic Themes vs. Latent Themes",
+        "vn": "Chủ đề hiển ngôn vs. Chủ đề hàm ẩn",
+        "rel": "Ý nghĩa bề mặt trực tiếp vs. Các giả định và hệ tư tưởng ngầm ẩn sâu",
+        "src": "Braun & Clarke (2006)"
+      },
+      {
+        "v": "Reflexive Thematic Analysis (Braun & Clarke 2019)",
+        "vn": "Phân tích chủ đề tự phản tư",
+        "rel": "Nhấn mạnh vai trò chủ động và tính phản tư nhận thức luận của nhà nghiên cứu",
+        "src": "Braun & Clarke (2019)"
+      },
+      {
+        "v": "Six Phases of Thematic Analysis",
+        "vn": "Sáu giai đoạn phân tích chủ đề",
+        "rel": "Làm quen, Tạo mã ban đầu, Tìm chủ đề, Rà soát, Đặt tên chủ đề, Viết báo cáo",
+        "src": "Braun & Clarke (2006)"
+      },
+      {
+        "v": "Thematic Map",
+        "vn": "Bản đồ chủ đề",
+        "rel": "Sơ đồ trực quan biểu diễn mối quan hệ phân cấp và liên kết giữa các chủ đề",
+        "src": "Braun & Clarke (2006)"
+      }
+    ],
+    "Gioia Methodology": [
+      {
+        "v": "1st-Order Concepts (Informant-Centric)",
+        "vn": "Khái niệm cấp 1",
+        "rel": "Bảo tồn tối đa ngôn từ và cách diễn đạt nguyên văn của đối tượng trong cuộc",
+        "src": "Gioia, Corley & Hamilton (2013)"
+      },
+      {
+        "v": "2nd-Order Themes (Theory-Centric)",
+        "vn": "Chủ đề cấp 2",
+        "rel": "Các khái niệm lý thuyết trừu tượng do nhà nghiên cứu quy nạp và khái quát",
+        "src": "Gioia et al. (2013)"
+      },
+      {
+        "v": "Aggregate Dimensions",
+        "vn": "Chiều kích tổng hợp",
+        "rel": "Các trụ cột lý thuyết lớn tạo nên mô hình khái niệm mới hoàn chỉnh",
+        "src": "Gioia et al. (2013)"
+      },
+      {
+        "v": "Data Structure Figure",
+        "vn": "Sơ đồ cấu trúc dữ liệu Gioia",
+        "rel": "Biểu đồ trực quan chuẩn mực thể hiện nấc thang logic từ Khái niệm 1 -> Chủ đề 2 -> Chiều kích",
+        "src": "Gioia et al. (2013)"
+      },
+      {
+        "v": "Grounded Dynamic Model",
+        "vn": "Mô hình động nền tảng",
+        "rel": "Sơ đồ mũi tên diễn giải cơ chế vận động giữa các chiều kích tổng hợp",
+        "src": "Gioia et al. (2013)"
+      }
+    ],
+    "Phenomenological Research": [
+      {
+        "v": "Transcendental Phenomenology (Husserl)",
+        "vn": "Hiện tượng học siêu nghiệm Husserl",
+        "rel": "Khám phá cấu trúc bản chất phổ quát của trải nghiệm thuần khiết",
+        "src": "Husserl (1913/1931), Moustakas (1994)"
+      },
+      {
+        "v": "Hermeneutic Phenomenology (Heidegger)",
+        "vn": "Hiện tượng học thông diễn Heidegger",
+        "rel": "Khám phá ý nghĩa hiện sinh của Dasein gắn liền trong thế giới văn hóa lịch sử",
+        "src": "Heidegger (1927), van Manen (2014)"
+      },
+      {
+        "v": "Epoché / Phenomenological Bracketing",
+        "vn": "Thủ pháp đặt vào ngoặc Epoché",
+        "rel": "Chủ động cô lập định kiến đời thường để tiếp cận hiện tượng thuần khiết",
+        "src": "Moustakas (1994)"
+      },
+      {
+        "v": "Horizonalization",
+        "vn": "Thủ pháp bình đẳng hóa nhận định",
+        "rel": "Coi mọi câu phát biểu của đối tượng có giá trị ngang nhau ở bước mã hóa ban đầu",
+        "src": "Moustakas (1994)"
+      },
+      {
+        "v": "Imaginative Variation",
+        "vn": "Biến thiên tưởng tượng",
+        "rel": "Thay đổi các khía cạnh của hiện tượng trong tư duy để tìm ra thuộc tính bản chất bất biến",
+        "src": "Moustakas (1994)"
+      },
+      {
+        "v": "Noema and Noesis",
+        "vn": "Noema và Noesis",
+        "rel": "Vật được trải nghiệm là gì (Noema) và Cách thức vật được ý thức như thế nào (Noesis)",
+        "src": "Husserl (1913)"
+      },
+      {
+        "v": "Lebenswelt (Life-World)",
+        "vn": "Thế giới đời sống",
+        "rel": "Không gian trải nghiệm sống thường ngày cụ thể trước lý thuyết của con người",
+        "src": "Husserl (1936/1970)"
+      }
+    ],
+    "meta-analysis": [
+      {
+        "v": "PRISMA 2020 Statement",
+        "vn": "Tuyên bố PRISMA 2020",
+        "rel": "Bộ chuẩn mực báo cáo quốc tế 27 mục cho tổng quan hệ thống và phân tích gộp",
+        "src": "Page et al. (2021)"
+      },
+      {
+        "v": "PRISMA Flow Diagram",
+        "vn": "Sơ đồ dòng chảy PRISMA",
+        "rel": "Sơ đồ 4 bước sàng lọc tài liệu: Nhận diện -> Sàng lọc -> Đủ điều kiện -> Đưa vào tổng hợp",
+        "src": "Page et al. (2021)"
+      },
+      {
+        "v": "PICO / PICOS Framework",
+        "vn": "Khung PICO / PICOS",
+        "rel": "Xác định câu hỏi tổng quan: Dân số (P), Can thiệp (I), So sánh (C), Kết cục (O), Thiết kế (S)",
+        "src": "Higgins et al. (2019)"
+      },
+      {
+        "v": "Forest Plot",
+        "vn": "Biểu đồ rừng Forest Plot",
+        "rel": "Trực quan hóa kích thước hiệu ứng và khoảng tin cậy của từng nghiên cứu và hiệu ứng gộp",
+        "src": "Lewis & Clarke (2001)"
+      },
+      {
+        "v": "Funnel Plot Asymmetry",
+        "vn": "Tính bất đối xứng của Funnel Plot",
+        "rel": "Dấu hiệu cảnh báo sự hiện diện của thiên lệch xuất bản (Publication bias)",
+        "src": "Light & Pillemer (1984), Egger et al. (1997)"
+      },
+      {
+        "v": "Egger's Linear Regression Test",
+        "vn": "Kiểm định hồi quy Egger",
+        "rel": "Kiểm định thống kê tính bất đối xứng của Funnel Plot",
+        "src": "Egger et al. (1997)"
+      },
+      {
+        "v": "Duval and Tweedie Trim-and-Fill",
+        "vn": "Phương pháp Cắt và Điền Duval & Tweedie",
+        "rel": "Ước tính số nghiên cứu bị giấu trong ngăn kéo và tái ước lượng hiệu ứng tổng hợp sau khi bù đắp",
+        "src": "Duval & Tweedie (2000)"
+      },
+      {
+        "v": "Between-Study Heterogeneity (I² & Tau²)",
+        "vn": "Tính không đồng nhất giữa các nghiên cứu",
+        "rel": "I-squared đo tỷ lệ % biến thiên do dị biệt thực sự (25%, 50%, 75%); Tau-squared là phương sai",
+        "src": "Higgins & Thompson (2002)"
+      },
+      {
+        "v": "Fixed-Effect vs. Random-Effects Model",
+        "vn": "Mô hình hiệu ứng cố định vs. Hiệu ứng ngẫu nhiên",
+        "rel": "Giả định duy nhất một hiệu ứng thực chung vs. Phân phối các kích thước hiệu ứng thực",
+        "src": "Borenstein et al. (2010)"
+      },
+      {
+        "v": "Risk of Bias 2 (RoB 2)",
+        "vn": "Đánh giá nguy cơ sai lệch RoB 2",
+        "rel": "Bộ công cụ chuẩn vàng đánh giá chất lượng thử nghiệm lâm sàng ngẫu nhiên RCT",
+        "src": "Sterne et al. (2019)"
+      },
+      {
+        "v": "GRADE Certainty of Evidence",
+        "vn": "Độ tin cậy của bằng chứng GRADE",
+        "rel": "Xếp loại chất lượng bằng chứng thành 4 mức: Rất thấp, Thấp, Trung bình, Cao",
+        "src": "Guyatt et al. (2008)"
+      }
+    ],
+    "Autoethnography": [
+      {
+        "v": "Evocative Auto-ethnography",
+        "vn": "Tự dân tộc học gợi cảm (Phong cách tự sự văn học lay động cảm xúc)",
+        "rel": "Tiểu loại tự sự của Autoethnography (đối lập Analytic Autoethnography)",
+        "src": "Basabain, Macleod, Westbury & Qutub (2021). Asian Social Science, 17(3), 9-30"
+      }
+    ],
+    "Informed Consent Process": [
+      {
+        "v": "Relational Ethics",
+        "vn": "Đạo đức mối quan hệ (Bảo vệ người thân trong nghiên cứu tự sự)",
+        "rel": "Biến thể đặc thù của Research Ethics trong nghiên cứu định tính cá nhân",
+        "src": "Basabain, Macleod, Westbury & Qutub (2021). Asian Social Science, 17(3), 9-30"
+      }
+    ],
+    "Observation Protocol": [
+      {
+        "v": "Frontstage Practices",
+        "vn": "Thực hành sân khấu trước (Hành vi thể hiện trước công chúng)",
+        "rel": "Thành tố trong Lý thuyết Tự thể hiện bản thân (Goffman SPT)",
+        "src": "Basabain, Macleod, Westbury & Qutub (2021). Asian Social Science, 17(3), 9-30"
+      },
+      {
+        "v": "Backstage Practices",
+        "vn": "Thực hành sân khấu sau (Hành vi hậu trường riêng tư)",
+        "rel": "Thành tố trong Lý thuyết Tự thể hiện bản thân (Goffman SPT)",
+        "src": "Basabain, Macleod, Westbury & Qutub (2021). Asian Social Science, 17(3), 9-30"
+      }
+    ],
+    "Netnography": [
+      {
+        "v": "Impression Management on Social Media",
+        "vn": "Quản trị ấn tượng trên mạng xã hội trực tuyến",
+        "rel": "Ứng dụng chuyên biệt của Netnography và Self-Presentation",
+        "src": "Basabain, Macleod, Westbury & Qutub (2021). Asian Social Science, 17(3), 9-30"
+      },
+      {
+        "v": "Auto-netnography",
+        "vn": "Tự dân tộc học mạng (Phương pháp tự sự cá nhân trong không gian mạng)",
+        "rel": "Tiểu loại chuyên biệt của Netnography (Kozinets, 2015)",
+        "src": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+      },
+      {
+        "v": "Symbolic Netnography",
+        "vn": "Dân tộc học mạng biểu trưng",
+        "rel": "Tiểu loại phân tích ý nghĩa và biểu tượng cộng đồng ảo của Netnography",
+        "src": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+      },
+      {
+        "v": "Humanist Netnography",
+        "vn": "Dân tộc học mạng nhân văn",
+        "rel": "Tiểu loại hành động xã hội của Netnography",
+        "src": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+      }
+    ],
+    "Value Co-Creation": [
+      {
+        "v": "Value Co-Destruction",
+        "vn": "Sự cùng hủy diệt giá trị",
+        "rel": "Mặt đối lập nhị nguyên của Value Co-Creation trong khoa học dịch vụ",
+        "src": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+      }
+    ],
+    "Thematic Map (Callon's Centrality & Density)": [
+      {
+        "v": "Motor Themes",
+        "vn": "Chủ đề động lực (Centrality cao, Density cao)",
+        "rel": "Góc phần tư thứ 1 trong Bản đồ chủ đề Trắc lượng (Cobo et al., 2011)",
+        "src": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+      },
+      {
+        "v": "Basic Themes",
+        "vn": "Chủ đề cơ sở (Centrality cao, Density thấp)",
+        "rel": "Góc phần tư thứ 4 trong Bản đồ chủ đề Trắc lượng (Cobo et al., 2011)",
+        "src": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+      },
+      {
+        "v": "Niche Themes",
+        "vn": "Chủ đề thị trường ngách (Centrality thấp, Density cao)",
+        "rel": "Góc phần tư thứ 2 trong Bản đồ chủ đề Trắc lượng (Cobo et al., 2011)",
+        "src": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+      },
+      {
+        "v": "Emerging Themes",
+        "vn": "Chủ đề mới nổi / đang suy tàn (Centrality thấp, Density thấp)",
+        "rel": "Góc phần tư thứ 3 trong Bản đồ chủ đề Trắc lượng (Cobo et al., 2011)",
+        "src": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+      }
+    ]
+  },
+  "variant_to_canonical": {
+    "convergent validity": {
+      "canonical_term": "Construct Validity",
+      "canonical_id": "construct-validity",
+      "vietnamese": "Độ giá trị hội tụ",
+      "relationship": "Thành tố con bắt buộc (AVE > 0.50, Loadings > 0.708)",
+      "source": "Hair et al. (2018), DeVellis (2016)"
+    },
+    "discriminant validity": {
+      "canonical_term": "Construct Validity",
+      "canonical_id": "construct-validity",
+      "vietnamese": "Độ giá trị phân biệt",
+      "relationship": "Thành tố con bắt buộc (HTMT < 0.85/0.90, Fornell-Larcker)",
+      "source": "Henseler et al. (2015), Hair et al. (2018)"
+    },
+    "nomological validity": {
+      "canonical_term": "Construct Validity",
+      "canonical_id": "construct-validity",
+      "vietnamese": "Độ giá trị pháp quy / quy luật",
+      "relationship": "Đánh giá mức độ thang đo liên hệ đúng lý thuyết với các biến khác",
+      "source": "Cronbach & Meehl (1955), MacKenzie et al. (2011)"
+    },
+    "face validity": {
+      "canonical_term": "Construct Validity",
+      "canonical_id": "construct-validity",
+      "vietnamese": "Độ giá trị bề mặt",
+      "relationship": "Đánh giá chủ quan xem thang đo thoạt nhìn có vẻ đo đúng khái niệm",
+      "source": "Nunnally & Bernstein (1994), Schindler (2022)"
+    },
+    "content validity": {
+      "canonical_term": "Construct Validity",
+      "canonical_id": "construct-validity",
+      "vietnamese": "Độ giá trị nội dung",
+      "relationship": "Đánh giá của hội đồng chuyên gia về độ bao quát miền khái niệm",
+      "source": "Lawshe (1975), MacKenzie et al. (2011)"
+    },
+    "criterion-related validity": {
+      "canonical_term": "Construct Validity",
+      "canonical_id": "construct-validity",
+      "vietnamese": "Độ giá trị tiêu chí",
+      "relationship": "Tương quan với một tiêu chuẩn chuẩn mực bên ngoài",
+      "source": "American Psychological Association (2014)"
+    },
+    "concurrent validity": {
+      "canonical_term": "Construct Validity",
+      "canonical_id": "construct-validity",
+      "vietnamese": "Độ giá trị đồng thời",
+      "relationship": "Đo lường cùng lúc với thang đo tiêu chuẩn hiện hành",
+      "source": "DeVellis (2016)"
+    },
+    "predictive validity": {
+      "canonical_term": "Construct Validity",
+      "canonical_id": "construct-validity",
+      "vietnamese": "Độ giá trị dự báo",
+      "relationship": "Năng lực dự báo hành vi hoặc kết cục trong tương lai",
+      "source": "DeVellis (2016)"
+    },
+    "multitrait-multimethod matrix (mtmm)": {
+      "canonical_term": "Construct Validity",
+      "canonical_id": "construct-validity",
+      "vietnamese": "Ma trận Đa đặc tính - Đa phương pháp",
+      "relationship": "Kỹ thuật thực nghiệm thẩm định hội tụ và phân biệt đồng thời",
+      "source": "Campbell & Fiske (1959)"
+    },
+    "known-groups validity": {
+      "canonical_term": "Construct Validity",
+      "canonical_id": "construct-validity",
+      "vietnamese": "Độ giá trị nhóm đã biết",
+      "relationship": "Khả năng phân biệt chính xác giữa các nhóm có đặc tính đối lập",
+      "source": "DeVellis (2016)"
+    },
+    "incremental validity": {
+      "canonical_term": "Construct Validity",
+      "canonical_id": "construct-validity",
+      "vietnamese": "Độ giá trị gia tăng",
+      "relationship": "Mức độ thang đo giải thích thêm phương sai vượt trên thang đo cũ",
+      "source": "Hunsley & Meyer (2003)"
+    },
+    "credibility / trustworthiness": {
+      "canonical_term": "Construct Validity",
+      "canonical_id": "construct-validity",
+      "vietnamese": "Tính đáng tin cậy / Đáng tin cậy định tính",
+      "relationship": "Khái niệm tương đương trong nghiên cứu định tính",
+      "source": "Lincoln & Guba (1985)"
+    },
+    "internal validity threats": {
+      "canonical_term": "Internal Validity",
+      "canonical_id": "internal-validity",
+      "vietnamese": "Các mối đe dọa giá trị nội tại",
+      "relationship": "Hệ thống các yếu tố ngoại lai làm sai lệch suy luận nhân quả",
+      "source": "Campbell & Stanley (1963), Shadish et al. (2002)"
+    },
+    "history threat": {
+      "canonical_term": "Internal Validity",
+      "canonical_id": "internal-validity",
+      "vietnamese": "Nguy cơ lịch sử",
+      "relationship": "Biến cố ngoại cảnh xảy ra giữa pretest và posttest",
+      "source": "Shadish, Cook & Campbell (2002)"
+    },
+    "maturation threat": {
+      "canonical_term": "Internal Validity",
+      "canonical_id": "internal-validity",
+      "vietnamese": "Nguy cơ trưởng thành",
+      "relationship": "Sự thay đổi tự nhiên về thể chất hoặc tâm lý theo thời gian",
+      "source": "Shadish et al. (2002)"
+    },
+    "testing threat / practice effects": {
+      "canonical_term": "Internal Validity",
+      "canonical_id": "internal-validity",
+      "vietnamese": "Nguy cơ kiểm tra lặp",
+      "relationship": "Người tham gia làm bài kiểm tra lần 2 tốt hơn do đã quen bài lần 1",
+      "source": "Shadish et al. (2002)"
+    },
+    "instrumentation threat": {
+      "canonical_term": "Internal Validity",
+      "canonical_id": "internal-validity",
+      "vietnamese": "Nguy cơ dụng cụ đo",
+      "relationship": "Sự thay đổi về thước đo hoặc độ mệt mỏi của người chấm điểm",
+      "source": "Shadish et al. (2002)"
+    },
+    "statistical regression to the mean": {
+      "canonical_term": "Internal Validity",
+      "canonical_id": "internal-validity",
+      "vietnamese": "Hiện tượng hồi quy về giá trị trung bình",
+      "relationship": "Điểm số cực đoan ở lần 1 tự động dịch về trung bình ở lần 2",
+      "source": "Campbell & Stanley (1963)"
+    },
+    "selection threat": {
+      "canonical_term": "Internal Validity",
+      "canonical_id": "internal-validity",
+      "vietnamese": "Nguy cơ chọn mẫu",
+      "relationship": "Sự khác biệt nền tảng giữa các nhóm từ trước khi can thiệp bắt đầu",
+      "source": "Shadish et al. (2002)"
+    },
+    "attrition threat / experimental mortality": {
+      "canonical_term": "Internal Validity",
+      "canonical_id": "internal-validity",
+      "vietnamese": "Nguy cơ mất mẫu / Suy giảm mẫu",
+      "relationship": "Tỷ lệ bỏ dở nghiên cứu giữa các nhóm so sánh khác biệt nhau",
+      "source": "Shadish et al. (2002)"
+    },
+    "diffusion of treatments": {
+      "canonical_term": "Internal Validity",
+      "canonical_id": "internal-validity",
+      "vietnamese": "Sự lan tỏa can thiệp",
+      "relationship": "Nhóm can thiệp chia sẻ tài liệu/thông tin cho nhóm đối chứng",
+      "source": "Shadish et al. (2002)"
+    },
+    "compensatory equalization": {
+      "canonical_term": "Internal Validity",
+      "canonical_id": "internal-validity",
+      "vietnamese": "Sự bù trừ tương đương",
+      "relationship": "Nhà quản lý hỗ trợ thêm nguồn lực cho nhóm đối chứng vì thấy thiệt",
+      "source": "Shadish et al. (2002)"
+    },
+    "compensatory rivalry (john henry effect)": {
+      "canonical_term": "Internal Validity",
+      "canonical_id": "internal-validity",
+      "vietnamese": "Sự ganh đua bù trừ",
+      "relationship": "Nhóm đối chứng nỗ lực thi đấu phi thường để không bị coi là thua",
+      "source": "Saretsky (1972)"
+    },
+    "resentful demoralization": {
+      "canonical_term": "Internal Validity",
+      "canonical_id": "internal-validity",
+      "vietnamese": "Sự thoái chí bất mãn",
+      "relationship": "Nhóm đối chứng cảm thấy bất công và buông xuôi nỗ lực",
+      "source": "Shadish et al. (2002)"
+    },
+    "ambiguity about causal direction": {
+      "canonical_term": "Internal Validity",
+      "canonical_id": "internal-validity",
+      "vietnamese": "Mơ hồ về chiều hướng nhân quả",
+      "relationship": "Không xác định rõ X sinh ra Y hay Y sinh ra X",
+      "source": "Shadish et al. (2002)"
+    },
+    "population validity": {
+      "canonical_term": "External Validity",
+      "canonical_id": "external-validity",
+      "vietnamese": "Độ giá trị quần thể",
+      "relationship": "Khả năng khái quát hóa kết quả từ mẫu nghiên cứu sang toàn bộ quần thể mục tiêu",
+      "source": "Bracht & Glass (1968), Schindler (2022)"
+    },
+    "ecological validity": {
+      "canonical_term": "External Validity",
+      "canonical_id": "external-validity",
+      "vietnamese": "Độ giá trị sinh thái",
+      "relationship": "Khả năng áp dụng kết quả từ phòng thí nghiệm ra bối cảnh thế giới thực tế",
+      "source": "Brunswik (1955), Shadish et al. (2002)"
+    },
+    "temporal validity": {
+      "canonical_term": "External Validity",
+      "canonical_id": "external-validity",
+      "vietnamese": "Độ giá trị thời gian",
+      "relationship": "Khả năng kết luận nghiên cứu vẫn đúng ở các thời kỳ lịch sử khác nhau",
+      "source": "Shadish et al. (2002)"
+    },
+    "interaction of selection and treatment": {
+      "canonical_term": "External Validity",
+      "canonical_id": "external-validity",
+      "vietnamese": "Tương tác giữa chọn mẫu và can thiệp",
+      "relationship": "Hiệu quả can thiệp chỉ đúng trên nhóm đối tượng đặc biệt đã chọn",
+      "source": "Campbell & Stanley (1963)"
+    },
+    "interaction of setting and treatment": {
+      "canonical_term": "External Validity",
+      "canonical_id": "external-validity",
+      "vietnamese": "Tương tác giữa bối cảnh và can thiệp",
+      "relationship": "Kết quả chỉ đúng ở địa điểm thực nghiệm mà không đúng ở nơi khác",
+      "source": "Shadish et al. (2002)"
+    },
+    "analytical generalization": {
+      "canonical_term": "External Validity",
+      "canonical_id": "external-validity",
+      "vietnamese": "Khái quát hóa phân tích lý thuyết",
+      "relationship": "Khái quát hóa từ case study lên khung lý thuyết (đối lập khái quát thống kê)",
+      "source": "Yin (2014/2018)"
+    },
+    "transferability": {
+      "canonical_term": "External Validity",
+      "canonical_id": "external-validity",
+      "vietnamese": "Tính chuyển giao",
+      "relationship": "Khái niệm tương đương trong nghiên cứu định tính nhờ mô tả đậm đặc",
+      "source": "Lincoln & Guba (1985)"
+    },
+    "internal consistency reliability": {
+      "canonical_term": "reliability",
+      "canonical_id": "reliability",
+      "vietnamese": "Độ tin cậy nhất quán nội tại",
+      "relationship": "Mức độ các câu hỏi trong cùng một thang đo liên kết chặt chẽ với nhau",
+      "source": "Cronbach (1951), Hair et al. (2018)"
+    },
+    "cronbach's alpha": {
+      "canonical_term": "reliability",
+      "canonical_id": "reliability",
+      "vietnamese": "Hệ số Alpha Cronbach",
+      "relationship": "Chỉ số nhất quán nội tại truyền thống (chuẩn >= 0.70)",
+      "source": "Cronbach (1951)"
+    },
+    "composite reliability (cr)": {
+      "canonical_term": "reliability",
+      "canonical_id": "reliability",
+      "vietnamese": "Độ tin cậy tổng hợp CR",
+      "relationship": "Chỉ số tin cậy chuẩn mực trong SEM dựa trên factor loadings (chuẩn >= 0.70)",
+      "source": "Werts et al. (1974), Hair et al. (2018)"
+    },
+    "mcdonald's omega (ω)": {
+      "canonical_term": "reliability",
+      "canonical_id": "reliability",
+      "vietnamese": "Hệ số Omega McDonald",
+      "relationship": "Độ tin cậy hiện đại ưu việt hơn Cronbach alpha khi vi phạm tau-equivalence",
+      "source": "McDonald (1999)"
+    },
+    "dijkstra-henseler's rho_a": {
+      "canonical_term": "reliability",
+      "canonical_id": "reliability",
+      "vietnamese": "Hệ số Rho_A Dijkstra-Henseler",
+      "relationship": "Thước đo độ tin cậy nhất quán tiệm cận chuẩn xác nhất trong PLS-SEM",
+      "source": "Dijkstra & Henseler (2015)"
+    },
+    "test-retest reliability": {
+      "canonical_term": "reliability",
+      "canonical_id": "reliability",
+      "vietnamese": "Độ tin cậy kiểm tra - kiểm tra lại",
+      "relationship": "Đo lường độ ổn định của điểm số qua hai thời điểm khác nhau",
+      "source": "DeVellis (2016)"
+    },
+    "split-half reliability": {
+      "canonical_term": "reliability",
+      "canonical_id": "reliability",
+      "vietnamese": "Độ tin cậy chia đôi",
+      "relationship": "Chia ngẫu nhiên thang đo làm hai nửa để kiểm tra tương quan",
+      "source": "Spearman (1904)"
+    },
+    "spearman-brown prophecy formula": {
+      "canonical_term": "reliability",
+      "canonical_id": "reliability",
+      "vietnamese": "Công thức tiên tri Spearman-Brown",
+      "relationship": "Dự báo độ tin cậy khi thay đổi độ dài số lượng câu hỏi",
+      "source": "Spearman (1910)"
+    },
+    "inter-rater reliability": {
+      "canonical_term": "reliability",
+      "canonical_id": "reliability",
+      "vietnamese": "Độ tin cậy giữa những người đánh giá",
+      "relationship": "Mức độ đồng thuận điểm số giữa các giám khảo/người chấm độc lập",
+      "source": "Shrout & Fleiss (1979)"
+    },
+    "cohen's kappa (κ)": {
+      "canonical_term": "reliability",
+      "canonical_id": "reliability",
+      "vietnamese": "Hệ số Kappa Cohen",
+      "relationship": "Đo độ đồng thuận phân loại giữa 2 người sau khi loại trừ xác suất ngẫu nhiên",
+      "source": "Cohen (1960)"
+    },
+    "fleiss' kappa": {
+      "canonical_term": "reliability",
+      "canonical_id": "reliability",
+      "vietnamese": "Hệ số Kappa Fleiss",
+      "relationship": "Đo độ đồng thuận phân loại giữa từ 3 người đánh giá trở lên",
+      "source": "Fleiss (1971)"
+    },
+    "krippendorff's alpha (α)": {
+      "canonical_term": "reliability",
+      "canonical_id": "reliability",
+      "vietnamese": "Hệ số Alpha Krippendorff",
+      "relationship": "Độ tin cậy mã hóa nội dung tổng quát chấp nhận mọi thang đo và dữ liệu thiếu",
+      "source": "Krippendorff (2018)"
+    },
+    "dependability": {
+      "canonical_term": "reliability",
+      "canonical_id": "reliability",
+      "vietnamese": "Tính ổn định phụ thuộc",
+      "relationship": "Khái niệm tương đương trong nghiên cứu định tính qua lưu vết kiểm toán",
+      "source": "Lincoln & Guba (1985)"
+    },
+    "common method variance (cmv)": {
+      "canonical_term": "Common Method Bias",
+      "canonical_id": "common-method-bias",
+      "vietnamese": "Phương sai phương pháp chung",
+      "relationship": "Biến thiên nhân tạo sinh ra do dùng cùng một phương pháp đo lường",
+      "source": "Podsakoff et al. (2003)"
+    },
+    "same-source bias / monomethod bias": {
+      "canonical_term": "Common Method Bias",
+      "canonical_id": "common-method-bias",
+      "vietnamese": "Thiên lệch cùng nguồn đánh giá",
+      "relationship": "Dữ liệu cả biến độc lập và phụ thuộc đều lấy từ một người trả lời",
+      "source": "Podsakoff et al. (2012)"
+    },
+    "social desirability bias": {
+      "canonical_term": "Common Method Bias",
+      "canonical_id": "common-method-bias",
+      "vietnamese": "Thiên lệch mong muốn xã hội",
+      "relationship": "Xu hướng chọn đáp án đẹp lòng xã hội thay vì sự thật",
+      "source": "Crowne & Marlowe (1960)"
+    },
+    "acquiescence bias (yeah-saying)": {
+      "canonical_term": "Common Method Bias",
+      "canonical_id": "common-method-bias",
+      "vietnamese": "Thiên lệch đồng thuận",
+      "relationship": "Xu hướng luôn đồng ý với mọi nhận định bất kể nội dung",
+      "source": "Podsakoff et al. (2003)"
+    },
+    "straightlining": {
+      "canonical_term": "Common Method Bias",
+      "canonical_id": "common-method-bias",
+      "vietnamese": "Hành vi đánh dấu thẳng hàng",
+      "relationship": "Chọn cùng một cột đáp án từ trên xuống dưới trong khảo sát trực tuyến",
+      "source": "Kim et al. (2019)"
+    },
+    "harman's single-factor test": {
+      "canonical_term": "Common Method Bias",
+      "canonical_id": "common-method-bias",
+      "vietnamese": "Kiểm định đơn nhân tố Harman",
+      "relationship": "Kiểm tra xem nhân tố đầu tiên trong EFA có giải thích > 50% phương sai không",
+      "source": "Harman (1976), Podsakoff et al. (2003)"
+    },
+    "marker variable technique": {
+      "canonical_term": "Common Method Bias",
+      "canonical_id": "common-method-bias",
+      "vietnamese": "Kỹ thuật biến đánh dấu",
+      "relationship": "Sử dụng biến lý thuyết không liên quan để hiệu chỉnh tương quan ảo",
+      "source": "Lindell & Whitney (2001)"
+    },
+    "unmeasured latent method construct (ulmc)": {
+      "canonical_term": "Common Method Bias",
+      "canonical_id": "common-method-bias",
+      "vietnamese": "Biến tiềm ẩn phương pháp không đo lường",
+      "relationship": "Mô hình hóa một nhân tố chung kết nối tất cả các biến quan sát trong CFA",
+      "source": "Podsakoff et al. (2003)"
+    },
+    "full collinearity test (kock)": {
+      "canonical_term": "Common Method Bias",
+      "canonical_id": "common-method-bias",
+      "vietnamese": "Kiểm định toàn đa cộng tuyến trong PLS-SEM",
+      "relationship": "Đánh giá VIF toàn diện cho tất cả các biến tiềm ẩn (chuẩn VIF <= 3.3)",
+      "source": "Kock (2015)"
+    },
+    "omitted variable bias (ovb)": {
+      "canonical_term": "Endogeneity",
+      "canonical_id": "endogeneity",
+      "vietnamese": "Thiên lệch do bỏ sót biến quan trọng",
+      "relationship": "Biến độc lập tương quan với sai số vì mô hình thiếu biến then chốt",
+      "source": "Wooldridge (2010), Greene (2018)"
+    },
+    "simultaneity bias / reverse causality": {
+      "canonical_term": "Endogeneity",
+      "canonical_id": "endogeneity",
+      "vietnamese": "Thiên lệch đồng thời / Quan hệ nhân quả đảo ngược",
+      "relationship": "X tác động lên Y đồng thời Y cũng tác động ngược lại lên X",
+      "source": "Wooldridge (2010)"
+    },
+    "measurement error in regressors": {
+      "canonical_term": "Endogeneity",
+      "canonical_id": "endogeneity",
+      "vietnamese": "Sai số đo lường trong biến giải thích",
+      "relationship": "Làm hệ số hồi quy bị ép về 0 (Attenuation bias)",
+      "source": "Greene (2018)"
+    },
+    "two-stage least squares (2sls)": {
+      "canonical_term": "Endogeneity",
+      "canonical_id": "endogeneity",
+      "vietnamese": "Bình phương tối thiểu hai giai đoạn",
+      "relationship": "Phương pháp ước lượng biến công cụ IV cổ điển",
+      "source": "Angrist & Imbens (1995)"
+    },
+    "three-stage least squares (3sls)": {
+      "canonical_term": "Endogeneity",
+      "canonical_id": "endogeneity",
+      "vietnamese": "Bình phương tối thiểu ba giai đoạn",
+      "relationship": "Kết hợp 2SLS và SUR ước lượng hệ phương trình đồng thời",
+      "source": "Zellner & Theil (1962)"
+    },
+    "generalized method of moments (gmm)": {
+      "canonical_term": "Endogeneity",
+      "canonical_id": "endogeneity",
+      "vietnamese": "Phương pháp moment tổng quát",
+      "relationship": "Ước lượng vững với phương sai sai số thay đổi và bảng động",
+      "source": "Hansen (1982), Arellano & Bond (1991)"
+    },
+    "instrument relevance condition": {
+      "canonical_term": "Endogeneity",
+      "canonical_id": "endogeneity",
+      "vietnamese": "Điều kiện liên quan của biến công cụ",
+      "relationship": "Biến công cụ Z phải tương quan mạnh với biến nội sinh X (F > 10)",
+      "source": "Stock & Yogo (2005)"
+    },
+    "exclusion restriction": {
+      "canonical_term": "Endogeneity",
+      "canonical_id": "endogeneity",
+      "vietnamese": "Ràng buộc loại trừ của biến công cụ",
+      "relationship": "Z chỉ tác động lên Y gián tiếp duy nhất qua X, không tác động trực tiếp",
+      "source": "Angrist, Imbens & Rubin (1996)"
+    },
+    "durbin-wu-hausman test (dwh)": {
+      "canonical_term": "Endogeneity",
+      "canonical_id": "endogeneity",
+      "vietnamese": "Kiểm định nội sinh Durbin-Wu-Hausman",
+      "relationship": "So sánh ước lượng OLS và IV để xác nhận biến có thực sự nội sinh không",
+      "source": "Hausman (1978)"
+    },
+    "sargan-hansen test": {
+      "canonical_term": "Endogeneity",
+      "canonical_id": "endogeneity",
+      "vietnamese": "Kiểm định ràng buộc nhận dạng quá mức",
+      "relationship": "Kiểm tra tính hợp lệ ngoại sinh của các biến công cụ bổ sung",
+      "source": "Sargan (1958), Hansen (1982)"
+    },
+    "interaction effect": {
+      "canonical_term": "Moderating Variable",
+      "canonical_id": "moderating-variable",
+      "vietnamese": "Hiệu ứng tương tác",
+      "relationship": "Tác động tích số X * W lên biến phụ thuộc Y",
+      "source": "Aiken & West (1991), Cohen et al. (2003)"
+    },
+    "simple slopes analysis": {
+      "canonical_term": "Moderating Variable",
+      "canonical_id": "moderating-variable",
+      "vietnamese": "Phân tích độ dốc đơn giản",
+      "relationship": "Kiểm tra độ dốc của X lên Y tại các mức độ của biến điều tiết (-1SD, Mean, +1SD)",
+      "source": "Aiken & West (1991)"
+    },
+    "spotlight analysis (pick-a-point)": {
+      "canonical_term": "Moderating Variable",
+      "canonical_id": "moderating-variable",
+      "vietnamese": "Phương pháp soi rọi chọn điểm",
+      "relationship": "Đánh giá ý nghĩa tác động tại các giá trị cụ thể được định trước",
+      "source": "Spiller et al. (2013)"
+    },
+    "floodlight analysis (johnson-neyman)": {
+      "canonical_term": "Moderating Variable",
+      "canonical_id": "moderating-variable",
+      "vietnamese": "Phương pháp đèn pha Johnson-Neyman",
+      "relationship": "Xác định vùng giá trị liên tục mà tại đó tác động chuyển sang có ý nghĩa",
+      "source": "Johnson & Neyman (1936), Spiller et al. (2013)"
+    },
+    "moderated mediation": {
+      "canonical_term": "Moderating Variable",
+      "canonical_id": "moderating-variable",
+      "vietnamese": "Trung gian bị điều tiết",
+      "relationship": "Tác động gián tiếp của X lên Y qua M thay đổi theo biến điều tiết W",
+      "source": "Preacher, Rucker & Hayes (2007)"
+    },
+    "conditional indirect effect": {
+      "canonical_term": "Moderating Variable",
+      "canonical_id": "moderating-variable",
+      "vietnamese": "Tác động gián tiếp có điều kiện",
+      "relationship": "Độ lớn của tác động gián tiếp phụ thuộc vào giá trị của biến điều tiết",
+      "source": "Hayes (2018/2022)"
+    },
+    "index of moderated mediation": {
+      "canonical_term": "Moderating Variable",
+      "canonical_id": "moderating-variable",
+      "vietnamese": "Chỉ số trung gian bị điều tiết",
+      "relationship": "Kiểm định thống kê trực tiếp xem trung gian có bị điều tiết hay không",
+      "source": "Hayes (2015)"
+    },
+    "mediated moderation": {
+      "canonical_term": "Moderating Variable",
+      "canonical_id": "moderating-variable",
+      "vietnamese": "Điều tiết bị trung gian",
+      "relationship": "Hiệu ứng tương tác X * W được giải thích gián tiếp qua biến M",
+      "source": "Muller, Judd & Yzerbyt (2005)"
+    },
+    "indirect effect": {
+      "canonical_term": "Mediating Variable",
+      "canonical_id": "mediating-variable",
+      "vietnamese": "Tác động gián tiếp",
+      "relationship": "Tác động của X lên Y truyền qua biến trung gian M (a * b)",
+      "source": "Baron & Kenny (1986), Hayes (2018)"
+    },
+    "direct effect": {
+      "canonical_term": "Mediating Variable",
+      "canonical_id": "mediating-variable",
+      "vietnamese": "Tác động trực tiếp",
+      "relationship": "Tác động của X lên Y sau khi đã kiểm soát biến trung gian M (c')",
+      "source": "Baron & Kenny (1986)"
+    },
+    "total effect": {
+      "canonical_term": "Mediating Variable",
+      "canonical_id": "mediating-variable",
+      "vietnamese": "Tác động toàn phần",
+      "relationship": "Tổng tác động trực tiếp và gián tiếp: c = c' + a * b",
+      "source": "Hayes (2018)"
+    },
+    "baron and kenny approach": {
+      "canonical_term": "Mediating Variable",
+      "canonical_id": "mediating-variable",
+      "vietnamese": "Quy trình trung gian 4 bước Baron & Kenny",
+      "relationship": "Phương pháp cổ điển kiểm tra trung gian qua 4 phương trình OLS",
+      "source": "Baron & Kenny (1986)"
+    },
+    "sobel test": {
+      "canonical_term": "Mediating Variable",
+      "canonical_id": "mediating-variable",
+      "vietnamese": "Kiểm định Sobel",
+      "relationship": "Kiểm định ý nghĩa thống kê của tích số a * b dựa trên giả định chuẩn",
+      "source": "Sobel (1982)"
+    },
+    "bootstrapped indirect effect": {
+      "canonical_term": "Mediating Variable",
+      "canonical_id": "mediating-variable",
+      "vietnamese": "Tác động gián tiếp tái lấy mẫu Bootstrap",
+      "relationship": "Chuẩn mực vàng hiện đại không dựa vào giả định phân phối chuẩn",
+      "source": "Preacher & Hayes (2004/2008)"
+    },
+    "parallel multiple mediation": {
+      "canonical_term": "Mediating Variable",
+      "canonical_id": "mediating-variable",
+      "vietnamese": "Mô hình trung gian song song",
+      "relationship": "X tác động đồng thời lên nhiều biến trung gian M1, M2 độc lập",
+      "source": "Hayes (2018)"
+    },
+    "serial multiple mediation": {
+      "canonical_term": "Mediating Variable",
+      "canonical_id": "mediating-variable",
+      "vietnamese": "Mô hình trung gian nối tiếp",
+      "relationship": "Chuỗi nhân quả nối tiếp: X -> M1 -> M2 -> Y",
+      "source": "Hayes (2018)"
+    },
+    "natural direct effect (nde)": {
+      "canonical_term": "Mediating Variable",
+      "canonical_id": "mediating-variable",
+      "vietnamese": "Tác động trực tiếp tự nhiên",
+      "relationship": "Khái niệm trung gian nhân quả theo khung potential outcomes",
+      "source": "Pearl (2001), Imai et al. (2010)"
+    },
+    "natural indirect effect (nie)": {
+      "canonical_term": "Mediating Variable",
+      "canonical_id": "mediating-variable",
+      "vietnamese": "Tác động gián tiếp tự nhiên",
+      "relationship": "Khái niệm trung gian nhân quả phân tách trong Pearl causal mediation",
+      "source": "Pearl (2001), Imai et al. (2010)"
+    },
+    "variance inflation factor (vif)": {
+      "canonical_term": "multicollinearity",
+      "canonical_id": "multicollinearity",
+      "vietnamese": "Hệ số phóng đại phương sai VIF",
+      "relationship": "Đo lường mức độ phương sai hệ số hồi quy bị thổi phồng (chuẩn < 5.0 hoặc < 3.3)",
+      "source": "Hair et al. (2018), Wooldridge (2010)"
+    },
+    "tolerance value": {
+      "canonical_term": "multicollinearity",
+      "canonical_id": "multicollinearity",
+      "vietnamese": "Hệ số dung sai",
+      "relationship": "Nghịch đảo của VIF (Tolerance = 1 / VIF; chuẩn > 0.10 hoặc > 0.20)",
+      "source": "Hair et al. (2018)"
+    },
+    "condition index (ci) & condition number": {
+      "canonical_term": "multicollinearity",
+      "canonical_id": "multicollinearity",
+      "vietnamese": "Chỉ số điều kiện và Số điều kiện",
+      "relationship": "Chẩn đoán đa cộng tuyến dựa trên ma trận trị riêng (CI > 30 là nghiêm trọng)",
+      "source": "Belsley, Kuh & Welsch (1980)"
+    },
+    "variance decomposition proportions (vdp)": {
+      "canonical_term": "multicollinearity",
+      "canonical_id": "multicollinearity",
+      "vietnamese": "Tỷ lệ phân rã phương sai",
+      "relationship": "Xác định chính xác cặp biến độc lập gây ra đa cộng tuyến cao",
+      "source": "Belsley et al. (1980)"
+    },
+    "mean-centering predictors": {
+      "canonical_term": "multicollinearity",
+      "canonical_id": "multicollinearity",
+      "vietnamese": "Trừ trung bình biến độc lập",
+      "relationship": "Biện pháp kỹ thuật giảm đa cộng tuyến cấu trúc khi có biến tương tác hoặc đa thức",
+      "source": "Aiken & West (1991)"
+    },
+    "ridge regression": {
+      "canonical_term": "multicollinearity",
+      "canonical_id": "multicollinearity",
+      "vietnamese": "Hồi quy Ridge (L2 penalty)",
+      "relationship": "Kỹ thuật hồi quy phạt co hệ số để xử lý đa cộng tuyến nghiêm trọng",
+      "source": "Hoerl & Kennard (1970)"
+    },
+    "two-way fixed effects (twfe)": {
+      "canonical_term": "Difference-in-Differences (DID)",
+      "canonical_id": "difference-in-differences",
+      "vietnamese": "Mô hình tác động cố định hai chiều",
+      "relationship": "Đặc tả kinh điển của DiD kiểm soát cố định đơn vị và thời gian",
+      "source": "Angrist & Pischke (2009)"
+    },
+    "parallel trends assumption": {
+      "canonical_term": "Difference-in-Differences (DID)",
+      "canonical_id": "difference-in-differences",
+      "vietnamese": "Giả định xu hướng song song",
+      "relationship": "Điều kiện nhận dạng tối thượng: hai nhóm cùng xu hướng nếu không có can thiệp",
+      "source": "Angrist & Pischke (2009)"
+    },
+    "event study specification (leads & lags)": {
+      "canonical_term": "Difference-in-Differences (DID)",
+      "canonical_id": "difference-in-differences",
+      "vietnamese": "Mô hình nghiên cứu sự kiện (Độ trễ và Dẫn trước)",
+      "relationship": "Kiểm tra động thái tác động trước và sau can thiệp để chứng minh parallel trends",
+      "source": "Freedman (2008), Sun & Abraham (2021)"
+    },
+    "placebo in-time test": {
+      "canonical_term": "Difference-in-Differences (DID)",
+      "canonical_id": "difference-in-differences",
+      "vietnamese": "Kiểm định giả dược theo thời gian",
+      "relationship": "Đặt thời điểm can thiệp giả định lùi về quá khứ để kiểm tra xu hướng trước can thiệp",
+      "source": "Angrist & Pischke (2009)"
+    },
+    "staggered adoption did": {
+      "canonical_term": "Difference-in-Differences (DID)",
+      "canonical_id": "difference-in-differences",
+      "vietnamese": "Mô hình DiD thời điểm áp dụng so le",
+      "relationship": "Các đơn vị bắt đầu nhận chính sách tại các mốc thời gian khác nhau",
+      "source": "Callaway & Sant'Anna (2021)"
+    },
+    "goodman-bacon decomposition": {
+      "canonical_term": "Difference-in-Differences (DID)",
+      "canonical_id": "difference-in-differences",
+      "vietnamese": "Phân rã Goodman-Bacon",
+      "relationship": "Chứng minh TWFE DiD so le chứa các cặp so sánh dùng nhóm đã can thiệp làm đối chứng",
+      "source": "Goodman-Bacon (2021)"
+    },
+    "negative weights problem": {
+      "canonical_term": "Difference-in-Differences (DID)",
+      "canonical_id": "difference-in-differences",
+      "vietnamese": "Vấn đề trọng số âm trong DiD",
+      "relationship": "Hệ quả của TWFE khi tác động can thiệp biến thiên theo thời gian làm lệch dấu hệ số",
+      "source": "de Chaisemartin & D'Haultfœuille (2020)"
+    },
+    "callaway and sant'anna estimator": {
+      "canonical_term": "Difference-in-Differences (DID)",
+      "canonical_id": "difference-in-differences",
+      "vietnamese": "Ước lượng Callaway & Sant'Anna",
+      "relationship": "Ước lượng nhóm - thời điểm (Group-Time ATT) giải quyết triệt để trọng số âm",
+      "source": "Callaway & Sant'Anna (2021)"
+    },
+    "synthetic difference-in-differences (sdid)": {
+      "canonical_term": "Difference-in-Differences (DID)",
+      "canonical_id": "difference-in-differences",
+      "vietnamese": "Mô hình DiD kết hợp đối chứng tổng hợp",
+      "relationship": "Kết hợp sức mạnh tái đánh trọng số đơn vị SCM và sai phân kép DiD",
+      "source": "Arkhangelsky et al. (2021)"
+    },
+    "donor pool": {
+      "canonical_term": "Synthetic Control Method (SCM)",
+      "canonical_id": "synthetic-control-method",
+      "vietnamese": "Nhóm đơn vị tài trợ",
+      "relationship": "Tập hợp các quốc gia hoặc đơn vị không bị ảnh hưởng bởi chính sách can thiệp",
+      "source": "Abadie, Diamond & Hainmueller (2010)"
+    },
+    "convex combination weights": {
+      "canonical_term": "Synthetic Control Method (SCM)",
+      "canonical_id": "synthetic-control-method",
+      "vietnamese": "Trọng số tổ hợp lồi",
+      "relationship": "Trọng số không âm W cộng lại bằng 1 dùng để ghép thành đơn vị tổng hợp",
+      "source": "Abadie et al. (2010)"
+    },
+    "in-space placebo test": {
+      "canonical_term": "Synthetic Control Method (SCM)",
+      "canonical_id": "synthetic-control-method",
+      "vietnamese": "Kiểm định giả dược trong không gian",
+      "relationship": "Lần lượt gán chính sách cho từng đơn vị trong donor pool để xây dựng phân phối kiểm định",
+      "source": "Abadie et al. (2010)"
+    },
+    "post-to-pre rmspe ratio": {
+      "canonical_term": "Synthetic Control Method (SCM)",
+      "canonical_id": "synthetic-control-method",
+      "vietnamese": "Tỷ số RMSPE sau và trước can thiệp",
+      "relationship": "Thước đo mức độ bất thường vượt trội của đơn vị can thiệp so với các phép thử giả dược",
+      "source": "Abadie et al. (2010)"
+    },
+    "generalized synthetic control (gsynth)": {
+      "canonical_term": "Synthetic Control Method (SCM)",
+      "canonical_id": "synthetic-control-method",
+      "vietnamese": "Đối chứng tổng hợp tổng quát",
+      "relationship": "Mở rộng SCM áp dụng mô hình nhân tố tiềm ẩn tương tác cho nhiều đơn vị can thiệp",
+      "source": "Xu (2017)"
+    },
+    "running variable / forcing variable": {
+      "canonical_term": "regression-discontinuity-design",
+      "canonical_id": "regression-discontinuity-design",
+      "vietnamese": "Biến điều kiện / Biến chạy",
+      "relationship": "Biến số liên tục quyết định việc đối tượng có vượt qua ngưỡng để nhận can thiệp hay không",
+      "source": "Imbens & Lemieux (2008), Lee & Lemieux (2010)"
+    },
+    "cutoff threshold": {
+      "canonical_term": "regression-discontinuity-design",
+      "canonical_id": "regression-discontinuity-design",
+      "vietnamese": "Điểm cắt ngưỡng chính sách",
+      "relationship": "Mốc điểm số chia ranh giới nhận can thiệp (ví dụ: điểm thi chuẩn 20 điểm)",
+      "source": "Lee & Lemieux (2010)"
+    },
+    "sharp rdd": {
+      "canonical_term": "regression-discontinuity-design",
+      "canonical_id": "regression-discontinuity-design",
+      "vietnamese": "Thiết kế RDD sắc nét",
+      "relationship": "Xác suất nhận can thiệp nhảy vọt tuyệt đối từ 0 lên 1 tại điểm cắt",
+      "source": "Trochim (1984), Imbens & Lemieux (2008)"
+    },
+    "fuzzy rdd": {
+      "canonical_term": "regression-discontinuity-design",
+      "canonical_id": "regression-discontinuity-design",
+      "vietnamese": "Thiết kế RDD mờ",
+      "relationship": "Xác suất nhận can thiệp tăng vọt một bước nhảy nhưng không tuyệt đối (cần ước lượng dạng 2SLS)",
+      "source": "Imbens & Lemieux (2008)"
+    },
+    "optimal bandwidth selection": {
+      "canonical_term": "regression-discontinuity-design",
+      "canonical_id": "regression-discontinuity-design",
+      "vietnamese": "Lựa chọn băng thông tối ưu",
+      "relationship": "Độ rộng khoảng dữ liệu sát hai bên điểm cắt (Imbens-Kalyanaraman hoặc CCT)",
+      "source": "Imbens & Kalyanaraman (2012), Calonico et al. (2014)"
+    },
+    "mccrary density test": {
+      "canonical_term": "regression-discontinuity-design",
+      "canonical_id": "regression-discontinuity-design",
+      "vietnamese": "Kiểm định mật độ McCrary",
+      "relationship": "Kiểm tra tính liên tục của hàm mật độ tại điểm cắt để phát hiện hành vi gian lận điểm số",
+      "source": "McCrary (2008)"
+    },
+    "covariate smoothness check": {
+      "canonical_term": "regression-discontinuity-design",
+      "canonical_id": "regression-discontinuity-design",
+      "vietnamese": "Kiểm tra tính trơn của các biến hiệp biến",
+      "relationship": "Đảm bảo các biến kiểm soát nền tảng không bị nhảy vọt tại điểm cắt",
+      "source": "Lee & Lemieux (2010)"
+    },
+    "propensity score": {
+      "canonical_term": "Propensity Score Matching (PSM)",
+      "canonical_id": "propensity-score-matching",
+      "vietnamese": "Điểm xu hướng",
+      "relationship": "Xác suất có điều kiện đối tượng nhận can thiệp dựa trên các đặc điểm quan sát được e(X)",
+      "source": "Rosenbaum & Rubin (1983)"
+    },
+    "common support region": {
+      "canonical_term": "Propensity Score Matching (PSM)",
+      "canonical_id": "propensity-score-matching",
+      "vietnamese": "Vùng hỗ trợ chung / Vùng giao thoa",
+      "relationship": "Khoảng giá trị propensity score mà cả nhóm can thiệp và đối chứng đều có quan sát",
+      "source": "Heckman, Ichimura & Todd (1997)"
+    },
+    "caliper matching": {
+      "canonical_term": "Propensity Score Matching (PSM)",
+      "canonical_id": "propensity-score-matching",
+      "vietnamese": "Ghép cặp theo cữ caliper",
+      "relationship": "Chỉ cho phép ghép cặp nếu khoảng cách propensity score nằm trong một ngưỡng dung sai hẹp",
+      "source": "Cochran & Rubin (1973)"
+    },
+    "nearest neighbor matching (1:1 & 1:k)": {
+      "canonical_term": "Propensity Score Matching (PSM)",
+      "canonical_id": "propensity-score-matching",
+      "vietnamese": "Ghép cặp láng giềng gần nhất",
+      "relationship": "Chọn đối chứng có điểm xu hướng gần nhất với từng đối tượng can thiệp",
+      "source": "Austin (2011)"
+    },
+    "kernel matching": {
+      "canonical_term": "Propensity Score Matching (PSM)",
+      "canonical_id": "propensity-score-matching",
+      "vietnamese": "Ghép cặp theo hàm nhân",
+      "relationship": "Tất cả các đối chứng đều được dùng và gán trọng số giảm dần theo khoảng cách",
+      "source": "Heckman et al. (1997)"
+    },
+    "mahalanobis distance matching": {
+      "canonical_term": "Propensity Score Matching (PSM)",
+      "canonical_id": "propensity-score-matching",
+      "vietnamese": "Ghép cặp khoảng cách Mahalanobis",
+      "relationship": "Ghép cặp trực tiếp dựa trên ma trận hiệp phương sai của các biến kiểm soát",
+      "source": "Rubin (1980)"
+    },
+    "standardized mean difference (smd)": {
+      "canonical_term": "Propensity Score Matching (PSM)",
+      "canonical_id": "propensity-score-matching",
+      "vietnamese": "Độ lệch trung bình chuẩn hóa",
+      "relationship": "Chỉ số đánh giá độ cân bằng (chuẩn SMD < 0.10 biểu thị cân bằng tốt)",
+      "source": "Austin (2009)"
+    },
+    "love plot balance diagnostic": {
+      "canonical_term": "Propensity Score Matching (PSM)",
+      "canonical_id": "propensity-score-matching",
+      "vietnamese": "Biểu đồ kiểm tra cân bằng Love Plot",
+      "relationship": "Trực quan hóa độ suy giảm SMD của tất cả các biến trước và sau khi ghép cặp",
+      "source": "Austin (2011)"
+    },
+    "coarsened exact matching (cem)": {
+      "canonical_term": "Propensity Score Matching (PSM)",
+      "canonical_id": "propensity-score-matching",
+      "vietnamese": "Ghép cặp chính xác làm mịn",
+      "relationship": "Phân khoảng rời rạc biến số để triệt tiêu hoàn toàn mất cân bằng mà không cần mô hình hóa",
+      "source": "Iacus, King & Porro (2012)"
+    },
+    "entropy balancing": {
+      "canonical_term": "Propensity Score Matching (PSM)",
+      "canonical_id": "propensity-score-matching",
+      "vietnamese": "Cân bằng Entropy",
+      "relationship": "Tối ưu hóa trọng số để ép trực tiếp trung bình và phương sai đối chứng khớp với can thiệp",
+      "source": "Hainmueller (2012)"
+    },
+    "classic glaserian grounded theory": {
+      "canonical_term": "Grounded Theory",
+      "canonical_id": "grounded-theory",
+      "vietnamese": "Lý thuyết nền tảng cổ điển Glaser",
+      "relationship": "Nhấn mạnh sự nảy sinh thuần túy từ dữ liệu, phản đối ép khung lý thuyết ban đầu",
+      "source": "Glaser & Strauss (1967)"
+    },
+    "straussian grounded theory": {
+      "canonical_term": "Grounded Theory",
+      "canonical_id": "grounded-theory",
+      "vietnamese": "Lý thuyết nền tảng Straussian",
+      "relationship": "Quy trình mã hóa bán cấu trúc 3 bước: Open, Axial, và Selective Coding",
+      "source": "Strauss & Corbin (1990/1998)"
+    },
+    "constructivist grounded theory (charmaz)": {
+      "canonical_term": "Grounded Theory",
+      "canonical_id": "grounded-theory",
+      "vietnamese": "Lý thuyết nền tảng kiến tạo Charmaz",
+      "relationship": "Coi lý thuyết là sản phẩm đồng kiến tạo giữa tác giả và người tham gia",
+      "source": "Charmaz (2006/2014)"
+    },
+    "constant comparative method": {
+      "canonical_term": "Grounded Theory",
+      "canonical_id": "grounded-theory",
+      "vietnamese": "Phương pháp so sánh liên tục",
+      "relationship": "So sánh liên tục sự kiện với sự kiện, sự kiện với mã, và mã với mã",
+      "source": "Glaser (1965)"
+    },
+    "theoretical sampling": {
+      "canonical_term": "Grounded Theory",
+      "canonical_id": "grounded-theory",
+      "vietnamese": "Chọn mẫu lý thuyết",
+      "relationship": "Việc thu thập dữ liệu tiếp theo được dẫn dắt bởi sự phát triển của lý thuyết đang nổi lên",
+      "source": "Glaser & Strauss (1967)"
+    },
+    "theoretical saturation": {
+      "canonical_term": "Grounded Theory",
+      "canonical_id": "grounded-theory",
+      "vietnamese": "Bão hòa lý thuyết",
+      "relationship": "Thời điểm không còn thuộc tính hoặc quan hệ mới nào xuất hiện trong dữ liệu",
+      "source": "Saunders et al. (2018)"
+    },
+    "open coding": {
+      "canonical_term": "Grounded Theory",
+      "canonical_id": "grounded-theory",
+      "vietnamese": "Mã hóa mở",
+      "relationship": "Bóc tách dữ liệu văn bản thô thành các mã khái niệm ban đầu",
+      "source": "Strauss & Corbin (1998)"
+    },
+    "axial coding": {
+      "canonical_term": "Grounded Theory",
+      "canonical_id": "grounded-theory",
+      "vietnamese": "Mã hóa trục",
+      "relationship": "Liên kết các tiểu mục xoay quanh một mục chính theo mô hình nhân quả - bối cảnh",
+      "source": "Strauss & Corbin (1998)"
+    },
+    "selective coding": {
+      "canonical_term": "Grounded Theory",
+      "canonical_id": "grounded-theory",
+      "vietnamese": "Mã hóa chọn lọc",
+      "relationship": "Tích hợp và tinh chỉnh toàn bộ hệ thống xoay quanh một Danh mục cốt lõi (Core Category)",
+      "source": "Strauss & Corbin (1998)"
+    },
+    "theoretical memos": {
+      "canonical_term": "Grounded Theory",
+      "canonical_id": "grounded-theory",
+      "vietnamese": "Ghi chú lý thuyết (Memos)",
+      "relationship": "Văn bản ghi chép tức thời dòng suy nghĩ và giả định lý thuyết của tác giả trong khi mã hóa",
+      "source": "Glaser (1978)"
+    },
+    "substantive theory vs. formal theory": {
+      "canonical_term": "Grounded Theory",
+      "canonical_id": "grounded-theory",
+      "vietnamese": "Lý thuyết thực chất vs. Lý thuyết hình thức",
+      "relationship": "Lý thuyết cho một bối cảnh thực nghiệm cụ thể vs. Khái quát hóa cho nhiều lĩnh vực",
+      "source": "Glaser & Strauss (1967)"
+    },
+    "inductive thematic analysis": {
+      "canonical_term": "Thematic Analysis",
+      "canonical_id": "thematic-analysis",
+      "vietnamese": "Phân tích chủ đề quy nạp",
+      "relationship": "Chủ đề nổi lên gắn kết chặt chẽ từ dữ liệu thực nghiệm không ép khung",
+      "source": "Braun & Clarke (2006)"
+    },
+    "deductive thematic analysis": {
+      "canonical_term": "Thematic Analysis",
+      "canonical_id": "thematic-analysis",
+      "vietnamese": "Phân tích chủ đề diễn dịch",
+      "relationship": "Phân tích dữ liệu dựa trên một khung lý thuyết hoặc khái niệm định trước",
+      "source": "Braun & Clarke (2006)"
+    },
+    "semantic themes vs. latent themes": {
+      "canonical_term": "Thematic Analysis",
+      "canonical_id": "thematic-analysis",
+      "vietnamese": "Chủ đề hiển ngôn vs. Chủ đề hàm ẩn",
+      "relationship": "Ý nghĩa bề mặt trực tiếp vs. Các giả định và hệ tư tưởng ngầm ẩn sâu",
+      "source": "Braun & Clarke (2006)"
+    },
+    "reflexive thematic analysis (braun & clarke 2019)": {
+      "canonical_term": "Thematic Analysis",
+      "canonical_id": "thematic-analysis",
+      "vietnamese": "Phân tích chủ đề tự phản tư",
+      "relationship": "Nhấn mạnh vai trò chủ động và tính phản tư nhận thức luận của nhà nghiên cứu",
+      "source": "Braun & Clarke (2019)"
+    },
+    "six phases of thematic analysis": {
+      "canonical_term": "Thematic Analysis",
+      "canonical_id": "thematic-analysis",
+      "vietnamese": "Sáu giai đoạn phân tích chủ đề",
+      "relationship": "Làm quen, Tạo mã ban đầu, Tìm chủ đề, Rà soát, Đặt tên chủ đề, Viết báo cáo",
+      "source": "Braun & Clarke (2006)"
+    },
+    "thematic map": {
+      "canonical_term": "Thematic Analysis",
+      "canonical_id": "thematic-analysis",
+      "vietnamese": "Bản đồ chủ đề",
+      "relationship": "Sơ đồ trực quan biểu diễn mối quan hệ phân cấp và liên kết giữa các chủ đề",
+      "source": "Braun & Clarke (2006)"
+    },
+    "1st-order concepts (informant-centric)": {
+      "canonical_term": "Gioia Methodology",
+      "canonical_id": "gioia-methodology",
+      "vietnamese": "Khái niệm cấp 1",
+      "relationship": "Bảo tồn tối đa ngôn từ và cách diễn đạt nguyên văn của đối tượng trong cuộc",
+      "source": "Gioia, Corley & Hamilton (2013)"
+    },
+    "2nd-order themes (theory-centric)": {
+      "canonical_term": "Gioia Methodology",
+      "canonical_id": "gioia-methodology",
+      "vietnamese": "Chủ đề cấp 2",
+      "relationship": "Các khái niệm lý thuyết trừu tượng do nhà nghiên cứu quy nạp và khái quát",
+      "source": "Gioia et al. (2013)"
+    },
+    "aggregate dimensions": {
+      "canonical_term": "Gioia Methodology",
+      "canonical_id": "gioia-methodology",
+      "vietnamese": "Chiều kích tổng hợp",
+      "relationship": "Các trụ cột lý thuyết lớn tạo nên mô hình khái niệm mới hoàn chỉnh",
+      "source": "Gioia et al. (2013)"
+    },
+    "data structure figure": {
+      "canonical_term": "Gioia Methodology",
+      "canonical_id": "gioia-methodology",
+      "vietnamese": "Sơ đồ cấu trúc dữ liệu Gioia",
+      "relationship": "Biểu đồ trực quan chuẩn mực thể hiện nấc thang logic từ Khái niệm 1 -> Chủ đề 2 -> Chiều kích",
+      "source": "Gioia et al. (2013)"
+    },
+    "grounded dynamic model": {
+      "canonical_term": "Gioia Methodology",
+      "canonical_id": "gioia-methodology",
+      "vietnamese": "Mô hình động nền tảng",
+      "relationship": "Sơ đồ mũi tên diễn giải cơ chế vận động giữa các chiều kích tổng hợp",
+      "source": "Gioia et al. (2013)"
+    },
+    "transcendental phenomenology (husserl)": {
+      "canonical_term": "Phenomenological Research",
+      "canonical_id": "phenomenology",
+      "vietnamese": "Hiện tượng học siêu nghiệm Husserl",
+      "relationship": "Khám phá cấu trúc bản chất phổ quát của trải nghiệm thuần khiết",
+      "source": "Husserl (1913/1931), Moustakas (1994)"
+    },
+    "hermeneutic phenomenology (heidegger)": {
+      "canonical_term": "Phenomenological Research",
+      "canonical_id": "phenomenology",
+      "vietnamese": "Hiện tượng học thông diễn Heidegger",
+      "relationship": "Khám phá ý nghĩa hiện sinh của Dasein gắn liền trong thế giới văn hóa lịch sử",
+      "source": "Heidegger (1927), van Manen (2014)"
+    },
+    "epoché / phenomenological bracketing": {
+      "canonical_term": "Phenomenological Research",
+      "canonical_id": "phenomenology",
+      "vietnamese": "Thủ pháp đặt vào ngoặc Epoché",
+      "relationship": "Chủ động cô lập định kiến đời thường để tiếp cận hiện tượng thuần khiết",
+      "source": "Moustakas (1994)"
+    },
+    "horizonalization": {
+      "canonical_term": "Phenomenological Research",
+      "canonical_id": "phenomenology",
+      "vietnamese": "Thủ pháp bình đẳng hóa nhận định",
+      "relationship": "Coi mọi câu phát biểu của đối tượng có giá trị ngang nhau ở bước mã hóa ban đầu",
+      "source": "Moustakas (1994)"
+    },
+    "imaginative variation": {
+      "canonical_term": "Phenomenological Research",
+      "canonical_id": "phenomenology",
+      "vietnamese": "Biến thiên tưởng tượng",
+      "relationship": "Thay đổi các khía cạnh của hiện tượng trong tư duy để tìm ra thuộc tính bản chất bất biến",
+      "source": "Moustakas (1994)"
+    },
+    "noema and noesis": {
+      "canonical_term": "Phenomenological Research",
+      "canonical_id": "phenomenology",
+      "vietnamese": "Noema và Noesis",
+      "relationship": "Vật được trải nghiệm là gì (Noema) và Cách thức vật được ý thức như thế nào (Noesis)",
+      "source": "Husserl (1913)"
+    },
+    "lebenswelt (life-world)": {
+      "canonical_term": "Phenomenological Research",
+      "canonical_id": "phenomenology",
+      "vietnamese": "Thế giới đời sống",
+      "relationship": "Không gian trải nghiệm sống thường ngày cụ thể trước lý thuyết của con người",
+      "source": "Husserl (1936/1970)"
+    },
+    "prisma 2020 statement": {
+      "canonical_term": "meta-analysis",
+      "canonical_id": "meta-analysis",
+      "vietnamese": "Tuyên bố PRISMA 2020",
+      "relationship": "Bộ chuẩn mực báo cáo quốc tế 27 mục cho tổng quan hệ thống và phân tích gộp",
+      "source": "Page et al. (2021)"
+    },
+    "prisma flow diagram": {
+      "canonical_term": "meta-analysis",
+      "canonical_id": "meta-analysis",
+      "vietnamese": "Sơ đồ dòng chảy PRISMA",
+      "relationship": "Sơ đồ 4 bước sàng lọc tài liệu: Nhận diện -> Sàng lọc -> Đủ điều kiện -> Đưa vào tổng hợp",
+      "source": "Page et al. (2021)"
+    },
+    "pico / picos framework": {
+      "canonical_term": "meta-analysis",
+      "canonical_id": "meta-analysis",
+      "vietnamese": "Khung PICO / PICOS",
+      "relationship": "Xác định câu hỏi tổng quan: Dân số (P), Can thiệp (I), So sánh (C), Kết cục (O), Thiết kế (S)",
+      "source": "Higgins et al. (2019)"
+    },
+    "forest plot": {
+      "canonical_term": "meta-analysis",
+      "canonical_id": "meta-analysis",
+      "vietnamese": "Biểu đồ rừng Forest Plot",
+      "relationship": "Trực quan hóa kích thước hiệu ứng và khoảng tin cậy của từng nghiên cứu và hiệu ứng gộp",
+      "source": "Lewis & Clarke (2001)"
+    },
+    "funnel plot asymmetry": {
+      "canonical_term": "meta-analysis",
+      "canonical_id": "meta-analysis",
+      "vietnamese": "Tính bất đối xứng của Funnel Plot",
+      "relationship": "Dấu hiệu cảnh báo sự hiện diện của thiên lệch xuất bản (Publication bias)",
+      "source": "Light & Pillemer (1984), Egger et al. (1997)"
+    },
+    "egger's linear regression test": {
+      "canonical_term": "meta-analysis",
+      "canonical_id": "meta-analysis",
+      "vietnamese": "Kiểm định hồi quy Egger",
+      "relationship": "Kiểm định thống kê tính bất đối xứng của Funnel Plot",
+      "source": "Egger et al. (1997)"
+    },
+    "duval and tweedie trim-and-fill": {
+      "canonical_term": "meta-analysis",
+      "canonical_id": "meta-analysis",
+      "vietnamese": "Phương pháp Cắt và Điền Duval & Tweedie",
+      "relationship": "Ước tính số nghiên cứu bị giấu trong ngăn kéo và tái ước lượng hiệu ứng tổng hợp sau khi bù đắp",
+      "source": "Duval & Tweedie (2000)"
+    },
+    "between-study heterogeneity (i² & tau²)": {
+      "canonical_term": "meta-analysis",
+      "canonical_id": "meta-analysis",
+      "vietnamese": "Tính không đồng nhất giữa các nghiên cứu",
+      "relationship": "I-squared đo tỷ lệ % biến thiên do dị biệt thực sự (25%, 50%, 75%); Tau-squared là phương sai",
+      "source": "Higgins & Thompson (2002)"
+    },
+    "fixed-effect vs. random-effects model": {
+      "canonical_term": "meta-analysis",
+      "canonical_id": "meta-analysis",
+      "vietnamese": "Mô hình hiệu ứng cố định vs. Hiệu ứng ngẫu nhiên",
+      "relationship": "Giả định duy nhất một hiệu ứng thực chung vs. Phân phối các kích thước hiệu ứng thực",
+      "source": "Borenstein et al. (2010)"
+    },
+    "risk of bias 2 (rob 2)": {
+      "canonical_term": "meta-analysis",
+      "canonical_id": "meta-analysis",
+      "vietnamese": "Đánh giá nguy cơ sai lệch RoB 2",
+      "relationship": "Bộ công cụ chuẩn vàng đánh giá chất lượng thử nghiệm lâm sàng ngẫu nhiên RCT",
+      "source": "Sterne et al. (2019)"
+    },
+    "grade certainty of evidence": {
+      "canonical_term": "meta-analysis",
+      "canonical_id": "meta-analysis",
+      "vietnamese": "Độ tin cậy của bằng chứng GRADE",
+      "relationship": "Xếp loại chất lượng bằng chứng thành 4 mức: Rất thấp, Thấp, Trung bình, Cao",
+      "source": "Guyatt et al. (2008)"
+    },
+    "tính thỏa đáng của cấu trúc": {
+      "canonical_term": "Construct Validity",
+      "canonical_id": "construct-validity",
+      "vietnamese": "Tính thỏa đáng của cấu trúc",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Cronbach, L. J., & Meehl, P. E. (1955). Construct validity in psychological tests. Psychological Bulletin, 52(4), 281–302."
+    },
+    "độ giá trị cấu trúc": {
+      "canonical_term": "Construct Validity",
+      "canonical_id": "construct-validity",
+      "vietnamese": "Độ giá trị cấu trúc",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Cronbach, L. J., & Meehl, P. E. (1955). Construct validity in psychological tests. Psychological Bulletin, 52(4), 281–302."
+    },
+    "tính hiệu lực nội tại": {
+      "canonical_term": "Internal Validity",
+      "canonical_id": "internal-validity",
+      "vietnamese": "Tính hiệu lực nội tại",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Campbell, D. T., & Stanley, J. C. (1963). Experimental and quasi-experimental designs for research. Rand McNally."
+    },
+    "độ xác thực bên trong": {
+      "canonical_term": "Internal Validity",
+      "canonical_id": "internal-validity",
+      "vietnamese": "Độ xác thực bên trong",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Campbell, D. T., & Stanley, J. C. (1963). Experimental and quasi-experimental designs for research. Rand McNally."
+    },
+    "tính khái quát hóa": {
+      "canonical_term": "External Validity",
+      "canonical_id": "external-validity",
+      "vietnamese": "Tính khái quát hóa",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Cook, T. D., & Campbell, D. T. (1979). Quasi-experimentation: Design & analysis issues for field settings. Houghton Mifflin."
+    },
+    "khả năng suy rộng kết quả": {
+      "canonical_term": "External Validity",
+      "canonical_id": "external-validity",
+      "vietnamese": "Khả năng suy rộng kết quả",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Cook, T. D., & Campbell, D. T. (1979). Quasi-experimentation: Design & analysis issues for field settings. Houghton Mifflin."
+    },
+    "biến nội sinh": {
+      "canonical_term": "Endogeneity",
+      "canonical_id": "endogeneity",
+      "vietnamese": "Biến nội sinh",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Wooldridge, J. M. (2010). Econometric analysis of cross section and panel data. MIT press."
+    },
+    "vấn đề nội sinh": {
+      "canonical_term": "Endogeneity",
+      "canonical_id": "endogeneity",
+      "vietnamese": "Vấn đề nội sinh",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Wooldridge, J. M. (2010). Econometric analysis of cross section and panel data. MIT press."
+    },
+    "phương sai phương pháp chung (cmv)": {
+      "canonical_term": "Common Method Bias",
+      "canonical_id": "common-method-bias",
+      "vietnamese": "Phương sai phương pháp chung (CMV)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Podsakoff, P. M., MacKenzie, S. B., Lee, J. Y., & Podsakoff, N. P. (2003). Common method biases in behavioral research. Journal of Applied Psychology, 88(5), 879–903."
+    },
+    "thiên lệch phương pháp thu thập": {
+      "canonical_term": "Common Method Bias",
+      "canonical_id": "common-method-bias",
+      "vietnamese": "Thiên lệch phương pháp thu thập",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Podsakoff, P. M., MacKenzie, S. B., Lee, J. Y., & Podsakoff, N. P. (2003). Common method biases in behavioral research. Journal of Applied Psychology, 88(5), 879–903."
+    },
+    "kiểm chứng chéo đa nguồn": {
+      "canonical_term": "Triangulation",
+      "canonical_id": "triangulation",
+      "vietnamese": "Kiểm chứng chéo đa nguồn",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Denzin, N. K. (1978). The research act: A theoretical introduction to sociological methods. McGraw-Hill."
+    },
+    "kỹ thuật tam giác hóa": {
+      "canonical_term": "Triangulation",
+      "canonical_id": "triangulation",
+      "vietnamese": "Kỹ thuật tam giác hóa",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Denzin, N. K. (1978). The research act: A theoretical introduction to sociological methods. McGraw-Hill."
+    },
+    "biến điều hòa": {
+      "canonical_term": "Moderating Variable",
+      "canonical_id": "moderating-variable",
+      "vietnamese": "Biến điều hòa",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Baron, R. M., & Kenny, D. A. (1986). The moderator-mediator variable distinction in social psychological research. Journal of Personality and Social Psychology, 51(6), 1173–1182."
+    },
+    "biến tương tác": {
+      "canonical_term": "Moderating Variable",
+      "canonical_id": "moderating-variable",
+      "vietnamese": "Biến tương tác",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Baron, R. M., & Kenny, D. A. (1986). The moderator-mediator variable distinction in social psychological research. Journal of Personality and Social Psychology, 51(6), 1173–1182."
+    },
+    "biến can thiệp": {
+      "canonical_term": "Mediating Variable",
+      "canonical_id": "mediating-variable",
+      "vietnamese": "Biến can thiệp",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Preacher, K. J., & Hayes, A. F. (2008). Asymptotic and resampling strategies for assessing and comparing indirect effects in multiple mediator models. Behavior Research Methods, 40(3), 879–891."
+    },
+    "biến cơ chế": {
+      "canonical_term": "Mediating Variable",
+      "canonical_id": "mediating-variable",
+      "vietnamese": "Biến cơ chế",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Preacher, K. J., & Hayes, A. F. (2008). Asymptotic and resampling strategies for assessing and comparing indirect effects in multiple mediator models. Behavior Research Methods, 40(3), 879–891."
+    },
+    "chủ nghĩa hậu thực chứng": {
+      "canonical_term": "Postpositivism",
+      "canonical_id": "postpositivism",
+      "vietnamese": "Chủ nghĩa hậu thực chứng",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Phillips, D. C., & Burbules, N. C. (2000). Postpositivism and educational research. Rowman & Littlefield."
+    },
+    "thế giới quan hậu thực chứng": {
+      "canonical_term": "Postpositivism",
+      "canonical_id": "postpositivism",
+      "vietnamese": "Thế giới quan hậu thực chứng",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Phillips, D. C., & Burbules, N. C. (2000). Postpositivism and educational research. Rowman & Littlefield."
+    },
+    "chủ nghĩa kiến tạo": {
+      "canonical_term": "Social Constructivism",
+      "canonical_id": "social-constructivism",
+      "vietnamese": "Chủ nghĩa kiến tạo",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Berger, P. L., & Luckmann, T. (1966). The social construction of reality: A treatise in the sociology of knowledge. Anchor Books."
+    },
+    "thế giới quan diễn giải": {
+      "canonical_term": "Social Constructivism",
+      "canonical_id": "social-constructivism",
+      "vietnamese": "Thế giới quan diễn giải",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Berger, P. L., & Luckmann, T. (1966). The social construction of reality: A treatise in the sociology of knowledge. Anchor Books."
+    },
+    "thế giới quan thực dụng": {
+      "canonical_term": "Pragmatism",
+      "canonical_id": "pragmatism",
+      "vietnamese": "Thế giới quan thực dụng",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Morgan, D. L. (2007). Paradigms lost and pragmatism regained: Methodological implications of combining qualitative and quantitative methods. Journal of Mixed Methods Research, 1(1), 48–76."
+    },
+    "triết học hành động": {
+      "canonical_term": "Pragmatism",
+      "canonical_id": "pragmatism",
+      "vietnamese": "Triết học hành động",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Morgan, D. L. (2007). Paradigms lost and pragmatism regained: Methodological implications of combining qualitative and quantitative methods. Journal of Mixed Methods Research, 1(1), 48–76."
+    },
+    "thiết kế song song hội tụ": {
+      "canonical_term": "Convergent Mixed Methods Design",
+      "canonical_id": "convergent-design",
+      "vietnamese": "Thiết kế song song hội tụ",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and conducting mixed methods research (3rd ed.). SAGE Publications."
+    },
+    "mô hình hỗn hợp đồng thời": {
+      "canonical_term": "Convergent Mixed Methods Design",
+      "canonical_id": "convergent-design",
+      "vietnamese": "Mô hình hỗn hợp đồng thời",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and conducting mixed methods research (3rd ed.). SAGE Publications."
+    },
+    "thiết kế hỗn hợp hai giai đoạn định lượng trước": {
+      "canonical_term": "Explanatory Sequential Design",
+      "canonical_id": "explanatory-sequential-design",
+      "vietnamese": "Thiết kế hỗn hợp hai giai đoạn định lượng trước",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Ivankova, N. V., Creswell, J. W., & Stick, S. L. (2006). Using mixed-methods sequential explanatory design: From theory to practice. Field Methods, 18(1), 3–20."
+    },
+    "thiết kế phát triển công cụ thang đo": {
+      "canonical_term": "Exploratory Sequential Design",
+      "canonical_id": "exploratory-sequential-design",
+      "vietnamese": "Thiết kế phát triển công cụ thang đo",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and conducting mixed methods research (3rd ed.). SAGE Publications."
+    },
+    "chọn mẫu chủ đích": {
+      "canonical_term": "Purposive Sampling",
+      "canonical_id": "purposive-sampling",
+      "vietnamese": "Chọn mẫu chủ đích",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Patton, M. Q. (2015). Qualitative research & evaluation methods (4th ed.). SAGE Publications."
+    },
+    "chọn mẫu phán đoán (judgmental)": {
+      "canonical_term": "Purposive Sampling",
+      "canonical_id": "purposive-sampling",
+      "vietnamese": "Chọn mẫu phán đoán (Judgmental)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Patton, M. Q. (2015). Qualitative research & evaluation methods (4th ed.). SAGE Publications."
+    },
+    "bão hòa lý thuyết (theoretical saturation)": {
+      "canonical_term": "Data Saturation",
+      "canonical_id": "data-saturation",
+      "vietnamese": "Bão hòa lý thuyết (Theoretical saturation)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Glaser, B. G., & Strauss, A. L. (1967). The discovery of grounded theory: Strategies for qualitative research. Aldine."
+    },
+    "xác thực bởi người tham gia (participant validation)": {
+      "canonical_term": "Member Checking",
+      "canonical_id": "member-checking",
+      "vietnamese": "Xác thực bởi người tham gia (Participant validation)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications."
+    },
+    "tự phản tỉnh của nhà nghiên cứu": {
+      "canonical_term": "Reflexivity",
+      "canonical_id": "reflexivity",
+      "vietnamese": "Tự phản tỉnh của nhà nghiên cứu",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Finlay, L. (2002). Negotiating the swamp: The opportunity and challenge of reflexivity in research practice. Qualitative Research, 2(2), 209–230."
+    },
+    "tự nhận thức định kiến": {
+      "canonical_term": "Reflexivity",
+      "canonical_id": "reflexivity",
+      "vietnamese": "Tự nhận thức định kiến",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Finlay, L. (2002). Negotiating the swamp: The opportunity and challenge of reflexivity in research practice. Qualitative Research, 2(2), 209–230."
+    },
+    "lý thuyết bắt nguồn từ dữ liệu": {
+      "canonical_term": "Grounded Theory",
+      "canonical_id": "grounded-theory",
+      "vietnamese": "Lý thuyết bắt nguồn từ dữ liệu",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Charmaz, K. (2014). Constructing grounded theory (2nd ed.). SAGE Publications."
+    },
+    "phương pháp lý thuyết nền tảng": {
+      "canonical_term": "Grounded Theory",
+      "canonical_id": "grounded-theory",
+      "vietnamese": "Phương pháp lý thuyết nền tảng",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Charmaz, K. (2014). Constructing grounded theory (2nd ed.). SAGE Publications."
+    },
+    "phương pháp hiện tượng học": {
+      "canonical_term": "Phenomenological Research",
+      "canonical_id": "phenomenology",
+      "vietnamese": "Phương pháp hiện tượng học",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Moustakas, C. (1994). Phenomenological research methods. SAGE Publications."
+    },
+    "nghiên cứu điển cứu": {
+      "canonical_term": "Case Study Research",
+      "canonical_id": "case-study",
+      "vietnamese": "Nghiên cứu điển cứu",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Yin, R. K. (2018). Case study research and applications: Design and methods (6th ed.). SAGE Publications."
+    },
+    "tính thỏa đáng phân biệt": {
+      "canonical_term": "Discriminant Validity (HTMT Criterion)",
+      "canonical_id": "discriminant-validity-htmt",
+      "vietnamese": "Tính thỏa đáng phân biệt",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Henseler, J., Ringle, C. M., & Sarstedt, M. (2015). A new criterion for assessing discriminant validity in variance-based structural equation modeling. Journal of the Academy of Marketing Science, 43(1), 115–135."
+    },
+    "giá trị phân biệt giữa các khái niệm": {
+      "canonical_term": "Discriminant Validity (HTMT Criterion)",
+      "canonical_id": "discriminant-validity-htmt",
+      "vietnamese": "Giá trị phân biệt giữa các khái niệm",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Henseler, J., Ringle, C. M., & Sarstedt, M. (2015). A new criterion for assessing discriminant validity in variance-based structural equation modeling. Journal of the Academy of Marketing Science, 43(1), 115–135."
+    },
+    "tiêu chuẩn tỷ số tương quan dị biệt - đồng nhất": {
+      "canonical_term": "Discriminant Validity (HTMT Criterion)",
+      "canonical_id": "discriminant-validity-htmt",
+      "vietnamese": "Tiêu chuẩn tỷ số tương quan dị biệt - đồng nhất",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Henseler, J., Ringle, C. M., & Sarstedt, M. (2015). A new criterion for assessing discriminant validity in variance-based structural equation modeling. Journal of the Academy of Marketing Science, 43(1), 115–135."
+    },
+    "tính thỏa đáng hội tụ": {
+      "canonical_term": "Convergent Validity (AVE Criterion)",
+      "canonical_id": "convergent-validity-ave",
+      "vietnamese": "Tính thỏa đáng hội tụ",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Fornell, C., & Larcker, D. F. (1981). Evaluating structural equation models with unobservable variables and measurement error. Journal of Marketing Research, 18(1), 39–50."
+    },
+    "giá trị hội tụ thang đo": {
+      "canonical_term": "Convergent Validity (AVE Criterion)",
+      "canonical_id": "convergent-validity-ave",
+      "vietnamese": "Giá trị hội tụ thang đo",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Fornell, C., & Larcker, D. F. (1981). Evaluating structural equation models with unobservable variables and measurement error. Journal of Marketing Research, 18(1), 39–50."
+    },
+    "phương sai trích trung bình": {
+      "canonical_term": "Convergent Validity (AVE Criterion)",
+      "canonical_id": "convergent-validity-ave",
+      "vietnamese": "Phương sai trích trung bình",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Fornell, C., & Larcker, D. F. (1981). Evaluating structural equation models with unobservable variables and measurement error. Journal of Marketing Research, 18(1), 39–50."
+    },
+    "mô hình phản ánh vs. mô hình cấu thành": {
+      "canonical_term": "Reflective vs. Formative Measurement Models",
+      "canonical_id": "reflective-vs-formative",
+      "vietnamese": "Mô hình phản ánh vs. Mô hình cấu thành",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Jarvis, C. B., MacKenzie, S. B., & Podsakoff, P. M. (2003). A critical review of construct indicators and measurement model misspecification within the marketing and consumer research disciplines. Journal of Consumer Research, 30(2), 199–218."
+    },
+    "chỉ báo kết quả vs. chỉ báo nguyên nhân": {
+      "canonical_term": "Reflective vs. Formative Measurement Models",
+      "canonical_id": "reflective-vs-formative",
+      "vietnamese": "Chỉ báo kết quả vs. Chỉ báo nguyên nhân",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Jarvis, C. B., MacKenzie, S. B., & Podsakoff, P. M. (2003). A critical review of construct indicators and measurement model misspecification within the marketing and consumer research disciplines. Journal of Consumer Research, 30(2), 199–218."
+    },
+    "mô hình đo lường xuôi vs. ngược": {
+      "canonical_term": "Reflective vs. Formative Measurement Models",
+      "canonical_id": "reflective-vs-formative",
+      "vietnamese": "Mô hình đo lường xuôi vs. ngược",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Jarvis, C. B., MacKenzie, S. B., & Podsakoff, P. M. (2003). A critical review of construct indicators and measurement model misspecification within the marketing and consumer research disciplines. Journal of Consumer Research, 30(2), 199–218."
+    },
+    "hiện tượng cộng tuyến đa biến": {
+      "canonical_term": "Multicollinearity & VIF (Variance Inflation Factor)",
+      "canonical_id": "multicollinearity-vif",
+      "vietnamese": "Hiện tượng cộng tuyến đa biến",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2018). Multivariate data analysis (8th ed.). Cengage Learning."
+    },
+    "độ phóng đại phương sai": {
+      "canonical_term": "Multicollinearity & VIF (Variance Inflation Factor)",
+      "canonical_id": "multicollinearity-vif",
+      "vietnamese": "Độ phóng đại phương sai",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2018). Multivariate data analysis (8th ed.). Cengage Learning."
+    },
+    "trùng lặp thông tin giữa các biến độc lập": {
+      "canonical_term": "Multicollinearity & VIF (Variance Inflation Factor)",
+      "canonical_id": "multicollinearity-vif",
+      "vietnamese": "Trùng lặp thông tin giữa các biến độc lập",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2018). Multivariate data analysis (8th ed.). Cengage Learning."
+    },
+    "mô hình trung gian - điều tiết kết hợp": {
+      "canonical_term": "Conditional Process Analysis (Moderated Mediation)",
+      "canonical_id": "conditional-process-analysis",
+      "vietnamese": "Mô hình trung gian - điều tiết kết hợp",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Hayes, A. F. (2015). An index and test of linear moderated mediation. Multivariate Behavioral Research, 50(1), 1–22."
+    },
+    "tác động gián tiếp có điều kiện": {
+      "canonical_term": "Conditional Process Analysis (Moderated Mediation)",
+      "canonical_id": "conditional-process-analysis",
+      "vietnamese": "Tác động gián tiếp có điều kiện",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Hayes, A. F. (2015). An index and test of linear moderated mediation. Multivariate Behavioral Research, 50(1), 1–22."
+    },
+    "phân tích cơ chế và điều kiện biên": {
+      "canonical_term": "Conditional Process Analysis (Moderated Mediation)",
+      "canonical_id": "conditional-process-analysis",
+      "vietnamese": "Phân tích cơ chế và điều kiện biên",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Hayes, A. F. (2015). An index and test of linear moderated mediation. Multivariate Behavioral Research, 50(1), 1–22."
+    },
+    "phương pháp xác định vùng ý nghĩa thống kê": {
+      "canonical_term": "Johnson-Neyman Technique (Floodlight Analysis)",
+      "canonical_id": "johnson-neyman-technique",
+      "vietnamese": "Phương pháp xác định vùng ý nghĩa thống kê",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Spiller, S. A., Fitzsimons, G. J., Lynch, J. G., & McClelland, G. H. (2013). Spotlights, floodlights, and the magic number zero: Simple effects tests in moderated regression. Journal of Marketing Research, 50(2), 277–288."
+    },
+    "dò tìm ngưỡng biến điều tiết": {
+      "canonical_term": "Johnson-Neyman Technique (Floodlight Analysis)",
+      "canonical_id": "johnson-neyman-technique",
+      "vietnamese": "Dò tìm ngưỡng biến điều tiết",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Spiller, S. A., Fitzsimons, G. J., Lynch, J. G., & McClelland, G. H. (2013). Spotlights, floodlights, and the magic number zero: Simple effects tests in moderated regression. Journal of Marketing Research, 50(2), 277–288."
+    },
+    "kỹ thuật floodlight": {
+      "canonical_term": "Johnson-Neyman Technique (Floodlight Analysis)",
+      "canonical_id": "johnson-neyman-technique",
+      "vietnamese": "Kỹ thuật Floodlight",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Spiller, S. A., Fitzsimons, G. J., Lynch, J. G., & McClelland, G. H. (2013). Spotlights, floodlights, and the magic number zero: Simple effects tests in moderated regression. Journal of Marketing Research, 50(2), 277–288."
+    },
+    "đồ thị nhân quả dag": {
+      "canonical_term": "Directed Acyclic Graphs (DAGs)",
+      "canonical_id": "directed-acyclic-graphs-dags",
+      "vietnamese": "Đồ thị nhân quả DAG",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Pearl, J. (2009). Causality: Models, reasoning, and inference (2nd ed.). Cambridge University Press."
+    },
+    "sơ đồ nhân quả judea pearl": {
+      "canonical_term": "Directed Acyclic Graphs (DAGs)",
+      "canonical_id": "directed-acyclic-graphs-dags",
+      "vietnamese": "Sơ đồ nhân quả Judea Pearl",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Pearl, J. (2009). Causality: Models, reasoning, and inference (2nd ed.). Cambridge University Press."
+    },
+    "mạng lưới nhân quả không chu trình": {
+      "canonical_term": "Directed Acyclic Graphs (DAGs)",
+      "canonical_id": "directed-acyclic-graphs-dags",
+      "vietnamese": "Mạng lưới nhân quả không chu trình",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Pearl, J. (2009). Causality: Models, reasoning, and inference (2nd ed.). Cambridge University Press."
+    },
+    "lý thuyết điểm số thực vs. lý thuyết đặc trưng câu hỏi": {
+      "canonical_term": "Classical Test Theory (CTT) vs. Item Response Theory (IRT)",
+      "canonical_id": "classical-test-theory-vs-irt",
+      "vietnamese": "Lý thuyết điểm số thực vs. Lý thuyết đặc trưng câu hỏi",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "DeVellis, R. F. (2016). Scale development: Theory and applications (4th ed.). SAGE Publications."
+    },
+    "ctt đối chiếu irt": {
+      "canonical_term": "Classical Test Theory (CTT) vs. Item Response Theory (IRT)",
+      "canonical_id": "classical-test-theory-vs-irt",
+      "vietnamese": "CTT đối chiếu IRT",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "DeVellis, R. F. (2016). Scale development: Theory and applications (4th ed.). SAGE Publications."
+    },
+    "tâm trắc học cổ điển và hiện đại": {
+      "canonical_term": "Classical Test Theory (CTT) vs. Item Response Theory (IRT)",
+      "canonical_id": "classical-test-theory-vs-irt",
+      "vietnamese": "Tâm trắc học cổ điển và hiện đại",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "DeVellis, R. F. (2016). Scale development: Theory and applications (4th ed.). SAGE Publications."
+    },
+    "hệ số omega phân cấp": {
+      "canonical_term": "McDonald's Coefficient Omega vs. Cronbach's Alpha",
+      "canonical_id": "mcdonalds-omega-vs-alpha",
+      "vietnamese": "Hệ số Omega phân cấp",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "McDonald, R. P. (1999). Test theory: A unified treatment. Lawrence Erlbaum Associates."
+    },
+    "hệ số tin cậy omega đối chiếu alpha": {
+      "canonical_term": "McDonald's Coefficient Omega vs. Cronbach's Alpha",
+      "canonical_id": "mcdonalds-omega-vs-alpha",
+      "vietnamese": "Hệ số tin cậy Omega đối chiếu Alpha",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "McDonald, R. P. (1999). Test theory: A unified treatment. Lawrence Erlbaum Associates."
+    },
+    "độ tin cậy thang đo không tương đương tau": {
+      "canonical_term": "McDonald's Coefficient Omega vs. Cronbach's Alpha",
+      "canonical_id": "mcdonalds-omega-vs-alpha",
+      "vietnamese": "Độ tin cậy thang đo không tương đương tau",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "McDonald, R. P. (1999). Test theory: A unified treatment. Lawrence Erlbaum Associates."
+    },
+    "thực chứng luận khoa học": {
+      "canonical_term": "Scientific Realism in Business & Social Science",
+      "canonical_id": "scientific-realism-hunt",
+      "vietnamese": "Thực chứng luận khoa học",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Hunt, S. D. (1990). Truth in marketing theory and research. Journal of Marketing, 54(3), 1–15."
+    },
+    "bản thể luận thực tại khách quan": {
+      "canonical_term": "Scientific Realism in Business & Social Science",
+      "canonical_id": "scientific-realism-hunt",
+      "vietnamese": "Bản thể luận thực tại khách quan",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Hunt, S. D. (1990). Truth in marketing theory and research. Journal of Marketing, 54(3), 1–15."
+    },
+    "thực tại luận khoa học": {
+      "canonical_term": "Scientific Realism in Business & Social Science",
+      "canonical_id": "scientific-realism-hunt",
+      "vietnamese": "Thực tại luận khoa học",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Hunt, S. D. (1990). Truth in marketing theory and research. Journal of Marketing, 54(3), 1–15."
+    },
+    "lý thuyết cạnh tranh dựa trên nguồn lực": {
+      "canonical_term": "Resource-Advantage (R-A) Theory of Competition",
+      "canonical_id": "resource-advantage-theory",
+      "vietnamese": "Lý thuyết cạnh tranh dựa trên nguồn lực",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Hunt, S. D., & Morgan, R. M. (1995). The comparative advantage theory of competition. Journal of Marketing, 59(2), 1–15."
+    },
+    "mô hình cạnh tranh động r-a": {
+      "canonical_term": "Resource-Advantage (R-A) Theory of Competition",
+      "canonical_id": "resource-advantage-theory",
+      "vietnamese": "Mô hình cạnh tranh động R-A",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Hunt, S. D., & Morgan, R. M. (1995). The comparative advantage theory of competition. Journal of Marketing, 59(2), 1–15."
+    },
+    "lý thuyết lợi thế so sánh nguồn lực": {
+      "canonical_term": "Resource-Advantage (R-A) Theory of Competition",
+      "canonical_id": "resource-advantage-theory",
+      "vietnamese": "Lý thuyết lợi thế so sánh nguồn lực",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Hunt, S. D., & Morgan, R. M. (1995). The comparative advantage theory of competition. Journal of Marketing, 59(2), 1–15."
+    },
+    "thông diễn học cấu trúc khách quan oevermann": {
+      "canonical_term": "Objective Hermeneutics & Sequential Analysis",
+      "canonical_id": "objective-hermeneutics",
+      "vietnamese": "Thông diễn học cấu trúc khách quan Oevermann",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Oevermann, U. (1979). Die Methodologie einer objektiven Hermeneutik. In H.-G. Soeffner (Ed.), Interpretative Verfahren in den Sozial- und Textwissenschaften (pp. 352–434). Metzler."
+    },
+    "phương pháp phân tích ý nghĩa tiềm ẩn": {
+      "canonical_term": "Objective Hermeneutics & Sequential Analysis",
+      "canonical_id": "objective-hermeneutics",
+      "vietnamese": "Phương pháp phân tích ý nghĩa tiềm ẩn",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Oevermann, U. (1979). Die Methodologie einer objektiven Hermeneutik. In H.-G. Soeffner (Ed.), Interpretative Verfahren in den Sozial- und Textwissenschaften (pp. 352–434). Metzler."
+    },
+    "phân tích tuần tự vi mô": {
+      "canonical_term": "Objective Hermeneutics & Sequential Analysis",
+      "canonical_id": "objective-hermeneutics",
+      "vietnamese": "Phân tích tuần tự vi mô",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Oevermann, U. (1979). Die Methodologie einer objektiven Hermeneutik. In H.-G. Soeffner (Ed.), Interpretative Verfahren in den Sozial- und Textwissenschaften (pp. 352–434). Metzler."
+    },
+    "phân tích nội dung có hệ thống mayring": {
+      "canonical_term": "Qualitative Content Analysis (Mayring)",
+      "canonical_id": "qualitative-content-analysis-mayring",
+      "vietnamese": "Phân tích nội dung có hệ thống Mayring",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Mayring, P. (2000). Qualitative content analysis. Forum Qualitative Sozialforschung / Forum: Qualitative Social Research, 1(2), Art. 20."
+    },
+    "phát triển phạm trù quy nạp và diễn dịch": {
+      "canonical_term": "Qualitative Content Analysis (Mayring)",
+      "canonical_id": "qualitative-content-analysis-mayring",
+      "vietnamese": "Phát triển phạm trù quy nạp và diễn dịch",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Mayring, P. (2000). Qualitative content analysis. Forum Qualitative Sozialforschung / Forum: Qualitative Social Research, 1(2), Art. 20."
+    },
+    "phương pháp mã hóa văn bản chuẩn mực": {
+      "canonical_term": "Qualitative Content Analysis (Mayring)",
+      "canonical_id": "qualitative-content-analysis-mayring",
+      "vietnamese": "Phương pháp mã hóa văn bản chuẩn mực",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Mayring, P. (2000). Qualitative content analysis. Forum Qualitative Sozialforschung / Forum: Qualitative Social Research, 1(2), Art. 20."
+    },
+    "độ chuẩn xác kết luận thống kê": {
+      "canonical_term": "Statistical Conclusion Validity (SCC)",
+      "canonical_id": "statistical-conclusion-validity-scc",
+      "vietnamese": "Độ chuẩn xác kết luận thống kê",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin."
+    },
+    "giá trị kết luận thống kê thực nghiệm": {
+      "canonical_term": "Statistical Conclusion Validity (SCC)",
+      "canonical_id": "statistical-conclusion-validity-scc",
+      "vietnamese": "Giá trị kết luận thống kê thực nghiệm",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin."
+    },
+    "hợp lệ thống kê scc": {
+      "canonical_term": "Statistical Conclusion Validity (SCC)",
+      "canonical_id": "statistical-conclusion-validity-scc",
+      "vietnamese": "Hợp lệ thống kê SCC",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin."
+    },
+    "mô hình hồi quy đứt gãy": {
+      "canonical_term": "Regression Discontinuity Design (RDD)",
+      "canonical_id": "regression-discontinuity-design-rdd",
+      "vietnamese": "Mô hình hồi quy đứt gãy",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Thistlethwaite, D. L., & Campbell, D. T. (1960). Regression-discontinuity analysis: An alternative to the ex post facto experiment. Journal of Educational Psychology, 51(6), 309–317."
+    },
+    "phương pháp bán thực nghiệm điểm cắt": {
+      "canonical_term": "Regression Discontinuity Design (RDD)",
+      "canonical_id": "regression-discontinuity-design-rdd",
+      "vietnamese": "Phương pháp bán thực nghiệm điểm cắt",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Thistlethwaite, D. L., & Campbell, D. T. (1960). Regression-discontinuity analysis: An alternative to the ex post facto experiment. Journal of Educational Psychology, 51(6), 309–317."
+    },
+    "thiết kế gián đoạn hồi quy": {
+      "canonical_term": "Regression Discontinuity Design (RDD)",
+      "canonical_id": "regression-discontinuity-design-rdd",
+      "vietnamese": "Thiết kế gián đoạn hồi quy",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Thistlethwaite, D. L., & Campbell, D. T. (1960). Regression-discontinuity analysis: An alternative to the ex post facto experiment. Journal of Educational Psychology, 51(6), 309–317."
+    },
+    "cây phả hệ câu hỏi nghiên cứu kinh doanh": {
+      "canonical_term": "Management-Research Question Hierarchy",
+      "canonical_id": "management-research-question-hierarchy",
+      "vietnamese": "Cây phả hệ câu hỏi nghiên cứu kinh doanh",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Cooper, D. R., & Schindler, P. S. (2014). Business research methods (12th ed.). McGraw-Hill."
+    },
+    "hệ thống phân cấp câu hỏi 4 cấp độ": {
+      "canonical_term": "Management-Research Question Hierarchy",
+      "canonical_id": "management-research-question-hierarchy",
+      "vietnamese": "Hệ thống phân cấp câu hỏi 4 cấp độ",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Cooper, D. R., & Schindler, P. S. (2014). Business research methods (12th ed.). McGraw-Hill."
+    },
+    "chu trình chuyển hóa bài toán thực tiễn thành đo lường": {
+      "canonical_term": "Management-Research Question Hierarchy",
+      "canonical_id": "management-research-question-hierarchy",
+      "vietnamese": "Chu trình chuyển hóa bài toán thực tiễn thành đo lường",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Cooper, D. R., & Schindler, P. S. (2014). Business research methods (12th ed.). McGraw-Hill."
+    },
+    "khung quản trị sai số khảo sát toàn diện": {
+      "canonical_term": "Total Survey Error (TSE)",
+      "canonical_id": "total-survey-error-tse",
+      "vietnamese": "Khung quản trị sai số khảo sát toàn diện",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Groves, R. M., & Lyberg, L. (2010). Total survey error: Past, present, and future. Public Opinion Quarterly, 74(5), 849–879."
+    },
+    "lý thuyết sai số điều tra xã hội học": {
+      "canonical_term": "Total Survey Error (TSE)",
+      "canonical_id": "total-survey-error-tse",
+      "vietnamese": "Lý thuyết sai số điều tra xã hội học",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Groves, R. M., & Lyberg, L. (2010). Total survey error: Past, present, and future. Public Opinion Quarterly, 74(5), 849–879."
+    },
+    "mô hình tích hợp sai số khảo sát": {
+      "canonical_term": "Total Survey Error (TSE)",
+      "canonical_id": "total-survey-error-tse",
+      "vietnamese": "Mô hình tích hợp sai số khảo sát",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Groves, R. M., & Lyberg, L. (2010). Total survey error: Past, present, and future. Public Opinion Quarterly, 74(5), 849–879."
+    },
+    "tính tương đương của thang đo": {
+      "canonical_term": "Measurement Invariance (Measurement Equivalence)",
+      "canonical_id": "measurement-invariance",
+      "vietnamese": "Tính tương đương của thang đo",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Vandenberg, R. J., & Lance, C. E. (2000). A review and synthesis of the measurement invariance literature: Suggestions, practices, and recommendations for organizational research. Organizational Research Methods, 3(1), 4–70."
+    },
+    "bất biến cấu trúc đa nhóm": {
+      "canonical_term": "Measurement Invariance (Measurement Equivalence)",
+      "canonical_id": "measurement-invariance",
+      "vietnamese": "Bất biến cấu trúc đa nhóm",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Vandenberg, R. J., & Lance, C. E. (2000). A review and synthesis of the measurement invariance literature: Suggestions, practices, and recommendations for organizational research. Organizational Research Methods, 3(1), 4–70."
+    },
+    "độ tương đương đo lường xuyên văn hóa": {
+      "canonical_term": "Measurement Invariance (Measurement Equivalence)",
+      "canonical_id": "measurement-invariance",
+      "vietnamese": "Độ tương đương đo lường xuyên văn hóa",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "Vandenberg, R. J., & Lance, C. E. (2000). A review and synthesis of the measurement invariance literature: Suggestions, practices, and recommendations for organizational research. Organizational Research Methods, 3(1), 4–70."
+    },
+    "quy trình định tính gioia (đh kinh tế quốc dân, đh ngoại thương)": {
+      "canonical_term": "Gioia Methodology",
+      "canonical_id": "gioia-methodology",
+      "vietnamese": "Quy trình định tính Gioia (ĐH Kinh tế Quốc dân, ĐH Ngoại thương)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "khung phân tích dữ liệu cảm thông có hệ thống (đh kinh tế tp.hcm)": {
+      "canonical_term": "Gioia Methodology",
+      "canonical_id": "gioia-methodology",
+      "vietnamese": "Khung phân tích dữ liệu cảm thông có hệ thống (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "phân tích chủ đề phản tư (đh sư phạm hà nội, đh khxh&nv)": {
+      "canonical_term": "Thematic Analysis",
+      "canonical_id": "thematic-analysis",
+      "vietnamese": "Phân tích chủ đề phản tư (ĐH Sư phạm Hà Nội, ĐH KHXH&NV)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "phương pháp phân tích chuyên đề (đh kinh tế tp.hcm)": {
+      "canonical_term": "Thematic Analysis",
+      "canonical_id": "thematic-analysis",
+      "vietnamese": "Phương pháp phân tích chuyên đề (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "hồi quy biến công cụ (đh ngoại thương, đh kinh tế quốc dân)": {
+      "canonical_term": "Instrumental Variables (IV / 2SLS)",
+      "canonical_id": "instrumental-variables",
+      "vietnamese": "Hồi quy biến công cụ (ĐH Ngoại thương, ĐH Kinh tế Quốc dân)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "kỹ thuật kiểm soát nội sinh iv/2sls (đh kinh tế tp.hcm)": {
+      "canonical_term": "Instrumental Variables (IV / 2SLS)",
+      "canonical_id": "instrumental-variables",
+      "vietnamese": "Kỹ thuật kiểm soát nội sinh IV/2SLS (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "phương pháp sai biệt kép (đh kinh tế tp.hcm)": {
+      "canonical_term": "Difference-in-Differences (DID)",
+      "canonical_id": "difference-in-differences",
+      "vietnamese": "Phương pháp sai biệt kép (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "mô hình ước lượng did (đh kinh tế quốc dân)": {
+      "canonical_term": "Difference-in-Differences (DID)",
+      "canonical_id": "difference-in-differences",
+      "vietnamese": "Mô hình ước lượng DID (ĐH Kinh tế Quốc dân)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "ghép nối xu hướng (đh ngoại thương)": {
+      "canonical_term": "Propensity Score Matching (PSM)",
+      "canonical_id": "propensity-score-matching",
+      "vietnamese": "Ghép nối xu hướng (ĐH Ngoại thương)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "kỹ thuật kiểm soát sai lệch chọn mẫu psm (đh kinh tế tp.hcm)": {
+      "canonical_term": "Propensity Score Matching (PSM)",
+      "canonical_id": "propensity-score-matching",
+      "vietnamese": "Kỹ thuật kiểm soát sai lệch chọn mẫu PSM (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "tổng quan có hệ thống (đh y dược, đh quốc gia hà nội)": {
+      "canonical_term": "Systematic Literature Review (SLR)",
+      "canonical_id": "systematic-literature-review",
+      "vietnamese": "Tổng quan có hệ thống (ĐH Y Dược, ĐH Quốc gia Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "tổng kết tài liệu khoa học chuẩn mực (đh kinh tế tp.hcm)": {
+      "canonical_term": "Systematic Literature Review (SLR)",
+      "canonical_id": "systematic-literature-review",
+      "vietnamese": "Tổng kết tài liệu khoa học chuẩn mực (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "nghiên cứu trắc lượng khoa học (đh quốc gia tp.hcm)": {
+      "canonical_term": "Bibliometric Analysis",
+      "canonical_id": "bibliometric-analysis",
+      "vietnamese": "Nghiên cứu trắc lượng khoa học (ĐH Quốc gia TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "phân tích mạng lưới trích dẫn (đh kinh tế quốc dân)": {
+      "canonical_term": "Bibliometric Analysis",
+      "canonical_id": "bibliometric-analysis",
+      "vietnamese": "Phân tích mạng lưới trích dẫn (ĐH Kinh tế Quốc dân)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "thiên vị công bố (đh y dược tp.hcm)": {
+      "canonical_term": "Publication Bias & Funnel Plot",
+      "canonical_id": "publication-bias",
+      "vietnamese": "Thiên vị công bố (ĐH Y Dược TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "sai lệch ấn phẩm khoa học (đh kinh tế quốc dân)": {
+      "canonical_term": "Publication Bias & Funnel Plot",
+      "canonical_id": "publication-bias",
+      "vietnamese": "Sai lệch ấn phẩm khoa học (ĐH Kinh tế Quốc dân)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "câu giá trị p / ép số liệu (đh quốc gia hà nội)": {
+      "canonical_term": "P-Hacking & Questionable Research Practices",
+      "canonical_id": "p-hacking",
+      "vietnamese": "Câu giá trị p / Ép số liệu (ĐH Quốc gia Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "thao túng thống kê có chủ đích (đh kinh tế tp.hcm)": {
+      "canonical_term": "P-Hacking & Questionable Research Practices",
+      "canonical_id": "p-hacking",
+      "vietnamese": "Thao túng thống kê có chủ đích (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "mô hình hiệu chỉnh heckman (đh ngoại thương)": {
+      "canonical_term": "Heckman Two-Stage Selection Model",
+      "canonical_id": "heckman-selection-model",
+      "vietnamese": "Mô hình hiệu chỉnh Heckman (ĐH Ngoại thương)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "hồi quy heckit xử lý thiên lệch chọn mẫu (đh kinh tế tp.hcm)": {
+      "canonical_term": "Heckman Two-Stage Selection Model",
+      "canonical_id": "heckman-selection-model",
+      "vietnamese": "Hồi quy Heckit xử lý thiên lệch chọn mẫu (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "phương pháp đối chứng tổng hợp (đh kinh tế tp.hcm, viện hàn lâm khxh)": {
+      "canonical_term": "Synthetic Control Method (SCM)",
+      "canonical_id": "synthetic-control-method",
+      "vietnamese": "Phương pháp đối chứng tổng hợp (ĐH Kinh tế TP.HCM, Viện Hàn lâm KHXH)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "kỹ thuật kiểm soát nhân tạo (đh kinh tế quốc dân)": {
+      "canonical_term": "Synthetic Control Method (SCM)",
+      "canonical_id": "synthetic-control-method",
+      "vietnamese": "Kỹ thuật kiểm soát nhân tạo (ĐH Kinh tế Quốc dân)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "chủ nghĩa khả bác (đh khxh&nv, đh sư phạm hà nội)": {
+      "canonical_term": "Falsificationism (Karl Popper)",
+      "canonical_id": "falsificationism",
+      "vietnamese": "Chủ nghĩa khả bác (ĐH KHXH&NV, ĐH Sư phạm Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "nguyên lý bác bỏ sai lầm (đh quốc gia tp.hcm)": {
+      "canonical_term": "Falsificationism (Karl Popper)",
+      "canonical_id": "falsificationism",
+      "vietnamese": "Nguyên lý bác bỏ sai lầm (ĐH Quốc gia TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "bước ngoặt hệ hình (đh khoa học xã hội & nhân văn)": {
+      "canonical_term": "Paradigm Shift (Thomas Kuhn)",
+      "canonical_id": "paradigm-shift",
+      "vietnamese": "Bước ngoặt hệ hình (ĐH Khoa học Xã hội & Nhân văn)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "cách mạng hệ hình nghiên cứu (đh kinh tế quốc dân)": {
+      "canonical_term": "Paradigm Shift (Thomas Kuhn)",
+      "canonical_id": "paradigm-shift",
+      "vietnamese": "Cách mạng hệ hình nghiên cứu (ĐH Kinh tế Quốc dân)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "biến tiềm ẩn bậc hai (đh kinh tế tp.hcm)": {
+      "canonical_term": "Higher-Order Constructs (HOCs)",
+      "canonical_id": "second-order-constructs",
+      "vietnamese": "Biến tiềm ẩn bậc hai (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "mô hình cấu trúc thứ bậc (đh ngoại thương, đh quốc gia hà nội)": {
+      "canonical_term": "Higher-Order Constructs (HOCs)",
+      "canonical_id": "second-order-constructs",
+      "vietnamese": "Mô hình cấu trúc thứ bậc (ĐH Ngoại thương, ĐH Quốc gia Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "hiệu ứng phản ứng của người quan sát (đh khxh&nv)": {
+      "canonical_term": "Hawthorne Effect & Demand Characteristics",
+      "canonical_id": "hawthorne-effect",
+      "vietnamese": "Hiệu ứng phản ứng của người quan sát (ĐH KHXH&NV)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "sai lệch do đối tượng nhận thức được theo dõi (đh kinh tế tp.hcm)": {
+      "canonical_term": "Hawthorne Effect & Demand Characteristics",
+      "canonical_id": "hawthorne-effect",
+      "vietnamese": "Sai lệch do đối tượng nhận thức được theo dõi (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "thực nghiệm ngẫu nhiên có kiểm soát (đh y hà nội, đh y dược tp.hcm)": {
+      "canonical_term": "Randomized Controlled Trial (RCT)",
+      "canonical_id": "randomized-controlled-trial",
+      "vietnamese": "Thực nghiệm ngẫu nhiên có kiểm soát (ĐH Y Hà Nội, ĐH Y Dược TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "nghiên cứu can thiệp ngẫu nhiên (đh kinh tế quốc dân)": {
+      "canonical_term": "Randomized Controlled Trial (RCT)",
+      "canonical_id": "randomized-controlled-trial",
+      "vietnamese": "Nghiên cứu can thiệp ngẫu nhiên (ĐH Kinh tế Quốc dân)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "quy trình lấy ý kiến chuyên gia delphi (đh quốc gia hà nội)": {
+      "canonical_term": "Delphi Technique",
+      "canonical_id": "delphi-technique",
+      "vietnamese": "Quy trình lấy ý kiến chuyên gia Delphi (ĐH Quốc gia Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "kỹ thuật dự báo delphi (đh kinh tế tp.hcm)": {
+      "canonical_term": "Delphi Technique",
+      "canonical_id": "delphi-technique",
+      "vietnamese": "Kỹ thuật dự báo Delphi (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "hiện thực phê phán (đh kinh tế tp.hcm, đh khxh&nv)": {
+      "canonical_term": "Critical Realism (Roy Bhaskar)",
+      "canonical_id": "critical-realism",
+      "vietnamese": "Hiện thực phê phán (ĐH Kinh tế TP.HCM, ĐH KHXH&NV)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "nhận thức luận hiện thực phản tư (đh quốc gia hà nội)": {
+      "canonical_term": "Critical Realism (Roy Bhaskar)",
+      "canonical_id": "critical-realism",
+      "vietnamese": "Nhận thức luận hiện thực phản tư (ĐH Quốc gia Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "đăng ký đề cương trước thực nghiệm (đh quốc gia hà nội)": {
+      "canonical_term": "Preregistration & Registered Reports",
+      "canonical_id": "preregistration",
+      "vietnamese": "Đăng ký đề cương trước thực nghiệm (ĐH Quốc gia Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "xuất bản hai giai đoạn có đăng ký trước (đh kinh tế tp.hcm)": {
+      "canonical_term": "Preregistration & Registered Reports",
+      "canonical_id": "preregistration",
+      "vietnamese": "Xuất bản hai giai đoạn có đăng ký trước (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "sai số không trả lời bảng hỏi (đh kinh tế quốc dân)": {
+      "canonical_term": "Non-Response Bias",
+      "canonical_id": "non-response-bias",
+      "vietnamese": "Sai số không trả lời bảng hỏi (ĐH Kinh tế Quốc dân)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "thiên vị mẫu do đối tượng từ chối (đh kinh tế tp.hcm)": {
+      "canonical_term": "Non-Response Bias",
+      "canonical_id": "non-response-bias",
+      "vietnamese": "Thiên vị mẫu do đối tượng từ chối (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "thiết kế giai thừa (đh bách khoa, đh kinh tế quốc dân)": {
+      "canonical_term": "Factorial Design (2x2, 2x3)",
+      "canonical_id": "factorial-design",
+      "vietnamese": "Thiết kế giai thừa (ĐH Bách Khoa, ĐH Kinh tế Quốc dân)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "thiết kế thực nghiệm đa nhân tố (đh kinh tế tp.hcm)": {
+      "canonical_term": "Factorial Design (2x2, 2x3)",
+      "canonical_id": "factorial-design",
+      "vietnamese": "Thiết kế thực nghiệm đa nhân tố (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "thiết kế trong đối tượng vs giữa các đối tượng (đh quốc gia hà nội)": {
+      "canonical_term": "Within-Subjects Design vs Between-Subjects Design",
+      "canonical_id": "within-subjects-design",
+      "vietnamese": "Thiết kế trong đối tượng vs giữa các đối tượng (ĐH Quốc gia Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "thiết kế đo lường lặp lại (đh kinh tế tp.hcm)": {
+      "canonical_term": "Within-Subjects Design vs Between-Subjects Design",
+      "canonical_id": "within-subjects-design",
+      "vietnamese": "Thiết kế đo lường lặp lại (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "sai lệch do hao hụt mẫu (đh y hà nội)": {
+      "canonical_term": "Attrition Bias (Experimental Mortality)",
+      "canonical_id": "attrition-bias",
+      "vietnamese": "Sai lệch do hao hụt mẫu (ĐH Y Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "thiên vị do đối tượng bỏ cuộc giữa chừng (đh kinh tế tp.hcm)": {
+      "canonical_term": "Attrition Bias (Experimental Mortality)",
+      "canonical_id": "attrition-bias",
+      "vietnamese": "Thiên vị do đối tượng bỏ cuộc giữa chừng (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "hiệu ứng trần và hiệu ứng sàn (đh quốc gia hà nội)": {
+      "canonical_term": "Floor and Ceiling Effects",
+      "canonical_id": "floor-and-ceiling-effects",
+      "vietnamese": "Hiệu ứng trần và hiệu ứng sàn (ĐH Quốc gia Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "hiện tượng nén phân phối điểm số (đh kinh tế tp.hcm)": {
+      "canonical_term": "Floor and Ceiling Effects",
+      "canonical_id": "floor-and-ceiling-effects",
+      "vietnamese": "Hiện tượng nén phân phối điểm số (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "hiệu ứng tâm lý giả dược (đh y dược, đh y hà nội)": {
+      "canonical_term": "Placebo Effect & Sham Controls",
+      "canonical_id": "placebo-effect",
+      "vietnamese": "Hiệu ứng tâm lý giả dược (ĐH Y Dược, ĐH Y Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "sai lệch do kỳ vọng tâm lý của đối tượng (đh kinh tế tp.hcm)": {
+      "canonical_term": "Placebo Effect & Sham Controls",
+      "canonical_id": "placebo-effect",
+      "vietnamese": "Sai lệch do kỳ vọng tâm lý của đối tượng (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "kiểm định đơn nhân tố harman (đh kinh tế tp.hcm, đh kinh tế quốc dân)": {
+      "canonical_term": "Harman's Single Factor Test",
+      "canonical_id": "harman-single-factor",
+      "vietnamese": "Kiểm định đơn nhân tố Harman (ĐH Kinh tế TP.HCM, ĐH Kinh tế Quốc dân)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "phép thử phương sai chung harman (đh ngoại thương)": {
+      "canonical_term": "Harman's Single Factor Test",
+      "canonical_id": "harman-single-factor",
+      "vietnamese": "Phép thử phương sai chung Harman (ĐH Ngoại thương)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "kỹ thuật biến đánh dấu lý thuyết (đh kinh tế tp.hcm)": {
+      "canonical_term": "Marker Variable Technique (Lindell & Whitney)",
+      "canonical_id": "marker-variable-technique",
+      "vietnamese": "Kỹ thuật biến đánh dấu lý thuyết (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "phương pháp hiệu chỉnh tương quan tối thiểu (đh quốc gia hà nội)": {
+      "canonical_term": "Marker Variable Technique (Lindell & Whitney)",
+      "canonical_id": "marker-variable-technique",
+      "vietnamese": "Phương pháp hiệu chỉnh tương quan tối thiểu (ĐH Quốc gia Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "mô hình nguyên nhân vs mô hình kết quả (đh kinh tế quốc dân)": {
+      "canonical_term": "Formative vs Reflective Measurement Models",
+      "canonical_id": "formative-vs-reflective",
+      "vietnamese": "Mô hình nguyên nhân vs mô hình kết quả (ĐH Kinh tế Quốc dân)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "thang đo phát sinh vs thang đo phản chiếu (đh kinh tế tp.hcm)": {
+      "canonical_term": "Formative vs Reflective Measurement Models",
+      "canonical_id": "formative-vs-reflective",
+      "vietnamese": "Thang đo phát sinh vs thang đo phản chiếu (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "phương pháp lặp mẫu bootstrap (đh kinh tế tp.hcm, đh bách khoa)": {
+      "canonical_term": "Bootstrapping Resampling",
+      "canonical_id": "bootstrapping",
+      "vietnamese": "Phương pháp lặp mẫu Bootstrap (ĐH Kinh tế TP.HCM, ĐH Bách Khoa)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "kiểm định khoảng tin cậy tái chọn mẫu (đh ngoại thương)": {
+      "canonical_term": "Bootstrapping Resampling",
+      "canonical_id": "bootstrapping",
+      "vietnamese": "Kiểm định khoảng tin cậy tái chọn mẫu (ĐH Ngoại thương)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "quy trình so sánh liên tục (đh khxh&nv, đh sư phạm hà nội)": {
+      "canonical_term": "Constant Comparative Method (Glaser & Strauss)",
+      "canonical_id": "constant-comparative-method",
+      "vietnamese": "Quy trình so sánh liên tục (ĐH KHXH&NV, ĐH Sư phạm Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "kỹ thuật đối chiếu dữ liệu lặp (đh kinh tế tp.hcm)": {
+      "canonical_term": "Constant Comparative Method (Glaser & Strauss)",
+      "canonical_id": "constant-comparative-method",
+      "vietnamese": "Kỹ thuật đối chiếu dữ liệu lặp (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "chọn mẫu phát triển lý thuyết (đh quốc gia hà nội)": {
+      "canonical_term": "Theoretical Sampling",
+      "canonical_id": "theoretical-sampling",
+      "vietnamese": "Chọn mẫu phát triển lý thuyết (ĐH Quốc gia Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "lấy mẫu có định hướng lý thuyết (đh kinh tế tp.hcm)": {
+      "canonical_term": "Theoretical Sampling",
+      "canonical_id": "theoretical-sampling",
+      "vietnamese": "Lấy mẫu có định hướng lý thuyết (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "hồ sơ kiểm toán nghiên cứu (đh quốc gia hà nội)": {
+      "canonical_term": "Audit Trail (Inquiry Audit)",
+      "canonical_id": "audit-trail",
+      "vietnamese": "Hồ sơ kiểm toán nghiên cứu (ĐH Quốc gia Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "nhật ký hành trình nghiên cứu định tính (đh kinh tế tp.hcm)": {
+      "canonical_term": "Audit Trail (Inquiry Audit)",
+      "canonical_id": "audit-trail",
+      "vietnamese": "Nhật ký hành trình nghiên cứu định tính (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "mô tả sâu sắc / mô tả đa tầng (đh khxh&nv, đh sư phạm hà nội)": {
+      "canonical_term": "Thick Description (Clifford Geertz)",
+      "canonical_id": "thick-description",
+      "vietnamese": "Mô tả sâu sắc / Mô tả đa tầng (ĐH KHXH&NV, ĐH Sư phạm Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "tường thuật chi tiết bối cảnh ý nghĩa (đh kinh tế tp.hcm)": {
+      "canonical_term": "Thick Description (Clifford Geertz)",
+      "canonical_id": "thick-description",
+      "vietnamese": "Tường thuật chi tiết bối cảnh ý nghĩa (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "tạm đình chỉ định kiến (đh khoa học xã hội & nhân văn)": {
+      "canonical_term": "Bracketing (Epoché in Phenomenology)",
+      "canonical_id": "bracketing-epoche",
+      "vietnamese": "Tạm đình chỉ định kiến (ĐH Khoa học Xã hội & Nhân văn)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "đóng ngoặc nhận thức tiên nghiệm (đh sư phạm hà nội)": {
+      "canonical_term": "Bracketing (Epoché in Phenomenology)",
+      "canonical_id": "bracketing-epoche",
+      "vietnamese": "Đóng ngoặc nhận thức tiên nghiệm (ĐH Sư phạm Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "phân tích diễn ngôn phản biện (đh quốc gia hà nội)": {
+      "canonical_term": "Critical Discourse Analysis (Fairclough)",
+      "canonical_id": "critical-discourse-analysis",
+      "vietnamese": "Phân tích diễn ngôn phản biện (ĐH Quốc gia Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "phân tích diễn ngôn phê phán cda (đh khxh&nv tp.hcm)": {
+      "canonical_term": "Critical Discourse Analysis (Fairclough)",
+      "canonical_id": "critical-discourse-analysis",
+      "vietnamese": "Phân tích diễn ngôn phê phán CDA (ĐH KHXH&NV TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "đồ thị rừng phân tích gộp (đh y dược tp.hcm, đh y hà nội)": {
+      "canonical_term": "Forest Plot (Meta-Analysis)",
+      "canonical_id": "forest-plot",
+      "vietnamese": "Đồ thị rừng phân tích gộp (ĐH Y Dược TP.HCM, ĐH Y Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "biểu đồ tích hợp kích thước hiệu ứng (đh kinh tế quốc dân)": {
+      "canonical_term": "Forest Plot (Meta-Analysis)",
+      "canonical_id": "forest-plot",
+      "vietnamese": "Biểu đồ tích hợp kích thước hiệu ứng (ĐH Kinh tế Quốc dân)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "độ dị biệt giữa các nghiên cứu gộp (đh y dược tp.hcm)": {
+      "canonical_term": "Heterogeneity in Meta-Analysis (Q & I-squared)",
+      "canonical_id": "heterogeneity-in-meta-analysis",
+      "vietnamese": "Độ dị biệt giữa các nghiên cứu gộp (ĐH Y Dược TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "kiểm định tính không đồng nhất phương sai (đh kinh tế quốc dân)": {
+      "canonical_term": "Heterogeneity in Meta-Analysis (Q & I-squared)",
+      "canonical_id": "heterogeneity-in-meta-analysis",
+      "vietnamese": "Kiểm định tính không đồng nhất phương sai (ĐH Kinh tế Quốc dân)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "bộ thẩm định sai số nghiên cứu rob 2 (đh y hà nội, đh y dược tp.hcm)": {
+      "canonical_term": "Cochrane Risk of Bias Tool (RoB 2)",
+      "canonical_id": "risk-of-bias-2",
+      "vietnamese": "Bộ thẩm định sai số nghiên cứu RoB 2 (ĐH Y Hà Nội, ĐH Y Dược TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "thẩm định chất lượng phương pháp luận thử nghiệm (đh quốc gia hà nội)": {
+      "canonical_term": "Cochrane Risk of Bias Tool (RoB 2)",
+      "canonical_id": "risk-of-bias-2",
+      "vietnamese": "Thẩm định chất lượng phương pháp luận thử nghiệm (ĐH Quốc gia Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "tổng quan định phạm vi (đh y dược tp.hcm)": {
+      "canonical_term": "Scoping Review (PRISMA-ScR)",
+      "canonical_id": "scoping-review",
+      "vietnamese": "Tổng quan định phạm vi (ĐH Y Dược TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "tổng quan xác định bức tranh nghiên cứu (đh kinh tế tp.hcm)": {
+      "canonical_term": "Scoping Review (PRISMA-ScR)",
+      "canonical_id": "scoping-review",
+      "vietnamese": "Tổng quan xác định bức tranh nghiên cứu (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "chẩn đoán đa cộng tuyến ma trận (đh kinh tế quốc dân)": {
+      "canonical_term": "Condition Index & Collinearity Diagnostics",
+      "canonical_id": "condition-index-collinearity",
+      "vietnamese": "Chẩn đoán đa cộng tuyến ma trận (ĐH Kinh tế Quốc dân)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "chỉ số điều kiện ma trận tương quan (đh kinh tế tp.hcm)": {
+      "canonical_term": "Condition Index & Collinearity Diagnostics",
+      "canonical_id": "condition-index-collinearity",
+      "vietnamese": "Chỉ số điều kiện ma trận tương quan (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "phiếu chấp thuận tham gia nghiên cứu (đh y dược, đh y hà nội)": {
+      "canonical_term": "Informed Consent (Belmont Report)",
+      "canonical_id": "informed-consent",
+      "vietnamese": "Phiếu chấp thuận tham gia nghiên cứu (ĐH Y Dược, ĐH Y Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "cam kết đồng thuận tự nguyện (đh quốc gia hà nội)": {
+      "canonical_term": "Informed Consent (Belmont Report)",
+      "canonical_id": "informed-consent",
+      "vietnamese": "Cam kết đồng thuận tự nguyện (ĐH Quốc gia Hà Nội)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "tạp chí mạo danh / tạp chí rác học thuật (đh quốc gia hà nội, đh bách khoa)": {
+      "canonical_term": "Predatory Publishing & Beall's List",
+      "canonical_id": "predatory-journals",
+      "vietnamese": "Tạp chí mạo danh / Tạp chí rác học thuật (ĐH Quốc gia Hà Nội, ĐH Bách Khoa)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "nhà xuất bản trục lợi phí apc (đh kinh tế tp.hcm)": {
+      "canonical_term": "Predatory Publishing & Beall's List",
+      "canonical_id": "predatory-journals",
+      "vietnamese": "Nhà xuất bản trục lợi phí APC (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "xuất bản phân mảnh (đh kinh tế quốc dân)": {
+      "canonical_term": "Salami Slicing (Data Fragmentation)",
+      "canonical_id": "salami-slicing",
+      "vietnamese": "Xuất bản phân mảnh (ĐH Kinh tế Quốc dân)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "chiến thuật đơn vị tối thiểu có thể xuất bản (đh kinh tế tp.hcm)": {
+      "canonical_term": "Salami Slicing (Data Fragmentation)",
+      "canonical_id": "salami-slicing",
+      "vietnamese": "Chiến thuật đơn vị tối thiểu có thể xuất bản (ĐH Kinh tế TP.HCM)",
+      "relationship": "Biến thể dịch thuật tiếng Việt chính thức tại các trường ĐH Việt Nam",
+      "source": "UEH, FTU, NEU, VNU"
+    },
+    "evocative auto-ethnography": {
+      "canonical_term": "Autoethnography",
+      "canonical_id": "autoethnography",
+      "vietnamese": "Tự dân tộc học gợi cảm (Phong cách tự sự văn học lay động cảm xúc)",
+      "relationship": "Tiểu loại tự sự của Autoethnography (đối lập Analytic Autoethnography)",
+      "source": "Basabain, Macleod, Westbury & Qutub (2021). Asian Social Science, 17(3), 9-30"
+    },
+    "relational ethics": {
+      "canonical_term": "Informed Consent Process",
+      "canonical_id": "informed-consent",
+      "vietnamese": "Đạo đức mối quan hệ (Bảo vệ người thân trong nghiên cứu tự sự)",
+      "relationship": "Biến thể đặc thù của Research Ethics trong nghiên cứu định tính cá nhân",
+      "source": "Basabain, Macleod, Westbury & Qutub (2021). Asian Social Science, 17(3), 9-30"
+    },
+    "frontstage practices": {
+      "canonical_term": "Observation Protocol",
+      "canonical_id": "participant-observation",
+      "vietnamese": "Thực hành sân khấu trước (Hành vi thể hiện trước công chúng)",
+      "relationship": "Thành tố trong Lý thuyết Tự thể hiện bản thân (Goffman SPT)",
+      "source": "Basabain, Macleod, Westbury & Qutub (2021). Asian Social Science, 17(3), 9-30"
+    },
+    "backstage practices": {
+      "canonical_term": "Observation Protocol",
+      "canonical_id": "participant-observation",
+      "vietnamese": "Thực hành sân khấu sau (Hành vi hậu trường riêng tư)",
+      "relationship": "Thành tố trong Lý thuyết Tự thể hiện bản thân (Goffman SPT)",
+      "source": "Basabain, Macleod, Westbury & Qutub (2021). Asian Social Science, 17(3), 9-30"
+    },
+    "impression management on social media": {
+      "canonical_term": "Netnography",
+      "canonical_id": "netnography",
+      "vietnamese": "Quản trị ấn tượng trên mạng xã hội trực tuyến",
+      "relationship": "Ứng dụng chuyên biệt của Netnography và Self-Presentation",
+      "source": "Basabain, Macleod, Westbury & Qutub (2021). Asian Social Science, 17(3), 9-30"
+    },
+    "auto-netnography": {
+      "canonical_term": "Netnography",
+      "canonical_id": "netnography",
+      "vietnamese": "Tự dân tộc học mạng (Phương pháp tự sự cá nhân trong không gian mạng)",
+      "relationship": "Tiểu loại chuyên biệt của Netnography (Kozinets, 2015)",
+      "source": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+    },
+    "symbolic netnography": {
+      "canonical_term": "Netnography",
+      "canonical_id": "netnography",
+      "vietnamese": "Dân tộc học mạng biểu trưng",
+      "relationship": "Tiểu loại phân tích ý nghĩa và biểu tượng cộng đồng ảo của Netnography",
+      "source": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+    },
+    "humanist netnography": {
+      "canonical_term": "Netnography",
+      "canonical_id": "netnography",
+      "vietnamese": "Dân tộc học mạng nhân văn",
+      "relationship": "Tiểu loại hành động xã hội của Netnography",
+      "source": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+    },
+    "value co-destruction": {
+      "canonical_term": "Value Co-Creation",
+      "canonical_id": "value-co-creation",
+      "vietnamese": "Sự cùng hủy diệt giá trị",
+      "relationship": "Mặt đối lập nhị nguyên của Value Co-Creation trong khoa học dịch vụ",
+      "source": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+    },
+    "motor themes": {
+      "canonical_term": "Thematic Map (Callon's Centrality & Density)",
+      "canonical_id": "thematic-map",
+      "vietnamese": "Chủ đề động lực (Centrality cao, Density cao)",
+      "relationship": "Góc phần tư thứ 1 trong Bản đồ chủ đề Trắc lượng (Cobo et al., 2011)",
+      "source": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+    },
+    "basic themes": {
+      "canonical_term": "Thematic Map (Callon's Centrality & Density)",
+      "canonical_id": "thematic-map",
+      "vietnamese": "Chủ đề cơ sở (Centrality cao, Density thấp)",
+      "relationship": "Góc phần tư thứ 4 trong Bản đồ chủ đề Trắc lượng (Cobo et al., 2011)",
+      "source": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+    },
+    "niche themes": {
+      "canonical_term": "Thematic Map (Callon's Centrality & Density)",
+      "canonical_id": "thematic-map",
+      "vietnamese": "Chủ đề thị trường ngách (Centrality thấp, Density cao)",
+      "relationship": "Góc phần tư thứ 2 trong Bản đồ chủ đề Trắc lượng (Cobo et al., 2011)",
+      "source": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+    },
+    "emerging themes": {
+      "canonical_term": "Thematic Map (Callon's Centrality & Density)",
+      "canonical_id": "thematic-map",
+      "vietnamese": "Chủ đề mới nổi / đang suy tàn (Centrality thấp, Density thấp)",
+      "relationship": "Góc phần tư thứ 3 trong Bản đồ chủ đề Trắc lượng (Cobo et al., 2011)",
+      "source": "Bansal, Martinho, Pruthi & Aggarwal (2024). Heliyon, 10(1), e22853"
+    }
+  }
+}
