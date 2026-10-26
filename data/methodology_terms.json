@@ -1,7 +1,7 @@
 {
   "version": "10.2-peer-reviewed-cleaned",
-  "last_updated": "2026-10-26T06:43:08.324Z",
-  "total_terms": 1865,
+  "last_updated": "2026-10-26T06:53:19.648Z",
+  "total_terms": 1859,
   "terms": [
     {
       "id": "construct-validity",
@@ -10916,21 +10916,23 @@
     },
     {
       "id": "content-validity-index-cvi",
-      "term": "Content Validity Index (CVI)",
-      "vietnamese": "Chỉ số Giá trị Nội dung cấp chỉ báo",
+      "term": "Content Validity Index (CVI - I-CVI & S-CVI)",
+      "vietnamese": "Chỉ số Độ giá trị Nội dung (CVI ở Cấp Mục hỏi & Toàn Thang đo)",
       "vietnamese_variants": [],
       "domain_tags": [
         "Psychometrics"
       ],
-      "core_definition": "I-CVI) và cấp thang đo (S-CVI.",
-      "seminal_citation": "Polit & Beck (2006)",
+      "core_definition": "Chỉ số định lượng mức độ đồng thuận của hội đồng chuyên gia về độ phù hợp và tính đại diện của các mục hỏi trong thang đo, do Lynn (1986) và Polit & Beck (2006) chuẩn hóa. CVI gồm 2 cấp độ: (1) I-CVI (Item-Level Content Validity Index): Tỷ lệ chuyên gia đánh giá mục hỏi đạt mức phù hợp 3 hoặc 4 trên thang Likert 4 điểm; (2) S-CVI (Scale-Level Content Validity Index): Mức độ giá trị nội dung tổng thể của toàn bộ thang đo, tính theo trung bình cộng (S-CVI/Ave) hoặc tỷ lệ đồng thuận tuyệt đối (S-CVI/UA).",
+      "seminal_citation": "Lynn, M. R. (1986). Determination and quantification of content validity. Nursing Research, 35(6), 382–386; Polit, D. F., & Beck, C. T. (2006). The content validity index: Are you sure you know what's being reported? Research in Nursing & Health, 29(5), 489–497.",
       "tier": "curated",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #543, #544",
       "core_definition_en": "Academic definition of Content Validity Index (CVI) according to Polit & Beck (2006).",
       "domain_tags_en": [
         "Psychometrics"
-      ]
+      ],
+      "benchmarks": "Ngưỡng chuẩn mực quốc tế: Với hội đồng từ 6 đến 10 chuyên gia, I-CVI tối thiểu phải >= 0.78 (nếu <= 5 chuyên gia, I-CVI bắt buộc = 1.0). Ở cấp độ toàn thang đo, S-CVI/Ave bắt buộc phải >= 0.90 để khẳng định thang đo đạt giá trị nội dung hoàn hảo.",
+      "pitfalls": "Tuyệt đối không dùng thang đo Likert lẻ (như 3 hoặc 5 điểm) để chuyên gia đánh giá CVI, vì chuyên gia có xu hướng chọn mức trung lập ở giữa. Luôn dùng thang đo Likert 4 điểm (1=Không liên quan, 2=Cần sửa nhiều, 3=Phù hợp cần sửa nhỏ, 4=Hoàn toàn phù hợp)."
     },
     {
       "id": "content-validity-ratio-cvr---lawshe",
@@ -20168,24 +20170,6 @@
       ]
     },
     {
-      "id": "internal-validity-gia-tri-noi-tai",
-      "term": "Internal Validity",
-      "vietnamese": "- Khớp mẫu hình (Pattern matching).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Case Study Research"
-      ],
-      "core_definition": "- Khớp mẫu hình (Pattern matching).",
-      "seminal_citation": "Yin (2014)",
-      "tier": "index",
-      "expert_status": "needs_review",
-      "expert_notes": "Trùng #1353, #1355; mảnh trích; tên mục không phải thuật ngữ",
-      "core_definition_en": "Academic definition of Internal Validity (Giá trị Nội tại) according to Yin (2014).",
-      "domain_tags_en": [
-        "Case Study Research"
-      ]
-    },
-    {
       "id": "internal-validity-scc",
       "term": "Internal Validity (SCC)",
       "vietnamese": "(`Tính hợp lệ nội tại`): Mối liên hệ có thực sự mang tính nhân quả từ X sang Y hay do biến ngoại lai?",
@@ -23962,26 +23946,6 @@
         "Advanced Quantitative Analysis"
       ],
       "benchmarks": "Yêu cầu tiên quyết: Phải đạt bất biến đo lường (Measurement Invariance) trước khi so sánh tham số cấu trúc giữa các nhóm (Henseler's MGA, PLS-MGA p < 0.05 hoặc > 0.95)."
-    },
-    {
-      "id": "micro-vs-macro",
-      "term": "Micro vs Macro",
-      "vietnamese": "(Vi mô vs. Vĩ mô).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
-      ],
-      "core_definition": "(Vi mô vs. Vĩ mô).",
-      "seminal_citation": "Hunt (2015)",
-      "tier": "textbook",
-      "expert_status": "verified",
-      "expert_notes": "",
-      "core_definition_en": "Academic definition of Micro vs Macro according to Hunt (2015).",
-      "domain_tags_en": [
-        "Methodology",
-        "Research Design"
-      ]
     },
     {
       "id": "miles-and-huberman-interactive-model",
@@ -28138,26 +28102,6 @@
       ]
     },
     {
-      "id": "positive-vs-normative",
-      "term": "Positive vs Normative",
-      "vietnamese": "(Thực chứng vs. Chuẩn tắc).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
-      ],
-      "core_definition": "(Thực chứng vs. Chuẩn tắc).",
-      "seminal_citation": "Hunt (2015)",
-      "tier": "textbook",
-      "expert_status": "verified",
-      "expert_notes": "",
-      "core_definition_en": "Academic definition of Positive vs Normative according to Hunt (2015).",
-      "domain_tags_en": [
-        "Methodology",
-        "Research Design"
-      ]
-    },
-    {
       "id": "positive-normative-dichotomy",
       "term": "Positive-normative dichotomy",
       "vietnamese": "Cặp lưỡng phân thực chứng - chuẩn tắc",
@@ -28883,26 +28827,6 @@
       ]
     },
     {
-      "id": "profit-vs-non-profit",
-      "term": "Profit vs Non-profit",
-      "vietnamese": "(Vì lợi nhuận vs. Phi lợi nhuận).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
-      ],
-      "core_definition": "(Vì lợi nhuận vs. Phi lợi nhuận).",
-      "seminal_citation": "Hunt (2015)",
-      "tier": "textbook",
-      "expert_status": "verified",
-      "expert_notes": "",
-      "core_definition_en": "Academic definition of Profit vs Non-profit according to Hunt (2015).",
-      "domain_tags_en": [
-        "Methodology",
-        "Research Design"
-      ]
-    },
-    {
       "id": "prolonged-engagement",
       "term": "Prolonged Engagement",
       "vietnamese": "Gắn bó Hiện trường Lâu dài",
@@ -29315,14 +29239,14 @@
     {
       "id": "qualitative-content-analysis-philipp-mayring",
       "term": "Qualitative Content Analysis (Philipp Mayring)",
-      "vietnamese": "(`Phân tích nội dung định tính`):",
+      "vietnamese": "Phân tích Nội dung Định tính theo Philipp Mayring",
       "vietnamese_variants": [],
       "domain_tags": [
         "Methodology",
         "Research Design"
       ],
-      "core_definition": "(`Phân tích nội dung định tính`):.",
-      "seminal_citation": "Flick et al. (2004)",
+      "core_definition": "Quy trình phân tích văn bản định tính có hệ thống và được kiểm soát theo quy tắc do Philipp Mayring (2000, 2014) phát triển. Khác với phân tích định lượng thuần túy đếm từ hoặc phân tích thông diễn học tự do, phương pháp này kết hợp ưu thế định lượng (bước mã hóa theo hệ thống danh mục định sẵn) và định tính (phân loại diễn giải sâu ngữ cảnh). Hai kỹ thuật chính: (1) Rút gọn quy nạp (Inductive Category Formation - hình thành mã trực tiếp từ văn bản); (2) Phân loại diễn dịch (Deductive Category Assignment - áp dụng khung lý thuyết sẵn có với định nghĩa danh mục, ví dụ neo điển hình và quy tắc mã hóa rõ ràng).",
+      "seminal_citation": "Mayring, P. (2000). Qualitative content analysis. Forum: Qualitative Social Research, 1(2); Mayring, P. (2014). Qualitative content analysis: Theoretical foundation, basic procedures and software solution. Klagenfurt.",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #2071; rác Markdown/bảng; mảnh trích",
@@ -29330,7 +29254,9 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Bắt buộc xây dựng Sổ tay mã hóa (Coding Agenda / Coding Manual) gồm 4 cột: Tên danh mục (Category), Định nghĩa (Definition), Mẫu ví dụ neo (Anchor example), và Quy tắc phân định (Coding rule). Kiểm tra độ tin cậy giữa các người mã hóa (Inter-coder reliability) bằng Cohen's Kappa >= 0.80.",
+      "pitfalls": "Tránh ngộ nhận phân tích nội dung định tính chỉ đơn thuần là đếm tần suất từ khóa. Mayring nhấn mạnh mục tiêu tối hậu là thấu cảm và nắm bắt cấu trúc ngữ nghĩa ngữ cảnh của thông điệp."
     },
     {
       "id": "qualitative-documents",
@@ -31424,26 +31350,6 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
-    },
-    {
-      "id": "rubins-potential-outcomes-framework",
-      "term": "Rubin's Potential Outcomes Framework",
-      "vietnamese": "- Kết quả phản thực tế: Y_i(1) (nếu nhận can thiệp) vs Y_i(0) (nếu không nhận can thiệp).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Inference",
-        "Quasi-Experiments"
-      ],
-      "core_definition": "- Kết quả phản thực tế: Y_i(1) (nếu nhận can thiệp) vs Y_i(0) (nếu không nhận can thiệp).",
-      "seminal_citation": "Shadish, Cook & Campbell (2002); Shadish, Cook & Campbell (2002)",
-      "tier": "index",
-      "expert_status": "needs_review",
-      "expert_notes": "Trùng #2252; LaTeX thô; lộ tên file nội bộ; mảnh trích",
-      "core_definition_en": "Academic definition of Rubin's Potential Outcomes Framework according to Shadish, Cook & Campbell (2002); Shadish, Cook & Campbell (2002).",
-      "domain_tags_en": [
-        "Causal Inference",
-        "Quasi-Experiments"
       ]
     },
     {
@@ -33698,21 +33604,23 @@
     },
     {
       "id": "standardized-vs-unstandardized-regression-coefficients",
-      "term": "Standardized vs. Unstandardized Regression Coefficients",
-      "vietnamese": "Hệ số Hồi quy Chuẩn hóa",
+      "term": "Standardized vs. Unstandardized Regression Coefficients (Beta vs. B)",
+      "vietnamese": "Hệ số Hồi quy Chuẩn hóa vs. Chưa chuẩn hóa (Beta vs. B)",
       "vietnamese_variants": [],
       "domain_tags": [
         "Regression Analysis"
       ],
-      "core_definition": "Beta) vs. Hệ số Chưa chuẩn hóa (B.",
-      "seminal_citation": "Hair et al. (2019)",
+      "core_definition": "Phân biệt hai dạng hệ số hồi quy trong phân tích OLS và SEM: (1) Hệ số Chưa chuẩn hóa (Unstandardized Coefficient - B): Đo lường sự thay đổi tuyệt đối của biến phụ thuộc Y (theo đơn vị đo lường gốc của Y) khi biến độc lập X thay đổi 1 đơn vị gốc; dùng để diễn giải ý nghĩa thực tế và dự báo giá trị cụ thể; (2) Hệ số Chuẩn hóa (Standardized Coefficient - Beta / beta): Đo lường sự thay đổi của biến Y tính theo đơn vị độ lệch chuẩn (Standard Deviation - SD) khi biến X thay đổi 1 SD (biến số đã được đưa về thang đo z-score có Mean = 0, SD = 1); dùng để so sánh sức mạnh tác động tương đối giữa các biến độc lập có đơn vị đo lường khác nhau trong cùng một mô hình.",
+      "seminal_citation": "Cohen, J., Cohen, P., West, S. G., & Aiken, L. S. (2003). Applied multiple regression/correlation analysis for the behavioral sciences (3rd ed.). Lawrence Erlbaum Associates; Hair, J. F., et al. (2018). Multivariate Data Analysis (8th ed.).",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Standardized vs. Unstandardized Regression Coefficients according to Hair et al. (2019).",
       "domain_tags_en": [
         "Regression Analysis"
-      ]
+      ],
+      "benchmarks": "Khi kiểm định giả thuyết và so sánh mức độ ảnh hưởng: Bắt buộc báo cáo cả hai hệ số B (kèm sai số chuẩn SE) và Beta (kèm giá trị t-statistic và p-value). Khi thử nghiệm tác động điều tiết (Moderation / Interaction terms), bắt buộc phải chuẩn hóa (Mean-centering hoặc z-standardization) các biến độc lập trước khi nhân tích để phòng tránh đa cộng tuyến.",
+      "pitfalls": "Không được dùng Beta chuẩn hóa để so sánh sức mạnh tác động giữa hai mẫu dữ liệu độc lập khác nhau, vì độ lệch chuẩn SD của từng mẫu là khác nhau; chỉ dùng hệ số chưa chuẩn hóa B khi so sánh đa nhóm (Multi-group comparison)."
     },
     {
       "id": "standards-for-reporting-qualitative-research",
@@ -34928,26 +34836,6 @@
       "expert_status": "needs_review",
       "expert_notes": "Rác Markdown/bảng; tên mục lỗi font/cắt; mảnh trích",
       "core_definition_en": "Academic definition of T nh t ph n t according to Flick et al. (2004).",
-      "domain_tags_en": [
-        "Methodology",
-        "Research Design"
-      ]
-    },
-    {
-      "id": "t-t-ng-quan-autocorrelation",
-      "term": "T t ng quan (Autocorrelation)",
-      "vietnamese": "Durbin-Watson statistic (1.5 - 2.5).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
-      ],
-      "core_definition": "Durbin-Watson statistic (1.5 - 2.5).",
-      "seminal_citation": "Hair et al. (2018)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
-      "expert_notes": "Trùng #2661; LaTeX thô",
-      "core_definition_en": "Academic definition of T t ng quan (Autocorrelation) according to Hair et al. (2018).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
@@ -36247,15 +36135,15 @@
     },
     {
       "id": "treatment-non-compliance",
-      "term": "Treatment Non-Compliance",
-      "vietnamese": "- Intention-to-Treat Analysis (ITT): Phân tích theo nhóm phân bổ ban đầu bất kể người tham gia có tuân thủ can thiệp hay không (bảo toàn tính ngẫu nhiên).",
+      "term": "Treatment Non-Compliance in Randomized Experiments",
+      "vietnamese": "Hiện tượng Không Tuân thủ Phác đồ trong Thử nghiệm Ngẫu nhiên",
       "vietnamese_variants": [],
       "domain_tags": [
         "Causal Inference",
         "Quasi-Experiments"
       ],
-      "core_definition": "- Intention-to-Treat Analysis (ITT): Phân tích theo nhóm phân bổ ban đầu bất kể người tham gia có tuân thủ can thiệp hay không (bảo toàn tính ngẫu nhiên).",
-      "seminal_citation": "Shadish, Cook & Campbell (2002); Shadish, Cook & Campbell (2002)",
+      "core_definition": "Hiện tượng đối tượng tham gia trong các thử nghiệm thực nghiệm ngẫu nhiên (RCT) không tuân thủ hoàn toàn phác đồ hoặc sự phân bổ can thiệp ban đầu (ví dụ: nhóm can thiệp bỏ ngang không dùng, hoặc nhóm đối chứng tự ý tiếp cận can thiệp từ bên ngoài). Non-compliance đe dọa trực tiếp đến tính hợp lệ nội tại của nghiên cứu. Để giải quyết, các nhà kinh tế lượng và thống kê học (Angrist, Imbens, & Rubin, 1996) sử dụng hai phương pháp phân tích chuẩn mực: (1) Intention-to-Treat (ITT): Phân tích giữ nguyên theo nhóm phân bổ ban đầu bất kể họ có tuân thủ hay không; (2) Complier Average Causal Effect (CACE) / Local Average Treatment Effect (LATE): Sử dụng biến phân bổ ngẫu nhiên làm biến công cụ (Instrumental Variable) để ước lượng tác động nhân quả thuần túy trên nhóm thực sự tuân thủ.",
+      "seminal_citation": "Angrist, J. D., Imbens, G. W., & Rubin, D. B. (1996). Identification of causal effects using instrumental variables. Journal of the American Statistical Association, 91(434), 444–455; Hernán, M. A., & Robins, J. M. (2020). Causal inference: What if. Chapman & Hall/CRC.",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ; mảnh trích",
@@ -36263,7 +36151,9 @@
       "domain_tags_en": [
         "Causal Inference",
         "Quasi-Experiments"
-      ]
+      ],
+      "benchmarks": "Khi báo cáo thử nghiệm RCT có hiện tượng không tuân thủ: Bắt buộc phải tuân theo hướng dẫn CONSORT 2010, vẽ sơ đồ dòng chảy đối tượng (Flow Diagram), báo cáo song song kết quả ITT (đánh giá hiệu quả thực tế của chính sách) và kết quả IV/CACE (đánh giá hiệu lực sinh học/cơ chế can thiệp thuần túy).",
+      "pitfalls": "Chỉ phân tích trên nhóm đối tượng hoàn thành phác đồ (Per-protocol analysis / As-treated analysis) sẽ phá vỡ hoàn toàn tính ngẫu nhiên của RCT và tạo ra thiên lệch tự lựa chọn nghiêm trọng."
     },
     {
       "id": "trim-and-fill-method-duval-tweedie",
