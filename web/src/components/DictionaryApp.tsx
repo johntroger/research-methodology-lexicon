@@ -43,7 +43,8 @@ import {
   MessageSquare,
   Trophy,
   Award,
-  Users
+  Users,
+  Cpu
 } from "lucide-react";
 import { MethodologyTerm, AcademicAcronym, SearchItem } from "@/lib/types";
 import { getSearchEngine, SearchOutputItem } from "@/lib/search-engine";
@@ -58,6 +59,7 @@ import LoginModal from "./LoginModal";
 import {
   UI_I18N,
   getTermDefinition,
+  getTermOperationalMechanism,
   getTermBenchmarks,
   getTermPitfalls,
   getTermDebates,
@@ -254,7 +256,7 @@ export default function DictionaryApp({
         doc_type: "term",
         term: t.term,
         vietnamese: languageMode === "en" ? "" : t.vietnamese,
-        domain: languageMode === "en" ? (getTermDomainTags(t, "en")[0] || "Methodology") : (t.domain_tags[0] || "Phương pháp"),
+        domain: languageMode === "en" ? (getTermDomainTags(t, "en")[0] || "Methodology") : (t.category || t.domain_tags[0] || "Phương pháp"),
         snippet: languageMode === "en" 
           ? getTermDefinition(t, "en").slice(0, 110) + "..." 
           : t.core_definition.slice(0, 110) + "...",
@@ -921,7 +923,7 @@ export default function DictionaryApp({
                             [{activeTerm.part_of_speech}]
                           </span>
                         )}
-                        {activeTerm.tier === "flagship" ? (
+                        {activeTerm.tier === "flagship" || activeTerm.is_flagship || Boolean(activeTerm.apa_reference && activeTerm.apa_reference.trim().length > 0) ? (
                           <span className="text-xs px-2.5 py-0.5 rounded-full bg-amber-50 dark:bg-amber-950/50 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-800 font-bold flex items-center gap-1">
                             ★ {languageMode === "en" ? "Flagship Core" : "Thuật ngữ Cốt lõi"}
                           </span>
@@ -1128,6 +1130,29 @@ export default function DictionaryApp({
                     {getTermDefinition(activeTerm, languageMode)}
                   </p>
                 </section>
+
+                {/* 2.5 KHỐI CƠ CHẾ VẬN HÀNH & MÔ HÌNH PHƯƠNG PHÁP LUẬN */}
+                {getTermOperationalMechanism(activeTerm, languageMode) && (
+                  <section className="p-4 rounded-xl border-l-4 border-indigo-600 bg-indigo-50/40 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900/40 space-y-2">
+                    <div className="flex items-center justify-between text-xs font-bold text-indigo-900 dark:text-indigo-300 uppercase tracking-wider">
+                      <span className="flex items-center gap-1.5">
+                        <Cpu size={14} /> {t.sec_operational_mechanism}
+                      </span>
+                      <div className="flex items-center gap-1.5 no-print">
+                        <button
+                          onClick={() => handleCopy(getTermOperationalMechanism(activeTerm, languageMode) || "", "op_mech")}
+                          className="text-slate-400 hover:text-indigo-600 transition p-0.5 rounded"
+                          title={t.copy_tooltip}
+                        >
+                          {copiedSection === "op_mech" ? <Check size={13} className="text-green-600" /> : <Copy size={13} />}
+                        </button>
+                      </div>
+                    </div>
+                    <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
+                      {getTermOperationalMechanism(activeTerm, languageMode)}
+                    </p>
+                  </section>
+                )}
 
                 {/* 3. KHỐI BẪY DÙNG TỪ & LỖI THƯỜNG GẶP */}
                 {getTermPitfalls(activeTerm, languageMode) && (

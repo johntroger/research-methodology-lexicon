@@ -45,7 +45,9 @@ export function getAllTerms(): MethodologyTerm[] {
           vietnamese: item.vietnamese || "Chưa có bản dịch",
           vietnamese_variants: item.vietnamese_variants || [],
           domain_tags: item.domain_tags || ["Phương pháp Nghiên cứu"],
+          category: item.category || "",
           core_definition: item.core_definition || "Nội dung đang được cập nhật...",
+          operational_mechanism: item.operational_mechanism || "",
           paradigm_debates: item.paradigm_debates || "",
           benchmarks: item.benchmarks || "",
           pitfalls: item.pitfalls || "",
@@ -58,7 +60,9 @@ export function getAllTerms(): MethodologyTerm[] {
           apa_intext: item.apa_intext || "",
           apa_reference: item.apa_reference || "",
           corpus_variants: item.corpus_variants || [],
-          related_terms: item.related_terms || []
+          related_terms: item.related_terms || [],
+          tier: item.tier || (item.apa_reference ? "flagship" : "textbook"),
+          is_flagship: item.is_flagship ?? Boolean(item.apa_reference && item.apa_reference.trim().length > 0)
         } as MethodologyTerm;
       }
     });
@@ -107,7 +111,7 @@ export function getSearchIndex(): SearchItem[] {
     vietnamese: t.vietnamese,
     vietnamese_variants: t.vietnamese_variants,
     type: "term",
-    domain: t.domain_tags[0] || "Phương pháp",
+    domain: t.category || t.domain_tags[0] || "Phương pháp",
     snippet: t.core_definition.slice(0, 160) + "..."
   }));
 

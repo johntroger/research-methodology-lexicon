@@ -82,6 +82,14 @@ export class LexiconSearchEngine {
 
     // 1. Chỉ mục hóa Flagship Terms
     for (const t of terms) {
+      const allDomains = [t.category, ...(t.domain_tags || [])].filter(Boolean);
+      const fullDefinition = [
+        t.core_definition,
+        t.operational_mechanism,
+        t.benchmarks,
+        t.pitfalls
+      ].filter(Boolean).join(" ");
+
       const doc: SearchIndexDocument = {
         id: t.id,
         doc_type: "term",
@@ -89,8 +97,8 @@ export class LexiconSearchEngine {
         vietnamese: t.vietnamese,
         vietnamese_variants: (t.vietnamese_variants || []).join(" "),
         acronym_key: "",
-        domain: (t.domain_tags || []).join(", "),
-        definition: t.core_definition,
+        domain: allDomains.join(", "),
+        definition: fullDefinition,
         citation: `${t.seminal_citation || ""} ${t.apa_intext || ""} ${t.apa_reference || ""}`,
         raw_term: t
       };

@@ -22,7 +22,9 @@ export interface MethodologyTerm {
   vietnamese: string;                        // Bản dịch tiếng Việt chuẩn hóa
   vietnamese_variants?: string[];            // Các dị bản dịch thường gặp tại Việt Nam
   domain_tags: string[];                     // Các nhãn chuyên ngành phân loại
+  category?: string;                         // Phân loại lĩnh vực học thuật / chuyên ngành
   core_definition: string;                   // Định nghĩa cốt lõi chuẩn xác
+  operational_mechanism?: string;            // Cơ chế vận hành toán học / phương pháp luận
   paradigm_debates?: string;                 // Tranh luận học thuật & so sánh trường phái
   benchmarks?: string;                       // Ngưỡng tham chiếu số liệu thực nghiệm vàng
   pitfalls?: string;                         // Cảnh báo bẫy dùng sai từ và lỗi hội đồng hay bắt bẻ
@@ -37,6 +39,7 @@ export interface MethodologyTerm {
   corpus_variants?: CorpusVariant[];         // Các thuật ngữ con / nhánh đo lường trực thuộc
   related_terms?: string[];                  // Các ID thuật ngữ liên quan
   tier?: string;                             // Phân tầng: "flagship" | "textbook" | "creswell" | "curated" | "encyclopedia" | "awl"
+  is_flagship?: boolean;                     // Cờ đánh dấu đạt chuẩn Flagship Q1/Doctoral
   stt?: number;                              // Số thứ tự
   expert_status?: "verified" | "needs_review"; // Trạng thái thẩm định
   expert_notes?: string;                     // Ghi chú hiệu đính của chuyên gia
@@ -49,6 +52,7 @@ export interface MethodologyTerm {
   };
   // Các trường tiếng Anh cho phiên bản Anh - Anh thuần túy (Monolingual English)
   core_definition_en?: string;
+  operational_mechanism_en?: string;
   paradigm_debates_en?: string;
   benchmarks_en?: string;
   pitfalls_en?: string;

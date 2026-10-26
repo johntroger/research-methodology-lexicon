@@ -46,6 +46,7 @@ export const UI_I18N = {
     save_tooltip_add: "Lưu thuật ngữ vào danh sách cá nhân",
     save_tooltip_remove: "Bỏ lưu thuật ngữ này",
     sec_definition: "Bản chất & Định nghĩa Cốt lõi",
+    sec_operational_mechanism: "Cơ chế Vận hành & Mô hình Phương pháp luận (Operational Mechanism)",
     sec_benchmarks: "Ngưỡng Thực nghiệm & Tiêu chuẩn Phán quyết (Empirical Benchmarks)",
     sec_pitfalls: "Cạm bẫy Phương pháp luận & Điểm Đỏ Phản biện (Methodological Pitfalls)",
     sec_debates: "Tranh luận Học thuật & Trường phái",
@@ -133,6 +134,7 @@ export const UI_I18N = {
     save_tooltip_add: "Save term to personal notebook",
     save_tooltip_remove: "Remove term from saved list",
     sec_definition: "Core Conceptual Definition",
+    sec_operational_mechanism: "Operational Mechanism & Methodological Framework",
     sec_benchmarks: "Empirical Benchmarks & Decision Thresholds",
     sec_pitfalls: "Methodological Pitfalls & Reviewer Red Flags",
     sec_debates: "Paradigm Debates & Epistemological Stance",
@@ -2044,6 +2046,17 @@ export function getTermDefinition(term: MethodologyTerm, lang: "vi" | "en"): str
 }
 
 /**
+ * Lấy cơ chế vận hành theo ngôn ngữ
+ */
+export function getTermOperationalMechanism(term: MethodologyTerm, lang: "vi" | "en"): string | undefined {
+  if (lang === "en") {
+    if (term.operational_mechanism_en && term.operational_mechanism_en.trim()) return term.operational_mechanism_en.trim();
+    return term.operational_mechanism;
+  }
+  return term.operational_mechanism;
+}
+
+/**
  * Lấy ngưỡng tham chiếu theo ngôn ngữ
  */
 export function getTermBenchmarks(term: MethodologyTerm, lang: "vi" | "en"): string | undefined {
@@ -2086,13 +2099,16 @@ export function getTermDebates(term: MethodologyTerm, lang: "vi" | "en"): string
  * Lấy domain tags theo ngôn ngữ (Đảm bảo 100% tiếng Anh khi ở chế độ EN)
  */
 export function getTermDomainTags(term: MethodologyTerm, lang: "vi" | "en"): string[] {
+  const baseTags = term.category 
+    ? [term.category, ...term.domain_tags.filter(t => t !== term.category && t !== "Acronym NCKH")] 
+    : term.domain_tags;
   if (lang === "en") {
     if (term.domain_tags_en && term.domain_tags_en.length > 0) return term.domain_tags_en;
     const mono = MONOLINGUAL_TERMS_EN[term.id];
     if (mono?.domain_tags) return mono.domain_tags;
-    return term.domain_tags.map(tag => DOMAIN_TRANSLATIONS[tag] || tag.replace(/[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]/gi, ""));
+    return baseTags.map(tag => DOMAIN_TRANSLATIONS[tag] || tag.replace(/[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]/gi, ""));
   }
-  return term.domain_tags;
+  return baseTags;
 }
 
 /**
