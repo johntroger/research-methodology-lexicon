@@ -808,9 +808,9 @@
       "slug": "analysis-of-covariance",
       "vietnamese": "Phân tích hiệp phương sai",
       "domain": "Acronym NCKH",
-      "source": "Giả định bắt buộc: Tính đồng nhất của các độ dốc hồi quy (Homogeneity of regression slopes / p > 0.05 cho tương tác nhóm * covariate).",
+      "source": "Giả định bắt buộc: Tính đồng nhất của các độ dốc hồi quy (Homogeneity of regression slopes / p > 0.05 cho tương tác nhóm · covariate).",
       "tier": "acronym",
-      "citation": "Giả định bắt buộc: Tính đồng nhất của các độ dốc hồi quy (Homogeneity of regression slopes / p > 0.05 cho tương tác nhóm * covariate)."
+      "citation": "Giả định bắt buộc: Tính đồng nhất của các độ dốc hồi quy (Homogeneity of regression slopes / p > 0.05 cho tương tác nhóm · covariate)."
     },
     {
       "term": "Analysis of Covariance (ANCOVA)",
@@ -898,9 +898,9 @@
       "slug": "ancova",
       "vietnamese": "Phân tích hiệp phương sai (Analysis of Covariance)",
       "domain": "Acronym NCKH",
-      "source": "Giả định bắt buộc: Tính đồng nhất của các độ dốc hồi quy (Homogeneity of regression slopes / p > 0.05 cho tương tác nhóm * covariate).",
+      "source": "Giả định bắt buộc: Tính đồng nhất của các độ dốc hồi quy (Homogeneity of regression slopes / p > 0.05 cho tương tác nhóm · covariate).",
       "tier": "acronym",
-      "citation": "Giả định bắt buộc: Tính đồng nhất của các độ dốc hồi quy (Homogeneity of regression slopes / p > 0.05 cho tương tác nhóm * covariate)."
+      "citation": "Giả định bắt buộc: Tính đồng nhất của các độ dốc hồi quy (Homogeneity of regression slopes / p > 0.05 cho tương tác nhóm · covariate)."
     },
     {
       "term": "Anderson-Darling Normality Test",
@@ -4778,9 +4778,9 @@
       "source": "Charnes et al. (1978)"
     },
     {
-      "term": "Constant sum scale",
-      "slug": "constant-sum-scale",
-      "vietnamese": "| `Constant sum scale` | Thang đo tổng cố định | Yêu cầu đối tượng phân bổ 100 điểm cho các thuộc tính để đo tầm quan trọng |",
+      "term": "Constant ∑ scale",
+      "slug": "constant-∑-scale",
+      "vietnamese": "| `Constant ∑ scale` | Thang đo tổng cố định | Yêu cầu đối tượng phân bổ 100 điểm cho các thuộc tính để đo tầm quan trọng |",
       "domain": "Methodology & Research Design",
       "citation": "Schindler (2022)",
       "source": "Schindler (2022)",
@@ -5456,7 +5456,7 @@
     {
       "term": "Correspondence Theory of Truth",
       "slug": "correspondence-theory-of-truth",
-      "vietnamese": "(`Thuyết tương ứng chân lý`): Một khẳng định khoa học là chân lý khi và chỉ khi nó phản ánh đúng hiện thực khách quan (đối lập với *Coherence theory* - thuyết m",
+      "vietnamese": "(`Thuyết tương ứng chân lý`): Một khẳng định khoa học là chân lý khi và chỉ khi nó phản ánh đúng hiện thực khách quan (đối lập với · Coherence theory* - thuyết m",
       "domain": "Methodology & Research Design",
       "citation": "Hunt (2015)",
       "source": "Hunt (2015)",
@@ -6049,7 +6049,7 @@
     },
     {
       "term": "Cumulative Sum Control Chart Test",
-      "slug": "cumulative-sum-control-chart-test",
+      "slug": "cumulative-∑-control-chart-test",
       "vietnamese": "Kiểm định Tổng Tích lũy Phần dư Đệ quy (Brown et al., 1975)",
       "domain": "Time Series Econometrics",
       "source": "Đường biểu diễn CUSUM và CUSUMSQ phải nằm hoàn toàn bên trong hai dải biên tới hạn ở mức ý nghĩa 5%.",
@@ -8754,7 +8754,7 @@
     },
     {
       "term": "Explained Sum of Squares (ESS)",
-      "slug": "explained-sum-of-squares-ess",
+      "slug": "explained-∑-of-squares-ess",
       "vietnamese": "Tổng Bình phương Được giải thích (Phần biến thiên của biến phụ thuộc được giải thích bởi các biến độc lập)",
       "domain": "Regression Analysis",
       "citation": "Wooldridge (2010)",
@@ -10211,9 +10211,9 @@
       "source": "Brunsdon, Fotheringham & Charlton (1996)"
     },
     {
-      "term": "Getis-Ord Gi* Hotspot Analysis",
+      "term": "Getis-Ord Gi · Hotspot Analysis",
       "slug": "getis-ord-gi-hotspot-analysis",
-      "vietnamese": "Phân tích Điểm nóng Getis-Ord Gi* (Xác định các cụm không gian có giá trị cao bất thường hoặc giá trị thấp bất thường)",
+      "vietnamese": "Phân tích Điểm nóng Getis-Ord Gi · (Xác định các cụm không gian có giá trị cao bất thường hoặc giá trị thấp bất thường)",
       "domain": "Spatial Statistics",
       "citation": "Getis & Ord (1992)",
       "category": "encyclopedia",
@@ -10356,9 +10356,9 @@
       "slug": "gof",
       "vietnamese": "Độ phù hợp của mô hình (Goodness of Fit)",
       "domain": "Acronym NCKH",
-      "source": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb * R²_tb).",
+      "source": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb · R²_tb).",
       "tier": "acronym",
-      "citation": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb * R²_tb)."
+      "citation": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb · R²_tb)."
     },
     {
       "term": "Gold Standard Clinical Trial",
@@ -10395,9 +10395,9 @@
       "slug": "goodness-of-fit",
       "vietnamese": "Độ phù hợp của mô hình",
       "domain": "Acronym NCKH",
-      "source": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb * R²_tb).",
+      "source": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb · R²_tb).",
       "tier": "acronym",
-      "citation": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb * R²_tb)."
+      "citation": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb · R²_tb)."
     },
     {
       "term": "Goodness of Fit Index",
@@ -11411,9 +11411,9 @@
       "slug": "iif",
       "vietnamese": "Hàm thông tin câu hỏi (Item Information Function)",
       "domain": "Acronym NCKH",
-      "source": "Thông tin cực đại tại ngưỡng độ khó của câu hỏi: I(theta) = a² * P * (1-P).",
+      "source": "Thông tin cực đại tại ngưỡng độ khó của câu hỏi: I(theta) = a² * P · (1-P).",
       "tier": "acronym",
-      "citation": "Thông tin cực đại tại ngưỡng độ khó của câu hỏi: I(theta) = a² * P * (1-P)."
+      "citation": "Thông tin cực đại tại ngưỡng độ khó của câu hỏi: I(theta) = a² * P · (1-P)."
     },
     {
       "term": "illustrate",
@@ -12954,9 +12954,9 @@
       "slug": "item-information-function",
       "vietnamese": "Hàm thông tin câu hỏi",
       "domain": "Acronym NCKH",
-      "source": "Thông tin cực đại tại ngưỡng độ khó của câu hỏi: I(theta) = a² * P * (1-P).",
+      "source": "Thông tin cực đại tại ngưỡng độ khó của câu hỏi: I(theta) = a² * P · (1-P).",
       "tier": "acronym",
-      "citation": "Thông tin cực đại tại ngưỡng độ khó của câu hỏi: I(theta) = a² * P * (1-P)."
+      "citation": "Thông tin cực đại tại ngưỡng độ khó của câu hỏi: I(theta) = a² * P · (1-P)."
     },
     {
       "term": "Item information function (IIF)",
@@ -14322,7 +14322,7 @@
     },
     {
       "term": "Mann-Whitney U Test (Wilcoxon Rank-Sum)",
-      "slug": "mann-whitney-u-test-wilcoxon-rank-sum",
+      "slug": "mann-whitney-u-test-wilcoxon-rank-∑",
       "vietnamese": "Kiểm định phi tham số Mann-Whitney U thay thế t-test mẫu độc lập khi dữ liệu không chuẩn",
       "domain": "Non-Parametric Statistics",
       "source": "Mann & Whitney (1947)",
@@ -14768,7 +14768,7 @@
       "category": "encyclopedia",
       "is_variant": true,
       "canonical_parent": "Moderating Variable",
-      "relation_type": "Hiệu ứng tương tác X * W được giải thích gián tiếp qua biến M",
+      "relation_type": "Hiệu ứng tương tác X × W được giải thích gián tiếp qua biến M",
       "source": "Muller et al. (2005)"
     },
     {
@@ -20228,7 +20228,7 @@
     },
     {
       "term": "Residual Sum of Squares (RSS)",
-      "slug": "residual-sum-of-squares-rss",
+      "slug": "residual-∑-of-squares-rss",
       "vietnamese": "Tổng Bình phương Phần dư (Phần biến thiên của biến phụ thuộc không được mô hình giải thích)",
       "domain": "Regression Analysis",
       "citation": "Greene (2018)",
@@ -21537,7 +21537,7 @@
     {
       "term": "Sharp RDD",
       "slug": "sharp-rdd",
-      "vietnamese": "Đối tượng nhận can thiệp nghiêm ngặt 100% dựa trên điểm số cắt (*cutoff score* c).",
+      "vietnamese": "Đối tượng nhận can thiệp nghiêm ngặt 100% dựa trên điểm số cắt (*cutoff score · c).",
       "domain": "Methodology & Research Design",
       "citation": "Shadish, Cook & Campbell (2002)",
       "source": "Shadish, Cook & Campbell (2002)",
@@ -21797,7 +21797,7 @@
     {
       "term": "Sobel Test for Indirect Effects",
       "slug": "sobel-test-for-indirect-effects",
-      "vietnamese": "Kiểm định Sobel (Kiểm định ý nghĩa thống kê của tác động gián tiếp a * b dựa trên giả định phân phối chuẩn)",
+      "vietnamese": "Kiểm định Sobel (Kiểm định ý nghĩa thống kê của tác động gián tiếp a · b dựa trên giả định phân phối chuẩn)",
       "domain": "Mediation Analysis",
       "citation": "Sobel (1982)",
       "category": "encyclopedia",
@@ -22934,13 +22934,13 @@
       "citation": "This study systematically investigates how sufficient operates within the proposed conceptual framework."
     },
     {
-      "term": "sum",
-      "slug": "sum",
-      "vietnamese": "thuật ngữ học thuật: sum [academic headword]",
+      "term": "∑",
+      "slug": "∑",
+      "vietnamese": "thuật ngữ học thuật: ∑ [academic headword]",
       "domain": "Academic Vocabulary (AWL)",
-      "source": "This study systematically investigates how sum operates within the proposed conceptual framework.",
+      "source": "This study systematically investigates how ∑ operates within the proposed conceptual framework.",
       "tier": "awl",
-      "citation": "This study systematically investigates how sum operates within the proposed conceptual framework."
+      "citation": "This study systematically investigates how ∑ operates within the proposed conceptual framework."
     },
     {
       "term": "summary",
@@ -24123,7 +24123,7 @@
     },
     {
       "term": "Total Sum of Squares (TSS)",
-      "slug": "total-sum-of-squares-tss",
+      "slug": "total-∑-of-squares-tss",
       "vietnamese": "Tổng Bình phương Toàn phần (Tổng biến thiên của biến phụ thuộc xung quanh giá trị trung bình: TSS = ESS + RSS)",
       "domain": "Regression Analysis",
       "citation": "Wooldridge (2010)",
@@ -24465,7 +24465,7 @@
     {
       "term": "Truth Table Algorithm in fsQCA",
       "slug": "truth-table-algorithm-in-fsqca",
-      "vietnamese": "Thuật toán Bảng Chân lý fsQCA (Liệt kê toàn bộ 2^k tổ hợp logic có thể có của các điều kiện tiền đề)",
+      "vietnamese": "Thuật toán Bảng Chân lý fsQCA (Liệt kê toàn bộ 2ᵏ tổ hợp logic có thể có của các điều kiện tiền đề)",
       "domain": "Configurational Methods",
       "citation": "Ragin (2008)",
       "category": "encyclopedia",

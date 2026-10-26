@@ -331,12 +331,12 @@
       "full_name": "Item Information Function",
       "vietnamese": "Hàm thông tin câu hỏi",
       "purpose": "Biểu diễn lượng thông tin (độ chuẩn xác đo lường) mà một câu hỏi đóng góp tại từng ngưỡng năng lực tiềm ẩn theta cụ thể.",
-      "benchmark": "Thông tin cực đại tại ngưỡng độ khó của câu hỏi: I(theta) = a² * P * (1-P).",
+      "benchmark": "Thông tin cực đại tại ngưỡng độ khó của câu hỏi: I(theta) = a² * P · (1-P).",
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
       "purpose_en": "Academic purpose and contextual usage of Item Information Function in research methodology.",
-      "benchmark_en": "Thông tin cực đại tại ngưỡng độ khó của câu hỏi: I(theta) = a² * P * (1-P).",
+      "benchmark_en": "Thông tin cực đại tại ngưỡng độ khó của câu hỏi: I(theta) = a² * P · (1-P).",
       "domain_en": "Methodology & Statistics"
     },
     "TIF": {
@@ -451,12 +451,12 @@
       "full_name": "Analysis of Covariance",
       "vietnamese": "Phân tích hiệp phương sai",
       "purpose": "Kết hợp ANOVA và hồi quy, so sánh giá trị trung bình các nhóm sau khi đã kiểm soát và hiệu chỉnh tác động của biến hiệp biến (covariate).",
-      "benchmark": "Giả định bắt buộc: Tính đồng nhất của các độ dốc hồi quy (Homogeneity of regression slopes / p > 0.05 cho tương tác nhóm * covariate).",
+      "benchmark": "Giả định bắt buộc: Tính đồng nhất của các độ dốc hồi quy (Homogeneity of regression slopes / p > 0.05 cho tương tác nhóm · covariate).",
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
       "purpose_en": "Academic purpose and contextual usage of Analysis of Covariance in research methodology.",
-      "benchmark_en": "Giả định bắt buộc: Tính đồng nhất của các độ dốc hồi quy (Homogeneity of regression slopes / p > 0.05 cho tương tác nhóm * covariate).",
+      "benchmark_en": "Giả định bắt buộc: Tính đồng nhất của các độ dốc hồi quy (Homogeneity of regression slopes / p > 0.05 cho tương tác nhóm · covariate).",
       "domain_en": "Methodology & Statistics"
     },
     "MANOVA": {
@@ -559,12 +559,12 @@
       "full_name": "Goodness of Fit",
       "vietnamese": "Độ phù hợp của mô hình",
       "purpose": "Mức độ mà ma trận hiệp phương sai ngụ ý bởi mô hình lý thuyết tái tạo chính xác ma trận hiệp phương sai dữ liệu thực nghiệm quan sát được.",
-      "benchmark": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb * R²_tb).",
+      "benchmark": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb · R²_tb).",
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: GoF của Tenenhaus không phù hợp để đánh giá mô hình PLS (Henseler & Sarstedt, 2013).",
       "purpose_en": "Academic purpose and contextual usage of Goodness of Fit in research methodology.",
-      "benchmark_en": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb * R²_tb).",
+      "benchmark_en": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb · R²_tb).",
       "domain_en": "Methodology & Statistics"
     },
     "MIMIC": {
