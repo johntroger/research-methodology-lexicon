@@ -8,10 +8,9 @@ import {
   AlertCircle, 
   CheckCircle2, 
   ExternalLink,
-  User,
-  Sparkles
+  User
 } from "lucide-react";
-import { loginWithGoogle, loginAsDemoScholar } from "@/lib/firebase-service";
+import { loginWithGoogle } from "@/lib/firebase-service";
 
 interface LoginModalProps {
   isOpen: boolean;
@@ -37,18 +36,13 @@ export default function LoginModal({
   const t = {
     title: isEn ? "Scholar Authentication" : "Xác Thực Danh Tính Học Thuật",
     subtitle: isEn 
-      ? "Sign in to save research bookmarks, propose peer-reviewed revisions, and join academic debates" 
-      : "Đăng nhập để đồng bộ sổ tay tra cứu, đề xuất hiệu đính mục từ và tham gia diễn đàn học thuật",
+      ? "Sign in with your Google account to save research bookmarks, propose peer-reviewed revisions, and join academic debates" 
+      : "Đăng nhập bằng tài khoản Google để đồng bộ sổ tay tra cứu, đề xuất hiệu đính mục từ và tham gia diễn đàn học thuật",
     googleBtn: isEn ? "Sign in with Google Account" : "Đăng nhập bằng Tài khoản Google",
-    demoBtn: isEn ? "One-Click Quick Login (Demo Scholar Mode)" : "Đăng nhập Nhanh Học Giả (ThS. Trần Thanh Tùng)",
-    orDivider: isEn ? "OR QUICK TESTING" : "HOẶC CHẾ ĐỘ KIỂM THỬ NHANH",
     unauthorizedTitle: isEn ? "Firebase Domain Not Authorized" : "Tên miền chưa được cấp quyền trong Firebase Auth",
     unauthorizedGuide: isEn 
-      ? "The current domain has not been whitelisted in Firebase Console. You can add it under: Firebase Console > Authentication > Settings > Authorized Domains."
-      : "Tên miền hiện tại chưa được cấp quyền trong Firebase Console. Bạn có thể thêm vào mục: Firebase Console > Authentication > Settings > Authorized Domains.",
-    unauthorizedTip: isEn
-      ? "Alternatively, use the Quick Login button below to test all community & editorial features immediately."
-      : "Hoặc bạn có thể bấm nút Đăng nhập Nhanh bên dưới để thử nghiệm đầy đủ tính năng ngay lập tức.",
+      ? "The domain vnresearch-dictionary.vercel.app has not been whitelisted in Firebase Console. Please add it under: Firebase Console > Authentication > Settings > Authorized Domains."
+      : "Tên miền vnresearch-dictionary.vercel.app chưa được cấp quyền trong Firebase Console. Vui lòng thêm vào mục: Firebase Console > Authentication > Settings > Authorized Domains.",
     footerNote: isEn
       ? "Your scholarly identity will be attributed on peer-reviewed revisions in the Hall of Fame."
       : "Danh tính học thuật của bạn sẽ được ghi nhận công khai trên các mục từ được phê duyệt và Bảng Vinh danh."
@@ -70,7 +64,13 @@ export default function LoginModal({
       const errCode = err?.code || "";
       const errMsg = err?.message || "";
 
-      if (errCode === "auth/unauthorized-domain" || errMsg.includes("unauthorized-domain")) {
+      if (errCode === "auth/configuration-not-found" || errMsg.includes("configuration-not-found")) {
+        setAuthError(
+          isEn 
+            ? "Google provider is not enabled in Firebase Console. Go to: Firebase Console > Authentication > Sign-in method > Enable 'Google' and save."
+            : "Chưa kích hoạt đăng nhập Google trong Firebase Console. Vui lòng vào: Firebase Console > Authentication > tab 'Sign-in method' > Chọn 'Google', gạt nút 'Enable' (Bật), chọn email hỗ trợ và bấm Lưu (Save)."
+        );
+      } else if (errCode === "auth/unauthorized-domain" || errMsg.includes("unauthorized-domain")) {
         const domain = typeof window !== "undefined" ? window.location.hostname : "vnresearch-dictionary.vercel.app";
         setUnauthorizedDomain(domain);
       } else if (errCode === "auth/popup-closed-by-user") {
@@ -83,12 +83,6 @@ export default function LoginModal({
     } finally {
       setIsLoading(false);
     }
-  };
-
-  const handleDemoSignIn = () => {
-    const user = loginAsDemoScholar();
-    onSuccess(user);
-    onClose();
   };
 
   return (
@@ -125,12 +119,9 @@ export default function LoginModal({
             <p className="text-[11px] leading-relaxed text-amber-800 dark:text-amber-300">
               {t.unauthorizedGuide}
             </p>
-            <div className="p-2 rounded bg-white/70 dark:bg-slate-900/60 border border-amber-200 dark:border-amber-900 font-mono text-[10px] select-all break-all text-slate-700 dark:text-slate-300">
-              Domain: {unauthorizedDomain}
+            <div className="p-2 rounded bg-white/70 dark:bg-slate-900/60 border border-amber-200 dark:border-amber-900 font-mono text-[11px] select-all break-all text-slate-800 dark:text-slate-200 font-bold">
+              {unauthorizedDomain}
             </div>
-            <p className="text-[11px] font-medium text-emerald-700 dark:text-emerald-400">
-              &rarr; {t.unauthorizedTip}
-            </p>
           </div>
         ) : authError ? (
           <div className="p-3 rounded-xl bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-800 text-xs text-red-600 flex items-center gap-2">
@@ -141,7 +132,7 @@ export default function LoginModal({
 
         {/* Hành động Đăng nhập */}
         <div className="space-y-3 pt-2">
-          {/* Nút 1: Đăng nhập Google */}
+          {/* Nút: Đăng nhập Google */}
           <button
             onClick={handleGoogleSignIn}
             disabled={isLoading}
@@ -166,23 +157,6 @@ export default function LoginModal({
               />
             </svg>
             <span>{isLoading ? "..." : t.googleBtn}</span>
-          </button>
-
-          {/* Phân cách */}
-          <div className="relative flex items-center justify-center my-2">
-            <div className="border-t border-slate-200 dark:border-slate-800 w-full" />
-            <span className="bg-white dark:bg-slate-900 px-2 text-[10px] font-mono text-slate-400 absolute">
-              {t.orDivider}
-            </span>
-          </div>
-
-          {/* Nút 2: Đăng nhập Nhanh Học Giả Thử Nghiệm */}
-          <button
-            onClick={handleDemoSignIn}
-            className="w-full py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs transition flex items-center justify-center gap-2 shadow-xs"
-          >
-            <Sparkles size={14} className="text-amber-300" />
-            <span>{t.demoBtn}</span>
           </button>
         </div>
 
