@@ -52,9 +52,21 @@ async function pushTermsToFirestore() {
 
   const raw = fs.readFileSync(dataPath, "utf-8");
   const json = JSON.parse(raw);
-  const terms: any[] = json.terms || [];
+  let terms: any[] = json.terms || [];
 
-  console.log(`📦 Tìm thấy ${terms.length} thuật ngữ. Đang tiến hành ghi theo lô (batch write)...`);
+  const args = process.argv.slice(2);
+  const onlyFlagship = args.includes("--only-flagship");
+  const onlyUpdated = args.includes("--only-updated");
+
+  if (onlyUpdated) {
+    terms = terms.filter(t => t.last_updated === "2026-10-26");
+    console.log(`🔍 Lọc theo chế độ --only-updated: còn ${terms.length} thuật ngữ.`);
+  } else if (onlyFlagship) {
+    terms = terms.filter(t => t.is_flagship);
+    console.log(`🔍 Lọc theo chế độ --only-flagship: còn ${terms.length} thuật ngữ.`);
+  }
+
+  console.log(`📦 Tìm thấy ${terms.length} thuật ngữ cần đồng bộ. Đang tiến hành ghi theo lô (batch write)...`);
 
   // Firestore giới hạn 500 thao tác / batch
   const BATCH_SIZE = 400;
