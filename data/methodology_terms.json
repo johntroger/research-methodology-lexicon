@@ -3986,34 +3986,26 @@
     },
     {
       "id": "marker-variable-technique",
-      "term": "Marker Variable Technique (Lindell & Whitney Approach)",
+      "term": "Marker Variable Technique (Lindell & Whitney)",
       "ipa": "/ˈmɑːkə ˈvɛərɪəbl tɛkˈniːk/",
-      "vietnamese": "Kỹ thuật biến đánh dấu / Phương pháp kiểm soát CMV qua biến Marker",
+      "vietnamese": "Kỹ thuật biến đánh dấu kiểm soát phương sai phương pháp chung",
       "vietnamese_variants": [
-        "Kỹ thuật biến Marker",
-        "Phương pháp Lindell & Whitney",
-        "Marker-Variable Approach"
+        "Biến Marker",
+        "Kỹ thuật Lindell & Whitney",
+        "Marker Variable Approach for CMV"
       ],
-      "category": "Quantitative Methods",
+      "category": "SEM & Psychometrics",
       "domain_tags": [
         "Mô hình SEM",
         "Sai lệch Phương pháp Chung (CMV)",
         "Đo lường Tâm lý",
         "Q1 Top Tier Standard"
       ],
-      "core_definition": "Marker Variable Technique là một phương pháp thống kê hậu nghiệm xuất sắc do Michael K. Lindell và David J. Whitney (2001) sáng lập nhằm phát hiện và điều chỉnh phương sai phương pháp chung (CMV) trong các nghiên cứu khảo sát. Phương pháp này đưa vào bảng hỏi một 'Biến đánh dấu' (Marker Variable) - một cấu trúc đo lường hoàn toàn không có mối liên hệ lý thuyết nào với ít nhất một (hoặc tất cả) các biến chính trong mô hình nghiên cứu. Bất kỳ mối tương quan quan sát được nào giữa Biến đánh dấu và các biến chính đều được giả định là do phương sai phương pháp chung (CMV) thuần túy tạo nên.",
+      "core_definition": "Kỹ thuật biến đánh dấu (Marker Variable Technique - Lindell & Whitney, 2001; Williams et al., 2010) là phương pháp thống kê chuẩn mực để nhận diện và kiểm soát hiện tượng Phương sai Phương pháp Chung (Common Method Variance - CMV) trong các nghiên cứu khảo sát đơn nguồn (single-source surveys). Phương pháp đưa vào bảng hỏi một biến lý thuyết hoàn toàn không có tương quan về mặt khái niệm (theoretically unrelated marker variable) với các biến nghiên cứu chính; mọi tương quan thực nghiệm quan sát được giữa biến marker và các biến chính đều được quy kết là do sai lệch phương pháp gây ra.",
       "paradigm_debates": "Vượt trội hoàn toàn so với phép thử Harman. Cho phép tác giả tính toán hệ số tương quan đã hiệu chỉnh suy giảm ($r_{adj}$) và kiểm tra xem sau khi trừ đi $r_M$, các mối quan hệ giả thuyết ban đầu có còn giữ được ý nghĩa thống kê hay không.",
-      "benchmarks": [
-        "Tiêu chuẩn chọn biến Marker lý tưởng: Phải là một biến có căn cứ lý thuyết rõ ràng rằng nó KHÔNG liên quan đến các biến nghiên cứu (ví dụ: thái độ đối với màu xanh da trời, kiến thức về thiên văn học trong một khảo sát về hành vi mua sắm).",
-        "Đo lường bằng cùng một định dạng thang đo: Biến Marker phải sử dụng cùng số điểm Likert và cùng phong cách trình bày với các biến chính.",
-        "Ngưỡng đánh giá r_M: Thường r_M dao động từ 0.01 đến 0.15; nếu r_M > 0.25 thì biến marker có thể đã bị nhiễm tương quan thực chất."
-      ],
-      "pitfalls": [
-        "Chọn biến Marker có liên hệ lý thuyết ngầm định: Chọn một biến có liên quan dù gián tiếp đến biến phụ thuộc khiến việc trừ bớt tương quan làm biến mất các mối quan hệ thực tế.",
-        "Dùng biến Marker đo bằng định dạng khác: Sử dụng câu hỏi trắc nghiệm A,B,C làm marker cho các câu hỏi thang Likert 7 điểm, vi phạm bản chất chia sẻ định dạng phương pháp.",
-        "Không lên kế hoạch đưa biến Marker vào bảng hỏi từ đầu: Sau khi thu thập xong mới phát hiện bảng hỏi không có biến marker nào để chạy phân tích."
-      ],
-      "apa_reference": "Lindell, M. K., & Whitney, D. J. (2001). Accounting for common method variance in cross-sectional research designs. Journal of Applied Psychology, 86(1), 114-121. https://doi.org/10.1037/0021-9010.86.1.114",
+      "benchmarks": "Nếu tất cả các mối quan hệ giả thuyết chính vẫn giữ nguyên ý nghĩa thống kê (p < 0.05) sau khi đã trừ đi phương sai của biến Marker r_M, khẳng định nghiên cứu hoàn toàn không bị chi phối bởi CMV. Vượt trội hoàn toàn so với kiểm định Harman truyền thống.",
+      "pitfalls": "Bẫy phản biện: Chọn một biến Marker có mối liên hệ lý thuyết tiềm ẩn với một trong các biến nghiên cứu chính (ví dụ chọn 'Tính lạc quan' làm marker khi nghiên cứu về 'Sự hài lòng công việc'). Khi đó, biến marker sẽ triệt tiêu một phần phương sai thực chất của mô hình, dẫn đến kết luận sai lệch.",
+      "apa_reference": "Lindell, M. K., & Whitney, D. J. (2001). Accounting for common method variance in cross-sectional research designs. Journal of Applied Psychology, 86(1), 114–121. https://doi.org/10.1037/0021-9010.86.1.114",
       "synonyms": [
         "Marker Variable Approach",
         "Lindell-Whitney Method",
@@ -4046,8 +4038,8 @@
         "needs_edit": true
       },
       "subcategory": "Survey Biases",
-      "operational_mechanism": "Công thức hiệu chỉnh tương quan từng phần của Lindell & Whitney: Gọi r_M là hệ số tương quan nhỏ nhất giữa biến đánh dấu và các biến quan tâm (đại diện cho ước lượng của CMV). Tương quan hiệu chỉnh giữa hai biến X và Y (r_XY_adj) được tính theo công thức: r_XY_adj = (r_XY - r_M) / (1 - r_M). Giá trị t-statistic kiểm định ý nghĩa thống kê của tương quan hiệu chỉnh: t = r_XY_adj / sqrt((1 - r_XY_adj^2) / (N - 3)). Nếu r_XY_adj vẫn giữ được ý nghĩa thống kê (p < 0.05), kết luận mối quan hệ thực chất không bị bóp méo bởi CMV.",
-      "seminal_citation": "Lindell, M. K., & Whitney, D. J. (2001). Accounting for common method variance in cross-sectional research designs. Journal of Applied Psychology, 86(1), 114-121; Williams, L. J., Hartman, N., & Cavazotte, F. (2010). Method variance and marker variables: A review and comprehensive CFA approach. Organizational Research Methods, 13(3), 477-514.",
+      "operational_mechanism": "1. Lựa chọn biến Marker: Một cấu trúc lý thuyết đo lường cùng thang đo (ví dụ: thái độ đối với màu xanh lam, lòng yêu thích thiên văn) nhưng hoàn toàn không liên quan đến mô hình nghiên cứu. 2. Ước lượng tương quan nhỏ nhất r_M giữa biến marker và các biến chính trong mô hình. 3. Hiệu chỉnh ma trận tương quan: r_adj = (r_xy - r_M) / (1 - r_M). 4. Kiểm định ý nghĩa thống kê của tương quan hiệu chỉnh r_adj. 5. Biến thể nâng cao CFA Marker Technique (Williams et al., 2010): So sánh mô hình baseline, mô hình Method-U (unconstrained) và mô hình Method-R (restricted).",
+      "seminal_citation": "Lindell & Whitney (2001); Williams, Hartman, & Cavazotte (2010)",
       "is_flagship": true,
       "quality_tier": "flagship",
       "deep_upgraded": true,
@@ -7920,15 +7912,19 @@
     },
     {
       "id": "beta-distribution",
-      "term": "Beta Distribution",
-      "vietnamese": "Phân phối Beta",
-      "vietnamese_variants": [],
+      "term": "Beta Distribution in Econometrics & Meta-Analysis",
+      "vietnamese": "Phân phối Beta trong kinh tế lượng và phân tích gộp",
+      "vietnamese_variants": [
+        "Phân phối Beta",
+        "Beta Distribution",
+        "Hàm mật độ Beta"
+      ],
       "domain_tags": [
         "Probability",
         "Distributions"
       ],
-      "core_definition": "Phân phối xác suất liên tục định nghĩa trên khoảng [0, 1], làm phân phối tiên nghiệm cho tỷ lệ trong Bayes.",
-      "seminal_citation": "Gupta & Nadarajah (2004)",
+      "core_definition": "Phân phối Beta (Johnson, Kotz, & Balakrishnan, 1995) là họ phân phối xác suất liên tục linh hoạt được định nghĩa trên khoảng giới hạn [0, 1], được điều khiển bởi hai tham số hình dạng alpha > 0 và beta > 0. Do tính chất tự nhiên bị chặn trong đoạn [0, 1], phân phối Beta là mô hình xác suất toán học chuẩn mực nhất để mô hình hóa các biến số dạng tỷ lệ phần trăm, xác suất, thị phần, chỉ số hiệu quả và tỷ lệ hoàn vốn.",
+      "seminal_citation": "Ferrari & Cribari-Neto (2004); Papke & Wooldridge (1996)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
@@ -7936,7 +7932,14 @@
       "domain_tags_en": [
         "Probability",
         "Distributions"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Hàm mật độ xác suất: f(x; alpha, beta) = [x^(alpha - 1) * (1 - x)^(beta - 1)] / B(alpha, beta), với B là hàm Beta Euler. 2. Giá trị kỳ vọng E(X) = alpha / (alpha + beta) và Phương sai Var(X) = (alpha * beta) / [ (alpha + beta)^2 * (alpha + beta + 1) ]. 3. Ứng dụng hồi quy: Hồi quy Beta (Beta Regression - Ferrari & Cribari-Neto, 2004) tham số hóa trung bình mu và tham số phân tán phi để mô hình hóa trực tiếp các biến phụ thuộc tỷ lệ (y in (0, 1)). 4. Đóng vai trò là phân phối tiên nghiệm liên hợp (Conjugate prior) cho phân phối Nhị thức (Binomial) trong thống kê Bayes.",
+      "benchmarks": "Chuẩn mực thay thế bắt buộc cho OLS khi biến phụ thuộc là tỷ lệ liên tục (ví dụ: Tỷ lệ sở hữu nước ngoài, Tỷ lệ nợ xấu, Chỉ số ESG). Hồi quy Beta bảo đảm các dự báo xác suất luôn nằm nghiêm ngặt trong khoảng (0, 1) và nắm bắt xuất sắc hiện tượng phương sai thay đổi tự nhiên ở hai đầu biên.",
+      "pitfalls": "Bẫy phản biện: Chạy hồi quy OLS tuyến tính cho biến phụ thuộc là tỷ lệ phần trăm (như tỷ lệ lợi nhuận, tỷ lệ nắm giữ). Hồi quy OLS có thể đưa ra các dự báo vô lý nhỏ hơn 0 hoặc lớn hơn 1 và vi phạm giả định phương sai không đổi; phản biện Q1 sẽ yêu cầu chuyển sang Beta Regression hoặc Fractional Logit (Papke & Wooldridge, 1996).",
+      "apa_reference": "Ferrari, S., & Cribari-Neto, F. (2004). Beta regression for modelling rates and proportions. Journal of Applied Statistics, 31(7), 799–815. https://doi.org/10.1080/0266476042000214501",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "between-method-across-method-triangulation",
@@ -8488,21 +8491,32 @@
     },
     {
       "id": "bonferroni-correction",
-      "term": "Bonferroni Correction",
-      "vietnamese": "Hiệu chỉnh Bonferroni chia nhỏ mức ý nghĩa alpha để kiểm soát sai lầm loại I trong đa kiểm định",
-      "vietnamese_variants": [],
+      "term": "Bonferroni Correction (FWER Control)",
+      "vietnamese": "Hiệu chỉnh Bonferroni kiểm soát sai lầm loại I",
+      "vietnamese_variants": [
+        "Hiệu chỉnh Bonferroni",
+        "Quy tắc Bonferroni",
+        "Hiệu chỉnh đa kiểm định Bonferroni"
+      ],
       "domain_tags": [
         "Multiple Testing"
       ],
-      "core_definition": "Hiệu chỉnh Bonferroni chia nhỏ mức ý nghĩa alpha để kiểm soát sai lầm loại I trong đa kiểm định.",
-      "seminal_citation": "Dunn (1961)",
+      "core_definition": "Hiệu chỉnh Bonferroni (Dunn, 1961; Bonferroni, 1936) là kỹ thuật thống kê cổ điển và nghiêm ngặt nhất dùng để kiểm soát tỷ lệ sai lầm loại I trên toàn bộ họ kiểm định (Family-Wise Error Rate - FWER). Khi thực hiện đồng thời m phép kiểm định giả thuyết độc lập hoặc phụ thuộc, hiệu chỉnh Bonferroni chia đều mức ý nghĩa danh nghĩa alpha cho tổng số phép kiểm định (alpha_adj = alpha / m) để bảo đảm xác suất mắc phải ít nhất một kết luận dương tính giả không vượt quá alpha.",
+      "seminal_citation": "Dunn (1961); Bonferroni (1936)",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Bonferroni Correction according to Dunn (1961).",
       "domain_tags_en": [
         "Multiple Testing"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Xác định số lượng phép kiểm định đồng thời m (ví dụ: so sánh m cặp nhóm hậu kiểm hoặc kiểm định m hệ số hồi quy). 2. Ngưỡng ý nghĩa hiệu chỉnh: Bác bỏ H0_i khi và chỉ khi p_i <= alpha / m (hoặc tính giá trị p hiệu chỉnh: p_adj,i = min(1, m * p_i)). 3. Dựa trên Bất đẳng thức Boole (Boole's inequality): P(cup A_i) <= sum P(A_i).",
+      "benchmarks": "Được áp dụng chuẩn mực trong các so sánh cặp hậu kiểm ANOVA (Post-hoc pairwise tests) và phân tích phân nhóm lâm sàng. Nếu kiểm định 10 giả thuyết ở mức alpha = 0.05, ngưỡng bác bỏ mới cho từng kiểm định là 0.05 / 10 = 0.005.",
+      "pitfalls": "Bẫy phản biện: 'Over-conservatism' — Hiệu chỉnh Bonferroni quá thận trọng và bảo thủ khi số lượng kiểm định m lớn (như trong nghiên cứu di truyền học GWAS hoặc quét hàng trăm dị biệt thị trường). Mức phạt quá nặng làm triệt tiêu sức mạnh thống kê (Statistical Power), khiến tỷ lệ sai lầm loại II (bỏ sót các hiệu ứng thực tế) tăng vọt; trong trường hợp m lớn, chuẩn mực quốc tế là chuyển sang kiểm soát Tỷ lệ Khám phá Sai (FDR của Benjamini-Hochberg).",
+      "apa_reference": "Dunn, O. J. (1961). Multiple comparisons among means. Journal of the American Statistical Association, 56(293), 52–64. https://doi.org/10.1080/01621459.1961.10482090",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "boolean-minimization-quine-mccluskey",
@@ -8761,20 +8775,31 @@
     {
       "id": "box-cox-power-transformation",
       "term": "Box-Cox Power Transformation",
-      "vietnamese": "Biến đổi Lũy thừa Box-Cox",
-      "vietnamese_variants": [],
+      "vietnamese": "Biến đổi lũy thừa Box-Cox",
+      "vietnamese_variants": [
+        "Biến đổi Box-Cox",
+        "Box-Cox Transformation",
+        "Chuẩn hóa phân phối Box-Cox"
+      ],
       "domain_tags": [
         "Data Transformations"
       ],
-      "core_definition": "Họ hàm toán học tham số lambda biến đổi dữ liệu dương lệch về phân phối chuẩn.",
-      "seminal_citation": "Box & Cox (1964)",
+      "core_definition": "Biến đổi lũy thừa Box-Cox (Box & Cox, 1964) là phép biến đổi toán học tham số kinh điển dùng để ổn định phương sai (homoscedasticity) và chuyển đổi các biến phụ thuộc có phân phối lệch (skewed data) hoặc phi tuyến tính về trạng thái tiệm cận phân phối chuẩn, giúp thỏa mãn các giả định cốt lõi của mô hình hồi quy tuyến tính OLS.",
+      "seminal_citation": "Box & Cox (1964); Sakia (1992)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Box-Cox Power Transformation according to Box & Cox (1964).",
       "domain_tags_en": [
         "Data Transformations"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Hàm biến đổi với tham số lambda: y^(lambda) = (y^lambda - 1) / lambda (nếu lambda != 0) và y^(lambda) = ln(y) (nếu lambda = 0), với điều kiện bắt buộc y > 0. 2. Ước lượng giá trị tối ưu lambda* bằng phương pháp Hợp lý cực đại (Maximum Likelihood Estimation - MLE) trên một lưới quét tham số (thường từ -2 đến +2). 3. Các trường hợp đặc biệt: lambda = 1 (giữ nguyên không biến đổi); lambda = 0 (biến đổi logarit tự nhiên); lambda = 0.5 (biến đổi căn bậc hai); lambda = -1 (biến đổi nghịch đảo). 4. Tính khoảng tin cậy 95% cho lambda bằng kiểm định tỷ số hợp lý.",
+      "benchmarks": "Được ứng dụng chuẩn mực trong hồi quy dữ liệu tài chính (thu nhập, quy mô tài sản, chi tiêu) có phân phối lệch phải nghiêm trọng. Khôi phục lại tính không chệch và hiệu quả của các kiểm định t-test và F-test trong OLS.",
+      "pitfalls": "Bẫy phản biện: (1) Biến đổi Box-Cox chỉ áp dụng được cho dữ liệu dương nghiêm ngặt (y > 0); nếu dữ liệu có giá trị bằng 0 hoặc âm, bắt buộc phải dùng biến đổi Box-Cox dịch chuyển (y + c) hoặc biến đổi Sinh-nghịch đảo (Inverse Hyperbolic Sine - IHS transformation của Bellemare & Wichman, 2020); (2) Diễn giải hệ số hồi quy: Các hệ số hồi quy sau biến đổi Box-Cox không còn mang ý nghĩa kinh tế trực tiếp đơn giản, cần tính toán độ co giãn hoặc tác động biên ở thang đo gốc.",
+      "apa_reference": "Box, G. E., & Cox, D. R. (1964). An analysis of transformations. Journal of the Royal Statistical Society: Series B (Methodological), 26(2), 211–243. https://doi.org/10.1111/j.2517-6161.1964.tb00553.x",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "boxs-m-test",
@@ -10492,15 +10517,19 @@
     },
     {
       "id": "coefficient-omega-mcdonald-s",
-      "term": "Coefficient omega (McDonald s)",
-      "vietnamese": "Hệ số tin cậy Omega của McDonald",
-      "vietnamese_variants": [],
+      "term": "McDonald's Coefficient Omega (Congeneric Reliability)",
+      "vietnamese": "Hệ số tin cậy Omega của McDonald (Độ tin cậy đồng phát)",
+      "vietnamese_variants": [
+        "Hệ số Omega McDonald",
+        "Composite Reliability via Omega",
+        "McDonald's Omega Congeneric"
+      ],
       "domain_tags": [
         "Methodology",
         "Research Design"
       ],
-      "core_definition": "Khắc phục sai số nghiêm trọng của Alpha khi vi phạm tau-equivalence.",
-      "seminal_citation": "DeVellis (2016)",
+      "core_definition": "Hệ số tin cậy Omega của McDonald (McDonald's Coefficient Omega) là phiên bản công thức tính toán độ tin cậy tương đương về mặt toán học với Độ tin cậy tổng hợp (Composite Reliability - CR / Dillon-Goldstein's rho) trong SEM. Chỉ số này giải phóng nhà nghiên cứu khỏi giả định phi thực tế của Cronbach's Alpha, cho phép từng mục hỏi đóng góp tỷ trọng phương sai thực tế khác nhau vào cấu trúc tiềm ẩn.",
+      "seminal_citation": "McDonald (1999); Raykov (1997)",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
@@ -10508,7 +10537,14 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Công thức tính toán: omega = [ (sum_{i=1}^k lambda_i)^2 ] / [ (sum_{i=1}^k lambda_i)^2 + sum_{i=1}^k (1 - lambda_i^2) ], trong đó lambda_i là hệ số tải nhân tố chuẩn hóa của biến quan sát thứ i từ mô hình CFA một nhân tố. 2. Khi tất cả các lambda_i bằng nhau hoàn hảo (Tau-equivalence), hệ số Omega trùng khớp với Cronbach's Alpha. 3. Khi các lambda_i khác nhau, Omega luôn lớn hơn hoặc bằng Alpha.",
+      "benchmarks": "Ngưỡng tiêu chuẩn chuẩn mực: omega >= 0.70 đối với nghiên cứu khám phá ban đầu; omega >= 0.80 đối với nghiên cứu kiểm định chính thức. Được báo cáo đồng thời trong mọi bảng chất lượng thang đo CFA / SEM.",
+      "pitfalls": "Bẫy phản biện: Báo cáo đồng thời Cronbach's Alpha và Composite Reliability nhưng lại mâu thuẫn nhau mà không có lời giải thích; khi Alpha thấp (0.65) nhưng Omega cao (0.82), tác giả cần giải trình rõ ràng rằng thang đo có tính chất congeneric và Alpha bị chệch dưới.",
+      "apa_reference": "McDonald, R. P. (1999). Test theory: A unified treatment. Lawrence Erlbaum Associates.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "cognitive-access",
@@ -10804,15 +10840,19 @@
     },
     {
       "id": "coherence-of-interpretation",
-      "term": "Coherence of Interpretation",
-      "vietnamese": "(`Tính mạch lạc của diễn giải`): Tránh các mâu thuẫn nội tại trong việc giải thích dữ liệu.",
-      "vietnamese_variants": [],
+      "term": "Coherence of Interpretation in Mixed Methods",
+      "vietnamese": "Tính mạch lạc của diễn giải trong nghiên cứu hỗn hợp",
+      "vietnamese_variants": [
+        "Tính mạch lạc diễn giải",
+        "Interpretive Consistency",
+        "Độ chặt chẽ trong suy luận hỗn hợp"
+      ],
       "domain_tags": [
         "Methodology",
         "Research Design"
       ],
-      "core_definition": "(`Tính mạch lạc của diễn giải`): Tránh các mâu thuẫn nội tại trong việc giải thích dữ liệu.",
-      "seminal_citation": "Flick et al. (2004)",
+      "core_definition": "Tính mạch lạc của diễn giải (Coherence of Interpretation - Onwuegbuzie & Johnson, 2006) là tiêu chí thẩm định chất lượng phương pháp luận cốt lõi trong nghiên cứu hỗn hợp. Tiêu chuẩn này đòi hỏi các kết luận và siêu suy luận của bài báo phải phản ánh một cách nhất quán, không mâu thuẫn nội tại và được nâng đỡ trực tiếp bởi cả hai khối bằng chứng định lượng và định tính đã thu thập.",
+      "seminal_citation": "Onwuegbuzie & Johnson (2006)",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Rác Markdown/bảng; mảnh trích",
@@ -10820,7 +10860,14 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Nguyên tắc không mâu thuẫn: Khi dữ liệu định lượng và định tính cho kết quả trái ngược nhau (ví dụ: khảo sát định lượng cho thấy hài lòng cao nhưng phỏng vấn sâu lại bộc lộ nhiều bức xúc), nhà nghiên cứu không được phép lờ đi mà bắt buộc phải giải trình nguyên nhân thông qua lăng kính ngữ cảnh hoặc thiên lệch đo lường. 2. Đảm bảo tính trung thực diễn giải (Interpretive authenticity): Không bóp méo kết quả định tính để ép khớp với giả thuyết định lượng.",
+      "benchmarks": "Được đánh giá dựa trên Khung giá trị hiệu lực tích hợp (Integrative Legitimation). Đạt chuẩn khi bài báo dành riêng một tiểu mục phân tích sâu sắc các điểm bất đồng dữ liệu (Divergent findings).",
+      "pitfalls": "Bẫy phản biện: 'Confirmation bias synthesis' — Cố tình chỉ trích dẫn các câu phỏng vấn định tính ủng hộ các hệ số hồi quy định lượng và bỏ qua toàn bộ các ý kiến phản biện của người tham gia.",
+      "apa_reference": "Onwuegbuzie, A. J., & Johnson, R. B. (2006). The validity issue in mixed research. Research in the Schools, 13(1), 48–63.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "cointegration",
@@ -15395,21 +15442,32 @@
     },
     {
       "id": "dfbetas-diagnostic",
-      "term": "DFBETAS Diagnostic",
-      "vietnamese": "Chỉ số DFBETAS",
-      "vietnamese_variants": [],
+      "term": "DFBETAS Influence Diagnostic",
+      "vietnamese": "Chỉ số chẩn đoán ảnh hưởng DFBETAS",
+      "vietnamese_variants": [
+        "Chỉ số DFBETAS",
+        "Chẩn đoán điểm ảnh hưởng hệ số hồi quy",
+        "Belsley-Kuh-Welsch DFBETAS"
+      ],
       "domain_tags": [
         "Regression Diagnostics"
       ],
-      "core_definition": "Đo lường mức độ thay đổi của từng hệ số hồi quy riêng lẻ khi loại bỏ quan sát thứ i.",
-      "seminal_citation": "Belsley, Kuh & Welsch (1980)",
+      "core_definition": "DFBETAS (Belsley, Kuh, & Welsch, 1980) là chỉ số chẩn đoán hồi quy chuẩn mực đo lường mức độ tác động của một quan sát đơn lẻ cụ thể lên từng hệ số hồi quy riêng biệt (beta_j). DFBETAS cho biết hệ số beta_j sẽ thay đổi bao nhiêu độ lệch chuẩn nếu quan sát thứ i bị loại bỏ hoàn toàn khỏi mô hình ước lượng OLS.",
+      "seminal_citation": "Belsley, Kuh, & Welsch (1980)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of DFBETAS Diagnostic according to Belsley, Kuh & Welsch (1980).",
       "domain_tags_en": [
         "Regression Diagnostics"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Công thức toán học: DFBETAS_{ij} = (beta_hat_j - beta_hat_{j(-i)}) / [ s_{(-i)} * sqrt((X'X)^(-1)_{jj}) ], trong đó beta_hat_{j(-i)} là hệ số ước lượng khi loại bỏ quan sát i, s_{(-i)} là sai số chuẩn của hồi quy loại trừ quan sát i. 2. Giá trị DFBETAS dương biểu thị quan sát i kéo hệ số beta_j tăng lên; giá trị âm biểu thị quan sát kéo hệ số giảm xuống.",
+      "benchmarks": "Ngưỡng nhận diện điểm có ảnh hưởng lớn (Influential cases): (1) Ngưỡng kích thước mẫu lớn: |DFBETAS_{ij}| > 2 / sqrt(n) (ngưỡng nhạy bén Belsley et al.); (2) Ngưỡng tuyệt đối cho mẫu nhỏ: |DFBETAS_{ij}| > 1.0 (quan sát tự nó làm dịch chuyển hệ số hồi quy hơn 1 độ lệch chuẩn).",
+      "pitfalls": "Bẫy phản biện: Tự động xóa bỏ mọi quan sát có |DFBETAS| vượt ngưỡng. DFBETAS là công cụ chẩn đoán để nhà nghiên cứu kiểm tra tính toàn vẹn của dữ liệu và hiểu sâu hơn về tính nhạy cảm của mô hình; việc tự ý xóa các quan sát hợp lệ chỉ để làm đẹp hệ số là hành vi thao túng dữ liệu bị nghiêm cấm.",
+      "apa_reference": "Belsley, D. A., Kuh, E., & Welsch, R. E. (1980). Regression diagnostics: Identifying influential data and sources of collinearity. John Wiley & Sons. https://doi.org/10.1002/0471725153",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "dffits-diagnostic",
@@ -15431,14 +15489,18 @@
     },
     {
       "id": "diagnostic-odds-ratio",
-      "term": "Diagnostic Odds Ratio",
-      "vietnamese": "Tỷ số Chênh Chẩn đoán (Meta-Analysis Thử nghiệm Chẩn đoán)",
-      "vietnamese_variants": [],
+      "term": "Diagnostic Odds Ratio (DOR)",
+      "vietnamese": "Tỷ số chênh chẩn đoán",
+      "vietnamese_variants": [
+        "Chỉ số DOR",
+        "Diagnostic Odds Ratio in DTA",
+        "Thước đo hiệu năng xét nghiệm chẩn đoán"
+      ],
       "domain_tags": [
         "Diagnostic Meta-Analysis"
       ],
-      "core_definition": "Thước đo hiệu năng tổng hợp của một xét nghiệm hoặc công cụ chẩn đoán, kết hợp cả độ nhạy (Sensitivity) và độ đặc hiệu (Specificity). Ngưỡng thực nghiệm tham chiếu: DOR = 1 biểu thị công cụ không có khả năng phân biệt bệnh tật; DOR càng lớn hơn 1 biểu thị độ chính xác chẩn đoán càng vượt trội.",
-      "seminal_citation": "DOR = 1 biểu thị công cụ không có khả năng phân biệt bệnh tật; DOR càng lớn hơn 1 biểu thị độ chính xác chẩn đoán càng vượt trội.",
+      "core_definition": "Tỷ số chênh chẩn đoán (Diagnostic Odds Ratio - DOR - Glas et al., 2003) là chỉ số thống kê tổng hợp chuẩn mực trong phân tích gộp đánh giá độ chính xác của các thử nghiệm chẩn đoán (Diagnostic Test Accuracy - DTA Meta-Analysis). DOR là tỷ số giữa khả năng xét nghiệm cho kết quả dương tính ở người thực sự mắc bệnh so với khả năng xét nghiệm dương tính ở người không mắc bệnh.",
+      "seminal_citation": "Glas et al. (2003); Rutter & Gatsonis (2001)",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
@@ -15446,7 +15508,13 @@
       "domain_tags_en": [
         "Diagnostic Meta-Analysis"
       ],
-      "benchmarks": "DOR = 1 biểu thị công cụ không có khả năng phân biệt bệnh tật; DOR càng lớn hơn 1 biểu thị độ chính xác chẩn đoán càng vượt trội."
+      "benchmarks": "DOR độc lập với tỷ lệ hiện mắc bệnh (prevalence) trong quần thể. Giá trị DOR nằm trong khoảng [0, vô cùng]: (1) DOR = 1: Xét nghiệm không có giá trị phân biệt; (2) DOR > 1: Xét nghiệm có giá trị phân biệt (DOR càng cao hiệu năng chẩn đoán càng vượt trội, DOR > 20-50 biểu thị công cụ chẩn đoán xuất sắc).",
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Công thức toán học dựa trên bảng 2x2: DOR = (TP / FN) / (FP / TN) = (Sensitivity / (1 - Sensitivity)) / ((1 - Specificity) / Specificity) = (TP * TN) / (FP * FN), trong đó TP là Dương tính thật, TN là Âm tính thật, FP là Dương tính giả, FN là Âm tính giả. 2. Ước lượng gộp thông qua Mô hình Bivariate Random-Effects hoặc Mô hình HSROC (Hierarchical Summary ROC của Rutter & Gatsonis, 2001). 3. Thang đo logarit: ln(DOR) tuân theo phân phối tiệm cận chuẩn.",
+      "pitfalls": "Bẫy phản biện: Tổng hợp riêng biệt Độ nhạy (Sensitivity) và Độ đặc hiệu (Specificity) bằng các mô hình phân tích gộp một biến độc lập. Độ nhạy và độ đặc hiệu luôn có sự đánh đổi lẫn nhau phụ thuộc vào ngưỡng cắt (Cutoff effect); bắt buộc phải dùng mô hình hai biến (Bivariate model) hoặc DOR để bảo toàn cấu trúc hiệp phương sai.",
+      "apa_reference": "Glas, A. S., Lijmer, J. G., Prins, M. H., Bonsel, G. J., & Bossuyt, P. M. (2003). The diagnostic odds ratio: A single indicator of test performance. Journal of Clinical Epidemiology, 56(11), 1129–1135. https://doi.org/10.1016/S0895-4356(03)00177-X",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "dialectical-pluralism-in-mmr",
@@ -15497,21 +15565,32 @@
     },
     {
       "id": "diem-di-biet-anh-huong-outliers-influential-cases",
-      "term": "Outliers & Influential Cases",
-      "vietnamese": "Điểm Dị biệt & Điểm có Ảnh hưởng Lớn (Khoảng cách Cook, DFBETAS)",
-      "vietnamese_variants": [],
+      "term": "Outliers, Leverage, and Influential Cases Diagnostics",
+      "vietnamese": "Chẩn đoán điểm dị biệt, điểm đòn bẩy và điểm có ảnh hưởng lớn",
+      "vietnamese_variants": [
+        "Chẩn đoán ngoại lai OLS",
+        "Khoảng cách Cook",
+        "Leverage và Outliers"
+      ],
       "domain_tags": [
         "Multivariate Data Analysis"
       ],
-      "core_definition": "Mahalanobis Distance (D^2/df > 3.0 hoặc p < .001), Cook's Distance (> 1.0), Leverage values.",
-      "seminal_citation": "Hair et al. (2018)",
+      "core_definition": "Quy trình chẩn đoán điểm dị biệt, đòn bẩy và điểm ảnh hưởng (Cook & Weisberg, 1982; Bollen & Jackman, 1985) là tam giác thẩm định toàn vẹn dữ liệu hồi quy: (1) Điểm dị biệt (Outlier: có phần dư chuẩn hóa e_stud cực lớn theo trục Y); (2) Điểm đòn bẩy cao (High Leverage: có giá trị cực đoan trong không gian các biến độc lập X, đo bằng h_ii); (3) Điểm có ảnh hưởng lớn (Influential Case: kết hợp cả outlier và high leverage làm thay đổi toàn bộ đường hồi quy, đo bằng Khoảng cách Cook's Distance).",
+      "seminal_citation": "Cook (1977); Cook & Weisberg (1982); Bollen & Jackman (1985)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "LaTeX thô; tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Điểm dị biệt & Ảnh hưởng (Outliers & Influential Cases) according to Hair et al. (2018).",
       "domain_tags_en": [
         "Multivariate Data Analysis"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Đo lường đòn bẩy: Giá trị đường chéo ma trận Hat matrix h_ii; ngưỡng cảnh báo h_ii > 2*(k + 1) / n hoặc 3*(k + 1) / n. 2. Đo lường ngoại lai: Phần dư Studentized r_i; cảnh báo khi |r_i| > 3.0. 3. Khoảng cách Cook (Cook's D): D_i = sum (y_hat_j - y_hat_{j(-i)})^2 / [(k + 1) * s^2] = [r_i^2 / (k + 1)] * [h_ii / (1 - h_ii)].",
+      "benchmarks": "Ngưỡng cảnh báo Cook's Distance: D_i > 4 / (n - k - 1) (hoặc D_i > 1.0 theo chuẩn cổ điển). Báo cáo kiểm định tính vững: Chạy mô hình hồi quy OLS trên toàn bộ mẫu và mô hình Hồi quy vững (Robust Regression: M-estimation hoặc Huber/Biweight) để chứng minh các kết luận chính không bị phụ thuộc vào một nhóm nhỏ các điểm dị biệt.",
+      "pitfalls": "Bẫy phản biện: Nhầm lẫn giữa điểm đòn bẩy cao (High leverage) và điểm ảnh hưởng lớn (Influential point). Một quan sát có giá trị X cực đoan (leverage cao) nhưng nằm thẳng hàng hoàn hảo trên đường hồi quy tự nhiên sẽ không làm thay đổi hệ số beta (Cook's D rất nhỏ) và là một quan sát có giá trị củng cố mô hình.",
+      "apa_reference": "Cook, R. D. (1977). Detection of influential observation in linear regression. Technometrics, 19(1), 15–18. https://doi.org/10.1080/00401706.1977.10489493",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "difference-gmm",
@@ -15950,21 +16029,32 @@
     },
     {
       "id": "disproportionate-stratified-sampling",
-      "term": "Disproportionate Stratified Sampling",
-      "vietnamese": "Chọn mẫu phân tầng không theo tỷ lệ",
-      "vietnamese_variants": [],
+      "term": "Disproportionate Stratified Sampling (Neyman Allocation)",
+      "vietnamese": "Phương pháp chọn mẫu phân tầng không theo tỷ lệ (Phân bổ Neyman)",
+      "vietnamese_variants": [
+        "Chọn mẫu phân tầng tối ưu",
+        "Neyman Optimal Allocation",
+        "Disproportionate Sampling Design"
+      ],
       "domain_tags": [
         "Sampling Techniques"
       ],
-      "core_definition": "tăng cỡ mẫu ở các tầng nhỏ hoặc có phương sai lớn.",
-      "seminal_citation": "Cochran (1977)",
+      "core_definition": "Chọn mẫu phân tầng không theo tỷ lệ (Disproportionate Stratified Sampling / Neyman Optimal Allocation - Neyman, 1934; Cochran, 1977) là chiến lược chọn mẫu xác suất tối ưu hóa độ chính xác thống kê. Thay vì phân bổ cỡ mẫu theo tỷ lệ dân số thực tế của từng tầng (Proportionate), phương pháp phân bổ số lượng mẫu lớn hơn cho các tầng có quy mô lớn hơn, có độ biến thiên phương sai nội bộ lớn hơn, hoặc có chi phí thu thập mẫu rẻ hơn, nhằm tối thiểu hóa phương sai của ước lượng trung bình tổng thể với một ngân sách nghiên cứu cố định.",
+      "seminal_citation": "Neyman (1934); Cochran (1977)",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Disproportionate Stratified Sampling according to Cochran (1977).",
       "domain_tags_en": [
         "Sampling Techniques"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Công thức phân bổ tối ưu Neyman: n_h = n * [ (N_h * S_h) / sum_{i=1}^L (N_i * S_i) ], trong đó N_h là quy mô tầng h, S_h là độ lệch chuẩn của tầng h, và n là tổng kích thước mẫu. 2. Khi chi phí khảo sát ở mỗi tầng khác nhau, áp dụng Phân bổ tối ưu chi phí (Optimal Cost Allocation): n_h tỷ lệ thuận với (N_h * S_h / sqrt(c_h)). 3. Phân tích dữ liệu: Bắt buộc phải sử dụng Trọng số mẫu nghịch đảo (Sampling Weights: w_h = N_h / n_h) để hiệu chỉnh khi tính toán giá trị trung bình tổng thể, tránh việc các tầng được chọn vượt tỷ lệ chi phối kết quả.",
+      "benchmarks": "Được áp dụng đặc biệt hiệu quả trong các cuộc điều tra doanh nghiệp lớn (ví dụ: các tập đoàn đa quốc gia có số lượng ít nhưng biến động doanh thu cực lớn, cần chọn mẫu 100% tầng này trong khi chỉ lấy mẫu 5% tầng doanh nghiệp siêu nhỏ). Giúp giảm phương sai ước lượng từ 20-40% so với chọn mẫu ngẫu nhiên đơn giản.",
+      "pitfalls": "Bẫy phản biện: Không sử dụng trọng số mẫu (Sampling weights) khi phân tích hồi quy hoặc tính toán trung bình từ dữ liệu chọn mẫu phân tầng không theo tỷ lệ. Phân tích không trọng số sẽ làm sai lệch hoàn toàn tính đại diện của quần thể và dẫn đến các ước lượng bị chệch tham số nặng nề.",
+      "apa_reference": "Neyman, J. (1934). On the two different aspects of the representative method: The method of stratified sampling and the method of purposive selection. Journal of the Royal Statistical Society, 97(4), 558–625. https://doi.org/10.2307/2342192",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "do-luong-phi-can-thiep-unobtrusive-measures",
@@ -16663,21 +16753,32 @@
     },
     {
       "id": "effect-size-interpretation-cohens-d-eta-squared",
-      "term": "Effect Size Interpretation (Cohen's d, Eta-squared)",
-      "vietnamese": "Diễn giải Kích thước Hiệu ứng",
-      "vietnamese_variants": [],
+      "term": "Effect Size Interpretation (Cohen's d & Eta-squared)",
+      "vietnamese": "Diễn giải kích thước hiệu ứng (Cohen's d và Eta-bình phương)",
+      "vietnamese_variants": [
+        "Diễn giải Effect Size",
+        "Kích thước hiệu ứng d và Eta²",
+        "Độ lớn hiệu ứng thực tế"
+      ],
       "domain_tags": [
         "Statistical Inference"
       ],
-      "core_definition": "Độ lớn thực chất của tác động độc lập với cỡ mẫu.",
-      "seminal_citation": "Cohen (1988)",
+      "core_definition": "Diễn giải kích thước hiệu ứng (Effect Size Interpretation - Cohen, 1988) là yêu cầu chuẩn mực định lượng bắt buộc của APA nhằm đánh giá độ lớn thực chất và ý nghĩa thực tiễn (practical/substantive significance) của một phát hiện nghiên cứu, hoàn toàn độc lập với quy mô mẫu. Trái ngược với p-value (vốn có thể đạt p < 0.001 chỉ nhờ tăng cỡ mẫu N lên cực lớn ngay cả khi hiệu ứng thực tế gần bằng 0), kích thước hiệu ứng lượng hóa chính xác mức độ tác động của biến độc lập lên biến kết quả.",
+      "seminal_citation": "Cohen (1988); Lakens (2013)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Effect Size Interpretation (Cohen's d, Eta-squared) according to Cohen (1988).",
       "domain_tags_en": [
         "Statistical Inference"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Họ chỉ số chênh lệch chuẩn hóa (d family - so sánh trung bình): Cohen's d, Hedges' g, Glass's Delta. 2. Họ chỉ số tỷ lệ phương sai giải thích (r / R^2 family - đo mức độ liên kết): Pearson r, R^2, Eta-squared (eta^2), Partial Eta-squared (eta_p^2), Omega-squared (omega^2). 3. Công thức Partial Eta-squared trong ANOVA: eta_p^2 = SS_effect / (SS_effect + SS_error). 4. Báo cáo khoảng tin cậy 95% cho kích thước hiệu ứng.",
+      "benchmarks": "Quy ước ngưỡng kinh điển của Cohen (1988): (A) Cohen's d: 0.20 (nhỏ), 0.50 (trung bình), 0.80 (lớn); (B) Eta-bình phương (eta^2) / Partial Eta-squared (eta_p^2): 0.01 (nhỏ), 0.06 (trung bình), 0.14 (lớn). Khuyến nghị hiện đại (Lakens, 2013): Cần diễn giải kích thước hiệu ứng trong mối tương quan với các nghiên cứu tương tự trong cùng chuyên ngành thay vì áp dụng máy móc quy ước Cohen.",
+      "pitfalls": "Bẫy phản biện: Tuyên bố một phát hiện có 'đóng góp đột phá' chỉ vì p < 0.001 trong khi Cohen's d = 0.05 hoặc eta_p^2 = 0.002. Với mẫu khảo sát hàng ngàn quan sát, các hiệu ứng vi mô vô nghĩa về mặt thực tiễn vẫn đạt ý nghĩa thống kê; không báo cáo kích thước hiệu ứng sẽ bị phản biện chỉ trích nặng nề.",
+      "apa_reference": "Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Lawrence Erlbaum Associates.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "efficient-market-hypothesis-emh",
@@ -16745,21 +16846,32 @@
     },
     {
       "id": "eggers-regression-test",
-      "term": "Egger's Regression Test",
-      "vietnamese": "Kiểm định hồi quy tuyến tính Egger đo mức độ bất đối xứng của biểu đồ hình phễu trong Meta-Analysis",
-      "vietnamese_variants": [],
+      "term": "Egger's Linear Regression Test for Funnel Plot Asymmetry",
+      "vietnamese": "Kiểm định hồi quy tuyến tính Egger về độ bất đối xứng biểu đồ phễu",
+      "vietnamese_variants": [
+        "Kiểm định Egger",
+        "Egger's Test",
+        "Kiểm định thiên lệch xuất bản Egger"
+      ],
       "domain_tags": [
         "Meta-Analysis"
       ],
-      "core_definition": "Kiểm định hồi quy tuyến tính Egger đo mức độ bất đối xứng của biểu đồ hình phễu trong Meta-Analysis.",
-      "seminal_citation": "Egger et al. (1997)",
+      "core_definition": "Kiểm định hồi quy tuyến tính Egger (Egger et al., 1997) là phép kiểm định tham số chuẩn mực nhất trong phân tích gộp (meta-analysis) để phát hiện định lượng hiện tượng bất đối xứng biểu đồ hình phễu (funnel plot asymmetry), thường phản ánh sự hiện diện của thiên lệch xuất bản (publication bias) hoặc hiệu ứng nghiên cứu cỡ mẫu nhỏ (small-study effects).",
+      "seminal_citation": "Egger et al. (1997); Harbord et al. (2006)",
       "tier": "curated",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Egger's Regression Test according to Egger et al. (1997).",
       "domain_tags_en": [
         "Meta-Analysis"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Phương trình hồi quy có trọng số: SND_i = alpha + beta * prec_i + e_i, trong đó SND_i = theta_i / SE_i là kích thước hiệu ứng chuẩn hóa (Standard Normal Deviate), và prec_i = 1 / SE_i là độ chính xác của nghiên cứu i. 2. Giả thuyết H0: alpha = 0 (hệ số chặn bằng 0, biểu đồ phễu đối xứng hoàn hảo, không có thiên lệch xuất bản). 3. Kiểm định t-statistic cho hệ số chặn alpha. 4. Nếu alpha chệch khỏi 0 có ý nghĩa thống kê, các nghiên cứu mẫu nhỏ có xu hướng báo cáo hiệu ứng lớn bất thường.",
+      "benchmarks": "Tiêu chuẩn đánh giá: Bác bỏ H0 khi p-value < 0.10 (ngưỡng 0.10 được áp dụng rộng rãi trong meta-analysis do kiểm định có sức mạnh tương đối thấp khi số lượng nghiên cứu k vừa phải). Luôn được hiển thị trực quan thông qua đồ thị hồi quy Egger.",
+      "pitfalls": "Bẫy phản biện: Áp dụng kiểm định Egger cho các kích thước hiệu ứng nhị phân (Binary outcomes như Tỷ số chênh Odds Ratio) khi tỷ lệ biến cố rất hiếm. Trong tình huống này, kiểm định Egger có tỷ lệ dương tính giả bị thổi phồng giả tạo (khắc phục bằng kiểm định hồi quy Harbord hoặc Peters).",
+      "apa_reference": "Egger, M., Smith, G. D., Schneider, M., & Minder, C. (1997). Bias in meta-analysis detected by a simple, graphical test. BMJ, 315(7109), 629–634. https://doi.org/10.1136/bmj.315.7109.629",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "eigenfactor-score",
@@ -18479,15 +18591,19 @@
     },
     {
       "id": "false-discovery-rate",
-      "term": "False Discovery Rate",
-      "vietnamese": "Tỷ lệ Khám phá Sai (Benjamini-Hochberg, 1995)",
-      "vietnamese_variants": [],
+      "term": "False Discovery Rate (FDR / Benjamini-Hochberg Procedure)",
+      "vietnamese": "Tỷ lệ khám phá sai (Quy trình Benjamini-Hochberg)",
+      "vietnamese_variants": [
+        "Kiểm soát FDR",
+        "Tỷ lệ phát hiện sai",
+        "Benjamini-Hochberg FDR"
+      ],
       "domain_tags": [
         "Multiple Testing",
         "Biostatistics"
       ],
-      "core_definition": "Tỷ lệ kỳ vọng của các giả thuyết bị bác bỏ sai (sai lầm loại I) trên tổng số các giả thuyết bị bác bỏ, dùng khi thực hiện đồng thời hàng chục hoặc hàng trăm kiểm định thống kê. Ngưỡng thực nghiệm tham chiếu: Thường kiểm soát ở mức $q = 0.05$ hoặc $0.10$; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power).",
-      "seminal_citation": "Thường kiểm soát ở mức $q = 0.05$ hoặc $0.10$; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power).",
+      "core_definition": "Tỷ lệ khám phá sai (False Discovery Rate - FDR - Benjamini & Hochberg, 1995) là bước đột phá cách mạng trong lý thuyết đa kiểm định hiện đại. Thay vì kiểm soát xác suất xuất hiện dù chỉ một sai lầm loại I duy nhất như Bonferroni (FWER), FDR kiểm soát tỷ lệ kỳ vọng của các phát hiện sai (false positives) trên tổng số các phát hiện được tuyên bố có ý nghĩa thống kê (E[V / R]), mang lại sức mạnh thống kê vượt trội hơn nhiều khi xử lý hàng ngàn giả thuyết đồng thời.",
+      "seminal_citation": "Benjamini & Hochberg (1995); Benjamini & Yekutieli (2001)",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
@@ -18496,7 +18612,13 @@
         "Multiple Testing",
         "Biostatistics"
       ],
-      "benchmarks": "Thường kiểm soát ở mức $q = 0.05$ hoặc $0.10$; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power)."
+      "benchmarks": "Được công nhận là chuẩn mực vàng tối thượng trong thời đại Dữ liệu lớn (Big Data), Kinh tế lượng Học máy, Xử lý ngôn ngữ tự nhiên và Nghiên cứu gen (GWAS). Khắc phục triệt để bẫy triệt tiêu sức mạnh của Bonferroni.",
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Sắp xếp m giá trị p-value theo thứ tự tăng dần: p_(1) <= p_(2) <= ... <= p_(m). 2. Xác định mức kiểm soát FDR mục tiêu q* (thường chọn q* = 0.05 hoặc 0.10). 3. Tìm chỉ số lớn nhất k sao cho: p_(k) <= (k / m) * q*. 4. Bác bỏ toàn bộ k giả thuyết vô hiệu có giá trị p <= p_(k). Các phát hiện này được đảm bảo có tỷ lệ dương tính giả kỳ vọng không vượt quá q*.",
+      "pitfalls": "Bẫy phản biện: Áp dụng thủ tục Benjamini-Hochberg chuẩn khi các thống kê kiểm định có cấu trúc tương quan phụ thuộc phức tạp bất kỳ. Khi các kiểm định có tương quan phụ thuộc tùy ý, bắt buộc phải sử dụng thủ tục Benjamini-Yekutieli (2001) với số chia điều chỉnh sum(1/i).",
+      "apa_reference": "Benjamini, Y., & Hochberg, Y. (1995). Controlling the false discovery rate: A practical and powerful approach to multiple testing. Journal of the Royal Statistical Society: Series B (Methodological), 57(1), 289–300. https://doi.org/10.1111/j.2517-6161.1995.tb02031.x",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "false-positive-rate",
@@ -18622,23 +18744,32 @@
     },
     {
       "id": "family-wise-error-rate-inflation",
-      "term": "Family-Wise Error Rate (FWER)",
-      "vietnamese": "Sự Thổi phồng Tỷ lệ Sai lầm Loại I",
+      "term": "Family-Wise Error Rate Inflation (Alpha Inflation)",
+      "vietnamese": "Sự thổi phồng tỷ lệ sai lầm loại I (Lạm phát Alpha)",
       "vietnamese_variants": [
-        "FWER"
+        "Lạm phát Alpha",
+        "FWER Inflation",
+        "Thổi phồng sai số loại I trong đa kiểm định"
       ],
       "domain_tags": [
         "Multiple Comparisons"
       ],
-      "core_definition": "Xác suất mắc ít nhất một sai lầm loại I tăng vọt khi chạy nhiều kiểm định đồng thời.",
-      "seminal_citation": "Shaffer (1995)",
+      "core_definition": "Sự thổi phồng tỷ lệ sai lầm loại I (FWER Inflation / Alpha Inflation) là quy luật xác suất tất yếu xảy ra khi nhà nghiên cứu thực hiện nhiều phép kiểm định thống kê độc lập trên cùng một tập dữ liệu mà không áp dụng các biện pháp hiệu chỉnh. Với mỗi phép thử đơn lẻ có mức ý nghĩa alpha = 0.05, xác suất mắc ít nhất một sai lầm loại I (tuyên bố có hiệu ứng khi thực tế không có gì) tăng vọt theo hàm số mũ: FWER = 1 - (1 - alpha)^m.",
+      "seminal_citation": "Miller (1981); Westfall & Young (1993)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Family-Wise Error Rate Inflation according to Shaffer (1995).",
       "domain_tags_en": [
         "Multiple Comparisons"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Công thức tích lũy sai số: Với m phép kiểm định độc lập, FWER = 1 - (0.95)^m. 2. Minh họa bùng nổ sai số: Khi m = 5 kiểm định, FWER = 22.6%; khi m = 10, FWER = 40.1%; khi m = 20, FWER = 64.2% (khả năng kết luận sai cao hơn cả đoán mò ngẫu nhiên). 3. Kiểm soát bằng các kỹ thuật: Bonferroni, Holm-Bonferroni, Hochberg, hoặc Westfall-Young permutation tests.",
+      "benchmarks": "Được coi là nguồn gốc toán học cốt lõi gây ra cuộc khủng hoảng tái lập (Replication Crisis) trong khoa học tâm lý và kinh tế. Mọi thiết kế nghiên cứu có từ hai biến phụ thuộc hoặc nhiều phép so sánh nhóm trở lên bắt buộc phải có mục giải trình về kiểm soát FWER.",
+      "pitfalls": "Bẫy phản biện: Chạy hồi quy từng cặp (Pairwise t-tests) cho 4 nhóm mẫu (tương đương m = 6 cặp so sánh) thay vì chạy One-way ANOVA. Hành vi này đẩy rủi ro sai số loại I lên gần 30%, làm vô hiệu hóa độ tin cậy của bài báo.",
+      "apa_reference": "Westfall, P. H., & Young, S. S. (1993). Resampling-based multiple testing: Examples and methods for p-value adjustment. John Wiley & Sons.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "fat",
@@ -18660,15 +18791,19 @@
     },
     {
       "id": "fdr",
-      "term": "False Discovery Rate (FDR)",
-      "vietnamese": "Tỷ lệ Khám phá Sai (Benjamini-Hochberg, 1995)",
-      "vietnamese_variants": [],
+      "term": "False Discovery Rate in Empirical Testing",
+      "vietnamese": "Ứng dụng kiểm soát FDR trong nghiên cứu thực nghiệm",
+      "vietnamese_variants": [
+        "Thủ tục FDR",
+        "Q-value FDR",
+        "Storey Positive FDR"
+      ],
       "domain_tags": [
         "Multiple Testing",
         "Biostatistics"
       ],
-      "core_definition": "Tỷ lệ kỳ vọng của các giả thuyết bị bác bỏ sai (sai lầm loại I) trên tổng số các giả thuyết bị bác bỏ, dùng khi thực hiện đồng thời hàng chục hoặc hàng trăm kiểm định thống kê. Ngưỡng thực nghiệm tham chiếu: Thường kiểm soát ở mức $q = 0.05$ hoặc $0.10$; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power).",
-      "seminal_citation": "Thường kiểm soát ở mức $q = 0.05$ hoặc $0.10$; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power).",
+      "core_definition": "Kiểm soát FDR trong nghiên cứu thực nghiệm là quy trình thẩm định tính vững chắc của các phát hiện khoa học trước nguy cơ p-hacking và 'săn tìm ý nghĩa thống kê' (data snooping). Kỹ thuật này chuyển đổi các giá trị p-value thành các giá trị q-value (Storey, 2002) — đại diện cho tỷ lệ dương tính giả tối thiểu mà nhà nghiên cứu phải chấp nhận khi tuyên bố một kết quả cụ thể là có ý nghĩa.",
+      "seminal_citation": "Storey (2002); Harvey, Liu, & Zhu (2016)",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
@@ -18677,7 +18812,13 @@
         "Multiple Testing",
         "Biostatistics"
       ],
-      "benchmarks": "Thường kiểm soát ở mức $q = 0.05$ hoặc $0.10$; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power)."
+      "benchmarks": "Chuẩn mực nghiên cứu tài chính thực nghiệm hiện đại (Harvey, Liu, & Zhu, 2016 - RFS): Hàng trăm nhân tố định giá tài sản được công bố trong quá khứ thực chất chỉ là ảo ảnh do không kiểm soát FDR; việc áp dụng FDR đòi hỏi t-statistic của các phát hiện mới phải vượt ngưỡng 3.0 (tương ứng p < 0.0027).",
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Ước lượng tỷ lệ các giả thuyết vô hiệu thực sự đúng pi_0 trong toàn bộ tập m kiểm định. 2. Tính giá trị q-value cho từng kiểm định: q_i = inf_{t >= p_i} { (pi_0 * m * t) / (số lượng p <= t) }. 3. Thiết lập ngưỡng ngưỡng q-value <= 0.05 để chọn lọc các biến có ảnh hưởng thực chất.",
+      "pitfalls": "Bẫy phản biện: Báo cáo hàng chục hồi quy đa biến và lựa chọn công bố bài báo chỉ với các biến có p < 0.05 mà hoàn toàn không thực hiện kiểm định FDR; phản biện Q1 sẽ quy kết nghiên cứu mắc lỗi suy diễn đa kiểm định (Multiple hypothesis testing inflation).",
+      "apa_reference": "Harvey, C. R., Liu, Y., & Zhu, H. (2016). … and the cross-section of expected returns. The Review of Financial Studies, 29(1), 5–68. https://doi.org/10.1093/rfs/hhv059",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "fe",
@@ -18937,21 +19078,32 @@
     },
     {
       "id": "fixed-effect-vs-random-effects-meta-analysis",
-      "term": "Fixed-Effect vs. Random-Effects Meta-Analysis",
-      "vietnamese": "Mô hình Phân tích Gộp Cố định",
-      "vietnamese_variants": [],
+      "term": "Fixed-Effect vs. Random-Effects Meta-Analysis Models",
+      "vietnamese": "Mô hình tác động cố định vs. tác động ngẫu nhiên trong phân tích gộp",
+      "vietnamese_variants": [
+        "Fixed vs Random Effects Meta-Analysis",
+        "Mô hình tổng hợp hiệu ứng",
+        "Mô hình phân tích gộp Borenstein"
+      ],
       "domain_tags": [
         "Meta-Analysis"
       ],
-      "core_definition": "Một hiệu ứng thực duy nhất) vs. Hiệu ứng Ngẫu nhiên (Phân phối các hiệu ứng thực.",
-      "seminal_citation": "Borenstein et al. (2010)",
+      "core_definition": "Sự lựa chọn giữa Mô hình Tác động Cố định (Fixed-Effect Model) và Mô hình Tác động Ngẫu nhiên (Random-Effects Model - Borenstein et al., 2010) là quyết định phương pháp luận nền tảng trong phân tích gộp. Fixed-Effect giả định rằng tồn tại duy nhất MỘT kích thước hiệu ứng thực sự đồng nhất chi phối tất cả các nghiên cứu (mọi khác biệt chỉ do sai số chọn mẫu ngẫu nhiên); trong khi Random-Effects giả định rằng kích thước hiệu ứng thực sự BIẾN THIÊN ngẫu nhiên giữa các nghiên cứu do sự khác biệt về quần thể, liều lượng can thiệp và phương pháp.",
+      "seminal_citation": "DerSimonian & Laird (1986); Borenstein et al. (2010)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Fixed-Effect vs. Random-Effects Meta-Analysis according to Borenstein et al. (2010).",
       "domain_tags_en": [
         "Meta-Analysis"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Trọng số Fixed-Effect (Inverse-variance): w_i = 1 / v_i. Ước lượng hiệu ứng chung phản ánh trung bình của các nghiên cứu trong mẫu. 2. Trọng số Random-Effects: w_i* = 1 / (v_i + tau^2), trong đó tau^2 là phương sai giữa các nghiên cứu (between-study variance). Trọng số này phân bổ lại quyền lực cân bằng hơn giữa nghiên cứu lớn và nghiên cứu nhỏ. 3. Đánh giá tính không đồng nhất bằng kiểm định Cochran's Q và chỉ số I^2.",
+      "benchmarks": "Quy tắc quyết định chuẩn mực Borenstein et al. (2010): Trong hầu hết các nghiên cứu xã hội, kinh tế và y sinh thực tế, các nghiên cứu gốc không bao giờ giống hệt nhau hoàn toàn; do đó, Mô hình Tác động Ngẫu nhiên (Random-Effects) bắt buộc phải là mô hình mặc định tiên nghiệm, ngay cả khi kiểm định Q có p > 0.05.",
+      "pitfalls": "Bẫy phản biện: Sử dụng Fixed-Effect Model để tổng hợp các nghiên cứu thu thập từ nhiều quốc gia và bối cảnh khác nhau chỉ vì kiểm định Q chưa đạt ý nghĩa thống kê do số lượng nghiên cứu k nhỏ. Fixed-Effect sẽ làm thu hẹp khoảng tin cậy giả tạo và phóng đại quá mức ý nghĩa thống kê của hiệu ứng tổng hợp.",
+      "apa_reference": "Borenstein, M., Hedges, L. V., Higgins, J. P., & Rothstein, H. R. (2010). A basic introduction to fixed-effect and random-effects models for meta-analysis. Research Synthesis Methods, 1(2), 97–111. https://doi.org/10.1002/jrsm.12",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "fleiss-kappa",
@@ -19095,21 +19247,32 @@
     },
     {
       "id": "forest-plot-1045",
-      "term": "Forest Plot",
-      "vietnamese": "Biểu đồ rừng biểu diễn ước lượng kích thước hiệu ứng và khoảng tin cậy của từng nghiên cứu trong Meta-Analysis",
-      "vietnamese_variants": [],
+      "term": "Forest Plot (Blobbogram)",
+      "vietnamese": "Biểu đồ rừng trong phân tích gộp",
+      "vietnamese_variants": [
+        "Biểu đồ Forest Plot",
+        "Blobbogram",
+        "Biểu đồ tổng hợp kích thước hiệu ứng"
+      ],
       "domain_tags": [
         "Meta-Analysis"
       ],
-      "core_definition": "Biểu đồ rừng biểu diễn ước lượng kích thước hiệu ứng và khoảng tin cậy của từng nghiên cứu trong Meta-Analysis.",
-      "seminal_citation": "Lewis & Clarke (2001)",
+      "core_definition": "Biểu đồ rừng (Forest Plot - Lewis & Clarke, 2001) là công cụ hiển thị đồ họa chuẩn mực và trung tâm nhất của mọi bài báo phân tích gộp (Meta-Analysis). Biểu đồ tổng hợp trực quan kích thước hiệu ứng ước lượng điểm (Point estimates) và khoảng tin cậy tương ứng (Confidence Intervals) của từng nghiên cứu độc lập riêng lẻ, đồng thời trình bày Kích thước Hiệu ứng Tổng hợp (Summary / Pooled Effect Size) ở đáy biểu đồ.",
+      "seminal_citation": "Lewis & Clarke (2001); Higgins & Green (2011)",
       "tier": "curated",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #1046",
       "core_definition_en": "Academic definition of Forest Plot according to Lewis & Clarke (2001).",
       "domain_tags_en": [
         "Meta-Analysis"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Các thành phần hình học: (A) Trục đứng đại diện cho 'Đường vô hiệu' (Line of no effect: giá trị 0 cho hiệu số trung bình, giá trị 1 cho Tỷ số chênh OR/RR); (B) Các hình vuông đại diện cho ước lượng điểm của từng nghiên cứu (kích thước diện tích hình vuông tỷ lệ thuận với trọng số w_i của nghiên cứu đó); (C) Các thanh ngang thể hiện khoảng tin cậy 95% của từng nghiên cứu; (D) Hình kim cương (Diamond) ở đáy: Trọng tâm kim cương là hiệu ứng tổng hợp, hai đầu nhọn thể hiện khoảng tin cậy 95% gộp. 2. Báo cáo các chỉ số không đồng nhất: tau^2, I^2 và p-value của Cochran's Q.",
+      "benchmarks": "Là hình vẽ bắt buộc số 1 theo tiêu chuẩn PRISMA 2020. Hiệu ứng tổng hợp đạt ý nghĩa thống kê khi và chỉ khi toàn bộ hình kim cương nằm hoàn toàn về một phía và không chạm/cắt qua đường vô hiệu.",
+      "pitfalls": "Bẫy phản biện: Không báo cáo trọng số phần trăm (% Weight) của từng nghiên cứu trên biểu đồ rừng; không chú thích rõ ràng mô hình sử dụng là Fixed-Effect hay Random-Effects.",
+      "apa_reference": "Lewis, S., & Clarke, M. (2001). Forest plots: Trying to see the wood and the trees. BMJ, 322(7300), 1479–1480. https://doi.org/10.1136/bmj.322.7300.1479",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "forest-plot-visualization-metrics",
@@ -19463,21 +19626,32 @@
     },
     {
       "id": "full-mediation",
-      "term": "Full Mediation",
+      "term": "Full Mediation (Complete Mediation)",
       "vietnamese": "Mối quan hệ trung gian toàn phần",
-      "vietnamese_variants": [],
+      "vietnamese_variants": [
+        "Trung gian toàn phần",
+        "Complete Mediation",
+        "Tác động gián tiếp tuyệt đối"
+      ],
       "domain_tags": [
         "Mediation Analysis"
       ],
-      "core_definition": "tác động trực tiếp biến mất khi đưa biến trung gian vào.",
-      "seminal_citation": "Baron & Kenny (1986)",
+      "core_definition": "Trung gian toàn phần (Full / Complete Mediation - Baron & Kenny, 1986; Zhao, Lynch, & Chen, 2010) là trạng thái mà trong đó toàn bộ tác động của biến độc lập X lên biến kết quả Y được truyền tải hoàn toàn thông qua một hoặc nhiều biến trung gian M. Trong điều kiện trung gian toàn phần, sau khi đã kiểm soát biến trung gian M, tác động trực tiếp c' từ X đến Y bị triệt tiêu hoàn toàn và không còn khác biệt có ý nghĩa thống kê so với giá trị 0.",
+      "seminal_citation": "Baron & Kenny (1986); Zhao, Lynch, & Chen (2010)",
       "tier": "curated",
       "expert_status": "needs_review",
       "expert_notes": "nhãn full/partial mediation bị phê phán (Zhao, Lynch & Chen 2010; Rucker et al. 2011) – nên kèm cảnh báo",
       "core_definition_en": "Academic definition of Full Mediation according to Baron & Kenny (1986).",
       "domain_tags_en": [
         "Mediation Analysis"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Khung thẩm định hiện đại Zhao, Lynch, & Chen (2010): (A) Tác động gián tiếp (a * b) phải có ý nghĩa thống kê (khoảng tin cậy BCa Bootstrap 95% không chứa 0); (B) Tác động trực tiếp c' KHÔNG có ý nghĩa thống kê (khoảng tin cậy 95% của c' chứa giá trị 0). 2. Phân loại theo Zhao et al.: Đây là dạng 'Indirect-only mediation' (Trung gian duy nhất).",
+      "benchmarks": "Được coi là mô hình lý tưởng chứng minh cơ chế truyền dẫn hoàn hảo của lý thuyết. Bắt buộc kiểm định tác động gián tiếp a*b bằng Bootstrap (tối thiểu 5.000 mẫu lặp) thay cho kiểm định Sobel truyền thống.",
+      "pitfalls": "Bẫy phản biện: Tuyên bố 'trung gian toàn phần' dựa trên quy trình Baron & Kenny cũ khi c' chuyển từ có ý nghĩa (p < 0.05) sang không có ý nghĩa (p > 0.05). Sự sụt giảm ý nghĩa của c' thường chỉ là do giảm sức mạnh thống kê khi đưa thêm biến vào mô hình; để bảo vệ trung gian toàn phần trước phản biện Q1, tác giả cần kiểm tra khoảng tin cậy tương đương (Equivalence testing) chứng minh c' thực sự nằm sát điểm 0.",
+      "apa_reference": "Zhao, X., Lynch, J. G., Jr., & Chen, Q. (2010). Reconsidering Baron and Kenny: Myths and truths about mediation analysis. Journal of Consumer Research, 37(2), 197–206. https://doi.org/10.1086/651257",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "fundamental-problem-of-causal-inference",
@@ -20788,21 +20962,32 @@
     },
     {
       "id": "harking-hypothesizing-after-results-are-known",
-      "term": "HARKing (Hypothesizing After Results are Known)",
-      "vietnamese": "Hiện tượng HARKing",
-      "vietnamese_variants": [],
+      "term": "HARKing (Hypothesizing After the Results are Known)",
+      "vietnamese": "Hiện tượng đặt giả thuyết sau khi đã biết kết quả",
+      "vietnamese_variants": [
+        "Hành vi HARKing",
+        "Ngụy tạo giả thuyết hậu nghiệm",
+        "Questionable Research Practice HARKing"
+      ],
       "domain_tags": [
         "Research Ethics"
       ],
-      "core_definition": "Hành vi phi đạo đức ngụy tạo việc đưa ra giả thuyết sau khi đã biết kết quả phân tích thống kê.",
-      "seminal_citation": "Kerr (1998)",
+      "core_definition": "HARKing (Hypothesizing After the Results are Known - Kerr, 1998) là một trong những hành vi phi chuẩn mực nghiêm trọng nhất trong nghiên cứu khoa học (Questionable Research Practice - QRP). Hiện tượng xảy ra khi nhà nghiên cứu trình bày một giả thuyết được nảy sinh từ chính việc phân tích dữ liệu thực tế (post-hoc hypothesis) nhưng lại viết trong bài báo như thể đó là một giả thuyết tiên nghiệm (a priori hypothesis) được suy luận chặt chẽ từ lý thuyết nền trước khi thu thập dữ liệu.",
+      "seminal_citation": "Kerr (1998); Nosek et al. (2018)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of HARKing (Hypothesizing After Results are Known) according to Kerr (1998).",
       "domain_tags_en": [
         "Research Ethics"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Cơ chế biến tướng của HARKing: (A) Hồi quy thử nghiệm hàng chục mối quan hệ ngẫu nhiên; (B) Lọc ra các mối quan hệ có p < 0.05; (C) Tìm kiếm các bài báo lý thuyết khớp với kết quả đó để viết lại phần Cơ sở lý thuyết; (D) Xóa bỏ hoàn toàn các giả thuyết ban đầu có kết quả không có ý nghĩa (p > 0.05). 2. Hậu quả: Biến nghiên cứu khám phá (Exploratory) thành nghiên cứu kiểm định giả tạo (Confirmatory), làm trầm trọng thêm thiên lệch công bố và khủng hoảng tái lập.",
+      "benchmarks": "Chiến lược phòng chống chuẩn mực quốc tế: Đăng ký trước nghiên cứu (Preregistration trên OSF / AsPredicted) và định dạng bài báo Đăng ký trước báo cáo (Registered Reports: phản biện và chấp nhận xuất bản dựa trên phương pháp luận TRƯỚC KHI thu thập dữ liệu).",
+      "pitfalls": "Bẫy phản biện: Bài báo có các giả thuyết kỳ lạ, gượng ép nhưng kết quả thực nghiệm lại khớp hoàn hảo với p < 0.01; các phản biện giàu kinh nghiệm sẽ lập tức nghi ngờ tác giả đã thực hiện HARKing và yêu cầu cung cấp tài liệu đề cương nghiên cứu ban đầu.",
+      "apa_reference": "Kerr, N. L. (1998). HARKing: Hypothesizing after the results are known. Personality and Social Psychology Review, 2(3), 196–217. https://doi.org/10.1207/s15327957pspr0203_4",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "harvard-dataverse-network",
@@ -21903,15 +22088,19 @@
     },
     {
       "id": "hypothesizing-after-the-results-are-known",
-      "term": "Hypothesizing After the Results are Known",
-      "vietnamese": "Đặt Giả thuyết sau khi đã Biết Kết quả (Kerr, 1998)",
-      "vietnamese_variants": [],
+      "term": "Post-Hoc Hypothesizing in Scientific Governance",
+      "vietnamese": "Ngụy tạo giả thuyết hậu nghiệm trong quản trị khoa học",
+      "vietnamese_variants": [
+        "Post-Hoc Hypothesizing",
+        "Biện minh giả thuyết sau thực nghiệm",
+        "Texas Sharpshooter Fallacy"
+      ],
       "domain_tags": [
         "Research Integrity",
         "Epistemology"
       ],
-      "core_definition": "Hành vi phi đạo đức khi nhà nghiên cứu giả vờ rằng một phát hiện tình cờ (sau khi chạy số) chính là giả thuyết tiên nghiệm (a priori hypothesis) được suy ra từ lý thuyết ban đầu. Ngưỡng thực nghiệm tham chiếu: Bị triệt tiêu khi bài báo thực hiện đăng ký trước thiết kế nghiên cứu (Preregistration) tại Open Science Framework.",
-      "seminal_citation": "Bị triệt tiêu khi bài báo thực hiện đăng ký trước thiết kế nghiên cứu (Preregistration) tại Open Science Framework.",
+      "core_definition": "Ngụy tạo giả thuyết hậu nghiệm là biểu hiện của Ngụy biện tay thiện xạ Texas (Texas Sharpshooter Fallacy) trong phương pháp luận khoa học: Bắn các phát đạn ngẫu nhiên lên tường trước (chạy dữ liệu), sau đó mới vẽ vòng tròn hồng tâm xung quanh các lỗ đạn dày nhất (đặt giả thuyết). Hành vi này vi phạm nguyên tắc cơ bản của phương pháp suy diễn giả thuyết Popper (Popperian hypothetico-deductive method), biến việc kiểm định giả thuyết thành một màn kịch diễn dịch giả mạo.",
+      "seminal_citation": "Kerr (1998); Gelman & Loken (2014)",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
@@ -21920,7 +22109,13 @@
         "Research Integrity",
         "Epistemology"
       ],
-      "benchmarks": "Bị triệt tiêu khi bài báo thực hiện đăng ký trước thiết kế nghiên cứu (Preregistration) tại Open Science Framework."
+      "benchmarks": "Các tạp chí hàng đầu (JAP, SMJ) yêu cầu tác giả phải phân định rõ ràng trong bài báo: Đâu là các phân tích kiểm định giả thuyết tiên nghiệm chính thức (Confirmatory / Planned analyses) và đâu là các phân tích khám phá hậu nghiệm bổ sung (Exploratory / Post-hoc analyses).",
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Sự khác biệt giữa Khám phá và Kiểm định: Trong nghiên cứu khám phá, việc sinh giả thuyết từ dữ liệu là hoàn toàn hợp pháp và đáng khuyến khích (Quy nạp/Loại suy). 2. Điểm phi chuẩn mực: Chỉ xảy ra khi tác giả ngụy trang quá trình khám phá đó thành kiểm định diễn dịch hình thức để đánh lừa người đọc về mức ý nghĩa thống kê của các kiểm định. 3. Thẩm định qua dấu vết kiểm toán (Audit trail) và thời gian biểu thu thập dữ liệu.",
+      "pitfalls": "Bẫy phản biện: Trình bày các kết quả phân tích khám phá sau hồi quy như thể đó là các mục tiêu nghiên cứu ban đầu; phản biện sẽ chất vấn về nguy cơ bùng nổ sai số loại I và yêu cầu kiểm định chéo trên một tập dữ liệu độc lập.",
+      "apa_reference": "Gelman, A., & Loken, E. (2014). The statistical crisis in science: How array of data analysis choices leads to questionable research practices. American Scientist, 102(6), 460–465.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "hypothetico-deductive-method",
@@ -22474,12 +22669,16 @@
     {
       "id": "index-of-moderated-mediation",
       "term": "Index of Moderated Mediation",
-      "vietnamese": "Chỉ số Trung gian Bị điều tiết",
-      "vietnamese_variants": [],
+      "vietnamese": "Chỉ số trung gian bị điều tiết",
+      "vietnamese_variants": [
+        "Index of Moderated Mediation",
+        "Chỉ số Hayes",
+        "Độ dốc của tác động gián tiếp"
+      ],
       "domain_tags": [
         "Advanced Mediation"
       ],
-      "core_definition": "Ước lượng định lượng trực tiếp kiểm tra xem tác động gián tiếp có thực sự phụ thuộc vào biến điều tiết hay không.",
+      "core_definition": "Chỉ số trung gian bị điều tiết (Index of Moderated Mediation - Hayes, 2015) là kiểm định thống kê chính thức duy nhất kiểm tra xem hiệu ứng gián tiếp có thực sự là một hàm tuyến tính biến thiên theo biến điều tiết W hay không. Về mặt giải tích, chỉ số này chính là đạo hàm bậc nhất của tác động gián tiếp có điều kiện theo biến điều tiết W (d(omega) / dW).",
       "seminal_citation": "Hayes (2015)",
       "tier": "textbook",
       "expert_status": "needs_review",
@@ -22487,19 +22686,30 @@
       "core_definition_en": "Academic definition of Index of Moderated Mediation according to Hayes (2015).",
       "domain_tags_en": [
         "Advanced Mediation"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Trong mô hình điều tiết tuyến tính đơn giản: Index = a_3 * b (với a_3 là hệ số tương tác X*W lên M, và b là hệ số từ M lên Y). 2. Ước lượng khoảng tin cậy phi đối xứng hiệu chỉnh chệch BCa Bootstrap (tối thiểu 5.000 đến 10.000 mẫu lặp) cho đại lượng tích số a_3 * b. 3. Không thể dùng kiểm định phân phối chuẩn thông thường (như Sobel hay Wald test) do tích số a_3 * b có phân phối phi chuẩn nghiêm trọng.",
+      "benchmarks": "Tiêu chuẩn vàng bắt buộc: Hiện tượng Trung gian bị điều tiết được khẳng định tồn tại có ý nghĩa thống kê khi và chỉ khi Khoảng tin cậy BCa Bootstrap 95% của Index of Moderated Mediation KHÔNG chứa giá trị 0 (ví dụ [0.034, 0.185]).",
+      "pitfalls": "Bẫy phản biện: Báo cáo kết quả kiểm định điều tiết trên từng nhánh riêng biệt (a_3 có ý nghĩa VÀ b có ý nghĩa) rồi suy diễn kết luận mà không báo cáo Index of Moderated Mediation; các tạp chí quản trị hàng đầu (AMJ, JOM) sẽ yêu cầu bổ sung bảng chỉ số này.",
+      "apa_reference": "Hayes, A. F. (2015). An index and test of linear moderated mediation. Multivariate Behavioral Research, 50(1), 1–22. https://doi.org/10.1080/00273171.2014.962683",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "index-of-moderated-mediation-hayes-2015",
-      "term": "Index of Moderated Mediation (Hayes 2015)",
-      "vietnamese": "Thước đo định lượng trực tiếp kiểm định liệu tác động gián tiếp có thực sự bị điều tiết bởi W hay không (thay thế cách so sánh thủ công từng nhóm).",
-      "vietnamese_variants": [],
+      "term": "Index of Moderated Mediation Testing Protocol",
+      "vietnamese": "Giao thức kiểm định chỉ số trung gian bị điều tiết Hayes 2015",
+      "vietnamese_variants": [
+        "Quy trình kiểm định Hayes 2015",
+        "Giao thức Index of Moderated Mediation",
+        "Hayes 2015 Protocol"
+      ],
       "domain_tags": [
         "Mediation",
         "Moderation (PROCESS)"
       ],
-      "core_definition": "Thước đo định lượng trực tiếp kiểm định liệu tác động gián tiếp có thực sự bị điều tiết bởi W hay không (thay thế cách so sánh thủ công từng nhóm).",
-      "seminal_citation": "Hayes (2022); Hayes (2022)",
+      "core_definition": "Giao thức kiểm định chỉ số trung gian bị điều tiết Hayes (2015) là quy chuẩn thực hành phương pháp luận thay thế hoàn toàn cho các phương pháp phân mảnh cũ kỹ trước năm 2015 (như phương pháp kiểm định phân nhóm nhỏ Subgroup analysis hay kiểm định từng phần của Baron-Kenny). Giao thức cung cấp quy trình lượng hóa và báo cáo tác động gián tiếp có điều kiện một cách khoa học và chặt chẽ nhất.",
+      "seminal_citation": "Hayes (2015, 2018)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #1277; LaTeX thô; lộ tên file nội bộ",
@@ -22507,7 +22717,14 @@
       "domain_tags_en": [
         "Mediation",
         "Moderation (PROCESS)"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Thiết lập mô hình hồi quy đa biến tích hợp trên macro PROCESS (Model 7, 8, 14, 21, 58, 59). 2. Trích xuất giá trị ước lượng điểm của Index. 3. Tạo 5.000 mẫu Bootstrap có hoàn lại để tạo phân phối mẫu thực nghiệm. 4. Xác định giới hạn dưới (Bootstrap Lower Level Confidence Interval - BootLLCI) và giới hạn trên (BootULCI). 5. Báo cáo bảng ma trận tác động gián tiếp kèm kết luận kiểm định Index.",
+      "benchmarks": "Áp dụng bắt buộc trong mọi bài báo nghiên cứu hành vi tổ chức, quản trị nhân lực và marketing xuất bản trên các tạp chí quốc tế Q1. Đạt chuẩn khi báo cáo đầy đủ: Ước lượng điểm, Sai số chuẩn Bootstrap (BootSE), BootLLCI và BootULCI.",
+      "pitfalls": "Bẫy phản biện: Chia biến điều tiết liên tục W thành hai nhóm 'Cao' và 'Thấp' bằng phép chia đôi trung vị (Median Split) rồi chạy phân tích đa nhóm. Phép chia đôi trung vị làm vứt bỏ phương sai dữ liệu thực tế, giảm mạnh sức mạnh thống kê và bị coi là thực hành phương pháp luận lỗi thời.",
+      "apa_reference": "Hayes, A. F. (2015). An index and test of linear moderated mediation. Multivariate Behavioral Research, 50(1), 1–22. https://doi.org/10.1080/00273171.2014.962683",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "indication-of-research-process",
@@ -22571,14 +22788,18 @@
     },
     {
       "id": "individual-participant-data",
-      "term": "Individual Participant Data",
-      "vietnamese": "Dữ liệu Cá thể Từng Người tham gia (Tiêu chuẩn Vàng Meta-Analysis)",
-      "vietnamese_variants": [],
+      "term": "Individual Participant Data (IPD)",
+      "vietnamese": "Dữ liệu cấp độ cá thể từng người tham gia",
+      "vietnamese_variants": [
+        "Dữ liệu IPD",
+        "Dữ liệu thô cấp bệnh nhân/cá thể",
+        "Patient-Level Raw Data"
+      ],
       "domain_tags": [
         "Advanced Meta-Analysis"
       ],
-      "core_definition": "Tổng hợp dữ liệu thô cấp bệnh nhân/cá thể từ mọi tác giả gốc thay vì chỉ dùng dữ liệu tóm tắt trên bài báo, cho phép chuẩn hóa phân tích ở mức cao nhất. Ngưỡng thực nghiệm tham chiếu: Loại bỏ hoàn toàn thiên lệch sinh thái (Ecological fallacy) và cho phép phân tích tương tác điều tiết ở cấp độ cá thể chính xác 100%.",
-      "seminal_citation": "Loại bỏ hoàn toàn thiên lệch sinh thái (Ecological fallacy) và cho phép phân tích tương tác điều tiết ở cấp độ cá thể chính xác 100%.",
+      "core_definition": "Dữ liệu cấp độ cá thể (Individual Participant Data - IPD - Stewart & Parmar, 1993; Riley et al., 2010) là tập hợp dữ liệu thô chi tiết ở cấp độ vi mô của từng cá nhân tham gia từ tất cả các nghiên cứu gốc độc lập, được nhóm tác giả tổng quan hệ thống thu thập lại trực tiếp từ các tác giả chính để tiến hành phân tích tổng hợp.",
+      "seminal_citation": "Stewart & Parmar (1993); Riley et al. (2010)",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
@@ -22586,25 +22807,42 @@
       "domain_tags_en": [
         "Advanced Meta-Analysis"
       ],
-      "benchmarks": "Loại bỏ hoàn toàn thiên lệch sinh thái (Ecological fallacy) và cho phép phân tích tương tác điều tiết ở cấp độ cá thể chính xác 100%."
+      "benchmarks": "Được công nhận là 'Tiêu chuẩn Vàng' (Gold Standard) cao nhất của y học thực chứng và kinh tế lượng thực nghiệm tổng hợp. Được báo cáo theo hướng dẫn mở rộng PRISMA-IPD.",
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Khác biệt với Dữ liệu Tổng hợp (Aggregate Data - AD: chỉ trích xuất các con số trung bình và sai số từ bài báo đã xuất bản). 2. Ưu điểm vượt trội: (A) Làm sạch và chuẩn hóa lại các biến số theo cùng một định nghĩa thống nhất; (B) Xử lý dữ liệu khuyết thiếu nhất quán; (C) Phân tích chính xác tương tác ở cấp độ cá thể (Individual-level treatment-covariate interactions) mà không mắc bẫy Ngụy biện sinh thái (Ecological Fallacy).",
+      "pitfalls": "Bẫy phản biện: Khó khăn cực lớn về tính khả thi hậu cần và chia sẻ dữ liệu; việc không thể thu thập được IPD từ 100% các nghiên cứu có thể tạo ra Thiên lệch sẵn có của dữ liệu (Data availability bias); bắt buộc phải so sánh đặc trưng của các nghiên cứu cung cấp được IPD với các nghiên cứu không cung cấp.",
+      "apa_reference": "Riley, R. D., Lambert, P. C., & Abo-Zaid, G. (2010). Meta-analysis of individual participant data: Rationale, conduct, and reporting. BMJ, 340, c221. https://doi.org/10.1136/bmj.c221",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "individual-participant-data-meta-analysis-ipd",
-      "term": "Individual Participant Data Meta-Analysis (IPD)",
-      "vietnamese": "Phân tích gộp dữ liệu từng cá thể thu thập dữ liệu thô cấp bệnh nhân/cá thể từ tất cả các tác giả nghiên cứu gốc",
-      "vietnamese_variants": [],
+      "term": "IPD Meta-Analysis Methodological Protocol",
+      "vietnamese": "Giao thức phân tích gộp dữ liệu cấp cá thể IPD",
+      "vietnamese_variants": [
+        "Quy trình IPD Meta-Analysis",
+        "Phân tích gộp một giai đoạn và hai giai đoạn",
+        "One-Stage vs Two-Stage IPD"
+      ],
       "domain_tags": [
         "Meta-Analysis"
       ],
-      "core_definition": "Phân tích gộp dữ liệu từng cá thể thu thập dữ liệu thô cấp bệnh nhân/cá thể từ tất cả các tác giả nghiên cứu gốc.",
-      "seminal_citation": "Riley et al. (2010)",
+      "core_definition": "Giao thức phân tích gộp dữ liệu cấp cá thể (IPD Meta-Analysis Protocol - Debray et al., 2015) quy định quy chuẩn mô hình hóa thống kê dữ liệu đa cấp gộp từ nhiều thử nghiệm hoặc nghiên cứu đoàn hệ, phân chia thành hai phương pháp tiếp cận chính: Phương pháp Một giai đoạn (One-stage approach) và Phương pháp Hai giai đoạn (Two-stage approach).",
+      "seminal_citation": "Debray et al. (2015); Stewart & Clarke (1995)",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Individual Participant Data Meta-Analysis (IPD) according to Riley et al. (2010).",
       "domain_tags_en": [
         "Meta-Analysis"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Phương pháp Hai giai đoạn (Two-stage): Bước 1 phân tích riêng biệt dữ liệu IPD của từng nghiên cứu bằng mô hình hồi quy vi mô thích hợp; Bước 2 tổng hợp các kích thước hiệu ứng thu được bằng phân tích gộp truyền thống. 2. Phương pháp Một giai đoạn (One-stage): Gộp toàn bộ dữ liệu thô vào một tập dữ liệu đa cấp khổng lồ duy nhất và ước lượng bằng Mô hình Tuyến tính Hỗn hợp Đa cấp (Multilevel Mixed-Effects Model) với hệ số chặn hoặc hệ số góc ngẫu nhiên theo từng nghiên cứu. 3. Bóc tách hiệu ứng nội nghiên cứu (within-trial) và hiệu ứng giữa các nghiên cứu (across-trials).",
+      "benchmarks": "Phương pháp Một giai đoạn được ưu tiên tuyệt đối khi mô hình hóa các biến số thay đổi theo thời gian, phân tích sống sót phức tạp hoặc kiểm định tương tác điều tiết phi tuyến tính.",
+      "pitfalls": "Bẫy phản biện: Chạy mô hình gộp một giai đoạn như một hồi quy OLS gộp đơn giản (Pooled regression) mà không kiểm soát cấu trúc phân cụm theo nghiên cứu (Clustering by trial). Sai sót này vi phạm nghiêm trọng tính độc lập của quan sát và làm bóp méo sai số chuẩn.",
+      "apa_reference": "Debray, T. P., Moons, K. G., Abo-Zaid, G. M., Koffijberg, H., & Riley, R. D. (2015). Individual participant data in systematic reviews: A guide to individual participant data meta-analysis. In Evidence-based medical monitoring: From principles to practice (pp. 95–118).",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "inductive-category-development",
@@ -23054,20 +23292,31 @@
     {
       "id": "integration-at-the-level-of-interpretation",
       "term": "Integration at the Level of Interpretation",
-      "vietnamese": "Tích hợp ở Cấp độ Diễn giải",
-      "vietnamese_variants": [],
+      "vietnamese": "Tích hợp phương pháp hỗn hợp ở cấp độ diễn giải",
+      "vietnamese_variants": [
+        "Tích hợp cấp độ diễn giải",
+        "Integration through Joint Display",
+        "Khung tích hợp diễn giải Fetters"
+      ],
       "domain_tags": [
         "Mixed Methods Integration"
       ],
-      "core_definition": "Tổng hợp kết quả ở phần Thảo luận qua so sánh tường thuật hoặc ma trận tích hợp.",
-      "seminal_citation": "Fetters et al. (2013)",
+      "core_definition": "Tích hợp ở cấp độ diễn giải (Integration at the Level of Interpretation - Fetters, Curry, & Creswell, 2013) là kỹ thuật phương pháp luận chuẩn mực đưa dữ liệu định lượng và định tính vào đối thoại trực tiếp trong phần Bàn luận (Discussion) hoặc Kết quả của bài báo. Ba phương thức tích hợp diễn giải chính bao gồm: (1) Tích hợp qua câu chuyện tường thuật (Integrating through narrative: cách tiếp cận dệt vải Weaving hoặc tiếp cận liền kề Contiguous); (2) Tích hợp qua bảng hiển thị chung (Integrating through Joint Displays); và (3) Tích hợp qua chuyển đổi dữ liệu (Integrating through data transformation / Quantitizing).",
+      "seminal_citation": "Fetters, Curry, & Creswell (2013)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Integration at the Level of Interpretation according to Fetters et al. (2013).",
       "domain_tags_en": [
         "Mixed Methods Integration"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Tiếp cận Dệt vải (Weaving approach): Trình bày phát hiện định lượng và định tính đan xen nhau theo từng chủ đề hoặc từng giả thuyết cụ thể. 2. Bảng hiển thị chung (Joint Display): Bảng ma trận trực quan gồm 3 cột chính: Cột 1 là Thống kê định lượng (Hệ số beta, p-value); Cột 2 là Bằng chứng định tính tương ứng (Trích dẫn nguyên văn sâu); Cột 3 là Siêu suy luận tích hợp (Metainference).",
+      "benchmarks": "Được công nhận là thực hành tốt nhất (Best practice) trên Annals of Family Medicine và JMMR. Việc sử dụng Bảng Joint Display giúp người đọc và phản biện nhìn thấy trực quan mối liên kết giữa hai phương pháp chỉ trong một trang duy nhất.",
+      "pitfalls": "Bẫy phản biện: Trình bày hai phương pháp hoàn toàn tách biệt trong hai chương riêng biệt mà không hề có phần tích hợp diễn giải; phản biện sẽ chất vấn về lý do tại sao không tách thành hai bài báo độc lập.",
+      "apa_reference": "Fetters, M. D., Curry, L. A., & Creswell, J. W. (2013). Achieving integration in mixed methods designs—principles and practices. Health Services Research, 48(6pt2), 2134–2156. https://doi.org/10.1111/1475-6773.12117",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "integration-at-the-level-of-methods",
@@ -23379,15 +23628,19 @@
     },
     {
       "id": "international-prospective-register-of-systematic-reviews",
-      "term": "International Prospective Register of Systematic Reviews",
-      "vietnamese": "Cơ sở dữ liệu Đăng ký trước Đề cương Tổng quan Hệ thống Quốc tế",
-      "vietnamese_variants": [],
+      "term": "PROSPERO (International Prospective Register of Systematic Reviews)",
+      "vietnamese": "Cơ sở dữ liệu đăng ký trước đề cương tổng quan hệ thống quốc tế (PROSPERO)",
+      "vietnamese_variants": [
+        "Cơ sở dữ liệu PROSPERO",
+        "Đăng ký trước đề cương PROSPERO",
+        "PROSPERO Preregistration"
+      ],
       "domain_tags": [
         "Open Science",
         "Meta-Analysis"
       ],
-      "core_definition": "Cơ sở dữ liệu Đăng ký trước Đề cương Tổng quan Hệ thống Quốc tế.",
-      "seminal_citation": "Số đăng ký PROSPERO (CRD420...) được các tạp chí y học, xã hội học và quản trị uy tín yêu cầu cung cấp ngay trong phần Phương pháp.",
+      "core_definition": "PROSPERO (Booth et al., 2012; Chien et al., 2012) là cơ sở dữ liệu quốc tế mở trực tuyến do Viện Nghiên cứu Y tế Quốc gia Anh (NIHR / CRD) quản lý, chuyên trách việc đăng ký trước đề cương nghiên cứu (prospective registration of protocols) cho các nghiên cứu Tổng quan hệ thống và Phân tích gộp trước khi tiến hành sàng lọc dữ liệu.",
+      "seminal_citation": "Booth et al. (2012); Chien et al. (2012)",
       "tier": "acronym",
       "expert_status": "needs_review",
       "expert_notes": "Nguồn ghi ngưỡng",
@@ -23395,7 +23648,14 @@
       "domain_tags_en": [
         "Open Science",
         "Meta-Analysis"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Mục đích cốt lõi: Ngăn chặn việc lặp lại nghiên cứu lãng phí (waste in research), ngăn chặn thiên lệch công bố kết quả có chọn lọc (Outcome reporting bias), và phòng chống hiện tượng HARKing bằng cách ghi nhận minh bạch các tiêu chí lựa chọn, câu hỏi nghiên cứu và kế hoạch phân tích tiên nghiệm. 2. Cấp mã số định danh duy nhất (Unique Registration Number: ví dụ CRD42023xxxxxx) có dấu thời gian bất biến. 3. Bắt buộc báo cáo mã số PROSPERO trong phần Tóm tắt (Abstract) và Phương pháp của bài báo.",
+      "benchmarks": "Là điều kiện tiên quyết của hầu hết các tạp chí y sinh và chính sách công hàng đầu (The Lancet, BMJ, Cochrane Library). Nhiều tạp chí áp dụng chính sách 'Desk Reject' đối với các bài báo tổng quan hệ thống không có đăng ký trước PROSPERO.",
+      "pitfalls": "Bẫy phản biện: Đăng ký PROSPERO sau khi đã hoàn thành việc trích xuất dữ liệu hoặc viết xong bài báo (Retrospective registration). PROSPERO yêu cầu đăng ký tiên nghiệm TRƯỚC KHI bắt đầu sàng lọc nghiên cứu; việc đăng ký muộn sẽ bị ghi chú cảnh báo công khai trên hồ sơ và bị phản biện chất vấn về tính liêm chính.",
+      "apa_reference": "Booth, A., Clarke, M., Dooley, G., Ghersi, D., Moher, D., Petticrew, M., & Stewart, L. (2012). The nuts and bolts of PROSPERO: An international prospective register of systematic reviews. Systematic Reviews, 1(1), 2. https://doi.org/10.1186/2046-4053-1-2",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "interpretation-in-qualitative",
@@ -26661,21 +26921,32 @@
     },
     {
       "id": "marlowe-crowne-social-desirability-scale",
-      "term": "Marlowe-Crowne Social Desirability Scale",
-      "vietnamese": "Thang đo độ mong muốn xã hội Marlowe-Crowne dùng để kiểm soát thiên lệch làm đẹp hình ảnh bản thân",
-      "vietnamese_variants": [],
+      "term": "Marlowe-Crowne Social Desirability Scale (MCSDS)",
+      "vietnamese": "Thang đo độ mong muốn xã hội Marlowe-Crowne",
+      "vietnamese_variants": [
+        "Thang đo MCSDS",
+        "Thang đo thiên lệch làm đẹp hình ảnh",
+        "Social Desirability Scale"
+      ],
       "domain_tags": [
         "Psychometrics"
       ],
-      "core_definition": "Thang đo độ mong muốn xã hội Marlowe-Crowne dùng để kiểm soát thiên lệch làm đẹp hình ảnh bản thân.",
-      "seminal_citation": "Crowne & Marlowe (1960)",
+      "core_definition": "Thang đo độ mong muốn xã hội Marlowe-Crowne (MCSDS - Crowne & Marlowe, 1960; Reynolds, 1982) là công cụ tâm lý học đo lường mức độ mà người trả lời có xu hướng che giấu sự thật và mô tả bản thân theo hướng tích cực, được xã hội tán thành (faking good / social desirability bias). Thang đo gồm các phát biểu mô tả những hành vi văn hóa rất được mong đợi nhưng thực tế rất khó thực hiện hoàn hảo, hoặc những thói quen xấu phổ biến mà con người thường chối bỏ.",
+      "seminal_citation": "Crowne & Marlowe (1960); Reynolds (1982)",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Marlowe-Crowne Social Desirability Scale according to Crowne & Marlowe (1960).",
       "domain_tags_en": [
         "Psychometrics"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Cấu trúc thang đo: Bản gốc gồm 33 câu hỏi Đúng/Sai (True/False); các bản rút gọn phổ biến của Reynolds (Form A, B, C gồm 11-13 câu). 2. Tính tổng điểm MCSDS: Điểm số càng cao chứng minh đối tượng càng có nhu cầu che giấu khiếm khuyết và tô hồng bản thân. 3. Đưa điểm số MCSDS vào mô hình hồi quy đa biến hoặc SEM như một biến kiểm soát phương sai phương pháp chung (Method variance control) hoặc dùng làm biến phân loại sàng lọc đối tượng.",
+      "benchmarks": "Áp dụng bắt buộc trong các nghiên cứu về các chủ đề đạo đức nhạy cảm (Đạo đức kinh doanh, Hành vi tiêu dùng xanh, Trốn thuế, Quấy rối nơi công sở, Lãnh đạo liêm chính). Báo cáo hệ số tương quan giữa MCSDS và các biến chính (nếu r < 0.20, thiên lệch mong muốn xã hội không đáng kể).",
+      "pitfalls": "Bẫy phản biện: Thu thập dữ liệu về các chủ đề nhạy cảm chỉ bằng bảng hỏi tự báo cáo (Self-report survey) mà hoàn toàn không có công cụ kiểm soát như MCSDS; phản biện Q1 sẽ nghi ngờ tính xác thực của dữ liệu do người tham gia trả lời vì mục đích làm hài lòng xã hội.",
+      "apa_reference": "Crowne, D. P., & Marlowe, D. (1960). A new scale of social desirability independent of psychopathology. Journal of Consulting Psychology, 24(4), 349–354. https://doi.org/10.1037/h0047358",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "maturation-threat",
@@ -26846,39 +27117,61 @@
     },
     {
       "id": "mcdonalds-omega-omega-hierarchical-total",
-      "term": "McDonald's Omega (Omega Hierarchical & Total)",
-      "vietnamese": "Hệ số Độ tin cậy McDonald's Omega",
-      "vietnamese_variants": [],
+      "term": "McDonald's Omega (Omega Hierarchical & Omega Total)",
+      "vietnamese": "Hệ số độ tin cậy McDonald's Omega (Omega Hierarchical và Omega Total)",
+      "vietnamese_variants": [
+        "Hệ số McDonald's Omega",
+        "Omega Hierarchical và Total",
+        "Hệ số tin cậy mô hình nhân tố CFA"
+      ],
       "domain_tags": [
         "Psychometrics"
       ],
-      "core_definition": "Chỉ số đo độ tin cậy nội tại ưu việt hơn Cronbach's alpha khi vi phạm tính tau-equivalent.",
-      "seminal_citation": "McDonald (1999)",
+      "core_definition": "Hệ số McDonald's Omega (McDonald, 1999; Zinbarg et al., 2005) là thước đo độ tin cậy nhất quán nội tại tối tân dựa trên phân tích nhân tố khẳng định (CFA), được cộng đồng tâm trắc học quốc tế công nhận là sự thay thế vượt trội hoàn toàn cho Cronbach's Alpha. Khác với Cronbach's Alpha (vốn giả định ngầm định sai lầm rằng tất cả các mục hỏi đều có hệ số tải bằng nhau - Tau-equivalence), McDonald's Omega ước lượng chính xác độ tin cậy trong điều kiện các mục hỏi có hệ số tải khác nhau (Congeneric measurement models).",
+      "seminal_citation": "McDonald (1999); Zinbarg et al. (2005); McNeish (2018)",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "\"ưu việt hơn\" cần điều kiện (thang đơn hướng, mô hình phù hợp) | Trùng #1582",
       "core_definition_en": "Academic definition of McDonald's Omega (Omega Hierarchical & Total) according to McDonald (1999).",
       "domain_tags_en": [
         "Psychometrics"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Omega Total (omega_t): Đo lường tỷ lệ phương sai của tổng điểm được giải thích bởi TẤT CẢ các nhân tố chung trong mô hình: omega_t = (sum lambda_i)^2 / [ (sum lambda_i)^2 + sum theta_ii ]. 2. Omega Hierarchical (omega_h): Dùng riêng cho cấu trúc đa chiều hoặc bifactor, đo lường tỷ lệ phương sai của tổng điểm được giải thích DUY NHẤT bởi Nhân tố Chung toàn cục (General factor): omega_h = (sum lambda_gi)^2 / Var(X). 3. Ước lượng thông qua ma trận hệ số tải CFA chuẩn hóa và phương sai sai số.",
+      "benchmarks": "Chuẩn mực xuất bản Q1 hiện đại (McNeish, 2018 - 'Thanks coefficient alpha, we'll take it from here'): Bắt buộc báo cáo McDonald's Omega bên cạnh hoặc thay thế hoàn toàn cho Cronbach's alpha. Ngưỡng chấp nhận: omega_t >= 0.70 (hoặc >= 0.80 cho thang đo chuẩn mực). Nếu omega_h > 0.80, thang đo được xem là đơn thứ nguyên thực chất (Essentially unidimensional).",
+      "pitfalls": "Bẫy phản biện: Tiếp tục sử dụng độc quyền Cronbach's Alpha và khẳng định thang đo 'hoàn hảo' khi các hệ số tải chênh lệch từ 0.50 đến 0.90. Trong điều kiện congeneric, Cronbach's alpha luôn đánh giá thấp (underestimate) độ tin cậy thực tế của thang đo.",
+      "apa_reference": "McNeish, D. (2018). Thanks coefficient alpha, we’ll take it from here. Psychological Methods, 23(3), 412–433. https://doi.org/10.1037/met0000144",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "mcdonalds-omega-omega-total-hierarchical",
-      "term": "McDonald's Omega (Omega Total & Hierarchical)",
-      "vietnamese": "Hệ số tin cậy McDonald's Omega thay thế hoàn hảo cho Cronbach's Alpha khi vi phạm tính chất Tau-equivalence",
-      "vietnamese_variants": [],
+      "term": "McDonald's Omega Reliability Framework",
+      "vietnamese": "Khung đo lường độ tin cậy McDonald's Omega",
+      "vietnamese_variants": [
+        "Khung đánh giá Omega McDonald",
+        "Độ tin cậy thang đo hiện đại Omega",
+        "McDonald 1999 Reliability"
+      ],
       "domain_tags": [
         "Psychometrics"
       ],
-      "core_definition": "Hệ số tin cậy McDonald's Omega thay thế hoàn hảo cho Cronbach's Alpha khi vi phạm tính chất Tau-equivalence.",
-      "seminal_citation": "McDonald (1999)",
+      "core_definition": "Khung đo lường độ tin cậy McDonald's Omega là tiêu chuẩn thực hành tâm lý học hiện đại phân định rõ ràng giữa Độ tin cậy tổng thể (Tổng phương sai chung) và Độ tin cậy cấu trúc đơn chiều (Phương sai nhân tố bậc cao), cung cấp giải pháp đo lường không chệch cho các thang đo phức hợp.",
+      "seminal_citation": "McDonald (1999); Revelle & Zinbarg (2009)",
       "tier": "encyclopedia",
       "expert_status": "needs_review",
       "expert_notes": "\"thay thế hoàn hảo\" quá mức; trùng #1581 | Trùng #1581",
       "core_definition_en": "Academic definition of McDonald's Omega (Omega Total & Hierarchical) according to McDonald (1999).",
       "domain_tags_en": [
         "Psychometrics"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Ước lượng mô hình CFA một nhân tố hoặc mô hình Bifactor trên phần mềm R (`psych` package hoặc `lavaan`). 2. Trích xuất đồng thời 3 hệ số: Cronbach's alpha, Omega Total (omega_t) và Omega Hierarchical (omega_h). 3. Tính toán khoảng tin cậy 95% Bootstrap cho các hệ số Omega.",
+      "benchmarks": "Được áp dụng bắt buộc trên các tạp chí tâm lý học và hành vi hàng đầu (Psychological Methods, Journal of Applied Psychology). So sánh giữa omega_t và omega_h giúp phát hiện thang đo đa chiều bị ngụy trang thành đơn chiều.",
+      "pitfalls": "Bẫy phản biện: Nhầm lẫn giữa Omega Total và Omega Hierarchical. Báo cáo omega_t = 0.85 trên thang đo đa chiều nhưng thực chất omega_h chỉ đạt 0.40; điều này chứng minh rằng nhân tố chung toàn cục rất yếu và không thể cộng gộp thành một điểm tổng duy nhất.",
+      "apa_reference": "Revelle, W., & Zinbarg, R. E. (2009). Coefficients alpha, beta, omega, and the glb: Comments on Sijtsma. Psychometrika, 74(1), 145–154. https://doi.org/10.1007/s11336-008-9102-z",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "mcnemar-test",
@@ -27163,20 +27456,31 @@
     {
       "id": "mediated-moderation",
       "term": "Mediated Moderation",
-      "vietnamese": "Điều tiết Bị trung gian",
-      "vietnamese_variants": [],
+      "vietnamese": "Mô hình điều tiết bị trung gian",
+      "vietnamese_variants": [
+        "Điều tiết bị trung gian",
+        "Mediated Moderation Analysis",
+        "Muller-Judd-Yzerbyt Model"
+      ],
       "domain_tags": [
         "Advanced Mediation"
       ],
-      "core_definition": "Tác động tương tác giữa X và W lên Y được giải thích gián tiếp thông qua một biến trung gian M.",
-      "seminal_citation": "Muller et al. (2005)",
+      "core_definition": "Điều tiết bị trung gian (Mediated Moderation - Baron & Kenny, 1986; Muller, Judd, & Yzerbyt, 2005) là cơ chế giải thích lý thuyết nhằm làm rõ câu hỏi: 'TẠI SAO hiệu ứng điều tiết của W lên mối quan hệ X -> Y lại xảy ra?'. Khác với Trung gian bị điều tiết (Moderated Mediation), mô hình này đặt câu hỏi liệu sự tương tác nhân quả ban đầu giữa X và W (X*W) có tác động lên biến kết quả Y thông qua một biến trung gian M hay không.",
+      "seminal_citation": "Muller, Judd, & Yzerbyt (2005); Morgan-Lopez & MacKinnon (2006)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Mediated Moderation according to Muller et al. (2005).",
       "domain_tags_en": [
         "Advanced Mediation"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Khung kiểm định 3 phương trình Muller et al. (2005): (1) Y = beta_10 + beta_11*X + beta_12*W + beta_13*X*W + e_1; (2) M = beta_20 + beta_21*X + beta_22*W + beta_23*X*W + e_2; (3) Y = beta_30 + beta_31*X + beta_32*W + beta_33*X*W + beta_34*M + beta_35*M*W + e_3. 2. Điều kiện xảy ra: Tương tác ban đầu beta_13 có ý nghĩa; beta_23 có ý nghĩa VÀ/HOẶC beta_34/beta_35 có ý nghĩa; và độ lớn của hệ số tương tác trực tiếp beta_33 giảm đáng kể so với beta_13.",
+      "benchmarks": "Được phân biệt rõ ràng về mặt bản thể luận toán học với Moderated Mediation. Morgan-Lopez & MacKinnon (2006) và Hayes (2018) chỉ ra rằng hầu hết các mô hình Mediated Moderation về bản chất toán học có thể biểu diễn tương đương dưới dạng Moderated Mediation.",
+      "pitfalls": "Bẫy phản biện: Nhầm lẫn khái niệm giữa Mediated Moderation và Moderated Mediation trong bản thảo; phản biện Q1 sẽ yêu cầu tác giả vẽ sơ đồ phương trình cấu trúc toán học chi tiết để làm rõ biến tương tác đóng vai trò tiền đề hay điều kiện biên.",
+      "apa_reference": "Muller, D., Judd, C. M., & Yzerbyt, V. Y. (2005). When moderation is mediated and mediation is moderated. Journal of Personality and Social Psychology, 89(6), 852–863. https://doi.org/10.1037/0022-3514.89.6.852",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "mediating-variable-moderating-variable",
@@ -27312,75 +27616,119 @@
     },
     {
       "id": "meta-ethnography",
-      "term": "Meta-Ethnography",
-      "vietnamese": "Phương pháp tổng hợp dân tộc học định tính của Noblit & Hare dịch chuyển và đối chiếu các khái niệm định tính giữa các nghiên cứu",
-      "vietnamese_variants": [],
+      "term": "Meta-Ethnography (Noblit & Hare Qualitative Synthesis)",
+      "vietnamese": "Phương pháp tổng hợp dân tộc học định tính",
+      "vietnamese_variants": [
+        "Phương pháp Meta-Ethnography",
+        "Tổng hợp nghiên cứu định tính Noblit & Hare",
+        "Qualitative Evidence Synthesis"
+      ],
       "domain_tags": [
         "Qualitative Synthesis"
       ],
-      "core_definition": "Phương pháp tổng hợp dân tộc học định tính của Noblit & Hare dịch chuyển và đối chiếu các khái niệm định tính giữa các nghiên cứu.",
-      "seminal_citation": "Noblit & Hare (1988)",
+      "core_definition": "Meta-Ethnography (Noblit & Hare, 1988; France et al., 2019) là phương pháp luận chuẩn mực và phổ biến nhất để tổng hợp các phát hiện từ nhiều nghiên cứu định tính độc lập (Qualitative Evidence Synthesis). Thay vì chỉ tóm tắt hay đếm tần suất các phát hiện (Aggregative review), Meta-Ethnography thực hiện một tiến trình phân tích diễn giải so sánh lặp (Interpretive synthesis) nhằm dịch chuyển các khái niệm và tạo ra một cách hiểu lý thuyết mới vượt lên trên các nghiên cứu gốc.",
+      "seminal_citation": "Noblit & Hare (1988); France et al. (2019)",
       "tier": "encyclopedia",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #1620",
       "core_definition_en": "Academic definition of Meta-Ethnography according to Noblit & Hare (1988).",
       "domain_tags_en": [
         "Qualitative Synthesis"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Bảy bước Noblit & Hare: (1) Bắt đầu; (2) Quyết định phạm vi; (3) Đọc kỹ các nghiên cứu; (4) Xác định mối quan hệ giữa các nghiên cứu; (5) Dịch chuyển các nghiên cứu sang nhau (Translating studies into one another); (6) Tổng hợp các bản dịch (Synthesizing translations); (7) Trình bày phát hiện. 2. Ba hình thức dịch chuyển: (A) Dịch chuyển tương hỗ (Reciprocal translation: các nghiên cứu có phát hiện tương đồng); (B) Dịch chuyển bác bỏ (Refutational translation: các nghiên cứu có mâu thuẫn đối lập); (C) Dựng dòng lập luận (Lines-of-argument synthesis: tạo ra một lý thuyết bao quát mới).",
+      "benchmarks": "Tuân thủ hướng dẫn báo cáo eMERGe (Reporting guidance for meta-ethnography - France et al., 2019). Phân biệt rạch ròi giữa Cấu trúc bậc 1 (First-order constructs: lời của người tham gia), Cấu trúc bậc 2 (Second-order: diễn giải của tác giả bài báo gốc) và Cấu trúc bậc 3 (Third-order constructs: lý thuyết mới do tác giả meta-ethnography sáng tạo).",
+      "pitfalls": "Bẫy phản biện: 'Superficial thematic aggregation' — Chỉ liệt kê lại các chủ đề của các bài báo gốc mà không thực hiện phân tích dịch chuyển thực chất; bài báo sẽ bị chỉ trích là chỉ tóm tắt đơn thuần chứ không phải là một công trình Meta-Ethnography đúng nghĩa.",
+      "apa_reference": "Noblit, G. W., & Hare, R. D. (1988). Meta-ethnography: Synthesizing qualitative studies. Sage Publications. https://doi.org/10.4135/9781412985000",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "meta-ethnography-noblit-hare",
-      "term": "Meta-Ethnography (Noblit & Hare)",
-      "vietnamese": "Phương pháp Tổng hợp Dân tộc học Meta-Ethnography",
-      "vietnamese_variants": [],
+      "term": "Noblit & Hare Translation Synthesis Framework",
+      "vietnamese": "Khung tổng hợp dịch chuyển khái niệm Noblit & Hare",
+      "vietnamese_variants": [
+        "Khung Noblit & Hare",
+        "Translation Synthesis",
+        "Phương pháp dịch chuyển cấu trúc bậc 3"
+      ],
       "domain_tags": [
         "Qualitative Synthesis"
       ],
-      "core_definition": "Tổng hợp các nghiên cứu định tính qua diễn dịch tương hỗ Reciprocal Translation.",
-      "seminal_citation": "Noblit & Hare (1988)",
+      "core_definition": "Khung tổng hợp dịch chuyển khái niệm Noblit & Hare là cốt lõi nhận thức luận của phương pháp Meta-Ethnography. Khung này khẳng định rằng việc tổng hợp định tính không phải là gộp chung dữ liệu thống kê, mà là việc xem xét các ẩn dụ, biểu tượng và khái niệm của nghiên cứu này như một ngôn ngữ cần được 'dịch' sang hệ thống khái niệm của nghiên cứu khác để nhận diện sự tương đồng bản chất và dị biệt cấu trúc.",
+      "seminal_citation": "Noblit & Hare (1988); Britten et al. (2002)",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #1619",
       "core_definition_en": "Academic definition of Meta-Ethnography (Noblit & Hare) according to Noblit & Hare (1988).",
       "domain_tags_en": [
         "Qualitative Synthesis"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Lập bảng ma trận trích xuất các ẩn dụ và khái niệm chính (Key metaphors and concepts) của từng bài báo. 2. So sánh từng cặp nghiên cứu liên tục (Constant comparative translation): Đặt phát hiện của nghiên cứu 1 bên cạnh nghiên cứu 2 để xem khái niệm này giải thích khái niệm kia như thế nào. 3. Phát triển mô hình Lines-of-argument giải thích toàn diện bức tranh hiện tượng.",
+      "benchmarks": "Được công nhận là phương pháp tổng hợp định tính được trích dẫn nhiều nhất trên thế giới. Tiêu chuẩn đánh giá: Tính mạch lạc và độ sâu sắc của Cấu trúc bậc 3 (Third-order conceptual model).",
+      "pitfalls": "Bẫy phản biện: Bỏ qua các nghiên cứu có phát hiện mâu thuẫn (Refutational findings). Việc chỉ lựa chọn các nghiên cứu có phát hiện đồng thuận sẽ làm mất đi giá trị phê phán và làm suy yếu độ tin cậy của bản tổng hợp.",
+      "apa_reference": "Britten, N., Campbell, R., Pope, C., Donovan, J., Morgan, M., & Pill, R. (2002). Using meta ethnography to synthesise qualitative research: A worked example. Journal of Health Services Research & Policy, 7(4), 209–215. https://doi.org/10.1258/135581902320432732",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "meta-regression",
-      "term": "Meta-Regression",
-      "vietnamese": "Hồi quy tổng hợp khám phá các yếu tố cấp độ nghiên cứu giải thích tính không đồng nhất giữa các hiệu ứng",
-      "vietnamese_variants": [],
+      "term": "Meta-Regression Analysis (MRA)",
+      "vietnamese": "Phân tích hồi quy tổng hợp",
+      "vietnamese_variants": [
+        "Hồi quy Meta",
+        "Meta-Regression",
+        "Khám phá tính không đồng nhất trong Meta-Analysis"
+      ],
       "domain_tags": [
         "Meta-Analysis"
       ],
-      "core_definition": "Hồi quy tổng hợp khám phá các yếu tố cấp độ nghiên cứu giải thích tính không đồng nhất giữa các hiệu ứng.",
-      "seminal_citation": "Borenstein et al. (2009)",
+      "core_definition": "Hồi quy tổng hợp (Meta-Regression Analysis - Stanley & Jarrell, 1989; Thompson & Higgins, 2002) là kỹ thuật kinh tế lượng mở rộng của phân tích gộp, dùng để kiểm định và lượng hóa mức độ mà các đặc trưng ở cấp độ nghiên cứu (Study-level covariates / Moderating variables: như năm công bố, phương pháp đo lường, đặc điểm địa lý mẫu, liều lượng can thiệp) giải thích được tính không đồng nhất giữa các kích thước hiệu ứng (heterogeneity of effect sizes).",
+      "seminal_citation": "Stanley & Jarrell (1989); Thompson & Higgins (2002)",
       "tier": "curated",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Meta-Regression according to Borenstein et al. (2009).",
       "domain_tags_en": [
         "Meta-Analysis"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Phương trình hồi quy có trọng số: theta_i = beta_0 + beta_1*X_i1 + ... + beta_p*X_ip + u_i + e_i, trong đó theta_i là kích thước hiệu ứng của nghiên cứu i, X_ij là các biến giải thích đặc trưng của nghiên cứu, e_i ~ N(0, v_i) là sai số chọn mẫu trong nghiên cứu, và u_i ~ N(0, tau^2) là phần dư không đồng nhất chưa giải thích được giữa các nghiên cứu. 2. Ước lượng bằng Hợp lý cực đại hạn chế (REML). 3. Tính tỷ lệ phương sai giữa các nghiên cứu được giải thích: R^2_analog = (tau^2_unrestricted - tau^2_restricted) / tau^2_unrestricted.",
+      "benchmarks": "Được áp dụng chuẩn mực theo hướng dẫn Cochrane. Kiểm định hoán vị Knapp-Hartung (Knapp-Hartung modification) bắt buộc phải được áp dụng để kiểm soát tỷ lệ sai lầm loại I khi số lượng nghiên cứu k nhỏ.",
+      "pitfalls": "Bẫy ngụy biện sinh thái (Ecological Fallacy): Ngoại suy các mối quan hệ tìm thấy ở cấp độ nghiên cứu (giữa các bài báo) áp đặt cho cấp độ cá nhân (bệnh nhân/người tiêu dùng). Hồi quy tổng hợp chỉ phản ánh mối liên hệ ở cấp độ vĩ mô của các nghiên cứu.",
+      "apa_reference": "Thompson, S. G., & Higgins, J. P. (2002). How should meta-regression analyses be undertaken and interpreted?. Statistics in Medicine, 21(11), 1559–1573. https://doi.org/10.1002/sim.1187",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "metainferences",
-      "term": "Metainferences",
-      "vietnamese": "Siêu suy luận — Các phát hiện sâu sắc đúc kết từ việc kết hợp cả hai cơ sở dữ liệu định tính và định lượng mà từng phương pháp đơn lẻ không thấy được.",
-      "vietnamese_variants": [],
+      "term": "Metainferences in Mixed Methods Research",
+      "vietnamese": "Siêu suy luận trong nghiên cứu phương pháp hỗn hợp",
+      "vietnamese_variants": [
+        "Siêu suy luận",
+        "Metainferences",
+        "Tashakkori-Teddlie Metainferences"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Siêu suy luận — Các phát hiện sâu sắc đúc kết từ việc kết hợp cả hai cơ sở dữ liệu định tính và định lượng mà từng phương pháp đơn lẻ không thấy được.",
-      "seminal_citation": "Creswell & Creswell (2023); Creswell & Creswell (2023); Tashakkori & Teddlie (2008)",
+      "core_definition": "Siêu suy luận (Metainferences - Tashakkori & Teddlie, 2003, 2008; Creswell & Plano Clark, 2018) là phát hiện lý thuyết ở cấp độ tích hợp cao nhất trong nghiên cứu phương pháp hỗn hợp. Siêu suy luận là kết luận, hiểu biết sâu sắc hoặc cách lý giải mới được đúc kết từ việc dung hợp, đối chiếu và thẩm định chéo giữa các suy luận định lượng (Quantitative inferences) và các suy luận định tính (Qualitative inferences) mà từng phương pháp đơn lẻ khi đứng độc lập hoàn toàn không thể nhìn thấy được.",
+      "seminal_citation": "Tashakkori & Teddlie (2003, 2008)",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Metainferences according to Creswell & Creswell (2023); Creswell & Creswell (2023); Tashakkori & Teddlie (2008).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Quy trình sinh siêu suy luận: (A) Rút ra suy luận định lượng độc lập; (B) Rút ra suy luận định tính độc lập; (C) Tích hợp thông qua Bảng ma trận đối chiếu chung (Joint Display) để so sánh xem hai nguồn dữ liệu: Xác nhận lẫn nhau (Confirmation), Mở rộng và làm sâu sắc hơn (Expansion), hay Bất đồng mâu thuẫn (Discordance / Divergence). 2. Đánh giá chất lượng siêu suy luận thông qua Khung Chất lượng Suy luận (Inference Quality Framework: Design Quality và Interpretive Rigor).",
+      "benchmarks": "Là thước đo đánh giá giá trị gia tăng tối thượng của một bài báo phương pháp hỗn hợp trên các tạp chí quốc tế Q1 (như Journal of Mixed Methods Research - JMMR). Nếu không tạo ra được siêu suy luận thực chất, công trình bị đánh giá là 'hai nghiên cứu nửa vời ghép lại'.",
+      "pitfalls": "Bẫy phản biện: 'Lack of integration' — Báo cáo phần định lượng riêng, định tính riêng và kết luận chung chung mà không có phần thảo luận Metainferences bóc tách sự tương hỗ hoặc giải quyết các mâu thuẫn giữa hai luồng dữ liệu.",
+      "apa_reference": "Tashakkori, A., & Teddlie, C. (2008). Quality of inference in mixed methods research: Calling for an integrative framework. In M. M. Bergman (Ed.), Advances in mixed methods research (pp. 101–117). Sage Publications.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "method-of-data-collection",
@@ -28186,33 +28534,48 @@
     },
     {
       "id": "moderated-mediation-conditional-indirect-effect",
-      "term": "Moderated Mediation (Conditional Indirect Effect)",
-      "vietnamese": "Trung gian Bị điều tiết",
-      "vietnamese_variants": [],
+      "term": "Conditional Indirect Effect (Moderated Mediation)",
+      "vietnamese": "Tác động gián tiếp có điều kiện",
+      "vietnamese_variants": [
+        "Hiệu ứng gián tiếp có điều kiện",
+        "Conditional Indirect Effect",
+        "Hệ số omega Hayes"
+      ],
       "domain_tags": [
         "Advanced Mediation"
       ],
-      "core_definition": "Tác động gián tiếp của X lên Y qua M thay đổi tùy theo các mức độ khác nhau của biến điều tiết W.",
-      "seminal_citation": "Muller, Judd & Yzerbyt (2005)",
+      "core_definition": "Tác động gián tiếp có điều kiện (Conditional Indirect Effect - Preacher, Rucker, & Hayes, 2007; Hayes, 2018) là đại lượng toán học cốt lõi trong phân tích Trung gian bị điều tiết, đo lường độ lớn và chiều hướng của tác động gián tiếp từ X sang Y thông qua biến trung gian M tại một giá trị cụ thể xác định của biến điều tiết W: omega = f(W).",
+      "seminal_citation": "Preacher, Rucker, & Hayes (2007); Hayes (2015, 2018)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Moderated Mediation (Conditional Indirect Effect) according to Muller, Judd & Yzerbyt (2005).",
       "domain_tags_en": [
         "Advanced Mediation"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Trong mô hình điều tiết nhánh đầu (Stage 1 Moderation: W điều tiết X -> M): M = a_0 + a_1*X + a_2*W + a_3*X*W + e; Y = c'_0 + c'*X + b*M + e. 2. Tác động gián tiếp có điều kiện: omega(W) = (a_1 + a_3*W) * b = a_1*b + a_3*b*W. 3. Đạo hàm theo W chính là Chỉ số trung gian bị điều tiết (Index = a_3 * b). 4. Tính toán khoảng tin cậy BCa Bootstrap 95% cho omega(W) tại các mức cụ thể của W.",
+      "benchmarks": "Đánh giá tại các giá trị tiêu chuẩn: Mức thấp (Trung bình - 1 SD), Mức trung bình (Mean), và Mức cao (Trung bình + 1 SD). Nếu khoảng tin cậy 95% của tác động gián tiếp không chứa 0 ở mức cao nhưng lại chứa 0 ở mức thấp, khẳng định cơ chế trung gian chỉ được kích hoạt trong điều kiện W cao.",
+      "pitfalls": "Bẫy phản biện: Khẳng định 'tác động gián tiếp bị điều tiết có ý nghĩa' chỉ vì tác động gián tiếp có ý nghĩa ở mức W cao và không có ý nghĩa ở mức W thấp. Hayes (2015) đã chứng minh rằng điều này không đủ để kết luận điều tiết; bắt buộc phải kiểm định Chỉ số Trung gian bị điều tiết (Index of Moderated Mediation) có khoảng tin cậy khác 0.",
+      "apa_reference": "Preacher, K. J., Rucker, D. D., & Hayes, A. F. (2007). Addressing moderated mediation hypotheses: Theory, methods, and prescriptions. Multivariate Behavioral Research, 42(1), 185–227. https://doi.org/10.1080/00273170701341316",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "moderated-moderated-mediation-process-models-11-12-72",
       "term": "Moderated Moderated Mediation (PROCESS Models 11, 12, 72)",
-      "vietnamese": "Mô hình tác động gián tiếp bị điều tiết đồng thời bởi 2 biến điều tiết (W và Z).",
-      "vietnamese_variants": [],
+      "vietnamese": "Mô hình trung gian bị điều tiết kép (PROCESS Models 11, 12, 72)",
+      "vietnamese_variants": [
+        "Trung gian bị điều tiết 3 chiều",
+        "Three-Way Moderated Mediation",
+        "PROCESS Model 11 12 72"
+      ],
       "domain_tags": [
         "Mediation",
         "Moderation (PROCESS)"
       ],
-      "core_definition": "Mô hình tác động gián tiếp bị điều tiết đồng thời bởi 2 biến điều tiết (W và Z).",
-      "seminal_citation": "Hayes (2022)",
+      "core_definition": "Mô hình trung gian bị điều tiết kép (Moderated Moderated Mediation / Three-Way Moderated Mediation - Hayes, 2018) là dạng mô hình tiến trình có điều kiện bậc cao phức tạp, kiểm định giả thuyết rằng tác động gián tiếp của X lên Y thông qua M bị điều tiết bởi biến W, và độ lớn của sự điều tiết đó lại tiếp tục bị thay đổi hoặc phụ thuộc vào một biến điều tiết thứ hai Z (Tương tác 3 chiều lên đường dẫn trung gian: X * W * Z).",
+      "seminal_citation": "Hayes (2018)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "LaTeX thô",
@@ -28220,7 +28583,14 @@
       "domain_tags_en": [
         "Mediation",
         "Moderation (PROCESS)"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Phương trình nhánh trung gian (ví dụ Model 11): M = a_0 + a_1*X + a_2*W + a_3*Z + a_4*X*W + a_5*X*Z + a_6*W*Z + a_7*X*W*Z + e_M. 2. Tác động gián tiếp có điều kiện là một hàm phi tuyến phụ thuộc vào cả hai biến điều tiết W và Z: omega(W, Z) = (a_1 + a_4*W + a_5*Z + a_7*W*Z) * b. 3. Chỉ số trung gian bị điều tiết kép (Index of Moderated Moderated Mediation) đo lường sự thay đổi của hiệu ứng gián tiếp theo tích số tương tác W*Z: Index = a_7 * b.",
+      "benchmarks": "Được kiểm định thông qua khoảng tin cậy BCa Bootstrap 95% của chỉ số Index = a_7 * b (không chứa giá trị 0). Trực quan hóa bằng biểu đồ bề mặt phản hồi 3D (3D response surface plot) hoặc các biểu đồ lát cắt Floodlight 2 chiều tại các mốc phân vị của Z.",
+      "pitfalls": "Bẫy phản biện: Đòi hỏi kích thước mẫu cực lớn (thường N > 500-800) để có đủ sức mạnh thống kê phát hiện tương tác 3 chiều bậc cao; nếu chạy trên mẫu nhỏ (N < 200), tỷ lệ sai lầm loại II rất cao và sai số chuẩn bootstrap sẽ bị bùng nổ.",
+      "apa_reference": "Hayes, A. F. (2018). Introduction to mediation, moderation, and conditional process analysis: A regression-based approach (2nd ed.). Guilford Press.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "moderating-variables",
@@ -28279,15 +28649,19 @@
     },
     {
       "id": "mono-method-bias",
-      "term": "Mono-method bias",
-      "vietnamese": "Định kiến đơn phương thức đo lường",
-      "vietnamese_variants": [],
+      "term": "Mono-Method Bias (Common Method Bias)",
+      "vietnamese": "Thiên lệch đơn phương thức đo lường",
+      "vietnamese_variants": [
+        "Thiên vị đơn phương thức",
+        "Mono-Method Bias",
+        "Lỗi đo lường cùng một phương thức"
+      ],
       "domain_tags": [
         "Methodology",
         "Research Design"
       ],
-      "core_definition": "Sai lầm dùng duy nhất 1 phương thức thu thập (ví dụ: chỉ dùng bảng hỏi tự điền).",
-      "seminal_citation": "Shadish, Cook & Campbell (2002)",
+      "core_definition": "Thiên lệch đơn phương thức (Mono-Method Bias - Campbell & Fiske, 1959; Podsakoff et al., 2003) là dạng lỗi đo lường hệ thống xảy ra khi cả biến độc lập lẫn biến phụ thuộc đều được thu thập từ cùng một người trả lời (Single-informant), tại cùng một thời điểm (Single-timepoint), bằng cùng một loại công cụ khảo sát (Self-report questionnaire trên cùng thang Likert). Sự tương đồng về phương thức tạo ra một nguồn phương sai chung giả mạo, làm thổi phồng (hoặc làm xẹp) nhân tạo mối tương quan thực tế giữa các khái niệm.",
+      "seminal_citation": "Campbell & Fiske (1959); Podsakoff et al. (2003)",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
@@ -28295,7 +28669,14 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Biện pháp phòng ngừa ở khâu thiết kế (Procedural remedies): (A) Tách biệt nguồn dữ liệu (Temporal separation: đo biến X tại thời điểm T1, biến Y tại thời điểm T2); (B) Thu thập từ nhiều người trả lời (Dyadic data: nhân viên đánh giá X, cấp trên đánh giá Y); (C) Kết hợp dữ liệu thứ cấp khách quan (Objective firm performance data từ báo cáo tài chính). 2. Kiểm soát thống kê: Phân tích nhân tố chưa đo lường (ULMC) hoặc Kỹ thuật biến Marker.",
+      "benchmarks": "Campbell & Fiske (1959) khẳng định rằng việc chỉ dựa vào một phương thức đo lường duy nhất không bao giờ có thể chứng minh được tính độc lập của cấu trúc lý thuyết. Đạt chuẩn khi kết hợp đa nguồn dữ liệu.",
+      "pitfalls": "Bẫy phản biện: Khảo sát một nhân viên duy nhất để vừa đánh giá 'Phong cách lãnh đạo của sếp' (IV) vừa đánh giá 'Hiệu quả công việc của chính mình' (DV) tại một thời điểm; thiết kế này mắc lỗi Mono-Method Bias trầm trọng và bị từ chối ngay lập tức ở các tạp chí quản trị hàng đầu.",
+      "apa_reference": "Campbell, D. T., & Fiske, D. W. (1959). Convergent and discriminant validation by the multitrait-multimethod matrix. Psychological Bulletin, 56(2), 81–105. https://doi.org/10.1037/h0046016",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "mono-operation-bias",
@@ -28799,15 +29180,19 @@
     },
     {
       "id": "multitrait-multimethod-mtmm",
-      "term": "Multitrait-Multimethod (MTMM)",
-      "vietnamese": "Thử nghiệm đa đặc tính - đa phương pháp để bóc tách phương sai phương pháp chung (Common Method Variance).",
-      "vietnamese_variants": [],
+      "term": "Multitrait-Multimethod Matrix (MTMM)",
+      "vietnamese": "Ma trận đa đặc tính - đa phương pháp MTMM",
+      "vietnamese_variants": [
+        "Ma trận MTMM",
+        "Khuôn khổ MTMM Campbell & Fiske",
+        "Đánh giá giá trị hội tụ và phân biệt đa phương thức"
+      ],
       "domain_tags": [
         "Questionnaire",
         "TSE"
       ],
-      "core_definition": "Thử nghiệm đa đặc tính - đa phương pháp để bóc tách phương sai phương pháp chung (Common Method Variance).",
-      "seminal_citation": "Wiley / Beatty & Willis (2020); Wiley (2020)",
+      "core_definition": "Ma trận Đa đặc tính - Đa phương pháp (MTMM - Campbell & Fiske, 1959) là khuôn khổ phương pháp luận kinh điển và nghiêm ngặt nhất trong tâm trắc học để thẩm định đồng thời Giá trị Hội tụ (Convergent Validity) và Giá trị Phân biệt (Discriminant Validity). MTMM đòi hỏi đo lường ít nhất hai đặc tính lý thuyết (Traits) bằng ít nhất hai phương thức đo lường hoàn toàn độc lập (Methods: ví dụ tự báo cáo, quan sát hành vi, đánh giá của đồng nghiệp).",
+      "seminal_citation": "Campbell & Fiske (1959); Marsh (1989)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
@@ -28815,7 +29200,14 @@
       "domain_tags_en": [
         "Questionnaire",
         "TSE"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Cấu trúc 4 khối tương quan trong ma trận MTMM: (A) Đường chéo độ tin cậy (Monotrait-Monomethod: độ tin cậy thang đo); (B) Khối Đơn đặc tính - Dị phương pháp (Monotrait-Heteromethod: đo cùng một đặc tính bằng hai phương pháp khác nhau -> Bằng chứng Giá trị Hội tụ); (C) Khối Dị đặc tính - Đơn phương pháp (Heterotrait-Monomethod: phản ánh ảnh hưởng của phương sai phương pháp chung); (D) Khối Dị đặc tính - Dị phương pháp (Heterotrait-Heteromethod). 2. Ước lượng CFA-MTMM hiện đại: Mô hình hóa các nhân tố đặc tính (Trait factors) và các nhân tố phương pháp (Method factors) trong SEM.",
+      "benchmarks": "4 Tiêu chuẩn vàng Campbell & Fiske: (1) Tương quan Monotrait-Heteromethod phải lớn hơn 0 và có ý nghĩa thống kê; (2) Tương quan Monotrait-Heteromethod phải lớn hơn Heterotrait-Heteromethod; (3) Tương quan Monotrait-Heteromethod phải lớn hơn Heterotrait-Monomethod; (4) Cùng một mô thức tương quan giữa các đặc tính phải được lặp lại đồng nhất qua mọi phương pháp.",
+      "pitfalls": "Bẫy phản biện: Chi phí và độ phức tạp hậu cần quá lớn khiến ít tác giả thực hiện được ma trận MTMM đầy đủ; tuy nhiên, nắm vững nguyên lý MTMM là điều kiện tiên quyết để hiểu rõ bản chất của phân tích CFA và chỉ số HTMT.",
+      "apa_reference": "Campbell, D. T., & Fiske, D. W. (1959). Convergent and discriminant validation by the multitrait-multimethod matrix. Psychological Bulletin, 56(2), 81–105. https://doi.org/10.1037/h0046016",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "multitrait-multimethod-mtmm-matrix",
@@ -29267,14 +29659,18 @@
     },
     {
       "id": "network-meta-analysis",
-      "term": "Network Meta-Analysis",
-      "vietnamese": "Phân tích Gộp Mạng lưới (So sánh Đa can thiệp Đồng thời)",
-      "vietnamese_variants": [],
+      "term": "Network Meta-Analysis (Multiple Treatments Meta-Analysis)",
+      "vietnamese": "Phân tích gộp mạng lưới (So sánh đa can thiệp)",
+      "vietnamese_variants": [
+        "Network Meta-Analysis",
+        "Phân tích gộp mạng",
+        "So sánh can thiệp trực tiếp và gián tiếp"
+      ],
       "domain_tags": [
         "Advanced Meta-Analysis"
       ],
-      "core_definition": "Kỹ thuật phân tích gộp tiên tiến kết hợp cả bằng chứng trực tiếp (Direct evidence) và bằng chứng gián tiếp (Indirect evidence) qua mạng lưới can thiệp chung. Ngưỡng thực nghiệm tham chiếu: Bắt buộc kiểm tra giả định chuyển tiếp (Transitivity assumption) và tính nhất quán (Inconsistency test giữa direct và indirect p > .05). Xếp hạng can thiệp qua diện tích SUCRA (Surface Under the Cumulative Ranking Curve).",
-      "seminal_citation": "Bắt buộc kiểm tra giả định chuyển tiếp (Transitivity assumption) và tính nhất quán (Inconsistency test giữa direct và indirect p > .05). Xếp hạng can thiệp qua diện tích SUCRA (Surface Under the Cumulative Ranking Curve).; Salanti (2012)",
+      "core_definition": "Phân tích gộp mạng lưới (Network Meta-Analysis - NMA - Lumley, 2002; Lu & Ades, 2004; Salanti, 2012) là bước tiến mang tính cách mạng trong tổng quan hệ thống, cho phép so sánh hiệu quả tương đối của ba hoặc nhiều can thiệp/chính sách khác nhau (A, B, C...) đồng thời trong cùng một mô hình toán học thống nhất, bằng cách kết hợp cả bằng chứng so sánh trực tiếp (Direct evidence từ các thử nghiệm A vs B) và bằng chứng so sánh gián tiếp (Indirect evidence thông qua nhóm đối chứng chung C).",
+      "seminal_citation": "Lumley (2002); Lu & Ades (2004); Salanti (2012)",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
@@ -29282,25 +29678,42 @@
       "domain_tags_en": [
         "Advanced Meta-Analysis"
       ],
-      "benchmarks": "Bắt buộc kiểm tra giả định chuyển tiếp (Transitivity assumption) và tính nhất quán (Inconsistency test giữa direct và indirect p > .05). Xếp hạng can thiệp qua diện tích SUCRA (Surface Under the Cumulative Ranking Curve)."
+      "benchmarks": "Được coi là đỉnh cao bằng chứng của Y học thực chứng và Đánh giá chính sách công (PRISMA-NMA Extension). Chỉ số SUCRA dao động từ 0% (tệ nhất) đến 100% (can thiệp tối ưu nhất).",
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Xây dựng đồ thị hình học mạng lưới bằng chứng (Evidence network plot): Các nút là các phương pháp can thiệp, độ dày của đường nối thể hiện số lượng nghiên cứu so sánh trực tiếp. 2. Giả định tính bắc cầu (Transitivity) và Giả định tính nhất quán (Consistency): Hiệu ứng trực tiếp A vs B phải tương thích toán học với hiệu ứng gián tiếp suy ra từ (A vs C) và (B vs C). 3. Ước lượng thông qua mô hình phân cấp Bayes (Bayesian hierarchical models) hoặc mô hình thường nghiệm đa biến (Multivariate frequentist models). 4. Xếp hạng hiệu quả bằng Chỉ số SUCRA (Surface Under the Cumulative Ranking Curve).",
+      "pitfalls": "Bẫy phản biện: Bỏ qua kiểm định tính không nhất quán (Inconsistency testing bằng Node-splitting method). Nếu có sự mâu thuẫn lớn giữa bằng chứng trực tiếp và gián tiếp, toàn bộ kết quả xếp hạng mạng lưới sẽ bị sai lệch hoàn toàn.",
+      "apa_reference": "Salanti, G. (2012). Indirect and mixed-treatment comparison, network, or multiple-treatments meta-analysis? Many names, many benefits, many concerns for the next generation evidence synthesis tool. Research Synthesis Methods, 3(2), 80–97. https://doi.org/10.1002/jrsm.1037",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "network-meta-analysis-nma",
-      "term": "Network Meta-Analysis (NMA)",
-      "vietnamese": "Phân tích Gộp Mạng lưới",
-      "vietnamese_variants": [],
+      "term": "Network Meta-Analysis Protocol and SUCRA Metrics",
+      "vietnamese": "Giao thức phân tích gộp mạng lưới và thước đo SUCRA",
+      "vietnamese_variants": [
+        "Quy chuẩn NMA",
+        "Thước đo SUCRA",
+        "Xếp hạng can thiệp NMA"
+      ],
       "domain_tags": [
         "Advanced Meta-Analysis"
       ],
-      "core_definition": "So sánh đồng thời nhiều phương pháp điều trị thông qua so sánh trực tiếp và gián tiếp.",
-      "seminal_citation": "Salanti (2012)",
+      "core_definition": "Giao thức phân tích gộp mạng lưới và thước đo SUCRA (Salanti, Ades, & Ioannidis, 2011) quy chuẩn hóa quy trình phân tích và xếp hạng thứ bậc hiệu năng của toàn bộ các can thiệp cạnh tranh trong một mạng lưới bằng chứng phức tạp.",
+      "seminal_citation": "Salanti, Ades, & Ioannidis (2011)",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #1735",
       "core_definition_en": "Academic definition of Network Meta-Analysis (NMA) according to Salanti (2012).",
       "domain_tags_en": [
         "Advanced Meta-Analysis"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Tính toán ma trận xác suất xếp hạng: Xác suất P(r, k) là can thiệp k xếp ở vị trí thứ r. 2. Diện tích dưới đường cong xếp hạng tích lũy (SUCRA): SUCRA_k = sum_{j=1}^{m-1} cum_P(j, k) / (m - 1), trong đó m là tổng số can thiệp. 3. Vẽ biểu đồ đóng góp mạng lưới (Contribution plot) để xác định mức độ chi phối của từng so sánh trực tiếp lên ước lượng gián tiếp.",
+      "benchmarks": "Báo cáo bảng xếp hạng thứ bậc kèm chỉ số SUCRA và trung vị thứ hạng (Mean rank). Luôn đi kèm biểu đồ Forest plot so sánh mọi can thiệp với một can thiệp chuẩn tham chiếu (Reference comparator).",
+      "pitfalls": "Bẫy phản biện: Tuyên bố một can thiệp là 'vượt trội nhất' chỉ dựa vào chỉ số SUCRA cao hơn vài phần trăm (ví dụ SUCRA 85% vs 82%) mà không kiểm tra khoảng tin cậy trùng lặp giữa hai can thiệp.",
+      "apa_reference": "Salanti, G., Ades, A. E., & Ioannidis, J. P. (2011). Graphical methods and numerical summaries for presenting results from multiple-treatment meta-analyses: An overview and tutorial. Journal of Clinical Epidemiology, 64(2), 163–171. https://doi.org/10.1016/j.jclinepi.2010.03.016",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "never-takers",
@@ -30678,15 +31091,19 @@
     },
     {
       "id": "p-value",
-      "term": "p-value",
+      "term": "p-value (Null Hypothesis Significance Testing - NHST)",
       "vietnamese": "Trị số p (Mức ý nghĩa thống kê quan sát)",
-      "vietnamese_variants": [],
+      "vietnamese_variants": [
+        "Trị số p-value",
+        "Giá trị p",
+        "Xác suất quan sát dưới giả thuyết vô hiệu"
+      ],
       "domain_tags": [
         "Thống kê Suy luận",
         "Kiểm định Giả thuyết"
       ],
-      "core_definition": "Xác suất quan sát được kết quả thực nghiệm tương đương hoặc cực đoan hơn kết quả thực tế nếu giả thuyết không (H0: không có mối quan hệ/tác động) là đúng. Giá trị p không phải là xác suất H0 đúng, mà là thước đo bằng chứng thực nghiệm chống lại H0. Khi p < 0.05 hoặc p < 0.01, nhà nghiên cứu bác bỏ giả thuyết H0.",
-      "seminal_citation": "Fisher, R. A. (1925). Statistical Methods for Research Workers. Oliver & Boyd.",
+      "core_definition": "Trị số p (p-value - Fisher, 1925; Wasserstein & Lazar, 2016) là xác suất thu được một thống kê kiểm định có độ lớn bằng hoặc cực đoan hơn giá trị thực tế quan sát được từ mẫu dữ liệu, KHI GIẢ ĐỊNH RẰNG giả thuyết vô hiệu H0 là hoàn toàn đúng (P(Data >= Observed | H0)). p-value là thước đo mức độ tương thích giữa dữ liệu thực nghiệm và mô hình giả định H0, chứ TUYỆT ĐỐI KHÔNG PHẢI là xác suất giả thuyết H0 đúng.",
+      "seminal_citation": "Fisher (1925); Wasserstein & Lazar (2016); Benjamin et al. (2018)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
@@ -30694,7 +31111,14 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Tuyên bố chính thức của Hiệp hội Thống kê Hoa Kỳ (ASA Statement on p-Values - Wasserstein & Lazar, 2016): (A) p-value không đo lường xác suất giả thuyết nghiên cứu đúng; (B) p-value không đo lường độ lớn của hiệu ứng hay tầm quan trọng thực tiễn; (C) Quyết định khoa học không nên chỉ dựa vào ngưỡng cơ học p < 0.05. 2. Chuẩn mực báo cáo hiện đại: Báo cáo giá trị p chính xác (Exact p-value: p = 0.032 thay vì p < 0.05) kết hợp bắt buộc với Kích thước hiệu ứng (Effect Size) và Khoảng tin cậy 95% (Confidence Intervals).",
+      "benchmarks": "Quy ước truyền thống Fisher: p < 0.05 (có ý nghĩa), p < 0.01 (ý nghĩa cao), p < 0.001 (rất cao). Đề xuất cải cách Benjamin et al. (2018 - Nature Human Behaviour): Hạ ngưỡng tuyên bố khám phá mới từ 0.05 xuống 0.005 để nâng cao tính khả tái lập.",
+      "pitfalls": "Bẫy phản biện: 'The Inverse Probability Fallacy' — Diễn giải nhầm rằng p = 0.03 có nghĩa là 'có 97% xác suất giả thuyết nghiên cứu là đúng' hoặc 'chỉ có 3% khả năng kết quả là ngẫu nhiên'. Đây là lỗi nhận thức luận cấm kỵ nhất trong kiểm định thống kê.",
+      "apa_reference": "Wasserstein, R. L., & Lazar, N. A. (2016). The ASA statement on p-values: Context, process, and purpose. The American Statistician, 70(2), 129–133. https://doi.org/10.1080/00031305.2016.1154108",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "paired-comparison-scale",
@@ -30913,21 +31337,32 @@
     },
     {
       "id": "parallel-multiple-mediation",
-      "term": "Parallel Multiple Mediation",
-      "vietnamese": "Mô hình Trung gian Đa biến Song song",
-      "vietnamese_variants": [],
+      "term": "Parallel Multiple Mediation Model",
+      "vietnamese": "Mô hình trung gian đa biến song song",
+      "vietnamese_variants": [
+        "Mô hình đa trung gian song song",
+        "Parallel Mediation",
+        "PROCESS Model 4 Multiple Mediators"
+      ],
       "domain_tags": [
         "Advanced Mediation"
       ],
-      "core_definition": "X tác động đồng thời lên nhiều biến trung gian M1, M2 độc lập nhau trước khi tác động lên Y.",
-      "seminal_citation": "Hayes (2018)",
+      "core_definition": "Mô hình trung gian đa biến song song (Parallel Multiple Mediation - Hayes, 2018; Preacher & Hayes, 2008) là mô hình kinh tế lượng/SEM kiểm tra đồng thời hai hay nhiều biến trung gian (M_1, M_2, ..., M_k) hoạt động song song để truyền tải tác động từ biến độc lập X sang biến kết quả Y, với giả định rằng các biến trung gian không có mối quan hệ nhân quả tuần tự tác động lẫn nhau.",
+      "seminal_citation": "Preacher & Hayes (2008); Hayes (2018)",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "thống nhất nguồn Hayes (2022) 3rd ed.",
       "core_definition_en": "Academic definition of Parallel Multiple Mediation according to Hayes (2018).",
       "domain_tags_en": [
         "Advanced Mediation"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Hệ phương trình hồi quy: (A) M_j = a_{0j} + a_j*X + e_{Mj} cho từng j = 1...k; (B) Y = c'_0 + c'*X + sum_{j=1}^k [b_j * M_j] + e_Y. 2. Tác động gián tiếp riêng phần cụ thể (Specific Indirect Effect): a_j * b_j đại diện cho năng lực truyền dẫn độc nhất của trung gian M_j sau khi đã kiểm soát toàn bộ các trung gian khác. 3. Tổng tác động gián tiếp (Total Indirect Effect): sum [a_j * b_j]. 4. Kiểm định tương phản từng cặp (Pairwise contrast of indirect effects: a_1*b_1 - a_2*b_2) qua Bootstrap để xác định biến trung gian nào có sức mạnh truyền dẫn vượt trội hơn.",
+      "benchmarks": "Được triển khai chuyên nghiệp qua PROCESS Model 4 hoặc CB-SEM / PLS-SEM. Báo cáo bảng hệ số tác động gián tiếp riêng phần kèm khoảng tin cậy BCa Bootstrap 95% cho từng đường dẫn và kiểm định tương phản.",
+      "pitfalls": "Bẫy phản biện: Chạy các mô hình đơn trung gian riêng lẻ cho từng biến M_j. Khi chạy riêng lẻ, các biến trung gian khác bị bỏ sót đóng vai trò là biến nhiễu làm thổi phồng tham số (omitted mediator bias); chạy mô hình song song đồng thời là bắt buộc để bóc tách hiệu ứng độc nhất.",
+      "apa_reference": "Preacher, K. J., & Hayes, A. F. (2008). Asymptotic and resampling strategies for assessing and comparing indirect effects in multiple mediator models. Behavior Research Methods, 40(3), 879–891. https://doi.org/10.3758/BRM.40.3.879",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "parallel-multiple-mediator-model",
@@ -31150,21 +31585,32 @@
     },
     {
       "id": "partial-mediation",
-      "term": "Partial Mediation",
+      "term": "Partial Mediation (Complementary & Competitive Mediation)",
       "vietnamese": "Mối quan hệ trung gian một phần",
-      "vietnamese_variants": [],
+      "vietnamese_variants": [
+        "Trung gian một phần",
+        "Partial Mediation",
+        "Trung gian bổ trợ và cạnh tranh"
+      ],
       "domain_tags": [
         "Mediation Analysis"
       ],
-      "core_definition": "cả tác động trực tiếp và gián tiếp đều có ý nghĩa thống kê.",
-      "seminal_citation": "Baron & Kenny (1986)",
+      "core_definition": "Trung gian một phần (Partial Mediation - Zhao, Lynch, & Chen, 2010; Hair et al., 2022) là trạng thái phổ biến nhất trong khoa học hành vi và kinh tế học, xảy ra khi biến độc lập X tác động lên biến kết quả Y thông qua cả hai con đường đồng thời: Đường dẫn gián tiếp qua biến trung gian M (a * b) VÀ Đường dẫn tác động trực tiếp độc lập c' (c' != 0 có ý nghĩa thống kê). Hiện tượng này chứng minh rằng biến trung gian M giải thích được một phần quan trọng nhưng chưa phải là toàn bộ cơ chế tác động của X lên Y.",
+      "seminal_citation": "Zhao, Lynch, & Chen (2010); Hair et al. (2022)",
       "tier": "curated",
       "expert_status": "needs_review",
       "expert_notes": "nhãn partial mediation bị phê phán; nên dùng typology Zhao et al. (2010)",
       "core_definition_en": "Academic definition of Partial Mediation according to Baron & Kenny (1986).",
       "domain_tags_en": [
         "Mediation Analysis"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Hai phân nhóm chuẩn mực theo Zhao, Lynch, & Chen (2010): (A) Trung gian bổ trợ (Complementary Mediation): Tác động gián tiếp (a * b) và tác động trực tiếp c' CÙNG DẤU (a*b*c' > 0, cùng dương hoặc cùng âm), củng cố lẫn nhau; (B) Trung gian cạnh tranh (Competitive / Inconsistent Mediation): Tác động gián tiếp và trực tiếp TRÁI DẤU (a*b*c' < 0), trong đó M đóng vai trò biến ức chế (suppressor). 2. Tính Tỷ lệ Phương sai Trung gian (Variance Accounted For - VAF): VAF = (a * b) / (a * b + c').",
+      "benchmarks": "Chuẩn mực Hair et al. (2022): Nếu 0.20 <= VAF <= 0.80, mô hình đạt trung gian một phần; nếu VAF > 0.80, mô hình tiệm cận trung gian toàn phần. Khoảng tin cậy Bootstrap 95% cho cả (a * b) và c' đều không được chứa giá trị 0.",
+      "pitfalls": "Bẫy phản biện: Bỏ qua ý nghĩa lý thuyết của Trung gian cạnh tranh (Competitive mediation). Khi a*b dương mà c' âm, tổng tác động c có thể bị triệt tiêu về 0; nếu tác giả chỉ nhìn vào tương quan thô c không có ý nghĩa mà vội vã kết luận 'không có quan hệ' sẽ bỏ lỡ cơ chế lý thuyết đột phá nhất.",
+      "apa_reference": "Zhao, X., Lynch, J. G., Jr., & Chen, Q. (2010). Reconsidering Baron and Kenny: Myths and truths about mediation analysis. Journal of Consumer Research, 37(2), 197–206. https://doi.org/10.1086/651257",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "participant-validation",
@@ -31643,33 +32089,48 @@
     },
     {
       "id": "pet-peese-meta-regression",
-      "term": "PET-PEESE Meta-Regression",
-      "vietnamese": "Hồi quy Hiệu chỉnh Thiên lệch PET-PEESE",
-      "vietnamese_variants": [],
+      "term": "PET-PEESE Meta-Regression (Publication Bias Correction)",
+      "vietnamese": "Hồi quy tổng hợp hiệu chỉnh thiên lệch PET-PEESE",
+      "vietnamese_variants": [
+        "Mô hình PET-PEESE",
+        "Precision-Effect Test and Estimate with Standard Error",
+        "Hiệu chỉnh thiên lệch xuất bản Stanley & Doucouliagos"
+      ],
       "domain_tags": [
         "Meta-Analysis Diagnostics"
       ],
-      "core_definition": "Precision-Effect Test và Precision-Effect Estimate with Standard Error.",
-      "seminal_citation": "Stanley & Doucouliagos (2014)",
+      "core_definition": "PET-PEESE (Stanley & Doucouliagos, 2012, 2014) là cặp mô hình kinh tế lượng hồi quy tổng hợp tiên tiến dùng để kiểm định và khôi phục kích thước hiệu ứng thực sự (true underlying empirical effect) sau khi đã loại bỏ hoàn toàn ảnh hưởng bóp méo của thiên lệch xuất bản.",
+      "seminal_citation": "Stanley & Doucouliagos (2012, 2014)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of PET-PEESE Meta-Regression according to Stanley & Doucouliagos (2014).",
       "domain_tags_en": [
         "Meta-Analysis Diagnostics"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Kiểm định hiệu ứng chính xác (Precision-Effect Test - PET): Hồi quy kích thước hiệu ứng theo sai số chuẩn: theta_i = alpha_0 + alpha_1 * SE_i + e_i (với trọng số WLS = 1 / Var(theta_i)). Hệ số chặn alpha_0 đo lường kích thước hiệu ứng khi mẫu tiến tới vô cùng (SE -> 0). 2. Ước lượng hiệu ứng chính xác với phương sai sai số (PEESE): Thay thế SE bằng Phương sai sai số (SE^2): theta_i = beta_0 + beta_1 * Var_i + e_i. 3. Quy tắc chuyển đổi: Nếu kiểm định PET bác bỏ H0: alpha_0 = 0 (có hiệu ứng thực chất), sử dụng hệ số beta_0 của PEESE làm ước lượng không chệch; nếu PET không bác bỏ H0, chấp nhận alpha_0 của PET.",
+      "benchmarks": "Được coi là tiêu chuẩn vàng trong kinh tế học thực chứng (MAER-Net guidelines) để giải ảo các hiệu ứng lý thuyết bị thổi phồng trong y văn (như tác động của lương tối thiểu đến việc làm, hiệu ứng chi tiêu R&D).",
+      "pitfalls": "Bẫy phản biện: Tự động dùng PEESE ngay từ đầu khi chưa kiểm tra PET. Nếu hiệu ứng thực sự bằng 0, PEESE có xu hướng ước lượng chệch dương; do đó việc tuân thủ quy tắc điều kiện chuyển đổi PET -> PEESE là bắt buộc.",
+      "apa_reference": "Stanley, T. D., & Doucouliagos, H. (2014). Meta‐regression approximations to reduce publication selection bias. Research Synthesis Methods, 5(1), 60–78. https://doi.org/10.1002/jrsm.1095",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "phan-tich-da-trung-gian",
-      "term": "Multiple Mediation Analysis",
-      "vietnamese": "Phân tích Đa Trung gian (Song song & Nối tiếp)",
-      "vietnamese_variants": [],
+      "term": "Multiple Mediation Analysis (Serial & Parallel Frameworks)",
+      "vietnamese": "Phân tích đa trung gian (Khung phân tích nối tiếp và song song)",
+      "vietnamese_variants": [
+        "Mô hình đa trung gian",
+        "Phân tích trung gian chuỗi và song song",
+        "Multiple Mediators SEM"
+      ],
       "domain_tags": [
         "Mediation",
         "Moderation (PROCESS)"
       ],
-      "core_definition": "Phân biệt rạch ròi giữa Mô hình đa trung gian song song (Parallel multiple mediator model - Model 4) và Mô hình đa trung gian nối tiếp (Serial multiple mediator model - Model 6).",
-      "seminal_citation": "Hayes (2022)",
+      "core_definition": "Phân tích đa trung gian (Multiple Mediation Analysis - Preacher & Hayes, 2008; Hayes, 2018) là khuôn khổ mô hình hóa toàn diện cho phép tích hợp đồng thời nhiều biến trung gian trong cùng một hệ thống lý thuyết, phân chia thành hai cấu trúc chính: (1) Mô hình Song song (Parallel: các trung gian độc lập); và (2) Mô hình Nối tiếp / Chuỗi (Serial / Chained Mediation: X -> M_1 -> M_2 -> Y, các trung gian tác động nhân quả tuần tự lẫn nhau).",
+      "seminal_citation": "Preacher & Hayes (2008); Hayes (2018)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Tên mục không phải thuật ngữ",
@@ -31677,19 +32138,31 @@
       "domain_tags_en": [
         "Mediation",
         "Moderation (PROCESS)"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Mô hình Trung gian Nối tiếp (Serial Mediation - Model 6): Tách biệt thành 3 tác động gián tiếp độc lập: (A) Đường dẫn qua M1 duy nhất: X -> M1 -> Y (a_1 * b_1); (B) Đường dẫn qua M2 duy nhất: X -> M2 -> Y (a_2 * b_2); (C) Đường dẫn chuỗi tuần tự: X -> M1 -> M2 -> Y (a_1 * d_21 * b_2). 2. Ước lượng ma trận hiệp phương sai đầy đủ qua SEM hoặc OLS lặp. 3. So sánh độ mạnh tương đối của từng cơ chế giải thích.",
+      "benchmarks": "Bắt buộc báo cáo bảng phân rã toàn bộ các tác động: Tác động trực tiếp (Direct effect c'), Từng tác động gián tiếp riêng phần (Specific indirect effects), Tổng tác động gián tiếp (Total indirect effect), và Tổng tác động (Total effect c = c' + sum indirect). Tất cả đều kèm khoảng tin cậy BCa Bootstrap 95%.",
+      "pitfalls": "Bẫy phản biện: Áp dụng mô hình trung gian nối tiếp (Serial mediation) trên dữ liệu khảo sát cắt ngang tại một thời điểm duy nhất (Cross-sectional survey). Mô hình chuỗi đòi hỏi giả định thứ tự thời gian nhân quả nghiêm ngặt (Temporal precedence); việc khẳng định M1 dẫn đến M2 trên dữ liệu cắt ngang cùng lúc rất dễ bị phản biện bác bỏ vì nghi ngờ nhân quả đảo chiều.",
+      "apa_reference": "Preacher, K. J., & Hayes, A. F. (2008). Asymptotic and resampling strategies for assessing and comparing indirect effects in multiple mediator models. Behavior Research Methods, 40(3), 879–891. https://doi.org/10.3758/BRM.40.3.879",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "phan-tich-dieu-tiet-nang-cao",
-      "term": "Advanced Moderation Analysis",
-      "vietnamese": "Phân tích Điều tiết Nâng cao (Johnson-Neyman & Floodlight)",
-      "vietnamese_variants": [],
+      "term": "Advanced Moderation Analysis (Johnson-Neyman & Floodlight Techniques)",
+      "vietnamese": "Phân tích điều tiết nâng cao (Kỹ thuật Johnson-Neyman & Floodlight)",
+      "vietnamese_variants": [
+        "Phân tích điều tiết liên tục",
+        "Kỹ thuật Johnson-Neyman",
+        "Floodlight Analysis",
+        "Vùng ý nghĩa thống kê JN"
+      ],
       "domain_tags": [
         "Mediation",
         "Moderation (PROCESS)"
       ],
-      "core_definition": "Kỹ thuật dò tìm tương tác qua Pick-a-point approach (Spotlight analysis) và kỹ thuật Johnson-Neyman (Floodlight analysis) để xác định chính xác vùng có ý nghĩa thống kê (Regions of significance).",
-      "seminal_citation": "Hayes (2022)",
+      "core_definition": "Phân tích điều tiết nâng cao (Johnson & Fay, 1950; Spiller et al., 2013) là phương pháp luận hiện đại vượt lên trên kỹ thuật kiểm tra điểm truyền thống (Pick-a-point / Spotlight). Thay vì chỉ kiểm tra tác động đơn giản tại 3 điểm tùy tiện (Mean +/- 1 SD), Kỹ thuật Johnson-Neyman (J-N Floodlight Analysis) quét liên tục trên toàn bộ miền giá trị của biến điều tiết liên tục W để xác định chính xác các điểm ngưỡng (Cutoff points) mà tại đó tác động của X lên Y chuyển từ có ý nghĩa thống kê sang không có ý nghĩa thống kê (hoặc đảo dấu).",
+      "seminal_citation": "Johnson & Fay (1950); Spiller et al. (2013)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Tên mục không phải thuật ngữ",
@@ -31697,7 +32170,14 @@
       "domain_tags_en": [
         "Mediation",
         "Moderation (PROCESS)"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Thiết lập phương trình phương sai của tác động đơn giản (Simple slope): Var(b_simple) = Var(b_1) + 2*W*Cov(b_1, b_3) + W^2*Var(b_3). 2. Giải phương trình bậc hai theo W khi tỷ số t-statistic đạt đúng giá trị tới hạn t_crit (ví dụ t^2 = 1.96^2): [b_1 + b_3*W]^2 / Var(b_simple) = t_crit^2. 3. Nghiệm của phương trình cho ra các điểm chuyển giao ý nghĩa (Points of transition). 4. Trực quan hóa bằng Đồ thị Vùng ý nghĩa Johnson-Neyman.",
+      "benchmarks": "Được coi là tiêu chuẩn vàng bắt buộc trên các tạp chí marketing và hành vi hàng đầu (JCR, JMR, JAP). Báo cáo rõ tỷ lệ phần trăm mẫu quan sát thực tế rơi vào vùng có ý nghĩa thống kê.",
+      "pitfalls": "Bẫy phản biện: Điểm chuyển giao Johnson-Neyman nằm hoàn toàn bên ngoài phạm vi giá trị thực tế của dữ liệu mẫu (ví dụ điểm cắt là W = 8.5 trong khi thang đo chỉ từ 1 đến 7). Khi đó, tác giả không thể tuyên bố có sự chuyển giao hiệu ứng trong thực tế.",
+      "apa_reference": "Spiller, S. A., Fitzsimons, G. J., Lynch, J. G., Jr., & McClelland, G. H. (2013). Spotlights, floodlights, and the magic number zero: Simple effects tests in moderated regression. Journal of Marketing Research, 50(2), 277–288. https://doi.org/10.1509/jmr.12.0420",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "phan-tich-noi-dung-dinh-tinh-qualitative-content-analysis-philipp-mayring",
@@ -31719,15 +32199,19 @@
     },
     {
       "id": "phan-tich-trung-gian-bi-dieu-tiet-moderated-mediation",
-      "term": "Moderated Mediation (Conditional Indirect Effects)",
-      "vietnamese": "Phân tích Trung gian bị Điều tiết",
-      "vietnamese_variants": [],
+      "term": "Moderated Mediation Structural Analysis",
+      "vietnamese": "Phân tích cấu trúc trung gian bị điều tiết",
+      "vietnamese_variants": [
+        "Phân tích Moderated Mediation",
+        "Cấu trúc trung gian có điều kiện",
+        "Mô hình Hayes PROCESS"
+      ],
       "domain_tags": [
         "Mediation",
         "Moderation (PROCESS)"
       ],
-      "core_definition": "Chỉ số trung gian bị điều tiết (Index of Moderated Mediation - Hayes 2015), phân biệt giữa trung gian bị điều tiết và điều tiết bị trung gian (Mediated moderation).",
-      "seminal_citation": "Hayes (2022)",
+      "core_definition": "Phân tích cấu trúc trung gian bị điều tiết là phương pháp luận toàn diện nhằm tích hợp các điều kiện biên lý thuyết (Boundary conditions) vào các lý thuyết về tiến trình nhân quả (Causal process theories). Phương pháp này giúp nhà nghiên cứu giải quyết đồng thời hai câu hỏi khoa học nền tảng: 'Biến độc lập tác động đến biến phụ thuộc thông qua cơ chế nào (HOW - Mediation), và cơ chế đó mạnh hay yếu phụ thuộc vào điều kiện bối cảnh nào (WHEN - Moderation)'.",
+      "seminal_citation": "Edwards & Lambert (2007); Hayes (2018)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Tên mục không phải thuật ngữ",
@@ -31735,7 +32219,14 @@
       "domain_tags_en": [
         "Mediation",
         "Moderation (PROCESS)"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Phân loại cấu trúc: (A) Điều tiết giai đoạn đầu (First-stage: W điều tiết X -> M); (B) Điều tiết giai đoạn sau (Second-stage: W điều tiết M -> Y); (C) Điều tiết hai giai đoạn (Dual-stage: W điều tiết cả hai nhánh); (D) Điều tiết cả trực tiếp lẫn gián tiếp (Direct and indirect stages). 2. Kiểm tra tính đồng quy của các biến kiểm soát trong toàn bộ hệ thống phương trình.",
+      "benchmarks": "Báo cáo tích hợp đầy đủ hệ thống phương trình hồi quy, các hệ số tương tác tích, kiểm định F chênh lệch Delta_R^2 do biến tương tác mang lại, bảng tác động gián tiếp có điều kiện tại các phân vị, và chỉ số Index of Moderated Mediation.",
+      "pitfalls": "Bẫy phản biện: Không định tâm biến (Mean-centering) trước khi tạo biến tích số tương tác X*W trong môi trường hồi quy OLS truyền thống, làm tăng chỉ số VIF giả tạo và gây hiểu nhầm về tác động chính của X và W.",
+      "apa_reference": "Edwards, J. R., & Lambert, L. S. (2007). Methods for integrating moderation and mediation: A general analytical framework using moderated path analysis. Psychological Methods, 12(1), 1–22. https://doi.org/10.1037/1082-989X.12.1.1",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "phillips-perron-test-pp",
@@ -31877,14 +32368,19 @@
     {
       "id": "pick-a-point-approach-spotlight-analysis",
       "term": "Pick-a-Point Approach (Spotlight Analysis)",
-      "vietnamese": "Đánh giá tác động tại 3 điểm tiêu chuẩn: Giá trị trung bình (\\bar{W}), thấp (\\bar{W} - 1 SD), và cao (\\bar{W} + 1 SD) hoặc phân vị 16th, 50th, 84th.",
-      "vietnamese_variants": [],
+      "vietnamese": "Phương pháp chọn điểm kiểm tra độ dốc (Phân tích Spotlight)",
+      "vietnamese_variants": [
+        "Phân tích Spotlight",
+        "Kiểm tra độ dốc đơn giản",
+        "Simple Slopes Analysis",
+        "Pick-a-Point Technique"
+      ],
       "domain_tags": [
         "Mediation",
         "Moderation (PROCESS)"
       ],
-      "core_definition": "Đánh giá tác động tại 3 điểm tiêu chuẩn: Giá trị trung bình (\\bar{W}), thấp (\\bar{W} - 1 SD), và cao (\\bar{W} + 1 SD) hoặc phân vị 16th, 50th, 84th.",
-      "seminal_citation": "Hayes (2022); Hayes (2022)",
+      "core_definition": "Phương pháp chọn điểm kiểm tra độ dốc (Pick-a-Point Approach / Spotlight Analysis - Aiken & West, 1991; Spiller et al., 2013) là kỹ thuật kinh điển dùng để phân tích và diễn giải bản chất của tương tác hai biến trong hồi quy điều tiết. Bằng cách chiếu 'ánh đèn rọi' (spotlight) vào một số giá trị cụ thể, có ý nghĩa của biến điều tiết W, phương pháp tính toán và kiểm định ý nghĩa thống kê của độ dốc đơn giản (Simple slope) của X lên Y tại từng điểm đó.",
+      "seminal_citation": "Aiken & West (1991); Spiller et al. (2013)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "LaTeX thô; lộ tên file nội bộ",
@@ -31892,7 +32388,14 @@
       "domain_tags_en": [
         "Mediation",
         "Moderation (PROCESS)"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Ba điểm chuẩn mực: Mức trung bình (Mean of W), Mức thấp (Mean - 1 SD), và Mức cao (Mean + 1 SD). 2. Đối với dữ liệu phân phối lệch, khuyến nghị chuyển sang các mốc phân vị thực tế: Phân vị thứ 16, 50 và 84. 3. Tính toán hệ số độ dốc b_simple = b_1 + b_3*W_point và sai số chuẩn tương ứng. 4. Kiểm định t-test cho từng độ dốc đơn giản và vẽ biểu đồ tương tác 2 chiều (Interaction plot).",
+      "benchmarks": "Được áp dụng phổ biến nhất để minh họa đồ thị tương tác. Độ dốc có ý nghĩa thống kê khi |t-statistic| > 1.96 (p < 0.05). Chuẩn mực hiện đại khuyến nghị nên báo cáo song song kết hợp cả Spotlight (tại Mean +/- 1 SD) và Floodlight (Johnson-Neyman).",
+      "pitfalls": "Bẫy phản biện: Lựa chọn điểm cắt Mean - 1 SD rơi vào vùng giá trị không thể tồn tại của biến (ví dụ: biến là thang Likert 1-5 có Mean = 1.8 và SD = 1.2, khi đó Mean - 1 SD = 0.6 là điểm hoàn toàn không có trong thực tế); trường hợp này bắt buộc phải dùng mốc phân vị (Percentiles) thay thế.",
+      "apa_reference": "Aiken, L. S., & West, S. G. (1991). Multiple regression: Testing and interpreting interactions. Sage Publications.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "pico",
@@ -32558,20 +33061,31 @@
     {
       "id": "prediction-interval-in-meta-analysis",
       "term": "Prediction Interval in Meta-Analysis",
-      "vietnamese": "Khoảng Dự báo trong Phân tích Gộp",
-      "vietnamese_variants": [],
+      "vietnamese": "Khoảng dự báo trong phân tích gộp",
+      "vietnamese_variants": [
+        "Khoảng dự đoán Meta-Analysis",
+        "95% Prediction Interval",
+        "Dự báo hiệu ứng trong nghiên cứu tương lai"
+      ],
       "domain_tags": [
         "Meta-Analysis"
       ],
-      "core_definition": "Dự báo kích thước hiệu ứng thực sự của một nghiên cứu mới trong tương lai.",
-      "seminal_citation": "Borenstein et al. (2009)",
+      "core_definition": "Khoảng dự báo trong phân tích gộp (Prediction Interval - Higgins, Thompson, & Spiegelhalter, 2009; Borenstein et al., 2017) là chỉ số định lượng thiết yếu ước lượng phạm vi mà kích thước hiệu ứng thực sự (true effect size) của MỘT nghiên cứu độc lập mới trong tương lai (hoặc khi can thiệp được áp dụng trên một quần thể bệnh nhân/doanh nghiệp mới) sẽ rơi vào với độ tin cậy 95%. Khác với Khoảng tin cậy (Confidence Interval: chỉ phản ánh độ bất định của giá trị trung bình gộp), Khoảng dự báo phản ánh toàn diện cả sai số chọn mẫu lẫn sự biến thiên thực tế giữa các nghiên cứu (tau^2).",
+      "seminal_citation": "Higgins, Thompson, & Spiegelhalter (2009); Borenstein et al. (2017)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Prediction Interval in Meta-Analysis according to Borenstein et al. (2009).",
       "domain_tags_en": [
         "Meta-Analysis"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Công thức tính toán: PI = mu_hat +/- t_{k - 2, 0.975} * sqrt( SE(mu_hat)^2 + tau^2 ), trong đó mu_hat là hiệu ứng trung bình gộp, t là phân phối Student với (k - 2) bậc tự do, SE là sai số chuẩn của hiệu ứng gộp, và tau^2 là phương sai giữa các nghiên cứu. 2. Khoảng dự báo luôn rộng hơn khoảng tin cậy tương ứng.",
+      "benchmarks": "Được hướng dẫn chính thức của Cochrane và BMJ khuyến nghị bắt buộc phải báo cáo bên cạnh khoảng tin cậy. Nếu Khoảng tin cậy [0.20, 0.40] có ý nghĩa thống kê (không chứa 0), nhưng Khoảng dự báo là [-0.15, 0.75] (chứa giá trị âm), điều này cảnh báo rằng can thiệp dù có tác dụng tốt tính theo trung bình nhưng trong một số bối cảnh cụ thể có thể hoàn toàn vô hiệu hoặc gây hại.",
+      "pitfalls": "Bẫy phản biện: Chỉ báo cáo Khoảng tin cậy hẹp và vội vã kết luận can thiệp 'luôn có hiệu quả trong mọi trường hợp'; phản biện sẽ chất vấn về khoảng dự báo (Prediction interval) khi có hiện tượng không đồng nhất (I^2 > 30-50%).",
+      "apa_reference": "Borenstein, M., Higgins, J. P., Hedges, L. V., & Rothstein, H. R. (2017). Basics of meta‐analysis: I2 is not an absolute measure of heterogeneity. Research Synthesis Methods, 8(1), 5–18. https://doi.org/10.1002/jrsm.1230",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "predictive-validity",
@@ -32651,15 +33165,19 @@
     },
     {
       "id": "preferred-reporting-items-for-systematic-reviews-and-meta-analyses",
-      "term": "Preferred Reporting Items for Systematic Reviews and Meta-Analyses",
-      "vietnamese": "Bộ tiêu chuẩn báo cáo ưu tiên cho Tổng quan hệ thống và Meta-Analysis (Phiên bản PRISMA 2020)",
-      "vietnamese_variants": [],
+      "term": "PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses)",
+      "vietnamese": "Tiêu chuẩn báo cáo PRISMA cho tổng quan hệ thống và phân tích gộp",
+      "vietnamese_variants": [
+        "Tiêu chuẩn PRISMA",
+        "Quy chuẩn PRISMA",
+        "PRISMA Guidelines"
+      ],
       "domain_tags": [
         "Systematic Review",
         "Meta-Analysis"
       ],
-      "core_definition": "Bộ tiêu chuẩn báo cáo ưu tiên cho Tổng quan hệ thống và Meta-Analysis (Phiên bản PRISMA 2020).",
-      "seminal_citation": "Bắt buộc công khai checklist 27 mục và sơ đồ 4 bước chi tiết số lượng bài báo bị loại trừ kèm lý do cụ thể.",
+      "core_definition": "Tiêu chuẩn PRISMA (Moher et al., 2009; Page et al., 2021) là bộ hướng dẫn phương pháp luận quốc tế chuẩn mực và uy tín nhất, thiết lập 27 tiêu chí kiểm tra (27-item checklist) bắt buộc nhằm bảo đảm tính minh bạch, toàn diện và liêm chính khoa học trong việc lập kế hoạch, tiến hành và báo cáo các nghiên cứu Tổng quan Hệ thống (Systematic Reviews) và Phân tích Gộp (Meta-Analyses).",
+      "seminal_citation": "Moher et al. (2009); Page et al. (2021)",
       "tier": "acronym",
       "expert_status": "needs_review",
       "expert_notes": "sơ đồ PRISMA 2020 có 3 giai đoạn (Identification – Screening – Included), không còn 4 bước như PRISMA 2009 | Nguồn ghi ngưỡng",
@@ -32667,7 +33185,14 @@
       "domain_tags_en": [
         "Systematic Review",
         "Meta-Analysis"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. 27 mục kiểm định bao gồm toàn bộ các phần của bản thảo: Tiêu đề, Tóm tắt (PRISMA for Abstract), Đặt vấn đề, Phương pháp (Chiến lược tìm kiếm, Tiêu chuẩn lựa chọn, Đánh giá nguy cơ sai lệch RoB, Tổng hợp thống kê), Kết quả, Thảo luận và Kinh phí tài trợ. 2. Bắt buộc công bố Bảng đối chiếu kiểm tra (PRISMA Checklist) trong phần Phụ lục (Supplementary Materials).",
+      "benchmarks": "Được hơn 500 tạp chí khoa học quốc tế uy tín (nhóm Q1/Q2 y học, kinh tế, giáo dục và quản trị) áp dụng làm điều kiện bắt buộc trước khi gửi bài phản biện.",
+      "pitfalls": "Bẫy phản biện: Khẳng định bài báo 'tuân thủ tiêu chuẩn PRISMA' nhưng không đính kèm Bảng kiểm tra PRISMA (với số trang đối chiếu cụ thể) hoặc bỏ qua việc đánh giá nguy cơ sai lệch (Risk of Bias assessment); bài báo sẽ bị trả về ngay lập tức từ ban thư ký tòa soạn.",
+      "apa_reference": "Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., ... & Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. BMJ, 372, n71. https://doi.org/10.1136/bmj.n71",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "preprint-repository-posting-protocols",
@@ -32781,13 +33306,17 @@
     },
     {
       "id": "prisma-2020-statement",
-      "term": "PRISMA 2020 Statement (Preferred Reporting Items for Systematic Reviews)",
-      "vietnamese": "Tuyên bố PRISMA 2020",
-      "vietnamese_variants": [],
+      "term": "PRISMA 2020 Statement",
+      "vietnamese": "Tuyên bố PRISMA 2020 cập nhật",
+      "vietnamese_variants": [
+        "Tuyên bố PRISMA 2020",
+        "PRISMA 2020 Statement",
+        "Cập nhật tiêu chuẩn tổng quan hệ thống PRISMA 2020"
+      ],
       "domain_tags": [
         "Reporting Guidelines"
       ],
-      "core_definition": "Chuẩn mực báo cáo quốc tế cập nhật cho tổng quan hệ thống và phân tích gộp.",
+      "core_definition": "Tuyên bố PRISMA 2020 (Page et al., 2021) là bản nâng cấp toàn diện thay thế bản PRISMA 2009, phản ánh các tiến bộ vượt bậc trong phương pháp luận tổng hợp bằng chứng khoa học, bao gồm việc tích hợp các phương pháp tìm kiếm hiện đại, thẩm định nguy cơ sai lệch bằng công cụ RoB 2 / ROBINS-I, và minh bạch hóa dữ liệu theo phong trào Khoa học Mở (Open Science).",
       "seminal_citation": "Page et al. (2021)",
       "tier": "textbook",
       "expert_status": "verified",
@@ -32795,7 +33324,14 @@
       "core_definition_en": "Academic definition of PRISMA 2020 Statement according to Page et al. (2021).",
       "domain_tags_en": [
         "Reporting Guidelines"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Các cải tiến mấu chốt: Yêu cầu bắt buộc công khai toàn bộ câu lệnh tìm kiếm đầy đủ (Full search strategies) cho tất cả các cơ sở dữ liệu; mô tả chi tiết phương pháp làm việc độc lập của hai kiểm định viên; quy định rõ ràng về việc công khai mã lệnh phân tích và tệp dữ liệu trích xuất. 2. Tích hợp Biểu đồ dòng chảy 4 giai đoạn mới (PRISMA 2020 Flow Diagram) phân định rõ nguồn tìm kiếm qua cơ sở dữ liệu và các nguồn tìm kiếm bổ sung (Website, danh mục tổ chức).",
+      "benchmarks": "Là tiêu chuẩn pháp lý khoa học cao nhất hiện nay. Mọi bài báo tổng quan hệ thống nộp từ năm 2021 trở đi bắt buộc phải viện dẫn PRISMA 2020 thay cho phiên bản 2009 cũ.",
+      "pitfalls": "Bẫy phản biện: Vẫn sử dụng biểu đồ dòng chảy PRISMA 2009 hoặc bảng kiểm cũ trong các bản thảo mới nộp năm 2024-2026; phản biện sẽ yêu cầu cập nhật lại toàn bộ cấu trúc báo cáo theo chuẩn PRISMA 2020.",
+      "apa_reference": "Page, M. J., Moher, D., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., ... & McKenzie, J. E. (2021). PRISMA 2020 explanation and elaboration: Updated guidance and exemplars for reporting systematic reviews. BMJ, 372, n160. https://doi.org/10.1136/bmj.n160",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "prisma-flow-diagram",
