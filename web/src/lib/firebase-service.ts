@@ -57,7 +57,7 @@ export interface FeedbackInput {
 export async function loginWithGoogle(): Promise<User | null> {
   if (!isFirebaseConfigured || !auth || !googleProvider) {
     console.info("[Auth] Firebase chưa cấu hình credentials. Chạy chế độ khách/demo.");
-    return null;
+    throw new Error("FIREBASE_NOT_CONFIGURED");
   }
   try {
     const result = await signInWithPopup(auth, googleProvider);
@@ -69,11 +69,38 @@ export async function loginWithGoogle(): Promise<User | null> {
 }
 
 /**
+ * Đăng nhập nhanh chế độ Học giả Thử nghiệm (Demo Scholar Session)
+ */
+export function loginAsDemoScholar(
+  customName?: string, 
+  customInstitution?: string
+): any {
+  const demoUser = {
+    uid: "admin_tung_nttu",
+    displayName: customName || "ThS. Trần Thanh Tùng",
+    email: "tung.tran@ntt.edu.vn",
+    photoURL: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format&fit=crop&q=80",
+    institution: customInstitution || "Trường Đại học Nguyễn Tất Thành (NTTU)"
+  };
+  if (typeof window !== "undefined") {
+    localStorage.setItem("rv_demo_user", JSON.stringify(demoUser));
+  }
+  return demoUser;
+}
+
+/**
  * Đăng xuất
  */
 export async function logoutUser(): Promise<void> {
+  if (typeof window !== "undefined") {
+    localStorage.removeItem("rv_demo_user");
+  }
   if (auth && isFirebaseConfigured) {
-    await fbSignOut(auth);
+    try {
+      await fbSignOut(auth);
+    } catch (e) {
+      console.warn("Logout error:", e);
+    }
   }
 }
 
@@ -81,11 +108,38 @@ export async function logoutUser(): Promise<void> {
  * Lắng nghe thay đổi trạng thái đăng nhập
  */
 export function subscribeToAuth(callback: (user: User | null) => void): () => void {
+  // 1. Kiểm tra session demo trước
+  if (typeof window !== "undefined") {
+    const storedDemo = localStorage.getItem("rv_demo_user");
+    if (storedDemo) {
+      try {
+        const u = JSON.parse(storedDemo);
+        callback(u);
+      } catch (e) {}
+    }
+  }
+
   if (!isFirebaseConfigured || !auth) {
-    callback(null);
     return () => {};
   }
-  return onAuthStateChanged(auth, callback);
+
+  return onAuthStateChanged(auth, (firebaseUser) => {
+    if (firebaseUser) {
+      callback(firebaseUser);
+    } else {
+      // Nếu Firebase không có user, kiểm tra lại xem có demo user không
+      if (typeof window !== "undefined") {
+        const storedDemo = localStorage.getItem("rv_demo_user");
+        if (storedDemo) {
+          try {
+            callback(JSON.parse(storedDemo));
+            return;
+          } catch (e) {}
+        }
+      }
+      callback(null);
+    }
+  });
 }
 
 /**

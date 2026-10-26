@@ -54,6 +54,7 @@ import EditTermModal from "./EditTermModal";
 import NewTermModal from "./NewTermModal";
 import TermHistoryView from "./TermHistoryView";
 import TermDiscussionView from "./TermDiscussionView";
+import LoginModal from "./LoginModal";
 import {
   UI_I18N,
   getTermDefinition,
@@ -98,6 +99,7 @@ export default function DictionaryApp({
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
   const [isCitationModalOpen, setIsCitationModalOpen] = useState(false);
   const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
 
   // Wiki Community Contribution State (Phase 1 & Phase 3)
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
@@ -434,6 +436,8 @@ export default function DictionaryApp({
           setIsCitationModalOpen(false);
         } else if (isFeedbackModalOpen) {
           setIsFeedbackModalOpen(false);
+        } else if (isLoginModalOpen) {
+          setIsLoginModalOpen(false);
         } else if (isEditModalOpen) {
           setIsEditModalOpen(false);
         } else if (isNewTermModalOpen) {
@@ -448,7 +452,7 @@ export default function DictionaryApp({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isZenMode, searchQuery, isCitationModalOpen, isFeedbackModalOpen, isEditModalOpen, isNewTermModalOpen]);
+  }, [isZenMode, searchQuery, isCitationModalOpen, isFeedbackModalOpen, isLoginModalOpen, isEditModalOpen, isNewTermModalOpen]);
 
   return (
     <div
@@ -602,7 +606,7 @@ export default function DictionaryApp({
                 </div>
               ) : (
                 <button
-                  onClick={handleGoogleLogin}
+                  onClick={() => setIsLoginModalOpen(true)}
                   disabled={authLoading}
                   className="px-2 py-1 sm:px-2.5 sm:py-1 text-xs font-semibold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg transition flex items-center gap-1 shadow-xs"
                   title={t.login_tooltip}
@@ -1465,7 +1469,7 @@ export default function DictionaryApp({
           onClose={() => setIsEditModalOpen(false)}
           languageMode={languageMode}
           currentUser={currentUser}
-          onLoginRequired={handleGoogleLogin}
+          onLoginRequired={() => setIsLoginModalOpen(true)}
         />
       )}
 
@@ -1475,7 +1479,20 @@ export default function DictionaryApp({
         onClose={() => setIsNewTermModalOpen(false)}
         languageMode={languageMode}
         currentUser={currentUser}
-        onLoginRequired={handleGoogleLogin}
+        onLoginRequired={() => setIsLoginModalOpen(true)}
+      />
+
+      {/* MODAL ĐĂNG NHẬP / XÁC THỰC DANH TÍNH HỌC THUẬT */}
+      <LoginModal
+        isOpen={isLoginModalOpen}
+        onClose={() => setIsLoginModalOpen(false)}
+        onSuccess={(user) => {
+          setCurrentUser(user);
+          if (user?.uid) {
+            fetchUserBookmarks(user.uid).then((bks) => setBookmarks(bks));
+          }
+        }}
+        languageMode={languageMode}
       />
     </div>
   );
