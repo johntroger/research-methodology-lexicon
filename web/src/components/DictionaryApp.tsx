@@ -571,6 +571,15 @@ export default function DictionaryApp({
               <span className="hidden md:inline">{languageMode === "en" ? "Hall of Fame" : "Vinh danh"}</span>
             </Link>
 
+            {/* Hồ sơ Đóng góp & Chứng nhận (Phase 5) */}
+            <Link
+              href="/my-contributions"
+              className="p-1.5 sm:p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition hidden lg:inline-flex"
+              title={languageMode === "en" ? "My Submissions & Certificates" : "Hồ sơ Đóng góp & Chứng nhận"}
+            >
+              <FileText size={16} className="text-slate-500 dark:text-slate-400" />
+            </Link>
+
             {/* Bảng điều khiển Kiểm duyệt Học thuật (Wiki Moderation Phase 2) */}
             <Link
               href="/moderation"
@@ -596,6 +605,13 @@ export default function DictionaryApp({
                       {currentUser.email ? currentUser.email[0].toUpperCase() : "U"}
                     </div>
                   )}
+                  <Link
+                    href="/my-contributions"
+                    className="p-1 rounded-lg text-slate-400 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950/40 transition"
+                    title={languageMode === "en" ? "My Submissions & Certificates" : "Hồ sơ Đóng góp & Chứng nhận của tôi"}
+                  >
+                    <FileText size={15} />
+                  </Link>
                   <button
                     onClick={handleLogout}
                     className="p-1 rounded-lg text-slate-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/40 transition"

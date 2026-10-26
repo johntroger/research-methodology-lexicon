@@ -902,3 +902,89 @@ export async function fetchHallOfFameScholars(): Promise<{
     totalParticipatingInstitutions: institutions.size
   };
 }
+
+// =========================================================================
+// GIAI ĐOẠN 5: THEO DÕI ĐÓNG GÓP CÁ NHÂN & CHỨNG NHẬN HỌC THUẬT
+// =========================================================================
+
+/**
+ * Đọc tất cả các đề xuất (sửa đổi mục từ & thuật ngữ mới) của người dùng hiện tại
+ */
+export async function fetchUserSubmissions(
+  userId?: string, 
+  userEmail?: string
+): Promise<{
+  revisions: TermRevisionItem[];
+  proposals: NewTermProposalItem[];
+}> {
+  const revisions: TermRevisionItem[] = [];
+  const proposals: NewTermProposalItem[] = [];
+
+  // 1. Thử lấy từ Firestore nếu đã cấu hình
+  if (isFirebaseConfigured && db) {
+    try {
+      if (userId || userEmail) {
+        // Query revisions
+        const qRev = userId 
+          ? query(collection(db, "pending_revisions"), where("authorUid", "==", userId))
+          : query(collection(db, "pending_revisions"), where("authorEmail", "==", userEmail));
+        const snapRev = await getDocs(qRev);
+        snapRev.forEach(d => {
+          revisions.push({ id: d.id, ...d.data() } as TermRevisionItem);
+        });
+
+        // Query new terms
+        const qTerm = userId
+          ? query(collection(db, "pending_terms"), where("authorUid", "==", userId))
+          : query(collection(db, "pending_terms"), where("authorEmail", "==", userEmail));
+        const snapTerm = await getDocs(qTerm);
+        snapTerm.forEach(d => {
+          proposals.push({ id: d.id, ...d.data() } as NewTermProposalItem);
+        });
+      }
+    } catch (err) {
+      console.warn("[Submissions] Firestore query error, falling back to local storage:", err);
+    }
+  }
+
+  // 2. Tổng hợp thêm từ localStorage
+  if (typeof window !== "undefined") {
+    try {
+      const localRevs: any[] = JSON.parse(localStorage.getItem("rv_local_revisions") || "[]");
+      localRevs.forEach((r, idx) => {
+        const id = `local-rev-${idx}`;
+        if (!revisions.some(existing => existing.id === id)) {
+          if (!userId && !userEmail) {
+            revisions.push({ id, ...r });
+          } else if (
+            (userId && r.authorUid === userId) || 
+            (userEmail && r.authorEmail === userEmail) ||
+            (!r.authorUid && !r.authorEmail)
+          ) {
+            revisions.push({ id, ...r });
+          }
+        }
+      });
+
+      const localTerms: any[] = JSON.parse(localStorage.getItem("rv_local_new_terms") || "[]");
+      localTerms.forEach((t, idx) => {
+        const id = `local-term-${idx}`;
+        if (!proposals.some(existing => existing.id === id)) {
+          if (!userId && !userEmail) {
+            proposals.push({ id, ...t });
+          } else if (
+            (userId && t.authorUid === userId) || 
+            (userEmail && t.authorEmail === userEmail) ||
+            (!t.authorUid && !t.authorEmail)
+          ) {
+            proposals.push({ id, ...t });
+          }
+        }
+      });
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
+  return { revisions, proposals };
+}
