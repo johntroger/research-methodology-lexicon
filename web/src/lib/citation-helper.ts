@@ -61,7 +61,7 @@ export function generateBibTeX(term: MethodologyTerm): string {
   author       = {{Research Methodology Lexicon}},
   year         = {2026},
   howpublished = {Online Academic Lexicon},
-  note         = {Truy cập từ https://tudien-nghiencuu.vercel.app/?term=${term.id}}
+  note         = {Truy cập từ https://research-vocabulary.vercel.app/?term=${term.id}}
 }`;
 }
 
@@ -75,7 +75,7 @@ export function generateRIS(term: MethodologyTerm): string {
     "AU  - Research Methodology Lexicon",
     "PY  - 2026",
     `AB  - ${term.core_definition}`,
-    `UR  - https://tudien-nghiencuu.vercel.app/?term=${term.id}`,
+    `UR  - https://research-vocabulary.vercel.app/?term=${term.id}`,
     "ER  - "
   ];
   return lines.join("\r\n");
