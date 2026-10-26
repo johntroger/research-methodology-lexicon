@@ -202,3 +202,19 @@ export interface TermHistoryEntry {
     sectionName: string;
   };
 }
+
+/**
+ * Hồ sơ Học giả trên Bảng Vinh Danh (Scholarly Hall of Fame Profile)
+ */
+export interface ScholarContributor {
+  id: string;
+  name: string;
+  institution: string;
+  badge: "senior_fellow" | "contributing_scholar" | "peer_reviewer";
+  approvedRevisionsCount: number;
+  approvedNewTermsCount: number;
+  totalContributions: number;
+  recentTermsContributed: string[];
+  avatarUrl?: string;
+  joinedAt?: string;
+}

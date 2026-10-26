@@ -40,7 +40,10 @@ import {
   Edit3,
   ShieldCheck,
   Clock,
-  MessageSquare
+  MessageSquare,
+  Trophy,
+  Award,
+  Users
 } from "lucide-react";
 import { MethodologyTerm, AcademicAcronym, SearchItem } from "@/lib/types";
 import { getSearchEngine, SearchOutputItem } from "@/lib/search-engine";
@@ -553,6 +556,16 @@ export default function DictionaryApp({
             >
               <Printer size={16} />
             </button>
+
+            {/* Bảng Vinh danh Học giả (Scholarly Hall of Fame Phase 4) */}
+            <Link
+              href="/hall-of-fame"
+              className="p-1.5 sm:px-2.5 sm:py-1.5 rounded-lg text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 hover:bg-amber-100 dark:hover:bg-amber-900/60 border border-amber-200 dark:border-amber-800 transition flex items-center gap-1 text-xs font-semibold"
+              title={languageMode === "en" ? "Scholarly Hall of Fame" : "Bảng Vinh Danh Học Giả"}
+            >
+              <Trophy size={14} className="text-amber-500" />
+              <span className="hidden md:inline">{languageMode === "en" ? "Hall of Fame" : "Vinh danh"}</span>
+            </Link>
 
             {/* Bảng điều khiển Kiểm duyệt Học thuật (Wiki Moderation Phase 2) */}
             <Link
@@ -1242,6 +1255,53 @@ export default function DictionaryApp({
                     )}
                   </div>
                 </footer>
+
+                {/* 11. KHỐI VINH DANH HỌC GIẢ HIỆU ĐÍNH (SCHOLARLY CONTRIBUTORS ATTRIBUTION) */}
+                <section className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/40 space-y-3">
+                  <div className="flex items-center justify-between text-xs border-b border-slate-200/60 dark:border-slate-800 pb-2">
+                    <div className="flex items-center gap-1.5 text-slate-800 dark:text-slate-200 font-bold">
+                      <Award size={14} className="text-amber-500" />
+                      <span>{languageMode === "en" ? "Scholarly Attribution & Provenance" : "Ghi Nhận Đóng Góp & Thẩm Định Học Thuật"}</span>
+                    </div>
+                    <Link 
+                      href="/hall-of-fame" 
+                      className="text-[11px] text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 font-semibold"
+                    >
+                      <span>{languageMode === "en" ? "Hall of Fame" : "Bảng Vinh danh"}</span>
+                      <ArrowRight size={11} />
+                    </Link>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                    <div className="flex items-start gap-2">
+                      <ShieldCheck size={16} className="text-blue-600 dark:text-blue-400 mt-0.5 shrink-0" />
+                      <div>
+                        <strong className="text-slate-900 dark:text-white block font-sans">
+                          {languageMode === "en" ? "Foundation Editorial Board" : "Hội đồng Biên soạn & Khởi tạo"}
+                        </strong>
+                        <p className="text-slate-500 dark:text-slate-400 text-[11px] leading-relaxed">
+                          {languageMode === "en" 
+                            ? "Research Methodology Lexicon Editorial Committee & Peer Reviewers" 
+                            : "Hội đồng Biên soạn Từ điển Phương pháp Nghiên cứu Khoa học"}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-2">
+                      <Users size={16} className="text-emerald-600 dark:text-emerald-400 mt-0.5 shrink-0" />
+                      <div>
+                        <strong className="text-slate-900 dark:text-white block font-sans">
+                          {languageMode === "en" ? "Community Peer Review" : "Đóng góp & Hiệu đính Cộng đồng"}
+                        </strong>
+                        <p className="text-slate-500 dark:text-slate-400 text-[11px] leading-relaxed">
+                          {languageMode === "en"
+                            ? "Approved scholarly revisions earn credit in the Scholarly Hall of Fame."
+                            : "Các bản hiệu đính được phê duyệt sẽ được ghi danh vĩnh viễn trên Bảng Vinh danh."}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
               </div>
             )}
 

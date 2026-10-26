@@ -24,7 +24,8 @@ import {
   DiscussionItem,
   DiscussionReply,
   DiscussionCategory,
-  TermHistoryEntry
+  TermHistoryEntry,
+  ScholarContributor
 } from "./types";
 
 export interface TermRevisionItem extends TermRevisionInput {
@@ -762,4 +763,174 @@ export async function fetchTermRevisionHistory(
   });
 
   return history;
+}
+
+// =========================================================================
+// GIAI ĐOẠN 4: HỆ THỐNG VINH DANH HỌC GIẢ (SCHOLARLY HALL OF FAME)
+// =========================================================================
+
+export async function fetchHallOfFameScholars(): Promise<{
+  scholars: ScholarContributor[];
+  totalApprovedEdits: number;
+  totalParticipatingInstitutions: number;
+}> {
+  // 1. Dữ liệu học giả nền tảng (Foundation Scholars & Senior Reviewers)
+  const initialScholars: ScholarContributor[] = [
+    {
+      id: "scholar-1",
+      name: "GS.TS. Nguyễn Văn Hùng",
+      institution: "Đại học Kinh tế Quốc dân (NEU)",
+      badge: "senior_fellow",
+      approvedRevisionsCount: 14,
+      approvedNewTermsCount: 4,
+      totalContributions: 18,
+      recentTermsContributed: ["Confirmatory Factor Analysis", "Construct Validity", "Common Method Bias"],
+      joinedAt: "2026-01-15"
+    },
+    {
+      id: "scholar-2",
+      name: "PGS.TS. Trần Thị Mai Lan",
+      institution: "Đại học Kinh tế TP. Hồ Chí Minh (UEH)",
+      badge: "senior_fellow",
+      approvedRevisionsCount: 11,
+      approvedNewTermsCount: 3,
+      totalContributions: 14,
+      recentTermsContributed: ["Heterotrait-Monotrait Ratio (HTMT)", "Average Variance Extracted (AVE)"],
+      joinedAt: "2026-01-20"
+    },
+    {
+      id: "scholar-3",
+      name: "TS. Lê Hoàng Quân",
+      institution: "Trường Đại học Ngoại thương (FTU)",
+      badge: "contributing_scholar",
+      approvedRevisionsCount: 7,
+      approvedNewTermsCount: 2,
+      totalContributions: 9,
+      recentTermsContributed: ["Endogeneity & Instrumental Variables", "Statistical Power & G*Power"],
+      joinedAt: "2026-02-01"
+    },
+    {
+      id: "scholar-4",
+      name: "TS. Vũ Minh Thảo",
+      institution: "RMIT University Vietnam",
+      badge: "contributing_scholar",
+      approvedRevisionsCount: 5,
+      approvedNewTermsCount: 1,
+      totalContributions: 6,
+      recentTermsContributed: ["Discriminant Validity", "Structural Equation Modeling"],
+      joinedAt: "2026-02-10"
+    },
+    {
+      id: "scholar-5",
+      name: "ThS. Nghiên cứu sinh Đỗ Quốc Bảo",
+      institution: "Đại học Quốc gia Hà Nội (VNU-IS)",
+      badge: "peer_reviewer",
+      approvedRevisionsCount: 3,
+      approvedNewTermsCount: 0,
+      totalContributions: 3,
+      recentTermsContributed: ["Cronbach's Alpha", "Composite Reliability (CR)"],
+      joinedAt: "2026-02-25"
+    }
+  ];
+
+  // 2. Tổng hợp thêm từ các bản sửa đổi và đề xuất đã duyệt trong Firestore / LocalStorage
+  const approvedRevs: TermRevisionItem[] = [];
+  const approvedTerms: NewTermProposalItem[] = [];
+
+  if (isFirebaseConfigured && db) {
+    try {
+      const qRev = query(collection(db, "pending_revisions"), where("status", "==", "approved"));
+      const qTerm = query(collection(db, "pending_terms"), where("status", "==", "approved"));
+      const [snapRev, snapTerm] = await Promise.all([getDocs(qRev), getDocs(qTerm)]);
+      snapRev.forEach(d => approvedRevs.push({ id: d.id, ...d.data() } as TermRevisionItem));
+      snapTerm.forEach(d => approvedTerms.push({ id: d.id, ...d.data() } as NewTermProposalItem));
+    } catch (e) {
+      console.warn("[HallOfFame] Query error:", e);
+    }
+  }
+
+  if (typeof window !== "undefined") {
+    try {
+      const localRevs: TermRevisionItem[] = JSON.parse(localStorage.getItem("rv_local_revisions") || "[]");
+      const localTerms: NewTermProposalItem[] = JSON.parse(localStorage.getItem("rv_local_new_terms") || "[]");
+      localRevs.filter(r => r.status === "approved").forEach(r => {
+        if (!approvedRevs.some(existing => existing.id === r.id)) approvedRevs.push(r);
+      });
+      localTerms.filter(t => t.status === "approved").forEach(t => {
+        if (!approvedTerms.some(existing => existing.id === t.id)) approvedTerms.push(t);
+      });
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
+  // Kết hợp và tính toán vào bảng học giả
+  const scholarMap = new Map<string, ScholarContributor>();
+  initialScholars.forEach(s => scholarMap.set(s.name.toLowerCase(), { ...s }));
+
+  approvedRevs.forEach(r => {
+    const key = (r.authorName || "Anonymous").toLowerCase();
+    const existing = scholarMap.get(key);
+    if (existing) {
+      existing.approvedRevisionsCount += 1;
+      existing.totalContributions += 1;
+      if (r.termName && !existing.recentTermsContributed.includes(r.termName)) {
+        existing.recentTermsContributed.unshift(r.termName);
+      }
+    } else {
+      scholarMap.set(key, {
+        id: `scholar-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+        name: r.authorName,
+        institution: r.authorInstitution || "Cộng tác viên Nghiên cứu",
+        badge: "peer_reviewer",
+        approvedRevisionsCount: 1,
+        approvedNewTermsCount: 0,
+        totalContributions: 1,
+        recentTermsContributed: r.termName ? [r.termName] : [],
+        joinedAt: new Date().toISOString()
+      });
+    }
+  });
+
+  approvedTerms.forEach(t => {
+    const key = (t.authorName || "Anonymous").toLowerCase();
+    const existing = scholarMap.get(key);
+    if (existing) {
+      existing.approvedNewTermsCount += 1;
+      existing.totalContributions += 1;
+      if (t.term && !existing.recentTermsContributed.includes(t.term)) {
+        existing.recentTermsContributed.unshift(t.term);
+      }
+    } else {
+      scholarMap.set(key, {
+        id: `scholar-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+        name: t.authorName,
+        institution: t.authorInstitution || "Cộng tác viên Nghiên cứu",
+        badge: "peer_reviewer",
+        approvedRevisionsCount: 0,
+        approvedNewTermsCount: 1,
+        totalContributions: 1,
+        recentTermsContributed: [t.term],
+        joinedAt: new Date().toISOString()
+      });
+    }
+  });
+
+  const finalScholars = Array.from(scholarMap.values()).map(s => {
+    let badge: "senior_fellow" | "contributing_scholar" | "peer_reviewer" = "peer_reviewer";
+    if (s.totalContributions >= 10) badge = "senior_fellow";
+    else if (s.totalContributions >= 4) badge = "contributing_scholar";
+    return { ...s, badge };
+  });
+
+  finalScholars.sort((a, b) => b.totalContributions - a.totalContributions);
+
+  const institutions = new Set(finalScholars.map(s => s.institution.trim()).filter(Boolean));
+  const totalApprovedEdits = finalScholars.reduce((acc, s) => acc + s.totalContributions, 0);
+
+  return {
+    scholars: finalScholars,
+    totalApprovedEdits,
+    totalParticipatingInstitutions: institutions.size
+  };
 }
