@@ -55,7 +55,7 @@ Tiện ích mở rộng chuyên biệt dành cho giảng viên, nghiên cứu si
 
 ## 🌐 ỨNG DỤNG WEB TRỰC TUYẾN (NEXT.JS + FIREBASE + VERCEL)
 
-Dự án cung cấp phiên bản **Web Từ điển Phương pháp Nghiên cứu Trực tuyến** độc lập tại thư mục `web/`:
+- **Trang web chính thức**: [https://vnresearch-dictionary.vercel.app/](https://vnresearch-dictionary.vercel.app/)
 - **Công nghệ**: Next.js 16 (React 19), Tailwind CSS, MiniSearch (in-memory index siêu tốc < 5ms).
 - **Cơ sở dữ liệu đám mây**: Google Cloud Firestore (`asia-southeast1`), hỗ trợ lưu đánh dấu cá nhân (⭐ Bookmarks) và gửi góp ý học thuật.
 - **Học thuật chuyên sâu**: Xuất trích dẫn APA 7th, BibTeX (Overleaf), file `.ris` (Zotero/Mendeley/EndNote), phát âm Web Speech API, Zen Mode đọc tập trung và in ấn A4.

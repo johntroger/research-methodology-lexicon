@@ -19,7 +19,7 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://research-vocabulary.vercel.app"),
+  metadataBase: new URL("https://vnresearch-dictionary.vercel.app"),
   title: "Từ điển Thuật ngữ Phương pháp Nghiên cứu Khoa học | Research Methodology Lexicon",
   description: "Từ điển học thuật song ngữ Anh - Việt tra cứu thuật ngữ phương pháp nghiên cứu, trích dẫn APA, chỉ số thực nghiệm và bẫy sai lầm.",
   keywords: [
