@@ -20210,131 +20210,200 @@
     },
     {
       "id": "double-barreled-items",
-      "term": "Double-barreled items",
-      "vietnamese": "Câu hỏi ghép đôi (câu hỏi hai nòng)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Double-Barreled Items",
+      "vietnamese": "Câu hỏi phức lồng ghép (Mục hỏi hai nòng)",
+      "vietnamese_variants": [
+        "Câu hỏi kép",
+        "Mục đo lường hai ý lồng nhau"
       ],
-      "core_definition": "Cạm bẫy thiết kế câu hỏi hỏi hai vấn đề cùng một lúc.",
-      "seminal_citation": "DeVellis (2016)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Survey Methodology & Scale Development",
+        "Psychometrics"
+      ],
+      "core_definition": "Double-Barreled Items là một lỗi thiết kế công cụ đo lường nghiêm trọng trong bảng câu hỏi khảo sát tâm trắc học, xảy ra khi một câu hỏi đơn lẻ gộp hai mệnh đề, ý niệm hoặc thuộc tính khác nhau vào cùng một mục hỏi nhưng lại chỉ yêu cầu người trả lời đưa ra một phản hồi duy nhất trên thang đo.",
+      "seminal_citation": "Churchill, G. A., Jr. (1979). A paradigm for developing better measures of marketing constructs. Journal of Marketing Research, 16(1), 64-73.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Double-barreled items according to DeVellis (2016).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Survey Methodology & Scale Development",
+      "operational_mechanism": "Khi người tham gia trả lời một câu hỏi dạng 'Bạn thấy hệ thống này dễ sử dụng và có giao diện đẹp?', người đồng ý với vế này nhưng không đồng ý với vế kia sẽ rơi vào tình thế tiến thoái lưỡng nan. Về mặt thống kê, điều này tạo ra sai số đo lường ngẫu nhiên lẫn hệ thống, làm giảm phương sai trích xuất (AVE), phá vỡ tính đơn nguyên (unidimensionality), và tạo ra hệ số tải chéo giả tạo hoặc làm giảm nghiêm trọng độ tin cậy Cronbach's alpha.",
+      "benchmarks": "Chuẩn mực phát triển thang đo (DeVellis, Churchill): (1) Mỗi mục hỏi chỉ được phép chứa duy nhất một mệnh đề vị ngữ và đo lường một khía cạnh hành vi/thái độ cụ thể; (2) Rà soát bằng kiểm định tính dễ hiểu định tính (cognitive pretesting / think-aloud protocol); (3) Mọi từ nối liên từ 'và' (and), 'hoặc' (or) nối hai vị ngữ độc lập đều phải bị tách thành hai mục hỏi riêng biệt.",
+      "pitfalls": "Chủ quan cho rằng hai ý niệm đi liền nhau (ví dụ: 'thân thiện và chuyên nghiệp') là cùng một cấu trúc; dẫn đến việc người trả lời đoán mò ý định của nhà nghiên cứu, làm sai lệch phân phối điểm số và mất giá trị nội dung.",
+      "apa_reference": "Churchill, G. A., Jr. (1979). A paradigm for developing better measures of marketing constructs. Journal of Marketing Research, 16(1), 64–73. https://doi.org/10.1177/002224377901600110",
+      "is_flagship": true
     },
     {
       "id": "double-barreled-question",
       "term": "Double-Barreled Question",
-      "vietnamese": "Lỗi câu hỏi hai nòng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Survey Design"
+      "vietnamese": "Câu hỏi kép hai ý",
+      "vietnamese_variants": [
+        "Câu hỏi hai nòng",
+        "Câu hỏi gộp đa mệnh đề"
       ],
-      "core_definition": "câu hỏi lồng ghép đồng thời hai nội dung khác nhau khiến đối tượng không biết trả lời vế nào.",
-      "seminal_citation": "Schindler (2022)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Survey Methodology & Data Collection",
+        "Questionnaire Design"
+      ],
+      "core_definition": "Double-Barreled Question là câu hỏi khảo sát hoặc phỏng vấn kết hợp hai chủ đề, sự kiện hoặc câu hỏi con riêng biệt vào trong một cấu trúc cú pháp duy nhất, khiến câu trả lời không thể gán chính xác cho một đối tượng khảo sát cụ thể.",
+      "seminal_citation": "Tourangeau, R., Rips, L. J., & Rasinski, K. (2000). The psychology of survey response. Cambridge University Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Double-Barreled Question according to Schindler (2022).",
       "domain_tags_en": [
         "Survey Design"
-      ]
+      ],
+      "category": "Survey Methodology & Data Collection",
+      "operational_mechanism": "Vận hành theo mô hình xử lý nhận thức phản hồi khảo sát (Tourangeau et al., 2000): Người trả lời phải thực hiện 4 bước (Hiểu câu hỏi -> Truy xuất ký ức -> Đánh giá -> Lựa chọn phản hồi). Khi câu hỏi chứa hai vế mâu thuẫn, gánh nặng nhận thức tăng vọt dẫn đến thiên lệch thỏa hiệp (satisficing bias) - người trả lời chọn ngẫu nhiên phương án trung dung (Neutral) hoặc chỉ trả lời cho vế đầu tiên mà họ nhớ được.",
+      "benchmarks": "Tiêu chuẩn thẩm định bảng hỏi: (1) Rà soát ma trận câu hỏi bởi hội đồng chuyên gia (expert panel review) để lọc bỏ toàn bộ câu hỏi ghép trước khi gửi thử nghiệm; (2) Độ dễ đọc (Flesch-Kincaid Grade Level $\\le 8$); (3) Chạy phân tích nhân tố khám phá EFA sơ bộ để phát hiện các mục hỏi có hệ số tải thấp ($< 0.40$) do lỗi diễn đạt hai ý.",
+      "pitfalls": "Sử dụng câu hỏi kép trong các khảo sát chính sách công (ví dụ: 'Chính phủ có nên tăng thuế để cải thiện y tế và giáo dục không?'); kết quả khảo sát trở nên vô giá trị vì không thể phân tích được sự ủng hộ dành cho y tế hay giáo dục.",
+      "apa_reference": "Tourangeau, R., Rips, L. J., & Rasinski, K. (2000). The psychology of survey response. Cambridge University Press. https://doi.org/10.1017/CBO9780511819322",
+      "is_flagship": true
     },
     {
       "id": "double-blind-peer-review",
       "term": "Double-Blind Peer Review",
-      "vietnamese": "Phản biện Kín Hai chiều",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Academic Publishing"
+      "vietnamese": "Bình duyệt mù đôi",
+      "vietnamese_variants": [
+        "Đánh giá phản biện giấu tên hai chiều",
+        "Quy trình bình duyệt ẩn danh kép"
       ],
-      "core_definition": "Cả tác giả và người phản biện đều được giấu danh tính để đảm bảo tính khách quan.",
-      "seminal_citation": "Snodgrass (2006)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Academic Publishing & Peer Review",
+        "Research Rigour"
+      ],
+      "core_definition": "Double-Blind Peer Review là quy trình thẩm định học thuật tiêu chuẩn vàng trong xuất bản quốc tế, trong đó danh tính và cơ quan công tác của tác giả được giấu kín hoàn toàn đối với các chuyên gia bình duyệt (reviewers), và ngược lại danh tính của các chuyên gia bình duyệt cũng được giấu kín hoàn toàn đối với tác giả trong suốt quá trình đánh giá bản thảo.",
+      "seminal_citation": "Blank, R. M. (1991). The effects of double-blind versus single-blind reviewing: Experimental evidence from The American Economic Review. The American Economic Review, 81(5), 1041-1067.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Double-Blind Peer Review according to Snodgrass (2006).",
       "domain_tags_en": [
         "Academic Publishing"
-      ]
+      ],
+      "category": "Academic Publishing & Peer Review",
+      "operational_mechanism": "Quy trình loại trừ thiên lệch vận hành qua cổng biên tập (Editorial Management System): (1) Bản thảo được khử nhận dạng (anonymization check) - xóa tên, cơ quan, mã đề tài và trích dẫn tự thân lộ liễu; (2) Tổng biên tập chọn 2-4 chuyên gia độc lập cùng chuyên ngành đánh giá khách quan về đóng góp lý thuyết, tính chặt chẽ của phương pháp và độ tin cậy của kết quả; (3) Mọi nhận xét và phản hồi qua lại giữa tác giả và reviewer đều được điều phối gián tiếp thông qua biên tập viên.",
+      "benchmarks": "Chuẩn mực tạp chí Q1 (Elsevier, Springer, Wiley, Taylor & Francis): (1) Tỷ lệ từ chối thực tế (acceptance rate thường từ 5% đến 20%); (2) Triệt tiêu thiên lệch vị thế (prestige bias), thiên lệch giới tính, thiên lệch quốc gia (chống phân biệt đối xử với các tác giả từ các nước đang phát triển); (3) Thư giải trình phản biện (response letter) phải chi tiết từng điểm một (point-by-point).",
+      "pitfalls": "Tác giả để lộ danh tính trong phần thuộc tính tệp PDF (metadata) hoặc viết các trích dẫn tự thân thiếu khéo léo ('Trong nghiên cứu trước của chúng tôi, Nguyễn & Trần (2020)...'); dẫn đến việc bài báo bị trả về ngay lập tức để làm sạch danh tính.",
+      "apa_reference": "Blank, R. M. (1991). The effects of double-blind versus single-blind reviewing: Experimental evidence from The American Economic Review. The American Economic Review, 81(5), 1041–1067.",
+      "is_flagship": true
     },
     {
       "id": "double-blind-peer-review-standard",
       "term": "Double-Blind Peer Review Standard",
-      "vietnamese": "Chuẩn mực Phản biện Kín Hai chiều",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Academic Rigour"
+      "vietnamese": "Tiêu chuẩn quy chuẩn bình duyệt mù đôi",
+      "vietnamese_variants": [
+        "Quy chuẩn phản biện mù đôi quốc tế",
+        "Chuẩn mực thẩm định ẩn danh kép"
       ],
-      "core_definition": "Bảo vệ tính vô tư khách quan và triệt tiêu định nghĩa thiên vị uy tín tác giả.",
-      "seminal_citation": "Budden et al. (2008)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Academic Publishing & Peer Review",
+        "Publication Ethics"
+      ],
+      "core_definition": "Double-Blind Peer Review Standard là hệ thống các quy chuẩn đạo đức, quy định kỹ thuật và tiêu chí đánh giá nghiêm ngặt do Ủy ban Đạo đức Xuất bản Quốc tế (COPE) và các hiệp hội học thuật thiết lập nhằm bảo đảm tính liêm chính, bảo mật và công bằng tối đa cho quá trình bình duyệt ẩn danh hai chiều.",
+      "seminal_citation": "Committee on Publication Ethics. (2019). Core practices. COPE.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Double-Blind Peer Review Standard according to Budden et al. (2008).",
       "domain_tags_en": [
         "Academic Rigour"
-      ]
+      ],
+      "category": "Academic Publishing & Peer Review",
+      "operational_mechanism": "Hệ thống quy chuẩn bao gồm: (1) Khử thông tin nhận dạng trong toàn bộ tài liệu chính, phụ lục, đồ thị và phần chú thích; (2) Tuyên bố xung đột lợi ích (conflict of interest declaration) độc lập giữa người bình duyệt và tác giả; (3) Bảo mật tuyệt đối dữ liệu chưa công bố; (4) Tuân thủ quy chuẩn thời gian phản hồi (thường từ 4 đến 8 tuần mỗi vòng bình duyệt); (5) Cung cấp bảng chấm điểm đa chiều (đóng góp mới, phương pháp, cách trình bày, đạo đức).",
+      "benchmarks": "Tuân thủ bộ nguyên tắc COPE Core Practices: (1) Bắt buộc có quy trình kháng cáo minh bạch (appeals process) khi tác giả chứng minh được reviewer có thành kiến hoặc hiểu sai phương pháp; (2) Tạp chí phải lưu trữ vết bình duyệt (audit log) để hội đồng liêm chính thẩm định khi có tranh chấp bản quyền hoặc cáo buộc gian lận.",
+      "pitfalls": "Reviewer lợi dụng quyền ẩn danh để đưa ra các nhận xét mang tính xúc phạm cá nhân hoặc ép tác giả phải trích dẫn công trình của chính reviewer (coercive citation); tác giả đưa bản thảo chưa bình duyệt lên mạng xã hội kèm tên tuổi làm mất hiệu lực ẩn danh.",
+      "apa_reference": "Committee on Publication Ethics. (2019). COPE core practices. Committee on Publication Ethics (COPE). https://publicationethics.org/core-practices",
+      "is_flagship": true
     },
     {
       "id": "double-loop-learning-vs-single-loop-learning",
       "term": "Double-Loop Learning vs. Single-Loop Learning",
-      "vietnamese": "Học tập Vòng đôi vs. Học tập Vòng đơn",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Organizational Learning"
+      "vietnamese": "Học tập vòng kép so với Học tập vòng đơn",
+      "vietnamese_variants": [
+        "Học tập hai vòng và một vòng Argyris",
+        "Cơ chế học tập tổ chức vòng kép"
       ],
-      "core_definition": "Chất vấn và thay đổi các giả định nền tảng vs. Chỉ sửa đổi hành vi bên ngoài.",
-      "seminal_citation": "Argyris & Schön (1978)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Organizational Learning & Management Theory",
+        "Strategic Management"
+      ],
+      "core_definition": "Double-Loop Learning vs. Single-Loop Learning là khuôn khổ lý thuyết nền tảng về học tập tổ chức do Chris Argyris và Donald Schön phát triển. Học tập vòng đơn (Single-loop learning) chỉ tập trung phát hiện và sửa chữa sai sót bằng cách thay đổi hành động nhưng vẫn duy trì các giá trị, mục tiêu và chuẩn mực cốt lõi hiện hành; ngược lại, Học tập vòng kép (Double-loop learning) đòi hỏi phải chất vấn, phản tư và tái cấu trúc chính các giả định, niềm tin nền tảng, triết lý vận hành và giá trị chi phối của tổ chức.",
+      "seminal_citation": "Argyris, C., & Schön, D. A. (1978). Organizational learning: A theory of action perspective. Addison-Wesley.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Double-Loop Learning vs. Single-Loop Learning according to Argyris & Schön (1978).",
       "domain_tags_en": [
         "Organizational Learning"
-      ]
+      ],
+      "category": "Organizational Learning & Management Theory",
+      "operational_mechanism": "Vận hành theo mô hình can thiệp hành vi: (1) Vòng đơn: Phát hiện chênh lệch giữa mục tiêu và kết quả thực tế -> Điều chỉnh chiến thuật/quy trình kỹ thuật -> Đưa kết quả về quỹ đạo cũ (tương tự cơ chế điều nhiệt của máy điều hòa); (2) Vòng kép: Khi các điều chỉnh vòng đơn liên tục thất bại -> Đặt dấu hỏi về tính đúng đắn của 'lý thuyết hành động ngầm ẩn' (theories-in-use) -> Thay đổi các biến số chi phối (governing variables) -> Thiết lập các chuẩn mực và triết lý chiến lược hoàn toàn mới.",
+      "benchmarks": "Đạt chuẩn nghiên cứu quản trị và tổ chức: (1) Phân biệt rành mạch giữa 'lý thuyết phát biểu' (espoused theory - những gì lãnh đạo tuyên bố) và 'lý thuyết áp dụng' (theory-in-use - những gì thực tế diễn ra); (2) Nhận diện các thói quen phòng thủ tổ chức (organizational defensive routines) cản trở học tập vòng kép; (3) Ứng dụng trong nghiên cứu chuyển đổi số, đổi mới mô hình kinh doanh và quản trị khủng hoảng.",
+      "pitfalls": "Nhầm lẫn giữa việc cải tiến liên tục quy trình vận hành (Kaizen/Six Sigma - phần lớn là vòng đơn) với sự thay đổi mô hình tư duy cốt lõi (vòng kép); bỏ qua sức ỳ tâm lý và nỗi sợ mất quyền lực của các nhà quản lý khi các giá trị cốt lõi bị thách thức.",
+      "apa_reference": "Argyris, C., & Schön, D. A. (1978). Organizational learning: A theory of action perspective. Addison-Wesley.",
+      "is_flagship": true
     },
     {
       "id": "doubly-robust-estimation",
       "term": "Doubly Robust Estimation",
-      "vietnamese": "Ước lượng Vững Kép",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Inference"
+      "vietnamese": "Ước lượng vững kép (AIPW)",
+      "vietnamese_variants": [
+        "Phương pháp ước lượng bền vững kép",
+        "Ước lượng trọng số xác suất nghịch đảo tăng cường AIPW"
       ],
-      "core_definition": "Cho kết quả nhân quả không chệch nếu một trong hai mô hình: mô hình can thiệp hoặc mô hình kết cục đúng.",
-      "seminal_citation": "Bang & Robins (2005)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Causal Inference & Biostatistics",
+        "Econometrics"
+      ],
+      "core_definition": "Doubly Robust Estimation (điển hình là Augmented Inverse Probability Weighting - AIPW) là một phương pháp suy diễn nhân quả bán tham số tiên tiến kết hợp đồng thời cả mô hình xu hướng can thiệp (propensity score model) và mô hình hồi quy kết quả (outcome regression model) để ước lượng Tác động can thiệp trung bình (ATE), bảo đảm tính nhất quán của ước lượng ngay cả khi một trong hai mô hình bị chỉ định sai.",
+      "seminal_citation": "Robins, J. M., Rotnitzky, A., & Zhao, L. P. (1994). Estimation of regression coefficients when some regressors are not always observed. Journal of the American Statistical Association, 89(427), 846-866.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Doubly Robust Estimation according to Bang & Robins (2005).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "category": "Causal Inference & Biostatistics",
+      "operational_mechanism": "Công thức ước lượng AIPW cho $E[Y(1)]$: $\\hat{\\mu}_1^{DR} = \\frac{1}{N} \\sum_{i=1}^N \\left[ \\frac{T_i Y_i}{\\hat{e}(X_i)} - \\frac{T_i - \\hat{e}(X_i)}{\\hat{e}(X_i)} \\hat{m}_1(X_i) \\right]$, trong đó $T_i$ là biến can thiệp, $\\hat{e}(X_i) = P(T_i=1|X_i)$ là điểm xu hướng ước lượng, và $\\hat{m}_1(X_i) = E[Y|T=1, X_i]$ là giá trị kết quả dự báo từ hồi quy. Nếu mô hình điểm xu hướng đúng HOẶC mô hình hồi quy kết quả đúng, ước lượng $\\hat{\\mu}_1^{DR}$ vẫn hội tụ tiệm cận về giá trị thực không bị chệch.",
+      "benchmarks": "Chuẩn mực suy diễn nhân quả hiện đại (JASA, Biometrika): (1) Đạt tính hiệu quả bán tham số (semiparametric efficiency bound); (2) Đóng vai trò là nền tảng cốt lõi cho các thuật toán Học máy nhân quả hiện đại (Targeted Maximum Likelihood Estimation - TMLE và Double Machine Learning - DML); (3) Bắt buộc phải kiểm tra giả định vùng hỗ trợ chung (overlap/positivity).",
+      "pitfalls": "Nếu CẢ HAI mô hình đều bị chỉ định sai nghiêm trọng, ước lượng vững kép có thể có phương sai lớn hơn và hoạt động kém hơn một mô hình đơn lẻ được chỉ định cẩn trọng; điểm xu hướng quá gần 0 hoặc 1 gây bất ổn định mẫu số.",
+      "apa_reference": "Robins, J. M., Rotnitzky, A., & Zhao, L. P. (1994). Estimation of regression coefficients when some regressors are not always observed. Journal of the American Statistical Association, 89(427), 846–866. https://doi.org/10.1080/01621459.1994.10476818",
+      "is_flagship": true
     },
     {
       "id": "driscoll-kraay-standard-errors",
       "term": "Driscoll-Kraay Standard Errors",
-      "vietnamese": "Sai số Chuẩn Driscoll-Kraay",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Panel Data Econometrics"
+      "vietnamese": "Sai số chuẩn Driscoll-Kraay",
+      "vietnamese_variants": [
+        "Sai số chuẩn vững Driscoll-Kraay",
+        "Hiệu chỉnh phụ thuộc chéo Driscoll-Kraay"
       ],
-      "core_definition": "Hiệu chỉnh đồng thời hiện tượng tự tương quan, phương sai thay đổi và phụ thuộc chéo trong dữ liệu bảng.",
-      "seminal_citation": "Driscoll & Kraay (1998)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Panel Data Econometrics & Macroeconometrics",
+        "Applied Econometrics"
+      ],
+      "core_definition": "Driscoll-Kraay Standard Errors là phương pháp ước lượng ma trận hiệp phương sai sai số phi tham số cho mô hình hồi quy dữ liệu bảng (panel data) do John Driscoll và Aart Kraay phát triển (1998), có khả năng khắc phục đồng thời cả ba vấn đề kinh tế lượng phức tạp: phương sai thay đổi (heteroskedasticity), tự tương quan theo thời gian (autocorrelation), và đặc biệt là sự phụ thuộc chéo giữa các đơn vị không gian (cross-sectional dependence).",
+      "seminal_citation": "Driscoll, J. C., & Kraay, A. C. (1998). Consistent covariance matrix estimation with spatially dependent panel data. Review of Economics and Statistics, 80(4), 549-560.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Driscoll-Kraay Standard Errors according to Driscoll & Kraay (1998).",
       "domain_tags_en": [
         "Panel Data Econometrics"
-      ]
+      ],
+      "category": "Panel Data Econometrics & Macroeconometrics",
+      "operational_mechanism": "Phương pháp áp dụng kỹ thuật hiệu chỉnh Newey-West lên chuỗi trung bình chéo của các hàm điểm số hồi quy (cross-sectional averages of the moment conditions). Ma trận hiệp phương sai ước lượng vững: $V(\\hat{\\beta}) = (X'X)^{-1} S_T (X'X)^{-1}$, trong đó $S_T = \\hat{\\Omega}_0 + \\sum_{j=1}^m w(j, m) (\\hat{\\Omega}_j + \\hat{\\Omega}_j')$, với $w(j, m) = 1 - \\frac{j}{m+1}$ là trọng số Bartlett hạt nhân đảm bảo ma trận luôn xác định dương. Phương pháp cho phép số chiều thời gian $T$ tiến ra vô cùng trong khi số đơn vị chéo $N$ có thể lớn bất kỳ.",
+      "benchmarks": "Chuẩn mực nghiên cứu tài chính vĩ mô và kinh tế lượng quốc tế (JFE, JAE): (1) Bắt buộc phải áp dụng khi kiểm định Pesaran CD test cho thấy sự hiện diện có ý nghĩa của phụ thuộc chéo ($p < 0.05$); (2) Phù hợp tối ưu cho các bộ dữ liệu bảng vĩ mô có chuỗi thời gian tương đối dài ($T > 20$ hoặc $T > 30$); (3) Lựa chọn độ trễ trượt (lag length $m$) theo quy tắc Newey-West hoặc kiểm tra độ nhạy qua nhiều giá trị $m$.",
+      "pitfalls": "Áp dụng cho các tập dữ liệu bảng vi mô có chuỗi thời gian quá ngắn ($T < 5$ hoặc $T < 10$) dẫn đến ước lượng sai số chuẩn bị méo mó nghiêm trọng; nhầm lẫn giữa sai số chuẩn cụm truyền thống (Rogers/clustered SE) với Driscoll-Kraay (sai số chuẩn cụm thông thường không xử lý được phụ thuộc chéo giữa các cụm).",
+      "apa_reference": "Driscoll, J. C., & Kraay, A. C. (1998). Consistent covariance matrix estimation with spatially dependent panel data. Review of Economics and Statistics, 80(4), 549–560. https://doi.org/10.1162/003465398557825",
+      "is_flagship": true
     },
     {
       "id": "dual-process-theory-kahneman---system-1-system-2",
@@ -20369,38 +20438,58 @@
     {
       "id": "duality-of-structure",
       "term": "Duality of Structure",
-      "vietnamese": "Tính Nhị nguyên của Cấu trúc",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Sociological Theory"
+      "vietnamese": "Tính lưỡng nguyên của cấu trúc",
+      "vietnamese_variants": [
+        "Nhị nguyên tính cấu trúc",
+        "Lưỡng tính cấu trúc Giddens"
       ],
-      "core_definition": "Cấu trúc không chỉ mang tính trói buộc mà còn mang tính tạo điều kiện cho hành động.",
-      "seminal_citation": "Giddens (1984)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Sociological Theory & Philosophy of Social Science",
+        "Organizational Theory"
+      ],
+      "core_definition": "Duality of Structure là luận đề cốt lõi trong Lý thuyết Cấu trúc hóa (Structuration Theory) của nhà xã hội học Anthony Giddens, khẳng định rằng cấu trúc xã hội (structures) vừa là phương tiện (medium) vừa là kết quả (outcome) của các thực hành xã hội do các tác nhân (agents) thực hiện, vượt qua sự đối lập nhị nguyên truyền thống giữa cấu trúc luận khách quan và thuyết chủ thể hành động.",
+      "seminal_citation": "Giddens, A. (1984). The constitution of society: Outline of the theory of structuration. University of California Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Duality of Structure according to Giddens (1984).",
       "domain_tags_en": [
         "Sociological Theory"
-      ]
+      ],
+      "category": "Sociological Theory & Philosophy of Social Science",
+      "operational_mechanism": "Cấu trúc không tồn tại như những 'bức tường vật lý' bên ngoài con người mà chỉ tồn tại như 'dấu vết ký ức' trong tâm trí và được hiện thực hóa qua các quy tắc (rules - quy chuẩn chuẩn tắc và ý nghĩa diễn giải) và nguồn lực (resources - quyền lực phân bổ và thẩm quyền điều hành). Các tác nhân khi hành động buộc phải sử dụng các cấu trúc này; và thông qua chính hành động lặp đi lặp lại đó, họ tái sản xuất hoặc làm biến đổi cấu trúc theo thời gian.",
+      "benchmarks": "Chuẩn mực bài báo lý thuyết xã hội học và tổ chức (ASR, Organization Science): (1) Phân biệt rõ tính lưỡng nguyên (Duality - hai mặt của cùng một đồng xu) với tính nhị nguyên (Dualism - coi cấu trúc và hành nhân là hai thực thể tách rời); (2) Sử dụng phương pháp 'lồng ghép phương pháp luận' (methodological bracketing) để luân phiên phân tích hành vi của tác nhân và phân tích thể chế cấu trúc; (3) Ứng dụng xuất sắc trong nghiên cứu sự tương tác giữa con người và công nghệ thông tin (Adaptive Structuration Theory của DeSanctis & Poole).",
+      "pitfalls": "Đồng nhất tính lưỡng nguyên của cấu trúc với việc xem tác nhân hoàn toàn tự do muốn làm gì thì làm; bỏ qua việc các nguồn lực bất bình đẳng tạo ra sự áp chế quyền lực hạn chế phạm vi hành động của các nhóm yếu thế.",
+      "apa_reference": "Giddens, A. (1984). The constitution of society: Outline of the theory of structuration. University of California Press.",
+      "is_flagship": true
     },
     {
       "id": "duhem-quine-thesis",
       "term": "Duhem-Quine Thesis",
-      "vietnamese": "Luận đề Duhem-Quine về tính bất khả phân định",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Philosophy of Science"
+      "vietnamese": "Luận đề Duhem-Quine",
+      "vietnamese_variants": [
+        "Thuyết bất khả phân chứng Duhem-Quine",
+        "Luận đề tính toàn thể tri thức luận"
       ],
-      "core_definition": "không thể kiểm định một giả thuyết đơn độc mà luôn kiểm định cả hệ thống giả thuyết.",
-      "seminal_citation": "Quine (1951)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Philosophy of Science & Epistemology",
+        "Research Methodology"
+      ],
+      "core_definition": "Duhem-Quine Thesis (còn gọi là Thuyết chỉnh thể luận nhận thức - Epistemological Holism) là một luận đề triết học khoa học căn bản khẳng định rằng một giả thuyết khoa học đơn lẻ không bao giờ có thể được kiểm định hoặc phản nghiệm trong sự cô lập tuyệt đối; thay vào đó, các giả thuyết luôn được kiểm định như một chỉnh thể mạng lưới lý thuyết liên kết chặt chẽ bao gồm giả thuyết chính, các giả thuyết phụ trợ, các giả định về thiết bị đo lường và các điều kiện biên thực nghiệm.",
+      "seminal_citation": "Quine, W. V. O. (1951). Main trends in recent philosophy: Two dogmas of empiricism. The Philosophical Review, 60(1), 20-43.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Duhem-Quine Thesis according to Quine (1951).",
       "domain_tags_en": [
         "Philosophy of Science"
-      ]
+      ],
+      "category": "Philosophy of Science & Epistemology",
+      "operational_mechanism": "Khi một thực nghiệm cho kết quả trái ngược với dự báo lý thuyết ($T \\land A_1 \\land A_2 \\land ... \\land A_n \\to \\neg E$), logic diễn dịch Modus Tollens chỉ cho ta biết rằng toàn bộ hệ thống giả định có chứa ít nhất một mệnh đề sai, nhưng không thể chỉ ra chính xác giả thuyết chính $T$ bị sai hay một trong các giả thuyết phụ trợ $A_i$ (ví dụ: máy đo bị hiệu chuẩn lệch, mẫu vật bị nhiễm tạp chất, mô hình toán bị đơn giản hóa quá mức) bị sai. Do đó, nhà nghiên cứu luôn có thể bảo vệ lý thuyết chính bằng cách điều chỉnh các giả thuyết phụ trợ.",
+      "benchmarks": "Đạt chuẩn lập luận triết học phương pháp: (1) Nhận thức được giới hạn của chủ nghĩa thực chứng ngây thơ và tiêu chí phản nghiệm cơ học của Popper; (2) Khi giả thuyết nghiên cứu bị bác bỏ trong luận án tiến sĩ, tác giả phải phân tích thấu đáo xem sự thất bại bắt nguồn từ bản chất lý thuyết hay do công cụ đo lường, cỡ mẫu hoặc điều kiện biên; (3) Định vị lý thuyết như một mạng lưới niềm tin (web of belief) theo Quine.",
+      "pitfalls": "Lạm dụng luận đề Duhem-Quine để ngụy biện cố chấp, liên tục bổ sung các giả thuyết chắp vá tùy tiện (ad hoc hypotheses) để bảo vệ một lý thuyết đã hoàn toàn sụp đổ về mặt thực nghiệm.",
+      "apa_reference": "Quine, W. V. O. (1951). Main trends in recent philosophy: Two dogmas of empiricism. The Philosophical Review, 60(1), 20–43. https://doi.org/10.2307/2181906",
+      "is_flagship": true
     },
     {
       "id": "dummy-variable-coding",
@@ -20435,20 +20524,30 @@
     {
       "id": "dunnetts-test",
       "term": "Dunnett's Test",
-      "vietnamese": "Kiểm định Dunnett so sánh riêng biệt từng nhóm can thiệp với một nhóm đối chứng duy nhất",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Post-Hoc Statistics"
+      "vietnamese": "Kiểm định Dunnett",
+      "vietnamese_variants": [
+        "Kiểm định hậu định Dunnett",
+        "So sánh bội với nhóm đối chứng Dunnett"
       ],
-      "core_definition": "Kiểm định Dunnett so sánh riêng biệt từng nhóm can thiệp với một nhóm đối chứng duy nhất.",
-      "seminal_citation": "Dunnett (1955)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Post-Hoc Statistics & Experimental Design",
+        "Biostatistics"
+      ],
+      "core_definition": "Dunnett's Test là một quy trình so sánh bội hậu định (post-hoc multiple comparison procedure) chuyên biệt được thiết kế để so sánh đồng thời nhiều nhóm can thiệp/xử lý thực nghiệm (treatment groups) với duy nhất một nhóm đối chứng chuẩn (single control group), kiểm soát chặt chẽ tỷ lệ sai lầm loại I của toàn bộ thử nghiệm (Family-Wise Error Rate - FWER).",
+      "seminal_citation": "Dunnett, C. W. (1955). A multiple comparison procedure for comparing several treatments with a control. Journal of the American Statistical Association, 50(272), 1096-1121.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Dunnett's Test according to Dunnett (1955).",
       "domain_tags_en": [
         "Post-Hoc Statistics"
-      ]
+      ],
+      "category": "Post-Hoc Statistics & Experimental Design",
+      "operational_mechanism": "Thống kê kiểm định $t_d$ giữa nhóm can thiệp $i$ và nhóm đối chứng $0$: $t_{di} = \\frac{\\bar{Y}_i - \\bar{Y}_0}{\\sqrt{MS_w (\\frac{1}{n_i} + \\frac{1}{n_0})}}$, trong đó $MS_w$ là phương sai nội bộ nhóm trích từ bảng ANOVA. Điểm tới hạn của kiểm định được tra từ phân phối chuẩn đa biến liên kết có tương quan phụ thuộc (Dunnett distribution), tính đến sự hiệp biến phát sinh do tất cả các phép so sánh đều dùng chung dữ liệu của nhóm đối chứng.",
+      "benchmarks": "Chuẩn mực phân tích thực nghiệm y sinh và kinh tế học hành vi: (1) Có công suất thống kê (statistical power) cao hơn đáng kể so với các kiểm định so sánh cặp toàn diện như Tukey HSD hay Bonferroni khi mục tiêu nghiên cứu chỉ là so sánh với nhóm đối chứng; (2) Thiết kế tối ưu (Dunnett rule): cỡ mẫu nhóm đối chứng nên lớn hơn nhóm can thiệp theo tỷ lệ $n_0 / n_i \\approx \\sqrt{k}$ (với $k$ là số nhóm can thiệp); (3) Cho phép kiểm định một phía hoặc hai phía.",
+      "pitfalls": "Sử dụng Dunnett's test khi muốn so sánh các nhóm can thiệp với nhau (trường hợp này bắt buộc phải dùng Tukey HSD); dữ liệu vi phạm nghiêm trọng giả định đồng nhất phương sai (khi đó phải dùng Dunnett's T3 hoặc Games-Howell).",
+      "apa_reference": "Dunnett, C. W. (1955). A multiple comparison procedure for comparing several treatments with a control. Journal of the American Statistical Association, 50(272), 1096–1121. https://doi.org/10.1080/01621459.1955.10501294",
+      "is_flagship": true
     },
     {
       "id": "durbin-watson-test",
@@ -20509,38 +20608,58 @@
       "id": "duval-and-tweedie-trim-and-fill-method",
       "term": "Duval and Tweedie Trim and Fill Method",
       "vietnamese": "Phương pháp Cắt và Điền Duval & Tweedie",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Meta-Analysis Diagnostics"
+      "vietnamese_variants": [
+        "Kỹ thuật Trim and Fill",
+        "Hiệu chỉnh thiên lệch xuất bản Trim & Fill"
       ],
-      "core_definition": "Ước tính số lượng nghiên cứu bị giấu trong ngăn kéo và tái ước lượng hiệu ứng tổng hợp.",
-      "seminal_citation": "Duval & Tweedie (2000)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Meta-Analysis Diagnostics & Publication Bias",
+        "Biostatistics"
+      ],
+      "core_definition": "Duval and Tweedie Trim and Fill Method là một kỹ thuật chẩn đoán và phân tích độ nhạy phi tham số dựa trên biểu đồ phễu (funnel plot) trong phân tích tổng hợp (meta-analysis), nhằm ước lượng số lượng các nghiên cứu bị mất tích do thiên lệch xuất bản (publication bias) và tính toán lại cỡ tác động gộp sau khi đã bù đắp giả định các nghiên cứu này.",
+      "seminal_citation": "Duval, S., & Tweedie, R. (2000). Trim and fill: A simple funnel-plot-based method of testing and adjusting for publication bias in meta-analysis. Biometrics, 56(2), 455-463.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Duval and Tweedie Trim and Fill Method according to Duval & Tweedie (2000).",
       "domain_tags_en": [
         "Meta-Analysis Diagnostics"
-      ]
+      ],
+      "category": "Meta-Analysis Diagnostics & Publication Bias",
+      "operational_mechanism": "Thuật toán lặp 2 bước: (1) Cắt tỉa (Trim) - thuật toán lần lượt loại bỏ các nghiên cứu cực đoan nằm ở phần đáy bên phải của biểu đồ phễu gây ra sự bất đối xứng, cho đến khi biểu đồ đạt trạng thái đối xứng hình phễu chuẩn tắc, từ đó ước lượng cỡ tác động trung tâm thực sự; (2) Điền khuyết (Fill) - thuật toán lấy đối xứng các nghiên cứu đã bị cắt tỉa qua trục tâm mới để đưa các nghiên cứu giả định bị khuyết thiếu vào phần bên trái của biểu đồ phễu, sau đó tái ước lượng cỡ tác động tổng hợp và khoảng tin cậy của toàn bộ mô hình.",
+      "benchmarks": "Chuẩn mực báo cáo phân tích tổng hợp PRISMA: (1) Báo cáo số lượng nghiên cứu được điền khuyết ($k_{filled}$); (2) Trình bày biểu đồ Funnel plot trước và sau khi điền; (3) So sánh trực diện cỡ tác động gộp ban đầu và cỡ tác động gộp sau khi hiệu chỉnh Trim and Fill để kết luận mức độ vững của bằng chứng.",
+      "pitfalls": "Coi cỡ tác động sau hiệu chỉnh Trim and Fill như một giá trị 'sự thật tuyệt đối' thay vì một phân tích độ nhạy (sensitivity analysis); phương pháp có thể hoạt động kém khi sự bất đối xứng phễu phát sinh từ tính không đồng nhất thực sự (heterogeneity) giữa các nghiên cứu nhỏ chứ không phải do thiên lệch xuất bản.",
+      "apa_reference": "Duval, S., & Tweedie, R. (2000). Trim and fill: A simple funnel-plot-based method of testing and adjusting for publication bias in meta-analysis. Biometrics, 56(2), 455–463. https://doi.org/10.1111/j.0006-341X.2000.00455.x",
+      "is_flagship": true
     },
     {
       "id": "dv",
-      "term": "DV",
-      "vietnamese": "Biến phụ thuộc",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Acronym NCKH"
+      "term": "Dependent Variable (DV)",
+      "vietnamese": "Biến phụ thuộc (DV)",
+      "vietnamese_variants": [
+        "Biến kết quả",
+        "Biến tiêu chí",
+        "Biến đáp ứng"
       ],
-      "core_definition": "Biến đóng vai trò kết quả chịu tác động của biến độc lập, là đối tượng chính cần được giải thích hoặc dự báo trong mô hình nghiên cứu. Ngưỡng thực nghiệm tham chiếu: Cần được đo lường với độ chuẩn xác cao, kiểm tra dạng hàm phân phối và tránh sai số đo lường.",
-      "seminal_citation": "Cần được đo lường với độ chuẩn xác cao, kiểm tra dạng hàm phân phối và tránh sai số đo lường.",
-      "tier": "acronym",
+      "domain_tags": [
+        "Quantitative Methods & Research Design",
+        "Econometrics"
+      ],
+      "core_definition": "Dependent Variable (DV, ký hiệu chuẩn là $Y$), còn gọi là Biến kết quả (Outcome Variable) hoặc Biến đáp ứng (Response Variable), là biến số trung tâm trong mô hình nghiên cứu đại diện cho hiện tượng, thuộc tính hoặc hành vi mà nhà nghiên cứu đang tìm cách giải thích, dự báo hoặc chứng minh sự biến thiên của nó dưới tác động của các biến độc lập (IV).",
+      "seminal_citation": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of DV according to Cần được đo lường với độ chuẩn xác cao, kiểm tra dạng hàm phân phối và tránh sai số đo lường..",
       "domain_tags_en": [
         "Acronym NCKH"
       ],
-      "benchmarks": "Cần được đo lường với độ chuẩn xác cao, kiểm tra dạng hàm phân phối và tránh sai số đo lường."
+      "benchmarks": "Chuẩn mực nghiên cứu thực nghiệm: (1) DV phải được thao tác hóa bằng các công cụ đo lường đạt độ tin cậy và độ giá trị đã thẩm định; (2) Kiểm tra kỹ lưỡng hiện tượng giới hạn biên (Floor effect / Ceiling effect); (3) Trong mô hình phương trình cấu trúc (SEM), DV có thể đóng vai trò kép vừa là biến phụ thuộc vừa là biến trung gian (Endogenous Latent Variable).",
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "Trong các mô hình cấu trúc toán học: $Y = f(X_1, X_2, ..., X_k) + \\varepsilon$. Sự biến thiên của DV được phân rã thành hai phần: Phương sai được giải thích bởi mô hình lý thuyết (Sum of Squares Regression - SSR) và Phương sai chưa giải thích được do sai số ngẫu nhiên (Sum of Squares Error - SSE). Lựa chọn phương pháp ước lượng phụ thuộc chặt chẽ vào thang đo của DV: OLS cho biến liên tục phân phối chuẩn, Logistic/Probit cho biến nhị phân, Poisson/Negative Binomial cho biến đếm, và Ordered Logit cho biến thứ bậc.",
+      "pitfalls": "Sai số đo lường trong DV làm tăng phương sai phần dư và giảm công suất thống kê; nhầm lẫn giữa mối quan hệ thống kê với quan hệ nhân quả thực sự khi chưa kiểm soát được tính nội sinh và biến nhiễu.",
+      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "dwh",
@@ -20575,40 +20694,59 @@
     {
       "id": "dynamic-capabilities-view-teece",
       "term": "Dynamic Capabilities View (Teece)",
-      "vietnamese": "Quan điểm Năng lực Động",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Strategic Management"
+      "vietnamese": "Lý thuyết năng lực động của David Teece",
+      "vietnamese_variants": [
+        "Khung năng lực động DCV",
+        "Quan điểm năng lực thích ứng động"
       ],
-      "core_definition": "Khả năng của tổ chức trong việc cảm nhận Sensing, nắm bắt Seizing và tái cấu trúc Transforming các nguồn lực.",
-      "seminal_citation": "Teece, Pisano & Shuen (1997)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Strategic Management & Organizational Theory",
+        "Innovation Studies"
+      ],
+      "core_definition": "Dynamic Capabilities View (DCV) là một trường phái lý thuyết quản trị chiến lược đột phá do David J. Teece và cộng sự khởi xướng, mở rộng Lý thuyết dựa trên nguồn lực (RBV). DCV giải thích cách thức các doanh nghiệp đạt được và duy trì lợi thế cạnh tranh bền vững trong môi trường kinh doanh biến động nhanh (rapid technological change) thông qua khả năng liên tục tích hợp, xây dựng và tái cấu trúc các năng lực nội bộ và bên ngoài.",
+      "seminal_citation": "Teece, D. J., Pisano, G., & Shuen, A. (1997). Dynamic capabilities and strategic management. Strategic Management Journal, 18(7), 509-533.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Dynamic Capabilities View (Teece) according to Teece, Pisano & Shuen (1997).",
       "domain_tags_en": [
         "Strategic Management"
-      ]
+      ],
+      "category": "Strategic Management & Organizational Theory",
+      "operational_mechanism": "Cấu trúc vi mô của năng lực động (Microfoundations of Dynamic Capabilities) vận hành qua cụm 3 năng lực cốt lõi: (1) Nhận biết (Sensing) - nhận diện cơ hội và mối đe dọa công nghệ/thị trường thông qua R&D và lắng nghe khách hàng; (2) Nắm bắt (Seizing) - huy động nguồn lực, thiết kế mô hình kinh doanh và cam kết tài chính để khai thác cơ hội; (3) Chuyển hóa (Transforming/Reconfiguring) - liên tục điều chỉnh, tái tổ chức tài sản hữu hình và vô hình để thích ứng với bối cảnh mới.",
+      "benchmarks": "Chuẩn mực bài báo chiến lược Q1 (SMJ, AMR, JOM): (1) Phân biệt rành mạch giữa 'năng lực thông thường/vận hành' (ordinary/operational capabilities - làm việc đúng cách) và 'năng lực động' (dynamic capabilities - làm đúng việc hướng tới tương lai); (2) Thao tác hóa năng lực động qua thang đo đa chiều bậc hai (second-order reflective-formative construct); (3) Kiểm định vai trò điều tiết của tính bất định môi trường (environmental dynamism/turbulence).",
+      "pitfalls": "Định nghĩa mang tính lặp luận vòng luẩn quẩn (tautological trap - cho rằng doanh nghiệp thành công vì có năng lực động, và định nghĩa năng lực động là năng lực tạo ra thành công); cần đo lường năng lực động độc lập với kết quả kinh doanh.",
+      "apa_reference": "Teece, D. J., Pisano, G., & Shuen, A. (1997). Dynamic capabilities and strategic management. Strategic Management Journal, 18(7), 509–533. https://doi.org/10.1002/(SICI)1097-0266(199708)18:7<509::AID-SMJ882>3.0.CO;2-Z",
+      "is_flagship": true
     },
     {
       "id": "dynamic-grid-design",
-      "term": "Dynamic grid design",
-      "vietnamese": "Thiết kế ma trận động tương thích hiển thị trên màn hình điện thoại thông minh (Smartphones).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Questionnaire",
-        "TSE"
+      "term": "Dynamic Grid Design",
+      "vietnamese": "Thiết kế bảng câu hỏi lưới ma trận động",
+      "vietnamese_variants": [
+        "Bảng hỏi lưới thích ứng",
+        "Khảo sát ma trận thích ứng trên di động"
       ],
-      "core_definition": "Thiết kế ma trận động tương thích hiển thị trên màn hình điện thoại thông minh (Smartphones).",
-      "seminal_citation": "Wiley / Beatty & Willis (2020); Wiley (2020)",
-      "tier": "index",
+      "domain_tags": [
+        "Survey Methodology & Mobile Optimization",
+        "Web Surveys"
+      ],
+      "core_definition": "Dynamic Grid Design là một phương pháp thiết kế giao diện khảo sát trực tuyến thích ứng (adaptive/responsive survey design), tự động chuyển đổi các bảng câu hỏi dạng ma trận/lưới truyền thống (grid/matrix questions) thành các câu hỏi mục đơn độc lập (item-by-item) hoặc thẻ tương tác khi người tham gia truy cập bằng thiết bị di động màn hình nhỏ.",
+      "seminal_citation": "Couper, M. P., Tourangeau, R., Conrad, F. G., & Zhang, C. (2013). The design of grids in web surveys. Social Science Computer Review, 31(3), 322-345.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Dynamic grid design according to Wiley / Beatty & Willis (2020); Wiley (2020).",
       "domain_tags_en": [
         "Questionnaire",
         "TSE"
-      ]
+      ],
+      "category": "Survey Methodology & Mobile Optimization",
+      "operational_mechanism": "Thuật toán giao diện phía máy khách (Client-side responsive rendering) phát hiện độ phân giải màn hình của người dùng. Trên máy tính bảng/máy tính bàn, bảng lưới hiển thị đầy đủ các dòng (items) và các cột (thang Likert). Khi chiều rộng màn hình $< 768px$ (điện thoại thông minh), giao diện tự động chia nhỏ ma trận thành chuỗi các khối câu hỏi đơn, tự động cuộn chuyển động khi người dùng chọn phương án, triệt tiêu hoàn toàn nhu cầu cuộn ngang (horizontal scrolling).",
+      "benchmarks": "Chuẩn mực nghiên cứu phương pháp khảo sát (Couper, Tourangeau): (1) Giảm tỷ lệ bỏ dở giữa chừng (breakoff rate) trên di động xuống dưới 5%; (2) Giảm hiện tượng đánh dấu thẳng hàng vô thức (straightlining/satisficing) do nhìn thấy cả khối lưới; (3) Đo lường thời gian hoàn thành (paradata response latency) để kiểm tra tính tương đương đo lường giữa phiên bản di động và máy tính.",
+      "pitfalls": "Nếu không được kiểm thử cẩn thận, việc thay đổi định dạng hiển thị có thể tạo ra lỗi chế độ đo lường (mode effects) hoặc lỗi thứ tự xuất hiện giữa người dùng máy tính và điện thoại.",
+      "apa_reference": "Couper, M. P., Tourangeau, R., Conrad, F. G., & Zhang, C. (2013). The design of grids in web surveys. Social Science Computer Review, 31(3), 322–345. https://doi.org/10.1177/0894439312469865",
+      "is_flagship": true
     },
     {
       "id": "dynamic-panel-data",
@@ -20642,56 +20780,86 @@
     {
       "id": "dynamic-stochastic-general-equilibrium-dsge",
       "term": "Dynamic Stochastic General Equilibrium (DSGE)",
-      "vietnamese": "Mô hình Cân bằng Tổng thể Động Ngẫu nhiên DSGE",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Macroeconomic Modeling"
+      "vietnamese": "Mô hình cân bằng tổng thể ngẫu nhiên động (DSGE)",
+      "vietnamese_variants": [
+        "Mô hình kinh tế vĩ mô DSGE",
+        "Mô hình cân bằng tổng thể động ngẫu nhiên"
       ],
-      "core_definition": "Mô hình kinh tế vĩ mô dựa trên nền tảng vi mô tối ưu hóa của hộ gia đình và doanh nghiệp.",
-      "seminal_citation": "Smets & Wouters (2007)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Macroeconomics & Computational Econometrics",
+        "Quantitative Economics"
+      ],
+      "core_definition": "Dynamic Stochastic General Equilibrium (DSGE) là một khung mô hình hóa kinh tế lượng vĩ mô hiện đại hàng đầu được các ngân hàng trung ương và các nhà kinh tế học sử dụng để phân tích chính sách tiền tệ và tài khóa. Mô hình tích hợp ba đặc tính cốt lõi: Tính động (Dynamic - các tác nhân tối ưu hóa liên thời gian), Tính ngẫu nhiên (Stochastic - hệ thống chịu tác động của các cú sốc bất định ngẫu nhiên), và Cân bằng tổng thể (General Equilibrium - các thị trường đồng thời cân bằng dựa trên nền tảng vi mô vi tế vững chắc chống lại Phê phán Lucas).",
+      "seminal_citation": "Smets, F., & Wouters, R. (2007). Shocks and frictions in US business cycles: A Bayesian DSGE approach. American Economic Review, 97(3), 586-606.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Dynamic Stochastic General Equilibrium (DSGE) according to Smets & Wouters (2007).",
       "domain_tags_en": [
         "Macroeconomic Modeling"
-      ]
+      ],
+      "category": "Macroeconomics & Computational Econometrics",
+      "operational_mechanism": "Hệ thống phương trình được thiết lập từ các bài toán tối ưu hóa của hộ gia đình (tối đa hóa độ thỏa dụng liên thời gian), doanh nghiệp (tối đa hóa lợi nhuận với giá cả kết dính Calvo price stickiness), và ngân hàng trung ương (quy tắc chính sách tiền tệ Taylor Rule). Sau khi lấy xấp xỉ tuyến tính logarit quanh trạng thái dừng (steady-state log-linearization), mô hình được giải bằng thuật toán Sims (gensys) hoặc Blanchard-Kahn, và các tham số cấu trúc sâu được ước lượng bằng phương pháp Bayes MCMC (Markov Chain Monte Carlo).",
+      "benchmarks": "Chuẩn mực bài báo kinh tế học vĩ mô Q1 (AER, JME): (1) Kiểm tra tính xác định và duy nhất của nghiệm (Blanchard-Kahn conditions); (2) Báo cáo phân tích hàm phản ứng đẩy (Impulse Response Functions - IRF); (3) Phân rã phương sai sai số dự báo (Forecast Error Variance Decomposition - FEVD); (4) Đánh giá độ phù hợp dữ liệu qua hệ số Bayes Factor.",
+      "pitfalls": "Giả định kỳ vọng duy lý thuần túy (rational expectations) có thể thất bại trong các cuộc khủng hoảng tài chính trầm trọng; nguy cơ chỉ định sai các cú sốc cấu trúc sâu dẫn đến việc diễn giải sai cơ chế truyền dẫn chính sách.",
+      "apa_reference": "Smets, F., & Wouters, R. (2007). Shocks and frictions in US business cycles: A Bayesian DSGE approach. American Economic Review, 97(3), 586–606. https://doi.org/10.1257/aer.97.3.586",
+      "is_flagship": true
     },
     {
       "id": "dynamic-structural-equation-modeling-dsem",
       "term": "Dynamic Structural Equation Modeling (DSEM)",
-      "vietnamese": "Mô hình SEM Động DSEM",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Advanced SEM"
+      "vietnamese": "Mô hình phương trình cấu trúc động (DSEM)",
+      "vietnamese_variants": [
+        "Mô hình SEM động chuỗi thời gian chuyên sâu",
+        "DSEM đa cấp thời gian chuyên sâu"
       ],
-      "core_definition": "Kết hợp phân tích chuỗi thời gian n-lớn T-lớn với SEM và mô hình đa cấp Bayes.",
-      "seminal_citation": "Asparouhov, Hamaker & Muthén (2018)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Structural Equation Modeling & Intensive Longitudinal Data",
+        "Psychometrics"
+      ],
+      "core_definition": "Dynamic Structural Equation Modeling (DSEM, do Bengt Muthén và Tihomir Asparouhov phát triển trong Mplus) là một hệ hình phân tích dữ liệu tiên tiến dung hợp bốn khung phương pháp luận: Mô hình phương trình cấu trúc (SEM), Mô hình đa cấp độ (Multilevel Modeling), Mô hình chuỗi thời gian tự hồi quy (Time Series / VAR), và Ước lượng Bayes. DSEM chuyên biệt để phân tích dữ liệu dọc chuyên sâu (intensive longitudinal data - ESM/EMA) với hàng chục đến hàng trăm thời điểm đo lường trên mỗi cá nhân.",
+      "seminal_citation": "Asparouhov, T., Hamaker, E. L., & Muthén, B. (2018). Dynamic structural equation models. Structural Equation Modeling: A Multidisciplinary Journal, 25(3), 359-388.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Dynamic Structural Equation Modeling (DSEM) according to Asparouhov, Hamaker & Muthén (2018).",
       "domain_tags_en": [
         "Advanced SEM"
-      ]
+      ],
+      "category": "Structural Equation Modeling & Intensive Longitudinal Data",
+      "operational_mechanism": "Phương trình DSEM phân tách sự biến thiên của biến tiềm ẩn $Y_{it}$ thành hai cấp độ: Cấp độ nội tại cá nhân (Within-person Level 1) mô hình hóa các chuỗi tự hồi quy trễ $Y_{i,t-1}$ và tương quan chéo liên thời gian; Cấp độ giữa các cá nhân (Between-person Level 2) cho phép các hệ số tự hồi quy (autoregressive slope $\\phi_i$) và phương sai phần dư dao động ngẫu nhiên (random slopes/variances), được giải thích bởi các đặc tính nhân khẩu học hoặc tính cách tĩnh của cá nhân. Ước lượng thông qua thuật toán Bayes Gibbs Sampler.",
+      "benchmarks": "Chuẩn mực phân tích tâm lý học và y học hành vi số chiều cao: (1) Cần số lượng mốc đo lường thời gian $T \\ge 30-50$ cho mỗi đối tượng; (2) Kiểm tra tính dừng của chuỗi (stationarity check: $|\\phi_i| < 1$); (3) Xử lý khuyết tật khoảng cách thời gian không đều (unequal time intervals) bằng mô hình thời gian liên tục CT-DSEM; (4) Đánh giá hội tụ qua chỉ số PSR (Potential Scale Reduction factor $< 1.05$).",
+      "pitfalls": "Bỏ qua xu hướng dài hạn (trends) hoặc tính chu kỳ sinh học trong ngày gây ra hiện tượng tự tương quan giả tạo; áp dụng DSEM cho dữ liệu bảng truyền thống có số mốc thời gian quá ít ($T < 10$).",
+      "apa_reference": "Asparouhov, T., Hamaker, E. L., & Muthén, B. (2018). Dynamic structural equation models. Structural Equation Modeling: A Multidisciplinary Journal, 25(3), 359–388. https://doi.org/10.1080/10705511.2017.1406803",
+      "is_flagship": true
     },
     {
       "id": "ecological-fallacy",
       "term": "Ecological Fallacy",
-      "vietnamese": "Ngụy biện Sinh thái",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodological Fallacies"
+      "vietnamese": "Ngụy biện sinh thái (Ngụy biện cấp độ gộp)",
+      "vietnamese_variants": [
+        "Sai lầm suy diễn sinh thái",
+        "Thiên lệch suy diễn từ tổng thể sang cá thể"
       ],
-      "core_definition": "Rút ra kết luận về các cá nhân dựa trên phân tích tương quan ở cấp độ nhóm/quốc gia.",
-      "seminal_citation": "Robinson (1950)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Methodological Fallacies & Epidemiology",
+        "Sociology"
+      ],
+      "core_definition": "Ecological Fallacy (được William S. Robinson chỉ ra một cách kinh điển năm 1950) là một sai lầm suy luận phương pháp luận và thống kê nghiêm trọng, xảy ra khi nhà nghiên cứu rút ra các kết luận nhân quả hoặc tương quan về hành vi của các cá thể (individuals) dựa trên dữ liệu thống kê tổng hợp ở cấp độ nhóm hoặc vùng địa lý (aggregate/ecological level).",
+      "seminal_citation": "Robinson, W. S. (1950). Ecological correlations and the behavior of individuals. American Sociological Review, 15(3), 351-357.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Ecological Fallacy according to Robinson (1950).",
       "domain_tags_en": [
         "Methodological Fallacies"
-      ]
+      ],
+      "category": "Methodological Fallacies & Epidemiology",
+      "operational_mechanism": "Robinson (1950) đã chứng minh bằng toán học rằng hệ số tương quan giữa hai biến số ở cấp độ vùng/quần thể ($r_{vung}$) hoàn toàn có thể mang dấu dương rất mạnh, trong khi hệ số tương quan giữa chính hai biến đó ở cấp độ cá nhân ($r_{ca\\_nhan}$) lại bằng 0 hoặc mang dấu âm. Sự khác biệt này phát sinh do hiện tượng phân nhóm không ngẫu nhiên (grouping effects) và các biến nhiễu cấp độ vĩ mô chi phối dữ liệu gộp.",
+      "benchmarks": "Chuẩn mực suy diễn khoa học xã hội và dịch tễ học: (1) Tuyệt đối không sử dụng dữ liệu cấp tỉnh, bang hoặc quốc gia để khẳng định động cơ tâm lý cá nhân; (2) Khi bắt buộc phải làm việc với dữ liệu đa tầng, phải áp dụng Mô hình Đa cấp (Multilevel Modeling - HLM) để phân rã rành mạch hiệu ứng cấp độ 1 (cá thể) và hiệu ứng cấp độ 2 (nhóm/vùng); (3) Sử dụng phương pháp suy diễn sinh thái của Gary King (King's EI) khi muốn ước lượng thông số vi mô từ dữ liệu vĩ mô.",
+      "pitfalls": "Lấy dữ liệu tỷ lệ cử tri bỏ phiếu theo bang kết hợp với thu nhập bình quân của bang để kết luận người giàu thích bỏ phiếu cho đảng nào; kết luận đó có thể sai lệch 180 độ so với hành vi thực tế của từng cử tri cá thể.",
+      "apa_reference": "Robinson, W. S. (1950). Ecological correlations and the behavior of individuals. American Sociological Review, 15(3), 351–357. https://doi.org/10.2307/2087176",
+      "is_flagship": true
     },
     {
       "id": "ecological-validity",
@@ -20737,58 +20905,87 @@
     {
       "id": "effect-coding--1-0-1",
       "term": "Effect Coding (-1, 0, 1)",
-      "vietnamese": "Mã hóa Hiệu ứng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Regression Modeling"
+      "vietnamese": "Mã hóa hiệu ứng (-1, 0, 1)",
+      "vietnamese_variants": [
+        "Mã hóa độ lệch",
+        "Quy ước mã hóa hiệu ứng trung bình OLS"
       ],
-      "core_definition": "Mã hóa biến phân loại trong đó nhóm tham chiếu nhận giá trị -1; hệ số so sánh với trung bình chung.",
-      "seminal_citation": "Cohen et al. (2003)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Regression Modeling & Applied Statistics",
+        "Econometrics"
+      ],
+      "core_definition": "Effect Coding (còn gọi là Deviation Coding) là một phương pháp mã hóa biến định danh (categorical variable) trong mô hình hồi quy tuyến tính OLS, trong đó thay vì so sánh từng nhóm với một nhóm đối chiếu cơ sở như mã hóa Dummy (0, 1), Effect Coding gán mã (-1, 0, 1) để so sánh giá trị trung bình của mỗi nhóm với Giá trị trung bình chung của toàn bộ các nhóm (Grand Mean).",
+      "seminal_citation": "Cohen, J., Cohen, P., West, S. G., & Aiken, L. S. (2003). Applied multiple regression/correlation analysis for the behavioral sciences (3rd ed.). Lawrence Erlbaum Associates.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Effect Coding (-1, 0, 1) according to Cohen et al. (2003).",
       "domain_tags_en": [
         "Regression Modeling"
-      ]
+      ],
+      "category": "Regression Modeling & Applied Statistics",
+      "operational_mechanism": "Với một biến có $k$ nhóm, ta tạo ra $k - 1$ biến chỉ báo: Nhóm được quan tâm được gán giá trị 1; Nhóm cơ sở (nhóm tham chiếu cuối cùng) được gán giá trị -1 cho tất cả các biến chỉ báo; Các nhóm còn lại gán giá trị 0. Ý nghĩa toán học của các hệ số hồi quy: Hệ số chặn $\\beta_0$ đại diện cho trung bình chung của toàn bộ mẫu (Grand Mean); Hệ số $\\beta_i$ phản ánh độ lệch của trung bình nhóm $i$ so với trung bình chung ($\\mu_i - \\bar{\\mu}$).",
+      "benchmarks": "Ứng dụng chuyên sâu trong mô hình ANOVA và hồi quy đa biến: (1) Rất thuận lợi khi kiểm tra các hiệu ứng tương tác (Interaction effects / Moderation), vì nó ngăn ngừa hiện tượng đa cộng tuyến giữa biến chính và biến tích số mà không cần chuẩn hóa z-score; (2) Giúp việc giải thích các hiệu ứng chính (main effects) trở nên độc lập và tương đương với phân tích phương sai chuẩn tắc.",
+      "pitfalls": "Nhầm lẫn việc giải thích hệ số của Effect Coding với Dummy Coding; diễn giải sai hệ số chặn $\\beta_0$ là trung bình của nhóm tham chiếu thay vì Grand Mean.",
+      "apa_reference": "Cohen, J., Cohen, P., West, S. G., & Aiken, L. S. (2003). Applied multiple regression/correlation analysis for the behavioral sciences (3rd ed.). Lawrence Erlbaum Associates.",
+      "is_flagship": true
     },
     {
       "id": "effect-size",
-      "term": "Effect size",
-      "vietnamese": "Độ lớn hiệu ứng — Chỉ số đo lường cường độ thực tế của mối quan hệ, không phụ thuộc vào quy mô cỡ mẫu lớn hay nhỏ.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Effect Size",
+      "vietnamese": "Cỡ tác động",
+      "vietnamese_variants": [
+        "Độ lớn hiệu ứng",
+        "Quy mô ảnh hưởng thực nghiệm"
       ],
-      "core_definition": "Độ lớn hiệu ứng — Chỉ số đo lường cường độ thực tế của mối quan hệ, không phụ thuộc vào quy mô cỡ mẫu lớn hay nhỏ.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Quantitative Methods & Statistical Inference",
+        "Meta-Analysis"
+      ],
+      "core_definition": "Effect Size là một chỉ số định lượng đo lường độ lớn, cường độ hoặc quy mô thực chất của một mối quan hệ giữa các biến số hoặc sự khác biệt giữa các nhóm thực nghiệm, hoàn toàn độc lập với kích thước mẫu (sample size), cung cấp thước đo ý nghĩa thực tiễn (practical significance) bổ trợ cho ý nghĩa thống kê (p-value).",
+      "seminal_citation": "Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Lawrence Erlbaum Associates.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #847, #848",
       "core_definition_en": "Academic definition of Effect size according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Quantitative Methods & Statistical Inference",
+      "operational_mechanism": "Được phân loại thành ba họ chỉ số chính theo Cohen: (1) Họ chênh lệch trung bình chuẩn hóa ($d$-family): Cohen's $d$, Hedges' $g$, Glass's $\\Delta$ (đo lường sự khác biệt trung bình theo độ lệch chuẩn); (2) Họ tương quan và phương sai giải thích ($r$-family): Pearson's $r$, Hệ số xác định $R^2$, Eta bình phương $\\eta^2$, Omega bình phương $\\omega^2$; (3) Họ tỷ số cơ hội cho biến phân loại: Odds Ratio (OR), Relative Risk (RR).",
+      "benchmarks": "Quy chuẩn APA 7th và phân loại kinh điển của Cohen (1988): Bắt buộc phải báo cáo Effect Size cho mọi kiểm định thống kê chính yếu. Ngưỡng tham chiếu: Với Cohen's $d$: Nhỏ ($d = 0.20$), Trung bình ($d = 0.50$), Lớn ($d = 0.80$); Với $r$: Nhỏ ($r = 0.10$), Trung bình ($r = 0.30$), Lớn ($r = 0.50$); Với $R^2$: Nhỏ (0.02), Trung bình (0.13), Lớn (0.26).",
+      "pitfalls": "Chỉ dựa vào p-value ($p < 0.05$) để tuyên bố một phát hiện mang tính đột phá trong khi cỡ tác động cực kỳ nhỏ bé và vô nghĩa trên thực tế (kết quả của việc cỡ mẫu quá lớn); áp dụng máy móc các ngưỡng cắt của Cohen mà không đối chiếu với bối cảnh đặc thù của chuyên ngành.",
+      "apa_reference": "Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Lawrence Erlbaum Associates. https://doi.org/10.4324/9780203771587",
+      "is_flagship": true
     },
     {
       "id": "effect-size-f-2",
-      "term": "Effect size ( f 2 )",
-      "vietnamese": "Kích thước tác động của biến độc lập lên biến phụ thuộc (0.02 nhỏ, 0.15 vừa, 0.35 lớn).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Effect Size (f^2)",
+      "vietnamese": "Cỡ tác động f bình phương (Cohen's f^2)",
+      "vietnamese_variants": [
+        "Chỉ số tác động f2 trong hồi quy và PLS-SEM",
+        "Độ lớn đóng góp phương sai f^2"
       ],
-      "core_definition": "Kích thước tác động của biến độc lập lên biến phụ thuộc (0.02 nhỏ, 0.15 vừa, 0.35 lớn).",
-      "seminal_citation": "Henseler et al. (2015)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Structural Equation Modeling & Regression Diagnostics",
+        "PLS-SEM"
+      ],
+      "core_definition": "Cohen's f^2 là thước đo cỡ tác động chuẩn tắc đo lường mức độ đóng góp độc lập của một biến độc lập cụ thể vào năng lực giải thích phương sai ($R^2$) của biến phụ thuộc trong mô hình hồi quy đa biến hoặc mô hình cấu trúc PLS-SEM khi biến đó được đưa vào hoặc loại bỏ khỏi mô hình.",
+      "seminal_citation": "Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Lawrence Erlbaum Associates.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #846, #848",
       "core_definition_en": "Academic definition of Effect size ( f 2 ) according to Henseler et al. (2015).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Structural Equation Modeling & Regression Diagnostics",
+      "operational_mechanism": "Công thức toán học tính toán: $f^2 = \\frac{R_{included}^2 - R_{excluded}^2}{1 - R_{included}^2}$, trong đó $R_{included}^2$ là hệ số xác định khi mô hình có mặt biến nghiên cứu, và $R_{excluded}^2$ là hệ số xác định khi loại bỏ biến nghiên cứu đó ra khỏi phương trình cấu trúc trong khi vẫn giữ nguyên toàn bộ các biến độc lập khác.",
+      "benchmarks": "Ngưỡng đánh giá chuẩn tắc theo Hair et al. (2022) và Cohen (1988): (1) $f^2 < 0.02$: Không có tác động đáng kể (no effect); (2) $0.02 \\le f^2 < 0.15$: Cỡ tác động nhỏ (small effect); (3) $0.15 \\le f^2 < 0.35$: Cỡ tác động trung bình (medium effect); (4) $f^2 \\ge 0.35$: Cỡ tác động lớn (large effect). Bắt buộc phải báo cáo trong bảng đánh giá mô hình cấu trúc PLS-SEM.",
+      "pitfalls": "Bỏ qua việc báo cáo $f^2$ và chỉ báo cáo hệ số đường dẫn $\\beta$; một hệ số đường dẫn có ý nghĩa thống kê ($p < 0.001$) nhưng có thể có $f^2 < 0.02$, nghĩa là đóng góp thực tế của nó vào việc giải thích hiện tượng là không đáng kể.",
+      "apa_reference": "Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Lawrence Erlbaum Associates. https://doi.org/10.4324/9780203771587",
+      "is_flagship": true
     },
     {
       "id": "effect-size-f2",
@@ -20820,20 +21017,30 @@
     {
       "id": "effect-size-d-in-nca",
       "term": "Effect Size d in NCA",
-      "vietnamese": "Kích thước Hiệu ứng d trong NCA",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Metrics"
+      "vietnamese": "Cỡ tác động d trong Phân tích Điều kiện Cần (NCA)",
+      "vietnamese_variants": [
+        "Hệ số cỡ tác động trần d của Dul",
+        "Độ lớn điều kiện cần NCA"
       ],
-      "core_definition": "Tỷ lệ diện tích vùng trần trên diện tích tổng thể; d > 0.1 là hiệu ứng có ý nghĩa thực tiễn.",
-      "seminal_citation": "Dul (2016)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Necessary Condition Analysis (NCA) & Causal Metrics",
+        "Comparative Methods"
+      ],
+      "core_definition": "Effect Size d in NCA (do Jan Dul phát triển) là chỉ số cốt lõi trong Phân tích Điều kiện Cần (Necessary Condition Analysis), đo lường mức độ mà một điều kiện $X$ hạn chế kết quả $Y$. Chỉ số biểu thị tỷ lệ diện tích của vùng trần (ceiling zone - khoảng không gian trống phía trên đường trần không có quan sát nào tồn tại) so với tổng phạm vi kết quả khả dĩ của biểu đồ phân tán.",
+      "seminal_citation": "Dul, J. (2016). Necessary condition analysis (NCA): Logic and methodology of 'necessary but not sufficient' causality. Organizational Research Methods, 19(1), 10-52.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Effect Size d in NCA according to Dul (2016).",
       "domain_tags_en": [
         "Causal Metrics"
-      ]
+      ],
+      "category": "Necessary Condition Analysis (NCA) & Causal Metrics",
+      "operational_mechanism": "Công thức toán học: $d = \\frac{C}{S}$, trong đó $C$ là diện tích vùng trần (ceiling zone) nằm phía trên đường trần (ceiling line CE-FDH hoặc CR-FDH), và $S$ là phạm vi kết quả khả dĩ (scope) được xác định bởi $(X_{max} - X_{min}) \\times (Y_{max} - Y_{min})$. Giá trị $d$ dao động từ 0 đến 1. Nếu $d = 0$, điều kiện $X$ không hề ràng buộc $Y$; giá trị $d$ càng lớn, $X$ càng là nút thắt cổ chai khắt khe đối với sự xuất hiện của $Y$.",
+      "benchmarks": "Quy chuẩn đánh giá của Dul (2016, 2020): (1) $0 < d < 0.1$: Cỡ tác động rất nhỏ; (2) $0.1 \\le d < 0.3$: Cỡ tác động trung bình; (3) $0.3 \\le d < 0.5$: Cỡ tác động lớn; (4) $d \\ge 0.5$: Cỡ tác động rất lớn. Để kết luận một điều kiện là 'cần thiết', $d$ phải $\\ge 0.10$ và kiểm định hoán vị Monte Carlo ngẫu nhiên phải có $p < 0.05$.",
+      "pitfalls": "Đánh đồng cỡ tác động $d$ trong NCA với cỡ tác động tương quan $r$ hoặc $d$ của Cohen (NCA đo lường sự ràng buộc trần chứ không đo lường sự đồng biến thiên trung bình); sử dụng phạm vi dữ liệu quan sát thô thay vì phạm vi lý thuyết khi xác định Scope $S$ làm sai lệch giá trị $d$.",
+      "apa_reference": "Dul, J. (2016). Necessary condition analysis (NCA): Logic and methodology of 'necessary but not sufficient' causality. Organizational Research Methods, 19(1), 10–52. https://doi.org/10.1177/1094428115584050",
+      "is_flagship": true
     },
     {
       "id": "effect-size-interpretation-cohens-d-eta-squared",
@@ -20868,20 +21075,30 @@
     {
       "id": "efficient-market-hypothesis-emh",
       "term": "Efficient Market Hypothesis (EMH)",
-      "vietnamese": "Giả thuyết Thị trường Hiệu quả EMH",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Financial Economics"
+      "vietnamese": "Giả thuyết thị trường hiệu quả (EMH)",
+      "vietnamese_variants": [
+        "Lý thuyết thị trường hiệu quả Fama",
+        "Mô hình định giá tài chính hiệu quả"
       ],
-      "core_definition": "Giá tài sản phản ánh đầy đủ mọi thông tin sẵn có: Thể yếu, Thể bán mạnh và Thể mạnh.",
-      "seminal_citation": "Fama (1970)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Financial Economics & Empirical Finance",
+        "Econometrics"
+      ],
+      "core_definition": "Efficient Market Hypothesis (EMH) là nền tảng lý thuyết tài chính kinh điển do Eugene F. Fama khởi xướng (Giải Nobel Kinh tế 2013), khẳng định rằng giá cả của các tài sản tài chính trên thị trường phản ánh đầy đủ, tức thì và không thiên lệch toàn bộ các thông tin sẵn có, khiến các nhà đầu tư không thể liên tục tạo ra lợi nhuận bất thường (abnormal returns) vượt trội hơn thị trường trừ khi chấp nhận mức rủi ro cao hơn.",
+      "seminal_citation": "Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. The Journal of Finance, 25(2), 383-417.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Efficient Market Hypothesis (EMH) according to Fama (1970).",
       "domain_tags_en": [
         "Financial Economics"
-      ]
+      ],
+      "category": "Financial Economics & Empirical Finance",
+      "operational_mechanism": "Fama phân loại thị trường hiệu quả thành 3 cấp độ: (1) Hiệu quả dạng yếu (Weak-form): Giá đã phản ánh mọi thông tin về giá và khối lượng giao dịch lịch sử (phân tích kỹ thuật vô hiệu); (2) Hiệu quả dạng bán mạnh (Semi-strong form): Giá phản ánh tức thì toàn bộ thông tin công khai như báo cáo tài chính, tin tức chia cổ tức (phân tích cơ bản vô hiệu); (3) Hiệu quả dạng mạnh (Strong-form): Giá phản ánh cả thông tin nội bộ (insider information). Về mặt kinh tế lượng, kiểm định EMH luôn gắn liền với Vấn đề giả thuyết kép (Joint Hypothesis Problem): Mọi kiểm định hiệu quả thị trường đồng thời là kiểm định mô hình định giá tài sản cân bằng (như CAPM hay Fama-French).",
+      "benchmarks": "Chuẩn mực nghiên cứu tài chính thực nghiệm (JF, JFE, RFS): (1) Phân tích sự kiện (Event Study Methodology) đo lường Lợi nhuận bất thường tích lũy (CAR); (2) Kiểm định bước ngẫu nhiên (Random Walk test / Variance Ratio test); (3) Phân tích các dị biệt tài chính (financial anomalies như momentum, value, size effects).",
+      "pitfalls": "Bỏ qua vấn đề giả thuyết kép: khi phát hiện lợi nhuận bất thường, nhà nghiên cứu không thể khẳng định thị trường không hiệu quả hay do mô hình định giá tài sản được sử dụng bị sai; bỏ qua các phát hiện của Tài chính học hành vi (Behavioral Finance) về giới hạn chênh lệch giá (limits to arbitrage).",
+      "apa_reference": "Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. The Journal of Finance, 25(2), 383–417. https://doi.org/10.2307/2325486",
+      "is_flagship": true
     },
     {
       "id": "egarch-exponential-garch",
@@ -20914,20 +21131,30 @@
     {
       "id": "eggers-linear-regression-test",
       "term": "Egger's Linear Regression Test",
-      "vietnamese": "Kiểm định Hồi quy Tuyến tính Egger",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Meta-Analysis Diagnostics"
+      "vietnamese": "Kiểm định hồi quy tuyến tính Egger",
+      "vietnamese_variants": [
+        "Kiểm định bất đối xứng phễu Egger",
+        "Kiểm định định lượng thiên lệch xuất bản Egger"
       ],
-      "core_definition": "Kiểm định thống kê phát hiện tính bất đối xứng của Funnel Plot do thiên lệch xuất bản.",
-      "seminal_citation": "Egger et al. (1997)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Meta-Analysis Diagnostics & Biostatistics",
+        "Systematic Reviews"
+      ],
+      "core_definition": "Egger's Linear Regression Test là một kiểm định thống kê tham số nghiêm ngặt do Matthias Egger và cộng sự phát triển (1997) để định lượng mức độ bất đối xứng của biểu đồ phễu (funnel plot asymmetry) trong phân tích tổng hợp (meta-analysis), phát hiện sự hiện diện của thiên lệch xuất bản (publication bias) và hiệu ứng nghiên cứu quy mô nhỏ (small-study effects).",
+      "seminal_citation": "Egger, M., Smith, G. D., Schneider, M., & Minder, C. (1997). Bias in meta-analysis detected by a simple, graphical test. BMJ, 315(7109), 629-634.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Egger's Linear Regression Test according to Egger et al. (1997).",
       "domain_tags_en": [
         "Meta-Analysis Diagnostics"
-      ]
+      ],
+      "category": "Meta-Analysis Diagnostics & Biostatistics",
+      "operational_mechanism": "Mô hình hồi quy tuyến tính OLS chuẩn hóa: $\\frac{ES_i}{SE_i} = \\alpha + \\beta \\left( \\frac{1}{SE_i} \\right) + \\varepsilon_i$, trong đó $ES_i$ là cỡ tác động của nghiên cứu thứ $i$ và $SE_i$ là sai số chuẩn tương ứng. Biến phụ thuộc là cỡ tác động chuẩn hóa (standardized effect), biến độc lập là độ chính xác (precision, nghịch đảo của sai số chuẩn). Nếu biểu đồ phễu hoàn toàn đối xứng (không có thiên lệch), đường hồi quy sẽ đi qua gốc tọa độ ($H_0: \\alpha = 0$). Nếu hệ số chặn $\\alpha$ khác biệt có ý nghĩa thống kê so với 0 ($p < 0.05$ hoặc $p < 0.10$), sự bất đối xứng phễu được xác nhận.",
+      "benchmarks": "Chuẩn mực báo cáo phân tích tổng hợp: (1) Chỉ nên thực hiện khi số lượng nghiên cứu độc lập $k \\ge 10$; (2) Vì công suất thống kê của kiểm định có thể thấp khi số nghiên cứu ít, mức ý nghĩa $\\alpha = 0.10$ thường được áp dụng làm ngưỡng phát hiện; (3) Báo cáo giá trị hệ số chặn, khoảng tin cậy 95% và p-value kèm biểu đồ scatterplot Egger.",
+      "pitfalls": "Áp dụng kiểm định Egger khi $k < 10$ dẫn đến sai lầm loại II; kiểm định có thể đưa ra kết quả dương tính giả khi cỡ tác động là tỷ số chênh (Odds Ratio) và có sự can thiệp của tính không đồng nhất thực sự (trong trường hợp này khuyến nghị dùng Peters test hoặc Harbord test).",
+      "apa_reference": "Egger, M., Smith, G. D., Schneider, M., & Minder, C. (1997). Bias in meta-analysis detected by a simple, graphical test. BMJ, 315(7109), 629–634. https://doi.org/10.1136/bmj.315.7109.629",
+      "is_flagship": true
     },
     {
       "id": "eggers-regression-test",
@@ -20963,75 +21190,114 @@
       "id": "eigenfactor-score",
       "term": "Eigenfactor Score",
       "vietnamese": "Điểm số Eigenfactor",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scientometrics"
+      "vietnamese_variants": [
+        "Chỉ số tầm ảnh hưởng tạp chí Eigenfactor",
+        "Thước đo mạng lưới trích dẫn Eigenfactor"
       ],
-      "core_definition": "Đo lường tầm ảnh hưởng toàn cầu của tạp chí dựa trên cấu trúc liên kết mạng lưới trích dẫn.",
-      "seminal_citation": "Bergstrom (2007)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Scientometrics & Academic Evaluation",
+        "Bibliometrics"
+      ],
+      "core_definition": "Eigenfactor Score là một thước đo trắc lượng thư mục khoa học cao cấp do Carl Bergstrom và Jevin West tại Đại học Washington phát triển, đo lường tổng tầm ảnh hưởng khoa học thực tế của một tạp chí học thuật dựa trên phân tích mạng lưới trích dẫn lặp (iterative network citation analysis tương tự thuật toán PageRank của Google), tính đến chất lượng và uy tín của các tạp chí trích dẫn.",
+      "seminal_citation": "Bergstrom, C. T., West, J. D., & Wiseman, M. A. (2008). The Eigenfactor™ metrics. The Journal of Neuroscience, 28(45), 11433-11434.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Eigenfactor Score according to Bergstrom (2007).",
       "domain_tags_en": [
         "Scientometrics"
-      ]
+      ],
+      "category": "Scientometrics & Academic Evaluation",
+      "operational_mechanism": "Eigenfactor mô phỏng hành vi của một 'nhà nghiên cứu ngẫu nhiên' di chuyển vĩnh viễn trên mạng lưới các bài báo khoa học bằng cách bấm vào các liên kết tài liệu tham khảo: (1) Một trích dẫn từ một tạp chí danh giá hàng đầu (như Nature, Science, QJE) có trọng số cao hơn gấp nhiều lần một trích dẫn từ một tạp chí ít người đọc; (2) Loại bỏ hoàn toàn các trích dẫn tự thân của tạp chí (journal self-citations); (3) Chuẩn hóa theo thời gian trích dẫn 5 năm và chuẩn hóa tổng số điểm của toàn bộ các tạp chí trong Journal Citation Reports (JCR) bằng 100.",
+      "benchmarks": "Đánh giá uy tín tạp chí học thuật quốc tế: (1) Điểm số Eigenfactor phản ánh tổng tầm ảnh hưởng gộp (tương quan với quy mô số lượng bài xuất bản); (2) Kết hợp với Article Influence Score (AIS - phản ánh ảnh hưởng trung bình trên mỗi bài báo, tương tự hệ số tác động Impact Factor nhưng không bị thổi phồng bởi trích dẫn tự thân); (3) AIS > 1.00 biểu thị bài báo trên tạp chí đó có tầm ảnh hưởng cao hơn mức bình quân thế giới.",
+      "pitfalls": "So sánh điểm số Eigenfactor thô giữa các ngành khác nhau mà không chuẩn hóa văn hóa trích dẫn; nhầm lẫn giữa Eigenfactor (tổng ảnh hưởng gộp) với AIS (ảnh hưởng trung bình trên từng bài).",
+      "apa_reference": "Bergstrom, C. T., West, J. D., & Wiseman, M. A. (2008). The Eigenfactor™ metrics. The Journal of Neuroscience, 28(45), 11433–11434. https://doi.org/10.1523/JNEUROSCI.0003-08.2008",
+      "is_flagship": true
     },
     {
       "id": "eigenvalue-greater-than-one-rule",
       "term": "Eigenvalue-Greater-Than-One Rule",
-      "vietnamese": "Quy tắc Giá trị Riêng Lớn hơn 1",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Factor Analysis"
+      "vietnamese": "Quy tắc giá trị riêng lớn hơn một (Tiêu chuẩn Kaiser)",
+      "vietnamese_variants": [
+        "Tiêu chuẩn Kaiser-Guttman",
+        "Quy tắc Eigenvalue > 1 trong phân tích nhân tố"
       ],
-      "core_definition": "Tiêu chuẩn Kaiser giữ lại các nhân tố có eigenvalue >= 1 trong EFA.",
-      "seminal_citation": "Kaiser (1960)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Factor Analysis & Psychometrics",
+        "Multivariate Statistics"
+      ],
+      "core_definition": "Eigenvalue-Greater-Than-One Rule (còn gọi là Tiêu chuẩn Kaiser-Guttman) là quy tắc heuristics kinh điển và phổ biến nhất trong phân tích nhân tố khám phá (EFA) và phân tích thành phần chính (PCA), quy định rằng chỉ những nhân tố hoặc thành phần nào có giá trị riêng (eigenvalue, $\\lambda$) lớn hơn 1.0 mới được giữ lại trong mô hình trích xuất.",
+      "seminal_citation": "Kaiser, H. F. (1960). The application of electronic computers to factor analysis. Educational and Psychological Measurement, 20(1), 141-151.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "quy tắc Kaiser (eigenvalue ≥1) không còn được khuyến nghị dùng đơn độc – bổ sung parallel analysis",
       "core_definition_en": "Academic definition of Eigenvalue-Greater-Than-One Rule according to Kaiser (1960).",
       "domain_tags_en": [
         "Factor Analysis"
-      ]
+      ],
+      "category": "Factor Analysis & Psychometrics",
+      "operational_mechanism": "Cơ sở toán học: Trong dữ liệu chuẩn hóa, mỗi biến quan sát ban đầu có phương sai bằng 1.0. Do đó, một nhân tố tiềm ẩn chỉ có ý nghĩa tinh gọn dữ liệu nếu nó giải thích được lượng phương sai tối thiểu tương đương hoặc lớn hơn một biến quan sát đơn lẻ ($\\lambda_j = \\sum_{i=1}^p l_{ij}^2 > 1.0$). Các nhân tố có giá trị riêng nhỏ hơn 1.0 bị coi là chứa ít thông tin hơn một biến ban đầu và bị loại bỏ.",
+      "benchmarks": "Đánh giá trong nghiên cứu đo lường hiện đại: (1) Tuyệt đối không sử dụng đơn độc tiêu chuẩn Kaiser để quyết định số lượng nhân tố; (2) Bắt buộc phải kết hợp với Biểu đồ lắng đọng Catell (Scree Plot) và đặc biệt là Phân tích song song Horn (Horn's Parallel Analysis - tiêu chuẩn vàng chuẩn mực nhất); (3) Đảm bảo tổng phương sai trích xuất (Cumulative Variance Explained) đạt tối thiểu 50% đến 60%.",
+      "pitfalls": "Quy tắc này có xu hướng nghiêm trọng trong việc trích xuất thừa số lượng nhân tố (over-factoring) khi số lượng biến lớn ($p > 30$), hoặc trích xuất thiếu (under-factoring) khi cỡ mẫu nhỏ; giữ lại các nhân tố giả tạo chỉ có giá trị riêng xấp xỉ 1.01.",
+      "apa_reference": "Kaiser, H. F. (1960). The application of electronic computers to factor analysis. Educational and Psychological Measurement, 20(1), 141–151. https://doi.org/10.1177/001316446002000116",
+      "is_flagship": true
     },
     {
       "id": "eigenvector-centrality-in-networks",
       "term": "Eigenvector Centrality in Networks",
-      "vietnamese": "Độ Trung tâm Vectơ riêng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Network Science"
+      "vietnamese": "Độ trung tâm véc-tơ riêng trong mạng lưới",
+      "vietnamese_variants": [
+        "Chỉ số trung tâm Bonacich",
+        "Độ trung tâm lan truyền ảnh hưởng"
       ],
-      "core_definition": "Đo lường tầm ảnh hưởng của một nút dựa trên tầm quan trọng của các nút kết nối với nó.",
-      "seminal_citation": "Bonacich (1972)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Social Network Analysis & Graph Theory",
+        "Computational Social Science"
+      ],
+      "core_definition": "Eigenvector Centrality là một thước đo tầm quan trọng và quyền lực của một nút trong phân tích mạng lưới xã hội (SNA) do Phillip Bonacich đề xuất, dựa trên nguyên lý đệ quy: tầm quan trọng của một nút tỷ lệ thuận với tổng tầm quan trọng của tất cả các nút láng giềng kết nối trực tiếp với nó (kết nối với một nhân vật quyền lực có giá trị cao hơn kết nối với một cá nhân bình thường).",
+      "seminal_citation": "Bonacich, P. (1972). Factoring and weighting approaches to status scores and clique identification. The Journal of Mathematical Sociology, 2(1), 113-120.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Eigenvector Centrality in Networks according to Bonacich (1972).",
       "domain_tags_en": [
         "Network Science"
-      ]
+      ],
+      "category": "Social Network Analysis & Graph Theory",
+      "operational_mechanism": "Công thức toán học trên ma trận kề $A$: $\\lambda x_i = \\sum_{j=1}^N a_{ij} x_j$, viết dưới dạng đại số tuyến tính: $A x = \\lambda x$, trong đó $x$ là véc-tơ riêng (eigenvector) tương ứng với giá trị riêng lớn nhất (principal eigenvalue $\\lambda$) của ma trận kề $A$. Theo định lý Perron-Frobenius, đối với đồ thị vô hướng liên thông, tồn tại duy nhất một giá trị riêng cực đại dương với tất cả các phần tử của véc-tơ riêng đều không âm, đảm bảo tính duy nhất của điểm số trung tâm.",
+      "benchmarks": "Chuẩn mực phân tích mạng lưới xã hội và khoa học dữ liệu: (1) Là cơ sở toán học trực tiếp của thuật toán Google PageRank (áp dụng cho mạng có hướng); (2) Phân biệt rành mạch với Degree Centrality: một nút có ít liên kết nhưng liên kết với các 'ông lớn' vẫn có thể có Eigenvector Centrality rất cao; (3) Báo cáo giá trị chuẩn hóa chia cho độ dài Euclidean của véc-tơ.",
+      "pitfalls": "Không thể áp dụng trực tiếp cho các đồ thị không liên thông hoặc đồ thị có hướng phi chu trình (DAG) mà không bổ sung hệ số làm mịn damping factor; hiểu sai ý nghĩa khi mạng lưới có cấu trúc phân cụm cô lập.",
+      "apa_reference": "Bonacich, P. (1972). Factoring and weighting approaches to status scores and clique identification. The Journal of Mathematical Sociology, 2(1), 113–120. https://doi.org/10.1080/0022250X.1972.9989806",
+      "is_flagship": true
     },
     {
       "id": "elaboration-likelihood-model-elm",
       "term": "Elaboration Likelihood Model (ELM)",
-      "vietnamese": "Mô hình Khả năng Xử lý Chi tiết ELM",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Communication",
-        "Psychology"
+      "vietnamese": "Mô hình khả năng suy ngẫm (ELM)",
+      "vietnamese_variants": [
+        "Mô hình xử lý thuyết phục hai tuyến ELM",
+        "Lý thuyết thuyết phục Petty & Cacioppo"
       ],
-      "core_definition": "Thuyết phục qua Tuyến trung tâm xử lý sâu vs. Tuyến ngoại vi dựa trên tín hiệu bề mặt.",
-      "seminal_citation": "Petty & Cacioppo (1986)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Consumer Behavior & Communication Theory",
+        "Social Psychology"
+      ],
+      "core_definition": "Elaboration Likelihood Model (ELM) là một mô hình lý thuyết tâm lý xã hội và hành vi người tiêu dùng kinh điển do Richard E. Petty và John T. Cacioppo phát triển (1986), giải thích cách thức các thông điệp thuyết phục làm thay đổi thái độ của con người thông qua hai lộ trình xử lý nhận thức khác biệt: Tuyến trung tâm (Central Route) và Tuyến ngoại vi (Peripheral Route).",
+      "seminal_citation": "Petty, R. E., & Cacioppo, J. T. (1986). The elaboration likelihood model of persuasion. In Advances in experimental social psychology (Vol. 19, pp. 123-205). Academic Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Elaboration Likelihood Model (ELM) according to Petty & Cacioppo (1986).",
       "domain_tags_en": [
         "Communication",
         "Psychology"
-      ]
+      ],
+      "category": "Consumer Behavior & Communication Theory",
+      "operational_mechanism": "Xác suất suy ngẫm (Elaboration Likelihood) phụ thuộc vào Động lực (Motivation - mức độ gắn kết cá nhân) và Khả năng xử lý thông tin (Ability - kiến thức nền tảng, không bị phân tâm): (1) Nếu cả Động lực và Khả năng đều cao -> Kích hoạt Tuyến trung tâm: Người tiếp nhận đào sâu phân tích logic, chất lượng luận điểm (argument quality), tạo ra sự thay đổi thái độ bền vững, chống lại phản biện; (2) Nếu thiếu Động lực hoặc Khả năng -> Kích hoạt Tuyến ngoại vi: Người tiếp nhận dựa vào các tín hiệu bề mặt (peripheral cues như ngoại hình hấp dẫn của người phát ngôn, số lượng luận điểm, âm nhạc), tạo ra thái độ tạm thời và dễ thay đổi.",
+      "benchmarks": "Chuẩn mực bài báo Q1 (JCR, JMR, JCP): (1) Thiết kế thực nghiệm giai thừa $2 \\times 2$ (Mức độ gắn kết Cao/Thấp $\\times$ Chất lượng luận điểm Mạnh/Yếu); (2) Bắt buộc phải thực hiện kiểm tra thao tác (manipulation check) đối với cả mức độ suy ngẫm và độ mạnh của luận điểm; (3) Đo lường cả suy nghĩ tích cực/tiêu cực bằng kỹ thuật lập danh sách ý nghĩ (thought-listing technique).",
+      "pitfalls": "Coi hai tuyến là loại trừ lẫn nhau thay vì một chuỗi liên tục (continuum); nhầm lẫn giữa tín hiệu ngoại vi và luận điểm trung tâm (trong một số bối cảnh như quảng cáo mỹ phẩm, vẻ đẹp của người mẫu lại đóng vai trò là bằng chứng trực tiếp cho chất lượng sản phẩm).",
+      "apa_reference": "Petty, R. E., & Cacioppo, J. T. (1986). The elaboration likelihood model of persuasion. In L. Berkowitz (Ed.), Advances in experimental social psychology (Vol. 19, pp. 123–205). Academic Press. https://doi.org/10.1016/S0065-2601(08)60214-2",
+      "is_flagship": true
     },
     {
       "id": "elastic-net-regularization",
@@ -21066,20 +21332,30 @@
     {
       "id": "elite-interviewing-method",
       "term": "Elite Interviewing Method",
-      "vietnamese": "Phương pháp Phỏng vấn Giới Tinh hoa",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Data Collection"
+      "vietnamese": "Phương pháp phỏng vấn giới tinh hoa",
+      "vietnamese_variants": [
+        "Phỏng vấn lãnh đạo cấp cao",
+        "Phỏng vấn đối tượng quyền lực"
       ],
-      "core_definition": "Kỹ thuật tiếp cận, đàm phán và phỏng vấn các nhà lãnh đạo chính trị và CEO cấp cao.",
-      "seminal_citation": "Mikecz (2012), Harvey (2011)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Qualitative Data Collection & Political Science",
+        "Public Policy"
+      ],
+      "core_definition": "Elite Interviewing Method là một phương pháp thu thập dữ liệu định tính chuyên biệt, phỏng vấn các cá nhân nắm giữ vị trí quyền lực, thẩm quyền ra quyết định hoặc địa vị độc quyền về thông tin trong xã hội (như CEO tập đoàn đa quốc gia, chính khách, bộ trưởng, thẩm phán tối cao), đòi hỏi các kỹ năng điều hướng và giao thức tiếp cận hoàn toàn khác biệt so với phỏng vấn đại trà.",
+      "seminal_citation": "Dexter, L. A. (1970). Elite and specialized interviewing. Northwestern University Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Elite Interviewing Method according to Mikecz (2012), Harvey (2011).",
       "domain_tags_en": [
         "Qualitative Data Collection"
-      ]
+      ],
+      "category": "Qualitative Data Collection & Political Science",
+      "operational_mechanism": "Quy trình thực hiện chiến lược: (1) Tiếp cận người gác cổng (gatekeepers) và tạo dựng niềm tin ban đầu bằng cách thể hiện sự am hiểu sâu sắc về thể chế của đối tượng; (2) Sử dụng đề cương phỏng vấn bán cấu trúc mở, linh hoạt cho phép người được phỏng vấn chủ động định hình khung thảo luận thay vì áp đặt câu hỏi cứng nhắc; (3) Áp dụng kỹ thuật truy vấn thăm dò tinh tế (probing) và đối chiếu chéo (cross-checking) để vượt qua các câu trả lời mang tính ngoại giao, quan hệ công chúng (PR speak) hoặc tự bào chữa.",
+      "benchmarks": "Đạt chuẩn nghiên cứu định tính Q1: (1) Báo cáo chiến lược tiếp cận và tỷ lệ nhận lời phỏng vấn minh bạch; (2) Thực hiện nguyên tắc tam giác đạc thông tin (triangulation) nghiêm ngặt với các tài liệu lưu trữ mật hoặc biên bản nội bộ để kiểm chứng lời kể; (3) Cam kết bảo mật danh tính tuyệt đối theo nguyên tắc Chatham House Rule.",
+      "pitfalls": "Bị cuốn theo lời kể mang tính tự tán tụng của nhân vật tinh hoa (going native / elite seduction); không đủ kiến thức chuyên môn sâu khiến cuộc phỏng vấn trở thành buổi hỏi đáp hời hợt; vi phạm các quy tắc đạo đức về tiết lộ bí mật thương mại hoặc an ninh quốc gia.",
+      "apa_reference": "Dexter, L. A. (1970). Elite and specialized interviewing. Northwestern University Press.",
+      "is_flagship": true
     },
     {
       "id": "embedded-mixed-methods-design",
@@ -21125,165 +21401,255 @@
     {
       "id": "emerald-insight",
       "term": "Emerald Insight",
-      "vietnamese": "Cổng Học thuật Emerald Insight",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scholarly Publishing"
+      "vietnamese": "Cơ sở dữ liệu học thuật Emerald Insight",
+      "vietnamese_variants": [
+        "Nhà xuất bản Emerald Publishing",
+        "Hệ thống tạp chí Emerald"
       ],
-      "core_definition": "Nền tảng xuất bản nghiên cứu quản trị kinh doanh, marketing và quản lý thông tin.",
-      "seminal_citation": "Emerald Publishing (2014)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Academic Publishing & Literature Search",
+        "Management Information Systems"
+      ],
+      "core_definition": "Emerald Insight là nền tảng kỹ thuật số và cơ sở dữ liệu học thuật toàn văn uy tín toàn cầu do Emerald Publishing vận hành, chuyên sâu hàng đầu thế giới về các lĩnh vực Quản trị kinh doanh, Quản lý chuỗi cung ứng, Marketing, Khoa học thông tin, Du lịch khách sạn và Giáo dục học, xuất bản hơn 300 tạp chí bình duyệt quốc tế có chỉ số Scopus/WoS cao.",
+      "seminal_citation": "Emerald Publishing. (2023). Emerald insight platform guide. Emerald Publishing Limited.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Emerald Insight according to Emerald Publishing (2014).",
       "domain_tags_en": [
         "Scholarly Publishing"
-      ]
+      ],
+      "category": "Academic Publishing & Literature Search",
+      "operational_mechanism": "Hệ thống hỗ trợ tra cứu học thuật chuyên sâu: (1) Sử dụng công cụ tìm kiếm toán tử Boolean kết hợp phân nhánh trường (tiêu đề, tóm tắt, từ khóa); (2) Tích hợp chỉ số liên kết trích dẫn Crossref và nhận diện tác giả qua mã ORCID; (3) Hỗ trợ xuất đồng loạt dữ liệu thư mục định dạng RIS/BibTeX sang các phần mềm quản lý trích dẫn (EndNote, Zotero, Mendeley); (4) Cung cấp các nghiên cứu tình huống thực tiễn (Emerald Emerging Markets Case Studies) phục vụ đào tạo tiến sĩ và MBA.",
+      "benchmarks": "Tiêu chuẩn khai thác tài liệu cho đề cương tiến sĩ: (1) Nguồn tài nguyên trọng yếu khi tổng thuật y văn các ngành Quản trị chiến lược, Hành vi tổ chức và Quản lý chất lượng; (2) Đánh giá tạp chí qua chỉ số CiteScore, Impact Factor và phân hạng ABS/ABDC (nhiều tạp chí Emerald nằm trong nhóm ABDC Rank A/A*); (3) Tải tài liệu toàn văn bản quyền thông qua tài khoản thể chế của các trường đại học.",
+      "pitfalls": "Bỏ qua các tạp chí chuyên ngành chất lượng cao của Emerald vì chỉ tập trung vào các nhà xuất bản lớn khác (như Elsevier hay Springer); không kiểm tra phân hạng cụ thể của từng tạp chí trên Scopus (Q1 vs. Q2/Q3).",
+      "apa_reference": "Emerald Publishing. (2023). Emerald insight platform guide: Discover journals, books and case studies. Emerald Publishing Limited. https://www.emerald.com/insight/",
+      "is_flagship": true
     },
     {
       "id": "emerging-sources-citation-index-esci",
       "term": "Emerging Sources Citation Index (ESCI)",
-      "vietnamese": "Chỉ mục Nguồn Trích dẫn Mới nổi ESCI",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Academic Indexing"
+      "vietnamese": "Chỉ số trích dẫn nguồn mới nổi (ESCI)",
+      "vietnamese_variants": [
+        "Cơ sở dữ liệu ESCI Web of Science",
+        "Tạp chí WoS nguồn mới nổi"
       ],
-      "core_definition": "Tập hợp các tạp chí khoa học chất lượng cao đang trong quá trình xét duyệt nâng hạng SCIE/SSCI.",
-      "seminal_citation": "Clarivate (2015)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Scientometrics & Academic Publishing",
+        "Bibliometrics"
+      ],
+      "core_definition": "Emerging Sources Citation Index (ESCI) là một ấn bản cơ sở dữ liệu học thuật trong bộ sưu tập cốt lõi của Web of Science (Clarivate Analytics) được thành lập năm 2015, lập chỉ mục cho các tạp chí học thuật bình duyệt chất lượng cao đáp ứng đầy đủ các tiêu chuẩn biên tập khắt khe của WoS và đang trong quá trình theo dõi, đánh giá để xét nâng hạng lên SCIE, SSCI hoặc AHCI.",
+      "seminal_citation": "Clarivate Analytics. (2023). Web of science journal evaluation process and selection criteria. Clarivate.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "ESCI không phải \"đang chờ nâng hạng\"; từ 2023 tạp chí ESCI cũng được cấp JIF",
       "core_definition_en": "Academic definition of Emerging Sources Citation Index (ESCI) according to Clarivate (2015).",
       "domain_tags_en": [
         "Academic Indexing"
-      ]
+      ],
+      "category": "Scientometrics & Academic Publishing",
+      "operational_mechanism": "Quy trình tuyển chọn của Clarivate gồm 24 tiêu chí chất lượng biên tập (bao gồm: quy trình bình duyệt mù đôi, tính liêm chính xuất bản, thành phần ban biên tập quốc tế, sự hiện diện của DOI, tuân thủ đạo đức) và 4 tiêu chí tác động (impact criteria). Tạp chí đạt 24 tiêu chí chất lượng sẽ được gia nhập ESCI; nếu tiếp tục đạt cả 4 tiêu chí tác động, tạp chí sẽ được chuyển lên SCIE/SSCI. Kể từ bản báo cáo JCR năm 2023, tất cả các tạp chí ESCI đều đã chính thức được tính và công bố Hệ số tác động Journal Impact Factor (JIF).",
+      "benchmarks": "Ý nghĩa trong đánh giá khoa học và xét duyệt học hàm/luận án: (1) Được công nhận là tạp chí quốc tế uy tín thuộc Web of Science Core Collection; (2) Nhiều đại học quốc tế và Quỹ Nafosted xếp các tạp chí ESCI có JIF tương đương các tạp chí Q2/Q3 của Scopus; (3) Cung cấp cơ hội xuất bản cho các nghiên cứu thuộc các chuyên ngành mới nổi hoặc các bối cảnh khu vực đặc thù.",
+      "pitfalls": "Lầm tưởng ESCI là danh mục kém chất lượng hoặc tương đương tạp chí săn mồi (predatory journals); nhầm lẫn giữa việc một tạp chí nằm trong Web of Science Core Collection (ESCI) với việc nằm trong danh mục SSCI truyền thống.",
+      "apa_reference": "Clarivate Analytics. (2023). Web of science journal evaluation process and selection criteria. Clarivate. https://clarivate.com/products/scientific-and-academic-research/research-discovery-and-workflow-solutions/web-of-science/core-collection/editorial-selection-process/",
+      "is_flagship": true
     },
     {
       "id": "emic-vs-etic-perspective",
       "term": "Emic vs. Etic Perspective",
-      "vietnamese": "Góc nhìn Emic",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Ethnography"
+      "vietnamese": "Góc nhìn nội tại (Emic) so với Góc nhìn ngoại tại (Etic)",
+      "vietnamese_variants": [
+        "Góc nhìn người trong cuộc và người ngoài cuộc",
+        "Lăng kính Emic và Etic trong nhân học"
       ],
-      "core_definition": "Từ bên trong, theo thế giới quan của người bản địa) vs. Etic (Từ bên ngoài, theo khung lý thuyết khoa học.",
-      "seminal_citation": "Pike (1967)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Ethnography & Cross-Cultural Research",
+        "Anthropology"
+      ],
+      "core_definition": "Emic vs. Etic Perspective là cặp phạm trù phương pháp luận nền tảng do nhà ngôn ngữ học Kenneth Pike sáng tạo (bắt nguồn từ phonemic và phonetic) và được nhà nhân học Marvin Harris phổ biến. Góc nhìn Emic (người trong cuộc) tiếp cận hiện tượng từ bên trong, mô tả văn hóa bằng ngôn ngữ, ý niệm, phạm trù nhận thức và hệ giá trị của chính các thành viên bản địa; ngược lại, Góc nhìn Etic (người ngoài cuộc) tiếp cận hiện tượng từ bên ngoài, sử dụng các khung lý thuyết, thang đo và tiêu chuẩn khách quan phổ quát của cộng đồng khoa học.",
+      "seminal_citation": "Pike, K. L. (1967). Language in relation to a unified theory of the structure of human behavior (2nd ed.). Mouton & Co.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Emic vs. Etic Perspective according to Pike (1967).",
       "domain_tags_en": [
         "Ethnography"
-      ]
+      ],
+      "category": "Ethnography & Cross-Cultural Research",
+      "operational_mechanism": "Sự kết hợp biện chứng trong nghiên cứu điền dã dân tộc học và kinh doanh quốc tế: (1) Giai đoạn Emic: Nhà nghiên cứu 'nhúng mình' (ethnographic immersion), quan sát tham dự và phỏng vấn sâu để nắm bắt 'thế giới quan bản địa' (native's point of view) mà không áp đặt định kiến; (2) Giai đoạn Etic: Trừu tượng hóa các quan sát cụ thể thành các khái niệm lý thuyết khoa học có thể so sánh xuyên văn hóa (ví dụ: chuyển đổi khái niệm 'mặt mũi/thể diện' trong văn hóa Á Đông thành cấu trúc tâm lý xã hội về tự tôn và danh tiếng).",
+      "benchmarks": "Chuẩn mực bài báo định tính và nghiên cứu liên văn hóa (JMS, JIBS): (1) Phản ánh rõ tính tự phản tư (reflexivity) của nhà nghiên cứu khi di chuyển giữa hai vị thế; (2) Tránh 'chủ nghĩa thực dân học thuật' (áp đặt các thang đo Etic phương Tây vào bối cảnh các nước đang phát triển mà không bản địa hóa); (3) Sử dụng phương pháp Emic để khám phá các cấu trúc mới và dùng Etic để kiểm định tính khái quát hóa.",
+      "pitfalls": "Tuyệt đối hóa góc nhìn Emic dẫn đến việc biến nghiên cứu thành bản ghi chép vụn vặt thiếu sức mạnh giải thích lý thuyết; hoặc ngược lại, áp đặt góc nhìn Etic một cách mù quáng (imposed etic) khiến thang đo bị biến dạng và mất giá trị nội dung.",
+      "apa_reference": "Pike, K. L. (1967). Language in relation to a unified theory of the structure of human behavior (2nd ed.). Mouton & Co. https://doi.org/10.1515/9783111657158",
+      "is_flagship": true
     },
     {
       "id": "emotion-coding",
       "term": "Emotion Coding",
-      "vietnamese": "Mã hóa Cảm xúc",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Coding"
+      "vietnamese": "Mã hóa cảm xúc",
+      "vietnamese_variants": [
+        "Phương pháp mã hóa tâm trạng định tính",
+        "Mã hóa cảm xúc Saldaña"
       ],
-      "core_definition": "Ghi nhận và gắn nhãn các trải nghiệm cảm xúc và cảm xúc nội tâm của người tham gia.",
-      "seminal_citation": "Saldaña (2021)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Qualitative Data Analysis & Affective Methods",
+        "Grounded Theory"
+      ],
+      "core_definition": "Emotion Coding là một phương pháp mã hóa định tính chu kỳ một (first-cycle qualitative coding method) trong cẩm nang của Johnny Saldaña, tập trung dán nhãn, nhận diện và phân loại các cảm xúc, trải nghiệm tình cảm và tâm trạng (vui mừng, lo âu, giận dữ, bất an, hy vọng) do người tham gia nghiên cứu trực tiếp phát biểu hoặc thể hiện ngầm ẩn qua lời kể.",
+      "seminal_citation": "Saldaña, J. (2016). The coding manual for qualitative researchers (3rd ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Emotion Coding according to Saldaña (2021).",
       "domain_tags_en": [
         "Qualitative Coding"
-      ]
+      ],
+      "category": "Qualitative Data Analysis & Affective Methods",
+      "operational_mechanism": "Nhà nghiên cứu đọc kỹ từng dòng văn bản (line-by-line coding) từ các cuộc phỏng vấn, nhật ký hoặc quan sát điền dã: (1) Nhận diện các từ vựng chỉ cảm xúc tường minh (ví dụ: 'tôi cảm thấy kiệt sức và bị phản bội'); (2) Giải mã các biểu hiện phi ngôn ngữ hoặc ẩn dụ cảm xúc được ghi lại trong nhật ký điền dã; (3) Liên kết các mã cảm xúc này với các hành vi, quyết định và bối cảnh thể chế cụ thể để phát hiện chuỗi logic: Bối cảnh -> Cảm xúc phát sinh -> Hành động phản ứng.",
+      "benchmarks": "Đạt chuẩn nghiên cứu định tính hiện đại: (1) Xây dựng sổ tay mã hóa (codebook) cảm xúc với định nghĩa rõ ràng về từng trạng thái cảm xúc để bảo đảm tính nhất quán; (2) Kiểm tra độ đồng thuận liên người mã hóa (Inter-coder reliability); (3) Rất thích hợp cho các nghiên cứu về tâm lý học tổ chức, căng thẳng nghề nghiệp, hành vi người tiêu dùng trong khủng hoảng và chăm sóc y tế.",
+      "pitfalls": "Nhà nghiên cứu phóng chiếu cảm xúc chủ quan của chính mình vào câu chuyện của đối tượng; đơn giản hóa các trạng thái tâm lý phức tạp thành các nhãn nhị phân hời hợt (tích cực/tiêu cực) mà bỏ qua các sắc thái cảm xúc đa tầng.",
+      "apa_reference": "Saldaña, J. (2016). The coding manual for qualitative researchers (3rd ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "emotional-intelligence-model-salovey-mayer",
       "term": "Emotional Intelligence Model (Salovey & Mayer)",
-      "vietnamese": "Mô hình Trí tuệ Cảm xúc",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Psychological Theory"
+      "vietnamese": "Mô hình Trí tuệ cảm xúc Salovey & Mayer (Mô hình năng lực EI)",
+      "vietnamese_variants": [
+        "Mô hình 4 nhánh trí tuệ cảm xúc",
+        "Lý thuyết năng lực cảm xúc Mayer-Salovey-Caruso"
       ],
-      "core_definition": "Năng lực nhận biết, thấu hiểu, sử dụng và quản lý cảm xúc của bản thân và người khác.",
-      "seminal_citation": "Salovey & Mayer (1990)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Psychological Theory & Organizational Behavior",
+        "Psychometrics"
+      ],
+      "core_definition": "Emotional Intelligence Model (Salovey & Mayer, 1990; Mayer et al., 2016) là mô hình lý thuyết trí tuệ cảm xúc dựa trên năng lực nhận thức (ability model of emotional intelligence), định nghĩa trí tuệ cảm xúc là một dạng năng lực tâm thần thực sự bao gồm khả năng nhận biết, tiếp cận, tạo ra và quản lý cảm xúc để thúc đẩy sự phát triển cảm xúc và trí tuệ, đối lập với các mô hình hỗn hợp (mixed models) dựa trên nét tính cách.",
+      "seminal_citation": "Salovey, P., & Mayer, J. D. (1990). Emotional intelligence. Imagination, Cognition and Personality, 9(3), 185-211.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Emotional Intelligence Model (Salovey & Mayer) according to Salovey & Mayer (1990).",
       "domain_tags_en": [
         "Psychological Theory"
-      ]
+      ],
+      "category": "Psychological Theory & Organizational Behavior",
+      "operational_mechanism": "Mô hình được cấu trúc thành 4 nhánh năng lực tâm thần phân cấp từ cơ bản đến phức tạp (Four-Branch Model): (1) Nhận biết cảm xúc (Perceiving Emotion) - nhận biết chính xác cảm xúc trên khuôn mặt, giọng nói và tác phẩm nghệ thuật; (2) Sử dụng cảm xúc để thúc đẩy tư duy (Facilitating Thought) - tận dụng các trạng thái cảm xúc để hỗ trợ giải quyết vấn đề và sáng tạo; (3) Hiểu cảm xúc (Understanding Emotion) - hiểu ngôn ngữ cảm xúc và quy luật biến chuyển giữa các cảm xúc phức tạp; (4) Quản lý cảm xúc (Managing Emotion) - điều hòa cảm xúc của bản thân và người khác để đạt mục tiêu thích ứng.",
+      "benchmarks": "Chuẩn mực nghiên cứu đo lường tâm trắc học: (1) Được đo lường tối ưu bằng bài kiểm tra năng lực khách quan MSCEIT (Mayer-Salovey-Caruso Emotional Intelligence Test) có chấm điểm theo chuẩn đồng thuận chuyên gia thay vì bảng hỏi tự khai (self-report); (2) Đạt giá trị phân biệt rõ rệt với 5 nét tính cách lớn (Big Five) và chỉ số IQ truyền thống; (3) Dự báo có ý nghĩa hiệu quả lãnh đạo và hiệu suất công việc.",
+      "pitfalls": "Sử dụng các bảng hỏi tự đánh giá (như WLEIS hay EQ-i) nhưng lại tuyên bố đang đo lường năng lực trí tuệ cảm xúc theo mô hình Salovey-Mayer; nhầm lẫn giữa sự tự tin về cảm xúc với năng lực xử lý cảm xúc thực tế.",
+      "apa_reference": "Salovey, P., & Mayer, J. D. (1990). Emotional intelligence. Imagination, Cognition and Personality, 9(3), 185–211. https://doi.org/10.2190/DUGG-P24E-52WK-6CDG",
+      "is_flagship": true
     },
     {
       "id": "empirical-findings-support",
       "term": "Empirical Findings Support",
-      "vietnamese": "Các Phát hiện Thực nghiệm Ủng hộ",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Academic Writing"
+      "vietnamese": "Sự ủng hộ của bằng chứng thực nghiệm",
+      "vietnamese_variants": [
+        "Căn cứ thực nghiệm chứng minh",
+        "Sự xác thực của dữ liệu thực nghiệm"
       ],
-      "core_definition": "Cụm từ chuẩn báo cáo dữ liệu phù hợp với giả thuyết đề xuất.",
-      "seminal_citation": "Swales & Feak (2012)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Academic Writing & Research Rigour",
+        "Hypothesis Testing"
+      ],
+      "core_definition": "Empirical Findings Support là chuẩn mực lập luận học thuật cốt lõi trong phần Thảo luận (Discussion) và Kết luận của bài báo nghiên cứu, nơi tác giả chứng minh mối liên kết chặt chẽ và tính tương thích cao giữa các phân tích thống kê/định tính thu được từ mẫu dữ liệu thực tế với các giả thuyết nghiên cứu hoặc các mệnh đề lý thuyết đã đề xuất trước đó.",
+      "seminal_citation": "Locke, E. A. (2007). The case for inductive theory building. Journal of Management, 33(6), 867-890.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Empirical Findings Support according to Swales & Feak (2012).",
       "domain_tags_en": [
         "Academic Writing"
-      ]
+      ],
+      "category": "Academic Writing & Research Rigour",
+      "operational_mechanism": "Cấu trúc một đoạn lập luận biện minh thực nghiệm chuẩn mực: (1) Nêu lại giả thuyết và tuyên bố rõ ràng trạng thái: Được ủng hộ (Supported), Được ủng hộ một phần (Partially supported), hoặc Bị bác bỏ (Not supported); (2) Trích dẫn các con số bằng chứng định lượng chính xác (hệ số đường dẫn $\\beta$, sai số chuẩn $SE$, giá trị $t$, $p$-value, khoảng tin cậy $95\\%$ CI và cỡ tác động); (3) Đối chiếu phát hiện này với các công trình kinh điển đã trích dẫn ở phần cơ sở lý thuyết (kết quả tương đồng hay mâu thuẫn); (4) Luận giải cơ chế lý thuyết giải thích tại sao kết quả lại diễn ra như vậy trong bối cảnh nghiên cứu cụ thể.",
+      "benchmarks": "Tiêu chuẩn bài báo Q1: (1) Tuyệt đối không dùng từ 'chứng minh tuyệt đối' (proved) mà dùng các thuật ngữ thận trọng chuẩn mực như 'provides strong empirical support for', 'is consistent with', 'substantiates'; (2) Xử lý các giả thuyết bị bác bỏ một cách khoa học và sâu sắc thay vì tìm cách che giấu; (3) Phân biệt rành mạch giữa ý nghĩa thống kê và ý nghĩa thực tiễn.",
+      "pitfalls": "Lặp lại đơn thuần các số liệu của bảng kết quả mà không đưa ra được sự diễn giải lý thuyết; suy diễn vượt quá những gì mà dữ liệu thực nghiệm cho phép (overclaiming); lờ đi các phát hiện mâu thuẫn với y văn tiền nhiệm.",
+      "apa_reference": "Locke, E. A. (2007). The case for inductive theory building. Journal of Management, 33(6), 867–890. https://doi.org/10.1177/0149206307307636",
+      "is_flagship": true
     },
     {
       "id": "empirical-grounding",
       "term": "Empirical Grounding",
-      "vietnamese": "Nền tảng Thực nghiệm",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Rigour"
+      "vietnamese": "Tính bám rễ thực nghiệm",
+      "vietnamese_variants": [
+        "Cơ sở thực nghiệm vững chắc",
+        "Tính neo giữ thực chứng"
       ],
-      "core_definition": "Sự gắn kết chặt chẽ của các luận điểm lý thuyết với các dữ kiện thực tế quan sát được.",
-      "seminal_citation": "Glaser & Strauss (1967)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Qualitative Research & Grounded Theory",
+        "Methodological Rigour"
+      ],
+      "core_definition": "Empirical Grounding là tiêu chuẩn phương pháp luận đòi hỏi mọi khái niệm lý thuyết, phạm trù trừu tượng hoặc mô hình giải thích được xây dựng trong nghiên cứu định tính và lý thuyết vị chủng (Grounded Theory) đều phải có nguồn gốc trực tiếp, bám rễ sâu xa và được neo giữ vững chắc vào các bằng chứng dữ liệu thực tế thu thập từ hiện trường.",
+      "seminal_citation": "Strauss, A., & Corbin, J. (1998). Basics of qualitative research: Techniques and procedures for developing grounded theory (2nd ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Empirical Grounding according to Glaser & Strauss (1967).",
       "domain_tags_en": [
         "Research Rigour"
-      ]
+      ],
+      "category": "Qualitative Research & Grounded Theory",
+      "operational_mechanism": "Được xác lập thông qua chu trình so sánh liên tục (constant comparative method) và mã hóa quy nạp: (1) Dữ liệu thô được phân tách thành các sự kiện và chỉ báo cụ thể; (2) So sánh các sự kiện với sự kiện khác để tạo thành mã khái niệm; (3) So sánh mã với mã để tạo thành phạm trù lý thuyết; (4) Xây dựng ma trận bằng chứng (data display table) trích dẫn trực tiếp các câu nói nguyên bản của người tham gia (verbatim quotes) làm minh chứng không thể chối cãi cho từng thuộc tính của phạm trù.",
+      "benchmarks": "Tiêu chuẩn đánh giá của Strauss & Corbin (1998) và Charmaz (2014): (1) Sự bão hòa lý thuyết (theoretical saturation) - không có thêm thuộc tính mới nào xuất hiện khi thu thập thêm dữ liệu; (2) Mật độ khái niệm (conceptual density) - các khái niệm phải phong phú và liên kết chặt chẽ với nhau; (3) Khả năng giải thích và tính phù hợp (fit and resonance) được các bên tham gia công nhận.",
+      "pitfalls": "Đưa ra các phạm trù lý thuyết trừu tượng cao siêu nhưng không có trích dẫn dữ liệu thực tế nào kèm theo để chống lưng (lý thuyết suy đoán thuần túy); trích dẫn các câu trích lẻ loi, tách rời ngữ cảnh để gán ghép khiên cưỡng cho một ý tưởng định kiến của tác giả.",
+      "apa_reference": "Strauss, A., & Corbin, J. (1998). Basics of qualitative research: Techniques and procedures for developing grounded theory (2nd ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "empirical-science-paradigm",
-      "term": "Empirical science paradigm",
+      "term": "Empirical Science Paradigm",
       "vietnamese": "Hệ hình khoa học thực nghiệm",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Hệ hình Nghiên cứu"
+      "vietnamese_variants": [
+        "Khuôn mẫu khoa học thực nghiệm",
+        "Hệ hình nghiên cứu dựa trên bằng chứng"
       ],
-      "core_definition": "Hệ hình nghiên cứu nhấn mạnh rằng mọi tri thức khoa học đáng tin cậy đều phải được thiết lập dựa trên các bằng chứng quan sát và dữ liệu đo lường thực nghiệm có thể kiểm chứng độc lập.",
-      "seminal_citation": "Popper, K. (1959). The Logic of Scientific Discovery. Hutchinson.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Philosophy of Science & Research Paradigms",
+        "Epistemology"
+      ],
+      "core_definition": "Empirical Science Paradigm là hệ hình triết học khoa học chủ đạo xuất phát từ truyền thống thực chứng luận và hậu thực chứng luận, khẳng định rằng tri thức khoa học chân chính chỉ có thể được tạo lập, kiểm định và tích lũy thông qua việc quan sát có hệ thống, đo lường khách quan và thử nghiệm thực nghiệm trực tiếp thế giới hiện thực khách quan, thay vì dựa trên suy lý thuần túy, thẩm quyền tôn giáo hay giáo điều giáo điều.",
+      "seminal_citation": "Kuhn, T. S. (1962). The structure of scientific revolutions. University of Chicago Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Empirical science paradigm according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Philosophy of Science & Research Paradigms",
+      "operational_mechanism": "Vận hành theo chu trình nghiên cứu thực nghiệm chuẩn mực: (1) Bản thể luận hiện thực (Realist ontology): chấp nhận sự tồn tại của một hiện thực khách quan độc lập với nhận thức; (2) Nhận thức luận khách quan (Objectivist epistemology): người quan sát nỗ lực duy trì tính trung lập thông qua các thiết bị đo lường chuẩn hóa; (3) Phương pháp luận diễn dịch - giả thuyết (Hypothetico-deductive methodology): từ lý thuyết rút ra các giả thuyết có thể kiểm định được -> thu thập dữ liệu định lượng -> kiểm định thống kê để phản nghiệm hoặc củng cố lý thuyết.",
+      "benchmarks": "Tiêu chuẩn khoa học: (1) Khả năng lặp lại (Replicability) - các nhà nghiên cứu độc lập thực hiện cùng quy trình phải thu được kết quả tương tự; (2) Tính minh bạch của quy trình thu thập và xử lý số liệu (Open Science / FAIR principles); (3) Kiểm soát nghiêm ngặt các biến nhiễu để xác lập quan hệ nhân quả xác thực.",
+      "pitfalls": "Rơi vào chủ nghĩa duy thực chứng thô thiển (scientism) - coi thường các giá trị văn hóa, ý nghĩa chủ quan và chiều sâu trải nghiệm con người vốn cần đến các hệ hình diễn giải hoặc phê phán; ảo tưởng về sự khách quan tuyệt đối mà quên rằng mọi quan sát đều chịu sự thẩm thấu của lý thuyết (theory-laden).",
+      "apa_reference": "Kuhn, T. S. (1962). The structure of scientific revolutions. University of Chicago Press.",
+      "is_flagship": true
     },
     {
       "id": "enactment-in-organizational-sensemaking",
       "term": "Enactment in Organizational Sensemaking",
-      "vietnamese": "Sự Ban hành Thực tại Enactment",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Organizational Theory"
+      "vietnamese": "Hành vi kiến tạo môi trường trong quá trình gán nghĩa tổ chức",
+      "vietnamese_variants": [
+        "Quá trình kiến tạo thực tại Weick",
+        "Cơ chế kiến tạo hành động trong Sensemaking"
       ],
-      "core_definition": "Nhà quản lý chủ động hành động và tạo ra chính môi trường mà họ phản ứng lại.",
-      "seminal_citation": "Weick (1979)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Organizational Theory & Sensemaking",
+        "Social Constructivism"
+      ],
+      "core_definition": "Enactment (Hành động kiến tạo môi trường) là một khái niệm trung tâm trong Lý thuyết Gán nghĩa Tổ chức (Organizational Sensemaking) của Karl E. Weick, khẳng định rằng các nhà quản lý và thành viên tổ chức không thụ động phản ứng lại một môi trường tĩnh có sẵn bên ngoài; thay vào đó, chính các hành động, phát ngôn và cấu trúc mà họ tạo ra đã chủ động định hình, phân định ranh giới và hiện thực hóa môi trường mà sau đó họ phải đối mặt và giải thích.",
+      "seminal_citation": "Weick, K. E. (1979). The social psychology of organizing (2nd ed.). McGraw-Hill.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Enactment in Organizational Sensemaking according to Weick (1979).",
       "domain_tags_en": [
         "Organizational Theory"
-      ]
+      ],
+      "category": "Organizational Theory & Sensemaking",
+      "operational_mechanism": "Chu trình gán nghĩa gồm 3 giai đoạn của Weick: (1) Hành động kiến tạo (Enactment) - con người hành động và tạo ra các dữ kiện thực tế trong dòng chảy kinh nghiệm (hành động trước để xem điều gì xảy ra: 'Làm sao tôi biết tôi nghĩ gì cho đến khi tôi thấy điều tôi nói?'); (2) Lựa chọn nghĩa (Selection) - áp dụng các lược đồ ý niệm và kịch bản diễn giải để gán ý nghĩa cho các kết quả của hành động đó; (3) Lưu giữ (Retention) - lưu trữ những cách diễn giải thành công vào bộ nhớ thể chế để định hướng cho các hành động tương lai.",
+      "benchmarks": "Ứng dụng trong nghiên cứu quản trị khủng hoảng, lãnh đạo chiến lược và đổi mới sáng tạo: (1) Nhận thức được hiện tượng 'lời tiên tri tự ứng nghiệm' (self-fulfilling prophecy) trong tổ chức; (2) Phân tích các thảm họa tổ chức (như tai nạn Mann Gulch hay thảm họa tàu con thoi Challenger) dưới lăng kính sự sụp đổ của quá trình gán nghĩa và kiến tạo sai lệch; (3) Tiếp cận phương pháp luận định tính vi mô.",
+      "pitfalls": "Hiểu sai khái niệm Enactment thành chủ nghĩa duy tâm chủ quan cực đoan (cho rằng vật chất vật lý không tồn tại); Weick nhấn mạnh rằng các hạn chế vật chất là có thật, nhưng ý nghĩa và tác động của chúng đối với hành vi là do con người kiến tạo nên.",
+      "apa_reference": "Weick, K. E. (1979). The social psychology of organizing (2nd ed.). McGraw-Hill.",
+      "is_flagship": true
     },
     {
       "id": "endogeneity-bias",
@@ -21318,244 +21684,370 @@
     {
       "id": "endowment-effect-richard-thaler",
       "term": "Endowment Effect (Richard Thaler)",
-      "vietnamese": "Hiệu ứng Sở hữu Thaler",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Behavioral Economics"
+      "vietnamese": "Hiệu ứng sở hữu của Richard Thaler",
+      "vietnamese_variants": [
+        "Hiệu ứng thiên vị quyền sở hữu",
+        "Tâm lý định giá cao tài sản sở hữu Thaler"
       ],
-      "core_definition": "Con người định giá một vật phẩm cao hơn đáng kể khi họ đã thực sự sở hữu nó.",
-      "seminal_citation": "Thaler (1980), Kahneman et al. (1990)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Behavioral Economics & Experimental Psychology",
+        "Decision Theory"
+      ],
+      "core_definition": "Endowment Effect là một hiện tượng kinh tế học hành vi đột phá do Richard Thaler (Giải Nobel Kinh tế 2017) định danh năm 1980, chỉ ra rằng con người có xu hướng định giá một món đồ, tài sản hoặc quyền lợi cao hơn đáng kể khi họ đã thực sự sở hữu nó so với khi họ chưa sở hữu nó, dẫn đến sự chênh lệch có hệ thống giữa Mức giá sẵn lòng chấp nhận để bán (WTA) và Mức giá sẵn lòng chi trả để mua (WTP).",
+      "seminal_citation": "Thaler, R. (1980). Toward a positive theory of consumer choice. Journal of Economic Behavior & Organization, 1(1), 39-60.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Endowment Effect (Richard Thaler) according to Thaler (1980), Kahneman et al. (1990).",
       "domain_tags_en": [
         "Behavioral Economics"
-      ]
+      ],
+      "category": "Behavioral Economics & Experimental Psychology",
+      "operational_mechanism": "Cơ chế tâm lý bắt nguồn trực tiếp từ Lý thuyết Triển vọng (Prospect Theory) của Kahneman & Tversky thông qua Tâm lý ác cảm tổn thất (Loss Aversion): Việc từ bỏ một tài sản đang sở hữu được bộ não mã hóa là một 'sự mất mát' (loss), trong khi việc mua thêm một tài sản được mã hóa là một 'món hời' (gain). Vì tâm lý học chứng minh rằng nỗi đau của sự mất mát có cường độ mạnh gấp 1.5 đến 2.5 lần niềm vui của sự đạt được cùng giá trị, mức giá đòi hỏi để bán ($WTA$) luôn cao hơn đáng kể mức giá chấp nhận mua ($WTP$), vi phạm trực tiếp Định lý Coase trong kinh tế học cổ điển.",
+      "benchmarks": "Chuẩn mực thử nghiệm kinh tế học hành vi (Kahneman, Knetsch, & Thaler, 1990): (1) Thiết kế thực nghiệm đối chứng ngẫu nhiên với hàng hóa thực tế (như cốc uống nước, bút ký, vé xem bóng rổ) và tiền thật có động lực kinh tế (incentive-compatible mechanism như cơ chế BDM); (2) Báo cáo tỷ số chênh lệch $WTA / WTP$ (thường dao động từ 1.5 đến 2.5); (3) Kiểm soát các biến nhiễu như hiệu ứng của cải (wealth effects) và sự bất cân xứng thông tin.",
+      "pitfalls": "Nhầm lẫn giữa hiệu ứng sở hữu tâm lý tức thời với tình cảm gắn bó lâu dài (nostalgia); không áp dụng các cơ chế giao dịch khắt khe khiến người tham gia thực nghiệm đưa ra mức giá chiến lược mang tính mặc cả thay vì giá trị định giá thực.",
+      "apa_reference": "Thaler, R. (1980). Toward a positive theory of consumer choice. Journal of Economic Behavior & Organization, 1(1), 39–60. https://doi.org/10.1016/0167-2681(80)90051-7",
+      "is_flagship": true
     },
     {
       "id": "engaged-scholarship-van-de-ven",
       "term": "Engaged Scholarship (Van de Ven)",
-      "vietnamese": "Học thuật Gắn kết Thực tiễn",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Management Inquiry"
+      "vietnamese": "Học thuật dấn thân của Andrew Van de Ven",
+      "vietnamese_variants": [
+        "Phương pháp nghiên cứu hợp tác dấn thân",
+        "Mô hình kết nối học giả và người thực hành"
       ],
-      "core_definition": "Mô hình hợp tác đồng sản xuất tri thức khoa học giữa nhà nghiên cứu và giới thực hành.",
-      "seminal_citation": "Van de Ven (2007)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Management Inquiry & Research Methodology",
+        "Action Research"
+      ],
+      "core_definition": "Engaged Scholarship là một phương pháp luận nghiên cứu hợp tác và triết lý học thuật do Andrew H. Van de Ven khởi xướng, nhằm thu hẹp 'hố sâu ngăn cách giữa lý thuyết và thực tiễn' (theory-practice gap) trong khoa học quản trị bằng cách xây dựng mối quan hệ đối tác đồng đẳng giữa các nhà nghiên cứu học thuật và các nhà thực hành xuyên suốt toàn bộ chu trình tạo ra tri thức.",
+      "seminal_citation": "Van de Ven, A. H. (2007). Engaged scholarship: A guide for organizational and social research. Oxford University Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Engaged Scholarship (Van de Ven) according to Van de Ven (2007).",
       "domain_tags_en": [
         "Management Inquiry"
-      ]
+      ],
+      "category": "Management Inquiry & Research Methodology",
+      "operational_mechanism": "Mô hình vận hành qua 4 giai đoạn tương tác tuần tự dạng kim cương (Diamond Model): (1) Đặt vấn đề (Problem Formulation) - phối hợp với các nhà quản lý để xác định các vấn đề thực tiễn gai góc; (2) Xây dựng lý thuyết (Theory Building) - tiếp cận bài toán qua nhiều lăng kính lý thuyết cạnh tranh; (3) Thiết kế nghiên cứu (Research Design) - lập phương án thu thập dữ liệu khả thi và chặt chẽ với sự tham gia của hiện trường; (4) Giải quyết và truyền thông vấn đề (Problem Solving) - đồng diễn giải kết quả với các nhà thực hành để vừa kiểm chứng tính ứng dụng vừa nâng tầm đóng góp học thuật.",
+      "benchmarks": "Chuẩn mực bài báo quản trị hàng đầu (AMR, AMJ): (1) Vượt qua sự thỏa hiệp giữa tính chặt chẽ (rigor) và tính phù hợp (relevance); (2) Báo cáo chi tiết các cuộc họp đồng sáng tạo tri thức và cơ chế đối thoại đa bên; (3) Tạo ra tri thức có khả năng giải quyết các 'vấn đề hóc búa' (wicked problems) trong quản trị công và chuyển đổi doanh nghiệp.",
+      "pitfalls": "Biến nghiên cứu thành dịch vụ tư vấn doanh nghiệp thuần túy (consultancy trap) khi bị doanh nghiệp chi phối câu hỏi nghiên cứu mà đánh mất tính độc lập và chiều sâu lý thuyết; hoặc ngược lại, chỉ tham khảo ý kiến doanh nghiệp lấy lệ để hợp thức hóa đề tài.",
+      "apa_reference": "Van de Ven, A. H. (2007). Engaged scholarship: A guide for organizational and social research. Oxford University Press.",
+      "is_flagship": true
     },
     {
       "id": "entropy-balancing",
       "term": "Entropy Balancing",
-      "vietnamese": "Cân bằng Entropy",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Inference"
+      "vietnamese": "Cân bằng Entropy (EB)",
+      "vietnamese_variants": [
+        "Phương pháp cân bằng Entropy Hainmueller",
+        "Tái lập trọng số cân bằng đa mô-men"
       ],
-      "core_definition": "Thuật toán tái đánh trọng số trực tiếp khớp các moment phân phối của nhóm đối chứng với nhóm can thiệp.",
-      "seminal_citation": "Hainmueller (2012)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Causal Inference & Observational Studies",
+        "Applied Econometrics"
+      ],
+      "core_definition": "Entropy Balancing (do Jens Hainmueller phát triển năm 2012) là một phương pháp suy diễn nhân quả bán tham số tiên tiến cho các nghiên cứu quan sát, tính toán lại một tập hợp trọng số liên tục tối ưu cho nhóm đối chứng nhằm đạt được sự cân bằng hoàn hảo trên toàn bộ các mô-men phân phối (trung bình, phương sai, độ lệch) của các biến nhiễu quan sát được so với nhóm can thiệp, trong khi vẫn giảm thiểu tối đa sự xáo trộn thông tin (relative entropy).",
+      "seminal_citation": "Hainmueller, J. (2012). Entropy balancing for causal effects: A multivariate reweighting method to produce balanced samples in observational studies. Political Analysis, 20(1), 25-46.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Entropy Balancing according to Hainmueller (2012).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "category": "Causal Inference & Observational Studies",
+      "operational_mechanism": "Thuật toán giải bài toán tối ưu hóa lồi có ràng buộc: $\\min_{w_i} \\sum_{i \\in C} w_i \\log(w_i / q_i)$ thỏa mãn các ràng buộc mô-men: $\\sum_{i \\in C} w_i c_{rj}(X_i) = \\bar{c}_{rj}$ (với $\\bar{c}_{rj}$ là mô-men thứ $r$ của biến thứ $j$ ở nhóm can thiệp) và $\\sum_{i \\in C} w_i = 1, w_i \\ge 0$, trong đó $q_i$ là trọng số cơ sở ban đầu ($1/N_C$). Sau khi tối ưu, các trọng số Entropy được đưa trực tiếp vào mô hình hồi quy kết quả có trọng số để ước lượng Tác động can thiệp trung bình trên nhóm tiếp nhận (ATT).",
+      "benchmarks": "Chuẩn mực kinh tế lượng và khoa học chính trị hàng đầu (Political Analysis, AER): (1) Đạt được sự cân bằng hiệp biến hoàn hảo (zero balance check) mà không cần phải lặp đi lặp lại việc tinh chỉnh thủ công như phương pháp ghép cặp điểm xu hướng truyền thống (PSM); (2) Bảo toàn toàn bộ các quan sát của nhóm đối chứng (không loại bỏ dữ liệu); (3) Báo cáo bảng kiểm tra cân bằng trước và sau khi gán trọng số cho ít nhất 2 hoặc 3 mô-men đầu tiên (Mean, Variance, Skewness).",
+      "pitfalls": "Tương tự như mọi phương pháp dựa trên giả định Không có biến nhiễu không quan sát được (Selection on Observables), Entropy Balancing không thể giải quyết được hiện tượng nội sinh phát sinh từ các yếu tố ẩn chưa đo lường; cần bổ sung phân tích độ nhạy Rosenbaum bounds.",
+      "apa_reference": "Hainmueller, J. (2012). Entropy balancing for causal effects: A multivariate reweighting method to produce balanced samples in observational studies. Political Analysis, 20(1), 25–46. https://doi.org/10.1093/pan/mpr025",
+      "is_flagship": true
     },
     {
       "id": "epanechnikov-kernel",
       "term": "Epanechnikov Kernel",
-      "vietnamese": "Nhân Parabol Epanechnikov",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Non-Parametric Estimation"
+      "vietnamese": "Hạt nhân Epanechnikov",
+      "vietnamese_variants": [
+        "Hàm trọng số hạt nhân Epanechnikov",
+        "Ước lượng mật độ hạt nhân tối ưu"
       ],
-      "core_definition": "Hàm nhân tối ưu hóa tiêu chuẩn sai số bình phương trung bình tích hợp MISE.",
-      "seminal_citation": "Epanechnikov (1969)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Non-Parametric Estimation & Econometrics",
+        "Applied Statistics"
+      ],
+      "core_definition": "Epanechnikov Kernel là hàm trọng số hạt nhân parabol đối xứng bậc hai được chứng minh toán học là hàm hạt nhân tối ưu nhất (optimal kernel function) trong ước lượng mật độ phi tham số (Kernel Density Estimation - KDE) và hồi quy phi tham số, đạt hiệu suất tối đa trong việc giảm thiểu Sai số bình phương trung bình tích hợp tiệm cận (Asymptotic Mean Integrated Squared Error - MISE).",
+      "seminal_citation": "Epanechnikov, V. A. (1969). Non-parametric estimation of a multivariate probability density. Theory of Probability & Its Applications, 14(1), 153-158.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Epanechnikov Kernel according to Epanechnikov (1969).",
       "domain_tags_en": [
         "Non-Parametric Estimation"
-      ]
+      ],
+      "category": "Non-Parametric Estimation & Econometrics",
+      "operational_mechanism": "Công thức toán học của hàm hạt nhân: $K(u) = \\frac{3}{4} (1 - u^2)$ khi $|u| \\le 1$, và $K(u) = 0$ khi $|u| > 1$. Với một điểm dữ liệu, hàm Epanechnikov gán trọng số cao nhất tại tâm ($u = 0$) và giảm dần theo đường cong parabol về 0 tại ranh giới khoảng cách bằng độ rộng băng thông (bandwidth $h$). Ước lượng mật độ tại điểm $x$: $\\hat{f}(x) = \\frac{1}{n h} \\sum_{i=1}^n K\\left( \\frac{x - X_i}{h} \\right)$.",
+      "benchmarks": "Chuẩn mực kinh tế lượng và thiết kế gián đoạn hồi quy (RDD - Imbens & Lemieux, 2008): (1) Là hạt nhân mặc định và được khuyến nghị hàng đầu trong hồi quy đa thức cục bộ (Local Linear Regression) tại điểm ngưỡng của RDD; (2) Có giá trị hiệu quả tiệm cận bằng 1.00 (mọi hạt nhân khác như Gaussian hay Uniform đều có hiệu quả tương đối thấp hơn); (3) Báo cáo lựa chọn băng thông tối ưu (Optimal bandwidth selection theo thuật toán Calonico-Cattaneo-Titiunik - CCT).",
+      "pitfalls": "Đạo hàm bậc một của hàm hạt nhân Epanechnikov không liên tục tại ranh giới $|u| = 1$, khiến nó không phù hợp cho các bài toán ước lượng cần độ mượt vi phân bậc cao (trong trường hợp đó hạt nhân Gaussian hoặc Biweight được ưu tiên).",
+      "apa_reference": "Epanechnikov, V. A. (1969). Non-parametric estimation of a multivariate probability density. Theory of Probability & Its Applications, 14(1), 153–158. https://doi.org/10.1137/1114019",
+      "is_flagship": true
     },
     {
       "id": "epiphany",
       "term": "Epiphany",
-      "vietnamese": "Khoảnh khắc bước ngoặt biến cố làm thay đổi hoàn toàn quỹ đạo cuộc đời và nhận thức của chủ thể, là tâm điểm phân tích của phương pháp tự sự và tiểu sử.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Triangulation",
-        "Sociological Methods"
+      "vietnamese": "Khoảnh khắc bừng ngộ (Epiphany)",
+      "vietnamese_variants": [
+        "Biến cố bước ngoặt cuộc đời",
+        "Điểm bừng sáng trong tự truyện dân tộc học"
       ],
-      "core_definition": "Khoảnh khắc bước ngoặt biến cố làm thay đổi hoàn toàn quỹ đạo cuộc đời và nhận thức của chủ thể, là tâm điểm phân tích của phương pháp tự sự và tiểu sử.",
-      "seminal_citation": "Denzin (1978); Denzin (1978)",
-      "tier": "index",
+      "domain_tags": [
+        "Qualitative Research & Autoethnography",
+        "Narrative Inquiry"
+      ],
+      "core_definition": "Epiphany là một khái niệm phương pháp luận định tính quan trọng trong nghiên cứu tường thuật (Narrative Inquiry) và tự truyện dân tộc học (Autoethnography) do Norman K. Denzin phát triển, chỉ các sự kiện bước ngoặt, các khoảnh khắc khủng hoảng hoặc những trải nghiệm sống sâu sắc để lại dấu ấn biến đổi vĩnh viễn trong cấu trúc ý thức, căn tính bản thân và quỹ đạo cuộc đời của một con người.",
+      "seminal_citation": "Denzin, N. K. (1989). Interpretive biography. SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Epiphany according to Denzin (1978); Denzin (1978).",
       "domain_tags_en": [
         "Triangulation",
         "Sociological Methods"
-      ]
+      ],
+      "category": "Qualitative Research & Autoethnography",
+      "operational_mechanism": "Denzin phân loại khoảnh khắc bừng ngộ thành 4 loại hình phân tích: (1) Bừng ngộ lớn (Major epiphany) - biến cố làm rung chuyển toàn bộ cuộc sống (như thoát chết trong gang tấc, mất người thân, tan vỡ hôn nhân); (2) Bừng ngộ tích lũy (Cumulative epiphany) - kết quả của một chuỗi các xung đột nhỏ dồn nén lâu ngày dẫn đến điểm bùng phát; (3) Bừng ngộ phản tư chiếu tướng (Illuminative / minor epiphany) - một sự việc thoạt nhìn tầm thường nhưng đột nhiên làm bừng sáng bản chất của toàn bộ mối quan hệ; (4) Bừng ngộ hồi tưởng (Relived epiphany) - sự bừng ngộ diễn ra khi người kể nhớ lại và tái diễn giải quá khứ.",
+      "benchmarks": "Đạt chuẩn nghiên cứu tự sự học thuật: (1) Mô tả dày (thick description) tái hiện sống động bối cảnh không gian, thời gian và cảm xúc cơ thể tại thời điểm xảy ra biến cố; (2) Liên kết trải nghiệm bừng ngộ vi mô của cá nhân với các cấu trúc quyền lực và văn hóa vĩ mô (kết nối 'câu chuyện cá nhân' với 'lịch sử xã hội' theo C. Wright Mills); (3) Đảm bảo tính chân thực và sự cộng hưởng cảm xúc với người đọc.",
+      "pitfalls": "Lãng mạn hóa hoặc kịch tính hóa quá mức câu chuyện khiến nó biến thành tiểu thuyết hư cấu tầm thường thay vì một công trình nghiên cứu khoa học xã hội nghiêm túc; thiếu sự phân tích phản tư lý thuyết về ý nghĩa thể chế của biến cố.",
+      "apa_reference": "Denzin, N. K. (1989). Interpretive biography. SAGE Publications. https://doi.org/10.4135/9781412984584",
+      "is_flagship": true
     },
     {
       "id": "episodic-interview-flick",
-      "term": "Episodic interview (Flick)",
-      "vietnamese": "Phỏng vấn đoạn hồi tưởng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Episodic Interview (Flick)",
+      "vietnamese": "Phỏng vấn theo tình tiết của Uwe Flick",
+      "vietnamese_variants": [
+        "Phương pháp phỏng vấn tình tiết Flick",
+        "Phỏng vấn kết hợp tự sự và khái niệm"
       ],
-      "core_definition": "Dung hòa giữa kiến thức ngữ nghĩa trừu tượng và câu chuyện thực tế.",
-      "seminal_citation": "Flick et al. (2004)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Qualitative Data Collection & Interview Methods",
+        "Social Representations"
+      ],
+      "core_definition": "Episodic Interview là một phương pháp phỏng vấn định tính chuyên sâu do nhà phương pháp luận người Đức Uwe Flick sáng tạo, kết hợp hài hòa giữa phỏng vấn tự sự (narrative interview) và phỏng vấn bán cấu trúc (semi-structured interview), nhằm tiếp cận đồng thời cả 'tri thức tường thuật theo tình tiết cụ thể' (episodic knowledge) và 'tri thức ngữ nghĩa khái niệm trừu tượng' (semantic knowledge) của người tham gia.",
+      "seminal_citation": "Flick, U. (2000). Episodic interviewing. In M. W. Bauer & G. Gaskell (Eds.), Qualitative researching with text, image and sound (pp. 75-92). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Episodic interview (Flick) according to Flick et al. (2004).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Qualitative Data Collection & Interview Methods",
+      "operational_mechanism": "Người phỏng vấn luân phiên giữa hai dạng câu hỏi: (1) Câu hỏi kích hoạt tự sự tình tiết ('Hãy kể lại cho tôi một tình huống cụ thể gần đây khi bạn...'): khai thác ký ức sống động gắn liền với không gian, thời gian và hành vi cụ thể; (2) Câu hỏi ngữ nghĩa định nghĩa ('Theo bạn, thế nào là một môi trường làm việc lý tưởng?'): khai thác các định nghĩa trừu tượng, niềm tin và khuôn mẫu xã hội (social representations). Việc đối chiếu giữa lời kể tình huống thực tế và định nghĩa khái niệm giúp bộc lộ những mâu thuẫn nhận thức sâu sắc.",
+      "benchmarks": "Chuẩn mực nghiên cứu định tính: (1) Cung cấp đề cương phỏng vấn với các cặp câu hỏi (tình tiết vs. định nghĩa) đối xứng; (2) Rất hiệu quả trong việc nghiên cứu sự thẩm thấu của công nghệ mới, chuyển đổi thể chế và các biểu tượng xã hội; (3) Phân tích dữ liệu bằng phân tích chủ đề (thematic coding) hoặc phân tích cấu trúc tự sự.",
+      "pitfalls": "Để người được phỏng vấn sa đà vào các triết lý chung chung mà không kể lại được các tình huống cụ thể (thiếu dữ liệu tình tiết); hoặc ngược lại chỉ kể chuyện vụn vặt mà không đúc kết được các quan điểm ngữ nghĩa.",
+      "apa_reference": "Flick, U. (2000). Episodic interviewing. In M. W. Bauer & G. Gaskell (Eds.), Qualitative researching with text, image and sound (pp. 75–92). SAGE Publications. https://doi.org/10.4135/9781849209731.n5",
+      "is_flagship": true
     },
     {
       "id": "episodic-interview-uwe-flick",
       "term": "Episodic Interview (Uwe Flick)",
-      "vietnamese": "(`Phỏng vấn đoạn hồi tưởng`): Đan xen giữa các câu hỏi khái niệm và yêu cầu người tham gia kể lại những tình huống/biến cố cụ thể (*concrete episodes*) để thu t",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "vietnamese": "Phương pháp phỏng vấn tình tiết Uwe Flick (Giao thức thực hành)",
+      "vietnamese_variants": [
+        "Quy trình phỏng vấn tình tiết Flick",
+        "Phương pháp phỏng vấn tích hợp tự sự"
       ],
-      "core_definition": "(`Phỏng vấn đoạn hồi tưởng`): Đan xen giữa các câu hỏi khái niệm và yêu cầu người tham gia kể lại những tình huống/biến cố cụ thể (*concrete episodes*) để thu t.",
-      "seminal_citation": "Flick et al. (2004)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Qualitative Data Collection & Interview Methods",
+        "Methodological Rigour"
+      ],
+      "core_definition": "Episodic Interview theo giao thức quy chuẩn của Uwe Flick là một thiết kế phỏng vấn định tính có cấu trúc cao nhằm điều tra cách thức các biểu trưng xã hội (social representations) được thể hiện và thực hành trong đời sống thường nhật thông qua việc tái hiện các tình huống kinh nghiệm cụ thể.",
+      "seminal_citation": "Flick, U. (2018). An introduction to qualitative research (6th ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #894; rác Markdown/bảng; mảnh trích; bị cắt cụt",
       "core_definition_en": "Academic definition of Episodic Interview (Uwe Flick) according to Flick et al. (2004).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Qualitative Data Collection & Interview Methods",
+      "operational_mechanism": "Quy trình triển khai 4 phần: (1) Giới thiệu bối cảnh và thiết lập thỏa thuận kể chuyện; (2) Kích hoạt chuỗi câu hỏi tình tiết chính (hướng tới các sự kiện có thật trong tiểu sử); (3) Thăm dò các định nghĩa khái niệm và kỳ vọng tương lai; (4) Đánh giá tổng kết và kiểm tra tính xác thực. Bản gỡ băng được phân tích song song giữa hai trục: Trục tình tiết (diễn biến hành động) và Trục ngữ nghĩa (hệ thống niềm tin).",
+      "benchmarks": "Đạt chuẩn nghiên cứu định tính Q1: (1) Ghi âm và gỡ băng nguyên văn kèm theo ghi chú trường về ngữ điệu và phản ứng cơ thể; (2) Minh chứng rõ ràng về cách thức tri thức tình tiết kiểm chứng hoặc phản bác các tuyên bố ngữ nghĩa của đối tượng; (3) Thực hiện thẩm định chéo với các nguồn dữ liệu tài liệu.",
+      "pitfalls": "Người phỏng vấn ngắt lời quá sớm khi đối tượng đang kể lại tình tiết; nhầm lẫn giữa phỏng vấn tình tiết với phỏng vấn tiểu sử trọn đời (Life history interview - phỏng vấn tình tiết chỉ tập trung vào một lĩnh vực trải nghiệm xác định).",
+      "apa_reference": "Flick, U. (2018). An introduction to qualitative research (6th ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "epistemic-fallacy",
-      "term": "Epistemic fallacy",
-      "vietnamese": "Ngụy biện nhận thức",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Epistemic Fallacy",
+      "vietnamese": "Ngụy biện nhận thức luận",
+      "vietnamese_variants": [
+        "Sai lầm giản lược bản thể luận vào nhận thức luận",
+        "Ngụy biện nhận thức luận Roy Bhaskar"
       ],
-      "core_definition": "Sai lầm đánh đồng bản chất thực tại với khả năng nhận thức của con người.",
-      "seminal_citation": "Hunt (2015)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Philosophy of Science & Critical Realism",
+        "Ontology"
+      ],
+      "core_definition": "Epistemic Fallacy là một khái niệm triết học khoa học then chốt do Roy Bhaskar - người sáng lập Chủ nghĩa Hiện thực Phê phán (Critical Realism) - đặt ra, chỉ sai lầm cốt tử của chủ nghĩa thực chứng và chủ nghĩa hậu hiện đại khi giản lược bản thể luận (ontology - những gì thực sự tồn tại trong thế giới) thành nhận thức luận (epistemology - những gì con người biết hoặc quan sát được về thế giới).",
+      "seminal_citation": "Bhaskar, R. (1975). A realist theory of science. Leeds Books.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Epistemic fallacy according to Hunt (2015).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Philosophy of Science & Critical Realism",
+      "operational_mechanism": "Bhaskar chỉ ra rằng các câu hỏi về bản chất hiện thực ('Thế giới là gì?', 'Các cơ chế nhân quả sâu nào đang vận hành?') đã bị chuyển dịch sai lầm thành các câu hỏi về tri thức của con người ('Chúng ta trải nghiệm thế giới như thế nào?', 'Dữ liệu đo lường nói lên điều gì?'). Chủ nghĩa Hiện thực Phê phán khẳng định Hiện thực có tính đa tầng gồm 3 tầng độc lập: (1) Tầng kinh nghiệm (The Empirical - những gì quan sát được); (2) Tầng thực tế (The Actual - các sự kiện diễn ra dù có quan sát hay không); (3) Tầng thực tại sâu (The Real - các cơ chế và cấu trúc phát sinh tạo ra các sự kiện). Giản lược tầng Thực tại sâu vào tầng Kinh nghiệm chính là bản chất của Epistemic Fallacy.",
+      "benchmarks": "Ý nghĩa phương pháp luận tiến sĩ: (1) Giải phóng nhà nghiên cứu khỏi giới hạn của việc chỉ tin vào những dữ liệu quan sát bề mặt; (2) Biện minh cho phương pháp hồi quy nguyên nhân (Retroduction) - suy luận đi ngược từ hiện tượng bề mặt để khám phá các cơ chế sâu không thể quan sát trực tiếp; (3) Cung cấp nền tảng triết học vững chắc cho nghiên cứu trường hợp chuyên sâu và giải thích nhân quả cơ chế.",
+      "pitfalls": "Đồng nhất giữa 'mô hình dữ liệu' với 'hiện thực khách quan'; cho rằng nếu một cơ chế xã hội không thể đo lường bằng một câu hỏi Likert thì cơ chế đó không tồn tại.",
+      "apa_reference": "Bhaskar, R. (1975). A realist theory of science. Leeds Books.",
+      "is_flagship": true
     },
     {
       "id": "epistemic-reflexivity-bourdieu",
       "term": "Epistemic Reflexivity (Bourdieu)",
-      "vietnamese": "Tự Phản tư Nhận thức luận",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Sociology of Science"
+      "vietnamese": "Tính phản tư nhận thức luận của Pierre Bourdieu",
+      "vietnamese_variants": [
+        "Sự tự phản tư khoa học Bourdieu",
+        "Phản tư nhận thức luận xã hội"
       ],
-      "core_definition": "Nỗ lực giải phóng nhà nghiên cứu khỏi các ảo tưởng học thuật và các lợi ích vị thế trong trường khoa học.",
-      "seminal_citation": "Bourdieu (1992/2004)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Sociology of Science & Research Methodology",
+        "Epistemology"
+      ],
+      "core_definition": "Epistemic Reflexivity là một nguyên tắc phương pháp luận khoa học nghiêm ngặt do nhà xã hội học Pierre Bourdieu đề xướng, đòi hỏi nhà nghiên cứu phải chủ động biến chính bản thân mình, vị thế xã hội, trường học thuật (academic field) và các công cụ tư duy lý thuyết của mình thành đối tượng phân tích xã hội học để nhận diện và vô hiệu hóa các định kiến ngầm ẩn làm bóp méo tri thức khoa học.",
+      "seminal_citation": "Bourdieu, P., & Wacquant, L. J. (1992). An invitation to reflexive sociology. University of Chicago Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Epistemic Reflexivity (Bourdieu) according to Bourdieu (1992/2004).",
       "domain_tags_en": [
         "Sociology of Science"
-      ]
+      ],
+      "category": "Sociology of Science & Research Methodology",
+      "operational_mechanism": "Bourdieu phân tích 3 loại định kiến cần phản tư và kiểm soát: (1) Định kiến vị thế xã hội cá nhân (nguồn gốc giai cấp, giới tính, dân tộc của nhà nghiên cứu); (2) Định kiến vị thế trong trường học thuật (vị trí quyền lực của tác giả trong trường đại học, áp lực cạnh tranh chức danh, sự phụ thuộc vào các quỹ tài trợ); (3) Định kiến tri thức luận hàn lâm (Scholastic fallacy / Skholè - ảo tưởng tách rời việc nghiên cứu khỏi áp lực thực tiễn, gán ghép lối tư duy duy lý hàn lâm của nhà khoa học vào tâm trí của các tác nhân đời thường vốn hành động theo cảm thức thực hành habitus).",
+      "benchmarks": "Đạt chuẩn nghiên cứu định tính và xã hội học Q1: (1) Phần tự phản tư (reflexivity statement) không phải là sự tự thú cảm xúc cá nhân đơn thuần, mà là một cuộc giải phẫu xã hội học có hệ thống về vị thế học thuật của tác giả; (2) Nhận diện rõ cách thức mà 'vốn biểu trưng' (symbolic capital) định hình cách tác giả đặt câu hỏi nghiên cứu; (3) Đảm bảo tính khách quan hóa của hành vi khách quan hóa (objectification of objectification).",
+      "pitfalls": "Biến tính phản tư thành sự tự luyến bản thân (narcissistic reflexivity) - dành quá nhiều trang viết về cảm xúc cá nhân mà không đóng góp được gì cho việc làm sạch phương pháp nghiên cứu.",
+      "apa_reference": "Bourdieu, P., & Wacquant, L. J. (1992). An invitation to reflexive sociology. University of Chicago Press.",
+      "is_flagship": true
     },
     {
       "id": "epistemological-anarchism",
       "term": "Epistemological Anarchism",
-      "vietnamese": "Thuyết Vô chính phủ Nhận thức luận của Paul Feyerabend",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Philosophy of Science"
+      "vietnamese": "Chủ nghĩa vô chính phủ nhận thức luận",
+      "vietnamese_variants": [
+        "Thuyết vô chính phủ phương pháp luận",
+        "Nguyên tắc bất kỳ cái gì cũng được Feyerabend"
       ],
-      "core_definition": "nguyên lý 'Phương pháp nào cũng được - Anything Goes'.",
-      "seminal_citation": "Feyerabend (1975)",
-      "tier": "curated",
+      "domain_tags": [
+        "Philosophy of Science & Epistemology",
+        "Research Methodology"
+      ],
+      "core_definition": "Epistemological Anarchism là một lập trường triết học khoa học cấp tiến do Paul Feyerabend đề xuất trong tác phẩm kinh điển 'Against Method' (1975), khẳng định rằng không có bất kỳ một phương pháp luận khoa học phổ quát, bất biến và có giá trị bắt buộc nào có thể điều hướng sự phát triển của khoa học; trong thực tế lịch sử, các bước đột phá vĩ đại nhất của nhân loại (như Galileo, Einstein) chỉ đạt được khi các nhà khoa học dũng cảm vi phạm và phá vỡ các quy tắc phương pháp hiện hành.",
+      "seminal_citation": "Feyerabend, P. (1975). Against method: Outline of an anarchistic theory of knowledge. New Left Books.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #900",
       "core_definition_en": "Academic definition of Epistemological Anarchism according to Feyerabend (1975).",
       "domain_tags_en": [
         "Philosophy of Science"
-      ]
+      ],
+      "category": "Philosophy of Science & Epistemology",
+      "operational_mechanism": "Feyerabend đưa ra nguyên tắc nổi tiếng 'Bất kỳ cái gì cũng được' (Anything Goes): Sự tiến bộ tri thức đòi hỏi một chủ nghĩa đa nguyên phương pháp luận (methodological pluralism) tuyệt đối. Ông lập luận rằng việc áp đặt một phương pháp khoa học cứng nhắc (dù là quy nạp, phản nghiệm Popper hay chương trình Lakatos) sẽ biến khoa học thành một thứ giáo điều áp chế, bóp nghẹt sự sáng tạo và ngăn cản việc khám phá các chân lý mới.",
+      "benchmarks": "Đóng góp cho tư duy phương pháp luận đương đại: (1) Cảnh báo chống lại chủ nghĩa sùng bái phương pháp (methodolatry) - coi trọng quy trình kỹ thuật hơn tính đúng đắn và ý nghĩa của khám phá khoa học; (2) Biện minh triết học cho sự đổi mới phương pháp luận và tích hợp đa phương pháp (Mixed Methods); (3) Tôn trọng các hệ thống tri thức bản địa và các cách tiếp cận phi chính thống.",
+      "pitfalls": "Hiểu sai Feyerabend như một người chống lại khoa học hoặc chủ trương sự cẩu thả vô kỷ luật trong nghiên cứu; Feyerabend không chống lại phương pháp mà chống lại sự độc tôn độc đoán của một phương pháp duy nhất.",
+      "apa_reference": "Feyerabend, P. (1975). Against method: Outline of an anarchistic theory of knowledge. New Left Books.",
+      "is_flagship": true
     },
     {
       "id": "epistemological-anarchism-feyerabend",
       "term": "Epistemological Anarchism (Feyerabend)",
-      "vietnamese": "Chủ nghĩa Vô chính phủ Nhận thức luận",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Philosophy of Science"
+      "vietnamese": "Chủ nghĩa vô chính phủ nhận thức luận của Paul Feyerabend",
+      "vietnamese_variants": [
+        "Phương pháp luận Feyerabend",
+        "Nguyên lý Anything Goes trong triết học khoa học"
       ],
-      "core_definition": "'Anything goes' - Không có phương pháp luận phổ quát duy nhất nào cho khoa học.",
-      "seminal_citation": "Feyerabend (1975)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Philosophy of Science & Epistemology",
+        "Philosophy of Social Science"
+      ],
+      "core_definition": "Epistemological Anarchism của Paul Feyerabend là sự phê phán triệt để tính duy lý giáo điều của triết học khoa học thế kỷ 20, vạch trần ảo tưởng rằng khoa học là một hoạt động duy lý thuần khiết tuân theo các quy tắc logic chặt chẽ, chứng minh rằng sự phát triển của khoa học mang tính lịch sử, chính trị, tu từ và nghệ thuật sâu sắc.",
+      "seminal_citation": "Feyerabend, P. (1975). Against method: Outline of an anarchistic theory of knowledge. New Left Books.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #899",
       "core_definition_en": "Academic definition of Epistemological Anarchism (Feyerabend) according to Feyerabend (1975).",
       "domain_tags_en": [
         "Philosophy of Science"
-      ]
+      ],
+      "category": "Philosophy of Science & Epistemology",
+      "operational_mechanism": "Vận hành qua phương pháp phản quy nạp (Counter-induction): Nhà nghiên cứu được khuyến khích đưa ra các giả thuyết mâu thuẫn hoàn toàn với các lý thuyết đã được xác lập vững chắc hoặc thậm chí mâu thuẫn với các sự kiện thực nghiệm được thừa nhận rộng rãi, từ đó tạo ra cú sốc nhận thức làm lộ rõ những thiên lệch ngầm ẩn mà một lý thuyết thống trị đã che giấu.",
+      "benchmarks": "Đạt chuẩn nghiên cứu triết học phương pháp: (1) Phân tích đối sánh các lập trường của Popper, Kuhn, Lakatos và Feyerabend; (2) Sử dụng các ca lịch sử khoa học thực tế để chứng minh sự vi phạm quy tắc phương pháp; (3) Thúc đẩy tinh thần hoài nghi lành mạnh và tính cởi mở học thuật tối đa trong nghiên cứu tiến sĩ.",
+      "pitfalls": "Lạm dụng Feyerabend để biện minh cho việc làm nghiên cứu cẩu thả, ngụy biện hoặc bỏ qua các tiêu chuẩn kiểm định cơ bản của cộng đồng chuyên môn.",
+      "apa_reference": "Feyerabend, P. (1975). Against method: Outline of an anarchistic theory of knowledge. New Left Books.",
+      "is_flagship": true
     },
     {
       "id": "epistemological-relativism",
       "term": "Epistemological Relativism",
-      "vietnamese": "Chủ nghĩa tương đối nhận thức luận cho rằng không có chân lý phổ quát tuyệt đối mà chân lý phụ thuộc vào góc nhìn văn hóa",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Philosophy of Science"
+      "vietnamese": "Thuyết tương đối nhận thức luận",
+      "vietnamese_variants": [
+        "Chủ nghĩa tương đối tri thức",
+        "Thuyết tương đối luận nhận thức"
       ],
-      "core_definition": "Chủ nghĩa tương đối nhận thức luận cho rằng không có chân lý phổ quát tuyệt đối mà chân lý phụ thuộc vào góc nhìn văn hóa.",
-      "seminal_citation": "Feyerabend (1975)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Philosophy of Science & Epistemology",
+        "Constructivism"
+      ],
+      "core_definition": "Epistemological Relativism là lập trường triết học nhận thức luận cho rằng không tồn tại một tiêu chuẩn khách quan, phổ quát và phi ngữ cảnh để đánh giá tính chân lý, tính đúng đắn hay giá trị của tri thức; mọi tri thức, niềm tin và tuyên bố chân lý đều mang tính tương đối, phụ thuộc vào khuôn khổ văn hóa, hệ hình lịch sử, hệ thống ngôn ngữ hoặc cộng đồng xã hội cụ thể sản sinh ra nó.",
+      "seminal_citation": "Rorty, R. (1979). Philosophy and the mirror of nature. Princeton University Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Epistemological Relativism according to Feyerabend (1975).",
       "domain_tags_en": [
         "Philosophy of Science"
-      ]
+      ],
+      "category": "Philosophy of Science & Epistemology",
+      "operational_mechanism": "Bác bỏ Chủ nghĩa nền tảng (Foundationalism) và thuyết tương ứng chân lý (Correspondence theory of truth): Một khẳng định khoa học không được coi là 'đúng tuyệt đối vì phản ánh đúng thực tại khách quan', mà chỉ được coi là 'đúng' bên trong một hệ hình nhận thức (paradigm theo Kuhn) hoặc một trò chơi ngôn ngữ (language game theo Wittgenstein). Khi các hệ hình thay đổi, tiêu chuẩn về tính đúng sai và bằng chứng cũng thay đổi theo, dẫn đến luận đề tính bất khả so (incommensurability).",
+      "benchmarks": "Đánh giá trong phương pháp luận nghiên cứu: (1) Phân biệt rành mạch giữa Thuyết tương đối nhận thức luận (nhận thức về chân lý là tương đối) và Thuyết tương đối bản thể luận (thế giới thực tại không tồn tại); (2) Cung cấp nền tảng triết học cho hệ hình Kiến tạo luận xã hội (Social Constructivism) và nghiên cứu diễn giải định tính; (3) Tôn trọng tính đa dạng văn hóa và tránh định kiến vị chủng.",
+      "pitfalls": "Rơi vào nghịch lý tự bác bỏ (self-refuting paradox): nếu mọi chân lý đều tương đối thì chính khẳng định 'mọi chân lý đều tương đối' cũng chỉ là một khẳng định tương đối và không có giá trị phổ quát; dẫn đến chủ nghĩa hư vô học thuật (academic nihilism) phủ nhận hoàn toàn giá trị của bằng chứng khoa học.",
+      "apa_reference": "Rorty, R. (1979). Philosophy and the mirror of nature. Princeton University Press.",
+      "is_flagship": true
     },
     {
       "id": "epistemology",
       "term": "Epistemology",
       "vietnamese": "Nhận thức luận",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Philosophy of Science"
+      "vietnamese_variants": [
+        "Lý luận nhận thức",
+        "Triết học về tri thức"
       ],
-      "core_definition": "nhánh triết học nghiên cứu về bản chất, nguồn gốc và giới hạn của tri thức.",
-      "seminal_citation": "Stanford Encyclopedia of Philosophy",
-      "tier": "curated",
+      "domain_tags": [
+        "Philosophy of Science & Epistemology",
+        "Foundations of Research"
+      ],
+      "core_definition": "Epistemology (Nhận thức luận) là một nhánh triết học nền tảng nghiên cứu về bản chất, nguồn gốc, phạm vi, tính hợp thức và giới hạn của tri thức con người, trả lời các câu hỏi căn bản: 'Tri thức là gì?', 'Làm thế nào chúng ta biết được những gì chúng ta biết?', 'Điều gì tạo nên một tuyên bố tri thức hợp thức và có căn cứ?', và 'Mối quan hệ giữa người nhận thức và đối tượng được nhận thức là gì?'.",
+      "seminal_citation": "Crotty, M. (1998). The foundations of social research: Meaning and perspective in the research process. SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Epistemology according to Stanford Encyclopedia of Philosophy.",
       "domain_tags_en": [
         "Philosophy of Science"
-      ]
+      ],
+      "category": "Philosophy of Science & Epistemology",
+      "operational_mechanism": "Định hình toàn bộ thiết kế nghiên cứu thông qua sự liên kết chặt chẽ với Bản thể luận (Ontology) và Phương pháp luận (Methodology): (1) Nhận thức luận thực chứng (Positivist epistemology): coi tri thức là khách quan, tách rời người quan sát, tích lũy qua đo lường thực nghiệm; (2) Nhận thức luận kiến tạo (Constructivist epistemology): coi tri thức được đồng kiến tạo giữa người nghiên cứu và người tham gia thông qua tương tác xã hội; (3) Nhận thức luận phê phán (Critical epistemology): coi tri thức gắn liền với quyền lực và ý thức hệ; (4) Nhận thức luận thực dụng (Pragmatist epistemology): đánh giá tri thức dựa trên hệ quả hành động thực tiễn.",
+      "benchmarks": "Bắt buộc trong chương Phương pháp luận của luận án tiến sĩ: (1) Tuyên bố rõ ràng lập trường nhận thức luận của tác giả; (2) Chứng minh sự nhất quán tuyệt đối giữa Bản thể luận -> Nhận thức luận -> Phương pháp luận -> Kỹ thuật thu thập dữ liệu (the Golden Thread of Research Methodology); (3) Luận giải tại sao lập trường nhận thức luận đó là phù hợp nhất để trả lời câu hỏi nghiên cứu.",
+      "pitfalls": "Xem nhẹ phần nhận thức luận, coi đó là lý thuyết suông; dẫn đến hiện tượng 'xung đột nhận thức luận' ngầm ẩn (ví dụ: dùng phương pháp định lượng thực chứng nhưng lại diễn giải kết luận theo lối kiến tạo luận chủ quan mà không có sự phản tư).",
+      "apa_reference": "Crotty, M. (1998). The foundations of social research: Meaning and perspective in the research process. SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "epoche-phenomenological-bracketing",
@@ -21588,20 +22080,30 @@
     {
       "id": "equifinality-in-social-systems",
       "term": "Equifinality in Social Systems",
-      "vietnamese": "Tính Đồng kết Cùng đích Equifinality",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Complexity Theory"
+      "vietnamese": "Tính đồng quy trong các hệ thống xã hội",
+      "vietnamese_variants": [
+        "Nguyên lý đồng đích Equifinality",
+        "Tính đa lộ trình đạt cùng kết quả"
       ],
-      "core_definition": "Nhiều cấu hình điều kiện khác nhau có thể dẫn đến cùng một kết cục thành công.",
-      "seminal_citation": "von Bertalanffy (1968), Fiss (2011)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Complexity Theory & Configurational Comparative Methods",
+        "Systems Theory"
+      ],
+      "core_definition": "Equifinality (Tính đồng quy / Tính đồng đích) là một nguyên lý căn bản của Lý thuyết Hệ thống Tổng quát (Ludwig von Bertalanffy) và Lý thuyết Cấu hình (Configurational Theory), khẳng định rằng trong các hệ thống mở phức tạp (như doanh nghiệp, nền kinh tế, tổ chức xã hội), một kết quả nhất định (ví dụ: hiệu quả tài chính vượt trội, thành công đổi mới) có thể đạt được thông qua nhiều con đường, lộ trình, chiến lược và cấu hình điều kiện hoàn toàn khác nhau.",
+      "seminal_citation": "Fiss, P. C. (2011). Building better causal theories: A fuzzy set approach to typologies in organization research. Academy of Management Journal, 54(2), 393-420.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Equifinality in Social Systems according to von Bertalanffy (1968), Fiss (2011).",
       "domain_tags_en": [
         "Complexity Theory"
-      ]
+      ],
+      "category": "Complexity Theory & Configurational Comparative Methods",
+      "operational_mechanism": "Đối lập trực tiếp với giả định tuyến tính 'đơn nhân quả' (unifinality) của hồi quy OLS truyền thống (nơi một biến độc lập luôn tác động theo một hướng cố định lên kết quả). Trong phân tích cấu hình (fsQCA): Tính đồng quy được toán học hóa thông qua toán tử Boolean OR ($+$): $Y = A \\times B + C \\times \\neg D + E \\times F$. Mô hình chỉ ra rằng có ít nhất 3 lời giải cấu hình độc lập nhau (3 công thức chiến lược khác biệt) đều dẫn tới cùng một thành công $Y$, phản ánh sự phong phú của thực tiễn quản trị.",
+      "benchmarks": "Chuẩn mực bài báo cấu hình và chiến lược Q1 (AMJ, SMJ, JMS): (1) Báo cáo độ bao phủ riêng biệt (Unique coverage) và độ bao phủ thô (Raw coverage) cho từng cấu hình đồng quy; (2) Đạt độ nhất quán lời giải tổng thể (Overall Solution Consistency $\\ge 0.80$); (3) Luận giải sâu sắc cơ chế đánh đổi chiến lược (strategic trade-offs) và tính bù trừ lẫn nhau giữa các cấu hình.",
+      "pitfalls": "Ép buộc dữ liệu vào một mô hình hồi quy OLS duy nhất và kết luận rằng các yếu tố khác biệt là 'vô nghĩa'; bỏ qua việc một yếu tố có thể có lợi trong cấu hình này nhưng lại có hại trong cấu hình khác.",
+      "apa_reference": "Fiss, P. C. (2011). Building better causal theories: A fuzzy set approach to typologies in organization research. Academy of Management Journal, 54(2), 393–420. https://doi.org/10.5465/amj.2011.60263120",
+      "is_flagship": true
     },
     {
       "id": "equivalence-trial",
