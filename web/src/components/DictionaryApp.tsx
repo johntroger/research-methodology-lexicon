@@ -169,6 +169,17 @@ export default function DictionaryApp({
     }
   }, [selectedId, searchQuery]);
 
+  // LUÔN CUỘN LÊN ĐỈNH KHI CHỌN MỤC TỪ MỚI (Tránh lỗi nội dung bị trôi lên trên)
+  useEffect(() => {
+    if (contentScrollRef.current) {
+      contentScrollRef.current.scrollTo({ top: 0, behavior: "instant" });
+    }
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
+    setReadingProgress(0);
+  }, [selectedId]);
+
   // Kết quả tìm kiếm
   const searchResults: SearchOutputItem[] = useMemo(() => {
     if (!searchQuery.trim()) {
@@ -345,7 +356,7 @@ export default function DictionaryApp({
 
   return (
     <div
-      className={`min-h-screen flex flex-col ${
+      className={`h-screen h-dvh flex flex-col overflow-hidden ${
         isDarkMode ? "dark bg-slate-950 text-slate-100" : "bg-slate-50 text-slate-900"
       }`}
     >
@@ -503,12 +514,12 @@ export default function DictionaryApp({
             CỘT BÊN TRÁI (30%): DANH SÁCH TRA CỨU & BỘ CHỈ MỤC
             ======================================================== */}
         <aside
-          className={`no-print border-r border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex flex-col transition-all duration-200 ${
+          className={`no-print border-r border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex flex-col h-full transition-all duration-200 ${
             isSidebarCollapsed ? "w-0 overflow-hidden border-none" : "w-full sm:w-80 md:w-96"
           } ${mobileTab === "detail" ? "hidden sm:flex" : "flex"}`}
         >
           {/* Ô Tìm kiếm ghim đầu danh sách */}
-          <div className="p-3 border-b border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 space-y-2">
+          <div className="shrink-0 p-3 border-b border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 space-y-2">
             <div className="relative">
               <Search
                 size={16}
@@ -587,7 +598,7 @@ export default function DictionaryApp({
 
           {/* Dải nhảy nhanh A-Z */}
           {alphabetLetters.length > 0 && (
-            <div className="px-2 py-1.5 border-b border-slate-100 dark:border-slate-800/80 bg-slate-50/40 dark:bg-slate-900/40 flex items-center gap-1 overflow-x-auto text-[11px] font-mono scrollbar-none">
+            <div className="shrink-0 px-2 py-1.5 border-b border-slate-100 dark:border-slate-800/80 bg-slate-50/40 dark:bg-slate-900/40 flex items-center gap-1 overflow-x-auto text-[11px] font-mono scrollbar-none">
               {alphabetLetters.map((l) => (
                 <button
                   key={l}
@@ -690,7 +701,7 @@ export default function DictionaryApp({
         <main
           ref={contentScrollRef}
           onScroll={handleScroll}
-          className={`flex-1 overflow-y-auto bg-white dark:bg-slate-900 p-4 sm:p-8 md:p-12 transition-all ${
+          className={`h-full flex-1 overflow-y-auto bg-white dark:bg-slate-900 p-4 sm:p-8 md:p-12 transition-all ${
             mobileTab === "list" ? "hidden sm:block" : "block"
           }`}
         >
