@@ -1,18 +1,18 @@
 {
-  "version": "10.0-reviewed",
+  "version": "10.2-peer-reviewed-cleaned",
   "last_updated": "2026-10-26",
   "statistics": {
     "total_flagship_terms": 82,
-    "total_corpus_terms": 2588,
-    "total_all_terms": 2670,
+    "total_corpus_terms": 2571,
+    "total_all_terms": 2653,
     "total_acronyms": 148,
-    "total_scholarly_items": 2818
+    "total_scholarly_items": 2801
   },
   "flagship_terms": "data/methodology_terms.json",
   "acronyms": "data/acronyms.json",
   "editorial_board": {
     "lead_reviewer": "ThS. Trần Thanh Tùng",
     "affiliation": "Trường Đại học Nguyễn Tất Thành (NTTU)",
-    "status": "Đã Thẩm Định Hoàn Tất Hồ Sơ Toàn Văn (V10.0)"
+    "status": "Đã Thẩm Định Hoàn Tất Hồ Sơ Toàn Văn (V10.2 Cleaned)"
   }
 }
