@@ -1165,25 +1165,34 @@
     },
     {
       "id": "grounded-theory",
-      "term": "Grounded Theory",
+      "term": "Grounded Theory Methodology (Glaser & Strauss / Charmaz Framework)",
       "ipa": "/ˈɡraʊndɪd ˈθɪəri/",
-      "vietnamese": "Lý thuyết nền",
+      "vietnamese": "Phương pháp luận Lý thuyết nền / Lý thuyết xuất phát từ dữ liệu",
       "vietnamese_variants": [
-        "Lý thuyết bắt nguồn từ dữ liệu",
-        "Phương pháp lý thuyết nền tảng"
+        "Phương pháp lý thuyết nền tảng",
+        "Grounded Theory",
+        "Lý thuyết kiến tạo từ thực địa"
       ],
       "domain_tags": [
         "Thiết kế Định tính",
         "Phát triển Lý thuyết",
         "Quy nạp"
       ],
-      "core_definition": "Thiết kế nghiên cứu định tính trong đó nhà nghiên cứu xây dựng một lý thuyết tổng quát, trừu tượng về một tiến trình, hành động hoặc tương tác xã hội dựa hoàn toàn vào dữ liệu thực tế thu thập từ những người trải nghiệm trực tiếp hiện tượng đó.",
+      "core_definition": "Grounded Theory Methodology (GTM) là phương pháp luận nghiên cứu định tính quy nạp mang tính cách mạng do Barney Glaser và Anselm Strauss khởi xướng năm 1967. Thay vì kiểm định các giả thuyết suy diễn từ các lý thuyết có sẵn (deductive theory testing), GTM xây dựng một lý thuyết mới bắt rễ sâu sắc từ chính dữ liệu thực nghiệm được thu thập một cách có hệ thống. Phương pháp này đặc trưng bởi quy trình phân tích và thu thập dữ liệu diễn ra đồng thời (simultaneous data collection and analysis), phương pháp so sánh liên tục (constant comparative method), chọn mẫu lý thuyết (theoretical sampling), và quy trình viết bản ghi lý thuyết (memoing) cho đến khi đạt độ bão hòa lý thuyết.",
       "paradigm_debates": "Gồm 3 nhánh chính: (1) Nhánh cổ điển (Glaser) - trung thành dữ liệu thô; (2) Nhánh cấu trúc quy chuẩn (Strauss & Corbin) - với quy trình mã hóa 3 bước (Open, Axial, Selective coding); (3) Nhánh kiến tạo (Charmaz) - nhấn mạnh sự tương tác giữa nhà nghiên cứu và người tham gia.",
-      "benchmarks": "Sử dụng kỹ thuật 'So sánh liên tục' (Constant Comparative Method) và 'Chọn mẫu theo lý thuyết' (Theoretical Sampling) cho tới khi bão hòa lý thuyết.",
-      "pitfalls": "Chỉ làm phỏng vấn định tính thông thường nhưng tự dán nhãn là 'Grounded Theory' trong khi không hề xây dựng được một mô hình lý thuyết hoặc tiến trình cốt lõi nào.",
-      "seminal_citation": "Charmaz, K. (2014). Constructing grounded theory (2nd ed.). SAGE Publications.",
+      "benchmarks": [
+        "Tính đồng thời (Simultaneity): Tuyệt đối không tách rời giai đoạn thu thập dữ liệu thành một khối và phân tích thành một khối riêng biệt.",
+        "Thực hiện chọn mẫu lý thuyết chuẩn mực: Mẫu nghiên cứu phải tiến hóa dựa trên nhu cầu giải thích của các phạm trù lý thuyết mới nổi.",
+        "Sản phẩm đầu ra phải là một Lý thuyết (Theory Generation): Kết quả của nghiên cứu GTM phải là một mô hình lý thuyết gồm các mệnh đề quan hệ (relational propositions) và phạm trù cốt lõi, không đơn thuần là danh sách các chủ đề (themes) rời rạc."
+      ],
+      "pitfalls": [
+        "Đánh đồng Phân tích chủ đề (Thematic Analysis) với Grounded Theory: Trích xuất các chủ đề rồi tự nhận là 'lý thuyết nền' trong khi hoàn toàn không có so sánh liên tục, chọn mẫu lý thuyết hay mô hình hóa quan hệ.",
+        "Áp đặt lý thuyết có sẵn (Theoretical Forcing): Sử dụng một bảng mã đóng khung từ lý thuyết bên ngoài để gán ghép dữ liệu, phản bội lại nguyên lý xuất phát từ thực địa của Glaser & Strauss.",
+        "Bỏ qua quy trình viết Memos: Không lưu trữ các bản ghi chép phát triển ý niệm, khiến quy trình phân tích mất đi dấu vết kiểm toán logic."
+      ],
+      "seminal_citation": "Glaser, B. G., & Strauss, A. L. (1967). The Discovery of Grounded Theory: Strategies for Qualitative Research. Aldine Publishing Company; Charmaz, K. (2014). Constructing Grounded Theory (2nd ed.). SAGE Publications.",
       "apa_intext": "(Creswell & Creswell, 2023, p. 14)",
-      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2023). Research design: Qualitative, quantitative, and mixed methods approaches (6th ed.). SAGE Publications.",
+      "apa_reference": "Glaser, B. G., & Strauss, A. L. (1967). The discovery of grounded theory: Strategies for qualitative research. Aldine Publishing Company.",
       "corpus_variants": [
         {
           "v": "Classic Glaserian Grounded Theory",
@@ -1262,7 +1271,14 @@
         "benchmark": true,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "category": "Qualitative Research",
+      "subcategory": "Grounded Theory",
+      "operational_mechanism": "Quy trình cốt lõi của GTM: (1) Khởi đầu thu thập dữ liệu sơ bộ không áp đặt khung khái niệm có sẵn; (2) Mã hóa dữ liệu tức thì (mã hóa mở/sơ cấp); (3) Vận dụng phương pháp so sánh liên tục (so sánh dữ liệu với dữ liệu, dữ liệu với mã, mã với mã, mã với phạm trù); (4) Viết Memos liên tục để ghi lại những thấu thị lý thuyết; (5) Tiến hành chọn mẫu lý thuyết để lấp đầy các khoảng trống của các phạm trù đang hình thành; (6) Tích hợp các phạm trù xoay quanh một Phạm trù cốt lõi (Core Category); (7) Đạt bão hòa lý thuyết và hoàn thiện mô hình lý thuyết trung gian (substantive or formal theory).",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "phenomenology",
@@ -2068,13 +2084,13 @@
     },
     {
       "id": "qualitative-content-analysis-mayring",
-      "term": "Qualitative Content Analysis (Mayring)",
+      "term": "Qualitative Content Analysis (Philipp Mayring / Margrit Schreier Framework)",
       "ipa": "/ˈkwɒlɪtətɪv ˈkɒntent əˈnæləsɪs/",
-      "vietnamese": "Phân tích nội dung định tính (Quy trình Philipp Mayring)",
+      "vietnamese": "Phân tích nội dung định tính (Khung tiếp cận Philipp Mayring)",
       "vietnamese_variants": [
-        "Phân tích nội dung có hệ thống Mayring",
-        "Phát triển phạm trù quy nạp và diễn dịch",
-        "Phương pháp mã hóa văn bản chuẩn mực"
+        "Phân tích nội dung định tính Mayring",
+        "Phân tích nội dung quy tắc",
+        "Qualitative Content Analysis"
       ],
       "domain_tags": [
         "Nghiên cứu Định tính",
@@ -2082,13 +2098,21 @@
         "Truyền thông & Xã hội học",
         "Phương pháp Hỗn hợp"
       ],
-      "core_definition": "Phương pháp phân tích văn bản định tính có hệ thống và tuân thủ các quy tắc định trước, kết hợp ưu điểm của phân tích định lượng (tính minh bạch, độ tin cậy liên mã hóa) với chiều sâu diễn giải ngữ cảnh của định tính.",
+      "core_definition": "Qualitative Content Analysis (QCA) theo khung tiếp cận của học giả người Đức Philipp Mayring (2000, 2014) và Margrit Schreier (2012) là phương pháp phân tích văn bản thực nghiệm có kiểm soát theo quy tắc (rule-guided) và mang tính hệ thống cao. Khác với phân tích nội dung định lượng thuần túy chỉ đếm tần suất từ, QCA của Mayring tập trung diễn giải ý nghĩa của các tài liệu định tính trong ngữ cảnh truyền thông của chúng, nhưng tuân thủ nghiêm ngặt các bước phân loại từng bước dựa trên Khung phân loại (Coding Frame / Category System) đã được kiểm định độ tin cậy.",
       "paradigm_debates": "Mayring thiết lập cầu nối dung hòa giữa nghiên cứu định tính và định lượng bằng cách tiêu chuẩn hóa hai quy trình cốt tử: Phát triển phạm trù quy nạp (Inductive category development) từ dữ liệu gốc và Áp dụng phạm trù diễn dịch (Deductive category application) từ lý thuyết.",
-      "benchmarks": "Độ tin cậy liên mã hóa viên (Inter-coder reliability / Cohen's Kappa hoặc Krippendorff's Alpha >= 0.80); xây dựng sổ tay mã hóa (Coding agenda) bao gồm: Tên phạm trù, Định nghĩa thao tác, Quy tắc mã hóa và Ví dụ mỏ neo (Anchor examples).",
-      "pitfalls": "Tiến hành phân tích diễn dịch mà không định nghĩa rõ các 'ví dụ mỏ neo' khiến các mã hóa viên hiểu khác nhau và làm sụt giảm nghiêm trọng độ tin cậy của kết quả phân tích.",
-      "seminal_citation": "Mayring, P. (2000). Qualitative content analysis. Forum Qualitative Sozialforschung / Forum: Qualitative Social Research, 1(2), Art. 20.",
+      "benchmarks": [
+        "Bảng quy tắc phân loại hoàn chỉnh (Coding Agenda / Frame): Bắt buộc phải có 4 cột: Tên danh mục (Category name), Định nghĩa danh mục (Definition), Ví dụ minh họa điển hình (Anchor example), và Quy tắc loại trừ phân biệt (Coding rule).",
+        "Thử nghiệm thí điểm khung mã hóa (Pilot testing of coding frame): Phải kiểm tra khung mã hóa trên 10-20% dữ liệu trước khi áp dụng toàn bộ.",
+        "Đánh giá độ tin cậy liên mã hóa viên (Inter-coder reliability): Yêu cầu tính toán hệ số thỏa thuận giữa các mã hóa viên độc lập (Cohen's Kappa hoặc Krippendorff's Alpha >= 0.80)."
+      ],
+      "pitfalls": [
+        "Định nghĩa danh mục mơ hồ: Không có quy tắc phân loại cụ thể khiến các mã hóa viên khác nhau gán nhãn tùy tiện.",
+        "Thiếu ví dụ neo điển hình (Anchor examples): Không cung cấp trích dẫn mẫu khiến việc áp dụng danh mục bị sai lệch.",
+        "Đánh mất tính định tính: Biến QCA thành một bảng kiểm kê định lượng đếm số lần xuất hiện mà bỏ qua việc diễn giải ngữ cảnh sâu xa của văn bản."
+      ],
+      "seminal_citation": "Mayring, P. (2000). Qualitative content analysis. Forum: Qualitative Social Research, 1(2), Art. 20; Mayring, P. (2014). Qualitative Content Analysis: Theoretical Foundation, Basic Procedures and Software Solution. Klagenfurt; Schreier, M. (2012). Qualitative Content Analysis in Practice. SAGE Publications.",
       "apa_intext": "(Flick et al., 2004, p. 266)",
-      "apa_reference": "Flick, U., von Kardorff, E., & Steinke, I. (Eds.). (2004). A companion to qualitative research. SAGE Publications.",
+      "apa_reference": "Mayring, P. (2014). Qualitative content analysis: Theoretical foundation, basic procedures and software solution. SSOAR. https://nbn-resolving.org/urn:nbn:de:0168-ssoar-395173",
       "corpus_variants": [
         {
           "v": "Phân tích nội dung có hệ thống Mayring",
@@ -2119,7 +2143,14 @@
         "benchmark": true,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "category": "Qualitative Research",
+      "subcategory": "Qualitative Analysis",
+      "operational_mechanism": "Ba hình thức phân tích quy trình cốt lõi của Mayring: (1) Phân tích cô đọng tóm lược (Summarizing Content Analysis): Rút gọn tài liệu để tạo ra một bản tóm lược dễ quản lý nhưng vẫn bảo tồn các nội dung cốt lõi; (2) Phân tích giải thích làm rõ (Explicative Content Analysis): Thu thập thêm tài liệu ngữ cảnh để làm sáng tỏ các đoạn văn bản mơ hồ; (3) Phân tích cấu trúc phân loại (Structuring / Deductive Content Analysis): Áp dụng một hệ thống danh mục định trước để lọc và phân loại dữ liệu theo các quy tắc mã hóa rõ ràng (coding rules) kèm ví dụ điển hình (anchor examples).",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "statistical-conclusion-validity-scc",
@@ -3938,23 +3969,32 @@
       "id": "constant-comparative-method",
       "term": "Constant Comparative Method (Glaser & Strauss)",
       "ipa": "/ˈkɒnstənt kəmˈpærətɪv ˈmɛθəd/",
-      "vietnamese": "Phương pháp So sánh Liên tục (Grounded Theory Cốt lõi)",
+      "vietnamese": "Phương pháp so sánh liên tục / Đối chiếu không ngừng",
       "vietnamese_variants": [
-        "Quy trình so sánh liên tục",
-        "Kỹ thuật đối chiếu dữ liệu lặp"
+        "Phương pháp đối chiếu liên tục",
+        "Kỹ thuật so sánh không ngừng",
+        "Constant Comparative Analysis"
       ],
-      "category": "Qualitative Methodology",
+      "category": "Qualitative Research",
       "domain_tags": [
         "Nghiên cứu Định tính",
         "Grounded Theory",
         "Quy nạp Lý thuyết",
         "Phân tích Dữ liệu"
       ],
-      "core_definition": "Trục xương sống của phương pháp luận Lý thuyết Nền tảng (Grounded Theory) do Barney Glaser và Anselm Strauss (1967) sáng lập. Đây là quy trình lặp đi lặp lại không ngừng nghỉ, trong đó nhà nghiên cứu liên tục so sánh: (1) Biến cố mới với các biến cố trước đó trong cùng một danh mục; (2) Từng biến cố với các thuộc tính của danh mục; (3) Danh mục này với danh mục khác; và (4) Lý thuyết đang hình thành với dữ liệu mới thu thập, cho đến khi không còn phát sinh thuộc tính mới (bão hòa lý thuyết).",
+      "core_definition": "Constant Comparative Method (Phương pháp so sánh liên tục) là động cơ vận hành trung tâm và đặc trưng định nghĩa nên Lý thuyết nền do Barney Glaser (1965) và Glaser & Strauss (1967) sáng tạo. Đây là một quy trình lặp đi lặp lại không ngừng, trong đó mỗi mẩu dữ liệu mới thu thập được đều được đối chiếu liên tục với tất cả các mẩu dữ liệu trước đó, đối chiếu dữ liệu với mã, đối chiếu mã với mã, đối chiếu mã với phạm trù, và đối chiếu phạm trù với phạm trù. Quá trình này giúp tinh lọc ranh giới khái niệm, phát hiện các thuộc tính bản chất và thúc đẩy sự hiển lộ của lý thuyết.",
       "paradigm_debates": "Xóa nhòa ranh giới cứng nhắc giữa 'Giai đoạn thu thập dữ liệu' và 'Giai đoạn phân tích dữ liệu' của nghiên cứu truyền thống. Trong Grounded Theory, thu thập và phân tích phải diễn ra đồng thời: phân tích một mẩu dữ liệu ngay lập tức định hướng cho việc phải đi phỏng vấn ai tiếp theo.",
-      "benchmarks": "4 giai đoạn tiến trình tường minh của Glaser & Strauss: (1) So sánh các sự kiện có thể áp dụng cho từng danh mục (Comparing incidents); (2) Tích hợp các danh mục và thuộc tính của chúng (Integrating categories); (3) Giới hạn và cô đọng lý thuyết (Delimiting the theory); (4) Viết lý thuyết hoàn chỉnh (Writing the theory). Minh chứng bằng các ghi chú ý tưởng (Theoretical Memos).",
-      "pitfalls": "Bẫy thu thập hết dữ liệu rồi mới ngồi so sánh: Tác giả tiến hành phỏng vấn xong hết 30 người rồi mới mở phần mềm mã hóa và tuyên bố dùng 'so sánh liên tục'. Đây là sự vi phạm bản chất nghiêm trọng khiến bài báo bị reviewer định tính bác bỏ.",
-      "apa_reference": "Glaser, B. G., & Strauss, A. L. (1967). The discovery of grounded theory: Strategies for qualitative research. Aldine Publishing Company.",
+      "benchmarks": [
+        "Thực hiện ở mọi cấp độ phân tích: So sánh dữ liệu - dữ liệu; dữ liệu - mã; mã - mã; mã - phạm trù; phạm trù - phạm trù.",
+        "Ghi nhận mâu thuẫn để phát triển chiều kích: Khi phát hiện hai mẩu dữ liệu có vẻ trái ngược nhau trong cùng một phạm trù, không được loại bỏ mà phải dùng sự khác biệt đó để xác lập chiều kích biến thiên (dimensions).",
+        "Dấu vết so sánh minh bạch: Thể hiện rõ sự tiến hóa của khái niệm qua các đợt so sánh liên tiếp trong các bản Memos phân tích."
+      ],
+      "pitfalls": [
+        "Thực hiện so sánh một lần rồi bỏ qua: Chỉ so sánh lướt qua ở đợt mã hóa đầu tiên rồi chuyển sang viết bài mà không duy trì vòng lặp đối chiếu liên tục.",
+        "So sánh máy móc không rút ra ý niệm lý thuyết: Chỉ đơn thuần tìm xem từ nào giống từ nào mà không nâng lên tầm so sánh ý nghĩa khái niệm.",
+        "Bỏ qua so sánh với các trường hợp ngoại lệ: Cố ý làm ngơ các trường hợp không khớp để bảo toàn một quy luật so sánh đơn giản."
+      ],
+      "apa_reference": "Glaser, B. G. (1965). The constant comparative method of qualitative analysis. Social Problems, 12(4), 436-445. https://doi.org/10.2307/798843",
       "synonyms": [
         "Constant Comparison",
         "Iterative Comparative Analysis",
@@ -3985,7 +4025,14 @@
         "benchmark": true,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "subcategory": "Grounded Theory",
+      "operational_mechanism": "Bốn giai đoạn vận hành của phương pháp so sánh liên tục (Glaser & Strauss, 1967): (1) So sánh các sự cố (incidents) có thể áp dụng cho từng phạm trù: Khi mã hóa một sự cố, so sánh nó với các sự cố trước đó trong cùng phạm trù để nhận diện các thuộc tính chung; (2) Tích hợp các phạm trù và các thuộc tính của chúng: Chuyển từ so sánh sự cố - sự cố sang so sánh sự cố - phạm trù; (3) Tinh gọn lý thuyết: Giảm bớt thuật ngữ thừa, tăng tính trừu tượng và tính bao quát; (4) Viết lý thuyết hoàn chỉnh dựa trên các ghi chú so sánh.",
+      "seminal_citation": "Glaser, B. G. (1965). The constant comparative method of qualitative analysis. Social Problems, 12(4), 436-445; Glaser, B. G., & Strauss, A. L. (1967). The Discovery of Grounded Theory. Aldine.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "theoretical-sampling",
@@ -6502,15 +6549,19 @@
     },
     {
       "id": "axial-coding",
-      "term": "Axial coding",
-      "vietnamese": "Mã hóa trục (bước liên kết các mối quan hệ giữa các danh mục code trong Grounded Theory).",
-      "vietnamese_variants": [],
+      "term": "Axial Coding (Strauss & Corbin Paradigm Model)",
+      "vietnamese": "Mã hóa trục / Mã hóa liên kết danh mục theo mô hình mô thức",
+      "vietnamese_variants": [
+        "Mã hóa theo trục",
+        "Mã hóa liên kết phạm trù",
+        "Paradigm Model Coding"
+      ],
       "domain_tags": [
         "Research Onion",
         "Strategy"
       ],
-      "core_definition": "Mã hóa trục (bước liên kết các mối quan hệ giữa các danh mục code trong Grounded Theory).",
-      "seminal_citation": "Saunders et al. (2019); Saunders et al. (2019); Strauss & Corbin (1998); Saunders (2019)",
+      "core_definition": "Axial Coding (Mã hóa trục) là giai đoạn phân tích thứ hai trong quy trình lý thuyết nền của Strauss & Corbin (1990, 1998), thực hiện nhiệm vụ 'tái cấu trúc và liên kết lại dữ liệu' đã bị phân rã trong bước mã hóa mở. Thuật ngữ 'trục' (axis) mang ý nghĩa rằng các phân tích xoay quanh trục của một phạm trù trung tâm, nhằm kết nối phạm trù đó với các tiểu phạm trù của nó thông qua các mối quan hệ mệnh đề logic, bối cảnh không gian thời gian và cấu trúc nguyên nhân - kết quả.",
+      "seminal_citation": "Strauss, A., & Corbin, J. (1998). Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory (2nd ed.). SAGE Publications; Corbin, J., & Strauss, A. (2015). Basics of Qualitative Research (4th ed.). SAGE Publications.",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #179; lộ tên file nội bộ",
@@ -6518,7 +6569,25 @@
       "domain_tags_en": [
         "Research Onion",
         "Strategy"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Coding",
+      "operational_mechanism": "Vận dụng Mô hình mô thức chuẩn (Coding Paradigm) gồm 6 cấu phần thiết yếu: (1) Điều kiện nhân quả (Causal Conditions) - các sự kiện tạo nên hiện tượng; (2) Hiện tượng trung tâm (The Phenomenon) - ý niệm cốt lõi đang được mổ xẻ; (3) Ngữ cảnh (Context) - tập hợp các thuộc tính cụ thể mà hiện tượng diễn ra; (4) Điều kiện can thiệp (Intervening Conditions) - các yếu tố cấu trúc vĩ mô hoặc vi mô thúc đẩy hoặc kìm hãm chiến lược hành động; (5) Chiến lược hành động/tương tác (Action/Interaction Strategies) - các động thái có chủ đích mà đối tượng triển khai để thích ứng hoặc giải quyết hiện tượng; (6) Hệ quả (Consequences) - kết quả thực tế thu được từ các chiến lược đó.",
+      "benchmarks": [
+        "Sơ đồ hóa mô hình mô thức (Axial Paradigm Diagram): Phải trình bày trực quan sơ đồ luồng quan hệ nhân quả cho các phạm trù trọng yếu.",
+        "Xác định rõ vai trò chức năng: Không được lẫn lộn giữa Ngữ cảnh (Context) và Điều kiện can thiệp (Intervening conditions).",
+        "Tính kiểm chứng qua dữ liệu: Mọi liên kết mũi tên trong sơ đồ trục phải được chứng minh bằng các bằng chứng trích dẫn thực tế từ người tham gia."
+      ],
+      "pitfalls": [
+        "Lẫn lộn Hiện tượng với Nguyên nhân hoặc Hệ quả: Xác định sai hiện tượng trung tâm khiến toàn bộ chuỗi mắt xích mô hình bị đảo lộn.",
+        "Áp dụng sơ đồ trục một cách gượng ép: Bắt ép dữ liệu phải lọt vừa khít vào 6 ô của mô hình mô thức dù bản chất thực địa không vận hành theo quan hệ nhân quả tuyến tính.",
+        "Bỏ qua phân tích tương tác hành động: Chỉ tập trung vào điều kiện và kết quả mà quên mất việc làm rõ các chiến lược vi mô mà con người sử dụng để thương lượng và hành động."
+      ],
+      "apa_reference": "Strauss, A., & Corbin, J. (1998). Basics of qualitative research: Techniques and procedures for developing grounded theory (2nd ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "axial-coding-strauss-corbin",
@@ -8314,15 +8383,19 @@
     },
     {
       "id": "category-saturation",
-      "term": "Category saturation",
-      "vietnamese": "Bão hòa phạm trù (Bão hòa khái niệm định tính)",
-      "vietnamese_variants": [],
+      "term": "Category Saturation (Dey / Charmaz Conceptual Adequacy)",
+      "vietnamese": "Độ bão hòa phạm trù / Tính thỏa đáng của phạm trù nghiên cứu",
+      "vietnamese_variants": [
+        "Bão hòa từng phạm trù",
+        "Tính đầy đủ của phạm trù",
+        "Conceptual Adequacy of Categories"
+      ],
       "domain_tags": [
         "Lý thuyết Nền",
         "Phương pháp Định tính"
       ],
-      "core_definition": "Thời điểm trong phân tích định tính (đặc biệt trong Lý thuyết nền - Grounded Theory) khi việc thu thập thêm dữ liệu không còn tạo ra thêm các thuộc tính, khía cạnh hoặc mối quan hệ mới cho một phạm trù lý thuyết.",
-      "seminal_citation": "Glaser, B. G., & Strauss, A. L. (1967). The Discovery of Grounded Theory. Aldine Publishing.",
+      "core_definition": "Category Saturation (Độ bão hòa phạm trù) là trạng thái phân tích vi mô trong Lý thuyết nền và phân tích định tính, khi một phạm trù cụ thể đã được khám phá đến tận cùng về mặt thuộc tính (properties), các chiều kích biến thiên (dimensions) và các điều kiện kích hoạt, khiến việc bổ sung thêm dữ liệu không còn làm thay đổi hoặc mở rộng định nghĩa của chính phạm trù đó nữa (Dey, 1999; Charmaz, 2014). Ian Dey (1999) đề xuất thuật ngữ 'Tính thỏa đáng của phạm trù' (Theoretical Adequacy) để phản ánh tính chân thực rằng nhà nghiên cứu không thể biết hết mọi thứ, nhưng đã đạt đủ độ dày dữ liệu để biện minh vững chắc cho sự tồn tại của phạm trù.",
+      "seminal_citation": "Dey, I. (1999). Grounding Grounded Theory: Guidelines for Qualitative Inquiry. Academic Press; Charmaz, K. (2014). Constructing Grounded Theory (2nd ed.). SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
@@ -8330,7 +8403,25 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Grounded Theory",
+      "operational_mechanism": "Tiêu chuẩn đánh giá một phạm trù đạt bão hòa: (1) Phạm trù được định nghĩa một cách rành mạch và phân biệt rõ ràng với các phạm trù lân cận; (2) Các thuộc tính của phạm trù được chứng minh bằng nhiều trích dẫn đa dạng; (3) Đã xác định được các cực của chiều kích (ví dụ từ mức độ 'rất thấp' đến 'rất cao'); (4) Mối liên hệ giữa phạm trù này với các phạm trù khác đã được làm sáng tỏ.",
+      "benchmarks": [
+        "Đánh giá độc lập cho từng phạm trù: Không thể tuyên bố chung chung mà phải chỉ rõ phạm trù A, phạm trù B đã đạt bão hòa.",
+        "Độ dày của bằng chứng (Evidence Density): Mỗi phạm trù cốt lõi phải được hỗ trợ bởi chứng cứ từ đa số người tham gia trong mẫu.",
+        "Thuyết phục về mặt khái niệm (Conceptual Convincingness): Độc giả và người phản biện nhận thấy phạm trù có chiều sâu phân tích thuyết phục."
+      ],
+      "pitfalls": [
+        "Tuyên bố bão hòa khi phạm trù mới chỉ có 1-2 thuộc tính mỏng manh: Phạm trù chưa được phát triển đầy đủ chiều kích đã vội vã đưa vào mô hình lý thuyết.",
+        "Phạm trù bị trùng lặp khái niệm: Hai phạm trù có nội hàm gần như giống nhau nhưng được đặt hai tên khác nhau do không so sánh liên tục thấu đáo.",
+        "Bỏ qua các chiều kích dị biệt: Không tìm kiếm các bằng chứng tương phản để kiểm tra giới hạn của phạm trù."
+      ],
+      "apa_reference": "Dey, I. (1999). Grounding grounded theory: Guidelines for qualitative inquiry. Academic Press.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "category-selection-probes",
@@ -8844,21 +8935,43 @@
     },
     {
       "id": "classic-glaserian-grounded-theory",
-      "term": "Classic Glaserian Grounded Theory",
-      "vietnamese": "Lý thuyết Nền tảng Cổ điển Glaser",
-      "vietnamese_variants": [],
+      "term": "Classic Glaserian Grounded Theory (Emergent / Objectivist Approach)",
+      "vietnamese": "Lý thuyết nền cổ điển Glaser / Tiếp cận hiển lộ tự nhiên",
+      "vietnamese_variants": [
+        "Lý thuyết nền Glaserian",
+        "Classic Grounded Theory",
+        "Tiếp cận hiển lộ Glaser"
+      ],
       "domain_tags": [
         "Grounded Theory"
       ],
-      "core_definition": "Nhấn mạnh sự nảy sinh thuần túy của lý thuyết từ dữ liệu, phản đối ép khung lý thuyết.",
-      "seminal_citation": "Glaser & Strauss (1967)",
+      "core_definition": "Classic Glaserian Grounded Theory (Lý thuyết nền cổ điển) là nhánh tiếp cận nguyên bản do Barney G. Glaser duy trì và bảo vệ sau sự phân tách với Anselm Strauss (Glaser, 1978, 1992). Tiếp cận này nhấn mạnh sự 'hiển lộ tự nhiên' (emergence) của lý thuyết từ dữ liệu thực tế mà không bị ô nhiễm bởi các định kiến hay cấu trúc cứng nhắc. Glaser phản đối quyết liệt việc đọc tổng quan tài liệu chuyên sâu trước khi vào thực địa và bài trừ các bước mã hóa mang tính hình thức, thủ tục phức tạp (như mã hóa trục hay ma trận điều kiện), khẳng định rằng nghiên cứu viên chỉ cần tin tưởng vào dữ liệu để tìm ra vấn đề trung tâm mà người trong cuộc đang tìm cách giải quyết.",
+      "seminal_citation": "Glaser, B. G. (1978). Theoretical Sensitivity: Advances in the Methodology of Grounded Theory. The Sociology Press; Glaser, B. G. (1992). Basics of Grounded Theory Analysis: Emergence vs. Forcing. The Sociology Press.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Classic Glaserian Grounded Theory according to Glaser & Strauss (1967).",
       "domain_tags_en": [
         "Grounded Theory"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Grounded Theory",
+      "operational_mechanism": "Quy trình Glaserian gồm 2 giai đoạn mã hóa: (1) Substantive Coding (gồm Open Coding không giới hạn câu hỏi nhằm tìm ra Core Variable, và sau đó là Selective Coding chỉ tập trung xoay quanh Core Variable); (2) Theoretical Coding (vận dụng các mô hình quan hệ lý thuyết - Coding Families để đan kết các phạm trù thực chất lại với nhau). Quá trình này song hành với việc viết Memo tự do không ngừng nghỉ và hoàn toàn cấm đoán việc kiểm định tiên nghiệm.",
+      "benchmarks": [
+        "Nguyên tắc không đọc tổng quan tài liệu trước trong lĩnh vực thực chất: Nghiên cứu viên chỉ đọc tài liệu sau khi lý thuyết đã hiển lộ rõ ràng để tránh bị đóng khung tư duy.",
+        "Xác định Biến cốt lõi (Core Variable): Phải chứng minh được Biến cốt lõi giải thích phần lớn sự biến thiên trong việc giải quyết vấn đề chính của người tham gia.",
+        "Sử dụng các họ mã lý thuyết (Coding Families) của Glaser (1978) như: 6 Cs (Causes, Contexts, Contingencies, Consequences, Covariances, Conditions) một cách linh hoạt."
+      ],
+      "pitfalls": [
+        "Thực hiện mã hóa trục theo kiểu Strauss: Áp dụng sơ đồ trục nhân quả cưỡng bức mà Glaser gọi là 'ép buộc dữ liệu' (forcing).",
+        "Lúng túng không tìm ra Core Variable: Bị ngập trong hàng trăm mã mở mà không thể hội tụ về một mối quan tâm chính duy nhất.",
+        "Bảo vệ luận án gặp khó khăn: Nghiên cứu sinh theo nhánh Glaser nguyên bản thường bị các hội đồng truyền thống chất vấn vì phần Tổng quan tài liệu (Literature Review) ở Chương 2 quá mỏng trước khi thu thập dữ liệu."
+      ],
+      "apa_reference": "Glaser, B. G. (1992). Basics of grounded theory analysis: Emergence vs. forcing. The Sociology Press.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "classical-delphi-method",
@@ -10325,21 +10438,43 @@
     },
     {
       "id": "conditional-consequential-matrix",
-      "term": "Conditional / Consequential Matrix",
-      "vietnamese": "Ma trận Điều kiện - Hệ quả",
-      "vietnamese_variants": [],
+      "term": "Conditional / Consequential Matrix (Strauss & Corbin Multi-Level Framework)",
+      "vietnamese": "Ma trận điều kiện - hệ quả / Khung phân tích đa tầng Strauss & Corbin",
+      "vietnamese_variants": [
+        "Ma trận điều kiện hệ quả",
+        "Khung phân tích vĩ mô vi mô",
+        "Conditional Matrix"
+      ],
       "domain_tags": [
         "Grounded Theory"
       ],
-      "core_definition": "Sơ đồ trực quan biểu diễn mối liên hệ giữa các cấp độ vi mô cá nhân đến vĩ mô xã hội.",
-      "seminal_citation": "Corbin & Strauss (2008)",
+      "core_definition": "Conditional / Consequential Matrix (Ma trận điều kiện - hệ quả) là một công cụ phân tích vĩ mô mang tính trực quan nâng cao do Strauss & Corbin (1990, 1998) sáng lập trong Lý thuyết nền. Công cụ này được thiết kế dưới dạng một tập hợp các vòng tròn đồng tâm đại diện cho các cấp độ môi trường khác nhau tác động lên hiện tượng nghiên cứu: từ cấp độ vi mô (cá nhân, nhóm, tương tác trực tiếp) đến cấp độ trung gian (tổ chức, cộng đồng) và cấp độ vĩ mô (quốc gia, chính sách, văn hóa, toàn cầu). Ma trận giúp nhà nghiên cứu theo dõi chuỗi tương tác nhân quả và sự kết nối giữa các điều kiện vĩ mô với các hành vi vi mô và ngược lại.",
+      "seminal_citation": "Strauss, A., & Corbin, J. (1998). Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory (2nd ed.). SAGE Publications; Corbin, J., & Strauss, A. (2015). Basics of Qualitative Research (4th ed.). SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Conditional / Consequential Matrix according to Corbin & Strauss (2008).",
       "domain_tags_en": [
         "Grounded Theory"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Grounded Theory",
+      "operational_mechanism": "Cấu trúc các tầng vòng tròn đồng tâm từ ngoài vào trong: (1) Tầng Quốc tế/Toàn cầu (International); (2) Tầng Quốc gia (National); (3) Tầng Cộng đồng/Tổ chức (Community/Organizational); (4) Tầng Nhóm/Tiểu văn hóa (Subcultural/Group); (5) Tầng Tương tác cá nhân (Interactional); (6) Tâm điểm Hiện tượng (The Action/Interaction central phenomenon). Nhà nghiên cứu truy vết các đường dẫn nhân quả đi xuyên qua các tầng này để giải thích tại sao một chính sách vĩ mô lại tác động đến quyết định cá nhân và ngược lại hành vi của cá nhân phản hồi lại cấu trúc xã hội ra sao.",
+      "benchmarks": [
+        "Minh họa sơ đồ ma trận đồng tâm trong báo cáo: Phải hiển thị mô hình ma trận với các đường mũi tên nhân quả đa tầng rõ ràng.",
+        "Kết nối liên tầng (Cross-level connectivity): Tuyệt đối không để các tầng rời rạc; phải giải thích được cơ chế chuyển tiếp điều kiện từ tầng ngoài vào tầng trong.",
+        "Đặc biệt giá trị cho các nghiên cứu chính sách công, quản trị chiến lược và xã hội học tổ chức."
+      ],
+      "pitfalls": [
+        "Vẽ ma trận như một sơ đồ tĩnh trang trí: Vẽ sơ đồ rất đẹp nhưng trong bài viết hoàn toàn không phân tích các mối liên kết tương tác giữa các tầng.",
+        "Bỏ qua bối cảnh vĩ mô: Quá tập trung vào tâm điểm tương tác vi mô mà quên mất các ràng buộc thể chế, văn hóa và luật pháp ở các tầng ngoài.",
+        "Quy kết nhân quả cơ học đơn tuyến: Cho rằng tác động vĩ mô luôn áp đặt một chiều lên hành vi vi mô mà bỏ qua tính chủ động (agency) và sự kháng cự của con người."
+      ],
+      "apa_reference": "Strauss, A., & Corbin, J. (1998). Basics of qualitative research: Techniques and procedures for developing grounded theory (2nd ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "conditional-indirect-effect",
@@ -11111,15 +11246,19 @@
     },
     {
       "id": "constructivist-grounded-theory",
-      "term": "Constructivist grounded theory",
-      "vietnamese": "Lý thuyết nền kiến tạo (Trường phái Kathy Charmaz)",
-      "vietnamese_variants": [],
+      "term": "Constructivist Grounded Theory (Charmaz Framework)",
+      "vietnamese": "Lý thuyết nền kiến tạo / Tiếp cận kiến tạo luận Kathy Charmaz",
+      "vietnamese_variants": [
+        "Lý thuyết nền kiến tạo Charmaz",
+        "Constructivist Grounded Theory",
+        "Lý thuyết nền diễn giải phản tư"
+      ],
       "domain_tags": [
         "Lý thuyết Nền",
         "Phương pháp Định tính"
       ],
-      "core_definition": "Biến thể hiện đại của Lý thuyết nền do Kathy Charmaz khởi xướng, bác bỏ lập trường thực chứng ngây thơ để khẳng định rằng lý thuyết không tự nằm sẵn trong dữ liệu chờ được phát hiện, mà được kiến tạo thông qua sự tương tác giữa nhà nghiên cứu và người tham gia.",
-      "seminal_citation": "Charmaz, K. (2006). Constructing Grounded Theory: A Practical Guide through Qualitative Analysis. SAGE Publications.",
+      "core_definition": "Constructivist Grounded Theory là bước tiến đương đại nổi bật nhất trong lý thuyết nền do Kathy Charmaz khởi xướng (2000, 2006, 2014), đặt trên nền tảng bản thể luận tương đối (relativist ontology) và nhận thức luận kiến tạo (constructivist epistemology). Charmaz bác bỏ giả định thực chứng ngầm định của Glaser và Strauss (cho rằng dữ liệu và lý thuyết tồn tại khách quan ngoài kia chỉ chờ nghiên cứu viên 'khám phá'). Ngược lại, bà khẳng định rằng cả dữ liệu lẫn lý thuyết đều là sản phẩm được 'đồng kiến tạo' (co-constructed) thông qua sự tương tác xã hội giữa nghiên cứu viên và người tham gia.",
+      "seminal_citation": "Charmaz, K. (2006). Constructing Grounded Theory: A Practical Guide Through Qualitative Analysis. SAGE Publications; Charmaz, K. (2014). Constructing Grounded Theory (2nd ed.). SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
@@ -11127,7 +11266,25 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Grounded Theory",
+      "operational_mechanism": "Quy trình thực thi theo Charmaz: (1) Initial Coding: Mã hóa ban đầu sát từng dòng dữ liệu (line-by-line coding) bằng việc sử dụng các danh động từ chỉ hành động (gerunds - từ có đuôi '-ing') để nắm bắt tính linh động và tiến trình của trải nghiệm; (2) Focused Coding: Lựa chọn các mã xuất hiện thường xuyên nhất hoặc có ý nghĩa lý thuyết nhất để sàng lọc khối dữ liệu lớn; (3) Memo Writing: Viết bản ghi tự sự kết hợp phản tư cá nhân về vị thế nghiên cứu (reflexivity); (4) Theoretical Sampling & Saturation; (5) Xây dựng lý thuyết trừu tượng nhưng bám rễ sâu sắc vào bối cảnh văn hóa xã hội đa chiều.",
+      "benchmarks": [
+        "Nguyên tắc mã hóa bằng hành động (Action/Gerund Coding): Sử dụng các động từ hành động (ví dụ: 'đàm phán vị thế', 'chống đỡ áp lực') thay vì các danh từ tĩnh tại.",
+        "Tính phản tư triệt để (Deep Reflexivity): Nhà nghiên cứu phải công khai vị thế quyền lực, cảm xúc và giả định cá nhân trong suốt tiến trình đồng kiến tạo tri thức.",
+        "Tôn trọng tiếng nói của người tham gia: Bản lý thuyết hoàn thiện phải chứa đựng các sắc thái cảm xúc, sự mâu thuẫn và tính đa thanh (polyvocality) của trải nghiệm sống."
+      ],
+      "pitfalls": [
+        "Mã hóa thụ động bằng danh từ nhãn dán (static labeling): Dùng các danh từ tĩnh đóng hộp đối tượng thay vì nắm bắt hành động chuyển biến qua danh động từ.",
+        "Tuyên bố đạt chân lý khách quan tuyệt đối: Bỏ quên vị thế đồng kiến tạo, viết báo cáo theo giọng văn thực chứng xa cách ('nhà nghiên cứu đứng ngoài quan sát').",
+        "Biến tướng thành văn phong phê bình thuần túy: Sa đà vào cảm xúc cá nhân của nghiên cứu viên mà làm mờ nhạt câu chuyện và bằng chứng thực tế từ người tham gia."
+      ],
+      "apa_reference": "Charmaz, K. (2014). Constructing grounded theory (2nd ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "constructivist-grounded-theory-charmaz",
@@ -12818,20 +12975,42 @@
     {
       "id": "data-saturation-vs-theoretical-saturation",
       "term": "Data Saturation vs. Theoretical Saturation",
-      "vietnamese": "Bão hòa Dữ liệu",
-      "vietnamese_variants": [],
+      "vietnamese": "Bão hòa dữ liệu so với Bão hòa lý thuyết",
+      "vietnamese_variants": [
+        "So sánh Data Saturation và Theoretical Saturation",
+        "Bão hòa thông tin và bão hòa khái niệm",
+        "Code Saturation vs Meaning Saturation"
+      ],
       "domain_tags": [
         "Qualitative Rigour"
       ],
-      "core_definition": "Không thấy thông tin mới) vs. Bão hòa Lý thuyết (Không phát triển thêm thuộc tính lý thuyết mới.",
-      "seminal_citation": "Saunders et al. (2018)",
+      "core_definition": "Sự phân biệt giữa Data Saturation (Bão hòa dữ liệu / Bão hòa mã) và Theoretical Saturation (Bão hòa lý thuyết / Bão hòa ý nghĩa) là một trong những phân định phương pháp luận quan trọng nhất trong nghiên cứu định tính hiện đại (Saunders et al., 2018; O'Reilly & Parker, 2013). Data Saturation xảy ra ở cấp độ thu thập dữ liệu và mã hóa sơ cấp (chu kỳ 1) khi không còn thông tin, sự kiện hoặc mã mô tả mới nào xuất hiện. Trong khi đó, Theoretical Saturation xảy ra ở cấp độ phân tích trừu tượng cấp cao (chu kỳ 2 và tích hợp lý thuyết) khi toàn bộ các thuộc tính, chiều kích và mối quan hệ giữa các phạm trù lý thuyết đã hoàn toàn rõ ràng, vững chắc và không còn kẽ hở giải thích.",
+      "seminal_citation": "Saunders, B., et al. (2018). Saturation in qualitative research: Exploring its conceptualization and operationalization. Quality & Quantity, 52(4), 1893-1907; O'Reilly, M., & Parker, N. (2013). 'Unsatisfactory Saturation': A critical exploration of the notion of saturated sample sizes in qualitative research. Qualitative Research, 13(2), 190-197.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Data Saturation vs. Theoretical Saturation according to Saunders et al. (2018).",
       "domain_tags_en": [
         "Qualitative Rigour"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Methodological Rigor",
+      "operational_mechanism": "Ma trận đối chiếu: (1) Cấp độ phân tích: Data saturation ở cấp độ bề mặt thông tin thu thập (văn bản/từ ngữ); Theoretical saturation ở cấp độ cấu trúc khái niệm và mô hình quan hệ; (2) Phương pháp tiếp cận: Data saturation áp dụng cho phân tích chủ đề, nghiên cứu trường hợp mô tả; Theoretical saturation là đặc trưng độc quyền của Lý thuyết nền (GTM) gắn liền với chọn mẫu lý thuyết; (3) Dấu hiệu nhận biết: Data saturation nhận biết qua việc các câu trả lời lặp lại; Theoretical saturation nhận biết qua việc mô hình lý thuyết có năng lực giải thích trọn vẹn cả các trường hợp cực đoan và dị biệt.",
+      "benchmarks": [
+        "Bắt buộc phân biệt rõ ràng trong Luận án Tiến sĩ: Tác giả phải tuyên bố chính xác công trình của mình đạt 'Data saturation' (nếu làm Thematic Analysis) hay đạt 'Theoretical saturation' (nếu làm Grounded Theory).",
+        "Tiêu chuẩn bão hòa ý nghĩa (Meaning Saturation - Hennink et al., 2017): Đòi hỏi không chỉ nhận diện được mã mà phải thấu hiểu sâu sắc mọi sắc thái trải nghiệm của người tham gia.",
+        "Bảng đối chiếu kiểm toán: Trình bày minh bạch ma trận bão hòa tương ứng với cấp độ phương pháp luận đã lựa chọn."
+      ],
+      "pitfalls": [
+        "Sử dụng hoán đổi tùy tiện: Dùng thuật ngữ 'Theoretical saturation' cho một nghiên cứu khảo sát định tính thông thường không xây dựng lý thuyết nền.",
+        "Tuyên bố đạt Theoretical Saturation khi mới chỉ đạt Data Saturation: Nghĩ rằng người phỏng vấn nói lặp lại câu chuyện thì lý thuyết đã hoàn chỉnh, trong khi các mắt xích mô hình lý thuyết vẫn còn lỏng lẻo.",
+        "Thiếu bằng chứng chứng minh: Bị phản biện tạp chí Q1 bác bỏ vì chỉ khẳng định bão hòa suông mà không phân tích lộ trình tiến tới bão hòa."
+      ],
+      "apa_reference": "Saunders, B., Sim, J., Kingstone, T., Baker, S., Waterfield, J., Bartlam, B., Burroughs, H., & Jinks, C. (2018). Saturation in qualitative research: exploring its conceptualization and operationalization. Quality & Quantity, 52(4), 1893-1907. https://doi.org/10.1007/s11135-017-0574-8",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "data-sharing-fair-principles",
@@ -13466,21 +13645,43 @@
     },
     {
       "id": "descriptive-coding",
-      "term": "Descriptive Coding",
-      "vietnamese": "Mã hóa Mô tả",
-      "vietnamese_variants": [],
+      "term": "Descriptive Coding (Topic Coding - Saldaña)",
+      "vietnamese": "Mã hóa mô tả / Mã hóa theo chủ đề thực chất",
+      "vietnamese_variants": [
+        "Mã hóa đề tài",
+        "Mã hóa danh từ mô tả",
+        "Topic Coding"
+      ],
       "domain_tags": [
         "Qualitative Coding"
       ],
-      "core_definition": "Tóm tắt chủ đề cơ bản của một đoạn văn bản bằng một từ hoặc cụm từ ngắn gọn.",
-      "seminal_citation": "Saldaña (2021)",
+      "core_definition": "Descriptive Coding (còn gọi là Topic Coding) là phương pháp mã hóa chu kỳ một căn bản nhất trong nghiên cứu định tính (Saldaña, 2021; Wolcott, 1994). Phương pháp này gán một từ hoặc cụm danh từ ngắn gọn để tóm lược chủ đề cơ bản (basic topic) của một đoạn văn bản hoặc dữ liệu thị giác. Mục đích của mã hóa mô tả không phải là tóm tắt toàn bộ nội dung chi tiết, mà là lập danh mục kiểm kê có tổ chức (inventory) về việc 'đoạn dữ liệu này đang nói về chủ đề gì', giúp định vị và sắp xếp khối dữ liệu khổng lồ.",
+      "seminal_citation": "Saldaña, J. (2021). The Coding Manual for Qualitative Researchers (4th ed.). SAGE Publications; Wolcott, H. F. (1994). Transforming Qualitative Data: Description, Analysis, and Interpretation. SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Descriptive Coding according to Saldaña (2021).",
       "domain_tags_en": [
         "Qualitative Coding"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Coding",
+      "operational_mechanism": "Quy trình triển khai: (1) Đọc đoạn dữ liệu thực địa; (2) Trả lời câu hỏi: 'Chủ đề của đoạn văn này là gì?'; (3) Gán một nhãn danh từ ngắn gọn (ví dụ: 'Cơ sở hạ tầng kỹ thuật', 'Chính sách tiền lương', 'Xung đột thế hệ'); (4) Xây dựng Bảng chỉ mục mã hóa mô tả (Descriptive Code Index); (5) Sử dụng bảng chỉ mục này làm cơ sở phân loại để tái cấu trúc dữ liệu trước khi bước vào các kỹ thuật phân tích sâu hơn ở chu kỳ hai.",
+      "benchmarks": [
+        "Ngắn gọn và chính xác: Nhãn mã thường chỉ từ 1 đến 3 từ thể hiện rõ chủ đề danh từ.",
+        "Giá trị phân loại nền tảng: Cực kỳ hữu ích trong việc lập bản đồ sơ bộ cho các tập dữ liệu đa dạng (nhật ký thực địa, tài liệu chính sách, biên bản họp, văn bản hành chính).",
+        "Tiền đề cho chu kỳ hai: Không dừng lại ở mã hóa mô tả, phải chuyển tiếp sang Pattern Coding hoặc Thematic Analysis để đạt độ sâu học thuật."
+      ],
+      "pitfalls": [
+        "Nhầm lẫn giữa mã hóa mô tả và phân tích chuyên sâu: Tưởng rằng việc dán nhãn chủ đề danh từ đã là hoàn thành nghiên cứu, biến báo cáo định tính thành bản kiểm kê đồ vật nhàm chán.",
+        "Sử dụng nhãn quá mơ hồ: Gán những mã chung chung như 'Ý kiến', 'Khó khăn', 'Thông tin chung' mà không có tính định danh cụ thể.",
+        "Không bao giờ vượt qua cấp độ mô tả bề mặt: Không thể nâng tầm các nhãn mô tả lên thành các khái niệm phân tích trừu tượng."
+      ],
+      "apa_reference": "Saldaña, J. (2021). The coding manual for qualitative researchers (4th ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "descriptive-method",
@@ -19751,21 +19952,43 @@
     },
     {
       "id": "in-vivo-coding",
-      "term": "In-Vivo Coding",
-      "vietnamese": "Mã hóa In-Vivo",
-      "vietnamese_variants": [],
+      "term": "In-Vivo Coding (Verbatim Participant Voice Coding)",
+      "vietnamese": "Mã hóa In-Vivo / Mã hóa sử dụng nguyên văn ngôn từ đối tượng",
+      "vietnamese_variants": [
+        "Mã hóa nguyên văn",
+        "Mã hóa ngôn ngữ tự nhiên",
+        "Verbatim Coding"
+      ],
       "domain_tags": [
         "Qualitative Coding"
       ],
-      "core_definition": "Sử dụng chính từ ngữ, cụm từ nguyên văn của người tham gia nghiên cứu làm tên nhãn mã.",
-      "seminal_citation": "Saldaña (2021)",
+      "core_definition": "In-Vivo Coding (mã hóa nguyên văn thực địa, bắt nguồn từ thuật ngữ tiếng Latin 'in vivo' - trong cơ thể sống) là một phương pháp mã hóa định tính chu kỳ một (First Cycle coding) mang tính nhân văn sâu sắc, trong đó nhãn mã (code) được trích xuất nguyên văn từng từ hoặc cụm từ ngắn từ chính lời ăn tiếng nói, tiếng lóng, ẩn dụ hoặc thuật ngữ đặc thù của người tham gia nghiên cứu (Saldaña, 2021; Charmaz, 2014). Phương pháp này ưu tiên tối thượng việc bảo tồn tiếng nói nguyên bản, hệ tư tưởng và thế giới quan của đối tượng nghiên cứu.",
+      "seminal_citation": "Saldaña, J. (2021). The Coding Manual for Qualitative Researchers (4th ed.). SAGE Publications; Charmaz, K. (2014). Constructing Grounded Theory (2nd ed.). SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of In-Vivo Coding according to Saldaña (2021).",
       "domain_tags_en": [
         "Qualitative Coding"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Coding",
+      "operational_mechanism": "Quy trình thực hiện: (1) Đọc kỹ lưỡng bản gỡ băng phỏng vấn hoặc ghi chép thực địa; (2) Khoanh vùng các từ ngữ đặc sắc, giàu hình ảnh, chứa đựng cảm xúc mạnh mẽ hoặc mang tính thuật ngữ nội bộ (indigenous terms / insider jargon) mà đối tượng tự sử dụng để mô tả thế giới của họ; (3) Đặt từ ngữ đó trong dấu ngoặc kép để làm tên mã chính thức (ví dụ: 'sống sót qua ngày', 'cháy sạch năng lượng', 'cắn răng chịu trận'); (4) Sử dụng các mã In-Vivo này làm hạt giống để kích hoạt phân tích lý thuyết ở các chu kỳ sau.",
+      "benchmarks": [
+        "Đặt trong dấu ngoặc kép minh bạch: Tất cả các mã In-Vivo phải được định dạng chuẩn mực trong ngoặc kép để phân biệt với mã do nghiên cứu viên tự đặt.",
+        "Ưu tiên cho các nhóm đối tượng đặc thù: Cực kỳ phù hợp cho nghiên cứu về trẻ em, thanh thiếu niên, các tiểu văn hóa ngầm, cộng đồng yếm thế hoặc các nhóm nghề nghiệp có tiếng lóng chuyên biệt.",
+        "Cầu nối sang khái niệm lý thuyết: Các mã In-Vivo ở chu kỳ 1 phải được nâng cấp và liên kết với các phạm trù phân tích trừu tượng hơn ở chu kỳ 2."
+      ],
+      "pitfalls": [
+        "Lạm dụng biến mã thành câu trích dẫn dài: Cắt nguyên cả một câu văn dài phức tạp làm mã thay vì chắt lọc 1-3 từ khóa đắt giá nhất.",
+        "Dừng lại ở bề mặt ngôn từ mà không khái niệm hóa: Để nguyên hàng trăm mã In-Vivo rời rạc mà không phân tích ý nghĩa ẩn dụ và cấu trúc lý thuyết đằng sau ngôn từ đó.",
+        "Bắt chước ngôn ngữ đối tượng một cách kệch cỡm: Sử dụng mã In-Vivo sai ngữ cảnh văn hóa khiến phân tích trở nên phản cảm hoặc thiếu tôn trọng người tham gia."
+      ],
+      "apa_reference": "Saldaña, J. (2021). The coding manual for qualitative researchers (4th ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "incidence-vs-prevalence",
@@ -20682,21 +20905,44 @@
     },
     {
       "id": "intercoder-agreement",
-      "term": "Intercoder agreement",
-      "vietnamese": "Độ đồng thuận giữa các người mã — Mức độ nhất quán khi hai hoặc nhiều người cùng mã hóa độc lập một văn bản (đo bằng tỷ lệ % hoặc Kappa).",
-      "vietnamese_variants": [],
+      "term": "Inter-Coder Agreement / Inter-Rater Reliability in Qualitative Research",
+      "vietnamese": "Độ tin cậy liên mã hóa viên / Độ thỏa thuận giữa các người mã hóa độc lập",
+      "vietnamese_variants": [
+        "Độ thỏa thuận liên mã hóa viên",
+        "Độ tin cậy giữa các đánh giá viên",
+        "Inter-Coder Reliability"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Độ đồng thuận giữa các người mã — Mức độ nhất quán khi hai hoặc nhiều người cùng mã hóa độc lập một văn bản (đo bằng tỷ lệ % hoặc Kappa).",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Inter-Coder Agreement (Độ thỏa thuận liên mã hóa viên hoặc độ tin cậy liên đánh giá viên) là thước đo định lượng và quy trình phương pháp luận quan trọng nhằm đánh giá mức độ nhất quán và độc lập khi hai hoặc nhiều nhà nghiên cứu cùng mã hóa một tập dữ liệu định tính sử dụng chung một khung mã hóa (Miles, Huberman & Saldaña, 2020; Krippendorff, 2019; Lombard et al., 2002). Đây là minh chứng cốt tử khẳng định rằng hệ thống mã hóa không phải là sản phẩm tưởng tượng chủ quan của một cá nhân đơn lẻ, mà có tính ổn định, rõ ràng và có thể nhân bản được.",
+      "seminal_citation": "Miles, M. B., Huberman, A. M., & Saldaña, J. (2020). Qualitative Data Analysis: A Methods Sourcebook (4th ed.). SAGE Publications; Krippendorff, K. (2019). Content Analysis: An Introduction to Its Methodology (4th ed.). SAGE Publications; Lombard, M., Snyder-Duch, J., & Bracken, C. C. (2002). Content analysis in mass communication: Assessment and reporting of intercoder reliability. Human Communication Research, 28(4), 587-604.",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Intercoder agreement according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Methodological Rigor",
+      "operational_mechanism": "Quy trình đo lường chuẩn mực: (1) Phát triển Sổ tay mã hóa (Codebook) chi tiết kèm định nghĩa và ví dụ; (2) Tập huấn các mã hóa viên độc lập; (3) Cho 2 mã hóa viên tiến hành mã hóa độc lập trên một mẫu dữ liệu ngẫu nhiên (thường từ 10% đến 25% tổng dữ liệu); (4) Tính toán các chỉ số thống kê độ thỏa thuận (Tỷ lệ phần trăm thỏa thuận thô, Cohen's Kappa điều chỉnh yếu tố ngẫu nhiên, hoặc Krippendorff's Alpha đa đánh giá viên); (5) Tổ chức buổi đối thoại giải quyết bất đồng (adjudication meeting) để sửa đổi định nghĩa mã cho đến khi đạt sự đồng thuận.",
+      "benchmarks": [
+        "Ngưỡng Tỷ lệ thỏa thuận thô (Percentage Agreement): Tối thiểu >= 80% đối với dữ liệu sơ cấp và >= 90% theo khuyến nghị của Miles & Huberman (2020).",
+        "Ngưỡng Cohen's Kappa (khi có 2 người mã hóa): Kappa >= 0.70 là mức chấp nhận được, Kappa >= 0.80 là mức xuất sắc (Landis & Koch, 1977).",
+        "Ngưỡng Krippendorff's Alpha: Alpha >= 0.80 là chuẩn mực vàng, Alpha >= 0.667 là ngưỡng tối thiểu có thể rút ra kết luận thăm dò (Krippendorff, 2019).",
+        "Mẫu kiểm định độc lập: Phải chọn ngẫu nhiên tối thiểu 10% đến 20% dung lượng văn bản để tiến hành kiểm định chéo."
+      ],
+      "pitfalls": [
+        "Chỉ dựa vào tỷ lệ % thỏa thuận thô đơn giản: Tỷ lệ phần trăm thô không hiệu chỉnh xác suất trùng hợp ngẫu nhiên, gây ra ảo tưởng về độ tin cậy cao.",
+        "Mã hóa chung cùng nhau thay vì độc lập: Hai người ngồi cạnh nhau thảo luận trong lúc mã hóa rồi tuyên bố đạt 'độ thỏa thuận 100%', vi phạm nguyên tắc đánh giá độc lập mù đôi.",
+        "Không giải trình quy trình đối thoại giải quyết mâu thuẫn: Không ghi lại nhật ký điều chỉnh mã sau khi phát hiện những bất đồng giữa hai người mã hóa."
+      ],
+      "apa_reference": "Krippendorff, K. (2019). Content analysis: An introduction to its methodology (4th ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "interim-analysis-stopping-rules",
@@ -24330,21 +24576,43 @@
     },
     {
       "id": "memos",
-      "term": "Memos",
-      "vietnamese": "Ghi chú nghiên cứu (Memos) — Các bản ghi chép phản tư của nhà nghiên cứu về ý nghĩa của các mã và tiến trình hình thành lý thuyết.",
-      "vietnamese_variants": [],
+      "term": "Theoretical Memoing in Grounded Theory (Glaser / Charmaz Framework)",
+      "vietnamese": "Bản ghi lý thuyết / Kỹ thuật viết Memos trong nghiên cứu định tính",
+      "vietnamese_variants": [
+        "Bản ghi phân tích",
+        "Nhật ký ý niệm lý thuyết",
+        "Theoretical Memos Protocol"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Ghi chú nghiên cứu (Memos) — Các bản ghi chép phản tư của nhà nghiên cứu về ý nghĩa của các mã và tiến trình hình thành lý thuyết.",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Theoretical Memoing (Viết bản ghi lý thuyết) là hoạt động cốt lõi mang tính bắt buộc và là xương sống của toàn bộ tiến trình phân tích định tính và Lý thuyết nền (Glaser, 1978; Charmaz, 2014; Birks et al., 2008). Memos là những văn bản ghi chép tức thời của nghiên cứu viên về các ý tưởng lý thuyết, các giả thuyết nảy sinh, các mối liên kết giữa các mã, và những trăn trở nhận thức luận xuất hiện trong suốt quá trình phân tích dữ liệu. Glaser ví Memoing như hoạt động 'bắt giữ các hạt giống tư duy bay lượn' trước khi chúng biến mất, tạo thành chiếc cầu nối thiết yếu giữa dữ liệu thô và bản thảo lý thuyết cuối cùng.",
+      "seminal_citation": "Glaser, B. G. (1978). Theoretical Sensitivity: Advances in the Methodology of Grounded Theory. The Sociology Press; Birks, M., Chapman, Y., & Francis, K. (2008). Memoing in qualitative research: Probing data and processes. Journal of Research in Nursing, 13(1), 68-75.",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Memos according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Grounded Theory",
+      "operational_mechanism": "Các nguyên tắc viết Memo của Glaser (1978): (1) Ưu tiên tuyệt đối (Priority of Memos): Khi một ý tưởng lý thuyết lóe lên, nghiên cứu viên phải lập tức dừng việc mã hóa lại để viết Memo ngay; (2) Tự do cấu trúc: Viết tự do không câu nệ ngữ pháp hay văn phong hoàn hảo; (3) Tính mở rộng: Memos tiến hóa từ Memo sơ cấp (mô tả mã) đến Memo nâng cao (so sánh phạm trù) và Memo lý thuyết tổng hợp (tích hợp mô hình); (4) Phân loại và sắp xếp Memos (Sorting Memos) trước khi viết báo cáo.",
+      "benchmarks": [
+        "Kho lưu trữ Memos độc lập: Phải có hồ sơ lưu trữ riêng hàng chục đến hàng trăm bản Memos có ghi rõ ngày giờ và mã liên kết.",
+        "Là minh chứng kiểm toán không thể thiếu: Hội đồng thẩm định luận án và người bình duyệt tạp chí Q1 có quyền yêu cầu xem trích đoạn các bản Memos để thẩm định tính nguyên bản của lý thuyết.",
+        "Nâng tầm trừu tượng hóa: Memos phải thể hiện rõ bước nhảy vọt từ việc mô tả hành vi của đối tượng sang việc khái niệm hóa bản chất của hiện tượng."
+      ],
+      "pitfalls": [
+        "Lười viết Memos: Chỉ mã hóa cơ học trên phần mềm (NVivo, ATLAS.ti) mà không viết Memos, khiến việc phân tích chỉ dừng ở mức sắp xếp ngăn nắp dữ liệu mà không bao giờ nảy sinh lý thuyết.",
+        "Nhầm Memos với bản tóm tắt phỏng vấn: Viết Memo như một bản tóm tắt nội dung đối tượng vừa nói thay vì phân tích ý nghĩa lý thuyết của phát ngôn đó.",
+        "Viết Memos hồi cố (retrospective memoing): Sau khi xong toàn bộ nghiên cứu mới ngồi 'viết bù' Memos để đối phó với hội đồng, làm mất đi tính chân thực và các bước ngoặt nhận thức của nghiên cứu."
+      ],
+      "apa_reference": "Birks, M., Chapman, Y., & Francis, K. (2008). Memoing in qualitative research: Probing data and processes. Journal of Research in Nursing, 13(1), 68-75. https://doi.org/10.1177/1744987107081254",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "mental-accounting-theory",
@@ -27024,21 +27292,43 @@
     },
     {
       "id": "open-coding",
-      "term": "Open Coding",
-      "vietnamese": "Mã hóa mở",
-      "vietnamese_variants": [],
+      "term": "Open Coding (First-Cycle Analytic Coding - Strauss & Corbin)",
+      "vietnamese": "Mã hóa mở / Mã hóa sơ cấp phân rã dữ liệu",
+      "vietnamese_variants": [
+        "Mã hóa ban đầu",
+        "Mã hóa khám phá",
+        "Initial Open Coding"
+      ],
       "domain_tags": [
         "Qualitative Methodology"
       ],
-      "core_definition": "bước bóc tách, dán nhãn sơ khởi các khái niệm từ văn bản thô.",
-      "seminal_citation": "Strauss & Corbin (1998)",
+      "core_definition": "Open Coding (Mã hóa mở) là giai đoạn phân tích phân rã dữ liệu đầu tiên trong Lý thuyết nền theo Strauss & Corbin (1990, 1998). Quá trình này đòi hỏi việc đọc kỹ lưỡng bản gỡ băng, mở dữ liệu ra để khảo sát chi tiết, phân rã các phát ngôn thành các đơn vị ý nghĩa rải rác, so sánh các điểm tương đồng và dị biệt, và gán cho chúng các nhãn khái niệm (conceptual labels). Mã hóa mở giúp giải phóng tư duy của nhà nghiên cứu khỏi những định kiến thông thường, tạo tiền đề để các phạm trù tiềm năng bắt đầu lộ diện.",
+      "seminal_citation": "Strauss, A., & Corbin, J. (1990). Basics of Qualitative Research: Grounded Theory Procedures and Techniques. SAGE Publications; Saldaña, J. (2021). The Coding Manual for Qualitative Researchers (4th ed.). SAGE Publications.",
       "tier": "curated",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Open Coding according to Strauss & Corbin (1998).",
       "domain_tags_en": [
         "Qualitative Methodology"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Coding",
+      "operational_mechanism": "Ba cấp độ kỹ thuật thực hiện mã hóa mở: (1) Phân tích dòng theo dòng (Line-by-line analysis) - tỉ mỉ và chi tiết nhất; (2) Phân tích theo từng câu/đoạn văn (Sentence/Paragraph analysis); (3) Phân tích toàn bộ văn bản (Whole-document analysis). Với mỗi đoạn dữ liệu, nghiên cứu viên liên tục đặt câu hỏi: 'Dữ liệu này đang đề cập đến điều gì?', 'Hiện tượng này đại diện cho cái gì?'. Các mã có tính chất giống nhau sau đó được gom cụm lại thành các Phạm trù ban đầu (Categories), đi kèm với việc xác định các Thuộc tính (Properties) và Chiều kích (Dimensions) cụ thể.",
+      "benchmarks": [
+        "Tính mở hoàn toàn: Không bị ràng buộc bởi bất kỳ danh mục mã có sẵn (no pre-existing codebook).",
+        "Mã hóa sát nghĩa dữ liệu (Close-to-data): Các nhãn mã mở phải phản ánh trung thực phát ngôn và ngữ cảnh nguyên bản.",
+        "Tạo lập sổ tay mã hóa mở (Open Coding Codebook): Ghi chép định nghĩa chi tiết của từng mã mở để đảm bảo tính nhất quán khi phân tích các bản phỏng vấn tiếp theo."
+      ],
+      "pitfalls": [
+        "Mã hóa quá khái quát (macro-coding): Gán một mã khổng lồ cho cả một trang văn bản khiến dữ liệu bị mất hết chi tiết vi mô.",
+        "Mã hóa quá vụn vặt (hyper-coding mà không tổng hợp): Sinh ra hàng ngàn mã nhỏ nhặt cho từng từ một nhưng sau đó không có khả năng phân loại và gộp nhóm thành các phạm trù có ý nghĩa.",
+        "Đóng khung định kiến quá sớm: Vừa đọc vài dòng đã vội vã dùng các khái niệm học thuật nổi tiếng để gán nhãn thay vì để dữ liệu tự cất lên tiếng nói."
+      ],
+      "apa_reference": "Strauss, A., & Corbin, J. (1990). Basics of qualitative research: Grounded theory procedures and techniques. SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "open-peer-review",
@@ -28107,21 +28397,43 @@
     },
     {
       "id": "pattern-coding-second-cycle",
-      "term": "Pattern Coding (Second Cycle)",
-      "vietnamese": "Mã hóa Mẫu hình",
-      "vietnamese_variants": [],
+      "term": "Pattern Coding (Second-Cycle Explanatory Coding - Miles & Huberman)",
+      "vietnamese": "Mã hóa mẫu hình / Mã hóa chu kỳ hai tích hợp giải thích",
+      "vietnamese_variants": [
+        "Mã hóa mô thức",
+        "Mã hóa quy luật chu kỳ 2",
+        "Pattern Coding Protocol"
+      ],
       "domain_tags": [
         "Qualitative Coding"
       ],
-      "core_definition": "Gộp các mã ban đầu từ chu kỳ 1 thành các cụm chủ đề lớn có ý nghĩa quy nạp cao hơn.",
-      "seminal_citation": "Miles, Huberman & Saldaña (2020)",
+      "core_definition": "Pattern Coding (Mã hóa mẫu hình) là phương pháp mã hóa chu kỳ hai (Second Cycle coding) kinh điển do Matthew B. Miles và A. Michael Huberman khởi xướng (1994, 2020; Saldaña, 2021). Đây là kỹ thuật cô đọng dữ liệu cấp cao, gom các mã phân tán ở chu kỳ một (In-vivo, Descriptive, Process codes) thành một số lượng nhỏ hơn các đơn vị ý nghĩa bao quát hoặc chủ đề giải thích (meta-codes / explanatory themes). Pattern codes giúp biến một tập hợp các chi tiết vụn vặt thành một quy luật hành vi hoặc cơ chế nhân quả mạch lạc.",
+      "seminal_citation": "Miles, M. B., Huberman, A. M., & Saldaña, J. (2020). Qualitative Data Analysis: A Methods Sourcebook (4th ed.). SAGE Publications; Saldaña, J. (2021). The Coding Manual for Qualitative Researchers (4th ed.). SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Pattern Coding (Second Cycle) according to Miles, Huberman & Saldaña (2020).",
       "domain_tags_en": [
         "Qualitative Coding"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Coding",
+      "operational_mechanism": "Pattern codes thường phân loại thành 4 nhóm quy luật chủ yếu: (1) Quan hệ nhân quả (Causes/Explanations) - tại sao điều đó lại xảy ra; (2) Mối quan hệ giữa con người và mạng lưới (Relationships among people); (3) Các cấu trúc lý thuyết nảy sinh (Theoretical constructs); (4) Các chủ đề bao quát hành vi (Broad patterns of action). Nhà nghiên cứu rà soát toàn bộ danh mục mã chu kỳ 1, tìm kiếm sự tương đồng về chức năng và gán nhãn Pattern code kèm theo một bản memo giải thích quy luật liên kết.",
+      "benchmarks": [
+        "Mức độ cô đọng dữ liệu mạnh mẽ: Giảm thiểu từ hàng trăm mã chu kỳ một xuống còn khoảng 10 đến 25 Pattern codes cốt lõi.",
+        "Tính giải thích vượt trội: Mã mẫu hình không chỉ mô tả 'cái gì' mà phải giải thích được 'tại sao' và 'theo quy luật nào'.",
+        "Làm nền tảng trực tiếp để vẽ ma trận hiển thị (Data Displays) và sơ đồ mạng lưới quan hệ (Network Models)."
+      ],
+      "pitfalls": [
+        "Gộp nhóm gượng ép khi dữ liệu chưa đủ chín: Ép các mã chu kỳ một vào các nhóm mẫu hình giả tạo mà không có bằng chứng liên kết chặt chẽ.",
+        "Làm mất mát các sắc thái dị biệt: Quá say mê tìm kiếm mẫu hình chung mà vứt bỏ các mã dị biệt (deviant codes) chứa đựng thông tin quý giá.",
+        "Đóng băng mẫu hình quá sớm: Không chịu sửa đổi Pattern code khi các dữ liệu phỏng vấn mới xuất hiện mâu thuẫn với quy luật dự kiến."
+      ],
+      "apa_reference": "Miles, M. B., Huberman, A. M., & Saldaña, J. (2020). Qualitative data analysis: A methods sourcebook (4th ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "pattern-matching",
@@ -29551,21 +29863,43 @@
     },
     {
       "id": "process-coding",
-      "term": "Process Coding",
-      "vietnamese": "Mã hóa Quá trình",
-      "vietnamese_variants": [],
+      "term": "Process Coding (Action / Gerund Coding)",
+      "vietnamese": "Mã hóa tiến trình / Mã hóa hành động danh động từ (-ing)",
+      "vietnamese_variants": [
+        "Mã hóa hành động",
+        "Mã hóa danh động từ",
+        "Gerund Coding"
+      ],
       "domain_tags": [
         "Qualitative Coding"
       ],
-      "core_definition": "Sử dụng các danh động từ đuôi '-ing' để nắm bắt hành động, tương tác và sự biến đổi trong dữ liệu.",
-      "seminal_citation": "Saldaña (2021)",
+      "core_definition": "Process Coding (Mã hóa tiến trình hoặc mã hóa hành động) là phương pháp mã hóa chu kỳ một chuyên biệt sử dụng độc quyền các danh động từ (gerunds - từ kết thúc bằng đuôi '-ing' trong tiếng Anh, hoặc cấu trúc chỉ hành vi liên tục trong tiếng Việt) để gán nhãn cho dữ liệu (Saldaña, 2021; Charmaz, 2014). Phương pháp này được thiết kế để nắm bắt các hành động, phản ứng, tiến trình chuyển giao và các chuỗi tương tác động lực của con người theo dòng thời gian, giúp ngăn chặn tư duy biến dữ liệu thành các thực thể tĩnh tại.",
+      "seminal_citation": "Saldaña, J. (2021). The Coding Manual for Qualitative Researchers (4th ed.). SAGE Publications; Charmaz, K. (2014). Constructing Grounded Theory (2nd ed.). SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Process Coding according to Saldaña (2021).",
       "domain_tags_en": [
         "Qualitative Coding"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Coding",
+      "operational_mechanism": "Kỹ thuật thực hiện: Rà soát từng dòng phát ngôn hoặc nhật ký quan sát hành vi, nhận diện hành động mà đối tượng đang thực hiện (cả hành động thể chất lẫn hành động tâm lý/chiến lược) và gán nhãn bắt đầu bằng danh động từ: ví dụ 'Thích ứng với công nghệ mới' (Adapting to new tech), 'Đàm phán quyền lực ngầm' (Negotiating informal power), 'Trì hoãn xung đột' (Postponing conflict). Các mã tiến trình sau đó được xâu chuỗi thành các giai đoạn (phases/stages) hoặc vòng lặp phản hồi của một quy trình tổng thể.",
+      "benchmarks": [
+        "Quy tắc 100% Gerunds: Tất cả các mã tiến trình phải bắt đầu bằng động từ chỉ hành động đang diễn ra.",
+        "Nắm bắt được sự chuyển động (Flow & Dynamism): Phân tích phải trả lời được câu hỏi 'Hành động này dẫn đến hành động tiếp theo như thế nào?' và 'Tiến trình này biến đổi ra sao theo thời gian?'.",
+        "Rất thích hợp cho các nghiên cứu về sự thay đổi tổ chức, tiến trình phục hồi tâm lý, hoặc đường đời chuyển giao xã hội."
+      ],
+      "pitfalls": [
+        "Dùng danh từ hóa tĩnh tại (Nominalization): Biến hành động sống động thành danh từ trừu tượng chết cứng (ví dụ: dùng 'Sự lo âu' thay vì 'Vật lộn với nỗi sợ hãi').",
+        "Bỏ qua bối cảnh thời gian: Liệt kê các hành động rời rạc mà không chỉ rõ thứ tự trước - sau hoặc mối quan hệ tương hỗ giữa các hành động trong dòng thời gian.",
+        "Mã hóa hành động bề ngoài mà bỏ sót hành động chiến lược ngầm: Chỉ ghi nhận hành động cử chỉ đơn giản mà không nhìn thấu các toan tính chiến lược hành vi của đối tượng."
+      ],
+      "apa_reference": "Saldaña, J. (2021). The coding manual for qualitative researchers (4th ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "process-macro-andrew-f-hayes",
@@ -32859,21 +33193,44 @@
     },
     {
       "id": "selective-coding",
-      "term": "Selective Coding",
-      "vietnamese": "Mã hóa chọn lọc",
-      "vietnamese_variants": [],
+      "term": "Selective Coding (Core Category Integration - Strauss & Corbin)",
+      "vietnamese": "Mã hóa chọn lọc / Mã hóa tích hợp phạm trù cốt lõi",
+      "vietnamese_variants": [
+        "Mã hóa tích hợp lý thuyết",
+        "Mã hóa hội tụ",
+        "Theoretical Integration Coding"
+      ],
       "domain_tags": [
         "Qualitative Methodology"
       ],
-      "core_definition": "tích hợp các danh mục quanh một danh mục cốt lõi core category.",
-      "seminal_citation": "Strauss & Corbin (1998)",
+      "core_definition": "Selective Coding (Mã hóa chọn lọc) là giai đoạn phân tích cấp cao nhất trong quy trình lý thuyết nền (Strauss & Corbin, 1990; Glaser, 1978). Trong giai đoạn này, nhà nghiên cứu tích hợp và tinh lọc toàn bộ các phạm trù đã phát triển ở giai đoạn trước xoay quanh duy nhất một 'Phạm trù cốt lõi' (Core Category) trung tâm. Sau khi phạm trù cốt lõi được định hình, việc mã hóa sẽ diễn ra có chọn lọc (selective) - chỉ thu thập và phân tích các dữ liệu có liên quan trực tiếp đến việc làm sáng tỏ và hoàn thiện cấu trúc lý thuyết của phạm trù này, lược bỏ mọi dữ liệu rườm rà không liên quan.",
+      "seminal_citation": "Strauss, A., & Corbin, J. (1990). Basics of Qualitative Research: Grounded Theory Procedures and Techniques. SAGE Publications; Glaser, B. G. (1978). Theoretical Sensitivity. The Sociology Press.",
       "tier": "curated",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Selective Coding according to Strauss & Corbin (1998).",
       "domain_tags_en": [
         "Qualitative Methodology"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Coding",
+      "operational_mechanism": "5 bước kỹ thuật tích hợp theo Strauss & Corbin (1998): (1) Phác thảo cốt truyện bao quát (Writing the Storyline) mô tả bức tranh tổng thể; (2) Chuyển dịch từ câu chuyện mô tả sang câu chuyện lý thuyết trừu tượng, xác định Phạm trù cốt lõi; (3) Liên kết các phạm trù phụ thuộc vào phạm trù cốt lõi thông qua mô hình mô thức; (4) Kiểm tra tính vững chắc của các mối liên hệ dựa trên dữ liệu thực tế (validating relationships against data); (5) Lấp đầy các khoảng trống của các phạm trù cần phát triển thêm (filling in poorly developed categories).",
+      "benchmarks": [
+        "Tiêu chuẩn nhận diện Phạm trù cốt lõi: Phải thỏa mãn 6 tiêu chí của Strauss: (1) Nằm ở vị trí trung tâm liên kết được với tất cả các phạm trù chính; (2) Xuất hiện thường xuyên trong dữ liệu; (3) Mối liên kết diễn ra dễ dàng, không gượng ép; (4) Tên gọi đủ trừu tượng; (5) Có khả năng giải thích cả các trường hợp dị biệt; (6) Khả năng khái quát hóa lý thuyết cao.",
+        "Hoàn thiện Mô hình Lý thuyết Tích hợp: Bắt buộc xuất bản sơ đồ lý thuyết tổng thể kết nối trọn vẹn toàn bộ công trình nghiên cứu.",
+        "Đạt độ bão hòa lý thuyết tuyệt đối quanh phạm trù cốt lõi."
+      ],
+      "benchmarks_citation": "Strauss (1987); Strauss & Corbin (1998)",
+      "pitfalls": [
+        "Chọn nhiều hơn một phạm trù cốt lõi: Cố gắng duy trì 2-3 khái niệm trung tâm song song khiến nghiên cứu bị phân tán, mất đi tính hội tụ và sắc bén của một lý thuyết đơn nhất.",
+        "Chọn một phạm trù quá hẹp hoặc thuần túy mô tả: Chọn một chủ đề phụ làm phạm trù cốt lõi khiến nó không có năng lực bao quát các động năng phức tạp khác.",
+        "Dừng lại ở mã hóa trục mà bỏ qua mã hóa chọn lọc: Báo cáo nhiều sơ đồ trục riêng lẻ mà không tích hợp được chúng thành một mô hình lý thuyết thống nhất duy nhất."
+      ],
+      "apa_reference": "Strauss, A., & Corbin, J. (1990). Basics of qualitative research: Grounded theory procedures and techniques. SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "self-determination-theory-sdt",
@@ -34962,21 +35319,43 @@
     },
     {
       "id": "straussian-grounded-theory",
-      "term": "Straussian Grounded Theory",
-      "vietnamese": "Lý thuyết Nền tảng Straussian",
-      "vietnamese_variants": [],
+      "term": "Straussian Grounded Theory (Systematic Procedural Approach - Strauss & Corbin)",
+      "vietnamese": "Lý thuyết nền quy trình Strauss & Corbin / Tiếp cận hệ thống hóa",
+      "vietnamese_variants": [
+        "Lý thuyết nền Straussian",
+        "Tiếp cận hệ thống Strauss-Corbin",
+        "Systematic Grounded Theory"
+      ],
       "domain_tags": [
         "Grounded Theory"
       ],
-      "core_definition": "Áp dụng quy trình mã hóa bán cấu trúc chặt chẽ gồm Open, Axial và Selective Coding.",
-      "seminal_citation": "Strauss & Corbin (1990)",
+      "core_definition": "Straussian Grounded Theory là trường phái lý thuyết nền do Anselm Strauss và Juliet Corbin phát triển (1990, 1998, 2015), tách ra từ tiếp cận cổ điển của Glaser. Trường phái này cung cấp một bộ công cụ phân tích có cấu trúc, quy trình kỹ thuật cao và tính hệ thống rõ ràng (systematic procedures) nhằm hỗ trợ các nhà nghiên cứu định tính (đặc biệt là nghiên cứu sinh). Điểm nhấn khác biệt lớn nhất là sự cho phép sử dụng tổng quan tài liệu để kích hoạt độ nhạy lý thuyết ban đầu và việc giới thiệu bước 'Mã hóa trục' (Axial Coding) cùng 'Mô hình mô thức' (Paradigm Model) chặt chẽ.",
+      "seminal_citation": "Strauss, A., & Corbin, J. (1990). Basics of Qualitative Research: Grounded Theory Procedures and Techniques. SAGE Publications; Corbin, J., & Strauss, A. (2015). Basics of Qualitative Research (4th ed.). SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Straussian Grounded Theory according to Strauss & Corbin (1990).",
       "domain_tags_en": [
         "Grounded Theory"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Grounded Theory",
+      "operational_mechanism": "Khung 3 giai đoạn mã hóa có cấu trúc: (1) Open Coding: Phân rã dữ liệu, kiểm tra, so sánh, khái niệm hóa và phân loại thành các thuộc tính (properties) và chiều kích (dimensions); (2) Axial Coding: Tái liên kết dữ liệu quanh một trục phạm trù bằng Mô hình mô thức: Điều kiện nhân quả (Causal conditions) -> Hiện tượng (Phenomenon) -> Ngữ cảnh (Context) -> Điều kiện can thiệp (Intervening conditions) -> Chiến lược hành động/tương tác (Action/Interaction strategies) -> Hệ quả (Consequences); (3) Selective Coding: Chọn một phạm trù cốt lõi, tích hợp toàn bộ câu chuyện lý thuyết và hoàn thiện Ma trận điều kiện - hệ quả (Conditional/Consequential Matrix).",
+      "benchmarks": [
+        "Áp dụng trọn vẹn Mô hình mô thức (Paradigm Model): Báo cáo phân tích phải thể hiện rõ các mắt xích: Điều kiện tiền đề, Ngữ cảnh, Chiến lược và Hệ quả.",
+        "Xác định Thuộc tính và Chiều kích (Properties and Dimensions): Mỗi phạm trù phải được phân tích sâu ở cấp độ các chiều kích biến thiên liên tục.",
+        "Kiểm toán dấu vết mã hóa qua 3 bước: Lưu trữ đầy đủ bảng Open codes, sơ đồ Axial coding diagrams và cốt truyện tích hợp Selective coding."
+      ],
+      "pitfalls": [
+        "Cơ học hóa quy trình (mechanical over-structuring): Thực hiện mã hóa trục như một thủ tục điền vào chỗ trống cứng nhắc, làm thui chột tính sáng tạo và cảm nhận trực giác định tính.",
+        "Đứt gãy mối liên hệ giữa các tầng mã hóa: Mã hóa trục không kết nối được với mã hóa mở, dẫn đến mô hình lý thuyết cuối cùng tách rời thực tế dữ liệu.",
+        "Bị Glaser chỉ trích là làm méo mó bản chất Grounded Theory: Cần giải thích rõ lý do lựa chọn trường phái Straussian trong luận văn để đối thoại với phản biện theo trường phái cổ điển."
+      ],
+      "apa_reference": "Strauss, A., & Corbin, J. (1990). Basics of qualitative research: Grounded theory procedures and techniques. SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "strength-of-weak-ties-granovetter",
@@ -36192,21 +36571,43 @@
     },
     {
       "id": "theoretical-saturation",
-      "term": "Theoretical Saturation",
-      "vietnamese": "Điểm bão hòa lý thuyết khi việc thu thập thêm dữ liệu không tạo ra thêm thuộc tính mới cho danh mục",
-      "vietnamese_variants": [],
+      "term": "Theoretical Saturation (Glaser & Strauss / Saunders Framework)",
+      "vietnamese": "Độ bão hòa lý thuyết / Điểm bão hòa khái niệm",
+      "vietnamese_variants": [
+        "Bão hòa lý thuyết",
+        "Điểm bão hòa phạm trù",
+        "Conceptual Saturation"
+      ],
       "domain_tags": [
         "Qualitative Methodology"
       ],
-      "core_definition": "Điểm bão hòa lý thuyết khi việc thu thập thêm dữ liệu không tạo ra thêm thuộc tính mới cho danh mục.",
-      "seminal_citation": "Glaser & Strauss (1967)",
+      "core_definition": "Theoretical Saturation (Độ bão hòa lý thuyết) là tiêu chuẩn vàng định đoạt điểm dừng thu thập dữ liệu và hoàn thiện phân tích trong Lý thuyết nền và nghiên cứu định tính (Glaser & Strauss, 1967; Saunders et al., 2018). Bão hòa lý thuyết đạt được khi việc tiếp tục thu thập thêm dữ liệu mới không còn đem lại bất kỳ thuộc tính, chiều kích, mối quan hệ hay hiểu biết lý thuyết mới nào cho các phạm trù đang nghiên cứu; mọi dữ liệu thu về chỉ đơn thuần xác nhận lại những gì đã được định hình vững chắc trong mô hình lý thuyết.",
+      "seminal_citation": "Glaser, B. G., & Strauss, A. L. (1967). The Discovery of Grounded Theory: Strategies for Qualitative Research. Aldine; Saunders, B., Sim, J., Kingstone, T., Baker, S., Waterfield, J., Bartlam, B., Burroughs, H., & Jinks, C. (2018). Saturation in qualitative research: exploring its conceptualization and operationalization. Quality & Quantity, 52(4), 1893-1907.",
       "tier": "curated",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Theoretical Saturation according to Glaser & Strauss (1967).",
       "domain_tags_en": [
         "Qualitative Methodology"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Grounded Theory",
+      "operational_mechanism": "Các tiêu chí kiểm định độ bão hòa lý thuyết theo Glaser & Strauss: (1) Không còn dữ liệu mới liên quan đến một phạm trù xuất hiện thêm; (2) Phạm trù đã được phát triển dày dặn về mặt thuộc tính và các chiều kích biến thiên; (3) Mối quan hệ giữa các phạm trù đã được thiết lập chặt chẽ và được xác thực qua thực tiễn; (4) Các trường hợp dị biệt đều đã được tích hợp và giải thích thỏa đáng trong khung lý thuyết.",
+      "benchmarks": [
+        "Quy tắc 3 phỏng vấn liên tiếp không phát sinh mã mới: Nhiều học giả định tính áp dụng ngưỡng thực nghiệm: thực hiện thêm 2-3 cuộc phỏng vấn liên tiếp mà không sinh ra bất kỳ mã mới nào thì được coi là đạt ngưỡng bão hòa (Guest et al., 2006; Francis et al., 2010).",
+        "Báo cáo minh bạch đường cong bão hòa (Saturation Curve / Matrix): Công bố bảng thống kê số lượng mã mới suy giảm dần qua từng đợt phỏng vấn cho đến khi tiệm cận 0.",
+        "Bão hòa ở cấp độ lý thuyết (Theoretical), không chỉ dừng lại ở bề mặt câu chữ (Data/Code saturation)."
+      ],
+      "pitfalls": [
+        "Tuyên bố bão hòa chiếu lệ: Tuyên bố 'dữ liệu đạt bão hòa ở người thứ 12' trong bài báo mà không đưa ra bất kỳ bảng chứng minh hay tiêu chí đo lường cụ thể nào.",
+        "Nhầm lẫn Bão hòa mã (Code saturation) với Bão hòa lý thuyết: Mới chỉ không nghe thấy từ ngữ mới nhưng chưa làm rõ được các mối quan hệ cấu trúc giữa các phạm trù lý thuyết mà đã vội dừng thu thập mẫu.",
+        "Thiếu kiên nhẫn và dừng sớm vì cạn kiệt ngân sách: Bỏ dở nghiên cứu khi các phạm trù còn mỏng manh và biện minh sai lệch là đã đạt bão hòa."
+      ],
+      "apa_reference": "Saunders, B., Sim, J., Kingstone, T., Baker, S., Waterfield, J., Bartlam, B., Burroughs, H., & Jinks, C. (2018). Saturation in qualitative research: exploring its conceptualization and operationalization. Quality & Quantity, 52(4), 1893-1907. https://doi.org/10.1007/s11135-017-0574-8",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "theoretical-saturation-assessment",
@@ -36228,21 +36629,43 @@
     },
     {
       "id": "theoretical-sensitivity",
-      "term": "Theoretical Sensitivity",
-      "vietnamese": "Độ nhạy Cảm Lý thuyết",
-      "vietnamese_variants": [],
+      "term": "Theoretical Sensitivity (Glaser & Strauss / Corbin)",
+      "vietnamese": "Độ nhạy lý thuyết / Năng lực cảm thụ lý thuyết của nghiên cứu viên",
+      "vietnamese_variants": [
+        "Độ nhạy cảm lý thuyết",
+        "Nhạy bén lý thuyết",
+        "Theoretical Acumen"
+      ],
       "domain_tags": [
         "Grounded Theory"
       ],
-      "core_definition": "Khả năng của nhà nghiên cứu nhận ra những hàm ý tinh tế và ý nghĩa lý thuyết ẩn sâu trong dữ liệu.",
-      "seminal_citation": "Glaser (1978)",
+      "core_definition": "Theoretical Sensitivity (Độ nhạy lý thuyết) là phẩm chất trí tuệ và năng lực nhận thức quan trọng nhất của nhà nghiên cứu định tính, đặc biệt trong Lý thuyết nền (Glaser, 1978; Strauss & Corbin, 1990). Đó là khả năng nhận diện những gì tinh tế, quan trọng và có ý nghĩa lý thuyết sâu xa ẩn chứa trong dữ liệu thực tế đời thường, phân biệt được cái thực sự có ý nghĩa với cái chỉ là chi tiết bề mặt tầm thường. Độ nhạy lý thuyết cho phép nghiên cứu viên phát hiện các mối quan hệ trừu tượng, định hình các khái niệm mới và chuyển dịch trơn tru từ mô tả thô sang lý thuyết hóa cấp cao.",
+      "seminal_citation": "Glaser, B. G. (1978). Theoretical Sensitivity: Advances in the Methodology of Grounded Theory. The Sociology Press; Strauss, A., & Corbin, J. (1990). Basics of Qualitative Research. SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Theoretical Sensitivity according to Glaser (1978).",
       "domain_tags_en": [
         "Grounded Theory"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Grounded Theory",
+      "operational_mechanism": "Bốn nguồn gốc hình thành độ nhạy lý thuyết theo Strauss & Corbin (1990): (1) Đọc sâu rộng tài liệu lý thuyết liên ngành; (2) Kinh nghiệm nghề nghiệp chuyên sâu trong lĩnh vực khảo sát; (3) Trải nghiệm cá nhân tích lũy qua thực tiễn đời sống; (4) Quá trình tương tác phân tích liên tục với chính dữ liệu thực địa (đặt câu hỏi, lật ngược vấn đề, kỹ thuật so sánh lật ngược - flip-flop technique).",
+      "benchmarks": [
+        "Cân bằng tinh tế giữa Nhạy bén và Áp đặt: Có đủ kiến thức lý thuyết để nhìn ra vấn đề nhưng không để lý thuyết che mờ hay áp đặt dữ liệu thực tế.",
+        "Kỹ thuật kích hoạt độ nhạy: Vận dụng thành thạo các công cụ tư duy của Corbin & Strauss: Kỹ thuật lật ngược (Flip-flop), So sánh các thái cực (Extreme comparisons), và Đặt câu hỏi cấu trúc (Waving the red flag).",
+        "Dấu ấn trong Memos: Độ nhạy lý thuyết phải được phản chiếu rõ nét qua chiều sâu phân tích và mức độ trừu tượng ngày càng tăng trong các bản Memos."
+      ],
+      "pitfalls": [
+        "Nhầm lẫn độ nhạy lý thuyết với việc áp đặt định kiến: Đưa khung lý thuyết cá nhân vào và khăng khăng bắt dữ liệu phải chứng minh cho nó.",
+        "Độ nhạy kém dẫn đến mô tả nông cạn: Nghiên cứu viên không có kiến thức nền tảng lý thuyết nên chỉ nhìn thấy những gì hiển hiện trên câu chữ, không nhận diện được các cơ chế ngầm định.",
+        "Tự cô lập khỏi tài liệu học thuật: Từ chối đọc sách báo chuyên ngành vì sợ mất tính khách quan, làm thui chột khả năng kết nối phát hiện của mình với kho tàng tri thức nhân loại."
+      ],
+      "apa_reference": "Glaser, B. G. (1978). Theoretical sensitivity: Advances in the methodology of grounded theory. The Sociology Press.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "theoretical-standpoint",
