@@ -1,6 +1,6 @@
 {
   "version": "10.2-peer-reviewed-cleaned",
-  "last_updated": "2026-10-26T08:02:09.782Z",
+  "last_updated": "2026-10-26T08:45:42.317Z",
   "total_terms": 1874,
   "terms": [
     {
@@ -1064,24 +1064,25 @@
     },
     {
       "id": "member-checking",
-      "term": "Member Checking",
+      "term": "Member Checking (Respondent Validation)",
       "ipa": "/ˈmɛmbər ˈtʃɛkɪŋ/",
-      "vietnamese": "Kiểm tra chéo thành viên",
+      "vietnamese": "Kiểm chứng với Đối tượng Nghiên cứu (Kỹ thuật Member Checking)",
       "vietnamese_variants": [
-        "Xác thực bởi người tham gia"
+        "Thẩm định người tham gia",
+        "Respondent validation",
+        "Member check protocol"
       ],
       "domain_tags": [
         "Nghiên cứu Định tính",
-        "Độ giá trị",
-        "Đạo đức Nghiên cứu"
+        "Thẩm định Khả tín (Credibility)"
       ],
-      "core_definition": "Chiến lược nâng cao độ tin cậy trong nghiên cứu định tính bằng cách đưa bản gỡ băng (transcript), bản tóm tắt phân tích hoặc các chủ đề rút ra quay trở lại cho chính những người được phỏng vấn kiểm tra để xác nhận xem nhà nghiên cứu có diễn giải chính xác ý của họ hay không.",
+      "core_definition": "Kỹ thuật thẩm định độ chân thực cốt tử và quan trọng nhất trong nghiên cứu định tính theo Lincoln & Guba (1985), trong đó nhà nghiên cứu gửi trả lại dữ liệu thô, biên bản gỡ băng (Transcripts), hoặc các bản phân tích chủ đề sơ bộ cho chính những người đã tham gia phỏng vấn để họ trực tiếp rà soát, phản hồi, đính chính và xác nhận xem cách tác giả hiểu và tái hiện lời nói của họ có đúng với ý định và trải nghiệm thực tế của họ hay không.",
       "paradigm_debates": "Được coi là chiến lược quan trọng bậc nhất để củng cố 'Credibility' trong nghiên cứu định tính (Lincoln & Guba, 1985; Creswell & Creswell, 2023).",
-      "benchmarks": "Không nên đưa bản thô 50 trang mà nên đưa bản tóm tắt các phát hiện chủ chốt kèm câu trích dẫn để người tham gia phản hồi và xác thực.",
-      "pitfalls": "Người tham gia có thể đổi ý hoặc sợ hãi khi thấy câu trả lời thẳng thắn của mình được viết thành văn bản; nhà nghiên cứu cần có quy trình xử lý xung đột diễn giải một cách nhân văn.",
-      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications.",
+      "benchmarks": "Quy trình thực thi chuẩn: (1) Kiểm chứng dữ liệu thô: Gửi bản gỡ băng cho người được phỏng vấn trong vòng 1-2 tuần sau phỏng vấn để đính chính thuật ngữ chuyên môn hoặc thông tin nhầm lẫn; (2) Kiểm chứng phát hiện diễn giải: Trình bày các mô hình khái niệm hoặc chủ đề tóm tắt trong các buổi phỏng vấn tiếp theo hoặc hội thảo nhóm tập trung; (3) Lưu lại biên bản phản hồi của đối tượng vào hồ sơ kiểm toán.",
+      "pitfalls": "Gửi toàn bộ bản thảo luận án dài hàng trăm trang đầy biệt ngữ lý thuyết cho đối tượng nghiên cứu (khiến họ không thể đọc nổi); tự động chấp nhận mọi chỉnh sửa của đối tượng khi họ cố tình muốn 'đánh bóng' lại hình ảnh của mình sau khi nói hớ (khi đó nhà nghiên cứu phải đối chiếu với nhật ký thực địa).",
+      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications; Birt, L., Scott, S., Cavers, D., Campbell, C., & Walter, F. (2016). Member checking to improve rigor in qualitative research: An exploration of respondent validation. Qualitative Health Research, 26(13), 1802–1811.",
       "apa_intext": "(Creswell & Creswell, 2023, p. 217)",
-      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2023). Research design: Qualitative, quantitative, and mixed methods approaches (6th ed.). SAGE Publications.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications.",
       "corpus_variants": [
         {
           "v": "Xác thực bởi người tham gia (Participant validation)",
@@ -1092,7 +1093,7 @@
       ],
       "stt": 17,
       "tier": "flagship",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "\"Kiểm tra chéo thành viên\" dễ hiểu nhầm -> \"Kiểm tra với người tham gia / Xác nhận của người tham gia\". Bổ sung phê phán (Birt et al. 2016; Morse 2015). Mục 6: bỏ chú thích \"[Hội đồng Khoa học & Giáo trình ĐH Việt Nam]\" (không phải nguồn có thật) và cặp lặp \"X (X)\". Mục 5: in-text/APA Ref dẫn Creswell thay cho nguồn gốc – thay bằng nguồn gốc và kiểm lại số trang.",
       "expert_checks": {
         "vietnamese": false,
@@ -1104,25 +1105,25 @@
     },
     {
       "id": "reflexivity",
-      "term": "Reflexivity",
+      "term": "Reflexivity in Qualitative Research",
       "ipa": "/ˌriːflɛkˈsɪvɪti/",
-      "vietnamese": "Tính phản tỉnh",
+      "vietnamese": "Tính Tự phản tư trong Nghiên cứu Định tính (Tự Phản tỉnh Học thuật)",
       "vietnamese_variants": [
-        "Tự phản tỉnh của nhà nghiên cứu",
-        "Tự nhận thức định kiến"
+        "Tính tự phản tư",
+        "Researcher reflexivity",
+        "Reflexive practice"
       ],
       "domain_tags": [
-        "Nghiên cứu Định tính",
-        "Đạo đức Nghiên cứu",
-        "Vị thế Nhà nghiên cứu"
+        "Phương pháp Định tính Nâng cao",
+        "Nhận thức luận & Liêm chính Học thuật"
       ],
-      "core_definition": "Ý thức tự phản chiếu của nhà nghiên cứu về vai trò, vị thế xã hội, xuất thân văn hóa, giới tính, định kiến cá nhân và các mối quan hệ quyền lực của chính mình, cũng như cách những yếu tố chủ quan này định hình quá trình thu thập và diễn giải dữ liệu.",
+      "core_definition": "Tiến trình tự ý thức, tự chất vấn và xem xét có phê phán liên tục của nhà nghiên cứu về vai trò, sự hiện diện, các giá trị văn hóa, giả định xã hội và vị thế quyền lực (Positionality) của chính mình trong toàn bộ quá trình nghiên cứu, do Pierre Bourdieu (1992) và Finlay (2002) chuẩn hóa. Khác với nghiên cứu định lượng xem tác giả là một quan sát viên đứng ngoài trung lập, nghiên cứu định tính thừa nhận nhà nghiên cứu là một phần không thể tách rời của quá trình kiến tạo tri thức; phát hiện nghiên cứu là sản phẩm đồng kiến tạo giữa nhà nghiên cứu và đối tượng.",
       "paradigm_debates": "Nghiên cứu định lượng xem tính chủ quan của người làm là 'sai số cần loại bỏ'; ngược lại, nghiên cứu định tính coi nhà nghiên cứu chính là 'công cụ đo lường' nên tính phản tỉnh là bắt buộc phải công khai minh bạch.",
-      "benchmarks": "Được trình bày trong một mục riêng trong bài báo gọi là 'Role of the Researcher' (Vai trò của Nhà nghiên cứu) hoặc thông qua việc ghi nhật ký nghiên cứu (Reflexive journaling).",
-      "pitfalls": "Xem Reflexivity là bản tự sự cá nhân lan man mà không kết nối được vị thế của bản thân ảnh hưởng cụ thể thế nào đến cách người tham gia trả lời và cách mình rút ra kết luận.",
-      "seminal_citation": "Finlay, L. (2002). Negotiating the swamp: The opportunity and challenge of reflexivity in research practice. Qualitative Research, 2(2), 209–230.",
+      "benchmarks": "Bắt buộc có Phần Báo cáo Vị thế Học thuật (Positionality Statement / Reflexivity Section) trong luận án hoặc bài báo Q1, nêu rõ: (1) Vị thế của tác giả (Insider vs. Outsider status); (2) Mối quan hệ quyền lực với người được phỏng vấn; (3) Trải nghiệm cá nhân ảnh hưởng thế nào đến cách đặt câu hỏi và cách diễn giải mã; (4) Sự chuyển biến nhận thức của tác giả xuyên suốt quá trình điền dã.",
+      "pitfalls": "Biến phần tự phản tư thành tự truyện kể lể cá nhân vô bổ (Navel-gazing / Self-indulgent confession) không gắn kết với phát hiện nghiên cứu; hoàn toàn không đả động gì đến vị thế của tác giả trong các đề tài nghiên cứu nhạy cảm.",
+      "seminal_citation": "Bourdieu, P., & Wacquant, L. J. (1992). An invitation to reflexive sociology. University of Chicago Press; Finlay, L. (2002). Negotiating the swamp: The opportunity and challenge of reflexivity in research practice. Qualitative Research, 2(2), 209–230.",
       "apa_intext": "(Creswell & Creswell, 2023, p. 190)",
-      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2023). Research design: Qualitative, quantitative, and mixed methods approaches (6th ed.). SAGE Publications.",
+      "apa_reference": "Finlay, L. (2002). Negotiating the swamp: The opportunity and challenge of reflexivity in research practice. Qualitative Research, 2(2), 209–230.",
       "corpus_variants": [
         {
           "v": "Tự phản tỉnh của nhà nghiên cứu",
@@ -1139,7 +1140,7 @@
       ],
       "stt": 18,
       "tier": "flagship",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "Đạt. Thêm biến thể \"Tính phản tư\" (phổ biến). Bỏ nguồn bịa. Mục 6: bỏ chú thích \"[Hội đồng Khoa học & Giáo trình ĐH Việt Nam]\" (không phải nguồn có thật) và cặp lặp \"X (X)\". Mục 5: in-text/APA Ref dẫn Creswell thay cho nguồn gốc – thay bằng nguồn gốc và kiểm lại số trang.",
       "expert_checks": {
         "vietnamese": true,
@@ -3994,23 +3995,23 @@
       "id": "audit-trail",
       "term": "Audit Trail (Inquiry Audit)",
       "ipa": "/ˈɔːdɪt treɪl/",
-      "vietnamese": "Dấu vết Kiểm toán (Hồ sơ Minh chứng Tiến trình Nghiên cứu Định tính)",
+      "vietnamese": "Dấu vết Kiểm toán (Hồ sơ Lưu vết Quy trình Nghiên cứu Định tính)",
       "vietnamese_variants": [
-        "Hồ sơ kiểm toán nghiên cứu",
-        "Nhật ký hành trình nghiên cứu định tính"
+        "Hồ sơ kiểm toán định tính",
+        "Audit trail qualitative research",
+        "Lưu vết phân tích"
       ],
       "category": "Qualitative Rigour & Trustworthiness",
       "domain_tags": [
         "Nghiên cứu Định tính",
-        "Tính Xác thực",
-        "Lincoln & Guba",
-        "Minh bạch Học thuật"
+        "Minh bạch Phương pháp Luận",
+        "Kiểm định Độ tin cậy"
       ],
-      "core_definition": "Hệ thống tài liệu lưu trữ toàn diện, minh bạch và có hệ thống ghi chép lại toàn bộ các bước đi, quyết định phương pháp luận, sự thay đổi mã hóa và các diễn biến tư duy diễn ra trong suốt quá trình nghiên cứu (Lincoln & Guba, 1985; Rogers & Cowles, 1993). 'Dấu vết kiểm toán' cho phép một kiểm toán viên độc lập hoặc một đồng nghiệp bên ngoài có thể lần theo từng dấu vết từ dữ liệu thô ban đầu đến kết luận lý thuyết cuối cùng để thẩm định tính vững chắc (Dependability) và tính xác nhận được (Confirmability).",
+      "core_definition": "Hệ thống tài liệu lưu trữ toàn diện, minh bạch và có tổ chức ghi lại từng quyết định phương pháp luận, tiến trình thu thập và biến đổi dữ liệu từ trạng thái thô sơ ban đầu cho đến các kết luận lý thuyết cuối cùng trong nghiên cứu định tính, do Edward S. Halpern (1983) và Lincoln & Guba (1985) chuẩn hóa từ nghiệp vụ kiểm toán kế toán. Dấu vết kiểm toán cho phép một kiểm toán viên độc lập (External auditor) tái hiện và kiểm chứng tính hợp lý của toàn bộ công trình.",
       "paradigm_debates": "Tương đương với khái niệm 'Khả năng lặp lại' (Replicability) của nghiên cứu định lượng nhưng phù hợp với bản chất kiến tạo của định tính: không đòi hỏi người khác phải ra kết quả y hệt, nhưng người khác khi nhìn vào hồ sơ kiểm toán phải công nhận rằng các kết luận là hoàn toàn hợp lý dựa trên dữ liệu thu thập.",
-      "benchmarks": "Lưu trữ 6 nhóm tư liệu cốt lõi: (1) Dữ liệu thô (băng ghi âm, biên bản phỏng vấn, ảnh thực địa); (2) Các sản phẩm rút gọn dữ liệu (mã hóa, sổ tay mã số codebook); (3) Các sản phẩm tái cấu trúc dữ liệu (sơ đồ cấu trúc chủ đề, lý thuyết phát triển); (4) Ghi chép tiến trình (nhật ký thực địa, biên bản phương pháp); (5) Tài liệu phản tư cá nhân (reflexive journals); (6) Bản thảo công cụ phát triển.",
-      "pitfalls": "Bẫy thất lạc dữ liệu: Không ghi chép lại lý do vì sao một danh mục mã hóa bị gộp lại hoặc bị xóa bỏ ở tuần thứ 3, khiến khi reviewer yêu cầu giải trình thì tác giả không thể chứng minh được logic biến đổi của mô hình.",
-      "apa_reference": "Rogers, B. L., & Cowles, K. V. (1993). The qualitative research audit trail: A complex collection of documentation. Research in Nursing & Health, 16(3), 219-226. https://doi.org/10.1002/nur.4770160309",
+      "benchmarks": "Hệ thống 6 ngăn hồ sơ kiểm toán chuẩn của Halpern (1983): (1) Dữ liệu thô (Bản ghi âm, băng hình, ghi chép thực địa); (2) Dữ liệu đã xử lý và rút gọn (Bản gỡ băng transcript, tóm tắt ca); (3) Tái cấu trúc và tổng hợp dữ liệu (Nhật ký mã hóa, cây chủ đề, sơ đồ khái niệm); (4) Nhật ký tiến trình (Sổ tay ghi nhớ lý thuyết - Memos, giải thích lý do thay đổi câu hỏi); (5) Tài liệu ý định ban đầu (Đề cương, nhật ký phản tư); (6) Công cụ phát triển thang đo hoặc phiếu phỏng vấn.",
+      "pitfalls": "Xóa bỏ các ghi chép nháp ban đầu hoặc không lưu lại lịch sử thay đổi mã hóa; tuyên bố có 'Audit trail' nhưng khi được yêu cầu cung cấp minh chứng cho hội đồng phản biện thì chỉ đưa ra được bản phỏng vấn đã qua chỉnh sửa sạch sẽ.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications.",
       "synonyms": [
         "Inquiry Audit",
         "Decision Trail",
@@ -4033,7 +4034,7 @@
       ],
       "stt": 71,
       "tier": "flagship",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "Sáu nhóm tư liệu là của Halpern (1983) được Lincoln & Guba (1985) dẫn lại -> ghi nguồn. Lincoln & Guba đặt dependability tương ứng reliability và confirmability tương ứng objectivity – không phải \"replicability\". Mục 6: bỏ chú thích \"[Hội đồng Khoa học & Giáo trình ĐH Việt Nam]\" (không phải nguồn có thật) và cặp lặp \"X (X)\"; tên trường gắn với biến thể chưa được kiểm chứng. Mục 5: thiếu [Gốc] và [In-text] – thống nhất cấu trúc với #01–39.",
       "expert_checks": {
         "vietnamese": true,
@@ -4041,28 +4042,28 @@
         "benchmark": true,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "seminal_citation": "Halpern, E. S. (1983). Auditing naturalistic inquiries: The development and validation of a process. Doctoral dissertation, Indiana University; Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications."
     },
     {
       "id": "thick-description",
       "term": "Thick Description (Clifford Geertz)",
       "ipa": "/θɪk dɪˈskrɪpʃn/",
-      "vietnamese": "Mô tả Dày đặc (Khái niệm Nhân học Văn hóa Clifford Geertz)",
+      "vietnamese": "Mô tả Đậm đặc (Khái niệm Diễn giải Nhân học Clifford Geertz)",
       "vietnamese_variants": [
-        "Mô tả sâu sắc / Mô tả đa tầng",
-        "Tường thuật chi tiết bối cảnh ý nghĩa"
+        "Mô tả sâu bối cảnh",
+        "Geertzian thick description"
       ],
       "category": "Ethnography & Qualitative Depth",
       "domain_tags": [
-        "Dân tộc học",
-        "Nhân học Văn hóa",
-        "Tính Khái quát hóa Định tính",
-        "Lincoln & Guba"
+        "Nhân học & Xã hội học",
+        "Nghiên cứu Định tính Diễn giải",
+        "Tính Chuyển giao (Transferability)"
       ],
-      "core_definition": "Thuật ngữ kinh điển do nhà triết học Gilbert Ryle khởi xướng và được nhà nhân học vĩ đại Clifford Geertz (1973) phát triển thành trụ cột phương pháp luận trong tác phẩm 'The Interpretation of Cultures'. 'Mô tả mỏng' (Thin description) chỉ đơn thuần ghi nhận hành vi vật lý bề mặt (ví dụ: mí mắt co giật). 'Mô tả dày đặc' (Thick description) giải thích tường tận toàn bộ bối cảnh văn hóa xã hội, mạng lưới ý nghĩa và chủ ý của hành vi đó (ví dụ: đó là cái nháy mắt bí mật, một cử chỉ tán tỉnh, hay một sự chế giễu?).",
+      "core_definition": "Khái niệm lý thuyết nhân học lừng danh do nhà nhân học Clifford Geertz (1973) sáng lập (kế thừa từ Gilbert Ryle). Mô tả đậm đặc không chỉ đơn thuần ghi chép lại hành vi vật lý bề nổi (ví dụ: hành động co giật mí mắt - Thin description), mà giải mã và làm sáng tỏ toàn bộ mạng lưới ý nghĩa biểu tượng, bối cảnh văn hóa và ý định chủ quan của chủ thể (ví dụ: đó là một cái nháy mắt bí mật, một cử chỉ tán tỉnh hay một trò giễu nhại - Thick description). Trong nghiên cứu định tính, mô tả đậm đặc là phương tiện duy nhất tạo lập Tính chuyển giao (Transferability).",
       "paradigm_debates": "Là phương tiện sống còn để thiết lập 'Khả năng chuyển giao' (Transferability) trong nghiên cứu định tính (Lincoln & Guba, 1985): Nhà nghiên cứu không thể khái quát hóa thống kê, nhưng việc cung cấp một bản mô tả dày đặc về bối cảnh sẽ giúp độc giả tự nhận biết xem kết quả có thể áp dụng cho bối cảnh riêng của họ hay không.",
-      "benchmarks": "Đoạn văn mô tả dày đặc phải bao gồm: (1) Bối cảnh chi tiết của tình huống và môi trường; (2) Cảm xúc, giọng điệu, ngôn ngữ cơ thể và hàm ý văn hóa của đối tượng; (3) Mạng lưới quan hệ quyền lực xã hội đang chi phối tương tác.",
-      "pitfalls": "Bẫy nhầm lẫn giữa 'Dày đặc ý nghĩa' và 'Dài dòng lan man': Viết hàng chục trang liệt kê chi tiết vụn vặt vô nghĩa không giúp làm sáng tỏ cấu trúc ý nghĩa văn hóa thì chỉ là 'Mô tả mỏng kéo dài' chứ không phải Thick Description.",
+      "benchmarks": "Bản mô tả đạt chuẩn đậm đặc phải bao gồm 4 tầng thông tin: (1) Bối cảnh tình huống chi tiết; (2) Hành vi và ngôn từ chính xác của đối tượng; (3) Mạng lưới ý nghĩa văn hóa và quy ước xã hội chi phối hành vi đó; (4) Cảm xúc và phản ứng của những người xung quanh. Báo cáo định tính phải trích dẫn các đoạn văn verbatim phong phú đặt trong bối cảnh sống động.",
+      "pitfalls": "Nhầm lẫn giữa mô tả đậm đặc (Thick description) với viết dài dòng lan man vô nghĩa (Thick writing): Mô tả đậm đặc phải chứa đựng sự diễn giải lý thuyết về ý nghĩa chứ không phải là sự tích tụ rác thông tin chi tiết vụn vặt.",
       "apa_reference": "Geertz, C. (1973). The interpretation of cultures: Selected essays. Basic Books.",
       "synonyms": [
         "Contextual Depth Description",
@@ -4086,7 +4087,7 @@
       ],
       "stt": 72,
       "tier": "flagship",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "Đạt. Giảm từ cường điệu (\"vĩ đại\"). Bổ sung Ryle (1971) cho phần nguồn gốc. \"Mô tả dày\" là biến thể phổ biến. Mục 6: bỏ chú thích \"[Hội đồng Khoa học & Giáo trình ĐH Việt Nam]\" (không phải nguồn có thật) và cặp lặp \"X (X)\"; tên trường gắn với biến thể chưa được kiểm chứng. Mục 5: thiếu [Gốc] và [In-text] – thống nhất cấu trúc với #01–39.",
       "expert_checks": {
         "vietnamese": true,
@@ -4094,7 +4095,8 @@
         "benchmark": true,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "seminal_citation": "Geertz, C. (1973). The interpretation of cultures: Selected essays. Basic Books; Denzin, N. K. (1989). Interpretive interactionism. SAGE Publications."
     },
     {
       "id": "bracketing-epoche",
@@ -7034,23 +7036,30 @@
     },
     {
       "id": "between-method-across-method-triangulation",
-      "term": "Between-method (Across-method) Triangulation",
-      "vietnamese": "Kết hợp các phương pháp hoàn toàn khác biệt nhau (ví dụ: Phỏng vấn sâu + Khảo sát diện rộng + Quan sát thực địa + Dữ liệu lưu trữ).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Between-Method (Across-Method) Triangulation",
+      "vietnamese": "Tam giác đạc Giữa các Phương pháp (Kết hợp Đa Phương pháp Khác biệt)",
+      "vietnamese_variants": [
+        "Tam giác đạc liên phương pháp",
+        "Across-method triangulation",
+        "Mixed methodology triangulation"
       ],
-      "core_definition": "Kết hợp các phương pháp hoàn toàn khác biệt nhau (ví dụ: Phỏng vấn sâu + Khảo sát diện rộng + Quan sát thực địa + Dữ liệu lưu trữ).",
-      "seminal_citation": "Denzin (1978)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Hệ thống Tam giác đạc (Triangulation)",
+        "Phương pháp Hỗn hợp"
+      ],
+      "core_definition": "Hình thức tam giác đạc mạnh mẽ nhất theo Denzin (1978) và Jick (1979), trong đó nhà nghiên cứu kết hợp hai hoặc nhiều phương pháp nghiên cứu hoàn toàn khác biệt về mặt kỹ thuật và bản thể luận để cùng tiếp cận một vấn đề (ví dụ: kết hợp Khảo sát bảng hỏi định lượng + Phỏng vấn sâu định tính + Nhật ký quan sát thực địa). Khi các phương pháp khác biệt này cùng hội tụ về một kết luận, tính hợp lệ và độ tin cậy của phát hiện nghiên cứu đạt mức tối thượng.",
+      "seminal_citation": "Denzin, N. K. (1978). The research act: A theoretical introduction to sociological methods (2nd ed.). McGraw-Hill; Jick, T. D. (1979). Mixing qualitative and quantitative methods: Triangulation in action. Administrative Science Quarterly, 24(4), 602–611. https://doi.org/10.2307/2392366",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Between-method (Across-method) Triangulation according to Denzin (1978).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn tích hợp Jick (1979): Phân loại kết quả đối sánh thành 3 trạng thái: (1) Hội tụ (Convergence: các phương pháp khẳng định lẫn nhau); (2) Bổ sung (Complementarity: phương pháp định tính giải thích sâu sắc cơ chế ngầm đằng sau số liệu định lượng); (3) Mâu thuẫn (Divergence / Dissonance: các phương pháp đưa ra kết quả trái ngược, đòi hỏi tác giả phải đào sâu tìm kiếm lời giải thích mới).",
+      "pitfalls": "Chỉ báo cáo khi hai phương pháp cho kết quả trùng khớp và che giấu các điểm mâu thuẫn giữa số liệu định lượng và lời nói định tính; biến một phương pháp thành 'phụ gia trang trí' mà không thực sự tích hợp phân tích.",
+      "apa_reference": "Jick, T. D. (1979). Mixing qualitative and quantitative methods: Triangulation in action. Administrative Science Quarterly, 24(4), 602–611."
     },
     {
       "id": "between-study-variance-tau-metric",
@@ -10342,22 +10351,29 @@
     },
     {
       "id": "confirmability",
-      "term": "Confirmability",
-      "vietnamese": "Tính xác nhận / Tính khách quan trong nghiên cứu định tính",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Phương pháp Định tính"
+      "term": "Confirmability (Lincoln & Guba Framework)",
+      "vietnamese": "Tính Xác nhận / Tính Khách quan Tự phản tư (Tiêu chuẩn Confirmability)",
+      "vietnamese_variants": [
+        "Tính xác nhận định tính",
+        "Confirmability criterion"
       ],
-      "core_definition": "Tiêu chí tương đương với Objectivity trong định lượng, bảo đảm rằng các diễn giải và kết luận nghiên cứu thực sự xuất phát từ dữ liệu thu thập của người tham gia chứ không phải do định kiến chủ quan của nhà nghiên cứu áp đặt.",
-      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic Inquiry. SAGE Publications.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Nghiên cứu Định tính",
+        "Tính Khách quan & Minh bạch"
+      ],
+      "core_definition": "Tiêu chí tương đương với 'Tính khách quan' (Objectivity) trong nghiên cứu định lượng. Khác với thực chứng xem sự khách quan nằm ở công cụ đo lường vô cảm, nghiên cứu định tính xem nhà nghiên cứu chính là công cụ thu thập dữ liệu (Researcher as instrument). Confirmability đo lường mức độ mà các kết quả và diễn giải trong báo cáo được bắt nguồn trực tiếp từ DỮ LIỆU THỰC TẾ CỦA ĐỐI TƯỢNG NGHIÊN CỨU, chứ tuyệt đối không phải là sự thêu dệt xuất phát từ trí tưởng tượng, định kiến cá nhân, hoặc thiên kiến lý thuyết của chính nhà nghiên cứu.",
+      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Confirmability according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Biện pháp bảo đảm: (1) Kiểm toán xác nhận (Confirmability Audit): Kiểm toán viên độc lập đối chiếu từng chủ đề (Theme) với các đoạn trích dẫn nguyên văn (Verbatim quotes) trong dữ liệu thô; (2) Nhật ký Tự phản tư (Reflexivity Journal): Tác giả ghi chép liên tục về cảm xúc cá nhân, các giả định ban đầu và nhận thức về vị thế quyền lực của mình đối với đối tượng khảo sát; (3) Tam giác đạc dữ liệu.",
+      "pitfalls": "Đưa ra các nhận định kết luận đao to búa lớn nhưng không trích dẫn được câu nói thực tế nào của người tham gia (Theoretical leapfrogging); che giấu các mối quan hệ quyền lực hoặc xung đột lợi ích giữa người phỏng vấn và người được phỏng vấn.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications."
     },
     {
       "id": "confirmability-lincoln-guba",
@@ -11814,22 +11830,30 @@
     },
     {
       "id": "credibility",
-      "term": "Credibility",
-      "vietnamese": "Tính chân thực / Giá trị nội tại trong nghiên cứu định tính",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Phương pháp Định tính"
+      "term": "Credibility (Lincoln & Guba Framework)",
+      "vietnamese": "Tính Khả tín / Độ Chân thực (Tiêu chuẩn Credibility Định tính)",
+      "vietnamese_variants": [
+        "Tính khả tín định tính",
+        "Giá trị chân thực nội tại",
+        "Credibility criterion"
       ],
-      "core_definition": "Tiêu chí tương đương với Internal Validity trong định lượng, phản ánh mức độ mà phát hiện định tính phản ánh trung thực và sâu sắc quan điểm thực sự của người tham gia, đạt được qua các kỹ thuật: kiểm tra chéo thành viên (member checking), gắn bó kéo dài (prolonged engagement) và tam giác đạc (triangulation).",
-      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic Inquiry. SAGE Publications.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Nghiên cứu Định tính",
+        "Tiêu chuẩn Nghiêm cẩn"
+      ],
+      "core_definition": "Tiêu chí tương đương với 'Độ giá trị nội tại' (Internal Validity) trong nghiên cứu định tính theo khung Lincoln & Guba (1985). Credibility đo lường mức độ trùng khớp và tương thích (Congruence) giữa những kiến tạo thực tế trong tâm thức của những người tham gia nghiên cứu (Participants' lived reality) và cách thức nhà nghiên cứu diễn giải, tái hiện lại những thực tế đó trong báo cáo khoa học. Mục tiêu cốt lõi là đảm bảo phát hiện nghiên cứu là chân thực và có thể tin cậy được đối với chính những người trong cuộc.",
+      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Credibility according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Hệ thống 5 kỹ thuật thực thi bắt buộc theo Lincoln & Guba: (1) Tiếp cận thực địa kéo dài và quan sát bền bỉ (Prolonged Engagement & Persistent Observation); (2) Tam giác đạc đa nguồn (Triangulation); (3) Tham vấn chuyên gia phản biện ngang hàng (Peer Debriefing); (4) Phân tích các trường hợp ngoại lệ phủ định (Negative Case Analysis); (5) Kiểm chứng với đối tượng nghiên cứu (Member Checking - được coi là kỹ thuật quan trọng nhất).",
+      "pitfalls": "Áp đặt định kiến chủ quan của tác giả (Researcher bias) lên lời nói của người được phỏng vấn; bỏ qua các ý kiến trái chiều hoặc ngoại lệ; không tiến hành member checking để các đối tượng xác nhận tính chân thực của bản ghi chép.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications."
     },
     {
       "id": "credibility-lincoln-guba",
@@ -12674,23 +12698,29 @@
     },
     {
       "id": "data-triangulation",
-      "term": "Data triangulation",
-      "vietnamese": "Tam giác đạc dữ liệu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Tam giác đạc",
-        "Phương pháp Nghiên cứu"
+      "term": "Data Triangulation (Denzin Framework)",
+      "vietnamese": "Tam giác đạc Dữ liệu (Kiểm chứng Chéo Đa nguồn Dữ liệu Denzin)",
+      "vietnamese_variants": [
+        "Kiểm chứng chéo dữ liệu",
+        "Data triangulation qualitative"
       ],
-      "core_definition": "Hình thức tam giác đạc sử dụng nhiều nguồn dữ liệu khác nhau (về thời gian thu thập, địa điểm thực địa hoặc đối tượng người trả lời) để nghiên cứu cùng một hiện tượng, giúp giảm thiểu sai lệch do phụ thuộc vào một nguồn duy nhất.",
-      "seminal_citation": "Denzin, N. K. (1978). The Research Act. McGraw-Hill.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Hệ thống Tam giác đạc (Triangulation)",
+        "Thu thập Dữ liệu Đa nguồn"
+      ],
+      "core_definition": "Một trong 4 hình thức tam giác đạc nền tảng do Norman K. Denzin (1978) hệ thống hóa nhằm kiểm chứng chéo độ chân thực của hiện tượng nghiên cứu. Tam giác đạc dữ liệu đòi hỏi việc thu thập dữ liệu từ nhiều nguồn khác nhau theo 3 chiều kích không-thời-gian: (1) Thời gian (Time: thu thập ở các thời điểm, ngày, mùa khác nhau); (2) Không gian (Space: thu thập ở các địa điểm, chi nhánh, vùng miền khác nhau); và (3) Đối tượng (Person: phỏng vấn đa dạng các nhóm chủ thể có vị thế và góc nhìn đối lập nhau, ví dụ: lãnh đạo, nhân viên cấp dưới, và khách hàng).",
+      "seminal_citation": "Denzin, N. K. (1978). The research act: A theoretical introduction to sociological methods (2nd ed.). McGraw-Hill; Flick, U. (2018). Doing triangulation and mixed methods. SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Data triangulation according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Báo cáo ma trận tam giác đạc dữ liệu rõ ràng: Bảng tổng hợp đối sánh phát hiện từ các nhóm đối tượng khác nhau. Mức độ đồng thuận cao giữa các nhóm đối tượng đối lập (ví dụ cả sếp và nhân viên đều thừa nhận một vấn đề) khẳng định độ vững chắc tuyệt đối của phát hiện.",
+      "pitfalls": "Chỉ phỏng vấn một nhóm đối tượng duy nhất (ví dụ: chỉ phỏng vấn giám đốc điều hành) rồi đưa ra kết luận về văn hóa doanh nghiệp của toàn công ty (Elite bias / Thiên lệch giới tinh hoa).",
+      "apa_reference": "Denzin, N. K. (1978). The research act: A theoretical introduction to sociological methods (2nd ed.). McGraw-Hill."
     },
     {
       "id": "data-triangulation-tam-giac-dac-du-lieu",
@@ -13146,22 +13176,29 @@
     },
     {
       "id": "dependability",
-      "term": "Dependability",
-      "vietnamese": "Tính khả tín / Độ ổn định quy trình trong nghiên cứu định tính",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Phương pháp Định tính"
+      "term": "Dependability (Lincoln & Guba Framework)",
+      "vietnamese": "Tính Tin cậy / Tính Ổn định Tiến trình (Tiêu chuẩn Dependability)",
+      "vietnamese_variants": [
+        "Tính tin cậy tiến trình",
+        "Dependability criterion"
       ],
-      "core_definition": "Tiêu chí tương đương với Reliability trong định lượng, phản ánh tính mạch lạc và ổn định của tiến trình nghiên cứu theo thời gian, được minh chứng thông qua dấu vết kiểm toán (audit trail) ghi lại mọi quyết định phương pháp luận.",
-      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic Inquiry. SAGE Publications.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Nghiên cứu Định tính",
+        "Độ tin cậy Tiến trình Nghiên cứu"
+      ],
+      "core_definition": "Tiêu chí tương đương với 'Độ tin cậy' (Reliability) trong nghiên cứu định lượng. Trong khi định lượng kiểm tra độ tin cậy qua việc lặp lại phép đo để xem kết quả có bất biến hay không, nghiên cứu định tính thừa nhận thế giới xã hội luôn luôn biến động không ngừng. Dependability đo lường tính nhất quán, tính ổn định và tính logic của toàn bộ QUY TRÌNH THỰC HIỆN NGHIÊN CỨU: Liệu một kiểm toán viên hoặc một nhà nghiên cứu độc lập khác có thể lần theo từng bước chân của tác giả để hiểu rõ lý do vì sao tác giả đưa ra các quyết định phương pháp luận đó hay không.",
+      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications; Halpern, E. S. (1983). Auditing naturalistic inquiries: The development and validation of a process. Doctoral dissertation, Indiana University.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Dependability according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Kỹ thuật thực thi chuẩn mực: Thiết lập Kiểm toán Điều tra (Inquiry Audit) thông qua Dấu vết Kiểm toán (Audit Trail). Tác giả lưu trữ minh bạch toàn bộ các bản nháp ghi chép thực địa (Fieldnotes), bản ghi âm, bảng mã hóa sơ cấp và thứ cấp, các bản ghi nhớ lý thuyết (Memos), và biên bản họp nhóm nghiên cứu.",
+      "pitfalls": "Tự ý thay đổi hướng nghiên cứu hoặc câu hỏi phỏng vấn giữa chừng mà không ghi lại nhật ký giải thích lý do; làm mất mát hồ sơ dữ liệu thô khiến không ai có thể kiểm chứng được quy trình phân tích.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications."
     },
     {
       "id": "dependability-lincoln-guba",
@@ -15199,20 +15236,29 @@
     {
       "id": "epoche-phenomenological-bracketing",
       "term": "Epoché / Phenomenological Bracketing",
-      "vietnamese": "Thủ pháp Đặt vào Ngoặc Epoché",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Phenomenological Method"
+      "vietnamese": "Thực hành Epoché / Đặt trong Ngoặc đơn Hiện tượng học (Husserl)",
+      "vietnamese_variants": [
+        "Kỹ thuật Epoché Husserl",
+        "Phenomenological bracketing",
+        "Tạm đình chỉ định kiến"
       ],
-      "core_definition": "Nhà nghiên cứu chủ động cô lập các định kiến và giả định lý thuyết để nhìn hiện tượng thuần khiết.",
-      "seminal_citation": "Moustakas (1994)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Nghiên cứu Hiện tượng học (Phenomenology)",
+        "Triết học Khoa học",
+        "Kiểm soát Thiên kiến"
+      ],
+      "core_definition": "Khái niệm triết học và kỹ thuật phương pháp luận cốt tử do Edmund Husserl (1913) khởi xướng trong Hiện tượng học Siêu nghiệm (Transcendental Phenomenology) và được Moustakas (1994) chuẩn hóa trong nghiên cứu định tính. Epoché (thuật ngữ Hy Lạp cổ chỉ sự 'tạm đình chỉ phán đoán') yêu cầu nhà nghiên cứu phải chủ động nhận diện, cô lập và 'đặt vào trong ngoặc đơn' (Bracket out) toàn bộ những kiến thức đã biết, định kiến cá nhân, lý thuyết giáo điều và các giả định thông thường về thế giới để có thể tiếp cận và cảm nhận hiện tượng nghiên cứu một cách thuần khiết nhất như chính nó đang tự biểu hiện.",
+      "seminal_citation": "Husserl, E. (1913/1931). Ideas: General introduction to pure phenomenology. George Allen & Unwin; Moustakas, C. (1994). Phenomenological research methods. SAGE Publications. https://doi.org/10.4135/9781412995658",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Epoché / Phenomenological Bracketing according to Moustakas (1994).",
       "domain_tags_en": [
         "Phenomenological Method"
-      ]
+      ],
+      "benchmarks": "Quy trình thực hành 3 giai đoạn: (1) Viết tuyên ngôn tự phản tư ban đầu (Epoché statement): Tác giả liệt kê chi tiết toàn bộ trải nghiệm cá nhân, niềm tin và giả định tiên nghiệm của mình đối với chủ đề nghiên cứu; (2) Thực hành đình chỉ trong phỏng vấn: Lắng nghe không phán xét, không dẫn dụ câu trả lời; (3) Ngang hàng hóa dữ liệu (Horizonalization): Xem mọi phát biểu của người tham gia đều có giá trị ban đầu ngang nhau trước khi trích xuất các đơn vị ý nghĩa.",
+      "pitfalls": "Lầm tưởng rằng con người có thể xóa sạch 100% định kiến cá nhân (Martin Heidegger đã chỉ ra con người luôn gắn liền với bối cảnh tồn tại Dasein, do đó trường phái Hiện tượng học Diễn giải Hermeneutic của Heidegger chủ trương phản tư liên tục thay vì cố gắng tách rời hoàn toàn như Husserl); không viết báo cáo phần Epoché trong chương phương pháp luận.",
+      "apa_reference": "Moustakas, C. (1994). Phenomenological research methods. SAGE Publications."
     },
     {
       "id": "equifinality-in-social-systems",
@@ -18356,21 +18402,28 @@
     },
     {
       "id": "he-thong-tam-giac-dac-da-dien-uwe-flicks-triangulation-system",
-      "term": "Uwe Flick's Triangulation System",
-      "vietnamese": "Hệ thống Tam giác đạc Đa diện của Uwe Flick",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Methodology"
+      "term": "Uwe Flick's Systematic Triangulation Framework",
+      "vietnamese": "Hệ thống Tam giác đạc Toàn diện Uwe Flick (Mở rộng Tri thức Định tính)",
+      "vietnamese_variants": [
+        "Khung tam giác đạc Uwe Flick",
+        "Triangulation as knowledge expansion"
       ],
-      "core_definition": "Khung tích hợp tam giác đạc Dữ liệu, Người nghiên cứu, Lý thuyết, và Phương pháp luận (Within-method & Between-method).",
-      "seminal_citation": "Flick et al. (2004)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phương pháp Định tính Hiện đại",
+        "Hệ thống Tam giác đạc (Triangulation)"
+      ],
+      "core_definition": "Khung lý thuyết tam giác đạc hiện đại do nhà phương pháp luận hàng đầu Uwe Flick (1992, 2004, 2018) phát triển. Khác với quan niệm cổ điển của Denzin (vốn coi tam giác đạc như một công cụ kiểm chứng để tìm ra một 'chân lý khách quan duy nhất'), Flick tái định nghĩa tam giác đạc trong trường phái kiến tạo: Tam giác đạc không chỉ là công cụ thẩm định tính hợp lệ, mà là CHIẾN LƯỢC MỞ RỘNG VÀ ĐÀO SÂU TRI THỨC (Triangulation as knowledge expansion), cho phép nắm bắt hiện tượng từ nhiều góc nhìn đa diện và đa tầng nấc.",
+      "seminal_citation": "Flick, U. (1992). Triangulation revisited: Strategy of validation or alternative? Journal for the Theory of Social Behaviour, 22(2), 175–197. https://doi.org/10.1111/j.1468-5914.1992.tb00215.x; Flick, U. (2018). Doing triangulation and mixed methods. SAGE Publications.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Hệ thống Tam giác đạc Đa diện (Uwe Flick's Triangulation System) according to Flick et al. (2004).",
       "domain_tags_en": [
         "Qualitative Methodology"
-      ]
+      ],
+      "benchmarks": "Hệ thống tích hợp 4 cấp độ của Flick: (1) Tam giác đạc cấp độ Dữ liệu và Bối cảnh; (2) Tam giác đạc cấp độ Phương pháp thu thập; (3) Tam giác đạc cấp độ Lý thuyết giải giải; (4) Tam giác đạc cấp độ Hệ hình nhận thức (Epistemological triangulation). Bắt buộc phải luận giải được giá trị gia tăng (Epistemic surplus) mà việc kết hợp mang lại so với việc chỉ sử dụng một phương pháp đơn lẻ.",
+      "pitfalls": "Lạm dụng tam giác đạc như một sự tích tụ cơ học các phương pháp mà không có một sợi chỉ đỏ lý thuyết kết nối xuyên suốt; ngộ nhận rằng tam giác đạc sẽ tự động xóa sạch mọi sai số của nghiên cứu.",
+      "apa_reference": "Flick, U. (2018). Doing triangulation and mixed methods. SAGE Publications."
     },
     {
       "id": "he-thong-toan-dien-cac-nguy-co-de-doa-threats-to-validity",
@@ -21046,20 +21099,27 @@
     {
       "id": "investigator-triangulation-protocol",
       "term": "Investigator Triangulation Protocol",
-      "vietnamese": "Quy trình Tam giác Đạc Nhà nghiên cứu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Rigour"
+      "vietnamese": "Quy trình Tam giác đạc Nhà nghiên cứu (Mã hóa Độc lập Nhiều Người)",
+      "vietnamese_variants": [
+        "Tam giác đạc nhà nghiên cứu",
+        "Multiple coders triangulation"
       ],
-      "core_definition": "Sử dụng từ hai nhà nghiên cứu độc lập trở lên để phân tích cùng bộ dữ liệu.",
-      "seminal_citation": "Denzin (1978)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Hệ thống Tam giác đạc (Triangulation)",
+        "Mã hóa & Phân tích Dữ liệu"
+      ],
+      "core_definition": "Hình thức tam giác đạc sử dụng từ hai nhà nghiên cứu trở lên tham gia độc lập vào cùng một quá trình thu thập, quan sát hoặc mã hóa phân tích dữ liệu (Denzin 1978). Mục tiêu cốt tử là triệt tiêu thiên kiến nhận thức cá nhân (Individual cognitive bias) của một tác giả đơn lẻ, đảm bảo các chủ đề và mô hình khái niệm không bị chi phối bởi lăng kính chủ quan của một người duy nhất.",
+      "seminal_citation": "Denzin, N. K. (1978). The research act: A theoretical introduction to sociological methods (2nd ed.). McGraw-Hill; Armstrong, D., Gosling, A., Weinman, J., & Marteau, T. (1997). The place of inter-rater reliability in qualitative research: An empirical study. Sociology, 31(3), 597–606.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Investigator Triangulation Protocol according to Denzin (1978).",
       "domain_tags_en": [
         "Research Rigour"
-      ]
+      ],
+      "benchmarks": "Quy trình thực thi chuẩn: (1) Mã hóa độc lập (Independent coding): Ít nhất 2 nhà nghiên cứu mã hóa riêng rẽ trên một tập mẫu dữ liệu (thường 10–20% tổng dung lượng bản gỡ băng); (2) Đánh giá độ tin cậy đồng thuận: Tính toán chỉ số Cohen's Kappa hoặc Holsti Index (yêu cầu Kappa >= 0.70 hoặc % agreement >= 80%); (3) Tổ chức thảo luận phân giải các điểm bất đồng (Consensus meeting) để thống nhất cây mã hóa cuối cùng.",
+      "pitfalls": "Chỉ một người mã hóa toàn bộ dữ liệu rồi đưa cho người thứ hai đọc lướt qua ký tên đồng ý; không báo cáo chỉ số đồng thuận giữa các người mã hóa (Inter-coder agreement).",
+      "apa_reference": "Denzin, N. K. (1978). The research act: A theoretical introduction to sociological methods (2nd ed.). McGraw-Hill."
     },
     {
       "id": "ipd",
@@ -24189,22 +24249,29 @@
     },
     {
       "id": "methodological-triangulation",
-      "term": "Methodological triangulation",
-      "vietnamese": "Tam giác đạc phương pháp luận",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Tam giác đạc"
+      "term": "Methodological Triangulation (Denzin Framework)",
+      "vietnamese": "Tam giác đạc Phương pháp Luận (Kết hợp Đa Phương pháp Thu thập)",
+      "vietnamese_variants": [
+        "Tam giác đạc phương pháp",
+        "Methodological triangulation"
       ],
-      "core_definition": "Việc kết hợp nhiều phương pháp nghiên cứu khác nhau (như phỏng vấn sâu kết hợp khảo sát bảng hỏi, hoặc định lượng kết hợp định tính) để kiểm chứng cùng một giả thuyết hoặc trả lời câu hỏi nghiên cứu.",
-      "seminal_citation": "Denzin, N. K. (1978). The Research Act. McGraw-Hill.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Hệ thống Tam giác đạc (Triangulation)",
+        "Thiết kế Phương pháp Luận"
+      ],
+      "core_definition": "Hình thức tam giác đạc phổ biến và có sức mạnh thuyết phục cao nhất theo Denzin (1978), dựa trên nguyên lý: Mọi phương pháp nghiên cứu đơn lẻ đều có những điểm yếu cố hữu (Flaws). Bằng cách kết hợp nhiều phương pháp thu thập dữ liệu khác nhau để cùng nghiên cứu một hiện tượng, điểm mạnh của phương pháp này sẽ bù đắp và triệt tiêu điểm yếu của phương pháp kia. Phương pháp bao gồm hai dạng: Tam giác đạc nội bộ phương pháp (Within-method) và Tam giác đạc giữa các phương pháp (Between-method).",
+      "seminal_citation": "Denzin, N. K. (1978). The research act: A theoretical introduction to sociological methods (2nd ed.). McGraw-Hill; Jick, T. D. (1979). Mixing qualitative and quantitative methods: Triangulation in action. Administrative Science Quarterly, 24(4), 602–611.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Methodological triangulation according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Sự kết hợp chuẩn mực trong nghiên cứu định tính: Phỏng vấn sâu bán cấu trúc (In-depth interviews) + Quan sát tham dự thực địa (Participant observation) + Phân tích tài liệu lưu trữ (Documentary analysis). Dữ liệu hành vi thực tế từ quan sát sẽ kiểm chứng xem lời nói của người được phỏng vấn có đúng sự thật hay không.",
+      "pitfalls": "Chỉ thu thập từ một phương pháp phỏng vấn duy nhất rồi tuyên bố đạt tam giác đạc; chỉ đặt dữ liệu các phương pháp cạnh nhau mà không có sự đối sánh và phân giải khi kết quả giữa hai phương pháp mâu thuẫn nhau.",
+      "apa_reference": "Denzin, N. K. (1978). The research act: A theoretical introduction to sociological methods (2nd ed.). McGraw-Hill."
     },
     {
       "id": "methodological-triangulation-tam-giac-dac-phuong-phap",
@@ -25760,21 +25827,28 @@
     },
     {
       "id": "negative-case-analysis",
-      "term": "Negative Case Analysis",
-      "vietnamese": "Phân tích Trường hợp Tiêu cực",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Rigour"
+      "term": "Negative Case Analysis (Deviant Case Analysis)",
+      "vietnamese": "Phân tích Trường hợp Phủ định (Phân tích Ca Dị biệt / Ngoại lệ)",
+      "vietnamese_variants": [
+        "Phân tích ca ngoại lệ",
+        "Deviant case analysis qualitative"
       ],
-      "core_definition": "Chủ động tìm kiếm và tinh chỉnh lý thuyết cho đến khi giải thích được mọi trường hợp ngoại lệ.",
-      "seminal_citation": "Kidder (1981)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Nghiên cứu Định tính",
+        "Hoàn thiện Lý thuyết Quy nạp"
+      ],
+      "core_definition": "Quy trình tìm kiếm, phân tích và xử lý có chủ đích những trường hợp, đối tượng hoặc dữ liệu KHÔNG PHÙ HỢP hoặc mâu thuẫn trực tiếp với lý thuyết hoặc mô hình đang được nhà nghiên cứu xây dựng. Khác với nghiên cứu định lượng (vốn coi các ca dị biệt là sai số ngẫu nhiên hoặc outliers cần loại bỏ), nghiên cứu định tính coi các trường hợp phủ định là kho báu tri thức quý giá giúp tinh chỉnh, mở rộng và đào sâu ranh giới lý thuyết cho đến khi mô hình giải thích được 100% các ca nghiên cứu.",
+      "seminal_citation": "Kidder, L. H. (1981). Qualitative analysis and missing data. New Directions for Methodology of Social and Behavioral Science, 9, 41–56; Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Negative Case Analysis according to Kidder (1981).",
       "domain_tags_en": [
         "Qualitative Rigour"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn thực thi theo Kidder (1981) và Lincoln & Guba (1985): Khi phát hiện một ca dị biệt không khớp với giả thuyết ban đầu, tác giả BẮT BUỘC phải hiệu chỉnh lại định nghĩa khái niệm hoặc sửa đổi mô hình lý thuyết, sau đó kiểm tra lại mô hình mới trên toàn bộ các ca trước đó. Quy trình này lặp lại liên tục cho đến khi không còn trường hợp phủ định nào tồn tại.",
+      "pitfalls": "Che giấu hoặc loại bỏ các ca phỏng vấn có quan điểm trái ngược chỉ vì chúng làm phức tạp hóa mô hình đang đẹp đẽ của tác giả; đây là hành vi vi phạm nghiêm trọng tính liêm chính nghiên cứu trong định tính.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications."
     },
     {
       "id": "netnography",
@@ -27882,21 +27956,29 @@
     },
     {
       "id": "peer-debriefing",
-      "term": "Peer Debriefing",
-      "vietnamese": "Hội ý Phản biện Đồng nghiệp",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Rigour"
+      "term": "Peer Debriefing (Analytic Debriefing)",
+      "vietnamese": "Tham vấn Phản biện Ngang hàng (Kỹ thuật Đối chất Đồng nghiệp)",
+      "vietnamese_variants": [
+        "Phản biện đồng nghiệp định tính",
+        "Peer debriefing session"
       ],
-      "core_definition": "Nhờ một chuyên gia bên ngoài rà soát, chất vấn các diễn giải và giả định của nhà nghiên cứu.",
-      "seminal_citation": "Lincoln & Guba (1985)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Nghiên cứu Định tính",
+        "Kiểm soát Thiên lệch",
+        "Tính Khả tín (Credibility)"
+      ],
+      "core_definition": "Kỹ thuật kiểm soát thiên lệch học thuật trong đó nhà nghiên cứu định kỳ làm việc và đối chất với một đồng nghiệp hoặc chuyên gia độc lập có hiểu biết sâu sắc về phương pháp luận định tính nhưng KHÔNG THAM GIA trực tiếp vào đề tài nghiên cứu. Người phản biện ngang hàng đóng vai trò là 'Người biện hộ cho quỷ dữ' (Devil's advocate), liên tục chất vấn các giả định ngầm, chỉ ra các điểm mù nhận thức, và thách thức các suy luận diễn giải của tác giả.",
+      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications; Spall, S. (1998). Peer debriefing in qualitative research: Emerging operational models. Qualitative Inquiry, 4(2), 280–292.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Peer Debriefing according to Lincoln & Guba (1985).",
       "domain_tags_en": [
         "Qualitative Rigour"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn thực hiện: (1) Lựa chọn người phản biện ngang hàng có năng lực phản biện khách quan; (2) Tổ chức các buổi họp định kỳ xuyên suốt quá trình từ thu thập, mã hóa đến xây dựng mô hình; (3) Bắt buộc lập Biên bản Tham vấn Ngang hàng (Peer Debriefing Notes) ghi lại các câu hỏi chất vấn, các điểm mâu thuẫn và cách thức nhà nghiên cứu đã hiệu chỉnh phân tích để đưa vào hồ sơ kiểm toán.",
+      "pitfalls": "Chọn một người đồng nghiệp chỉ biết gật đầu đồng ý và khen ngợi (biến buổi phản biện thành hình thức xã giao vô bổ); không lưu trữ biên bản làm việc để chứng minh cho hội đồng thẩm định.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications."
     },
     {
       "id": "per-protocol-analysis",
@@ -27959,20 +28041,27 @@
     {
       "id": "persistent-observation",
       "term": "Persistent Observation",
-      "vietnamese": "Quan sát Bền bỉ",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Rigour"
+      "vietnamese": "Quan sát Bền bỉ (Kỹ thuật Đào sâu Khía cạnh Trọng tâm)",
+      "vietnamese_variants": [
+        "Quan sát tập trung chuyên sâu",
+        "Persistent observation qualitative"
       ],
-      "core_definition": "Xác định các đặc điểm và yếu tố quan trọng nhất đối với vấn đề nghiên cứu và tập trung đào sâu.",
-      "seminal_citation": "Lincoln & Guba (1985)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Nghiên cứu Định tính",
+        "Kỹ thuật Quan sát Thực địa"
+      ],
+      "core_definition": "Kỹ thuật đồng hành cùng với Tiếp cận thực địa kéo dài theo Lincoln & Guba (1985). Trong khi tiếp cận kéo dài mang lại 'độ rộng' (Scope) để hiểu bức tranh toàn cảnh, thì Quan sát Bền bỉ mang lại 'chiều sâu' (Depth): Nhà nghiên cứu liên tục nhận diện, phân loại và tập trung đào sâu vào những đặc điểm, chi tiết và hiện tượng nổi bật có ý nghĩa lý thuyết then chốt nhất đối với câu hỏi nghiên cứu, đồng thời lọc bỏ những yếu tố nhiễu bề nổi không liên quan.",
+      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Persistent Observation according to Lincoln & Guba (1985).",
       "domain_tags_en": [
         "Qualitative Rigour"
-      ]
+      ],
+      "benchmarks": "Ghi chép thực địa phải thể hiện được sự chuyển dịch từ: (1) Quan sát mô tả bao quát (Descriptive observation) ban đầu sang (2) Quan sát tập trung (Focused observation) và cuối cùng là (3) Quan sát chọn lọc (Selective observation) nhằm làm sáng tỏ các mối quan hệ cấu trúc then chốt.",
+      "pitfalls": "Bẫy đóng khung nhận thức quá sớm (Premature closure): Vội vàng tập trung quan sát vào một vài chi tiết nhỏ theo định kiến ban đầu mà bỏ qua các hiện tượng mới mẻ bất ngờ xuất hiện tại thực địa.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications."
     },
     {
       "id": "person",
@@ -29257,21 +29346,28 @@
     },
     {
       "id": "prolonged-engagement",
-      "term": "Prolonged Engagement",
-      "vietnamese": "Gắn bó Hiện trường Lâu dài",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Rigour"
+      "term": "Prolonged Engagement in the Field",
+      "vietnamese": "Tiếp cận Thực địa Kéo dài (Kỹ thuật Tiếp cận Điền dã Chuyên sâu)",
+      "vietnamese_variants": [
+        "Gắn bó thực địa lâu dài",
+        "Prolonged engagement fieldwork"
       ],
-      "core_definition": "Dành đủ thời gian ở hiện trường để thấu hiểu văn hóa và xây dựng niềm tin với đối tượng.",
-      "seminal_citation": "Lincoln & Guba (1985)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Nghiên cứu Định tính",
+        "Điền dã & Nhân học"
+      ],
+      "core_definition": "Khoảng thời gian đầu tư thực địa đủ dài của nhà nghiên cứu tại địa bàn hoặc tổ chức nghiên cứu nhằm đạt được 3 mục tiêu chiến lược: (1) Thấu hiểu sâu sắc bối cảnh văn hóa và các quy ước ngầm; (2) Xây dựng lòng tin (Trust building) với người dân địa phương hoặc nhân viên công ty để họ mở lòng chia sẻ những điều sâu kín nhất; (3) Kiểm tra và loại bỏ các thông tin bị bóp méo, ngụy tạo do hiện tượng đối tượng 'diễn' trước người lạ (Hawthorne effect).",
+      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications; Fetterman, D. M. (2010). Ethnography: Step-by-step (3rd ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Prolonged Engagement according to Lincoln & Guba (1985).",
       "domain_tags_en": [
         "Qualitative Rigour"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn thời gian: Tùy thuộc vào phương pháp: từ vài tuần đến vài tháng đối với nghiên cứu tình huống tổ chức (Case study), và từ 6 tháng đến 1 năm trở lên đối với nghiên cứu dân tộc học điền dã (Ethnography). Báo cáo rõ ràng trong phần phương pháp luận: Tổng số giờ hiện diện tại thực địa, số lượng sự kiện tham gia quan sát, và sự chuyển biến trong mối quan hệ giữa nhà nghiên cứu và đối tượng.",
+      "pitfalls": "Bẫy 'Hòa tan vào đối tượng' (Going Native): Nhà nghiên cứu ở lại quá lâu và đồng nhất hoàn toàn bản thân với văn hóa của nhóm nghiên cứu, đánh mất góc nhìn phản tư và năng lực phân tích phê phán mang tính học thuật.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications."
     },
     {
       "id": "propensity-score-matching-2033",
@@ -30751,20 +30847,27 @@
     {
       "id": "reflexive-journaling-in-fieldwork",
       "term": "Reflexive Journaling in Fieldwork",
-      "vietnamese": "Nhật ký Tự phản tư Hiện trường",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Rigour"
+      "vietnamese": "Nhật ký Tự phản tư Điền dã (Sổ tay Phản tỉnh Thực địa)",
+      "vietnamese_variants": [
+        "Sổ tay điền dã phản tư",
+        "Fieldwork reflexive journal"
       ],
-      "core_definition": "Công cụ ghi chép các cảm xúc, định kiến và sự chuyển biến nhận thức của nhà nghiên cứu.",
-      "seminal_citation": "Lincoln & Guba (1985)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Nghiên cứu Định tính",
+        "Thu thập & Ghi chép Điền dã"
+      ],
+      "core_definition": "Công cụ phương pháp luận thực hành quan trọng nhất để duy trì tính nghiêm cẩn và tính xác nhận (Confirmability), trong đó nhà nghiên cứu ghi chép nhật ký hàng ngày ngay sau mỗi buổi phỏng vấn hoặc quan sát thực địa. Nhật ký không chỉ ghi lại các sự kiện diễn ra (What happened), mà tập trung ghi lại thế giới nội tâm của nhà nghiên cứu: Cảm xúc, sự bối rối, những phán đoán vội vàng nảy sinh trong đầu, các giả định ban đầu bị sụp đổ, và các câu hỏi phương pháp luận cần điều chỉnh cho các buổi sau.",
+      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications; Ortlipp, M. (2008). Keeping and using reflective journals in the qualitative research process. The Qualitative Report, 13(4), 695–705.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Reflexive Journaling in Fieldwork according to Lincoln & Guba (1985).",
       "domain_tags_en": [
         "Qualitative Rigour"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn ghi chép 3 phần tách biệt trong sổ tay điền dã: (1) Ghi chép mô tả thực tế (Descriptive fieldnotes: lời nói, cử chỉ, sự kiện cụ thể); (2) Ghi chép phương pháp luận (Methodological notes: lý do vì sao đổi câu hỏi phỏng vấn, các trục trặc kỹ thuật); (3) Ghi chép tự phản tư (Reflexive notes: cảm xúc cá nhân, định kiến xuất hiện, suy ngẫm lý thuyết). Hồ sơ nhật ký này là một thành phần bắt buộc của Dấu vết kiểm toán (Audit Trail).",
+      "pitfalls": "Lười biếng chỉ ghi chép thông tin sự kiện mà bỏ qua việc ghi chép cảm xúc và định kiến phản tư; đợi nhiều ngày sau phỏng vấn mới ghi nhật ký khiến ký ức bị phai nhạt và sai lệch.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications."
     },
     {
       "id": "reflexive-thematic-analysis-braun-clarke-2019",
@@ -35930,23 +36033,29 @@
     },
     {
       "id": "theory-triangulation-tam-giac-dac-ly-thuyet",
-      "term": "Theory Triangulation",
-      "vietnamese": "Tam giác đạc Lý thuyết",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Triangulation",
-        "Sociological Methods"
+      "term": "Theory Triangulation (Denzin Framework)",
+      "vietnamese": "Tam giác đạc Lý thuyết (Soi chiếu Đa Lý thuyết Đối lập)",
+      "vietnamese_variants": [
+        "Tam giác đạc lý thuyết",
+        "Theory triangulation qualitative"
       ],
-      "core_definition": "- Đưa nhiều lý thuyết đối lập (Rival theories) cùng soi chiếu và giải thích một hiện tượng thực nghiệm duy nhất.",
-      "seminal_citation": "Denzin (1978)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Hệ thống Tam giác đạc (Triangulation)",
+        "Phát triển & Kiểm định Lý thuyết"
+      ],
+      "core_definition": "Hình thức tam giác đạc cấp cao theo Denzin (1978), trong đó nhà nghiên cứu tiếp cận và giải thích cùng một tập dữ liệu thực nghiệm thông qua nhiều lăng kính, góc nhìn và khung lý thuyết đối lập nhau (Multiple theoretical perspectives / Rival paradigms, ví dụ: soi chiếu hành vi của tổ chức đồng thời qua Lý thuyết Thể chế - Institutional Theory VÀ Lý thuyết Nguồn lực - Resource-Based View). Kỹ thuật này giúp ngăn chặn hiện tượng giải thích hiện tượng một cách phiến diện đơn cực.",
+      "seminal_citation": "Denzin, N. K. (1978). The research act: A theoretical introduction to sociological methods (2nd ed.). McGraw-Hill.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Mảnh trích; tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Theory Triangulation (Tam giác đạc Lý thuyết) according to Denzin (1978).",
       "domain_tags_en": [
         "Triangulation",
         "Sociological Methods"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn báo cáo: Xây dựng các giả thuyết giải thích cạnh tranh (Rival explanations) bắt nguồn từ các lý thuyết khác nhau. Báo cáo luận chứng rõ ràng dữ liệu thực tế ủng hộ lý thuyết nào mạnh mẽ hơn, hoặc chứng minh sự kết hợp bổ trợ giữa hai lý thuyết tạo ra một khung giải thích mới hoàn chỉnh hơn.",
+      "pitfalls": "Gượng ép ghép nối các lý thuyết có tiền đề bản thể luận (Ontology) hoàn toàn triệt tiêu lẫn nhau mà không có lập luận dung hòa; sử dụng lý thuyết như một chiếc khung cứng nhắc áp đặt lên dữ liệu thay vì để dữ liệu phản biện lý thuyết.",
+      "apa_reference": "Denzin, N. K. (1978). The research act: A theoretical introduction to sociological methods (2nd ed.). McGraw-Hill."
     },
     {
       "id": "theory-laden-observation",
@@ -36551,22 +36660,29 @@
     },
     {
       "id": "transferability",
-      "term": "Transferability",
-      "vietnamese": "Tính chuyển giao / Khả năng áp dụng bối cảnh trong nghiên cứu định tính",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Phương pháp Định tính"
+      "term": "Transferability (Lincoln & Guba Framework)",
+      "vietnamese": "Tính Chuyển giao / Khả năng Áp dụng (Tiêu chuẩn Transferability)",
+      "vietnamese_variants": [
+        "Tính chuyển giao định tính",
+        "Khả năng áp dụng bối cảnh tương đồng"
       ],
-      "core_definition": "Tiêu chí tương đương với External Validity trong định lượng, cho phép người đọc đánh giá xem kết quả nghiên cứu định tính có thể áp dụng cho các bối cảnh, đối tượng tương tự khác hay không, thông qua việc tác giả cung cấp mô tả dày đặc (thick description).",
-      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic Inquiry. SAGE Publications.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Nghiên cứu Định tính",
+        "Khái quát hóa Bối cảnh"
+      ],
+      "core_definition": "Tiêu chí tương đương với 'Độ giá trị ngoại tại / Khả năng khái quát hóa' (External Validity / Generalizability) trong nghiên cứu định tính. Khác với nghiên cứu định lượng vốn tìm kiếm các quy luật phổ quát có thể khái quát hóa thống kê cho toàn dân số, nghiên cứu định tính thừa nhận rằng mọi hiện tượng đều gắn chặt với bối cảnh đặc thù (Context-bound). Transferability là mức độ mà các phát hiện nghiên cứu có thể được áp dụng hoặc có ý nghĩa soi chiếu sang các bối cảnh, môi trường hoặc nhóm đối tượng tương đồng khác.",
+      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications; Geertz, C. (1973). The interpretation of cultures. Basic Books.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Transferability according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Kỹ thuật thực thi duy nhất và bắt buộc: Cung cấp 'Mô tả Đậm đặc' (Thick Description theo Clifford Geertz 1973). Nhà nghiên cứu phải mô tả cực kỳ chi tiết, tường tận về bối cảnh văn hóa, môi trường tổ chức, quy trình chọn mẫu, và các điều kiện thực tế tại địa bàn. Trách nhiệm chuyển giao (Burden of transferability) thuộc về NGƯỜI ĐỌC: Người đọc dựa vào mô tả đậm đặc của tác giả để tự phán đoán xem kết quả có thể chuyển giao sang bối cảnh của họ hay không.",
+      "pitfalls": "Tuyên bố rằng kết quả định tính có thể 'khái quát hóa cho toàn bộ ngành hoặc toàn quốc' (ngụy biện ngoại suy thống kê); mô tả bối cảnh sơ sài khiến người đọc không thể so sánh sự tương đồng với các môi trường khác.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications."
     },
     {
       "id": "transferability-lincoln-guba",
@@ -36834,23 +36950,31 @@
     },
     {
       "id": "trustworthiness",
-      "term": "Trustworthiness",
-      "vietnamese": "Tính đáng tin cậy của nghiên cứu định tính",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Phương pháp Định tính",
-        "Tiêu chuẩn Thẩm định"
+      "term": "Trustworthiness in Qualitative Research",
+      "vietnamese": "Tính Đáng Tin cậy trong Nghiên cứu Định tính (Khung Lincoln & Guba 1985)",
+      "vietnamese_variants": [
+        "Độ tin cậy định tính",
+        "Chuẩn mực nghiêm cẩn Lincoln & Guba",
+        "Trustworthiness criteria"
       ],
-      "core_definition": "Khung tiêu chuẩn đánh giá chất lượng và độ vững của nghiên cứu định tính do Lincoln & Guba (1985) đề xuất để thay thế các khái niệm định lượng (Validity & Reliability), bao gồm 4 tiêu chí: Credibility (tính chân thực), Transferability (tính chuyển giao), Dependability (tính khả tín) và Confirmability (tính xác nhận).",
-      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic Inquiry. SAGE Publications.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Nghiên cứu Định tính",
+        "Tiêu chuẩn Nghiêm cẩn Phương pháp",
+        "Độ giá trị Định tính"
+      ],
+      "core_definition": "Khung tiêu chuẩn phương pháp luận mang tính nền tảng và cách mạng do Yvonna Lincoln và Egon Guba (1985) sáng lập trong công trình kinh điển 'Naturalistic Inquiry'. Khung tiêu chuẩn này giải phóng nghiên cứu định tính khỏi sự áp đặt máy móc của các tiêu chuẩn thực chứng định lượng (vốn đòi hỏi đo lường khách quan, thực nghiệm đối chứng). Lincoln & Guba thiết lập bộ tứ tiêu chí tương đương: (1) Tính khả tín (Credibility - thay cho Internal Validity); (2) Tính chuyển giao (Transferability - thay cho External Validity); (3) Tính tin cậy (Dependability - thay cho Reliability); và (4) Tính xác nhận (Confirmability - thay cho Objectivity).",
+      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications; Guba, E. G. (1981). Criteria for assessing the trustworthiness of naturalistic inquiries. Educational Communication and Technology, 29(2), 75–91.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Trustworthiness according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn thẩm định toàn diện: (1) Credibility: Bắt buộc thực hiện ít nhất 3 trong số các kỹ thuật: Tam giác đạc (Triangulation), Tham vấn đối tượng nghiên cứu (Member Checking), Tiếp cận thực địa kéo dài (Prolonged Engagement), và Phân tích trường hợp phủ định (Negative Case Analysis); (2) Transferability: Cung cấp Mô tả đậm đặc (Thick Description) về bối cảnh, văn hóa và đối tượng; (3) Dependability & Confirmability: Thiết lập Hồ sơ Kiểm toán Dấu vết (Audit Trail) minh bạch toàn bộ nhật ký mã hóa và quyết định phân tích.",
+      "pitfalls": "Sử dụng các thuật ngữ thực chứng định lượng ('mẫu có tính đại diện thống kê', 'độ tin cậy kiểm tra lại') để đánh giá nghiên cứu định tính; tuyên bố nghiên cứu đạt tính đáng tin cậy mà không đưa ra bằng chứng thực thi cụ thể về audit trail hoặc member checking.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications."
     },
     {
       "id": "truth-table-algorithm-in-fsqca",
@@ -38423,23 +38547,29 @@
     },
     {
       "id": "within-method-triangulation",
-      "term": "Within-method Triangulation",
-      "vietnamese": "Sử dụng nhiều tiểu kỹ thuật khác nhau trong cùng một phương pháp (ví dụ: dùng nhiều thang đo khác nhau trong cùng một bảng hỏi).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Within-Method Triangulation",
+      "vietnamese": "Tam giác đạc Nội bộ Phương pháp (Đa Chiến lược trong Cùng một Phương pháp)",
+      "vietnamese_variants": [
+        "Tam giác đạc nội phương pháp",
+        "Within-method qualitative strategy"
       ],
-      "core_definition": "Sử dụng nhiều tiểu kỹ thuật khác nhau trong cùng một phương pháp (ví dụ: dùng nhiều thang đo khác nhau trong cùng một bảng hỏi).",
-      "seminal_citation": "Denzin (1978)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Hệ thống Tam giác đạc (Triangulation)",
+        "Kỹ thuật Thu thập Dữ liệu"
+      ],
+      "core_definition": "Một phân nhánh của Tam giác đạc Phương pháp theo Denzin (1978), trong đó nhà nghiên cứu sử dụng nhiều chiến lược, tiểu kỹ thuật hoặc thang đo khác nhau nhưng NẰM TRONG CÙNG MỘT PHƯƠNG PHÁP NGHIÊN CỨU DUY NHẤT (ví dụ: trong cùng phương pháp phỏng vấn, tác giả kết hợp cả phỏng vấn bán cấu trúc cá nhân, phỏng vấn nhóm tập trung focus group, và phỏng vấn kể chuyện tường thuật narrative interview; hoặc sử dụng nhiều dạng câu hỏi khác nhau để cùng thăm dò một thái độ).",
+      "seminal_citation": "Denzin, N. K. (1978). The research act: A theoretical introduction to sociological methods (2nd ed.). McGraw-Hill; Flick, U. (2018). Doing triangulation and mixed methods. SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Within-method Triangulation according to Denzin (1978).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Đánh giá tính nhất quán nội tại: Kiểm tra xem các phát hiện có giữ nguyên tính ổn định khi thay đổi định dạng câu hỏi hoặc hình thức phỏng vấn hay không. Nếu câu trả lời thay đổi khi chuyển từ phỏng vấn 1-1 sang phỏng vấn nhóm, tác giả phải phân tích tác động của áp lực đám đông (Social desirability / Group conformity).",
+      "pitfalls": "Nhầm lẫn giữa Tam giác đạc nội bộ phương pháp với Tam giác đạc giữa các phương pháp (Between-method - vốn có sức mạnh vượt trội hơn vì phá vỡ sự giới hạn của một công cụ đơn lẻ).",
+      "apa_reference": "Denzin, N. K. (1978). The research act: A theoretical introduction to sociological methods (2nd ed.). McGraw-Hill."
     },
     {
       "id": "wooldridge-test-for-panel-autocorrelation",
