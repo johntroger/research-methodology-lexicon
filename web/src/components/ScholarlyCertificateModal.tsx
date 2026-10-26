@@ -149,7 +149,7 @@ export default function ScholarlyCertificateModal({
             </p>
 
             <div className="space-y-1 py-1">
-              <h3 className="text-xl sm:text-2xl font-bold font-serif text-slate-900 dark:text-white tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-bold font-serif text-slate-900 dark:text-white">
                 {scholarName}
               </h3>
               {institution && (

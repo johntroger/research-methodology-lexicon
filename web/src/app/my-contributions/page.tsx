@@ -176,7 +176,7 @@ export default function MyContributionsPage() {
         {/* Banner Giới thiệu */}
         <div className="space-y-1">
           <div className="flex items-center gap-2">
-            <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white font-serif tracking-tight">
+            <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white font-serif">
               {t.title}
             </h2>
             {currentUser && (
@@ -185,7 +185,7 @@ export default function MyContributionsPage() {
               </span>
             )}
           </div>
-          <p className="text-xs text-slate-500 dark:text-slate-400 font-serif leading-relaxed">
+          <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
             {t.subtitle}
           </p>
         </div>
