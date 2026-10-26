@@ -393,25 +393,34 @@
     },
     {
       "id": "common-method-bias",
-      "term": "Common Method Bias",
+      "term": "Common Method Bias (CMB - Podsakoff Framework)",
       "ipa": "/ˈkɒmən ˈmɛθəd ˈbaɪəs/",
-      "vietnamese": "Sai lệch do phương pháp chung",
+      "vietnamese": "Thiên lệch phương pháp chung (CMB) / Sai số phương pháp chung",
       "vietnamese_variants": [
-        "Phương sai phương pháp chung",
-        "Thiên lệch phương pháp thu thập"
+        "Thiên lệch do cùng một phương pháp",
+        "Common Method Variance (CMV)",
+        "Sai số đo lường đơn nguồn"
       ],
       "domain_tags": [
         "Phương pháp Khảo sát",
         "Hành vi Tổ chức",
         "Marketing"
       ],
-      "core_definition": "Phương sai sai số đo lường nảy sinh khi cả biến độc lập và biến phụ thuộc đều được thu thập từ cùng một người trả lời, tại cùng một thời điểm, bằng cùng một bảng hỏi, làm thổi phồng hoặc bóp méo tương quan thực tế giữa các biến.",
+      "core_definition": "Common Method Bias (CMB) là sự thổi phồng (hoặc làm suy giảm) giả tạo mối quan hệ tương quan thực sự giữa các biến số trong nghiên cứu, xuất phát từ việc thu thập dữ liệu về cả biến độc lập và biến phụ thuộc từ cùng một nguồn duy nhất (single informant / self-report survey), tại cùng một thời điểm, và bằng cùng một định dạng công cụ đo lường thang đo Likert (Podsakoff, MacKenzie, Lee, & Podsakoff, 2003; Podsakoff et al., 2012). CMB là một trong những mối đe dọa lớn nhất đối với giá trị khoa học (construct validity) trong các nghiên cứu hành vi tổ chức, tiếp thị và tâm lý học xã hội, thường xuyên là lý do hàng đầu khiến bài báo bị từ chối tại các tạp chí Q1.",
       "paradigm_debates": "Một số nhà nghiên cứu xem CMB là hiểm họa phóng đại tương quan; trong khi một số khác cho rằng CMB bị thổi phồng quá mức nếu bảng hỏi được thiết kế tốt (Spector, 2006).",
-      "benchmarks": "Kiểm định thống kê: Harman's single-factor test (nhân tố đầu tiên giải thích < 50% phương sai - phương pháp cũ), Marker Variable technique (Lindell & Whitney, 2001), hoặc Unmeasured Latent Method Construct (ULMC - Podsakoff et al., 2003). | Trong PLS-SEM: Full collinearity VIF <= 3.3 (Kock, 2015). Trong khảo sát: ưu tiên kiểm soát thủ tục tách rời thời gian/không gian (Podsakoff et al., 2012) hoặc kỹ thuật biến đánh dấu Marker Variable (Lindell & Whitney, 2001).",
-      "pitfalls": "Chỉ dựa vào Harman's single-factor test để khẳng định không có CMB. Các reviewer Q1 hiện nay coi Harman test là lỗi thời và yêu cầu biện pháp kiểm soát từ khâu thiết kế (phân tách thời gian thu thập hoặc dùng Marker Variable).",
-      "seminal_citation": "Podsakoff, P. M., MacKenzie, S. B., Lee, J. Y., & Podsakoff, N. P. (2003). Common method biases in behavioral research. Journal of Applied Psychology, 88(5), 879–903.",
+      "benchmarks": [
+        "Tiêu chuẩn vàng: Bắt buộc kết hợp cả Biện pháp thủ tục thiết kế (Procedural) VÀ Biện pháp kiểm soát thống kê (Statistical).",
+        "Hạn chế của Harman's Single Factor test: Không còn được các tạp chí hàng đầu chấp nhận nếu đứng một mình (vì tính nhạy kém).",
+        "Phương pháp được Q1 ưa chuộng: Marker Variable Technique (Lindell & Whitney) hoặc Full Collinearity VIF < 3.3 (Kock, 2015)."
+      ],
+      "pitfalls": [
+        "Chỉ dùng Harman's test một nhân tố: Chỉ báo cáo nhân tố đầu tiên giải thích < 50% phương sai và kết luận 'không có CMB' - đây là lý do thường xuyên bị Reviewer Q1 bắt bẻ.",
+        "Hoàn toàn không có biện pháp phòng ngừa thủ tục: Thu thập toàn bộ biến trong 1 bảng hỏi khảo sát 1 lần nhưng không ẩn danh, không tách thời gian rồi trông chờ vào thuật toán thống kê cứu vãn.",
+        "Bỏ qua CMB trong nghiên cứu dữ liệu tự báo cáo (self-reported surveys)."
+      ],
+      "seminal_citation": "Podsakoff, P. M., MacKenzie, S. B., Lee, J. Y., & Podsakoff, N. P. (2003). Common method biases in behavioral research: A critical review of the literature and recommended remedies. Journal of Applied Psychology, 88(5), 879-903; Podsakoff, P. M., MacKenzie, S. B., & Podsakoff, N. P. (2012). Sources of method bias in social science research and recommendations on how to control it. Annual Review of Psychology, 63, 539-569.",
       "apa_intext": "(Podsakoff et al., 2003, p. 879)",
-      "apa_reference": "Podsakoff, P. M., MacKenzie, S. B., Lee, J. Y., & Podsakoff, N. P. (2003). Common method biases in behavioral research: A critical review of the literature and recommended remedies. Journal of Applied Psychology, 88(5), 879–903.",
+      "apa_reference": "Podsakoff, P. M., MacKenzie, S. B., Lee, J. Y., & Podsakoff, N. P. (2003). Common method biases in behavioral research: A critical review of the literature and recommended remedies. Journal of Applied Psychology, 88(5), 879-903. https://doi.org/10.1037/0021-9010.88.5.879",
       "corpus_variants": [
         {
           "v": "Common Method Variance (CMV)",
@@ -478,7 +487,14 @@
         "benchmark": false,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "category": "Quantitative Methods",
+      "subcategory": "Survey Biases",
+      "operational_mechanism": "Hai nhóm giải pháp kiểm soát theo Podsakoff et al. (2003, 2012): (1) Biện pháp kiểm soát thủ tục thiết kế (Procedural remedies): Thu thập dữ liệu từ đa nguồn (ví dụ: lãnh đạo đánh giá hiệu quả, nhân viên đánh giá văn hóa); Tách biệt thời gian đo lường (Time lag / Longitudinal); Ẩn danh hóa người trả lời; Hoán đổi vị trí câu hỏi; Dùng thang đo nghịch đảo; (2) Biện pháp kiểm soát thống kê hậu nghiệm (Statistical remedies): Kiểm định Harman's Single Factor; Kỹ thuật biến đánh dấu (Marker Variable Technique); Mô hình nhân tố phương pháp tiềm ẩn chung (Unmeasured Latent Method Construct - ULMC); Kiểm định Full Collinearity VIF.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "triangulation",
@@ -1863,11 +1879,11 @@
       "id": "classical-test-theory-vs-irt",
       "term": "Classical Test Theory (CTT) vs. Item Response Theory (IRT)",
       "ipa": "/ˈklæsɪkl test ˈθɪəri vɜːsəs ˈaɪtəm rɪˈspɒns ˈθɪəri/",
-      "vietnamese": "Lý thuyết Đo lường Cổ điển (CTT) vs. Lý thuyết Ứng đáp Câu hỏi (IRT)",
+      "vietnamese": "So sánh Lý thuyết đo lường cổ điển (CTT) và Lý thuyết trắc nghiệm hiện đại (IRT)",
       "vietnamese_variants": [
-        "Lý thuyết điểm số thực vs. Lý thuyết đặc trưng câu hỏi",
-        "CTT đối chiếu IRT",
-        "Tâm trắc học cổ điển và hiện đại"
+        "Đối chiếu CTT và IRT",
+        "Mô hình CTT so với IRT",
+        "Modern vs Classical Psychometrics"
       ],
       "domain_tags": [
         "Tâm trắc học",
@@ -1875,13 +1891,21 @@
         "Lý thuyết Đo lường",
         "Đánh giá Giáo dục & Tâm lý"
       ],
-      "core_definition": "Hai hệ hình lớn trong lý thuyết đo lường: CTT đánh giá độ tin cậy và sai số đo lường ở cấp độ toàn bộ bài kiểm tra/thang đo dựa trên phương trình điểm thực X = T + E; IRT mô hình hóa xác suất phản hồi ở cấp độ từng câu hỏi riêng biệt theo mức năng lực/thuộc tính tiềm ẩn (theta) của cá nhân.",
+      "core_definition": "Cuộc đối chiếu giữa Classical Test Theory (CTT - mô hình điểm số thực X = T + E) và Item Response Theory (IRT - mô hình nét tiềm ẩn phi tuyến tính) là trọng tâm so sánh của đo lường tâm lý học hiện đại (Hambleton & Jones, 1993; Embretson & Reise, 2000). Trong khi CTT tập trung ở cấp độ toàn bài kiểm tra (test-level) và phụ thuộc mẫu nặng nề (sample-dependent), IRT tập trung ở cấp độ từng câu hỏi riêng biệt (item-level) và đạt được tính bất biến tham số, cho phép đo lường sai số chuẩn (Standard Error of Measurement) riêng biệt cho từng mức năng lực cá nhân thay vì một con số trung bình duy nhất như CTT.",
       "paradigm_debates": "Hạn chế lớn nhất của CTT là các chỉ số (độ khó, độ phân biệt, alpha) phụ thuộc chặt chẽ vào mẫu khảo sát cụ thể (sample-dependent). Ngược lại, IRT mang lại tính bất biến tham số (parameter invariance), cho phép phát triển các bài thi thích ứng trên máy tính (CAT).",
-      "benchmarks": "Trong CTT: Cronbach's alpha >= 0.70, tương quan biến - tổng hiệu chỉnh >= 0.30. Trong IRT: Đánh giá độ phù hợp mô hình (Infit/Outfit MNSQ từ 0.7 đến 1.3 đối với mô hình Rasch), đường cong đặc trưng câu hỏi (ICC) và hàm thông tin (TIF).",
-      "pitfalls": "Dùng CTT khi các câu hỏi vi phạm giả định tương đương tau (tau-equivalence) sẽ dẫn đến việc đánh giá thấp độ tin cậy thực sự của thang đo.",
-      "seminal_citation": "DeVellis, R. F. (2016). Scale development: Theory and applications (4th ed.). SAGE Publications.",
+      "benchmarks": [
+        "Khi nào dùng CTT: Cỡ mẫu nhỏ (N < 200), thang đo thăm dò ban đầu, phân tích tương quan đơn giản.",
+        "Khi nào dùng IRT: Cỡ mẫu lớn (N > 500), các kỳ thi quốc gia chuẩn hóa (SAT, GMAT, TOEFL), các bài test tâm lý học lâm sàng cần độ chính xác cao ở các dải điểm cực đoan.",
+        "Bắt buộc đối chiếu trong luận văn đo lường: Luận án phát triển thang đo chuẩn Q1 nên trình bày bảng phân tích so sánh kết quả trích xuất từ cả hai lăng kính CTT và IRT."
+      ],
+      "pitfalls": [
+        "Bác bỏ hoàn toàn CTT như một phương pháp lỗi thời: CTT vẫn là nền tảng trực quan, dễ áp dụng và hiệu quả cho các nghiên cứu khảo sát quản trị kinh doanh thông thường.",
+        "Gượng ép áp dụng IRT khi dữ liệu không đủ: Sử dụng IRT phức tạp trên mẫu 80 sinh viên rồi báo cáo các tham số câu hỏi sai lệch nghiêm trọng.",
+        "Không nhận thức được tính linh hoạt của hàm thông tin: Sử dụng bài kiểm tra IRT nhưng không báo cáo Test Information Function (TIF) để chỉ ra bài test đo lường chuẩn xác nhất ở đâu."
+      ],
+      "seminal_citation": "Hambleton, R. K., & Jones, P. K. (1993). Comparison of classical test theory and item response theory. Educational Measurement: Issues and Practice, 12(3), 38-47; Embretson, S. E., & Reise, S. P. (2000). Item Response Theory for Psychologists. Lawrence Erlbaum.",
       "apa_intext": "(DeVellis, 2016, p. 215)",
-      "apa_reference": "DeVellis, R. F. (2016). Scale development: Theory and applications (4th ed.). SAGE Publications.",
+      "apa_reference": "Hambleton, R. K., & Jones, P. K. (1993). Comparison of classical test theory and item response theory. Educational Measurement: Issues and Practice, 12(3), 38-47. https://doi.org/10.1111/j.1745-3992.1993.tb00540.x",
       "corpus_variants": [
         {
           "v": "Lý thuyết điểm số thực vs. Lý thuyết đặc trưng câu hỏi",
@@ -1912,7 +1936,14 @@
         "benchmark": false,
         "pitfalls": false,
         "needs_edit": true
-      }
+      },
+      "category": "Psychometrics",
+      "subcategory": "Item Response Theory",
+      "operational_mechanism": "Ma trận đối chiếu đa chiều: (1) Mức độ phân tích: CTT xem xét tổng điểm bài thi; IRT xem xét từng câu hỏi qua đường cong ICC; (2) Tham số câu hỏi: CTT (Độ khó p, Độ phân biệt r) phụ thuộc vào mẫu thi; IRT (Tham số b, a, c) bất biến với mẫu; (3) Sai số đo lường: CTT áp dụng một sai số chuẩn SEM duy nhất cho mọi người; IRT có hàm thông tin TIF cho thấy sai số thay đổi theo từng mức năng lực Theta; (4) Thích ứng trắc nghiệm: CTT yêu cầu mọi người làm cùng một đề thi; IRT cho phép trắc nghiệm thích ứng máy tính (CAT) - mỗi người làm một đề thi khác nhau phù hợp với trình độ của họ.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "mcdonalds-omega-vs-alpha",
@@ -2425,13 +2456,13 @@
     },
     {
       "id": "measurement-invariance",
-      "term": "Measurement Invariance (Measurement Equivalence)",
+      "term": "Measurement Invariance (Measurement Equivalence - Vandenberg & Lance)",
       "ipa": "/ˈmeʒəmənt ɪnˈveəriəns/",
-      "vietnamese": "Bất biến đo lường (Tính tương đương đo lường đa nhóm)",
+      "vietnamese": "Bất biến đo lường / Tính tương đương đo lường đa nhóm",
       "vietnamese_variants": [
-        "Tính tương đương của thang đo",
-        "Bất biến cấu trúc đa nhóm",
-        "Độ tương đương đo lường xuyên văn hóa"
+        "Tính tương đương đo lường",
+        "Measurement Equivalence",
+        "Kiểm định bất biến thang đo"
       ],
       "domain_tags": [
         "CB-SEM",
@@ -2439,13 +2470,21 @@
         "Tâm trắc học",
         "Hành vi Tổ chức"
       ],
-      "core_definition": "Mức độ mà một công cụ đo lường hoặc thang đo hoạt động hoàn toàn giống nhau trên các nhóm đối tượng khác nhau (ví dụ: nam vs nữ, quốc gia A vs quốc gia B, trước can thiệp vs sau can thiệp), bảo đảm rằng các khác biệt số liệu quan sát được phản ánh đúng sự khác biệt về thuộc tính tiềm ẩn chứ không do thang đo bị hiểu lệch.",
+      "core_definition": "Measurement Invariance (hoặc Measurement Equivalence) là điều kiện tiên quyết mang tính phương pháp luận bắt buộc trước khi tiến hành bất kỳ so sánh có ý nghĩa nào giữa các nhóm (quốc gia, giới tính, văn hóa, thời gian) về các biến tiềm ẩn trong mô hình cấu trúc (Vandenberg & Lance, 2000; Cheung & Rensvold, 2002; Chen, 2007). Nó chứng minh rằng công cụ đo lường (thang đo bảng hỏi) đang đo lường cùng một cấu trúc tâm lý (latent construct) với cùng một ý nghĩa nhận thức như nhau trên toàn bộ các nhóm đối tượng khác nhau. Nếu vi phạm bất biến đo lường, mọi sự khác biệt về điểm trung bình hoặc hệ số hồi quy giữa các nhóm đều có thể là giả tạo (artifacts), do thang đo bị hiểu sai lệch chứ không phải do sự khác biệt thực tế.",
       "paradigm_debates": "Vandenberg & Lance (2000) và MacKenzie et al. (2011) chỉ rõ: So sánh điểm số trung bình (Mean comparisons) giữa các nhóm mà không kiểm định trước Tính bất biến đo lường là một sai lầm chết người trong phương pháp luận nghiên cứu quốc tế.",
-      "benchmarks": "Quy trình kiểm định 3 cấp độ tối thiểu (Vandenberg & Lance, 2000): (1) Configural Invariance (Cùng cấu trúc nhân tố); (2) Metric Invariance / Weak Invariance (Cố định hệ số tải bằng nhau, tiêu chí Delta CFI <= 0.010); (3) Scalar Invariance / Strong Invariance (Cố định ngưỡng chặn items bằng nhau, bắt buộc để so sánh giá trị trung bình giữa các nhóm).",
-      "pitfalls": "Reviewer Red Flag: Chạy t-test hoặc ANOVA so sánh điểm trung bình giữa hai quốc gia nhưng không chứng minh được Scalar Invariance, bài báo sẽ bị từ chối thẳng vì người ở hai nền văn hóa có mức độ sẵn sàng cho điểm (acquiescence / response style) hoàn toàn khác nhau.",
-      "seminal_citation": "Vandenberg, R. J., & Lance, C. E. (2000). A review and synthesis of the measurement invariance literature: Suggestions, practices, and recommendations for organizational research. Organizational Research Methods, 3(1), 4–70.",
+      "benchmarks": [
+        "Tiêu chuẩn Cheung & Rensvold (2002): Khi chuyển từ mô hình lỏng sang mô hình ràng buộc hơn, mức suy giảm ΔCFI <= 0.010 kết hợp với ΔRMSEA <= 0.015 (hoặc ΔSRMR <= 0.030) chứng minh bất biến được giữ vững (vượt trội hơn kiểm định ΔChi-square vốn quá nhạy cảm với cỡ mẫu lớn).",
+        "Tiêu chuẩn Chen (2007) cho cỡ mẫu lớn (N > 300): Với Metric invariance: ΔCFI <= 0.010, ΔRMSEA <= 0.015, ΔSRMR <= 0.030; Với Scalar invariance: ΔCFI <= 0.010, ΔRMSEA <= 0.015, ΔSRMR <= 0.010.",
+        "Yêu cầu tối thiểu để so sánh: Metric invariance để so sánh hệ số đường dẫn (path coefficients); Scalar invariance để so sánh trung bình biến tiềm ẩn (latent means)."
+      ],
+      "pitfalls": [
+        "So sánh trung bình nhóm (t-test / ANOVA) khi chưa kiểm định Scalar Invariance: Đây là lỗi tử huyệt trong các bài báo xuyên văn hóa, khiến kết luận bị bác bỏ hoàn toàn.",
+        "Dựa độc quyền vào kiểm định Chi-square Difference Test (Δχ²): Với cỡ mẫu lớn (N > 400), kiểm định Δχ² hầu như luôn có ý nghĩa thống kê (p < 0.05), dẫn đến kết luận sai lầm rằng thang đo bị vi phạm bất biến.",
+        "Không báo cáo Partial Invariance khi mô hình đầy đủ thất bại: Khi vi phạm bất biến toàn phần, nghiên cứu viên bỏ cuộc thay vì thả lỏng có chọn lọc 1-2 biến quan sát theo hướng dẫn của Byrne, Shavelson & Muthén (1989)."
+      ],
+      "seminal_citation": "Vandenberg, R. J., & Lance, C. E. (2000). A review and synthesis of the measurement invariance literature: Suggestions, practices, and recommendations for organizational research. Organizational Research Methods, 3(1), 4-70; Cheung, G. W., & Rensvold, R. B. (2002). Evaluating goodness-of-fit indexes for testing measurement invariance. Structural Equation Modeling, 9(2), 233-255.",
       "apa_intext": "(Kline, 2023, p. 385)",
-      "apa_reference": "Kline, R. B. (2023). Principles and practice of structural equation modeling (5th ed.). The Guilford Press.",
+      "apa_reference": "Cheung, G. W., & Rensvold, R. B. (2002). Evaluating goodness-of-fit indexes for testing measurement invariance. Structural Equation Modeling, 9(2), 233-255. https://doi.org/10.1207/S15328007SEM0902_5",
       "corpus_variants": [
         {
           "v": "Tính tương đương của thang đo",
@@ -2476,7 +2515,14 @@
         "benchmark": false,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "category": "Psychometrics",
+      "subcategory": "Invariance & MGA",
+      "operational_mechanism": "Khung kiểm định thứ bậc 4 cấp độ (Hierarchical Invariance Framework): (1) Configural Invariance (Bất biến hình thái): Cùng một mô hình cấu trúc nhân tố trên các nhóm; (2) Metric Invariance (Bất biến hệ số tải / Yếu): Ràng buộc hệ số tải bằng nhau (Equal factor loadings) - điều kiện cần để so sánh quan hệ tương quan và hệ số hồi quy; (3) Scalar Invariance (Bất biến điểm chặn / Mạnh): Ràng buộc điểm chặn bằng nhau (Equal indicator intercepts) - điều kiện cần và đủ để so sánh điểm trung bình biến tiềm ẩn (Latent means comparison); (4) Strict Invariance (Bất biến phần dư): Ràng buộc phương sai sai số bằng nhau (Equal error variances).",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "gioia-methodology",
@@ -3504,24 +3550,33 @@
     },
     {
       "id": "non-response-bias",
-      "term": "Non-Response Bias",
+      "term": "Non-Response Bias & Wave Analysis (Armstrong & Overton Framework)",
       "ipa": "/nɒn rɪˈspɒns ˈbaɪəs/",
-      "vietnamese": "Thiên lệch do Không hồi đáp (Sai lệch Mẫu Khảo sát)",
+      "vietnamese": "Thiên lệch không phản hồi & Phân tích các làn sóng khảo sát",
       "vietnamese_variants": [
-        "Sai số không trả lời bảng hỏi",
-        "Thiên vị mẫu do đối tượng từ chối"
+        "Thiên lệch do không trả lời",
+        "Kiểm định Armstrong & Overton",
+        "Wave Analysis of Non-Response Bias"
       ],
-      "category": "Survey Methodology & Quantitative Rigour",
+      "category": "Quantitative Methods",
       "domain_tags": [
         "Thiết kế Khảo sát",
         "Phương pháp Định lượng",
         "Thẩm định Mẫu",
         "Q1 Reviewer Requirement"
       ],
-      "core_definition": "Sai lệch mang tính hệ thống xảy ra trong nghiên cứu khảo sát khi những người không phản hồi bảng hỏi (từ chối tham gia, bỏ dở, hoặc không liên lạc được) có những đặc điểm, thái độ hoặc hành vi khác biệt đáng kể so với những người đồng ý tham gia trả lời (Armstrong & Overton, 1977; Dillman et al., 2014). Nếu thiên lệch này tồn tại, các kết quả thống kê thu được từ mẫu không thể khái quát hóa cho toàn bộ quần thể nghiên cứu.",
+      "core_definition": "Non-Response Bias (Thiên lệch không phản hồi) xảy ra khi những cá nhân được lựa chọn vào mẫu nhưng từ chối hoặc không hoàn thành bảng khảo sát có những đặc điểm hành vi, thái độ hoặc nhân khẩu học khác biệt đáng kể và có tính hệ thống so với những người đã hoàn thành khảo sát (Armstrong & Overton, 1977; Rogelberg & Luong, 1998). Thiên lệch này phá hủy tính đại diện của mẫu khảo sát đối với quần thể mục tiêu, khiến các kết luận suy diễn thống kê bị sai lệch. Kỹ thuật phân tích các làn sóng (Wave Analysis) của Armstrong & Overton là tiêu chuẩn vàng kinh điển nhất để kiểm định thiên lệch này.",
       "paradigm_debates": "Yêu cầu sống còn bắt buộc của mọi reviewer tạp chí Q1 (Journal of Marketing, Journal of Business Research, Tourism Management) khi bài báo sử dụng dữ liệu khảo sát cắt ngang (Cross-sectional survey). Nếu tác giả không báo cáo phân tích kiểm định Non-Response Bias, bài báo sẽ bị yêu cầu sửa đổi lớn hoặc từ chối ngay lập tức.",
-      "benchmarks": "Kỹ thuật kiểm định sóng phản hồi của Armstrong & Overton (1977): So sánh giữa 'Nhóm phản hồi sớm' (Early respondents: 25% người nộp đầu tiên) và 'Nhóm phản hồi muộn' (Late respondents: 25% người nộp cuối cùng sau khi đã gửi email nhắc nhở). Chạy độc lập các phép kiểm định t-test hoặc Chi-square so sánh đặc điểm nhân khẩu học và các biến nghiên cứu chính giữa 2 nhóm: Tất cả các giá trị p bắt buộc phải **> 0.05** (không có sự khác biệt có ý nghĩa thống kê).",
-      "pitfalls": "Bẫy 'Ảo tưởng tỷ lệ hồi đáp cao': Cho rằng tỷ lệ hồi đáp 50% là tự động an toàn không cần kiểm định. Ngay cả khi tỷ lệ hồi đáp đạt 60%, nếu 40% người từ chối mang một đặc tính dị biệt đặc thù thì kết luận của bài báo vẫn bị sai lệch nghiêm trọng.",
+      "benchmarks": [
+        "Bắt buộc thực hiện khi tỷ lệ phản hồi (Response Rate) thấp: Tiêu chuẩn học thuật yêu cầu kiểm định bắt buộc nếu tỷ lệ phản hồi dưới 60 - 70%.",
+        "Phân chia làn sóng rõ ràng: Căn cứ vào mốc thời gian gửi email nhắc nhở (follow-up reminders) để chia làn sóng sớm vs. muộn.",
+        "So sánh với tham số quần thể (Archival verification): Nếu có thể, đối chiếu các đặc điểm nhân khẩu của mẫu khảo sát với số liệu điều tra tổng thể để chứng minh tính đại diện."
+      ],
+      "pitfalls": [
+        "Báo cáo tỷ lệ phản hồi 15% mà không có bất kỳ kiểm định nào về Non-response bias: Đây là lỗi sơ đẳng khiến bài báo bị Desk Reject tại các tạp chí danh giá.",
+        "Chia đôi mẫu tùy tiện mà không dựa trên dòng thời gian: Chia ngẫu nhiên 50/50 tập dữ liệu rồi chạy t-test, hoàn toàn làm sai lệch bản chất của Wave analysis.",
+        "Bỏ qua phân tích người bỏ cuộc giữa chừng (survey dropouts / break-offs)."
+      ],
       "apa_reference": "Armstrong, J. S., & Overton, T. S. (1977). Estimating nonresponse bias in mail surveys. Journal of Marketing Research, 14(3), 396-402. https://doi.org/10.1177/002224377701400320",
       "synonyms": [
         "Survey Nonresponse Error",
@@ -3553,7 +3608,14 @@
         "benchmark": false,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "subcategory": "Survey Biases",
+      "operational_mechanism": "Nguyên lý Wave Analysis của Armstrong & Overton (1977): Phương pháp dựa trên giả định thực nghiệm rằng 'những người phản hồi muộn (late respondents) có đặc tính gần giống nhất với những người không phản hồi (non-respondents)' vì họ cũng cần sự nhắc nhở nhiều lần hoặc ngần ngại trước khi gửi trả lời. Quy trình: (1) Chia mẫu thành 2 nhóm: Nhóm phản hồi sớm (Early respondents - 75% đầu tiên) và Nhóm phản hồi muộn (Late respondents - 25% cuối cùng sau các đợt email nhắc nhở); (2) Tiến hành kiểm định t-test hoặc Chi-square so sánh hai nhóm trên toàn bộ các biến nhân khẩu học và các biến cấu trúc chính; (3) Nếu không có sự khác biệt có ý nghĩa thống kê (p > 0.05), kết luận không có bằng chứng về thiên lệch không phản hồi.",
+      "seminal_citation": "Armstrong, J. S., & Overton, T. S. (1977). Estimating nonresponse bias in mail surveys. Journal of Marketing Research, 14(3), 396-402; Rogelberg, S. G., & Luong, A. (1998). Nonresponse to mailed surveys: A review and guide. Current Directions in Psychological Science, 7(2), 60-65.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "factorial-design",
@@ -3874,24 +3936,33 @@
     },
     {
       "id": "marker-variable-technique",
-      "term": "Marker Variable Technique (Lindell & Whitney)",
+      "term": "Marker Variable Technique (Lindell & Whitney Approach)",
       "ipa": "/ˈmɑːkə ˈvɛərɪəbl tɛkˈniːk/",
-      "vietnamese": "Kỹ thuật Biến Đánh dấu (Kiểm soát CMV Hậu kiểm Lindell & Whitney, 2001)",
+      "vietnamese": "Kỹ thuật biến đánh dấu / Phương pháp kiểm soát CMV qua biến Marker",
       "vietnamese_variants": [
-        "Kỹ thuật biến đánh dấu lý thuyết",
-        "Phương pháp hiệu chỉnh tương quan tối thiểu"
+        "Kỹ thuật biến Marker",
+        "Phương pháp Lindell & Whitney",
+        "Marker-Variable Approach"
       ],
-      "category": "Psychometrics & Methodological Bias",
+      "category": "Quantitative Methods",
       "domain_tags": [
         "Mô hình SEM",
         "Sai lệch Phương pháp Chung (CMV)",
         "Đo lường Tâm lý",
         "Q1 Top Tier Standard"
       ],
-      "core_definition": "Kỹ thuật thống kê sau thu thập dữ liệu do Lindell & Whitney (2001) sáng lập để phát hiện và hiệu chỉnh sai lệch phương pháp chung (Common Method Variance). Tác giả chủ động đưa vào bảng khảo sát một 'Biến đánh dấu' (Marker Variable: một biến đo lường hoàn toàn không có mối liên hệ lý thuyết với bất kỳ biến số nào trong mô hình nghiên cứu, ví dụ: 'Thái độ đối với việc du hành vũ trụ' đưa vào nghiên cứu về 'Sự gắn kết nhân viên ngân hàng'). Vì về mặt lý thuyết tương quan giữa Marker và các biến chính phải bằng 0, nên bất kỳ tương quan quan sát được nào giữa Marker và các biến chính đều đại diện cho độ lớn của sai lệch phương pháp chung (r_M).",
+      "core_definition": "Marker Variable Technique là một phương pháp thống kê hậu nghiệm xuất sắc do Michael K. Lindell và David J. Whitney (2001) sáng lập nhằm phát hiện và điều chỉnh phương sai phương pháp chung (CMV) trong các nghiên cứu khảo sát. Phương pháp này đưa vào bảng hỏi một 'Biến đánh dấu' (Marker Variable) - một cấu trúc đo lường hoàn toàn không có mối liên hệ lý thuyết nào với ít nhất một (hoặc tất cả) các biến chính trong mô hình nghiên cứu. Bất kỳ mối tương quan quan sát được nào giữa Biến đánh dấu và các biến chính đều được giả định là do phương sai phương pháp chung (CMV) thuần túy tạo nên.",
       "paradigm_debates": "Vượt trội hoàn toàn so với phép thử Harman. Cho phép tác giả tính toán hệ số tương quan đã hiệu chỉnh suy giảm ($r_{adj}$) và kiểm tra xem sau khi trừ đi $r_M$, các mối quan hệ giả thuyết ban đầu có còn giữ được ý nghĩa thống kê hay không.",
-      "benchmarks": "Công thức hiệu chỉnh tương quan: r_{adj} = \\frac{r_{XY} - r_M}{1 - r_M}, trong đó r_M thường được chọn là hệ số tương quan dương nhỏ nhất giữa biến Marker và các biến nghiên cứu chính (hoặc tương quan thứ hai nhỏ nhất). Nếu sau khi hiệu chỉnh, các đường dẫn giả thuyết vẫn có giá trị p < .05, khẳng định kết quả nghiên cứu không bị CMV đe dọa.",
-      "pitfalls": "Bẫy chọn nhầm biến Marker có dính líu lý thuyết: Chọn một biến có tương quan thực sự với biến nghiên cứu khiến việc trừ đi r_M làm triệt tiêu oan uổng tác động thực tế của mô hình (Over-correction).",
+      "benchmarks": [
+        "Tiêu chuẩn chọn biến Marker lý tưởng: Phải là một biến có căn cứ lý thuyết rõ ràng rằng nó KHÔNG liên quan đến các biến nghiên cứu (ví dụ: thái độ đối với màu xanh da trời, kiến thức về thiên văn học trong một khảo sát về hành vi mua sắm).",
+        "Đo lường bằng cùng một định dạng thang đo: Biến Marker phải sử dụng cùng số điểm Likert và cùng phong cách trình bày với các biến chính.",
+        "Ngưỡng đánh giá r_M: Thường r_M dao động từ 0.01 đến 0.15; nếu r_M > 0.25 thì biến marker có thể đã bị nhiễm tương quan thực chất."
+      ],
+      "pitfalls": [
+        "Chọn biến Marker có liên hệ lý thuyết ngầm định: Chọn một biến có liên quan dù gián tiếp đến biến phụ thuộc khiến việc trừ bớt tương quan làm biến mất các mối quan hệ thực tế.",
+        "Dùng biến Marker đo bằng định dạng khác: Sử dụng câu hỏi trắc nghiệm A,B,C làm marker cho các câu hỏi thang Likert 7 điểm, vi phạm bản chất chia sẻ định dạng phương pháp.",
+        "Không lên kế hoạch đưa biến Marker vào bảng hỏi từ đầu: Sau khi thu thập xong mới phát hiện bảng hỏi không có biến marker nào để chạy phân tích."
+      ],
       "apa_reference": "Lindell, M. K., & Whitney, D. J. (2001). Accounting for common method variance in cross-sectional research designs. Journal of Applied Psychology, 86(1), 114-121. https://doi.org/10.1037/0021-9010.86.1.114",
       "synonyms": [
         "Marker Variable Approach",
@@ -3923,7 +3994,14 @@
         "benchmark": true,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "subcategory": "Survey Biases",
+      "operational_mechanism": "Công thức hiệu chỉnh tương quan từng phần của Lindell & Whitney: Gọi r_M là hệ số tương quan nhỏ nhất giữa biến đánh dấu và các biến quan tâm (đại diện cho ước lượng của CMV). Tương quan hiệu chỉnh giữa hai biến X và Y (r_XY_adj) được tính theo công thức: r_XY_adj = (r_XY - r_M) / (1 - r_M). Giá trị t-statistic kiểm định ý nghĩa thống kê của tương quan hiệu chỉnh: t = r_XY_adj / sqrt((1 - r_XY_adj^2) / (N - 3)). Nếu r_XY_adj vẫn giữ được ý nghĩa thống kê (p < 0.05), kết luận mối quan hệ thực chất không bị bóp méo bởi CMV.",
+      "seminal_citation": "Lindell, M. K., & Whitney, D. J. (2001). Accounting for common method variance in cross-sectional research designs. Journal of Applied Psychology, 86(1), 114-121; Williams, L. J., Hartman, N., & Cavazotte, F. (2010). Method variance and marker variables: A review and comprehensive CFA approach. Organizational Research Methods, 13(3), 477-514.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "formative-vs-reflective",
@@ -5161,21 +5239,43 @@
     },
     {
       "id": "acquiescence-bias-yea-saying",
-      "term": "Acquiescence Bias (Yea-Saying)",
-      "vietnamese": "Thiên lệch đồng ý",
-      "vietnamese_variants": [],
+      "term": "Acquiescence Bias (Yea-Saying & Straightlining - Baumgartner & Steenkamp)",
+      "vietnamese": "Thiên lệch đồng tình / Xu hướng đồng thuận một chiều (Yea-Saying)",
+      "vietnamese_variants": [
+        "Thiên lệch đồng ý",
+        "Hội chứng Yea-Saying",
+        "Straightlining Response Bias"
+      ],
       "domain_tags": [
         "Survey Methodology"
       ],
-      "core_definition": "xu hướng người trả lời luôn bấm 'Đồng ý' bất kể nội dung câu hỏi là gì.",
-      "seminal_citation": "Podsakoff et al. (2003)",
+      "core_definition": "Acquiescence Bias (còn gọi là Yea-Saying hoặc Xu hướng đồng thuận) là một dạng thiên lệch phong cách trả lời (response style) có hệ thống, trong đó đối tượng khảo sát có khuynh hướng tự động đồng ý, bấm 'Đồng ý' hoặc chọn các mức điểm cao trên thang đo Likert bất kể nội dung câu hỏi là gì (Baumgartner & Steenkamp, 2001; Winkler, Kanouse, & Ware, 1982). Hiện tượng này thường đi kèm với hành vi 'chạy đường thẳng' (straightlining) - chọn cùng một cột điểm từ đầu đến cuối trang bảng hỏi do lười biếng, thiếu động lực nhận thức hoặc mong muốn làm hài lòng nhà nghiên cứu. Thiên lệch đồng tình tạo ra tương quan dương giả tạo giữa tất cả các biến số.",
+      "seminal_citation": "Baumgartner, H., & Steenkamp, J. B. E. (2001). Response styles in marketing research: A cross-national investigation. Journal of Marketing Research, 38(2), 143-156; Winkler, J. D., Kanouse, D. E., & Ware, J. E. (1982). Controlling for acquiescence response set in scale development. Journal of Applied Psychology, 67(5), 555-561.",
       "tier": "encyclopedia",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #38",
       "core_definition_en": "Academic definition of Acquiescence Bias (Yea-Saying) according to Podsakoff et al. (2003).",
       "domain_tags_en": [
         "Survey Methodology"
-      ]
+      ],
+      "category": "Quantitative Methods",
+      "subcategory": "Survey Biases",
+      "operational_mechanism": "Cơ chế phát hiện và kiểm soát: (1) Đưa vào các câu hỏi đảo ngược (Reverse-coded / Negatively worded items): Nếu đối tượng vừa chọn 'Tôi cực kỳ yêu thích công việc này' (7/7) vừa chọn 'Tôi hoàn toàn căm ghét công việc này' (7/7), đó là bằng chứng không thể chối cãi của Acquiescence bias; (2) Tính toán Chỉ số đồng tình (Acquiescence Index): Trung bình cộng điểm số trên các cặp câu hỏi đối nghịch nhau; (3) Đo lường thời gian làm bài (Speeding checks): Đánh dấu và loại bỏ các đối tượng hoàn thành bảng khảo sát trong thời gian phi thực tế (ví dụ: đọc 50 câu hỏi trong 60 giây).",
+      "benchmarks": [
+        "Cân bằng chiều hướng câu hỏi (Balanced Scales): Một thang đo chuẩn mực nên có sự kết hợp hợp lý giữa các câu hỏi khẳng định và các câu hỏi phủ định.",
+        "Tiêu chuẩn sàng lọc dữ liệu (Data Cleaning Benchmark): Loại bỏ ngay lập tức các quan sát có độ lệch chuẩn SD = 0 trên toàn bộ một khối câu hỏi (dấu hiệu straightlining tuyệt đối).",
+        "Kiểm tra thời gian hoàn thành (Page-submit time threshold): Ngưỡng loại trừ thường là dưới 2 giây cho mỗi biến quan sát Likert."
+      ],
+      "pitfalls": [
+        "Tất cả các câu hỏi đều viết theo chiều hướng khẳng định tích cực: Khiến nghiên cứu viên hoàn toàn bất lực trong việc phân biệt giữa người thực sự đồng tình và người bị thiên lệch Yea-saying.",
+        "Đảo ngược câu hỏi quá phức tạp (sử dụng phủ định kép): Viết câu hỏi phủ định quá rối rắm khiến người trả lời hiểu nhầm, gây ra sai số đo lường ngược lại.",
+        "Không làm sạch dữ liệu trước khi phân tích: Giữ lại các mẫu điền thẳng hàng (straightlining) trong tập dữ liệu khiến hệ số tin cậy Cronbach's Alpha bị thổi phồng giả tạo."
+      ],
+      "apa_reference": "Baumgartner, H., & Steenkamp, J. B. E. (2001). Response styles in marketing research: A cross-national investigation. Journal of Marketing Research, 38(2), 143-156. https://doi.org/10.1509/jmkr.38.2.143.18840",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "acquiescence-bias-yeah-saying",
@@ -9952,14 +10052,18 @@
     },
     {
       "id": "common-method-variance",
-      "term": "Common Method Variance",
-      "vietnamese": "Phương sai phương pháp chung",
-      "vietnamese_variants": [],
+      "term": "Common Method Variance (CMV - Richardson, Simmering & Sturman)",
+      "vietnamese": "Phương sai phương pháp chung / Phương sai giả tạo do phương pháp đo",
+      "vietnamese_variants": [
+        "Phương sai do phương pháp chung",
+        "Common Method Variance Assessment",
+        "Phương sai sai số hệ thống"
+      ],
       "domain_tags": [
         "Acronym NCKH"
       ],
-      "core_definition": "Lượng phương sai phương pháp chung chia sẻ giữa các biến số do công cụ đo lường gây ra. Ngưỡng thực nghiệm tham chiếu: Khuyến nghị áp dụng cả biện pháp thủ tục (procedural remedies) và kỹ thuật thống kê (statistical remedies / Podsakoff et al., 2003, 2011).",
-      "seminal_citation": "Khuyến nghị áp dụng cả biện pháp thủ tục (procedural remedies) và kỹ thuật thống kê (statistical remedies / Podsakoff et al., 2003, 2011).",
+      "core_definition": "Common Method Variance (CMV) là lượng phương sai giả tạo có tính hệ thống (systematic variance) chia sẻ giữa các biến số, xuất phát từ phương pháp đo lường được sử dụng thay vì từ mối quan hệ thực chất giữa các cấu trúc lý thuyết (Richardson, Simmering, & Sturman, 2009; Spector, 2006). Trong khi CMB là tác động sai lệch (bias) cụ thể lên các ước lượng tham số, CMV là lượng phương sai sai số hệ thống nền tảng gây ra hiện tượng đó. CMV làm biến dạng ma trận hiệp phương sai, dẫn đến việc ước lượng sai lệch các hệ số tương quan, thổi phồng sai số loại I hoặc làm suy giảm độ nhạy phát hiện các hiệu ứng điều tiết.",
+      "seminal_citation": "Richardson, H. A., Simmering, M. J., & Sturman, M. C. (2009). A tale of three perspectives: Examining post hoc statistical techniques for detection and correction of common method variance. Organizational Research Methods, 12(4), 762-800; Spector, P. E. (2006). Method variance in organizational research: Truth or urban legend? Organizational Research Methods, 9(2), 221-232.",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
@@ -9967,7 +10071,24 @@
       "domain_tags_en": [
         "Acronym NCKH"
       ],
-      "benchmarks": "Khuyến nghị áp dụng cả biện pháp thủ tục (procedural remedies) và kỹ thuật thống kê (statistical remedies / Podsakoff et al., 2003, 2011)."
+      "benchmarks": [
+        "Định lượng phương sai CMV: Các nghiên cứu phân tích tổng hợp (meta-analysis) chỉ ra CMV chiếm trung bình từ 18% đến 35% tổng phương sai trong các nghiên cứu khoa học hành vi (Cote & Buckley, 1987; Doty & Glick, 1998).",
+        "Ngưỡng ảnh hưởng đến hệ số đường dẫn: Nếu lượng phương sai phương pháp chung vượt quá 40%, hầu hết các mối quan hệ hồi quy đều bị thổi phồng giả tạo.",
+        "Bắt buộc kiểm tra độ nhạy (Sensitivity analysis): Đánh giá xem hệ số đường dẫn có giữ được ý nghĩa thống kê sau khi đã kiểm soát phương sai CMV hay không."
+      ],
+      "category": "Quantitative Methods",
+      "subcategory": "Survey Biases",
+      "operational_mechanism": "Mô hình toán học phân rã phương sai: Phương sai quan sát của một biến (Var_obs) được phân tách thành 3 thành tố: Var_obs = Var_trait (Phương sai thực chất của đặc tính) + Var_method (Phương sai phương pháp chung CMV) + Var_random_error (Phương sai sai số ngẫu nhiên). Mục tiêu của các kỹ thuật xử lý CMV là đo lường và cô lập thành phần Var_method ra khỏi mô hình cấu trúc.",
+      "pitfalls": [
+        "Đồng nhất CMV với lỗi ngẫu nhiên: Cho rằng phương sai phương pháp sẽ tự triệt tiêu khi tăng cỡ mẫu; thực tế CMV là sai số hệ thống, tăng cỡ mẫu không làm giảm CMV.",
+        "Quan niệm cực đoan rằng mọi khảo sát tự báo cáo đều vô giá trị: Bác bỏ hoàn toàn nghiên cứu mà không xem xét bối cảnh cụ thể (Spector, 2006 khẳng định CMV không phải lúc nào cũng phá hủy kết quả).",
+        "Kiểm soát CMV quá mức làm mất phương sai thực chất (Over-controlling): Loại bỏ nhầm cả phương sai giải thích thực chất của biến tiềm ẩn khi áp dụng các kỹ thuật thống kê quá phức tạp."
+      ],
+      "apa_reference": "Richardson, H. A., Simmering, M. J., & Sturman, M. C. (2009). A tale of three perspectives: Examining post hoc statistical techniques for detection and correction of common method variance. Organizational Research Methods, 12(4), 762-800. https://doi.org/10.1177/1094428109332834",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "common-support-condition-check",
@@ -10665,15 +10786,19 @@
     },
     {
       "id": "configural-invariance",
-      "term": "Configural invariance",
-      "vietnamese": "Bất biến cấu hình (hình thái nhân tố)",
-      "vietnamese_variants": [],
+      "term": "Configural Invariance (Baseline Pattern Invariance - Horn & McArdle)",
+      "vietnamese": "Bất biến hình thái / Tính tương đương cấu trúc nhân tố nền tảng",
+      "vietnamese_variants": [
+        "Bất biến cấu hình",
+        "Bất biến mô hình cơ sở",
+        "Pattern Invariance"
+      ],
       "domain_tags": [
         "Methodology",
         "Research Design"
       ],
-      "core_definition": "Kiểm định mô hình đo lường có cùng cấu trúc nhân tố giữa các nhóm.",
-      "seminal_citation": "MacKenzie et al. (2011)",
+      "core_definition": "Configural Invariance (Bất biến hình thái) là bước kiểm định cấp 1 - nền móng sơ cấp nhất trong quy trình thẩm định bất biến đo lường đa nhóm (Horn & McArdle, 1992; Vandenberg & Lance, 2000). Bất biến hình thái đòi hỏi cùng một tập hợp các biến quan sát (items) phải tải lên cùng một số lượng và cùng một mẫu hình các nhân tố tiềm ẩn (latent factors) trên tất cả các nhóm khảo sát, mặc dù độ lớn của các hệ số tải (loadings) và điểm chặn (intercepts) hoàn toàn được phép tự do ước lượng khác nhau giữa các nhóm. Đạt được bất biến hình thái chứng minh rằng các đối tượng ở mọi nhóm đều khái niệm hóa cấu trúc lý thuyết theo cùng một khung phân loại.",
+      "seminal_citation": "Horn, J. L., & McArdle, J. J. (1992). A practical and theoretical guide to measurement invariance in aging research. Experimental Aging Research, 18(3), 117-144; Vandenberg, R. J., & Lance, C. E. (2000). A review and synthesis of the measurement invariance literature. Organizational Research Methods, 3(1), 4-70.",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
@@ -10681,7 +10806,25 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Psychometrics",
+      "subcategory": "Invariance & MGA",
+      "operational_mechanism": "Quy trình thực thi: (1) Thiết lập mô hình phân tích nhân tố khẳng định đa nhóm (Multi-Group CFA); (2) Cho phép tất cả các tham số (factor loadings, intercepts, residual variances) tự do ước lượng riêng rẽ cho từng nhóm mà không áp đặt bất kỳ ràng buộc đẳng thức nào (freely estimated parameters); (3) Đánh giá độ phù hợp tổng thể của mô hình đồng thời (Overall model fit): CFI >= 0.90 (tốt nhất >= 0.95), RMSEA <= 0.08, SRMR <= 0.08; (4) Sử dụng mô hình này làm Mô hình cơ sở (Baseline Model) để đối chiếu với các mô hình bị ràng buộc khắt khe hơn ở các bước tiếp theo.",
+      "benchmarks": [
+        "Độ phù hợp của mô hình cơ sở (Baseline Fit): Bắt buộc mô hình không ràng buộc phải đạt chuẩn fit tốt (CFI >= 0.92, TLI >= 0.90, RMSEA <= 0.06).",
+        "Ý nghĩa của hệ số tải trong từng nhóm: 100% các biến quan sát phải có hệ số tải chuẩn hóa có ý nghĩa thống kê (p < 0.001) và độ lớn > 0.50 trên tất cả các nhóm thành phần.",
+        "Nếu mô hình Configural không fit: Toàn bộ quy trình kiểm định bất biến phải dừng lại; thang đo phải được điều chỉnh hoặc loại bỏ ở nhóm không tương thích."
+      ],
+      "pitfalls": [
+        "Bỏ qua bước kiểm tra Configural fit: Nhảy ngay vào ràng buộc hệ số tải (Metric invariance) mà không kiểm tra xem mô hình cơ sở không ràng buộc có phù hợp với dữ liệu hay không.",
+        "Chấp nhận mô hình cơ sở có chỉ số fit tồi: Khi mô hình cơ sở không đạt fit (CFI < 0.85), việc so sánh suy giảm ΔCFI ở các bước sau trở nên hoàn toàn vô nghĩa.",
+        "Dị biệt số lượng nhân tố: Nhóm A trích xuất được 3 nhân tố nhưng nhóm B chỉ trích xuất được 2 nhân tố nhưng nghiên cứu viên vẫn cố tình gượng ép kiểm định bất biến."
+      ],
+      "apa_reference": "Vandenberg, R. J., & Lance, C. E. (2000). A review and synthesis of the measurement invariance literature: Suggestions, practices, and recommendations for organizational research. Organizational Research Methods, 3(1), 4-70. https://doi.org/10.1177/109442810031002",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "configural-invariance-testing",
@@ -16577,21 +16720,43 @@
     },
     {
       "id": "extreme-response-style-ers",
-      "term": "Extreme Response Style (ERS)",
-      "vietnamese": "Phong cách Trả lời Cực đoan",
-      "vietnamese_variants": [],
+      "term": "Extreme Response Style (ERS - Greenleaf Framework)",
+      "vietnamese": "Xu hướng trả lời cực đoan (ERS) / Thiên lệch chọn điểm mút thang đo",
+      "vietnamese_variants": [
+        "Phong cách trả lời cực đoan",
+        "Extreme Responding",
+        "ERS Bias"
+      ],
       "domain_tags": [
         "Survey Methodology"
       ],
-      "core_definition": "Xu hướng cá nhân nhất quán chọn các điểm mút cực đại hoặc cực tiểu trên thang đo Likert.",
-      "seminal_citation": "Baumgartner & Steenkamp (2001)",
+      "core_definition": "Extreme Response Style (ERS) là xu hướng cá nhân có hệ thống của người trả lời khi luôn có khuynh hướng lựa chọn các điểm mút cực đoan nhất của thang đo xếp hạng (ví dụ: chỉ chọn điểm 1 hoặc điểm 7 trên thang đo Likert 7 điểm), đối lập với Xu hướng trả lời trung dung (Midpoint Response Style - MRS / Neutral responding) chỉ chọn điểm giữa (Greenleaf, 1992; Baumgartner & Steenkamp, 2001). ERS là một đặc tính tâm lý mang tính văn hóa và cá nhân sâu sắc, làm thổi phồng phương sai quan sát và làm sai lệch nghiêm trọng các so sánh đa nhóm giữa các nền văn hóa khác nhau.",
+      "seminal_citation": "Greenleaf, E. A. (1992). Measuring extreme response style. Public Opinion Quarterly, 56(3), 328-351; Baumgartner, H., & Steenkamp, J. B. E. (2001). Response styles in marketing research: A cross-national investigation. Journal of Marketing Research, 38(2), 143-156.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Extreme Response Style (ERS) according to Baumgartner & Steenkamp (2001).",
       "domain_tags_en": [
         "Survey Methodology"
-      ]
+      ],
+      "category": "Quantitative Methods",
+      "subcategory": "Survey Biases",
+      "operational_mechanism": "Đo lường chỉ số ERS theo Greenleaf (1992): ERS được đo lường bằng tỷ lệ phần trăm số câu trả lời mà một đối tượng lựa chọn các điểm cực mút trên một tập hợp lớn các câu hỏi không liên quan đến nhau: ERS = (Số lượng câu chọn điểm 1 hoặc điểm 7) / (Tổng số câu hỏi). Các mô hình phân tích hiện đại (như Mô hình IRT đa chiều hoặc Mô hình hỗn hợp hữu hạn Latent Class Analysis) cho phép đưa tham số ERS vào để hiệu chỉnh điểm số thực chất của biến tiềm ẩn.",
+      "benchmarks": [
+        "Sự phân hóa văn hóa sâu sắc: Các nghiên cứu xuyên quốc gia chỉ ra người tiêu dùng tại các nền văn hóa Mỹ Latinh và Địa Trung Hải có chỉ số ERS cao hơn rõ rệt so với người tiêu dùng tại Đông Á (vốn thiên về MRS/trung dung) (Steenkamp et al., 2010).",
+        "Sử dụng tập câu hỏi chuẩn hóa Greenleaf 16-item để tính điểm ERS độc lập.",
+        "Hiệu chỉnh dữ liệu trước khi so sánh xuyên quốc gia bằng phương pháp chuẩn hóa điểm theo từng cá nhân (Within-subject standardization)."
+      ],
+      "pitfalls": [
+        "So sánh điểm trung bình giữa hai quốc gia mà không hiệu chỉnh ERS: Hiểu sai rằng người Mỹ thỏa mãn hơn người Nhật, trong khi sự khác biệt thực chất chỉ là do người Mỹ có ERS cao hơn còn người Nhật thiên về điểm trung dung (MRS).",
+        "Cắt bỏ thang đo trung gian: Sử dụng thang đo chẵn (6 điểm loại bỏ điểm trung hòa) để ép chọn bên nhưng lại vô tình làm tăng tỷ lệ ERS.",
+        "Bỏ qua tác động của ERS lên hệ số tương quan: ERS làm tăng giả tạo độ lớn của các hệ số tương quan giữa các biến số."
+      ],
+      "apa_reference": "Greenleaf, E. A. (1992). Measuring extreme response style. Public Opinion Quarterly, 56(3), 328-351. https://doi.org/10.1086/269326",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "extreme-value-theory-evt",
@@ -21926,39 +22091,83 @@
     },
     {
       "id": "item-difficulty-index-p-value-in-testing",
-      "term": "Item Difficulty Index (p-value in Testing)",
-      "vietnamese": "Chỉ số Độ khó Câu hỏi",
-      "vietnamese_variants": [],
+      "term": "Item Difficulty Index (p-value / Facility Value in Testing)",
+      "vietnamese": "Chỉ số độ khó câu hỏi / Giá trị độ dễ p-value trong trắc nghiệm",
+      "vietnamese_variants": [
+        "Độ khó câu trắc nghiệm",
+        "Tỷ lệ làm đúng p-value",
+        "Facility Value"
+      ],
       "domain_tags": [
         "Psychometrics"
       ],
-      "core_definition": "Tỷ lệ phần trăm thí sinh trả lời đúng một câu hỏi trong bài kiểm tra.",
-      "seminal_citation": "Wood (1960)",
+      "core_definition": "Item Difficulty Index (ký hiệu là p hoặc p-value trong lý thuyết đo lường cổ điển CTT) là tỷ lệ phần trăm số thí sinh trả lời đúng một câu hỏi trắc nghiệm trên tổng số thí sinh tham gia làm bài (Ebel & Frisbie, 1991; Crocker & Algina, 1986). Cần đặc biệt lưu ý: trong trắc nghiệm học thuật, p là một 'chỉ số độ dễ' (facility index) - giá trị p càng cao thì câu hỏi càng dễ, và giá trị p càng thấp thì câu hỏi càng khó, hoàn toàn khác biệt với khái niệm p-value (mức ý nghĩa thống kê) trong kiểm định giả thuyết.",
+      "seminal_citation": "Ebel, R. L., & Frisbie, D. A. (1991). Essentials of Educational Measurement (5th ed.). Prentice-Hall; Crocker, L., & Algina, J. (1986). Introduction to Classical and Modern Test Theory. Holt, Rinehart and Winston.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Item Difficulty Index (p-value in Testing) according to Wood (1960).",
       "domain_tags_en": [
         "Psychometrics"
-      ]
+      ],
+      "category": "Psychometrics",
+      "subcategory": "Classical Test Theory",
+      "operational_mechanism": "Công thức toán học: p = R / N, trong đó R là số lượng thí sinh trả lời đúng câu hỏi và N là tổng số thí sinh trong mẫu kiểm tra. Đối với thang đo chỉnh sửa loại trừ đoán mò (corrected for guessing): p_corrected = (p - 1/k) / (1 - 1/k), với k là số lượng phương án lựa chọn.",
+      "benchmarks": [
+        "Độ khó tối ưu cho trắc nghiệm 4 phương án (k = 4): p tối ưu = (1.0 + 0.25) / 2 = 0.625 (thường dao động lý tưởng từ 0.50 đến 0.70 để tối đa hóa phương sai bài thi).",
+        "Phân loại độ khó chuẩn mực: p > 0.85: Câu hỏi quá dễ; 0.70 < p <= 0.85: Câu hỏi dễ; 0.30 <= p <= 0.70: Câu hỏi trung bình (đạt chuẩn tốt nhất); 0.15 <= p < 0.30: Câu hỏi khó; p < 0.15: Câu hỏi quá khó.",
+        "Độ khó trung bình toàn bài thi: Thường nên duy trì ở mức p_mean = 0.50 - 0.60 để đạt đường phân phối chuẩn đối xứng."
+      ],
+      "pitfalls": [
+        "Nhầm lẫn ký hiệu p-value độ khó với p-value kiểm định ý nghĩa: Viết báo cáo nhầm rằng 'câu hỏi có ý nghĩa thống kê p < 0.05' trong khi thực tế câu hỏi có độ khó cực cao chỉ 5% người làm đúng.",
+        "Đề thi toàn câu hỏi quá khó (p < 0.20): Làm giảm phương sai bài thi, khiến điểm số bị dồn cục ở cận dưới (floor effect) và không thể phân loại được thí sinh trung bình.",
+        "Đề thi toàn câu hỏi quá dễ (p > 0.90): Gây ra hiện tượng trần (ceiling effect), không thể phát hiện được những học sinh xuất sắc."
+      ],
+      "apa_reference": "Ebel, R. L., & Frisbie, D. A. (1991). Essentials of educational measurement (5th ed.). Prentice-Hall.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "item-discrimination-index-d",
-      "term": "Item Discrimination Index (D)",
-      "vietnamese": "Chỉ số Độ phân biệt Câu hỏi",
-      "vietnamese_variants": [],
+      "term": "Item Discrimination Index (D-Index / Upper-Lower 27% Rule - Kelley)",
+      "vietnamese": "Chỉ số độ phân biệt câu hỏi / Quy tắc phân nhóm 27% Truman Kelley",
+      "vietnamese_variants": [
+        "Độ phân biệt câu hỏi",
+        "Chỉ số D-Index",
+        "Kelley's 27% Rule"
+      ],
       "domain_tags": [
         "Psychometrics"
       ],
-      "core_definition": "Đo lường năng lực phân loại giữa nhóm thí sinh điểm cao và nhóm thí sinh điểm thấp.",
-      "seminal_citation": "Ebel (1954)",
+      "core_definition": "Item Discrimination Index (ký hiệu là D) là chỉ số đo lường năng lực của một câu hỏi trắc nghiệm trong việc phân biệt rạch ròi giữa những thí sinh có năng lực cao (nhóm điểm cao) và những thí sinh có năng lực thấp (nhóm điểm thấp) trên tổng thể bài kiểm tra (Kelley, 1939; Ebel & Frisbie, 1991). Một câu hỏi có độ phân biệt tốt là câu hỏi mà phần lớn thí sinh giỏi trả lời đúng, trong khi phần lớn thí sinh yếu trả lời sai. Nếu một câu hỏi có chỉ số D âm, câu hỏi đó mang khiếm khuyết nghiêm trọng (thí sinh yếu làm đúng nhiều hơn thí sinh giỏi) và bắt buộc phải bị loại bỏ ngay lập tức.",
+      "seminal_citation": "Kelley, T. L. (1939). The selection of upper and lower groups for the validation of test items. Journal of Educational Psychology, 30(1), 17-24; Ebel, R. L., & Frisbie, D. A. (1991). Essentials of Educational Measurement (5th ed.). Prentice-Hall.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Item Discrimination Index (D) according to Ebel (1954).",
       "domain_tags_en": [
         "Psychometrics"
-      ]
+      ],
+      "category": "Psychometrics",
+      "subcategory": "Classical Test Theory",
+      "operational_mechanism": "Quy tắc 27% của Truman Kelley (1939): (1) Sắp xếp điểm tổng toàn bài thi của tất cả thí sinh từ cao nhất đến thấp nhất; (2) Trích xuất 27% số thí sinh có điểm cao nhất làm Nhóm Cao (Upper group - U) và 27% số thí sinh có điểm thấp nhất làm Nhóm Thấp (Lower group - L); (3) Tính toán chỉ số phân biệt D theo công thức: D = (R_U - R_L) / n, trong đó R_U là số thí sinh nhóm Cao làm đúng, R_L là số thí sinh nhóm Thấp làm đúng, và n là số thí sinh trong mỗi nhóm (n = 0.27 * N).",
+      "benchmarks": [
+        "Thang đánh giá chuẩn của Robert Ebel (1991): D >= 0.40: Câu hỏi xuất sắc (Very good item - giữ lại hoàn toàn); 0.30 <= D <= 0.39: Câu hỏi tốt (Reasonably good - có thể chỉnh sửa nhỏ); 0.20 <= D <= 0.29: Câu hỏi biên (Marginal item - cần đại tu chỉnh sửa); D < 0.20: Câu hỏi kém (Poor item - loại bỏ hoặc viết lại toàn bộ).",
+        "Giá trị D âm (D < 0): Bắt buộc kiểm tra đáp án ngay; đây là dấu hiệu đáp án bị chấm sai hoặc câu hỏi có bẫy ngôn từ đánh lừa học sinh giỏi.",
+        "Tối ưu hóa độ phân biệt: Câu hỏi có độ khó trung bình (p = 0.50) có tiềm năng toán học đạt chỉ số phân biệt D cao nhất."
+      ],
+      "pitfalls": [
+        "Giữ lại câu hỏi có D < 0.15: Làm giảm độ tin cậy Cronbach's Alpha của toàn bài kiểm tra.",
+        "Chia nhóm tùy tiện không theo quy tắc 27%: Kelley (1939) đã chứng minh tỷ lệ 27% ở hai đầu mút là tỷ lệ tối ưu nhất về mặt toán học để cân bằng giữa độ tin cậy và sự khác biệt phương sai.",
+        "Bỏ qua phân tích các phương án nhiễu (distractor analysis): Chỉ xem chỉ số D mà không kiểm tra xem các đáp án sai có thu hút được thí sinh nhóm Thấp hay không."
+      ],
+      "apa_reference": "Kelley, T. L. (1939). The selection of upper and lower groups for the validation of test items. Journal of Educational Psychology, 30(1), 17-24. https://doi.org/10.1037/h0057123",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "item-information-function",
@@ -22001,23 +22210,44 @@
     },
     {
       "id": "item-response-theory-irt",
-      "term": "Item Response Theory (IRT)",
-      "vietnamese": "Lý thuyết Ứng đáp Câu hỏi đo lường năng lực tiềm ẩn của đối tượng và độ khó/phân biệt của câu hỏi",
+      "term": "Item Response Theory (IRT - Modern Psychometric Measurement)",
+      "vietnamese": "Lý thuyết ứng đáp câu hỏi / Lý thuyết đo lường tâm lý học hiện đại",
       "vietnamese_variants": [
-        "IRT"
+        "Lý thuyết phản hồi câu hỏi",
+        "Lý thuyết trắc nghiệm hiện đại IRT",
+        "Latent Trait Theory"
       ],
       "domain_tags": [
         "Psychometrics"
       ],
-      "core_definition": "Lý thuyết Ứng đáp Câu hỏi đo lường năng lực tiềm ẩn của đối tượng và độ khó/phân biệt của câu hỏi.",
-      "seminal_citation": "Lord (1980)",
+      "core_definition": "Item Response Theory (IRT, còn gọi là Lý thuyết nét tiềm ẩn - Latent Trait Theory) là một mô hình toán học và đo lường tâm lý học hiện đại (Lord, 1980; Embretson & Reise, 2000), ra đời để khắc phục các giới hạn cố hữu của Lý thuyết đo lường cổ điển (Classical Test Theory - CTT). IRT mô hình hóa xác suất một cá nhân trả lời đúng hoặc tán thành một câu hỏi cụ thể như một hàm phi tuyến tính của Năng lực tiềm ẩn của cá nhân đó (ký hiệu là Theta) và các thuộc tính đặc trưng của chính câu hỏi đó (Độ khó b, Độ phân biệt a, và Độ đoán mò c). Điểm ưu việt tuyệt đối của IRT là tính 'bất biến tham số' (parameter invariance) - tham số câu hỏi không phụ thuộc vào mẫu làm bài và điểm năng lực người làm không phụ thuộc vào đề thi cụ thể.",
+      "seminal_citation": "Lord, F. M. (1980). Applications of Item Response Theory to Practical Testing Problems. Lawrence Erlbaum Associates; Embretson, S. E., & Reise, S. P. (2000). Item Response Theory for Psychologists. Lawrence Erlbaum Associates.",
       "tier": "curated",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #1410",
       "core_definition_en": "Academic definition of Item Response Theory (IRT) according to Lord (1980).",
       "domain_tags_en": [
         "Psychometrics"
-      ]
+      ],
+      "category": "Psychometrics",
+      "subcategory": "Item Response Theory",
+      "operational_mechanism": "Đường cong đặc trưng câu hỏi (Item Characteristic Curve - ICC): Hàm toán học logistic liên kết Theta với xác suất P(Theta): P(Y=1|Theta) = c + (1 - c) / (1 + exp(-D*a*(Theta - b))). Ba mô hình IRT tiêu chuẩn: (1) Mô hình 1 tham số (1PL / Rasch Model): Chỉ chứa tham số Độ khó b; (2) Mô hình 2 tham số (2PL Model): Chứa Độ khó b và Độ phân biệt a; (3) Mô hình 3 tham số (3PL Model): Bổ sung tham số Đoán mò ngẫu nhiên c (Pseudo-guessing parameter).",
+      "benchmarks": [
+        "Quy mô mẫu lớn bắt buộc: Khác với CTT, IRT đòi hỏi cỡ mẫu lớn để ước lượng tham số ổn định (1PL tối thiểu N >= 200-300; 2PL N >= 500; 3PL N >= 1,000).",
+        "Giả định Một chiều (Unidimensionality): Tập hợp câu hỏi phải đo lường duy nhất một chiều kích năng lực tiềm ẩn (kiểm định qua EFA/CFA).",
+        "Giả định Độc lập cục bộ (Local Independence): Khi đã kiểm soát năng lực Theta, các câu trả lời cho các câu hỏi khác nhau phải hoàn toàn độc lập với nhau.",
+        "Hàm thông tin câu hỏi (Item Information Function - IIF): Đo lường chính xác câu hỏi cung cấp độ chính xác đo lường tối đa tại dải năng lực nào."
+      ],
+      "pitfalls": [
+        "Áp dụng mô hình 3PL cho cỡ mẫu nhỏ (N = 100-200): Dẫn đến hiện tượng các tham số không thể hội tụ hoặc sai số chuẩn khổng lồ.",
+        "Vi phạm giả định một chiều: Cố tình chạy IRT trên một thang đo đa chiều phức tạp mà không kiểm định tính đơn chiều trước.",
+        "Đánh đồng điểm tổng CTT thô với năng lực Theta của IRT: Bỏ qua lợi ích của việc tính điểm năng lực thích ứng trong thi trắc nghiệm trên máy tính (Computerized Adaptive Testing - CAT)."
+      ],
+      "apa_reference": "Embretson, S. E., & Reise, S. P. (2000). Item response theory for psychologists. Lawrence Erlbaum Associates Publishers.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "its",
@@ -25084,21 +25314,43 @@
     },
     {
       "id": "metric-invariance-weak-invariance",
-      "term": "Metric Invariance (Weak Invariance)",
-      "vietnamese": "Bất biến Hệ số Tải",
-      "vietnamese_variants": [],
+      "term": "Metric Invariance (Weak Invariance / Equal Factor Loadings)",
+      "vietnamese": "Bất biến hệ số tải / Bất biến yếu / Tính tương đương độ dốc",
+      "vietnamese_variants": [
+        "Bất biến mêtric",
+        "Weak Factorial Invariance",
+        "Đẳng thức hệ số tải nhân tố"
+      ],
       "domain_tags": [
         "Measurement Invariance"
       ],
-      "core_definition": "Đảm bảo độ dốc hệ số tải nhân tố tương đương nhau giữa các nhóm; cho phép so sánh mối quan hệ.",
-      "seminal_citation": "Steenkamp & Baumgartner (1998)",
+      "core_definition": "Metric Invariance (Bất biến hệ số tải, hay Bất biến yếu - Weak Invariance) là cấp độ kiểm định thứ hai trong chuỗi bất biến đo lường (Cheung & Rensvold, 2002; Steenkamp & Baumgartner, 1998). Cấp độ này áp đặt ràng buộc đẳng thức lên toàn bộ các hệ số tải nhân tố (factor loadings) giữa các nhóm (Lambda_group1 = Lambda_group2), trong khi các điểm chặn (intercepts) và phương sai sai số vẫn được tự do. Bất biến hệ số tải chứng minh rằng mỗi đơn vị thay đổi trên biến tiềm ẩn tạo ra cùng một mức độ thay đổi tương đương trên biến quan sát ở tất cả các nhóm. Đây là điều kiện tiên quyết bắt buộc để có thể so sánh các mối quan hệ cấu trúc (tương quan, hiệp phương sai, hệ số hồi quy beta) giữa các nhóm.",
+      "seminal_citation": "Cheung, G. W., & Rensvold, R. B. (2002). Evaluating goodness-of-fit indexes for testing measurement invariance. Structural Equation Modeling, 9(2), 233-255; Steenkamp, J. B. E., & Baumgartner, H. (1998). Assessing measurement invariance in cross-national consumer research. Journal of Consumer Research, 25(1), 78-90.",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #1631",
       "core_definition_en": "Academic definition of Metric Invariance (Weak Invariance) according to Steenkamp & Baumgartner (1998).",
       "domain_tags_en": [
         "Measurement Invariance"
-      ]
+      ],
+      "category": "Psychometrics",
+      "subcategory": "Invariance & MGA",
+      "operational_mechanism": "Cơ chế kiểm định toán học: Mô hình ràng buộc (Model 2: Metric) được so sánh trực tiếp với mô hình không ràng buộc (Model 1: Configural). Tính toán mức độ biến thiên của các chỉ số phù hợp mô hình: ΔCFI = CFI_metric - CFI_configural; ΔRMSEA = RMSEA_metric - RMSEA_configural; ΔSRMR = SRMR_metric - SRMR_configural. Nếu độ suy giảm nằm trong ngưỡng dung sai học thuật, giả thuyết về bất biến hệ số tải được chấp nhận.",
+      "benchmarks": [
+        "Ngưỡng chuẩn mực Cheung & Rensvold (2002): ΔCFI <= 0.010 (suy giảm không quá 0.01) kết hợp với ΔRMSEA <= 0.015.",
+        "Ngưỡng bổ trợ Chen (2007): ΔSRMR <= 0.030 (đối với kiểm định Metric).",
+        "Ý nghĩa ứng dụng: Cho phép thực hiện phân tích đa nhóm (Multi-Group Analysis - MGA) để so sánh các hệ số đường dẫn (path coefficients) giữa nhóm nam vs. nữ, hoặc giữa các thị trường."
+      ],
+      "pitfalls": [
+        "Vội vàng so sánh trung bình biến tiềm ẩn: Cho rằng đạt được Metric Invariance là đã có thể so sánh trung bình (means) giữa các nhóm; đây là sai lầm nghiêm trọng vì so sánh trung bình bắt buộc phải đạt Scalar Invariance.",
+        "Chỉ dùng kiểm định Chi-square chênh lệch (Δχ² p < 0.05): Bác bỏ bất biến hệ số tải chỉ vì p-value của Chi-square chênh lệch nhỏ hơn 0.05 do cỡ mẫu quá lớn.",
+        "Không xác định biến gây nhiễu khi thất bại: Khi Metric invariance bị bác bỏ, tác giả không kiểm tra chỉ số hiệu chỉnh (Modification Indices) để tìm ra biến quan sát có hệ số tải dị biệt nhất."
+      ],
+      "apa_reference": "Steenkamp, J. B. E., & Baumgartner, H. (1998). Assessing measurement invariance in cross-national consumer research. Journal of Consumer Research, 25(1), 78-90. https://doi.org/10.1086/209528",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "metropolis-hastings-algorithm",
@@ -25979,15 +26231,19 @@
     },
     {
       "id": "multi-group-analysis",
-      "term": "Multi-Group Analysis",
-      "vietnamese": "Phân tích Đa nhóm trong Mô hình SEM",
-      "vietnamese_variants": [],
+      "term": "Multi-Group Analysis in SEM (MGA - CB-SEM & PLS-SEM)",
+      "vietnamese": "Phân tích đa nhóm trong mô hình phương trình cấu trúc (MGA)",
+      "vietnamese_variants": [
+        "Phân tích so sánh đa nhóm",
+        "Multi-Group Structural Equation Modeling",
+        "PLS-MGA / CB-MGA"
+      ],
       "domain_tags": [
         "SEM",
         "Advanced Quantitative Analysis"
       ],
-      "core_definition": "Kiểm định xem các hệ số đường dẫn (path coefficients) hoặc mối quan hệ giữa các khái niệm có khác biệt có ý nghĩa thống kê giữa các nhóm mẫu phụ hay không (ví dụ: Nam vs Nữ, Gen Z vs Gen Y). Ngưỡng thực nghiệm tham chiếu: Yêu cầu tiên quyết: Phải đạt bất biến đo lường (Measurement Invariance) trước khi so sánh tham số cấu trúc giữa các nhóm (Henseler's MGA, PLS-MGA p < 0.05 hoặc > 0.95).",
-      "seminal_citation": "Yêu cầu tiên quyết: Phải đạt bất biến đo lường (Measurement Invariance) trước khi so sánh tham số cấu trúc giữa các nhóm (Henseler's MGA, PLS-MGA p < 0.05 hoặc > 0.95).",
+      "core_definition": "Multi-Group Analysis (MGA) là kỹ thuật phân tích thống kê nâng cao trong Mô hình phương trình cấu trúc (cả CB-SEM và PLS-SEM), cho phép kiểm định xem các mối quan hệ cấu trúc (structural paths) giữa các biến tiềm ẩn có sự khác biệt có ý nghĩa thống kê giữa hai hay nhiều nhóm đối tượng định danh được xác định từ trước (ví dụ: so sánh giữa giới tính Nam vs. Nữ, thị trường Mới nổi vs. Phát triển, quy mô doanh nghiệp Lớn vs. Nhỏ) hay không (Byrne, 2016; Sarstedt, Henseler, & Ringle, 2011).",
+      "seminal_citation": "Sarstedt, M., Henseler, J., & Ringle, C. M. (2011). Multigroup analysis in partial least squares (PLS) path modeling: Alternative methods and development of a new-generation approach. Advances in International Marketing, 22, 195-219; Byrne, B. M. (2016). Structural Equation Modeling with AMOS (3rd ed.). Routledge.",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
@@ -25996,7 +26252,24 @@
         "SEM",
         "Advanced Quantitative Analysis"
       ],
-      "benchmarks": "Yêu cầu tiên quyết: Phải đạt bất biến đo lường (Measurement Invariance) trước khi so sánh tham số cấu trúc giữa các nhóm (Henseler's MGA, PLS-MGA p < 0.05 hoặc > 0.95)."
+      "benchmarks": [
+        "Điều kiện tiên quyết tuyệt đối: Bắt buộc phải chứng minh đạt tối thiểu Metric Invariance (trong CB-SEM) hoặc đạt Bước 2 của quy thức MICOM (trong PLS-SEM) trước khi chạy MGA.",
+        "Ngưỡng ý nghĩa thống kê trong PLS-MGA: Sự khác biệt đường dẫn có ý nghĩa thống kê khi Henseler's MGA p-value <= 0.05 hoặc >= 0.95 (kiểm định 2 đuôi tương ứng).",
+        "Quy mô mẫu từng nhóm: Mỗi nhóm thành phần phải đáp ứng quy tắc cỡ mẫu tối thiểu (CB-SEM khuyến nghị N >= 150-200 mỗi nhóm; PLS-SEM khuyến nghị N >= 50-100 mỗi nhóm)."
+      ],
+      "category": "Quantitative Methods",
+      "subcategory": "SEM & Invariance",
+      "operational_mechanism": "Hai luồng tiếp cận kỹ thuật chính: (1) Trong CB-SEM: So sánh mô hình cấu trúc tự do (Unconstrained structural model) với mô hình cấu trúc bị ràng buộc bằng nhau (Constrained path model) thông qua kiểm định Chi-square chênh lệch (Δχ²) hoặc z-test chênh lệch tham số; (2) Trong PLS-SEM: Vận dụng phương pháp phi tham số Henseler's MGA (dựa trên phân phối Bootstrap) hoặc Permutation Test (kiểm định hoán vị) để đánh giá p-value của sự chênh lệch hệ số đường dẫn: |Beta_group1 - Beta_group2|.",
+      "pitfalls": [
+        "Chạy MGA trực tiếp khi chưa kiểm định bất biến đo lường: Đây là sai phạm phổ biến nhất, khiến việc kết luận nhóm A phản ứng mạnh hơn nhóm B trở nên phi khoa học vì thang đo đo lường hai nhóm khác nhau.",
+        "Chia nhóm tùy tiện dựa trên biến liên tục (median split): Cắt đôi một biến liên tục (như độ tuổi, thu nhập) tại điểm trung vị để chia thành 2 nhóm chạy MGA, gây tổn thất phương sai và suy giảm độ tin cậy nghiêm trọng (nên thay bằng Moderated Regression).",
+        "Cỡ mẫu nhóm quá mất cân xứng: Một nhóm N = 500, nhóm kia N = 40, làm sai lệch phân phối bootstrap và kiểm định thống kê."
+      ],
+      "apa_reference": "Sarstedt, M., Henseler, J., & Ringle, C. M. (2011). Multigroup analysis in partial least squares (PLS) path modeling: Alternative methods and development of a new-generation approach. Advances in International Marketing, 22, 195-219. https://doi.org/10.1108/S1474-7979(2011)0000022012",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "multi-stage-sampling",
@@ -28482,21 +28755,43 @@
     },
     {
       "id": "partial-credit-model-pcm",
-      "term": "Partial Credit Model (PCM)",
-      "vietnamese": "Mô hình Điểm Từng phần",
-      "vietnamese_variants": [],
+      "term": "Partial Credit Model (PCM - Geoff Masters Polytomous Rasch Model)",
+      "vietnamese": "Mô hình chấm điểm từng phần / Mô hình Rasch cho dữ liệu đa giá trị (Geoff Masters)",
+      "vietnamese_variants": [
+        "Mô hình PCM",
+        "Polytomous Rasch Model",
+        "Mô hình Rasch thang đo Likert"
+      ],
       "domain_tags": [
         "Item Response Theory"
       ],
-      "core_definition": "Mô hình IRT mở rộng của Rasch dành cho các câu hỏi chấm điểm theo các bước hoàn thành.",
-      "seminal_citation": "Masters (1982)",
+      "core_definition": "Partial Credit Model (PCM) là sự mở rộng toán học quan trọng của mô hình Rasch dành cho dữ liệu đa phân (polytomous data) do Geoff N. Masters sáng lập (1982; Wright & Masters, 1982). Khác với mô hình Rasch nhị phân (chỉ chấm 0 hoặc 1), PCM được thiết kế để phân tích các câu hỏi trắc nghiệm có các mức điểm từng phần (partial credits - ví dụ: giải bài toán đúng 1 bước được 1 điểm, đúng trọn vẹn được 2 điểm) hoặc các câu hỏi khảo sát thái độ sử dụng thang đo Likert nhiều mức độ (1 đến 5 điểm), trong đó cấu trúc các ngưỡng chuyển tiếp (thresholds) giữa các bậc điểm được phép thay đổi tự do giữa các câu hỏi khác nhau.",
+      "seminal_citation": "Masters, G. N. (1982). A Rasch model for partial credit scoring. Psychometrika, 47(2), 149-174; Wright, B. D., & Masters, G. N. (1982). Rating Scale Analysis. MESA Press.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Partial Credit Model (PCM) according to Masters (1982).",
       "domain_tags_en": [
         "Item Response Theory"
-      ]
+      ],
+      "category": "Psychometrics",
+      "subcategory": "Item Response Theory",
+      "operational_mechanism": "Toán học của ngưỡng chuyển tiếp (Step difficulty thresholds): Xác suất một đối tượng n chọn bậc điểm x thay vì bậc x-1 trên câu hỏi i phụ thuộc vào sự chênh lệch giữa năng lực Beta_n và độ khó của ngưỡng bước Delta_ix. PCM ước lượng riêng rẽ các tham số ngưỡng bước cho từng câu hỏi, cho phép kiểm tra xem trật tự các mức bậc thang đo (Rating scale category order) có vận hành một cách hợp lý và tăng dần đều hay không thông qua việc kiểm tra hiện tượng ngưỡng bị đảo ngược (disordered thresholds).",
+      "benchmarks": [
+        "Trật tự ngưỡng bậc thang điểm (Threshold Ordering): Các ngưỡng bước (Delta_i1 < Delta_i2 < Delta_i3...) phải tăng dần đều; nếu xuất hiện ngưỡng bị đảo ngược, thang đo Likert đó đang hoạt động kém hiệu quả và cần phải gộp bậc điểm.",
+        "Khoảng cách giữa các ngưỡng: Khoảng cách tối ưu giữa hai ngưỡng bước liên tiếp nên nằm trong khoảng từ 1.4 đến 5.0 logit (Linacre, 2002).",
+        "Chỉ số Infit/Outfit MNSQ cho dữ liệu đa giá trị: Nằm trong khoảng 0.60 đến 1.40."
+      ],
+      "pitfalls": [
+        "Bỏ qua hiện tượng ngưỡng bị đảo ngược (disordered thresholds): Để nguyên thang đo Likert 7 điểm trong khi người tham gia không thể phân biệt được giữa mức 4 ('hơi đồng ý') và mức 5 ('đồng ý'), làm sai lệch toàn bộ mô hình đo lường.",
+        "Nhầm lẫn giữa PCM và Rating Scale Model (RSM): Áp đặt mô hình RSM (buộc tất cả các câu hỏi phải có cùng khoảng cách ngưỡng như nhau) cho một tập hợp câu hỏi có cấu trúc thang đo hoàn toàn dị biệt.",
+        "Số lượng quan sát trên mỗi bậc điểm quá ít: Bậc điểm 1 hoặc điểm 7 có dưới 10 người chọn, khiến việc ước lượng tham số ngưỡng bước ở cực mút bị mất ổn định."
+      ],
+      "apa_reference": "Masters, G. N. (1982). A Rasch model for partial credit scoring. Psychometrika, 47(2), 149-174. https://doi.org/10.1007/BF02296272",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "partial-dependence-plot-pdp",
@@ -31552,21 +31847,43 @@
     },
     {
       "id": "rasch-model-1pl-irt",
-      "term": "Rasch Model (1PL IRT)",
-      "vietnamese": "Mô hình Rasch",
-      "vietnamese_variants": [],
+      "term": "Rasch Measurement Model (1PL IRT - Georg Rasch Framework)",
+      "vietnamese": "Mô hình đo lường Rasch (Mô hình IRT 1 tham số / Chuẩn mực đo lường khách quan)",
+      "vietnamese_variants": [
+        "Mô hình Rasch 1PL",
+        "One-Parameter Logistic Model (1PL)",
+        "Rasch Objective Measurement"
+      ],
       "domain_tags": [
         "Psychometrics"
       ],
-      "core_definition": "Mô hình IRT 1 tham số độ khó, giả định độ phân biệt đồng nhất giữa các câu hỏi.",
-      "seminal_citation": "Rasch (1960)",
+      "core_definition": "Rasch Measurement Model là mô hình đo lường toán học đặc biệt do nhà toán học Đan Mạch Georg Rasch sáng lập (1960) và được Benjamin Wright chuẩn hóa (Wright & Stone, 1979; Bond & Fox, 2015). Mặc dù về mặt toán học nó tương đương với mô hình IRT 1 tham số (1PL), các nhà nghiên cứu Rasch khẳng định đây là một trường phái triết học đo lường riêng biệt: thay vì tìm một mô hình phức tạp để khớp với dữ liệu thực tế lộn xộn (như 2PL, 3PL), Rasch đặt ra tiêu chuẩn đo lường khách quan tiên nghiệm (tương tự như chiếc thước đo vật lý) và đòi hỏi dữ liệu phải khớp với mô hình Rasch.",
+      "seminal_citation": "Rasch, G. (1960). Probabilistic Models for Some Intelligence and Attainment Tests. Danish Institute for Educational Research; Wright, B. D., & Stone, M. H. (1979). Best Test Design. MESA Press; Bond, T., & Fox, C. M. (2015). Applying the Rasch Model: Fundamental Measurement in the Human Sciences (3rd ed.). Routledge.",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #2126",
       "core_definition_en": "Academic definition of Rasch Model (1PL IRT) according to Rasch (1960).",
       "domain_tags_en": [
         "Psychometrics"
-      ]
+      ],
+      "category": "Psychometrics",
+      "subcategory": "Item Response Theory",
+      "operational_mechanism": "Công thức toán học hàm Logistic Rasch: Xác suất trả lời đúng câu hỏi i của người n: P(X_ni = 1) = exp(Beta_n - Delta_i) / [1 + exp(Beta_n - Delta_i)], trong đó Beta_n là năng lực của người n và Delta_i là độ khó của câu hỏi i, cùng được đo lường trên một thang đo Logit chung. Hai chỉ số đánh giá độ khớp câu hỏi cốt lõi: Infit MNSQ (nhạy cảm với câu hỏi gần năng lực) và Outfit MNSQ (nhạy cảm với các phản ứng ngoại lai xa năng lực).",
+      "benchmarks": [
+        "Đơn vị đo lường Logit chung: Cả năng lực người làm và độ khó câu hỏi đều được định vị trực quan trên cùng một Bản đồ biến số (Wright Map / Variable Map).",
+        "Ngưỡng chấp nhận chỉ số Fit MNSQ (Mean-Square): Khoảng giá trị chuẩn mực cho các bài kiểm tra trắc nghiệm là 0.70 <= MNSQ <= 1.30 (Wright & Linacre, 1994). MNSQ > 1.40 biểu thị câu hỏi có quá nhiều nhiễu (underfit); MNSQ < 0.60 biểu thị câu hỏi bị trùng lặp dư thừa (overfit).",
+        "Chỉ số Z-standardized (ZSTD): Giá trị lý tưởng nằm trong khoảng từ -2.0 đến +2.0."
+      ],
+      "pitfalls": [
+        "Loại bỏ câu hỏi tốt chỉ vì không khớp hoàn hảo với Rasch: Cố tình vứt bỏ các câu hỏi phân biệt xuất sắc chỉ vì chúng vi phạm giả định độ phân biệt bằng nhau của Rasch.",
+        "Nhầm lẫn giữa Infit và Outfit: Không phân biệt được rằng Outfit MNSQ rất dễ bị phá vỡ chỉ bởi 1-2 cú nhấp chuột đoán mò ngẫu nhiên của thí sinh yếu.",
+        "Bỏ qua kiểm định tính đơn chiều (Unidimensionality): Áp dụng Rasch trên một bài kiểm tra đo lường cả năng lực toán lẫn kỹ năng đọc hiểu kết hợp mà không tách riêng thang đo."
+      ],
+      "apa_reference": "Bond, T., & Fox, C. M. (2015). Applying the Rasch model: Fundamental measurement in the human sciences (3rd ed.). Routledge. https://doi.org/10.4324/9781315814698",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "rasch-model-1pl",
@@ -33166,21 +33483,43 @@
     },
     {
       "id": "scalar-invariance-strong-invariance",
-      "term": "Scalar Invariance (Strong Invariance)",
-      "vietnamese": "Bất biến Điểm chặn",
-      "vietnamese_variants": [],
+      "term": "Scalar Invariance (Strong Invariance / Equal Indicator Intercepts)",
+      "vietnamese": "Bất biến điểm chặn / Bất biến mạnh / Tính tương đương thang đo",
+      "vietnamese_variants": [
+        "Bất biến vô hướng",
+        "Strong Factorial Invariance",
+        "Đẳng thức điểm chặn quan sát"
+      ],
       "domain_tags": [
         "Measurement Invariance"
       ],
-      "core_definition": "Đảm bảo điểm chặn tương đương giữa các nhóm; điều kiện bắt buộc để so sánh điểm trung bình.",
-      "seminal_citation": "Steenkamp & Baumgartner (1998)",
+      "core_definition": "Scalar Invariance (Bất biến điểm chặn, hay Bất biến mạnh - Strong Invariance) là cấp độ kiểm định thứ ba và mang tính quyết định trong nghiên cứu so sánh đa nhóm (Steenkamp & Baumgartner, 1998; Chen, 2007). Cấp độ này áp đặt đồng thời ràng buộc đẳng thức lên cả hệ số tải nhân tố (Equal loadings) VÀ điểm chặn của các biến quan sát (Equal intercepts: Tau_group1 = Tau_group2). Đạt được Scalar Invariance chứng minh rằng các đối tượng ở các nhóm khác nhau nếu có cùng một mức độ trên biến tiềm ẩn thì cũng sẽ cho ra cùng một điểm số quan sát như nhau trên thang đo, hoàn toàn loại bỏ được thiên lệch thang đo (scale bias / item functioning bias). Đây là điều kiện tối cần thiết và bắt buộc để có thể so sánh giá trị trung bình của các biến tiềm ẩn (Latent Means Comparison).",
+      "seminal_citation": "Steenkamp, J. B. E., & Baumgartner, H. (1998). Assessing measurement invariance in cross-national consumer research. Journal of Consumer Research, 25(1), 78-90; Chen, F. F. (2007). Sensitivity of goodness of fit indexes to lack of measurement invariance. Structural Equation Modeling, 14(3), 464-504.",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #2271",
       "core_definition_en": "Academic definition of Scalar Invariance (Strong Invariance) according to Steenkamp & Baumgartner (1998).",
       "domain_tags_en": [
         "Measurement Invariance"
-      ]
+      ],
+      "category": "Psychometrics",
+      "subcategory": "Invariance & MGA",
+      "operational_mechanism": "Cơ chế kiểm định: So sánh mô hình ràng buộc điểm chặn (Model 3: Scalar) với mô hình bất biến hệ số tải (Model 2: Metric). Điểm chặn của biến tiềm ẩn ở nhóm tham chiếu (reference group) được cố định bằng 0, trong khi trung bình biến tiềm ẩn ở các nhóm đối sánh được ước lượng tự do. Tính toán: ΔCFI = CFI_scalar - CFI_metric; ΔRMSEA = RMSEA_scalar - RMSEA_metric; ΔSRMR = SRMR_scalar - SRMR_metric.",
+      "benchmarks": [
+        "Ngưỡng chấp nhận Cheung & Rensvold (2002): ΔCFI <= 0.010 kết hợp với ΔRMSEA <= 0.015.",
+        "Ngưỡng bổ trợ Chen (2007): ΔSRMR <= 0.010 (tiêu chuẩn SRMR ở bước Scalar chặt chẽ hơn nhiều so với bước Metric).",
+        "Nguyên tắc Partial Scalar Invariance (Byrne et al., 1989): Nếu mô hình đầy đủ thất bại, tối thiểu phải có ít nhất 2 biến quan sát trên mỗi nhân tố (bao gồm biến chuẩn hóa cố định hệ số tải bằng 1) đạt bất biến điểm chặn thì mới được phép so sánh trung bình tiềm ẩn."
+      ],
+      "pitfalls": [
+        "So sánh điểm trung bình cộng thô (composite means) khi chưa đạt Scalar Invariance: Khiến mọi kết luận so sánh giữa các quốc gia về sự khác biệt văn hóa, mức độ hài lòng trở nên vô căn cứ và sai lệch hoàn toàn.",
+        "Thả lỏng quá nhiều điểm chặn: Thả lỏng hơn 50% số biến quan sát trong thang đo rồi tuyên bố đạt 'Partial Scalar Invariance', vi phạm nguyên tắc bảo toàn cấu trúc đo lường.",
+        "Bỏ qua phân tích nguyên nhân dị biệt văn hóa: Khi một điểm chặn bị lệch nghiêm trọng giữa hai quốc gia, không giải thích lý do ngôn ngữ hoặc văn hóa bản địa dẫn đến sự khác biệt đó."
+      ],
+      "apa_reference": "Chen, F. F. (2007). Sensitivity of goodness of fit indexes to lack of measurement invariance. Structural Equation Modeling, 14(3), 464-504. https://doi.org/10.1080/10705510701301834",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "scale-of-measurement",
@@ -34545,21 +34884,43 @@
     },
     {
       "id": "social-desirability-bias",
-      "term": "Social Desirability Bias",
-      "vietnamese": "Thiên lệch mong muốn xã hội",
-      "vietnamese_variants": [],
+      "term": "Social Desirability Bias (Marlowe-Crowne Framework - Crowne & Marlowe)",
+      "vietnamese": "Thiên lệch mong muốn xã hội / Xu hướng trả lời theo chuẩn mực xã hội",
+      "vietnamese_variants": [
+        "Thiên lệch mong muốn xã hội",
+        "Xu hướng làm đẹp bản thân",
+        "Socially Desirable Responding (SDR)"
+      ],
       "domain_tags": [
         "Survey Methodology"
       ],
-      "core_definition": "xu hướng người trả lời đưa ra câu trả lời được xã hội khen ngợi thay vì sự thật.",
-      "seminal_citation": "Crowne & Marlowe (1960)",
+      "core_definition": "Social Desirability Bias (SDR) là xu hướng tâm lý có hệ thống của người tham gia khảo sát khi trả lời các câu hỏi theo cách mà họ tin rằng sẽ được xã hội, người nghiên cứu hoặc cộng đồng đánh giá cao, chấp thuận và nhìn nhận tích cực, đồng thời che giấu hoặc khai báo giảm các hành vi bị coi là tiêu cực, cấm kỵ hoặc lệch chuẩn (Crowne & Marlowe, 1960; Nederhof, 1985). SDR đặc biệt nguy hiểm trong các nghiên cứu về đạo đức kinh doanh, trách nhiệm xã hội doanh nghiệp (CSR), hành vi tiêu dùng xanh, tham nhũng hoặc sức khỏe tâm thần, làm thổi phồng nghiêm trọng mức độ đạo đức hoặc sự tuân thủ thực tế.",
+      "seminal_citation": "Crowne, D. P., & Marlowe, D. (1960). A new scale of social desirability independent of psychopathology. Journal of Consulting Psychology, 24(4), 349-354; Nederhof, A. J. (1985). Methods of coping with social desirability bias: A review. European Journal of Social Psychology, 15(3), 263-280.",
       "tier": "encyclopedia",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #2376",
       "core_definition_en": "Academic definition of Social Desirability Bias according to Crowne & Marlowe (1960).",
       "domain_tags_en": [
         "Survey Methodology"
-      ]
+      ],
+      "category": "Quantitative Methods",
+      "subcategory": "Survey Biases",
+      "operational_mechanism": "Hai thành tố tâm lý của SDR theo Delroy Paulhus (1984, 1991): (1) Tự lừa dối bản thân (Self-Deceptive Enhancement - SDE): Người trả lời thực sự tin vào hình ảnh tích cực hoàn hảo của chính mình một cách vô thức; (2) Quản trị ấn tượng (Impression Management - IM): Người trả lời cố tình nói dối hoặc điều chỉnh câu trả lời có ý thức để gây ấn tượng tốt với người khảo sát. Các biện pháp kiểm soát: Sử dụng Thang đo Marlowe-Crowne Social Desirability Scale (MCSDS) hoặc Thang đo Paulhus (BIDR); Đảm bảo tính ẩn danh tuyệt đối; Sử dụng kỹ thuật hỏi gián tiếp (Indirect questioning) hoặc Kỹ thuật ngẫu nhiên hóa phản hồi (Randomized Response Technique).",
+      "benchmarks": [
+        "Sử dụng thang đo rút gọn chuẩn hóa: Thang đo Marlowe-Crowne bản rút gọn 10 hoặc 13 items của Reynolds (1982) hoặc Strahan & Gerbasi (1972).",
+        "Đưa biến SDR vào làm biến kiểm soát (Control Variable): Nếu hệ số tương quan giữa SDR và biến nghiên cứu có ý nghĩa thống kê (r > 0.20), bắt buộc phải kiểm soát SDR trong mô hình hồi quy hoặc SEM.",
+        "Đảm bảo môi trường tự điền ẩn danh (Self-administered online surveys): Giúp giảm thiểu từ 30% đến 50% mức độ SDR so với phỏng vấn trực tiếp mặt đối mặt."
+      ],
+      "pitfalls": [
+        "Khảo sát trực tiếp mặt đối mặt về các chủ đề nhạy cảm: Tiến hành phỏng vấn trực tiếp hỏi về hành vi gian lận hoặc trốn thuế, khiến dữ liệu thu được hoàn toàn bị bóp méo bởi SDR.",
+        "Bỏ qua kiểm tra SDR trong các nghiên cứu CSR và đạo đức: Tuyên bố người tiêu dùng 'sẵn sàng trả giá cao gấp đôi cho sản phẩm bảo vệ môi trường' mà không kiểm soát SDR.",
+        "Thang đo SDR quá dài gây quá tải: Đưa bản gốc 33 câu của Marlowe-Crowne vào một bảng hỏi vốn đã dài, gây mệt mỏi cho người tham gia."
+      ],
+      "apa_reference": "Crowne, D. P., & Marlowe, D. (1960). A new scale of social desirability independent of psychopathology. Journal of Consulting Psychology, 24(4), 349-354. https://doi.org/10.1037/h0047358",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "social-desirability-bias-marlowe-crowne-scale",
@@ -35794,21 +36155,43 @@
     },
     {
       "id": "strict-factorial-invariance",
-      "term": "Strict Factorial Invariance",
-      "vietnamese": "Bất biến Nghiêm ngặt",
-      "vietnamese_variants": [],
+      "term": "Strict Factorial Invariance (Equal Residual Variances - Meredith)",
+      "vietnamese": "Bất biến nhân tố nghiêm ngặt / Bất biến phần dư sai số đo lường",
+      "vietnamese_variants": [
+        "Bất biến nghiêm ngặt",
+        "Strict Invariance",
+        "Đẳng thức phương sai phần dư"
+      ],
       "domain_tags": [
         "Measurement Invariance"
       ],
-      "core_definition": "Đảm bảo phương sai phần dư tương đương giữa các nhóm so sánh.",
-      "seminal_citation": "Meredith (1993)",
+      "core_definition": "Strict Factorial Invariance (Bất biến nhân tố nghiêm ngặt) là cấp độ cao nhất và khắt khe nhất trong hệ thống phân cấp bất biến đo lường cổ điển, do William Meredith chuẩn hóa (1993; Vandenberg & Lance, 2000). Cấp độ này đòi hỏi ngoài việc các hệ số tải (loadings) và điểm chặn (intercepts) phải bằng nhau, phương sai của sai số đo lường (unique/residual error variances: Theta_delta_group1 = Theta_delta_group2) của các biến quan sát cũng phải hoàn toàn đồng nhất giữa các nhóm. Đạt được Strict Invariance chứng minh rằng độ tin cậy đo lường (measurement reliability) của thang đo là hoàn toàn như nhau trên mọi nhóm đối tượng, và mọi sự khác biệt về phương sai quan sát giữa các nhóm thuần túy bắt nguồn từ sự khác biệt trên biến tiềm ẩn thực sự.",
+      "seminal_citation": "Meredith, W. (1993). Measurement invariance, factor analysis and factorial invariance. Psychometrika, 58(4), 525-543; Vandenberg, R. J., & Lance, C. E. (2000). A review and synthesis of the measurement invariance literature. Organizational Research Methods, 3(1), 4-70.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Strict Factorial Invariance according to Meredith (1993).",
       "domain_tags_en": [
         "Measurement Invariance"
-      ]
+      ],
+      "category": "Psychometrics",
+      "subcategory": "Invariance & MGA",
+      "operational_mechanism": "Cơ chế kiểm định: Mô hình ràng buộc phần dư sai số (Model 4: Strict) được so sánh trực tiếp với mô hình bất biến điểm chặn (Model 3: Scalar). Tính toán: ΔCFI = CFI_strict - CFI_scalar; ΔRMSEA = RMSEA_strict - RMSEA_scalar. Nếu mô hình không suy giảm quá ngưỡng cho phép, giả thuyết bất biến phần dư được xác nhận.",
+      "benchmarks": [
+        "Ngưỡng đánh giá: ΔCFI <= 0.010 và ΔRMSEA <= 0.015 (Cheung & Rensvold, 2002).",
+        "Vị thế trong nghiên cứu thực tiễn: Thường được coi là 'quá khắt khe và không cần thiết' (overly restrictive and not required) cho hầu hết các nghiên cứu so sánh trong khoa học xã hội và quản trị kinh doanh.",
+        "Chỉ bắt buộc khi: Nghiên cứu muốn chứng minh độ tin cậy của thang đo (Cronbach's alpha hoặc Composite Reliability) hoàn toàn tương đương tuyệt đối giữa các nhóm đối tượng."
+      ],
+      "pitfalls": [
+        "Nhầm lẫn rằng phải đạt Strict Invariance mới được so sánh trung bình tiềm ẩn: Thực tế chỉ cần đạt Scalar Invariance là đã hoàn toàn đủ điều kiện so sánh trung bình tiềm ẩn (latent means).",
+        "Loại bỏ thang đo tốt vì vi phạm Strict Invariance: Bác bỏ một công cụ đo lường xuất sắc chỉ vì phương sai sai số ngẫu nhiên giữa hai mẫu dân số có sự chênh lệch nhỏ.",
+        "Áp đặt bất biến phần dư khi phương sai mẫu chênh lệch quá lớn: Khi cỡ mẫu hai nhóm quá bất cân xứng, kiểm định bất biến phần dư rất dễ bị bóp méo."
+      ],
+      "apa_reference": "Meredith, W. (1993). Measurement invariance, factor analysis and factorial invariance. Psychometrika, 58(4), 525-543. https://doi.org/10.1007/BF02294825",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "strobe-statement",
@@ -38844,15 +39227,19 @@
     },
     {
       "id": "unmeasured-latent-marker-construct",
-      "term": "Unmeasured Latent Marker Construct",
-      "vietnamese": "Biến Tiềm ẩn Đánh dấu Không đo lường (Kỹ thuật kiểm soát CMV)",
-      "vietnamese_variants": [],
+      "term": "Unmeasured Latent Method Construct (ULMC - CFA Approach)",
+      "vietnamese": "Cấu trúc phương pháp tiềm ẩn không đo lường / Kỹ thuật ULMC trong CFA",
+      "vietnamese_variants": [
+        "Nhân tố phương pháp tiềm ẩn",
+        "Kỹ thuật ULMC",
+        "Latent Method Factor Approach"
+      ],
       "domain_tags": [
         "Psychometrics",
         "SEM"
       ],
-      "core_definition": "Phương pháp thống kê sau thu thập số liệu (post-hoc statistical remedy) dùng một biến tiềm ẩn đại diện để kiểm soát sai lệch phương pháp chung (CMV) trong CB-SEM. Ngưỡng thực nghiệm tham chiếu: So sánh Model Fit giữa Baseline Model và Constrained Model: Nếu các hệ số đường dẫn chính vẫn giữ nguyên ý nghĩa thống kê thì nghiên cứu không bị CMV đe dọa.",
-      "seminal_citation": "So sánh Model Fit giữa Baseline Model và Constrained Model: Nếu các hệ số đường dẫn chính vẫn giữ nguyên ý nghĩa thống kê thì nghiên cứu không bị CMV đe dọa.",
+      "core_definition": "Unmeasured Latent Method Construct (ULMC, còn gọi là Common Latent Factor - CLF hoặc Latent Method Factor) là một kỹ thuật phân tích nhân tố khẳng định (CFA) thống kê nâng cao nhằm kiểm soát phương sai phương pháp chung (CMV) mà không cần phải thu thập thêm biến đánh dấu cụ thể từ trước (Podsakoff et al., 2003; Williams, Hartman, & Cavazotte, 2010). Trong mô hình CFA, một nhân tố tiềm ẩn chung (Method Factor) được bổ sung và cho phép tải lên TOÀN BỘ các biến quan sát của tất cả các cấu trúc lý thuyết trong mô hình. Bằng cách cố định hoặc so sánh các mô hình có và không có nhân tố này, nghiên cứu viên có thể cô lập và loại trừ phương sai phương pháp ra khỏi các mối quan hệ cấu trúc.",
+      "seminal_citation": "Podsakoff, P. M., MacKenzie, S. B., Lee, J. Y., & Podsakoff, N. P. (2003). Common method biases in behavioral research. Journal of Applied Psychology, 88(5), 879-903; Williams, L. J., Hartman, N., & Cavazotte, F. (2010). Method variance and marker variables: A review and comprehensive CFA approach. Organizational Research Methods, 13(3), 477-514.",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
@@ -38861,7 +39248,24 @@
         "Psychometrics",
         "SEM"
       ],
-      "benchmarks": "So sánh Model Fit giữa Baseline Model và Constrained Model: Nếu các hệ số đường dẫn chính vẫn giữ nguyên ý nghĩa thống kê thì nghiên cứu không bị CMV đe dọa."
+      "benchmarks": [
+        "Cố định phương sai của Method Factor bằng 1 và không cho phép Method Factor tương quan với bất kỳ nhân tố thực chất nào (Zero correlation with substantive factors).",
+        "Tiêu chuẩn đánh giá: Nếu các hệ số tải và tương quan giữa các biến thực chất vẫn giữ nguyên ý nghĩa thống kê và không suy giảm quá 0.05 - 0.10, kết luận mô hình vững trước CMV.",
+        "Tỷ lệ phương sai giải thích bởi Method Factor: Thường được đánh giá bằng bình phương trung bình của các hệ số tải phương pháp (Squared Method Factor Loadings < 25%)."
+      ],
+      "category": "Quantitative Methods",
+      "subcategory": "Survey Biases",
+      "operational_mechanism": "Quy trình kiểm định mô hình so sánh theo Williams et al. (2010): (1) Baseline Model: Mô hình CFA chuẩn gồm các nhân tố thực chất; (2) Method-Free Model: Mô hình trong đó các hệ số tải của Method Factor lên biến quan sát bị ép bằng 0; (3) Method-Equal Model: Mô hình trong đó các hệ số tải của Method Factor lên các biến quan sát bị ràng buộc bằng nhau (giả định CMV tác động đồng đều); (4) Method-Unequal Model: Cho phép Method Factor tải tự do lên từng biến quan sát; (5) So sánh Chi-square chênh lệch và kiểm tra xem các hệ số tương quan/hồi quy giữa các biến thực chất có thay đổi đáng kể sau khi kiểm soát Method Factor hay không.",
+      "pitfalls": [
+        "Vấn đề phi nhận diện mô hình (Model Identification Issues): Thêm một nhân tố chung tải lên hàng chục biến thường gây lỗi không hội tụ (convergence failure) hoặc ước lượng Heywood cases trong phần mềm AMOS/Mplus.",
+        "Nuốt chửng phương sai thực chất (Over-correction): Nhân tố phương pháp tiềm ẩn có thể hút luôn cả các phương sai thực chất có ý nghĩa, làm cho các mối quan hệ thực tế bị mất ý nghĩa thống kê.",
+        "Giải thích sai lệch khi không có cơ sở lý thuyết: Sử dụng ULMC như một chiếc hộp đen cứu cánh mà không hiểu rõ cơ chế phân bổ phương sai."
+      ],
+      "apa_reference": "Williams, L. J., Hartman, N., & Cavazotte, F. (2010). Method variance and marker variables: A review and comprehensive CFA approach. Organizational Research Methods, 13(3), 477-514. https://doi.org/10.1177/1094428110366036",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "unmeasured-latent-method-construct-ulmc",
