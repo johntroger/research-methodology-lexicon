@@ -30,7 +30,7 @@ import {
 import VisualDiffViewer from "@/components/VisualDiffViewer";
 import type { User } from "firebase/auth";
 
-const DEFAULT_ADMIN_PASSCODE = "lexicon2026";
+const ADMIN_PASSCODE = process.env.NEXT_PUBLIC_ADMIN_PASSCODE || "Tranthanhtung";
 
 export default function ModerationPage() {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
@@ -78,7 +78,7 @@ export default function ModerationPage() {
 
   const handleUnlockWithPasscode = (e: React.FormEvent) => {
     e.preventDefault();
-    if (passcode.trim() === DEFAULT_ADMIN_PASSCODE || passcode.trim() === "admin") {
+    if (passcode.trim() === ADMIN_PASSCODE) {
       setIsUnlocked(true);
       setPasscodeError(false);
     } else {
@@ -182,7 +182,7 @@ export default function ModerationPage() {
                 type="password"
                 value={passcode}
                 onChange={(e) => setPasscode(e.target.value)}
-                placeholder="Nhập mã PIN quản trị (Mặc định: lexicon2026)"
+                placeholder="Nhập mã PIN quản trị viên..."
                 className="w-full px-3.5 py-2 text-sm text-center tracking-widest rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               {passcodeError && (
