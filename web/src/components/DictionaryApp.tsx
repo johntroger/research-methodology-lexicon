@@ -768,18 +768,21 @@ export default function DictionaryApp({
             </button>
           </div>
 
-          {/* Dải nhảy nhanh A-Z */}
+          {/* Dải nhảy nhanh A-Z: Hiển thị đầy đủ toàn bộ chữ cái từ A đến Z */}
           {alphabetLetters.length > 0 && (
-            <div className="shrink-0 px-2 py-1.5 border-b border-slate-100 dark:border-slate-800/80 bg-slate-50/40 dark:bg-slate-900/40 flex items-center gap-1 overflow-x-auto text-[11px] font-mono scrollbar-none">
-              {alphabetLetters.map((l) => (
-                <button
-                  key={l}
-                  onClick={() => scrollToLetter(l)}
-                  className="px-1.5 py-0.5 rounded text-slate-500 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-slate-800 transition"
-                >
-                  {l}
-                </button>
-              ))}
+            <div className="shrink-0 px-2 py-1.5 border-b border-slate-100 dark:border-slate-800/80 bg-slate-50/60 dark:bg-slate-900/60">
+              <div className="flex flex-wrap items-center justify-between gap-y-1 text-[11px] font-mono">
+                {alphabetLetters.map((l) => (
+                  <button
+                    key={l}
+                    onClick={() => scrollToLetter(l)}
+                    className="w-5 h-5 sm:w-5.5 flex items-center justify-center rounded text-slate-500 hover:text-blue-600 dark:hover:text-blue-300 hover:bg-blue-100/70 dark:hover:bg-slate-800 transition font-medium"
+                    title={`Nhảy tới vần ${l}`}
+                  >
+                    {l}
+                  </button>
+                ))}
+              </div>
             </div>
           )}
 
