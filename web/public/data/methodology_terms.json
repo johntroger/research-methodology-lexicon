@@ -22108,116 +22108,173 @@
     {
       "id": "equivalence-trial",
       "term": "Equivalence Trial",
-      "vietnamese": "Thử nghiệm Tương đương",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Clinical Trial Methodology"
+      "vietnamese": "Thử nghiệm tương đương",
+      "vietnamese_variants": [
+        "Thử nghiệm lâm sàng tương đương",
+        "Thiết kế nghiên cứu tương đương sinh học"
       ],
-      "core_definition": "Chứng minh hai phương pháp điều trị không khác biệt nhau trong một khoảng biên độ hẹp định trước.",
-      "seminal_citation": "Greene et al. (2008)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Clinical Trial Methodology & Biostatistics",
+        "Experimental Design"
+      ],
+      "core_definition": "Equivalence Trial là một thiết kế thử nghiệm ngẫu nhiên có đối chứng (RCT) nhằm chứng minh rằng một can thiệp hoặc phương pháp điều trị mới không tốt hơn cũng không kém hơn phương pháp đối chứng hiện hành vượt quá một biên độ tương đương lâm sàng định trước (equivalence margin, \\pm \\delta).",
+      "seminal_citation": "Piaggio, G., Elbourne, D. R., Pocock, S. J., Evans, S. J., & Altman, D. G. (2012). Reporting of noninferiority and equivalence randomized trials: Extension of the CONSORT 2010 statement. JAMA, 308(24), 2594-2604.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Equivalence Trial according to Greene et al. (2008).",
       "domain_tags_en": [
         "Clinical Trial Methodology"
-      ]
+      ],
+      "category": "Clinical Trial Methodology & Biostatistics",
+      "operational_mechanism": "Khác với thử nghiệm vượt trội (Superiority Trial) đặt giả thuyết không $H_0: \\mu_T = \\mu_C$, thử nghiệm tương đương đặt hai giả thuyết một phía đồng thời (Two One-Sided Tests - TOST): $H_{01}: \\mu_T - \\mu_C \\le -\\delta$ và $H_{02}: \\mu_T - \\mu_C \\ge \\delta$. Can thiệp được kết luận là tương đương khi và chỉ khi toàn bộ Khoảng tin cậy 95% hoặc 90% của hiệu số tác động nằm trọn vẹn bên trong khoảng ranh giới $[-\\delta, +\\delta]$.",
+      "benchmarks": "Chuẩn mực báo cáo CONSORT for Equivalence Trials: (1) Biên độ tương đương $\\delta$ phải được xác định và bảo vệ tiên nghiệm (a priori) dựa trên cơ sở lâm sàng vững chắc; (2) Phải phân tích song song cả hai mẫu: Mẫu theo đề cương (Per-Protocol - PP) và Mẫu theo ý định điều trị (Intention-To-Treat - ITT); (3) Cỡ mẫu đòi hỏi lớn hơn đáng kể so với thử nghiệm vượt trội thông thường.",
+      "pitfalls": "Chỉ dựa vào phân tích ITT (trong thử nghiệm tương đương, sự không tuân thủ điều trị làm mờ nhạt sự khác biệt giữa hai nhóm, dễ dẫn đến kết luận tương đương giả tạo); chọn biên độ $\\delta$ quá rộng để ép kết quả đạt tương đương.",
+      "apa_reference": "Piaggio, G., Elbourne, D. R., Pocock, S. J., Evans, S. J., & Altman, D. G. (2012). Reporting of noninferiority and equivalence randomized trials: Extension of the CONSORT 2010 statement. JAMA, 308(24), 2594–2604. https://doi.org/10.1001/jama.2012.87802",
+      "is_flagship": true
     },
     {
       "id": "equivalent-models",
       "term": "Equivalent Models",
-      "vietnamese": "Hiện tượng có nhiều mô hình có cấu trúc mũi tên khác nhau nhưng sinh ra ma trận hiệp phương sai dự báo giống hệt nhau 100% (và do đó có chỉ số Fit index giống hệt nhau).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "CB-SEM",
-        "Causal Inference"
+      "vietnamese": "Các mô hình tương đương",
+      "vietnamese_variants": [
+        "Mô hình tương đương thống kê",
+        "Mô hình tương đương toán học trong SEM"
       ],
-      "core_definition": "Hiện tượng có nhiều mô hình có cấu trúc mũi tên khác nhau nhưng sinh ra ma trận hiệp phương sai dự báo giống hệt nhau 100% (và do đó có chỉ số Fit index giống hệt nhau).",
-      "seminal_citation": "Kline (2023); Kline (2023)",
-      "tier": "index",
+      "domain_tags": [
+        "Structural Equation Modeling (CB-SEM)",
+        "Psychometrics"
+      ],
+      "core_definition": "Equivalent Models trong Mô hình phương trình cấu trúc (CB-SEM) là tập hợp hai hoặc nhiều mô hình cấu trúc có cấu hình đường dẫn nhân quả khác biệt nhau về mặt lý thuyết nhưng lại tạo ra ma trận hiệp phương sai tái tạo $\\hat{\\Sigma}$ hoàn toàn giống hệt nhau đối với bất kỳ tập dữ liệu nào, dẫn đến cùng một giá trị $\\chi^2$, cùng bậc tự do ($df$) và toàn bộ các chỉ số độ phù hợp (fit indices) hoàn toàn trùng khớp.",
+      "seminal_citation": "MacCallum, R. C., Wegener, D. T., Uchino, B. N., & Fabrigar, L. R. (1993). The problem of equivalent models in applications of covariance structure analysis. Psychological Bulletin, 114(1), 185-199.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Equivalent Models according to Kline (2023); Kline (2023).",
       "domain_tags_en": [
         "CB-SEM",
         "Causal Inference"
-      ]
+      ],
+      "category": "Structural Equation Modeling (CB-SEM)",
+      "operational_mechanism": "Vận hành theo Quy tắc hoán đổi Lee-Hershberger (Lee-Hershberger replacement rules): Hai mô hình là tương đương nếu một khối các đường dẫn nhân quả giữa các biến số có thể được thay thế bằng đường dẫn đảo ngược hoặc tương quan hai chiều mà không làm thay đổi các mối quan hệ độc lập có điều kiện ($d$-separation) của toàn mạng lưới. Điều này chứng minh rằng chỉ số độ phù hợp tuyệt hảo ($CFI > 0.95$, $RMSEA < 0.05$) không hề chứng minh mô hình của nhà nghiên cứu là duy nhất đúng.",
+      "benchmarks": "Chuẩn mực bài báo Q1 (MacCallum et al., 1993; Kline, 2016): (1) Nhà nghiên cứu bắt buộc phải thừa nhận sự tồn tại của các mô hình tương đương tiềm tàng; (2) Phải đưa ra các lập luận lý thuyết hoặc trình tự thời gian thuyết phục để giải thích tại sao mô hình được chọn ưu việt hơn các mô hình tương đương khác; (3) Khuyến nghị kiểm tra chéo trên mẫu độc lập thứ hai (cross-validation).",
+      "pitfalls": "Ngụy biện khẳng định hệ quả (affirming the consequent) khi cho rằng các chỉ số fit indices cao là bằng chứng chứng minh chiều nhân quả đã thiết lập là đúng; bỏ qua khả năng tồn tại mô hình tương đương có ý nghĩa kinh tế/xã hội đối lập hoàn toàn.",
+      "apa_reference": "MacCallum, R. C., Wegener, D. T., Uchino, B. N., & Fabrigar, L. R. (1993). The problem of equivalent models in applications of covariance structure analysis. Psychological Bulletin, 114(1), 185–199. https://doi.org/10.1037/0033-2909.114.1.185",
+      "is_flagship": true
     },
     {
       "id": "erosion-measures",
-      "term": "Erosion measures",
-      "vietnamese": "Đo lường xói mòn (dấu vết hao mòn)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Erosion Measures",
+      "vietnamese": "Thước đo độ hao mòn vật lý",
+      "vietnamese_variants": [
+        "Biện pháp đo lường hao mòn tự nhiên",
+        "Dấu vết hao mòn phi can thiệp"
       ],
-      "core_definition": "Đo lường dựa trên mức độ hao mòn vật lý (ví dụ: độ mòn gạch sàn viện bảo tàng).",
-      "seminal_citation": "Schindler (2022)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Unobtrusive Methods & Data Collection",
+        "Observational Research"
+      ],
+      "core_definition": "Erosion Measures là một kỹ thuật đo lường phi can thiệp (Unobtrusive Measures) do Webb và cộng sự (1966) định danh, đo lường mức độ sử dụng, hành vi hoặc sự quan tâm của con người đối với một không gian hoặc đối tượng thông qua việc quan sát mức độ hao mòn, mài mòn vật lý tự nhiên của vật liệu theo thời gian mà đối tượng hoàn toàn không hay biết.",
+      "seminal_citation": "Webb, E. J., Campbell, D. T., Schwartz, R. D., & Sechrest, L. (1966). Unobtrusive measures: Nonreactive research in the social sciences. Rand McNally.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Erosion measures according to Schindler (2022).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Unobtrusive Methods & Data Collection",
+      "operational_mechanism": "Nhà nghiên cứu gián tiếp đo lường tần suất hành vi thông qua sự biến đổi vật chất: (1) Độ mòn của gạch lát sàn xung quanh các tủ trưng bày trong viện bảo tàng để xác định hiện vật nào thu hút khách tham quan nhất; (2) Độ sờn rách, nếp gấp trang hoặc vết bẩn của các cuốn sách trong thư viện để đo lường mức độ phổ biến thực tế của tài liệu; (3) Tần suất thay thế phụ tùng hoặc độ mòn của nút bấm máy móc để đo lường công suất vận hành.",
+      "benchmarks": "Chuẩn mực phương pháp luận: (1) Loại bỏ 100% hiệu ứng phản ứng của người tham gia (Hawthorne effect và Social desirability bias); (2) Phải kết hợp tam giác đạc phương pháp (triangulation) với các thước đo khảo sát hoặc phỏng vấn; (3) Kiểm soát các biến nhiễu vật lý (như sự khác biệt về chất liệu gạch hoặc sự tác động của thời tiết môi trường).",
+      "pitfalls": "Suy diễn nhân quả sai lệch do các yếu tố nhiễu không quan sát được (ví dụ: sàn gạch bị mòn ở một góc bảo tàng đơn giản là vì gần lối vào nhà vệ sinh chứ không phải vì bức tranh ở đó được yêu thích); không thể áp dụng cho các hành vi diễn ra trên không gian số nếu không có chỉ số tương đương.",
+      "apa_reference": "Webb, E. J., Campbell, D. T., Schwartz, R. D., & Sechrest, L. (1966). Unobtrusive measures: Nonreactive research in the social sciences. Rand McNally.",
+      "is_flagship": true
     },
     {
       "id": "esem",
-      "term": "ESEM",
-      "vietnamese": "Mô hình Phương trình Cấu trúc Khám phá",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Advanced Psychometrics",
-        "SEM"
+      "term": "Exploratory Structural Equation Modeling (ESEM)",
+      "vietnamese": "Mô hình phương trình cấu trúc khám phá (ESEM)",
+      "vietnamese_variants": [
+        "Mô hình ESEM Marsh",
+        "SEM khám phá kết hợp xoay nhân tố"
       ],
-      "core_definition": "Asparouhov & Muthén, 2009) (Exploratory Structural Equation Modeling.",
-      "seminal_citation": "So sánh Model Fit giữa CFA truyền thống và ESEM; ESEM thường cho hệ số tương quan giữa các nhân tố thực tế hơn và chỉ số fit vượt trội (CFI tăng, RMSEA giảm).",
-      "tier": "acronym",
+      "domain_tags": [
+        "Advanced Psychometrics & Structural Equation Modeling",
+        "Latent Variable Modeling"
+      ],
+      "core_definition": "Exploratory Structural Equation Modeling (ESEM, do Herbert W. Marsh và cộng sự phát triển năm 2009) là một bước đột phá phương pháp luận dung hợp tính linh hoạt của Phân tích nhân tố khám phá (EFA) với sự chặt chẽ của Mô hình phương trình cấu trúc (CFA/SEM), giải quyết triệt để vấn đề CFA truyền thống đặt giả định phi thực tế khi ép tất cả các hệ số tải chéo (cross-loadings) bằng 0.",
+      "seminal_citation": "Marsh, H. W., Muthén, B., Asparouhov, T., Lüdtke, O., Robitzsch, A., Morin, A. J., & Trautwein, U. (2009). Exploratory structural equation modeling, integrating CFA and EFA: Application to students' evaluations of university teaching. Structural Equation Modeling, 16(3), 439-476.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Nguồn ghi ngưỡng",
       "core_definition_en": "Academic definition of ESEM according to So sánh Model Fit giữa CFA truyền thống và ESEM; ESEM thường cho hệ số tương quan giữa các nhân tố thực tế hơn và chỉ số fit vượt trội (CFI tăng, RMSEA giảm)..",
       "domain_tags_en": [
         "Advanced Psychometrics",
         "SEM"
-      ]
+      ],
+      "category": "Advanced Psychometrics & Structural Equation Modeling",
+      "operational_mechanism": "Trong ESEM, các biến tiềm ẩn được phép có hệ số tải chéo tự do lên tất cả các chỉ báo thông qua các kỹ thuật xoay nhân tố xiên (Target rotation hoặc Geomin rotation), đồng thời mô hình vẫn tích hợp đầy đủ các tính năng mạnh mẽ của SEM: (1) Đánh giá các chỉ số độ phù hợp toàn diện (CFI, TLI, RMSEA); (2) Ước lượng các đường dẫn cấu trúc hồi quy giữa các biến tiềm ẩn đã khử sai số; (3) Kiểm định tính bất biến đo lường đa nhóm (Measurement Invariance) một cách khách quan.",
+      "benchmarks": "Chuẩn mực nghiên cứu tâm trắc học và quản trị hiện đại (Marsh et al., 2014): (1) ESEM thường đạt độ phù hợp mô hình vượt trội hơn hẳn CFA khi các cấu trúc tâm lý có sự trùng lặp ngữ nghĩa tự nhiên; (2) Ngăn ngừa hiện tượng thổi phồng sai lệch hệ số tương quan giữa các biến tiềm ẩn ($r > 0.80$ trong CFA thường giảm xuống mức thực chất trong ESEM); (3) Cần báo cáo ma trận hệ số tải đã xoay kèm sai số chuẩn Bootstrap.",
+      "pitfalls": "Lạm dụng ESEM như một biện pháp chữa cháy khi mô hình CFA thất bại mà không có cơ sở lý thuyết về sự tồn tại của tải chéo; giải thích phức tạp hơn CFA khi có quá nhiều tải chéo nhỏ gây nhiễu.",
+      "apa_reference": "Marsh, H. W., Muthén, B., Asparouhov, T., Lüdtke, O., Robitzsch, A., Morin, A. J., & Trautwein, U. (2009). Exploratory structural equation modeling, integrating CFA and EFA: Application to students' evaluations of university teaching. Structural Equation Modeling: A Multidisciplinary Journal, 16(3), 439–476. https://doi.org/10.1080/10705510903008220",
+      "is_flagship": true
     },
     {
       "id": "espoused-theory-vs-theory-in-use",
       "term": "Espoused Theory vs. Theory-in-Use",
-      "vietnamese": "Lý thuyết Tuyên bố vs. Lý thuyết Sử dụng Thực tế",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Action Science"
+      "vietnamese": "Lý thuyết phát biểu so với Lý thuyết áp dụng",
+      "vietnamese_variants": [
+        "Lý thuyết tuyên bố và lý thuyết thực hành Argyris & Schön",
+        "Hành động thực tế và phát ngôn chính thức"
       ],
-      "core_definition": "Những gì con người nói họ tin vs. Những gì thực sự dẫn dắt hành vi của họ.",
-      "seminal_citation": "Argyris & Schön (1974)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Action Science & Organizational Learning",
+        "Qualitative Research"
+      ],
+      "core_definition": "Espoused Theory vs. Theory-in-Use là cặp khái niệm kinh điển trong Khoa học Hành động (Action Science) do Chris Argyris và Donald Schön sáng lập, phân định sự mâu thuẫn sâu sắc giữa những gì các cá nhân hoặc tổ chức công khai tuyên bố là niềm tin, giá trị và nguyên tắc chỉ đạo hành động của họ (Espoused Theory) so với các quy tắc, giả định ngầm ẩn thực sự chi phối hành vi thực tế của họ trong đời sống (Theory-in-Use).",
+      "seminal_citation": "Argyris, C., & Schön, D. A. (1974). Theory in practice: Increasing professional effectiveness. Jossey-Bass.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Espoused Theory vs. Theory-in-Use according to Argyris & Schön (1974).",
       "domain_tags_en": [
         "Action Science"
-      ]
+      ],
+      "category": "Action Science & Organizational Learning",
+      "operational_mechanism": "Phương pháp luận điều tra thực nghiệm: (1) Thu thập 'Lý thuyết phát biểu' thông qua các tài liệu tuyên bố sứ mệnh, phỏng vấn chính thức hoặc câu trả lời khảo sát; (2) Thu thập 'Lý thuyết áp dụng' thông qua quan sát tham dự vi mô, ghi âm các cuộc họp căng thẳng và phân tích kỹ thuật 'Cột thứ hai' (Left-Hand Column - ghi lại những gì người tham gia thực sự nghĩ nhưng không dám nói); (3) Đối chiếu hai luồng dữ liệu để làm bộc lộ khoảng cách bất nhất (incongruence) và các cơ chế phòng thủ tâm lý.",
+      "benchmarks": "Đạt chuẩn nghiên cứu định tính và quản trị tổ chức: (1) Nhà nghiên cứu không chấp nhận một cách ngây thơ các phát biểu chính thức của ban lãnh đạo; (2) Nhận diện Mô hình Hành vi loại I (Model I - kiểm soát đơn phương, tự vệ) chi phối lý thuyết áp dụng của hầu hết các tổ chức; (3) Hướng dẫn đối tượng nhận thức sự chênh lệch để kích hoạt quá trình học tập vòng kép (Double-loop learning).",
+      "pitfalls": "Chỉ dựa vào dữ liệu bảng hỏi tự khai (self-report survey) để nghiên cứu hành vi lãnh đạo (khi đó nhà nghiên cứu chỉ thu thập được lý thuyết phát biểu chứ không bao giờ chạm tới được lý thuyết áp dụng thực tế).",
+      "apa_reference": "Argyris, C., & Schön, D. A. (1974). Theory in practice: Increasing professional effectiveness. Jossey-Bass.",
+      "is_flagship": true
     },
     {
       "id": "essential-tau-equivalence",
       "term": "Essential Tau-Equivalence",
-      "vietnamese": "Giả định Tau-tương đương thiết yếu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Psychometrics"
+      "vietnamese": "Tính tương đương Tau thiết yếu",
+      "vietnamese_variants": [
+        "Giả định tương đương Tau",
+        "Tiền đề toán học của hệ số Cronbach Alpha"
       ],
-      "core_definition": "tất cả các câu hỏi trong thang đo đều có hệ số tải nhân tố bằng nhau.",
-      "seminal_citation": "Raykov (1997)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Psychometrics & Classical Test Theory",
+        "Reliability Theory"
+      ],
+      "core_definition": "Essential Tau-Equivalence (Tính tương đương Tau thiết yếu) là một giả định toán học nền tảng trong Lý thuyết trắc nghiệm cổ điển (CTT), đòi hỏi tất cả các mục hỏi (items) trong cùng một thang đo phải đo lường cùng một cấu trúc tiềm ẩn duy nhất với độ nhạy và hệ số tải nhân tố hoàn toàn bằng nhau (equal factor loadings, $\\lambda_1 = \\lambda_2 = ... = \\lambda_k$), nhưng cho phép các mục hỏi có thể có phương sai sai số đo lường riêng biệt và điểm trung bình khác nhau.",
+      "seminal_citation": "Novick, M. R., & Lewis, C. (1967). Coefficient alpha and the reliability of composite measurements. Psychometrika, 32(1), 1-13.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Essential Tau-Equivalence according to Raykov (1997).",
       "domain_tags_en": [
         "Psychometrics"
-      ]
+      ],
+      "category": "Psychometrics & Classical Test Theory",
+      "operational_mechanism": "Ý nghĩa toán học cốt tử: Giả định này là điều kiện cần và đủ để hệ số tin cậy Cronbach's alpha ($\\alpha$) phản ánh chính xác 100% độ tin cậy thực tế của thang đo. Nếu giả định này bị vi phạm (tức là mô hình congeneric có các hệ số tải $\\lambda_i$ khác nhau - hiện tượng phổ biến trong 99% thang đo khoa học xã hội), Cronbach's alpha sẽ trở thành cận dưới và đánh giá thấp (underestimate) độ tin cậy thực tế, khi đó Độ tin cậy tổng hợp (Composite Reliability - CR) hoặc Hệ số McDonald's Omega ($\\omega$) là ước lượng chuẩn xác hơn.",
+      "benchmarks": "Kiểm định thực nghiệm trong CB-SEM: (1) Thiết lập mô hình CFA ràng buộc tất cả các hệ số tải bằng nhau ($M_{tau}$); (2) So sánh với mô hình không hạn chế ($M_{congeneric}$) qua kiểm định sai số tỷ số hợp lý $\\Delta \\chi^2$; (3) Nếu $p < 0.05$, giả định tương đương Tau bị bác bỏ, bắt buộc bài báo phải chuyển sang báo cáo McDonald's $\\omega$ và CR thay vì chỉ dùng Cronbach's alpha.",
+      "pitfalls": "Mặc định sử dụng Cronbach's alpha mà không kiểm tra tính tương đương Tau thiết yếu; lờ đi sự chênh lệch lớn giữa các hệ số tải (ví dụ: một câu có tải 0.45 và một câu có tải 0.88 thì không thể thỏa mãn tương đương Tau).",
+      "apa_reference": "Novick, M. R., & Lewis, C. (1967). Coefficient alpha and the reliability of composite measurements. Psychometrika, 32(1), 1–13. https://doi.org/10.1007/BF02289400",
+      "is_flagship": true
     },
     {
       "id": "ethnography",
@@ -22263,110 +22320,170 @@
     {
       "id": "european-social-survey-ess",
       "term": "European Social Survey (ESS)",
-      "vietnamese": "Khảo sát Xã hội Châu Âu ESS",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Comparative Social Science"
+      "vietnamese": "Khảo sát xã hội Châu Âu (ESS)",
+      "vietnamese_variants": [
+        "Chương trình khảo sát ESS",
+        "Cơ sở dữ liệu xã hội học so sánh Châu Âu"
       ],
-      "core_definition": "Dự án khảo sát thái độ, niềm tin và hành vi chuẩn mực cao tại hơn 30 quốc gia Châu Âu.",
-      "seminal_citation": "Jowell et al. (2003)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Comparative Social Science & Survey Methodology",
+        "Cross-National Research"
+      ],
+      "core_definition": "European Social Survey (ESS) là một cơ sở hạ tầng nghiên cứu khoa học xã hội so sánh xuyên quốc gia quy mô lớn được thành lập năm 2001 (ERIC), thực hiện khảo sát phỏng vấn trực tiếp định kỳ hai năm một lần trên hơn 30 quốc gia Châu Âu, được công nhận toàn cầu là chuẩn mực vàng về độ chặt chẽ của phương pháp luận khảo sát quốc tế.",
+      "seminal_citation": "Jowell, R., Roberts, C., Fitzgerald, R., & Eva, G. (Eds.). (2007). Measuring attitudes cross-nationally: Lessons from the European Social Survey. SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of European Social Survey (ESS) according to Jowell et al. (2003).",
       "domain_tags_en": [
         "Comparative Social Science"
-      ]
+      ],
+      "category": "Comparative Social Science & Survey Methodology",
+      "operational_mechanism": "Hệ thống quy chuẩn phương pháp luận khắt khe nhất thế giới: (1) Thiết kế chọn mẫu xác suất nghiêm ngặt (strict random probability sampling), cấm tuyệt đối chọn mẫu thuận tiện hoặc định ngạch; (2) Quy trình dịch thuật và đối soát câu hỏi TRAPD (Translation, Review, Adjudication, Pretesting, Documentation) đảm bảo tính tương đương ngữ nghĩa xuyên ngôn ngữ; (3) Tỷ lệ phản hồi mục tiêu $\\ge 70\\%$; (4) Công khai toàn bộ dữ liệu thô, biến số cân bằng trọng số (design weights, post-stratification weights) và dữ liệu tiến trình (paradata) phục vụ nghiên cứu thứ cấp.",
+      "benchmarks": "Chuẩn mực sử dụng dữ liệu ESS trong các bài báo Q1 (ESR, ASR, CPS): (1) Bắt buộc phải áp dụng trọng số kết hợp (anweight = dweight $\\times$ pweight) khi phân tích gộp nhiều quốc gia; (2) Kiểm định tính bất biến đo lường đa nhóm (Configural, Metric, Scalar Invariance) trước khi so sánh điểm số trung bình giữa các nước; (3) Mô hình hóa bằng HLM/Multilevel Regression với các cá nhân ở cấp 1 và các quốc gia ở cấp 2.",
+      "pitfalls": "Bỏ qua việc sử dụng các biến trọng số dẫn đến ước lượng sai số chuẩn bị lệch nghiêm trọng; so sánh trực tiếp điểm trung bình giữa các quốc gia khi thang đo chưa đạt mức bất biến vô hướng (scalar invariance).",
+      "apa_reference": "Jowell, R., Roberts, C., Fitzgerald, R., & Eva, G. (Eds.). (2007). Measuring attitudes cross-nationally: Lessons from the European Social Survey. SAGE Publications. https://doi.org/10.4135/9781849209458",
+      "is_flagship": true
     },
     {
       "id": "evaluation-design",
-      "term": "Evaluation design",
-      "vietnamese": "Thiết kế hỗn hợp đánh giá — Nghiên cứu hỗn hợp đánh giá mức độ thành công và tiến trình thực thi của một chính sách hoặc chương trình can thiệp.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Evaluation Design",
+      "vietnamese": "Thiết kế nghiên cứu đánh giá",
+      "vietnamese_variants": [
+        "Thiết kế lượng giá chương trình",
+        "Khuôn khổ nghiên cứu đánh giá can thiệp chính sách"
       ],
-      "core_definition": "Thiết kế hỗn hợp đánh giá — Nghiên cứu hỗn hợp đánh giá mức độ thành công và tiến trình thực thi của một chính sách hoặc chương trình can thiệp.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Program Evaluation & Applied Research",
+        "Public Policy"
+      ],
+      "core_definition": "Evaluation Design là cấu trúc phương pháp luận có hệ thống nhằm thu thập và phân tích dữ liệu để thẩm định một cách khoa học về giá trị, hiệu quả, tính bền vững, tác động và tính phù hợp của một chương trình can thiệp xã hội, chính sách công hoặc sáng kiến tổ chức, hướng tới việc cung cấp căn cứ ra quyết định cho các bên liên quan.",
+      "seminal_citation": "Rossi, P. H., Lipsey, M. W., & Henry, G. T. (2019). Evaluation: A systematic approach (8th ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Evaluation design according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Program Evaluation & Applied Research",
+      "operational_mechanism": "Vận hành theo mô hình Logic (Logic Model: Đầu vào -> Hoạt động -> Đầu ra -> Kết quả -> Tác động lâu dài). Được chia thành hai nhánh chính: (1) Đánh giá tiến trình/hình thành (Formative/Process evaluation) theo dõi việc thực thi và xác định các nút thắt vận hành; (2) Đánh giá kết quả/tổng kết (Summative/Outcome evaluation) đo lường tác động thực sự bằng các thiết kế thực nghiệm ngẫu nhiên (RCT) hoặc bán thực nghiệm (DID, RDD, Propensity Score Matching) để loại bỏ các xu hướng phát triển tự nhiên ngoài can thiệp.",
+      "benchmarks": "Tuân thủ tiêu chuẩn đánh giá của Ủy ban Hỗ trợ Phát triển OECD-DAC: (1) Tính phù hợp (Relevance); (2) Tính liên kết (Coherence); (3) Tính hiệu quả (Effectiveness); (4) Tính hiệu năng (Efficiency); (5) Tác động (Impact); (6) Tính bền vững (Sustainability); (7) Đảm bảo tính độc lập và đạo đức nghiên cứu với các bên thụ hưởng yếu thế.",
+      "pitfalls": "Nhầm lẫn giữa các chỉ số đầu ra bề mặt (Outputs - số lượng người tham gia tập huấn) với tác động thực chất (Impact - sự thay đổi thu nhập hoặc hành vi lâu dài); thiếu nhóm đối chứng hợp lệ khiến mọi sự cải thiện tự nhiên của xã hội đều được gán nhầm cho thành công của dự án.",
+      "apa_reference": "Rossi, P. H., Lipsey, M. W., & Henry, G. T. (2019). Evaluation: A systematic approach (8th ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "event-study-methodology-in-finance",
       "term": "Event Study Methodology in Finance",
-      "vietnamese": "Phương pháp Nghiên cứu Sự kiện Tài chính",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Financial Econometrics"
+      "vietnamese": "Phương pháp nghiên cứu sự kiện trong tài chính",
+      "vietnamese_variants": [
+        "Thiết kế nghiên cứu sự kiện Fama-Fisher-Jensen-Roll",
+        "Phân tích lợi nhuận bất thường tích lũy CAR"
       ],
-      "core_definition": "Đo lường tác động của sự kiện thông tin lên giá cổ phiếu qua Lợi nhuận Bất thường Tích lũy CAR.",
-      "seminal_citation": "Fama et al. (1969), MacKinlay (1997)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Financial Econometrics & Corporate Finance",
+        "Empirical Asset Pricing"
+      ],
+      "core_definition": "Event Study Methodology in Finance là một phương pháp kinh tế lượng bán thực nghiệm do Fama, Fisher, Jensen và Roll (1969) tiên phong, đo lường tác động tài chính của một sự kiện kinh tế cụ thể (như thông báo sáp nhập mua lại M&A, phát hành cổ phiếu, công bố lợi nhuận, bê bối gian lận kế toán) lên giá trị thị trường của doanh nghiệp thông qua việc phân tích tỷ suất sinh lợi bất thường của cổ phiếu.",
+      "seminal_citation": "Fama, E. F., Fisher, L., Jensen, M. C., & Roll, R. (1969). The adjustment of stock prices to new information. International Economic Review, 10(1), 1-21.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Event Study Methodology in Finance according to Fama et al. (1969), MacKinlay (1997).",
       "domain_tags_en": [
         "Financial Econometrics"
-      ]
+      ],
+      "category": "Financial Econometrics & Corporate Finance",
+      "operational_mechanism": "Quy trình thực hiện chuẩn 4 bước: (1) Xác định ngày sự kiện ($t = 0$) và cửa sổ sự kiện (Event Window, ví dụ: $[-1, +1]$ hoặc $[-2, +2]$ ngày); (2) Thiết lập cửa sổ ước lượng (Estimation Window, ví dụ: $[-250, -21]$ ngày) trước sự kiện để ước lượng mô hình sinh lợi bình thường (Market Model: $R_{it} = \\alpha_i + \\beta_i R_{mt} + \\varepsilon_{it}$); (3) Tính Lợi nhuận bất thường (Abnormal Return, $AR_{it} = R_{it} - (\\hat{\\alpha}_i + \\hat{\\beta}_i R_{mt})$); (4) Tính Lợi nhuận bất thường tích lũy (Cumulative Abnormal Return, $CAR_i = \\sum AR_{it}$) và Lợi nhuận bất thường tích lũy bình quân toàn mẫu (CAAR), sau đó kiểm định ý nghĩa thống kê bằng Patell test, Boehmer test (BMP) hoặc Corrado rank test.",
+      "benchmarks": "Chuẩn mực bài báo tài chính hàng đầu (JF, JFE, RFS): (1) Cửa sổ sự kiện phải ngắn để cô lập tối đa tác động của sự kiện, tránh nhiễu thông tin khác; (2) Bắt buộc phải áp dụng các kiểm định có hiệu chỉnh phương sai thay đổi do sự kiện (event-induced volatility) như Boehmer et al. (1991) BMP test; (3) Báo cáo kiểm định phi tham số (Corrado rank test) để đề phòng phân phối lợi nhuận không chuẩn.",
+      "pitfalls": "Hiện tượng rò rỉ thông tin trước ngày công bố chính thức làm mất tính chuẩn xác của ngày $t=0$; cửa sổ sự kiện quá dài khiến các biến cố ngẫu nhiên khác xen vào làm sai lệch kết luận.",
+      "apa_reference": "Fama, E. F., Fisher, L., Jensen, M. C., & Roll, R. (1969). The adjustment of stock prices to new information. International Economic Review, 10(1), 1–21. https://doi.org/10.2307/2525569",
+      "is_flagship": true
     },
     {
       "id": "evidence-gap-map-egm",
       "term": "Evidence Gap Map (EGM)",
-      "vietnamese": "Bản đồ Khoảng trống Bằng chứng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Evidence Synthesis"
+      "vietnamese": "Bản đồ khoảng trống bằng chứng (EGM)",
+      "vietnamese_variants": [
+        "Ma trận tổng hợp bằng chứng khoa học EGM",
+        "Bản đồ khoảng trống y văn Campbell"
       ],
-      "core_definition": "Biểu đồ hiển thị trực quan các lĩnh vực đã có nhiều bằng chứng và các khoảng trống chưa có nghiên cứu.",
-      "seminal_citation": "Snilstveit et al. (2016)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Evidence Synthesis & Systematic Reviews",
+        "Public Policy"
+      ],
+      "core_definition": "Evidence Gap Map (EGM) là một công cụ tổng hợp bằng chứng trực quan và có hệ thống do Tổ chức Hợp tác Campbell (Campbell Collaboration) và 3ie phát triển, lập bản đồ toàn bộ các nghiên cứu thực nghiệm và tổng quan hệ thống hiện có trên một ma trận hai chiều (giao thoa giữa các loại hình can thiệp và các nhóm kết quả đầu ra), nhằm làm nổi bật cả các cụm bằng chứng dày đặc lẫn các 'khoảng trống bằng chứng tuyệt đối' trong một lĩnh vực chính sách.",
+      "seminal_citation": "S цит, H., & Waddington, H. (2019). 3ie evidence gap maps: A starting point for evidence-informed policy and strategic research agendas. Journal of Clinical Epidemiology, 114, 122-132.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Evidence Gap Map (EGM) according to Snilstveit et al. (2016).",
       "domain_tags_en": [
         "Evidence Synthesis"
-      ]
+      ],
+      "category": "Evidence Synthesis & Systematic Reviews",
+      "operational_mechanism": "Cấu trúc ma trận hình học trực quan: Trục tung (Y) đại diện cho danh mục các can thiệp chính sách cụ thể (ví dụ: trợ cấp tiền mặt, đào tạo nghề, bảo hiểm y tế); Trục hoành (X) đại diện cho các nhóm kết quả đo lường (thu nhập, sức khỏe, bình đẳng giới, tỷ lệ đến trường). Mỗi ô giao điểm hiển thị các bong bóng (bubbles) với kích thước tỷ lệ thuận với số lượng công trình nghiên cứu và màu sắc biểu thị độ tin cậy phương pháp luận (thấp, trung bình, cao theo chuẩn AMSTAR 2).",
+      "benchmarks": "Chuẩn mực Campbell Collaboration: (1) Tuân thủ quy trình tổng quan hệ thống minh bạch với chiến lược tìm kiếm đa cơ sở dữ liệu toàn diện; (2) Đánh giá chất lượng phương pháp luận của từng nghiên cứu đưa vào bản đồ; (3) Cung cấp nền tảng số hóa tương tác (interactive digital map) cho phép các nhà hoạch định chính sách lọc dữ liệu theo vùng địa lý và nhóm đối tượng thụ hưởng.",
+      "pitfalls": "Chỉ liệt kê sự hiện diện của bằng chứng mà không đánh giá chất lượng thực tế (dẫn đến việc một ô có nhiều nghiên cứu nhưng toàn nghiên cứu kém chất lượng); nhầm lẫn giữa bản đồ khoảng trống bằng chứng với phân tích tổng hợp meta-analysis (EGM không gộp cỡ tác động).",
+      "apa_reference": "Snilstveit, B., Vojtkova, M., Bhavsar, A., Stevenson, J., & Gaarder, M. (2016). Evidence & gap maps: A tool for promoting evidence synthesis and use. Strategic Review of Social Research, 1(1), 1–19.",
+      "is_flagship": true
     },
     {
       "id": "evidence-based-management-ebmgt",
       "term": "Evidence-Based Management (EBMgt)",
-      "vietnamese": "Quản trị Dựa trên Bằng chứng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Management Inquiry"
+      "vietnamese": "Quản trị dựa trên bằng chứng (EBMgt)",
+      "vietnamese_variants": [
+        "Thực hành quản trị dựa trên chứng cứ khoa học",
+        "Phong trào EBMgt Denise Rousseau"
       ],
-      "core_definition": "Ra quyết định quản lý dựa trên việc tổng hợp có phê phán 4 nguồn bằng chứng.",
-      "seminal_citation": "Rousseau (2006), Barends et al. (2014)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Management Inquiry & Decision Sciences",
+        "Strategic Management"
+      ],
+      "core_definition": "Evidence-Based Management (EBMgt, do Denise M. Rousseau và Trung tâm Quản trị Dựa trên Bằng chứng CEBMa tiên phong) là một phương pháp luận và triết lý ra quyết định quản trị có ý thức, rõ ràng và thận trọng dựa trên việc tích hợp bốn nguồn bằng chứng độc lập tốt nhất hiện có để nâng cao xác suất thành công của tổ chức.",
+      "seminal_citation": "Rousseau, D. M. (2006). Is there such a thing as 'evidence-based management'? Academy of Management Review, 31(2), 256-269.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Evidence-Based Management (EBMgt) according to Rousseau (2006), Barends et al. (2014).",
       "domain_tags_en": [
         "Management Inquiry"
-      ]
+      ],
+      "category": "Management Inquiry & Decision Sciences",
+      "operational_mechanism": "Quy trình tích hợp 6 bước (6As: Ask -> Acquire -> Appraise -> Aggregate -> Apply -> Assess) dựa trên 4 trụ cột bằng chứng: (1) Bằng chứng nghiên cứu khoa học tốt nhất (Best available scientific literature - từ các nghiên cứu thực nghiệm và phân tích tổng hợp Q1); (2) Bằng chứng thực tế nội bộ tổ chức (Organizational data - số liệu tài chính, nhân sự, hiệu suất); (3) Kinh nghiệm và năng lực phán đoán của nhà quản lý (Professional managerial expertise); (4) Giá trị và mối quan tâm của các bên liên quan chịu tác động (Stakeholder values and ethical concerns).",
+      "benchmarks": "Đạt chuẩn nghiên cứu ứng dụng quản trị: (1) Phản biện các trào lưu quản trị nhất thời (management fads) và các lời khuyên dựa trên kinh nghiệm cá nhân hời hợt; (2) Phân cấp độ mạnh của bằng chứng khoa học (Hierarchy of evidence: Phân tích tổng hợp/RCT ở đỉnh, ý kiến chuyên gia đơn lẻ ở đáy); (3) Đánh giá tính chuyển giao của bằng chứng quốc tế vào bối cảnh văn hóa và thể chế đặc thù.",
+      "pitfalls": "Coi thường dữ liệu nội bộ và sự phán đoán của các nhà quản trị thực chiến; lầm tưởng rằng có thể áp dụng rập khuôn kết quả nghiên cứu học thuật mà không tính đến các ràng buộc đạo đức và quyền lợi của người lao động.",
+      "apa_reference": "Rousseau, D. M. (2006). Is there such a thing as 'evidence-based management'? Academy of Management Review, 31(2), 256–269. https://doi.org/10.5465/amr.2006.20208679",
+      "is_flagship": true
     },
     {
       "id": "evocative-autoethnography-vs-analytic-autoethnography",
       "term": "Evocative Autoethnography vs. Analytic Autoethnography",
-      "vietnamese": "Tự Dân tộc học Gợi cảm vs. Tự Dân tộc học Phân tích",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Inquiry"
+      "vietnamese": "Tự truyện dân tộc học gợi cảm so với Tự truyện dân tộc học phân tích",
+      "vietnamese_variants": [
+        "Tự truyện dân tộc học Ellis-Bochner so với Anderson",
+        "Hai trường phái tự truyện nhân học"
       ],
-      "core_definition": "Tiếp cận tự sự thẩm mỹ lay động cảm xúc vs. Tiếp cận phân tích lý thuyết khái quát hóa.",
-      "seminal_citation": "Bochner & Ellis (2016), Anderson (2006)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Qualitative Inquiry & Autoethnography",
+        "Narrative Inquiry"
+      ],
+      "core_definition": "Evocative Autoethnography vs. Analytic Autoethnography là cuộc tranh luận phương pháp luận sâu sắc trong tự truyện dân tộc học. Trường phái Gợi cảm (Evocative - Carolyn Ellis & Arthur Bochner) coi tự truyện như một hình thức nghệ thuật cảm xúc, tập trung vào tiếng nói tự sự chủ quan, nỗi đau và trải nghiệm thẳm sâu để tạo sự đồng cảm nội tâm; ngược lại, Trường phái Phân tích (Analytic - Leon Anderson) yêu cầu tác giả vừa là người trong cuộc vừa phải sử dụng dữ liệu tự thân để phát triển, mở rộng và kiểm định các lý thuyết xã hội học khái quát.",
+      "seminal_citation": "Anderson, L. (2006). Analytic autoethnography. Journal of Contemporary Ethnography, 35(4), 373-395.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Evocative Autoethnography vs. Analytic Autoethnography according to Bochner & Ellis (2016), Anderson (2006).",
       "domain_tags_en": [
         "Qualitative Inquiry"
-      ]
+      ],
+      "category": "Qualitative Inquiry & Autoethnography",
+      "operational_mechanism": "Anderson (2006) đề xuất 5 tiêu chuẩn khắt khe cho Tự truyện dân tộc học phân tích: (1) Tác giả phải là một thành viên trọn vẹn trong nhóm nghiên cứu (Complete Member Researcher - CMR); (2) Thể hiện tính tự phản tư phân tích (Analytic reflexivity); (3) Sự hiện diện công khai của người nghiên cứu trong văn bản (Narrative visibility of researcher's self); (4) Đối thoại với các nguồn dữ liệu ngoài tự thân (Dialogue with informants beyond the self); (5) Cam kết đóng góp vào sự phát triển của lý thuyết xã hội học trừu tượng (Commitment to theoretical analysis).",
+      "benchmarks": "Chuẩn mực bài báo định tính Q1: (1) Xác định dứt khoát định vị theo trường phái nào trong phần nhận thức luận; (2) Nếu chọn phân tích: tác giả không được dừng lại ở việc kể chuyện tâm sự mà phải liên tục mã hóa và kết nối trải nghiệm cá nhân với các khái niệm lý thuyết; (3) Đảm bảo tính đạo đức quan hệ (relational ethics) đối với những người thân được đề cập trong tự truyện.",
+      "pitfalls": "Rơi vào sự tự luyến bản thân vô thưởng vô phạt (self-indulgence / narcissistic storytelling) mà không đem lại giá trị đóng góp tri thức nào cho cộng đồng khoa học; hoặc làm mất đi tính chân thực sống động của trải nghiệm khi cố gượng ép các thuật ngữ lý thuyết xơ cứng vào văn bản.",
+      "apa_reference": "Anderson, L. (2006). Analytic autoethnography. Journal of Contemporary Ethnography, 35(4), 373–395. https://doi.org/10.1177/0891241605280449",
+      "is_flagship": true
     },
     {
       "id": "exclusion-restriction",
@@ -22397,20 +22514,30 @@
     {
       "id": "expectation-maximization-algorithm-em",
       "term": "Expectation-Maximization Algorithm (EM)",
-      "vietnamese": "Thuật toán Kỳ vọng - Cực đại hóa EM",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Computational Statistics"
+      "vietnamese": "Thuật toán kỳ vọng cực đại (Thuật toán EM)",
+      "vietnamese_variants": [
+        "Thuật toán EM Dempster-Laird-Rubin",
+        "Thuật toán ước lượng cực đại biến tiềm ẩn"
       ],
-      "core_definition": "Thuật toán lặp ước lượng tham số hợp lý cực đại khi có dữ liệu khuyết.",
-      "seminal_citation": "Dempster, Laird & Rubin (1977)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Computational Statistics & Machine Learning",
+        "Missing Data Analysis"
+      ],
+      "core_definition": "Expectation-Maximization (EM) Algorithm là một thuật toán lặp số học kinh điển do Arthur Dempster, Nan Laird và Donald Rubin phát triển năm 1977, dùng để tìm ước lượng hợp lý cực đại (Maximum Likelihood Estimation - MLE) hoặc hậu nghiệm cực đại (MAP) của các tham số trong mô hình thống kê có chứa các biến tiềm ẩn không quan sát được (latent variables) hoặc dữ liệu bị khuyết thiếu (missing data).",
+      "seminal_citation": "Dempster, A. P., Laird, N. M., & Rubin, D. B. (1977). Maximum likelihood from incomplete data via the EM algorithm. Journal of the Royal Statistical Society: Series B (Methodological), 39(1), 1-22.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Expectation-Maximization Algorithm (EM) according to Dempster, Laird & Rubin (1977).",
       "domain_tags_en": [
         "Computational Statistics"
-      ]
+      ],
+      "category": "Computational Statistics & Machine Learning",
+      "operational_mechanism": "Thuật toán lặp qua 2 bước xen kẽ cho đến khi hàm log-likelihood hội tụ: (1) Bước E (Expectation step): Tính toán kỳ vọng của hàm log-likelihood của toàn bộ dữ liệu đối với phân phối có điều kiện của các biến tiềm ẩn $Z$ dựa trên dữ liệu quan sát được $X$ và giá trị tham số hiện tại $\\theta^{(t)}$: $Q(\\theta | \\theta^{(t)}) = E_{Z|X, \\theta^{(t)}} [\\log L(\\theta; X, Z)]$; (2) Bước M (Maximization step): Tìm giá trị tham số mới $\\theta^{(t+1)}$ nhằm tối đa hóa hàm $Q$: $\\theta^{(t+1)} = \\arg\\max_\\theta Q(\\theta | \\theta^{(t)})$. Thuật toán bảo đảm hàm hợp lý luôn không giảm sau mỗi chu kỳ lặp.",
+      "benchmarks": "Ứng dụng chuyên sâu trong mô hình hỗn hợp hữu hạn (Finite Mixture Models, FIMIX-PLS), thuật toán phân cụm Gaussian Mixture Models (GMM), và xử lý dữ liệu khuyết ngẫu nhiên (MAR): (1) Đảm bảo tính hội tụ tiệm cận về điểm cực trị cục bộ; (2) Báo cáo tiêu chí dừng hội tụ (thường là thay đổi log-likelihood $< 10^{-6}$); (3) Khởi tạo nhiều điểm xuất phát ngẫu nhiên khác nhau (multiple random starts) để tránh mắc kẹt tại cực trị cục bộ phụ.",
+      "pitfalls": "Tốc độ hội tụ có thể rất chậm khi tỷ lệ dữ liệu khuyết hoặc biến tiềm ẩn quá lớn; thuật toán chỉ đảm bảo tìm được cực trị cục bộ chứ không đảm bảo tìm được cực trị toàn cục.",
+      "apa_reference": "Dempster, A. P., Laird, N. M., & Rubin, D. B. (1977). Maximum likelihood from incomplete data via the EM algorithm. Journal of the Royal Statistical Society: Series B (Methodological), 39(1), 1–22. https://doi.org/10.1111/j.2517-6161.1977.tb01600.x",
+      "is_flagship": true
     },
     {
       "id": "experimental-design",
@@ -22455,21 +22582,31 @@
     },
     {
       "id": "experimental-research",
-      "term": "Experimental research",
-      "vietnamese": "Nghiên cứu thực nghiệm — Thiết kế định lượng kiểm định xem một can thiệp (treatment) cụ thể có tạo ra kết quả mong đợi hay không.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Experimental Research",
+      "vietnamese": "Nghiên cứu thực nghiệm",
+      "vietnamese_variants": [
+        "Thiết kế nghiên cứu thực nghiệm",
+        "Phương pháp thực nghiệm khoa học"
       ],
-      "core_definition": "Nghiên cứu thực nghiệm — Thiết kế định lượng kiểm định xem một can thiệp (treatment) cụ thể có tạo ra kết quả mong đợi hay không.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Experimental Design & Causal Inference",
+        "Quantitative Methods"
+      ],
+      "core_definition": "Experimental Research là phương pháp nghiên cứu khoa học thực chứng tiêu chuẩn vàng nhằm xác lập mối quan hệ nguyên nhân - kết quả (cause-and-effect relationship), trong đó nhà nghiên cứu chủ động thao túng một hoặc nhiều biến độc lập (can thiệp/xử lý), phân bổ ngẫu nhiên các đối tượng vào các nhóm thực nghiệm và nhóm đối chứng, đồng thời kiểm soát nghiêm ngặt toàn bộ các biến ngoại lai.",
+      "seminal_citation": "Campbell, D. T., & Stanley, J. C. (1963). Experimental and quasi-experimental designs for research. Rand McNally.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Experimental research according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Experimental Design & Causal Inference",
+      "operational_mechanism": "Cấu trúc dựa trên 3 trụ cột thiết yếu của Campbell & Stanley: (1) Thao túng biến độc lập (Manipulation of IV); (2) Phân bổ ngẫu nhiên (Random Assignment / Randomization) bảo đảm sự tương đương xác suất giữa các nhóm trước can thiệp; (3) Đo lường biến phụ thuộc (Measurement of DV) trước và sau can thiệp (Pretest-Posttest Control Group Design). Mô hình toán học: $Y_{ij} = \\mu + \\tau_j + \\varepsilon_{ij}$, trong đó $\\tau_j$ là tác động nhân quả thuần túy của can thiệp $j$.",
+      "benchmarks": "Chuẩn mực nghiên cứu thực nghiệm Q1: (1) Thực hiện kiểm tra thao tác (manipulation check) để chứng minh can thiệp đã kích hoạt đúng cơ chế tâm lý kỳ vọng; (2) Kiểm soát độ giá trị nội tại (Internal validity) chống lại các mối đe dọa như lịch sử, trưởng thành, kiểm tra lặp lại và hao hụt mẫu (attrition); (3) Đảm bảo độ giá trị sinh thái (Ecological validity) để kết quả có thể khái quát ra thế giới thực.",
+      "pitfalls": "Phân bổ nhóm không ngẫu nhiên (dẫn đến thiên lệch chọn mẫu); để lộ mục đích nghiên cứu gây ra đặc điểm đòi hỏi (demand characteristics); bỏ qua các quy chuẩn đạo đức về can thiệp lên con người (IRB consent).",
+      "apa_reference": "Campbell, D. T., & Stanley, J. C. (1963). Experimental and quasi-experimental designs for research. Rand McNally.",
+      "is_flagship": true
     },
     {
       "id": "experimenter-bias",
@@ -22514,36 +22651,48 @@
     },
     {
       "id": "expert-interview-alexander-bogner-wolfgang-menz",
-      "term": "Expert Interview (Alexander Bogner Wolfgang Menz)",
-      "vietnamese": "(`Phỏng vấn chuyên gia`): Phân loại mục tiêu phỏng vấn chuyên gia thành 3 loại: Khám phá (*Exploratory*), Hệ thống hóa tri thức (*Systematizing*), và Lý thuyết",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Expert Interview (Alexander Bogner & Wolfgang Menz)",
+      "vietnamese": "Phỏng vấn chuyên gia của Alexander Bogner & Wolfgang Menz",
+      "vietnamese_variants": [
+        "Phương pháp phỏng vấn chuyên gia Bogner-Menz",
+        "Phân loại phỏng vấn chuyên gia ba chiều"
       ],
-      "core_definition": "(`Phỏng vấn chuyên gia`): Phân loại mục tiêu phỏng vấn chuyên gia thành 3 loại: Khám phá (*Exploratory*), Hệ thống hóa tri thức (*Systematizing*), và Lý thuyết.",
-      "seminal_citation": "Flick et al. (2004)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Qualitative Data Collection & Expert Inquiry",
+        "Public Policy"
+      ],
+      "core_definition": "Expert Interview theo phân loại lý thuyết kinh điển của Alexander Bogner và Wolfgang Menz (2009) là phương pháp thu thập dữ liệu định tính chuyên sâu tiếp cận các cá nhân nắm giữ 'tri thức chuyên gia' (expert knowledge) - tri thức độc quyền được thể chế hóa gắn liền với vị thế chức năng của họ trong một lĩnh vực chuyên môn cụ thể.",
+      "seminal_citation": "Bogner, A., Littig, B., & Menz, W. (Eds.). (2009). Interviewing experts. Palgrave Macmillan.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Rác Markdown/bảng; mảnh trích",
       "core_definition_en": "Academic definition of Expert Interview (Alexander Bogner Wolfgang Menz) according to Flick et al. (2004).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Qualitative Data Collection & Expert Inquiry",
+      "operational_mechanism": "Bogner & Menz phân loại phỏng vấn chuyên gia thành 3 loại hình phương pháp luận với mục đích nhận thức luận khác biệt: (1) Phỏng vấn khám phá (Exploratory expert interview): dùng ở giai đoạn đầu để định hướng bài toán, làm quen với thuật ngữ ngành và xây dựng giả thuyết; (2) Phỏng vấn hệ thống hóa (Systematizing expert interview): khai thác tri thức ngữ cảnh, số liệu kỹ thuật và quy trình vận hành khách quan; (3) Phỏng vấn kiến tạo lý thuyết (Theory-generating expert interview): giải mã tri thức ngầm ẩn (tacit knowledge), các thói quen phán đoán và hệ tư tưởng chi phối hành vi ra quyết định của giới chuyên môn.",
+      "benchmarks": "Đạt chuẩn nghiên cứu định tính và chính sách công Q1: (1) Định nghĩa tiêu chí lựa chọn chuyên gia tường minh (ai được coi là chuyên gia trong nghiên cứu này); (2) Nhận diện và kiểm soát các động thái quyền lực (power dynamics) giữa người phỏng vấn và chuyên gia trong phòng phỏng vấn; (3) Kết hợp đối chiếu dữ liệu chuyên gia với các văn bản chính sách và quy chuẩn pháp lý.",
+      "pitfalls": "Chấp nhận thụ động các phát biểu của chuyên gia như chân lý tuyệt đối mà không có sự phản biện; lúng túng khi chuyên gia nói chuyện bằng biệt ngữ ngành quá sâu khiến cuộc phỏng vấn mất phương hướng.",
+      "apa_reference": "Bogner, A., Littig, B., & Menz, W. (Eds.). (2009). Interviewing experts. Palgrave Macmillan. https://doi.org/10.1057/9780230244276",
+      "is_flagship": true
     },
     {
       "id": "explainable-artificial-intelligence",
-      "term": "Explainable Artificial Intelligence",
-      "vietnamese": "Trí tuệ Nhân tạo có Thể Giải thích được",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "AI",
-        "Computational Research"
+      "term": "Explainable Artificial Intelligence (XAI)",
+      "vietnamese": "Trí tuệ nhân tạo có thể giải thích được (XAI)",
+      "vietnamese_variants": [
+        "AI có thể giải thích",
+        "Phương pháp luận giải mã mô hình hộp đen AI"
       ],
-      "core_definition": "Các kỹ thuật và phương pháp giúp mở 'hộp đen' (black box) của các thuật toán máy học phức tạp, giải trình lý do mô hình đưa ra dự báo trong nghiên cứu thực nghiệm. Ngưỡng thực nghiệm tham chiếu: Bắt buộc áp dụng trong các nghiên cứu ra quyết định y khoa, tài chính và chính sách công (SHAP values, LIME).",
-      "seminal_citation": "Bắt buộc áp dụng trong các nghiên cứu ra quyết định y khoa, tài chính và chính sách công (SHAP values, LIME).",
-      "tier": "acronym",
+      "domain_tags": [
+        "Artificial Intelligence & Computational Methodology",
+        "Data Science"
+      ],
+      "core_definition": "Explainable Artificial Intelligence (XAI) là một lĩnh vực phương pháp luận và kỹ thuật điện toán phát triển các thuật toán và công cụ nhằm làm sáng tỏ cơ chế ra quyết định bên trong của các mô hình học máy phức tạp dạng 'hộp đen' (như Deep Neural Networks, Gradient Boosting), giúp con người có thể hiểu, tin cậy, thẩm định đạo đức và truy vết logic dự báo của AI.",
+      "seminal_citation": "Lundberg, S. M., & Lee, S. I. (2017). A unified approach to interpreting model predictions. In Advances in neural information processing systems (Vol. 30, pp. 4765-4774). Curran Associates.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of Explainable Artificial Intelligence according to Bắt buộc áp dụng trong các nghiên cứu ra quyết định y khoa, tài chính và chính sách công (SHAP values, LIME)..",
@@ -22551,140 +22700,212 @@
         "AI",
         "Computational Research"
       ],
-      "benchmarks": "Bắt buộc áp dụng trong các nghiên cứu ra quyết định y khoa, tài chính và chính sách công (SHAP values, LIME)."
+      "benchmarks": "Chuẩn mực bài báo khoa học máy tính và hệ thống thông tin hàng đầu (MISQ, IEEE TPAMI, Nature MI): (1) Đạt sự cân bằng tối ưu giữa độ chính xác dự báo (predictive performance) và độ rõ ràng của giải thích (interpretability); (2) Đánh giá tính trung thực (fidelity) của phương pháp giải thích; (3) Bắt buộc tuân thủ đạo đức AI, chống phân biệt đối xử và thiên lệch thuật toán (algorithmic bias).",
+      "category": "Artificial Intelligence & Computational Methodology",
+      "operational_mechanism": "Hệ thống phương pháp luận XAI phân chia thành: (1) Khả năng giải thích nội tại (Intrinsic interpretability): sử dụng các mô hình tường minh tự nhiên (cây quyết định nông, hồi quy tuyến tính/logistic); (2) Giải thích hậu nghiệm bất khả tri mô hình (Model-agnostic post-hoc explanations): SHAP (SHapley Additive exPlanations dựa trên lý thuyết trò chơi hợp tác định lượng đóng góp biên của từng thuộc tính) và LIME (Local Interpretable Model-agnostic Explanations xấp xỉ mô hình phức tạp bằng một mô hình tuyến tính cục bộ quanh điểm dự báo); (3) Bản đồ nổi bật thị giác (Saliency maps/Grad-CAM) trong thị giác máy tính.",
+      "pitfalls": "Lầm tưởng các giá trị SHAP/LIME là quan hệ nhân quả thực sự (chúng chỉ phản ánh sự kết hợp tương quan thống kê mà mô hình học máy sử dụng); các phương pháp giải thích xấp xỉ cục bộ có thể bị thao túng hoặc không ổn định khi dữ liệu đầu vào bị nhiễu nhẹ.",
+      "apa_reference": "Lundberg, S. M., & Lee, S. I. (2017). A unified approach to interpreting model predictions. In I. Guyon, U. V. Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, & R. Garnett (Eds.), Advances in neural information processing systems (Vol. 30, pp. 4765–4774). Curran Associates, Inc.",
+      "is_flagship": true
     },
     {
       "id": "explained-sum-of-squares-ess",
       "term": "Explained Sum of Squares (ESS)",
-      "vietnamese": "Tổng Bình phương Được giải thích",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Regression Analysis"
+      "vietnamese": "Tổng bình phương được giải thích (ESS)",
+      "vietnamese_variants": [
+        "Tổng bình phương hồi quy (SSR)",
+        "Lượng phương sai được mô hình giải thích"
       ],
-      "core_definition": "Phần biến thiên của biến phụ thuộc được giải thích bởi các biến độc lập.",
-      "seminal_citation": "Wooldridge (2010)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Regression Analysis & Applied Statistics",
+        "Econometrics"
+      ],
+      "core_definition": "Explained Sum of Squares (ESS, trong một số giáo trình còn ký hiệu là SSR - Sum of Squares Regression) là một đại lượng thống kê đo lường phần biến thiên của biến phụ thuộc $Y$ được mô hình hồi quy tuyến tính giải thích thành công thông qua tập hợp các biến độc lập $X$, phản ánh khoảng cách giữa các giá trị dự báo và giá trị trung bình mẫu.",
+      "seminal_citation": "Wooldridge, J. M. (2020). Introductory econometrics: A modern approach (7th ed.). Cengage Learning.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Explained Sum of Squares (ESS) according to Wooldridge (2010).",
       "domain_tags_en": [
         "Regression Analysis"
-      ]
+      ],
+      "category": "Regression Analysis & Applied Statistics",
+      "operational_mechanism": "Công thức toán học: $ESS = \\sum_{i=1}^n (\\hat{y}_i - \\bar{y})^2$. Trong phân tích phương sai hồi quy (ANOVA table), tổng biến thiên toàn phần (Total Sum of Squares - TSS) luôn được phân rã thành hai thành tố trực giao: $TSS = ESS + RSS$, trong đó $RSS = \\sum (y_i - \\hat{y}_i)^2$ là Tổng bình phương phần dư chưa giải thích được. Hệ số xác định hồi quy chính là tỷ lệ: $R^2 = \\frac{ESS}{TSS} = 1 - \\frac{RSS}{TSS}$.",
+      "benchmarks": "Đánh giá trong mô hình hồi quy OLS: (1) Được sử dụng trực tiếp để tính toán giá trị thống kê $F$ của toàn bộ mô hình: $F = \\frac{ESS / k}{RSS / (n - k - 1)}$, kiểm định xem toàn bộ các biến độc lập có đồng thời bằng 0 hay không; (2) Trong hồi quy có hệ số chặn, đẳng thức phân rã $TSS = ESS + RSS$ luôn được bảo đảm chính xác.",
+      "pitfalls": "Nhầm lẫn giữa các ký hiệu viết tắt (một số sách quy ước SSR là Sum of Squares Residuals, trong khi sách khác lại quy ước SSR là Sum of Squares Regression); trong các mô hình hồi quy không có hệ số chặn (regression through origin), đẳng thức phân rã không còn đúng và $R^2$ có thể nhận giá trị âm.",
+      "apa_reference": "Wooldridge, J. M. (2020). Introductory econometrics: A modern approach (7th ed.). Cengage Learning.",
+      "is_flagship": true
     },
     {
       "id": "explanation-building",
       "term": "Explanation Building",
-      "vietnamese": "Xây dựng Giải trình Lý thuyết",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Case Study Rigour"
+      "vietnamese": "Kỹ thuật kiến tạo lời giải thích",
+      "vietnamese_variants": [
+        "Xây dựng giải trình lý thuyết",
+        "Kỹ thuật phân tích ca tình huống Yin"
       ],
-      "core_definition": "Quy trình lặp phát triển các phát biểu giải thích nguyên nhân qua từng trường hợp nghiên cứu.",
-      "seminal_citation": "Yin (2018)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Case Study Rigour & Qualitative Analysis",
+        "Qualitative Methodology"
+      ],
+      "core_definition": "Explanation Building là một kỹ thuật phân tích dữ liệu nghiên cứu trường hợp chuyên sâu do Robert K. Yin đề xuất, có tính chất lặp đi lặp lại nhằm xây dựng một lời giải thích nhân quả logic và sâu sắc về 'tại sao' và 'như thế nào' một hiện tượng xã hội lại xảy ra trong thế giới thực.",
+      "seminal_citation": "Yin, R. K. (2018). Case study research and applications: Design and methods (6th ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Explanation Building according to Yin (2018).",
       "domain_tags_en": [
         "Case Study Rigour"
-      ]
+      ],
+      "category": "Case Study Rigour & Qualitative Analysis",
+      "operational_mechanism": "Vận hành theo chu trình lặp quy nạp - diễn dịch 5 bước: (1) Đưa ra mệnh đề lý thuyết ban đầu; (2) So sánh các phát hiện của trường hợp nghiên cứu đầu tiên với mệnh đề đó; (3) Tinh chỉnh, sửa đổi lại mệnh đề lý thuyết dựa trên các bằng chứng thực tế vừa phát hiện; (4) Đối chiếu mệnh đề đã sửa đổi với các bằng chứng của trường hợp thứ hai hoặc các khía cạnh khác của cùng một trường hợp; (5) Lặp lại quá trình này cho đến khi đạt được một lời giải thích vững chắc và thỏa đáng nhất.",
+      "benchmarks": "Chuẩn mực bài báo nghiên cứu trường hợp Q1 (Yin, Eisenhardt): (1) Đạt độ giá trị nội tại (Internal validity) cao thông qua việc liên tục kiểm chứng các giải thích thay thế (rival explanations); (2) Minh bạch hóa từng vòng lặp điều chỉnh lý thuyết; (3) Sử dụng sơ đồ dòng chảy nhân quả (causal network diagrams) để trực quan hóa chuỗi liên kết logic.",
+      "pitfalls": "Nhà nghiên cứu bị trôi dạt mục tiêu (target drift) - quá mải mê điều chỉnh lý thuyết theo từng chi tiết vụn vặt dẫn đến việc quên mất câu hỏi nghiên cứu ban đầu; thiên lệch xác nhận (chỉ tìm kiếm bằng chứng ủng hộ lời giải thích yêu thích của mình).",
+      "apa_reference": "Yin, R. K. (2018). Case study research and applications: Design and methods (6th ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "explanatory-design",
-      "term": "Explanatory design",
-      "vietnamese": "Thiết kế nghiên cứu giải thích nhân quả",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Thiết kế Nghiên cứu"
+      "term": "Explanatory Design",
+      "vietnamese": "Thiết kế nghiên cứu giải thích",
+      "vietnamese_variants": [
+        "Thiết kế nhân quả giải thích",
+        "Nghiên cứu kiểm định cơ chế giải thích"
       ],
-      "core_definition": "Thiết kế nghiên cứu tập trung vào việc làm rõ 'Tại sao' (Why) và 'Như thế nào' (How) một hiện tượng xảy ra, xác định các cơ chế nhân quả giữa các biến số độc lập và phụ thuộc.",
-      "seminal_citation": "Saunders, M., Lewis, P., & Thornhill, A. (2019). Research Methods for Business Students (8th ed.). Pearson.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Research Design & Methodology",
+        "Epistemology"
+      ],
+      "core_definition": "Explanatory Design là thiết kế nghiên cứu khoa học vượt ra ngoài việc mô tả thuần túy hiện tượng, tập trung làm sáng tỏ các mối quan hệ nhân quả, cơ chế tác động và quy luật chi phối nhằm trả lời câu hỏi cốt lõi 'Tại sao' (Why) và 'Như thế nào' (How) một biến cố hoặc trạng thái lại dẫn đến một biến cố khác.",
+      "seminal_citation": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Explanatory design according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Research Design & Methodology",
+      "operational_mechanism": "Triển khai thông qua kiểm định giả thuyết chặt chẽ: (1) Xây dựng mô hình khái niệm dựa trên lý thuyết nền tảng; (2) Thiết lập các biến độc lập, biến phụ thuộc, biến trung gian và biến điều tiết; (3) Sử dụng các phương pháp phân tích thống kê đa biến (hồi quy đa biến, SEM, phân tích chuỗi thời gian trễ) hoặc nghiên cứu trường hợp so sánh để kiểm tra xem dữ liệu có phù hợp với cơ chế giải thích đã dự đoán hay không.",
+      "benchmarks": "Chuẩn mực bài báo khoa học chuẩn Q1: (1) Thỏa mãn đầy đủ 3 tiêu chuẩn xác lập quan hệ nhân quả của Mill (tương quan, thứ tự thời gian, loại trừ giải thích cạnh tranh); (2) Kiểm soát chặt chẽ vấn đề nội sinh; (3) Đóng góp lý thuyết (theoretical contribution) được thể hiện ở việc giải thích được cơ chế vi mô chưa từng được khám phá trước đây.",
+      "pitfalls": "Tuyên bố nghiên cứu mang tính giải thích nhân quả nhưng lại chỉ sử dụng dữ liệu khảo sát cắt ngang đơn thời điểm mà không có bất kỳ công cụ nhận dạng nhân quả nào; ngụy biện sau hiện tượng này nghĩa là do hiện tượng này (post hoc ergo propter hoc).",
+      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "explanatory-sequential-mixed-methods",
-      "term": "Explanatory sequential mixed methods",
-      "vietnamese": "Thiết kế hỗn hợp tuần tự giải thích",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Phương pháp Hỗn hợp"
+      "term": "Explanatory Sequential Mixed Methods",
+      "vietnamese": "Thiết kế phương pháp hỗn hợp tuần tự giải thích",
+      "vietnamese_variants": [
+        "Thiết kế hai giai đoạn QUAN -> qual",
+        "Phương pháp hỗn hợp giải thích tiếp nối"
       ],
-      "core_definition": "Thiết kế nghiên cứu hỗn hợp gồm hai giai đoạn rõ rệt: giai đoạn 1 thu thập và phân tích dữ liệu định lượng; giai đoạn 2 thu thập dữ liệu định tính nhằm giải thích sâu sắc hơn các kết quả định lượng bất thường, ngoại lai hoặc các mối quan hệ có ý nghĩa thống kê từ giai đoạn 1.",
-      "seminal_citation": "Creswell, J. W., & Creswell, J. D. (2023). Research Design (6th ed.). SAGE.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Mixed Methods Research (MMR)",
+        "Research Design"
+      ],
+      "core_definition": "Explanatory Sequential Mixed Methods là một thiết kế nghiên cứu phương pháp hỗn hợp hai giai đoạn kinh điển (Creswell & Plano Clark, 2018), trong đó nhà nghiên cứu tiến hành thu thập và phân tích dữ liệu định lượng trước với trọng số ưu tiên chính (QUAN), sau đó sử dụng dữ liệu định tính ở giai đoạn hai (qual) để đi sâu giải thích, làm sáng tỏ các kết quả định lượng bất thường, ngoại lai hoặc các cơ chế phức tạp chưa rõ.",
+      "seminal_citation": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and conducting mixed methods research (3rd ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được chuẩn hóa định nghĩa học thuật chuyên sâu chuẩn mực.",
       "core_definition_en": "Academic definition of Explanatory sequential mixed methods according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Mixed Methods Research (MMR)",
+      "operational_mechanism": "Ký hiệu chuẩn tắc: [QUAN -> qual]. Quy trình 4 bước tuần tự: (1) Giai đoạn 1 (Định lượng): Khảo sát diện rộng, phân tích thống kê suy luận; (2) Điểm kết nối phương pháp (Point of Interface): Dựa trên kết quả định lượng (ví dụ: phát hiện một nhóm đối tượng có hành vi lệch chuẩn hoặc một biến điều tiết có tác động bất ngờ) để thiết kế câu hỏi phỏng vấn định tính và lựa chọn có chủ đích mẫu người tham gia giai đoạn 2; (3) Giai đoạn 2 (Định tính): Phỏng vấn sâu các ca điển hình; (4) Tích hợp (Integration): Báo cáo ma trận tích hợp (Joint Display) đối chiếu số liệu định lượng với các trích dẫn định tính.",
+      "benchmarks": "Chuẩn mực bài báo MMR quốc tế (JMMR): (1) Trình bày sơ đồ quy trình trực quan (visual procedural diagram) thể hiện rõ điểm kết nối giữa hai pha; (2) Mẫu định tính phải được rút ra trực tiếp từ chính mẫu định lượng giai đoạn 1 (connected sample); (3) Pha định tính không được đặt câu hỏi lại từ đầu mà phải tập trung trực diện vào việc 'giải thích kết quả của pha 1'.",
+      "pitfalls": "Tiến hành hai pha hoàn toàn độc lập mà không có điểm kết nối phương pháp; sử dụng pha định tính chỉ để lặp lại những gì pha định lượng đã nói thay vì đào sâu giải thích 'tại sao' con số lại như vậy.",
+      "apa_reference": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and conducting mixed methods research (3rd ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "explanatory-trial",
       "term": "Explanatory Trial",
-      "vietnamese": "Thử nghiệm Giải thích",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Clinical Trial Methodology"
+      "vietnamese": "Thử nghiệm giải thích hiệu lực (Thử nghiệm chuẩn tắc)",
+      "vietnamese_variants": [
+        "Thử nghiệm hiệu lực lý tưởng",
+        "Nghiên cứu thử nghiệm Efficacy Trial"
       ],
-      "core_definition": "Đánh giá hiệu lực tối đa của can thiệp trong điều kiện lý tưởng được kiểm soát nghiêm ngặt.",
-      "seminal_citation": "Schwartz & Lellouch (1967)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Clinical Trial Methodology & Epidemiology",
+        "Experimental Design"
+      ],
+      "core_definition": "Explanatory Trial (còn gọi là Thử nghiệm hiệu lực lý tưởng - Efficacy Trial) là thiết kế thử nghiệm lâm sàng được tiến hành dưới những điều kiện được kiểm soát chặt chẽ, lý tưởng và nghiêm ngặt nhất nhằm kiểm định giả thuyết sinh học/khoa học căn bản xem can thiệp có thể hoạt động được hay không (can it work under ideal conditions?), đối lập với Thử nghiệm thực tế (Pragmatic Trial - does it work in real-world practice?).",
+      "seminal_citation": "Schwartz, D., & Lellouch, J. (1967). Explanatory and pragmatic attitudes in therapeutical trials. Journal of Chronic Diseases, 20(8), 637-648.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Explanatory Trial according to Schwartz & Lellouch (1967).",
       "domain_tags_en": [
         "Clinical Trial Methodology"
-      ]
+      ],
+      "category": "Clinical Trial Methodology & Epidemiology",
+      "operational_mechanism": "Đặc trưng phương pháp luận: (1) Tiêu chí chọn mẫu cực kỳ khắt khe (homogeneous sample), loại bỏ toàn bộ các đối tượng có bệnh nền phức tạp hoặc nguy cơ không tuân thủ; (2) Can thiệp được tiêu chuẩn hóa tuyệt đối với liều lượng và quy trình nghiêm ngặt; (3) Theo dõi và giám sát tuân thủ điều trị tối đa; (4) Phân tích dữ liệu ưu tiên mẫu Theo đề cương (Per-Protocol) để đánh giá tác động sinh học thuần túy của thuốc/can thiệp.",
+      "benchmarks": "Sử dụng công cụ PRECIS-2 (Pragmatic-Explanatory Continuum Indicator Summary) để định vị nghiên cứu: (1) Điểm số PRECIS-2 thiên về phía Explanatory (tập trung tối đa cho độ giá trị nội tại Internal Validity); (2) Là giai đoạn bắt buộc trong các thử nghiệm lâm sàng Pha II và đầu Pha III trước khi triển khai thử nghiệm diện rộng trong cộng đồng.",
+      "pitfalls": "Độ giá trị ngoại tại (External validity) rất thấp, kết quả điều trị lý tưởng trong phòng thí nghiệm thường không thể lặp lại khi áp dụng cho bệnh nhân thực tế ngoài đời thực vốn có nhiều bệnh kèm theo và không tuân thủ uống thuốc đều đặn.",
+      "apa_reference": "Schwartz, D., & Lellouch, J. (1967). Explanatory and pragmatic attitudes in therapeutical trials. Journal of Chronic Diseases, 20(8), 637–648. https://doi.org/10.1016/0021-9681(67)90041-0",
+      "is_flagship": true
     },
     {
       "id": "exploratory-data-analysis-eda",
       "term": "Exploratory Data Analysis (EDA)",
-      "vietnamese": "Phân tích dữ liệu khám phá (Tukey)",
+      "vietnamese": "Phân tích dữ liệu khám phá (EDA)",
       "vietnamese_variants": [
-        "EDA"
+        "Phương pháp khám phá dữ liệu Tukey",
+        "Phân tích số liệu thăm dò"
       ],
       "domain_tags": [
-        "Methodology",
-        "Research Design"
+        "Applied Statistics & Data Science",
+        "Data Analytics"
       ],
-      "core_definition": "Phương pháp đồ họa trực quan hóa phân phối, ngoại lai và hình thái dữ liệu.",
-      "seminal_citation": "Schindler (2022)",
-      "tier": "textbook",
+      "core_definition": "Exploratory Data Analysis (EDA) là một trường phái và triết lý phân tích dữ liệu thống kê do nhà toán học huyền thoại John W. Tukey khởi xướng năm 1977, nhấn mạnh việc sử dụng tối đa các công cụ đồ thị trực quan và các thống kê tóm tắt phi tham số vững chắc để 'lắng nghe dữ liệu', phát hiện các quy luật tiềm ẩn, cấu trúc bất thường và giá trị ngoại lai mà không bị trói buộc bởi các giả định tiên nghiệm cứng nhắc.",
+      "seminal_citation": "Tukey, J. W. (1977). Exploratory data analysis. Addison-Wesley.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Exploratory data analysis (EDA) according to Schindler (2022).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Applied Statistics & Data Science",
+      "operational_mechanism": "Hệ thống công cụ kinh điển do Tukey sáng chế: (1) Biểu đồ hộp và râu (Box-and-whisker plot) để phát hiện giá trị ngoại lai dựa trên khoảng tứ phân vị IQR; (2) Biểu đồ thân lá (Stem-and-leaf display); (3) Kỹ thuật làm mịn dữ liệu phi tham số (Smoothing); (4) Biến đổi dữ liệu bậc lũy thừa (Tukey's ladder of powers) để đưa các phân phối lệch về phân phối chuẩn đối xứng.",
+      "benchmarks": "Chuẩn mực bước đầu tiên trong mọi nghiên cứu định lượng: (1) Phát hiện lỗi nhập liệu và kiểm tra cấu trúc dữ liệu khuyết; (2) Đánh giá các giả định phân phối (chuẩn, đồng nhất phương sai) trước khi áp dụng các kiểm định tham số; (3) Cung cấp định hướng để hình thành các giả thuyết khoa học mới một cách khách quan.",
+      "pitfalls": "Nhầm lẫn giữa EDA và hành vi khai thác dữ liệu bừa bãi để săn tìm p-value có ý nghĩa (p-hacking/data dredging); kiểm định lại chính các giả thuyết vừa được hình thành từ EDA trên cùng một tập dữ liệu mà không có mẫu kiểm chứng độc lập (overfitting).",
+      "apa_reference": "Tukey, J. W. (1977). Exploratory data analysis. Addison-Wesley.",
+      "is_flagship": true
     },
     {
       "id": "exploratory-design",
-      "term": "Exploratory design",
+      "term": "Exploratory Design",
       "vietnamese": "Thiết kế nghiên cứu khám phá",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Thiết kế Nghiên cứu"
+      "vietnamese_variants": [
+        "Thiết kế nghiên cứu thăm dò",
+        "Thiết kế khám phá định tính"
       ],
-      "core_definition": "Thiết kế nghiên cứu được áp dụng khi một vấn đề nghiên cứu còn mới mẻ, chưa có nhiều tài liệu học thuật hoặc ranh giới khái niệm chưa rõ ràng, nhằm khám phá các chiều kích và xây dựng giả thuyết ban đầu.",
-      "seminal_citation": "Creswell, J. W., & Creswell, J. D. (2023). Research Design (6th ed.). SAGE.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Research Design & Methodology",
+        "Qualitative Methods"
+      ],
+      "core_definition": "Exploratory Design là thiết kế nghiên cứu ban đầu được áp dụng khi một hiện tượng, vấn đề hoặc bối cảnh còn hoàn toàn mới mẻ, chưa có hoặc có rất ít lý thuyết tiền nhiệm và tài liệu nghiên cứu trước đó, nhằm mục đích thu thập những hiểu biết sâu sắc ban đầu, làm rõ ranh giới của vấn đề, phát hiện các biến số tiềm ẩn và xây dựng các giả thuyết nghiên cứu khả thi cho các giai đoạn tiếp theo.",
+      "seminal_citation": "Stebbins, R. A. (2001). Exploratory research in the social sciences. SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Exploratory design according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Research Design & Methodology",
+      "operational_mechanism": "Đặc trưng bởi tính linh hoạt và mở cao độ: (1) Sử dụng các phương pháp thu thập dữ liệu định tính chuyên sâu như phỏng vấn bán cấu trúc mở, quan sát tham dự và thảo luận nhóm tập trung; (2) Áp dụng phương pháp chọn mẫu có chủ đích hoặc chọn mẫu quả cầu tuyết (snowball sampling) để tiếp cận các đối tượng am hiểu sâu về hiện tượng mới; (3) Phân tích dữ liệu theo phương pháp quy nạp (inductive thematic analysis) để rút ra các mô hình khái niệm sơ bộ.",
+      "benchmarks": "Đạt chuẩn nghiên cứu học thuật: (1) Không áp đặt các thang đo cứng nhắc từ các bối cảnh khác; (2) Cung cấp một bộ từ vựng khái niệm và định nghĩa thao tác mới; (3) Thiết lập tiền đề vững chắc cho việc phát triển thang đo hoặc thiết kế nghiên cứu khẳng định (confirmatory design) trong tương lai.",
+      "pitfalls": "Đưa ra các kết luận khẳng định mang tính tổng quát hóa cho toàn bộ quần thể từ một nghiên cứu khám phá mẫu nhỏ; thiếu tính chặt chẽ trong quy trình phân tích khiến kết quả mang tính chủ quan cảm tính.",
+      "apa_reference": "Stebbins, R. A. (2001). Exploratory research in the social sciences. SAGE Publications. https://doi.org/10.4135/9781412984249",
+      "is_flagship": true
     },
     {
       "id": "exploratory-factor-analysis",
@@ -22715,35 +22936,48 @@
     },
     {
       "id": "exploratory-sequential-mixed-methods",
-      "term": "Exploratory sequential mixed methods",
-      "vietnamese": "Thiết kế hỗn hợp tuần tự khám phá",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Phương pháp Hỗn hợp"
+      "term": "Exploratory Sequential Mixed Methods",
+      "vietnamese": "Thiết kế phương pháp hỗn hợp tuần tự khám phá",
+      "vietnamese_variants": [
+        "Thiết kế hai giai đoạn QUAL -> quan",
+        "Phương pháp hỗn hợp phát triển công cụ đo lường"
       ],
-      "core_definition": "Thiết kế nghiên cứu hỗn hợp gồm hai giai đoạn: giai đoạn 1 thu thập dữ liệu định tính để khám phá hiện tượng và xây dựng các mục hỏi; giai đoạn 2 thu thập dữ liệu định lượng trên mẫu lớn để kiểm định và khái quát hóa kết quả.",
-      "seminal_citation": "Creswell, J. W., & Creswell, J. D. (2023). Research Design (6th ed.). SAGE.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Mixed Methods Research (MMR)",
+        "Instrument Development"
+      ],
+      "core_definition": "Exploratory Sequential Mixed Methods là một thiết kế nghiên cứu phương pháp hỗn hợp ba bước tuần tự do Creswell & Plano Clark (2018) chuẩn hóa, bắt đầu bằng việc thu thập và phân tích dữ liệu định tính có trọng số ưu tiên (QUAL) để khám phá hiện tượng, sau đó sử dụng các phát hiện định tính này để xây dựng một tính năng mới (thang đo, bảng câu hỏi, hoặc chương trình can thiệp thực nghiệm), và kết thúc bằng việc thu thập dữ liệu định lượng (quan) để kiểm định và tổng quát hóa công cụ đó trên diện rộng.",
+      "seminal_citation": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and conducting mixed methods research (3rd ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được chuẩn hóa định nghĩa học thuật chuyên sâu chuẩn mực.",
       "core_definition_en": "Academic definition of Exploratory sequential mixed methods according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Mixed Methods Research (MMR)",
+      "operational_mechanism": "Ký hiệu chuẩn tắc: [QUAL -> quan]. Quy trình 3 bước cốt lõi: (1) Pha 1 (Định tính): Phỏng vấn sâu, quan sát để khám phá các khía cạnh của cấu trúc chưa có thang đo; (2) Điểm kết nối (Point of Interface - Instrument Development): Trích xuất các trích dẫn nguyên văn và chủ đề định tính để chuyển hóa thành các mục hỏi cụ thể trong bảng khảo sát (tạo lập thang đo mới); (3) Pha 2 (Định lượng): Khảo sát diện rộng, phân tích EFA/CFA và kiểm định độ tin cậy, độ giá trị để thẩm định thang đo vừa tạo lập.",
+      "benchmarks": "Chuẩn mực bài báo phát triển thang đo chuẩn mực quốc tế: (1) Mô tả chi tiết ma trận chuyển hóa từ trích dẫn định tính sang mục hỏi bảng hỏi; (2) Mẫu của hai pha phải là hai mẫu độc lập hoàn toàn để bảo đảm tính khách quan (không kiểm định thang đo trên chính những người vừa được phỏng vấn định tính); (3) Đạt các tiêu chuẩn psychometrics khắt khe ở pha định lượng.",
+      "pitfalls": "Không có điểm kết nối phương pháp rõ ràng (pha định lượng dùng thang đo có sẵn từ nước ngoài thay vì thang đo phát sinh từ pha định tính); kiểm định thang đo trên cỡ mẫu định lượng quá nhỏ ($N < 150$).",
+      "apa_reference": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and conducting mixed methods research (3rd ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "exploratory-structural-equation-modeling",
       "term": "Exploratory Structural Equation Modeling",
-      "vietnamese": "Mô hình Phương trình Cấu trúc Khám phá (Asparouhov & Muthén, 2009)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Advanced Psychometrics",
-        "SEM"
+      "vietnamese": "Mô hình phương trình cấu trúc khám phá (ESEM)",
+      "vietnamese_variants": [
+        "Khung ESEM Marsh",
+        "Mô hình đo lường ESEM tích hợp CFA"
       ],
-      "core_definition": "Tích hợp tính linh hoạt của EFA (cho phép hệ số tải chéo tự do) vào khuôn khổ kiểm định chặt chẽ của CFA/SEM, giải quyết tình trạng chỉ số Fit bị méo khi ép tải chéo về 0. Ngưỡng thực nghiệm tham chiếu: So sánh Model Fit giữa CFA truyền thống và ESEM; ESEM thường cho hệ số tương quan giữa các nhân tố thực tế hơn và chỉ số fit vượt trội (CFI tăng, RMSEA giảm).",
-      "seminal_citation": "So sánh Model Fit giữa CFA truyền thống và ESEM; ESEM thường cho hệ số tương quan giữa các nhân tố thực tế hơn và chỉ số fit vượt trội (CFI tăng, RMSEA giảm).",
-      "tier": "acronym",
+      "domain_tags": [
+        "Advanced Psychometrics & Structural Equation Modeling",
+        "Multivariate Statistics"
+      ],
+      "core_definition": "Exploratory Structural Equation Modeling (ESEM) là một khuôn khổ tích hợp thống kê đa biến nâng cao do Herbert Marsh và Tihomir Asparouhov xây dựng, cho phép ước lượng đồng thời cả phần cấu trúc đo lường có hệ số tải chéo tự do (tương tự EFA) và phần cấu trúc hồi quy tác động giữa các biến tiềm ẩn (tương tự SEM), giải phóng các nhà nghiên cứu khỏi những ràng buộc phi thực tế của CFA truyền thống.",
+      "seminal_citation": "Marsh, H. W., Morin, A. J., Parker, P. D., & Kaur, G. (2014). Exploratory structural equation modeling: An integration of the best features of exploratory and confirmatory factor analysis. Annual Review of Clinical Psychology, 10, 85-110.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of Exploratory Structural Equation Modeling according to So sánh Model Fit giữa CFA truyền thống và ESEM; ESEM thường cho hệ số tương quan giữa các nhân tố thực tế hơn và chỉ số fit vượt trội (CFI tăng, RMSEA giảm)..",
@@ -22751,81 +22985,125 @@
         "Advanced Psychometrics",
         "SEM"
       ],
-      "benchmarks": "So sánh Model Fit giữa CFA truyền thống và ESEM; ESEM thường cho hệ số tương quan giữa các nhân tố thực tế hơn và chỉ số fit vượt trội (CFI tăng, RMSEA giảm)."
+      "benchmarks": "Tiêu chuẩn bài báo tâm lý học và hành vi tổ chức Q1 (JAP, Psychological Methods): (1) Báo cáo chỉ số so sánh giữa mô hình CFA độc lập và mô hình ESEM; (2) ESEM là giải pháp cứu cánh hàng đầu khi mô hình CFA thất bại do tương quan quá cao giữa các nhân tố ($r > 0.85$); (3) Cung cấp đầy đủ cú pháp lệnh trong Mplus hoặc gói `lavaan` / `esem` trong R.",
+      "category": "Advanced Psychometrics & Structural Equation Modeling",
+      "operational_mechanism": "Mô hình ESEM sử dụng ma trận thông tin đầy đủ và các kỹ thuật xoay ma trận Target Rotation: Nhà nghiên cứu chỉ định các hệ số tải chính (primary loadings) và để các hệ số tải chéo tự do hội tụ về các giá trị gần 0 thay vì ép buộc cứng nhắc bằng 0. Mô hình cung cấp sai số chuẩn đầy đủ (standard errors) cho tất cả các hệ số tải đã xoay, cho phép kiểm định ý nghĩa thống kê của từng tải chéo và đánh giá tính bất biến cấu trúc qua các nhóm văn hóa.",
+      "pitfalls": "Áp dụng ESEM mà không có căn cứ lý thuyết về sự tồn tại của các chiều kích chồng lấn; diễn giải sai bản chất các nhân tố khi các hệ số tải chéo lớn hơn cả hệ số tải chính.",
+      "apa_reference": "Marsh, H. W., Morin, A. J., Parker, P. D., & Kaur, G. (2014). Exploratory structural equation modeling: An integration of the best features of exploratory and confirmatory factor analysis. Annual Review of Clinical Psychology, 10, 85–110. https://doi.org/10.1146/annurev-clinpsy-032813-153700",
+      "is_flagship": true
     },
     {
       "id": "exponential-random-graph-models-ergm",
       "term": "Exponential Random Graph Models (ERGM)",
-      "vietnamese": "Mô hình Đồ thị Ngẫu nhiên Hàm mũ",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Network Statistics"
+      "vietnamese": "Mô hình đồ thị ngẫu nhiên hàm mũ (ERGM)",
+      "vietnamese_variants": [
+        "Mô hình mạng lưới p*",
+        "Mô hình thống kê mạng xã hội ERGM"
       ],
-      "core_definition": "Mô hình thống kê suy luận cấu trúc các liên kết mạng xã hội qua các vi cấu trúc.",
-      "seminal_citation": "Robins et al. (2007)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Social Network Analysis & Statistical Modeling",
+        "Network Science"
+      ],
+      "core_definition": "Exponential Random Graph Models (ERGM, còn gọi là mô hình $p^*$) là một khung mô hình hóa thống kê tiên tiến hàng đầu trong phân tích mạng lưới xã hội (SNA), mô hình hóa xác suất xuất hiện của toàn bộ cấu trúc mạng lưới quan sát được như một hàm số của các cấu hình vi mô cục bộ (như tính hỗ huệ, tam giác đóng, mức độ tập trung) và các thuộc tính của các tác nhân.",
+      "seminal_citation": "Robins, G., Pattison, P., Kalish, Y., & Lusher, D. (2007). An introduction to exponential random graph (p*) models for social networks. Social Networks, 29(2), 173-191.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Exponential Random Graph Models (ERGM) according to Robins et al. (2007).",
       "domain_tags_en": [
         "Network Statistics"
-      ]
+      ],
+      "category": "Social Network Analysis & Statistical Modeling",
+      "operational_mechanism": "Công thức xác suất của mô hình họ hàm mũ: $P(Y = y) = \\frac{\\exp\\left( \\theta^T g(y) \\right)}{\\kappa(\\theta)}$, trong đó $y$ là ma trận kề mạng lưới quan sát được, $g(y)$ là véc-tơ của các thống kê mạng lưới (như số lượng liên kết, số liên kết hai chiều reciprocity, số tam giác đóng transitivity), $\\theta$ là véc-tơ các tham số cần ước lượng, và $\\kappa(\\theta)$ là hằng số chuẩn hóa mẫu số. Do mẫu số đòi hỏi tính tổng trên tất cả các mạng khả dĩ ($2^{\\binom{n}{2}}$), mô hình được ước lượng thông qua thuật toán MCMC-MLE (Markov Chain Monte Carlo Maximum Likelihood Estimation).",
+      "benchmarks": "Chuẩn mực bài báo phân tích mạng xã hội Q1 (AJS, Social Networks): (1) Kiểm tra chẩn đoán độ phù hợp mô hình (Goodness of Fit - GOF) đối chiếu phân phối bậc, khoảng cách trắc địa và phân bố đối tác chia sẻ (edgewise shared partner); (2) Báo cáo kiểm tra hiện tượng thoái hóa mô hình (Model Degeneracy); (3) Sử dụng các thống kê trọng số hình học (GWESP, GWDegree) của Hunter & Handcock để chống thoái hóa.",
+      "pitfalls": "Mô hình bị thoái hóa MCMC (MCMC degeneracy) khi chuỗi Markov tạo ra các mạng lưới hoàn toàn rỗng hoặc mạng lưới kết nối hoàn toàn; đưa quá nhiều cấu hình mạng lưới phức tạp vào mô hình khiến thuật toán không thể hội tụ.",
+      "apa_reference": "Robins, G., Pattison, P., Kalish, Y., & Lusher, D. (2007). An introduction to exponential random graph (p*) models for social networks. Social Networks, 29(2), 173–191. https://doi.org/10.1016/j.socnet.2006.08.002",
+      "is_flagship": true
     },
     {
       "id": "expression-of-concern",
       "term": "Expression of Concern",
-      "vietnamese": "Thông báo Bày tỏ Lo ngại",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Integrity"
+      "vietnamese": "Thông báo bày tỏ quan ngại học thuật",
+      "vietnamese_variants": [
+        "Cảnh báo quan ngại biên tập",
+        "Thông cáo nghi vấn liêm chính khoa học"
       ],
-      "core_definition": "Thông báo của ban biên tập cảnh báo độc giả khi bài báo đang trong quá trình điều tra sai phạm.",
-      "seminal_citation": "COPE (2019)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Publication Ethics & Research Integrity",
+        "Academic Publishing"
+      ],
+      "core_definition": "Expression of Concern là một thông báo chính thức do Tổng biên tập hoặc Nhà xuất bản của một tạp chí học thuật ban hành và đính kèm công khai vào một bài báo đã xuất bản, nhằm cảnh báo cộng đồng khoa học về những nghi vấn nghiêm trọng liên quan đến tính trung thực của dữ liệu, sự vi phạm liêm chính nghiên cứu hoặc các sai sót phương pháp luận chí mạng của bài báo trong khi cuộc điều tra chính thức đang được tiến hành.",
+      "seminal_citation": "Committee on Publication Ethics. (2019). Guidelines for retracting articles. COPE.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Expression of Concern according to COPE (2019).",
       "domain_tags_en": [
         "Research Integrity"
-      ]
+      ],
+      "category": "Publication Ethics & Research Integrity",
+      "operational_mechanism": "Quy trình thực thi theo chuẩn COPE (Committee on Publication Ethics): (1) Ban biên tập nhận được tố giác có căn cứ vững chắc về gian lận dữ liệu, giả mạo hình ảnh, đạo văn hoặc xung đột lợi ích chưa khai báo; (2) Ban biên tập yêu cầu tác giả và cơ quan chủ quản giải trình; (3) Nếu cuộc điều tra kéo dài hoặc cơ quan chủ quản không hợp tác kịp thời, Tổng biên tập phát hành Expression of Concern để bảo vệ tính chính xác của y văn khoa học; (4) Sau khi có kết luận điều tra cuối cùng, bài báo sẽ được gỡ cảnh báo (nếu được minh oan) hoặc bị rút bài hoàn toàn (Retraction).",
+      "benchmarks": "Chuẩn mực xuất bản quốc tế: (1) Được lập chỉ mục công khai trên PubMed, Scopus, Web of Science và cơ sở dữ liệu Retraction Watch; (2) Phải nêu rõ lý do quan ngại cụ thể mà không đưa ra các phán xét pháp lý vội vàng; (3) Được liên kết vĩnh viễn với bài báo gốc thông qua mã DOI.",
+      "pitfalls": "Coi Expression of Concern tương đương với một bản án kết tội cuối cùng (nó chỉ là cảnh báo nghi vấn); các tạp chí chần chừ không phát hành thông báo khiến cộng đồng tiếp tục trích dẫn và áp dụng các kết quả nghiên cứu độc hại trong y tế hoặc chính sách.",
+      "apa_reference": "Committee on Publication Ethics. (2019). Guidelines for retracting articles: Guidance from the Committee on Publication Ethics. COPE. https://doi.org/10.24318/cope.2019.1.4",
+      "is_flagship": true
     },
     {
       "id": "external-validity-gia-tri-ngoai-tai",
       "term": "External Validity",
-      "vietnamese": "Áp dụng logic tái lập trong nghiên cứu đa ca.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Case Study Research"
+      "vietnamese": "Độ giá trị ngoại tại",
+      "vietnamese_variants": [
+        "Tính khái quát hóa của kết quả nghiên cứu",
+        "Độ giá trị bên ngoài"
       ],
-      "core_definition": "Áp dụng logic tái lập trong nghiên cứu đa ca.",
-      "seminal_citation": "Yin (2014)",
-      "tier": "index",
+      "domain_tags": [
+        "Research Methodology & Experimental Design",
+        "Causal Inference"
+      ],
+      "core_definition": "External Validity là mức độ mà các kết luận, phát hiện và mối quan hệ nhân quả được xác lập từ một nghiên cứu cụ thể có thể được khái quát hóa một cách hợp thức (generalized) sang các quần thể khác (populations), các bối cảnh môi trường khác (settings), các thước đo khác (treatments/outcomes) và các thời điểm thời gian khác nhau (times).",
+      "seminal_citation": "Campbell, D. T. (1957). Factors relevant to the validity of experiments in social settings. Psychological Bulletin, 54(4), 297-312.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "tên Việt \"Giá trị Ngoại tại\" không thống nhất với mục flagship #03 (\"Độ giá trị bên ngoài\") | Trùng #975, #977; tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of External Validity (Giá trị Ngoại tại) according to Yin (2014).",
       "domain_tags_en": [
         "Case Study Research"
-      ]
+      ],
+      "category": "Research Methodology & Experimental Design",
+      "operational_mechanism": "Được đánh giá thông qua hai cơ chế khái quát hóa: (1) Khái quát hóa thống kê (Statistical generalization / Sample-to-population): dựa trên kỹ thuật chọn mẫu xác suất đại diện để suy diễn từ mẫu lên toàn bộ quần thể mục tiêu; (2) Khái quát hóa phân tích/lý thuyết (Analytical/Theoretical generalization): suy diễn từ các phát hiện thực nghiệm lên một lý thuyết trừu tượng tổng quát, sau đó áp dụng lý thuyết đó để giải thích các tình huống tương tự.",
+      "benchmarks": "Đạt chuẩn nghiên cứu quốc tế: (1) Đánh giá sự đánh đổi kinh điển giữa Độ giá trị nội tại (Internal validity) và Độ giá trị ngoại tại; (2) Tiến hành các nghiên cứu lặp lại trực tiếp (direct replication) và lặp lại mở rộng khái niệm (conceptual replication) trên các mẫu văn hóa độc lập; (3) Báo cáo ma trận đặc điểm mẫu chi tiết để người đọc tự đánh giá khả năng chuyển giao (transferability).",
+      "pitfalls": "Tuyên bố kết quả có giá trị phổ quát toàn cầu nhưng mẫu nghiên cứu chỉ gói gọn trong nhóm sinh viên đại học phương Tây (mẫu WEIRD - Western, Educated, Industrialized, Rich, Democratic); nhầm lẫn giữa tính đại diện của mẫu với quy mô kích thước mẫu lớn.",
+      "apa_reference": "Campbell, D. T. (1957). Factors relevant to the validity of experiments in social settings. Psychological Bulletin, 54(4), 297–312. https://doi.org/10.1037/h0040950",
+      "is_flagship": true
     },
     {
       "id": "external-validity-scc",
-      "term": "External Validity (SCC)",
-      "vietnamese": "(`Tính hợp lệ ngoại vi`): Mối quan hệ nhân quả có thể khái quát hóa qua các đối tượng, phương thức can thiệp, biến kết quả và bối cảnh khác nhau?",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "External Validity (Shadish, Cook & Campbell)",
+      "vietnamese": "Độ giá trị ngoại tại theo Shadish, Cook & Campbell",
+      "vietnamese_variants": [
+        "Khung giá trị ngoại tại SCC",
+        "Mô hình UTOS trong suy diễn nhân quả tổng quát"
       ],
-      "core_definition": "(`Tính hợp lệ ngoại vi`): Mối quan hệ nhân quả có thể khái quát hóa qua các đối tượng, phương thức can thiệp, biến kết quả và bối cảnh khác nhau?.",
-      "seminal_citation": "Shadish, Cook & Campbell (2002)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Research Methodology & Causal Inference",
+        "Experimental Design"
+      ],
+      "core_definition": "External Validity theo lý thuyết kinh điển của William Shadish, Thomas Cook và Donald Campbell (2002) được định nghĩa là sự hợp thức của suy diễn về việc liệu mối quan hệ nhân quả được quan sát giữa hai biến số có được duy trì ổn định qua các biến thể của Đơn vị nghiên cứu (Units), Can thiệp (Treatments), Kết quả quan sát (Observations) và Bối cảnh môi trường (Settings) - gọi tắt là ma trận UTOS.",
+      "seminal_citation": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #975, #976; rác Markdown/bảng; mảnh trích",
       "core_definition_en": "Academic definition of External Validity (SCC) according to Shadish, Cook & Campbell (2002).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Research Methodology & Causal Inference",
+      "operational_mechanism": "Hệ thống 5 mối đe dọa chính đối với độ giá trị ngoại tại (Threats to External Validity): (1) Tương tác giữa Can thiệp và Chọn mẫu ($Treat \\times Units$); (2) Tương tác giữa Can thiệp và Bối cảnh ($Treat \\times Settings$); (3) Tương tác giữa Can thiệp và Lịch sử/Thời gian ($Treat \\times History$); (4) Tác động của Thước đo kết quả ($Treat \\times Outcomes$); (5) Sự rò rỉ can thiệp và hiệu ứng tương tác đa can thiệp. Nhà nghiên cứu sử dụng 5 nguyên tắc logic (Purposive sampling of typical instances, Heterogeneity of irrelevancies, Impressionistic testing) để tăng cường năng lực khái quát hóa.",
+      "benchmarks": "Chuẩn mực bài báo Q1 về phương pháp luận: (1) Phân tích rành mạch ma trận UTOS và lập luận đối phó từng mối đe dọa trong phần Giới hạn nghiên cứu (Limitations); (2) Nhấn mạnh việc kiểm định điều tiết (moderation analysis) để khám phá các điều kiện biên (boundary conditions) của lý thuyết; (3) Cung cấp bằng chứng thực nghiệm từ nhiều địa bàn nghiên cứu đa dạng.",
+      "pitfalls": "Chỉ tập trung bảo vệ độ giá trị nội tại trong phòng thí nghiệm vô trùng khiến can thiệp hoàn toàn mất tác dụng khi triển khai ngoài thực tế; lầm tưởng rằng độ giá trị ngoại tại chỉ liên quan đến việc chọn mẫu ngẫu nhiên mà bỏ qua các yếu tố bối cảnh và đo lường.",
+      "apa_reference": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin.",
+      "is_flagship": true
     },
     {
       "id": "external-validity-threats",
@@ -23015,40 +23293,59 @@
     {
       "id": "extreme-value-theory-evt",
       "term": "Extreme Value Theory (EVT)",
-      "vietnamese": "Lý thuyết Giá trị Cực đoan EVT",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Risk Econometrics"
+      "vietnamese": "Lý thuyết giá trị cực trị (EVT)",
+      "vietnamese_variants": [
+        "Lý thuyết rủi ro cực đoan EVT",
+        "Mô hình hóa đuôi dày tài chính EVT"
       ],
-      "core_definition": "Mô hình hóa các biến cố hiếm gặp và rủi ro đuôi cực kỳ nặng nề trong tài chính và môi trường.",
-      "seminal_citation": "Embrechts, Klüppelberg & Mikosch (1997)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Risk Econometrics & Financial Statistics",
+        "Quantitative Finance"
+      ],
+      "core_definition": "Extreme Value Theory (EVT) là một nhánh toán học thống kê và kinh tế lượng tài chính chuyên biệt nghiên cứu và mô hình hóa hành vi của phần 'đuôi' phân phối (distributional tails) - tức là các biến cố cực đoan, hiếm gặp nhưng có tác động hủy diệt khủng khiếp (hiện tượng Thiên nga đen / rủi ro đuôi dày - fat-tailed risk) mà các phân phối chuẩn truyền thống hoàn toàn thất bại trong việc nắm bắt.",
+      "seminal_citation": "McNeil, A. J., Frey, R., & Embrechts, P. (2015). Quantitative risk management: Concepts, techniques and tools (Rev. ed.). Princeton University Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Extreme Value Theory (EVT) according to Embrechts, Klüppelberg & Mikosch (1997).",
       "domain_tags_en": [
         "Risk Econometrics"
-      ]
+      ],
+      "category": "Risk Econometrics & Financial Statistics",
+      "operational_mechanism": "Dựa trên hai định lý toán học nền tảng: (1) Định lý Fisher-Tippett-Gnedenko (Phương pháp Block Maxima): Phân phối của các giá trị cực đại chuẩn hóa luôn hội tụ về Phân phối giá trị cực trị tổng quát (Generalized Extreme Value - GEV bao gồm Gumbel, Fréchet, Weibull); (2) Định lý Pickands-Balkema-de Haan (Phương pháp Vượt ngưỡng - Peaks-Over-Threshold / POT): Phân phối của các phần bù vượt qua một ngưỡng cao $u$ hội tụ về Phân phối Pareto tổng quát (Generalized Pareto Distribution - GPD). Được sử dụng để ước lượng chính xác Giá trị chịu rủi ro (Value at Risk - VaR) và Thiệt hại kỳ vọng (Expected Shortfall - ES) ở các phân vị cực đoan 99.9%.",
+      "benchmarks": "Chuẩn mực quản trị rủi ro tài chính Basel III/IV và kinh tế lượng: (1) Kiểm tra tính toán tham số hình dạng đuôi (tail index $\\xi > 0$ chứng minh phân phối đuôi dày Fréchet); (2) Báo cáo biểu đồ đồi Hill Plot để xác định ngưỡng tối ưu $u$; (3) Kiểm định hậu nghiệm (backtesting Kupiec test) trên các cuộc khủng hoảng tài chính lịch sử.",
+      "pitfalls": "Áp dụng phân phối chuẩn Gauss để tính toán rủi ro tài chính (khiến xác suất xảy ra khủng hoảng bị đánh giá thấp đi hàng triệu lần); chọn ngưỡng $u$ trong POT quá thấp (vi phạm phân phối GPD) hoặc quá cao (thiếu dữ liệu làm phương sai ước lượng bùng nổ).",
+      "apa_reference": "McNeil, A. J., Frey, R., & Embrechts, P. (2015). Quantitative risk management: Concepts, techniques and tools (Rev. ed.). Princeton University Press.",
+      "is_flagship": true
     },
     {
       "id": "f-distribution-fisher-snedecor",
       "term": "F-Distribution (Fisher-Snedecor)",
-      "vietnamese": "Phân phối F",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Probability",
-        "Distributions"
+      "vietnamese": "Phân phối F (Fisher-Snedecor)",
+      "vietnamese_variants": [
+        "Phân phối Fisher",
+        "Phân phối tỷ số phương sai F"
       ],
-      "core_definition": "Phân phối tỷ số giữa hai phương sai độc lập, làm nền tảng cho kiểm định ANOVA và hồi quy.",
-      "seminal_citation": "Fisher (1924), Snedecor (1934)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Probability Theory & Mathematical Statistics",
+        "Inferential Statistics"
+      ],
+      "core_definition": "F-Distribution (được George Snedecor đặt tên theo chữ cái đầu của Ronald A. Fisher) là một phân phối xác suất liên tục bất đối xứng lệch phải, xuất hiện tự nhiên như là phân phối tỷ số giữa hai biến ngẫu nhiên độc lập tuân theo phân phối Chi-bình phương ($\\chi^2$) sau khi đã chia cho bậc tự do tương ứng của chúng, đóng vai trò nền tảng cho phân tích phương sai (ANOVA) và kiểm định hồi quy đa biến.",
+      "seminal_citation": "Snedecor, G. W., & Cochran, W. G. (1989). Statistical methods (8th ed.). Iowa State University Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of F-Distribution (Fisher-Snedecor) according to Fisher (1924), Snedecor (1934).",
       "domain_tags_en": [
         "Probability",
         "Distributions"
-      ]
+      ],
+      "category": "Probability Theory & Mathematical Statistics",
+      "operational_mechanism": "Định nghĩa toán học: Nếu $U \\sim \\chi^2(d_1)$ và $V \\sim \\chi^2(d_2)$ độc lập với nhau, thì biến ngẫu nhiên $X = \\frac{U / d_1}{V / d_2}$ sẽ tuân theo phân phối $F$ với hai tham số bậc tự do: $d_1$ (bậc tự do tử số) và $d_2$ (bậc tự do mẫu số), ký hiệu $X \\sim F(d_1, d_2)$. Phân phối chỉ nhận các giá trị không âm ($x \\ge 0$). Khi bậc tự do mẫu số $d_2$ tiến ra vô cùng, phân phối $F$ hội tụ về phân phối $\\chi^2$; và nếu $d_1 = 1$, $F(1, d_2)$ chính là bình phương của biến phân phối Student's $t$ ($F = t^2$).",
+      "benchmarks": "Ứng dụng trong kiểm định giả thuyết thống kê: (1) Kiểm định sự bằng nhau của hai phương sai mẫu (Fisher's F-test); (2) Kiểm định tính phù hợp tổng thể của mô hình hồi quy đa biến ($H_0: \\beta_1 = \\beta_2 = ... = \\beta_k = 0$); (3) Kiểm định ràng buộc tuyến tính đồng thời (Wald F-test) và kiểm định hiện tượng công cụ yếu (Weak Instruments First-Stage F $> 10$ hoặc $> 104.7$).",
+      "pitfalls": "Kiểm định F rất nhạy cảm với sự vi phạm giả định phân phối chuẩn của các biến ban đầu; nhầm lẫn giữa bậc tự do tử số (số lượng biến/nhóm so sánh) và bậc tự do mẫu số (cỡ mẫu trừ đi số tham số).",
+      "apa_reference": "Snedecor, G. W., & Cochran, W. G. (1989). Statistical methods (8th ed.). Iowa State University Press.",
+      "is_flagship": true
     },
     {
       "id": "face-validity",
@@ -23120,74 +23417,114 @@
     {
       "id": "fail-safe-n-rosenthal",
       "term": "Fail-Safe N (Rosenthal)",
-      "vietnamese": "Chỉ số an toàn Rosenthal tính toán số lượng nghiên cứu rỗng không ý nghĩa cần thiết để xóa bỏ hiệu ứng gộp có ý nghĩa",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Meta-Analysis"
+      "vietnamese": "Chỉ số số lượng nghiên cứu an toàn Rosenthal (Fail-Safe N)",
+      "vietnamese_variants": [
+        "Chỉ số an toàn hồ sơ ngăn kéo Rosenthal",
+        "Thước đo độ vững meta-analysis Fail-Safe N"
       ],
-      "core_definition": "Chỉ số an toàn Rosenthal tính toán số lượng nghiên cứu rỗng không ý nghĩa cần thiết để xóa bỏ hiệu ứng gộp có ý nghĩa.",
-      "seminal_citation": "Rosenthal (1979)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Meta-Analysis Diagnostics & Publication Bias",
+        "Evidence Synthesis"
+      ],
+      "core_definition": "Fail-Safe N (còn gọi là Rosenthal's File Drawer Analysis, 1979) là một chỉ số định lượng trong phân tích tổng hợp (meta-analysis), ước lượng số lượng các nghiên cứu chưa công bố hoặc bị 'nằm trong ngăn kéo' (file-drawer studies) có kết quả không có ý nghĩa thống kê ($p > 0.05$ hoặc cỡ tác động bằng 0) cần phải tồn tại để có thể làm suy giảm kết quả tổng hợp có ý nghĩa thống kê của phân tích tổng hợp hiện tại xuống mức không còn ý nghĩa.",
+      "seminal_citation": "Rosenthal, R. (1979). The file drawer problem and tolerance for null results. Psychological Bulletin, 86(3), 638-641.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Fail-safe N bị khuyến cáo không dùng (Becker 2005; Cochrane Handbook) – cần cảnh báo",
       "core_definition_en": "Academic definition of Fail-Safe N (Rosenthal) according to Rosenthal (1979).",
       "domain_tags_en": [
         "Meta-Analysis"
-      ]
+      ],
+      "category": "Meta-Analysis Diagnostics & Publication Bias",
+      "operational_mechanism": "Công thức toán học kinh điển của Rosenthal: $N_{fs} = \\frac{(\\sum Z_i)^2}{2.706} - k$, trong đó $Z_i$ là điểm $z$ tương ứng với $p$-value của nghiên cứu thứ $i$, $k$ là số lượng nghiên cứu độc lập đưa vào phân tích tổng hợp, và hằng số $2.706$ là bình phương của giá trị tới hạn $z = 1.645$ (cho mức ý nghĩa một phía $\\alpha = 0.05$). Nếu $N_{fs}$ là một con số rất lớn, nhà nghiên cứu có thể tự tin rằng kết luận của phân tích tổng hợp là cực kỳ vững chắc trước thiên lệch xuất bản.",
+      "benchmarks": "Quy tắc ngưỡng chuẩn tắc của Rosenthal (1979): Kết quả tổng hợp được coi là an toàn và vững chắc nếu $N_{fs} > 5k + 10$ (trong đó $k$ là số nghiên cứu hiện tại). Ngược lại, nếu $N_{fs}$ nhỏ, chỉ cần vài nghiên cứu không công bố cũng đủ làm đảo ngược kết luận khoa học.",
+      "pitfalls": "Chỉ số của Rosenthal chỉ tập trung vào p-value mà bỏ qua độ lớn của cỡ tác động (Orwin sau đó đã đề xuất Orwin's Fail-Safe N hiệu chỉnh theo cỡ tác động Cohen's $d$); không thể thay thế cho các phương pháp chẩn đoán phễu hiện đại như Egger test hay Contour-enhanced funnel plot.",
+      "apa_reference": "Rosenthal, R. (1979). The file drawer problem and tolerance for null results. Psychological Bulletin, 86(3), 638–641. https://doi.org/10.1037/0033-2909.86.3.638",
+      "is_flagship": true
     },
     {
       "id": "failure-mode-and-effects-analysis-fmea",
       "term": "Failure Mode and Effects Analysis (FMEA)",
-      "vietnamese": "Phân tích Kiểu Sai hỏng và Tác động FMEA",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Reliability Engineering"
+      "vietnamese": "Phân tích phương thái sai hỏng và tác động (FMEA)",
+      "vietnamese_variants": [
+        "Kỹ thuật phân tích rủi ro FMEA",
+        "Phương pháp đánh giá chỉ số rủi ro RPN"
       ],
-      "core_definition": "Phương pháp đánh giá rủi ro hệ thống dựa trên chỉ số ưu tiên rủi ro RPN.",
-      "seminal_citation": "Stamatis (2003)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Reliability Engineering & Quality Management",
+        "Operations Research"
+      ],
+      "core_definition": "Failure Mode and Effects Analysis (FMEA) là một phương pháp luận có cấu trúc và có tính hệ thống nhằm nhận diện, phân tích và ưu tiên các dạng thức sai hỏng tiềm ẩn (potential failure modes) trong một thiết kế kỹ thuật, quy trình sản xuất hoặc dịch vụ, đánh giá các nguyên nhân và hậu quả của từng sai hỏng để đưa ra các biện pháp phòng ngừa rủi ro chủ động.",
+      "seminal_citation": "Stamatis, D. H. (2003). Failure mode and effect analysis: FMEA from theory to execution (2nd ed.). ASQ Quality Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Failure Mode and Effects Analysis (FMEA) according to Stamatis (2003).",
       "domain_tags_en": [
         "Reliability Engineering"
-      ]
+      ],
+      "category": "Reliability Engineering & Quality Management",
+      "operational_mechanism": "Hệ thống định lượng mức độ rủi ro thông qua Chỉ số ưu tiên rủi ro (Risk Priority Number - RPN): $RPN = S \\times O \\times D$, trong đó: (1) Mức độ nghiêm trọng (Severity - $S$): thang điểm 1-10 đo lường mức độ tác hại đối với khách hàng; (2) Tần suất xuất hiện (Occurrence - $O$): thang điểm 1-10 đo lường xác suất xảy ra của nguyên nhân sai hỏng; (3) Khả năng phát hiện (Detection - $D$): thang điểm 1-10 đo lường khả năng các cơ chế kiểm soát hiện hành phát hiện được sai hỏng trước khi đến tay người dùng (điểm càng cao nghĩa là càng khó phát hiện).",
+      "benchmarks": "Chuẩn mực quản trị chất lượng quốc tế (AIAG & VDA, ISO 9001, Six Sigma): (1) Các sai hỏng có RPN cao nhất (thường $RPN > 100$ hoặc $S \\ge 9$) bắt buộc phải có Kế hoạch hành động khắc phục tức thì; (2) Tái đánh giá RPN sau khi triển khai các biện pháp cải tiến; (3) Phân biệt rành mạch giữa Thiết kế FMEA (DFMEA) và Quy trình FMEA (PFMEA).",
+      "pitfalls": "Áp dụng phép nhân số học thuần túy cho các thang đo thứ bậc (ordinal scales) có thể làm sai lệch thứ tự ưu tiên (hai lỗi có cùng RPN = 120 nhưng một lỗi có $S=10$ nguy hiểm hơn nhiều so với lỗi có $S=3$); đánh giá chủ quan thiếu bằng chứng dữ liệu thực tế.",
+      "apa_reference": "Stamatis, D. H. (2003). Failure mode and effect analysis: FMEA from theory to execution (2nd ed.). ASQ Quality Press.",
+      "is_flagship": true
     },
     {
       "id": "failure-to-reject-the-null-hypothesis",
       "term": "Failure to Reject the Null Hypothesis",
-      "vietnamese": "Không đủ Cơ sở Bác bỏ Giả thuyết Không",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Inferential Statistics"
+      "vietnamese": "Không thể bác bỏ giả thuyết không",
+      "vietnamese_variants": [
+        "Chưa đủ bằng chứng bác bỏ H0",
+        "Không bác bỏ giả thuyết vô hiệu"
       ],
-      "core_definition": "Không kết luận H0 đúng mà chỉ kết luận dữ liệu chưa đủ bằng chứng.",
-      "seminal_citation": "Fisher (1935)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Inferential Statistics & Hypothesis Testing",
+        "Philosophy of Science"
+      ],
+      "core_definition": "Failure to Reject the Null Hypothesis là một kết luận suy luận thống kê chuẩn tắc và thận trọng theo khung kiểm định Neyman-Pearson và Fisher, xảy ra khi giá trị p-value quan sát được lớn hơn mức ý nghĩa $\\alpha$ định trước ($p > 0.05$), phản ánh rằng dữ liệu mẫu hiện tại chưa cung cấp đủ bằng chứng xác thực để bác bỏ Giả thuyết không ($H_0$), nhưng tuyệt đối KHÔNG ĐỒNG NGHĨA với việc chứng minh rằng $H_0$ là đúng.",
+      "seminal_citation": "Altman, D. G., & Bland, J. M. (1995). Statistics notes: Absence of evidence is not evidence of absence. BMJ, 311(7003), 485.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Failure to Reject the Null Hypothesis according to Fisher (1935).",
       "domain_tags_en": [
         "Inferential Statistics"
-      ]
+      ],
+      "category": "Inferential Statistics & Hypothesis Testing",
+      "operational_mechanism": "Cơ sở logic tri thức luận: Tương tự như nguyên tắc 'Vô tội cho đến khi bị chứng minh có tội' trong tòa án pháp lý (phán quyết 'Không có tội - Not guilty' chỉ có nghĩa là chưa đủ bằng chứng kết tội chứ không chứng minh bị cáo vô tội tuyệt đối). Việc không bác bỏ $H_0$ có thể do hai nguyên nhân hoàn toàn khác nhau: (1) Bản thân hiệu ứng thực sự không tồn tại trong tự nhiên; (2) Hiệu ứng thực sự có tồn tại nhưng nghiên cứu bị thiếu Công suất thống kê (Statistical Power $1 - \\beta < 0.80$) do kích thước mẫu quá nhỏ (Sai lầm loại II - Type II error).",
+      "benchmarks": "Chuẩn mực trình bày bài báo quốc tế: (1) Tuyệt đối cấm dùng cụm từ 'Chấp nhận giả thuyết không' (Accept the null hypothesis) hoặc 'Chứng minh không có sự khác biệt'; (2) Bắt buộc phải thực hiện phân tích công suất hậu nghiệm (Post-hoc power analysis) hoặc báo cáo Khoảng tin cậy 95% để chứng minh độ hẹp của khoảng ước lượng; (3) Nếu muốn chứng minh hai nhóm tương đương nhau, bắt buộc phải dùng Kiểm định tương đương (Equivalence Testing / TOST).",
+      "pitfalls": "Ngụy biện coi sự thiếu vắng bằng chứng là bằng chứng của sự vắng mặt (Absence of evidence is not evidence of absence); kết luận một phương pháp điều trị mới an toàn chỉ vì một nghiên cứu mẫu 20 người không tìm thấy tác dụng phụ có ý nghĩa thống kê.",
+      "apa_reference": "Altman, D. G., & Bland, J. M. (1995). Statistics notes: Absence of evidence is not evidence of absence. BMJ, 311(7003), 485. https://doi.org/10.1136/bmj.311.7003.485",
+      "is_flagship": true
     },
     {
       "id": "fair-data-principles",
       "term": "FAIR Data Principles",
-      "vietnamese": "Các Nguyên tắc Dữ liệu Khoa học Mở: Dễ tìm",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Open Science"
+      "vietnamese": "Bộ nguyên tắc dữ liệu FAIR",
+      "vietnamese_variants": [
+        "Tiêu chuẩn dữ liệu mở FAIR",
+        "Nguyên tắc quản trị dữ liệu nghiên cứu FAIR"
       ],
-      "core_definition": "Findable), Dễ tiếp cận (Accessible), Tương tác được (Interoperable), Tái sử dụng được (Reusable.",
-      "seminal_citation": "Wilkinson et al. (2016)",
-      "tier": "curated",
+      "domain_tags": [
+        "Open Science & Research Data Management",
+        "Data Stewardship"
+      ],
+      "core_definition": "FAIR Data Principles là một bộ quy chuẩn hướng dẫn quản trị dữ liệu nghiên cứu khoa học được cộng đồng khoa học quốc tế công bố năm 2016 trên tạp chí Nature Scientific Data, nhằm đảm bảo rằng các tài sản số (dữ liệu, thuật toán, mã nguồn, quy trình) được cấu trúc sao cho có thể: Dễ tìm kiếm (Findable), Dễ tiếp cận (Accessible), Có thể tương tác (Interoperable), và Có thể tái sử dụng (Reusable) cho cả con người lẫn các hệ thống máy tính tính toán tự động.",
+      "seminal_citation": "Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Baak, A., ... & Mons, B. (2016). The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data, 3, Article 160018.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of FAIR Data Principles according to Wilkinson et al. (2016).",
       "domain_tags_en": [
         "Open Science"
-      ]
+      ],
+      "category": "Open Science & Research Data Management",
+      "operational_mechanism": "Hệ thống gồm 15 chỉ dẫn cụ thể chia đều cho 4 trụ cột: (1) Findable: Gán mã định danh vĩnh viễn duy nhất (DOI), mô tả siêu dữ liệu phong phú (rich metadata) và lập chỉ mục trong các kho lưu trữ tìm kiếm được; (2) Accessible: Siêu dữ liệu và dữ liệu có thể truy xuất bằng giao thức truyền thông chuẩn mở và miễn phí (HTTPS), ngay cả khi dữ liệu bị hạn chế quyền riêng tư thì siêu dữ liệu vẫn luôn mở; (3) Interoperable: Sử dụng các ngôn ngữ hình thức biểu diễn tri thức chuẩn (RDF, OWL), từ vựng có kiểm soát và liên kết với các bộ dữ liệu khác; (4) Reusable: Cung cấp giấy phép bản quyền rõ ràng (Creative Commons), thông tin phả hệ nguồn gốc dữ liệu (data provenance) và tuân thủ chuẩn mực cộng đồng chuyên ngành.",
+      "benchmarks": "Yêu cầu bắt buộc của các quỹ tài trợ quốc tế (Horizon Europe, NIH, NSF, Bill & Melinda Gates): (1) Bắt buộc phải nộp Kế hoạch quản trị dữ liệu (Data Management Plan - DMP); (2) Đưa dữ liệu thô đã khử nhận dạng lên các kho lưu trữ đạt chuẩn (như Zenodo, Figshare, OSF, Harvard Dataverse); (3) Đánh giá mức độ tuân thủ FAIR qua công cụ FAIR Maturity Matrix.",
+      "pitfalls": "Lầm tưởng 'FAIR Data' đồng nghĩa với 'Open Data 100%' (FAIR cho phép dữ liệu bảo mật nếu có lý do chính đáng về quyền riêng tư hoặc an ninh, miễn là quy trình cấp phép tiếp cận được mô tả minh bạch: 'As open as possible, as closed as necessary').",
+      "apa_reference": "Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Baak, A., ... & Mons, B. (2016). The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data, 3, Article 160018. https://doi.org/10.1038/sdata.2016.18",
+      "is_flagship": true
     },
     {
       "id": "false-discovery-rate",
@@ -23223,41 +23560,60 @@
     },
     {
       "id": "false-positive-rate",
-      "term": "False positive rate",
-      "vietnamese": "Tỷ lệ dương tính giả (loại I error trong kiểm định giá trị phân biệt).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "PLS-SEM",
-        "Discriminant Validity"
+      "term": "False Positive Rate (FPR)",
+      "vietnamese": "Tỷ lệ dương tính giả (FPR)",
+      "vietnamese_variants": [
+        "Tỷ lệ sai lầm loại I",
+        "Xác suất báo động nhầm"
       ],
-      "core_definition": "Tỷ lệ dương tính giả (loại I error trong kiểm định giá trị phân biệt).",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
-      "tier": "index",
+      "domain_tags": [
+        "Diagnostic Testing & Statistical Classification",
+        "Biostatistics"
+      ],
+      "core_definition": "False Positive Rate (FPR, tương đương toán học với Mức ý nghĩa $\\alpha$ hoặc Sai lầm loại I trong kiểm định giả thuyết) là một chỉ số hiệu năng đo lường xác suất một đối tượng thực sự âm tính (hoàn toàn không mắc bệnh hoặc không có lỗi) lại bị công cụ chẩn đoán/thuật toán phân loại đưa ra kết luận sai lầm là dương tính.",
+      "seminal_citation": "Fawcett, T. (2006). An introduction to ROC analysis. Pattern Recognition Letters, 27(8), 861-874.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of False positive rate according to Henseler et al. (2015); Henseler et al. (2015).",
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "category": "Diagnostic Testing & Statistical Classification",
+      "operational_mechanism": "Công thức tính toán từ ma trận nhầm lẫn (Confusion Matrix): $FPR = \\frac{FP}{FP + TN} = \\frac{FP}{N_{thuc\\_te\\_am}} = 1 - \\text{Specificity}$ (trong đó $FP$ là số ca dương tính giả, $TN$ là số ca âm tính thật, và Specificity là độ đặc hiệu). Trong đường cong đặc trưng hoạt động của máy thu (ROC Curve), trục tung là Độ nhạy (True Positive Rate - TPR) và trục hoành chính là Tỷ lệ dương tính giả (FPR). Một công cụ hoàn hảo có $FPR = 0$ và $TPR = 1$.",
+      "benchmarks": "Đánh giá trong y học chẩn đoán và học máy: (1) Đánh đổi kinh điển giữa FPR và FNR: Giảm ngưỡng phát hiện để không bỏ sót bệnh nhân mắc bệnh (tăng Sensitivity) sẽ tất yếu làm tăng tỷ lệ dương tính giả (tăng FPR); (2) Báo cáo Diện tích dưới đường cong ROC (AUC-ROC); (3) Khi tỷ lệ hiện mắc trong quần thể rất thấp, một xét nghiệm có FPR dù chỉ 1% vẫn có thể dẫn đến việc đa số những người nhận kết quả dương tính thực chất là người khỏe mạnh.",
+      "pitfalls": "Nhầm lẫn giữa FPR ($P(\\text{Test}+ | \\text{Không bệnh})$) với Tỷ lệ phát hiện sai FDR ($P(\\text{Không bệnh} | \\text{Test}+)$ - False Discovery Rate); bỏ qua hậu quả tâm lý và chi phí tài chính nặng nề của các xét nghiệm can thiệp xâm lấn không cần thiết do dương tính giả gây ra.",
+      "apa_reference": "Fawcett, T. (2006). An introduction to ROC analysis. Pattern Recognition Letters, 27(8), 861–874. https://doi.org/10.1016/j.patrec.2005.10.010",
+      "is_flagship": true
     },
     {
       "id": "falsification-principle-karl-popper",
       "term": "Falsification Principle (Karl Popper)",
-      "vietnamese": "Nguyên lý Khả bác Karl Popper",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Philosophy of Science"
+      "vietnamese": "Nguyên tắc khả phản nghiệm của Karl Popper",
+      "vietnamese_variants": [
+        "Tiêu chuẩn bác bỏ Popper",
+        "Chủ nghĩa khả phản nghiệm trong triết học khoa học"
       ],
-      "core_definition": "Một lý thuyết chỉ được coi là khoa học nếu nó có khả năng bị chứng minh là sai bằng thực nghiệm.",
-      "seminal_citation": "Popper (1934/1959)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Philosophy of Science & Epistemology",
+        "Research Methodology"
+      ],
+      "core_definition": "Falsification Principle (Nguyên tắc khả phản nghiệm) là hòn đá tảng trong triết học khoa học của Karl Popper (1959), khẳng định rằng một lý thuyết hay mệnh đề chỉ được coi là có tính khoa học thực nghiệm nếu nó có khả năng bị bác bỏ, bị chứng minh là sai bởi một quan sát hoặc thử nghiệm thực tế có thể hình dung được.",
+      "seminal_citation": "Popper, K. (1959). The logic of scientific discovery. Hutchinson & Co.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "tên Việt (\"Nguyên lý khả bác\") không thống nhất với mục flagship #51 (\"Thuyết bác ngụy\")",
       "core_definition_en": "Academic definition of Falsification Principle (Karl Popper) according to Popper (1934/1959).",
       "domain_tags_en": [
         "Philosophy of Science"
-      ]
+      ],
+      "category": "Philosophy of Science & Epistemology",
+      "operational_mechanism": "Popper dựa trên tính bất đối xứng logic tuyệt đối giữa việc Xác minh (Verification) và Phản nghiệm (Falsification): Dù ta có quan sát được hàng triệu con thiên nga màu trắng, ta vẫn không bao giờ có thể chứng minh một cách logic rằng 'Mọi con thiên nga đều màu trắng' (vấn đề quy nạp của Hume); nhưng chỉ cần quan sát được duy nhất một con thiên nga màu đen, mệnh đề phổ quát trên lập tức bị bác bỏ hoàn toàn về mặt logic (Modus Tollens: $T \\to O, \\neg O \\vdash \\neg T$). Khoa học không tiến bộ bằng cách tích lũy chân lý vĩnh cửu, mà tiến bộ thông qua việc liên tục đưa ra các phỏng đoán táo bạo (conjectures) và nỗ lực phản nghiệm tàn nhẫn chúng (refutations).",
+      "benchmarks": "Chuẩn mực xây dựng giả thuyết nghiên cứu tiến sĩ: (1) Mọi giả thuyết khoa học phải được phát biểu sao cho nó chấp nhận rủi ro bị bác bỏ bởi dữ liệu; (2) Loại bỏ các mệnh đề tautology (nói kiểu gì cũng đúng) hoặc các lý thuyết có thể tự thanh minh cho mọi kết quả đối lập; (3) Cung cấp tiêu chí kiểm định thực nghiệm rõ ràng.",
+      "pitfalls": "Đồng nhất giữa việc 'chưa bị phản nghiệm' với 'chân lý tuyệt đối' (Popper khẳng định một lý thuyết vượt qua nhiều kiểm định chỉ được coi là tạm thời được củng cố - corroborated chứ không bao giờ được chứng minh); bỏ qua phê phán của Duhem-Quine về vai trò của các giả thuyết phụ trợ.",
+      "apa_reference": "Popper, K. (1959). The logic of scientific discovery. Hutchinson & Co.",
+      "is_flagship": true
     },
     {
       "id": "fama-french-five-factor-model",
@@ -23378,21 +23734,31 @@
     },
     {
       "id": "fat",
-      "term": "Fat",
-      "vietnamese": "\"Mỡ\" trong văn phong (Dư thừa) — Các từ ngữ rườm rà, thừa thãi cần phải cắt tỉa để câu văn học thuật cô đọng, sắc bén.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Funnel Plot Asymmetry Test (FAT)",
+      "vietnamese": "Kiểm định bất đối xứng biểu đồ phễu (FAT)",
+      "vietnamese_variants": [
+        "Kiểm định thiên lệch xuất bản FAT",
+        "Kiểm định FAT-PET Stanley"
       ],
-      "core_definition": "\"Mỡ\" trong văn phong (Dư thừa) — Các từ ngữ rườm rà, thừa thãi cần phải cắt tỉa để câu văn học thuật cô đọng, sắc bén.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Meta-Analysis Diagnostics & Meta-Regression",
+        "Econometrics"
+      ],
+      "core_definition": "Funnel Plot Asymmetry Test (FAT, do T. D. Stanley và Chris Doucouliagos chuẩn hóa trong phân tích tổng hợp kinh tế học) là một kiểm định hồi quy tổng quan (meta-regression) nhằm phát hiện sự hiện diện của thiên lệch xuất bản (publication bias), kiểm tra xem các ước lượng cỡ tác động có bị tương quan có hệ thống với sai số chuẩn của chúng hay không.",
+      "seminal_citation": "Stanley, T. D., & Doucouliagos, H. (2012). Meta-regression analysis in economics and business. Routledge.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Fat according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Meta-Analysis Diagnostics & Meta-Regression",
+      "operational_mechanism": "Mô hình hồi quy FAT-PET (Funnel Asymmetry Test - Precision Effect Test) sử dụng phương pháp bình phương bé nhất có trọng số (WLS): $t_i = \\frac{Effect_i}{SE_i} = \\beta_0 + \\beta_1 \\left( \\frac{1}{SE_i} \\right) + \\varepsilon_i$. Hệ số chặn $\\beta_0$ chính là kiểm định FAT: Nếu $\\beta_0$ khác 0 có ý nghĩa thống kê ($H_0: \\beta_0 = 0$ bị bác bỏ), biểu đồ phễu bị bất đối xứng nghiêm trọng và thiên lệch xuất bản được xác nhận. Đồng thời, hệ số góc $\\beta_1$ chính là kiểm định PET (Precision Effect Test), cung cấp ước lượng về cỡ tác động thực sự không bị chệch của hiện tượng khi độ chính xác tiến ra vô cùng.",
+      "benchmarks": "Chuẩn mực nghiên cứu phân tích tổng hợp kinh tế học (MAER-Net Guidelines, JEL): (1) Khắc phục triệt để hiện tượng phương sai thay đổi nội tại bằng cách chia toàn bộ phương trình cho $SE_i$; (2) Áp dụng sai số chuẩn cụm ở cấp độ tác giả/bài báo để kiểm soát tương quan nội bộ; (3) Kết hợp với kiểm định PEESE (Precision Effect Estimate with Standard Error) khi kiểm định PET cho thấy sự tồn tại của hiệu ứng thực tế.",
+      "pitfalls": "Áp dụng FAT cho số lượng nghiên cứu quá ít ($k < 10-15$); bỏ qua các nguyên nhân khác gây bất đối xứng phễu như chất lượng phương pháp luận kém của các nghiên cứu quy mô nhỏ hoặc tính không đồng nhất thực sự giữa các phân nhóm.",
+      "apa_reference": "Stanley, T. D., & Doucouliagos, H. (2012). Meta-regression analysis in economics and business. Routledge. https://doi.org/10.4324/9780203112212",
+      "is_flagship": true
     },
     {
       "id": "fdr",
@@ -23428,92 +23794,133 @@
     },
     {
       "id": "fe",
-      "term": "FE",
-      "vietnamese": "Mô hình Tác động Cố định (Dữ liệu bảng)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Panel Data Econometrics"
+      "term": "Fixed Effects (FE)",
+      "vietnamese": "Mô hình hiệu ứng cố định (FE)",
+      "vietnamese_variants": [
+        "Hồi quy Fixed Effects dữ liệu bảng",
+        "Ước lượng Within-Estimator"
       ],
-      "core_definition": "Kiểm soát các đặc tính bất biến theo thời gian của từng thực thể (ví dụ: văn hóa công ty, vị trí địa lý, tính cách bẩm sinh) có thể gây nội sinh do biến bị bỏ sót. Ngưỡng thực nghiệm tham chiếu: Lựa chọn qua kiểm định Hausman Test (P < 0.05 ưu tiên dùng FE thay vì RE).",
-      "seminal_citation": "Lựa chọn qua kiểm định Hausman Test (P < 0.05 ưu tiên dùng FE thay vì RE).",
-      "tier": "acronym",
+      "domain_tags": [
+        "Panel Data Econometrics & Causal Inference",
+        "Applied Econometrics"
+      ],
+      "core_definition": "Fixed Effects (FE, còn gọi là Within-Estimator) là một phương pháp ước lượng kinh tế lượng chuẩn tắc cho dữ liệu bảng (panel data), cho phép kiểm soát triệt để và loại bỏ hoàn toàn mọi biến nhiễu không quan sát được nhưng bất biến theo thời gian của các đơn vị nghiên cứu (như đặc tính văn hóa doanh nghiệp, năng lực bẩm sinh của cá nhân, vị trí địa lý cố định), giải quyết nguồn nội sinh nguy hiểm phát sinh từ thiên lệch biến bị bỏ sót (omitted variable bias).",
+      "seminal_citation": "Wooldridge, J. M. (2010). Econometric analysis of cross section and panel data (2nd ed.). MIT Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of FE according to Lựa chọn qua kiểm định Hausman Test (P < 0.05 ưu tiên dùng FE thay vì RE)..",
       "domain_tags_en": [
         "Panel Data Econometrics"
       ],
-      "benchmarks": "Lựa chọn qua kiểm định Hausman Test (P < 0.05 ưu tiên dùng FE thay vì RE)."
+      "benchmarks": "Chuẩn mực kinh tế lượng hàng đầu (AER, QJE): (1) Thực hiện kiểm định Hausman Test so sánh FE và RE ($H_0$: Random Effects là nhất quán và hiệu quả; nếu $p < 0.05$, bắt buộc phải chọn Fixed Effects); (2) Bổ sung hiệu ứng cố định thời gian (Two-Way Fixed Effects - TWFE) để kiểm soát các cú sốc vĩ mô chung; (3) Báo cáo sai số chuẩn cụm (clustered standard errors) theo đơn vị $i$ để phòng ngừa tự tương quan.",
+      "category": "Panel Data Econometrics & Causal Inference",
+      "operational_mechanism": "Mô hình dữ liệu bảng: $y_{it} = X_{it}\\beta + \\alpha_i + \\varepsilon_{it}$, trong đó $\\alpha_i$ là hiệu ứng cố định đặc thù của cá nhân $i$ có thể tương quan tùy ý với các biến giải thích $X_{it}$ ($Cov(X_{it}, \\alpha_i) \\ne 0$). Thuật toán biến đổi Within-Transformation lấy giá trị từng quan sát trừ đi giá trị trung bình theo thời gian của chính cá nhân đó: $(y_{it} - \\bar{y}_i) = (X_{it} - \\bar{X}_i)\\beta + (\\alpha_i - \\bar{\\alpha}_i) + (\\varepsilon_{it} - \\bar{\\varepsilon}_i) \\Rightarrow \\ddot{y}_{it} = \\ddot{X}_{it}\\beta + \\ddot{\\varepsilon}_{it}$. Do $\\alpha_i - \\bar{\\alpha}_i = 0$, hiệu ứng cố định bị triệt tiêu hoàn toàn, cho phép hồi quy OLS ước lượng nhất quán hệ số $\\beta$.",
+      "pitfalls": "Mô hình FE triệt tiêu toàn bộ các biến độc lập không thay đổi theo thời gian (như giới tính, chủng tộc, ngành nghề kinh doanh cố định); không thể giải quyết được các biến nhiễu thay đổi theo thời gian ($Cov(X_{it}, \\varepsilon_{it}) \\ne 0$); ước lượng có thể bị mất hiệu quả nếu phương sai nội bộ (within-variation) của biến giải thích quá nhỏ.",
+      "apa_reference": "Wooldridge, J. M. (2010). Econometric analysis of cross section and panel data (2nd ed.). MIT Press.",
+      "is_flagship": true
     },
     {
       "id": "feasible-generalized-least-squares-fgls",
       "term": "Feasible Generalized Least Squares (FGLS)",
-      "vietnamese": "Bình phương Tối thiểu Tổng quát Khả thi",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Econometrics"
+      "vietnamese": "Bình phương bé nhất tổng quát khả thi (FGLS)",
+      "vietnamese_variants": [
+        "Ước lượng FGLS",
+        "Mô hình hồi quy FGLS hai bước"
       ],
-      "core_definition": "Ước lượng GLS khi ma trận hiệp phương sai sai số chưa biết và phải ước lượng trước.",
-      "seminal_citation": "Wooldridge (2010)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Econometrics & Advanced Regression",
+        "Applied Statistics"
+      ],
+      "core_definition": "Feasible Generalized Least Squares (FGLS) là một phương pháp ước lượng kinh tế lượng hai bước được sử dụng khi các sai số của mô hình hồi quy tuyến tính vi phạm các giả định Gauss-Markov do có hiện tượng Phương sai thay đổi (Heteroskedasticity) hoặc Tự tương quan (Autocorrelation) với cấu trúc ma trận hiệp phương sai sai số $\\Omega$ chưa biết trước, thay thế $\\Omega$ bằng một ước lượng nhất quán $\\hat{\\Omega}$ rút ra từ phần dư OLS.",
+      "seminal_citation": "Greene, W. H. (2018). Econometric analysis (8th ed.). Pearson Education.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Feasible Generalized Least Squares (FGLS) according to Wooldridge (2010).",
       "domain_tags_en": [
         "Econometrics"
-      ]
+      ],
+      "category": "Econometrics & Advanced Regression",
+      "operational_mechanism": "Quy trình ước lượng 2 bước: (1) Bước 1: Ước lượng mô hình ban đầu bằng OLS để thu được các phần dư $\\hat{e}_i$; sử dụng các phần dư này (thường thông qua hồi quy phụ $\\log(\\hat{e}_i^2)$ lên các biến giải thích) để ước lượng cấu trúc tham số của ma trận hiệp phương sai, tạo ra ma trận khả thi $\\hat{\\Omega}$; (2) Bước 2: Biến đổi dữ liệu bằng ma trận Cholesky $\\hat{P} = \\hat{\\Omega}^{-1/2}$ ($y^* = \\hat{P}y, X^* = \\hat{P}X$) và áp dụng hồi quy OLS trên dữ liệu đã biến đổi: $\\hat{\\beta}_{FGLS} = (X'\\hat{\\Omega}^{-1}X)^{-1} X'\\hat{\\Omega}^{-1}y$.",
+      "benchmarks": "Chuẩn mực kinh tế lượng: (1) Ước lượng FGLS đạt tính hiệu quả tiệm cận (asymptotically efficient) cao hơn OLS khi kích thước mẫu lớn ($N \\to \\infty$); (2) Trong dữ liệu bảng có $T > N$, FGLS của Parks-Kmenta cho phép kiểm soát đồng thời phương sai thay đổi theo đơn vị, tự tương quan AR(1) và tương quan chéo; (3) Cần kiểm tra tính ổn định của ma trận $\\hat{\\Omega}$.",
+      "pitfalls": "Trong các mẫu nhỏ ($N < 50$), ước lượng $\\hat{\\Omega}$ có thể bị nhiễu nghiêm trọng khiến FGLS hoạt động kém hơn OLS thông thường; nếu cấu trúc phương sai thay đổi ở bước 1 bị chỉ định sai mô hình, ước lượng FGLS sẽ bị mất tính nhất quán (trong trường hợp đó OLS với sai số chuẩn vững White/Huber-White an toàn hơn).",
+      "apa_reference": "Greene, W. H. (2018). Econometric analysis (8th ed.). Pearson Education.",
+      "is_flagship": true
     },
     {
       "id": "field-editing-vs-central-editing",
-      "term": "Field editing vs Central editing",
-      "vietnamese": "Hiệu đính thực địa vs. Hiệu đính tập trung",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Field Editing vs. Central Editing",
+      "vietnamese": "Hiệu đính tại thực địa so với Hiệu đính tại trung tâm",
+      "vietnamese_variants": [
+        "Kiểm tra số liệu tại điền dã và xử lý dữ liệu tập trung",
+        "Quy trình làm sạch dữ liệu khảo sát"
       ],
-      "core_definition": "Quy trình rà soát bảng hỏi: Ngay tại thực địa vs. Khi tập hợp về trung tâm.",
-      "seminal_citation": "Schindler (2022)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Survey Methodology & Data Quality Control",
+        "Data Collection"
+      ],
+      "core_definition": "Field Editing vs. Central Editing là hai giai đoạn kiểm soát chất lượng dữ liệu khảo sát và làm sạch số liệu bổ trợ cho nhau trong quy trình điều tra xã hội học và khảo sát thị trường nhằm phát hiện, sửa đổi các lỗi ghi chép, câu trả lời mơ hồ hoặc dữ liệu khuyết thiếu trước khi nhập liệu và phân tích thống kê.",
+      "seminal_citation": "Malhotra, N. K., Nunan, D., & Birks, D. F. (2017). Marketing research: An applied approach (5th ed.). Pearson Education.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Field editing vs Central editing according to Schindler (2022).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Survey Methodology & Data Quality Control",
+      "operational_mechanism": "Phân định quy trình hai tầng: (1) Hiệu đính thực địa (Field Editing): Do giám sát viên thực địa tiến hành ngay trong ngày diễn ra phỏng vấn, rà soát nhanh bản hỏi giấy hoặc nhật ký phỏng vấn để phát hiện câu hỏi bị bỏ sót, chữ viết tay không đọc được hoặc mâu thuẫn lộ liễu, cho phép phỏng vấn viên quay lại liên lạc ngay với người trả lời để làm rõ khi trí nhớ còn tươi mới; (2) Hiệu đính trung tâm (Central Editing): Do đội ngũ chuyên viên xử lý dữ liệu tại văn phòng trung tâm tiến hành sau khi đã thu thập toàn bộ phiếu khảo sát, áp dụng các quy tắc kiểm tra logic phức tạp, mã hóa các câu hỏi mở, kiểm tra tính nhất quán giữa các biến số và quyết định quy tắc loại bỏ phiếu hỏng hoặc gán giá trị khuyết (imputation).",
+      "benchmarks": "Chuẩn mực bảo đảm chất lượng dữ liệu khảo sát: (1) Báo cáo tỷ lệ phiếu phải hiệu đính lại tại thực địa; (2) Xây dựng sổ tay quy chuẩn hiệu đính trung tâm (central editing manual) với các quy tắc xử lý nhất quán, cấm chuyên viên tự ý suy đoán câu trả lời của đối tượng; (3) Tài liệu hóa toàn bộ các thay đổi vào hồ sơ kiểm toán dữ liệu (data audit log).",
+      "pitfalls": "Bỏ qua bước hiệu đính thực địa khiến các lỗi bỏ sót câu hỏi vĩnh viễn không thể khắc phục được khi đội ngũ điều tra đã rời khỏi địa bàn; chuyên viên hiệu đính trung tâm tự ý sửa dữ liệu để 'làm đẹp' số liệu vi phạm liêm chính nghiên cứu.",
+      "apa_reference": "Malhotra, N. K., Nunan, D., & Birks, D. F. (2017). Marketing research: An applied approach (5th ed.). Pearson Education.",
+      "is_flagship": true
     },
     {
       "id": "filter-question",
-      "term": "Filter question",
-      "vietnamese": "Câu hỏi sàng lọc (Câu hỏi điều kiện)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Thiết kế Bảng hỏi"
+      "term": "Filter Question",
+      "vietnamese": "Câu hỏi lọc (Câu hỏi sàng lọc)",
+      "vietnamese_variants": [
+        "Câu hỏi rẽ nhánh",
+        "Câu hỏi điều kiện trong bảng khảo sát"
       ],
-      "core_definition": "Câu hỏi trong bảng khảo sát dùng để xác định xem người trả lời có đủ điều kiện hoặc kinh nghiệm phù hợp để trả lời tiếp các câu hỏi chi tiết sau đó hay không.",
-      "seminal_citation": "Saunders, M., Lewis, P., & Thornhill, A. (2019). Research Methods for Business Students (8th ed.). Pearson.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Survey Design & Questionnaire Methodology",
+        "Data Collection"
+      ],
+      "core_definition": "Filter Question (còn gọi là Screening Question hoặc Contingency Question) là một câu hỏi trong bảng khảo sát được thiết kế nhằm xác định xem người trả lời có đủ điều kiện, kinh nghiệm hoặc thuộc đúng nhóm đối tượng mục tiêu để trả lời một chuỗi các câu hỏi chuyên sâu tiếp theo hay không, định hướng luồng rẽ nhánh logic (skip logic / branching logic) của bảng hỏi.",
+      "seminal_citation": "Dillman, D. A., Smyth, J. D., & Christian, L. M. (2014). Internet, phone, mail, and mixed-mode surveys: The tailored design method (4th ed.). John Wiley & Sons.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Filter question according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Survey Design & Questionnaire Methodology",
+      "operational_mechanism": "Cấu trúc điều kiện If-Then: Nếu người tham gia trả lời 'Có' ở câu hỏi lọc (ví dụ: 'Bạn đã từng mua sắm trực tuyến trên sàn thương mại điện tử trong 3 tháng qua chưa?'), họ sẽ được chuyển tiếp tới cụm câu hỏi chi tiết về trải nghiệm mua sắm; nếu trả lời 'Không', hệ thống sẽ tự động bỏ qua toàn bộ khối câu hỏi đó và chuyển thẳng tới phần nội dung khác hoặc kết thúc khảo sát.",
+      "benchmarks": "Chuẩn mực thiết kế bảng hỏi khoa học: (1) Giảm thiểu tối đa gánh nặng nhận thức cho người trả lời (cognitive burden) và giảm tỷ lệ bỏ dở giữa chừng; (2) Ngăn ngừa việc thu thập dữ liệu rác từ những người không có kinh nghiệm thực tế về hiện tượng đang nghiên cứu; (3) Trong khảo sát trực tuyến, thuật toán skip logic phải được kiểm thử tự động 100% không để xảy ra vòng lặp bế tắc.",
+      "pitfalls": "Đặt câu hỏi lọc quá phức tạp hoặc đa nghĩa khiến người trả lời hiểu sai điều kiện; người tham gia nhận ra rằng việc trả lời 'Không' sẽ giúp họ hoàn thành khảo sát nhanh hơn nên cố tình khai man để rút ngắn thời gian.",
+      "apa_reference": "Dillman, D. A., Smyth, J. D., & Christian, L. M. (2014). Internet, phone, mail, and mixed-mode surveys: The tailored design method (4th ed.). John Wiley & Sons.",
+      "is_flagship": true
     },
     {
       "id": "fimix-pls",
       "term": "FIMIX-PLS",
-      "vietnamese": "Phân đoạn Hỗn hợp Hữu hạn trong PLS-SEM",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "PLS-SEM",
-        "Segmentation"
+      "vietnamese": "Phân khúc hỗn hợp hữu hạn trong PLS-SEM (FIMIX-PLS)",
+      "vietnamese_variants": [
+        "Phương pháp FIMIX-PLS Hahn",
+        "Phân khúc thị trường tiềm ẩn trong SmartPLS"
       ],
-      "core_definition": "Kỹ thuật phân cụm dựa trên mô hình nhằm phát hiện tính không đồng nhất chưa quan sát được (unobserved heterogeneity) trong dữ liệu SEM. Ngưỡng thực nghiệm tham chiếu: Đánh giá số lượng phân đoạn tối ưu (K) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC.",
-      "seminal_citation": "Đánh giá số lượng phân đoạn tối ưu (K) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC.",
-      "tier": "acronym",
+      "domain_tags": [
+        "Structural Equation Modeling (PLS-SEM) & Unobserved Heterogeneity",
+        "Market Segmentation"
+      ],
+      "core_definition": "FIMIX-PLS (Finite Mixture Partial Least Squares, do Carsten Hahn và cộng sự phát triển năm 2002) là một phương pháp thống kê phân khúc tiềm ẩn tiên tiến hàng đầu trong PLS-SEM, cho phép đồng thời ước lượng các tham số mô hình cấu trúc và giải mã tính không đồng nhất chưa quan sát được (unobserved heterogeneity) bằng cách tự động phân tách mẫu dữ liệu tổng thể thành các phân khúc tiềm ẩn (latent segments) riêng biệt có các hệ số đường dẫn khác nhau.",
+      "seminal_citation": "Hahn, C., Johnson, M. D., Herrmann, A., & Huber, F. (2002). Capturing customer heterogeneity using a finite mixture PLS approach. Schmalenbach Business Review, 54(3), 243-269.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of FIMIX-PLS according to Đánh giá số lượng phân đoạn tối ưu (K) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC..",
@@ -23521,7 +23928,12 @@
         "PLS-SEM",
         "Segmentation"
       ],
-      "benchmarks": "Đánh giá số lượng phân đoạn tối ưu (K) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC."
+      "benchmarks": "Quy chuẩn đánh giá phân khúc theo Hair et al. (2022) và Sarstedt et al. (2011): (1) Kết hợp song song tiêu chí AIC3 (hoặc CAIC) và BIC để xác định số phân khúc $K$ (chọn $K$ có giá trị tiêu chí nhỏ nhất); (2) Đảm bảo độ rõ nét của phân khúc qua chỉ số Entropy định mức ($EN \\ge 0.50$ phản ánh sự phân tách tốt); (3) Tỷ lệ kích thước của phân khúc nhỏ nhất không được nhỏ hơn ngưỡng cỡ mẫu tối thiểu của quy tắc 10 lần (10-times rule).",
+      "category": "Structural Equation Modeling (PLS-SEM) & Unobserved Heterogeneity",
+      "operational_mechanism": "Thuật toán tích hợp thuật toán Expectation-Maximization (EM) vào quy trình lặp PLS: Dựa trên hàm mật độ xác suất hỗn hợp của các phương trình cấu trúc nội sinh, thuật toán tối đa hóa hàm log-likelihood để ước lượng xác suất hậu nghiệm (posterior probabilities) của mỗi quan sát thuộc về phân khúc $k$. Người nghiên cứu chạy thuật toán qua nhiều kịch bản số lượng phân khúc ($K = 1, 2, 3, 4, 5$) và so sánh các tiêu chí thông tin để lựa chọn số phân khúc tối ưu.",
+      "pitfalls": "Bỏ qua việc kiểm tra tính không đồng nhất chưa quan sát được mà mặc định rằng toàn bộ mẫu dữ liệu là đồng nhất; điều này có thể dẫn đến việc kết luận sai lệch nghiêm trọng về các mối quan hệ cấu trúc (ví dụ: hai nhóm khách hàng có hệ số đường dẫn trái dấu nhau sẽ triệt tiêu lẫn nhau trong mô hình gộp).",
+      "apa_reference": "Hahn, C., Johnson, M. D., Herrmann, A., & Huber, F. (2002). Capturing customer heterogeneity using a finite mixture PLS approach. Schmalenbach Business Review, 54(3), 243–269. https://doi.org/10.1007/BF03396653",
+      "is_flagship": true
     },
     {
       "id": "finite-mixture-modeling-fmm",
@@ -23556,15 +23968,18 @@
     {
       "id": "finite-mixture-partial-least-squares",
       "term": "Finite Mixture Partial Least Squares",
-      "vietnamese": "Phân đoạn Hỗn hợp Hữu hạn trong PLS-SEM",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "PLS-SEM",
-        "Segmentation"
+      "vietnamese": "Mô hình hỗn hợp hữu hạn trong bình phương bé nhất từng phần",
+      "vietnamese_variants": [
+        "Mô hình hóa không đồng nhất tiềm ẩn FIMIX",
+        "Phân khúc thống kê trong PLS Path Modeling"
       ],
-      "core_definition": "Kỹ thuật phân cụm dựa trên mô hình nhằm phát hiện tính không đồng nhất chưa quan sát được (unobserved heterogeneity) trong dữ liệu SEM. Ngưỡng thực nghiệm tham chiếu: Đánh giá số lượng phân đoạn tối ưu (K) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC.",
-      "seminal_citation": "Đánh giá số lượng phân đoạn tối ưu (K) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC.",
-      "tier": "acronym",
+      "domain_tags": [
+        "Structural Equation Modeling (PLS-SEM)",
+        "Advanced Quantitative Methods"
+      ],
+      "core_definition": "Finite Mixture Partial Least Squares là khuôn khổ phương pháp luận toán học cho phép phân rã các mối quan hệ cấu trúc phức tạp trong mô hình đường dẫn PLS khi quần thể nghiên cứu chứa đựng các nhóm nhỏ tiềm ẩn có hành vi hoặc cơ chế tác động hoàn toàn khác nhau mà không có biến phân loại quan sát được rõ ràng.",
+      "seminal_citation": "Sarstedt, M., Becker, J. M., Ringle, C. M., & Schwaiger, M. (2011). Uncovering and treating unobserved heterogeneity with FIMIX-PLS: Which model selection criterion provides the best results? Information Systems Research, 22(4), 606-628.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of Finite Mixture Partial Least Squares according to Đánh giá số lượng phân đoạn tối ưu (K) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC..",
@@ -23572,61 +23987,96 @@
         "PLS-SEM",
         "Segmentation"
       ],
-      "benchmarks": "Đánh giá số lượng phân đoạn tối ưu (K) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC."
+      "benchmarks": "Tiêu chuẩn bài báo Q1 chuyên sâu về PLS-SEM: (1) Là bước chẩn đoán bắt buộc để bảo đảm tính hợp thức của các kết luận cấu trúc; (2) Thực hiện phân tích hậu định (ex-post analysis) đối chiếu các phân khúc tiềm ẩn với các biến nhân khẩu học để giải thích bản chất thực tế của phân khúc; (3) Báo cáo bảng ma trận xác suất phân loại.",
+      "category": "Structural Equation Modeling (PLS-SEM)",
+      "operational_mechanism": "Mô hình giả định rằng ma trận phương sai của các biến nội sinh được tạo ra từ một hỗn hợp hữu hạn của $K$ phân phối xác suất có điều kiện: $f(y | x) = \\sum_{k=1}^K \\pi_k f_k(y | x, \beta_k)$, trong đó $\\pi_k$ là tỷ trọng của phân khúc $k$ ($\\sum \\pi_k = 1, \\pi_k > 0$) và $\beta_k$ là véc-tơ hệ số đường dẫn đặc thù của phân khúc đó. Sau khi FIMIX-PLS xác định được số phân khúc tối ưu, kỹ thuật POS (Partial Least Squares Genetic Algorithm Segmentation) hoặc PLS-MGA (Multi-Group Analysis) được sử dụng để kiểm định sự khác biệt có ý nghĩa thống kê giữa các hệ số đường dẫn.",
+      "pitfalls": "Chạy FIMIX-PLS khi kích thước mẫu tổng thể quá nhỏ, khiến các phân khúc con không đủ công suất thống kê để ước lượng mô hình cấu trúc; chọn số lượng phân khúc $K$ quá lớn dẫn đến hiện tượng quá khớp (overfitting).",
+      "apa_reference": "Sarstedt, M., Becker, J. M., Ringle, C. M., & Schwaiger, M. (2011). Uncovering and treating unobserved heterogeneity with FIMIX-PLS: Which model selection criterion provides the best results? Information Systems Research, 22(4), 606–628. https://doi.org/10.1287/isre.1100.0336",
+      "is_flagship": true
     },
     {
       "id": "first-stage-f-statistic-threshold",
       "term": "First-Stage F-Statistic Threshold",
-      "vietnamese": "Ngưỡng Thống kê F Giai đoạn 1",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Inference"
+      "vietnamese": "Ngưỡng thống kê F giai đoạn một (Kiểm định công cụ yếu)",
+      "vietnamese_variants": [
+        "Tiêu chuẩn F giai đoạn 1 của Staiger & Stock",
+        "Ngưỡng F-statistic Lee et al. 2022"
       ],
-      "core_definition": "Giá trị F > 10 hoặc F > 104.7 trong hồi quy 2SLS để bác bỏ biến công cụ yếu.",
-      "seminal_citation": "Stock & Yogo (2005)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Causal Inference & Instrumental Variables",
+        "Econometrics"
+      ],
+      "core_definition": "First-Stage F-Statistic Threshold là quy chuẩn thống kê kinh tế lượng then chốt trong hồi quy biến công cụ (IV / 2SLS), đo lường mức độ tương quan và sức mạnh giải thích của biến công cụ ($Z$) đối với biến nội sinh ($X$) trong phương trình hồi quy giai đoạn 1, nhằm phát hiện và loại trừ nguy cơ nghiêm trọng của Hiện tượng biến công cụ yếu (Weak Instruments).",
+      "seminal_citation": "Staiger, D., & Stock, J. H. (1997). Instrumental variables regression with weak instruments. Econometrica, 65(3), 557-586.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "ngưỡng F > 104.7 là của Lee et al. (2022, AER), không phải Stock & Yogo (2005)",
       "core_definition_en": "Academic definition of First-Stage F-Statistic Threshold according to Stock & Yogo (2005).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "category": "Causal Inference & Instrumental Variables",
+      "operational_mechanism": "Trong hồi quy giai đoạn 1: $X_i = \\gamma_0 + \\gamma_1 Z_i + W_i\\delta + v_i$, thống kê $F$ kiểm định giả thuyết không $H_0: \\gamma_1 = 0$. Nếu biến công cụ yếu ($F$ nhỏ), ước lượng 2SLS sẽ bị chệch nghiêm trọng theo hướng của ước lượng OLS, khoảng tin cậy theo phân phối chuẩn tiệm cận trở nên hoàn toàn vô giá trị, và tỷ lệ sai lầm loại I bùng nổ vượt xa mức 5% danh nghĩa.",
+      "benchmarks": "Sự phát triển của chuẩn mực kinh tế lượng quốc tế (AER, Econometrica): (1) Ngưỡng ngón tay cái kinh điển của Staiger & Stock (1997): $F > 10$ (bảo đảm độ chệch tương đối của 2SLS so với OLS nhỏ hơn 10%); (2) Chuẩn mực kinh tế lượng khắt khe hiện đại của Lee, McCrary, Moreira, & Porter (2022, AER): Khi kiểm định ở mức ý nghĩa 5%, nếu chỉ có $F = 10$, khoảng tin cậy thực tế có thể có tỷ lệ sai lầm lên tới 25%; để đảm bảo suy luận thống kê chuẩn tắc vững chắc, ngưỡng $F$ giai đoạn 1 bắt buộc phải đạt tối thiểu $F > 104.7$; (3) Báo cáo thống kê kiểm định Montiel Olea-Pflueger vững trước phương sai thay đổi.",
+      "pitfalls": "Vẫn máy móc trích dẫn ngưỡng $F > 10$ cho các mô hình có sai số không đồng nhất hoặc có cụm phức tạp mà không thực hiện hiệu chỉnh sai số chuẩn; chủ quan cho rằng $F = 12$ là công cụ mạnh mà không kiểm tra độ nhạy.",
+      "apa_reference": "Staiger, D., & Stock, J. H. (1997). Instrumental variables regression with weak instruments. Econometrica, 65(3), 557–586. https://doi.org/10.2307/2171753",
+      "is_flagship": true
     },
     {
       "id": "fishbone-diagram-ishikawa-diagram",
       "term": "Fishbone Diagram (Ishikawa Diagram)",
-      "vietnamese": "Sơ đồ Xương cá Ishikawa",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Quality Management"
+      "vietnamese": "Sơ đồ xương cá (Sơ đồ Ishikawa)",
+      "vietnamese_variants": [
+        "Biểu đồ nhân quả Ishikawa",
+        "Sơ đồ phân tích nguyên nhân gốc rễ xương cá"
       ],
-      "core_definition": "Công cụ trực quan phân loại các nguyên nhân tiềm ẩn thành 6 nhóm: Con người, Máy móc, Phương pháp, Vật liệu, Đo lường, Môi trường.",
-      "seminal_citation": "Ishikawa (1968)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Quality Management & Root Cause Analysis",
+        "Operations Management"
+      ],
+      "core_definition": "Fishbone Diagram (còn gọi là Sơ đồ Ishikawa hoặc Sơ đồ Nhân Quả - Cause-and-Effect Diagram) là một công cụ phân tích đồ họa có cấu trúc do Kaoru Ishikawa phát triển năm 1968 tại Đại học Tokyo, được sử dụng trong quản trị chất lượng toàn diện (TQM) và Six Sigma để phân rã và hiển thị một cách có hệ thống toàn bộ các nguyên nhân gốc rễ tiềm tàng dẫn đến một sai hỏng, khuyết tật hoặc vấn đề cụ thể.",
+      "seminal_citation": "Ishikawa, K. (1985). What is total quality control? The Japanese way. Prentice-Hall.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Fishbone Diagram (Ishikawa Diagram) according to Ishikawa (1968).",
       "domain_tags_en": [
         "Quality Management"
-      ]
+      ],
+      "category": "Quality Management & Root Cause Analysis",
+      "operational_mechanism": "Cấu trúc sơ đồ mô phỏng bộ xương cá: Đầu cá biểu thị Vấn đề trọng tâm cần giải quyết (Effect/Problem Statement); Xương sống chính kết nối với các nhánh xương lớn đại diện cho các nhóm nguyên nhân chính, thường được tiêu chuẩn hóa theo quy tắc 6M trong sản xuất (Manpower - Con người, Machine - Máy móc, Material - Nguyên vật liệu, Method - Phương pháp, Measurement - Đo lường, Milieu/Mother Nature - Môi trường), hoặc quy tắc 4S/8P trong dịch vụ. Nhóm nghiên cứu áp dụng kỹ thuật '5 lần hỏi Tại sao' (5 Whys) để đào sâu các nhánh xương dăm nhỏ nhằm chạm tới nguyên nhân gốc rễ căn bản.",
+      "benchmarks": "Chuẩn mực ứng dụng cải tiến quy trình: (1) Được triển khai theo hình thức động não nhóm (brainstorming) liên chức năng để tránh điểm mù chuyên môn; (2) Mỗi nguyên nhân đưa vào sơ đồ phải được kiểm chứng bằng dữ liệu định lượng thực tế (biểu đồ Pareto hoặc phân tích hồi quy); (3) Là bước bản lề trong giai đoạn Phân tích (Analyze) của quy trình DMAIC Six Sigma.",
+      "pitfalls": "Dừng lại ở việc liệt kê các triệu chứng bề mặt thay vì truy vết đến nguyên nhân gốc rễ; xây dựng sơ đồ xương cá mang tính hình thức một chiều mà không có sự tham gia của những người trực tiếp vận hành quy trình.",
+      "apa_reference": "Ishikawa, K. (1985). What is total quality control? The Japanese way. Prentice-Hall.",
+      "is_flagship": true
     },
     {
       "id": "fishers-exact-test",
       "term": "Fisher's Exact Test",
-      "vietnamese": "Kiểm định chính xác Fisher dùng cho bảng chéo 2x2 khi có ô có tần số kỳ vọng nhỏ hơn 5",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Categorical Data"
+      "vietnamese": "Kiểm định chính xác Fisher",
+      "vietnamese_variants": [
+        "Kiểm định Fisher cho bảng 2x2",
+        "Kiểm định phi tham số chính xác Fisher"
       ],
-      "core_definition": "Kiểm định chính xác Fisher dùng cho bảng chéo 2x2 khi có ô có tần số kỳ vọng nhỏ hơn 5.",
-      "seminal_citation": "Fisher (1922)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Categorical Data Analysis & Non-Parametric Statistics",
+        "Biostatistics"
+      ],
+      "core_definition": "Fisher's Exact Test là một kiểm định thống kê phi tham số chuẩn xác do Ronald A. Fisher phát triển (1922), dùng để kiểm định tính độc lập giữa hai biến định danh trong bảng phân loại hai chiều ($2 \\times 2$), tính toán trực tiếp xác suất chính xác theo phân phối siêu bội (Hypergeometric Distribution) thay vì dựa trên xấp xỉ tiệm cận của phân phối Chi-bình phương ($\\chi^2$), đặc biệt bắt buộc khi cỡ mẫu nhỏ hoặc tần số mong đợi thấp.",
+      "seminal_citation": "Fisher, R. A. (1922). On the interpretation of $\\chi^2$ from contingency tables, and the calculation of P. Journal of the Royal Statistical Society, 85(1), 87-94.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Fisher's Exact Test according to Fisher (1922).",
       "domain_tags_en": [
         "Categorical Data"
-      ]
+      ],
+      "category": "Categorical Data Analysis & Non-Parametric Statistics",
+      "operational_mechanism": "Cố định tổng các biên dòng và biên cột của bảng $2 \\times 2$, xác suất để quan sát được một cấu hình cụ thể với các ô $a, b, c, d$ và tổng $n$: $P = \\frac{\\binom{a+b}{a} \\binom{c+d}{c}}{\\binom{n}{a+c}} = \\frac{(a+b)! (c+d)! (a+c)! (b+d)!}{n! a! b! c! d!}$. Để tính $p$-value hai phía, kiểm định tính tổng xác suất của bảng quan sát được cộng với xác suất của tất cả các bảng khả dĩ khác có xác suất xảy ra nhỏ hơn hoặc bằng xác suất của bảng quan sát.",
+      "benchmarks": "Quy tắc chỉ định chuẩn tắc theo Cochrane: (1) Bắt buộc phải thay thế kiểm định $\\chi^2$ bằng Fisher's Exact Test khi có bất kỳ ô nào có tần số quan sát bằng 0 hoặc khi có trên 20% số ô có tần số mong đợi (expected frequency) nhỏ hơn 5 ($E_{ij} < 5$); (2) Đạt độ chính xác tuyệt đối mà không cần giả định về kích thước mẫu lớn.",
+      "pitfalls": "Tính toán kiểm định bằng tay trở nên bất khả thi khi kích thước mẫu lớn (khi đó xấp xỉ $\\chi^2$ hoặc hiệu chỉnh liên tục Yates là đủ); kiểm định Fisher có tính bảo thủ nhẹ (conservative - p-value thực tế có xu hướng hơi lớn hơn so với mức ý nghĩa danh nghĩa do tính rời rạc của phân phối).",
+      "apa_reference": "Fisher, R. A. (1922). On the interpretation of $\\chi^2$ from contingency tables, and the calculation of P. Journal of the Royal Statistical Society, 85(1), 87–94. https://doi.org/10.2307/2340521",
+      "is_flagship": true
     },
     {
       "id": "fixed-effects-estimator-within-estimator",
@@ -23717,38 +24167,58 @@
     {
       "id": "fleiss-kappa",
       "term": "Fleiss' Kappa",
-      "vietnamese": "Hệ số Fleiss' Kappa đo lường độ tin cậy liên đánh giá viên cho nhiều hơn 2 người đánh giá trên thang đo định danh",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Inter-Rater Reliability"
+      "vietnamese": "Hệ số tương đồng Fleiss' Kappa",
+      "vietnamese_variants": [
+        "Chỉ số độ tin cậy liên người đánh giá Fleiss",
+        "Hệ số Fleiss Kappa đa chuyên gia"
       ],
-      "core_definition": "Hệ số Fleiss' Kappa đo lường độ tin cậy liên đánh giá viên cho nhiều hơn 2 người đánh giá trên thang đo định danh.",
-      "seminal_citation": "Fleiss (1971)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Inter-Rater Reliability & Measurement Agreement",
+        "Psychometrics"
+      ],
+      "core_definition": "Fleiss' Kappa (do Joseph L. Fleiss phát triển năm 1971) là một chỉ số thống kê đo lường mức độ đồng thuận và tin cậy liên người đánh giá (Inter-Rater Reliability) cho các biến phân loại định danh, mở rộng từ Cohen's Kappa để áp dụng cho trường hợp có từ ba chuyên gia/người đánh giá trở lên ($m \\ge 3$) đánh giá độc lập trên cùng một tập hợp đối tượng hoặc dữ liệu.",
+      "seminal_citation": "Fleiss, J. L. (1971). Measuring nominal scale agreement among many raters. Psychological Bulletin, 76(5), 378-382.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Fleiss' Kappa according to Fleiss (1971).",
       "domain_tags_en": [
         "Inter-Rater Reliability"
-      ]
+      ],
+      "category": "Inter-Rater Reliability & Measurement Agreement",
+      "operational_mechanism": "Công thức toán học: $\\kappa = \\frac{\\bar{P} - \\bar{P}_e}{1 - \\bar{P}_e}$, trong đó $\\bar{P}$ là tỷ lệ đồng thuận quan sát được thực tế giữa các cặp người đánh giá trên toàn bộ các đối tượng, và $\\bar{P}_e$ là tỷ lệ đồng thuận kỳ vọng ngẫu nhiên nếu các đánh giá hoàn toàn độc lập với nhau. Giá trị $\\kappa$ dao động từ -1 (hoàn toàn bất đồng) đến +1 (đồng thuận tuyệt đối); giá trị bằng 0 phản ánh mức đồng thuận không hơn gì việc tung xúc xắc ngẫu nhiên.",
+      "benchmarks": "Ngưỡng đánh giá chuẩn tắc theo Landis & Koch (1977) và Fleiss (1981): (1) $\\kappa < 0.40$: Đồng thuận kém (poor agreement); (2) $0.40 \\le \\kappa < 0.60$: Đồng thuận trung bình (fair to moderate); (3) $0.60 \\le \\kappa < 0.75$: Đồng thuận tốt (good agreement); (4) $\\kappa \\ge 0.75$: Đồng thuận xuất sắc (excellent agreement); (5) Bắt buộc phải báo cáo trong các nghiên cứu mã hóa nội dung định tính (Content Analysis) có nhiều người mã hóa độc lập.",
+      "pitfalls": "Fleiss' Kappa giả định các biến phân loại là định danh không có thứ bậc (nếu biến có thứ bậc ordinal, bắt buộc phải dùng Weighted Kappa hoặc ICC); hệ số rất nhạy cảm với sự mất cân bằng phân phối tỷ lệ giữa các danh mục (Prevalence paradox).",
+      "apa_reference": "Fleiss, J. L. (1971). Measuring nominal scale agreement among many raters. Psychological Bulletin, 76(5), 378–382. https://doi.org/10.1037/h0031619",
+      "is_flagship": true
     },
     {
       "id": "flow-state-optimal-experience-csikszentmihalyi",
       "term": "Flow State / Optimal Experience (Csikszentmihalyi)",
-      "vietnamese": "Trạng thái Dòng chảy Flow",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Positive Psychology"
+      "vietnamese": "Trạng thái dòng chảy / Trải nghiệm tối ưu của Mihaly Csikszentmihalyi",
+      "vietnamese_variants": [
+        "Lý thuyết dòng chảy tâm lý Flow",
+        "Trạng thái tập trung tối ưu Csikszentmihalyi"
       ],
-      "core_definition": "Trạng thái tâm lý đắm chìm hoàn toàn vào hoạt động khi thách thức cân bằng với kỹ năng.",
-      "seminal_citation": "Csikszentmihalyi (1990)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Positive Psychology & Human-Computer Interaction",
+        "Consumer Behavior"
+      ],
+      "core_definition": "Flow State (Trạng thái Dòng chảy, hay Trải nghiệm tối ưu - Optimal Experience) là một cấu trúc tâm lý học tích cực đột phá do Mihaly Csikszentmihalyi sáng lập, mô tả một trạng thái tâm thần hoạt động tối ưu, trong đó một cá nhân hoàn toàn đắm chìm, tập trung cao độ và say mê trọn vẹn vào một hoạt động đến mức mất đi ý niệm về thời gian và quên đi cảm giác về bản thân.",
+      "seminal_citation": "Csikszentmihalyi, M. (1990). Flow: The psychology of optimal experience. Harper & Row.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Flow State / Optimal Experience (Csikszentmihalyi) according to Csikszentmihalyi (1990).",
       "domain_tags_en": [
         "Positive Psychology"
-      ]
+      ],
+      "category": "Positive Psychology & Human-Computer Interaction",
+      "operational_mechanism": "Mô hình cân bằng động giữa hai trục nhận thức: Trục Thách thức của nhiệm vụ (Challenge Level) và Trục Kỹ năng của cá nhân (Skill Level): (1) Nếu Thách thức vượt quá Kỹ năng -> Cá nhân rơi vào trạng thái Lo âu (Anxiety); (2) Nếu Kỹ năng vượt quá Thách thức -> Cá nhân rơi vào trạng thái Buồn chán (Boredom); (3) Trạng thái Dòng chảy (Flow Channel) chỉ xuất hiện tại điểm giao thoa cân bằng vàng khi cả Thách thức và Kỹ năng đều ở mức cao, kèm theo các điều kiện tiên quyết: Mục tiêu rõ ràng, Phản hồi tức thì, Cảm giác tự chủ kiểm soát và Động lực nội tại tự thân (Autotelic experience).",
+      "benchmarks": "Thao tác hóa đo lường trong nghiên cứu thực nghiệm và tương tác người - máy (HCI, Game Design, Hành vi người tiêu dùng trực tuyến): (1) Đo lường thời gian thực bằng Phương pháp lấy mẫu trải nghiệm (Experience Sampling Method - ESM); (2) Thang đo đa chiều chuẩn hóa Flow State Scale (FSS của Jackson & Marsh); (3) Kiểm định vai trò trung gian của Flow đối với sự gắn kết khách hàng (engagement) và hiệu suất công việc sáng tạo.",
+      "pitfalls": "Đồng nhất trạng thái dòng chảy với sự vui vẻ hưởng thụ thụ động (Flow đòi hỏi nỗ lực nhận thức tích cực và vượt qua rào cản thách thức); sử dụng thang đo cắt ngang đơn chiều không nắm bắt được tính biến thiên thời gian của trải nghiệm.",
+      "apa_reference": "Csikszentmihalyi, M. (1990). Flow: The psychology of optimal experience. Harper & Row.",
+      "is_flagship": true
     },
     {
       "id": "focus-group-discussion-fgd",
@@ -23794,20 +24264,30 @@
     {
       "id": "focus-group-topic-guide",
       "term": "Focus Group Topic Guide",
-      "vietnamese": "Hướng dẫn Thảo luận Nhóm",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Data Collection"
+      "vietnamese": "Đề cương chủ đề thảo luận nhóm tập trung",
+      "vietnamese_variants": [
+        "Hướng dẫn điều phối thảo luận nhóm",
+        "Đề cương câu hỏi Focus Group"
       ],
-      "core_definition": "Bộ câu hỏi dẫn dắt theo cấu trúc phễu từ mở đầu tổng quát đến câu hỏi chuyển tiếp và câu hỏi then chốt.",
-      "seminal_citation": "Krueger & Casey (2014)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Qualitative Data Collection & Focus Groups",
+        "Qualitative Methodology"
+      ],
+      "core_definition": "Focus Group Topic Guide (còn gọi là Moderator's Guide) là một tài liệu phương pháp luận có cấu trúc được người điều phối (moderator) sử dụng để định hướng và dẫn dắt cuộc thảo luận nhóm tập trung (Focus Group Discussion - FGD), thiết kế theo mô hình hình phễu nhằm kích hoạt sự tương tác xã hội đa chiều giữa các thành viên tham gia.",
+      "seminal_citation": "Krueger, R. A., & Casey, M. A. (2015). Focus groups: A practical guide for applied research (5th ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Focus Group Topic Guide according to Krueger & Casey (2014).",
       "domain_tags_en": [
         "Qualitative Data Collection"
-      ]
+      ],
+      "category": "Qualitative Data Collection & Focus Groups",
+      "operational_mechanism": "Cấu trúc 5 phần theo hình phễu (Funnel structure): (1) Phần mở đầu (Introduction): Giới thiệu mục đích, nguyên tắc tôn trọng và bảo mật, phá vỡ sự e ngại (ice-breaker); (2) Câu hỏi khởi động (Introductory/Transition questions): Dẫn dắt người tham gia vào chủ đề chung một cách tự nhiên; (3) Cụm câu hỏi trọng tâm (Key questions): Chiếm 60-70% thời lượng, tập trung trực diện vào các câu hỏi nghiên cứu cốt lõi; (4) Câu hỏi đào sâu và tương tác (Probing & Interaction prompts): Khuyến khích sự tranh luận, so sánh quan điểm giữa các thành viên ('Ai có góc nhìn khác về ý kiến của anh A?'); (5) Phần kết thúc (Ending questions): Tóm tắt các chủ đề chính và hỏi xem có điều gì bị bỏ sót.",
+      "benchmarks": "Chuẩn mực nghiên cứu định tính (Krueger & Casey, Morgan): (1) Đề cương chỉ nên chứa từ 10 đến 12 câu hỏi mở ngắn gọn cho một phiên thảo luận 90 phút; (2) Tránh tuyệt đối các câu hỏi đóng Có/Không; (3) Được thử nghiệm trước (pilot testing) để kiểm tra thời lượng và độ nhạy cảm của câu hỏi.",
+      "pitfalls": "Người điều phối bám quá cứng nhắc vào kịch bản như một buổi phỏng vấn điều tra từng người, làm bóp nghẹt sự tương tác tự nhiên giữa các thành viên; không kiểm soát được các thành viên lấn át (dominant voices) khiến ý kiến của các thành viên rụt rè bị chìm lấp.",
+      "apa_reference": "Krueger, R. A., & Casey, M. A. (2015). Focus groups: A practical guide for applied research (5th ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "forced-ranking-scale",
@@ -23905,20 +24385,30 @@
     {
       "id": "forest-plot-visualization-metrics",
       "term": "Forest Plot Visualization Metrics",
-      "vietnamese": "Các Thành phần Trực quan của Biểu đồ Rừng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Meta-Analysis"
+      "vietnamese": "Hệ thống chỉ số trực quan hóa biểu đồ rừng (Forest Plot)",
+      "vietnamese_variants": [
+        "Biểu đồ tổng hợp meta-analysis",
+        "Đồ thị Forest Plot trong phân tích tổng hợp"
       ],
-      "core_definition": "Trọng số nghiên cứu, khoảng tin cậy 95%, và hình thoi hiệu ứng tổng hợp.",
-      "seminal_citation": "Lewis & Clarke (2001)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Meta-Analysis & Evidence Synthesis",
+        "Biostatistics"
+      ],
+      "core_definition": "Forest Plot Visualization Metrics là phương thức biểu diễn đồ họa trực quan chuẩn mực quốc tế của phân tích tổng hợp (meta-analysis), hiển thị đồng thời kết quả của từng nghiên cứu độc lập riêng lẻ và cỡ tác động gộp tổng hợp (pooled effect size), kèm theo các chỉ số thống kê về phương sai và độ không đồng nhất.",
+      "seminal_citation": "Lewis, S., & Clarke, M. (2001). Forest plots: Trying to see the wood and the trees. BMJ, 322(7300), 1479-1480.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Forest Plot Visualization Metrics according to Lewis & Clarke (2001).",
       "domain_tags_en": [
         "Meta-Analysis"
-      ]
+      ],
+      "category": "Meta-Analysis & Evidence Synthesis",
+      "operational_mechanism": "Cấu trúc giải phẫu của biểu đồ Forest Plot: (1) Cột bên trái: Danh sách tên tác giả và năm xuất bản của các nghiên cứu; (2) Phần đồ thị trung tâm: Mỗi nghiên cứu được biểu diễn bằng một hình vuông (diện tích hình vuông tỷ lệ thuận với trọng số weight của nghiên cứu trong mô hình) và một đoạn thẳng nằm ngang biểu thị Khoảng tin cậy 95% (95% CI); (3) Đường thẳng đứng nét liền là Đường vô hiệu (Line of No Effect, tọa độ 0 cho hiệu số trung bình hoặc 1.0 cho Odds Ratio); (4) Hình thoi (Diamond) ở đáy biểu đồ: Biểu thị cỡ tác động tổng hợp gộp, với tâm hình thoi là điểm ước lượng trung bình và chiều rộng hai đầu hình thoi là Khoảng tin cậy 95% gộp.",
+      "benchmarks": "Chuẩn mực báo cáo theo hướng dẫn PRISMA và Cochrane: (1) Bắt buộc hiển thị bảng số liệu chi tiết bên cạnh đồ họa (Cỡ mẫu mỗi nhóm, Cỡ tác động, 95% CI, và Trọng số %); (2) Báo cáo đầy đủ các chỉ số không đồng nhất ở góc dưới biểu đồ: Cochran's $Q$, $p$-value, chỉ số $I^2$ và phương sai giữa các nghiên cứu $\\tau^2$; (3) Phân nhóm trực quan theo các biến điều tiết quan trọng (Subgroup analysis).",
+      "pitfalls": "Không nêu rõ mô hình tổng hợp là Tác động cố định (Fixed-effects) hay Tác động ngẫu nhiên (Random-effects); sử dụng tỷ lệ trục hoành không đối xứng (khi cỡ tác động là tỷ số như OR/RR, trục hoành bắt buộc phải được co giãn theo tỷ lệ logarit).",
+      "apa_reference": "Lewis, S., & Clarke, M. (2001). Forest plots: Trying to see the wood and the trees. BMJ, 322(7300), 1479–1480. https://doi.org/10.1136/bmj.322.7300.1479",
+      "is_flagship": true
     },
     {
       "id": "formative",
