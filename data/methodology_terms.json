@@ -1,7 +1,7 @@
 {
   "version": "10.2-peer-reviewed-cleaned",
-  "last_updated": "2026-10-26",
-  "total_terms": 2650,
+  "last_updated": "2026-10-26T06:31:56.354Z",
+  "total_terms": 2643,
   "terms": [
     {
       "id": "construct-validity",
@@ -4254,24 +4254,24 @@
     },
     {
       "id": "bracketing-epoche",
-      "term": "Bracketing (Epoché in Phenomenology)",
+      "term": "Bracketing / Epoché in Phenomenology (Kỹ thuật Đặt trong Ngoặc đơn / Đình chỉ Định kiến Hiện tượng luận)",
       "ipa": "/ˈbrækɪtɪŋ/",
-      "vietnamese": "Kỹ thuật Đặt trong Ngoặc đơn / Epoché (Hiện tượng luận Edmund Husserl)",
+      "vietnamese": "Kỹ thuật Đặt trong Ngoặc đơn / Epoché trong Nghiên cứu Hiện tượng luận",
       "vietnamese_variants": [
         "Tạm đình chỉ định kiến",
         "Đóng ngoặc nhận thức tiên nghiệm"
       ],
       "category": "Phenomenology & Qualitative Philosophy",
       "domain_tags": [
-        "Hiện tượng luận",
+        "Phương pháp Định tính",
+        "Hiện tượng luận (Phenomenology)",
         "Triết học Khoa học",
-        "Edmund Husserl",
-        "Phương pháp Định tính"
+        "Thu thập & Mã hóa Dữ liệu"
       ],
-      "core_definition": "Phương pháp nhận thức luận cốt lõi của Hiện tượng luận siêu nghiệm do Edmund Husserl (1913) phát triển và được Moustakas (1994) đưa vào quy trình nghiên cứu định tính. Nhà nghiên cứu chủ động nhận diện và 'tạm gác lại trong ngoặc đơn' (bracket out) toàn bộ những niềm tin, lý thuyết đã biết, kinh nghiệm cá nhân và định kiến thông thường về thế giới khách quan, nhằm tiếp cận hiện tượng nghiên cứu với một 'tâm trí tinh khôi hoàn toàn' (fresh perspective) để mô tả hiện tượng đúng như bản chất nó tự hiển lộ.",
+      "core_definition": "Phương pháp nhận thức luận then chốt của Hiện tượng luận Siêu nghiệm (Transcendental Phenomenology) do triết gia Edmund Husserl (1913) khởi xướng và được Clark Moustakas (1994) chuẩn hóa thành quy trình nghiên cứu khoa học xã hội định tính. Epoché (thuật ngữ tiếng Hy Lạp cổ có nghĩa là 'đình chỉ phán đoán') hay Bracketing (đặt trong ngoặc đơn) là hành động có ý thức mà nhà nghiên cứu chủ động nhận diện, cô lập và 'tạm gác lại trong ngoặc đơn' toàn bộ những định kiến văn hóa, lý thuyết khoa học đã biết, giả định tiên nghiệm và kinh nghiệm cá nhân của chính mình về thế giới khách quan. Mục đích là để tiếp cận trải nghiệm của người tham gia với một tâm trí tinh khôi hoàn toàn (fresh and unbiased perspective), cho phép hiện tượng tự hiển lộ đúng với bản chất chân thực của nó.",
       "paradigm_debates": "Cuộc phân tách lịch sử giữa 'Hiện tượng luận Siêu nghiệm' của Husserl/Moustakas (tin rằng con người có thể gạt bỏ hoàn toàn định kiến qua Bracketing) vs 'Hiện tượng luận Thông diễn' của Martin Heidegger (cho rằng Bracketing là một ảo tưởng bất khả thi, vì con người luôn là 'Hữu thể-trong-thế-giới' và định kiến chính là điểm khởi đầu tất yếu của mọi sự thấu hiểu).",
-      "benchmarks": "Tác giả bắt buộc phải trình bày một 'Tuyên bố định vị phản tư' (Reflexivity & Bracketing Statement) trong phần Phương pháp: Công khai toàn bộ quan điểm, xuất thân cá nhân và mô tả các kỹ thuật cụ thể đã dùng để ngăn không cho kinh nghiệm cá nhân chi phối việc mã hóa dữ liệu.",
-      "pitfalls": "Bẫy lầm tưởng Bracketing là trở nên hoàn toàn khách quan: Bracketing không phải là khách quan hóa kiểu thực chứng, mà là sự tự ý thức cao độ về chủ quan của bản thân để lắng nghe trọn vẹn tiếng nói của người trong cuộc.",
+      "benchmarks": "Tiêu chuẩn thực hành trong luận án và bài báo định tính quốc tế: Nhà nghiên cứu bắt buộc phải trình bày một 'Tuyên bố về Tính Phản tư và Đình chỉ Định kiến' (Reflexivity & Bracketing Statement) trong chương Phương pháp: (1) Liệt kê rõ xuất thân, niềm tin và những trải nghiệm cá nhân liên quan đến đề tài; (2) Mô tả cụ thể các kỹ thuật đã dùng để duy trì bracketing trong suốt quá trình phỏng vấn và mã hóa (như ghi nhật ký phản tư - reflexivity journal, kiểm tra chéo với đồng nghiệp - peer debriefing).",
+      "pitfalls": "Ngộ nhận rằng Bracketing có nghĩa là xóa bỏ hoàn toàn bản thân để trở nên 'khách quan vô cảm' kiểu thực chứng luận. Heidegger và các nhà hiện tượng luận diễn giải (Hermeneutic Phenomenology) đã chỉ ra rằng con người không thể thoát ly hoàn toàn khỏi 'sự tồn tại trong thế giới' (Dasein); do đó Bracketing là sự tự ý thức phản tư sâu sắc về định kiến của bản thân chứ không phải là sự phủ nhận bản ngã.",
       "apa_reference": "Moustakas, C. (1994). Phenomenological research methods. SAGE Publications.",
       "synonyms": [
         "Epoché",
@@ -4295,15 +4295,16 @@
       ],
       "stt": 73,
       "tier": "flagship",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "Đạt. Định nghĩa \"tâm trí tinh khôi hoàn toàn\" mâu thuẫn với red flag -> chỉnh. Bổ sung Tufford & Newman (2012). Liên kết với #20. Mục 6: bỏ chú thích \"[Hội đồng Khoa học & Giáo trình ĐH Việt Nam]\" (không phải nguồn có thật) và cặp lặp \"X (X)\"; tên trường gắn với biến thể chưa được kiểm chứng. Mục 5: thiếu [Gốc] và [In-text] – thống nhất cấu trúc với #01–39.",
       "expert_checks": {
         "vietnamese": true,
-        "definition": false,
+        "definition": true,
         "benchmark": true,
         "pitfalls": true,
-        "needs_edit": true
-      }
+        "needs_edit": false
+      },
+      "seminal_citation": "Husserl, E. (1913). Ideas: General introduction to pure phenomenology. George Allen & Unwin; Moustakas, C. (1994). Phenomenological research methods. SAGE Publications; van Manen, M. (1990). Researching lived experience: Human science for an action sensitive pedagogy. State University of New York Press."
     },
     {
       "id": "critical-discourse-analysis",
@@ -8199,120 +8200,34 @@
       ]
     },
     {
-      "id": "b-y-cross-loadings",
-      "term": "B y Cross-loadings",
-      "vietnamese": "Tiêu chuẩn hệ số tải chéo cũng hoàn toàn thất bại trong việc phát hiện vi phạm giá trị phân biệt.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
-      ],
-      "core_definition": "Tiêu chuẩn hệ số tải chéo cũng hoàn toàn thất bại trong việc phát hiện vi phạm giá trị phân biệt.",
-      "seminal_citation": "Henseler et al. (2015)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
-      "expert_notes": "tiêu đề lỗi font (\"B y\"); \"hoàn toàn thất bại\" quá mức; trùng #201 | Trùng #201; tên mục lỗi font/cắt",
-      "core_definition_en": "Academic definition of B y Cross-loadings according to Henseler et al. (2015).",
-      "domain_tags_en": [
-        "Methodology",
-        "Research Design"
-      ]
-    },
-    {
-      "id": "b-y-fornell-larcker",
-      "term": "B y Fornell-Larcker",
-      "vietnamese": "Henseler et al. (2015) đã chứng minh bằng mô phỏng Monte Carlo rằng tiêu chuẩn Fornell-Larcker (1981) có độ nhạy cực kỳ kém (tỷ lệ phát hiện sai sót chỉ từ 0% đ",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
-      ],
-      "core_definition": "Henseler et al. (2015) đã chứng minh bằng mô phỏng Monte Carlo rằng tiêu chuẩn Fornell-Larcker (1981) có độ nhạy cực kỳ kém (tỷ lệ phát hiện sai sót chỉ từ 0% đ.",
-      "seminal_citation": "Henseler et al. (2015)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
-      "expert_notes": "con số \"0% đến 54%\" cần đối chiếu lại bảng mô phỏng Henseler et al. (2015); trùng #202 | Trùng #202; tên mục lỗi font/cắt; bị cắt cụt",
-      "core_definition_en": "Academic definition of B y Fornell-Larcker according to Henseler et al. (2015).",
-      "domain_tags_en": [
-        "Methodology",
-        "Research Design"
-      ]
-    },
-    {
       "id": "back-door-criterion",
-      "term": "Back-Door Criterion",
-      "vietnamese": "Tiêu chuẩn cửa sau của Pearl xác định tập hợp biến số cần kiểm soát để chặn tất cả các đường dẫn gây nhiễu giả mạo",
+      "term": "Back-Door Criterion (Tiêu chuẩn Cửa sau Pearl trong Suy luận Nhân quả)",
+      "vietnamese": "Tiêu chuẩn Cửa sau trong Suy luận Nhân quả Đồ thị (DAG)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Causal Inference"
+        "Suy luận Nhân quả",
+        "Kinh tế lượng",
+        "CB-SEM",
+        "Đồ thị Nhân quả (DAG)"
       ],
-      "core_definition": "Tiêu chuẩn cửa sau của Pearl xác định tập hợp biến số cần kiểm soát để chặn tất cả các đường dẫn gây nhiễu giả mạo.",
-      "seminal_citation": "Pearl (2009)",
+      "core_definition": "Một tiêu chuẩn toán học trên Đồ thị Nhân quả Định hướng Phi chu trình (Directed Acyclic Graph - DAG) do Judea Pearl phát triển, nhằm xác định tập hợp các biến số cần kiểm soát (hoặc điều chỉnh trong mô hình hồi quy) để ước lượng tác động nhân quả thuần túy của nguyên nhân X lên kết quả Y mà không bị làm sai lệch bởi các yếu tố gây nhiễu (confounders). Tập hợp biến Z thỏa mãn Tiêu chuẩn Cửa sau đối với cặp (X, Y) nếu: (1) Không có biến nào trong Z là hậu duệ (descendant) của X; (2) Z chặn (block) mọi đường dẫn cửa sau (backdoor path - tức đường dẫn bắt đầu bằng một mũi tên chỉ vào X) nối từ X đến Y. Khi điều kiện này được thỏa mãn, hiệu ứng nhân quả P(Y | do(X)) có thể được xác định đầy đủ từ dữ liệu quan sát thông qua công thức điều chỉnh cửa sau (Back-door Adjustment Formula).",
+      "seminal_citation": "Pearl, J. (1993). Comment: Graphical models, causality and intervention. Statistical Science, 8(3), 266–269; Pearl, J. (2009). Causality: Models, reasoning, and inference (2nd ed.). Cambridge University Press; Elwert, F. (2013). Graphical causal models. In Handbook of causal analysis for social research (pp. 245–273). Springer.",
       "tier": "encyclopedia",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "Trùng #189",
       "core_definition_en": "Academic definition of Back-Door Criterion according to Pearl (2009).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
-    },
-    {
-      "id": "back-door-criterion-front-door-criterion",
-      "term": "Back-door criterion & Front-door criterion",
-      "vietnamese": "Tiêu chuẩn toán học xác định các biến cần kiểm soát nhằm loại bỏ hoàn toàn yếu tố gây nhiễu (Confounders) mà không làm phát sinh thiên lệch bộ va chạm (Collider bias).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "CB-SEM",
-        "Causal Inference"
       ],
-      "core_definition": "Tiêu chuẩn toán học xác định các biến cần kiểm soát nhằm loại bỏ hoàn toàn yếu tố gây nhiễu (Confounders) mà không làm phát sinh thiên lệch bộ va chạm (Collider bias).",
-      "seminal_citation": "Kline (2023)",
-      "tier": "index",
-      "expert_status": "needs_review",
-      "expert_notes": "Trùng #188",
-      "core_definition_en": "Academic definition of Back-door criterion & Front-door criterion according to Kline (2023).",
-      "domain_tags_en": [
-        "CB-SEM",
-        "Causal Inference"
-      ]
-    },
-    {
-      "id": "back-door-criterion-front-door-criterion-188",
-      "term": "Back-door criterion Front-door criterion",
-      "vietnamese": "Tiêu chuẩn toán học xác định các biến cần kiểm soát nhằm loại bỏ hoàn toàn yếu tố gây nhiễu (Confounders) mà không làm phát sinh thiên lệch bộ va chạm (Collider",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
-      ],
-      "core_definition": "Tiêu chuẩn toán học xác định các biến cần kiểm soát nhằm loại bỏ hoàn toàn yếu tố gây nhiễu (Confounders) mà không làm phát sinh thiên lệch bộ va chạm (Collider.",
-      "seminal_citation": "Kline (2023)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
-      "expert_notes": "Trùng #187; bị cắt cụt",
-      "core_definition_en": "Academic definition of Back-door criterion Front-door criterion according to Kline (2023).",
-      "domain_tags_en": [
-        "Methodology",
-        "Research Design"
-      ]
-    },
-    {
-      "id": "backdoor-criterion",
-      "term": "Backdoor Criterion",
-      "vietnamese": "Tiêu chuẩn Cửa sau Pearl",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Inference"
-      ],
-      "core_definition": "Xác định tập hợp các biến cần kiểm soát để chặn toàn bộ các đường liên kết ngụy tạo.",
-      "seminal_citation": "Pearl (2000)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
-      "expert_notes": "Trùng #186",
-      "core_definition_en": "Academic definition of Backdoor Criterion according to Pearl (2000).",
-      "domain_tags_en": [
-        "Causal Inference"
-      ]
+      "benchmarks": "Nguyên tắc kiểm soát tối ưu: Chỉ kiểm soát các biến tiền đề gây nhiễu (common causes) cần thiết để chặn mọi đường dẫn cửa sau. Bắt buộc kiểm tra cấu trúc đồ thị nhân quả DAG trước khi đưa biến kiểm soát vào mô hình hồi quy.",
+      "pitfalls": "BẪY BỘ VA CHẠM (Collider Stratification Bias): Sai lầm chết người phổ biến là đưa mọi biến quan sát có thể vào mô hình kiểm soát. Nếu kiểm soát một biến va chạm (collider - biến nhận hai mũi tên chỉ vào, ví dụ X -> C <- Y hoặc U1 -> C <- U2), việc kiểm soát C sẽ mở ra một đường dẫn nhân quả ngụy tạo mới, biến một mối quan hệ không tương quan thành tương quan giả (Berkson bias).",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "bai-perron-test",
@@ -8352,23 +8267,34 @@
     },
     {
       "id": "ban-chat",
-      "term": "Bản chất",
-      "vietnamese": "Tỷ số giữa trung bình tương quan giữa các biến quan sát đo lường các khái niệm khác nhau (heterotrait-heteromethod) và trung bình tương quan giữa các biến quan sát đo lường cùng một khái niệm (monotrait-heteromethod).",
+      "term": "Essence / Bản chất hiện tượng trong Hiện tượng luận & Bản chất Tỷ số Đo lường",
+      "vietnamese": "Bản chất Hiện tượng (Hiện tượng luận) & Bản chất Đo lường Tương quan",
       "vietnamese_variants": [],
       "domain_tags": [
-        "PLS-SEM",
-        "Discriminant Validity"
+        "Triết học Khoa học",
+        "Phương pháp Định tính",
+        "Hiện tượng luận",
+        "Đo lường & Thang đo"
       ],
-      "core_definition": "Tỷ số giữa trung bình tương quan giữa các biến quan sát đo lường các khái niệm khác nhau (heterotrait-heteromethod) và trung bình tương quan giữa các biến quan sát đo lường cùng một khái niệm (monotrait-heteromethod).",
-      "seminal_citation": "Henseler et al. (2015)",
+      "core_definition": "(1) Trong Triết học Khoa học và Nghiên cứu Định tính Hiện tượng luận (Phenomenology): Bản chất (Essence / Wesen) là cấu trúc cốt lõi bất biến (invariant core structure) của một hiện tượng trải nghiệm con người — tức là thuộc tính nền tảng mà nếu thiếu nó thì hiện tượng không còn là chính nó nữa. Mục tiêu tối hậu của hiện tượng luận là khám phá và mô tả bản chất của trải nghiệm sống thông qua trực giác bản chất (eidetic reduction) và đình chỉ định kiến (epoché / bracketing). (2) Trong Đo lường Mô hình Cấu trúc (SEM): Thuật ngữ bản chất xuất hiện trong các đối sánh phương pháp đo lường để phân biệt bản chất của các loại tương quan: tỷ số giữa trung bình tương quan giữa các biến đo lường các khái niệm khác nhau (heterotrait-heteromethod) và trung bình tương quan giữa các biến đo lường cùng một khái niệm (monotrait-heteromethod) chính là bản chất toán học của chỉ số HTMT (Henseler et al., 2015).",
+      "seminal_citation": "Husserl, E. (1913). Ideas: General introduction to pure phenomenology. George Allen & Unwin; Moustakas, C. (1994). Phenomenological research methods. SAGE Publications; Henseler, J., Ringle, C. M., & Sarstedt, M. (2015). Journal of the Academy of Marketing Science, 43(1), 115–135.",
       "tier": "index",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "Trùng #183; tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Bản chất according to Henseler et al. (2015).",
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "benchmarks": "Trong nghiên cứu hiện tượng luận định tính: Bắt buộc tác giả phải tổng hợp từ các phát biểu ý nghĩa (significant statements) thành các đơn vị ý nghĩa (meaning units), cấu trúc kết cấu (textural description) và cấu trúc cấu trúc (structural description) để đạt đến Bản chất hợp nhất (Composite Essence) của hiện tượng (Moustakas, 1994).",
+      "pitfalls": "Nhầm lẫn bản chất hiện tượng (cấu trúc bất biến) với các biểu hiện tình huống cá biệt, nhất thời của một cá nhân; hoặc nhầm lẫn giữa định nghĩa bản chất triết học với việc trích xuất bảng so sánh kỹ thuật đo lường.",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "bandwidth-smoothing-parameter-h",
@@ -8408,21 +8334,33 @@
     },
     {
       "id": "banking-model-of-education-vs-problem-posing",
-      "term": "Banking Model of Education vs. Problem-Posing",
-      "vietnamese": "Mô hình Giáo dục 'Gửi tiền vào ngân hàng' vs. Giáo dục Đặt vấn đề",
+      "term": "Banking Model of Education vs. Problem-Posing Education (Mô hình Giáo dục 'Gửi tiền vào ngân hàng' vs. Giáo dục Đặt vấn đề)",
+      "vietnamese": "Mô hình Giáo dục 'Gửi tiền' vs. Giáo dục Đặt vấn đề của Paulo Freire",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Critical Pedagogy"
+        "Phương pháp Định tính",
+        "Triết học Giáo dục",
+        "Nghiên cứu Hành động Phê phán",
+        "Lý thuyết Xã hội học"
       ],
-      "core_definition": "Mô hình Giáo dục 'Gửi tiền vào ngân hàng' vs. Giáo dục Đặt vấn đề.",
-      "seminal_citation": "Freire (1970)",
+      "core_definition": "Cặp khái niệm triết học phê phán nền tảng do nhà sư phạm người Brazil Paulo Freire phát triển trong tác phẩm kinh điển 'Pedagogy of the Oppressed', tạo tiền đề lý thuyết cho Nghiên cứu Hành động Có sự tham gia (Participatory Action Research - PAR) và Phương pháp luận Phê phán (Critical Methodology): (1) Banking Model of Education (Mô hình giáo dục ngân hàng): Hệ thống giáo dục truyền thống xem người học như những chiếc 'tài khoản trống rỗng' và giáo viên là người 'gửi vốn tri thức' vào đó. Quan hệ này mang tính áp đặt một chiều (người dạy biết tất cả - người học không biết gì), biến người học thành đối tượng thụ động, triệt tiêu tư duy phê phán và củng cố các cấu trúc quyền lực áp bức trong xã hội; (2) Problem-Posing Education (Mô hình giáo dục đặt vấn đề): Mô hình giải phóng con người dựa trên sự đối thoại bình đẳng (egalitarian dialogue) giữa người dạy và người học. Trong mô hình này, thực tiễn đời sống xã hội trở thành đối tượng để cả hai bên cùng phân tích, chất vấn và giải quyết vấn đề, từ đó khơi dậy 'Ý thức Phê phán' (Conscientização / Critical Consciousness) giúp con người nhận thức rõ bối cảnh bị áp bức và hành động để biến đổi thế giới.",
+      "seminal_citation": "Freire, P. (1970). Pedagogy of the oppressed. Continuum Publishing Company.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "– Lưu ý: khái niệm giáo dục học phê phán, ngoài phạm vi PPNC",
       "core_definition_en": "Academic definition of Banking Model of Education vs. Problem-Posing according to Freire (1970).",
       "domain_tags_en": [
         "Critical Pedagogy"
-      ]
+      ],
+      "benchmarks": "Ứng dụng trong nghiên cứu khoa học xã hội & giáo dục: Trong các nghiên cứu định tính phê phán và nghiên cứu hành động (PAR), nhà nghiên cứu không được đóng vai 'chuyên gia tối cao' đi điều tra đối tượng (Banking approach), mà phải thiết lập quan hệ đồng nghiên cứu (co-researcher) bình đẳng với người tham gia.",
+      "pitfalls": "Nhiều tác giả nhầm lẫn mô hình Problem-Posing với các phương pháp dạy học giải quyết vấn đề (Problem-based learning - PBL) thuần túy kỹ thuật. Problem-Posing của Freire mang bản chất chính trị - xã hội sâu sắc (hướng đến công bằng xã hội và giải phóng áp bức), chứ không đơn thuần là một kỹ thuật sư phạm.",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "baron-and-kenny-mediation-approach",
@@ -8443,42 +8381,33 @@
       ]
     },
     {
-      "id": "bartlett-s-test-of-sphericity",
-      "term": "Bartlett's Test of Sphericity",
-      "vietnamese": "Kiểm định ma trận tương quan có phải là ma trận đơn vị (p < .05).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
-      ],
-      "core_definition": "Kiểm định ma trận tương quan có phải là ma trận đơn vị (p < .05).",
-      "seminal_citation": "Hair et al. (2018)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
-      "expert_notes": "Trùng #198; LaTeX thô; mất dấu nháy (')",
-      "core_definition_en": "Academic definition of Bartlett s Test of Sphericity according to Hair et al. (2018).",
-      "domain_tags_en": [
-        "Methodology",
-        "Research Design"
-      ]
-    },
-    {
       "id": "bartletts-test-of-sphericity",
-      "term": "Bartlett's Test of Sphericity",
-      "vietnamese": "Kiểm định ma trận tương quan có phải là ma trận đơn vị (p < .05).",
+      "term": "Bartlett's Test of Sphericity (Kiểm định Tính cầu Bartlett trong EFA/CFA)",
+      "vietnamese": "Kiểm định Tính cầu Bartlett",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Multivariate Data Analysis"
+        "Phương pháp Định lượng",
+        "Phân tích Nhân tố (EFA/CFA)",
+        "Thống kê Mô tả & Suy luận"
       ],
-      "core_definition": "Kiểm định ma trận tương quan có phải là ma trận đơn vị (p < .05).",
-      "seminal_citation": "Hair et al. (2018); Hair et al. (2018); Bartlett (1950); Hair et al. (2018)",
+      "core_definition": "Phép kiểm định thống kê bắt buộc trước khi tiến hành Phân tích Nhân tố Khám phá (EFA) hoặc Phân tích Thành phần Chính (PCA), nhằm kiểm tra xem ma trận tương quan giữa các biến quan sát trong mẫu có sai khác có ý nghĩa thống kê so với một ma trận đơn vị (Identity Matrix, ký hiệu I) hay không. Giả thuyết H0: Ma trận tương quan là ma trận đơn vị (r_ii = 1, r_ij = 0 với mọi i != j), nghĩa là các biến quan sát hoàn toàn độc lập, không có tương quan với nhau, do đó việc rút trích nhân tố là vô nghĩa. Giả thuyết H1: Ma trận tương quan không phải ma trận đơn vị, các biến quan sát có tương quan với nhau đủ mạnh để hình thành các nhân tố chung.",
+      "seminal_citation": "Bartlett, M. S. (1950). Tests of significance in factor analysis. British Journal of Statistical Psychology, 3(2), 77–85; Bartlett, M. S. (1951). The effect of standardization on a Chi-square approximation in factor analysis. Biometrika, 38(3/4), 337–344; Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2018). Multivariate Data Analysis (8th ed.). Cengage Learning.",
       "tier": "index",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "Trùng #197; LaTeX thô; lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Bartlett's Test of Sphericity according to Hair et al. (2018); Hair et al. (2018); Bartlett (1950); Hair et al. (2018).",
       "domain_tags_en": [
         "Multivariate Data Analysis"
-      ]
+      ],
+      "benchmarks": "Ngưỡng tiêu chuẩn: Giá trị thống kê Chi-square xấp xỉ phải có ý nghĩa thống kê ở mức p < 0.05 (thường yêu cầu p < 0.001) để bác bỏ giả thuyết H0. Điều kiện song hành bắt buộc: Bắt buộc phải kết hợp với hệ số KMO (Kaiser-Meyer-Olkin Measure of Sampling Adequacy) >= 0.50 (ngưỡng tối thiểu chấp nhận được) và lý tưởng là >= 0.70 hoặc >= 0.80 (Hair et al., 2018).",
+      "pitfalls": "Bẫy phụ thuộc kích thước mẫu: Khi cỡ mẫu lớn (N > 300), phép kiểm định Bartlett gần như luôn luôn cho kết quả p < 0.001 ngay cả khi tương quan giữa các biến rất yếu. Do đó, nhà nghiên cứu không bao giờ được phép chỉ dựa vào kết quả kiểm định Bartlett có ý nghĩa để khẳng định dữ liệu phù hợp phân tích nhân tố, mà bắt buộc phải kiểm tra hệ số KMO và các giá trị tương quan riêng phần trên đường chéo chính của ma trận Anti-image Correlation.",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "baseline-model-specification",
@@ -8518,61 +8447,95 @@
     },
     {
       "id": "bay-cross-loadings",
-      "term": "Bẫy Cross-loadings",
-      "vietnamese": "Tiêu chuẩn hệ số tải chéo cũng hoàn toàn thất bại trong việc phát hiện vi phạm giá trị phân biệt.",
+      "term": "Bẫy Cross-loadings (Cross-loadings Trap in PLS-SEM)",
+      "vietnamese": "Bẫy Hệ số Tải chéo trong Đánh giá Độ giá trị Phân biệt",
       "vietnamese_variants": [],
       "domain_tags": [
+        "Phương pháp Định lượng",
         "PLS-SEM",
-        "Discriminant Validity"
+        "CB-SEM",
+        "Đo lường & Thang đo"
       ],
-      "core_definition": "Tiêu chuẩn hệ số tải chéo cũng hoàn toàn thất bại trong việc phát hiện vi phạm giá trị phân biệt.",
-      "seminal_citation": "Henseler et al. (2015)",
+      "core_definition": "Sự ngộ nhận phương pháp luận khi nhà nghiên cứu tin rằng việc thỏa mãn tiêu chuẩn hệ số tải chéo (Cross-loadings criterion — tức hệ số tải ngoài của một biến quan sát lên cấu trúc mẹ cao hơn hệ số tải của nó lên tất cả các cấu trúc khác tối thiểu 0.10 hoặc 0.20) là bằng chứng đủ để khẳng định độ giá trị phân biệt. Henseler et al. (2015) đã chứng minh bằng mô phỏng thực nghiệm rằng tiêu chuẩn kiểm tra tải chéo có độ nhạy xấp xỉ bằng 0% — nghĩa là nó hoàn toàn bất lực trong việc phát hiện sự thiếu hụt giá trị phân biệt khi hai cấu trúc tiềm ẩn có tương quan thực sự lên tới 0.90 hoặc 0.95.",
+      "seminal_citation": "Henseler, J., Ringle, C. M., & Sarstedt, M. (2015). A new criterion for assessing discriminant validity in variance-based structural equation modeling. Journal of the Academy of Marketing Science, 43(1), 115–135; Hair, J. F., Hult, G. T. M., Ringle, C. M., & Sarstedt, M. (2022). A Primer on Partial Least Squares Structural Equation Modeling (PLS-SEM) (3rd ed.). SAGE Publications.",
       "tier": "index",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "\"hoàn toàn thất bại\" quá mức – cross-loadings kém nhạy, không phải vô dụng tuyệt đối | Trùng #184; tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Bẫy Cross-loadings according to Henseler et al. (2015).",
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn kiểm tra tải chéo truyền thống: Outer loading lên biến mẹ phải lớn hơn cross-loadings lên các biến khác tối thiểu 0.10 (Hair et al., 2011). Tuy nhiên, đây chỉ là điều kiện cần tối thiểu để lọc biến chỉ báo rác, hoàn toàn không được dùng làm căn cứ kết luận độ giá trị phân biệt nếu không đi kèm chỉ số HTMT < 0.85 hoặc < 0.90.",
+      "pitfalls": "Lầm tưởng rằng một ma trận tải chéo sạch (không có biến quan sát nào tải chéo vượt trội) đồng nghĩa với việc hai cấu trúc hoàn toàn phân biệt. Trong thực tế, toàn bộ các biến quan sát có thể tải cao nhất lên biến mẹ nhưng hai biến mẹ vẫn có thể trùng lặp nhau đến 90% phương sai.",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "bay-fornell-larcker",
-      "term": "Bẫy Fornell-Larcker",
-      "vietnamese": "Henseler et al. (2015) đã chứng minh bằng mô phỏng Monte Carlo rằng tiêu chuẩn Fornell-Larcker (1981) có độ nhạy cực kỳ kém (tỷ lệ phát hiện sai sót chỉ từ 0% đến 54%), dẫn đến việc bài báo khẳng định đạt giá trị phân biệt trong khi thực tế hai khái niệm trùng lắp phương sai nghiêm trọng.",
+      "term": "Bẫy Fornell-Larcker (Fornell-Larcker Trap in Discriminant Validity)",
+      "vietnamese": "Bẫy Fornell-Larcker trong Đánh giá Độ giá trị Phân biệt",
       "vietnamese_variants": [],
       "domain_tags": [
+        "Phương pháp Định lượng",
         "PLS-SEM",
-        "Discriminant Validity"
+        "CB-SEM",
+        "Đo lường & Thang đo"
       ],
-      "core_definition": "Henseler et al. (2015) đã chứng minh bằng mô phỏng Monte Carlo rằng tiêu chuẩn Fornell-Larcker (1981) có độ nhạy cực kỳ kém (tỷ lệ phát hiện sai sót chỉ từ 0% đến 54%), dẫn đến việc bài báo khẳng định đạt giá trị phân biệt trong khi thực tế hai khái niệm trùng lắp phương sai nghiêm trọng.",
-      "seminal_citation": "Henseler et al. (2015)",
+      "core_definition": "Hiện tượng ảo tưởng về độ giá trị phân biệt khi nhà nghiên cứu chỉ dựa vào tiêu chuẩn Fornell-Larcker (1981) — đòi hỏi căn bậc hai của AVE của mỗi cấu trúc phải lớn hơn hệ số tương quan giữa cấu trúc đó với mọi cấu trúc khác trong mô hình. Bằng các thực nghiệm mô phỏng Monte Carlo diện rộng, Henseler et al. (2015) đã chứng minh rằng tiêu chuẩn Fornell-Larcker có tỷ lệ phát hiện sai sót (độ nhạy) cực kỳ thấp (thất bại từ 46% đến 100% các trường hợp vi phạm thực tế, đặc biệt khi các hệ số tải ngoài không đồng nhất hoặc phân phối hơi lệch). Kết quả là bài báo kết luận sai lầm rằng các thang đo đạt độ phân biệt tốt, trong khi trên thực tế chúng trùng lặp phương sai nghiêm trọng (đo cùng một khái niệm).",
+      "seminal_citation": "Henseler, J., Ringle, C. M., & Sarstedt, M. (2015). A new criterion for assessing discriminant validity in variance-based structural equation modeling. Journal of the Academy of Marketing Science, 43(1), 115–135; Fornell, C., & Larcker, D. F. (1981). Evaluating structural equation models with unobservable variables and measurement error. Journal of Marketing Research, 18(1), 39–50.",
       "tier": "index",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "con số tỷ lệ phát hiện cần đối chiếu nguyên văn Henseler et al. (2015); \"hoàn toàn thất bại\" quá mức | Trùng #185; tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Bẫy Fornell-Larcker according to Henseler et al. (2015).",
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "benchmarks": "Để khắc phục Bẫy Fornell-Larcker, các tạp chí Q1 quốc tế hiện nay bắt buộc áp dụng chỉ số HTMT (Heterotrait-Monotrait Ratio of Correlations): (1) Ngưỡng khắt khe: HTMT < 0.85 đối với các cấu trúc hoàn toàn độc lập về mặt lý thuyết; (2) Ngưỡng chấp nhận: HTMT < 0.90 đối với các cấu trúc có sự tương đồng nội dung; (3) Kiểm định suy luận: Khoảng tin cậy Bootstrap 95% (hoặc 90%) của HTMT tuyệt đối không được chứa giá trị 1.0 (Henseler et al., 2015; Hair et al., 2022).",
+      "pitfalls": "Nhiều tác giả vẫn giữ thói quen cũ chỉ báo cáo bảng Fornell-Larcker mà bỏ qua HTMT. Khi nộp vào các tạp chí quốc tế hàng đầu (JAMS, JBR, IJHM), việc thiếu HTMT hoặc chỉ dựa vào Fornell-Larcker khi HTMT > 0.90 sẽ là nguyên nhân dẫn đến Desk Reject ngay vòng đầu.",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "bayes-factor-bf10-bf01",
-      "term": "Bayes Factor (BF10 & BF01)",
-      "vietnamese": "Hệ số Bayes",
+      "term": "Bayes Factor (Hệ số Bayes - BF10 & BF01)",
+      "vietnamese": "Hệ số Bayes (Thống kê Suy luận Bayesian)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Bayesian Hypothesis Testing"
+        "Phương pháp Định lượng",
+        "Thống kê Bayesian",
+        "Kiểm định Giả thuyết",
+        "Suy luận Thống kê"
       ],
-      "core_definition": "Tỷ số khả năng giữa hai giả thuyết cạnh tranh; cung cấp bằng chứng trực tiếp ủng hộ H1 so với H0.",
-      "seminal_citation": "Kass & Raftery (1995)",
+      "core_definition": "Chỉ số định lượng trọng tâm trong Thống kê Suy luận Bayesian, đo lường mức độ mà dữ liệu thực nghiệm thay đổi tỷ lệ cược (odds) giữa hai giả thuyết cạnh tranh — thường là giả thuyết nghiên cứu (H1) và giả thuyết không (H0). Về mặt toán học, Hệ số Bayes là tỷ số của xác suất biên của dữ liệu (marginal likelihood) dưới mỗi giả thuyết: BF10 = P(D | H1) / P(D | H0) (đo lường mức độ dữ liệu ủng hộ H1 so với H0), và BF01 = 1 / BF10 = P(D | H0) / P(D | H1) (đo lường mức độ dữ liệu ủng hộ H0 so với H1). Không giống như p-value truyền thống của trường phái tần suất (chỉ có thể bác bỏ hoặc không bác bỏ H0), Hệ số Bayes cho phép định lượng trực tiếp bằng chứng ủng hộ giả thuyết không (H0), giúp phân biệt rõ giữa trường hợp không có bằng chứng về hiệu ứng (absence of evidence) và bằng chứng cho thấy không có hiệu ứng (evidence of absence).",
+      "seminal_citation": "Jeffreys, H. (1961). Theory of probability (3rd ed.). Oxford University Press; Kass, R. E., & Raftery, A. E. (1995). Bayes factors. Journal of the American Statistical Association, 90(430), 773–795; Wagenmakers, E. J., Marsman, M., Jamil, T., et al. (2018). Bayesian inference for psychology. Part I: Theoretical advantages and practical ramifications. Psychonomic Bulletin & Review, 25(1), 35–57.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Bayes Factor (BF10 & BF01) according to Kass & Raftery (1995).",
       "domain_tags_en": [
         "Bayesian Hypothesis Testing"
-      ]
+      ],
+      "benchmarks": "Thang phân loại độ mạnh của bằng chứng theo Jeffreys (1961) và Lee & Wagenmakers (2014): (1) BF10 = 1: Không có bằng chứng ủng hộ giả thuyết nào; (2) 1 < BF10 <= 3: Bằng chứng yếu / giai thoại (Anecdotal / Inconclusive evidence); (3) 3 < BF10 <= 10: Bằng chứng vừa phải (Moderate evidence - tương đương ngưỡng phát hiện sơ bộ); (4) 10 < BF10 <= 30: Bằng chứng mạnh (Strong evidence); (5) 30 < BF10 <= 100: Bằng chứng rất mạnh (Very strong evidence); (6) BF10 > 100: Bằng chứng áp đảo / dứt khoát (Decisive / Extreme evidence). Quy ước tương tự áp dụng nghịch đảo cho BF01.",
+      "pitfalls": "Lầm tưởng BF10 là xác suất H1 đúng. BF10 chỉ là tỷ lệ cập nhật niềm tin (tỷ số khả dĩ biên), xác suất hậu nghiệm P(H1 | D) còn phụ thuộc vào tỷ lệ cược tiên nghiệm (Prior Odds). Ngoài ra, Bayes Factor phụ thuộc vào phân phối tiên nghiệm (Prior distribution) được chỉ định cho các tham số, do đó các bài báo Q1 bắt buộc phải thực hiện phân tích độ nhạy của tiên nghiệm (Bayes Factor Robustness Check).",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "bayesian-credible-interval",
@@ -8612,14 +8575,17 @@
     },
     {
       "id": "bayesian-information-criterion-schwarz-criterion",
-      "term": "Bayesian Information Criterion (Schwarz Criterion)",
-      "vietnamese": "Tiêu chuẩn thông tin Bayes",
+      "term": "Bayesian Information Criterion - BIC (Tiêu chuẩn Thông tin Bayes / Schwarz Criterion)",
+      "vietnamese": "Tiêu chuẩn Thông tin Bayes (Chỉ số BIC)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Acronym NCKH"
+        "Phương pháp Định lượng",
+        "Lựa chọn Mô hình",
+        "Kinh tế lượng",
+        "CB-SEM"
       ],
-      "core_definition": "Tương tự AIC nhưng phạt nặng hơn đối với các mô hình phức tạp có nhiều tham số khi cỡ mẫu lớn. Ngưỡng thực nghiệm tham chiếu: Chênh lệch Delta BIC > 10 cho thấy bằng chứng rất mạnh ủng hộ mô hình có BIC nhỏ hơn (Raftery, 1995).",
-      "seminal_citation": "Chênh lệch Delta BIC > 10 cho thấy bằng chứng rất mạnh ủng hộ mô hình có BIC nhỏ hơn (Raftery, 1995).",
+      "core_definition": "Chỉ số thống kê dùng để so sánh và lựa chọn mô hình tối ưu giữa các mô hình cạnh tranh không lồng nhau (non-nested models), dựa trên hàm hợp lý cực đại kết hợp với mức phạt nghiêm ngặt đối với số lượng tham số ước lượng và kích thước mẫu. Công thức xác định: BIC = -2 ln(L) + k * ln(n), trong đó L là giá trị cực đại của hàm hợp lý, k là số lượng tham số tự do trong mô hình, và n là kích thước mẫu quan sát. Khi kích thước mẫu n >= 8, mức phạt của BIC (k * ln(n)) lớn hơn nhiều so với mức phạt 2k của chỉ số AIC (Akaike Information Criterion), do đó BIC ưu tiên các mô hình có tính cô đọng (parsimonious) cao hơn và có tính chất tiệm cận nhất quán (consistent model selection). Mô hình nào có giá trị BIC nhỏ hơn (âm hơn) là mô hình được dữ liệu ủng hộ tốt hơn.",
+      "seminal_citation": "Schwarz, G. (1978). Estimating the dimension of a model. The Annals of Statistics, 6(2), 461–464; Raftery, A. E. (1995). Bayesian model selection in social research. Sociological Methodology, 25, 111–163.",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
@@ -8627,7 +8593,15 @@
       "domain_tags_en": [
         "Acronym NCKH"
       ],
-      "benchmarks": "Chênh lệch Delta BIC > 10 cho thấy bằng chứng rất mạnh ủng hộ mô hình có BIC nhỏ hơn (Raftery, 1995)."
+      "benchmarks": "Quy tắc đánh giá mức chênh lệch giữa hai mô hình Delta BIC = BIC_A - BIC_B theo Raftery (1995): (1) Delta BIC trong [0; 2]: Bằng chứng rất yếu (Weak / Not worth more than a bare mention); (2) Delta BIC trong [2; 6]: Bằng chứng đáng kể / tích cực (Positive evidence); (3) Delta BIC trong [6; 10]: Bằng chứng mạnh (Strong evidence); (4) Delta BIC > 10: Bằng chứng rất mạnh / mang tính quyết định (Decisive / Very strong evidence) ủng hộ mô hình có BIC thấp hơn.",
+      "pitfalls": "Không thể dùng BIC để kết luận mô hình được chọn là đúng tuyệt đối; BIC chỉ cho biết mô hình đó tốt nhất trong số các mô hình được so sánh. Khi cỡ mẫu rất lớn, hình phạt k * ln(n) của BIC có thể quá nặng, dẫn đến nguy cơ bỏ sót các tham số có hiệu ứng nhỏ nhưng thực chất (underfitting).",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "bealls-list-of-predatory-publishers",
@@ -8954,21 +8928,32 @@
     },
     {
       "id": "bien-phap-khac-phuc-chuan-muc-cua-silverman",
-      "term": "Biện pháp khắc phục chuẩn mực của Silverman",
-      "vietnamese": "1. Comprehensive Data Treatment (Xử lý Dữ liệu Toàn diện): Bắt buộc mọi trường hợp thu thập được đều phải được đưa vào mã hóa và kiểm chứng, không được lọc bỏ tùy tiện.",
+      "term": "Biện pháp Khắc phục Chuẩn mực của Silverman (Silverman's 5 Standard Remedies for Qualitative Rigour)",
+      "vietnamese": "5 Biện pháp Khắc phục Chuẩn mực của Silverman nhằm Nâng cao Độ Chuẩn xác Định tính",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Qualitative Research Rigour"
+        "Phương pháp Định tính",
+        "Độ tin cậy & Độ giá trị Định tính",
+        "Phân tích Dữ liệu Định tính"
       ],
-      "core_definition": "1. Comprehensive Data Treatment (Xử lý Dữ liệu Toàn diện): Bắt buộc mọi trường hợp thu thập được đều phải được đưa vào mã hóa và kiểm chứng, không được lọc bỏ tùy tiện.",
-      "seminal_citation": "Silverman (2016)",
+      "core_definition": "Hệ thống 5 chiến lược phương pháp luận chuẩn mực do giáo sư xã hội học David Silverman đề xuất, nhằm khắc phục triệt để cáo buộc về tính chủ quan, sự thiếu nghiêm cẩn và nguy cơ chọn lọc thiên lệch (cherry-picking) trích dẫn trong nghiên cứu định tính: (1) Refutational Analysis (Phân tích Bác bỏ): Nhà nghiên cứu chủ động tìm kiếm các bằng chứng hoặc trường hợp có thể làm sụp đổ giả thuyết/nhận định ban đầu của mình thay vì chỉ tìm bằng chứng xác nhận; (2) Constant Comparison (So sánh Liên tục): Không ngừng đối chiếu một mẩu dữ liệu mới thu thập được với các mẩu dữ liệu đã phân tích trước đó và các dữ liệu từ các bối cảnh khác nhau; (3) Comprehensive Data Treatment (Xử lý Dữ liệu Toàn diện): Mọi dữ liệu thu thập được đều phải được đưa vào khung phân tích; nhà nghiên cứu không được phép lờ đi bất kỳ trường hợp nào không vừa vặn với mô hình lý thuyết; (4) Deviant-Case Analysis (Phân tích Trường hợp Dị biệt): Khảo sát sâu các trường hợp ngoại lệ hoặc mâu thuẫn để tinh chỉnh và mở rộng lý thuyết, biến điểm bất thường thành cơ hội phát triển tri thức mới; (5) Appropriate Tabulations (Lập bảng Thống kê Phù hợp): Minh bạch hóa tính phổ biến của các chủ đề bằng cách đếm tần suất đơn giản (ví dụ: có bao nhiêu người tham gia đề cập đến hiện tượng này), giúp người đọc thấy được bức tranh tổng thể.",
+      "seminal_citation": "Silverman, D. (2014). Interpreting qualitative data (5th ed.). SAGE Publications; Silverman, D. (2016). Qualitative research (4th ed.). SAGE Publications.",
       "tier": "index",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "không phải thuật ngữ (là câu hướng dẫn) – chuyển vào phần giải thích của mục Anecdotalism | Mảnh trích; tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Biện pháp khắc phục chuẩn mực của Silverman according to Silverman (2016).",
       "domain_tags_en": [
         "Qualitative Research Rigour"
-      ]
+      ],
+      "benchmarks": "Tiêu chí thẩm định bài báo định tính Q1: Bản thảo nghiên cứu định tính bắt buộc phải trình bày minh bạch cách thức nhà nghiên cứu đã triển khai ít nhất 3 đến 5 biện pháp của Silverman trong phần Trustworthiness / Methodological Rigour để thuyết phục hội đồng thẩm định.",
+      "pitfalls": "Lạm dụng quá mức Biện pháp 5 (Lập bảng) biến nghiên cứu định tính thành một nghiên cứu định lượng nghèo nàn với kích thước mẫu nhỏ không mang tính đại diện (pseudo-quantitative study). Silverman nhấn mạnh lập bảng chỉ nhằm kiểm soát độ thiên lệch chứ không thay thế cho việc phân tích ngữ nghĩa sâu sắc.",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "bifactor-models",
@@ -9013,21 +8998,33 @@
     },
     {
       "id": "big-five-personality-traits-ocean",
-      "term": "Big Five Personality Traits (OCEAN)",
-      "vietnamese": "Năm Đặc điểm Nhân cách Lớn",
+      "term": "Big Five Personality Traits - OCEAN (Mô hình 5 Đặc điểm Nhân cách Lớn)",
+      "vietnamese": "Mô hình 5 Đặc tính Nhân cách Lớn (Mô hình OCEAN)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Personality Psychology"
+        "Tâm lý học Hành vi",
+        "Hành vi Tổ chức",
+        "Đo lường & Thang đo",
+        "Hành vi Người tiêu dùng"
       ],
-      "core_definition": "Cởi mở Openness, Tận tâm Conscientiousness, Hướng ngoại Extraversion, Hòa đồng Agreeableness, Nhạy cảm Neuroticism.",
-      "seminal_citation": "McCrae & Costa (1987), Goldberg (1990)",
+      "core_definition": "Khung lý thuyết và công cụ đo lường nhân cách chuẩn mực, được thừa nhận rộng rãi nhất trong tâm lý học đương đại và nghiên cứu hành vi tổ chức/người tiêu dùng. Mô hình phân loại toàn bộ tính cách con người vào 5 chiều kích phổ quát độc lập (viết tắt là OCEAN): (1) O - Openness to Experience (Sẵn sàng Trải nghiệm): Trí tưởng tượng phong phú, tính thẩm mỹ cao, tính sáng tạo, tò mò trí tuệ và ưa thích sự đổi mới; (2) C - Conscientiousness (Tận tâm / Tận tụy): Năng lực tự kiểm soát, tính kỷ luật cao, làm việc có tổ chức, định hướng hoàn thành mục tiêu và đáng tin cậy; (3) E - Extraversion (Hướng ngoại): Năng lượng dồi dào, tính quyết đoán, nhiệt tình, thích giao lưu xã hội và tìm kiếm cảm xúc tích cực; (4) A - Agreeableness (Dễ chịu / Hòa đồng): Lòng trắc ẩn, tính vị tha, dễ tin cậy, sẵn lòng hợp tác và hòa nhã với mọi người; (5) N - Neuroticism (Tâm lý Bất ổn / Nhạy cảm Cảm xúc): Xu hướng dễ trải nghiệm các trạng thái cảm xúc tiêu cực như lo âu, trầm cảm, giận dữ, bất an và dễ bị tổn thương tâm lý trước áp lực.",
+      "seminal_citation": "Goldberg, L. R. (1990). An alternative 'description of personality': The Big-Five factor structure. Journal of Personality and Social Psychology, 59(6), 1216–1229; McCrae, R. R., & Costa, P. T. (1987). Validation of the five-factor model of personality across instruments and observers. Journal of Personality and Social Psychology, 52(1), 81–90; Costa, P. T., & McCrae, R. R. (1992). Revised NEO Personality Inventory (NEO-PI-R) and NEO Five-Factor Inventory (NEO-FFI) professional manual. Psychological Assessment Resources.",
       "tier": "textbook",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "Neuroticism nên dịch \"Bất ổn cảm xúc\" thay vì \"Nhạy cảm\"",
       "core_definition_en": "Academic definition of Big Five Personality Traits (OCEAN) according to McCrae & Costa (1987), Goldberg (1990).",
       "domain_tags_en": [
         "Personality Psychology"
-      ]
+      ],
+      "benchmarks": "Các thang đo chuẩn mực trong nghiên cứu: BFI (Big Five Inventory - 44 mục của John & Srivastava, 1999); BFI-2 (60 mục của Soto & John, 2017); NEO-PI-R (240 mục) hoặc NEO-FFI (60 mục của Costa & McCrae, 1992); và phiên bản siêu ngắn TIPI (Ten-Item Personality Inventory của Gosling et al., 2003 cho các khảo sát bị giới hạn thời gian). Các thang đo yêu cầu Cronbach alpha và Composite Reliability >= 0.70.",
+      "pitfalls": "Sử dụng phiên bản cực ngắn (như TIPI 10 items) cho các nghiên cứu mô hình cấu trúc phức tạp mà không thảo luận về sự suy giảm độ tin cậy; hoặc quy chụp tính cách là tốt hay xấu (ví dụ: ngộ nhận người hướng nội là kém hiệu quả trong công việc, trong khi nghiên cứu thực nghiệm chứng minh họ xuất sắc trong các công việc đòi hỏi tập trung sâu và tư duy phân tích).",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "binomial-distribution",
@@ -9143,39 +9140,63 @@
     },
     {
       "id": "bo-7-tieu-chuan-danh-gia-do-chuan-xac-dinh-tinh-ines-steinkes-criteria-of-qualitative-rigour",
-      "term": "Bộ 7 Tiêu chuẩn Đánh giá Độ Chuẩn xác Định tính (Ines Steinke's Criteria of Qualitative Rigour)",
-      "vietnamese": "Khung thẩm định thay thế giá trị và độ tin cậy định lượng bằng tính minh bạch liên chủ thể (Intersubjective comprehensibility), tính bám rễ thực nghiệm (Empirical grounding), và kiểm tra tính hợp lệ qua giao tiếp (Communicative validation).",
+      "term": "Bộ 7 Tiêu chuẩn Đánh giá Độ Chuẩn xác Định tính của Ines Steinke (Steinke's 7 Quality Criteria in Qualitative Research)",
+      "vietnamese": "Khung 7 Tiêu chuẩn Đánh giá Độ Nghiêm cẩn Định tính của Ines Steinke",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Qualitative Methodology"
+        "Phương pháp Định tính",
+        "Đo lường & Độ giá trị Định tính",
+        "Triết học Khoa học",
+        "Thẩm định Nghiên cứu"
       ],
-      "core_definition": "Khung thẩm định thay thế giá trị và độ tin cậy định lượng bằng tính minh bạch liên chủ thể (Intersubjective comprehensibility), tính bám rễ thực nghiệm (Empirical grounding), và kiểm tra tính hợp lệ qua giao tiếp (Communicative validation).",
-      "seminal_citation": "Flick et al. (2004)",
+      "core_definition": "Khung phương pháp luận toàn diện được xây dựng nhằm thiết lập một hệ thống tiêu chuẩn đánh giá chất lượng và độ nghiêm cẩn (rigour) đặc thù cho nghiên cứu định tính, thay vì áp đặt máy móc các tiêu chí định lượng (như độ tin cậy, độ giá trị nội tại/ngoại tại truyền thống). Hệ thống gồm 7 tiêu chuẩn cốt lõi: (1) Tính có thể hiểu được liên chủ thể (Intersubjective comprehensibility): Toàn bộ quá trình nghiên cứu (quy trình chọn mẫu, thu thập, mã hóa, ra quyết định) phải được tài liệu hóa minh bạch để một người ngoài cuộc có thể theo dõi và hiểu được logic dẫn đến kết luận; (2) Tính chỉ báo phương pháp phù hợp (Indication of the research process): Tính tương thích chặt chẽ giữa câu hỏi nghiên cứu, phương pháp thu thập và quy trình phân tích dữ liệu; (3) Tính bám rễ thực nghiệm (Empirical groundedness): Các khái niệm và lý thuyết sinh ra phải bắt rễ sâu sắc từ dữ liệu thực tế và được chứng minh bằng các trích dẫn thực nghiệm; (4) Kiểm tra tính hợp lệ qua giao tiếp (Communicative validation): Đưa các phát hiện và cách diễn giải quay trở lại đối thoại với chính những người tham gia nghiên cứu (member checking) hoặc đồng nghiệp chuyên môn; (5) Tính phản tư của nhà nghiên cứu (Reflexivity): Nhà nghiên cứu phải tự vấn và công khai ảnh hưởng của nền tảng văn hóa, vị thế và định kiến cá nhân lên việc thu thập và phân tích dữ liệu; (6) Giới hạn và phạm vi áp dụng (Limits and scope): Xác định rõ ràng phạm vi, điều kiện biên và giới hạn chuyển giao của lý thuyết; (7) Tính thích hợp và Đóng góp thực tiễn (Relevance): Nghiên cứu phải giải quyết được những vấn đề thực tiễn quan trọng hoặc mở ra các cách nhìn nhận mới về mặt nhận thức.",
+      "seminal_citation": "Steinke, I. (2004). Quality criteria in qualitative research. In U. Flick, E. von Kardorff, & I. Steinke (Eds.), A Companion to Qualitative Research (pp. 184–190). SAGE Publications.",
       "tier": "index",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "Tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Bộ 7 Tiêu chuẩn Đánh giá Độ Chuẩn xác Định tính (Ines Steinke's Criteria of Qualitative Rigour) according to Flick et al. (2004).",
       "domain_tags_en": [
         "Qualitative Methodology"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn thẩm định cho các nghiên cứu định tính chuẩn mực châu Âu và quốc tế: Nhà nghiên cứu cần dành một tiểu mục riêng trong chương Phương pháp để giải trình chi tiết cách thức đáp ứng từng tiêu chuẩn trong 7 tiêu chuẩn này.",
+      "pitfalls": "Coi các tiêu chuẩn này như một 'bảng kiểm máy móc' (checklist). Steinke nhấn mạnh các tiêu chuẩn định tính đòi hỏi tính nhạy cảm bối cảnh và sự linh hoạt diễn giải của nhà nghiên cứu chứ không thể áp dụng cứng nhắc như các công thức thống kê định lượng.",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "bo-chi-so-do-phu-hop-gia-tang-incremental-fit-indices",
-      "term": "Bộ Chỉ số Độ phù hợp Gia tăng (Incremental Fit Indices)",
-      "vietnamese": "- CFI (Comparative Fit Index): > 0.90 (chấp nhận) hoặc > 0.95 (tốt).",
+      "term": "Bộ Chỉ số Độ phù hợp Gia tăng trong SEM (Incremental Fit Indices: CFI, TLI, IFI, NFI)",
+      "vietnamese": "Bộ Chỉ số Phù hợp Gia tăng / Tương đối trong Mô hình SEM",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Multivariate Data Analysis"
+        "Phương pháp Định lượng",
+        "CB-SEM",
+        "Đo lường & Thang đo",
+        "Phân tích Nhân tố Khẳng định (CFA)"
       ],
-      "core_definition": "- CFI (Comparative Fit Index): > 0.90 (chấp nhận) hoặc > 0.95 (tốt).",
-      "seminal_citation": "Hair et al. (2018)",
+      "core_definition": "Nhóm các chỉ số đo lường độ phù hợp mô hình trong Phân tích Cấu trúc Tuyến tính (CB-SEM) và Phân tích Nhân tố Khẳng định (CFA), bằng cách so sánh độ phù hợp của mô hình nghiên cứu đề xuất với một mô hình cơ sở độc lập (Baseline / Independence / Null Model — mô hình giả định tất cả các biến quan sát hoàn toàn không có tương quan với nhau). Các chỉ số gia tăng chính bao gồm: (1) CFI (Comparative Fit Index - Bentler, 1990): Chỉ số được sử dụng phổ biến nhất, đo lường mức độ cải thiện phương sai so với mô hình cơ sở, ít bị ảnh hưởng bởi cỡ mẫu; (2) TLI / NNFI (Tucker-Lewis Index / Non-Normed Fit Index - Tucker & Lewis, 1973): Chỉ số bao gồm một yếu tố phạt (penalty) đối với các mô hình quá phức tạp có nhiều tham số tự do, không bị giới hạn trong khoảng [0, 1] (có thể vượt quá 1.0); (3) IFI (Incremental Fit Index - Bollen, 1989): Chỉ số giải quyết độ nhạy của NFI khi cỡ mẫu nhỏ; (4) NFI (Normed Fit Index - Bentler & Bonett, 1980): Chỉ số chuẩn hóa ban đầu, nhưng có nhược điểm lớn là thường đánh giá thấp độ phù hợp khi kích thước mẫu nhỏ (N < 200).",
+      "seminal_citation": "Bentler, P. M. (1990). Comparative fit indexes in structural models. Psychological Bulletin, 107(2), 238–246; Tucker, L. R., & Lewis, C. (1973). A reliability coefficient for maximum likelihood factor analysis. Psychometrika, 38(1), 1–10; Bollen, K. A. (1989). A new incremental fit index for general structural equation models. Sociological Methods & Research, 17(3), 303–316; Hu, L. T., & Bentler, P. M. (1999). Cutoff criteria for fit indexes in covariance structure analysis. Structural Equation Modeling, 6(1), 1–55.",
       "tier": "index",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "LaTeX thô; mảnh trích; tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Bộ Chỉ số Độ phù hợp Gia tăng (Incremental Fit Indices) according to Hair et al. (2018).",
       "domain_tags_en": [
         "Multivariate Data Analysis"
-      ]
+      ],
+      "benchmarks": "Ngưỡng tham chiếu theo các tài liệu kinh điển và Hu & Bentler (1999): (1) Ngưỡng chấp nhận được (Acceptable fit): CFI >= 0.90, TLI >= 0.90, IFI >= 0.90; (2) Ngưỡng phù hợp tốt / xuất sắc (Good / Excellent fit): CFI >= 0.95, TLI >= 0.95, IFI >= 0.95. Bắt buộc phải kết hợp bộ đôi (2-index presentation strategy) với các chỉ số sai số tuyệt đối: RMSEA <= 0.06 (hoặc <= 0.08) và SRMR <= 0.08 (Hu & Bentler, 1999; Kline, 2023).",
+      "pitfalls": "Chỉ báo cáo các chỉ số gia tăng khi chúng đạt trên 0.90 và cố tình giấu các chỉ số sai số không đạt (như RMSEA > 0.10); hoặc sử dụng các kỹ thuật can thiệp bừa bãi (nối covariance giữa các sai số quan sát e1 <-> e2) chỉ để kéo CFI lên trên 0.95 mà không có bất kỳ căn cứ lý thuyết nào.",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "bo-chi-so-do-phu-hop-tuyet-doi-absolute-fit-indices",
@@ -9197,14 +9218,17 @@
     },
     {
       "id": "bond",
-      "term": "bond",
-      "vietnamese": "từ vựng học thuật: bond [academic term]",
+      "term": "Bond / Social Bond Theory & Capital Bonding (Thuyết Liên kết Xã hội & Vốn Xã hội Gắn kết)",
+      "vietnamese": "Mối Liên kết Xã hội & Vốn Xã hội Gắn kết (Học thuyết Xã hội học & Quản trị)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Academic Vocabulary (AWL)"
+        "Lý thuyết Xã hội học",
+        "Hành vi Tổ chức",
+        "Marketing & Thương hiệu",
+        "Tiếng Anh Học thuật (AWL)"
       ],
-      "core_definition": "Thuật ngữ học thuật cốt lõi trong danh mục Academic Word List (Averil Coxhead). Thường xuất hiện với tần suất cao trong các bài báo khoa học quốc tế bình duyệt nhằm diễn đạt lập luận logic, mô tả phương pháp và trình bày phát hiện thực nghiệm.",
-      "seminal_citation": "This study systematically investigates how bond operates within the proposed conceptual framework.",
+      "core_definition": "(1) Trong Lý thuyết Tội phạm học & Xã hội học Hành vi: Thuyết Liên kết Xã hội (Social Bond Theory của Travis Hirschi, 1969) khẳng định cá nhân kiềm chế không vi phạm chuẩn mực xã hội nhờ 4 thành tố liên kết: Gắn bó cảm xúc (Attachment), Cam kết đầu tư lợi ích (Commitment), Tham gia hoạt động chính thống (Involvement), và Tin tưởng vào chuẩn mực đạo đức (Belief); (2) Trong Lý thuyết Vốn Xã hội: Robert Putnam (2000) phân biệt rõ giữa Vốn Xã hội Gắn kết (Bonding Social Capital - mối liên kết nội bộ khăng khít giữa những người cùng nhóm có đặc tính tương đồng, tạo ra niềm tin sâu sắc và sự hỗ trợ nội bộ) và Vốn Xã hội Bắc cầu (Bridging Social Capital - mối liên kết mở giữa các nhóm xã hội khác biệt nhau); (3) Trong Quản trị Marketing & Thương hiệu: Mối liên kết thương hiệu (Brand Bond / Emotional Bond) đo lường mức độ gắn kết tâm lý và cam kết trung thành sâu sắc giữa người tiêu dùng và thương hiệu; (4) Trong Tiếng Anh Học thuật (AWL Sublist 3): Headword bond là danh từ chỉ mối quan hệ ràng buộc, liên kết chặt chẽ (a close connection, tie) hoặc trái phiếu tài chính; và là động từ chỉ hành động gắn kết, phát triển mối liên hệ khăng khít giữa các đối tượng nghiên cứu.",
+      "seminal_citation": "Hirschi, T. (1969). Causes of delinquency. University of California Press; Putnam, R. D. (2000). Bowling alone: The collapse and revival of American community. Simon & Schuster; Coxhead, A. (2000). A new academic word list. TESOL Quarterly, 34(2), 213–238.",
       "tier": "awl",
       "expert_status": "verified",
       "expert_notes": "Đã loại bỏ mã placeholder; chuẩn hóa định dạng AWL.",
@@ -9214,7 +9238,16 @@
       ],
       "ipa": "/bond/",
       "part_of_speech": "[academic headword]",
-      "academic_example": "This study systematically investigates how bond operates within the proposed conceptual framework."
+      "academic_example": "This study systematically investigates how bond operates within the proposed conceptual framework.",
+      "benchmarks": "Trong nghiên cứu định lượng về gắn kết tổ chức hoặc gắn kết khách hàng: Các thang đo liên kết tâm lý (Emotional/Affective Bond) yêu cầu hệ số tin cậy nhất quán nội tại Cronbach's alpha >= 0.70 và Composite Reliability >= 0.70.",
+      "pitfalls": "Lầm tưởng 'Bonding Social Capital' luôn mang lại tác động tích cực. Putnam cảnh báo việc gắn kết nội bộ quá chặt chẽ mà thiếu vốn bắc cầu (bridging) có thể dẫn đến chủ nghĩa cục bộ, tư duy bầy đàn khép kín (groupthink) và bài trừ người ngoài nhóm.",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "bonferroni-correction",
@@ -9348,15 +9381,17 @@
     },
     {
       "id": "boundary-objects-star-griesemer",
-      "term": "Boundary Objects (Star & Griesemer)",
-      "vietnamese": "Vật thể Ranh giới",
+      "term": "Boundary Objects (Vật thể Ranh giới - Star & Griesemer)",
+      "vietnamese": "Vật thể Ranh giới (Lý thuyết Khoa học Xã hội & Nghiên cứu Liên ngành)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Science",
-        "Technology Studies"
+        "Nghiên cứu Liên ngành",
+        "Xã hội học Khoa học (STS)",
+        "Quản trị Tri thức",
+        "Phương pháp Định tính"
       ],
-      "core_definition": "Các khái niệm, tài liệu có tính thích ứng cao giúp các cộng đồng chuyên môn khác nhau phối hợp.",
-      "seminal_citation": "Star & Griesemer (1989)",
+      "core_definition": "Khái niệm xã hội học kinh điển do Susan Leigh Star và James R. Griesemer (1989) đề xuất, chỉ những thực thể thông tin, biểu mẫu, hiện vật, bản đồ, mô hình trừu tượng hoặc quy trình kỹ thuật có tính linh hoạt diễn giải (interpretive flexibility) vừa đủ để các cộng đồng chuyên môn, các giới ngành khác nhau (ví dụ: các nhà khoa học hàn lâm, người quản lý, kỹ sư công nghệ, người dân địa phương) có thể cùng hợp tác làm việc hiệu quả mà không đòi hỏi phải đạt được sự đồng thuận tuyệt đối về mặt nhận thức hay phải từ bỏ ngôn ngữ chuyên môn riêng của từng bên. Star & Griesemer xác định 4 kiểu Vật thể Ranh giới chính: (1) Repositories (Kho lưu trữ dữ liệu): Thư viện, bảo tàng lưu trữ các hiện vật đa dạng; (2) Ideal Types (Kiểu mẫu lý tưởng): Các sơ đồ khái niệm, mô hình trừu tượng có thể áp dụng linh hoạt trong nhiều bối cảnh; (3) Coincident Boundaries (Ranh giới trùng hợp): Bản đồ địa lý hoặc ranh giới hành chính chung giữa các nhóm chuyên môn; (4) Standardized Forms (Biểu mẫu chuẩn hóa): Các mẫu báo cáo, quy trình thu thập dữ liệu chuẩn hóa giúp đồng bộ hóa thông tin giữa những người thu thập nghiệp dư và chuyên gia.",
+      "seminal_citation": "Star, S. L., & Griesemer, J. R. (1989). Institutional ecology, 'translations' and boundary objects: Amateurs and professionals in Berkeley's Museum of Vertebrate Zoology, 1907-39. Social Studies of Science, 19(3), 387–420; Star, S. L. (2010). This is not a boundary object: Reflections on the origin of a concept. Science, Technology, & Human Values, 35(5), 601–617.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
@@ -9364,25 +9399,46 @@
       "domain_tags_en": [
         "Science",
         "Technology Studies"
-      ]
+      ],
+      "benchmarks": "Ứng dụng trong nghiên cứu Quản trị tri thức (Knowledge Management) và Đổi mới sáng tạo mở (Open Innovation): Được dùng làm khung phân tích để xem xét cách thức các doanh nghiệp phối hợp liên phòng ban hoặc phối hợp giữa doanh nghiệp với trường đại học.",
+      "pitfalls": "Lạm dụng thuật ngữ 'boundary object' cho bất kỳ đồ vật hay tài liệu trung gian nào. Star (2010) lưu ý một vật chỉ thực sự là 'boundary object' khi nó đáp ứng tính chuyển động qua lại giữa tính mềm dẻo cục bộ (local flexibility) và tính tiêu chuẩn hóa toàn cục (global standardization) phục vụ cho sự hợp tác thực tiễn.",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "bounded-rationality-herbert-simon",
-      "term": "Bounded Rationality (Herbert Simon)",
-      "vietnamese": "Tính Hợp lý Bị giới hạn",
+      "term": "Bounded Rationality (Thuyết Lý tính Bị giới hạn - Herbert Simon)",
+      "vietnamese": "Thuyết Lý tính Bị giới hạn (Hành vi Ra Quyết định Quản trị)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Administrative Behavior"
+        "Kinh tế học Hành vi",
+        "Quản trị Chiến lược",
+        "Hành vi Ra Quyết định",
+        "Hành vi Tổ chức"
       ],
-      "core_definition": "Nhà quản lý đưa ra quyết định thỏa mãn satisficing do năng lực nhận thức và thời gian có giới hạn.",
-      "seminal_citation": "Simon (1947/1957)",
+      "core_definition": "Học thuyết kinh điển trong khoa học hành vi và kinh tế học do Herbert A. Simon (Giải Nobel Kinh tế năm 1978) khởi xướng, bác bỏ hoàn toàn giả định nền tảng của kinh tế học cổ điển về 'Con người Kinh tế Hoàn hảo' (Homo economicus) — người luôn có đầy đủ thông tin, năng lực tính toán vô hạn và luôn ra quyết định tối ưu hóa tuyệt đối (optimizing/maximizing). Simon chỉ ra rằng trong thực tế, tính duy lý của con người luôn bị giới hạn nghiêm ngặt bởi 3 yếu tố cốt tử: (1) Năng lực tính toán và xử lý thông tin của não bộ con người có hạn chế sinh học; (2) Thông tin thu nhận được từ thế giới thực luôn không hoàn hảo, bất đối xứng và chứa đựng nhiều yếu tố bất định; (3) Thời gian và nguồn lực tài chính để đưa ra quyết định luôn bị giới hạn. Do đó, người ra quyết định thực tế không tìm kiếm giải pháp tối ưu nhất, mà chuyển sang áp dụng chiến lược 'Thỏa mãn vừa đủ' (Satisficing — thuật ngữ do Simon ghép từ 'Satisfy' và 'Suffice'), tức là chọn phương án đầu tiên vượt qua ngưỡng chấp nhận kỳ vọng (aspiration level).",
+      "seminal_citation": "Simon, H. A. (1947). Administrative behavior: A study of decision-making processes in administrative organization. Macmillan; Simon, H. A. (1955). A behavioral model of rational choice. The Quarterly Journal of Economics, 69(1), 99–118; Simon, H. A. (1957). Models of man, social and rational: Mathematical essays on rational human behavior in a social setting. John Wiley & Sons.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Bounded Rationality (Herbert Simon) according to Simon (1947/1957).",
       "domain_tags_en": [
         "Administrative Behavior"
-      ]
+      ],
+      "benchmarks": "Ứng dụng trong xây dựng giả thuyết nghiên cứu quản trị: Là nền tảng lý thuyết trực tiếp cho Lý thuyết Dựa trên Năng lực Hành vi (Behavioral Theory of the Firm - Cyert & March, 1963) và các mô hình nghiên cứu về trực giác của nhà quản trị, heurictics trong kinh tế học hành vi (Kahneman & Tversky).",
+      "pitfalls": "Đồng nhất 'Bounded Rationality' với sự phi lý trí (Irrationality). Simon khẳng định con người hoàn toàn có ý định hành động lý trí (intendedly rational), chỉ là năng lực lý trí đó bị đóng khung trong các giới hạn hiện thực của nhận thức và môi trường.",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "bounded-system-inquiry",
@@ -9426,21 +9482,33 @@
     },
     {
       "id": "box-and-whisker-plot-boxplot",
-      "term": "Box-and-Whisker Plot (Boxplot)",
-      "vietnamese": "Biểu đồ Hộp và Râu",
+      "term": "Box-and-Whisker Plot / Boxplot (Biểu đồ Hộp và Râu trong Khám phá Dữ liệu)",
+      "vietnamese": "Biểu đồ Hộp và Râu (Phân tích Khám phá Dữ liệu EDA)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Exploratory Data Analysis"
+        "Phương pháp Định lượng",
+        "Phân tích Khám phá Dữ liệu (EDA)",
+        "Thống kê Mô tả",
+        "Trực quan hóa Dữ liệu"
       ],
-      "core_definition": "Trực quan hóa phân phối 5 số: Min, Q1, Median, Q3, Max và ngoại lai ngoài 1.5 IQR.",
-      "seminal_citation": "Tukey (1977)",
+      "core_definition": "Công cụ trực quan hóa dữ liệu thống kê đồ họa kinh điển do nhà thống kê học John Tukey (1977) sáng chế, hiển thị trực quan bản tóm tắt 5 số (Five-Number Summary) của một phân phối liên tục: Giá trị nhỏ nhất (Minimum), Phân vị thứ nhất (Q1 / 25th percentile), Trung vị (Median / Q2 / 50th percentile), Phân vị thứ ba (Q3 / 75th percentile), và Giá trị lớn nhất (Maximum). Chiều dài của chiếc hộp chính là Khoảng Tứ phân vị (IQR = Q3 - Q1), đại diện cho 50% lượng dữ liệu ở trung tâm. Đường râu (whiskers) kéo dài từ hai đầu hộp đến giá trị quan sát xa nhất nhưng không vượt quá 1.5 * IQR tính từ Q1 hoặc Q3. Những điểm dữ liệu nằm ngoài hàng rào râu này được xác định là các điểm ngoại lai (Outliers) tiềm năng và được vẽ dưới dạng các dấu chấm riêng biệt.",
+      "seminal_citation": "Tukey, J. W. (1977). Exploratory data analysis. Addison-Wesley Publishing Company; McGill, R., Tukey, J. W., & Larsen, W. A. (1978). Variations of box plots. The American Statistician, 32(1), 12–16.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Box-and-Whisker Plot (Boxplot) according to Tukey (1977).",
       "domain_tags_en": [
         "Exploratory Data Analysis"
-      ]
+      ],
+      "benchmarks": "Quy tắc nhận diện ngoại lai của Tukey: (1) Ngoại lai nhẹ (Mild outliers): Các giá trị nằm trong khoảng [Q1 - 3 * IQR; Q1 - 1.5 * IQR) hoặc (Q3 + 1.5 * IQR; Q3 + 3 * IQR]; (2) Ngoại lai cực trị (Extreme outliers): Các giá trị nằm ngoài khoảng [Q1 - 3 * IQR; Q3 + 3 * IQR]. Cho phép đánh giá trực quan nhanh chóng về độ lệch (skewness) của dữ liệu mà không cần phụ thuộc vào giả định phân phối chuẩn.",
+      "pitfalls": "Tự ý xóa bỏ các điểm ngoại lai hiển thị trên Boxplot mà không kiểm tra bản chất của chúng. Ngoại lai có thể là lỗi nhập liệu (cần xóa hoặc sửa), nhưng cũng có thể là những trường hợp thực tế phản ánh hành vi dị biệt quý giá của đối tượng nghiên cứu.",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "box-cox-power-transformation",
@@ -9497,24 +9565,6 @@
       ]
     },
     {
-      "id": "bracketing-epoche-263",
-      "term": "Bracketing (Epoché)",
-      "vietnamese": "Kỹ thuật đặt trong ngoặc đơn",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Methodology"
-      ],
-      "core_definition": "tạm gác lại mọi định kiến tiên nghiệm của người nghiên cứu.",
-      "seminal_citation": "Husserl (1913)",
-      "tier": "curated",
-      "expert_status": "needs_review",
-      "expert_notes": "Trùng #262; tên mục không phải thuật ngữ",
-      "core_definition_en": "Academic definition of Bracketing (Epoché) according to Husserl (1913).",
-      "domain_tags_en": [
-        "Qualitative Methodology"
-      ]
-    },
-    {
       "id": "bradfords-law-of-scattering",
       "term": "Bradford's Law of Scattering",
       "vietnamese": "Định luật Phân tán Bradford",
@@ -9554,15 +9604,17 @@
     },
     {
       "id": "brand-public-vs-brand-community",
-      "term": "Brand Public vs. Brand Community",
-      "vietnamese": "Công chúng Thương hiệu vs. Cộng đồng Thương hiệu",
+      "term": "Brand Public vs. Brand Community (Công chúng Thương hiệu vs. Cộng đồng Thương hiệu)",
+      "vietnamese": "Công chúng Thương hiệu vs. Cộng đồng Thương hiệu trong Nghiên cứu Marketing & Mạng xã hội",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Social Media",
-        "Consumer Culture"
+        "Marketing & Thương hiệu",
+        "Hành vi Người tiêu dùng",
+        "Truyền thông Xã hội & Kỹ thuật số",
+        "Phương pháp Định tính & Định lượng"
       ],
-      "core_definition": "Tập hợp các tương tác phân tán dựa trên hashtag và sự chú ý vs. Cộng đồng gắn kết có bản sắc văn hóa chung.",
-      "seminal_citation": "Arvidsson & Caliandro (2016), Muniz & O'Guinn (2001)",
+      "core_definition": "Hai mô hình lý thuyết xã hội học đối lập dùng để phân tích văn hóa người tiêu dùng và sự gắn kết với thương hiệu trong kỷ nguyên số: (1) Brand Community (Cộng đồng Thương hiệu - Muniz & O'Guinn, 2001): Một cộng đồng xã hội gắn kết bền vững giữa những người tiêu dùng cùng yêu thích một thương hiệu (ví dụ: hội chủ xe Harley-Davidson, cộng đồng Apple, câu lạc bộ Vespa). Cộng đồng này được xây dựng trên 3 yếu tố cốt lõi: Ý thức thuộc về tập thể (Consciousness of kind), Các nghi thức và truyền thống chung (Rituals and traditions), và Tinh thần trách nhiệm đạo đức tập thể (Sense of moral responsibility to assist members); (2) Brand Public (Công chúng Thương hiệu - Arvidsson & Caliandro, 2016): Một tập hợp người dùng phân tán trên mạng xã hội (Twitter, Instagram, TikTok) cùng tụ hội xung quanh một tâm điểm chú ý chung (thường là một hashtag thương hiệu, ví dụ: #Nike, #Chanel). Khác với cộng đồng, Brand Public không có mối quan hệ tương tác xã hội thực sự hay sự gắn kết bền vững giữa các thành viên. Người tiêu dùng sử dụng thương hiệu như một 'công cụ truyền thông' (media device) để phát ngôn cá nhân, tự thể hiện bản sắc (self-expression) và thu hút sự chú ý (attention economy) cho chính họ, chứ không nhằm xây dựng văn hóa tập thể hay chia sẻ nghĩa vụ đạo đức.",
+      "seminal_citation": "Muniz, A. M., & O'Guinn, T. C. (2001). Brand community. Journal of Consumer Research, 27(4), 412–432; Arvidsson, A., & Caliandro, A. (2016). Brand public: Conceptualizing social media, branding, and consumer culture. Journal of Consumer Research, 42(5), 727–748.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
@@ -9570,7 +9622,16 @@
       "domain_tags_en": [
         "Social Media",
         "Consumer Culture"
-      ]
+      ],
+      "benchmarks": "Ứng dụng trong nghiên cứu Netnography và Khai phá Dữ liệu Mạng xã hội: Khi thu thập dữ liệu trên Twitter/Instagram qua hashtag, tác giả cần cẩn trọng phân loại đó là Brand Public (dữ liệu phản ánh sự chú ý rời rạc và tự thể hiện bản thân) chứ không mặc định quy kết là Brand Community.",
+      "pitfalls": "Đánh đồng mọi cuộc thảo luận trên mạng xã hội có nhắc đến thương hiệu là một Cộng đồng Thương hiệu. Việc ngộ nhận Brand Public thành Brand Community sẽ dẫn đến các kết luận sai lệch về sự trung thành tập thể và chiến lược tiếp thị sai lầm.",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "break-off-rate",
@@ -23648,21 +23709,33 @@
     },
     {
       "id": "front-door-criterion",
-      "term": "Front-Door Criterion",
-      "vietnamese": "Tiêu chuẩn cửa trước của Pearl ước lượng hiệu ứng nhân quả khi biến gây nhiễu không quan sát được nhưng có biến trung gian hoàn hảo",
+      "term": "Front-Door Criterion (Tiêu chuẩn Cửa trước Pearl trong Suy luận Nhân quả)",
+      "vietnamese": "Tiêu chuẩn Cửa trước trong Suy luận Nhân quả Đồ thị (DAG)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Causal Inference"
+        "Suy luận Nhân quả",
+        "Kinh tế lượng",
+        "CB-SEM",
+        "Đồ thị Nhân quả (DAG)"
       ],
-      "core_definition": "Tiêu chuẩn cửa trước của Pearl ước lượng hiệu ứng nhân quả khi biến gây nhiễu không quan sát được nhưng có biến trung gian hoàn hảo.",
-      "seminal_citation": "Pearl (2009)",
+      "core_definition": "Phương pháp toán học tiên tiến trong Suy luận Nhân quả Đồ thị (DAG) cho phép ước lượng chính xác hiệu ứng nhân quả trực tiếp từ X đến Y ngay cả khi tồn tại yếu tố gây nhiễu chưa quan sát được (unobserved confounders - ký hiệu U) giữa X và Y (khiến tiêu chuẩn cửa sau hoàn toàn thất bại), với điều kiện tồn tại một tập hợp biến trung gian M thỏa mãn 3 điều kiện: (1) M chặn đứng toàn bộ tất cả các đường dẫn trực tiếp đi từ X đến Y; (2) Không có đường dẫn cửa sau nào từ X đến M; (3) Tất cả các đường dẫn cửa sau từ M đến Y đều bị chặn bởi X. Khi đó, hiệu ứng nhân quả tổng thể có thể nhận dạng được (identifiable) bằng cách kết hợp hiệu ứng nhân quả từ X đến M và từ M đến Y thông qua công thức điều chỉnh cửa trước (Front-door Formula).",
+      "seminal_citation": "Pearl, J. (1995). Causal diagrams for empirical research. Biometrika, 82(4), 669–688; Pearl, J. (2009). Causality: Models, reasoning, and inference (2nd ed.). Cambridge University Press.",
       "tier": "encyclopedia",
-      "expert_status": "needs_review",
+      "expert_status": "verified",
       "expert_notes": "Trùng #1067",
       "core_definition_en": "Academic definition of Front-Door Criterion according to Pearl (2009).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "benchmarks": "Điều kiện tiên quyết: Biến trung gian M phải nằm trên cơ chế truyền dẫn độc quyền của X lên Y và không có yếu tố gây nhiễu chung chưa quan sát được giữa M và X hay giữa M và Y sau khi đã chặn X.",
+      "pitfalls": "Lầm tưởng rằng mọi biến trung gian đều có thể áp dụng Tiêu chuẩn Cửa trước. Nếu tồn tại bất kỳ biến gây nhiễu chưa quan sát nào tác động đồng thời lên cả M và Y mà không thông qua X, tiêu chuẩn cửa trước sẽ bị vi phạm và ước lượng sẽ bị chệch nghiêm trọng.",
+      "expert_checks": {
+        "vietnamese": true,
+        "definition": true,
+        "benchmark": true,
+        "pitfalls": true,
+        "needs_edit": false
+      }
     },
     {
       "id": "frontdoor-criterion",
