@@ -3,6 +3,12 @@ node_modules/
 .pnp
 .pnp.js
 
+# Textbooks and heavy PDFs
+"Text book/"
+Text\ book/
+*.epub
+*.pdf
+
 # Next.js Build & Outputs
 .next/
 out/
