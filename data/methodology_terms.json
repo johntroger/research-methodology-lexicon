@@ -801,25 +801,34 @@
     },
     {
       "id": "pragmatism",
-      "term": "Pragmatism",
+      "term": "Pragmatism in Research Methodology (Peirce, James, Dewey & Mixed Methods)",
       "ipa": "/ˈpræɡmətɪzəm/",
-      "vietnamese": "Chủ nghĩa thực dụng",
+      "vietnamese": "Thực dụng luận trong phương pháp luận nghiên cứu",
       "vietnamese_variants": [
-        "Thế giới quan thực dụng",
-        "Triết học hành động"
+        "Triết học thực dụng luận",
+        "Chủ nghĩa thực dụng",
+        "Pragmatic Philosophical Worldview"
       ],
       "domain_tags": [
         "Phương pháp Hỗn hợp",
         "Triết học Khoa học",
         "Giải quyết Vấn đề"
       ],
-      "core_definition": "Thế giới quan triết học không bị trói buộc vào một hệ thống triết học đơn lẻ (như hậu thực chứng hay kiến tạo) mà tập trung vào câu hỏi nghiên cứu và hậu quả thực tiễn: 'Phương pháp nào mang lại câu trả lời tốt nhất cho vấn đề thực tế?'.",
+      "core_definition": "Pragmatism (Thực dụng luận) là nền tảng triết học và nhận thức luận chủ đạo nhất của Phương pháp nghiên cứu hỗn hợp (Mixed Methods Research), bắt nguồn từ các triết gia người Mỹ Charles Sanders Peirce, William James, John Dewey và được các học giả MMR hiện đại như R. Burke Johnson, Anthony Onwuegbuzie và David L. Morgan tái định hình (2004, 2014). Thực dụng luận bác bỏ sự đối đầu nhị nguyên cứng nhắc giữa Chủ nghĩa thực chứng (Positivism - tin vào chân lý khách quan duy nhất) và Chủ nghĩa kiến tạo (Constructivism - tin vào đa thực tại chủ quan). Thay vào đó, nó định nghĩa chân lý dựa trên 'hành động thực tiễn' (practical consequences) và 'cái gì hiệu quả' (what works) để giải quyết câu hỏi nghiên cứu cụ thể trong thế giới thực.",
       "paradigm_debates": "Là nền tảng triết học chính thức của Phương pháp Nghiên cứu Hỗn hợp (Mixed Methods Research). Cho phép tự do kết hợp cả số liệu định lượng và câu chuyện định tính trong cùng một công trình.",
-      "benchmarks": "Tính hợp lý của nghiên cứu được đánh giá qua hiệu quả giải quyết vấn đề và tính thấu đáo của các giải pháp thực tiễn rút ra từ nghiên cứu.",
-      "pitfalls": "Sử dụng hỗn hợp định tính và định lượng một cách chắp vá (không có chiến lược tích hợp rõ ràng), gắn mác 'thực dụng' để biện minh cho việc thiết kế nghiên cứu thiếu kỷ luật học thuật.",
-      "seminal_citation": "Morgan, D. L. (2007). Paradigms lost and pragmatism regained: Methodological implications of combining qualitative and quantitative methods. Journal of Mixed Methods Research, 1(1), 48–76.",
+      "benchmarks": [
+        "Biện minh nhận thức luận rõ ràng: Phải dành một mục trong Chương 3 để giải thích tại sao Thực dụng luận giải phóng nghiên cứu viên khỏi 'cuộc chiến mô thức' (Paradigm Wars).",
+        "Định hướng giải quyết vấn đề thực tiễn: Nghiên cứu phải hướng đến việc tạo ra các giải pháp khả thi, có thể hành động được (actionable insights).",
+        "Nguyên tắc đa nguyên phương pháp luận (Methodological Pluralism): Tự do kết hợp các kỹ thuật đo lường đa dạng miễn là chúng cùng phục vụ làm sáng tỏ câu hỏi trung tâm."
+      ],
+      "pitfalls": [
+        "Hiểu nhầm thành sự dễ dãi, vô nguyên tắc ('Anything goes'): Lợi dụng danh nghĩa thực dụng luận để thu thập dữ liệu cẩu thả, không tuân thủ các quy chuẩn nghiêm ngặt của từng phương pháp thành phần.",
+        "Chủ nghĩa thực dụng mù quáng (naive pragmatism): Chỉ quan tâm đến kết quả trước mắt mà không suy ngẫm về các giả định bản thể học và đạo đức của nghiên cứu.",
+        "Bỏ qua sự đối thoại triết học: Viết báo cáo thực dụng luận như một tuyên bố khẩu hiệu một câu mà không giải thích được cơ chế suy luận quy nạp đảo (abduction) đã vận hành ra sao."
+      ],
+      "seminal_citation": "Johnson, R. B., & Onwuegbuzie, A. J. (2004). Mixed methods research: A research paradigm whose time has come. Educational Researcher, 33(7), 14-26; Morgan, D. L. (2014). Pragmatism as a Paradigm for Social Research. Qualitative Inquiry, 20(8), 1045-1053.",
       "apa_intext": "(Creswell & Creswell, 2023, p. 11)",
-      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2023). Research design: Qualitative, quantitative, and mixed methods approaches (6th ed.). SAGE Publications.",
+      "apa_reference": "Johnson, R. B., & Onwuegbuzie, A. J. (2004). Mixed methods research: A research paradigm whose time has come. Educational Researcher, 33(7), 14-26. https://doi.org/10.3102/0013189X033007014",
       "corpus_variants": [
         {
           "v": "Thế giới quan thực dụng",
@@ -844,7 +853,14 @@
         "benchmark": true,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "category": "Mixed Methods",
+      "subcategory": "Philosophy",
+      "operational_mechanism": "Các nguyên lý cốt lõi của Thực dụng luận trong nghiên cứu: (1) Trọng tâm đặt vào Câu hỏi nghiên cứu (Research Question Primacy) thay vì tôn thờ một phương pháp duy nhất; (2) Vận dụng Suy luận quy nạp - diễn dịch kết hợp (Abductive Reasoning): di chuyển linh hoạt giữa quan sát thực nghiệm và mô hình lý thuyết; (3) Chấp nhận quan hệ liên chủ thể (Intersubjectivity): kết hợp tính khách quan của dữ liệu số với tính chủ quan sâu sắc của trải nghiệm con người; (4) Khả năng chuyển giao (Transferability) dựa trên sự tương đồng bối cảnh thực tiễn.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "convergent-design",
@@ -894,24 +910,34 @@
     },
     {
       "id": "explanatory-sequential-design",
-      "term": "Explanatory Sequential Design",
+      "term": "Explanatory Sequential Mixed Methods Design (QUAN -> qual)",
       "ipa": "/ɪkˈsplænətəri sɪˈkwɛnʃəl dɪˈzaɪn/",
-      "vietnamese": "Thiết kế tuần tự giải thích",
+      "vietnamese": "Thiết kế hỗn hợp giải thích tuần tự (QUAN trước -> qual sau)",
       "vietnamese_variants": [
-        "Thiết kế hỗn hợp hai giai đoạn định lượng trước"
+        "Thiết kế tuần tự giải thích",
+        "Mô hình giải thích định lượng bằng định tính",
+        "Two-Phase Explanatory Design"
       ],
       "domain_tags": [
         "Phương pháp Hỗn hợp",
         "Thiết kế Nghiên cứu",
         "Giải thích Dữ liệu"
       ],
-      "core_definition": "Thiết kế hỗn hợp diễn ra theo hai giai đoạn nối tiếp: Nhà nghiên cứu tiến hành thu thập và phân tích dữ liệu ĐỊNH LƯỢNG trước, sau đó dùng dữ liệu ĐỊNH TÍNH (ở giai đoạn 2) để đào sâu và giải thích chi tiết hơn cho các kết quả định lượng bất thường hoặc bất ngờ.",
+      "core_definition": "Explanatory Sequential Mixed Methods Design là thiết kế hai giai đoạn có trọng số nghiêng về định lượng (QUAN -> qual), do Creswell & Plano Clark (2018) và Ivankova et al. (2006) chuẩn hóa. Nghiên cứu bắt đầu bằng việc thu thập và phân tích dữ liệu định lượng ưu tiên (giai đoạn 1). Dựa trên các kết quả thống kê quan trọng, bất thường, ngoại lai (outliers) hoặc các nhóm đối tượng có phản ứng phân hóa, nhà nghiên cứu thiết kế giai đoạn định tính tiếp theo (giai đoạn 2) nhằm đào sâu, mổ xẻ và giải thích cơ chế tiềm ẩn đằng sau các phát hiện số học đó.",
       "paradigm_debates": "Trọng số chính (Priority) thường đặt ở giai đoạn Định lượng. Khâu kết nối (Connecting) là mấu chốt: Các phát hiện định lượng ở pha 1 sẽ quyết định việc chọn ai để phỏng vấn ở pha 2.",
-      "benchmarks": "Cần mô tả rõ tiêu chí chọn mẫu định tính dựa trên kết quả định lượng (ví dụ: chọn phỏng vấn những người thuộc nhóm điểm số cao nhất và thấp nhất).",
-      "pitfalls": "Thu thập dữ liệu định tính giai đoạn 2 nhưng không ăn nhập gì với các câu hỏi chưa giải thích được từ giai đoạn 1, biến pha 2 thành một nghiên cứu hoàn toàn xa lạ.",
-      "seminal_citation": "Ivankova, N. V., Creswell, J. W., & Stick, S. L. (2006). Using mixed-methods sequential explanatory design: From theory to practice. Field Methods, 18(1), 3–20.",
+      "benchmarks": [
+        "Tính phụ thuộc tuần tự nghiêm ngặt (Sequential Dependency): Đề cương phỏng vấn định tính ở giai đoạn 2 KHÔNG ĐƯỢC viết sẵn từ trước; nó bắt buộc phải được kiến tạo dựa trên kết quả thống kê của giai đoạn 1.",
+        "Chọn mẫu có mục đích lồng ghép (Nested Purposive Sampling): Những người tham gia phỏng vấn định tính ở giai đoạn 2 phải được tuyển chọn từ chính những người đã hoàn thành bảng khảo sát định lượng ở giai đoạn 1.",
+        "Báo cáo rõ ràng điểm kết nối (Point of Interface): Phải có mục riêng giải thích chính xác kết quả định lượng nào đã thúc đẩy câu hỏi nghiên cứu định tính."
+      ],
+      "pitfalls": [
+        "Tiến hành thu thập cả hai giai đoạn cùng một lúc: Thu thập dữ liệu phỏng vấn trước khi có kết quả phân tích định lượng, phá vỡ logic giải thích tuần tự.",
+        "Lặp lại nội dung khảo sát: Sử dụng phỏng vấn định tính chỉ để hỏi lại những gì đã hỏi trong bảng hỏi định lượng thay vì đào sâu vào lý do và cơ chế.",
+        "Chọn mẫu định tính từ một quần thể hoàn toàn xa lạ: Phỏng vấn những người chưa từng tham gia khảo sát định lượng giai đoạn 1, làm mất tính liên kết giải thích trực tiếp."
+      ],
+      "seminal_citation": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and Conducting Mixed Methods Research (3rd ed.). SAGE Publications; Ivankova, N. V., Creswell, J. W., & Stick, S. L. (2006). Using mixed-methods sequential explanatory design: From theory to practice. Field Methods, 18(1), 3-20.",
       "apa_intext": "(Creswell & Creswell, 2023, p. 242)",
-      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2023). Research design: Qualitative, quantitative, and mixed methods approaches (6th ed.). SAGE Publications.",
+      "apa_reference": "Ivankova, N. V., Creswell, J. W., & Stick, S. L. (2006). Using mixed-methods sequential explanatory design: From theory to practice. Field Methods, 18(1), 3-20. https://doi.org/10.1177/1525822X05282260",
       "corpus_variants": [
         {
           "v": "Thiết kế hỗn hợp hai giai đoạn định lượng trước",
@@ -930,28 +956,45 @@
         "benchmark": true,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "category": "Mixed Methods",
+      "subcategory": "Designs",
+      "operational_mechanism": "Cơ chế kết nối hai giai đoạn (Connecting mechanism): (1) Giai đoạn 1: Thu thập và chạy mô hình định lượng (SEM, Hồi quy đa biến); (2) Nhận diện các điểm mấu chốt cần giải thích (ví dụ: một mối quan hệ không có ý nghĩa thống kê trái ngược giả thuyết, các biến điều tiết phức tạp, hoặc các phân khúc khách hàng cực đoan); (3) Xây dựng đề cương phỏng vấn định tính và tiêu chí chọn mẫu trực tiếp từ các phát hiện định lượng; (4) Giai đoạn 2: Thu thập dữ liệu định tính chuyên sâu; (5) Tích hợp hai giai đoạn bằng cách dùng dữ liệu định tính giải thích rõ 'tại sao' kết quả thống kê lại xuất hiện như vậy.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "exploratory-sequential-design",
-      "term": "Exploratory Sequential Design",
+      "term": "Exploratory Sequential Mixed Methods Design (QUAL -> quan)",
       "ipa": "/ɪkˈsplɒrətəri sɪˈkwɛnʃəl dɪˈzaɪn/",
-      "vietnamese": "Thiết kế tuần tự khám phá",
+      "vietnamese": "Thiết kế hỗn hợp khám phá tuần tự (QUAL trước -> quan sau)",
       "vietnamese_variants": [
-        "Thiết kế phát triển công cụ thang đo"
+        "Thiết kế tuần tự khám phá",
+        "Mô hình phát triển công cụ đo lường",
+        "Instrument Development Design"
       ],
       "domain_tags": [
         "Phương pháp Hỗn hợp",
         "Xây dựng Thang đo",
         "Thiết kế Nghiên cứu"
       ],
-      "core_definition": "Thiết kế hỗn hợp trong đó nhà nghiên cứu bắt đầu bằng việc khám phá ĐỊNH TÍNH trước (vì chưa có thang đo hoặc hiện tượng còn mới), từ đó xây dựng thang đo, công cụ hoặc mô hình can thiệp mới, rồi mới tiến hành kiểm định ĐỊNH LƯỢNG trên mẫu lớn ở giai đoạn 2.",
+      "core_definition": "Exploratory Sequential Mixed Methods Design là thiết kế hai giai đoạn có trọng số ban đầu nghiêng về định tính (QUAL -> quan), do Creswell & Plano Clark (2018) và Onwuegbuzie et al. (2010) hệ thống hóa. Thiết kế này được áp dụng khi một hiện tượng nghiên cứu còn mới mẻ, thiếu vắng lý thuyết dẫn đường hoặc chưa có sẵn thang đo đo lường chuẩn hóa. Nhà nghiên cứu bắt đầu bằng giai đoạn khám phá định tính sâu sắc (giai đoạn 1) để nhận diện các biến số, thuộc tính và khung khái niệm; sau đó dùng các phát hiện định tính này để 'kiến tạo' (building) một công cụ đo lường mới hoặc mô hình giả thuyết để kiểm định trên diện rộng bằng định lượng (giai đoạn 2).",
       "paradigm_debates": "Đặc biệt hữu ích trong phát triển thang đo bản địa (Indigenization) hoặc đo lường các hiện tượng công nghệ mới (AI, Fintech, Web3) chưa có công cụ đo lường trong y văn quốc tế.",
-      "benchmarks": "Giai đoạn 1 sinh ra các mục hỏi (items) từ phát biểu phỏng vấn; Giai đoạn 2 kiểm định EFA, CFA và độ tin cậy để tinh lọc thang đo.",
-      "pitfalls": "Dùng luôn các câu hỏi phỏng vấn thô đưa vào bảng khảo sát mà không qua bước chuẩn hóa thang đo đo lường; hoặc mẫu phỏng vấn pha 1 và mẫu khảo sát pha 2 bị lẫn lộn.",
-      "seminal_citation": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and conducting mixed methods research (3rd ed.). SAGE Publications.",
+      "benchmarks": [
+        "Dẫn xuất rõ ràng từ trích dẫn định tính sang câu hỏi khảo sát: Phải trình bày Bảng ma trận phát triển công cụ (Item Development Matrix) thể hiện mã định tính tương ứng với câu hỏi định lượng nào.",
+        "Sử dụng hai mẫu độc lập: Mẫu tham gia phỏng vấn định tính giai đoạn 1 và mẫu trả lời khảo sát định lượng giai đoạn 2 phải độc lập với nhau (nhưng cùng thuộc một tổng thể đối tượng).",
+        "Kiểm định tâm lý học đo lường (Psychometric validation): Bắt buộc kiểm định Cronbach's Alpha, Composite Reliability, AVE và mô hình CFA cho thang đo mới kiến tạo."
+      ],
+      "pitfalls": [
+        "Sử dụng thang đo có sẵn: Tuyên bố làm Exploratory sequential nhưng giai đoạn 2 lại đi sao chép thang đo tiếng Anh có sẵn của tác giả khác thay vì xây dựng từ dữ liệu định tính giai đoạn 1.",
+        "Chỉ đếm từ ngữ định tính: Chuyển dữ liệu định tính thành tỷ lệ phần trăm cơ học thay vì trích xuất cấu trúc khái niệm.",
+        "Bỏ qua bước đánh giá giá trị nội dung: Soạn thảo câu hỏi định lượng từ phát ngôn định tính một cách tùy tiện mà không qua hội đồng thẩm định chuyên gia."
+      ],
+      "seminal_citation": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and Conducting Mixed Methods Research (3rd ed.). SAGE Publications; Onwuegbuzie, A. J., Bustamante, R. M., & Nelson, J. A. (2010). Mixed research in education: A framework for instrument development. International Journal of Multiple Research Approaches, 4(1), 56-78.",
       "apa_intext": "(Creswell & Creswell, 2023, p. 245)",
-      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2023). Research design: Qualitative, quantitative, and mixed methods approaches (6th ed.). SAGE Publications.",
+      "apa_reference": "Onwuegbuzie, A. J., Bustamante, R. M., & Nelson, J. A. (2010). Mixed research in education: A framework for instrument development. International Journal of Multiple Research Approaches, 4(1), 56-78. https://doi.org/10.5172/mra.2010.4.1.056",
       "corpus_variants": [
         {
           "v": "Thiết kế phát triển công cụ thang đo",
@@ -970,7 +1013,14 @@
         "benchmark": true,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "category": "Mixed Methods",
+      "subcategory": "Designs",
+      "operational_mechanism": "Quy trình xây dựng công cụ 3 bước (Building mechanism): (1) Giai đoạn 1 (QUAL): Phỏng vấn sâu, phân tích chủ đề hoặc lý thuyết nền để xác định các chiều kích khái niệm; (2) Giai đoạn chuyển tiếp (Building Phase): Chuyển hóa các mã định tính, trích dẫn thực địa (In-vivo codes) thành các biến quan sát (items) của bảng câu hỏi thang đo Likert, thực hiện đánh giá giá trị nội dung (content validity) qua chuyên gia; (3) Giai đoạn 2 (QUAN): Khảo sát mẫu lớn, thực hiện EFA, CFA và kiểm định độ tin cậy để chuẩn hóa thang đo.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "purposive-sampling",
@@ -3279,25 +3329,34 @@
     },
     {
       "id": "delphi-technique",
-      "term": "Delphi Technique",
+      "term": "Delphi Technique / Delphi Method (Dalkey, Helmer & Linstone)",
       "ipa": "/ˈdɛlfaɪ tɛkˈniːk/",
-      "vietnamese": "Phương pháp Delphi (Kỹ thuật Tham vấn Đồng thuận Chuyên gia Đa vòng Ẩn danh)",
+      "vietnamese": "Phương pháp chuyên gia Delphi / Quy trình đồng thuận ẩn danh",
       "vietnamese_variants": [
-        "Quy trình lấy ý kiến chuyên gia Delphi",
-        "Kỹ thuật dự báo Delphi"
+        "Kỹ thuật Delphi",
+        "Phương pháp Delphi dự báo",
+        "Delphi Consensus Method"
       ],
-      "category": "Expert Consensus & Qualitative-Quantitative Methodology",
+      "category": "Mixed Methods",
       "domain_tags": [
         "Đồng thuận Chuyên gia",
         "Phương pháp Hỗn hợp",
         "Dự báo Chiến lược",
         "Xây dựng Chính sách"
       ],
-      "core_definition": "Phương pháp nghiên cứu truyền thông có cấu trúc do Tập đoàn RAND (Dalkey & Helmer, 1963) phát triển trong thời kỳ Chiến tranh Lạnh nhằm đạt được sự đồng thuận cao nhất của một nhóm chuyên gia độc lập về một vấn đề phức tạp, bất định hoặc chưa có dữ liệu lịch sử. Phương pháp tiến hành qua nhiều vòng bảng hỏi (thường là 2 đến 4 vòng) với các đặc trưng cốt lõi: Ẩn danh hoàn toàn giữa các chuyên gia, phản hồi có kiểm soát của người điều phối qua từng vòng, và phân tích thống kê ý kiến tập thể.",
+      "core_definition": "Delphi Technique (Phương pháp chuyên gia Delphi) là phương pháp nghiên cứu giao tiếp có cấu trúc do Norman Dalkey và Olaf Helmer phát triển tại Tập đoàn RAND vào những năm 1950 và được Harold A. Linstone, Murray Turoff (1975) chuẩn hóa. Phương pháp này tập hợp ý kiến của một hội đồng gồm các chuyên gia độc lập thông qua nhiều vòng (rounds) bảng hỏi có kiểm soát. Bốn đặc trưng định nghĩa bắt buộc của Delphi là: (1) Ẩn danh tuyệt đối giữa các chuyên gia (Anonymity); (2) Phản hồi có kiểm soát qua nhiều vòng (Controlled feedback); (3) Tổng hợp thống kê ý kiến nhóm (Statistical group response); và (4) Cơ hội cho các chuyên gia điều chỉnh ý kiến sau khi xem xét bức tranh tổng quan của nhóm.",
       "paradigm_debates": "Loại bỏ hoàn toàn các rào cản tâm lý tiêu cực của các cuộc họp hội đồng truyền thống: Triệt tiêu hiệu ứng áp đặt của người có chức quyền cao (Status dominance), tâm lý a dua bầy đàn (Bandwagon effect), và nỗi sợ mất mặt khi phải thay đổi ý kiến công khai.",
-      "benchmarks": "Định lượng mức độ đồng thuận chuyên gia sau các vòng: (1) Hệ số phù hợp Kendall (Kendall's Coefficient of Concordance W): W > 0.70 biểu thị mức độ đồng thuận mạnh mẽ; (2) Khoảng tứ phân vị (Interquartile Range - IQR <= 1.0 trên thang đo Likert 5 mức); (3) Tỷ lệ đồng thuận đạt tối thiểu 75% - 80% đối với mỗi tiêu chí.",
-      "pitfalls": "Bẫy suy giảm chuyên gia theo thời gian (Expert Attrition): Tỷ lệ chuyên gia bỏ cuộc giữa các vòng quá cao làm sai lệch tính đại diện của nhóm. Bẫy thiên lệch của người điều phối: Người nghiên cứu tự ý bóp méo bản tóm tắt phản hồi ở giữa các vòng để ép các chuyên gia đi về hướng kết luận mà mình mong muốn.",
-      "apa_reference": "Dalkey, N., & Helmer, O. (1963). An experimental application of the DELPHI method to the use of experts. Management Science, 9(3), 458-467. https://doi.org/10.1287/mnsc.9.3.458",
+      "benchmarks": [
+        "Quy mô hội đồng chuyên gia (Panel size): Thường từ 10 đến 30 chuyên gia có uy tín học thuật hoặc thực tiễn cao trong chuyên ngành hẹp (Okoli & Pawlowski, 2004).",
+        "Tiêu chuẩn đồng thuận định lượng (Consensus Criteria): Xác định rõ ràng từ trước: ví dụ Hệ số phù hợp Kendall W >= 0.70, hoặc Tỷ lệ đồng thuận đạt >= 75 - 80% ở các mức điểm cao nhất, hoặc IQR <= 1.0 trên thang Likert 5 điểm.",
+        "Duy trì tỷ lệ tham gia qua các vòng: Tỷ lệ chuyên gia tiếp tục tham gia (retention rate) phải đạt tối thiểu >= 70% qua từng vòng để tránh thiên kiến hao hụt."
+      ],
+      "pitfalls": [
+        "Chuyên gia không đủ chuẩn: Tuyển chọn những người thiếu năng lực chuyên môn sâu khiến các đánh giá trở nên cảm tính và thiếu giá trị dự báo.",
+        "Áp lực đồng thuận giả tạo: Ép buộc các chuyên gia phải bỏ phiếu giống nhau thay vì tôn trọng các ý kiến thiểu số có lập luận sắc bén.",
+        "Hao hụt chuyên gia giữa chừng (panel attrition): Quá trình kéo dài nhiều tháng khiến các chuyên gia chán nản bỏ cuộc, làm sai lệch kết quả ở các vòng sau."
+      ],
+      "apa_reference": "Linstone, H. A., & Turoff, M. (Eds.). (1975). The Delphi method: Techniques and applications. Addison-Wesley Publishing Company.",
       "synonyms": [
         "Delphi Method",
         "Multi-Round Expert Consensus",
@@ -3328,7 +3387,14 @@
         "benchmark": false,
         "pitfalls": true,
         "needs_edit": true
-      }
+      },
+      "subcategory": "Expert Methods",
+      "operational_mechanism": "Quy trình 3 đến 4 vòng chuẩn hóa: (1) Tuyển chọn ban chuyên gia (Expert panel selection) dựa trên các tiêu chí năng lực nghiêm ngặt; (2) Vòng 1 (Khám phá mở): Bảng câu hỏi mở để thu thập các ý tưởng ban đầu; (3) Vòng 2 (Đánh giá mức độ ưu tiên): Chuyển hóa các ý tưởng thành bảng hỏi Likert để chuyên gia chấm điểm; (4) Phân tích thống kê: Tính toán Trung vị (Median) và Khoảng cách tứ phân vị (Interquartile Range - IQR); (5) Vòng 3 & 4 (Hội tụ đồng thuận): Cung cấp lại kết quả thống kê của nhóm cho từng cá nhân, yêu cầu họ tái đánh giá hoặc giải trình lý do nếu lựa chọn của họ nằm ngoài nhóm đồng thuận; (6) Đạt ngưỡng đồng thuận và xuất bản báo cáo.",
+      "seminal_citation": "Dalkey, N., & Helmer, O. (1963). An experimental application of the DELPHI method to the use of experts. Management Science, 9(3), 458-467; Linstone, H. A., & Turoff, M. (Eds.). (1975). The Delphi Method: Techniques and Applications. Addison-Wesley.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "critical-realism",
@@ -5189,15 +5255,19 @@
     },
     {
       "id": "action-research",
-      "term": "Action Research",
-      "vietnamese": "Nghiên cứu hành động (chiến lược can thiệp giải quyết vấn đề thực tế tại tổ chức kết hợp nghiên cứu).",
-      "vietnamese_variants": [],
+      "term": "Action Research & Participatory Action Research (Lewin / Kemmis & McTaggart)",
+      "vietnamese": "Nghiên cứu hành động / Nghiên cứu hành động có sự tham gia (PAR)",
+      "vietnamese_variants": [
+        "Nghiên cứu hành động",
+        "Participatory Action Research (PAR)",
+        "Nghiên cứu can thiệp thực tiễn"
+      ],
       "domain_tags": [
         "Research Onion",
         "Strategy"
       ],
-      "core_definition": "Nghiên cứu hành động (chiến lược can thiệp giải quyết vấn đề thực tế tại tổ chức kết hợp nghiên cứu).",
-      "seminal_citation": "Saunders et al. (2019); Saunders (2019)",
+      "core_definition": "Action Research (Nghiên cứu hành động) là phương pháp luận nghiên cứu can thiệp phản tư do Kurt Lewin sáng lập (1946) và được Stephen Kemmis, Robin McTaggart phát triển thành Nghiên cứu hành động có sự tham gia (Participatory Action Research - PAR, 1988, 2014). Phương pháp này chủ trương thu hẹp triệt để khoảng cách giữa lý thuyết và thực tiễn ('không có gì thực tiễn bằng một lý thuyết tốt'). Nghiên cứu viên hợp tác bình đẳng với những người trong cuộc (giáo viên, công nhân, cộng đồng) để cùng chẩn đoán vấn đề, cùng thiết kế hành động can thiệp, cùng thực hiện và cùng phản tư đánh giá nhằm cải thiện trực tiếp tình trạng thực tế của chính họ.",
+      "seminal_citation": "Lewin, K. (1946). Action research and minority problems. Journal of Social Issues, 2(4), 34-46; Kemmis, S., McTaggart, R., & Nixon, R. (2014). The Action Research Planner: Doing Critical Participatory Action Research. Springer.",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
@@ -5205,7 +5275,25 @@
       "domain_tags_en": [
         "Research Onion",
         "Strategy"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Advanced Designs",
+      "operational_mechanism": "Vòng xoắn ốc phản tư tự phê phán (Self-Reflective Spiral) của Kemmis & McTaggart gồm 4 bước lặp đi lặp lại: (1) Lập kế hoạch can thiệp (Plan): Xác định vấn đề và xây dựng giải pháp hành động cải tiến; (2) Triển khai hành động (Act): Áp dụng kế hoạch vào thực tế một cách thận trọng; (3) Quan sát có hệ thống (Observe): Thu thập đa nguồn dữ liệu về tác động và tiến trình diễn ra; (4) Phản tư đánh giá (Reflect): Đánh giá thành bại, đúc kết bài học và từ đó tái lập kế hoạch cho chu trình tiếp theo (Revised Plan).",
+      "benchmarks": [
+        "Chứng minh vòng lặp xoắn ốc (Multiple Spirals): Báo cáo nghiên cứu hành động chuẩn mực phải trải qua tối thiểu 2 đến 3 chu trình lặp (Plan - Act - Observe - Reflect).",
+        "Sự tham gia bình đẳng thực chất: Các bên liên quan phải tham gia trực tiếp vào việc ra quyết định can thiệp.",
+        "Đóng góp kép bắt buộc: Vừa cải thiện tình trạng thực tế của tổ chức/cộng đồng, vừa đóng góp tri thức lý thuyết mới vào kho tàng khoa học."
+      ],
+      "pitfalls": [
+        "Chỉ là dự án giải quyết công việc nội bộ: Thực hiện giải quyết khó khăn của cơ quan nhưng không ghi chép dữ liệu, không có phản tư lý thuyết, biến nghiên cứu thành báo cáo công tác hành chính.",
+        "Thiếu tính nghiêm cẩn trong thu thập dữ liệu: Đánh giá hiệu quả can thiệp dựa trên cảm tính chủ quan thay vì các bằng chứng thực nghiệm độc lập.",
+        "Dừng lại ở chu trình 1: Chỉ làm 1 đợt can thiệp rồi kết luận mà không có vòng xoắn ốc điều chỉnh tiếp theo."
+      ],
+      "apa_reference": "Kemmis, S., McTaggart, R., & Nixon, R. (2014). The action research planner: Doing critical participatory action research. Springer. https://doi.org/10.1007/978-981-4560-67-2",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "action-oriented-paradigm",
@@ -6371,21 +6459,43 @@
     },
     {
       "id": "autoethnography",
-      "term": "Autoethnography",
-      "vietnamese": "Tự Dân tộc học",
-      "vietnamese_variants": [],
+      "term": "Autoethnography (Ellis, Adams & Bochner Framework)",
+      "vietnamese": "Phương pháp Tự dân tộc học / Tự sự văn hóa cá nhân",
+      "vietnamese_variants": [
+        "Tự dân tộc học phản tư",
+        "Autoethnographic Inquiry",
+        "Tự sự học dân tộc"
+      ],
       "domain_tags": [
         "Qualitative Inquiry"
       ],
-      "core_definition": "Phương pháp nghiên cứu tự sự kết hợp trải nghiệm cá nhân sâu sắc của tác giả để hiểu bối cảnh văn hóa rộng lớn.",
-      "seminal_citation": "Ellis & Bochner (2000)",
+      "core_definition": "Autoethnography (Tự dân tộc học) là một hình thức nghiên cứu định tính và phương pháp viết mang tính phản tư sâu sắc do Carolyn Ellis, Tony E. Adams và Arthur P. Bochner (2011) tiên phong. Phương pháp này kết hợp các nguyên lý của Tự truyện (Auto - nghiên cứu về trải nghiệm cá nhân của chính tác giả), Dân tộc học (Ethno - nghiên cứu về bối cảnh văn hóa xã hội rộng lớn) và Đồ họa/Viết (Graphy - nghệ thuật biểu cảm văn bản). Khác với lối viết học thuật truyền thống cố tạo ra sự khách quan xa cách, tự dân tộc học sử dụng chính trải nghiệm sống cụ thể, dễ tổn thương (vulnerable) của nhà nghiên cứu để soi rọi, phê phán và làm sáng tỏ các cấu trúc văn hóa xã hội bao quanh.",
+      "seminal_citation": "Ellis, C., Adams, T. E., & Bochner, A. P. (2011). Autoethnography: An overview. Historical Social Research, 36(4), 273-290; Anderson, L. (2006). Analytic autoethnography. Journal of Contemporary Ethnography, 35(4), 373-395.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Autoethnography according to Ellis & Bochner (2000).",
       "domain_tags_en": [
         "Qualitative Inquiry"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Advanced Designs",
+      "operational_mechanism": "Ba biến thể tiếp cận chính: (1) Tự dân tộc học gợi cảm/xúc cảm (Evocative Autoethnography - Ellis & Bochner): sử dụng văn phong tự sự giàu cảm xúc, đưa độc giả bước vào trải nghiệm đau thương, mất mát hoặc biến cố của tác giả; (2) Tự dân tộc học phân tích (Analytic Autoethnography - Leon Anderson, 2006): duy trì các tiêu chuẩn lý thuyết hóa truyền thống, sử dụng trải nghiệm cá nhân làm dữ liệu sơ cấp để phát triển lý thuyết khoa học xã hội; (3) Tự dân tộc học phê phán (Critical Autoethnography): nhắm vào việc vạch trần các cấu trúc quyền lực, phân biệt đối xử và áp bức xã hội.",
+      "benchmarks": [
+        "Tính phản tư và sự sẵn sàng tổn thương (Vulnerability): Tác giả phải dũng cảm đối diện và phơi bày những góc khuất, cảm xúc thực tế mà không tự tô vẽ.",
+        "Không được là sự tự luyến đơn thuần (Not mere narcissism): Trải nghiệm cá nhân phải luôn luôn được kết nối và soi chiếu với các hiện tượng và cấu trúc văn hóa xã hội rộng lớn hơn.",
+        "Đạt độ vang thấu cảm (Empathic Resonance): Văn bản phải lay động độc giả, giúp họ nhận ra chiều kích văn hóa trong chính cuộc sống của họ."
+      ],
+      "pitfalls": [
+        "Sa lầy vào tự luyến và than vãn (narcissistic self-indulgence): Biến bài báo khoa học thành cuốn nhật ký than thở cá nhân tầm thường mà hoàn toàn không có sự phân tích văn hóa hay đóng góp lý thuyết.",
+        "Vi phạm đạo đức với những người liên quan (relational ethics): Kể câu chuyện của mình nhưng làm lộ danh tính, gây tổn thương đến gia đình, đồng nghiệp hoặc bạn bè mà không có sự đồng thuận.",
+        "Văn phong yếu kém: Thiếu năng lực biểu đạt nghệ thuật ngôn từ khiến câu chuyện trở nên tẻ nhạt, không gợi cảm được trải nghiệm."
+      ],
+      "apa_reference": "Ellis, C., Adams, T. E., & Bochner, A. P. (2011). Autoethnography: An overview. Historical Social Research, 36(4), 273-290. https://doi.org/10.12759/hsr.36.2011.4.273-290",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "autoregressive-distributed-lag",
@@ -11573,21 +11683,43 @@
     },
     {
       "id": "convergent-parallel-design",
-      "term": "Convergent Parallel Design",
-      "vietnamese": "Thiết kế Hội tụ Song song",
-      "vietnamese_variants": [],
+      "term": "Convergent Parallel Mixed Methods Design (QUAN + QUAL)",
+      "vietnamese": "Thiết kế hỗn hợp song song hội tụ (QUAN + QUAL đồng thời)",
+      "vietnamese_variants": [
+        "Thiết kế đồng thời hội tụ",
+        "Convergent Design",
+        "Mô hình tam giác đạc hỗn hợp song song"
+      ],
       "domain_tags": [
         "Mixed Methods Design"
       ],
-      "core_definition": "Thu thập và phân tích định tính và định lượng đồng thời, sau đó so sánh đối chiếu kết quả.",
-      "seminal_citation": "Creswell & Plano Clark (2018)",
+      "core_definition": "Convergent Parallel Mixed Methods Design (trước đây gọi là Concurrent Triangulation Design) là thiết kế phương pháp hỗn hợp kinh điển trong đó nhà nghiên cứu tiến hành thu thập và phân tích dữ liệu định lượng (QUAN) và định tính (QUAL) đồng thời trong cùng một khung thời gian với trọng số bình đẳng (Creswell & Plano Clark, 2018). Hai cơ sở dữ liệu được phân tích độc lập với nhau, sau đó kết quả được tích hợp (merged) trong giai đoạn diễn giải tổng thể để so sánh trực tiếp, đối chiếu chéo xem các phát hiện định tính và định lượng có hội tụ (converge), bổ sung (complement) hay mâu thuẫn (diverge/contradict) với nhau.",
+      "seminal_citation": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and Conducting Mixed Methods Research (3rd ed.). SAGE Publications; Fetters, M. D., Curry, L. A., & Creswell, J. W. (2013). Achieving integration in mixed methods designs—principles and practices. Health Services Research, 48(6pt2), 2134-2156.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Convergent Parallel Design according to Creswell & Plano Clark (2018).",
       "domain_tags_en": [
         "Mixed Methods Design"
-      ]
+      ],
+      "category": "Mixed Methods",
+      "subcategory": "Designs",
+      "operational_mechanism": "Quy trình thực thi 4 bước: (1) Thu thập song song dữ liệu định lượng (khảo sát mẫu lớn) và định tính (phỏng vấn sâu) trên các chủ đề khái niệm tương ứng; (2) Phân tích dữ liệu QUAN bằng thống kê và phân tích dữ liệu QUAL bằng mã hóa chủ đề một cách hoàn toàn độc lập; (3) Tích hợp hai nguồn dữ liệu thông qua Ma trận so sánh bên cạnh (Side-by-side comparison) hoặc Bảng hiển thị liên kết (Joint Display); (4) Thảo luận về các điểm hội tụ và đặc biệt mổ xẻ các mâu thuẫn nhận thức (divergent findings) bằng cách đào sâu dữ liệu mở rộng.",
+      "benchmarks": [
+        "Thiết kế mẫu song song có liên kết: Dù cỡ mẫu khác nhau (QUAN thường N lớn, QUAL N nhỏ), các đối tượng phỏng vấn định tính lý tưởng nhất nên được trích xuất từ chính quần thể nghiên cứu của mẫu khảo sát định lượng.",
+        "Sử dụng bảng Joint Display tích hợp: Bắt buộc xuất bản bảng đối chiếu đa cột: Cột 1 (Biến số/Khái niệm) - Cột 2 (Kết quả thống kê định lượng) - Cột 3 (Trích dẫn bằng chứng định tính) - Cột 4 (Đánh giá mức độ hội tụ/bất đồng).",
+        "Xử lý nghiêm cẩn các phát hiện mâu thuẫn: Không được che giấu dữ liệu khi định lượng nói 'Có' nhưng định tính nói 'Không'; phải giải thích nguyên nhân gây phân kỳ."
+      ],
+      "pitfalls": [
+        "Dùng dữ liệu định tính chỉ để trang trí: Toàn bộ bài báo là phân tích định lượng, chỉ thêm vào 1-2 câu phỏng vấn ngẫu nhiên để minh họa mà gọi là Convergent design.",
+        "Thiếu sự tương thích về mặt khái niệm: Bảng câu hỏi định lượng hỏi về khái niệm A, nhưng phỏng vấn định tính lại đi hỏi khái niệm B, khiến việc đối chiếu hội tụ trở nên vô nghĩa.",
+        "Bỏ qua phân tích bất đồng dữ liệu (Divergent findings): Khi kết quả hai nhánh mâu thuẫn, nghiên cứu viên vội vã cắt bỏ dữ liệu định tính để bảo vệ mô hình thống kê."
+      ],
+      "apa_reference": "Fetters, M. D., Curry, L. A., & Creswell, J. W. (2013). Achieving integration in mixed methods designs—principles and practices. Health Services Research, 48(6pt2), 2134-2156. https://doi.org/10.1111/1475-6773.12117",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "conversation-analysis-garfinkel-sacks",
@@ -15168,21 +15300,43 @@
     },
     {
       "id": "embedded-mixed-methods-design",
-      "term": "Embedded Mixed Methods Design",
-      "vietnamese": "Thiết kế Hỗn hợp Lồng ghép",
-      "vietnamese_variants": [],
+      "term": "Embedded Mixed Methods Design (Nested / Intertwined Design)",
+      "vietnamese": "Thiết kế hỗn hợp lồng ghép / Phương pháp lồng phụ trợ",
+      "vietnamese_variants": [
+        "Thiết kế lồng ghép",
+        "Nested Mixed Methods Design",
+        "Thiết kế hỗn hợp phụ thuộc"
+      ],
       "domain_tags": [
         "Mixed Methods Design"
       ],
-      "core_definition": "Lồng ghép một nhánh phương pháp thứ yếu vào bên trong thiết kế nghiên cứu chủ đạo.",
-      "seminal_citation": "Greene (2007)",
+      "core_definition": "Embedded Mixed Methods Design là thiết kế trong đó một nhánh phương pháp (thường là định tính) được lồng ghép (nested/embedded) vào bên trong một khung thiết kế phương pháp luận chủ đạo khác lớn hơn (thường là thiết kế can thiệp thực nghiệm RCT, hoặc thiết kế nghiên cứu trường hợp) (Creswell & Plano Clark, 2018; Caracelli & Greene, 1997). Nhánh phương pháp được lồng ghép đóng vai trò phụ trợ (secondary/supportive role), giải quyết một câu hỏi nghiên cứu nhánh mà thiết kế chủ đạo không thể tự trả lời được (ví dụ: phỏng vấn bệnh nhân trước và sau thử nghiệm lâm sàng để tìm hiểu quá trình tuân thủ phác đồ điều trị).",
+      "seminal_citation": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and Conducting Mixed Methods Research (3rd ed.). SAGE Publications; Caracelli, V. J., & Greene, J. C. (1997). Crafting mixed-method evaluation designs. New Directions for Evaluation, 1997(74), 19-32.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Embedded Mixed Methods Design according to Greene (2007).",
       "domain_tags_en": [
         "Mixed Methods Design"
-      ]
+      ],
+      "category": "Mixed Methods",
+      "subcategory": "Designs",
+      "operational_mechanism": "Ba thời điểm lồng ghép định tính vào thử nghiệm can thiệp thực nghiệm: (1) Trước can thiệp (Pre-intervention): Lồng ghép phỏng vấn định tính để hỗ trợ thiết kế tài liệu can thiệp phù hợp văn hóa; (2) Trong can thiệp (During intervention): Lồng ghép theo dõi định tính để giải thích tiến trình thực hiện và độ trung thực của can thiệp (fidelity check); (3) Sau can thiệp (Post-intervention): Lồng ghép phỏng vấn sâu để tìm hiểu trải nghiệm của người tham gia về tác dụng phụ hoặc lý do tại sao một số nhóm không đạt hiệu quả điều trị.",
+      "benchmarks": [
+        "Xác định rõ vai trò chủ đạo vs. phụ trợ: Thiết kế chủ đạo (thực nghiệm hoặc đánh giá quy mô lớn) vẫn giữ nguyên tính toàn vẹn và độc lập của nó.",
+        "Câu hỏi nghiên cứu lồng ghép riêng biệt: Nhánh phụ trợ phải giải quyết một mục tiêu cụ thể bổ sung, không trùng lặp với mục tiêu chính của nhánh chủ đạo.",
+        "Tích hợp ở khâu thảo luận kết quả: Báo cáo kết quả phải liên kết dữ liệu lồng ghép để lý giải cho tỷ lệ thành công/thất bại của chương trình can thiệp."
+      ],
+      "pitfalls": [
+        "Nhánh lồng ghép bị coi nhẹ đến mức cẩu thả: Thực hiện nhánh định tính qua loa như một phần phụ lục không có quy trình thu thập hay mã hóa chuẩn mực.",
+        "Làm gián đoạn hoặc sai lệch can thiệp thực nghiệm: Quy trình phỏng vấn định tính trong lúc thử nghiệm lâm sàng vô tình tạo ra hiệu ứng Hawthorne làm méo mó nhóm đối chứng.",
+        "Không tích hợp phát hiện: Trình bày kết quả thử nghiệm định lượng một nơi, kết quả phỏng vấn định tính một nơi mà không có sự đối thoại chéo."
+      ],
+      "apa_reference": "Caracelli, V. J., & Greene, J. C. (1997). Crafting mixed-method evaluation designs. New Directions for Evaluation, 1997(74), 19-32. https://doi.org/10.1002/ev.1069",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "emerald-insight",
@@ -15768,21 +15922,43 @@
     },
     {
       "id": "ethnography",
-      "term": "Ethnography",
-      "vietnamese": "Nghiên cứu dân tộc học — Thiết kế định tính tìm hiểu các mẫu hình văn hóa, hành vi và niềm tin chung của một nhóm văn hóa nguyên vẹn qua thời gian dài.",
-      "vietnamese_variants": [],
+      "term": "Ethnographic Research Methodology (Hammersley & Atkinson Framework)",
+      "vietnamese": "Phương pháp luận nghiên cứu dân tộc học thực địa",
+      "vietnamese_variants": [
+        "Dân tộc học",
+        "Nghiên cứu văn hóa thực địa",
+        "Ethnography"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Nghiên cứu dân tộc học — Thiết kế định tính tìm hiểu các mẫu hình văn hóa, hành vi và niềm tin chung của một nhóm văn hóa nguyên vẹn qua thời gian dài.",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Ethnographic Research Methodology (Dân tộc học) là trường phái nghiên cứu định tính bắt nguồn từ nhân học và xã hội học, được Martyn Hammersley và Paul Atkinson (2019) cũng như David Fetterman (2020) chuẩn hóa thành phương pháp khoa học xã hội ứng dụng. Nghiên cứu dân tộc học tập trung mô tả và diễn giải các mẫu hình văn hóa (shared patterns of values, behaviors, beliefs, and language) của một nhóm xã hội nguyên vẹn. Đặc trưng định nghĩa của phương pháp là nhà nghiên cứu phải đắm chìm trực tiếp (immersion) vào cuộc sống đời thường của cộng đồng trong một thời gian dài thông qua quan sát tham dự và tiếp cận từ góc nhìn người trong cuộc (emic perspective).",
+      "seminal_citation": "Hammersley, M., & Atkinson, P. (2019). Ethnography: Principles in Practice (4th ed.). Routledge; Fetterman, D. M. (2020). Ethnography: Step-by-Step (4th ed.). SAGE Publications.",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Ethnography according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Advanced Designs",
+      "operational_mechanism": "Các thành tố thao tác cốt lõi: (1) Tiếp cận thực địa và đàm phán vai trò người gác cổng (gatekeepers); (2) Đắm chìm sâu sắc trong thời gian kéo dài (Prolonged immersion); (3) Ghi chép nhật ký thực địa dày đặc (Thick fieldnotes) gồm 3 tầng: Ghi chép thực tế thô (Jottings), Nhật ký mô tả chi tiết (Expanded notes), và Nhật ký phản tư phân tích (Analytic memos); (4) Kết hợp góc nhìn người trong cuộc (Emic - insider) và góc nhìn phân tích khoa học của người ngoài cuộc (Etic - outsider); (5) Xây dựng bản mô tả chân dung văn hóa toàn diện (Cultural portrait).",
+      "benchmarks": [
+        "Thời gian thâm nhập thực địa: Thường kéo dài từ vài tháng đến hàng năm để quan sát các chu kỳ sinh hoạt tự nhiên của cộng đồng.",
+        "Độ phong phú của nhật ký thực địa: Phải có hồ sơ lưu trữ hàng trăm trang ghi chép thực địa với đầy đủ ngày giờ, không gian và cảm nhận phản tư.",
+        "Sự cân bằng Emic - Etic: Không được để góc nhìn chuyên gia áp đặt làm biến mất giọng nói bản địa, nhưng cũng không được 'hóa thành người bản xứ' (going native) làm mất đi tư duy phản biện khoa học."
+      ],
+      "pitfalls": [
+        "Dân tộc học chớp nhoáng (blitzkrieg / hit-and-run ethnography): Chỉ đến thực địa vài ngày, phỏng vấn vài người rồi tuyên bố đã hoàn thành nghiên cứu dân tộc học.",
+        "Bẫy 'Hóa thành người bản xứ' (Going native trap): Nhà nghiên cứu đồng nhất hóa hoàn toàn với nhóm đối tượng, mất đi năng lực phân tích khách quan và không còn khả năng viết báo cáo khoa học.",
+        "Chỉ mô tả bên ngoài mà không chạm đến cấu trúc văn hóa: Ghi nhận hành vi bề mặt mà không giải thích được các niềm tin, giá trị ngầm định định hình nên hành vi đó."
+      ],
+      "apa_reference": "Hammersley, M., & Atkinson, P. (2019). Ethnography: Principles in practice (4th ed.). Routledge. https://doi.org/10.4324/9781315146027",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "european-social-survey-ess",
@@ -17031,21 +17207,43 @@
     },
     {
       "id": "focus-group-discussion-fgd",
-      "term": "Focus Group Discussion (FGD)",
-      "vietnamese": "Thảo luận Nhóm Tập trung",
-      "vietnamese_variants": [],
+      "term": "Focus Group Discussion (FGD - Morgan / Krueger & Casey Framework)",
+      "vietnamese": "Thảo luận nhóm tập trung / Phỏng vấn nhóm chuyên sâu",
+      "vietnamese_variants": [
+        "Thảo luận nhóm trọng tâm",
+        "Phỏng vấn nhóm tập trung",
+        "Focus Group Methodology"
+      ],
       "domain_tags": [
         "Qualitative Data Collection"
       ],
-      "core_definition": "Phỏng vấn nhóm có điều phối viên nhằm khai thác tương tác và động lực thảo luận giữa các cá nhân.",
-      "seminal_citation": "Krueger & Casey (2014)",
+      "core_definition": "Focus Group Discussion (Thảo luận nhóm tập trung) là phương pháp thu thập dữ liệu định tính chuyên biệt do David L. Morgan (1997) và Richard A. Krueger, Mary Anne Casey (2015) chuẩn hóa. Phương pháp này dựa trên một cuộc thảo luận có kế hoạch cẩn thận giữa một nhóm người tham gia có đặc điểm chung, được dẫn dắt bởi một người điều phối (moderator) có kỹ năng cao. Sức mạnh vượt trội và bản chất định nghĩa của FGD không nằm ở câu trả lời cá nhân, mà nằm ở 'sự tương tác nhóm' (group interaction) - nơi người tham gia lắng nghe, phản bác, bổ sung, kích hoạt ký ức và cùng nhau thương lượng ý nghĩa của hiện tượng trong một bầu không khí xã hội tự nhiên.",
+      "seminal_citation": "Morgan, D. L. (1997). Focus Groups as Qualitative Research (2nd ed.). SAGE Publications; Krueger, R. A., & Casey, M. A. (2015). Focus Groups: A Practical Guide for Applied Research (5th ed.). SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Focus Group Discussion (FGD) according to Krueger & Casey (2014).",
       "domain_tags_en": [
         "Qualitative Data Collection"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Data Collection",
+      "operational_mechanism": "Cấu trúc tổ chức chuẩn mực: (1) Xác định quy mô nhóm tối ưu: 6 đến 8 người tham gia (tránh nhóm quá đông gây loãng hoặc quá ít người gây áp lực); (2) Thiết kế Bản hướng dẫn chủ đề thảo luận (Discussion Guide / Question Route) đi từ câu hỏi khởi động (opening questions) đến câu hỏi chuyển tiếp (transition questions), câu hỏi cốt lõi (key questions) và câu hỏi tổng kết (closing questions); (3) Vai trò điều phối viên: Đảm bảo kiểm soát thời gian, khuyến khích người rụt rè và kiềm chế người lấn át; (4) Thu thập dữ liệu đa tầng: Ghi âm, ghi hình và có một trợ lý ghi chép ngôn ngữ cơ thể và động năng tương tác nhóm.",
+      "benchmarks": [
+        "Số lượng nhóm tập trung: Thường tổ chức từ 3 đến 6 nhóm tập trung cho mỗi phân khúc đối tượng để đạt độ bão hòa thông tin (Krueger & Casey, 2015).",
+        "Tính đồng nhất nội nhóm và dị biệt liên nhóm: Các thành viên trong 1 nhóm nên tương đồng về hoàn cảnh/địa vị để tránh ức chế quyền lực, nhưng các nhóm khác nhau nên đại diện cho các phân khúc đa dạng.",
+        "Phân tích đơn vị nhóm (Unit of analysis): Phân tích phải phản ánh cả góc nhìn cá nhân lẫn sự đồng thuận hoặc phân hóa ý kiến nảy sinh từ sự tương tác nhóm."
+      ],
+      "pitfalls": [
+        "Hiện tượng tư duy bầy đàn (Groupthink) hoặc người lấn át (Dominant participant): Một vài cá nhân có cá tính mạnh chi phối toàn bộ cuộc thảo luận, khiến những người khác im lặng gật đầu theo.",
+        "Người điều phối can thiệp quá sâu: Đặt câu hỏi mớm cung, áp đặt quan điểm cá nhân hoặc biến buổi thảo luận thành một buổi thuyết trình của chính mình.",
+        "Báo cáo kết quả như phỏng vấn cá nhân tuần tự: Liệt kê câu trả lời của từng người mà bỏ qua việc phân tích động năng tương tác chéo giữa các thành viên."
+      ],
+      "apa_reference": "Krueger, R. A., & Casey, M. A. (2015). Focus groups: A practical guide for applied research (5th ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "focus-group-topic-guide",
@@ -20698,21 +20896,43 @@
     },
     {
       "id": "integration",
-      "term": "Integration",
-      "vietnamese": "Tích hợp phương pháp hỗn hợp — Trọng tâm của nghiên cứu hỗn hợp: điểm kết nối, sáp nhập hoặc nhúng giữa dữ liệu định tính và định lượng.",
-      "vietnamese_variants": [],
+      "term": "Integration Strategies in Mixed Methods (Connecting, Building, Merging, Embedding)",
+      "vietnamese": "Các chiến lược tích hợp trong phương pháp hỗn hợp (Fetters, Curry & Creswell)",
+      "vietnamese_variants": [
+        "Tích hợp dữ liệu hỗn hợp",
+        "Chiến lược Integration",
+        "Four Pillars of Mixed Methods Integration"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Tích hợp phương pháp hỗn hợp — Trọng tâm của nghiên cứu hỗn hợp: điểm kết nối, sáp nhập hoặc nhúng giữa dữ liệu định tính và định lượng.",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Integration (Tích hợp) là định nghĩa cốt tử phân biệt một nghiên cứu hỗn hợp chân chính với hai nghiên cứu đơn lẻ được ghép cơ học lại với nhau (Fetters, Curry, & Creswell, 2013; Guetterman et al., 2015). Tích hợp là hành động chủ động đan kết các cấu phần định lượng và định tính ở 3 cấp độ phương pháp luận: Cấp độ Thiết kế (Design level), Cấp độ Phương pháp (Methods level), và Cấp độ Diễn giải và Báo cáo (Interpretation and Reporting level).",
+      "seminal_citation": "Fetters, M. D., Curry, L. A., & Creswell, J. W. (2013). Achieving integration in mixed methods designs—principles and practices. Health Services Research, 48(6pt2), 2134-2156; Guetterman, T. C., Fetters, M. D., & Creswell, J. W. (2015). Integrating quantitative and qualitative results in health science mixed methods research through joint displays. Annals of Family Medicine, 13(6), 554-561.",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Integration according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Mixed Methods",
+      "subcategory": "Integration",
+      "operational_mechanism": "Bốn chiến lược tích hợp phương pháp cốt lõi theo Fetters et al. (2013): (1) Kết nối (Connecting): Kết quả phân tích của một phương pháp định hình trực tiếp việc chọn mẫu cho phương pháp tiếp theo (điển hình trong Explanatory sequential); (2) Kiến tạo (Building): Dữ liệu thu thập từ phương pháp này được dùng để xây dựng công cụ đo lường, can thiệp cho phương pháp kia (điển hình trong Exploratory sequential); (3) Hợp nhất (Merging): Đưa hai bộ cơ sở dữ liệu độc lập lại gần nhau để so sánh đối chiếu chéo (điển hình trong Convergent design qua Joint Displays); (4) Lồng ghép (Embedding): Đưa một phương pháp phụ vào sâu trong cấu trúc của một thiết kế nghiên cứu lớn hơn.",
+      "benchmarks": [
+        "Bắt buộc triển khai ít nhất 1 trong 4 chiến lược tích hợp chuẩn hóa (Connecting, Building, Merging, Embedding).",
+        "Sử dụng công cụ Joint Display để minh chứng cho việc Merging ở cấp độ phân tích và diễn giải.",
+        "Tạo ra Siêu suy luận (Meta-inferences): Bản đúc kết cuối cùng phải vượt lên trên phát hiện riêng lẻ của từng nhánh đơn phương pháp."
+      ],
+      "pitfalls": [
+        "Tích hợp giả tạo (superficial integration): Tuyên bố tích hợp nhưng trong toàn bộ bài báo không có một bảng biểu, sơ đồ hay mệnh đề nào thực sự đối thoại giữa hai nguồn dữ liệu.",
+        "Đứt gãy chuỗi tích hợp: Giai đoạn định lượng và định tính hoàn toàn không giao tiếp với nhau trong khâu thiết kế mẫu lẫn phân tích.",
+        "Không nhận thức được cấp độ tích hợp: Tác giả không phân biệt được mình đang tích hợp ở cấp độ dữ liệu (data transformation), phân tích (joint display), hay diễn giải (narrative integration)."
+      ],
+      "apa_reference": "Fetters, M. D., Curry, L. A., & Creswell, J. W. (2013). Achieving integration in mixed methods designs—principles and practices. Health Services Research, 48(6pt2), 2134-2156. https://doi.org/10.1111/1475-6773.12117",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "integration-at-the-level-of-design",
@@ -25051,21 +25271,43 @@
     },
     {
       "id": "mixed-methods-appraisal-tool-mmat",
-      "term": "Mixed Methods Appraisal Tool (MMAT)",
-      "vietnamese": "Công cụ Thẩm định Phương pháp Hỗn hợp MMAT",
-      "vietnamese_variants": [],
+      "term": "Mixed Methods Appraisal Tool (MMAT - Hong & Pluye)",
+      "vietnamese": "Công cụ đánh giá chất lượng nghiên cứu hỗn hợp MMAT",
+      "vietnamese_variants": [
+        "Bộ công cụ MMAT",
+        "Thang đo thẩm định nghiên cứu hỗn hợp",
+        "MMAT Critical Appraisal"
+      ],
       "domain_tags": [
         "Evidence Appraisal"
       ],
-      "core_definition": "Đánh giá chất lượng tích hợp của các nghiên cứu kết hợp định tính và định lượng.",
-      "seminal_citation": "Hong et al. (2018)",
+      "core_definition": "Mixed Methods Appraisal Tool (MMAT) là bộ công cụ thẩm định chất lượng phương pháp luận tiêu chuẩn vàng quốc tế do nhóm chuyên gia Đại học McGill (Quan Nha Hong, Pierre Pluye et al., 2011, 2018) phát triển. MMAT được thiết kế chuyên biệt để đánh giá tính nghiêm cẩn phương pháp luận của các nghiên cứu phức hợp trong các bài tổng quan hệ thống (Systematic Reviews), cho phép thẩm định đồng thời 5 loại thiết kế nghiên cứu: (1) Thử nghiệm ngẫu nhiên có đối chứng; (2) Nghiên cứu định lượng không ngẫu nhiên; (3) Nghiên cứu mô tả định lượng; (4) Nghiên cứu định tính; và (5) Nghiên cứu phương pháp hỗn hợp.",
+      "seminal_citation": "Hong, Q. N., Fàbregues, S., Bartlett, G., Boardman, F., Cargo, M., Dagenais, P., Gagnon, M. P., Griffiths, F., Nicolau, B., O’Cathain, A., Rousseau, M. C., Vedel, I., & Pluye, P. (2018). The Mixed Methods Appraisal Tool (MMAT) version 2018 for information professionals and researchers. Education for Information, 34(4), 285-291.",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #1650",
       "core_definition_en": "Academic definition of Mixed Methods Appraisal Tool (MMAT) according to Hong et al. (2018).",
       "domain_tags_en": [
         "Evidence Appraisal"
-      ]
+      ],
+      "category": "Mixed Methods",
+      "subcategory": "Quality Appraisal",
+      "operational_mechanism": "Cấu trúc đánh giá MMAT (phiên bản 2018): (1) Hai câu hỏi sàng lọc sơ bộ (Screening questions) về tính rõ ràng của mục tiêu; (2) Đối với phần Nghiên cứu hỗn hợp, thẩm định qua 5 tiêu chí độc quyền: 5.1. Có biện minh thỏa đáng cho việc chọn thiết kế phương pháp hỗn hợp không?; 5.2. Các cấu phần định lượng và định tính có được tích hợp hiệu quả để trả lời câu hỏi nghiên cứu không?; 5.3. Các kết quả tích hợp có được diễn giải thỏa đáng không?; 5.4. Các mâu thuẫn/bất đồng giữa các phát hiện định lượng và định tính có được giải quyết thỏa đáng không?; 5.5. Các nhánh nghiên cứu thành phần có tuân thủ các tiêu chuẩn chất lượng riêng của từng phương pháp không?.",
+      "benchmarks": [
+        "Đánh giá độc lập mù đôi bởi ít nhất 2 thẩm định viên trong bài tổng quan hệ thống.",
+        "Không tính điểm số gộp tổng (No overall score calculation): MMAT nghiêm cấm việc cộng điểm cơ học thành một con số tổng (ví dụ: 'đạt 80%'); thay vào đó phải báo cáo chi tiết từng tiêu chí đạt ('Yes') hoặc không đạt ('No').",
+        "Minh bạch bằng chứng trích dẫn cho từng nhận định thẩm định."
+      ],
+      "pitfalls": [
+        "Cộng điểm phần trăm gộp: Vi phạm khuyến nghị chính thức của nhóm tác giả MMAT khi cố tình quy đổi thành điểm số trung bình.",
+        "Bỏ qua 2 câu hỏi sàng lọc ban đầu: Tiến hành chấm điểm chi tiết trong khi nghiên cứu không vượt qua được tiêu chuẩn cơ bản về mục tiêu nghiên cứu.",
+        "Chỉ chấm nhánh định lượng hoặc định tính mà quên chấm phần tích hợp phương pháp hỗn hợp (tiêu chí 5.1 - 5.5)."
+      ],
+      "apa_reference": "Hong, Q. N., et al. (2018). The Mixed Methods Appraisal Tool (MMAT) version 2018 for information professionals and researchers. Education for Information, 34(4), 285-291. https://doi.org/10.3233/EFI-180221",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "mixed-methods-case-study-design",
@@ -25181,21 +25423,43 @@
     },
     {
       "id": "mixed-methods-research",
-      "term": "Mixed methods research",
-      "vietnamese": "Nghiên cứu phương pháp hỗn hợp — Cách tiếp cận tích hợp cả dữ liệu định lượng và định tính nhằm mang lại hiểu biết toàn diện hơn về vấn đề nghiên cứu.",
-      "vietnamese_variants": [],
+      "term": "Mixed Methods Research Methodology (Creswell & Plano Clark Framework)",
+      "vietnamese": "Phương pháp nghiên cứu hỗn hợp / Nghiên cứu kết hợp định lượng & định tính",
+      "vietnamese_variants": [
+        "Nghiên cứu đa phương pháp",
+        "Tiếp cận hỗn hợp",
+        "Mixed Methods Inquiry"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Nghiên cứu phương pháp hỗn hợp — Cách tiếp cận tích hợp cả dữ liệu định lượng và định tính nhằm mang lại hiểu biết toàn diện hơn về vấn đề nghiên cứu.",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Mixed Methods Research Methodology (MMR) là 'phong trào phương pháp luận thứ ba' (sau định lượng thuần túy và định tính thuần túy), do John W. Creswell, Vicki L. Plano Clark, Abbas Tashakkori và Charles Teddlie tiên phong chuẩn hóa (2007, 2018). MMR không đơn thuần là việc thu thập cả dữ liệu định lượng (numerical data) và định tính (text/visual data) trong cùng một đề tài; bản chất cốt tử của nó nằm ở sự 'tích hợp' (integration) có chủ đích ở cấp độ phương pháp luận, phân tích và diễn giải, tạo ra một sự hiểu biết toàn diện và sâu sắc hơn ('the whole is greater than the sum of its parts') so với việc sử dụng đơn lẻ từng phương pháp.",
+      "seminal_citation": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and Conducting Mixed Methods Research (3rd ed.). SAGE Publications; Teddlie, C., & Tashakkori, A. (2009). Foundations of Mixed Methods Research. SAGE Publications.",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Mixed methods research according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Mixed Methods",
+      "subcategory": "Foundations",
+      "operational_mechanism": "Khung quy trình 4 chiều kích chuẩn mực (Creswell & Plano Clark, 2018): (1) Trọng số phương pháp (Priority / Weighting): Xác định phương pháp nào chiếm ưu thế (Định lượng trội - QUAN, Định tính trội - QUAL, hoặc Bình đẳng - EQUAL); (2) Trình tự thời gian (Timing / Sequencing): Tiến hành đồng thời (Concurrent/Parallel) hay tuần tự từng bước (Sequential); (3) Điểm tích hợp (Point of Interface): Dữ liệu giao thoa tại khâu thiết kế mẫu, khâu phân tích dữ liệu hay khâu diễn giải kết quả; (4) Triết học dẫn đường (Philosophical Stance): Phổ biến nhất là Thực dụng luận (Pragmatism) hoặc Biến đổi luận (Transformative).",
+      "benchmarks": [
+        "Biện minh rõ ràng tính cần thiết của MMR: Bắt buộc phải giải thích tại sao chỉ dùng định lượng hoặc chỉ dùng định tính là chưa đủ để giải quyết câu hỏi nghiên cứu.",
+        "Tích hợp thực chất (Integration Requirement): Phải có bằng chứng tích hợp dữ liệu (Merging, Connecting, Building, hoặc Embedding) thể hiện qua bảng Hiển thị liên kết (Joint Display).",
+        "Độc lập phương pháp luận trong từng nhánh: Nhánh định lượng phải đảm bảo các chỉ số thống kê chặt chẽ (độ tin cậy, giá trị hội tụ); nhánh định tính phải đảm bảo tính nghiêm cẩn (trustworthiness, audit trail)."
+      ],
+      "pitfalls": [
+        "Nghiên cứu hỗn hợp danh nghĩa (pseudo-mixed methods): Thu thập cả khảo sát và phỏng vấn nhưng báo cáo tách rời như hai nghiên cứu riêng lẻ, hoàn toàn không có sự giao thoa hay tích hợp dữ liệu.",
+        "Lệch pha nhận thức luận: Trộn lẫn dữ liệu nhưng lại áp đặt tiêu chuẩn thực chứng (positivist criteria) để đánh giá dữ liệu định tính hoặc ngược lại.",
+        "Thiếu sơ đồ quy trình trực quan (Visual Diagram): Không vẽ sơ đồ luồng dữ liệu chuẩn hóa của Creswell (sử dụng ký hiệu viết hoa QUAN/qual và mũi tên tuần tự -> hoặc dấu cộng đồng thời +)."
+      ],
+      "apa_reference": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and conducting mixed methods research (3rd ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "mle",
@@ -25921,21 +26185,43 @@
     },
     {
       "id": "multiphase-mixed-methods-design",
-      "term": "Multiphase Mixed Methods Design",
-      "vietnamese": "Thiết kế Hỗn hợp Đa giai đoạn",
-      "vietnamese_variants": [],
+      "term": "Multiphase Mixed Methods Design (Programmatic Long-Term Evaluation)",
+      "vietnamese": "Thiết kế hỗn hợp đa giai đoạn / Chương trình nghiên cứu hỗn hợp phức hợp",
+      "vietnamese_variants": [
+        "Thiết kế đa giai đoạn",
+        "Nghiên cứu hỗn hợp theo lộ trình",
+        "Multi-Phase Programmatic Inquiry"
+      ],
       "domain_tags": [
         "Mixed Methods Design"
       ],
-      "core_definition": "Áp dụng chuỗi các dự án định tính và định lượng nối tiếp nhau qua nhiều năm.",
-      "seminal_citation": "Creswell & Plano Clark (2018)",
+      "core_definition": "Multiphase Mixed Methods Design là thiết kế cấp cao quy mô lớn, vượt ra khỏi các nghiên cứu đơn lẻ để phục vụ cho các chương trình nghiên cứu hoặc dự án đánh giá can thiệp kéo dài nhiều năm (Creswell & Plano Clark, 2018). Thiết kế này kết nối nhiều giai đoạn nghiên cứu định lượng và định tính tuần tự hoặc đồng thời (ví dụ: Khám phá định tính ban đầu -> Xây dựng thang đo -> Thử nghiệm can thiệp quy mô lớn -> Đánh giá định tính chiều sâu tác động dài hạn), trong đó kết quả của từng giai đoạn trước trực tiếp cung cấp thông tin và định hình cho việc triển khai giai đoạn tiếp theo để giải quyết một mục tiêu tổng thể toàn diện.",
+      "seminal_citation": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and Conducting Mixed Methods Research (3rd ed.). SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Multiphase Mixed Methods Design according to Creswell & Plano Clark (2018).",
       "domain_tags_en": [
         "Mixed Methods Design"
-      ]
+      ],
+      "category": "Mixed Methods",
+      "subcategory": "Designs",
+      "operational_mechanism": "Cấu trúc một chu trình đa giai đoạn điển hình: (1) Phase 1 (Định tính thăm dò): Nghiên cứu đánh giá nhu cầu (needs assessment) của cộng đồng; (2) Phase 2 (Định lượng đo lường): Phát triển và chuẩn hóa công cụ đo lường thực địa; (3) Phase 3 (Hỗn hợp can thiệp): Triển khai thử nghiệm ngẫu nhiên can thiệp (RCT) kết hợp theo dõi định tính tiến trình; (4) Phase 4 (Định lượng & định tính đánh giá tác động): Đánh giá tính bền vững và sự chuyển dịch văn hóa xã hội sau can thiệp.",
+      "benchmarks": [
+        "Tính gắn kết của mục tiêu chương trình tổng thể (Overarching Program Goal): Toàn bộ các giai đoạn phải quy tụ phục vụ duy nhất một bài toán vĩ mô.",
+        "Ma trận quản trị nghiên cứu đa giai đoạn: Bắt buộc xây dựng sơ đồ Gantt và sơ đồ luồng dữ liệu liên giai đoạn thể hiện rõ đầu ra của Phase n là đầu vào của Phase n+1.",
+        "Tài trợ và nguồn lực tương xứng: Thường đòi hỏi kinh phí lớn từ các quỹ khoa học quốc gia hoặc các tổ chức quốc tế (WHO, World Bank, NIH)."
+      ],
+      "pitfalls": [
+        "Đứt gãy mạch liên kết giữa các giai đoạn: Các giai đoạn vận hành như các đề tài rời rạc do các nhóm nghiên cứu khác nhau thực hiện mà không có sự chuyển giao thông tin.",
+        "Thay đổi bối cảnh ngoại cảnh theo thời gian: Nghiên cứu kéo dài 3-5 năm dẫn đến việc các giả định ban đầu bị thay đổi do biến động kinh tế - xã hội.",
+        "Quá tải khối lượng công bố: Nghiên cứu sinh cố gắng ôm đồm thiết kế đa giai đoạn trong một luận án tiến sĩ 3 năm dẫn đến kiệt sức và không hoàn thành kịp tiến độ."
+      ],
+      "apa_reference": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and conducting mixed methods research (3rd ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "multiple-imputation-by-chained-equations-mice",
@@ -26166,21 +26452,43 @@
     },
     {
       "id": "narrative-research",
-      "term": "Narrative research",
-      "vietnamese": "Nghiên cứu tự sự — Thiết kế định tính tìm hiểu đời sống cá nhân thông qua thu thập và kể lại các câu chuyện cuộc đời của họ.",
-      "vietnamese_variants": [],
+      "term": "Narrative Inquiry & Analysis (Clandinin & Connelly / Riessman Framework)",
+      "vietnamese": "Nghiên cứu tự sự / Phương pháp luận tự sự kể chuyện",
+      "vietnamese_variants": [
+        "Nghiên cứu chuyện kể",
+        "Phân tích tự sự",
+        "Narrative Inquiry"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Nghiên cứu tự sự — Thiết kế định tính tìm hiểu đời sống cá nhân thông qua thu thập và kể lại các câu chuyện cuộc đời của họ.",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Narrative Inquiry (Nghiên cứu tự sự) là một trong năm trường phái nghiên cứu định tính kinh điển (Creswell & Poth, 2018), do D. Jean Clandinin, F. Michael Connelly (2000) và Catherine Kohler Riessman (1993, 2008) chuẩn hóa. Phương pháp này tiếp cận đời sống con người thông qua lăng kính của những câu chuyện kể (stories). Con người bẩm sinh là những sinh vật kể chuyện, và việc nghiên cứu cách thức các cá nhân kiến tạo, sắp đặt và tái tạo trật tự các câu chuyện về cuộc đời họ là con đường sâu sắc nhất để thấu hiểu ý nghĩa của trải nghiệm con người theo dòng thời gian và bối cảnh lịch sử.",
+      "seminal_citation": "Clandinin, D. J., & Connelly, F. M. (2000). Narrative Inquiry: Experience and Story in Qualitative Research. Jossey-Bass; Riessman, C. K. (2008). Narrative Methods for the Human Sciences. SAGE Publications.",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Narrative research according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Advanced Designs",
+      "operational_mechanism": "Khung không gian tự sự 3 chiều (Three-Dimensional Narrative Inquiry Space - Clandinin & Connelly, 2000): (1) Chiều Tương tác cá nhân và xã hội (Interaction - personal and social): Xem xét cảm xúc, hy vọng nội tâm đan xen với các mối quan hệ xã hội; (2) Chiều Thời gian liên tục (Continuity - past, present, future): Truy vết sự chuyển giao từ quá khứ đến hiện tại và hướng về tương lai; (3) Chiều Địa điểm không gian (Situation - place): Gắn câu chuyện vào một không gian cụ thể. Bốn phương pháp phân tích tự sự theo Riessman (2008): Phân tích chuyên đề (Thematic), Phân tích cấu trúc (Structural), Phân tích tương tác trình diễn (Dialogic/Performative), và Phân tích thị giác (Visual).",
+      "benchmarks": [
+        "Tái cấu trúc câu chuyện (Restorying Protocol): Quy trình nhà nghiên cứu thu thập các câu chuyện rời rạc và tái cấu trúc lại chúng thành một dòng thời gian mạch lạc theo trình tự thời gian.",
+        "Khai thác trọn vẹn 3 chiều không gian tự sự (Interaction, Continuity, Situation).",
+        "Mẫu nghiên cứu chuyên sâu: Thường từ 1 đến 5 cá nhân có câu chuyện đường đời hoặc biến cố mang tính bước ngoặt sâu sắc (epiphanies / turning points)."
+      ],
+      "pitfalls": [
+        "Biến thành bản chép lại câu chuyện ngây ngô: Chỉ chép lại nguyên văn lời kể của đối tượng mà không có sự phân tích cấu trúc diễn ngôn hoặc ý nghĩa xã hội học đằng sau.",
+        "Bỏ quên chiều kích thời gian và không gian: Cắt xén câu chuyện thành các chủ đề vụn vặt làm mất đi tính toàn vẹn của tiến trình đường đời.",
+        "Nguy cơ thao túng câu chuyện của đối tượng: Nhà nghiên cứu tái kể chuyện (restorying) theo định kiến cá nhân, làm bóp méo thông điệp cốt lõi của người tham gia."
+      ],
+      "apa_reference": "Riessman, C. K. (2008). Narrative methods for the human sciences. SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "narrative-biographical-interview",
@@ -26383,21 +26691,43 @@
     },
     {
       "id": "netnography",
-      "term": "Netnography",
-      "vietnamese": "Dân tộc học Mạng Netnography",
-      "vietnamese_variants": [],
+      "term": "Netnography (Digital Ethnography - Robert Kozinets Framework)",
+      "vietnamese": "Dân tộc học mạng trực tuyến / Phương pháp nghiên cứu cộng đồng số Netnography",
+      "vietnamese_variants": [
+        "Dân tộc học Internet",
+        "Digital Ethnography",
+        "Netnographic Methodology"
+      ],
       "domain_tags": [
         "Digital Qualitative Methods"
       ],
-      "core_definition": "Nghiên cứu văn hóa và hành vi của các cộng đồng tương tác trên không gian mạng xã hội.",
-      "seminal_citation": "Kozinets (2010)",
+      "core_definition": "Netnography (Dân tộc học mạng) là phương pháp nghiên cứu định tính chuyên biệt do giáo sư Robert V. Kozinets sáng tạo và chuẩn hóa (1998, 2010, 2020). Đây là sự thích ứng và tái định hình các kỹ thuật dân tộc học truyền thống để thâm nhập, quan sát và phân tích các hành vi xã hội, các tương tác văn hóa, ngôn ngữ biểu cảm và các ý nghĩa cộng đồng diễn ra trên môi trường trực tuyến (mạng xã hội, diễn đàn, hội nhóm ảo, cộng đồng game, metaverse). Netnography đặc biệt ưu việt trong nghiên cứu hành vi người tiêu dùng số, văn hóa mạng và động năng thương hiệu.",
+      "seminal_citation": "Kozinets, R. V. (2010). Netnography: Doing Ethnographic Research Online. SAGE Publications; Kozinets, R. V. (2020). Netnography: The Essential Guide to Qualitative Social Media Research (3rd ed.). SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Netnography according to Kozinets (2010).",
       "domain_tags_en": [
         "Digital Qualitative Methods"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Advanced Designs",
+      "operational_mechanism": "Quy trình 6 giai đoạn chuẩn mực của Kozinets (2020): (1) Khởi xướng (Initiation): Xác định câu hỏi và cộng đồng trực tuyến phù hợp; (2) Điều tra và tiếp cận (Investigation): Thâm nhập cộng đồng ảo, xác định vai trò hiện diện; (3) Thu thập dữ liệu (Immersion & Data collection): Tích hợp 3 nguồn dữ liệu: Dữ liệu lưu trữ công khai (Archival data - bài đăng, bình luận, hình ảnh/video), Dữ liệu tạo tác tương tác (Elicited data - đối thoại trực tiếp trên mạng với thành viên), và Nhật ký phản tư số của nghiên cứu viên (Fieldnotes); (4) Phân tích dữ liệu (Analysis & Interpretation): Mã hóa thủ công kết hợp công cụ phân tích văn bản; (5) Đạo đức nghiên cứu số (Ethics): Xin phép, bảo vệ quyền riêng tư, ẩn danh hóa nội dung đăng tải; (6) Biểu hiện và viết báo cáo (Representation).",
+      "benchmarks": [
+        "Tuân thủ nghiêm ngặt quy tắc đạo đức số của Kozinets: Phải thông báo công khai sự hiện diện của nhà nghiên cứu trong cộng đồng hoặc ẩn danh hóa tuyệt đối tên người dùng (usernames) và câu từ để tránh việc bị truy vết qua công cụ tìm kiếm.",
+        "Đắm chìm thực chất (Netnographic Immersion): Bắt buộc phải có nhật ký phản tư thể hiện nhà nghiên cứu đã tham gia sinh hoạt cùng cộng đồng ảo, không đơn thuần là dùng bot để cào dữ liệu tự động (data scraping).",
+        "Tích hợp dữ liệu đa phương tiện (Multimodal Data): Phải phân tích cả văn bản, biểu tượng cảm xúc (emojis), meme và các tệp video ngắn."
+      ],
+      "pitfalls": [
+        "Nhầm lẫn Netnography với cào dữ liệu lớn (big data scraping): Dùng phần mềm quét hàng ngàn bài đăng về phân tích tần suất từ mà không có sự đắm chìm văn hóa, hoàn toàn đánh mất bản chất dân tộc học.",
+        "Vi phạm đạo đức nghiêm trọng: Công khai chụp màn hình các bài đăng trong các hội nhóm nhạy cảm, làm lộ danh tính người dùng thực tế.",
+        "Bỏ qua bối cảnh văn hóa ảo: Diễn giải các câu nói đùa, châm biếm (sarcasm) hoặc văn hóa meme theo nghĩa đen thô thiển."
+      ],
+      "apa_reference": "Kozinets, R. V. (2020). Netnography: The essential guide to qualitative social media research (3rd ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "network-homophily-birds-of-a-feather",
@@ -30389,21 +30719,43 @@
     },
     {
       "id": "qualitative-documents",
-      "term": "Qualitative documents",
-      "vietnamese": "Tài liệu định tính — Dữ liệu chữ viết như nhật ký, biên bản họp, báo cáo nội bộ, thư từ hoặc báo chí.",
-      "vietnamese_variants": [],
+      "term": "Document Analysis in Qualitative Research (Glenn Bowen Framework)",
+      "vietnamese": "Phân tích tài liệu định tính có hệ thống (Khung tiếp cận Glenn Bowen)",
+      "vietnamese_variants": [
+        "Phân tích tài liệu lưu trữ",
+        "Nghiên cứu tài liệu định tính",
+        "Systematic Document Analysis"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Tài liệu định tính — Dữ liệu chữ viết như nhật ký, biên bản họp, báo cáo nội bộ, thư từ hoặc báo chí.",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Document Analysis in Qualitative Research là một quy trình nghiên cứu định tính có hệ thống nhằm định vị, rà soát, đánh giá và diễn giải cả các tài liệu in ấn lẫn tài liệu điện tử (văn bản chính sách, biên bản họp, nhật ký cá nhân, báo cáo thường niên, thông cáo báo chí, hồ sơ y tế), do Glenn A. Bowen (2009) và Lindsay Prior (2003) chuẩn hóa. Không chỉ là nguồn thu thập dữ liệu thứ cấp đơn thuần, phân tích tài liệu đóng vai trò thiết yếu trong việc tam giác đạc dữ liệu, cung cấp bối cảnh lịch sử, gợi mở các câu hỏi phỏng vấn mới và theo dõi sự thay đổi của hiện tượng qua dòng thời gian.",
+      "seminal_citation": "Bowen, G. A. (2009). Document analysis as a qualitative research method. Qualitative Research Journal, 9(2), 27-40; Prior, L. (2003). Using Documents in Social Research. SAGE Publications.",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Qualitative documents according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Data Collection",
+      "operational_mechanism": "Quy trình phân tích tài liệu 5 bước theo Bowen (2009): (1) Định vị và lựa chọn các tài liệu phù hợp; (2) Thẩm định nguồn gốc và tính xác thực theo 4 tiêu chí của John Scott (1990): Tính xác thực (Authenticity - tài liệu có thật không?), Tính tin cậy (Credibility - tài liệu có chính xác và không bị bóp méo?), Tính đại diện (Representativeness - tài liệu có phản ánh đúng bối cảnh?), và Ý nghĩa (Meaning - nội dung rõ ràng dễ hiểu?); (3) Rà soát sơ bộ (Skimming / Super-reading); (4) Đọc sâu và thẩm định thấu đáo (Thorough examination); (5) Mã hóa và tích hợp dữ liệu tài liệu với các nguồn phỏng vấn/quan sát.",
+      "benchmarks": [
+        "Ma trận thẩm định tài liệu (Document Appraisal Matrix): Báo cáo nghiên cứu phải có bảng danh mục kiểm kê toàn bộ các tài liệu đã phân tích kèm ngày ban hành, nguồn cấp và kết quả kiểm định 4 tiêu chí của Scott.",
+        "Tách biệt nội dung bề mặt và bối cảnh tạo tác: Phân tích tài liệu không chỉ xem 'văn bản viết gì' mà phải xem xét 'ai viết, viết cho ai, nhằm phục vụ mục đích chính trị/tổ chức gì' (Prior, 2003).",
+        "Tam giác đạc chéo với dữ liệu phỏng vấn: Dùng tài liệu chính thức để đối chiếu xem lời nói của người tham gia có khớp với quy định pháp lý hoặc biên bản lưu trữ hay không."
+      ],
+      "pitfalls": [
+        "Tin tưởng tài liệu một cách ngây thơ: Coi tài liệu chính thức như chân lý tuyệt đối mà không nhận ra các tài liệu tổ chức thường được biên soạn để tô vẽ thành tích hoặc che đậy sai sót.",
+        "Chọn lọc tài liệu thiên vị: Chỉ thu thập các tài liệu ủng hộ quan điểm nghiên cứu mà bỏ qua các tài liệu phản biện mâu thuẫn.",
+        "Thiếu thông tin về bối cảnh ban hành tài liệu: Trích dẫn văn bản mà không biết rõ nó được ban hành trong hoàn cảnh lịch sử nào, dẫn đến suy diễn sai lệch ý nghĩa."
+      ],
+      "apa_reference": "Bowen, G. A. (2009). Document analysis as a qualitative research method. Qualitative Research Journal, 9(2), 27-40. https://doi.org/10.3316/QRJ0902027",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "qualitative-generalization",
@@ -30443,21 +30795,43 @@
     },
     {
       "id": "qualitative-observation",
-      "term": "Qualitative observation",
-      "vietnamese": "Quan sát định tính — Quá trình nhà nghiên cứu trực tiếp ghi chép các hành vi và hoạt động của đối tượng tại hiện trường.",
-      "vietnamese_variants": [],
+      "term": "Participant Observation & Qualitative Fieldwork (Spradley Framework)",
+      "vietnamese": "Quan sát tham dự và quan sát định tính thực địa (Khung James Spradley)",
+      "vietnamese_variants": [
+        "Quan sát định tính",
+        "Quan sát tham gia",
+        "Participant Observation Protocol"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Quan sát định tính — Quá trình nhà nghiên cứu trực tiếp ghi chép các hành vi và hoạt động của đối tượng tại hiện trường.",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Participant Observation (Quan sát tham dự) là phương pháp thu thập dữ liệu định tính nền tảng trong nhân học và dân tộc học, do James P. Spradley (1980) và Kathleen & Billie DeWalt (2011) hệ thống hóa. Phương pháp này yêu cầu nhà nghiên cứu vừa tham gia vào các hoạt động đời thường của đối tượng tại bối cảnh tự nhiên, vừa duy trì ý thức quan sát có hệ thống để ghi nhận các hành vi, ngôn ngữ cơ thể, tương tác xã hội và các biểu tượng vật lý mà phỏng vấn thông thường không thể nắm bắt được. Đây là công cụ hữu hiệu nhất để kiểm chứng xem 'những gì con người thực sự làm' có khớp với 'những gì họ nói họ làm' hay không.",
+      "seminal_citation": "Spradley, J. P. (1980). Participant Observation. Holt, Rinehart and Winston; DeWalt, K. M., & DeWalt, B. R. (2011). Participant Observation: A Guide for Fieldworkers (2nd ed.). Rowman & Littlefield.",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Qualitative observation according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Data Collection",
+      "operational_mechanism": "Phân loại 5 mức độ tham gia của Spradley (1980): (1) Không tham gia (Non-participatory); (2) Tham gia thụ động (Passive participation - chỉ đứng ngoài quan sát); (3) Tham gia vừa phải (Moderate participation - giữ vai trò quan sát viên được nhận biết); (4) Tham gia chủ động (Active participation - học hỏi và làm theo các hành vi của cộng đồng); (5) Tham gia hoàn toàn (Complete participation - trở thành thành viên thực thụ). Chín chiều kích quan sát xã hội của Spradley: Không gian (Space), Tác nhân (Actor), Hoạt động (Activity), Vật thể (Object), Hành vi (Act), Sự kiện (Event), Thời gian (Time), Mục tiêu (Goal), và Cảm xúc (Feeling).",
+      "benchmarks": [
+        "Bảng quy thức quan sát định tính (Observation Protocol): Phải thiết kế bảng chia đôi: Cột 1 là Ghi chép mô tả khách quan (Descriptive notes), Cột 2 là Ghi chép phản tư suy ngẫm (Reflective notes).",
+        "Ghi chép tức thì: Nhật ký thực địa sơ bộ phải được ghi ngay trong lúc quan sát hoặc tối đa trong vòng 24 giờ sau khi rời khỏi địa bàn.",
+        "Khai thác trọn vẹn 9 chiều kích xã hội của Spradley để đảm bảo mô tả dày (thick description)."
+      ],
+      "pitfalls": [
+        "Hiệu ứng Hawthorne (Hawthorne Effect): Sự hiện diện của người quan sát làm thay đổi hành vi tự nhiên của đối tượng nghiên cứu.",
+        "Quan sát chọn lọc thiên vị: Nhà nghiên cứu chỉ chú ý quan sát những gì phù hợp với kỳ vọng ban đầu và bỏ qua các sự kiện trái ngược.",
+        "Ghi chép chậm trễ dẫn đến suy giảm trí nhớ: Chờ nhiều ngày sau mới viết nhật ký quan sát khiến các chi tiết sống động bị phai nhạt hoặc méo mó."
+      ],
+      "apa_reference": "Spradley, J. P. (1980). Participant observation. Holt, Rinehart and Winston.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "qualitative-purpose-statements",
@@ -33387,21 +33761,43 @@
     },
     {
       "id": "semi-structured-interview-protocol",
-      "term": "Semi-Structured Interview Protocol",
-      "vietnamese": "Đề cương Phỏng vấn Bán cấu trúc",
-      "vietnamese_variants": [],
+      "term": "Semi-Structured Interview Protocol (Kvale & Brinkmann Framework)",
+      "vietnamese": "Quy thức phỏng vấn bán cấu trúc / Hướng dẫn phỏng vấn định tính chuyên sâu",
+      "vietnamese_variants": [
+        "Đề cương phỏng vấn bán cấu trúc",
+        "Interview Guide",
+        "Kỹ thuật phỏng vấn chuyên sâu"
+      ],
       "domain_tags": [
         "Qualitative Data Collection"
       ],
-      "core_definition": "Bộ câu hỏi khung linh hoạt cho phép đào sâu câu trả lời của người tham gia.",
-      "seminal_citation": "Kvale (1996)",
+      "core_definition": "Semi-Structured Interview Protocol (Quy thức phỏng vấn bán cấu trúc) là công cụ và phương pháp thu thập dữ liệu định tính được sử dụng phổ biến nhất trong khoa học xã hội, do Steinar Kvale và Svend Brinkmann (2009, 2015) chuẩn hóa. Khác với phỏng vấn có cấu trúc đóng khung như khảo sát hoặc phỏng vấn phi cấu trúc hoàn toàn tự do, phỏng vấn bán cấu trúc kết hợp hoàn hảo giữa tính định hướng hệ thống và tính linh hoạt tự nhiên. Nhà nghiên cứu sử dụng một Đề cương phỏng vấn (Interview Guide) gồm các câu hỏi mở được chuẩn bị kỹ lưỡng kèm theo hệ thống các câu hỏi đào sâu (probes), cho phép đi sâu vào thế giới ý nghĩa chủ quan của đối tượng.",
+      "seminal_citation": "Kvale, S., & Brinkmann, S. (2009). InterViews: Learning the Craft of Qualitative Research Interviewing (2nd ed.). SAGE Publications; Rubin, H. J., & Rubin, I. S. (2012). Qualitative Interviewing: The Art of Hearing Data (3rd ed.). SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Semi-Structured Interview Protocol according to Kvale (1996).",
       "domain_tags_en": [
         "Qualitative Data Collection"
-      ]
+      ],
+      "category": "Qualitative Research",
+      "subcategory": "Data Collection",
+      "operational_mechanism": "Bảy giai đoạn phỏng vấn theo Kvale (2009): (1) Khái niệm hóa (Thematizing): Làm rõ mục tiêu 'tại sao' và 'cái gì' cần tìm hiểu; (2) Thiết kế (Designing): Xây dựng đề cương phỏng vấn với các dạng câu hỏi: Câu hỏi giới thiệu, Câu hỏi tiếp nối, Câu hỏi thăm dò (Probing questions: 'Bạn có thể nói rõ hơn về...?'), Câu hỏi cụ thể hóa, và Câu hỏi diễn giải; (3) Phỏng vấn thực địa (Interviewing): Thiết lập quan hệ tin cậy (rapport), lắng nghe tích cực; (4) Gỡ băng (Transcribing): Chuyển hóa trung thực lời nói thành văn bản; (5) Phân tích (Analyzing); (6) Kiểm chứng tính xác thực (Verifying); (7) Báo cáo (Reporting).",
+      "benchmarks": [
+        "Thực hiện phỏng vấn thử nghiệm (Pilot Interview): Bắt buộc phỏng vấn thử 1-2 đối tượng để tinh chỉnh đề cương câu hỏi trước khi triển khai chính thức.",
+        "Thời lượng và độ sâu tiêu chuẩn: Phỏng vấn thường kéo dài từ 45 đến 90 phút để đảm bảo người tham gia mở lòng chia sẻ các trải nghiệm sâu sắc.",
+        "Tài liệu minh chứng kiểm toán: Lưu trữ đầy đủ bản ghi âm chất lượng cao, bản gỡ băng nguyên văn (verbatim transcripts) và ghi chú thực địa ngay sau buổi phỏng vấn."
+      ],
+      "pitfalls": [
+        "Đọc đề cương như bài kiểm tra miệng: Đọc câu hỏi một cách máy móc, cứng nhắc khiến đối tượng cảm thấy như đang bị thẩm vấn.",
+        "Đặt câu hỏi đóng hoặc câu hỏi mớm cung (leading questions): Đặt những câu hỏi định hướng câu trả lời khiến dữ liệu bị ô nhiễm nghiêm trọng.",
+        "Thiếu kỹ năng lắng nghe và đào sâu (failure to probe): Bỏ qua những từ ngữ thú vị hoặc biểu cảm ngập ngừng của đối tượng mà không đặt câu hỏi thăm dò tiếp theo."
+      ],
+      "apa_reference": "Kvale, S., & Brinkmann, S. (2009). InterViews: Learning the craft of qualitative research interviewing (2nd ed.). SAGE Publications, Inc.",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "sensemaking-in-organizations-karl-weick",
@@ -37454,21 +37850,43 @@
     },
     {
       "id": "transformative-mixed-methods-design",
-      "term": "Transformative Mixed Methods Design",
-      "vietnamese": "Thiết kế Hỗn hợp Chuyển hóa",
-      "vietnamese_variants": [],
+      "term": "Transformative Mixed Methods Design (Social Justice Framework - Donna Mertens)",
+      "vietnamese": "Thiết kế hỗn hợp mang tính biến đổi / Tiếp cận công lý xã hội Donna Mertens",
+      "vietnamese_variants": [
+        "Thiết kế biến đổi xã hội",
+        "Transformative Mixed Methods Framework",
+        "Tiếp cận giải phóng và trao quyền"
+      ],
       "domain_tags": [
         "Mixed Methods Design"
       ],
-      "core_definition": "Sử dụng khung lý thuyết công bằng xã hội hoặc nữ quyền để định hình toàn bộ nghiên cứu.",
-      "seminal_citation": "Mertens (2007)",
+      "core_definition": "Transformative Mixed Methods Design là khung tiếp cận phương pháp hỗn hợp do Donna M. Mertens khởi xướng (2007, 2010; Sweetman et al., 2010), đặt trên nền tảng của Mô thức Biến đổi (Transformative Paradigm). Tiếp cận này đặt các vấn đề về công lý xã hội, bất bình đẳng quyền lực, áp bức và trao quyền cho các nhóm yếu thế (phụ nữ, người dân tộc thiểu số, người khuyết tật, cộng đồng LGBTQ+) làm tâm điểm chi phối toàn bộ các quyết định phương pháp luận, từ việc xác định câu hỏi nghiên cứu, lựa chọn mẫu, thu thập dữ liệu cho đến việc biến kết quả nghiên cứu thành hành động cải cách xã hội.",
+      "seminal_citation": "Mertens, D. M. (2007). Transformative paradigm: Mixed methods and social justice. Journal of Mixed Methods Research, 1(3), 212-225; Sweetman, D., Badiee, M., & Creswell, J. W. (2010). Use of the transformative framework in mixed methods studies. Qualitative Inquiry, 16(6), 441-454.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Transformative Mixed Methods Design according to Mertens (2007).",
       "domain_tags_en": [
         "Mixed Methods Design"
-      ]
+      ],
+      "category": "Mixed Methods",
+      "subcategory": "Designs",
+      "operational_mechanism": "Quy trình thực thi theo Mertens: (1) Nhận diện bất bình đẳng quyền lực và kiến tạo sự tin cậy trong cộng đồng; (2) Định hình câu hỏi nghiên cứu nhằm thúc đẩy sự thay đổi tiến bộ xã hội; (3) Thu thập dữ liệu hỗn hợp có sự tham gia tích cực của đối tượng nghiên cứu (Participatory mixed methods); (4) Phân tích dữ liệu phản ánh góc nhìn lịch sử và bối cảnh cấu trúc áp bức; (5) Sử dụng kết quả nghiên cứu như một công cụ vận động chính sách và giải phóng cộng đồng.",
+      "benchmarks": [
+        "Sự tham gia của cộng đồng mục tiêu: Đại diện của cộng đồng yếu thế phải đóng vai trò đồng nghiên cứu viên (co-researchers), không chỉ là đối tượng bị quan sát.",
+        "Định hướng hành động cụ thể (Action Agenda): Đề tài phải có kế hoạch hành động chính sách hoặc cải tạo hiện thực rõ ràng sau khi hoàn thành dữ liệu.",
+        "Tuân thủ 10 tiêu chí kiểm định của Mertens (2010) về tính nghiêm cẩn của mô thức biến đổi."
+      ],
+      "pitfalls": [
+        "Biến nghiên cứu thành tuyên truyền ý thức hệ một chiều: Để định hướng đạo đức lấn át tính nghiêm cẩn khoa học, bóp méo số liệu định lượng để phục vụ mục tiêu vận động.",
+        "Khai thác cộng đồng (tokenism): Mời người yếu thế tham gia nghiên cứu chỉ để làm hình ảnh tượng trưng mà không thực sự chia sẻ quyền lực quyết định.",
+        "Thiếu năng lực phân tích kỹ thuật: Quá tập trung vào yếu tố công lý xã hội mà buông lỏng các tiêu chuẩn đo lường định lượng hoặc quy trình mã hóa định tính."
+      ],
+      "apa_reference": "Mertens, D. M. (2007). Transformative paradigm: Mixed methods and social justice. Journal of Mixed Methods Research, 1(3), 212-225. https://doi.org/10.1177/1558689807302811",
+      "is_flagship": true,
+      "quality_tier": "flagship",
+      "deep_upgraded": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "transformative-worldview",
