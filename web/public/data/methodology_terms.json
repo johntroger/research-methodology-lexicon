@@ -1,6 +1,6 @@
 {
   "version": "10.2-peer-reviewed-cleaned",
-  "last_updated": "2026-10-26T07:54:22.266Z",
+  "last_updated": "2026-10-26T08:02:09.782Z",
   "total_terms": 1874,
   "terms": [
     {
@@ -4737,38 +4737,53 @@
     {
       "id": "2-1-1-multilevel-mediation-model",
       "term": "2-1-1 Multilevel Mediation Model",
-      "vietnamese": "Mô hình Trung gian Đa cấp 2-1-1",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Advanced SEM"
+      "vietnamese": "Mô hình Trung gian Đa cấp 2-1-1 (MSEM 2-1-1)",
+      "vietnamese_variants": [
+        "Mô hình trung gian cấp nhóm sang cấp cá nhân",
+        "Multilevel mediation 2-1-1"
       ],
-      "core_definition": "Biến độc lập X ở cấp độ nhóm, biến trung gian M và kết cục Y ở cấp độ cá thể.",
-      "seminal_citation": "Preacher et al. (2010)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Mô hình Cấu trúc Đa cấp (MSEM)",
+        "Phân tích Trung gian Đa cấp",
+        "Hành vi Tổ chức"
+      ],
+      "core_definition": "Mô hình trung gian đa cấp độ phức tạp trong đó biến độc lập (X) là biến cấp độ 2 (Cấp độ nhóm/tổ chức, ví dụ: Phong cách lãnh đạo chuyển đổi của trưởng phòng, chính sách công ty), trong khi biến trung gian (M) và biến phụ thuộc (Y) đều được đo lường ở cấp độ 1 (Cá nhân nhân viên, ví dụ: Động lực làm việc và Hiệu suất cá nhân). Theo Preacher, Zyphur & Zhang (2010), mô hình này chứa đựng cơ chế 'Từ trên xuống' (Top-down / Cross-level effect) và bắt buộc phải ước lượng bằng Mô hình Phương trình Cấu trúc Đa cấp (MSEM).",
+      "seminal_citation": "Preacher, K. J., Zyphur, M. J., & Zhang, Z. (2010). A general multilevel SEM framework for assessing multilevel mediation. Psychological Methods, 15(3), 209–233. https://doi.org/10.1037/a0020141; Zhang, Z., Zyphur, M. J., & Preacher, K. J. (2009). Testing multilevel mediation using hierarchical linear models: Problems and solutions. Organizational Research Methods, 12(4), 695–719.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of 2-1-1 Multilevel Mediation Model according to Preacher et al. (2010).",
       "domain_tags_en": [
         "Advanced SEM"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn bóc tách hiệu ứng: Tác động gián tiếp thực sự CHỈ CÓ THỂ TỒN TẠI Ở CẤP ĐỘ 2 (Between-cluster indirect effect), vì biến độc lập X không có phương sai nội bộ trong nhóm. Bắt buộc gom cụm biến trung gian M lên cấp độ 2 (Latent cluster aggregation) trong MSEM để tránh ước lượng chệch. Kiểm định ý nghĩa thống kê của tác động gián tiếp cấp 2 thông qua Khoảng tin cậy Monte Carlo (Monte Carlo 95% CI) hoặc Bayesian MCMC.",
+      "pitfalls": "Sử dụng mô hình hồi quy đa cấp phân tầng truyền thống HLM: HLM gán giá trị biến cấp 2 xuống từng dòng cá thể cấp 1 rồi chạy hồi quy, dẫn đến việc ước lượng sai số chuẩn bị thu hẹp giả tạo cực độ (thổi phồng ý nghĩa thống kê) và hòa trộn sai số đo lường giữa hai cấp độ.",
+      "apa_reference": "Preacher, K. J., Zyphur, M. J., & Zhang, Z. (2010). A general multilevel SEM framework for assessing multilevel mediation. Psychological Methods, 15(3), 209–233."
     },
     {
       "id": "2-2-1-multilevel-mediation-model",
       "term": "2-2-1 Multilevel Mediation Model",
-      "vietnamese": "Mô hình Trung gian Đa cấp 2-2-1",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Multilevel SEM"
+      "vietnamese": "Mô hình Trung gian Đa cấp 2-2-1 (MSEM 2-2-1)",
+      "vietnamese_variants": [
+        "Mô hình trung gian cấp nhóm tác động cá nhân",
+        "Multilevel mediation 2-2-1"
       ],
-      "core_definition": "X và M ở cấp độ nhóm, Y ở cấp độ cá thể.",
-      "seminal_citation": "Preacher et al. (2010)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Mô hình Cấu trúc Đa cấp (MSEM)",
+        "Phân tích Trung gian Đa cấp"
+      ],
+      "core_definition": "Mô hình trung gian đa cấp độ trong đó cả biến độc lập (X) và biến trung gian (M) đều là các biến ở cấp độ 2 (Cấp độ nhóm/tổ chức, ví dụ: Văn hóa doanh nghiệp X -> Khí hậu đổi mới sáng tạo nhóm M), còn biến phụ thuộc (Y) được đo lường ở cấp độ 1 (Cá nhân, ví dụ: Hành vi đổi mới của nhân viên). Cơ chế gián tiếp diễn ra hoàn toàn ở cấp độ nhóm trước khi truyền tác động xuống cấp độ cá nhân.",
+      "seminal_citation": "Preacher, K. J., Zyphur, M. J., & Zhang, Z. (2010). A general multilevel SEM framework for assessing multilevel mediation. Psychological Methods, 15(3), 209–233. https://doi.org/10.1037/a0020141",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of 2-2-1 Multilevel Mediation Model according to Preacher et al. (2010).",
       "domain_tags_en": [
         "Multilevel SEM"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn phương pháp luận MSEM: Tác động gián tiếp bắt buộc được mô hình hóa ở cấp độ 2 (Between level). Biến phụ thuộc Y cấp 1 được phân rã thành hai thành phần: Phương sai nội nhóm (Within variance) và Giá trị trung bình tiềm ẩn cấp nhóm (Between latent mean). Tác động gián tiếp chính là tích của hệ số đường dẫn cấp 2 giữa X và M với hệ số đường dẫn từ M sang giá trị trung bình tiềm ẩn của Y. Kiểm định khoảng tin cậy Monte Carlo 95% không chứa số 0.",
+      "pitfalls": "Lấy giá trị trung bình cộng thô (Manifest mean aggregation) của biến Y để chạy hồi quy cấp 2 thông thường: Điều này làm mất mát thông tin về độ không tin cậy của việc lấy mẫu nhóm nhỏ, khiến sai số chuẩn bị sai lệch; giải pháp bắt buộc là dùng Biến tiềm ẩn nhóm (Latent aggregation) trong MSEM.",
+      "apa_reference": "Preacher, K. J., Zyphur, M. J., & Zhang, Z. (2010). A general multilevel SEM framework for assessing multilevel mediation. Psychological Methods, 15(3), 209–233."
     },
     {
       "id": "5-threats-to-external-validity",
@@ -5220,40 +5235,52 @@
     {
       "id": "adjusted-goodness-of-fit-index",
       "term": "Adjusted Goodness of Fit Index (AGFI)",
-      "vietnamese": "Chỉ số Phù hợp Mô hình có Hiệu chỉnh theo Bậc Tự do",
+      "vietnamese": "Chỉ số Độ phù hợp Hiệu chỉnh AGFI (Chỉ số Jöreskog & Sörbom)",
       "vietnamese_variants": [
-        "AGFI"
+        "Chỉ số AGFI",
+        "Adjusted GFI"
       ],
       "domain_tags": [
-        "CB-SEM Fit Indices"
+        "Độ phù hợp Mô hình (Model Fit)",
+        "CB-SEM Truyền thống"
       ],
-      "core_definition": "Chỉ số Phù hợp Mô hình có Hiệu chỉnh theo Bậc Tự do.",
-      "seminal_citation": "Giá trị AGFI $\\ge 0.85$ hoặc $\\ge 0.90$ biểu thị mô hình đạt chuẩn phù hợp.",
-      "tier": "acronym",
-      "expert_status": "needs_review",
+      "core_definition": "Chỉ số độ phù hợp mô hình tuyệt đối do Karl Jöreskog và Dag Sörbom (1981, 1986) phát triển cho phần mềm LISREL. AGFI là phiên bản hiệu chỉnh của chỉ số GFI (Goodness of Fit Index) có tính đến bậc tự do của mô hình nhằm phạt các mô hình chứa quá nhiều tham số tự do: AGFI = 1 - [(1 - GFI) * (df_null / df_model)]. AGFI đo lường tỷ lệ phần trăm phương sai và hiệp phương sai mẫu được giải thích đồng thời bởi mô hình cấu trúc sau khi đã chuẩn hóa theo bậc tự do.",
+      "seminal_citation": "Jöreskog, K. G., & Sörbom, D. (1986). LISREL VI: Analysis of linear structural relationships by maximum likelihood, instrumental variables, and least squares methods. Scientific Software International; Sharma, S., Mukherjee, S., Kumar, A., & Dillon, W. R. (2005). A simulation study to investigate the use of cutoff values for assessing model fit in covariance structure models. Journal of Business Research, 58(7), 935–943.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "GFI/AGFI nhạy với cỡ mẫu, nhiều tác giả khuyên không dùng làm tiêu chí chính (Sharma et al. 2005; Kline 2023) | LaTeX thô; nguồn ghi ngưỡng",
       "core_definition_en": "Academic definition of Adjusted Goodness of Fit Index according to Giá trị AGFI $\\ge 0.85$ hoặc $\\ge 0.90$ biểu thị mô hình đạt chuẩn phù hợp..",
       "domain_tags_en": [
         "CB-SEM Fit Indices"
-      ]
+      ],
+      "benchmarks": "Hệ thống ngưỡng đánh giá truyền thống: (1) AGFI >= 0.90: Mô hình đạt độ phù hợp tốt; (2) 0.85 <= AGFI < 0.90: Độ phù hợp có thể chấp nhận được; (3) AGFI < 0.85: Mô hình không phù hợp. Lưu ý: AGFI luôn nhỏ hơn GFI và có thể mang giá trị âm nếu mô hình đặc tả quá tồi tệ.",
+      "pitfalls": "KHUYẾN CÁO HIỆN ĐẠI: Sharma et al. (2005) và Hu & Bentler (1998) chứng minh AGFI và GFI cực kỳ nhạy cảm với kích thước mẫu và số lượng biến quan sát (mẫu lớn làm AGFI tăng ảo, mẫu nhỏ làm AGFI tụt sâu vô lý). Hầu hết các tạp chí Q1 hiện nay KHUYẾN NGHỊ KHÔNG DÙNG GFI/AGFI làm tiêu chuẩn chính, mà bắt buộc thay thế bằng bộ ba (CFI, TLI, RMSEA, SRMR).",
+      "apa_reference": "Jöreskog, K. G., & Sörbom, D. (1986). LISREL VI user's guide. Scientific Software International."
     },
     {
       "id": "adjusted-r-squared",
-      "term": "Adjusted R-squared",
-      "vietnamese": "Hệ số Xác định Hiệu chỉnh",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Regression Analysis"
+      "term": "Adjusted R-squared (R̄²)",
+      "vietnamese": "Hệ số Xác định Hiệu chỉnh (R-bình phương Hiệu chỉnh Theil)",
+      "vietnamese_variants": [
+        "R-squared hiệu chỉnh",
+        "Adjusted coefficient of determination"
       ],
-      "core_definition": "R bình phương có hiệu chỉnh theo số lượng biến độc lập và kích thước mẫu để tránh overfitting.",
-      "seminal_citation": "Theil (1961)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Hồi quy Tuyến tính & Kinh tế lượng",
+        "Đánh giá Mô hình"
+      ],
+      "core_definition": "Chỉ số thống kê hiệu chỉnh do Henri Theil (1961) phát minh nhằm khắc phục nhược điểm chí tử của hệ số xác định thông thường R²: Trong hồi quy OLS, hệ số R² LUÔN LUÔN TĂNG LÊN (hoặc giữ nguyên) mỗi khi nhà nghiên cứu đưa thêm bất kỳ biến độc lập mới nào vào mô hình, ngay cả khi biến đó hoàn toàn vô nghĩa và không có liên hệ gì với biến phụ thuộc. R-squared hiệu chỉnh đưa thêm cơ chế phạt dựa trên số lượng biến độc lập k và kích thước mẫu n: R_bar^2 = 1 - [(1 - R^2) * (n - 1) / (n - k - 1)].",
+      "seminal_citation": "Theil, H. (1961). Economic forecasts and policy. North-Holland Publishing Company; Wooldridge, J. M. (2020). Introductory econometrics: A modern approach (7th ed.). Cengage Learning.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Adjusted R-squared according to Theil (1961).",
       "domain_tags_en": [
         "Regression Analysis"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn so sánh mô hình: Khi thêm một biến độc lập mới vào phương trình, R-squared hiệu chỉnh CHỈ TĂNG LÊN KHI VÀ CHỈ KHI giá trị thống kê t của hệ số biến đó lớn hơn 1 (|t| > 1, tương đương thống kê F > 1). Nếu biến mới đưa vào có |t| < 1, R-squared hiệu chỉnh sẽ tự động giảm xuống, báo hiệu cho tác giả biết biến đó làm loãng mô hình. Khi so sánh các mô hình lồng nhau có cùng biến phụ thuộc, mô hình nào có R_bar^2 cao hơn được đánh giá là tối ưu hơn.",
+      "pitfalls": "Dùng R-squared hiệu chỉnh để so sánh hai mô hình có biến phụ thuộc khác nhau (ví dụ một mô hình biến phụ thuộc dạng mức Y và một mô hình dạng log ln(Y) - điều này hoàn toàn sai về mặt toán học vì tổng bình phương sai số đo lường trên hai thang đo khác nhau); tin rằng R_bar^2 cao đồng nghĩa với việc mô hình không bị nội sinh.",
+      "apa_reference": "Theil, H. (1961). Economic forecasts and policy. North-Holland Publishing Company."
     },
     {
       "id": "advocacy-worldview",
@@ -5489,22 +5516,28 @@
     {
       "id": "analysis-of-covariance-ancova",
       "term": "Analysis of Covariance (ANCOVA)",
-      "vietnamese": "Phân tích hiệp phương sai kết hợp ANOVA với hồi quy để kiểm soát các biến đồng biến liên tục (Covariates)",
+      "vietnamese": "Phân tích Hiệp phương sai (Mô hình ANCOVA)",
       "vietnamese_variants": [
-        "ANCOVA"
+        "Mô hình ANCOVA",
+        "Kiểm soát hiệp biến trong thực nghiệm"
       ],
       "domain_tags": [
-        "Experimental Statistics"
+        "Thiết kế Thực nghiệm",
+        "Thống kê Ứng dụng",
+        "Kiểm soát Biến Nhiễu"
       ],
-      "core_definition": "Phân tích hiệp phương sai kết hợp ANOVA với hồi quy để kiểm soát các biến đồng biến liên tục (Covariates).",
-      "seminal_citation": "Kirk (2013)",
-      "tier": "encyclopedia",
-      "expert_status": "needs_review",
+      "core_definition": "Phương pháp phân tích thống kê kết hợp giữa Phân tích Phương sai (ANOVA) và Hồi quy Tuyến tính (OLS), do Ronald Fisher (1932) sáng lập. ANCOVA kiểm tra sự khác biệt về giá trị trung bình của biến phụ thuộc liên tục giữa các nhóm phân loại (Factors), sau khi đã hiệu chỉnh và bóc tách ảnh hưởng của một hoặc nhiều biến số liên tục gây nhiễu gọi là Biến Hiệp biến (Covariates). ANCOVA giúp làm giảm phương sai sai số ngẫu nhiên (Error variance), qua đó nâng cao vượt bậc độ mạnh thống kê (Statistical Power) của các thử nghiệm thực nghiệm.",
+      "seminal_citation": "Fisher, R. A. (1932). Statistical methods for research workers (4th ed.). Oliver & Boyd; Rutherford, A. (2001). ANOVA and ANCOVA: A GLM approach. John Wiley & Sons.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #88",
       "core_definition_en": "Academic definition of Analysis of Covariance (ANCOVA) according to Kirk (2013).",
       "domain_tags_en": [
         "Experimental Statistics"
-      ]
+      ],
+      "benchmarks": "Giả định sống còn bắt buộc: Giả định về tính đồng nhất của các độ dốc hồi quy (Homogeneity of Regression Slopes): Mối quan hệ giữa biến hiệp biến và biến kết cục bắt buộc phải giống nhau xuyên suốt tất cả các nhóm can thiệp (tức không tồn tại tương quan tương tác giữa Biến phân nhóm * Biến hiệp biến, p > 0.05). Nếu giả định này bị vi phạm, ANCOVA không thể áp dụng được và phải chuyển sang mô hình Johnson-Neyman. Biến hiệp biến phải được đo lường TRƯỚC KHI can thiệp diễn ra.",
+      "pitfalls": "Đưa biến hiệp biến chịu ảnh hưởng bởi chính can thiệp thực nghiệm vào mô hình (điều này triệt tiêu mất một phần hiệu quả thực sự của can thiệp); vi phạm giả định đồng nhất độ dốc nhưng vẫn cố tình chạy ANCOVA.",
+      "apa_reference": "Rutherford, A. (2001). ANOVA and ANCOVA: A GLM approach. John Wiley & Sons."
     },
     {
       "id": "analytic-framework",
@@ -5639,20 +5672,27 @@
     {
       "id": "anderson-darling-normality-test",
       "term": "Anderson-Darling Normality Test",
-      "vietnamese": "Kiểm định Chuẩn Anderson-Darling",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Statistical Inference"
+      "vietnamese": "Kiểm định Phân phối Chuẩn Anderson-Darling (Kiểm định Đuôi Dày)",
+      "vietnamese_variants": [
+        "Kiểm định Anderson-Darling",
+        "A-D goodness-of-fit test"
       ],
-      "core_definition": "Kiểm định tính phân phối chuẩn nhạy cảm ở phần đuôi phân phối.",
-      "seminal_citation": "Anderson & Darling (1954)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kiểm định Giả thuyết Thống kê",
+        "Phân phối Chuẩn & Chẩn đoán"
+      ],
+      "core_definition": "Phép kiểm định độ phù hợp phân phối thống kê phi tham số mạnh mẽ do Theodore Anderson và Donald Darling (1952, 1954) phát triển. Khắc phục hạn chế lớn của kiểm định Kolmogorov-Smirnov (vốn có xu hướng nhạy cảm nhất ở vùng trung tâm phân phối và bỏ sót sự bất thường ở hai đuôi), kiểm định Anderson-Darling đặt trọng số rất lớn vào hai vùng đuôi của phân phối xác suất tích lũy (Cumulative Distribution Function - CDF), biến nó thành công cụ nhạy bén nhất để phát hiện hiện tượng đuôi dày (Fat tails / Heavy tails) trong dữ liệu kinh tế và tài chính.",
+      "seminal_citation": "Anderson, T. W., & Darling, D. A. (1952). Asymptotic theory of certain 'goodness of fit' criteria based on stochastic processes. The Annals of Mathematical Statistics, 23(2), 193–212. https://doi.org/10.1214/aoms/1177729437; Anderson, T. W., & Darling, D. A. (1954). A test of goodness of fit. Journal of the American Statistical Association, 49(268), 765–769.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Anderson-Darling Normality Test according to Anderson & Darling (1954).",
       "domain_tags_en": [
         "Statistical Inference"
-      ]
+      ],
+      "benchmarks": "Giả thuyết vô hiệu H0: Dữ liệu mẫu tuân theo phân phối chuẩn hoàn hảo; H1: Dữ liệu vi phạm phân phối chuẩn. Thống kê kiểm định A^2 được hiệu chỉnh theo cỡ mẫu n. Tiêu chuẩn quyết định: Nếu p-value < 0.05, bác bỏ giả thuyết H0 và kết luận dữ liệu không có phân phối chuẩn. Khắc phục trong SEM: Bắt buộc chuyển từ ước lượng Maximum Likelihood thông thường sang MLR (Robust Maximum Likelihood) hoặc dùng Bootstrap.",
+      "pitfalls": "Khi cỡ mẫu cực lớn (N > 1,000–5,000), kiểm định Anderson-Darling (tương tự Shapiro-Wilk) trở nên quá nhạy bén và sẽ bác bỏ H0 ngay cả khi độ lệch phân phối là cực kỳ nhỏ và không ảnh hưởng đến ước lượng; trong trường hợp mẫu lớn, tác giả bắt buộc phải kiểm tra kết hợp hệ số Bất đối xứng (Skewness nằm trong [-2, +2]) và hệ số Nhọn (Kurtosis nằm trong [-7, +7]).",
+      "apa_reference": "Anderson, T. W., & Darling, D. A. (1954). A test of goodness of fit. Journal of the American Statistical Association, 49(268), 765–769."
     },
     {
       "id": "anderson-darling-test",
@@ -5886,20 +5926,28 @@
     {
       "id": "armstrong-and-overton-wave-analysis",
       "term": "Armstrong and Overton Wave Analysis",
-      "vietnamese": "Phân tích Sóng Phản hồi Armstrong & Overton",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Survey Rigour"
+      "vietnamese": "Phân tích Sóng Phản hồi Armstrong & Overton (Kiểm định Thiên lệch Không phản hồi)",
+      "vietnamese_variants": [
+        "Kiểm định Armstrong & Overton",
+        "Non-response bias wave analysis"
       ],
-      "core_definition": "So sánh nhóm trả lời sớm và muộn để kiểm định non-response bias.",
-      "seminal_citation": "Armstrong & Overton (1977)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phương pháp Khảo sát",
+        "Thiên lệch Không phản hồi (Non-response Bias)",
+        "Thẩm định Mẫu"
+      ],
+      "core_definition": "Quy trình kiểm định ngoại suy thực nghiệm kinh điển do J. Scott Armstrong và Terry S. Overton (1977) công bố trên Journal of Marketing Research nhằm chứng minh dữ liệu khảo sát không bị nhiễm Thiên lệch Không phản hồi (Non-Response Bias). Phương pháp dựa trên tiên đề: Những người trả lời muộn (sau nhiều lần nhắc nhở - Late respondents) có đặc tính hành vi và nhân khẩu học rất tương đồng với những người hoàn toàn không trả lời (Non-respondents). Bằng cách chia mẫu khảo sát thành các 'làn sóng' (Waves) theo thời gian gửi phiếu, tác giả so sánh xem có sự khác biệt có ý nghĩa thống kê giữa nhóm phản hồi sớm và nhóm phản hồi muộn hay không.",
+      "seminal_citation": "Armstrong, J. S., & Overton, T. S. (1977). Estimating nonresponse bias in mail surveys. Journal of Marketing Research, 14(3), 396–402. https://doi.org/10.1177/002224377701400320",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Armstrong and Overton Wave Analysis according to Armstrong & Overton (1977).",
       "domain_tags_en": [
         "Survey Rigour"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn thực thi: Chia mẫu thành 2 nhóm: Nhóm phản hồi sớm (Early respondents: 75% số phiếu thu thập đợt 1) và Nhóm phản hồi muộn (Late respondents: 25% số phiếu thu thập sau đợt gửi thư nhắc nhở). Chạy kiểm định t-test độc lập cho các biến liên tục và kiểm định Chi-square cho các biến định danh nhân khẩu học (tuổi, giới tính, quy mô công ty, doanh thu, các biến đo lường chính). Tiêu chuẩn đạt chuẩn: TẤT CẢ các bài kiểm định đều có p-value > 0.05 (Không có sự khác biệt có ý nghĩa thống kê), khẳng định mẫu đại diện tốt và không bị thiên lệch không phản hồi.",
+      "pitfalls": "Thu thập khảo sát trực tuyến trong 1 ngày duy nhất rồi tuyên bố không có thiên lệch không phản hồi (khi đó không có độ trễ sóng để kiểm định); khi t-test có p < 0.05 ở các biến nhân khẩu học quan trọng mà vẫn lờ đi không báo cáo.",
+      "apa_reference": "Armstrong, J. S., & Overton, T. S. (1977). Estimating nonresponse bias in mail surveys. Journal of Marketing Research, 14(3), 396–402."
     },
     {
       "id": "arrive-guidelines-20",
@@ -6288,24 +6336,28 @@
     {
       "id": "average-treatment-effect-on-the-untreated",
       "term": "Average Treatment Effect on the Untreated (ATU)",
-      "vietnamese": "Hiệu ứng can thiệp trung bình trên nhóm không xử lý",
+      "vietnamese": "Tác động Can thiệp Trung bình trên Nhóm Không Nhận Can thiệp (Chỉ số ATU)",
       "vietnamese_variants": [
-        "ATU"
+        "Chỉ số ATU",
+        "Counterfactual effect on non-participants"
       ],
       "domain_tags": [
-        "Causal Inference",
-        "Econometrics"
+        "Suy luận Nhân quả",
+        "Đánh giá Chính sách Thực nghiệm"
       ],
-      "core_definition": "Hiệu ứng can thiệp trung bình trên nhóm không xử lý.",
-      "seminal_citation": "Dùng trong đánh giá tiềm năng mở rộng chính sách công hoặc can thiệp y tế/giáo dục.",
-      "tier": "acronym",
-      "expert_status": "needs_review",
+      "core_definition": "Thước đo nhân quả phản thực tế trong Khung Kết cục Tiềm năng của Rubin: Đo lường tác động can thiệp trung bình nếu chính sách được mở rộng áp dụng cho những cá thể HIỆN TẠI ĐANG THUỘC NHÓM ĐỐI CHỨNG (những người chưa từng nhận can thiệp): ATU = E[Y_i(1) - Y_i(0) | D_i = 0]. ATU trả lời câu hỏi chiến lược tối quan trọng của các nhà hoạch định chính sách: 'Nếu chúng ta bắt buộc những người chưa tham gia phải tham gia vào chương trình này, họ sẽ được hưởng lợi bao nhiêu?'.",
+      "seminal_citation": "Heckman, J. J., & Vytlacil, E. (2005). Structural equations, treatment effects, and econometric policy evaluation. Econometrica, 73(3), 669–738. https://doi.org/10.1111/j.1468-0262.2005.00594.x; Wooldridge, J. M. (2010). Econometric analysis of cross section and panel data (2nd ed.). MIT Press.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Nguồn ghi ngưỡng",
       "core_definition_en": "Academic definition of Average Treatment Effect on the Untreated according to Dùng trong đánh giá tiềm năng mở rộng chính sách công hoặc can thiệp y tế/giáo dục..",
       "domain_tags_en": [
         "Causal Inference",
         "Econometrics"
-      ]
+      ],
+      "benchmarks": "Mối quan hệ toán học nền tảng giữa 3 chỉ số nhân quả: ATE = P(D=1) * ATT + P(D=0) * ATU. Trong thực tế, ATT thường LỚN HƠN ATU vì những người tự nguyện tham gia chính sách ban đầu thường có năng lực hoặc điều kiện phù hợp hơn (Selection on gains / Positive self-selection). Ước lượng ATU thông qua phương pháp nghịch đảo trọng số xu hướng (Inverse Probability Weighting - IPW) hoặc Matching trên nhóm đối chứng.",
+      "pitfalls": "Giả định ngây thơ rằng ATU bằng đúng ATT: Việc ngoại suy hiệu quả của chương trình đào tạo nghề từ nhóm tình nguyện viên sang áp dụng bắt buộc cho toàn bộ người thất nghiệp thường thất bại vì ATU của nhóm đối chứng thấp hơn nhiều so với kỳ vọng.",
+      "apa_reference": "Heckman, J. J., & Vytlacil, E. (2005). Structural equations, treatment effects, and econometric policy evaluation. Econometrica, 73(3), 669–738."
     },
     {
       "id": "average-treatment-effect-on-treated-att",
@@ -6621,20 +6673,27 @@
     {
       "id": "baron-and-kenny-mediation-approach",
       "term": "Baron and Kenny Mediation Approach",
-      "vietnamese": "Quy trình Trung gian Bốn bước Baron & Kenny",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Mediation Analysis"
+      "vietnamese": "Quy trình Phân tích Trung gian 4 Bước Baron & Kenny (1986)",
+      "vietnamese_variants": [
+        "Quy trình 4 bước Baron & Kenny",
+        "Causal steps approach to mediation"
       ],
-      "core_definition": "Phương pháp cổ điển kiểm tra trung gian qua 4 phương trình hồi quy OLS.",
-      "seminal_citation": "Baron & Kenny (1986)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phân tích Trung gian (Mediation)",
+        "Lịch sử Phương pháp Luận"
+      ],
+      "core_definition": "Khung phân tích trung gian kinh điển và có trích dẫn nhiều nhất trong lịch sử khoa học xã hội (hơn 100,000 trích dẫn), do Reuben M. Baron và David A. Kenny (1986) công bố trên Journal of Personality and Social Psychology. Phương pháp thẩm định cơ chế trung gian X -> M -> Y thông qua 4 bước hồi quy OLS tuần tự: Bước 1: X tác động có ý nghĩa lên Y (hệ số c != 0); Bước 2: X tác động có ý nghĩa lên M (hệ số a != 0); Bước 3: M tác động có ý nghĩa lên Y khi đã kiểm soát X (hệ số b != 0); Bước 4: Tác động của X lên Y giảm về 0 (Trung gian toàn phần - Full mediation) hoặc giảm độ lớn đáng kể (Trung gian một phần - Partial mediation).",
+      "seminal_citation": "Baron, R. M., & Kenny, D. A. (1986). The moderator-mediator variable distinction in social psychological research: Conceptual, strategic, and statistical considerations. Journal of Personality and Social Psychology, 51(6), 1173–1182. https://doi.org/10.1037/0022-3514.51.6.1173; Zhao, X., Lynch, J. G., & Chen, Q. (2010). Reconsidering Baron and Kenny: Myths and truths about mediation analysis. Journal of Consumer Research, 37(2), 197–206.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Baron and Kenny Mediation Approach according to Baron & Kenny (1986).",
       "domain_tags_en": [
         "Mediation Analysis"
-      ]
+      ],
+      "benchmarks": "PHÊ PHÁN HIỆN ĐẠI TỪ HỌC THUẬT QUỐC TẾ (Zhao et al. 2010; Hayes 2018): Quy trình Baron & Kenny hiện nay ĐÃ BỊ LỖI THỜI và bị các tạp chí hàng đầu từ chối vì 2 lý do chí tử: (1) Bước 1 không cần thiết (Tác động trung gian ab hoàn toàn có thể tồn tại ngay cả khi tổng tác động c bằng 0 do hiện tượng trung gian triệt tiêu lẫn nhau - Competitive mediation); (2) Phương pháp các bước tuần tự (Causal steps) có độ mạnh thống kê cực kỳ yếu. Tiêu chuẩn hiện đại bắt buộc phải thay thế bằng Kiểm định Tái chọn mẫu Bootstrap kiểm tra tích số a*b.",
+      "pitfalls": "Vội vàng kết luận không có quan hệ trung gian khi bước 1 không có ý nghĩa thống kê; dùng Baron & Kenny cho các bài báo nộp tạp chí Q1 mà không chạy phân tích Bootstrap qua mô hình PROCESS của Hayes.",
+      "apa_reference": "Baron, R. M., & Kenny, D. A. (1986). The moderator-mediator variable distinction in social psychological research. Journal of Personality and Social Psychology, 51(6), 1173–1182."
     },
     {
       "id": "bartletts-test-of-sphericity",
@@ -9301,21 +9360,29 @@
     },
     {
       "id": "cohens-d",
-      "term": "Cohen's d",
-      "vietnamese": "Kích thước hiệu ứng chuẩn hóa đo độ lệch giữa hai điểm trung bình nhóm (0.2 nhỏ, 0.5 vừa, 0.8 lớn)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Effect Size Statistics"
+      "term": "Cohen's d Effect Size",
+      "vietnamese": "Kích thước Hiệu ứng Cohen d (Độ lệch Chuẩn hóa Giữa hai Nhóm)",
+      "vietnamese_variants": [
+        "Chỉ số Cohen d",
+        "Standardized mean difference"
       ],
-      "core_definition": "Kích thước hiệu ứng chuẩn hóa đo độ lệch giữa hai điểm trung bình nhóm (0.2 nhỏ, 0.5 vừa, 0.8 lớn).",
-      "seminal_citation": "Cohen (1988)",
-      "tier": "curated",
+      "domain_tags": [
+        "Thống kê Thực nghiệm",
+        "Đo lường Độ mạnh Hiệu ứng",
+        "Phân tích Gộp (Meta-Analysis)"
+      ],
+      "core_definition": "Thước đo độ lớn hiệu ứng chuẩn hóa (Standardized Mean Difference) phổ biến bậc nhất trong khoa học thực nghiệm và tâm lý học do Jacob Cohen (1988) phát minh. Cohen's d đo lường sự khác biệt giữa giá trị trung bình của hai nhóm (ví dụ: nhóm can thiệp và nhóm đối chứng) được chia cho độ lệch chuẩn gộp chung của cả hai nhóm: d = (Mean_1 - Mean_2) / SD_pooled. Nhờ được chuẩn hóa theo độ lệch chuẩn, Cohen's d cho phép so sánh trực tiếp độ mạnh của các can thiệp thực nghiệm xuyên suốt các nghiên cứu độc lập mà không bị phụ thuộc vào đơn vị đo lường gốc.",
+      "seminal_citation": "Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Lawrence Erlbaum Associates; Hedges, L. V. (1981). Distribution theory for Glass's estimator of effect size and related estimators. Journal of Educational Statistics, 6(2), 107–128.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Cohen's d according to Cohen (1988).",
       "domain_tags_en": [
         "Effect Size Statistics"
-      ]
+      ],
+      "benchmarks": "Hệ thống ngưỡng phân loại chuẩn mực của Jacob Cohen (1988): (1) |d| = 0.20: Hiệu ứng nhỏ (Small effect: khó nhận biết bằng mắt thường, ví dụ sự khác biệt chiều cao giữa các cô gái 15 và 16 tuổi); (2) |d| = 0.50: Hiệu ứng trung bình (Medium effect: đủ lớn để quan sát được trong thực tế); (3) |d| = 0.80: Hiệu ứng lớn (Large effect: khác biệt rõ rệt và áp đảo); (4) |d| >= 1.20: Hiệu ứng cực lớn (Very large effect).",
+      "pitfalls": "Nhầm lẫn giữa p-value và Cohen's d: Một bài test t có thể đạt p < 0.001 nhờ kích thước mẫu cực lớn nhưng Cohen's d chỉ bằng 0.05 (hiệu ứng thực tiễn hoàn toàn tầm thường và không có giá trị can thiệp); không hiệu chỉnh độ chệch mẫu nhỏ (khi mẫu mỗi nhóm N < 20, Cohen's d bị thổi phồng, khi đó bắt buộc dùng Hedges' g).",
+      "apa_reference": "Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Lawrence Erlbaum Associates."
     },
     {
       "id": "cohens-kappa-coefficient",
@@ -18762,21 +18829,29 @@
     },
     {
       "id": "history-threat",
-      "term": "History Threat",
-      "vietnamese": "Nguy cơ lịch sử",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Internal Validity Threats"
+      "term": "History Threat to Internal Validity",
+      "vietnamese": "Mối Nguy cơ Lịch sử Đe dọa Độ giá trị Nội tại (Nguy cơ Campbell)",
+      "vietnamese_variants": [
+        "Nguy cơ lịch sử",
+        "History threat experiment"
       ],
-      "core_definition": "các sự kiện ngoại cảnh bất ngờ xảy ra giữa thời điểm pretest và posttest làm lệch kết quả can thiệp.",
-      "seminal_citation": "Campbell & Stanley (1963)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Độ giá trị Nội tại (Internal Validity)",
+        "Thiết kế Thực nghiệm",
+        "Khung Shadish-Cook-Campbell"
+      ],
+      "core_definition": "Một trong những mối đe dọa kinh điển nhất đối với độ giá trị nội tại trong nghiên cứu thực nghiệm và đánh giá chính sách, do Donald T. Campbell và Julian Stanley (1963) định danh. Nguy cơ lịch sử xảy ra khi có các sự kiện bên ngoài bất ngờ xuất hiện đồng thời trong khoảng thời gian giữa lần đo trước can thiệp (Pre-test) và lần đo sau can thiệp (Post-test), và chính sự kiện bên ngoài này (chứ không phải can thiệp thực nghiệm) đã tạo ra sự thay đổi ở biến kết cục (ví dụ: đang thử nghiệm một chiến dịch quảng cáo thì đối thủ cạnh tranh bị khủng hoảng truyền thông hoặc nền kinh tế rơi vào suy thoái).",
+      "seminal_citation": "Campbell, D. T., & Stanley, J. C. (1963). Experimental and quasi-experimental designs for research. Rand McNally; Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of History Threat according to Campbell & Stanley (1963).",
       "domain_tags_en": [
         "Internal Validity Threats"
-      ]
+      ],
+      "benchmarks": "Biện pháp kiểm soát chuẩn mực phương pháp luận: (1) Thiết lập Nhóm đối chứng ngẫu nhiên tương đương (Randomized Control Group): Cả hai nhóm đều cùng trải qua sự kiện lịch sử bên ngoài như nhau, nhờ đó tác động của sự kiện lịch sử bị triệt tiêu khi so sánh hiệu số giữa hai nhóm; (2) Thiết kế Chuỗi thời gian ngắt quãng (Interrupted Time Series Design) với nhiều mốc đo lường trước và sau can thiệp để bóc tách bước nhảy đột ngột của sự kiện lịch sử.",
+      "pitfalls": "Sử dụng thiết kế một nhóm trước - sau can thiệp (One-group pretest-posttest design) rồi quy chụp 100% sự thay đổi là do can thiệp của mình mà hoàn toàn lờ đi các biến cố kinh tế vĩ mô diễn ra trong cùng kỳ.",
+      "apa_reference": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin."
     },
     {
       "id": "homoskedasticity",
@@ -20063,21 +20138,28 @@
     },
     {
       "id": "instrumentation-threat",
-      "term": "Instrumentation Threat",
-      "vietnamese": "Nguy cơ dụng cụ đo",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Internal Validity Threats"
+      "term": "Instrumentation Threat to Internal Validity",
+      "vietnamese": "Mối Nguy cơ Thay đổi Công cụ Đo lường Đe dọa Độ giá trị Nội tại",
+      "vietnamese_variants": [
+        "Nguy cơ công cụ đo lường",
+        "Instrumentation threat"
       ],
-      "core_definition": "sự thay đổi về thang đo, thiết bị kỹ thuật hoặc độ mệt mỏi của người chấm thi giữa hai đợt đo.",
-      "seminal_citation": "Campbell & Stanley (1963)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Độ giá trị Nội tại (Internal Validity)",
+        "Đo lường Thực nghiệm"
+      ],
+      "core_definition": "Mối đe dọa nhân quả xuất hiện khi có sự thay đổi trong bản thân công cụ đo lường, thước đo, thiết bị kiểm tra, hoặc sự thay đổi trong tiêu chuẩn chấm điểm của những người quan sát/đánh giá giữa các lần đo lường trong nghiên cứu (ví dụ: máy đo lường bị lệch chuẩn sau một thời gian hoạt động, người chấm thi trở nên khắt khe hơn hoặc mệt mỏi hơn ở lần chấm thứ hai, hoặc phiếu phỏng vấn được điều chỉnh từ ngữ giữa chừng). Sự thay đổi điểm số đo được phản ánh sự trôi dạt của thước đo chứ không phải sự biến đổi thực sự của đối tượng.",
+      "seminal_citation": "Campbell, D. T., & Stanley, J. C. (1963). Experimental and quasi-experimental designs for research. Rand McNally; Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Instrumentation Threat according to Campbell & Stanley (1963).",
       "domain_tags_en": [
         "Internal Validity Threats"
-      ]
+      ],
+      "benchmarks": "Biện pháp kiểm soát nghiêm ngặt: (1) Chuẩn hóa và hiệu chuẩn định kỳ các thiết bị đo lường vật lý; (2) Đào tạo kỹ lưỡng và đánh giá độ tin cậy đồng thuận giữa các giám khảo chấm thi (Inter-rater reliability Kappa >= 0.80); (3) Áp dụng quy trình chấm điểm mù (Blinded grading: người chấm không biết bài thi thuộc nhóm can thiệp hay nhóm đối chứng, không biết bài thi là đo trước hay đo sau).",
+      "pitfalls": "Thay đổi người phỏng vấn hoặc thay đổi câu hỏi khảo sát ở đợt thu thập dữ liệu sau rồi so sánh trực tiếp điểm số với đợt trước; người đánh giá biết đối tượng vừa nhận can thiệp nên vô thức chấm điểm nới tay hơn (Observer bias).",
+      "apa_reference": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin."
     },
     {
       "id": "instruments",
@@ -20765,21 +20847,30 @@
     },
     {
       "id": "intraclass-correlation-coefficient-iccrel",
-      "term": "Intraclass Correlation Coefficient (ICC_rel)",
-      "vietnamese": "Hệ số tương quan nội lớp đo lường độ tin cậy và sự nhất quán giữa các người đánh giá trên thang đo liên tục",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Inter-Rater Reliability"
+      "term": "Intraclass Correlation Coefficient (ICC)",
+      "vietnamese": "Hệ số Tương quan Nội lớp (Chỉ số ICC(1) và ICC(2) trong HLM/MSEM)",
+      "vietnamese_variants": [
+        "Chỉ số ICC",
+        "Tương quan nội cụm đa cấp",
+        "Cluster effect ICC"
       ],
-      "core_definition": "Hệ số tương quan nội lớp đo lường độ tin cậy và sự nhất quán giữa các người đánh giá trên thang đo liên tục.",
-      "seminal_citation": "Shrout & Fleiss (1979)",
-      "tier": "encyclopedia",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Mô hình Đa cấp (HLM/MSEM)",
+        "Phân tích Cụm",
+        "Đo lường Mẫu"
+      ],
+      "core_definition": "Chỉ số thống kê nền tảng trong phân tích mô hình đa cấp (Hierarchical Linear Modeling - HLM / Multilevel SEM), đo lường tỷ lệ phần trăm tổng phương sai của biến phụ thuộc được giải thích bởi sự khác biệt giữa các nhóm hoặc tổ chức (Between-group variance) so với sự khác biệt giữa các cá thể bên trong nhóm (Within-group variance): ICC(1) = sigma_between^2 / (sigma_between^2 + sigma_between^2 + sigma_within^2). ICC trả lời câu hỏi quyết định: 'Liệu có thực sự tồn tại hiệu ứng nhóm hay không và có cần thiết phải sử dụng mô hình đa cấp thay vì hồi quy OLS thông thường hay không?'.",
+      "seminal_citation": "Fisher, R. A. (1925). Statistical methods for research workers. Oliver & Boyd; Bliese, P. D. (2000). Within-group agreement, non-independence, and reliability: Implications for data aggregation and analysis. In K. J. Klein & S. W. J. Kozlowski (Eds.), Multilevel theory, research, and methods in organizations (pp. 349–381). Jossey-Bass.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #1379, #1380, #1381",
       "core_definition_en": "Academic definition of Intraclass Correlation Coefficient (ICC_rel) according to Shrout & Fleiss (1979).",
       "domain_tags_en": [
         "Inter-Rater Reliability"
-      ]
+      ],
+      "benchmarks": "Hệ thống ngưỡng quyết định của Bliese (2000) và LeBreton & Senter (2008): (1) ICC(1) > 0.05 (hoặc > 0.10) kết hợp với kiểm định ANOVA một chiều p < 0.05: Khẳng định sự tồn tại của hiệu ứng cụm có ý nghĩa, BẮT BUỘC phải dùng mô hình đa cấp (HLM/MSEM); nếu ICC(1) < 0.05, việc dùng OLS thông thường là an toàn; (2) Chỉ số ICC(2): Đo lường độ tin cậy của giá trị trung bình nhóm, ngưỡng chấp nhận bắt buộc ICC(2) >= 0.70 để được phép gom dữ liệu cá nhân thành biến cấp nhóm.",
+      "pitfalls": "Chạy mô hình hồi quy đa cấp phân tầng khi ICC(1) xấp xỉ bằng 0 (làm mô hình rơi vào tình trạng quá tham số và ma trận không xác định); gom dữ liệu cá nhân lên cấp nhóm (Aggregation) để chạy hồi quy OLS cấp nhóm mà không kiểm tra xem ICC(2) có đạt ngưỡng 0.70 hay không.",
+      "apa_reference": "Bliese, P. D. (2000). Within-group agreement, non-independence, and reliability: Implications for data aggregation and analysis. Jossey-Bass."
     },
     {
       "id": "intraclass-correlation-coefficient-icc-1",
@@ -22008,20 +22099,28 @@
     {
       "id": "lasso-regression-l1-regularization",
       "term": "LASSO Regression (L1 Regularization)",
-      "vietnamese": "Hồi quy LASSO",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Penalized Regression"
+      "vietnamese": "Hồi quy LASSO (Kỹ thuật Co cụm và Lựa chọn Biến L1 Tibshirani)",
+      "vietnamese_variants": [
+        "Hồi quy LASSO",
+        "L1 regularization feature selection"
       ],
-      "core_definition": "Áp dụng mức phạt tổng giá trị tuyệt đối giúp ép các hệ số không quan trọng về đúng 0 để chọn biến.",
-      "seminal_citation": "Tibshirani (1996)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Học máy & Kinh tế lượng",
+        "Lựa chọn Mô hình & Thuộc tính",
+        "Dữ liệu Số chiều Cao"
+      ],
+      "core_definition": "Phương pháp học máy và kinh tế lượng mang tính bước ngoặt do Robert Tibshirani (1996) phát minh (Least Absolute Shrinkage and Selection Operator - LASSO). Khác với Ridge (phạt bình phương L2), LASSO áp đặt hình phạt L1 dựa trên tổng giá trị tuyệt đối của các hệ số hồi quy: lambda * sum(|beta_j|). Nhờ hình học đặc thù của hình đa diện L1 (các đỉnh nhọn tiếp xúc với trục tọa độ), khi tham số phạt lambda đủ lớn, LASSO sẽ ÉP CHÍNH XÁC CÁC HỆ SỐ CỦA CÁC BIẾN KHÔNG QUAN TRỌNG VỀ ĐÚNG BẰNG 0. Nhờ đó, LASSO đồng thời thực hiện cả hai nhiệm vụ: Co cụm ước lượng và Lựa chọn tập biến tối ưu (Feature selection).",
+      "seminal_citation": "Tibshirani, R. (1996). Regression shrinkage and selection via the lasso. Journal of the Royal Statistical Society: Series B (Methodological), 58(1), 267–288. https://doi.org/10.1111/j.2517-6161.1996.tb02080.x; Hastie, T., Tibshirani, R., & Wainwright, M. (2015). Statistical learning with sparsity: The lasso and generalizations. CRC Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of LASSO Regression (L1 Regularization) according to Tibshirani (1996).",
       "domain_tags_en": [
         "Penalized Regression"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn lựa chọn lambda: Sử dụng 10-fold Cross-Validation và đối chiếu giữa hai tiêu chuẩn: (1) lambda_min (giá trị lambda tối thiểu hóa sai số CV); (2) lambda_1se (quy tắc 1 sai số chuẩn: chọn mô hình tiết kiệm nhất có sai số nằm trong vòng 1 sai số chuẩn của mức tối thiểu). Bắt buộc chuẩn hóa toàn bộ các biến độc lập trước khi ước lượng. Áp dụng Post-LASSO OLS (chạy lại OLS trên tập các biến được LASSO giữ lại) để loại bỏ độ chệch co cụm đối với các hệ số quan trọng.",
+      "pitfalls": "Khi có một nhóm biến có tương quan rất cao với nhau (Collinear group), LASSO có xu hướng chỉ chọn ngẫu nhiên một biến duy nhất trong nhóm và loại bỏ toàn bộ các biến còn lại (để giải quyết vấn đề này, bắt buộc dùng Elastic Net); khi số biến p lớn hơn nhiều cỡ mẫu n, LASSO chỉ chọn được tối đa n biến.",
+      "apa_reference": "Tibshirani, R. (1996). Regression shrinkage and selection via the lasso. Journal of the Royal Statistical Society: Series B, 58(1), 267–288."
     },
     {
       "id": "latent-class-analysis-lca",
@@ -23375,21 +23474,28 @@
     },
     {
       "id": "maturation-threat",
-      "term": "Maturation Threat",
-      "vietnamese": "Nguy cơ trưởng thành",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Internal Validity Threats"
+      "term": "Maturation Threat to Internal Validity",
+      "vietnamese": "Mối Nguy cơ Trưởng thành / Sinh học Đe dọa Độ giá trị Nội tại",
+      "vietnamese_variants": [
+        "Nguy cơ trưởng thành sinh học",
+        "Maturation threat"
       ],
-      "core_definition": "sự thay đổi tự nhiên về thể chất, tuổi tác hoặc tâm lý của đối tượng theo thời gian.",
-      "seminal_citation": "Campbell & Stanley (1963)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Độ giá trị Nội tại (Internal Validity)",
+        "Thiết kế Thực nghiệm"
+      ],
+      "core_definition": "Mối đe dọa đối với tính xác thực nhân quả phát sinh từ tất cả các tiến trình phát triển tự nhiên diễn ra bên trong các đối tượng nghiên cứu đơn thuần chỉ do dòng chảy của thời gian (chứ không phải do can thiệp thực nghiệm tạo ra). Các tiến trình trưởng thành bao gồm: sự lớn lên về thể chất và trí tuệ của trẻ em, sự già đi của người lớn, sự mệt mỏi, đói bụng, chán nản trong quá trình làm bài kiểm tra dài, hoặc sự tự thích nghi và tích lũy kinh nghiệm tự nhiên của nhân viên theo năm tháng làm việc.",
+      "seminal_citation": "Campbell, D. T., & Stanley, J. C. (1963). Experimental and quasi-experimental designs for research. Rand McNally; Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Maturation Threat according to Campbell & Stanley (1963).",
       "domain_tags_en": [
         "Internal Validity Threats"
-      ]
+      ],
+      "benchmarks": "Biện pháp kiểm soát: Bắt buộc sử dụng Nhóm đối chứng ngẫu nhiên (Control Group). Do các cá nhân trong nhóm đối chứng cũng trải qua tiến trình trưởng thành sinh học tự nhiên với tốc độ tương đương, sự khác biệt thuần túy giữa nhóm can thiệp và nhóm đối chứng ở lần đo sau (Post-test) sẽ bóc tách hoàn toàn hiệu ứng trưởng thành.",
+      "pitfalls": "Đánh giá hiệu quả của một chương trình giáo dục bổ trợ kéo dài 3 năm trên học sinh tiểu học mà không có nhóm đối chứng: Điểm số của học sinh tăng lên là do não bộ các em phát triển tự nhiên theo lứa tuổi chứ chưa chắc do chương trình bổ trợ mang lại.",
+      "apa_reference": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin."
     },
     {
       "id": "mauchlys-sphericity-test",
@@ -25629,20 +25735,28 @@
     {
       "id": "negative-binomial-regression",
       "term": "Negative Binomial Regression",
-      "vietnamese": "Hồi quy Nhị thức Âm xử lý dữ liệu đếm có hiện tượng phân tán quá mức (Overdispersion)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Econometrics"
+      "vietnamese": "Mô hình Hồi quy Nhị thức Âm (Xử lý Dữ liệu Đếm Phân tán Vượt mức)",
+      "vietnamese_variants": [
+        "Hồi quy nhị thức âm",
+        "Overdispersed count data model"
       ],
-      "core_definition": "Hồi quy Nhị thức Âm xử lý dữ liệu đếm có hiện tượng phân tán quá mức (Overdispersion).",
-      "seminal_citation": "Cameron & Trivedi (2013)",
-      "tier": "curated",
+      "domain_tags": [
+        "Kinh tế lượng Vi mô",
+        "Mô hình Dữ liệu Đếm",
+        "Mô hình Hồi quy Phi tuyến"
+      ],
+      "core_definition": "Mô hình hồi quy dữ liệu đếm mở rộng (Count data model) được Cameron & Trivedi (1986, 2013) hệ thống hóa nhằm khắc phục giả định nghiêm ngặt và phi thực tế của hồi quy Poisson: Giả định đẳng phân tán (Equidispersion: Phương sai của biến phụ thuộc bằng đúng Kỳ vọng trung bình Var(Y) = E(Y)). Trong dữ liệu thực tế (ví dụ: số lượng bằng sáng chế, số vụ tai nạn, số lần nhập viện), hiện tượng Phân tán Vượt mức (Overdispersion: Var(Y) > E(Y)) hầu như luôn luôn xảy ra do sự không đồng nhất chưa quan sát được giữa các cá thể. Hồi quy Nhị thức Âm giải quyết triệt để bằng cách đưa thêm một số hạng sai số ngẫu nhiên gamma phân tán vào phương trình kỳ vọng.",
+      "seminal_citation": "Cameron, A. C., & Trivedi, P. K. (1986). Econometric models based on count data: Comparisons and applications of some estimators and tests. Journal of Applied Econometrics, 1(1), 29–53. https://doi.org/10.1002/jae.3950010104; Cameron, A. C., & Trivedi, P. K. (2013). Regression analysis of count data (2nd ed.). Cambridge University Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Negative Binomial Regression according to Cameron & Trivedi (2013).",
       "domain_tags_en": [
         "Econometrics"
-      ]
+      ],
+      "benchmarks": "Kiểm định phân tán vượt mức bắt buộc: Đánh giá tham số phân tán alpha (Dispersion parameter): Nếu alpha > 0 và kiểm định tỷ số hợp lý (Likelihood-ratio test) p < 0.05, mô hình Poisson bị bác bỏ dứt khoát và Hồi quy Nhị thức Âm (NegBin II) là bắt buộc. Diễn giải hệ số dưới dạng Tỷ số Tỷ lệ Tác động (Incident Rate Ratios - IRR = exp(beta)): IRR cho biết khi biến X tăng 1 đơn vị, tần suất kỳ vọng của biến đếm Y thay đổi theo tỷ lệ nhân là bao nhiêu lần.",
+      "pitfalls": "Tiếp tục sử dụng mô hình hồi quy Poisson khi dữ liệu bị phân tán vượt mức nặng, dẫn đến sai số chuẩn bị tính thiếu hụt nghiêm trọng (Deflated standard errors) và các giá trị z/t bị thổi phồng tạo ra ý nghĩa thống kê giả tạo; bỏ qua hiện tượng quá nhiều số 0 (Excess zeros - khi đó phải dùng Zero-Inflated Negative Binomial - ZINB).",
+      "apa_reference": "Cameron, A. C., & Trivedi, P. K. (2013). Regression analysis of count data (2nd ed.). Cambridge University Press."
     },
     {
       "id": "negative-case-analysis",
@@ -29781,20 +29895,28 @@
     {
       "id": "quantile-regression",
       "term": "Quantile Regression",
-      "vietnamese": "Hồi quy phân vị ước lượng tác động của biến độc lập tại các phân vị khác nhau của biến phụ thuộc",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Econometrics"
+      "vietnamese": "Mô hình Hồi quy Phân vị (Hồi quy Koenker-Bassett)",
+      "vietnamese_variants": [
+        "Hồi quy phân vị",
+        "Quantile regression analysis"
       ],
-      "core_definition": "Hồi quy phân vị ước lượng tác động của biến độc lập tại các phân vị khác nhau của biến phụ thuộc.",
-      "seminal_citation": "Koenker & Bassett (1978)",
-      "tier": "curated",
+      "domain_tags": [
+        "Kinh tế lượng Nâng cao",
+        "Phân tích Phân phối Bất đối xứng",
+        "Hồi quy Phi tham số"
+      ],
+      "core_definition": "Phương pháp hồi quy bán tham số mang tính đột phá do Roger Koenker và Gilbert Bassett Jr. (1978) phát minh nhằm khắc phục hạn chế lớn của hồi quy OLS truyền thống (vốn chỉ ước lượng tác động trung bình có điều kiện E[Y|X]). Hồi quy phân vị ước lượng mối quan hệ giữa biến độc lập và biến phụ thuộc tại BẤT KỲ PHÂN VỊ CỤ THỂ NÀO của phân phối (ví dụ: phân vị thứ 10, 25, 50 - trung vị, 75, 90). Phương pháp này đặc biệt mạnh mẽ khi dữ liệu có phân phối lệch, có nhiều điểm dị biệt (Outliers) hoặc khi tác động của chính sách là không đồng nhất (Heterogeneous effects) giữa các nhóm thu nhập thấp, trung bình và cao.",
+      "seminal_citation": "Koenker, R., & Bassett, G. (1978). Regression quantiles. Econometrica, 46(1), 33–50. https://doi.org/10.2307/1913643; Koenker, R. (2005). Quantile regression. Cambridge University Press. https://doi.org/10.1017/CBO9780511754098",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Quantile Regression according to Koenker & Bassett (1978).",
       "domain_tags_en": [
         "Econometrics"
-      ]
+      ],
+      "benchmarks": "Đánh giá quy trình: (1) Hồi quy đồng thời trên nhiều phân vị (Simultaneous interquantile regression, ví dụ tau = 0.10, 0.25, 0.50, 0.75, 0.90); (2) Kiểm định Wald xem hệ số tác động tại các phân vị có khác biệt có ý nghĩa thống kê với nhau hay không (Kiểm định tính không đồng nhất của hệ số); (3) Vẽ đồ thị tham số phân vị (Quantile coefficient plot) hiển thị sự biến thiên của hệ số kèm dải khoảng tin cậy 95% bootstrap so sánh với đường nằm ngang của OLS.",
+      "pitfalls": "Diễn giải sai khái niệm 'phân vị': Nhầm lẫn giữa việc phân vị hóa biến phụ thuộc Y (đúng chuẩn toán học) với việc chia mẫu thủ công theo biến độc lập X (sai lầm gây thiên lệch chọn mẫu); ước lượng từng phân vị riêng lẻ mà không dùng phương pháp kiểm định đồng thời để kiểm tra chéo ma trận hiệp phương sai.",
+      "apa_reference": "Koenker, R., & Bassett, G. (1978). Regression quantiles. Econometrica, 46(1), 33–50."
     },
     {
       "id": "quantitative-hypotheses",
@@ -31351,20 +31473,28 @@
     {
       "id": "ridge-regression-l2-regularization",
       "term": "Ridge Regression (L2 Regularization)",
-      "vietnamese": "Hồi quy Ridge",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Penalized Regression"
+      "vietnamese": "Hồi quy Ridge (Kỹ thuật Hiệu chỉnh Ràng buộc L2 Hoerl-Kennard)",
+      "vietnamese_variants": [
+        "Hồi quy Ridge L2",
+        "Hoerl-Kennard ridge shrinkage"
       ],
-      "core_definition": "Áp dụng mức phạt tổng bình phương các hệ số nhằm kiểm soát đa cộng tuyến nghiêm trọng.",
-      "seminal_citation": "Hoerl & Kennard (1970)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Học máy & Kinh tế lượng",
+        "Kiểm soát Đa cộng tuyến",
+        "Đánh đổi Độ chệch - Phương sai"
+      ],
+      "core_definition": "Kỹ thuật hồi quy hiệu chỉnh co cụm (Regularized shrinkage regression) do Arthur Hoerl và Robert Kennard (1970) sáng lập để giải quyết triệt để vấn đề Đa cộng tuyến nghiêm trọng hoặc khi số lượng biến giải thích p lớn xấp xỉ kích thước mẫu n. Khi ma trận X'X gần như suy biến (sắp bằng 0), phương sai của ước lượng OLS bùng nổ tiến tới vô cùng. Hồi quy Ridge khắc phục bằng cách cộng thêm một đại lượng phạt L2 (L2 Penalty) tỷ lệ thuận với tổng bình phương của các hệ số hồi quy (lambda * sum(beta_j^2)) vào hàm mất mát tối thiểu hóa.",
+      "seminal_citation": "Hoerl, A. E., & Kennard, R. W. (1970). Ridge regression: Biased estimation for nonorthogonal problems. Technometrics, 12(1), 55–67. https://doi.org/10.1080/00401706.1970.10488634",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Ridge Regression (L2 Regularization) according to Hoerl & Kennard (1970).",
       "domain_tags_en": [
         "Penalized Regression"
-      ]
+      ],
+      "benchmarks": "Đánh đổi độ chệch - phương sai (Bias-Variance Tradeoff): Ridge cố tình chấp nhận một độ chệch nhỏ (small bias) để giảm thiểu một lượng phương sai cực lớn của ước lượng, nhờ đó Sai số toàn phương trung bình dự báo (MSE) giảm xuống rõ rệt. Lựa chọn tham số điều chỉnh tối ưu lambda thông qua kỹ thuật Kiểm thực Chéo (K-fold Cross-Validation, thường 10-fold CV) tại điểm cực tiểu của đường cong MSE. Điểm lưu ý: Ridge co cụm các hệ số về gần 0 nhưng TUYỆT ĐỐI KHÔNG BAO GIỜ triệt tiêu hệ số về đúng bằng 0 (không có chức năng chọn lọc biến).",
+      "pitfalls": "Không chuẩn hóa dữ liệu trước khi chạy Ridge: Vì hàm phạt L2 phụ thuộc vào độ lớn của hệ số beta_j, nếu các biến không được chuẩn hóa về cùng thang đo (Mean = 0, SD = 1), biến có đơn vị đo lớn sẽ bị phạt oan ức một cách vô lý; kỳ vọng Ridge sẽ loại bỏ các biến không quan trọng (muốn chọn lọc biến bắt buộc phải dùng LASSO).",
+      "apa_reference": "Hoerl, A. E., & Kennard, R. W. (1970). Ridge regression: Biased estimation for nonorthogonal problems. Technometrics, 12(1), 55–67."
     },
     {
       "id": "right-censoring-vs-left-censoring",
@@ -32338,21 +32468,28 @@
     },
     {
       "id": "selection-threat",
-      "term": "Selection Threat",
-      "vietnamese": "Nguy cơ chọn mẫu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Internal Validity Threats"
+      "term": "Selection Threat to Internal Validity",
+      "vietnamese": "Mối Nguy cơ Thiên lệch Lựa chọn Đe dọa Độ giá trị Nội tại",
+      "vietnamese_variants": [
+        "Nguy cơ thiên lệch chọn mẫu thực nghiệm",
+        "Selection bias threat"
       ],
-      "core_definition": "các nhóm so sánh có đặc điểm nền tảng khác biệt nhau ngay từ trước khi can thiệp bắt đầu.",
-      "seminal_citation": "Campbell & Stanley (1963)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Độ giá trị Nội tại (Internal Validity)",
+        "Thiết kế Thực nghiệm & Bán thực nghiệm"
+      ],
+      "core_definition": "Mối đe dọa nguy hiểm và phổ biến bậc nhất đối với độ giá trị nội tại: Xuất hiện khi tồn tại sự khác biệt mang tính hệ thống về các đặc tính cá nhân hoặc động lực nội tại giữa các đối tượng trong nhóm can thiệp và nhóm đối chứng NGAY TỪ TRƯỚC KHI can thiệp thực nghiệm bắt đầu. Khi việc phân bổ vào các nhóm không phải là ngẫu nhiên (ví dụ: cho phép người tham gia tự do lựa chọn tham gia lớp học tập huấn hay không), nhóm tự nguyện tham gia thường vốn đã có ý thức, động lực và trình độ cao hơn sẵn có, dẫn đến việc nhầm lẫn ưu thế vốn có này với hiệu quả của chương trình.",
+      "seminal_citation": "Campbell, D. T., & Stanley, J. C. (1963). Experimental and quasi-experimental designs for research. Rand McNally; Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Selection Threat according to Campbell & Stanley (1963).",
       "domain_tags_en": [
         "Internal Validity Threats"
-      ]
+      ],
+      "benchmarks": "Biện pháp kiểm soát tối thượng: Phân bổ ngẫu nhiên hoàn toàn (Random Assignment / RCT) để đảm bảo hai nhóm tương đương nhau về mọi đặc tính quan sát được và chưa quan sát được trước can thiệp. Trong các nghiên cứu bán thực nghiệm (Quasi-experiments) không thể phân bổ ngẫu nhiên, bắt buộc phải dùng các kỹ thuật kinh tế lượng hiệu chỉnh như Propensity Score Matching (PSM), Difference-in-Differences (DiD), hoặc Hồi quy Gián đoạn (RDD).",
+      "pitfalls": "So sánh kết quả của một nhóm tự nguyện đăng ký tham gia chính sách với một nhóm không tham gia mà không hiệu chỉnh thiên lệch chọn mẫu; ngộ nhận rằng việc kiểm soát vài biến nhân khẩu học trong hồi quy OLS là đã triệt tiêu hoàn toàn Selection Threat.",
+      "apa_reference": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin."
     },
     {
       "id": "selective-coding",
@@ -33528,20 +33665,27 @@
     {
       "id": "spatial-durbin-model-sdm",
       "term": "Spatial Durbin Model (SDM)",
-      "vietnamese": "Mô hình Spatial Durbin",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Spatial Econometrics"
+      "vietnamese": "Mô hình Không gian Durbin (Mô hình SDM Tràn Không gian)",
+      "vietnamese_variants": [
+        "Mô hình SDM",
+        "Spatial Durbin econometrics model"
       ],
-      "core_definition": "Bao gồm độ trễ không gian của cả biến phụ thuộc và các biến độc lập.",
-      "seminal_citation": "LeSage & Pace (2009)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng Không gian",
+        "Hiệu ứng Lan tỏa Không gian (Spatial Spillovers)"
+      ],
+      "core_definition": "Mô hình kinh tế lượng không gian chuẩn tắc và toàn diện nhất do James LeSage và R. Kelley Pace (2009) chuẩn hóa. SDM đồng thời tích hợp cả hai kênh lan tỏa không gian: (1) Độ trễ không gian của biến phụ thuộc (Spatial lag of Y: W*Y - hành vi của các địa phương lân cận ảnh hưởng đến địa phương chủ quản); (2) Độ trễ không gian của các biến độc lập (Spatial lag of X: W*X - các đặc tính kinh tế của lân cận ảnh hưởng đến kết quả của địa phương chủ quản). SDM là mô hình duy nhất tạo ra các ước lượng không thiên lệch ngay cả khi mô hình thực sự là SAR (Spatial Autoregressive) hoặc SEM (Spatial Error Model).",
+      "seminal_citation": "Anselin, L. (1988). Spatial econometrics: Methods and models. Kluwer Academic Publishers; LeSage, J., & Pace, R. K. (2009). Introduction to spatial econometrics. CRC Press. https://doi.org/10.1201/9781420064254",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Spatial Durbin Model (SDM) according to LeSage & Pace (2009).",
       "domain_tags_en": [
         "Spatial Econometrics"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn phân tách hiệu ứng LeSage & Pace (2009): Tuyệt đối KHÔNG giải thích trực tiếp hệ số hồi quy của mô hình không gian do có vòng phản hồi lặp lại (Feedback loops). Bắt buộc phải tính toán và báo cáo 3 đại lượng: (1) Tác động trực tiếp (Direct Effect: X của địa phương tác động lên Y của chính địa phương đó); (2) Tác động gián tiếp / Hiệu ứng tràn (Indirect Effect / Spillover: X của các địa phương lân cận tràn sang tác động lên Y của địa phương này); (3) Tổng tác động (Total Effect = Direct + Indirect).",
+      "pitfalls": "Giải thích hệ số hồi quy của mô hình SDM như hồi quy OLS thông thường mà không phân tách Direct/Indirect effects; áp đặt ma trận trọng số không gian W tùy tiện mà không chạy kiểm định độ nhạy với các ma trận khoảng cách địa lý (Inverse distance), ma trận k láng giềng gần nhất (k-nearest neighbors) hoặc ma trận khoảng cách kinh tế.",
+      "apa_reference": "LeSage, J., & Pace, R. K. (2009). Introduction to spatial econometrics. CRC Press."
     },
     {
       "id": "spatial-error-model-sem-spatial",
@@ -35436,20 +35580,27 @@
     {
       "id": "testing-threat-practice-effects",
       "term": "Testing Threat (Practice Effects)",
-      "vietnamese": "Nguy cơ kiểm tra lặp",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Internal Validity Threats"
+      "vietnamese": "Mối Nguy cơ Kiểm tra Lặp lại (Hiệu ứng Luyện tập Testing Threat)",
+      "vietnamese_variants": [
+        "Hiệu ứng luyện tập thực nghiệm",
+        "Practice effect threat"
       ],
-      "core_definition": "việc đã làm bài kiểm tra trước giúp đối tượng quen bài và đạt điểm cao hơn ở bài sau.",
-      "seminal_citation": "Campbell & Stanley (1963)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Độ giá trị Nội tại (Internal Validity)",
+        "Đo lường Lặp lại"
+      ],
+      "core_definition": "Mối đe dọa nhân quả nảy sinh từ việc đối tượng nghiên cứu được làm bài kiểm tra hoặc trả lời bảng hỏi nhiều lần: Việc đã từng làm bài kiểm tra ở lần đo trước (Pre-test) giúp đối tượng trở nên quen thuộc với dạng đề, học được các mẹo làm bài, giảm bớt lo âu hoặc ghi nhớ câu hỏi, dẫn đến điểm số ở lần đo sau (Post-test) tự động tăng lên đơn thuần do 'Hiệu ứng luyện tập' (Practice effects / Test-retest sensitization) chứ không phải do can thiệp đào tạo mang lại.",
+      "seminal_citation": "Solomon, R. L. (1949). An extension of control group design. Psychological Bulletin, 46(2), 137–150. https://doi.org/10.1037/h0062958; Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Testing Threat (Practice Effects) according to Campbell & Stanley (1963).",
       "domain_tags_en": [
         "Internal Validity Threats"
-      ]
+      ],
+      "benchmarks": "Biện pháp kiểm soát chuẩn mực phương pháp luận: Thiết kế 4 nhóm Solomon (Solomon Four-Group Design): Bố trí đồng thời 2 nhóm có đo trước (1 nhóm can thiệp, 1 nhóm đối chứng) và 2 nhóm HOÀN TOÀN KHÔNG ĐO TRƯỚC (1 nhóm can thiệp, 1 nhóm đối chứng). Thiết kế này cho phép bóc tách toán học chính xác 3 hiệu ứng độc lập: Tác động của can thiệp, Tác động của bài đo trước, và Tác động tương tác giữa đo trước và can thiệp.",
+      "pitfalls": "Dùng nguyên xi một bài kiểm tra IQ hoặc bài test kỹ năng giống hệt nhau cho cả hai lần đo cách nhau thời gian ngắn (ví dụ 1-2 tuần); không kiểm tra sự nhạy cảm của bảng hỏi thái độ khi việc hỏi trước làm đối tượng chú ý và thay đổi hành vi.",
+      "apa_reference": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin."
     },
     {
       "id": "text-recycling-self-plagiarism",
@@ -36165,21 +36316,30 @@
     },
     {
       "id": "tobit-model",
-      "term": "Tobit Model",
-      "vietnamese": "Mô hình Tobit cho dữ liệu bị cắt cụt",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Microeconometrics"
+      "term": "Tobit Model (Censored Regression Model)",
+      "vietnamese": "Mô hình Hồi quy Tobit (Mô hình Dữ liệu Bị cắt cụt Tobin)",
+      "vietnamese_variants": [
+        "Mô hình Tobit",
+        "Censored regression model",
+        "Mô hình Tobin"
       ],
-      "core_definition": "Censored regression model.",
-      "seminal_citation": "Tobin (1958)",
-      "tier": "curated",
+      "domain_tags": [
+        "Kinh tế lượng Vi mô",
+        "Mô hình Biến phụ thuộc Giới hạn",
+        "Ước lượng Hợp lý Cực đại"
+      ],
+      "core_definition": "Mô hình kinh tế lượng đoạt giải Nobel do James Tobin (1958) sáng lập để xử lý các biến phụ thuộc bị giới hạn hoặc bị cắt cụt (Censored / Truncated dependent variables), trong đó dữ liệu có một khối lượng lớn quan sát tập trung tại một giá trị ngưỡng (thường là số 0, ví dụ: chi tiêu cho hàng xa xỉ, số tiền quyên góp từ thiện, chi phí R&D của doanh nghiệp). Khác với OLS (ước lượng OLS trên toàn mẫu hoặc chỉ trên mẫu dương sẽ bị chệch nghiêm trọng), Tobit kết hợp đồng thời xác suất một quan sát vượt qua ngưỡng 0 (cơ chế Probit) và mức độ tiêu dùng thực tế (hồi quy tuyến tính) thông qua phương pháp Ước lượng Cực đại Hợp lý (MLE).",
+      "seminal_citation": "Tobin, J. (1958). Estimation of relationships for generalized limited dependent variables. Econometrica, 26(1), 24–36. https://doi.org/10.2307/1907382; McDonald, J. F., & Moffitt, R. A. (1980). The uses of Tobit analysis. The Review of Economics and Statistics, 62(2), 318–321. https://doi.org/10.2307/1924766",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Tobit Model according to Tobin (1958).",
       "domain_tags_en": [
         "Microeconometrics"
-      ]
+      ],
+      "benchmarks": "Phân rã McDonald-Moffitt (1980) bắt buộc: Khi giải thích kết quả, tác giả không được dùng hệ số thô beta của Tobit, mà bắt buộc phải phân rã hiệu ứng biên (Marginal Effect) thành hai thành phần độc lập: (1) Thay đổi xác suất tham gia vào thị trường P(Y > 0); (2) Thay đổi trong mức độ tiêu dùng của những người đã tham gia E(Y | Y > 0). Kiểm định tính chuẩn và phương sai đồng nhất của sai số (nếu vi phạm giả định này, MLE của Tobit sẽ bị chệch không nhất quán, khi đó bắt buộc dùng CLAD - Censored Least Absolute Deviations hoặc Mô hình Hai phần Two-Part Model).",
+      "pitfalls": "Ước lượng OLS trên mẫu đã loại bỏ các quan sát bằng 0 (Truncated sample OLS) - điều này gây ra thiên lệch chọn mẫu nghiêm trọng; ngộ nhận rằng hệ số hồi quy của Tobit chính là hiệu ứng biên trực tiếp như OLS thông thường.",
+      "apa_reference": "Tobin, J. (1958). Estimation of relationships for generalized limited dependent variables. Econometrica, 26(1), 24–36."
     },
     {
       "id": "top-labeled-grid-vs-fully-labeled-grid",
@@ -38050,20 +38210,28 @@
     {
       "id": "westerlund-panel-cointegration-test",
       "term": "Westerlund Panel Cointegration Test",
-      "vietnamese": "Kiểm định Đồng tích hợp Bảng Westerlund",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Panel Data Econometrics"
+      "vietnamese": "Kiểm định Đồng liên kết Bảng Westerlund (Kiểm định Hiệu chỉnh Sai số)",
+      "vietnamese_variants": [
+        "Kiểm định Westerlund",
+        "Westerlund ECM panel cointegration"
       ],
-      "core_definition": "Dựa trên cấu trúc hiệu chỉnh sai số không áp đặt ràng buộc nhân tố.",
-      "seminal_citation": "Westerlund (2007)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng Dữ liệu Bảng",
+        "Đồng liên kết Dữ liệu Bảng",
+        "Chuỗi thời gian Bảng"
+      ],
+      "core_definition": "Phép kiểm định đồng liên kết dữ liệu bảng hiện đại thế hệ thứ hai do Joakim Westerlund (2007) phát triển trên Oxford Bulletin of Economics and Statistics. Khắc phục hạn chế lớn của các kiểm định thế hệ một (Pedroni, Kao - vốn dựa trên phần dư tĩnh và giả định các đơn vị độc lập), Westerlund dựa trên cấu trúc Mô hình Hiệu chỉnh Sai số (Error Correction Model) để kiểm tra xem hệ số hiệu chỉnh sai số có thực sự âm và có ý nghĩa thống kê hay không. Westerlund có khả năng kiểm soát hiện tượng Phụ thuộc chéo giữa các đơn vị (Cross-sectional dependence) thông qua kỹ thuật Bootstrap phân phối.",
+      "seminal_citation": "Westerlund, J. (2007). Testing for error correction in panel data. Oxford Bulletin of Economics and Statistics, 69(6), 709–748. https://doi.org/10.1111/j.1468-0084.2007.00477.x",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Westerlund Panel Cointegration Test according to Westerlund (2007).",
       "domain_tags_en": [
         "Panel Data Econometrics"
-      ]
+      ],
+      "benchmarks": "Hệ thống 4 thống kê kiểm định: (1) Hai thống kê nhóm (Group-mean statistics: G_tau, G_alpha): Giả định ít nhất một đơn vị chéo có đồng liên kết; (2) Hai thống kê toàn thể (Panel statistics: P_tau, P_alpha): Giả định toàn bộ bảng có đồng liên kết. Tiêu chuẩn vàng: Khi dữ liệu bảng có phụ thuộc chéo, BẮT BUỘC sử dụng giá trị p-value Bootstrap (Robust bootstrap p-value). Nếu p-value < 0.05, bác bỏ giả thuyết H0 (không có đồng liên kết), khẳng định tồn tại mối quan hệ cân bằng dài hạn vững chắc giữa các biến.",
+      "pitfalls": "Chỉ dựa vào giá trị p-value tiệm cận chuẩn thông thường khi bảng dữ liệu có phụ thuộc chéo giữa các quốc gia hoặc doanh nghiệp; việc bỏ qua phụ thuộc chéo làm sai lệch nghiêm trọng phân phối kiểm định và dẫn đến kết luận sai về đồng liên kết.",
+      "apa_reference": "Westerlund, J. (2007). Testing for error correction in panel data. Oxford Bulletin of Economics and Statistics, 69(6), 709–748."
     },
     {
       "id": "wharton-research-data-services-wrds",
