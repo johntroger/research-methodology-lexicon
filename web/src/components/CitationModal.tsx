@@ -14,14 +14,21 @@ interface CitationModalProps {
   term: MethodologyTerm;
   isOpen: boolean;
   onClose: () => void;
+  languageMode?: "vi" | "en";
 }
 
-export default function CitationModal({ term, isOpen, onClose }: CitationModalProps) {
+export default function CitationModal({
+  term,
+  isOpen,
+  onClose,
+  languageMode = "vi"
+}: CitationModalProps) {
   const [activeTab, setActiveTab] = useState<"apa" | "bibtex">("apa");
   const [copiedType, setCopiedType] = useState<string | null>(null);
 
   if (!isOpen) return null;
 
+  const isEn = languageMode === "en";
   const inText = getAPAInText(term);
   const apaRef = getAPAReference(term);
   const bibtex = generateBibTeX(term);
@@ -40,7 +47,7 @@ export default function CitationModal({ term, isOpen, onClose }: CitationModalPr
           <div className="flex items-center gap-2">
             <BookMarked className="text-blue-600" size={20} />
             <h3 className="font-bold text-base sm:text-lg text-slate-900 dark:text-white">
-              Xuất Trích Dẫn Học Thuật (Citation)
+              {isEn ? "Export Academic Citation" : "Xuất Trích Dẫn Học Thuật (Citation)"}
             </h3>
           </div>
           <button
@@ -61,7 +68,7 @@ export default function CitationModal({ term, isOpen, onClose }: CitationModalPr
                 : "border-transparent text-slate-500 hover:text-slate-700"
             }`}
           >
-            Chuẩn APA 7th (Word / PDF)
+            {isEn ? "APA 7th Format (Word / PDF)" : "Chuẩn APA 7th (Word / PDF)"}
           </button>
           <button
             onClick={() => setActiveTab("bibtex")}
@@ -71,7 +78,7 @@ export default function CitationModal({ term, isOpen, onClose }: CitationModalPr
                 : "border-transparent text-slate-500 hover:text-slate-700"
             }`}
           >
-            <Code2 size={13} /> BibTeX (LaTeX / Overleaf)
+            <Code2 size={13} /> {isEn ? "BibTeX (LaTeX / Overleaf)" : "BibTeX (LaTeX / Overleaf)"}
           </button>
         </div>
 
@@ -82,13 +89,13 @@ export default function CitationModal({ term, isOpen, onClose }: CitationModalPr
               {/* In-text citation */}
               <div className="space-y-1.5">
                 <div className="flex items-center justify-between text-xs font-bold text-slate-500 uppercase tracking-wider">
-                  <span>Trích dẫn trong bài (In-text citation)</span>
+                  <span>{isEn ? "In-Text Citation" : "Trích dẫn trong bài (In-text citation)"}</span>
                   <button
                     onClick={() => handleCopy(inText, "intext")}
                     className="text-blue-600 hover:text-blue-700 dark:text-blue-400 flex items-center gap-1 font-normal lowercase"
                   >
                     {copiedType === "intext" ? <Check size={13} className="text-green-600" /> : <Copy size={13} />}
-                    {copiedType === "intext" ? "Đã chép" : "Copy"}
+                    {copiedType === "intext" ? (isEn ? "Copied" : "Đã chép") : "Copy"}
                   </button>
                 </div>
                 <div className="p-3 bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700 font-serif text-slate-800 dark:text-slate-200 text-sm select-all">
@@ -99,13 +106,13 @@ export default function CitationModal({ term, isOpen, onClose }: CitationModalPr
               {/* Full Bibliography */}
               <div className="space-y-1.5">
                 <div className="flex items-center justify-between text-xs font-bold text-slate-500 uppercase tracking-wider">
-                  <span>Danh mục Tài liệu tham khảo (APA 7th Reference)</span>
+                  <span>{isEn ? "References List Entry (APA 7th)" : "Danh mục Tài liệu tham khảo (APA 7th Reference)"}</span>
                   <button
                     onClick={() => handleCopy(apaRef, "aparef")}
                     className="text-blue-600 hover:text-blue-700 dark:text-blue-400 flex items-center gap-1 font-normal lowercase"
                   >
                     {copiedType === "aparef" ? <Check size={13} className="text-green-600" /> : <Copy size={13} />}
-                    {copiedType === "aparef" ? "Đã chép" : "Copy"}
+                    {copiedType === "aparef" ? (isEn ? "Copied" : "Đã chép") : "Copy"}
                   </button>
                 </div>
                 <div className="p-3.5 bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700 font-serif text-slate-800 dark:text-slate-200 text-sm leading-relaxed pl-7 -indent-5 select-all">
@@ -116,13 +123,13 @@ export default function CitationModal({ term, isOpen, onClose }: CitationModalPr
           ) : (
             <div className="space-y-1.5">
               <div className="flex items-center justify-between text-xs font-bold text-slate-500 uppercase tracking-wider">
-                <span>Mã nguồn BibTeX</span>
+                <span>{isEn ? "BibTeX Source Code" : "Mã nguồn BibTeX"}</span>
                 <button
                   onClick={() => handleCopy(bibtex, "bibtex")}
                   className="text-blue-600 hover:text-blue-700 dark:text-blue-400 flex items-center gap-1 font-normal lowercase"
                 >
                   {copiedType === "bibtex" ? <Check size={13} className="text-green-600" /> : <Copy size={13} />}
-                  {copiedType === "bibtex" ? "Đã chép" : "Copy"}
+                  {copiedType === "bibtex" ? (isEn ? "Copied" : "Đã chép") : "Copy"}
                 </button>
               </div>
               <pre className="p-3.5 bg-slate-900 text-slate-200 rounded-xl text-xs font-mono leading-relaxed overflow-x-auto">
@@ -135,20 +142,20 @@ export default function CitationModal({ term, isOpen, onClose }: CitationModalPr
         {/* Footer actions */}
         <div className="p-4 bg-slate-50/80 dark:bg-slate-850 border-t border-slate-200 dark:border-slate-800 flex flex-wrap items-center justify-between gap-2 text-xs">
           <span className="text-slate-500">
-            Hỗ trợ Zotero, Mendeley, EndNote & Overleaf
+            {isEn ? "Supports Zotero, Mendeley, EndNote & Overleaf" : "Hỗ trợ Zotero, Mendeley, EndNote & Overleaf"}
           </span>
           <div className="flex items-center gap-2">
             <button
               onClick={() => downloadRISFile(term)}
               className="px-3 py-1.5 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg font-medium hover:bg-slate-50 transition flex items-center gap-1.5 text-slate-700 dark:text-slate-300 shadow-xs"
             >
-              <Download size={13} /> Tải file .RIS (Zotero)
+              <Download size={13} /> {isEn ? "Download .RIS (Zotero)" : "Tải file .RIS (Zotero)"}
             </button>
             <button
               onClick={onClose}
               className="px-3.5 py-1.5 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition"
             >
-              Xong
+              {isEn ? "Done" : "Xong"}
             </button>
           </div>
         </div>

@@ -5,6 +5,7 @@ export const CorpusVariantSchema = z.object({
   vn: z.string(),
   rel: z.string().optional(),
   src: z.string().optional(),
+  rel_en: z.string().optional(),
 });
 
 export const MethodologyTermSchema = z.object({
@@ -29,14 +30,24 @@ export const MethodologyTermSchema = z.object({
   apa_reference: z.string().optional().default(""),
   corpus_variants: z.array(CorpusVariantSchema).optional().default([]),
   related_terms: z.array(z.string()).optional().default([]),
-});
+  // English Monolingual Fields
+  core_definition_en: z.string().optional(),
+  benchmarks_en: z.string().optional(),
+  pitfalls_en: z.string().optional(),
+  paradigm_debates_en: z.string().optional(),
+  domain_tags_en: z.array(z.string()).optional(),
+}).passthrough();
 
 export const AcademicAcronymSchema = z.object({
   full_name: z.string(),
   vietnamese: z.string(),
   purpose: z.string(),
   benchmark: z.string().optional().default(""),
-});
+  domain: z.string().optional(),
+  purpose_en: z.string().optional(),
+  benchmark_en: z.string().optional(),
+  domain_en: z.string().optional(),
+}).passthrough();
 
 export const LexiconDatasetSchema = z.object({
   version: z.string().optional().default("1.0.0"),

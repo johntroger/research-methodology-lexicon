@@ -8,6 +8,7 @@ export interface CorpusVariant {
   vn: string;            // Bản dịch tiếng Việt
   rel?: string;           // Mối quan hệ logic hoặc điều kiện ngưỡng
   src?: string;           // Nguồn trích dẫn (ví dụ: Hair et al. 2018)
+  rel_en?: string;        // Mối quan hệ bằng tiếng Anh
 }
 
 /**
@@ -35,6 +36,12 @@ export interface MethodologyTerm {
   apa_reference?: string;                    // Tài liệu tham khảo hoàn chỉnh chuẩn APA 7th
   corpus_variants?: CorpusVariant[];         // Các thuật ngữ con / nhánh đo lường trực thuộc
   related_terms?: string[];                  // Các ID thuật ngữ liên quan
+  // Các trường tiếng Anh cho phiên bản Anh - Anh thuần túy (Monolingual English)
+  core_definition_en?: string;
+  paradigm_debates_en?: string;
+  benchmarks_en?: string;
+  pitfalls_en?: string;
+  domain_tags_en?: string[];
 }
 
 /**
@@ -45,6 +52,11 @@ export interface AcademicAcronym {
   vietnamese: string;                        // Tên dịch tiếng Việt
   purpose: string;                           // Mục đích & bản chất trong nghiên cứu
   benchmark?: string;                        // Ngưỡng định lượng tham chiếu
+  domain?: string;                           // Lĩnh vực chuyên môn
+  // Các trường tiếng Anh cho phiên bản Anh - Anh
+  purpose_en?: string;
+  benchmark_en?: string;
+  domain_en?: string;
 }
 
 /**
@@ -59,4 +71,6 @@ export interface SearchItem {
   domain: string;                            // Chuyên ngành / Lĩnh vực
   snippet: string;                           // Trích đoạn tóm tắt ngắn
   acronym_key?: string;                      // Khóa viết tắt (nếu là acronym)
+  snippet_en?: string;
+  domain_en?: string;
 }

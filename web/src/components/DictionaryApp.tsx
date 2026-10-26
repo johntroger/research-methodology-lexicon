@@ -32,13 +32,25 @@ import {
   LogIn,
   LogOut,
   MessageSquarePlus,
-  User as UserIcon
+  User as UserIcon,
+  Globe
 } from "lucide-react";
 import { MethodologyTerm, AcademicAcronym, SearchItem } from "@/lib/types";
 import { getSearchEngine, SearchOutputItem } from "@/lib/search-engine";
 import { speakAcademicTerm } from "@/lib/speech-helper";
 import CitationModal from "./CitationModal";
 import { FeedbackModal } from "./FeedbackModal";
+import {
+  UI_I18N,
+  getTermDefinition,
+  getTermBenchmarks,
+  getTermPitfalls,
+  getTermDebates,
+  getTermDomainTags,
+  getAcronymPurpose,
+  getAcronymBenchmark,
+  getAcronymDomain
+} from "@/lib/monolingual-academic-data";
 import { 
   loginWithGoogle, 
   logoutUser, 
@@ -73,14 +85,25 @@ export default function DictionaryApp({
   const [isCitationModalOpen, setIsCitationModalOpen] = useState(false);
   const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
   
+  // Phiên bản ngôn ngữ: 'vi' (Anh - Việt) hoặc 'en' (Anh - Anh thuần túy)
+  const [languageMode, setLanguageMode] = useState<"vi" | "en">("vi");
+  const t = UI_I18N[languageMode];
+
   // Firebase Auth & Cloud Bookmarks
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [bookmarks, setBookmarks] = useState<string[]>([]);
   const [authLoading, setAuthLoading] = useState(false);
 
-  // Lắng nghe trạng thái đăng nhập và tải Bookmarks
+  // Lắng nghe trạng thái đăng nhập và tải Bookmarks & Ngôn ngữ đã lưu
   useEffect(() => {
     fetchUserBookmarks().then((bks) => setBookmarks(bks));
+
+    if (typeof window !== "undefined") {
+      const savedLang = localStorage.getItem("rv_lexicon_mode");
+      if (savedLang === "en" || savedLang === "vi") {
+        setLanguageMode(savedLang);
+      }
+    }
 
     const unsubscribe = subscribeToAuth((user) => {
       setCurrentUser(user);
@@ -90,6 +113,16 @@ export default function DictionaryApp({
     });
     return () => unsubscribe();
   }, []);
+
+  const handleToggleLanguage = (mode: "vi" | "en") => {
+    setLanguageMode(mode);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("rv_lexicon_mode", mode);
+      const currentUrl = new URL(window.location.href);
+      currentUrl.searchParams.set("lang", mode);
+      window.history.replaceState(null, "", currentUrl.toString());
+    }
+  };
 
   const handleToggleBookmark = async (termId: string) => {
     const updated = await toggleUserBookmark(termId, bookmarks, currentUser?.uid);
@@ -136,13 +169,17 @@ export default function DictionaryApp({
       const params = new URLSearchParams(window.location.search);
       const termParam = params.get("term");
       const qParam = params.get("q");
+      const langParam = params.get("lang");
+
+      if (langParam === "en" || langParam === "vi") {
+        setLanguageMode(langParam);
+      }
 
       if (qParam) {
         setSearchQuery(qParam);
       }
 
       if (termParam) {
-        // Kiểm tra xem term có tồn tại trong danh sách không
         const exists =
           initialTerms.some((t) => t.id === termParam) ||
           Object.keys(initialAcronyms).some(
@@ -160,6 +197,7 @@ export default function DictionaryApp({
     if (typeof window !== "undefined" && selectedId) {
       const currentUrl = new URL(window.location.href);
       currentUrl.searchParams.set("term", selectedId);
+      currentUrl.searchParams.set("lang", languageMode);
       if (searchQuery) {
         currentUrl.searchParams.set("q", searchQuery);
       } else {
@@ -167,9 +205,9 @@ export default function DictionaryApp({
       }
       window.history.replaceState(null, "", currentUrl.toString());
     }
-  }, [selectedId, searchQuery]);
+  }, [selectedId, searchQuery, languageMode]);
 
-  // LUÔN CUỘN LÊN ĐỈNH KHI CHỌN MỤC TỪ MỚI (Tránh lỗi nội dung bị trôi lên trên)
+  // LUÔN CUỘN LÊN ĐỈNH KHI CHỌN MỤC TỪ MỚI
   useEffect(() => {
     if (contentScrollRef.current) {
       contentScrollRef.current.scrollTo({ top: 0, behavior: "instant" });
@@ -187,9 +225,11 @@ export default function DictionaryApp({
         id: t.id,
         doc_type: "term",
         term: t.term,
-        vietnamese: t.vietnamese,
-        domain: t.domain_tags[0] || "Phương pháp",
-        snippet: t.core_definition.slice(0, 100) + "...",
+        vietnamese: languageMode === "en" ? "" : t.vietnamese,
+        domain: languageMode === "en" ? (getTermDomainTags(t, "en")[0] || "Methodology") : (t.domain_tags[0] || "Phương pháp"),
+        snippet: languageMode === "en" 
+          ? getTermDefinition(t, "en").slice(0, 110) + "..." 
+          : t.core_definition.slice(0, 110) + "...",
         score: 1,
         raw_term: t
       }));
@@ -199,9 +239,11 @@ export default function DictionaryApp({
           id: `acronym-${key.toLowerCase().replace(/[^a-z0-9]/g, "-")}`,
           doc_type: "acronym",
           term: `${key} - ${val.full_name}`,
-          vietnamese: val.vietnamese,
-          domain: "Từ viết tắt",
-          snippet: val.purpose.slice(0, 100) + "...",
+          vietnamese: languageMode === "en" ? "" : val.vietnamese,
+          domain: languageMode === "en" ? getAcronymDomain(val, "en") : "Từ viết tắt",
+          snippet: languageMode === "en"
+            ? getAcronymPurpose(val, "en").slice(0, 110) + "..."
+            : val.purpose.slice(0, 110) + "...",
           score: 1,
           raw_acronym: val
         })
@@ -217,12 +259,34 @@ export default function DictionaryApp({
       return all;
     }
 
-    const res = searchEngine.search(searchQuery, 100);
+    const rawRes = searchEngine.search(searchQuery, 100);
+    const res = rawRes.map((item) => {
+      if (languageMode === "en") {
+        if (item.doc_type === "term" && item.raw_term) {
+          return {
+            ...item,
+            vietnamese: "",
+            domain: getTermDomainTags(item.raw_term, "en")[0] || "Methodology",
+            snippet: getTermDefinition(item.raw_term, "en").slice(0, 110) + "..."
+          };
+        }
+        if (item.doc_type === "acronym" && item.raw_acronym) {
+          return {
+            ...item,
+            vietnamese: "",
+            domain: getAcronymDomain(item.raw_acronym, "en"),
+            snippet: getAcronymPurpose(item.raw_acronym, "en").slice(0, 110) + "..."
+          };
+        }
+      }
+      return item;
+    });
+
     if (filterType === "term") return res.filter((i) => i.doc_type === "term");
     if (filterType === "acronym") return res.filter((i) => i.doc_type === "acronym");
     if (filterType === "saved") return res.filter((i) => bookmarks.includes(i.id));
     return res;
-  }, [searchQuery, filterType, searchEngine, initialTerms, initialAcronyms, bookmarks]);
+  }, [searchQuery, filterType, searchEngine, initialTerms, initialAcronyms, bookmarks, languageMode]);
 
   // Lấy mục từ chi tiết đang được chọn
   const activeTerm = useMemo(() => {
@@ -342,6 +406,8 @@ export default function DictionaryApp({
       if (e.key === "Escape") {
         if (isCitationModalOpen) {
           setIsCitationModalOpen(false);
+        } else if (isFeedbackModalOpen) {
+          setIsFeedbackModalOpen(false);
         } else if (isZenMode) {
           setIsZenMode(false);
         } else if (searchQuery) {
@@ -352,7 +418,7 @@ export default function DictionaryApp({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isZenMode, searchQuery, isCitationModalOpen]);
+  }, [isZenMode, searchQuery, isCitationModalOpen, isFeedbackModalOpen]);
 
   return (
     <div
@@ -360,48 +426,75 @@ export default function DictionaryApp({
         isDarkMode ? "dark bg-slate-950 text-slate-100" : "bg-slate-50 text-slate-900"
       }`}
     >
-      {/* 1. THANH HEADER TOÀN TRANG (Ẩn khi bật Zen Mode hoặc In) */}
+      {/* 1. THANH HEADER TOÀN TRANG */}
       {!isZenMode && (
-        <header className="no-print h-14 border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur sticky top-0 z-40 px-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-lg shadow-sm">
+        <header className="no-print h-14 border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur sticky top-0 z-40 px-3 sm:px-4 flex items-center justify-between gap-2">
+          {/* Logo & Tên từ điển & Nút chuyển đổi Song ngữ / Tiếng Anh thời gian thực */}
+          <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+            <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-base sm:text-lg shadow-sm shrink-0">
               R
             </div>
-            <div>
-              <h1 className="font-bold text-sm sm:text-base tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-                Từ điển Thuật ngữ Phương pháp Nghiên cứu Khoa học
-                <span className="text-xs font-normal px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900">
-                  Anh - Việt
-                </span>
+            <div className="min-w-0 flex items-center gap-2">
+              <h1 className="font-bold text-xs sm:text-sm md:text-base tracking-tight text-slate-900 dark:text-white truncate">
+                {t.app_title}
               </h1>
             </div>
           </div>
 
-          <div className="flex items-center gap-1.5">
+          {/* Thanh công cụ phải: Bộ chuyển ngôn ngữ Realtime, Góp ý, Phông chữ, Theme, Zen, Auth */}
+          <div className="flex items-center gap-1 sm:gap-1.5 shrink-0">
+            {/* Realtime Language Switcher Pill [ 🇻🇳 Anh - Việt | 🌐 English ] */}
+            <div className="flex items-center rounded-lg border border-slate-200 dark:border-slate-800 p-0.5 bg-slate-100 dark:bg-slate-800/80 text-xs font-semibold mr-1">
+              <button
+                onClick={() => handleToggleLanguage("vi")}
+                className={`px-2 py-1 rounded-md transition flex items-center gap-1 ${
+                  languageMode === "vi"
+                    ? "bg-white dark:bg-slate-700 text-blue-700 dark:text-blue-300 shadow-xs font-bold"
+                    : "text-slate-500 hover:text-slate-800 dark:hover:text-slate-200"
+                }`}
+                title="Chuyển sang ấn bản Song ngữ Anh - Việt"
+              >
+                <span>🇻🇳</span>
+                <span className="hidden md:inline">Anh - Việt</span>
+              </button>
+              <button
+                onClick={() => handleToggleLanguage("en")}
+                className={`px-2 py-1 rounded-md transition flex items-center gap-1 ${
+                  languageMode === "en"
+                    ? "bg-blue-600 text-white shadow-xs font-bold"
+                    : "text-slate-500 hover:text-slate-800 dark:hover:text-slate-200"
+                }`}
+                title="Switch to Monolingual Academic English Edition"
+              >
+                <Globe size={12} className={languageMode === "en" ? "text-white" : "text-slate-500"} />
+                <span className="hidden md:inline">English</span>
+              </button>
+            </div>
+
             {/* Nút Góp ý học thuật toàn trang */}
             <button
               onClick={() => setIsFeedbackModalOpen(true)}
-              className="px-2.5 py-1 text-xs font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 border border-emerald-200 dark:border-emerald-800 rounded-lg transition flex items-center gap-1.5"
-              title="Đóng góp ý kiến hoặc bổ sung thuật ngữ"
+              className="px-2 py-1 sm:px-2.5 sm:py-1 text-xs font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 border border-emerald-200 dark:border-emerald-800 rounded-lg transition flex items-center gap-1"
+              title={t.feedback_tooltip}
             >
               <MessageSquarePlus size={14} />
-              <span className="hidden sm:inline">Góp ý</span>
+              <span className="hidden sm:inline">{t.feedback_button}</span>
             </button>
 
             {/* Nút chỉnh cỡ chữ A- / A+ */}
-            <div className="flex items-center border border-slate-200 dark:border-slate-800 rounded-lg p-0.5 bg-slate-50 dark:bg-slate-800/60">
+            <div className="hidden sm:flex items-center border border-slate-200 dark:border-slate-800 rounded-lg p-0.5 bg-slate-50 dark:bg-slate-800/60">
               <button
                 onClick={() => setFontSizeLevel((prev) => Math.max(-1, prev - 1))}
                 className="px-2 py-1 text-xs font-medium hover:bg-white dark:hover:bg-slate-700 rounded transition"
-                title="Giảm cỡ chữ"
+                title={t.font_decrease}
               >
                 A-
               </button>
-              <span className="text-xs text-slate-400 px-1">|</span>
+              <span className="text-xs text-slate-400 px-0.5">|</span>
               <button
                 onClick={() => setFontSizeLevel((prev) => Math.min(2, prev + 1))}
                 className="px-2 py-1 text-xs font-medium hover:bg-white dark:hover:bg-slate-700 rounded transition"
-                title="Tăng cỡ chữ"
+                title={t.font_increase}
               >
                 A+
               </button>
@@ -410,32 +503,32 @@ export default function DictionaryApp({
             {/* Chế độ Sáng / Tối */}
             <button
               onClick={() => setIsDarkMode(!isDarkMode)}
-              className="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
-              title={isDarkMode ? "Chuyển sang chế độ Sáng" : "Chuyển sang chế độ Tối"}
+              className="p-1.5 sm:p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+              title={isDarkMode ? t.mode_light : t.mode_dark}
             >
-              {isDarkMode ? <Sun size={17} /> : <Moon size={17} />}
+              {isDarkMode ? <Sun size={16} /> : <Moon size={16} />}
             </button>
 
             {/* Chế độ Zen Mode */}
             <button
               onClick={() => setIsZenMode(true)}
-              className="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition hidden sm:inline-flex"
-              title="Chế độ đọc tập trung Zen Mode (Phím F)"
+              className="p-1.5 sm:p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition hidden md:inline-flex"
+              title={t.zen_tooltip}
             >
-              <Maximize2 size={17} />
+              <Maximize2 size={16} />
             </button>
 
             {/* In ấn Ctrl + P */}
             <button
               onClick={() => window.print()}
-              className="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition hidden sm:inline-flex"
-              title="In mục từ ra giấy khổ A4 (Ctrl + P)"
+              className="p-1.5 sm:p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition hidden md:inline-flex"
+              title={t.print_tooltip}
             >
-              <Printer size={17} />
+              <Printer size={16} />
             </button>
 
             {/* Google Authentication (Login / Profile) */}
-            <div className="border-l border-slate-200 dark:border-slate-800 pl-1.5 ml-0.5">
+            <div className="border-l border-slate-200 dark:border-slate-800 pl-1 sm:pl-1.5 ml-0.5">
               {currentUser ? (
                 <div className="flex items-center gap-1.5">
                   {currentUser.photoURL ? (
@@ -443,7 +536,7 @@ export default function DictionaryApp({
                       src={currentUser.photoURL}
                       alt={currentUser.displayName || "User"}
                       className="w-7 h-7 rounded-full border border-blue-500 shadow-xs"
-                      title={`Đã đăng nhập: ${currentUser.displayName || currentUser.email}`}
+                      title={currentUser.displayName || currentUser.email || "User"}
                     />
                   ) : (
                     <div className="w-7 h-7 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 flex items-center justify-center font-bold text-xs">
@@ -452,8 +545,8 @@ export default function DictionaryApp({
                   )}
                   <button
                     onClick={handleLogout}
-                    className="p-1.5 rounded-lg text-slate-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/40 transition"
-                    title="Đăng xuất tài khoản Google"
+                    className="p-1 rounded-lg text-slate-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/40 transition"
+                    title={t.logout_tooltip}
                   >
                     <LogOut size={15} />
                   </button>
@@ -462,11 +555,11 @@ export default function DictionaryApp({
                 <button
                   onClick={handleGoogleLogin}
                   disabled={authLoading}
-                  className="px-2.5 py-1 text-xs font-semibold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg transition flex items-center gap-1.5 shadow-xs"
-                  title="Đăng nhập Google để đồng bộ thuật ngữ đã lưu lên đám mây"
+                  className="px-2 py-1 sm:px-2.5 sm:py-1 text-xs font-semibold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg transition flex items-center gap-1 shadow-xs"
+                  title={t.login_tooltip}
                 >
                   <LogIn size={13} className="text-blue-600 dark:text-blue-400" />
-                  <span className="hidden sm:inline">{authLoading ? "..." : "Đăng nhập"}</span>
+                  <span className="hidden sm:inline">{authLoading ? "..." : t.login_button}</span>
                 </button>
               )}
             </div>
@@ -480,7 +573,7 @@ export default function DictionaryApp({
           onClick={() => setIsZenMode(false)}
           className="no-print fixed top-4 right-4 z-50 p-2.5 rounded-full bg-slate-900/80 text-white hover:bg-slate-900 backdrop-blur shadow-lg transition flex items-center gap-1.5 text-xs font-medium"
         >
-          <Minimize2 size={15} /> Thoát chế độ Zen (Esc)
+          <Minimize2 size={15} /> {t.exit_zen}
         </button>
       )}
 
@@ -494,7 +587,7 @@ export default function DictionaryApp({
               : "border-transparent text-slate-500"
           }`}
         >
-          Tra cứu ({searchResults.length})
+          {t.mobile_tab_list} ({searchResults.length})
         </button>
         <button
           onClick={() => setMobileTab("detail")}
@@ -504,7 +597,7 @@ export default function DictionaryApp({
               : "border-transparent text-slate-500"
           }`}
         >
-          Nội dung Mục từ
+          {t.mobile_tab_detail}
         </button>
       </div>
 
@@ -530,7 +623,7 @@ export default function DictionaryApp({
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Tra cứu Anh - Việt (nhấn '/' để tìm)..."
+                placeholder={t.search_placeholder}
                 className="w-full pl-9 pr-8 py-2 text-sm bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white placeholder:text-slate-400 shadow-sm"
               />
               {searchQuery && (
@@ -554,7 +647,7 @@ export default function DictionaryApp({
                       : "text-slate-600 dark:text-slate-400"
                   }`}
                 >
-                  Tất cả
+                  {t.tab_all}
                 </button>
                 <button
                   onClick={() => setFilterType("term")}
@@ -564,7 +657,7 @@ export default function DictionaryApp({
                       : "text-slate-600 dark:text-slate-400"
                   }`}
                 >
-                  Thuật ngữ
+                  {t.tab_terms}
                 </button>
                 <button
                   onClick={() => setFilterType("acronym")}
@@ -574,7 +667,7 @@ export default function DictionaryApp({
                       : "text-slate-600 dark:text-slate-400"
                   }`}
                 >
-                  Viết tắt
+                  {t.tab_acronyms}
                 </button>
                 <button
                   onClick={() => setFilterType("saved")}
@@ -583,15 +676,15 @@ export default function DictionaryApp({
                       ? "bg-amber-400 text-amber-950 shadow-xs font-semibold"
                       : "text-amber-600 dark:text-amber-400"
                   }`}
-                  title="Danh sách các thuật ngữ đã lưu của bạn"
+                  title={languageMode === "vi" ? "Danh sách các thuật ngữ đã lưu của bạn" : "Your bookmarked items"}
                 >
                   <Star size={11} className={filterType === "saved" ? "fill-amber-950" : "fill-amber-400"} />
-                  <span>Đã lưu ({bookmarks.length})</span>
+                  <span>{t.tab_saved} ({bookmarks.length})</span>
                 </button>
               </div>
 
               <span className="text-slate-400 text-[11px] font-mono">
-                {searchResults.length} mục từ
+                {searchResults.length} {t.terms_count}
               </span>
             </div>
           </div>
@@ -616,11 +709,9 @@ export default function DictionaryApp({
             {searchResults.length === 0 ? (
               <div className="p-8 text-center text-slate-400 space-y-2">
                 <BookOpen size={28} className="mx-auto text-slate-300 dark:text-slate-600" />
-                <p className="text-sm font-medium">Không tìm thấy thuật ngữ phù hợp</p>
+                <p className="text-sm font-medium">{t.empty_search_title}</p>
                 <p className="text-xs">
-                  {filterType === "saved"
-                    ? "Bạn chưa đánh dấu thuật ngữ nào. Hãy bấm biểu tượng Bookmark trên mục từ để lưu vào đây!"
-                    : "Hãy thử từ khóa không dấu hoặc tìm từ viết tắt."}
+                  {filterType === "saved" ? t.empty_saved_desc : t.empty_search_desc}
                 </p>
               </div>
             ) : (
@@ -666,9 +757,16 @@ export default function DictionaryApp({
                         </span>
                       )}
                     </div>
-                    <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-1">
-                      {item.vietnamese}
-                    </p>
+                    {/* Ở chế độ tiếng Việt: hiển thị nghĩa tiếng Việt; Ở chế độ English: hiển thị đoạn trích nghĩa tiếng Anh */}
+                    {languageMode === "vi" ? (
+                      <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-1">
+                        {item.vietnamese}
+                      </p>
+                    ) : (
+                      <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-1 font-serif">
+                        {item.snippet}
+                      </p>
+                    )}
                     <span className="text-[11px] text-slate-400 dark:text-slate-500 font-mono">
                       {item.domain}
                     </span>
@@ -679,7 +777,7 @@ export default function DictionaryApp({
           </div>
         </aside>
 
-        {/* NÚT THU GỌN / MỞ RỘNG SIDEBAR (Nằm ở đường ranh giới 2 cột) */}
+        {/* NÚT THU GỌN / MỞ RỘNG SIDEBAR */}
         {!isZenMode && (
           <button
             onClick={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
@@ -689,7 +787,7 @@ export default function DictionaryApp({
                 ? "0px"
                 : "clamp(320px, 20vw + 100px, 384px)"
             }}
-            title={isSidebarCollapsed ? "Mở danh sách từ (Ctrl + B)" : "Thu gọn danh sách (Ctrl + B)"}
+            title={isSidebarCollapsed ? t.expand_sidebar : t.collapse_sidebar}
           >
             {isSidebarCollapsed ? <ChevronRight size={14} /> : <ChevronLeft size={14} />}
           </button>
@@ -705,13 +803,13 @@ export default function DictionaryApp({
             mobileTab === "list" ? "hidden sm:block" : "block"
           }`}
         >
-          {/* Thanh Tiến độ Cuộn đọc mỏng nhẹ trên đỉnh */}
+          {/* Thanh Tiến độ Cuộn đọc */}
           <div
             className="no-print fixed top-14 left-0 h-0.5 bg-blue-600 z-50 transition-all duration-75"
             style={{ width: `${readingProgress}%` }}
           />
 
-          {/* KHUNG NỘI DUNG TỐI ƯU CÔNG THÁI HỌC (Max-w-3xl chống mỏi mắt) */}
+          {/* KHUNG NỘI DUNG TỐI ƯU CÔNG THÁI HỌC */}
           <div className={`max-w-3xl mx-auto space-y-6 ${getFontSizeClass()} print-clean`}>
             {/* TH1: HIỂN THỊ MỤC TỪ CHÍNH (METHODOLOGY TERM) */}
             {activeTerm && (
@@ -730,11 +828,11 @@ export default function DictionaryApp({
                           </span>
                         )}
                         <span className="text-xs px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900">
-                          Khái niệm Thiết kế
+                          {t.concept_level_badge}
                         </span>
                       </div>
 
-                      {/* Phiên âm IPA & Nút loa phát âm chuẩn UK/US */}
+                      {/* Phiên âm IPA & Nút loa phát âm */}
                       <div className="flex items-center gap-2 text-sm text-slate-500 font-mono">
                         <span>{activeTerm.ipa || "/.../"}</span>
                         <button
@@ -744,10 +842,10 @@ export default function DictionaryApp({
                               ? "bg-blue-600 text-white animate-pulse"
                               : "text-blue-600 hover:text-blue-700 hover:bg-blue-50 dark:hover:bg-slate-800"
                           }`}
-                          title="Nghe phát âm chuẩn giọng bản xứ (Web Speech API)"
+                          title={t.pronounce_tooltip}
                         >
                           <Volume2 size={16} />
-                          <span className="text-[11px] font-medium hidden sm:inline">Phát âm</span>
+                          <span className="text-[11px] font-medium hidden sm:inline">{t.pronounce_button}</span>
                         </button>
                       </div>
                     </div>
@@ -762,31 +860,31 @@ export default function DictionaryApp({
                             ? "bg-amber-50 dark:bg-amber-950/40 border-amber-300 dark:border-amber-700 text-amber-700 dark:text-amber-300 font-semibold"
                             : "border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300"
                         }`}
-                        title={bookmarks.includes(activeTerm.id) ? "Bỏ lưu thuật ngữ này" : "Lưu thuật ngữ vào danh sách cá nhân"}
+                        title={bookmarks.includes(activeTerm.id) ? t.save_tooltip_remove : t.save_tooltip_add}
                       >
                         <Bookmark
                           size={14}
                           className={bookmarks.includes(activeTerm.id) ? "fill-amber-400 text-amber-500" : "text-slate-400"}
                         />
                         <span className="hidden sm:inline">
-                          {bookmarks.includes(activeTerm.id) ? "Đã lưu" : "Lưu từ"}
+                          {bookmarks.includes(activeTerm.id) ? t.saved_button : t.save_button}
                         </span>
                       </button>
 
                       <button
                         onClick={handleShareLink}
                         className="p-1.5 sm:px-2.5 sm:py-1.5 text-xs font-medium border border-slate-200 dark:border-slate-700 rounded-md hover:bg-slate-50 dark:hover:bg-slate-800 transition flex items-center gap-1 text-slate-700 dark:text-slate-300"
-                        title="Sao chép link chia sẻ thuật ngữ này"
+                        title={t.share_button}
                       >
                         {copiedSection === "share_url" ? (
                           <>
                             <Check size={14} className="text-green-600" />
-                            <span className="hidden sm:inline">Đã chép link</span>
+                            <span className="hidden sm:inline">{t.share_copied}</span>
                           </>
                         ) : (
                           <>
                             <LinkIcon size={14} />
-                            <span className="hidden sm:inline">Chia sẻ link</span>
+                            <span className="hidden sm:inline">{t.share_button}</span>
                           </>
                         )}
                       </button>
@@ -794,37 +892,39 @@ export default function DictionaryApp({
                       <button
                         onClick={() => setIsCitationModalOpen(true)}
                         className="px-2.5 py-1.5 text-xs font-semibold bg-blue-600 hover:bg-blue-700 text-white rounded-md transition flex items-center gap-1.5 shadow-xs"
-                        title="Xuất trích dẫn APA 7th, BibTeX và file RIS"
+                        title={t.cite_tooltip}
                       >
                         <FileText size={14} />
-                        <span>Trích dẫn</span>
+                        <span>{t.cite_button}</span>
                       </button>
 
                       <button
                         onClick={() => setIsFeedbackModalOpen(true)}
                         className="p-1.5 sm:px-2 sm:py-1.5 text-xs font-medium border border-slate-200 dark:border-slate-700 rounded-md hover:bg-emerald-50 dark:hover:bg-emerald-950/30 hover:border-emerald-300 text-slate-500 hover:text-emerald-600 transition"
-                        title="Góp ý hoặc báo lỗi thuật ngữ này"
+                        title={t.feedback_tooltip}
                       >
                         <MessageSquarePlus size={14} />
                       </button>
                     </div>
                   </div>
 
-                  {/* Bản dịch tiếng Việt chuẩn hóa & Dị bản */}
-                  <div className="space-y-1">
-                    <p className="text-lg font-bold text-blue-800 dark:text-blue-400">
-                      {activeTerm.vietnamese}
-                    </p>
-                    {activeTerm.vietnamese_variants && activeTerm.vietnamese_variants.length > 0 && (
-                      <p className="text-xs text-slate-500 italic">
-                        Dị bản thường gặp: {activeTerm.vietnamese_variants.join(" • ")}
+                  {/* Bản dịch tiếng Việt chuẩn hóa & Dị bản: CHỈ HIỂN THỊ KHI Ở CHẾ ĐỘ 'vi' */}
+                  {languageMode === "vi" && activeTerm.vietnamese && (
+                    <div className="space-y-1">
+                      <p className="text-lg font-bold text-blue-800 dark:text-blue-400">
+                        {activeTerm.vietnamese}
                       </p>
-                    )}
-                  </div>
+                      {activeTerm.vietnamese_variants && activeTerm.vietnamese_variants.length > 0 && (
+                        <p className="text-xs text-slate-500 italic">
+                          Dị bản thường gặp: {activeTerm.vietnamese_variants.join(" • ")}
+                        </p>
+                      )}
+                    </div>
+                  )}
 
-                  {/* Nhãn phân loại chuyên ngành */}
+                  {/* Nhãn phân loại chuyên ngành (100% tiếng Anh khi ở chế độ EN) */}
                   <div className="flex items-center gap-1.5 flex-wrap pt-1">
-                    {activeTerm.domain_tags.map((tag) => (
+                    {getTermDomainTags(activeTerm, languageMode).map((tag) => (
                       <span
                         key={tag}
                         className="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400"
@@ -835,36 +935,36 @@ export default function DictionaryApp({
                   </div>
                 </header>
 
-                {/* 2. KHỐI ĐỊNH NGHĨA CỐT LÕI (MÃ MÀU XANH DƯƠNG) */}
+                {/* 2. KHỐI ĐỊNH NGHĨA CỐT LÕI */}
                 <section className="p-4 rounded-xl border-l-4 border-blue-600 bg-blue-50/40 dark:bg-blue-950/20 border border-blue-100 dark:border-blue-900/40 space-y-2">
                   <div className="flex items-center justify-between text-xs font-bold text-blue-900 dark:text-blue-300 uppercase tracking-wider">
                     <span className="flex items-center gap-1.5">
-                      <BookOpen size={14} /> Định nghĩa Cốt lõi
+                      <BookOpen size={14} /> {t.sec_definition}
                     </span>
                     <button
-                      onClick={() => handleCopy(activeTerm.core_definition, "def")}
+                      onClick={() => handleCopy(getTermDefinition(activeTerm, languageMode), "def")}
                       className="no-print text-slate-400 hover:text-blue-600 transition"
-                      title="Sao chép định nghĩa"
+                      title={t.copy_tooltip}
                     >
                       {copiedSection === "def" ? <Check size={13} className="text-green-600" /> : <Copy size={13} />}
                     </button>
                   </div>
                   <p className="text-slate-800 dark:text-slate-200 leading-relaxed font-serif text-base sm:text-lg">
-                    {activeTerm.core_definition}
+                    {getTermDefinition(activeTerm, languageMode)}
                   </p>
                 </section>
 
-                {/* 3. KHỐI BẪY DÙNG TỪ & LỖI THƯỜNG GẶP (MÃ MÀU HỔ PHÁCH/VÀNG) */}
-                {activeTerm.pitfalls && (
+                {/* 3. KHỐI BẪY DÙNG TỪ & LỖI THƯỜNG GẶP */}
+                {getTermPitfalls(activeTerm, languageMode) && (
                   <section className="p-4 rounded-xl border-l-4 border-amber-500 bg-amber-50/40 dark:bg-amber-950/20 border border-amber-100 dark:border-amber-900/40 space-y-2">
                     <div className="flex items-center justify-between text-xs font-bold text-amber-900 dark:text-amber-300 uppercase tracking-wider">
                       <span className="flex items-center gap-1.5">
-                        <AlertTriangle size={14} /> Lưu ý Tránh Dùng Sai & Bẫy Hội đồng
+                        <AlertTriangle size={14} /> {t.sec_pitfalls}
                       </span>
                       <button
-                        onClick={() => handleCopy(activeTerm.pitfalls || "", "pitfalls")}
+                        onClick={() => handleCopy(getTermPitfalls(activeTerm, languageMode) || "", "pitfalls")}
                         className="no-print text-slate-400 hover:text-amber-600 transition"
-                        title="Sao chép lưu ý"
+                        title={t.copy_tooltip}
                       >
                         {copiedSection === "pitfalls" ? (
                           <Check size={13} className="text-green-600" />
@@ -874,24 +974,24 @@ export default function DictionaryApp({
                       </button>
                     </div>
                     <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
-                      {activeTerm.pitfalls}
+                      {getTermPitfalls(activeTerm, languageMode)}
                     </p>
                   </section>
                 )}
 
-                {/* 4. KHỐI CHỈ SỐ NGƯỠNG HOẶC ĐỐI ĐẦU HỌC THUẬT (MÃ MÀU XANH LÁ) */}
-                {(activeTerm.benchmarks || activeTerm.paradigm_debates) && (
+                {/* 4. KHỐI CHỈ SỐ NGƯỠNG HOẶC ĐỐI ĐẦU HỌC THUẬT */}
+                {(getTermBenchmarks(activeTerm, languageMode) || getTermDebates(activeTerm, languageMode)) && (
                   <section className="p-4 rounded-xl border-l-4 border-emerald-600 bg-emerald-50/40 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40 space-y-3">
-                    {activeTerm.benchmarks && (
+                    {getTermBenchmarks(activeTerm, languageMode) && (
                       <div className="space-y-1">
                         <div className="flex items-center justify-between text-xs font-bold text-emerald-900 dark:text-emerald-300 uppercase tracking-wider">
                           <span className="flex items-center gap-1.5">
-                            <Sparkles size={14} /> Ngưỡng Số liệu Thực nghiệm Chuẩn (Benchmarks)
+                            <Sparkles size={14} /> {t.sec_benchmarks}
                           </span>
                           <button
-                            onClick={() => handleCopy(activeTerm.benchmarks || "", "benchmarks")}
+                            onClick={() => handleCopy(getTermBenchmarks(activeTerm, languageMode) || "", "benchmarks")}
                             className="no-print text-slate-400 hover:text-emerald-600 transition"
-                            title="Sao chép ngưỡng"
+                            title={t.copy_tooltip}
                           >
                             {copiedSection === "benchmarks" ? (
                               <Check size={13} className="text-green-600" />
@@ -901,29 +1001,29 @@ export default function DictionaryApp({
                           </button>
                         </div>
                         <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm sm:text-base font-mono">
-                          {activeTerm.benchmarks}
+                          {getTermBenchmarks(activeTerm, languageMode)}
                         </p>
                       </div>
                     )}
 
-                    {activeTerm.paradigm_debates && (
+                    {getTermDebates(activeTerm, languageMode) && (
                       <div className="space-y-1 pt-2 border-t border-emerald-200/60 dark:border-emerald-900/40">
                         <span className="text-xs font-bold text-emerald-900 dark:text-emerald-300 uppercase tracking-wider">
-                          Tranh luận Học thuật & Trường phái
+                          {t.sec_debates}
                         </span>
                         <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
-                          {activeTerm.paradigm_debates}
+                          {getTermDebates(activeTerm, languageMode)}
                         </p>
                       </div>
                     )}
                   </section>
                 )}
 
-                {/* 5. CÁC BIẾN THỂ CON / THUẬT NGỮ LIÊN ĐỚI (CORPUS VARIANTS) */}
+                {/* 5. CÁC BIẾN THỂ CON / THUẬT NGỮ LIÊN ĐỚI */}
                 {activeTerm.corpus_variants && activeTerm.corpus_variants.length > 0 && (
                   <section className="space-y-2.5 pt-2">
                     <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
-                      <Layers size={14} /> Các Thành tố Trực thuộc & Biến thể Đo lường
+                      <Layers size={14} /> {t.sec_variants}
                     </h3>
                     <div className="grid grid-cols-1 gap-2">
                       {activeTerm.corpus_variants.map((v, i) => (
@@ -935,11 +1035,23 @@ export default function DictionaryApp({
                             <span className="font-semibold text-sm text-slate-900 dark:text-white">
                               {v.v}
                             </span>{" "}
-                            <span className="text-xs text-blue-700 dark:text-blue-300 font-medium">
-                              ({v.vn})
-                            </span>
+                            {languageMode === "vi" && v.vn && (
+                              <span className="text-xs text-blue-700 dark:text-blue-300 font-medium">
+                                ({v.vn})
+                              </span>
+                            )}
                             {v.rel && (
-                              <p className="text-xs text-slate-500 mt-0.5">{v.rel}</p>
+                              <p className="text-xs text-slate-500 mt-0.5">
+                                {languageMode === "vi"
+                                  ? v.rel
+                                  : (v.rel_en || v.rel
+                                      .replace(/Thành tố con bắt buộc/g, "Mandatory sub-dimension")
+                                      .replace(/Đánh giá của hội đồng chuyên gia về độ bao quát miền khái niệm/g, "Expert panel evaluation of construct domain coverage")
+                                      .replace(/Đánh giá chủ quan xem thang đo thoạt nhìn có vẻ đo đúng khái niệm/g, "Subjective plausibility assessment of scale items")
+                                      .replace(/Đánh giá mức độ thang đo liên hệ đúng lý thuyết với các biến khác/g, "Nomological theoretical network correlation assessment")
+                                      .replace(/Tương quan với một tiêu chuẩn chuẩn mực bên ngoài/g, "Correlation with an established external criterion")
+                                      .replace(/[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]/gi, ""))}
+                              </p>
                             )}
                           </div>
                           {v.src && (
@@ -953,11 +1065,11 @@ export default function DictionaryApp({
                   </section>
                 )}
 
-                {/* 6. KHỐI TRÍCH DẪN UY TÍN (MÃ MÀU TÍM) */}
+                {/* 6. KHỐI TRÍCH DẪN UY TÍN */}
                 <footer className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-800/30 space-y-3">
                   <div className="flex items-center justify-between text-xs font-bold text-purple-900 dark:text-purple-300 uppercase tracking-wider">
                     <span className="flex items-center gap-1.5">
-                      <GraduationCap size={15} /> Nguồn Trích Dẫn Học Thuật Uy Tín
+                      <GraduationCap size={15} /> {t.sec_literature}
                     </span>
                     <button
                       onClick={() =>
@@ -967,7 +1079,7 @@ export default function DictionaryApp({
                         )
                       }
                       className="no-print text-slate-400 hover:text-purple-600 transition"
-                      title="Sao chép toàn bộ trích dẫn"
+                      title={t.copy_tooltip}
                     >
                       {copiedSection === "footer_ref" ? (
                         <Check size={13} className="text-green-600" />
@@ -981,7 +1093,7 @@ export default function DictionaryApp({
                     {activeTerm.seminal_citation && (
                       <p>
                         <strong className="text-slate-700 dark:text-slate-300">
-                          Bài báo gốc kinh điển:
+                          {t.seminal_paper_label}
                         </strong>{" "}
                         {activeTerm.seminal_citation}
                       </p>
@@ -989,7 +1101,7 @@ export default function DictionaryApp({
                     {activeTerm.apa_reference && (
                       <p>
                         <strong className="text-slate-700 dark:text-slate-300">
-                          Sách giáo khoa trích dẫn (APA 7th):
+                          {t.textbook_apa_label}
                         </strong>{" "}
                         {activeTerm.apa_reference}
                       </p>
@@ -1009,7 +1121,7 @@ export default function DictionaryApp({
                         {activeAcronym.key}
                       </span>
                       <span className="text-xs px-2.5 py-1 rounded-full bg-amber-50 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-900">
-                        Thuật ngữ Viết tắt Học thuật
+                        {t.acronym_badge}
                       </span>
                     </div>
 
@@ -1022,31 +1134,31 @@ export default function DictionaryApp({
                             ? "bg-amber-50 dark:bg-amber-950/40 border-amber-300 dark:border-amber-700 text-amber-700 dark:text-amber-300 font-semibold"
                             : "border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300"
                         }`}
-                        title={bookmarks.includes(selectedId) ? "Bỏ lưu viết tắt này" : "Lưu vào danh sách cá nhân"}
+                        title={bookmarks.includes(selectedId) ? t.save_tooltip_remove : t.save_tooltip_add}
                       >
                         <Bookmark
                           size={14}
                           className={bookmarks.includes(selectedId) ? "fill-amber-400 text-amber-500" : "text-slate-400"}
                         />
                         <span className="hidden sm:inline">
-                          {bookmarks.includes(selectedId) ? "Đã lưu" : "Lưu"}
+                          {bookmarks.includes(selectedId) ? t.saved_button : t.save_button}
                         </span>
                       </button>
 
                       <button
                         onClick={handleShareLink}
                         className="no-print px-2.5 py-1.5 text-xs font-medium border border-slate-200 dark:border-slate-700 rounded-md hover:bg-slate-50 dark:hover:bg-slate-800 transition flex items-center gap-1 text-slate-700 dark:text-slate-300"
-                        title="Sao chép link chia sẻ"
+                        title={t.share_button}
                       >
                         {copiedSection === "share_url" ? (
                           <>
                             <Check size={14} className="text-green-600" />
-                            <span className="hidden sm:inline">Đã chép link</span>
+                            <span className="hidden sm:inline">{t.share_copied}</span>
                           </>
                         ) : (
                           <>
                             <LinkIcon size={14} />
-                            <span className="hidden sm:inline">Chia sẻ link</span>
+                            <span className="hidden sm:inline">{t.share_button}</span>
                           </>
                         )}
                       </button>
@@ -1057,21 +1169,24 @@ export default function DictionaryApp({
                     {activeAcronym.full_name}
                   </h2>
 
-                  <p className="text-lg font-bold text-blue-800 dark:text-blue-400">
-                    {activeAcronym.vietnamese}
-                  </p>
+                  {/* Bản dịch tiếng Việt chỉ hiển thị khi ở chế độ 'vi' */}
+                  {languageMode === "vi" && activeAcronym.vietnamese && (
+                    <p className="text-lg font-bold text-blue-800 dark:text-blue-400">
+                      {activeAcronym.vietnamese}
+                    </p>
+                  )}
                 </header>
 
                 {/* Mục đích & Bản chất */}
                 <section className="p-4 rounded-xl border-l-4 border-blue-600 bg-blue-50/40 dark:bg-blue-950/20 border border-blue-100 dark:border-blue-900/40 space-y-2">
                   <div className="flex items-center justify-between text-xs font-bold text-blue-900 dark:text-blue-300 uppercase tracking-wider">
                     <span className="flex items-center gap-1.5">
-                      <BookOpen size={14} /> Bản chất & Ứng dụng trong Nghiên cứu
+                      <BookOpen size={14} /> {t.sec_acronym_purpose}
                     </span>
                     <button
-                      onClick={() => handleCopy(activeAcronym.purpose, "acronym_def")}
+                      onClick={() => handleCopy(getAcronymPurpose(activeAcronym, languageMode), "acronym_def")}
                       className="no-print text-slate-400 hover:text-blue-600 transition"
-                      title="Sao chép"
+                      title={t.copy_tooltip}
                     >
                       {copiedSection === "acronym_def" ? (
                         <Check size={13} className="text-green-600" />
@@ -1081,18 +1196,18 @@ export default function DictionaryApp({
                     </button>
                   </div>
                   <p className="text-slate-800 dark:text-slate-200 leading-relaxed font-serif text-base sm:text-lg">
-                    {activeAcronym.purpose}
+                    {getAcronymPurpose(activeAcronym, languageMode)}
                   </p>
                 </section>
 
                 {/* Ngưỡng tham chiếu */}
-                {activeAcronym.benchmark && (
+                {getAcronymBenchmark(activeAcronym, languageMode) && (
                   <section className="p-4 rounded-xl border-l-4 border-emerald-600 bg-emerald-50/40 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40 space-y-2">
                     <div className="text-xs font-bold text-emerald-900 dark:text-emerald-300 uppercase tracking-wider flex items-center gap-1.5">
-                      <Sparkles size={14} /> Ngưỡng Chấp Nhận & Tiêu Chuẩn Thực Nghiệm
+                      <Sparkles size={14} /> {t.sec_acronym_benchmark}
                     </div>
                     <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm sm:text-base font-mono">
-                      {activeAcronym.benchmark}
+                      {getAcronymBenchmark(activeAcronym, languageMode)}
                     </p>
                   </section>
                 )}
@@ -1108,6 +1223,7 @@ export default function DictionaryApp({
           term={activeTerm}
           isOpen={isCitationModalOpen}
           onClose={() => setIsCitationModalOpen(false)}
+          languageMode={languageMode}
         />
       )}
 
@@ -1117,6 +1233,7 @@ export default function DictionaryApp({
         onClose={() => setIsFeedbackModalOpen(false)}
         currentTerm={activeTerm ? { id: activeTerm.id, term: activeTerm.term } : undefined}
         userEmail={currentUser?.email || undefined}
+        languageMode={languageMode}
       />
     </div>
   );

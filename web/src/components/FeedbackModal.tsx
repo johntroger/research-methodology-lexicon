@@ -9,9 +9,16 @@ interface FeedbackModalProps {
   onClose: () => void;
   currentTerm?: { id: string; term: string };
   userEmail?: string;
+  languageMode?: "vi" | "en";
 }
 
-export function FeedbackModal({ isOpen, onClose, currentTerm, userEmail }: FeedbackModalProps) {
+export function FeedbackModal({
+  isOpen,
+  onClose,
+  currentTerm,
+  userEmail,
+  languageMode = "vi"
+}: FeedbackModalProps) {
   const [feedbackType, setFeedbackType] = useState<FeedbackInput["type"]>("correction");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState(userEmail || "");
@@ -19,6 +26,8 @@ export function FeedbackModal({ isOpen, onClose, currentTerm, userEmail }: Feedb
   const [isSuccess, setIsSuccess] = useState(false);
 
   if (!isOpen) return null;
+
+  const isEn = languageMode === "en";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -60,10 +69,12 @@ export function FeedbackModal({ isOpen, onClose, currentTerm, userEmail }: Feedb
             </div>
             <div>
               <h3 className="text-base font-semibold text-stone-100">
-                Góp ý & Báo lỗi Học thuật
+                {isEn ? "Scholarly Feedback & Suggestions" : "Góp ý & Báo lỗi Học thuật"}
               </h3>
               <p className="text-xs text-stone-400">
-                {currentTerm ? `Đang đóng góp cho: "${currentTerm.term}"` : "Cùng chung tay hoàn thiện từ điển nghiên cứu"}
+                {currentTerm
+                  ? (isEn ? `Contributing for: "${currentTerm.term}"` : `Đang đóng góp cho: "${currentTerm.term}"`)
+                  : (isEn ? "Help refine this research methodology lexicon" : "Cùng chung tay hoàn thiện từ điển nghiên cứu")}
               </p>
             </div>
           </div>
@@ -81,9 +92,13 @@ export function FeedbackModal({ isOpen, onClose, currentTerm, userEmail }: Feedb
             <div className="w-14 h-14 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-4">
               <CheckCircle2 className="w-8 h-8" />
             </div>
-            <h4 className="text-lg font-medium text-stone-100 mb-1">Cảm ơn đóng góp của bạn!</h4>
+            <h4 className="text-lg font-medium text-stone-100 mb-1">
+              {isEn ? "Thank you for your academic feedback!" : "Cảm ơn đóng góp của bạn!"}
+            </h4>
             <p className="text-sm text-stone-400 max-w-sm">
-              Ý kiến của bạn đã được ghi nhận. Ban biên tập sẽ rà soát và cập nhật trong các phiên bản dữ liệu tiếp theo.
+              {isEn
+                ? "Your suggestions have been recorded. The editorial committee will review and incorporate them into upcoming revisions."
+                : "Ý kiến của bạn đã được ghi nhận. Ban biên tập sẽ rà soát và cập nhật trong các phiên bản dữ liệu tiếp theo."}
             </p>
           </div>
         ) : (
@@ -91,13 +106,13 @@ export function FeedbackModal({ isOpen, onClose, currentTerm, userEmail }: Feedb
             {/* Type selector */}
             <div>
               <label className="block text-xs font-medium text-stone-400 mb-1.5 uppercase tracking-wider">
-                Loại góp ý
+                {isEn ? "Feedback Category" : "Loại góp ý"}
               </label>
               <div className="grid grid-cols-3 gap-2">
                 {[
-                  { id: "correction", label: "Sửa định nghĩa" },
-                  { id: "missing_term", label: "Thiếu thuật ngữ" },
-                  { id: "suggestion", label: "Góp ý khác" }
+                  { id: "correction", label: isEn ? "Refine Definition" : "Sửa định nghĩa" },
+                  { id: "missing_term", label: isEn ? "Missing Term" : "Thiếu thuật ngữ" },
+                  { id: "suggestion", label: isEn ? "Other Suggestion" : "Góp ý khác" }
                 ].map((type) => (
                   <button
                     key={type.id}
@@ -118,14 +133,18 @@ export function FeedbackModal({ isOpen, onClose, currentTerm, userEmail }: Feedb
             {/* Message area */}
             <div>
               <label className="block text-xs font-medium text-stone-400 mb-1.5 uppercase tracking-wider">
-                Nội dung chi tiết
+                {isEn ? "Detailed Description" : "Nội dung chi tiết"}
               </label>
               <textarea
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
                 rows={4}
-                placeholder="Mô tả lỗi thuật ngữ, nguồn tài liệu kinh điển cần bổ sung, hoặc đề xuất bản dịch chuẩn xác hơn..."
+                placeholder={
+                  isEn
+                    ? "Describe methodological nuances, missing seminal citations, or proposed academic definitions..."
+                    : "Mô tả lỗi thuật ngữ, nguồn tài liệu kinh điển cần bổ sung, hoặc đề xuất bản dịch chuẩn xác hơn..."
+                }
                 className="w-full px-3.5 py-2.5 text-sm bg-stone-950 border border-stone-800 rounded-xl text-stone-200 placeholder-stone-600 focus:outline-hidden focus:border-emerald-500 transition-colors"
               />
             </div>
@@ -133,17 +152,19 @@ export function FeedbackModal({ isOpen, onClose, currentTerm, userEmail }: Feedb
             {/* Email (optional) */}
             <div>
               <label className="block text-xs font-medium text-stone-400 mb-1.5 uppercase tracking-wider">
-                Email của bạn (không bắt buộc)
+                {isEn ? "Your Email (optional)" : "Email của bạn (không bắt buộc)"}
               </label>
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="researcher@university.edu.vn"
+                placeholder={isEn ? "researcher@oxford.ac.uk" : "researcher@university.edu.vn"}
                 className="w-full px-3.5 py-2 text-sm bg-stone-950 border border-stone-800 rounded-xl text-stone-200 placeholder-stone-600 focus:outline-hidden focus:border-emerald-500 transition-colors"
               />
               <p className="text-[11px] text-stone-500 mt-1">
-                Để ban biên tập có thể gửi lời cảm ơn và thông báo khi thuật ngữ được phê duyệt.
+                {isEn
+                  ? "Allows the editorial board to follow up and notify you when the term is approved."
+                  : "Để ban biên tập có thể gửi lời cảm ơn và thông báo khi thuật ngữ được phê duyệt."}
               </p>
             </div>
 
@@ -154,7 +175,7 @@ export function FeedbackModal({ isOpen, onClose, currentTerm, userEmail }: Feedb
                 onClick={onClose}
                 className="px-4 py-2 text-xs font-medium text-stone-400 hover:text-stone-200 hover:bg-stone-800 rounded-lg transition-colors"
               >
-                Hủy
+                {isEn ? "Cancel" : "Hủy"}
               </button>
               <button
                 type="submit"
@@ -162,7 +183,7 @@ export function FeedbackModal({ isOpen, onClose, currentTerm, userEmail }: Feedb
                 className="inline-flex items-center gap-2 px-5 py-2 text-xs font-medium text-stone-950 bg-emerald-400 hover:bg-emerald-300 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg shadow-sm transition-all"
               >
                 <Send className="w-3.5 h-3.5" />
-                {isSubmitting ? "Đang gửi..." : "Gửi góp ý"}
+                {isSubmitting ? (isEn ? "Sending..." : "Đang gửi...") : (isEn ? "Submit Feedback" : "Gửi góp ý")}
               </button>
             </div>
           </form>
