@@ -5476,33 +5476,48 @@
     },
     {
       "id": "acquiescence-bias-yeah-saying",
-      "term": "Acquiescence Bias (Yeah-Saying)",
-      "vietnamese": "Thiên lệch Đồng thuận",
-      "vietnamese_variants": [],
+      "term": "Acquiescence Bias (Yeah-Saying / Agreeing Response Tendency)",
+      "vietnamese": "Thiên lệch đồng thuận (Xu hướng luôn đồng ý)",
+      "vietnamese_variants": [
+        "Thiên lệch Yeah-Saying",
+        "Thiên hướng đồng ý vô thức",
+        "Acquiescent Response Style"
+      ],
       "domain_tags": [
         "Survey Methodology"
       ],
-      "core_definition": "Xu hướng người trả lời luôn đồng ý với các phát biểu bất kể nội dung.",
-      "seminal_citation": "Podsakoff et al. (2003)",
+      "core_definition": "Thiên lệch đồng thuận (Acquiescence Bias / Yeah-Saying - Couch & Keniston, 1960; Podsakoff et al., 2003) là dạng phong cách phản hồi khảo sát lệch lạc (response style) mang tính hệ thống, trong đó người trả lời có xu hướng tự động chọn đồng ý ('Agree' hoặc 'Strongly Agree') với các phát biểu trong bảng hỏi bất kể nội dung thực chất của câu hỏi đó là gì. Hiện tượng này làm thổi phồng giả tạo tương quan giữa các biến và phá vỡ cấu trúc giá trị phân biệt của thang đo.",
+      "seminal_citation": "Couch & Keniston (1960); Podsakoff et al. (2003)",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #37",
       "core_definition_en": "Academic definition of Acquiescence Bias (Yeah-Saying) according to Podsakoff et al. (2003).",
       "domain_tags_en": [
         "Survey Methodology"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Nguyên nhân tâm lý: Áp lực lịch sự xã hội, sự tôn trọng quyền uy nghiên cứu, hoặc lười biếng nhận thức (Cognitive satisficing - Krosnick, 1991). 2. Biện pháp phòng ngừa ở thiết kế bảng hỏi: Đưa vào các mục hỏi đảo chiều (Reverse-coded items / Balanced scale design: gồm cả các câu mang nghĩa tích cực và tiêu cực xen kẽ). 3. Kỹ thuật thống kê kiểm soát: Mô hình hóa nhân tố phong cách phản hồi chung (Common Method Factor) hoặc áp dụng mô hình phân lớp ẩn (Latent Class Analysis).",
+      "benchmarks": "Được nhận diện rõ nét khi một đối tượng đồng ý với cả hai phát biểu có ý nghĩa đối lập hoàn toàn nhau trong cùng một bài khảo sát. Chỉ số đo lường: Điểm số đồng thuận trung bình trên tập câu hỏi cân bằng.",
+      "pitfalls": "Bẫy phản biện: Đưa các câu hỏi đảo chiều vào thang đo một cách máy móc bằng cách chèn thêm từ phủ định 'không' (not). Các câu hỏi phủ định thường gây khó hiểu về mặt ngữ pháp, tạo ra nhân tố sai số phụ (Method effect factor) làm giảm độ tin cậy Cronbach's alpha của thang đo.",
+      "apa_reference": "Podsakoff, P. M., MacKenzie, S. B., Lee, J. Y., & Podsakoff, N. P. (2003). Common method biases in behavioral research: A critical review of the literature and recommended remedies. Journal of Applied Psychology, 88(5), 879–903. https://doi.org/10.1037/0021-9010.88.5.879",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "acquiescence-bias-straightlining",
-      "term": "Acquiescence bias & Straightlining",
-      "vietnamese": "Thiên lệch đồng ý vô thức và hành vi đánh dấu một cột duy nhất từ trên xuống dưới.",
-      "vietnamese_variants": [],
+      "term": "Straightlining Response Behavior in Survey Research",
+      "vietnamese": "Hành vi trả lời một đường thẳng trong khảo sát",
+      "vietnamese_variants": [
+        "Hành vi Straightlining",
+        "Đánh dấu một cột từ trên xuống dưới",
+        "Nondifferentiation Response Pattern"
+      ],
       "domain_tags": [
         "Questionnaire",
         "TSE"
       ],
-      "core_definition": "Thiên lệch đồng ý vô thức và hành vi đánh dấu một cột duy nhất từ trên xuống dưới.",
-      "seminal_citation": "Wiley / Beatty & Willis (2020)",
+      "core_definition": "Hành vi trả lời một đường thẳng (Straightlining / Nondifferentiation - Krosnick, 1991; Herzog & Bachman, 1981) là biểu hiện cực đoan của sự lười biếng nhận thức (satisficing) khi người trả lời đánh dấu cùng một cột điểm số duy nhất (ví dụ chọn toàn bộ điểm 5 hoặc điểm 4 trên thang đo Likert) từ trên xuống dưới cho toàn bộ một ma trận câu hỏi dài, mà hoàn toàn không đọc hoặc không suy nghĩ về nội dung từng câu hỏi.",
+      "seminal_citation": "Krosnick (1991); Herzog & Bachman (1981)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #40",
@@ -5510,7 +5525,14 @@
       "domain_tags_en": [
         "Questionnaire",
         "TSE"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Đo lường định lượng: Tính độ lệch chuẩn của các câu trả lời bên trong một khối thang đo cho từng cá thể: SD_person = sqrt( (1 / (k - 1)) * sum (x_ij - mean_i)^2 ). 2. Nếu SD_person = 0, cá thể đó đã thực hiện hành vi straightlining tuyệt đối. 3. Kết hợp với Thời gian hoàn thành khảo sát (Survey completion time / Speeder detection): Những cá thể vừa có SD = 0 vừa hoàn thành bảng hỏi dưới 1/3 thời gian trung vị được xếp vào nhóm phản hồi rác (Careless/insufficient effort responding).",
+      "benchmarks": "Chuẩn mực tiền xử lý dữ liệu: Bắt buộc phải sàng lọc và loại bỏ tất cả các phản hồi straightlining trước khi phân tích EFA/SEM. Báo cáo rõ số lượng và tỷ lệ phần trăm mẫu bị loại bỏ do straightlining trong phần phương pháp luận.",
+      "pitfalls": "Bẫy phản biện: Giữ lại các mẫu straightlining trong dữ liệu phân tích SEM. Sự hiện diện của các dòng dữ liệu phương sai bằng 0 sẽ làm thổi phồng nghiêm trọng hệ số Cronbach's alpha và độ tin cậy CR giả tạo, đồng thời làm sai lệch ma trận hiệp phương sai.",
+      "apa_reference": "Krosnick, J. A. (1991). Response strategies for coping with the cognitive demands of attitude measures in surveys. Applied Cognitive Psychology, 5(3), 213–236. https://doi.org/10.1002/acp.2350050305",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "acquiescence-bias-straightlining-40",
@@ -5614,15 +5636,19 @@
     },
     {
       "id": "active-response-rate",
-      "term": "Active response rate",
-      "vietnamese": "Tỷ lệ hồi đáp thực tế (loại trừ các đối tượng không đủ điều kiện hoặc không liên lạc được).",
-      "vietnamese_variants": [],
+      "term": "Active Response Rate (AAPOR Response Rate Standards)",
+      "vietnamese": "Tỷ lệ hồi đáp thực tế (Chuẩn mực AAPOR)",
+      "vietnamese_variants": [
+        "Tỷ lệ phản hồi khảo sát chuẩn AAPOR",
+        "Response Rate RR1-RR6",
+        "Tỷ lệ hồi đáp hiệu dụng"
+      ],
       "domain_tags": [
         "Research Onion",
         "Strategy"
       ],
-      "core_definition": "Tỷ lệ hồi đáp thực tế (loại trừ các đối tượng không đủ điều kiện hoặc không liên lạc được).",
-      "seminal_citation": "Saunders et al. (2019); Saunders (2019)",
+      "core_definition": "Tỷ lệ hồi đáp thực tế (Response Rate) theo chuẩn mực quốc tế của Hiệp hội Nghiên cứu Ý kiến Công chúng Hoa Kỳ (AAPOR, 2016) là tỷ lệ phần trăm giữa số lượng phiếu trả lời hợp lệ hoàn chỉnh trên tổng số đối tượng đủ điều kiện tham gia khảo sát được tiếp cận. Báo cáo tỷ lệ hồi đáp minh bạch theo đúng định nghĩa chuẩn AAPOR là tiêu chuẩn liêm chính khoa học bắt buộc để đánh giá nguy cơ Thiên lệch do không hồi đáp (Non-response bias).",
+      "seminal_citation": "AAPOR (2016); Armstrong & Overton (1977)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
@@ -5630,7 +5656,14 @@
       "domain_tags_en": [
         "Research Onion",
         "Strategy"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Phân loại 4 nhóm kết quả liên lạc: I = Hoàn thành (Complete); P = Hoàn thành một phần (Partial); R = Từ chối tham gia (Refusal); NC = Không liên lạc được (Non-contact); U = Không rõ điều kiện (Unknown eligibility). 2. Công thức AAPOR RR1 (Tối thiểu): RR1 = I / [ (I + P) + (R + NC + O) + U ]. 3. Công thức AAPOR RR3 (Hiệu chỉnh ước lượng tỷ lệ đủ điều kiện e): RR3 = I / [ (I + P) + (R + NC + O) + e*U ].",
+      "benchmarks": "Ngưỡng kỳ vọng của các tạp chí Q1: Khảo sát doanh nghiệp thường đạt tỷ lệ hồi đáp từ 15% đến 25%; khảo sát người tiêu dùng trực tiếp thường yêu cầu > 50-60%. Khi tỷ lệ hồi đáp thấp (< 30%), tác giả bắt buộc phải thực hiện và báo cáo Kiểm định thiên lệch không hồi đáp Armstrong & Overton (1977).",
+      "pitfalls": "Bẫy phản biện: Tự tính tỷ lệ hồi đáp bằng cách chia số phiếu thu về cho số người 'đồng ý mở link khảo sát' thay vì chia cho tổng số lời mời gửi đi. Cách tính gian lận này thổi phồng tỷ lệ hồi đáp lên 80-90% và sẽ bị phản biện vạch trần ngay lập tức.",
+      "apa_reference": "The American Association for Public Opinion Research [AAPOR]. (2016). Standard definitions: Final dispositions of case codes and outcome rates for surveys (9th ed.). AAPOR.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "actor-network-theory-ant---latour-callon",
@@ -7437,21 +7470,32 @@
     },
     {
       "id": "bandwidth-selection-in-rdd",
-      "term": "Bandwidth Selection in RDD",
-      "vietnamese": "Lựa chọn băng thông tối ưu trong RDD cân bằng giữa thiên lệch (bias) và phương sai (Imbens-Kalyanaraman / Calonico et al.)",
-      "vietnamese_variants": [],
+      "term": "Optimal Bandwidth Selection in RDD (IK & CCT)",
+      "vietnamese": "Lựa chọn độ rộng băng thông tối ưu trong RDD",
+      "vietnamese_variants": [
+        "Băng thông tối ưu RDD",
+        "Imbens-Kalyanaraman Bandwidth",
+        "Calonico-Cattaneo-Titiunik (CCT) Bandwidth"
+      ],
       "domain_tags": [
         "Causal Inference"
       ],
-      "core_definition": "Lựa chọn băng thông tối ưu trong RDD cân bằng giữa thiên lệch (bias) và phương sai (Imbens-Kalyanaraman / Calonico et al.).",
-      "seminal_citation": "Calonico, Cattaneo, & Titiunik (2014)",
+      "core_definition": "Lựa chọn độ rộng băng thông tối ưu (Optimal Bandwidth Selection) trong Thiết kế Gián đoạn Hồi quy (Regression Discontinuity Design - RDD) là bài toán cân bằng cốt lõi giữa độ chệch (Bias: xảy ra khi băng thông h quá rộng, đưa các quan sát xa ngưỡng có dạng hàm phi tuyến vào phân tích) và phương sai (Variance: xảy ra khi băng thông h quá hẹp, làm giảm mạnh số lượng quan sát và làm bùng nổ sai số chuẩn).",
+      "seminal_citation": "Imbens & Kalyanaraman (2012); Calonico, Cattaneo, & Titiunik (2014)",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Bandwidth Selection in RDD according to Calonico, Cattaneo, & Titiunik (2014).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Thuật toán IK (Imbens & Kalyanaraman, 2012): Tối thiểu hóa sai số bình phương trung bình tiệm cận (Asymptotic Mean Squared Error - AMSE). 2. Thuật toán chuẩn mực hiện đại CCT (Calonico, Cattaneo, & Titiunik, 2014, 2020): Lựa chọn băng thông AMSE tối ưu kết hợp với kỹ thuật hiệu chỉnh độ chệch vững (Robust bias-corrected inference) và khoảng tin cậy hiệu chỉnh. 3. Báo cáo ước lượng hồi quy cục bộ (Local linear regression) với hạt giống nhân (Triangular kernel).",
+      "benchmarks": "Được triển khai chuẩn hóa qua gói lệnh `rdrobust` trong Stata/R. Tiêu chuẩn bắt buộc trên các tạp chí Q1 kinh tế (QJE, AER): Tác giả bắt buộc phải báo cáo kết quả kiểm tra độ nhạy của hiệu ứng can thiệp trên nhiều dải băng thông khác nhau (ví dụ: 0.5*h_opt, 0.75*h_opt, h_opt, 1.25*h_opt, 1.5*h_opt, 2.0*h_opt) để chứng minh kết luận không phụ thuộc vào việc chọn băng thông.",
+      "pitfalls": "Bẫy phản biện: Tự ý lựa chọn băng thông h bằng mắt thường hoặc chỉ báo cáo duy nhất một giá trị băng thông mang lại kết quả có ý nghĩa thống kê (p-hacking trong RDD); phản biện sẽ yêu cầu bảng phân tích độ nhạy băng thông toàn diện.",
+      "apa_reference": "Calonico, S., Cattaneo, M. D., & Titiunik, R. (2014). Robust nonparametric confidence intervals for regression‐discontinuity designs. Econometrica, 82(6), 2295–2326. https://doi.org/10.3982/ECTA11757",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "banking-model-of-education-vs-problem-posing",
@@ -7780,21 +7824,32 @@
     },
     {
       "id": "begg-and-mazumdar-rank-correlation",
-      "term": "Begg and Mazumdar Rank Correlation",
-      "vietnamese": "Kiểm định Tương quan Hạng Begg-Mazumdar",
-      "vietnamese_variants": [],
+      "term": "Begg and Mazumdar Rank Correlation Test for Publication Bias",
+      "vietnamese": "Kiểm định tương quan hạng Begg-Mazumdar về thiên lệch xuất bản",
+      "vietnamese_variants": [
+        "Kiểm định Begg",
+        "Kiểm định tương quan hạng thiên lệch công bố",
+        "Begg-Mazumdar Test"
+      ],
       "domain_tags": [
         "Meta-Analysis Diagnostics"
       ],
-      "core_definition": "Đo lường tương quan giữa kích thước hiệu ứng chuẩn hóa và phương sai của nó.",
-      "seminal_citation": "Begg & Mazumdar (1994)",
+      "core_definition": "Kiểm định tương quan hạng Begg & Mazumdar (1994) là phép kiểm định thống kê phi tham số chuẩn mực trong phân tích gộp (meta-analysis) dùng để phát hiện thiên lệch xuất bản (publication bias / funnel plot asymmetry). Kiểm định dựa trên hệ số tương quan hạng Kendall's Tau giữa kích thước hiệu ứng chuẩn hóa (standardized effect sizes) và phương sai sai số chuẩn của các nghiên cứu.",
+      "seminal_citation": "Begg & Mazumdar (1994); Egger et al. (1997)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Begg and Mazumdar Rank Correlation according to Begg & Mazumdar (1994).",
       "domain_tags_en": [
         "Meta-Analysis Diagnostics"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Tính toán hiệu ứng chuẩn hóa của từng nghiên cứu: t_i* = (theta_i - theta_pool) / sqrt(v_i*), trong đó v_i* là phương sai hiệu chỉnh. 2. Tính hệ số Kendall's Tau giữa t_i* và phương sai v_i. 3. Nếu không có thiên lệch xuất bản, kích thước hiệu ứng phải độc lập với kích thước mẫu (sai số chuẩn); nếu có thiên lệch xuất bản, các nghiên cứu mẫu nhỏ cần có hiệu ứng rất lớn mới được công bố, tạo ra tương quan dương mạnh.",
+      "benchmarks": "Giả thuyết H0: Không có sự bất đối xứng biểu đồ phễu (không có thiên lệch xuất bản, Tau = 0). Nếu p-value < 0.05 (hoặc < 0.10 trong meta-analysis do kiểm định có sức mạnh thấp): Bác bỏ H0, khẳng định có bằng chứng thiên lệch xuất bản. Luôn được báo cáo song song cùng Kiểm định hồi quy Egger (Egger's linear regression test).",
+      "pitfalls": "Bẫy phản biện: Áp dụng kiểm định Begg khi số lượng nghiên cứu tổng hợp quá ít (k < 10-20 nghiên cứu). Khi k nhỏ, sức mạnh kiểm định của Begg rất yếu và hầu như không thể phát hiện được thiên lệch xuất bản ngay cả khi thiên lệch tồn tại nghiêm trọng (khắc phục bằng kỹ thuật Trim-and-Fill của Duval & Tweedie).",
+      "apa_reference": "Begg, C. B., & Mazumdar, M. (1994). Operating characteristics of a rank correlation test for publication bias. Biometrics, 50(4), 1088–1101. https://doi.org/10.2307/2533446",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "behavior-coding",
@@ -7836,13 +7891,17 @@
     },
     {
       "id": "berksons-bias-berksons-fallacy",
-      "term": "Berkson's Bias (Berkson's Fallacy)",
-      "vietnamese": "Nghịch lý Berkson",
-      "vietnamese_variants": [],
+      "term": "Berkson's Bias (Berkson's Fallacy / Admission Rate Bias)",
+      "vietnamese": "Thiên lệch Berkson (Nghịch lý Berkson)",
+      "vietnamese_variants": [
+        "Nghịch lý Berkson",
+        "Thiên lệch tỷ lệ nhập viện",
+        "Berkson's Paradox"
+      ],
       "domain_tags": [
         "Epidemiological Methodology"
       ],
-      "core_definition": "Thiên lệch chọn mẫu trong bệnh viện tạo ra mối tương quan âm nhân tạo giữa hai bệnh không liên quan.",
+      "core_definition": "Thiên lệch Berkson (Berkson, 1946) là dạng thiên lệch chọn mẫu (selection bias) kinh điển trong dịch tễ học và khoa học xã hội, xuất hiện khi mẫu nghiên cứu được chọn lọc từ một quần thể đặc biệt (như bệnh nhân nội trú trong bệnh viện, sinh viên đại học tinh hoa) nơi mà xác suất được chọn vào mẫu phụ thuộc vào hai hay nhiều yếu tố độc lập. Kết quả là trong mẫu nghiên cứu xuất hiện mối tương quan nghịch đảo giả mạo giữa hai căn bệnh hoặc hai đặc tính vốn dĩ hoàn toàn độc lập hoặc thậm chí tương quan dương trong quần thể chung.",
       "seminal_citation": "Berkson (1946)",
       "tier": "textbook",
       "expert_status": "verified",
@@ -7850,7 +7909,14 @@
       "core_definition_en": "Academic definition of Berkson's Bias (Berkson's Fallacy) according to Berkson (1946).",
       "domain_tags_en": [
         "Epidemiological Methodology"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Mô hình xác suất: Biến chọn mẫu S = 1 (nhập viện) nếu cá nhân mắc bệnh A = 1 HOẶC bệnh B = 1. 2. Trong quần thể chung: P(A, B) = P(A)*P(B) (độc lập). 3. Trong nhóm bệnh viện (S = 1): Biết một bệnh nhân không mắc bệnh A làm tăng vọt xác suất họ phải mắc bệnh B (để giải thích lý do họ nhập viện), tạo ra mối tương quan âm nhân tạo Cov(A, B | S = 1) < 0. 4. Về bản chất đồ thị DAG, đây chính là trường hợp phân tầng trên biến va chạm (Conditioning on a collider S).",
+      "benchmarks": "Được cảnh báo mạnh mẽ trong mọi nghiên cứu sử dụng dữ liệu bệnh viện, dữ liệu ứng viên tuyển dụng, hoặc mẫu khảo sát tự nguyện trực tuyến. Giải pháp: Mở rộng mẫu sang quần thể cộng đồng (community-based sampling) hoặc áp dụng trọng số xác suất nghịch đảo chọn mẫu (Inverse Probability Weighting).",
+      "pitfalls": "Bẫy phản biện: Rút ra kết luận khái quát hóa về toàn bộ dân số từ một tập mẫu được chọn lọc dựa trên các tiêu chí đầu vào có điều kiện; phản biện sẽ chất vấn ngay lập tức tính thiên lệch Berkson làm sai lệch hướng tác động.",
+      "apa_reference": "Berkson, J. (1946). Limitations of the application of fourfold table analysis to hospital data. Biometrics Bulletin, 2(3), 47–53. https://doi.org/10.2307/3002000",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "beta-distribution",
@@ -7949,15 +8015,19 @@
     },
     {
       "id": "bias-corrected-and-accelerated-bootstrap-bca",
-      "term": "Bias-corrected and accelerated bootstrap (BCa)",
-      "vietnamese": "Khoảng tin cậy bootstrap hiệu chỉnh độ lệch và gia tốc.",
-      "vietnamese_variants": [],
+      "term": "Bias-Corrected and Accelerated Bootstrap (BCa Bootstrap)",
+      "vietnamese": "Khoảng tin cậy Bootstrap hiệu chỉnh độ lệch và gia tốc",
+      "vietnamese_variants": [
+        "Khoảng tin cậy BCa",
+        "BCa Bootstrap",
+        "Efron BCa Interval"
+      ],
       "domain_tags": [
         "PLS-SEM",
         "Discriminant Validity"
       ],
-      "core_definition": "Khoảng tin cậy bootstrap hiệu chỉnh độ lệch và gia tốc.",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
+      "core_definition": "Khoảng tin cậy Bootstrap hiệu chỉnh độ lệch và gia tốc (BCa Bootstrap - Efron, 1987) là phương pháp xây dựng khoảng tin cậy phi tham số tối tân và chính xác nhất trong lý thuyết tái lấy mẫu. Khác với khoảng tin cậy phân vị chuẩn (Percentile bootstrap) hay khoảng tin cậy đối xứng dựa trên giả định phân phối chuẩn, BCa hiệu chỉnh đồng thời cả hiện tượng chệch trung bình (bias-correction parameter z_0) lẫn hiện tượng phương sai phụ thuộc vào giá trị tham số (acceleration parameter a), đạt độ chính xác bậc hai (second-order accurate: O(1/n)).",
+      "seminal_citation": "Efron (1987); Efron & Tibshirani (1993)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
@@ -7965,7 +8035,14 @@
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Tái lấy mẫu có hoàn lại B lần (thường B >= 5.000 đến 10.000) thu được phân phối ước lượng tham số bootstrap theta*_b. 2. Tính tham số hiệu chỉnh chệch z_0: Dựa trên tỷ lệ các ước lượng bootstrap nhỏ hơn ước lượng mẫu gốc: z_0 = Phi^(-1)( sum(I(theta*_b < theta_hat)) / B ). 3. Tính tham số gia tốc a: Dựa trên độ lệch bất đối xứng của các giá trị rút bỏ Jackknife (Jackknife influence values). 4. Xác định các phân vị hiệu chỉnh alpha_1 và alpha_2 để cắt khoảng tin cậy 95%.",
+      "benchmarks": "Tiêu chuẩn vàng bắt buộc của các tạp chí Q1 (JAP, JOM, JM) khi kiểm định hiệu ứng gián tiếp trung gian (Mediation indirect effects) và hệ số phân biệt HTMT trong SEM. Khoảng tin cậy BCa 95% có độ phủ danh nghĩa thực tế xấp xỉ chính xác 95% ngay cả khi phân phối mẫu bị lệch mạnh.",
+      "pitfalls": "Bẫy phản biện: Chạy BCa bootstrap với số lần lặp quá ít (B < 1.000 lần). Thuật toán BCa đòi hỏi số lần lặp tối thiểu từ 5.000 đến 10.000 lần để các điểm phân vị ở hai đầu mút ổn định toán học; chạy ít hơn sẽ dẫn đến việc kết luận giả thuyết thay đổi ngẫu nhiên giữa các lần chạy phần mềm.",
+      "apa_reference": "Efron, B. (1987). Better bootstrap confidence intervals. Journal of the American Statistical Association, 82(397), 171–185. https://doi.org/10.1080/01621459.1987.10478410",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "bias-variance-tradeoff",
@@ -9534,21 +9611,32 @@
     },
     {
       "id": "central-tendency-bias",
-      "term": "Central Tendency Bias",
+      "term": "Central Tendency Bias (Error of Central Tendency)",
       "vietnamese": "Thiên lệch xu hướng trung tâm",
-      "vietnamese_variants": [],
+      "vietnamese_variants": [
+        "Lỗi xu hướng trung tâm",
+        "Thiên vị chọn điểm trung hòa",
+        "Neutral Point Response Bias"
+      ],
       "domain_tags": [
         "Survey Methodology"
       ],
-      "core_definition": "xu hướng người trả lời luôn chọn mức trung lập ở giữa thang đo để an toàn.",
-      "seminal_citation": "Paulhus (1991)",
+      "core_definition": "Thiên lệch xu hướng trung tâm (Central Tendency Bias - Guilford, 1954; Baumgartner & Steenkamp, 2001) là xu hướng tâm lý của người trả lời khảo sát ngần ngại chọn các điểm số cực đoan ở hai đầu thang đo (như điểm 1 hoặc điểm 7), mà chủ yếu tập trung lựa chọn các điểm số an toàn ở khoảng giữa thang đo (điểm 3, 4, 5 trên thang Likert 7 điểm). Hiện tượng này làm thu hẹp phương sai thực tế của biến số và làm suy giảm độ mạnh của các kiểm định thống kê.",
+      "seminal_citation": "Guilford (1954); Baumgartner & Steenkamp (2001)",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Central Tendency Bias according to Paulhus (1991).",
       "domain_tags_en": [
         "Survey Methodology"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Nguyên nhân: Sự e ngại cam kết quan điểm, thiếu hiểu biết về chủ đề khảo sát, hoặc tâm lý sợ bị đánh giá phán xét. 2. Đo lường: Tính tỷ lệ các câu trả lời rơi vào điểm giữa (Midpoint Response Style - MRS). 3. Chiến lược can thiệp: Sử dụng thang đo Likert số chẵn (Forced-choice Likert: thang 4 điểm hoặc 6 điểm, loại bỏ điểm trung lập ở giữa) hoặc mở rộng thang đo lên 9-11 điểm để tạo không gian phân hóa nhận thức thoải mái hơn.",
+      "benchmarks": "Khi tỷ lệ chọn điểm trung lập vượt quá 40-50% tổng số câu trả lời, thang đo bị suy thoái nghiêm trọng về năng lực phân biệt. Phân tích phân lớp ẩn (Latent Class Analysis) có thể giúp bóc tách nhóm người có xu hướng trung tâm khỏi phân tích cấu trúc.",
+      "pitfalls": "Bẫy phản biện: Ép người trả lời dùng thang Likert chẵn (không có điểm trung tính) đối với những chủ đề mà người trả lời thực sự có quan điểm trung lập hoặc không có thông tin để trả lời. Việc ép buộc này sẽ tạo ra lỗi đo lường giả tạo mới.",
+      "apa_reference": "Baumgartner, H., & Steenkamp, J. B. E. (2001). Response styles in marketing research: A cross-national investigation. Journal of Marketing Research, 38(2), 143–156. https://doi.org/10.1509/jmkr.38.2.143.18840",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "cfi-hoac-tli",
@@ -9968,68 +10056,105 @@
     {
       "id": "cluster-analysis",
       "term": "Cluster Analysis",
-      "vietnamese": "Phương pháp phân cụm phân cấp (Ward's method) và K-means.",
-      "vietnamese_variants": [],
+      "vietnamese": "Phân tích phân cụm",
+      "vietnamese_variants": [
+        "Phân tích cụm",
+        "Clustering Analysis",
+        "Kỹ thuật phân nhóm dữ liệu tự động"
+      ],
       "domain_tags": [
         "Multivariate Data Analysis"
       ],
-      "core_definition": "Phương pháp phân cụm phân cấp (Ward's method) và K-means.",
-      "seminal_citation": "Hair et al. (2018); Hair et al. (2018)",
+      "core_definition": "Phân tích phân cụm (Cluster Analysis - Anderberg, 1973; Kaufman & Rousseeuw, 1990) là kỹ thuật học máy không giám sát (unsupervised learning) đa biến nhằm nhóm các đối tượng hoặc quan sát thành các cụm (clusters) riêng biệt, sao cho các đối tượng trong cùng một cụm có độ tương đồng tối đa (high intra-cluster homogeneity) và các đối tượng thuộc các cụm khác nhau có độ khác biệt tối đa (high inter-cluster heterogeneity).",
+      "seminal_citation": "Anderberg (1973); Kaufman & Rousseeuw (1990)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #358; lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Cluster Analysis according to Hair et al. (2018); Hair et al. (2018).",
       "domain_tags_en": [
         "Multivariate Data Analysis"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Lựa chọn ma trận khoảng cách khoảng cách tương đồng (Euclidean, Manhattan, Mahalanobis, Gower). 2. Lựa chọn thuật toán phân cụm: Thuật toán phân cấp (Hierarchical: Ward's minimum variance, Complete linkage) hoặc Thuật toán phân hoạch (Partitioning: K-Means, K-Medoids / PAM). 3. Đánh giá chất lượng cụm bằng Chỉ số Silhouette (Silhouette Coefficient), Chỉ số Davies-Bouldin hoặc Calinski-Harabasz.",
+      "benchmarks": "Được ứng dụng chiến lược trong phân khúc thị trường (Market segmentation), phân loại nhóm chiến lược doanh nghiệp, và nhận diện phân nhóm bệnh lý. Chỉ số Silhouette trung bình: > 0.70 (cấu trúc cụm mạnh mẽ); 0.51 - 0.70 (cấu trúc hợp lý); 0.26 - 0.50 (cấu trúc yếu); < 0.25 (không có cấu trúc cụm thực chất).",
+      "pitfalls": "Bẫy phản biện: Luôn tìm thấy cụm ngay cả khi dữ liệu là nhiễu ngẫu nhiên thuần túy. Thuật toán phân cụm luôn gom nhóm bất kể dữ liệu thực tế có cụm hay không; bắt buộc phải thực hiện kiểm định xu hướng phân cụm (Hopkins statistic > 0.50) và thẩm định tính ổn định của cụm qua kiểm định chéo.",
+      "apa_reference": "Kaufman, L., & Rousseeuw, P. J. (1990). Finding groups in data: An introduction to cluster analysis. John Wiley & Sons. https://doi.org/10.1002/9780470316801",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "cluster-analysis-k-means-hierarchical",
-      "term": "Cluster Analysis (K-Means & Hierarchical)",
-      "vietnamese": "Phân tích phân cụm nhóm các đối tượng tương đồng vào cùng một cụm dựa trên khoảng cách khoảng cách Euclid",
-      "vietnamese_variants": [],
+      "term": "Two-Stage Clustering (Hierarchical & K-Means)",
+      "vietnamese": "Quy trình phân cụm hai giai đoạn (Phân cấp kết hợp K-Means)",
+      "vietnamese_variants": [
+        "Phân cụm 2 giai đoạn",
+        "Two-Step Cluster Analysis",
+        "Ward kết hợp K-Means"
+      ],
       "domain_tags": [
         "Unsupervised Learning"
       ],
-      "core_definition": "Phân tích phân cụm nhóm các đối tượng tương đồng vào cùng một cụm dựa trên khoảng cách khoảng cách Euclid.",
-      "seminal_citation": "Hair et al. (2018)",
+      "core_definition": "Quy trình phân tích phân cụm hai giai đoạn (Punj & Stewart, 1983; Hair et al., 2019) là quy tắc vàng kết hợp ưu điểm của cả hai trường phái phân cụm: Giai đoạn 1 sử dụng phân cụm phân cấp (Hierarchical Clustering theo phương pháp Ward) để xác định số lượng cụm tối ưu và tọa độ trọng tâm khởi tạo; Giai đoạn 2 sử dụng K-Means phi phân cấp để tối ưu hóa việc phân bổ lại các quan sát vào các cụm.",
+      "seminal_citation": "Punj & Stewart (1983); Hair et al. (2019)",
       "tier": "encyclopedia",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #357",
       "core_definition_en": "Academic definition of Cluster Analysis (K-Means & Hierarchical) according to Hair et al. (2018).",
       "domain_tags_en": [
         "Unsupervised Learning"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Giai đoạn 1: Chạy thuật toán Ward trên ma trận khoảng cách khoảng cách bình phương Euclidean, vẽ biểu đồ nhánh Dendrogram và quan sát biểu đồ scree chênh lệch hệ số kết tụ (agglomeration schedule) để xác định số cụm k*. 2. Trích xuất tọa độ trọng tâm (centroids) của k* cụm làm giá trị khởi tạo. 3. Giai đoạn 2: Chạy thuật toán K-Means với các trọng tâm ban đầu đã định trước từ giai đoạn 1, cho phép các đối tượng chuyển cụm lặp để tối thiểu hóa phương sai nội cụm.",
+      "benchmarks": "Khắc phục triệt để nhược điểm nhạy cảm với điểm khởi tạo ngẫu nhiên của K-Means và nhược điểm hạn chế kích thước mẫu lớn của phân cụm phân cấp. Đạt chuẩn mực thẩm định cao nhất trên các tạp chí quản trị và marketing hàng đầu.",
+      "pitfalls": "Bẫy phản biện: Bỏ qua bước làm sạch ngoại lai trước khi chạy giai đoạn 1. Phương pháp Ward cực kỳ nhạy cảm với các điểm ngoại lai; một ngoại lai cực đoan có thể làm sai lệch hoàn toàn biểu đồ Dendrogram và tạo ra các cụm giả mạo chỉ chứa một vài quan sát.",
+      "apa_reference": "Punj, G., & Stewart, D. W. (1983). Cluster analysis in marketing research: Review and suggestions for application. Journal of Marketing Research, 20(2), 134–148. https://doi.org/10.1177/002224378302000204",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "cluster-robust-standard-errors",
-      "term": "Cluster Robust Standard Errors",
-      "vietnamese": "Sai số Chuẩn Vững theo Cụm",
-      "vietnamese_variants": [],
+      "term": "Cluster-Robust Standard Errors (CRSE)",
+      "vietnamese": "Sai số chuẩn điều chỉnh cụm vững",
+      "vietnamese_variants": [
+        "Sai số chuẩn cụm",
+        "Liang-Zeger Cluster Errors",
+        "Huber-White-Moulton Cluster Standard Errors"
+      ],
       "domain_tags": [
         "Microeconometrics"
       ],
-      "core_definition": "Hiệu chỉnh tương quan nội bộ giữa các quan sát thuộc cùng một cụm hoặc địa phương.",
-      "seminal_citation": "Cameron & Miller (2015)",
+      "core_definition": "Sai số chuẩn điều chỉnh cụm (Cluster-Robust Standard Errors - CRSE - Liang & Zeger, 1986; Arellano, 1987; Moulton, 1990) là kỹ thuật kinh tế lượng chuẩn mực dùng để hiệu chỉnh ma trận hiệp phương sai của ước lượng OLS/GLS khi dữ liệu có cấu trúc phân cụm (clustered data như học sinh trong trường, cá nhân trong làng, công ty trong ngành). CRSE cho phép các phần dư bên trong cùng một cụm có tương quan tùy ý bất kỳ (arbitrary intra-cluster correlation / clustering effect) và có phương sai thay đổi.",
+      "seminal_citation": "Liang & Zeger (1986); Moulton (1990); Cameron, Gelbach, & Miller (2008)",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #361",
       "core_definition_en": "Academic definition of Cluster Robust Standard Errors according to Cameron & Miller (2015).",
       "domain_tags_en": [
         "Microeconometrics"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Công thức bánh mì kẹp thịt cụm (Cluster Sandwich Estimator): Var(beta_hat) = (X'X)^(-1) * [ sum_{g=1}^G (X_g' * u_hat_g * u_hat_g' * X_g) ] * (X'X)^(-1). 2. Hiệu chỉnh mẫu hữu hạn: Nhân với hệ số [G / (G - 1)] * [(N - 1) / (N - k)], trong đó G là số lượng cụm và N là tổng số quan sát. 3. Nếu số lượng cụm G nhỏ (G < 30-50 cụm), áp dụng kỹ thuật Wild Cluster Bootstrap (Cameron, Gelbach, & Miller, 2008).",
+      "benchmarks": "Được kích hoạt trong Stata bằng câu lệnh `vce(cluster cluster_var)`. Quy tắc Moulton (1990): Ngay cả khi hệ số tương quan nội lớp (Intraclass Correlation - ICC) rất nhỏ (0.01 đến 0.05), việc bỏ qua cấu trúc cụm có thể làm sai số chuẩn thông thường bị đánh giá thấp từ 2 đến 4 lần, làm sai lệch kết luận có ý nghĩa thống kê giả tạo.",
+      "pitfalls": "Bẫy phản biện: 'Few clusters problem' — Áp dụng CRSE tiêu chuẩn khi số lượng cụm G quá ít (G < 20-30 cụm). Khi G nhỏ, ước lượng bánh sandwich cụm bị chệch hướng về phía 0 nghiêm trọng, làm tăng tỷ lệ sai lầm loại I lên tới 20-50%; trong tình huống này, bắt buộc phải sử dụng Wild Cluster Bootstrap.",
+      "apa_reference": "Cameron, A. C., Gelbach, J. B., & Miller, D. L. (2008). Bootstrap-based improvements for inference with clustered errors. The Review of Economics and Statistics, 90(3), 414–427. https://doi.org/10.1162/rest.90.3.414",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "cluster-sampling",
-      "term": "Cluster sampling",
-      "vietnamese": "Chọn mẫu theo cụm (chia quần thể thành các cụm tự nhiên rồi chọn ngẫu nhiên các cụm).",
-      "vietnamese_variants": [],
+      "term": "Cluster Sampling (Single-Stage & Multi-Stage)",
+      "vietnamese": "Phương pháp chọn mẫu theo cụm",
+      "vietnamese_variants": [
+        "Lấy mẫu theo cụm",
+        "Chọn mẫu cụm đa giai đoạn",
+        "Cluster Sampling Design"
+      ],
       "domain_tags": [
         "Research Onion",
         "Strategy"
       ],
-      "core_definition": "Chọn mẫu theo cụm (chia quần thể thành các cụm tự nhiên rồi chọn ngẫu nhiên các cụm).",
-      "seminal_citation": "Saunders et al. (2019); Saunders (2019); Cochran (1977)",
+      "core_definition": "Chọn mẫu theo cụm (Cluster Sampling - Kish, 1965; Cochran, 1977) là kỹ thuật chọn mẫu xác suất được áp dụng khi không thể lập được danh sách khung chọn mẫu (sampling frame) của từng cá thể đơn lẻ trong toàn bộ quần thể phân tán rộng lớn về mặt địa lý. Quần thể được chia thành các cụm tự nhiên không chồng lấn (clusters như trường học, xã phường, bệnh viện), sau đó chọn ngẫu nhiên một số lượng cụm nhất định và tiến hành khảo sát toàn bộ (Single-stage) hoặc chọn mẫu tiếp bên trong các cụm được chọn (Multi-stage cluster sampling).",
+      "seminal_citation": "Kish (1965); Cochran (1977)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
@@ -10037,25 +10162,43 @@
       "domain_tags_en": [
         "Research Onion",
         "Strategy"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Nguyên lý khác biệt với Phân tầng (Stratified Sampling): Phân tầng yêu cầu 'Đồng nhất bên trong tầng, dị biệt giữa các tầng' (Homogeneous within, heterogeneous between); trong khi Chọn mẫu cụm lý tưởng yêu cầu 'Dị biệt bên trong cụm, đồng nhất giữa các cụm' (Heterogeneous within, homogeneous between - mỗi cụm là một hình ảnh thu nhỏ thu nhỏ của toàn bộ quần thể). 2. Đo lường Hiệu ứng Thiết kế (Design Effect - Deff): Deff = 1 + (m_bar - 1) * rho_ICC, trong đó m_bar là quy mô trung bình của cụm và rho_ICC là hệ số tương quan nội lớp. 3. Hiệu chỉnh cỡ mẫu: Cỡ mẫu thực tế cần thiết N_cluster = N_SRS * Deff.",
+      "benchmarks": "Do các cá thể trong cùng một cụm thường có xu hướng tương đồng nhau (ICC > 0), Deff hầu như luôn lớn hơn 1 (thường từ 1.5 đến 3.0), nghĩa là chọn mẫu cụm có phương sai lớn hơn và kém hiệu quả thống kê hơn so với chọn mẫu ngẫu nhiên đơn giản (SRS) cùng quy mô, nhưng lại tiết kiệm chi phí hậu cần từ 50-80%. Bắt buộc phải áp dụng trọng số mẫu phức hợp (Complex survey weights) khi phân tích.",
+      "pitfalls": "Bẫy phản biện: Phân tích dữ liệu chọn mẫu cụm bằng phần mềm OLS tiêu chuẩn mà không khai báo cấu trúc thiết kế mẫu (Survey design / svy commands). Bỏ qua Deff sẽ dẫn đến việc đánh giá sai số chuẩn quá thấp và tuyên bố các kết quả có ý nghĩa thống kê giả mạo.",
+      "apa_reference": "Kish, L. (1965). Survey sampling. John Wiley & Sons.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "cluster-robust-standard-errors-361",
-      "term": "Cluster-Robust Standard Errors",
-      "vietnamese": "Sai số chuẩn điều chỉnh cụm xử lý tương quan nội tại giữa các quan sát trong cùng một nhóm",
-      "vietnamese_variants": [],
+      "term": "Two-Way Cluster-Robust Standard Errors",
+      "vietnamese": "Sai số chuẩn điều chỉnh cụm hai chiều",
+      "vietnamese_variants": [
+        "Sai số chuẩn cụm hai chiều Cameron-Gelbach-Miller",
+        "Two-Way Clustering",
+        "Firm and Time Clustering"
+      ],
       "domain_tags": [
         "Econometrics"
       ],
-      "core_definition": "Sai số chuẩn điều chỉnh cụm xử lý tương quan nội tại giữa các quan sát trong cùng một nhóm.",
-      "seminal_citation": "Cameron & Miller (2015)",
+      "core_definition": "Sai số chuẩn điều chỉnh cụm hai chiều (Two-Way Cluster-Robust Standard Errors - Cameron, Gelbach, & Miller, 2011; Thompson, 2011; Petersen, 2009) là chuẩn mực kinh tế lượng tài chính doanh nghiệp bắt buộc, cho phép phần dư sai số có tương quan phi tham số đồng thời trên cả hai chiều độc lập: Chiều không gian thực thể (ví dụ: các quan sát của cùng một doanh nghiệp qua thời gian - firm effect) VÀ Chiều chuỗi thời gian (ví dụ: các cú sốc vĩ mô tác động lên tất cả các doanh nghiệp tại cùng một năm - time effect).",
+      "seminal_citation": "Petersen (2009); Cameron, Gelbach, & Miller (2011); Thompson (2011)",
       "tier": "curated",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #359",
       "core_definition_en": "Academic definition of Cluster-Robust Standard Errors according to Cameron & Miller (2015).",
       "domain_tags_en": [
         "Econometrics"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Công thức hợp nhất bao gồm - loại trừ (Inclusion-Exclusion Principle): Var_two-way(beta_hat) = Var_firm + Var_year - Var_intersection. 2. Ước lượng ma trận bánh sandwich độc lập theo cụm doanh nghiệp; ước lượng độc lập theo cụm năm; và trừ đi ma trận hiệp phương sai ước lượng theo cụm giao thoa (firm-year). 3. Đảm bảo ma trận kết quả xác định không âm bằng cách kiểm tra các giá trị riêng.",
+      "benchmarks": "Nghiên cứu kinh điển của Petersen (2009 - RFS) chứng minh rằng trong dữ liệu bảng tài chính doanh nghiệp, việc chỉ cụm theo 1 chiều (hoặc chỉ cố định thời gian) vẫn để sót hiện tượng phụ thuộc chéo nghiêm trọng. Hai chiều cụm (Firm & Year) là yêu cầu chuẩn mực tối thiểu của các tạp chí tài chính hàng đầu (JF, JFE, RFS).",
+      "pitfalls": "Bẫy phản biện: Khi số lượng cụm ở một trong hai chiều quá nhỏ (ví dụ số năm T < 10-15 năm). Khi đó thành phần phương sai theo năm bị đánh giá thiếu chính xác, đòi hỏi phải sử dụng kỹ thuật Wild Bootstrap đa chiều hoặc đưa thêm Biến giả cố định thời gian (Time fixed effects) kết hợp cụm một chiều theo doanh nghiệp.",
+      "apa_reference": "Petersen, M. A. (2009). Estimating standard errors in finance panel data sets: Comparing approaches. The Review of Financial Studies, 22(1), 435–480. https://doi.org/10.1093/rfs/hhn053",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "co-citation-analysis",
@@ -10195,21 +10338,32 @@
     },
     {
       "id": "cochrane-risk-of-bias-2-rob-2",
-      "term": "Cochrane Risk of Bias 2 (RoB 2)",
-      "vietnamese": "Bộ công cụ Đánh giá Nguy cơ Sai lệch RoB 2",
-      "vietnamese_variants": [],
+      "term": "Cochrane Risk of Bias Tool (RoB 2)",
+      "vietnamese": "Bộ công cụ đánh giá nguy cơ sai lệch Cochrane phiên bản 2",
+      "vietnamese_variants": [
+        "Công cụ RoB 2",
+        "Cochrane Risk of Bias 2",
+        "Đánh giá nguy cơ sai lệch thử nghiệm ngẫu nhiên"
+      ],
       "domain_tags": [
         "Evidence Appraisal"
       ],
-      "core_definition": "Chuẩn mực vàng đánh giá chất lượng phương pháp luận các thử nghiệm ngẫu nhiên RCT.",
-      "seminal_citation": "Sterne et al. (2019)",
+      "core_definition": "Bộ công cụ Cochrane RoB 2 (Sterne et al., 2019) là tiêu chuẩn vàng quốc tế bắt buộc để thẩm định chất lượng phương pháp luận và đánh giá nguy cơ sai lệch (Risk of Bias) của các thử nghiệm ngẫu nhiên có kiểm soát (Randomized Controlled Trials - RCTs) trong các nghiên cứu tổng quan hệ thống (Systematic Reviews) và phân tích gộp (Meta-Analyses).",
+      "seminal_citation": "Sterne et al. (2019); Higgins et al. (2011)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Cochrane Risk of Bias 2 (RoB 2) according to Sterne et al. (2019).",
       "domain_tags_en": [
         "Evidence Appraisal"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Đánh giá chi tiết trên 5 miền rủi ro độc lập (5 Domains): (D1) Sai lệch phát sinh từ quá trình phân bổ ngẫu nhiên (Randomization process); (D2) Sai lệch do độ lệch so với can thiệp dự định (Deviations from intended interventions); (D3) Sai lệch do dữ liệu kết quả bị khuyết (Missing outcome data); (D4) Sai lệch trong đo lường kết quả (Measurement of the outcome); (D5) Sai lệch trong lựa chọn kết quả báo cáo (Selection of the reported result). 2. Sử dụng thuật toán câu hỏi báo hiệu (Signaling questions) để phân loại từng miền thành 3 mức độ: Nguy cơ thấp (Low risk), Có một số lo ngại (Some concerns), hoặc Nguy cơ cao (High risk of bias). 3. Tổng hợp nguy cơ sai lệch chung của nghiên cứu.",
+      "benchmarks": "Được hiển thị trực quan thông qua biểu đồ giao thông (Traffic light plot) và biểu đồ tóm tắt nguy cơ sai lệch (Summary plot) bằng gói phần mềm `robvis`. Các nghiên cứu có nguy cơ sai lệch cao bắt buộc phải được đưa vào phân tích độ nhạy (Sensitivity analysis: loại trừ khỏi phân tích gộp để kiểm tra độ ổn định của kết quả).",
+      "pitfalls": "Bẫy phản biện: Nhầm lẫn giữa 'Chất lượng báo cáo' (Reporting quality) và 'Nguy cơ sai lệch' (Risk of bias). Một bài báo được viết rất chi tiết vẫn có thể có nguy cơ sai lệch cực cao do khiếm khuyết trong quy trình phân bổ làm mù hoặc mất dấu mẫu theo dõi.",
+      "apa_reference": "Sterne, J. A., Savović, J., Page, M. J., Elbers, R. G., Blencowe, N. S., Boutron, I., ... & Higgins, J. P. (2019). RoB 2: A revised tool for assessing risk of bias in randomised trials. BMJ, 366, l4898. https://doi.org/10.1136/bmj.l4898",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "cochrane-risk-of-bias-tool-for-randomized-trials-version-2",
@@ -10719,21 +10873,32 @@
     },
     {
       "id": "collider-bias",
-      "term": "Collider Bias",
-      "vietnamese": "Thiên lệch điểm va chạm xảy ra khi kiểm soát một biến là kết quả chung của cả hai biến X và Y, tạo ra tương quan ảo",
-      "vietnamese_variants": [],
+      "term": "Collider Bias (Berkson's Fallacy in DAGs)",
+      "vietnamese": "Thiên lệch biến va chạm (Collider Stratification Bias)",
+      "vietnamese_variants": [
+        "Thiên lệch Collider",
+        "Thiên lệch phân tầng điểm va chạm",
+        "Collider Stratification"
+      ],
       "domain_tags": [
         "Causal Inference"
       ],
-      "core_definition": "Thiên lệch điểm va chạm xảy ra khi kiểm soát một biến là kết quả chung của cả hai biến X và Y, tạo ra tương quan ảo.",
-      "seminal_citation": "Pearl (2009)",
+      "core_definition": "Thiên lệch biến va chạm (Collider Bias / Collider Stratification Bias - Pearl, 2000; Cole et al., 2010) là hiện tượng nghịch lý nguy hiểm trong suy luận nhân quả đồ thị. Một biến C được gọi là biến va chạm (Collider) nếu nó chịu tác động nhân quả đồng thời từ hai biến khác (X -> C <- Y). Nghịch lý xảy ra khi nhà nghiên cứu kiểm soát, phân tầng hoặc chọn lọc mẫu dựa trên biến C: Hành vi này sẽ mở ra một đường dẫn liên kết giả mạo (spurious association), tạo ra tương quan ảo hoặc đảo ngược dấu quan hệ thực tế giữa X và Y.",
+      "seminal_citation": "Pearl (2000); Cole et al. (2010)",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Collider Bias according to Pearl (2009).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Cấu trúc đồ thị: Hai mũi tên cùng hội tụ chỉ vào biến C (X -> C <- Y). 2. Nguyên lý d-separation: Theo tự nhiên, đường dẫn qua biến collider ban đầu đang bị đóng (X và Y hoàn toàn độc lập độc lập). 3. Khi đưa C vào làm biến kiểm soát trong hồi quy hoặc chọn mẫu chỉ gồm các cá thể có C = 1 (Conditioning on a collider): Đường dẫn bị mở khóa, tạo ra mối tương quan nhân tạo giữa X và Y. 4. Ví dụ kinh điển: Nghịch lý thí sinh vừa giỏi vừa đẹp trong kỳ thi tuyển chọn (Berkson's bias).",
+      "benchmarks": "Được coi là sai lầm 'Bad Controls' phổ biến nhất trong nghiên cứu thực nghiệm. Tiêu chuẩn vàng: Tuyệt đối không bao giờ đưa một biến là kết quả chung của biến can thiệp và biến kết quả (hoặc biến trung gian) vào danh mục biến kiểm soát.",
+      "pitfalls": "Bẫy phản biện: Tự động đưa mọi biến quan sát được vào mô hình với niềm tin ngây thơ rằng 'kiểm soát càng nhiều biến càng tốt'. Nếu một biến kiểm soát vô tình là collider, mô hình sẽ bị thiên lệch nghiêm trọng ngay cả khi ban đầu dữ liệu không hề có vấn đề nội sinh.",
+      "apa_reference": "Cole, S. R., Platt, R. W., Schisterman, E. F., Chu, H., Westreich, D., Richardson, D., & Poole, C. (2010). Illustrating bias due to conditioning on a collider. International Journal of Epidemiology, 39(2), 417–420. https://doi.org/10.1093/ije/dyp334",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "collider-stratification-bias",
@@ -10765,15 +10930,19 @@
     },
     {
       "id": "collinearity-assessment",
-      "term": "Collinearity assessment",
-      "vietnamese": "Đánh giá đa cộng tuyến giữa các biến nguyên nhân (VIF < 3.3).",
-      "vietnamese_variants": [],
+      "term": "Collinearity and Multicollinearity Assessment",
+      "vietnamese": "Đánh giá hiện tượng cộng tuyến và đa cộng tuyến",
+      "vietnamese_variants": [
+        "Kiểm tra đa cộng tuyến",
+        "Chỉ số VIF và Tolerance",
+        "Multicollinearity Diagnostics"
+      ],
       "domain_tags": [
         "PLS-SEM",
         "Discriminant Validity"
       ],
-      "core_definition": "Đánh giá đa cộng tuyến giữa các biến nguyên nhân (VIF < 3.3).",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
+      "core_definition": "Đánh giá hiện tượng đa cộng tuyến (Multicollinearity Assessment - Belsley, Kuh, & Welsch, 1980; O'Brien, 2007) là quy trình chẩn đoán kiểm tra mức độ phụ thuộc tuyến tính cao giữa hai hoặc nhiều biến độc lập trong mô hình hồi quy. Đa cộng tuyến nghiêm trọng làm cho ma trận X'X tiến gần đến trạng thái suy biến, khiến sai số chuẩn của các hệ số hồi quy bùng nổ, làm mất ý nghĩa thống kê của các biến quan trọng, và khiến dấu của hệ số hồi quy bị đảo ngược một cách phi lý.",
+      "seminal_citation": "Belsley, Kuh, & Welsch (1980); O'Brien (2007)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "LaTeX thô; lộ tên file nội bộ",
@@ -10781,7 +10950,14 @@
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Hệ số Dung sai (Tolerance - TOL): TOL_j = 1 - R_j^2, trong đó R_j^2 là hệ số xác định khi hồi quy biến X_j theo toàn bộ các biến độc lập còn lại. 2. Hệ số Phóng đại Phương sai (Variance Inflation Factor - VIF): VIF_j = 1 / TOL_j. 3. Phân tích giá trị riêng và Chỉ số Điều kiện (Condition Index - CI): CI = sqrt(lambda_max / lambda_k) kết hợp với bảng phân rã tỷ lệ phương sai (Variance Decomposition Proportions).",
+      "benchmarks": "Ngưỡng đánh giá thực nghiệm: (1) Ngưỡng thận trọng Hair et al. (2019): VIF < 3.3 (đặc biệt trong PLS-SEM cho mô hình cấu trúc và thang đo formative); (2) Ngưỡng OLS thông thường: VIF < 5.0 (hoặc tối đa < 10.0 theo chuẩn cổ điển); (3) Chỉ số Điều kiện: CI > 30 kết hợp tỷ lệ phương sai > 0.50 trên hai biến trở lên cảnh báo đa cộng tuyến nghiêm trọng.",
+      "pitfalls": "Bẫy phản biện: Khẳng định 'không có đa cộng tuyến' chỉ dựa vào ma trận tương quan từng cặp Pearson r < 0.70. Hiện tượng đa cộng tuyến thực chất là mối quan hệ đa biến (một biến là tổ hợp tuyến tính của 3-4 biến khác); hai biến có r = 0.30 vẫn có thể có VIF > 10.0 do cộng hưởng đa biến.",
+      "apa_reference": "O'Brien, R. M. (2007). A caution regarding rules of thumb for variance inflation factors. Quality & Quantity, 41(5), 673–690. https://doi.org/10.1007/s11135-006-9018-6",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "commensurability-legitimation",
@@ -13094,15 +13270,19 @@
     },
     {
       "id": "correction-for-attenuation",
-      "term": "Correction for attenuation",
-      "vietnamese": "Công thức điều chỉnh suy giảm tương quan của Spearman.",
-      "vietnamese_variants": [],
+      "term": "Correction for Attenuation (Spearman's Attenuation Formula)",
+      "vietnamese": "Hiệu chỉnh sự suy giảm tương quan do sai số đo lường",
+      "vietnamese_variants": [
+        "Công thức khử suy giảm Spearman",
+        "Attenuation Correction",
+        "Tương quan phi sai số đo lường"
+      ],
       "domain_tags": [
         "PLS-SEM",
         "Discriminant Validity"
       ],
-      "core_definition": "Công thức điều chỉnh suy giảm tương quan của Spearman.",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
+      "core_definition": "Công thức hiệu chỉnh sự suy giảm tương quan (Correction for Attenuation - Spearman, 1904) là kỹ thuật trắc nghiệm tâm lý kinh điển nhằm ước lượng mối tương quan thực sự (true correlation) giữa hai cấu trúc lý thuyết nếu như cả hai biến số đều được đo lường hoàn hảo không hề có sai số đo lường (measurement error). Sai số đo lường ngẫu nhiên luôn làm suy giảm (attenuates / ép nhỏ) hệ số tương quan quan sát được so với giá trị thực tế.",
+      "seminal_citation": "Spearman (1904); Nunnally & Bernstein (1994)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
@@ -13110,7 +13290,14 @@
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Công thức hiệu chỉnh: r_true(X,Y) = r_xy / sqrt(r_xx * r_yy), trong đó r_xy là hệ số tương quan quan sát được giữa hai thang đo, r_xx và r_yy lần lượt là độ tin cậy nhất quán nội tại (Cronbach's alpha hoặc Composite Reliability) của thang đo X và thang đo Y. 2. Đóng vai trò là nền tảng trực tiếp dẫn đến chỉ số HTMT (Heterotrait-Monotrait Ratio) trong PLS-SEM hiện đại.",
+      "benchmarks": "Tương quan hiệu chỉnh r_true luôn lớn hơn hoặc bằng tương quan quan sát r_xy. Nếu r_true vượt quá ngưỡng 0.85 hoặc 0.90, hai thang đo thực chất đang cùng đo lường một cấu trúc duy nhất, vi phạm giá trị phân biệt.",
+      "pitfalls": "Bẫy phản biện: (1) Tính toán r_true vượt quá 1.0 (Over-correction: r_true > 1.0) khi độ tin cậy r_xx hoặc r_yy bị đánh giá quá thấp do vi phạm giả định tau-equivalent; (2) Sử dụng tương quan đã hiệu chỉnh trong hồi quy OLS mà không giải trình phương pháp luận (dẫn đến ma trận hiệp phương sai không xác định dương).",
+      "apa_reference": "Spearman, C. (1904). The proof and measurement of association between two things. The American Journal of Psychology, 15(1), 72–101. https://doi.org/10.2307/1412159",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "correspondence-analysis-simple-multiple-ca",
@@ -13335,21 +13522,32 @@
     },
     {
       "id": "coverage-error",
-      "term": "Coverage Error",
-      "vietnamese": "Sai số bao phủ xảy ra khi khung chọn mẫu (sampling frame) không khớp hoàn toàn với quần thể mục tiêu target population",
-      "vietnamese_variants": [],
+      "term": "Coverage Error in Survey Methodology",
+      "vietnamese": "Sai số bao phủ trong phương pháp khảo sát",
+      "vietnamese_variants": [
+        "Lỗi bao phủ mẫu",
+        "Khung chọn mẫu không khớp",
+        "Undercoverage and Overcoverage"
+      ],
       "domain_tags": [
         "Survey Methodology"
       ],
-      "core_definition": "Sai số bao phủ xảy ra khi khung chọn mẫu (sampling frame) không khớp hoàn toàn với quần thể mục tiêu target population.",
-      "seminal_citation": "Groves et al. (2009)",
+      "core_definition": "Sai số bao phủ (Coverage Error - Groves et al., 2009; Dillman et al., 2014) là một trong bốn trụ cột của Khung Sai số Khảo sát Toàn diện (Total Survey Error - TSE). Sai số xuất hiện khi khung chọn mẫu (Sampling Frame - danh sách thực tế được dùng để rút mẫu) không trùng khớp hoàn hảo với Quần thể Mục tiêu (Target Population), dẫn đến hiện tượng bỏ sót một bộ phận dân số (Undercoverage) hoặc đưa nhầm các đối tượng không đủ tiêu chuẩn vào danh sách (Overcoverage / Ineligible units).",
+      "seminal_citation": "Groves et al. (2009); Dillman, Smyth, & Christian (2014)",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Coverage Error according to Groves et al. (2009).",
       "domain_tags_en": [
         "Survey Methodology"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Công thức toán học đo lường độ chệch bao phủ: Bias(y_bar) = (N_nc / N) * (mean_c - mean_nc), trong đó N_nc là quy mô nhóm không được bao phủ, mean_c là giá trị trung bình của nhóm được bao phủ và mean_nc là giá trị trung bình của nhóm bị bỏ sót. 2. Độ chệch bao phủ chỉ bằng 0 khi toàn bộ dân số được bao phủ (N_nc = 0) HOẶC nhóm bị bỏ sót có hành vi giống hệt nhóm được bao phủ. 3. Hiệu chỉnh: Sử dụng thiết kế khảo sát đa khung (Dual-frame / Multi-frame sampling) hoặc áp dụng trọng số hiệu chỉnh sau phân tầng (Post-stratification weighting).",
+      "benchmarks": "Được coi là thách thức lớn nhất trong các cuộc khảo sát trực tuyến (Online survey panel undercoverage: loại bỏ nhóm người nghèo, người già không tiếp cận internet). Bắt buộc phải đối chiếu cơ cấu nhân khẩu học của mẫu với dữ liệu Tổng điều tra dân số quốc gia.",
+      "pitfalls": "Bẫy phản biện: Đồng nhất sai số bao phủ (Coverage error) với sai số chọn mẫu (Sampling error). Tăng quy mô mẫu N lên gấp 10 lần chỉ làm giảm sai số chọn mẫu ngẫu nhiên chứ hoàn toàn không thể làm giảm sai số bao phủ nếu khung chọn mẫu ban đầu đã bị khiếm khuyết.",
+      "apa_reference": "Groves, R. M., Fowler, F. J., Jr., Couper, M. P., Lepkowski, J. M., Singer, E., & Tourangeau, R. (2009). Survey methodology (2nd ed.). John Wiley & Sons.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "cox-proportional-hazards-model",
@@ -14471,21 +14669,32 @@
     },
     {
       "id": "dbscan-density-based-clustering",
-      "term": "DBSCAN Density-Based Clustering",
-      "vietnamese": "Phân cụm Dựa trên Mật độ DBSCAN",
-      "vietnamese_variants": [],
+      "term": "DBSCAN (Density-Based Spatial Clustering of Applications with Noise)",
+      "vietnamese": "Thuật toán phân cụm dựa trên mật độ không gian DBSCAN",
+      "vietnamese_variants": [
+        "Thuật toán DBSCAN",
+        "Phân cụm mật độ DBSCAN",
+        "Density-based Clustering"
+      ],
       "domain_tags": [
         "Unsupervised Learning"
       ],
-      "core_definition": "Nhận dạng các cụm có hình dạng tùy ý dựa trên mật độ điểm và phân loại các điểm cô lập là nhiễu.",
-      "seminal_citation": "Ester et al. (1996)",
+      "core_definition": "DBSCAN (Ester, Kriegel, Sander, & Xu, 1996) là thuật toán phân cụm phi tham số đột phá dựa trên mật độ. Khác biệt hoàn toàn với K-Means và phân cụm phân cấp, DBSCAN có khả năng phát hiện các cụm có hình dạng hình học tùy ý bất kỳ (arbitrary shapes) và tự động nhận diện, cô lập các điểm nhiễu ngoại lai (noise/outliers) mà không đòi hỏi người dùng phải xác định trước số lượng cụm K.",
+      "seminal_citation": "Ester et al. (1996); Campello et al. (2013)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of DBSCAN Density-Based Clustering according to Ester et al. (1996).",
       "domain_tags_en": [
         "Unsupervised Learning"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Hai siêu tham số cốt lõi: Epsilon (eps - bán kính lân cận không gian) và MinPts (số lượng điểm tối thiểu trong vùng lân cận eps). 2. Phân loại ba loại điểm: (A) Điểm lõi (Core point: có ít nhất MinPts điểm nằm trong bán kính eps); (B) Điểm biên (Border point: nằm trong eps của một điểm lõi nhưng có ít hơn MinPts); (C) Điểm nhiễu (Noise point: không phải lõi cũng không phải biên). 3. Phát triển cụm bằng cách kết nối các điểm có thể tiếp cận mật độ (density-reachable).",
+      "benchmarks": "Được trao giải thưởng SIGKDD Test of Time Award. Tối ưu hóa tham số eps thông qua đồ thị khoảng cách khoảng cách k-láng giềng gần nhất (k-distance graph: tìm điểm khuỷu tay uốn cong mạnh nhất). Là công cụ chuẩn mực tối ưu cho dữ liệu không gian địa lý (GIS), dữ liệu hành vi di chuyển và phát hiện gian lận bất thường.",
+      "pitfalls": "Bẫy phản biện: Áp dụng DBSCAN cho dữ liệu có các cụm có mật độ chênh lệch nhau quá lớn (varying densities). Với một bán kính eps cố định toàn cục, DBSCAN không thể đồng thời phát hiện cụm mật độ dày và cụm mật độ thưa (trường hợp này bắt buộc phải nâng cấp lên thuật toán HDBSCAN của Campello et al., 2013).",
+      "apa_reference": "Ester, M., Kriegel, H. P., Sander, J., & Xu, X. (1996). A density-based algorithm for discovering clusters in large spatial databases with noise. In Proceedings of the Second International Conference on Knowledge Discovery and Data Mining (KDD-96, pp. 226–231).",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "de-identification-anonymization",
@@ -16629,12 +16838,16 @@
     {
       "id": "elastic-net-regularization",
       "term": "Elastic Net Regularization",
-      "vietnamese": "Hồi quy Elastic Net",
-      "vietnamese_variants": [],
+      "vietnamese": "Hồi quy điều chuẩn Elastic Net",
+      "vietnamese_variants": [
+        "Mô hình Elastic Net",
+        "Kết hợp điều chuẩn L1 và L2",
+        "Zou & Hastie Regularization"
+      ],
       "domain_tags": [
         "Penalized Regression"
       ],
-      "core_definition": "Kết hợp ưu điểm của cả L1 LASSO và L2 Ridge giúp xử lý nhóm biến đa cộng tuyến cao.",
+      "core_definition": "Hồi quy Elastic Net (Zou & Hastie, 2005) là kỹ thuật điều chuẩn tiên tiến kết hợp hài hòa ưu điểm của cả hai phương pháp Ridge (chuẩn L2) và LASSO (chuẩn L1). Elastic Net khắc phục triệt để các hạn chế cố hữu của LASSO trong bối cảnh dữ liệu có tính đa cộng tuyến mạnh: Thuật toán có khả năng chọn lọc đồng thời cả nhóm các biến có tương quan cao (grouping effect) và xử lý tối ưu bài toán số biến lớn hơn số quan sát (p >> n) mà không bị giới hạn số lượng biến được chọn tối đa bằng n.",
       "seminal_citation": "Zou & Hastie (2005)",
       "tier": "textbook",
       "expert_status": "verified",
@@ -16642,7 +16855,14 @@
       "core_definition_en": "Academic definition of Elastic Net Regularization according to Zou & Hastie (2005).",
       "domain_tags_en": [
         "Penalized Regression"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Hàm mục tiêu tối ưu hóa: Min_beta { (1 / 2n) * sum (y_i - X_i*beta)^2 + lambda * [ alpha * sum |beta_j| + (1 - alpha)/2 * sum beta_j^2 ] }. 2. Hai siêu tham số: lambda >= 0 (mức độ điều chuẩn tổng thể) và alpha in [0, 1] (tỷ trọng cân bằng: alpha = 1 là LASSO thuần túy, alpha = 0 là Ridge thuần túy). 3. Tìm kiếm lưới tối ưu (Grid Search CV) trên cả hai chiều không gian (alpha, lambda) để xác định điểm cân bằng lỗi dự báo ngoài mẫu thấp nhất.",
+      "benchmarks": "Được công nhận là chuẩn mực vàng trong xử lý dữ liệu di truyền học, phân tích tâm lý học văn bản lớn và mô hình hóa chỉ báo kinh tế tài chính phức tạp. Khi các biến trong cùng một cấu trúc lý thuyết có tương quan nội tại cao, Elastic Net luôn giữ lại toàn bộ nhóm biến thay vì chỉ chọn ngẫu nhiên một biến như LASSO.",
+      "pitfalls": "Bẫy phản biện: Chạy Elastic Net mà không chuẩn hóa dữ liệu đầu vào. Giống như mọi kỹ thuật điều chuẩn phạt hệ số, nếu các biến không được chuẩn hóa về cùng thang đo (Z-score), các biến có độ lệch chuẩn tự nhiên nhỏ sẽ bị phạt bất công và bị loại bỏ sai lệch khỏi mô hình.",
+      "apa_reference": "Zou, H., & Hastie, T. (2005). Regularization and variable selection via the elastic net. Journal of the Royal Statistical Society: Series B (Statistical Methodology), 67(2), 301–320. https://doi.org/10.1111/j.1467-9868.2005.00503.x",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "elite-interviewing-method",
@@ -16868,20 +17088,31 @@
     {
       "id": "endogeneity-bias",
       "term": "Endogeneity Bias",
-      "vietnamese": "Thiên lệch nội sinh do biến bị bỏ sót (omitted variables), sai số đo lường hoặc quan hệ nhân quả ngược",
-      "vietnamese_variants": [],
+      "vietnamese": "Thiên lệch nội sinh",
+      "vietnamese_variants": [
+        "Thiên vị nội sinh",
+        "Vấn đề nội sinh trong kinh tế lượng",
+        "Endogeneity Problem"
+      ],
       "domain_tags": [
         "Econometrics"
       ],
-      "core_definition": "Thiên lệch nội sinh do biến bị bỏ sót (omitted variables), sai số đo lường hoặc quan hệ nhân quả ngược.",
-      "seminal_citation": "Wooldridge (2010)",
+      "core_definition": "Thiên lệch nội sinh (Endogeneity Bias - Wooldridge, 2010; Antonakis et al., 2010) là sai sót phương pháp luận nghiêm trọng và phổ biến nhất trong nghiên cứu kinh tế lượng và khoa học hành vi, xảy ra khi một hoặc nhiều biến giải thích có tương quan với sai số ngẫu nhiên của mô hình (Cov(X, u) != 0). Sự vi phạm giả định ngoại sinh chặt chẽ này làm cho các ước lượng OLS bị chệch (biased) và không nhất quán (inconsistent), biến mọi kết luận về quan hệ nhân quả thành vô giá trị.",
+      "seminal_citation": "Antonakis et al. (2010); Wooldridge (2010)",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Endogeneity Bias according to Wooldridge (2010).",
       "domain_tags_en": [
         "Econometrics"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Ba nguồn gốc căn bản gây ra nội sinh: (A) Biến bị bỏ sót (Omitted Variables / Unobserved Heterogeneity); (B) Quan hệ nhân quả ngược hoặc đồng thời (Reverse Causality / Simultaneity: Y tác động ngược lại X); (C) Sai số đo lường trong biến giải thích (Measurement Error in Regressors / Errors-in-Variables). 2. Kiểm định phát hiện: Kiểm định Durbin-Wu-Hausman. 3. Chiến lược hóa giải: Biến công cụ (IV / 2SLS), Thiết kế sai phân kép (DiD), Thiết kế gián đoạn hồi quy (RDD), Ghép cặp mẫu (Matching), hoặc Mô hình hiệu ứng cố định bảng động (System GMM).",
+      "benchmarks": "Là tiêu chí thẩm định tiên quyết số 1 của tất cả các tạp chí kinh tế, quản trị và tài chính hàng đầu (AER, JFE, SMJ, AMJ). Một bài báo khẳng định quan hệ nhân quả mà không có phần giải trình và kiểm soát nội sinh sẽ bị từ chối ngay từ vòng sơ loại (Desk Reject).",
+      "pitfalls": "Bẫy phản biện: Tuyên bố 'chúng tôi phát hiện tác động nhân quả' trên dữ liệu quan sát cắt ngang (cross-sectional survey) thuần túy bằng hồi quy OLS hoặc SEM thông thường mà không hề có biến công cụ hoặc can thiệp ngoại sinh; phản biện Q1 sẽ lập tức chỉ trích vấn đề thiên lệch nội sinh.",
+      "apa_reference": "Antonakis, J., Bendahan, S., Jacquart, P., & Lalive, R. (2010). On making causal claims: A review and recommendations. The Leadership Quarterly, 21(6), 1086–1120. https://doi.org/10.1016/j.leaqua.2010.10.010",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "endowment-effect-richard-thaler",
@@ -17972,15 +18203,19 @@
     },
     {
       "id": "extreme-case-sampling",
-      "term": "Extreme case sampling",
-      "vietnamese": "Chọn mẫu trường hợp cực đoan (chọn các ca thành công vượt bậc hoặc thất bại nặng nề để hiểu sâu).",
-      "vietnamese_variants": [],
+      "term": "Extreme Case Sampling (Deviant Case Sampling)",
+      "vietnamese": "Phương pháp chọn mẫu trường hợp cực đoan",
+      "vietnamese_variants": [
+        "Chọn mẫu trường hợp dị biệt",
+        "Deviant Case Sampling",
+        "Extreme Case Qualitative Strategy"
+      ],
       "domain_tags": [
         "Research Onion",
         "Strategy"
       ],
-      "core_definition": "Chọn mẫu trường hợp cực đoan (chọn các ca thành công vượt bậc hoặc thất bại nặng nề để hiểu sâu).",
-      "seminal_citation": "Saunders et al. (2019); Saunders (2019)",
+      "core_definition": "Chọn mẫu trường hợp cực đoan (Extreme Case / Deviant Case Sampling - Patton, 2015) là chiến lược chọn mẫu định tính chuyên sâu tập trung vào việc nghiên cứu các trường hợp có biểu hiện ngoại lệ phi thường, các ca thành công vượt bậc hoặc các ca thất bại nặng nề (outliers of success or failure). Bằng cách mổ xẻ những biểu hiện cực đoan, nhà nghiên cứu có thể làm bộc lộ rõ nét những cơ chế, điều kiện kích hoạt hoặc rào cản tiềm ẩn mà các trường hợp trung bình bình thường thường che giấu.",
+      "seminal_citation": "Patton (1990, 2015); Eisenhardt (1989)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
@@ -17988,25 +18223,43 @@
       "domain_tags_en": [
         "Research Onion",
         "Strategy"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Khảo sát dữ liệu phân phối chung để xác định hai đầu mút của phân phối (phân vị top 1% hoặc bottom 1% của một chỉ báo hiệu quả). 2. Lựa chọn các trường hợp dị biệt nổi bật nhất để tiến hành nghiên cứu trường hợp sâu (In-depth case studies). 3. Đối chiếu so sánh chéo (Cross-case comparison) giữa trường hợp cực đoan thành công và trường hợp cực đoan thất bại để nhận diện các điều kiện nhân quả cốt lõi.",
+      "benchmarks": "Được xem là phương pháp tạo lý thuyết có sức mạnh khai phóng nhận thức rất cao trong nghiên cứu khủng hoảng tổ chức, khởi nghiệp kỳ lân (Unicorns), và quản trị hiệu suất đột phá. Minh chứng bằng bản tường trình dày dặn về bối cảnh đặc thù của trường hợp.",
+      "pitfalls": "Bẫy phản biện: Khái quát hóa thống kê các phát hiện từ trường hợp cực đoan sang các trường hợp bình thường phổ quát. Tác giả bắt buộc phải giới hạn phạm vi đóng góp ở mức Khái quát hóa Phân tích (Analytical Generalization: phát hiện cơ chế lý thuyết mới) chứ không thể tuyên bố rằng các tổ chức bình thường cũng có thể áp dụng rập khuôn.",
+      "apa_reference": "Patton, M. Q. (2015). Qualitative research & evaluation methods: Integrating theory and practice (4th ed.). Sage Publications.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "extreme-response-bias",
-      "term": "Extreme Response Bias",
-      "vietnamese": "Thiên lệch câu trả lời cực đoan",
-      "vietnamese_variants": [],
+      "term": "Extreme Response Style (ERS)",
+      "vietnamese": "Phong cách phản hồi cực đoan",
+      "vietnamese_variants": [
+        "Thiên lệch câu trả lời cực đoan",
+        "Extreme Response Bias",
+        "Xu hướng chọn điểm kịch trần kịch sàn"
+      ],
       "domain_tags": [
         "Survey Methodology"
       ],
-      "core_definition": "xu hướng người trả lời chỉ chọn điểm cực đại hoặc cực tiểu trên thang đo Likert.",
-      "seminal_citation": "Paulhus (1991)",
+      "core_definition": "Phong cách phản hồi cực đoan (Extreme Response Style - ERS - Greenleaf, 1992; de Jong et al., 2008) là xu hướng mang tính phong cách cá nhân có hệ thống của người trả lời trong việc luôn luôn lựa chọn các điểm số cao nhất hoặc thấp nhất ở hai đầu cực của thang đo (ví dụ chỉ chọn điểm 1 hoặc điểm 7 trên thang Likert 7 điểm), bất kể nội dung câu hỏi là gì. Phong cách này phụ thuộc nặng nề vào đặc trưng tính cách cá nhân và sự khác biệt văn hóa quốc gia.",
+      "seminal_citation": "Greenleaf (1992); de Jong et al. (2008)",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Extreme Response Bias according to Paulhus (1991).",
       "domain_tags_en": [
         "Survey Methodology"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Đo lường chỉ số ERS: Tỷ lệ phần trăm các câu hỏi mà một cá nhân chọn điểm cực đoan nhất (điểm 1 hoặc 7) trên một tập hợp gồm nhiều thang đo độc lập nội dung: ERS_i = (số câu chọn cực đoan) / (tổng số câu). 2. Khác biệt văn hóa: Các nghiên cứu đa quốc gia chỉ ra rằng người trả lời từ các nền văn hóa Địa Trung Hải, Trung Đông và Mỹ La-tinh có chỉ số ERS cao hơn đáng kể so với người trả lời từ các nền văn hóa Đông Á (vốn thiên về Central Tendency). 3. Hiệu chỉnh: Sử dụng mô hình đo lường IRT đa chiều hoặc chuẩn hóa nội bộ cá thể (Ipsative standardization).",
+      "benchmarks": "Là nguồn sai lệch đo lường lớn nhất trong các nghiên cứu so sánh đa quốc gia (Cross-cultural / Cross-national research). Nếu không kiểm soát ERS, sự khác biệt trung bình giữa các quốc gia thực chất chỉ phản ánh phong cách phản hồi văn hóa chứ không phải là sự khác biệt thực tế về thái độ.",
+      "pitfalls": "Bẫy phản biện: So sánh trực tiếp giá trị trung bình thang đo Likert giữa các quốc gia khác nhau mà không thực hiện kiểm định Bất biến Đo lường Đa nhóm (Measurement Invariance) để bóc tách phong cách phản hồi ERS.",
+      "apa_reference": "de Jong, M. G., Steenkamp, J. B. E., Fox, J. P., & Baumgartner, H. (2008). Using item response theory to measure extreme response style in marketing research: A global investigation. Journal of Marketing Research, 45(1), 104–115. https://doi.org/10.1509/jmkr.45.1.104",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "extreme-response-style-ers",
@@ -19066,32 +19319,46 @@
     {
       "id": "friedman-test",
       "term": "Friedman Test",
-      "vietnamese": "Kiểm định phi tham số Friedman thay thế Repeated Measures ANOVA cho đo lường lặp lại",
-      "vietnamese_variants": [],
+      "vietnamese": "Kiểm định Friedman",
+      "vietnamese_variants": [
+        "Kiểm định phi tham số Friedman",
+        "Kiểm định đo lường lặp lại phi tham số",
+        "Friedman ANOVA"
+      ],
       "domain_tags": [
         "Non-Parametric Statistics"
       ],
-      "core_definition": "Kiểm định phi tham số Friedman thay thế Repeated Measures ANOVA cho đo lường lặp lại.",
-      "seminal_citation": "Friedman (1937)",
+      "core_definition": "Kiểm định Friedman (Friedman, 1937, 1939) là phép kiểm định thống kê phi tham số chuẩn mực cho thiết kế đo lường lặp lại (Repeated Measures) hoặc thiết kế khối ngẫu nhiên hoàn chỉnh (Randomized Complete Block Design). Đây là giải pháp thay thế phi tham số cho Repeated Measures ANOVA khi cùng một nhóm đối tượng được đo lường qua từ ba thời điểm hoặc ba điều kiện thực nghiệm trở lên (k >= 3), và dữ liệu không thỏa mãn giả định phân phối chuẩn hoặc giả định tính cầu (Sphericity).",
+      "seminal_citation": "Friedman (1937, 1939)",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Friedman Test according to Friedman (1937).",
       "domain_tags_en": [
         "Non-Parametric Statistics"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Thiết lập ma trận dữ liệu n dòng (n đối tượng / blocks) và k cột (k điều kiện đo lường). 2. Xếp thứ hạng nội bộ theo từng hàng riêng biệt: Mỗi đối tượng được xếp hạng từ 1 đến k trên k điều kiện. 3. Tính tổng thứ hạng theo từng cột R_j (j = 1...k). 4. Thống kê kiểm định Friedman Q: Q = [12 / (n * k * (k + 1))] * sum_{j=1}^k [R_j^2] - 3 * n * (k + 1). 5. Thống kê Q tuân theo phân phối Chi-bình phương với (k - 1) bậc tự do.",
+      "benchmarks": "Giả thuyết H0: Không có sự khác biệt giữa các lần đo lường lặp lại (các cột có phân phối thứ hạng như nhau). Bác bỏ H0 khi p-value < 0.05. Khi p < 0.05, bắt buộc chạy kiểm định so sánh cặp hậu kiểm (Post-hoc pairwise Wilcoxon signed-rank tests) kèm hiệu chỉnh Bonferroni. Kích thước hiệu ứng Hệ số phù hợp Kendall W (Kendall's W = Q / [n * (k - 1)]).",
+      "pitfalls": "Bẫy phản biện: Sử dụng kiểm định Kruskal-Wallis cho dữ liệu đo lường lặp lại. Kruskal-Wallis giả định các nhóm độc lập; việc áp dụng nó cho các quan sát ghép cặp theo thời gian sẽ bỏ qua hoàn toàn tương quan nội tại giữa các lần đo và làm mất sức mạnh thống kê nghiêm trọng.",
+      "apa_reference": "Friedman, M. (1937). The use of ranks to avoid the assumption of normality implicit in the analysis of variance. Journal of the American Statistical Association, 32(200), 675–701. https://doi.org/10.1080/01621459.1937.10503522",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "friedman-two-way-anova",
-      "term": "Friedman two-way ANOVA",
-      "vietnamese": "Phân tích phương sai 2 yếu tố Friedman",
-      "vietnamese_variants": [],
+      "term": "Friedman Two-Way ANOVA by Ranks",
+      "vietnamese": "Phân tích phương sai hai yếu tố Friedman theo thứ hạng",
+      "vietnamese_variants": [
+        "ANOVA hai yếu tố phi tham số Friedman",
+        "Friedman Block ANOVA"
+      ],
       "domain_tags": [
         "Methodology",
         "Research Design"
       ],
-      "core_definition": "Kiểm định phi tham số cho k mẫu phụ thuộc (thay thế Repeated Measures ANOVA).",
-      "seminal_citation": "Schindler (2022)",
+      "core_definition": "Phân tích phương sai hai yếu tố theo thứ hạng Friedman là thủ tục mở rộng của kiểm định Friedman nhằm kiểm soát một yếu tố phân khối ngoại lai (blocking factor như cá thể, chuyên gia đánh giá) trong khi kiểm tra tác động của yếu tố xử lý chính (treatment factor).",
+      "seminal_citation": "Friedman (1937); Skillings & Mack (1981)",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
@@ -19099,7 +19366,14 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Phân tách nguồn biến thiên thành biến thiên giữa các xử lý và biến thiên sai số ngẫu nhiên sau khi đã triệt tiêu biến thiên giữa các khối (blocks). 2. Tính toán chính xác phân phối hoán vị (exact permutation distribution) khi số khối n nhỏ (n < 15). 3. Đánh giá mức độ đồng thuận giữa các khối thông qua hệ số Kendall's W (nằm trong khoảng [0, 1]).",
+      "benchmarks": "Hệ số Kendall's W: (1) W < 0.3: Mức độ tương đồng yếu; (2) 0.3 <= W <= 0.5: Tương đồng trung bình; (3) W > 0.5: Mức độ đồng thuận mạnh mẽ giữa các khối đánh giá. Báo cáo giá trị trung vị kèm bảng thứ hạng trung bình (Mean ranks) của từng điều kiện.",
+      "pitfalls": "Bẫy phản biện: Áp dụng Friedman khi có dữ liệu khuyết thiếu trong một số lần đo lường. Kiểm định Friedman truyền thống bắt buộc thiết kế khối phải cân bằng hoàn hảo (no missing cells); nếu có dữ liệu khuyết, bắt buộc phải dùng mô hình tuyến tính hỗn hợp (Linear Mixed Models - LMM) hoặc kiểm định Skillings-Mack.",
+      "apa_reference": "Friedman, M. (1939). A comparison of alternative tests of significance for the problem of m rankings. The Annals of Mathematical Statistics, 10(1), 67–87. https://doi.org/10.1214/aoms/1177732244",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "front-door-criterion",
@@ -19817,21 +20091,32 @@
     },
     {
       "id": "gibbs-sampling",
-      "term": "Gibbs Sampling",
-      "vietnamese": "Lấy mẫu Gibbs",
-      "vietnamese_variants": [],
+      "term": "Gibbs Sampling (MCMC Algorithm)",
+      "vietnamese": "Lấy mẫu Gibbs (Thuật toán MCMC)",
+      "vietnamese_variants": [
+        "Thuật toán Gibbs",
+        "Lấy mẫu Markov Chain Monte Carlo Gibbs",
+        "Gibbs Sampler"
+      ],
       "domain_tags": [
         "Computational Bayesian"
       ],
-      "core_definition": "Thuật toán MCMC lấy mẫu tuần tự từng biến dựa trên phân phối có điều kiện đầy đủ.",
-      "seminal_citation": "Geman & Geman (1984)",
+      "core_definition": "Lấy mẫu Gibbs (Geman & Geman, 1984; Gelfand & Smith, 1990) là thuật toán Chuỗi Markov Monte Carlo (MCMC) nền tảng trong thống kê Bayes hiện đại. Thuật toán cho phép trích xuất các mẫu ngẫu nhiên từ một phân phối xác suất đồng thời đa biến phức tạp (joint posterior distribution P(theta_1, ..., theta_p | Y)) bằng cách lấy mẫu tuần tự lần lượt từng tham số từ các phân phối có điều kiện đầy đủ (full conditional distributions) của chính nó khi cố định tất cả các tham số còn lại.",
+      "seminal_citation": "Geman & Geman (1984); Gelfand & Smith (1990)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Gibbs Sampling according to Geman & Geman (1984).",
       "domain_tags_en": [
         "Computational Bayesian"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Khởi tạo vector tham số ban đầu theta^(0). 2. Tại mỗi vòng lặp t: (A) Lấy mẫu theta_1^(t) từ P(theta_1 | theta_2^(t-1), ..., theta_p^(t-1), Y); (B) Lấy mẫu theta_2^(t) từ P(theta_2 | theta_1^(t), theta_3^(t-1), ..., theta_p^(t-1), Y); ... (C) Lấy mẫu theta_p^(t) từ P(theta_p | theta_1^(t), ..., theta_{p-1}^(t), Y). 3. Lặp lại hàng ngàn chu kỳ để chuỗi Markov đạt trạng thái dừng (Stationary distribution). 4. Bỏ qua giai đoạn làm nóng (Burn-in period) và tính toán ước lượng hậu nghiệm (Posterior Mean, Credible Intervals).",
+      "benchmarks": "Được tích hợp trong các phần mềm Bayes kinh điển như BUGS, JAGS. Thẩm định sự hội tụ của chuỗi MCMC bắt buộc phải thông qua Chỉ số R-hat Gelman-Rubin (R_hat < 1.05, lý tưởng < 1.01) và Quy mô mẫu hiệu dụng (Effective Sample Size - ESS > 400-1000).",
+      "pitfalls": "Bẫy phản biện: Hiện tượng tương quan chuỗi cao (High autocorrelation) khi các tham số hậu nghiệm có mối tương quan mạnh với nhau. Khi đó, thuật toán Gibbs di chuyển cực kỳ chậm chạp trong không gian tham số (hiện tượng kẹt bước đi ngẫu nhiên random-walk trap), đòi hỏi phải chuyển sang thuật toán Hamiltonian Monte Carlo (HMC).",
+      "apa_reference": "Gelfand, A. E., & Smith, A. F. (1990). Sampling-based approaches to calculating marginal densities. Journal of the American Statistical Association, 85(410), 398–409. https://doi.org/10.1080/01621459.1990.10476213",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "gini-coefficient-of-inequality",
@@ -20409,21 +20694,32 @@
     },
     {
       "id": "hamiltonian-monte-carlo-hmc-nuts",
-      "term": "Hamiltonian Monte Carlo (HMC / NUTS)",
-      "vietnamese": "Thuật toán HMC và No-U-Turn Sampler",
-      "vietnamese_variants": [],
+      "term": "Hamiltonian Monte Carlo (HMC & No-U-Turn Sampler / NUTS)",
+      "vietnamese": "Lấy mẫu Monte Carlo Hamilton và Thuật toán NUTS",
+      "vietnamese_variants": [
+        "Thuật toán HMC",
+        "NUTS Sampler",
+        "Lấy mẫu hình học vi phân Hamilton"
+      ],
       "domain_tags": [
         "Computational Bayesian"
       ],
-      "core_definition": "Mô phỏng động lực học vật lý để lấy mẫu MCMC hiệu quả trong không gian đa chiều.",
-      "seminal_citation": "Hoffman & Gelman (2014)",
+      "core_definition": "Hamiltonian Monte Carlo (HMC - Duane et al., 1987; Neal, 2011) và Thuật toán Không quay đầu (No-U-Turn Sampler - NUTS - Hoffman & Gelman, 2014) là đỉnh cao công nghệ tính toán trong suy luận thống kê Bayes hiện đại (động cơ cốt lõi của Stan). Bằng cách mượn các phương trình vi phân chuyển động vật lý học cổ điển Hamilton (kết hợp vị trí tham số với véc tơ động lượng ảo), HMC dẫn đường cho chuỗi Markov trượt mượt mà dọc theo các bề mặt mật độ xác suất phức tạp, triệt tiêu hoàn toàn nhược điểm bước đi ngẫu nhiên chậm chạp của Metropolis-Hastings và Gibbs.",
+      "seminal_citation": "Duane et al. (1987); Neal (2011); Hoffman & Gelman (2014)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Hamiltonian Monte Carlo (HMC / NUTS) according to Hoffman & Gelman (2014).",
       "domain_tags_en": [
         "Computational Bayesian"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Thiết lập hàm thế năng U(theta) = -ln P(theta, Y) và bổ sung biến động lượng p ~ N(0, M) với động năng K(p). 2. Tích phân số các phương trình Hamilton thông qua thuật toán bước nhảy cóc đối xứng (Leapfrog integrator). 3. NUTS tự động hóa việc xác định số bước nhảy cóc tối ưu bằng cách xây dựng cây nhị phân đệ quy và dừng lại ngay khi quỹ đạo bắt đầu quay ngược đầu lại (No-U-Turn criterion). 4. Bước hiệu chỉnh Metropolis chấp nhận/bác bỏ để đảm bảo phân phối dừng tuyệt đối chính xác.",
+      "benchmarks": "Được công nhận là chuẩn mực vàng trong mô hình Bayes thứ bậc phức tạp (Bayesian Multilevel Modeling, Stan, brms). Đánh giá chẩn đoán NUTS: Cảnh báo chuyển hướng phân kỳ (Divergent transitions = 0) là tiêu chuẩn bắt buộc; nếu có phân kỳ > 0, toàn bộ suy diễn hậu nghiệm bị xem là không đáng tin cậy do gặp phải 'hố phễu Neal' (Neal's funnel).",
+      "pitfalls": "Bẫy phản biện: Bỏ qua cảnh báo chuyển hướng phân kỳ (Divergent transitions) trong báo cáo Stan/brms. Khi có divergence, tác giả bắt buộc phải tăng tham số kiểm soát `adapt_delta` (ví dụ từ 0.80 lên 0.95 hoặc 0.99) hoặc tái tham số hóa mô hình (Non-centered parameterization).",
+      "apa_reference": "Hoffman, M. D., & Gelman, A. (2014). The No-U-Turn sampler: Adaptively setting path lengths in Hamiltonian Monte Carlo. Journal of Machine Learning Research, 15(1), 1593–1623.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "hansen-j-test",
@@ -20745,21 +21041,32 @@
     },
     {
       "id": "hedges-g",
-      "term": "Hedges' g",
-      "vietnamese": "Hệ số hiệu ứng chuẩn hóa Hedges hiệu chỉnh thiên lệch cỡ mẫu nhỏ",
-      "vietnamese_variants": [],
+      "term": "Hedges' g (Corrected Standardized Mean Difference)",
+      "vietnamese": "Hệ số kích thước hiệu ứng Hedges' g",
+      "vietnamese_variants": [
+        "Chỉ số Hedges' g",
+        "Hiệu ứng chuẩn hóa hiệu chỉnh mẫu nhỏ",
+        "Hedges Effect Size"
+      ],
       "domain_tags": [
         "Effect Size Statistics"
       ],
-      "core_definition": "Hệ số hiệu ứng chuẩn hóa Hedges hiệu chỉnh thiên lệch cỡ mẫu nhỏ.",
-      "seminal_citation": "Hedges (1981)",
+      "core_definition": "Hedges' g (Hedges, 1981; Hedges & Olkin, 1985) là chỉ số đo lường kích thước hiệu ứng chuẩn hóa (Standardized Mean Difference - SMD) cải tiến từ Cohen's d. Trong khi Cohen's d bị thổi phồng thiên lệch dương (upward bias) khi kích thước mẫu nhỏ (N < 20-30), Hedges' g áp dụng thừa số hiệu chỉnh chính xác để loại bỏ hoàn toàn thiên lệch này, mang lại ước lượng không chệch cho kích thước hiệu ứng quần thể.",
+      "seminal_citation": "Hedges (1981); Hedges & Olkin (1985)",
       "tier": "curated",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Hedges' g according to Hedges (1981).",
       "domain_tags_en": [
         "Effect Size Statistics"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Tính Cohen's d với độ lệch chuẩn gộp s_pooled*: d = (mean_1 - mean_2) / s_pooled*. 2. Thừa số hiệu chỉnh J (Correction factor): J(df) xấp xỉ bằng [ 1 - 3 / (4*df - 1) ], trong đó df = n_1 + n_2 - 2. 3. Hedges' g = J * d. 4. Tính phương sai của Hedges' g: v_g = J^2 * [ (n_1 + n_2) / (n_1 * n_2) + d^2 / (2 * df) ].",
+      "benchmarks": "Ngưỡng đánh giá tương đồng Cohen: g = 0.20 (nhỏ), 0.50 (trung bình), 0.80 (lớn), > 1.20 (rất lớn). Hedges' g là thước đo kích thước hiệu ứng chuẩn mực bắt buộc trong các nghiên cứu thực nghiệm mẫu nhỏ và là đơn vị tính toán chuẩn trong mọi phân tích tổng hợp (meta-analysis).",
+      "pitfalls": "Bẫy phản biện: Báo cáo Cohen's d cho nghiên cứu can thiệp có quy mô mẫu nhỏ (mỗi nhóm n < 15-20 đối tượng). Khi mẫu nhỏ, Cohen's d phóng đại hiệu ứng lên tới 10-15%, khiến phản biện nghi ngờ tính liêm chính của kích thước hiệu ứng được công bố.",
+      "apa_reference": "Hedges, L. V. (1981). Distribution theory for Glass's estimator of effect size and related estimators. Journal of Educational Statistics, 6(2), 107–128. https://doi.org/10.3102/10769986006002107",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "herfindahl-hirschman-index-hhi",
@@ -20948,15 +21255,19 @@
     },
     {
       "id": "heterogeneous-sampling",
-      "term": "Heterogeneous sampling",
-      "vietnamese": "Chọn mẫu dị biệt tối đa (Maximum Variation Sampling)",
-      "vietnamese_variants": [],
+      "term": "Maximum Variation Sampling (Heterogeneous Sampling)",
+      "vietnamese": "Phương pháp chọn mẫu dị biệt tối đa",
+      "vietnamese_variants": [
+        "Chọn mẫu không đồng nhất",
+        "Maximum Variation Sampling",
+        "Lấy mẫu đa dạng tối đa"
+      ],
       "domain_tags": [
         "Kỹ thuật Chọn mẫu",
         "Phương pháp Định tính"
       ],
-      "core_definition": "Kỹ thuật chọn mẫu có mục đích trong nghiên cứu định tính, chủ động chọn các cá thể hoặc trường hợp có đặc điểm khác biệt nhau nhiều nhất có thể nhằm phát hiện các mẫu hình chung (patterns) xuyên suốt các bối cảnh đa dạng.",
-      "seminal_citation": "Patton, M. Q. (2015). Qualitative Research & Evaluation Methods (4th ed.). SAGE.",
+      "core_definition": "Chọn mẫu dị biệt tối đa (Maximum Variation / Heterogeneous Sampling - Patton, 2015) là chiến lược chọn mẫu định tính chủ động tìm kiếm và tuyển chọn các trường hợp có sự khác biệt tối đa về các đặc trưng nền tảng (như quy mô doanh nghiệp rất lớn và siêu nhỏ; vùng địa lý thành thị và vùng sâu vùng xa; văn hóa phương Đông và phương Tây). Mục đích cốt lõi là nhận diện các mô thức và chủ đề chung cốt lõi (core common patterns) xuyên suốt qua toàn bộ sự đa dạng bối cảnh đó.",
+      "seminal_citation": "Patton (1990, 2015); Lincoln & Guba (1985)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
@@ -20964,7 +21275,14 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Xác định từ 2 đến 3 chiều kích phân hóa trọng yếu (ví dụ: Quy mô vốn, Ngành nghề, Thời gian hoạt động). 2. Lập ma trận chọn mẫu đa chiều và tuyển chọn ít nhất một trường hợp đại diện cho từng tổ hợp cực đoan khác biệt. 3. Phân tích dữ liệu hai tầng: Tầng 1 mô tả chi tiết tính đặc thù riêng biệt của từng ca; Tầng 2 trích xuất các chủ đề xuyên suốt (cross-cutting themes) xuất hiện đồng nhất ở tất cả các trường hợp bất chấp sự dị biệt về bối cảnh.",
+      "benchmarks": "Bất kỳ mô thức chung nào tồn tại vững vàng qua một mẫu dị biệt tối đa đều được đánh giá là có giá trị hiệu lực bên ngoài (transferability) và độ vững lý thuyết cực kỳ cao trên các tạp chí Q1.",
+      "pitfalls": "Bẫy phản biện: Quy mô mẫu quá nhỏ không đủ bao quát các chiều kích dị biệt đã đề ra, dẫn đến việc các kết luận so sánh xuyên trường hợp bị nông cạn và thiếu thuyết phục.",
+      "apa_reference": "Patton, M. Q. (2015). Qualitative research & evaluation methods: Integrating theory and practice (4th ed.). Sage Publications.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "heteroskedasticity",
@@ -21053,20 +21371,31 @@
     {
       "id": "heuristics-and-biases-program-tversky-kahneman",
       "term": "Heuristics and Biases Program (Tversky & Kahneman)",
-      "vietnamese": "Chương trình Phỏng đoán và Thiên lệch",
-      "vietnamese_variants": [],
+      "vietnamese": "Chương trình nghiên cứu phỏng đoán và thiên lệch nhận thức",
+      "vietnamese_variants": [
+        "Chương trình Tversky-Kahneman",
+        "Lý thuyết Phỏng đoán và Thiên lệch",
+        "Heuristics and Biases"
+      ],
       "domain_tags": [
         "Behavioral Economics"
       ],
-      "core_definition": "Khảo sát các lối tắt nhận thức dẫn đến những sai lầm phán đoán mang tính hệ thống.",
-      "seminal_citation": "Tversky & Kahneman (1974)",
+      "core_definition": "Chương trình nghiên cứu Phỏng đoán và Thiên lệch (Heuristics and Biases Program - Tversky & Kahneman, 1974; Kahneman, Slovic, & Tversky, 1982) là cuộc cách mạng nhận thức học đoạt giải Nobel Kinh tế, bác bỏ hoàn toàn giả định về con người duy lý hoàn hảo (Homo Economicus) trong lý thuyết kinh tế học cổ điển. Chương trình chứng minh rằng trong điều kiện bất định và phức tạp, con người dựa vào một số lượng hữu hạn các lối tắt tư duy phỏng đoán (heuristics) trực quan đơn giản để ra quyết định; mặc dù rất tiết kiệm thời gian, các phỏng đoán này dẫn đến các sai lệch nhận thức có tính quy luật, dự đoán được và lặp đi lặp lại một cách có hệ thống.",
+      "seminal_citation": "Tversky & Kahneman (1974); Kahneman, Slovic, & Tversky (1982)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Heuristics and Biases Program (Tversky & Kahneman) according to Tversky & Kahneman (1974).",
       "domain_tags_en": [
         "Behavioral Economics"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Ba phỏng đoán nền tảng: (A) Phỏng đoán tính đại diện (Representativeness: đánh giá xác suất dựa trên mức độ tương đồng khuôn mẫu, bỏ qua xác suất tiên nghiệm Base-rate neglect); (B) Phỏng đoán tính sẵn có (Availability: đánh giá tần suất dựa trên mức độ dễ dàng gợi nhớ trong ký ức); (C) Phỏng đoán neo và hiệu chỉnh (Anchoring and Adjustment: đánh giá bị kéo lệch về phía con số khởi tạo ban đầu). 2. Phát triển thành Lý thuyết Triển vọng (Prospect Theory, 1979) giải thích hiện tượng ác cảm mất mát (Loss aversion) và định giá xác suất phi tuyến.",
+      "benchmarks": "Là lý thuyết nền tảng chi phối toàn bộ ngành Kinh tế học Hành vi (Behavioral Economics), Tài chính Hành vi, Marketing và Thiết kế Chính sách Công (Nudge Theory của Thaler & Sunstein).",
+      "pitfalls": "Bẫy phản biện: Nhầm lẫn rằng 'phỏng đoán' luôn luôn là sai lầm hoặc tiêu cực. Gerd Gigerenzer (1999 - Fast and Frugal Heuristics) nhấn mạnh rằng trong môi trường bất định thực tế, phỏng đoán trực giác thường mang lại các quyết định chính xác và hiệu quả hơn các thuật toán tối ưu hóa toán học phức tạp.",
+      "apa_reference": "Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131. https://doi.org/10.1126/science.185.4157.1124",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "hexaco-model-of-personality-structure",
@@ -21088,21 +21417,32 @@
     },
     {
       "id": "hierarchical-agglomerative-clustering",
-      "term": "Hierarchical Agglomerative Clustering",
-      "vietnamese": "Phân cụm Thứ bậc Kết tụ",
-      "vietnamese_variants": [],
+      "term": "Hierarchical Agglomerative Clustering (HAC)",
+      "vietnamese": "Phân cụm thứ bậc kết tụ",
+      "vietnamese_variants": [
+        "Thuật toán HAC",
+        "Phân cụm phân cấp từ dưới lên",
+        "Agglomerative Nesting AGNES"
+      ],
       "domain_tags": [
         "Unsupervised Learning"
       ],
-      "core_definition": "Thuật toán phân cụm từ dưới lên nối dần các cụm gần nhau nhất thành biểu đồ nhánh Dendrogram.",
-      "seminal_citation": "Ward (1963)",
+      "core_definition": "Phân cụm thứ bậc kết tụ (Hierarchical Agglomerative Clustering - HAC - Ward, 1963; Sneath & Sokal, 1973) là phương pháp phân cụm từ dưới lên (bottom-up). Thuật toán khởi đầu bằng việc coi mỗi quan sát là một cụm đơn lẻ riêng biệt, sau đó tuần tự hợp nhất các cặp cụm có khoảng cách khoảng cách gần nhau nhất ở mỗi bước lặp cho đến khi toàn bộ dữ liệu hợp nhất thành một cụm duy nhất, tạo ra một cấu trúc cây thứ bậc hoàn chỉnh (Dendrogram).",
+      "seminal_citation": "Ward (1963); Sneath & Sokal (1973)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Hierarchical Agglomerative Clustering according to Ward (1963).",
       "domain_tags_en": [
         "Unsupervised Learning"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Khởi tạo ma trận khoảng cách khoảng cách N x N. 2. Các phương pháp liên kết cụm (Linkage criteria): (A) Single linkage (khoảng cách khoảng cách nhỏ nhất - nhạy cảm với hiệu ứng xích chaining); (B) Complete linkage (khoảng cách khoảng cách lớn nhất - tạo cụm hình cầu chặt chẽ); (C) Average linkage (UPGMA - trung bình mọi cặp); (D) Phương pháp Ward (Ward's minimum variance - tối thiểu hóa mức tăng tổng bình phương sai số trong cụm). 3. Trực quan hóa cấu trúc lồng nhau qua biểu đồ cây Dendrogram.",
+      "benchmarks": "Phương pháp Ward là phương pháp liên kết được ưa chuộng nhất trong kinh tế và xã hội học vì nó tạo ra các cụm có quy mô cân đối và cấu trúc nội tại đồng nhất cao. Hệ số đồng hình (Cophenetic Correlation Coefficient > 0.75) chứng minh biểu đồ Dendrogram phản ánh trung thực ma trận khoảng cách khoảng cách gốc.",
+      "pitfalls": "Bẫy phản biện: Độ phức tạp tính toán O(N^2) hoặc O(N^3) về bộ nhớ và thời gian, khiến HAC không thể chạy được trực tiếp trên các tập dữ liệu lớn (N > 10.000-50.000 quan sát) trừ khi áp dụng kỹ thuật lấy mẫu hoặc chuyển sang các thuật toán tối ưu như BIRCH.",
+      "apa_reference": "Ward, J. H., Jr. (1963). Hierarchical grouping to optimize an objective function. Journal of the American Statistical Association, 58(301), 236–244. https://doi.org/10.1080/01621459.1963.10500845",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "hierarchical-linear-modeling-hlm",
@@ -21329,20 +21669,31 @@
     {
       "id": "hot-deck-imputation",
       "term": "Hot-Deck Imputation",
-      "vietnamese": "Nội suy Bốc thăm Hot-Deck",
-      "vietnamese_variants": [],
+      "vietnamese": "Nội suy bốc thăm Hot-Deck",
+      "vietnamese_variants": [
+        "Phương pháp Hot-Deck",
+        "Nội suy từ hồ sơ tương đồng",
+        "Hot-deck Imputation Method"
+      ],
       "domain_tags": [
         "Missing Data Analysis"
       ],
-      "core_definition": "Thay thế giá trị khuyết của đối tượng bằng giá trị của một đối tượng tương đồng nhất trong cùng bộ dữ liệu.",
-      "seminal_citation": "Ford (1983)",
+      "core_definition": "Nội suy bốc thăm Hot-Deck (Ford, 1983; Andridge & Little, 2010) là kỹ thuật điền thế dữ liệu khuyết thiếu phi tham số lịch sử trong các cuộc điều tra xã hội học và điều tra dân số lớn (như US Census). Phương pháp này thay thế giá trị bị khuyết của một quan sát (recipient) bằng giá trị thực tế quan sát được từ một cá thể khác trong cùng tập dữ liệu hiện tại (donor) có các đặc trưng nhân khẩu học/hành vi tương đồng nhất.",
+      "seminal_citation": "Ford (1983); Andridge & Little (2010)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Hot-Deck Imputation according to Ford (1983).",
       "domain_tags_en": [
         "Missing Data Analysis"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Định nghĩa các ô điều chỉnh (Imputation classes / Adjustment cells) dựa trên các biến phân loại quan sát đầy đủ (ví dụ: cùng nhóm tuổi, cùng giới tính, cùng vùng địa lý). 2. Với mỗi quan sát bị khuyết trong một ô, chọn ngẫu nhiên một quan sát đầy đủ (donor) trong chính ô đó để sao chép giá trị sang ô bị khuyết. 3. Biến thể hiện đại: Hot-deck dựa trên Khoảng cách khoảng cách (Distance metric / Nearest-neighbor hot-deck).",
+      "benchmarks": "Ưu điểm lớn nhất là bảo toàn hoàn toàn miền giá trị thực tế (không tạo ra các giá trị lẻ phi lý như 2.4 con đối với biến đếm). Tuy nhiên, phương pháp làm đánh giá thấp sai số chuẩn nếu chỉ nội suy một lần duy nhất (Single imputation).",
+      "pitfalls": "Bẫy phản biện: Sử dụng Hot-deck đơn lẻ mà không tính đến độ bất định của giá trị nội suy khi tính toán sai số chuẩn; bắt buộc phải kết hợp Hot-deck trong quy trình Multiple Imputation hoặc áp dụng kỹ thuật Bootstrap để hiệu chỉnh khoảng tin cậy.",
+      "apa_reference": "Andridge, R. R., & Little, R. J. (2010). A review of hot deck imputation for survey non-response. International Statistical Review, 78(1), 40–64. https://doi.org/10.1111/j.1751-5823.2010.00103.x",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "hotellings-t-squared",
@@ -21749,20 +22100,31 @@
     {
       "id": "immortal-time-bias",
       "term": "Immortal Time Bias",
-      "vietnamese": "Thiên lệch Thời gian Bất tử",
-      "vietnamese_variants": [],
+      "vietnamese": "Thiên lệch thời gian bất tử",
+      "vietnamese_variants": [
+        "Thiên lệch thời gian sống bất tử",
+        "Immortal Time Bias in Cohort Studies",
+        "Survivor Bias"
+      ],
       "domain_tags": [
         "Epidemiological Methodology"
       ],
-      "core_definition": "Giai đoạn nghiên cứu mà đối tượng không thể gặp biến cố kết cục bị xếp nhầm vào nhóm can thiệp.",
-      "seminal_citation": "Suissa (2008)",
+      "core_definition": "Thiên lệch thời gian bất tử (Immortal Time Bias - Suissa, 2007, 2008) là dạng thiên lệch kinh tế lượng dọc nguy hiểm xảy ra trong các nghiên cứu đoàn hệ (cohort studies) và phân tích sống sót. Thiên lệch xuất hiện khi khoảng thời gian từ khi đối tượng bắt đầu được theo dõi đến khi họ thực sự tiếp nhận can thiệp/điều trị (khoảng thời gian 'bất tử' vì đối tượng bắt buộc phải sống sót thì mới tiếp nhận được can thiệp) bị phân loại sai vào nhóm được can thiệp, dẫn đến việc phóng đại nhân tạo lợi ích sống sót hoặc làm sai lệch tỷ số rủi ro (Hazard Ratio).",
+      "seminal_citation": "Suissa (2007, 2008)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Immortal Time Bias according to Suissa (2008).",
       "domain_tags_en": [
         "Epidemiological Methodology"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Khoảng thời gian bất tử (T_0 đến T_1): Giai đoạn cá thể đã vào nghiên cứu nhưng chưa dùng thuốc. Trong giai đoạn này, theo định nghĩa, biến cố tử vong không thể xảy ra đối với nhóm can thiệp (vì nếu chết thì họ đã không đủ điều kiện vào nhóm can thiệp). 2. Nếu gán toàn bộ thời gian theo dõi từ T_0 vào nhóm can thiệp, tỷ lệ biến cố trên một đơn vị thời gian của nhóm can thiệp sẽ bị pha loãng giảm xuống giả tạo. 3. Hiệu chỉnh chuẩn mực: Sử dụng Mô hình hồi quy Cox với Biến số can thiệp thay đổi theo thời gian (Time-varying covariate Cox model) hoặc Thiết kế thử nghiệm mục tiêu mô phỏng (Target Trial Emulation).",
+      "benchmarks": "Là tiêu chuẩn kiểm định nghiêm ngặt trên các tạp chí y học và kinh tế y tế hàng đầu (NEJM, Lancet, BMJ). Tỷ số rủi ro HR bị thiên lệch thường tạo cảm giác can thiệp có tác dụng bảo vệ thần kỳ (HR < 0.70 giả tạo) trong khi thực chất can thiệp có thể không có tác dụng hoặc thậm chí gây hại.",
+      "pitfalls": "Bẫy phản biện: Phân loại đối tượng vào nhóm can thiệp dựa trên hành vi trong tương lai của họ (Future-looking classification). Mọi thiết kế nghiên cứu đoàn hệ bắt buộc phải xử lý thời gian tiếp nhận can thiệp bằng time-dependent covariates để triệt tiêu thời gian bất tử.",
+      "apa_reference": "Suissa, S. (2008). Immortal time bias in pharmacoepidemiology. American Journal of Epidemiology, 167(4), 492–499. https://doi.org/10.1093/aje/kwm324",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "imperfectly-mobile-resources",
@@ -22044,21 +22406,33 @@
     },
     {
       "id": "independent-samples-t-test",
-      "term": "Independent Samples t-test",
-      "vietnamese": "Kiểm định t cho hai mẫu độc lập kiểm tra khác biệt trung bình",
-      "vietnamese_variants": [],
+      "term": "Independent Samples t-Test (Student's & Welch's)",
+      "vietnamese": "Kiểm định t cho hai mẫu độc lập",
+      "vietnamese_variants": [
+        "Kiểm định t hai mẫu độc lập",
+        "Student's t-test",
+        "Welch's t-test",
+        "So sánh hai giá trị trung bình"
+      ],
       "domain_tags": [
         "Parametric Statistics"
       ],
-      "core_definition": "Kiểm định t cho hai mẫu độc lập kiểm tra khác biệt trung bình.",
-      "seminal_citation": "Hair et al. (2018)",
+      "core_definition": "Kiểm định t cho hai mẫu độc lập (Gosset/Student, 1908; Welch, 1947) là phép kiểm định thống kê tham số nền tảng nhất để so sánh giá trị trung bình của một biến định lượng liên tục giữa hai nhóm quan sát độc lập và loại trừ lẫn nhau (ví dụ: nhóm can thiệp vs. nhóm đối chứng; nam vs. nữ).",
+      "seminal_citation": "Student (1908); Welch (1947); Delacre et al. (2017)",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Independent Samples t-test according to Hair et al. (2018).",
       "domain_tags_en": [
         "Parametric Statistics"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Student's t-test truyền thống: Giả định phương sai hai nhóm bằng nhau (Homoscedasticity): t = (mean_1 - mean_2) / [s_p * sqrt(1/n_1 + 1/n_2)], với s_p là phương sai gộp. 2. Welch's t-test (Satterthwaite approximation): Không đòi hỏi phương sai bằng nhau: t_w = (mean_1 - mean_2) / sqrt(s_1^2/n_1 + s_2^2/n_2), với bậc tự do hiệu chỉnh Welch-Satterthwaite df_w. 3. Tính khoảng tin cậy 95% cho chênh lệch trung bình.",
+      "benchmarks": "Giả thuyết H0: mu_1 - mu_2 = 0. Bác bỏ H0 khi p-value < 0.05. Bắt buộc báo cáo Kích thước hiệu ứng Cohen's d (0.2: nhỏ, 0.5: vừa, 0.8: lớn). Chuẩn mực hiện đại (Delacre et al., 2017) khuyến nghị luôn mặc định sử dụng Welch's t-test thay vì Student's t-test vì Welch kiểm soát sai số loại I hoàn hảo trong mọi điều kiện phương sai.",
+      "pitfalls": "Bẫy phản biện: Kiểm tra kiểm định Levene trước, nếu p > 0.05 thì dùng Student's t, nếu p < 0.05 mới dùng Welch (Quy trình hai bước - Conditional testing). Các nghiên cứu thống kê mô phỏng đã chứng minh quy trình hai bước này làm sai lệch tỷ lệ lỗi loại I; chuẩn mực quốc tế hiện nay là sử dụng Welch's t-test làm phương pháp mặc định duy nhất.",
+      "apa_reference": "Delacre, M., Lakens, D., & Leys, C. (2017). Why psychologists should by default use Welch's t-test instead of Student's t-test. International Review of Social Psychology, 30(1), 92–101. https://doi.org/10.5334/irsp.82",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "independent-variable-instrumental-variable",
@@ -23843,20 +24217,31 @@
     {
       "id": "jackknife-resampling",
       "term": "Jackknife Resampling",
-      "vietnamese": "Tái chọn mẫu Jackknife",
-      "vietnamese_variants": [],
+      "vietnamese": "Kỹ thuật tái lấy mẫu Jackknife",
+      "vietnamese_variants": [
+        "Phương pháp Jackknife",
+        "Tái chọn mẫu rút từng quan sát",
+        "Quenouille-Tukey Jackknife"
+      ],
       "domain_tags": [
         "Resampling Methods"
       ],
-      "core_definition": "Kỹ thuật phi tham số tính sai số chuẩn và giảm độ chệch bằng cách loại lần lượt từng quan sát.",
-      "seminal_citation": "Quenouille (1949), Tukey (1958)",
+      "core_definition": "Kỹ thuật tái lấy mẫu Jackknife (Quenouille, 1949, 1956; Tukey, 1958) là phương pháp thống kê phi tham số tiên phong dùng để ước lượng độ chệch (bias) và phương sai sai số chuẩn (standard error) của một tham số ước lượng mà không cần đặt bất kỳ giả định nào về phân phối của dữ liệu. Jackknife hoạt động bằng cách tính toán lại tham số trên n mẫu con, mỗi mẫu con được tạo ra bằng cách loại bỏ tuần tự đúng một quan sát (leave-one-out).",
+      "seminal_citation": "Quenouille (1949, 1956); Tukey (1958)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Jackknife Resampling according to Quenouille (1949), Tukey (1958).",
       "domain_tags_en": [
         "Resampling Methods"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Cho mẫu ban đầu kích thước n. Tạo n mẫu con kích thước (n - 1) bằng cách lần lượt bỏ đi quan sát thứ i (i = 1...n), thu được n ước lượng tham số theta_(-i). 2. Ước lượng Jackknife cho độ chệch: Bias_jack = (n - 1) * (theta_bar_jack - theta_hat). 3. Ước lượng tham số hiệu chỉnh chệch: theta_jack = n * theta_hat - (n - 1) * theta_bar_jack. 4. Ước lượng phương sai Jackknife: Var_jack = [(n - 1) / n] * sum [ (theta_(-i) - theta_bar_jack)^2 ].",
+      "benchmarks": "Được áp dụng rộng rãi để hiệu chỉnh chệch trong các ước lượng hợp lý cực đại phi tuyến tính, tính toán hệ số gia tốc trong BCa bootstrap, và chẩn đoán các quan sát có tầm ảnh hưởng lớn (influential observations).",
+      "pitfalls": "Bẫy phản biện: Áp dụng Jackknife cho các tham số phi trơn (non-smooth parameters như Trung vị Median hoặc các phân vị). Phép tính Jackknife hoàn toàn thất bại và cho phương sai không nhất quán khi áp dụng cho hàm trung vị (trong trường hợp này Bootstrap là bắt buộc).",
+      "apa_reference": "Tukey, J. W. (1958). Bias and confidence in not-quite large samples. The Annals of Mathematical Statistics, 29(2), 614–623.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "jarque-bera-test",
@@ -24164,56 +24549,89 @@
     {
       "id": "k-fold-stratified-cross-validation",
       "term": "K-Fold Stratified Cross-Validation",
-      "vietnamese": "Kiểm định Chéo K Lớp Phân tầng",
-      "vietnamese_variants": [],
+      "vietnamese": "Kiểm định chéo K-lớp phân tầng",
+      "vietnamese_variants": [
+        "Stratified K-Fold CV",
+        "Kiểm định chéo phân tầng",
+        "Đánh giá mô hình K-fold"
+      ],
       "domain_tags": [
         "Model Validation"
       ],
-      "core_definition": "Chia dữ liệu làm K phần bằng nhau đảm bảo tỷ lệ các lớp đồng nhất giữa các tập kiểm tra.",
-      "seminal_citation": "Kohavi (1995)",
+      "core_definition": "Kiểm định chéo K-lớp phân tầng (Stratified K-Fold Cross-Validation - Kohavi, 1995; Kuhn & Johnson, 2013) là kỹ thuật đánh giá hiệu năng mô hình ngoài mẫu (out-of-sample performance) chuẩn mực nhất trong học máy và kinh tế lượng dự báo. Phương pháp chia tập dữ liệu thành K phần (folds) có kích thước bằng nhau, với ràng buộc bắt buộc là tỷ lệ phân bổ của các lớp nhãn mục tiêu (hoặc các nhóm biến phụ thuộc) trong mỗi fold phải được bảo toàn giống hệt như tỷ lệ trong toàn bộ tập dữ liệu gốc.",
+      "seminal_citation": "Kohavi (1995); Kuhn & Johnson (2013)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of K-Fold Stratified Cross-Validation according to Kohavi (1995).",
       "domain_tags_en": [
         "Model Validation"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Phân tầng và chia dữ liệu thành K phần (thường K = 5 hoặc K = 10). 2. Lặp lại K vòng: Tại mỗi vòng k, sử dụng K - 1 phần làm tập huấn luyện (training set) và 1 phần còn lại làm tập kiểm tra độc lập (validation/test set). 3. Đánh giá chỉ số hiệu năng (Accuracy, AUC, F1, RMSE) trên tập kiểm tra. 4. Tính trung bình và độ lệch chuẩn của chỉ số hiệu năng qua toàn bộ K vòng lặp.",
+      "benchmarks": "Tiêu chuẩn chuẩn mực Kohavi (1995): 10-fold Stratified Cross-Validation là cấu hình tối ưu nhất giúp cân bằng hoàn hảo giữa độ chệch và phương sai của ước lượng hiệu năng. Bắt buộc áp dụng khi dữ liệu có hiện tượng mất cân bằng nhãn (imbalanced classes) để đảm bảo mỗi fold đều có đủ các ca biến cố dương tính.",
+      "pitfalls": "Bẫy rò rỉ dữ liệu (Data Leakage): Thực hiện các bước tiền xử lý dữ liệu (như chuẩn hóa Scale, điền dữ liệu khuyết Imputation, hoặc chọn lọc biến Feature Selection) trên toàn bộ tập dữ liệu TRƯỚC KHI chia K-fold. Tất cả các bước tiền xử lý bắt buộc phải được đóng gói bên trong quy trình đường ống (Pipeline) và chỉ được học trên tập train của từng fold.",
+      "apa_reference": "Kohavi, R. (1995). A study of cross-validation and bootstrap for accuracy estimation and model selection. In Proceedings of the 14th International Joint Conference on Artificial Intelligence (Vol. 2, pp. 1137–1143).",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "k-means-clustering-algorithm",
       "term": "K-Means Clustering Algorithm",
-      "vietnamese": "Thuật toán Phân cụm K-Means",
-      "vietnamese_variants": [],
+      "vietnamese": "Thuật toán phân cụm K-Means",
+      "vietnamese_variants": [
+        "Thuật toán K-Means",
+        "K-Means Partitioning",
+        "Thuật toán Lloyd K-Means"
+      ],
       "domain_tags": [
         "Unsupervised Learning"
       ],
-      "core_definition": "Phân chia N quan sát vào K cụm sao cho mỗi quan sát thuộc về cụm có tâm gần nhất.",
-      "seminal_citation": "MacQueen (1967)",
+      "core_definition": "Thuật toán phân cụm K-Means (MacQueen, 1967; Lloyd, 1982) là thuật toán phân hoạch không giám sát kinh điển nhất, nhằm phân chia N quan sát vào K cụm xác định trước sao cho tổng bình phương khoảng cách khoảng cách từ mỗi điểm dữ liệu đến trọng tâm cụm tương ứng (Within-Cluster Sum of Squares - WCSS / Inertia) đạt giá trị cực tiểu toàn cục.",
+      "seminal_citation": "MacQueen (1967); Lloyd (1982); Arthur & Vassilvitskii (2007)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of K-Means Clustering Algorithm according to MacQueen (1967).",
       "domain_tags_en": [
         "Unsupervised Learning"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Khởi tạo K trọng tâm ban đầu (nên dùng thuật toán K-Means++ của Arthur & Vassilvitskii, 2007 để tối ưu hóa vị trí khởi tạo). 2. Bước gán (Assignment step): Gán từng quan sát vào cụm có khoảng cách khoảng cách Euclidean đến trọng tâm là nhỏ nhất. 3. Bước cập nhật (Update step): Tính toán lại tọa độ trọng tâm mới bằng giá trị trung bình tọa độ của tất cả các điểm thuộc cụm đó. 4. Lặp lại bước 2 và 3 cho đến khi các trọng tâm hội tụ và không còn sự dịch chuyển nhãn cụm.",
+      "benchmarks": "Xác định số lượng cụm K tối ưu: Dựa trên Phương pháp điểm gãy biểu đồ khuỷu tay (Elbow method: điểm uốn của đường cong WCSS), Chỉ số Silhouette trung bình, và Thống kê khoảng trống (Gap Statistic của Tibshirani et al., 2001).",
+      "pitfalls": "Bẫy phản biện: Áp dụng K-Means cho dữ liệu có các cụm có hình dạng phi cầu (non-spherical shapes như hình bán nguyệt, hình elip kéo dài) hoặc có quy mô và mật độ chênh lệch quá lớn. K-Means giả định ngầm rằng các cụm có dạng hình cầu đồng phương sai; khi giả định này sai, K-Means sẽ chia cắt các cụm tự nhiên thành các mảnh vụn sai lệch (khắc phục bằng Gaussian Mixture Models hoặc DBSCAN).",
+      "apa_reference": "Lloyd, S. (1982). Least squares quantization in PCM. IEEE Transactions on Information Theory, 28(2), 129–137. https://doi.org/10.1109/TIT.1982.1056489",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "k-nearest-neighbors-imputation-knn",
-      "term": "K-Nearest Neighbors Imputation (KNN)",
-      "vietnamese": "Nội suy theo K Láng giềng Gần nhất",
-      "vietnamese_variants": [],
+      "term": "K-Nearest Neighbors Imputation (KNN Imputation)",
+      "vietnamese": "Nội suy theo K láng giềng gần nhất",
+      "vietnamese_variants": [
+        "Nội suy KNN",
+        "K-Nearest Neighbors Missing Imputation",
+        "Điền khuyết bằng thuật toán KNN"
+      ],
       "domain_tags": [
         "Missing Data Analysis"
       ],
-      "core_definition": "Thay thế giá trị khuyết dựa trên khoảng cách trung bình của k quan sát gần nhất.",
-      "seminal_citation": "Batista & Monard (2002)",
+      "core_definition": "Nội suy theo K láng giềng gần nhất (KNN Imputation - Troyanskaya et al., 2001; Batista & Monard, 2002) là thuật toán học máy phi tham số dùng để điền thế dữ liệu khuyết thiếu. Với mỗi mẫu có giá trị khuyết, thuật toán tìm kiếm k quan sát hoàn chỉnh khác có khoảng cách khoảng cách tương đồng gần nhất trong không gian đa chiều của các biến không bị khuyết, sau đó gán giá trị nội suy bằng trung bình cộng (hoặc trung vị có trọng số) của k láng giềng đó.",
+      "seminal_citation": "Troyanskaya et al. (2001); Batista & Monard (2002)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of K-Nearest Neighbors Imputation (KNN) according to Batista & Monard (2002).",
       "domain_tags_en": [
         "Missing Data Analysis"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Đo lường khoảng cách khoảng cách đa biến: Sử dụng khoảng cách khoảng cách Euclidean chuẩn hóa (đối với biến liên tục) hoặc khoảng cách khoảng cách Gower (cho dữ liệu hỗn hợp cả định lượng lẫn định tính). 2. Xác định k láng giềng gần nhất (thường chọn k = 5 đến 10). 3. Điền giá trị: Đối với biến liên tục, tính trung bình có trọng số nghịch đảo khoảng cách; đối với biến phân loại, lấy nhãn có tần suất xuất hiện nhiều nhất (Majority vote).",
+      "benchmarks": "Ưu việt tuyệt đối so với các phương pháp tham số tuyến tính khi dữ liệu có cấu trúc phi tuyến phức tạp hoặc cấu trúc phân cụm đa chiều. Thường được tối ưu hóa siêu tham số k thông qua phương pháp kiểm định chéo (Cross-validation).",
+      "pitfalls": "Bẫy phản biện: (1) Nhạy cảm với thang đo của biến: Nếu không chuẩn hóa dữ liệu (Z-score normalization) trước khi tính khoảng cách khoảng cách, các biến có độ biến thiên số học lớn sẽ chi phối toàn bộ khoảng cách khoảng cách và làm sai lệch việc chọn láng giềng; (2) Không hiệu quả khi tỷ lệ dữ liệu khuyết quá cao trên nhiều biến đồng thời.",
+      "apa_reference": "Troyanskaya, O., Cantor, M., Sherlock, G., Brown, P., Hastie, T., Tibshirani, R., Botstein, D., & Altman, R. B. (2001). Missing value estimation methods for DNA microarrays. Bioinformatics, 17(6), 520–525. https://doi.org/10.1093/bioinformatics/17.6.520",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "kaiser-meyer-olkin-kmo",
@@ -24326,20 +24744,31 @@
     {
       "id": "kendalls-tau-tau-b-tau-c",
       "term": "Kendall's Tau (Tau-b & Tau-c)",
-      "vietnamese": "Hệ số Tương quan Hạng Kendall's Tau",
-      "vietnamese_variants": [],
+      "vietnamese": "Hệ số tương quan hạng Kendall's Tau (Tau-b và Tau-c)",
+      "vietnamese_variants": [
+        "Hệ số Kendall's Tau",
+        "Kendall Tau-b",
+        "Kendall Tau-c / Stuart-Kendall Tau-c"
+      ],
       "domain_tags": [
         "Non-Parametric Statistics"
       ],
-      "core_definition": "Đo lường mức độ tương quan thứ bậc dựa trên các cặp đồng thuận và bất đồng thuận.",
-      "seminal_citation": "Kendall (1938)",
+      "core_definition": "Hệ số tương quan hạng Kendall's Tau (Kendall, 1938) là thước đo phi tham số đo lường mức độ liên kết thứ bậc giữa hai biến số dựa trên số lượng các cặp quan sát thuận hòa (concordant pairs) và nghịch hòa (discordant pairs). So với Spearman's Rho, Kendall's Tau có các thuộc tính thống kê vượt trội hơn: Phân phối mẫu tiệm cận chuẩn nhanh hơn nhiều và diễn giải xác suất trực tiếp hơn (hiệu số xác suất đồng thuận trừ bất đồng thuận).",
+      "seminal_citation": "Kendall (1938); Stuart (1953)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Kendall's Tau (Tau-b & Tau-c) according to Kendall (1938).",
       "domain_tags_en": [
         "Non-Parametric Statistics"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Xét toàn bộ n*(n - 1)/2 cặp quan sát: Cặp là thuận hòa nếu (x_i - x_j)*(y_i - y_j) > 0; là nghịch hòa nếu < 0. 2. Tau-a: Dùng khi không có hạng buộc: Tau_a = (C - D) / [n*(n-1)/2]. 3. Tau-b: Hiệu chỉnh cho ma trận vuông có hạng buộc (ties): Tau_b = (C - D) / sqrt((C + D + T_x) * (C + D + T_y)). 4. Tau-c (Stuart-Kendall Tau-c): Dùng riêng cho các bảng chéo kích thước hình chữ nhật (m x r với m != r).",
+      "benchmarks": "Giá trị Tau nằm trong khoảng [-1, 1]. Thông thường, giá trị số tuyệt đối của Kendall's Tau nhỏ hơn Spearman's Rho từ 20-30% trên cùng một tập dữ liệu (ví dụ Tau = 0.40 thường tương đương Spearman = 0.55-0.60). Bác bỏ H0 khi p-value < 0.05.",
+      "pitfalls": "Bẫy phản biện: Sử dụng Tau-b cho bảng chéo hình chữ nhật không vuông (ví dụ biến X có 3 mức, biến Y có 5 mức). Khi bảng không vuông, Tau-b không bao giờ đạt được giá trị cực đại +/-1.0; trường hợp này bắt buộc phải sử dụng Tau-c của Stuart (1953).",
+      "apa_reference": "Kendall, M. G. (1938). A new measure of rank correlation. Biometrika, 30(1/2), 81–93. https://doi.org/10.1093/biomet/30.1-2.81",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "kernel-density-estimation-kde",
@@ -24550,32 +24979,46 @@
     {
       "id": "kruskal-wallis-h-test",
       "term": "Kruskal-Wallis H Test",
-      "vietnamese": "Kiểm định phi tham số Kruskal-Wallis thay thế ANOVA một chiều so sánh nhiều nhóm độc lập",
-      "vietnamese_variants": [],
+      "vietnamese": "Kiểm định Kruskal-Wallis H",
+      "vietnamese_variants": [
+        "Kiểm định Kruskal-Wallis",
+        "ANOVA một yếu tố phi tham số",
+        "Kruskal-Wallis Test"
+      ],
       "domain_tags": [
         "Non-Parametric Statistics"
       ],
-      "core_definition": "Kiểm định phi tham số Kruskal-Wallis thay thế ANOVA một chiều so sánh nhiều nhóm độc lập.",
-      "seminal_citation": "Kruskal & Wallis (1952)",
+      "core_definition": "Kiểm định Kruskal-Wallis H (Kruskal & Wallis, 1952) là phép kiểm định phi tham số mở rộng của kiểm định Mann-Whitney U cho trường hợp so sánh từ ba nhóm độc lập trở lên (k >= 3). Đây là giải pháp thay thế hoàn hảo cho Phân tích phương sai một yếu tố (One-way ANOVA) khi các giả định về phân phối chuẩn hoặc tính đồng nhất của phương sai bị vi phạm.",
+      "seminal_citation": "Kruskal & Wallis (1952); Dunn (1964)",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Kruskal-Wallis H Test according to Kruskal & Wallis (1952).",
       "domain_tags_en": [
         "Non-Parametric Statistics"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Gộp toàn bộ N quan sát của k nhóm và xếp hạng chung từ 1 đến N. 2. Tính tổng thứ hạng R_j cho từng nhóm j (với quy mô n_j). 3. Thống kê H: H = [12 / (N * (N + 1))] * sum_{j=1}^k [R_j^2 / n_j] - 3 * (N + 1). 4. Hiệu chỉnh hạng buộc: H_adj = H / [ 1 - sum(t^3 - t) / (N^3 - N) ]. 5. Thống kê H tuân theo phân phối Chi-bình phương với (k - 1) bậc tự do khi quy mô mẫu đủ lớn (n_j >= 5).",
+      "benchmarks": "Giả thuyết H0: Tất cả k nhóm xuất phát từ cùng một phân phối quần thể. Bác bỏ H0 khi p-value < 0.05. Nếu p < 0.05, bắt buộc tiến hành Phân tích so sánh hậu kiểm (Post-hoc test) bằng Kiểm định Dunn (Dunn's test, 1964) hoặc Conover-Iman kèm hiệu chỉnh đa kiểm định Bonferroni hoặc Benjamini-Hochberg (FDR). Kích thước hiệu ứng Epsilon-bình phương (Epsilon^2 = (H - k + 1) / (N - k)).",
+      "pitfalls": "Bẫy phản biện: Chạy hàng loạt kiểm định Mann-Whitney U từng cặp sau khi Kruskal-Wallis có ý nghĩa mà không hiệu chỉnh tỷ lệ sai lầm loại I (Family-Wise Error Rate), làm sai lệch kết luận thống kê nghiêm trọng.",
+      "apa_reference": "Kruskal, W. H., & Wallis, W. A. (1952). Use of ranks in one-criterion variance analysis. Journal of the American Statistical Association, 47(260), 583–621. https://doi.org/10.1080/01621459.1952.10483441",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "kruskal-wallis-one-way-anova",
-      "term": "Kruskal-Wallis one-way ANOVA",
-      "vietnamese": "Phân tích phương sai 1 yếu tố Kruskal-Wallis",
-      "vietnamese_variants": [],
+      "term": "Nonparametric One-Way ANOVA (Kruskal-Wallis by Ranks)",
+      "vietnamese": "Phân tích phương sai một yếu tố phi tham số",
+      "vietnamese_variants": [
+        "ANOVA phi tham số Kruskal-Wallis",
+        "One-Way ANOVA by Ranks"
+      ],
       "domain_tags": [
         "Methodology",
         "Research Design"
       ],
-      "core_definition": "Kiểm định phi tham số so sánh k mẫu độc lập (thay thế One-way ANOVA).",
-      "seminal_citation": "Schindler (2022)",
+      "core_definition": "Phân tích phương sai một yếu tố phi tham số Kruskal-Wallis là thủ tục kiểm định tương đương với F-test trong ANOVA nhưng vận hành hoàn toàn trên ma trận thứ hạng. Thủ tục kiểm tra xem sự biến thiên của tổng thứ hạng giữa các nhóm có vượt trội một cách có ý nghĩa thống kê so với sự biến thiên ngẫu nhiên bên trong nội bộ các nhóm hay không.",
+      "seminal_citation": "Kruskal & Wallis (1952); Tomczak & Tomczak (2014)",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
@@ -24583,7 +25026,14 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Kiểm tra điều kiện tiên quyết: Biến phụ thuộc là biến liên tục hoặc thứ bậc; biến độc lập gồm >= 3 nhóm phân loại; các quan sát hoàn toàn độc lập giữa các nhóm. 2. Nếu các nhóm có phân phối cùng dạng hình học (độ lệch và độ trải rộng tương đương), phép kiểm định trở thành phép so sánh trung vị chính xác giữa các nhóm. 3. Tính toán Eta-bình phương phi tham số: Eta^2_H = (H - k + 1) / (N - k).",
+      "benchmarks": "Quy tắc ngưỡng Cohen cho Eta^2_H: 0.01 (hiệu ứng nhỏ), 0.06 (hiệu ứng vừa), 0.14 (hiệu ứng lớn). Báo cáo kèm theo giá trị trung vị (Median) và Khoảng tứ phân vị (IQR) cho từng nhóm thay vì báo cáo Mean và SD.",
+      "pitfalls": "Bẫy phản biện: Vẫn báo cáo Mean và SD khi đã dùng Kruskal-Wallis. Khi dữ liệu vi phạm phân phối chuẩn buộc phải dùng ANOVA phi tham số, việc báo cáo giá trị trung bình (Mean) là mâu thuẫn nhận thức luận vì Mean bị bóp méo bởi các ngoại lai; chuẩn mực là phải báo cáo Median và IQR.",
+      "apa_reference": "Tomczak, M., & Tomczak, E. (2014). The need to report effect size estimates revisited. An overview of some recommended measures of effect size. Trends in Sport Sciences, 1(21), 19–25.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "kuhnian-paradigm-shift",
@@ -24701,15 +25151,19 @@
     },
     {
       "id": "lasso",
-      "term": "LASSO",
-      "vietnamese": "Kỹ thuật Co cụm Tuyệt đối Tối thiểu và Chọn Lựa Biến",
-      "vietnamese_variants": [],
+      "term": "LASSO (Least Absolute Shrinkage and Selection Operator)",
+      "vietnamese": "Phương pháp LASSO (Hồi quy điều chuẩn chuẩn L1)",
+      "vietnamese_variants": [
+        "Hồi quy LASSO",
+        "L1 Regularization",
+        "Chọn lựa biến tự động LASSO"
+      ],
       "domain_tags": [
         "Machine Learning",
         "Data Science in Research"
       ],
-      "core_definition": "Tibshirani, 1996) (Least Absolute Shrinkage and Selection Operator.",
-      "seminal_citation": "Tham số phạt $\\lambda$ được tinh chỉnh tối ưu thông qua $k$-fold Cross-Validation nhằm tối thiểu hóa sai số dự báo.",
+      "core_definition": "Hồi quy LASSO (Tibshirani, 1996) là phương pháp hồi quy điều chuẩn (regularization) mang tính cách mạng, bổ sung hình phạt dựa trên chuẩn L1 (tổng giá trị tuyệt đối của các hệ số hồi quy) vào hàm mục tiêu OLS. Nhờ tính chất hình học đặc thù của hình phạt L1 (hình thoi với các đỉnh nhọn chạm vào các trục tọa độ), LASSO có khả năng co cụm (shrink) chính xác một số hệ số hồi quy về đúng bằng 0, đồng thời thực hiện cả hai nhiệm vụ: Ước lượng tham số và Chọn lọc biến tự động (Sparsity / Feature Selection).",
+      "seminal_citation": "Tibshirani (1996); Belloni, Chernozhukov, & Hansen (2014)",
       "tier": "acronym",
       "expert_status": "needs_review",
       "expert_notes": "LaTeX thô; nguồn ghi ngưỡng",
@@ -24717,7 +25171,14 @@
       "domain_tags_en": [
         "Machine Learning",
         "Data Science in Research"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Bài toán tối ưu hóa: Min_beta { sum_{i=1}^n (y_i - X_i*beta)^2 + lambda * sum_{j=1}^p |beta_j| }. 2. Siêu tham số điều chuẩn lambda >= 0: Khi lambda = 0, LASSO trùng khớp với OLS; khi lambda tiến ra vô cùng, tất cả các hệ số đều bị triệt tiêu về 0. 3. Lựa chọn giá trị tối ưu lambda* thông qua kiểm định chéo K-fold (Cross-validation: lambda_min hoặc quy tắc an toàn 1-SE rule lambda_1se). 4. Giải bài toán tối ưu bằng thuật toán Coordinate Descent (Friedman et al., 2010).",
+      "benchmarks": "Được áp dụng chuẩn mực trong kinh tế lượng dữ liệu lớn chiều cao (High-dimensional data: khi số biến p lớn hơn kích thước mẫu n, p >> n) và trong suy luận nhân quả học máy hiện đại (Belloni, Chernozhukov, & Hansen, 2014 - Double Selection LASSO để chọn biến kiểm soát cho mô hình nhân quả).",
+      "pitfalls": "Bẫy phản biện: Khi các biến giải thích có tương quan rất cao với nhau (nhóm biến cộng tuyến), LASSO có xu hướng chọn bừa một biến duy nhất trong nhóm và triệt tiêu toàn bộ các biến còn lại về 0, bỏ qua cấu trúc đa cộng tuyến thực tế (khắc phục bằng Elastic Net); (2) Các hệ số ước lượng của LASSO bị chệch về phía 0 (shrinkage bias), bắt buộc phải chạy Post-LASSO OLS để khôi phục độ lớn không chệch.",
+      "apa_reference": "Tibshirani, R. (1996). Regression shrinkage and selection via the lasso. Journal of the Royal Statistical Society: Series B (Methodological), 58(1), 267–288. https://doi.org/10.1111/j.2517-6161.1996.tb02080.x",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "lasso-regression-l1-regularization",
@@ -24979,20 +25440,31 @@
     {
       "id": "lead-time-bias",
       "term": "Lead-Time Bias",
-      "vietnamese": "Thiên lệch Thời gian Dẫn",
-      "vietnamese_variants": [],
+      "vietnamese": "Thiên lệch thời gian dẫn",
+      "vietnamese_variants": [
+        "Thiên lệch thời gian phát hiện sớm",
+        "Lead-time bias in screening",
+        "Thiên lệch tầm soát sớm"
+      ],
       "domain_tags": [
         "Epidemiological Bias"
       ],
-      "core_definition": "Phát hiện bệnh sớm qua sàng lọc tạo cảm giác kéo dài thời gian sống dù tuổi thọ thực sự không đổi.",
-      "seminal_citation": "Feinleib & Zelen (1969)",
+      "core_definition": "Thiên lệch thời gian dẫn (Lead-Time Bias - Feinleib, 1971; Morrison, 1993) là hiện tượng đánh giá sai lầm hiệu quả của một chương trình tầm soát phát hiện sớm (early screening / early detection). Thiên lệch xuất hiện khi việc chẩn đoán sớm làm tăng khoảng thời gian sống sót được ghi nhận kể từ thời điểm chẩn đoán đến khi tử vong, tạo ra ảo giác rằng bệnh nhân sống lâu hơn nhờ tầm soát, trong khi trên thực tế thời điểm tử vong thực tế của bệnh nhân hoàn toàn không thay đổi.",
+      "seminal_citation": "Feinleib (1971); Morrison (1993)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Lead-Time Bias according to Feinleib & Zelen (1969).",
       "domain_tags_en": [
         "Epidemiological Bias"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Thời gian dẫn (Lead Time): Khoảng thời gian từ khi bệnh được phát hiện qua tầm soát sớm đến thời điểm lẽ ra bệnh mới bộc lộ triệu chứng lâm sàng. 2. Nếu đo lường thời gian sống sót từ ngày chẩn đoán (Survival from diagnosis): Nhóm tầm soát luôn có thời gian sống sót dài hơn nhóm không tầm soát đúng bằng khoảng thời gian dẫn, ngay cả khi chương trình tầm soát hoàn toàn vô hiệu. 3. Khắc phục: Đo lường tỷ lệ tử vong đặc hiệu theo nguyên nhân trên toàn bộ dân số (Cause-specific mortality rates) hoặc dựa vào các thử nghiệm ngẫu nhiên có đối chứng (RCTs) với thời điểm bắt đầu theo dõi là ngày phân bổ ngẫu nhiên.",
+      "benchmarks": "Được áp dụng để giải ảo các chương trình tầm soát ung thư, chẩn đoán sớm khủng hoảng doanh nghiệp hoặc hệ thống cảnh báo sớm rủi ro tài chính. Chuẩn mực đánh giá hiệu quả can thiệp bắt buộc phải dựa trên việc giảm tỷ lệ tử vong tổng thể chứ không được dựa trên thời gian sống sót kể từ lúc chẩn đoán.",
+      "pitfalls": "Bẫy phản biện: Sử dụng tỷ lệ sống sót sau 5 năm (5-year survival rate) làm tiêu chí chứng minh hiệu quả của phương pháp tầm soát sớm. Tỷ lệ sống sót sau 5 năm bị bóp méo nghiêm trọng bởi cả thiên lệch thời gian dẫn lẫn thiên lệch độ dài (Length-time bias).",
+      "apa_reference": "Feinleib, M. (1971). The persistent problem of lead time bias. Journal of Chronic Diseases, 24(5), 285–286. https://doi.org/10.1016/0021-9681(71)90097-6",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "leader-member-exchange-theory-lmx",
@@ -26020,15 +26492,19 @@
     },
     {
       "id": "mann-whitney-u-test",
-      "term": "Mann-Whitney U test",
-      "vietnamese": "Kiểm định U của Mann-Whitney",
-      "vietnamese_variants": [],
+      "term": "Mann-Whitney U Test (Wilcoxon Rank-Sum Test)",
+      "vietnamese": "Kiểm định Mann-Whitney U",
+      "vietnamese_variants": [
+        "Kiểm định Wilcoxon Rank-Sum",
+        "Kiểm định U",
+        "So sánh hai nhóm độc lập phi tham số"
+      ],
       "domain_tags": [
         "Methodology",
         "Research Design"
       ],
-      "core_definition": "Kiểm định phi tham số so sánh 2 mẫu độc lập (thay thế t-test khi vi phạm chuẩn).",
-      "seminal_citation": "Schindler (2022)",
+      "core_definition": "Kiểm định Mann-Whitney U (Mann & Whitney, 1947; Wilcoxon, 1945) là phép kiểm định thống kê phi tham số chuẩn mực dùng để kiểm tra xem hai mẫu độc lập có cùng xuất phát từ một quần thể phân phối hay không. Phương pháp này thay thế hoàn hảo cho kiểm định Student's t-test độc lập khi dữ liệu có thang đo thứ bậc (ordinal), vi phạm nghiêm trọng giả định phân phối chuẩn, hoặc có ngoại lai cực đoan.",
+      "seminal_citation": "Mann & Whitney (1947); Wilcoxon (1945)",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
@@ -26036,25 +26512,43 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Gộp toàn bộ N = n_1 + n_2 quan sát từ cả hai nhóm và gán thứ hạng (ranks) từ 1 đến N (xử lý hạng buộc bằng trung bình cộng). 2. Tính tổng thứ hạng của từng nhóm: R_1 và R_2. 3. Thống kê U: U_1 = n_1 * n_2 + [n_1 * (n_1 + 1) / 2] - R_1 và U_2 = n_1 * n_2 - U_1. Giá trị kiểm định U = min(U_1, U_2). 4. Khi n_1, n_2 > 20, chuyển đổi sang giá trị z xấp xỉ chuẩn tắc: z = (U - E(U)) / sigma_U.",
+      "benchmarks": "Giả thuyết H0: Xác suất P(X > Y) = P(Y > X) = 0.5 (hai phân phối tương đồng). Bác bỏ H0 khi p-value < 0.05. Bắt buộc báo cáo Kích thước hiệu ứng phi tham số: r = z / sqrt(N) (Cohen: 0.1 nhỏ, 0.3 vừa, 0.5 lớn) hoặc Thống kê khả năng vượt trội (Common Language Effect Size / Probability of Superiority).",
+      "pitfalls": "Bẫy phản biện: Khẳng định rằng Mann-Whitney U kiểm tra 'sự khác biệt về trung vị' (difference in medians). Mann-Whitney U chỉ là kiểm định về sự bằng nhau của trung vị khi và chỉ khi hai nhóm có hình dạng phân phối (shape and spread) hoàn toàn giống nhau; nếu hình dạng phân phối khác nhau, kiểm định thuần túy là kiểm tra ưu thế ngẫu nhiên (stochastic dominance).",
+      "apa_reference": "Mann, H. B., & Whitney, D. R. (1947). On a test of whether one of two random variables is stochastically larger than the other. The Annals of Mathematical Statistics, 18(1), 50–60. https://doi.org/10.1214/aoms/1177730491",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "mann-whitney-u-test-wilcoxon-rank-sum",
-      "term": "Mann-Whitney U Test (Wilcoxon Rank-Sum)",
-      "vietnamese": "Kiểm định phi tham số Mann-Whitney U thay thế t-test mẫu độc lập khi dữ liệu không chuẩn",
-      "vietnamese_variants": [],
+      "term": "Wilcoxon-Mann-Whitney Rank-Sum Procedure",
+      "vietnamese": "Quy trình kiểm định tổng thứ hạng Wilcoxon-Mann-Whitney",
+      "vietnamese_variants": [
+        "Thủ tục WMW",
+        "Kiểm định thứ hạng Wilcoxon hai mẫu",
+        "WMW Test"
+      ],
       "domain_tags": [
         "Non-Parametric Statistics"
       ],
-      "core_definition": "Kiểm định phi tham số Mann-Whitney U thay thế t-test mẫu độc lập khi dữ liệu không chuẩn.",
-      "seminal_citation": "Mann & Whitney (1947)",
+      "core_definition": "Quy trình tổng thứ hạng Wilcoxon-Mann-Whitney (WMW) là nền tảng toán học đồng nhất giữa thống kê W của Wilcoxon (1945) và thống kê U của Mann & Whitney (1947). Quy trình chứng minh rằng tổng thứ hạng mẫu của nhóm thứ nhất là một hàm tuyến tính hoàn hảo của số cặp mà quan sát của nhóm 1 vượt trội hơn quan sát của nhóm 2.",
+      "seminal_citation": "Wilcoxon (1945); Hodges & Lehmann (1963)",
       "tier": "encyclopedia",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #1558",
       "core_definition_en": "Academic definition of Mann-Whitney U Test (Wilcoxon Rank-Sum) according to Mann & Whitney (1947).",
       "domain_tags_en": [
         "Non-Parametric Statistics"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Mối liên hệ toán học chính xác: U_1 = W_1 - n_1 * (n_1 + 1) / 2, trong đó W_1 là tổng thứ hạng của nhóm 1. 2. Ước lượng điểm Hodges-Lehmann: Trung vị của toàn bộ (n_1 * n_2) hiệu số từng cặp (x_i - y_j), đại diện cho kích thước chênh lệch vị trí vững giữa hai phân phối. 3. Xây dựng khoảng tin cậy phi tham số 95% chính xác (Exact permutation confidence interval) cho hiệu số vị trí.",
+      "benchmarks": "Chuẩn mực báo cáo APA 7th và tạp chí Q1: Bắt buộc báo cáo đồng thời giá trị thống kê U (hoặc W), giá trị z chuẩn hóa, p-value chính xác (exact p-value khi mẫu nhỏ), giá trị ước lượng Hodges-Lehmann và kích thước hiệu ứng r.",
+      "pitfalls": "Bẫy phản biện: Bỏ qua việc hiệu chỉnh hạng buộc (tie correction) khi dữ liệu có nhiều giá trị trùng lặp lớn; không hiệu chỉnh hạng buộc làm giảm phương sai danh nghĩa sigma_U và khiến giá trị z bị thổi phồng giả tạo.",
+      "apa_reference": "Wilcoxon, F. (1945). Individual comparisons by ranking methods. Biometrics Bulletin, 1(6), 80–83. https://doi.org/10.2307/3001968",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "manova",
@@ -27148,56 +27642,87 @@
     {
       "id": "missing-at-random-mar",
       "term": "Missing at Random (MAR)",
-      "vietnamese": "Dữ liệu Khuyết Ngẫu nhiên",
-      "vietnamese_variants": [],
+      "vietnamese": "Khuyết thiếu ngẫu nhiên có điều kiện",
+      "vietnamese_variants": [
+        "Cơ chế khuyết MAR",
+        "Dữ liệu khuyết có điều kiện Rubin"
+      ],
       "domain_tags": [
         "Missing Data Methodology"
       ],
-      "core_definition": "Xác suất bị khuyết phụ thuộc vào các biến đã quan sát được nhưng không phụ thuộc giá trị bị khuyết.",
-      "seminal_citation": "Rubin (1976)",
+      "core_definition": "Khuyết thiếu ngẫu nhiên có điều kiện (MAR - Rubin, 1976) là cơ chế dữ liệu khuyết thực tế và phổ biến nhất, trong đó xác suất một giá trị bị khuyết có thể phụ thuộc vào các biến số quan sát được khác trong tập dữ liệu, nhưng không phụ thuộc vào chính giá trị chưa quan sát của biến bị khuyết đó sau khi đã kiểm soát các biến quan sát (P(M | Y_obs, Y_mis) = P(M | Y_obs)). Ví dụ: Nam giới ít chịu trả lời câu hỏi về trầm cảm hơn phụ nữ, nhưng trong cùng nhóm nam giới, việc không trả lời không liên quan đến mức độ trầm cảm thực tế của họ.",
+      "seminal_citation": "Rubin (1976, 1987); Schafer (1997)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Missing at Random (MAR) according to Rubin (1976).",
       "domain_tags_en": [
         "Missing Data Methodology"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Khi dữ liệu là MAR, phương pháp xóa dòng thô thiển (Listwise deletion) sẽ tạo ra các ước lượng bị chệch tham số nghiêm trọng. 2. Hai phương pháp chuẩn mực hiện đại xử lý MAR: (A) Phương pháp Ước lượng Hợp lý Cực đại Toàn bộ Thông tin (Full Information Maximum Likelihood - FIML trong SEM); (B) Đa nội suy (Multiple Imputation - MI qua phương pháp MICE: Chained Equations tạo m = 20-50 tập dữ liệu nội suy độc lập và gộp kết quả theo quy tắc Rubin).",
+      "benchmarks": "Được công nhận là chuẩn mực vàng trong mọi nghiên cứu định lượng Q1 để xử lý dữ liệu khuyết thiếu. Tiêu chuẩn quốc tế: Không bao giờ được dùng xóa từng dòng (Listwise) hoặc thay thế bằng giá trị trung bình (Mean imputation) khi tỷ lệ khuyết thiếu > 5%.",
+      "pitfalls": "Bẫy phản biện: Sử dụng phép nội suy đơn lẻ bằng giá trị trung bình (Mean imputation). Phương pháp này làm suy giảm phương sai nhân tạo, triệt tiêu tương quan giữa các biến và thu hẹp sai số chuẩn, dẫn đến tỷ lệ bác bỏ sai lầm loại I bùng nổ.",
+      "apa_reference": "Rubin, D. B. (1987). Multiple imputation for nonresponse in surveys. John Wiley & Sons. https://doi.org/10.1002/9780470316696",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "missing-completely-at-random-mcar",
       "term": "Missing Completely at Random (MCAR)",
-      "vietnamese": "Dữ liệu Khuyết Hoàn toàn Ngẫu nhiên",
-      "vietnamese_variants": [],
+      "vietnamese": "Khuyết thiếu hoàn toàn ngẫu nhiên",
+      "vietnamese_variants": [
+        "Cơ chế khuyết MCAR",
+        "Dữ liệu khuyết hoàn toàn ngẫu nhiên Rubin"
+      ],
       "domain_tags": [
         "Missing Data Methodology"
       ],
-      "core_definition": "Xác suất bị khuyết không phụ thuộc vào bất kỳ biến quan sát hay biến chưa quan sát nào.",
-      "seminal_citation": "Rubin (1976)",
+      "core_definition": "Khuyết thiếu hoàn toàn ngẫu nhiên (MCAR - Rubin, 1976; Little & Rubin, 2019) là cơ chế dữ liệu khuyết nghiêm ngặt nhất, trong đó xác suất một giá trị bị khuyết hoàn toàn độc lập với cả các giá trị quan sát được lẫn các giá trị chưa quan sát của chính biến đó cũng như bất kỳ biến số nào khác trong tập dữ liệu (P(M | Y_obs, Y_mis) = P(M)). Khi dữ liệu là MCAR, tập mẫu các quan sát đầy đủ là một mẫu con ngẫu nhiên hoàn hảo của mẫu ban đầu.",
+      "seminal_citation": "Rubin (1976); Little (1988); Little & Rubin (2019)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Missing Completely at Random (MCAR) according to Rubin (1976).",
       "domain_tags_en": [
         "Missing Data Methodology"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Kiểm định thống kê chính thức: Kiểm định Little's MCAR Test (Little, 1988) dựa trên khoảng cách khoảng cách d^2 giữa các mô thức khuyết thiếu (missing patterns). 2. Giả thuyết H0: Dữ liệu bị khuyết theo cơ chế MCAR. Thống kê tuân theo phân phối Chi-bình phương. 3. Nếu p-value >= 0.05: Không thể bác bỏ H0, chấp nhận cơ chế MCAR.",
+      "benchmarks": "Khi dữ liệu là MCAR, phương pháp xóa bỏ từng dòng (Listwise deletion / Complete-case analysis) cho ra các ước lượng tham số không chệch (unbiased), mặc dù vẫn làm suy giảm kích thước mẫu và giảm sức mạnh thống kê (power of test). Bắt buộc báo cáo tỷ lệ phần trăm dữ liệu khuyết tổng thể và kết quả kiểm định Little's MCAR.",
+      "pitfalls": "Bẫy phản biện: Tự động giả định dữ liệu khảo sát bị khuyết là MCAR mà không thực hiện kiểm định Little. Trong nghiên cứu xã hội và hành vi thực tế, cơ chế MCAR cực kỳ hiếm khi xảy ra; hầu hết dữ liệu khuyết đều rơi vào cơ chế MAR hoặc MNAR.",
+      "apa_reference": "Little, R. J. (1988). A test of missing completely at random for multivariate data with missing values. Journal of the American Statistical Association, 83(404), 1198–1202. https://doi.org/10.1080/01621459.1988.10478722",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "missing-not-at-random-mnar",
-      "term": "Missing Not at Random (MNAR)",
-      "vietnamese": "Dữ liệu Khuyết Không Ngẫu nhiên",
-      "vietnamese_variants": [],
+      "term": "Missing Not at Random (MNAR / Nonignorable Missingness)",
+      "vietnamese": "Khuyết thiếu không ngẫu nhiên (Khuyết thiếu không thể bỏ qua)",
+      "vietnamese_variants": [
+        "Cơ chế khuyết MNAR",
+        "Nonignorable Missing Data",
+        "Khuyết thiếu do bản chất giá trị"
+      ],
       "domain_tags": [
         "Missing Data Methodology"
       ],
-      "core_definition": "Xác suất bị khuyết phụ thuộc trực tiếp vào chính giá trị của dữ liệu bị thiếu đó.",
-      "seminal_citation": "Little & Rubin (2019)",
+      "core_definition": "Khuyết thiếu không ngẫu nhiên (MNAR - Rubin, 1976) là cơ chế dữ liệu khuyết phức tạp và khó khăn nhất, trong đó xác suất một giá trị bị khuyết phụ thuộc trực tiếp vào chính giá trị chưa quan sát được của biến đó, ngay cả sau khi đã kiểm soát tất cả các biến số khác trong tập dữ liệu (P(M | Y_obs, Y_mis) phụ thuộc vào Y_mis). Ví dụ: Những cá nhân có thu nhập cực kỳ cao hoặc những người nghiện rượu nặng cố tình từ chối trả lời các câu hỏi về thu nhập hoặc mức độ tiêu thụ rượu của họ.",
+      "seminal_citation": "Rubin (1976); Little & Rubin (2019)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Missing Not at Random (MNAR) according to Little & Rubin (2019).",
       "domain_tags_en": [
         "Missing Data Methodology"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. MNAR là cơ chế không thể kiểm định trực tiếp từ dữ liệu quan sát (non-testable assumption). 2. Phương pháp mô hình hóa cấu trúc: (A) Mô hình Chọn mẫu Heckman (Heckman selection model); (B) Mô hình hỗn hợp mẫu (Pattern-mixture models); (C) Mô hình biến lựa chọn (Selection models: kết hợp phân phối của Y và phân phối của chỉ thị khuyết M). 3. Bắt buộc thực hiện phân tích độ nhạy (Sensitivity analysis / Tipping point analysis) để đánh giá mức độ sai lệch kết luận khi tham số khuyết thay đổi.",
+      "benchmarks": "Khi nghi ngờ có cơ chế MNAR (ví dụ trong các nghiên cứu về tham nhũng, hành vi tình dục nhạy cảm, trốn thuế), tác giả bắt buộc phải mô hình hóa rõ ràng quy trình sinh dữ liệu khuyết hoặc chứng minh tính vững qua phân tích độ nhạy tipping-point.",
+      "pitfalls": "Bẫy phản biện: Áp dụng Multiple Imputation (MI) chuẩn cho dữ liệu MNAR mà không điều chỉnh mô hình nội suy. MI tiêu chuẩn dựa trên giả định MAR; khi áp dụng cho dữ liệu MNAR, MI vẫn cho ra kết quả bị chệch tham số nặng nề.",
+      "apa_reference": "Little, R. J., & Rubin, D. B. (2019). Statistical analysis with missing data (3rd ed.). John Wiley & Sons. https://doi.org/10.1002/9781119482260",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "mixed-anova-split-plot-anova",
@@ -32777,21 +33302,32 @@
     },
     {
       "id": "purposive-sampling-judgmental",
-      "term": "Purposive Sampling (Judgmental)",
-      "vietnamese": "Chọn mẫu có chủ đích",
-      "vietnamese_variants": [],
+      "term": "Purposive Sampling (Judgmental Sampling)",
+      "vietnamese": "Phương pháp chọn mẫu có chủ đích",
+      "vietnamese_variants": [
+        "Lấy mẫu có mục đích",
+        "Chọn mẫu phán đoán",
+        "Purposive Sampling Strategy"
+      ],
       "domain_tags": [
         "Non-Probability Sampling"
       ],
-      "core_definition": "chọn các đối tượng thỏa mãn tiêu chuẩn chuyên môn xác định trước của nhà nghiên cứu.",
-      "seminal_citation": "Patton (2015)",
+      "core_definition": "Chọn mẫu có chủ đích (Purposive Sampling / Judgmental Sampling - Patton, 1990, 2015) là chiến lược chọn mẫu phi xác suất trung tâm trong nghiên cứu định tính và nghiên cứu trường hợp. Thay vì nhắm đến tính đại diện thống kê để khái quát hóa sang quần thể (Statistical Generalization), chọn mẫu có chủ đích tuyển chọn các đối tượng, trường hợp hoặc bối cảnh cụ thể dựa trên phán đoán chuyên môn của nhà nghiên cứu về khả năng cung cấp các thông tin phong phú và sâu sắc nhất (Information-rich cases) nhằm phục vụ trực tiếp cho câu hỏi nghiên cứu lý thuyết (Analytical Generalization).",
+      "seminal_citation": "Patton (1990, 2015)",
       "tier": "encyclopedia",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #2061",
       "core_definition_en": "Academic definition of Purposive Sampling (Judgmental) according to Patton (2015).",
       "domain_tags_en": [
         "Non-Probability Sampling"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Xác định tiêu chí lựa chọn rõ ràng tiên nghiệm (Inclusion and exclusion criteria) gắn liền với mục tiêu lý thuyết. 2. Các biến thể chiến lược Patton: (A) Chọn mẫu trường hợp cực đoan (Extreme/deviant); (B) Chọn mẫu dị biệt tối đa (Maximum variation); (C) Chọn mẫu trường hợp điển hình (Typical cases); (D) Chọn mẫu trường hợp then chốt (Critical cases); (E) Chọn mẫu theo tiêu chí xác định (Criterion sampling). 3. Dừng thu thập khi đạt điểm bão hòa lý thuyết (Theoretical Saturation).",
+      "benchmarks": "Được công nhận là chuẩn mực phương pháp luận trong nghiên cứu định tính tại các tạp chí Q1 (ASQ, AMJ, Qualitative Inquiry). Tiêu chuẩn đánh giá: Tính minh bạch hoàn toàn về lý do lựa chọn từng trường hợp và sự tương thích hoàn hảo giữa tiêu chí chọn mẫu với khung phân tích khái niệm.",
+      "pitfalls": "Bẫy phản biện: 'Convenience disguised as purposive' — Chọn mẫu dựa trên sự thuận tiện cá nhân (bạn bè, người quen dễ tiếp cận) nhưng ngụy biện là chọn mẫu có chủ đích trong bài báo; phản biện giàu kinh nghiệm sẽ dễ dàng phát hiện khi tác giả không chứng minh được tính đại diện thông tin lý thuyết của các đối tượng được phỏng vấn.",
+      "apa_reference": "Patton, M. Q. (2015). Qualitative research & evaluation methods: Integrating theory and practice (4th ed.). Sage Publications.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "qmle",
@@ -37277,15 +37813,19 @@
     },
     {
       "id": "spearman-s-rho",
-      "term": "Spearman's rho (Spearman Rank Correlation)",
-      "vietnamese": "Hệ số tương quan thứ bậc Spearman",
-      "vietnamese_variants": [],
+      "term": "Spearman's Rank Correlation Coefficient (Spearman's Rho)",
+      "vietnamese": "Hệ số tương quan hạng Spearman",
+      "vietnamese_variants": [
+        "Spearman's Rho",
+        "Hệ số tương quan Spearman",
+        "Tương quan phi tham số Spearman"
+      ],
       "domain_tags": [
         "Phương pháp Định lượng",
         "Thống kê Phi tham số"
       ],
-      "core_definition": "Chỉ số thống kê phi tham số đo lường mức độ quan hệ đơn điệu (monotonic relationship) giữa hai biến số. Spearman's rho được tính toán bằng cách xếp hạng (rank) dữ liệu trước khi tính tương quan, rất phù hợp cho dữ liệu thứ bậc (ordinal) hoặc dữ liệu không phân phối chuẩn.",
-      "seminal_citation": "Spearman, C. (1904). The proof and measurement of association between two things. American Journal of Psychology, 15(1), 72–101.",
+      "core_definition": "Hệ số tương quan hạng Spearman (Spearman's Rho / r_s - Spearman, 1904) là thước đo phi tham số đo lường mức độ chặt chẽ và chiều hướng của mối quan hệ đơn điệu (monotonic relationship) giữa hai biến số. Thay vì đo lường quan hệ tuyến tính thẳng như Pearson r, Spearman's Rho kiểm tra xem khi một biến tăng thì biến kia có xu hướng tăng (hoặc giảm) đơn điệu hay không, bất kể tốc độ thay đổi có tuyến tính hay không.",
+      "seminal_citation": "Spearman (1904)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
@@ -37293,25 +37833,43 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Chuyển đổi các giá trị của biến X và biến Y thành các thứ hạng tương ứng: R(X) và R(Y). 2. Spearman's Rho thực chất chính là hệ số tương quan Pearson được tính toán trực tiếp trên các giá trị thứ hạng. 3. Khi không có hạng buộc (no ties), công thức rút gọn kinh điển: r_s = 1 - [6 * sum(d_i^2)] / [n * (n^2 - 1)], trong đó d_i = R(X_i) - R(Y_i). 4. Kiểm định ý nghĩa thống kê bằng phân phối t với bậc tự do df = n - 2: t = r_s * sqrt((n - 2) / (1 - r_s^2)).",
+      "benchmarks": "Hệ số r_s nằm trong khoảng [-1, 1]. Ngưỡng đánh giá độ mạnh: (1) |r_s| < 0.30: Tương quan yếu; (2) 0.30 <= |r_s| < 0.50: Tương quan trung bình; (3) |r_s| >= 0.50: Tương quan mạnh (|r_s| = 1 biểu thị mối quan hệ đơn điệu hoàn hảo). Bác bỏ giả thuyết độc lập H0 khi p-value < 0.05.",
+      "pitfalls": "Bẫy phản biện: Đồng nhất mối quan hệ đơn điệu (Monotonic) với mối quan hệ tuyến tính (Linear). Một mối quan hệ phi tuyến hàm mũ y = exp(x) có Spearman r_s = 1.0 tuyệt đối nhưng Pearson r sẽ nhỏ hơn 1.0; chọn sai hệ số sẽ dẫn đến việc diễn giải sai lệch bản chất hình học của mô hình.",
+      "apa_reference": "Spearman, C. (1904). The proof and measurement of association between two things. The American Journal of Psychology, 15(1), 72–101. https://doi.org/10.2307/1412159",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "spearman-brown-prophecy-formula",
       "term": "Spearman-Brown Prophecy Formula",
-      "vietnamese": "Công thức Tiên tri Spearman-Brown",
-      "vietnamese_variants": [],
+      "vietnamese": "Công thức tiên tri Spearman-Brown",
+      "vietnamese_variants": [
+        "Công thức Spearman-Brown",
+        "Độ tin cậy thang đo khi thay đổi độ dài",
+        "Spearman-Brown Formula"
+      ],
       "domain_tags": [
         "Psychometrics"
       ],
-      "core_definition": "Dự báo sự thay đổi độ tin cậy khi tăng hoặc giảm số lượng câu hỏi của thang đo.",
-      "seminal_citation": "Spearman (1910)",
+      "core_definition": "Công thức tiên tri Spearman-Brown (Spearman, 1910; Brown, 1910) là phương trình kinh điển trong Lý thuyết Trắc nghiệm Cổ điển (Classical Test Theory - CTT), dùng để dự báo sự thay đổi về độ tin cậy của một thang đo khi tăng hoặc giảm số lượng mục hỏi (items) tương đương, hoặc dùng để hiệu chỉnh độ tin cậy của thang đo chia đôi (Split-Half Reliability).",
+      "seminal_citation": "Spearman (1910); Brown (1910)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Spearman-Brown Prophecy Formula according to Spearman (1910).",
       "domain_tags_en": [
         "Psychometrics"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Công thức tổng quát: rho*_xx = (k * rho_xx) / [ 1 + (k - 1) * rho_xx ], trong đó rho_xx là độ tin cậy ban đầu, k = n*_new / n_old là tỷ lệ thay đổi độ dài thang đo, rho*_xx là độ tin cậy dự báo. 2. Ứng dụng trong độ tin cậy chia đôi (Split-Half): Khi k = 2 (nhân đôi độ dài nửa bài test): r_sb = (2 * r_12) / (1 + r_12), với r_12 là tương quan giữa hai nửa thang đo. 3. Tính số lượng câu hỏi cần bổ sung để đạt độ tin cậy mục tiêu.",
+      "benchmarks": "Được áp dụng để tối ưu hóa thang đo khảo sát. Ví dụ: Nếu một thang đo 4 câu có alpha = 0.60, công thức cho biết cần tăng gấp đôi độ dài (k = 2, thành 8 câu) để nâng độ tin cậy lên mức chấp nhận được 0.75.",
+      "pitfalls": "Bẫy phản biện: Giả định các mục hỏi bổ sung có chất lượng tương đương hoàn hảo (strictly parallel items) với các mục hỏi ban đầu. Nếu bổ sung các câu hỏi kém chất lượng hoặc câu hỏi gây nhiễu, độ tin cậy thực tế sẽ bị sụt giảm thay vì tăng như dự báo lý thuyết của Spearman-Brown.",
+      "apa_reference": "Spearman, C. (1910). Correlation calculated from faulty data. British Journal of Psychology, 3(3), 271–295. https://doi.org/10.1111/j.2044-8295.1910.tb00206.x",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "specificity",
