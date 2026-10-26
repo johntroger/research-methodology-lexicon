@@ -89,7 +89,7 @@ export default function DictionaryApp({
   const [selectedId, setSelectedId] = useState<string>(
     initialTerms[0]?.id || ""
   );
-  const [filterType, setFilterType] = useState<"all" | "term" | "acronym" | "saved">("all");
+  const [filterType, setFilterType] = useState<"term" | "acronym" | "saved">("term");
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [isZenMode, setIsZenMode] = useState(false);
   const [fontSizeLevel, setFontSizeLevel] = useState<number>(0);
@@ -730,16 +730,6 @@ export default function DictionaryApp({
             {/* Bộ lọc Tab & Số đếm */}
             <div className="flex items-center justify-between text-xs">
               <div className="flex items-center gap-1 bg-slate-200/60 dark:bg-slate-800 p-0.5 rounded-md">
-                <button
-                  onClick={() => setFilterType("all")}
-                  className={`px-2 py-0.5 rounded font-medium transition ${
-                    filterType === "all"
-                      ? "bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-300 shadow-xs"
-                      : "text-slate-600 dark:text-slate-400"
-                  }`}
-                >
-                  {t.tab_all}
-                </button>
                 <button
                   onClick={() => setFilterType("term")}
                   className={`px-2 py-0.5 rounded font-medium transition ${
