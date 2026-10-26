@@ -1,6 +1,6 @@
 {
   "version": "10.2-peer-reviewed-cleaned",
-  "last_updated": "2026-10-26T07:36:31.030Z",
+  "last_updated": "2026-10-26T07:47:34.575Z",
   "total_terms": 1873,
   "terms": [
     {
@@ -5759,20 +5759,29 @@
     {
       "id": "arch-autoregressive-conditional-heteroskedasticity",
       "term": "ARCH (Autoregressive Conditional Heteroskedasticity)",
-      "vietnamese": "Mô hình Phương sai Sai số Thay đổi có Điều kiện Tự hồi quy",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Financial Econometrics"
+      "vietnamese": "Mô hình Phương sai Sai số Thay đổi có Điều kiện Tự hồi quy (Mô hình ARCH)",
+      "vietnamese_variants": [
+        "Mô hình ARCH Engle",
+        "Phương sai có điều kiện ARCH",
+        "Hiện tượng cụm biến động tài chính"
       ],
-      "core_definition": "Mô hình Phương sai Sai số Thay đổi có Điều kiện Tự hồi quy.",
-      "seminal_citation": "Engle (1982)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng Chuỗi thời gian",
+        "Kinh tế lượng Tài chính",
+        "Mô hình Biến động"
+      ],
+      "core_definition": "Mô hình kinh tế lượng đoạt giải Nobel kinh tế năm 2003 do Robert F. Engle (1982) phát minh để mô hình hóa chuỗi thời gian tài chính có hiện tượng 'Cụm biến động' (Volatility Clustering: những giai đoạn biến động lớn thường theo sau bởi biến động lớn, và biến động nhỏ theo sau bởi biến động nhỏ). Khác với OLS truyền thống vốn giả định phương sai sai số là hằng số (Homoskedasticity), ARCH mô hình hóa phương sai có điều kiện của phần dư tại thời điểm t như một hàm tuyến tính bậc q của bình phương các phần dư trễ trong quá khứ.",
+      "seminal_citation": "Engle, R. F. (1982). Autoregressive conditional heteroscedasticity with estimates of the variance of United Kingdom inflation. Econometrica, 50(4), 987–1007. https://doi.org/10.2307/1912773",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of ARCH (Autoregressive Conditional Heteroskedasticity) according to Engle (1982).",
       "domain_tags_en": [
         "Financial Econometrics"
-      ]
+      ],
+      "benchmarks": "Kiểm định hiệu ứng ARCH bắt buộc: Sử dụng kiểm định nhân tử Lagrange Engle's ARCH-LM test. Nếu p-value < 0.05, bác bỏ giả thuyết H0 (không có hiệu ứng ARCH) và kết luận chuỗi có phương sai thay đổi có điều kiện, bắt buộc phải ước lượng bằng ARCH/GARCH qua phương pháp Hợp lý cực đại (Maximum Likelihood). Các hệ số trong phương trình phương sai bắt buộc phải dương: alpha_0 > 0, alpha_i >= 0 và tổng alpha_i < 1 để đảm bảo phương sai luôn dương và chuỗi có tính dừng hiệp phương sai.",
+      "pitfalls": "Ước lượng OLS trên chuỗi có hiệu ứng ARCH: OLS vẫn không chệch nhưng không còn là ước lượng hiệu quả nhất (mất tính BLUE), sai số chuẩn bị tính sai dẫn đến các kiểm định t và F không đáng tin cậy; chọn bậc trễ q quá lớn làm phát sinh đa cộng tuyến và nguy cơ vi phạm ràng buộc không âm.",
+      "apa_reference": "Engle, R. F. (1982). Autoregressive conditional heteroscedasticity with estimates of the variance of United Kingdom inflation. Econometrica, 50(4), 987–1007."
     },
     {
       "id": "ardl",
@@ -5839,20 +5848,29 @@
     {
       "id": "arellano-bond-dynamic-panel-gmm",
       "term": "Arellano-Bond Dynamic Panel GMM",
-      "vietnamese": "Mô hình Bảng Động GMM Arellano-Bond",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Panel Data Econometrics"
+      "vietnamese": "Mô hình Bảng Động GMM Arellano-Bond (Difference GMM)",
+      "vietnamese_variants": [
+        "Difference GMM Arellano-Bond",
+        "Mô hình GMM sai phân bậc một",
+        "First-difference GMM"
       ],
-      "core_definition": "First-Difference GMM giải quyết nội sinh biến phụ thuộc trễ.",
-      "seminal_citation": "Arellano & Bond (1991)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng Dữ liệu Bảng",
+        "Dữ liệu Bảng Động",
+        "Xử lý Biến Nội sinh"
+      ],
+      "core_definition": "Phương pháp ước lượng GMM sai phân bậc một (First-Difference GMM) mang tính cách mạng do Manuel Arellano và Stephen Bond (1991) phát triển nhằm giải quyết triệt để vấn đề biến nội sinh trong mô hình dữ liệu bảng động (Dynamic Panel Data: mô hình có chứa biến phụ thuộc trễ Y_{i,t-1} làm biến giải thích). Phương pháp lấy sai phân bậc một phương trình để loại bỏ hoàn toàn hiệu ứng cố định cá thể bất biến theo thời gian eta_i, sau đó sử dụng các giá trị trễ từ bậc hai trở đi của các biến nội sinh ở dạng biến gốc (Y_{i,t-2}, Y_{i,t-3},...) làm biến công cụ nội tại.",
+      "seminal_citation": "Arellano, M., & Bond, S. (1991). Some tests of specification for panel data: Monte Carlo evidence and an application to employment equations. The Review of Economic Studies, 58(2), 277–297. https://doi.org/10.2307/2297968",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Arellano-Bond Dynamic Panel GMM according to Arellano & Bond (1991).",
       "domain_tags_en": [
         "Panel Data Econometrics"
-      ]
+      ],
+      "benchmarks": "Hai phép kiểm định chẩn đoán bắt buộc để công nhận mô hình: (1) Kiểm định tự tương quan phần dư Arellano-Bond: Bắt buộc tồn tại tự tương quan bậc một AR(1) (p < 0.05 do cấu trúc sai phân Delta epsilon_{it} = epsilon_{it} - epsilon_{i,t-1}) nhưng TUYỆT ĐỐI KHÔNG ĐƯỢC CÓ tự tương quan bậc hai AR(2) (p > 0.05); (2) Kiểm định tính hợp lệ của biến công cụ: Kiểm định Hansen J-test có p-value nằm trong khoảng [0.10, 0.25] (hoặc p > 0.05). Cần kiểm soát số lượng biến công cụ nhỏ hơn số lượng đơn vị chéo (Number of instruments < N).",
+      "pitfalls": "Bẫy 'Bùng nổ biến công cụ' (Instrument Proliferation): Khi số kỳ thời gian T tăng, số biến công cụ tăng theo hàm bậc hai T(T-1)/2, làm mất hiệu lực của Hansen test (kéo p-value tiến về 1.000 giả tạo) và làm chệch hệ số ước lượng; duy trì mô hình khi kiểm định AR(2) có p < 0.05 (vi phạm giả định sai số không có tự tương quan bậc cao).",
+      "apa_reference": "Arellano, M., & Bond, S. (1991). Some tests of specification for panel data: Monte Carlo evidence and an application to employment equations. The Review of Economic Studies, 58(2), 277–297."
     },
     {
       "id": "arellano-bond-test-for-autocorrelation",
@@ -6081,22 +6099,29 @@
     },
     {
       "id": "augmented-dickey-fuller-test",
-      "term": "Augmented Dickey-Fuller Test",
-      "vietnamese": "Kiểm định Dickey-Fuller Mở rộng (Kiểm định nghiệm đơn vị)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Time Series Econometrics"
+      "term": "Augmented Dickey-Fuller Test (ADF)",
+      "vietnamese": "Kiểm định Dickey-Fuller Mở rộng (Kiểm định Nghiệm Đơn vị ADF)",
+      "vietnamese_variants": [
+        "Kiểm định nghiệm đơn vị chuỗi thời gian",
+        "ADF unit root test"
       ],
-      "core_definition": "Kiểm tra tính dừng (stationarity) của chuỗi thời gian nhằm tránh hiện tượng hồi quy giả mạo (spurious regression). Ngưỡng thực nghiệm tham chiếu: P-value < 0.05 (hoặc t-statistic nhỏ hơn giá trị tới hạn MacKinnon): Bác bỏ giả thuyết H0 (có nghiệm đơn vị), chuỗi thời gian là chuỗi dừng.",
-      "seminal_citation": "P-value < 0.05 (hoặc t-statistic nhỏ hơn giá trị tới hạn MacKinnon): Bác bỏ giả thuyết H0 (có nghiệm đơn vị), chuỗi thời gian là chuỗi dừng.",
-      "tier": "acronym",
+      "domain_tags": [
+        "Kinh tế lượng Chuỗi thời gian",
+        "Kiểm định Giả thuyết",
+        "Tính dừng Chuỗi thời gian"
+      ],
+      "core_definition": "Phép kiểm định thống kê kinh điển trong kinh tế lượng chuỗi thời gian do David Dickey và Wayne Fuller (1979) sáng tạo, được Said & Dickey (1984) mở rộng nhằm kiểm tra xem một chuỗi dữ liệu có chứa nghiệm đơn vị (Unit Root) hay không — tức là chuỗi có phải là chuỗi không dừng (Non-stationary / I(1)) hay chuỗi dừng (Stationary / I(0)). Phiên bản mở rộng (Augmented) bổ sung thêm các số hạng trễ của sai phân bậc một vào phương trình hồi quy nhằm triệt tiêu hoàn toàn hiện tượng tự tương quan bậc cao trong phần dư, bảo vệ nhà nghiên cứu khỏi bẫy hồi quy giả mạo (Spurious regression).",
+      "seminal_citation": "Dickey, D. A., & Fuller, W. A. (1979). Distribution of the estimators for autoregressive time series with a unit root. Journal of the American Statistical Association, 74(366), 427–431; Said, S. E., & Dickey, D. A. (1984). Testing for unit roots in autoregressive-moving average models of unknown order. Biometrika, 71(3), 599–607.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of Augmented Dickey-Fuller Test according to P-value < 0.05 (hoặc t-statistic nhỏ hơn giá trị tới hạn MacKinnon): Bác bỏ giả thuyết H0 (có nghiệm đơn vị), chuỗi thời gian là chuỗi dừng..",
       "domain_tags_en": [
         "Time Series Econometrics"
       ],
-      "benchmarks": "P-value < 0.05 (hoặc t-statistic nhỏ hơn giá trị tới hạn MacKinnon): Bác bỏ giả thuyết H0 (có nghiệm đơn vị), chuỗi thời gian là chuỗi dừng."
+      "benchmarks": "So sánh giá trị thống kê t của hệ số sai phân bậc trễ với giá trị tới hạn MacKinnon ở các mức 1%, 5%, 10%. Nếu t_stat < t_MacKinnon (âm hơn) và p < 0.05, bác bỏ giả thuyết H0 (chuỗi có nghiệm đơn vị / không dừng), kết luận chuỗi dừng I(0). Lựa chọn số bậc trễ tối ưu dựa trên tiêu chí Schwarz Information Criterion (SIC/BIC) hoặc Akaike (AIC). Lựa chọn đúng 3 dạng mô hình: Không có hằng số và xu thế, có hằng số (Intercept), có cả hằng số và xu thế thời gian (Trend and Intercept).",
+      "pitfalls": "Kiểm định ADF trên chuỗi có xu thế tuyến tính mà chọn dạng mô hình không có xu thế (omitted trend), dẫn đến suy giảm nghiêm trọng độ mạnh thống kê (Power of the test) và kết luận sai rằng chuỗi không dừng; nhầm lẫn giữa tính dừng theo xu thế (Trend-stationary) và tính dừng theo sai phân (Difference-stationary).",
+      "apa_reference": "Said, S. E., & Dickey, D. A. (1984). Testing for unit roots in autoregressive-moving average models of unknown order. Biometrika, 71(3), 599–607."
     },
     {
       "id": "authentic-leadership-walumbwa-et-al",
@@ -6246,17 +6271,19 @@
     {
       "id": "average-treatment-effect",
       "term": "Average Treatment Effect (ATE)",
-      "vietnamese": "Hiệu ứng can thiệp trung bình",
+      "vietnamese": "Tác động Can thiệp Trung bình Toàn thể (Chỉ số ATE)",
       "vietnamese_variants": [
-        "ATE"
+        "Chỉ số ATE",
+        "Tác động nhân quả bình quân dân số"
       ],
       "domain_tags": [
-        "Causal Inference",
-        "Econometrics"
+        "Suy luận Nhân quả",
+        "Khung Kết cục Tiềm năng Rubin",
+        "Đánh giá Chính sách"
       ],
-      "core_definition": "Đo lường mức độ tác động trung bình của một chính sách, biện pháp can thiệp trên toàn bộ tổng thể nghiên cứu trong kinh tế lượng nhân quả. Ngưỡng thực nghiệm tham chiếu: Ước lượng không chệch (unbiased) khi giả định gán ngẫu nhiên (random assignment) hoặc conditional independence được thỏa mãn.",
-      "seminal_citation": "Ước lượng không chệch (unbiased) khi giả định gán ngẫu nhiên (random assignment) hoặc conditional independence được thỏa mãn.",
-      "tier": "acronym",
+      "core_definition": "Thước đo nhân quả nền tảng trong Khung Kết cục Tiềm năng của Rubin (Rubin Causal Model): Đo lường sự khác biệt kỳ vọng giữa kết cục tiềm năng khi một cá thể bất kỳ trong toàn bộ quần thể nhận sự can thiệp (Y_i(1)) so với khi chính cá thể đó không nhận sự can thiệp (Y_i(0)): ATE = E[Y_i(1) - Y_i(0)]. ATE đại diện cho tác động trung bình nếu chính sách hoặc can thiệp được triển khai phổ quát cho 100% đối tượng trong dân số.",
+      "seminal_citation": "Rubin, D. B. (1974). Estimating causal effects of treatments in randomized and nonrandomized studies. Journal of Educational Psychology, 66(5), 688–701. https://doi.org/10.1037/h0037350; Imbens, G. W., & Wooldridge, J. M. (2009). Recent developments in the econometrics of program evaluation. Journal of Economic Literature, 47(1), 5–86.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of Average Treatment Effect according to Ước lượng không chệch (unbiased) khi giả định gán ngẫu nhiên (random assignment) hoặc conditional independence được thỏa mãn..",
@@ -6264,7 +6291,9 @@
         "Causal Inference",
         "Econometrics"
       ],
-      "benchmarks": "Ước lượng không chệch (unbiased) khi giả định gán ngẫu nhiên (random assignment) hoặc conditional independence được thỏa mãn."
+      "benchmarks": "Trong thử nghiệm ngẫu nhiên có đối chứng hoàn hảo (RCT), ATE được ước lượng không chệch bằng phép trừ trung bình giản đơn: Y_bar_{treatment} - Y_bar_{control}. Trong dữ liệu quan sát, ATE chỉ được xác định khi thỏa mãn hai giả định nền tảng: (1) Khả năng bỏ qua có điều kiện (Conditional Independence Assumption / Unconfoundedness: (Y(0), Y(1)) perp D | X); (2) Hỗ trợ chung (Common Support / Overlap: 0 < P(D=1|X) < 1).",
+      "pitfalls": "Nhầm lẫn ATE với ATT: Khi sự tham gia vào chương trình là tự nguyện, các đối tượng tham gia thường có động lực hoặc đặc điểm vượt trội, khiến ATT thường lớn hơn nhiều so với ATE; ngoại suy kết quả ATE sang các nhóm đối tượng không nằm trong vùng Common Support.",
+      "apa_reference": "Rubin, D. B. (1974). Estimating causal effects of treatments in randomized and nonrandomized studies. Journal of Educational Psychology, 66(5), 688–701."
     },
     {
       "id": "average-treatment-effect-on-the-untreated",
@@ -6291,22 +6320,27 @@
     {
       "id": "average-treatment-effect-on-treated-att",
       "term": "Average Treatment Effect on the Treated (ATT)",
-      "vietnamese": "Tác động Can thiệp Trung bình trên Nhóm Được Can thiệp",
+      "vietnamese": "Tác động Can thiệp Trung bình trên Nhóm Được Can thiệp (Chỉ số ATT)",
       "vietnamese_variants": [
-        "ATT"
+        "Chỉ số ATT",
+        "Tác động trên nhóm thụ hưởng"
       ],
       "domain_tags": [
-        "Causal Inference"
+        "Suy luận Nhân quả",
+        "Đánh giá Chính sách Thực nghiệm"
       ],
-      "core_definition": "Tác động nhân quả thực tế đối với chính những đối tượng tham gia.",
-      "seminal_citation": "Heckman et al. (1997)",
-      "tier": "textbook",
+      "core_definition": "Thước đo đánh giá hiệu quả chính sách thực tế phổ biến nhất trong kinh tế lượng thực nghiệm: Đo lường tác động nhân quả trung bình chỉ dành riêng cho những đối tượng THỰC SỰ THAM GIA hoặc nhận sự can thiệp: ATT = E[Y_i(1) - Y_i(0) | D_i = 1]. Khác với ATE (áp dụng cho toàn dân số), ATT trả lời câu hỏi chính sách cốt lõi: 'Đối với những người đã thụ hưởng chính sách, chính sách này đã giúp họ cải thiện được bao nhiêu so với kịch bản phản thực tế nếu họ không tham gia?'.",
+      "seminal_citation": "Heckman, J. J., Ichimura, H., & Todd, P. E. (1997). Matching as an econometric evaluation estimator: Evidence from evaluating a job training programme. The Review of Economic Studies, 64(4), 605–654.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Average Treatment Effect on Treated (ATT) according to Heckman et al. (1997).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "benchmarks": "Ước lượng thông qua các phương pháp ghép cặp (Propensity Score Matching, Coarsened Exact Matching) hoặc Difference-in-Differences. Bắt buộc kiểm tra tính cân bằng thuộc tính (Covariate Balance) giữa nhóm can thiệp và nhóm đối chứng được ghép cặp (SMD < 0.10).",
+      "pitfalls": "Dùng ATT để kết luận về hiệu quả của việc mở rộng chính sách ra quy mô toàn quốc (Nhóm chưa tham gia có thể có đặc tính hoàn toàn khác, khiến hiệu quả đối với họ thấp hơn nhiều so với nhóm tiên phong tham gia).",
+      "apa_reference": "Heckman, J. J., Ichimura, H., & Todd, P. E. (1997). Matching as an econometric evaluation estimator. The Review of Economic Studies, 64(4), 605–654."
     },
     {
       "id": "average-variance-extracted-ave",
@@ -7250,20 +7284,29 @@
     {
       "id": "blundell-bond-system-gmm",
       "term": "Blundell-Bond System GMM",
-      "vietnamese": "Mô hình Bảng Động Hệ thống GMM Blundell-Bond",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Panel Data Econometrics"
+      "vietnamese": "Mô hình Bảng Động GMM Hệ thống Blundell-Bond (System GMM)",
+      "vietnamese_variants": [
+        "System GMM Blundell-Bond",
+        "GMM hệ thống hai phương trình",
+        "Arellano-Bover/Blundell-Bond estimator"
       ],
-      "core_definition": "System GMM kết hợp phương trình sai phân và phương trình mức.",
-      "seminal_citation": "Blundell & Bond (1998)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng Dữ liệu Bảng",
+        "Dữ liệu Bảng Động",
+        "Ước lượng GMM Nâng cao"
+      ],
+      "core_definition": "Bản nâng cấp toàn diện của Difference GMM do Richard Blundell và Stephen Bond (1998) cùng Arellano & Bover (1995) hoàn thiện. Khi chuỗi dữ liệu có tính dai dẳng cao (tự tương quan gần 1) hoặc tỷ số phương sai hiệu ứng cố định lớn, các biến công cụ trễ ở mức sai phân trở nên cực kỳ yếu (Weak instruments). System GMM khắc phục triệt để bằng cách ước lượng đồng thời một HỆ THỐNG HAI PHƯƠNG TRÌNH: Phương trình sai phân (dùng biến công cụ ở dạng mức trễ) VÀ Phương trình mức gốc (dùng biến công cụ ở dạng sai phân trễ Delta Y_{i,t-1}), nâng cao vượt bậc độ chính xác và hiệu quả thống kê.",
+      "seminal_citation": "Arellano, M., & Bover, O. (1995). Another look at the instrumental variable estimation of error-components models. Journal of Econometrics, 68(1), 29–51; Blundell, R., & Bond, S. (1998). Initial conditions and moment restrictions in dynamic panel data models. Journal of Econometrics, 87(1), 115–143. https://doi.org/10.1016/S0304-4076(98)00009-8",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Blundell-Bond System GMM according to Blundell & Bond (1998).",
       "domain_tags_en": [
         "Panel Data Econometrics"
-      ]
+      ],
+      "benchmarks": "Đạt chuẩn 4 tiêu chí khắt khe: (1) Kiểm định AR(1) có p < 0.05; (2) Kiểm định AR(2) có p > 0.05; (3) Kiểm định quá nhận diện Hansen J-test có p > 0.05 (tối ưu 0.10 <= p <= 0.25); (4) Kiểm định Hansen sai phân (Difference-in-Hansen test) cho tập công cụ phương trình mức p > 0.05. Hệ số biến phụ thuộc trễ bắt buộc phải nằm giữa ước lượng Pooled OLS (cận trên) và Fixed Effects (cận dưới): beta_{FE} < beta_{System GMM} < beta_{OLS}.",
+      "pitfalls": "Chạy System GMM mà không áp dụng tùy chọn hạn chế công cụ (collapse trong Stata/R), dẫn đến số công cụ lớn hơn kích thước mẫu N; tin cậy mù quáng vào kết quả khi Hansen p = 1.000 (dấu hiệu điển hình của việc mô hình bị bão hòa công cụ).",
+      "apa_reference": "Blundell, R., & Bond, S. (1998). Initial conditions and moment restrictions in dynamic panel data models. Journal of Econometrics, 87(1), 115–143."
     },
     {
       "id": "bo-7-tieu-chuan-danh-gia-do-chuan-xac-dinh-tinh-ines-steinkes-criteria-of-qualitative-rigour",
@@ -7784,20 +7827,27 @@
     {
       "id": "breusch-godfrey-lm-test",
       "term": "Breusch-Godfrey LM Test",
-      "vietnamese": "Kiểm định Tự tương quan Breusch-Godfrey",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Regression Diagnostics"
+      "vietnamese": "Kiểm định Nhân tử Lagrange Tự tương quan Breusch-Godfrey",
+      "vietnamese_variants": [
+        "Breusch-Godfrey serial correlation test",
+        "Kiểm định tự tương quan bậc cao LM"
       ],
-      "core_definition": "Kiểm định tự tương quan sai số bậc cao vững với biến phụ thuộc trễ.",
-      "seminal_citation": "Breusch (1978), Godfrey (1978)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng Chuỗi thời gian",
+        "Kiểm định Chẩn đoán"
+      ],
+      "core_definition": "Phép kiểm định tự tương quan tổng quát và vượt trội hoàn toàn so với Durbin-Watson do Trevor Breusch và Leslie Godfrey (1978) phát triển. Khắc phục hai yếu điểm chí tử của Durbin-Watson: (1) Kiểm định được mô hình có chứa biến phụ thuộc trễ; (2) Kiểm tra được tự tương quan bậc cao p (ví dụ: tự tương quan bậc 4 cho dữ liệu quý, bậc 12 cho dữ liệu tháng) theo cả dạng tự hồi quy AR(p) lẫn trung bình trượt MA(p).",
+      "seminal_citation": "Breusch, T. S. (1978). Testing for autocorrelation in dynamic linear models. Australian Economic Papers, 17(31), 334–355; Godfrey, L. G. (1978). Testing against general autoregressive and moving average error models when the regressors include lagged dependent variables. Econometrica, 46(6), 1293–1301.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Breusch-Godfrey LM Test according to Breusch (1978), Godfrey (1978).",
       "domain_tags_en": [
         "Regression Diagnostics"
-      ]
+      ],
+      "benchmarks": "Hồi quy phần dư e_t lên các biến độc lập gốc và các phần dư trễ e_{t-1}, e_{t-2}, ..., e_{t-p}. Thống kê kiểm định LM = (n - p) * R^2_{aux} ~ chi^2(p). Giả thuyết H0: Không có tự tương quan đến bậc p. Bác bỏ H0 khi p < 0.05. Khắc phục: Sử dụng Sai số chuẩn Newey-West HAC (Heteroskedasticity and Autocorrelation Consistent).",
+      "pitfalls": "Chọn bậc trễ p quá nhỏ (bỏ sót tự tương quan mùa vụ bậc cao) hoặc quá lớn làm suy giảm độ mạnh của kiểm định; quên không báo cáo sai số chuẩn Newey-West khi đã phát hiện ra tự tương quan.",
+      "apa_reference": "Godfrey, L. G. (1978). Testing against general autoregressive and moving average error models when the regressors include lagged dependent variables. Econometrica, 46(6), 1293–1301."
     },
     {
       "id": "breusch-godfrey-test",
@@ -7838,20 +7888,27 @@
     {
       "id": "breusch-pagan-test",
       "term": "Breusch-Pagan Test",
-      "vietnamese": "Kiểm định Breusch-Pagan kiểm tra hiện tượng phương sai thay đổi dạng tuyến tính",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Econometrics"
+      "vietnamese": "Kiểm định Phương sai Thay đổi Breusch-Pagan",
+      "vietnamese_variants": [
+        "Kiểm định phương sai thay đổi BP",
+        "Breusch-Pagan heteroskedasticity test"
       ],
-      "core_definition": "Kiểm định Breusch-Pagan kiểm tra hiện tượng phương sai thay đổi dạng tuyến tính.",
-      "seminal_citation": "Breusch & Pagan (1979)",
-      "tier": "curated",
+      "domain_tags": [
+        "Kinh tế lượng Cơ bản",
+        "Kiểm định Chẩn đoán Khuyết tật Mô hình"
+      ],
+      "core_definition": "Phép kiểm định nhân tử Lagrange (LM) do Trevor Breusch và Adrian Pagan (1979) phát minh nhằm phát hiện hiện tượng Phương sai Sai số Thay đổi (Heteroskedasticity) trong mô hình hồi quy tuyến tính. Kiểm định hồi quy bình phương phần dư chuẩn hóa (hoặc phần dư thông thường qua bản hiệu chỉnh Koenker 1981) lên tập các biến độc lập nghi ngờ gây ra phương sai thay đổi để xem liệu phương sai sai số có bị phụ thuộc tuyến tính vào các biến giải thích hay không.",
+      "seminal_citation": "Breusch, T. S., & Pagan, A. R. (1979). A simple test for heteroscedasticity and random coefficient variation. Econometrica, 47(5), 1287–1294. https://doi.org/10.2307/1911963; Koenker, R. (1981). A note on studentizing a test for heteroscedasticity. Journal of Econometrics, 17(1), 107–112.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Breusch-Pagan Test according to Breusch & Pagan (1979).",
       "domain_tags_en": [
         "Econometrics"
-      ]
+      ],
+      "benchmarks": "Giả thuyết H0: Phương sai sai số đồng nhất (Homoskedasticity: sigma_i^2 = sigma^2); Giả thuyết H1: Phương sai sai số thay đổi. Thống kê kiểm định LM = n * R^2_{aux} ~ chi^2(p). Nếu p < 0.05, bác bỏ H0, kết luận mô hình bị phương sai thay đổi. Khắc phục: Sử dụng Sai số chuẩn vững Huber-White (Heteroskedasticity-Consistent Standard Errors / HC1, HC2, HC3) hoặc Weighted Least Squares (WLS).",
+      "pitfalls": "Kiểm định Breusch-Pagan nguyên bản cực kỳ nhạy cảm với giả định sai số phân phối chuẩn (Non-normality); nếu dữ liệu sai số có độ nhọn cao (Kurtosis lớn), bài test sẽ đưa ra kết luận bác bỏ sai lầm (quá nhiều sai lầm loại I). Do đó, bắt buộc sử dụng phiên bản hiệu chỉnh Studentized Breusch-Pagan của Koenker (1981).",
+      "apa_reference": "Breusch, T. S., & Pagan, A. R. (1979). A simple test for heteroscedasticity and random coefficient variation. Econometrica, 47(5), 1287–1294."
     },
     {
       "id": "bricolage-in-qualitative-inquiry",
@@ -14068,20 +14125,27 @@
     {
       "id": "durbin-watson-test",
       "term": "Durbin-Watson Test",
-      "vietnamese": "Kiểm định Durbin-Watson (Tự tương quan phần dư bậc nhất)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Econometrics"
+      "vietnamese": "Kiểm định Tự tương quan Bậc một Durbin-Watson",
+      "vietnamese_variants": [
+        "Thống kê d Durbin-Watson",
+        "Durbin-Watson d test"
       ],
-      "core_definition": "Phép kiểm định thống kê dùng để phát hiện hiện tượng tự tương quan bậc nhất (First-order autocorrelation) của phần dư trong phân tích hồi quy chuỗi thời gian OLS. Giá trị thống kê d dao động từ 0 đến 4; giá trị d xấp xỉ 2 (ngưỡng an toàn 1.5 < d < 2.5) cho thấy không có hiện tượng tự tương quan bậc nhất (Durbin & Watson, 1951).",
-      "seminal_citation": "Durbin & Watson (1950)",
-      "tier": "curated",
+      "domain_tags": [
+        "Kinh tế lượng Chuỗi thời gian",
+        "Kiểm định Chẩn đoán Phần dư"
+      ],
+      "core_definition": "Phép kiểm định thống kê kinh điển do James Durbin và Geoffrey Watson (1950, 1951) sáng lập để phát hiện hiện tượng Tự tương quan bậc một (First-order Autocorrelation: epsilon_t = rho * epsilon_{t-1} + u_t) trong phần dư của chuỗi thời gian. Thống kê d đo lường tương quan giữa phần dư ở thời điểm t và phần dư ở thời điểm t-1.",
+      "seminal_citation": "Durbin, J., & Watson, G. S. (1950). Testing for serial correlation in least squares regression: I. Biometrika, 37(3/4), 409–428; Durbin, J., & Watson, G. S. (1951). Testing for serial correlation in least squares regression: II. Biometrika, 38(1/2), 159–178.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã cập nhật định nghĩa chuyên sâu từ tài liệu kinh điển.",
       "core_definition_en": "Academic definition of Durbin-Watson Test according to Durbin & Watson (1950).",
       "domain_tags_en": [
         "Econometrics"
-      ]
+      ],
+      "benchmarks": "Giá trị thống kê d dao động từ 0 đến 4: (1) d ~ 2: Không có tự tương quan bậc một; (2) d < d_L (tiến gần về 0): Có tự tương quan dương có ý nghĩa; (3) d > 4 - d_L (tiến gần về 4): Có tự tương quan âm có ý nghĩa; (4) Nằm giữa d_L và d_U: Vùng không thể đưa ra kết luận (Inconclusive zone).",
+      "pitfalls": "Bẫy áp dụng Durbin-Watson cho mô hình có biến phụ thuộc trễ (Y_{t-1} nằm ở vế phải): Thống kê d bị chệch nghiêm trọng tiến về giá trị 2, làm mất hoàn toàn khả năng phát hiện tự tương quan. Khi mô hình có biến trễ hoặc muốn kiểm tra tự tương quan bậc cao hơn 1, BẮT BUỘC phải dùng kiểm định Breusch-Godfrey LM Test hoặc Durbin's h-test.",
+      "apa_reference": "Durbin, J., & Watson, G. S. (1951). Testing for serial correlation in least squares regression: II. Biometrika, 38(1/2), 159–178."
     },
     {
       "id": "durbin-wu-hausman-test",
@@ -14419,20 +14483,29 @@
     {
       "id": "egarch-exponential-garch",
       "term": "EGARCH (Exponential GARCH)",
-      "vietnamese": "Mô hình GARCH Số mũ",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Financial Econometrics"
+      "vietnamese": "Mô hình GARCH Số mũ (Mô hình EGARCH Bất đối xứng)",
+      "vietnamese_variants": [
+        "Mô hình EGARCH Nelson",
+        "Hiệu ứng đòn bẩy biến động",
+        "Exponential GARCH model"
       ],
-      "core_definition": "Mô hình hóa tác động bất đối xứng của tin tức xấu/tốt lên độ biến động.",
-      "seminal_citation": "Nelson (1991)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng Tài chính",
+        "Mô hình Biến động Bất đối xứng",
+        "Chuỗi thời gian"
+      ],
+      "core_definition": "Mô hình chuỗi thời gian bất đối xứng do Daniel B. Nelson (1991) phát triển nhằm khắc phục hai hạn chế lớn của mô hình GARCH đối xứng: (1) Nắm bắt hiệu ứng đòn bẩy (Leverage Effect) - hiện tượng tin xấu (lợi suất âm) thường tạo ra biến động mạnh hơn so với tin tốt (lợi suất dương) có cùng quy mô; (2) Mô hình hóa logarit tự nhiên của phương sai có điều kiện ln(sigma_t^2), nhờ đó phương sai luôn đảm bảo dương mà không cần phải áp đặt các ràng buộc tham số không âm khắt khe như GARCH tiêu chuẩn.",
+      "seminal_citation": "Nelson, D. B. (1991). Conditional heteroskedasticity in asset returns: A new approach. Econometrica, 59(2), 347–370. https://doi.org/10.2307/2938260",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of EGARCH (Exponential GARCH) according to Nelson (1991).",
       "domain_tags_en": [
         "Financial Econometrics"
-      ]
+      ],
+      "benchmarks": "Đánh giá hiệu ứng đòn bẩy qua hệ số bất đối xứng gamma: Nếu gamma < 0 và đạt ý nghĩa thống kê (p < 0.05), tin tiêu cực gây ra mức độ bất ổn định thị trường cao hơn tin tích cực. Báo cáo các tiêu chí AIC/BIC để so sánh độ phù hợp vượt trội so với GARCH(1,1) và GJR-GARCH. Kiểm định phần dư chuẩn hóa qua kiểm định Ljung-Box Q và ARCH-LM để xác nhận không còn hiện tượng tự tương quan và phương sai thay đổi sót lại.",
+      "pitfalls": "Diễn giải sai dấu của hệ số bất đối xứng gamma (lưu ý một số phần mềm như EViews định nghĩa tham số với dấu khác với R/Stata); không kiểm tra phân phối sai số đuôi dày (Fat-tail distribution: Student-t hoặc GED) khi dữ liệu tài chính có hiện tượng nhọn đỉnh.",
+      "apa_reference": "Nelson, D. B. (1991). Conditional heteroskedasticity in asset returns: A new approach. Econometrica, 59(2), 347–370."
     },
     {
       "id": "eggers-linear-regression-test",
@@ -15300,20 +15373,27 @@
     {
       "id": "exclusion-restriction",
       "term": "Exclusion Restriction",
-      "vietnamese": "Giới hạn loại trừ",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Inference"
+      "vietnamese": "Ràng buộc Loại trừ của Biến Công cụ (Tính Ngoại sinh Tuyệt đối)",
+      "vietnamese_variants": [
+        "Giả định loại trừ IV",
+        "Instrument exogeneity"
       ],
-      "core_definition": "biến công cụ chỉ tác động đến biến phụ thuộc duy nhất thông qua biến nội sinh.",
-      "seminal_citation": "Angrist & Pischke (2009)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Suy luận Nhân quả",
+        "Kinh tế lượng Biến Công cụ"
+      ],
+      "core_definition": "Điều kiện tiên quyết thứ hai và là điều kiện khó chứng minh nhất của phương pháp biến công cụ (IV): Biến công cụ Z chỉ được phép tác động lên biến phụ thuộc Y DUY NHẤT THÔNG QUA biến can thiệp nội sinh X, và hoàn toàn KHÔNG CÓ bất kỳ kênh tác động trực tiếp hay gián tiếp nào khác tới Y (Cov(Z, epsilon) = 0). Ràng buộc này về cơ bản là một giả định lý thuyết không thể kiểm định trực tiếp bằng thống kê trong mô hình nhận diện vừa đủ (L = K).",
+      "seminal_citation": "Angrist, J. D., Imbens, G. W., & Rubin, D. B. (1996). Identification of causal effects using instrumental variables. Journal of the American Statistical Association, 91(434), 444–455. https://doi.org/10.1080/01621459.1996.10476902",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Exclusion Restriction according to Angrist & Pischke (2009).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "benchmarks": "Biện pháp thẩm định bắt buộc: (1) Lập luận lý thuyết logic chặt chẽ chứng minh tính độc lập tự nhiên của biến công cụ (ví dụ: biến động thời tiết, phân bổ ngẫu nhiên từ chính sách hoặc bốc thăm); (2) Đưa trực tiếp biến công cụ vào phương trình hồi quy giai đoạn 2 cùng với các biến kiểm soát để chứng minh hệ số của nó không có ý nghĩa thống kê; (3) Nếu mô hình quá nhận diện, chạy kiểm định Hansen J-test (p > 0.05).",
+      "pitfalls": "Ngụy biện cho rằng chỉ cần F > 10 ở giai đoạn 1 là biến công cụ đã hoàn hảo. Một biến công cụ có thể rất mạnh (F rất cao) nhưng nếu vi phạm exclusion restriction (tương quan với phần dư của Y), ước lượng 2SLS thậm chí còn bị chệch nặng nề hơn cả ước lượng OLS thông thường!",
+      "apa_reference": "Angrist, J. D., Imbens, G. W., & Rubin, D. B. (1996). Identification of causal effects using instrumental variables. Journal of the American Statistical Association, 91(434), 444–455."
     },
     {
       "id": "expectation-maximization-algorithm-em",
@@ -16315,22 +16395,27 @@
     {
       "id": "fixed-effects-model-fem",
       "term": "Fixed Effects Model (FEM)",
-      "vietnamese": "Mô hình Tác động Cố định",
+      "vietnamese": "Mô hình Tác động Cố định (Ước lượng Within-Estimator FEM)",
       "vietnamese_variants": [
-        "FEM"
+        "Mô hình FEM",
+        "Within-group panel estimator"
       ],
       "domain_tags": [
-        "Panel Data Econometrics"
+        "Kinh tế lượng Dữ liệu Bảng",
+        "Kiểm soát Thiên lệch Cá thể"
       ],
-      "core_definition": "Kiểm soát các yếu tố bất biến theo thời gian của từng thực thể trong dữ liệu bảng.",
-      "seminal_citation": "Wooldridge (2010)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "core_definition": "Mô hình hồi quy dữ liệu bảng kiểm soát toàn diện các yếu tố gây nhiễu bất biến theo thời gian của từng đối tượng (Unobserved time-invariant heterogeneity, ví dụ: văn hóa doanh nghiệp, năng lực bẩm sinh cá nhân, vị trí địa lý của tỉnh). FEM hoạt động bằng phép biến đổi khử trung bình nội bộ (Within-transformation / Mean-centering), trừ giá trị từng quan sát cho giá trị trung bình theo thời gian của chính đối tượng đó, nhờ đó triệt tiêu hoàn toàn hiệu ứng cố định alpha_i.",
+      "seminal_citation": "Mundlak, Y. (1978). On the pooling of time series and cross section data. Econometrica, 46(1), 69–85; Wooldridge, J. M. (2010). Econometric analysis of cross section and panel data (2nd ed.). MIT Press.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #1031",
       "core_definition_en": "Academic definition of Fixed Effects Model (FEM) according to Wooldridge (2010).",
       "domain_tags_en": [
         "Panel Data Econometrics"
-      ]
+      ],
+      "benchmarks": "Bắt buộc sử dụng Sai số chuẩn cụm vững (Cluster-robust standard errors ở cấp độ thực thể cá nhân) để kiểm soát hiện tượng tự tương quan chuỗi và phương sai thay đổi. Báo cáo hệ số R^2 nội bộ (R^2 within) và thống kê kiểm định F-test cho hiệu ứng cố định (p < 0.05).",
+      "pitfalls": "FEM hoàn toàn không thể ước lượng được hệ số của các biến độc lập bất biến theo thời gian (ví dụ: giới tính, chủng tộc, ngành nghề cố định - các biến này bị triệt tiêu hoàn toàn trong phép trừ trung bình); đưa quá nhiều biến giả cá thể (LSDV) khi N lớn làm mất tự do mẫu (Incidental Parameter Problem).",
+      "apa_reference": "Wooldridge, J. M. (2010). Econometric analysis of cross section and panel data (2nd ed.). MIT Press."
     },
     {
       "id": "fixed-effect-vs-random-effects-meta-analysis",
@@ -16445,20 +16530,27 @@
     {
       "id": "forecast-error-variance-decomposition-fevd",
       "term": "Forecast Error Variance Decomposition (FEVD)",
-      "vietnamese": "Phân rã Phương sai Sai số Dự báo",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Time Series Econometrics"
+      "vietnamese": "Phân rã Phương sai Sai số Dự báo (Phân tích FEVD)",
+      "vietnamese_variants": [
+        "Phân tích FEVD",
+        "Đóng góp phương sai dự báo"
       ],
-      "core_definition": "Xác định tỷ lệ % phương sai sai số của biến do cú sốc từ biến khác tạo ra.",
-      "seminal_citation": "Sims (1980)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng Vĩ mô",
+        "Mô hình VAR/VECM"
+      ],
+      "core_definition": "Công cụ phân tích định lượng đồng hành cùng IRF trong mô hình VAR/VECM, đo lường tỷ lệ phần trăm phương sai sai số dự báo của một biến nội sinh được giải thích bởi chính các cú sốc của bản thân nó so với các cú sốc bắt nguồn từ các biến khác trong hệ thống tại các chân trời dự báo khác nhau (ví dụ: 1 quý, 4 quý, 12 quý, 24 quý). FEVD cho biết biến số nào đóng vai trò là động lực chi phối mạnh nhất đến sự biến động của toàn hệ thống.",
+      "seminal_citation": "Sims, C. A. (1980). Macroeconomics and reality. Econometrica, 48(1), 1–48; Pesaran, H. H., & Shin, Y. (1998). Generalized impulse response analysis in linear multivariate models. Economics Letters, 58(1), 17–29.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Forecast Error Variance Decomposition (FEVD) according to Sims (1980).",
       "domain_tags_en": [
         "Time Series Econometrics"
-      ]
+      ],
+      "benchmarks": "Tổng tỷ trọng giải thích của toàn bộ các cú sốc tại mỗi mốc thời gian bắt buộc phải cộng lại bằng 100%. Phân tích sự dịch chuyển theo thời gian: Trong ngắn hạn (bước 1), phương sai của một biến thường được giải thích chủ yếu bởi chính cú sốc của nó (> 80–90%); trong dài hạn, tỷ trọng giải thích của các biến đối tác tăng lên. Báo cáo bảng số liệu kèm biểu đồ cột chồng trực quan.",
+      "pitfalls": "Dùng phân rã Cholesky mà không kiểm tra độ nhạy thứ tự biến (Thứ tự biến được đặt trước sẽ tự động hấp thụ nhiều phương sai hơn ở bước 1); không chuyển sang Generalized FEVD (Pesaran & Shin 1998) khi không có cơ sở lý thuyết vững chắc để xếp thứ tự nội sinh.",
+      "apa_reference": "Pesaran, H. H., & Shin, Y. (1998). Generalized impulse response analysis in linear multivariate models. Economics Letters, 58(1), 17–29."
     },
     {
       "id": "forest-plot-1045",
@@ -16847,20 +16939,27 @@
     {
       "id": "fuzzy-regression-discontinuity",
       "term": "Fuzzy Regression Discontinuity",
-      "vietnamese": "Hồi quy gián đoạn mờ",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Inference"
+      "vietnamese": "Thiết kế Hồi quy Gián đoạn Mờ (Fuzzy RDD)",
+      "vietnamese_variants": [
+        "Fuzzy RDD",
+        "Local IV regression discontinuity"
       ],
-      "core_definition": "xác suất nhận can thiệp tăng đáng kể nhưng không tuyệt đối tại điểm cắt, ước lượng qua 2SLS.",
-      "seminal_citation": "Lee & Lemieux (2010)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Suy luận Nhân quả",
+        "Hồi quy Gián đoạn"
+      ],
+      "core_definition": "Thiết kế hồi quy gián đoạn bán thực nghiệm trong đó việc vượt qua điểm ngưỡng c không quyết định 100% việc đối tượng nhận can thiệp, mà chỉ làm THAY ĐỔI ĐỘT NGỘT XÁC SUẤT nhận can thiệp (tồn tại hiện tượng bất tuân thủ). Khác với Sharp RDD (bước nhảy xác suất từ 0 lên 1), Fuzzy RDD được mô hình hóa toán học tương đương với phương pháp Biến công cụ (IV/2SLS cục bộ), trong đó biến giả vượt ngưỡng T_i = 1(X_i >= c) đóng vai trò là biến công cụ cho trạng thái can thiệp thực tế D_i.",
+      "seminal_citation": "Imbens, G. W., & Lemieux, T. (2008). Regression discontinuity designs: A guide to practice. Journal of Econometrics, 142(2), 615–635; Lee, D. S., & Lemieux, T. (2010). Regression discontinuity designs in economics. Journal of Economic Literature, 48(2), 281–355.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Fuzzy Regression Discontinuity according to Lee & Lemieux (2010).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "benchmarks": "Bước nhảy xác suất can thiệp tại điểm ngưỡng (First-stage jump): Phải đạt độ lớn đáng kể (F > 10 hoặc F > 100). Lựa chọn độ rộng băng thông tối ưu Calonico, Cattaneo & Titiunik (CCT Bandwidth 2014) với sai số chuẩn vững (Robust bias-corrected inference). Kiểm định độ nhạy với các đa thức cục bộ bậc 1 (Local linear) và bậc 2 (Local quadratic).",
+      "pitfalls": "Dùng đa thức bậc cao (p >= 3) dẫn đến hiện tượng dao động Runge's phenomenon ở hai biên; ước lượng OLS thông thường mà không dùng 2SLS cho Fuzzy RDD dẫn đến hệ số bị chệch nghiêm trọng.",
+      "apa_reference": "Lee, D. S., & Lemieux, T. (2010). Regression discontinuity designs in economics. Journal of Economic Literature, 48(2), 281–355."
     },
     {
       "id": "fuzzy-set-qca-fsqca",
@@ -17140,20 +17239,28 @@
     {
       "id": "general-method-of-moments-gmm",
       "term": "General Method of Moments (GMM)",
-      "vietnamese": "Phương pháp Ước lượng Moment Tổng quát giải quyết hiện tượng nội sinh trong bảng động (Arellano-Bond)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Econometrics"
+      "vietnamese": "Phương pháp Ước lượng Mô-men Tổng quát (Ước lượng GMM Hansen)",
+      "vietnamese_variants": [
+        "GMM estimator",
+        "Hansen GMM framework"
       ],
-      "core_definition": "Phương pháp Ước lượng Moment Tổng quát giải quyết hiện tượng nội sinh trong bảng động (Arellano-Bond).",
-      "seminal_citation": "Arellano & Bond (1991)",
-      "tier": "curated",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Kinh tế lượng Lý thuyết",
+        "Phương pháp Ước lượng",
+        "Suy luận Thống kê"
+      ],
+      "core_definition": "Khung phương pháp luận ước lượng kinh tế lượng đoạt giải Nobel do Lars Peter Hansen (1982) sáng lập, bao trùm hầu hết các phương pháp ước lượng cổ điển như OLS, 2SLS, và Cực đại Hợp lý (MLE). GMM không đòi hỏi nhà nghiên cứu phải giả định phân phối xác suất cụ thể của số hạng sai số (phương pháp phi tham số), mà chỉ dựa trên các điều kiện trực giao lý thuyết giữa các hàm sai số và tập biến công cụ (Moment Conditions: E[z_i epsilon_i] = 0). GMM tìm kiếm vectơ tham số tối thiểu hóa một hàm toàn phương có trọng số của các mô-men mẫu.",
+      "seminal_citation": "Hansen, L. P. (1982). Large sample properties of generalized method of moments estimators. Econometrica, 50(4), 1029–1054. https://doi.org/10.2307/1912775",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "tên đúng là \"Generalized Method of Moments\" (Hansen 1982); Arellano–Bond là ứng dụng cho bảng động, không phải nguồn gốc",
       "core_definition_en": "Academic definition of General Method of Moments (GMM) according to Arellano & Bond (1991).",
       "domain_tags_en": [
         "Econometrics"
-      ]
+      ],
+      "benchmarks": "Ma trận trọng số tối ưu (Optimal Weighting Matrix): Sử dụng ước lượng GMM hai bước (Two-step GMM) kết hợp hiệu chỉnh sai số chuẩn mẫu nhỏ Windmeijer (2005) để tránh sai số chuẩn bị thu hẹp giả tạo. Khi số điều kiện mô-men lớn hơn số tham số (m > k), bắt buộc chạy Kiểm định Quá nhận diện Hansen J-test với p > 0.05.",
+      "pitfalls": "Sử dụng Two-step GMM mà không dùng hiệu chỉnh Windmeijer correction, khiến sai số chuẩn bị chệch xuống thấp nghiêm trọng và các giá trị t-statistic bị thổi phồng độ tin cậy; lạm dụng quá nhiều điều kiện mô-men làm suy giảm phẩm chất mẫu hữu hạn của ước lượng.",
+      "apa_reference": "Hansen, L. P. (1982). Large sample properties of generalized method of moments estimators. Econometrica, 50(4), 1029–1054."
     },
     {
       "id": "general-social-survey-gss",
@@ -17698,20 +17805,27 @@
     {
       "id": "granger-causality-test",
       "term": "Granger Causality Test",
-      "vietnamese": "Kiểm định nhân quả Granger",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Time Series Econometrics"
+      "vietnamese": "Kiểm định Quan hệ Nhân quả Granger",
+      "vietnamese_variants": [
+        "Nhân quả Granger",
+        "Granger causality analysis"
       ],
-      "core_definition": "Xác định khả năng dự báo giá trị tương lai của biến này qua quá khứ của biến khác.",
-      "seminal_citation": "Granger (1969)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng Chuỗi thời gian",
+        "Quan hệ Dự báo Thời gian"
+      ],
+      "core_definition": "Phép kiểm định thống kê kinh điển đoạt giải Nobel do Clive Granger (1969) phát triển để đánh giá xem các giá trị trong quá khứ của một biến X có chứa đựng thông tin hữu ích giúp dự báo biến Y tốt hơn so với việc chỉ sử dụng riêng các thông tin trong quá khứ của chính Y hay không. Bản chất của 'Nhân quả Granger' là TÍNH ƯU TRỘI VỀ DỰ BÁO TRONG THỜI GIAN (Predictive priority), dựa trên tiên đề triết học: 'Quá khứ và hiện tại có thể gây ra tương lai, nhưng tương lai không thể gây ra quá khứ'.",
+      "seminal_citation": "Granger, C. W. J. (1969). Investigating causal relations by econometric models and cross-spectral methods. Econometrica, 37(3), 424–438. https://doi.org/10.2307/1912791",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Granger Causality Test according to Granger (1969).",
       "domain_tags_en": [
         "Time Series Econometrics"
-      ]
+      ],
+      "benchmarks": "Đánh giá qua kiểm định F-test (hoặc Wald test) trên các hệ số trễ của biến X trong phương trình giải thích Y: Giả thuyết vô hiệu H0: beta_1 = beta_2 = ... = beta_p = 0 (X không gây ra Y theo nghĩa Granger). Bác bỏ H0 khi p < 0.05 và kết luận X có quan hệ nhân quả Granger đối với Y. Phân loại 4 kết cục: (1) X tác động một chiều lên Y; (2) Y tác động một chiều lên X; (3) Nhân quả hai chiều (Feedback loop / Bidirectional causality); (4) Độc lập thống kê.",
+      "pitfalls": "Ngụy biện 'Hậu quả do tiền lệ' (Post hoc ergo propter hoc): Đồng nhất Nhân quả Granger với Nhân quả Triết học/Cấu trúc thực sự. Một biến X có thể dẫn trước Y đơn thuần vì cả hai cùng chịu ảnh hưởng bởi một biến ẩn thứ ba Z hoặc do phản ánh kỳ vọng duy lý của thị trường; thực hiện kiểm định trên các chuỗi không dừng mà không sai phân hóa làm kết quả F-test bị sai lệch tiệm cận.",
+      "apa_reference": "Granger, C. W. J. (1969). Investigating causal relations by econometric models and cross-spectral methods. Econometrica, 37(3), 424–438."
     },
     {
       "id": "gravity-model-of-international-trade",
@@ -17933,20 +18047,28 @@
     {
       "id": "hansen-j-test",
       "term": "Hansen J-Test",
-      "vietnamese": "Kiểm định Hansen J",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Applied Econometrics"
+      "vietnamese": "Kiểm định Quá nhận diện Hansen J (Kiểm định Tính Hợp lệ của Biến Công cụ)",
+      "vietnamese_variants": [
+        "Kiểm định Hansen J",
+        "Hansen test of overidentifying restrictions"
       ],
-      "core_definition": "Kiểm định biến công cụ ngoại sinh tổng quát vững với sai số thay đổi trong ước lượng GMM.",
-      "seminal_citation": "Hansen (1982)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng GMM & 2SLS",
+        "Biến Công cụ",
+        "Kiểm định Ngoại sinh"
+      ],
+      "core_definition": "Phép kiểm định bắt buộc trong kinh tế lượng GMM và 2SLS khi mô hình bị quá nhận diện (Overidentified: số lượng biến công cụ lớn hơn số biến nội sinh, L > K). Hansen J-test kiểm tra tính hợp lệ đồng thời của toàn bộ các biến công cụ, tức kiểm tra xem các công cụ có thực sự trực giao với số hạng sai số cấu trúc (E[Z'epsilon] = 0) hay không. Khác với kiểm định Sargan (vốn giả định phương sai đồng nhất), Hansen J-test hoàn toàn vững trước hiện tượng phương sai thay đổi và tự tương quan.",
+      "seminal_citation": "Hansen, L. P. (1982). Large sample properties of generalized method of moments estimators. Econometrica, 50(4), 1029–1054. https://doi.org/10.2307/1912775",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Hansen J-Test according to Hansen (1982).",
       "domain_tags_en": [
         "Applied Econometrics"
-      ]
+      ],
+      "benchmarks": "Giả thuyết vô hiệu H0: Toàn bộ các biến công cụ đều hợp lệ (ngoại sinh và không tương quan với sai số). Giá trị thống kê J ~ chi^2(L - K). Tiêu chuẩn thẩm định vàng của Reviewer Q1: Giá trị p-value PHẢI LỚN HƠN 0.05 (tối ưu nằm trong khoảng [0.10, 0.25]) để KHÔNG bác bỏ H0.",
+      "pitfalls": "Khi p < 0.05, có ít nhất một biến công cụ không hợp lệ (tương quan với phần dư / vi phạm exclusion restriction), mô hình bị Reject; Khi p = 1.000 (hoặc rất gần 1.0), đây là dấu hiệu rõ ràng của bẫy 'Bùng nổ biến công cụ' (Instrument proliferation) làm tê liệt độ mạnh của kiểm định.",
+      "apa_reference": "Hansen, L. P. (1982). Large sample properties of generalized method of moments estimators. Econometrica, 50(4), 1029–1054."
     },
     {
       "id": "hard-core-vs-protective-belt-lakatos",
@@ -18025,20 +18147,27 @@
     {
       "id": "hausman-specification-test",
       "term": "Hausman Specification Test",
-      "vietnamese": "Kiểm định Hausman so sánh giữa mô hình Fixed Effects và Random Effects trong dữ liệu bảng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Panel Data Econometrics"
+      "vietnamese": "Kiểm định Đặc tả Hausman (Lựa chọn Mô hình FEM vs. REM)",
+      "vietnamese_variants": [
+        "Kiểm định Hausman",
+        "Hausman test panel data"
       ],
-      "core_definition": "Kiểm định Hausman so sánh giữa mô hình Fixed Effects và Random Effects trong dữ liệu bảng.",
-      "seminal_citation": "Hausman (1978)",
-      "tier": "curated",
+      "domain_tags": [
+        "Kinh tế lượng Dữ liệu Bảng",
+        "Kiểm định Đặc tả Mô hình"
+      ],
+      "core_definition": "Phép kiểm định đặc tả kinh điển trong kinh tế lượng dữ liệu bảng do Jerry A. Hausman (1978) phát minh để lựa chọn giữa Mô hình Tác động Cố định (Fixed Effects Model - FEM) và Mô hình Tác động Ngẫu nhiên (Random Effects Model - REM). Kiểm định so sánh sự khác biệt giữa hai vectơ ước lượng: hat{beta}_{FE} (luôn nhất quán ngay cả khi biến giải thích tương quan với hiệu ứng riêng cá thể alpha_i) và hat{beta}_{RE} (hiệu quả hơn nhưng đòi hỏi alpha_i hoàn toàn độc lập với các biến giải thích).",
+      "seminal_citation": "Hausman, J. A. (1978). Specification tests in econometrics. Econometrica, 46(6), 1251–1271. https://doi.org/10.2307/1913827",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Hausman Specification Test according to Hausman (1978).",
       "domain_tags_en": [
         "Panel Data Econometrics"
-      ]
+      ],
+      "benchmarks": "Giả thuyết H0: Hiệu ứng riêng cá thể không tương quan với các biến giải thích (Cov(X_{it}, alpha_i) = 0 - REM là ước lượng nhất quán và hiệu quả); H1: Có tương quan (REM bị chệch, chỉ có FEM là nhất quán). Thẩm định qua giá trị thống kê H ~ chi^2(k): Nếu p < 0.05, bác bỏ H0 và bắt buộc phải chọn Mô hình Tác động Cố định (FEM). Nếu p >= 0.05, chấp nhận REM.",
+      "pitfalls": "Chạy kiểm định Hausman tiêu chuẩn khi dữ liệu có hiện tượng phương sai thay đổi (Heteroskedasticity) hoặc tự tương quan cụm (Clustering). Khi đó giả định ma trận hiệu phương sai của Hausman bị vi phạm, kiểm định có thể đưa ra giá trị thống kê âm hoặc kết luận sai; giải pháp bắt buộc là sử dụng Kiểm định Hausman Vững (Robust Hausman Test / Wooldridge 2002 Auxiliary Regression).",
+      "apa_reference": "Hausman, J. A. (1978). Specification tests in econometrics. Econometrica, 46(6), 1251–1271."
     },
     {
       "id": "hausman-test-for-panel-data",
@@ -19167,20 +19296,27 @@
     {
       "id": "impulse-response-function-irf",
       "term": "Impulse Response Function (IRF)",
-      "vietnamese": "Hàm Phản ứng Đẩy",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Time Series Econometrics"
+      "vietnamese": "Hàm Phản ứng Đẩy (Hàm Đáp ứng Xung Lực IRF)",
+      "vietnamese_variants": [
+        "Đồ thị IRF",
+        "Đáp ứng cú sốc hệ thống VAR"
       ],
-      "core_definition": "Đo lường phản ứng của các biến trong hệ VAR trước một cú sốc bất ngờ ở một biến.",
-      "seminal_citation": "Lütkepohl (2005)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng Vĩ mô",
+        "Mô hình VAR/VECM"
+      ],
+      "core_definition": "Kỹ thuật mô phỏng động lực cốt lõi trong phân tích VAR/VECM do Sims (1980) sáng tạo. IRF theo dõi quỹ đạo phản ứng theo thời gian (Time path) của từng biến nội sinh trong hệ thống trước một cú sốc bất ngờ có độ lớn bằng một độ lệch chuẩn (One-standard-deviation innovation shock) đánh vào một biến số cụ thể, trong điều kiện giả định các cú sốc khác giữ nguyên. IRF giúp giải mã bức tranh trực quan về độ lớn, thời gian trễ và độ kéo dài của tác động chính sách kinh tế.",
+      "seminal_citation": "Sims, C. A. (1980). Macroeconomics and reality. Econometrica, 48(1), 1–48; Lütkepohl, H. (2005). New introduction to multiple time series analysis. Springer.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Impulse Response Function (IRF) according to Lütkepohl (2005).",
       "domain_tags_en": [
         "Time Series Econometrics"
-      ]
+      ],
+      "benchmarks": "Bắt buộc báo cáo dải khoảng tin cậy Bootstrap 95% (Confidence Bands / Error Bands) bao quanh đường phản ứng trung tâm: Nếu dải tin cậy 95% không chứa đường trục 0, phản ứng của hệ thống đạt ý nghĩa thống kê tại thời kỳ đó. Lựa chọn kỹ thuật trực giao hóa cú sốc: Phân rã Cholesky (yêu cầu sắp xếp thứ tự biến từ ngoại sinh nhất đến nội sinh nhất) hoặc Structural VAR (SVAR) dựa trên các ràng buộc kinh tế ngắn hạn và dài hạn (Blanchard & Quah, 1989).",
+      "pitfalls": "Sắp xếp thứ tự biến tùy tiện trong phân rã Cholesky khi ma trận hiệp phương sai của phần dư có tương quan cao, dẫn đến đồ thị phản ứng bị biến đổi hoàn toàn khi đảo thứ tự biến; chỉ báo cáo đường trung bình mà không hiển thị dải khoảng tin cậy bootstrap.",
+      "apa_reference": "Sims, C. A. (1980). Macroeconomics and reality. Econometrica, 48(1), 1–48."
     },
     {
       "id": "in-vivo-coding",
@@ -19841,20 +19977,27 @@
     {
       "id": "instrumental-variable-relevance",
       "term": "Instrumental Variable Relevance",
-      "vietnamese": "Điều kiện thích hợp của biến công cụ",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Econometrics"
+      "vietnamese": "Tính Thích hợp của Biến Công cụ (Kiểm định Biến Công cụ Mạnh)",
+      "vietnamese_variants": [
+        "Weak instrument test",
+        "First-stage F-statistic criterion"
       ],
-      "core_definition": "tương quan mạnh với biến nội sinh, F-statistic > 10.",
-      "seminal_citation": "Stock & Yogo (2005)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Kinh tế lượng Biến Công cụ",
+        "Xử lý Biến Nội sinh"
+      ],
+      "core_definition": "Điều kiện tiên quyết thứ nhất trong hai điều kiện bắt buộc của một biến công cụ (IV): Biến công cụ Z phải có tương quan mạnh mẽ có ý nghĩa thống kê với biến nội sinh X (Cov(Z, X) != 0). Nếu biến công cụ chỉ có tương quan yếu (Weak Instrument), ước lượng 2SLS sẽ bị chệch nghiêm trọng theo đúng hướng của OLS, phương sai ước lượng bùng nổ và các bài kiểm định giả thuyết t-test bị sai lệch nghiêm trọng.",
+      "seminal_citation": "Stock, J. H., & Yogo, M. (2005). Testing for weak instruments in linear IV regression. In D. W. K. Andrews & J. H. Stock (Eds.), Identification and inference for econometric models (pp. 80–108). Cambridge University Press; Lee, D. S., McCrary, J., Moreira, M. J., & Porter, J. (2022). Valid t-ratio inference for IV. Journal of Econometrics.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Instrumental Variable Relevance according to Stock & Yogo (2005).",
       "domain_tags_en": [
         "Econometrics"
-      ]
+      ],
+      "benchmarks": "Đánh giá thông qua Thống kê F ở phương trình hồi quy giai đoạn 1 (First-Stage F-Statistic): (1) Ngưỡng kinh nghiệm truyền thống Stock & Yogo (2005): F > 10 để đảm bảo độ méo hệ số 2SLS so với OLS không quá 10%; (2) Ngưỡng chuẩn mực hiện đại Lee et al. (2022): F > 104.7 để đảm bảo kiểm định t ở giai đoạn 2 đạt đúng mức ý nghĩa danh nghĩa 5%.",
+      "pitfalls": "Dùng biến công cụ có F < 10: Khi đó sai số chuẩn 2SLS bị tính thiếu hụt nghiêm trọng và các kết luận nhân quả trở nên hoàn toàn vô giá trị; chỉ dựa vào tương quan đơn biến Pearson giữa Z và X mà không báo cáo giá trị Partial F-statistic sau khi đã kiểm soát toàn bộ các biến ngoại sinh khác.",
+      "apa_reference": "Stock, J. H., & Yogo, M. (2005). Testing for weak instruments in linear IV regression. Cambridge University Press."
     },
     {
       "id": "instrumentation-threat",
@@ -21088,20 +21231,27 @@
     {
       "id": "johansen-cointegration-test",
       "term": "Johansen Cointegration Test",
-      "vietnamese": "Kiểm định đồng liên kết Johansen xác định số lượng vector đồng liên kết (Trace & Max-Eigen)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Time Series Econometrics"
+      "vietnamese": "Kiểm định Đồng liên kết Johansen (Kiểm định Trace và Max-Eigenvalue)",
+      "vietnamese_variants": [
+        "Kiểm định đồng liên kết hệ thống VAR",
+        "Johansen procedure"
       ],
-      "core_definition": "Kiểm định đồng liên kết Johansen xác định số lượng vector đồng liên kết (Trace & Max-Eigen).",
-      "seminal_citation": "Johansen (1991)",
-      "tier": "curated",
+      "domain_tags": [
+        "Kinh tế lượng Chuỗi thời gian",
+        "Quan hệ Cân bằng Dài hạn"
+      ],
+      "core_definition": "Phương pháp kiểm định đồng liên kết đa biến dựa trên mô hình tự hồi quy vectơ (VAR) do Søren Johansen (1988, 1990) phát triển. Khác với phương pháp 2 bước Engle-Granger (chỉ tìm được tối đa một vectơ đồng liên kết duy nhất), Johansen cho phép kiểm định và ước lượng TOÀN BỘ các mối quan hệ cân bằng dài hạn độc lập tồn tại giữa một hệ thống gồm k chuỗi thời gian không dừng có cùng bậc tích hợp I(1).",
+      "seminal_citation": "Johansen, S. (1988). Statistical analysis of cointegration vectors. Journal of Economic Dynamics and Control, 12(2–3), 231–254; Johansen, S., & Juselius, K. (1990). Maximum likelihood estimation and inference on cointegration—with applications to the demand for money. Oxford Bulletin of Economics and Statistics, 52(2), 169–210.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Johansen Cointegration Test according to Johansen (1991).",
       "domain_tags_en": [
         "Time Series Econometrics"
-      ]
+      ],
+      "benchmarks": "Hai phép kiểm định thống kê bắt buộc: (1) Kiểm định vết ma trận (Trace Test lambda_trace): Kiểm định giả thuyết có tối đa r vectơ đồng liên kết đối kháng với giả thuyết có nhiều hơn r vectơ; (2) Kiểm định giá trị riêng cực đại (Maximum Eigenvalue Test lambda_max): Kiểm định giả thuyết có đúng r vectơ so với r+1 vectơ. Nếu giá trị thống kê lớn hơn giá trị tới hạn ở mức 5% (p < 0.05), bác bỏ H0. Khi tồn tại đồng liên kết (r >= 1), bắt buộc phải chuyển từ mô hình VAR sai phân sang mô hình Vector Error Correction Model (VECM).",
+      "pitfalls": "Áp dụng Johansen khi các chuỗi có bậc tích hợp hỗn hợp (vừa có I(0) vừa có I(1) - trường hợp này bắt buộc phải dùng ARDL Bounds Test của Pesaran et al. 2001); chọn sai bậc trễ của mô hình VAR cơ sở làm sai lệch phân phối tiệm cận của bài kiểm định Trace và Max-Eigenvalue; không xác định đúng cấu trúc xu thế (Trend assumption) trong phương trình đồng liên kết.",
+      "apa_reference": "Johansen, S., & Juselius, K. (1990). Maximum likelihood estimation and inference on cointegration—with applications to the demand for money. Oxford Bulletin of Economics and Statistics, 52(2), 169–210."
     },
     {
       "id": "johnson-neyman-technique-1427",
@@ -21596,21 +21746,27 @@
     {
       "id": "kpss",
       "term": "Kwiatkowski-Phillips-Schmidt-Shin Test (KPSS)",
-      "vietnamese": "Kiểm định Tính Dừng KPSS",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Time Series Econometrics"
+      "vietnamese": "Kiểm định Tính Dừng KPSS (Kiểm định Đối nghịch Nghiệm Đơn vị)",
+      "vietnamese_variants": [
+        "Kiểm định KPSS",
+        "KPSS stationarity test"
       ],
-      "core_definition": "Kiểm định tính dừng bổ trợ cho ADF, với giả thuyết H0 ngược lại: chuỗi thời gian là dừng quanh một xu thế hoặc dừng quanh trung bình. Ngưỡng thực nghiệm tham chiếu: P-value > 0.05: Không thể bác bỏ H0, xác nhận chuỗi thời gian dừng. Kết hợp ADF và KPSS giúp kiểm định chéo độ tin cậy.",
-      "seminal_citation": "P-value > 0.05: Không thể bác bỏ H0, xác nhận chuỗi thời gian dừng. Kết hợp ADF và KPSS giúp kiểm định chéo độ tin cậy.",
-      "tier": "acronym",
+      "domain_tags": [
+        "Kinh tế lượng Chuỗi thời gian",
+        "Kiểm định Tính Dừng"
+      ],
+      "core_definition": "Phép kiểm định tính dừng đột phá trong kinh tế lượng chuỗi thời gian do Kwiatkowski, Phillips, Schmidt & Shin (1992) đề xuất. Điểm khác biệt mang tính cách mạng của KPSS so với ADF và Phillips-Perron là việc ĐẢO NGƯỢC GIẢ THUYẾT: Giả thuyết vô hiệu H0 của KPSS là 'Chuỗi thời gian là chuỗi dừng (Stationary xung quanh hằng số hoặc xu thế)', trong khi giả thuyết đối H1 là 'Chuỗi có nghiệm đơn vị (Không dừng / I(1))'. KPSS được sử dụng như một phép kiểm tra đối chứng chéo (Confirmatory Analysis) để phân giải những trường hợp ADF/PP đưa ra kết quả không dứt khoát do độ mạnh thống kê yếu.",
+      "seminal_citation": "Kwiatkowski, D., Phillips, P. C. B., Schmidt, P., & Shin, Y. (1992). Testing the null hypothesis of stationarity against the alternative of a unit root. Journal of Econometrics, 54(1–3), 159–178. https://doi.org/10.1016/0304-4076(92)90104-Y",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of KPSS according to P-value > 0.05: Không thể bác bỏ H0, xác nhận chuỗi thời gian dừng. Kết hợp ADF và KPSS giúp kiểm định chéo độ tin cậy..",
       "domain_tags_en": [
         "Time Series Econometrics"
       ],
-      "benchmarks": "P-value > 0.05: Không thể bác bỏ H0, xác nhận chuỗi thời gian dừng. Kết hợp ADF và KPSS giúp kiểm định chéo độ tin cậy."
+      "benchmarks": "Đánh giá qua giá trị thống kê LM (Lagrange Multiplier): Nếu LM_stat > Critical Value ở mức 5% (hoặc 1%), nhà nghiên cứu BÁC BỎ giả thuyết H0 và kết luận chuỗi không dừng. Nếu LM_stat < Critical Value (p > 0.05), chưa đủ bằng chứng bác bỏ H0, kết luận chuỗi dừng. Phối hợp kết quả chuẩn mực: (1) ADF bác bỏ H0 VÀ KPSS không bác bỏ H0 -> Khẳng định tuyệt đối chuỗi là dừng I(0); (2) ADF không bác bỏ H0 VÀ KPSS bác bỏ H0 -> Khẳng định tuyệt đối chuỗi không dừng I(1).",
+      "pitfalls": "Nhầm lẫn giả thuyết H0 của KPSS với ADF (vội vàng kết luận chuỗi dừng khi p < 0.05 trong khi thực chất p < 0.05 của KPSS là bác bỏ tính dừng); không xác định đúng kiểm định dừng quanh mức trung bình (Level stationarity) hay dừng quanh xu thế (Trend stationarity).",
+      "apa_reference": "Kwiatkowski, D., Phillips, P. C. B., Schmidt, P., & Shin, Y. (1992). Testing the null hypothesis of stationarity against the alternative of a unit root. Journal of Econometrics, 54(1–3), 159–178."
     },
     {
       "id": "krippendorffs-alpha",
@@ -22550,22 +22706,27 @@
     {
       "id": "local-average-treatment-effect-late",
       "term": "Local Average Treatment Effect (LATE)",
-      "vietnamese": "Hiệu ứng can thiệp trung bình cục bộ áp dụng riêng cho nhóm tuân thủ (Compliers)",
+      "vietnamese": "Tác động Can thiệp Nhân quả Cục bộ (Chỉ số LATE Angrist-Imbens)",
       "vietnamese_variants": [
-        "LATE"
+        "Chỉ số LATE",
+        "Complier Average Causal Effect (CACE)"
       ],
       "domain_tags": [
-        "Causal Inference"
+        "Suy luận Nhân quả",
+        "Kinh tế lượng Biến Công cụ"
       ],
-      "core_definition": "Hiệu ứng can thiệp trung bình cục bộ áp dụng riêng cho nhóm tuân thủ (Compliers).",
-      "seminal_citation": "Imbens & Angrist (1994)",
-      "tier": "curated",
-      "expert_status": "needs_review",
+      "core_definition": "Đóng góp đoạt giải Nobel kinh tế năm 2021 của Guido Imbens và Joshua Angrist (1994). Khi áp dụng phương pháp biến công cụ (IV/2SLS) trong bối cảnh có sự bất tuân thủ can thiệp (Non-compliance), hệ số hồi quy 2SLS KHÔNG đo lường ATE của toàn dân số, mà CHỈ ĐO LƯỜNG TÁC ĐỘNG NHÂN QUẢ CỤC BỘ (LATE) trên nhóm đối tượng Tuân thủ (Compliers: những người chỉ nhận can thiệp KHI VÀ CHỈ KHI biến công cụ khuyến khích họ, và sẽ không nhận can thiệp nếu không có biến công cụ).",
+      "seminal_citation": "Imbens, G. W., & Angrist, J. D. (1994). Identification and estimation of local average treatment effects. Econometrica, 62(2), 467–475. https://doi.org/10.2307/2951620; Angrist, J. D., & Pischke, J. S. (2009). Mostly harmless econometrics: An empiricist's companion. Princeton University Press.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #1526",
       "core_definition_en": "Academic definition of Local Average Treatment Effect (LATE) according to Imbens & Angrist (1994).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "benchmarks": "Đòi hỏi 4 giả định sống còn: (1) Tính độc lập của công cụ; (2) Ràng buộc loại trừ; (3) Tính thích hợp của công cụ (F > 10); (4) Tính đơn điệu (Monotonicity / No defiers: Không tồn tại nhóm người chống đối làm ngược lại sự khuyến khích của công cụ).",
+      "pitfalls": "Ngoại suy kết quả LATE thành tác động chung cho toàn bộ quần thể (ví dụ: tác động của việc trúng tuyển đại học qua bốc thăm chỉ đại diện cho nhóm học sinh phân vân ở lằn ranh, không đại diện cho nhóm học sinh luôn luôn đi học hay không bao giờ đi học).",
+      "apa_reference": "Imbens, G. W., & Angrist, J. D. (1994). Identification and estimation of local average treatment effects. Econometrica, 62(2), 467–475."
     },
     {
       "id": "local-indicators-of-spatial-association-lisa",
@@ -23241,20 +23402,27 @@
     {
       "id": "mccrary-density-test",
       "term": "McCrary Density Test",
-      "vietnamese": "Kiểm định mật độ McCrary kiểm tra xem các đối tượng có thao túng điểm số để rơi vào bên nhận can thiệp tại điểm cắt hay không",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Inference"
+      "vietnamese": "Kiểm định Mật độ Phân bố McCrary (Kiểm tra Thao túng Điểm Ngưỡng RDD)",
+      "vietnamese_variants": [
+        "McCrary sorting test",
+        "Kiểm tra đứt gãy mật độ điểm ngưỡng RDD"
       ],
-      "core_definition": "Kiểm định mật độ McCrary kiểm tra xem các đối tượng có thao túng điểm số để rơi vào bên nhận can thiệp tại điểm cắt hay không.",
-      "seminal_citation": "McCrary (2008)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Suy luận Nhân quả",
+        "Hồi quy Gián đoạn RDD"
+      ],
+      "core_definition": "Phép kiểm định chẩn đoán sống còn trong Thiết kế Hồi quy Gián đoạn (RDD) do Justin McCrary (2008) sáng tạo. Kiểm định kiểm tra xem có hiện tượng các đối tượng nghiên cứu tự thao túng hoặc sắp đặt có chủ đích (Sorting / Manipulation) giá trị biến chỉ định (Running variable) để nhảy sang phía bên này hay bên kia của điểm ngưỡng nhận can thiệp (c) hay không (ví dụ: các công ty làm đẹp báo cáo tài chính để vừa đủ vượt qua ngưỡng nhận hỗ trợ thuế).",
+      "seminal_citation": "McCrary, J. (2008). Testing for manipulation of the running variable in the regression discontinuity design. Journal of Econometrics, 142(2), 698–714. https://doi.org/10.1016/j.jeconom.2007.05.005; Cattaneo, M. D., Jansson, M., & Ma, X. (2020). Simple local polynomial density estimators. Journal of the American Statistical Association, 115(531), 1449–1455.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of McCrary Density Test according to McCrary (2008).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "benchmarks": "Ước lượng hàm mật độ xác suất của biến chỉ định tại hai phía của điểm cắt c. Giả thuyết H0: Hàm mật độ phân bố liên tục tại điểm cắt (không có bước nhảy đột ngột). Nếu p > 0.05 (bước nhảy log mật độ theta không có ý nghĩa thống kê), mô hình RDD thỏa mãn điều kiện phân bổ bán ngẫu nhiên.",
+      "pitfalls": "Khi kiểm định McCrary có p < 0.05 (mật độ bị đứt gãy hoặc bùng nổ bất thường ngay sát điểm ngưỡng), điều này chứng minh có hiện tượng gian lận hoặc thao túng chọn lọc, làm sụp đổ hoàn toàn tính hợp lệ nhân quả của thiết kế RDD.",
+      "apa_reference": "McCrary, J. (2008). Testing for manipulation of the running variable in the regression discontinuity design. Journal of Econometrics, 142(2), 698–714."
     },
     {
       "id": "mccrary-density-test-for-sorting",
@@ -27065,20 +27233,27 @@
     {
       "id": "parallel-trends-assumption-verification",
       "term": "Parallel Trends Assumption Verification",
-      "vietnamese": "Xác minh Giả định Xu hướng Song song",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Difference-in-Differences"
+      "vietnamese": "Kiểm định Giả định Xu hướng Song song trong Mô hình DiD",
+      "vietnamese_variants": [
+        "Event-study test for DiD",
+        "Pre-treatment parallel trends check"
       ],
-      "core_definition": "Kiểm tra xu hướng kết cục của nhóm can thiệp và nhóm đối chứng trước can thiệp.",
-      "seminal_citation": "Angrist & Pischke (2009)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Suy luận Nhân quả",
+        "Mô hình Difference-in-Differences"
+      ],
+      "core_definition": "Giả định nhận diện sống còn và cốt tử nhất của phương pháp Sai phân trong Sai phân (Difference-in-Differences - DiD): Trong điều kiện không có sự can thiệp của chính sách, xu hướng biến thiên theo thời gian của biến kết cục ở nhóm can thiệp và nhóm đối chứng sẽ vận động hoàn toàn song song với nhau. Vì kịch bản phản thực tế này không thể quan sát được sau khi can thiệp, nhà nghiên cứu bắt buộc phải kiểm định xu hướng song song ở toàn bộ giai đoạn TRƯỚC CAN THIỆP (Pre-treatment periods).",
+      "seminal_citation": "Angrist, J. D., & Pischke, J. S. (2009). Mostly harmless econometrics. Princeton University Press; Roth, J. (2022). Pretest with caution: Event-study estimates after testing for parallel trends. American Economic Review: Insights, 4(3), 305–322. https://doi.org/10.1257/aeri.20210236",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Parallel Trends Assumption Verification according to Angrist & Pischke (2009).",
       "domain_tags_en": [
         "Difference-in-Differences"
-      ]
+      ],
+      "benchmarks": "Thẩm định chuẩn mực thông qua Mô hình Nghiên cứu Sự kiện (Event-Study Design / Dynamic DiD Model): Ước lượng các hệ số tương tác thời gian trễ và trước can thiệp. Toàn bộ các hệ số trước can thiệp (t = -k, ..., -2) BẮT BUỘC KHÔNG CÓ Ý NGHĨA THỐNG KÊ (p > 0.05 và khoảng tin cậy 95% bao trùm giá trị 0) so với mốc cơ sở t = -1.",
+      "pitfalls": "Chỉ kiểm tra xu hướng song song bằng đồ thị đường biểu diễn trực quan thô sơ mà không chạy mô hình Event-Study chính quy; lờ đi hiện tượng xu hướng phân kỳ nhẹ trước can thiệp (Pre-trends violation) dẫn đến ước lượng sai lệch hoàn toàn hiệu quả chính sách.",
+      "apa_reference": "Roth, J. (2022). Pretest with caution: Event-study estimates after testing for parallel trends. American Economic Review: Insights, 4(3), 305–322."
     },
     {
       "id": "parsimonious-solution-in-fsqca",
@@ -27722,20 +27897,27 @@
     {
       "id": "phillips-perron-test-pp",
       "term": "Phillips-Perron Test (PP)",
-      "vietnamese": "Kiểm định Phillips-Perron",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Time Series Econometrics"
+      "vietnamese": "Kiểm định Nghiệm Đơn vị Phi tham số Phillips-Perron",
+      "vietnamese_variants": [
+        "Kiểm định PP",
+        "Phillips-Perron unit root test"
       ],
-      "core_definition": "Kiểm định nghiệm đơn vị phi tham số có hiệu chỉnh tự tương quan và phương sai sai số thay đổi.",
-      "seminal_citation": "Phillips & Perron (1988)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng Chuỗi thời gian",
+        "Kiểm định Nghiệm Đơn vị"
+      ],
+      "core_definition": "Phép kiểm định nghiệm đơn vị phi tham số do Peter C. B. Phillips và Pierre Perron (1988) phát triển. Khác với kiểm định ADF vốn đưa thêm các biến trễ sai phân vào phương trình hồi quy để triệt tiêu tự tương quan (phương pháp tham số), PP sử dụng phương pháp hiệu chỉnh phi tham số Newey-West trên ma trận phương sai - hiệp phương sai của phần dư. Nhờ đó, PP có khả năng kháng lại hiện tượng tự tương quan và phương sai thay đổi tùy ý trong sai số mà không bị mất bậc tự do do phải ước lượng quá nhiều biến trễ.",
+      "seminal_citation": "Phillips, P. C. B., & Perron, P. (1988). Testing for a unit root in time series regression. Biometrika, 75(2), 335–346. https://doi.org/10.1093/biomet/75.2.335",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Phillips-Perron Test (PP) according to Phillips & Perron (1988).",
       "domain_tags_en": [
         "Time Series Econometrics"
-      ]
+      ],
+      "benchmarks": "Giả thuyết H0: Chuỗi thời gian chứa nghiệm đơn vị (chuỗi không dừng / I(1)); H1: Chuỗi là dừng I(0). Thẩm định qua giá trị thống kê Z_t và Z_alpha so với các giá trị tới hạn MacKinnon. Bác bỏ H0 khi p < 0.05. Lựa chọn độ rộng băng thông Newey-West tối ưu (Kernel bandwidth selection theo chuẩn Andrews 1991 hoặc Newey-West 1994).",
+      "pitfalls": "PP có độ mạnh thống kê thấp khi mẫu nhỏ (N < 50) và rất dễ bị thiên lệch kích thước (Size distortion) khi quá trình sai số có phần dư tự tương quan âm mạnh; bỏ qua việc so sánh kết quả chéo với kiểm định ADF và KPSS.",
+      "apa_reference": "Phillips, P. C. B., & Perron, P. (1988). Testing for a unit root in time series regression. Biometrika, 75(2), 335–346."
     },
     {
       "id": "philosophical-assumptions",
@@ -29874,22 +30056,27 @@
     {
       "id": "random-effects-model-rem",
       "term": "Random Effects Model (REM)",
-      "vietnamese": "Mô hình Tác động Ngẫu nhiên",
+      "vietnamese": "Mô hình Tác động Ngẫu nhiên (Ước lượng FGLS REM)",
       "vietnamese_variants": [
-        "REM"
+        "Mô hình REM",
+        "Random effects GLS panel model"
       ],
       "domain_tags": [
-        "Panel Data Econometrics"
+        "Kinh tế lượng Dữ liệu Bảng",
+        "Mô hình Hiệu ứng Ngẫu nhiên"
       ],
-      "core_definition": "Giả định sai số thực thể không tương quan với các biến độc lập.",
-      "seminal_citation": "Greene (2018)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "core_definition": "Mô hình hồi quy dữ liệu bảng giả định rằng các đặc tính riêng biệt chưa quan sát của từng cá thể alpha_i là các biến ngẫu nhiên độc lập và không có tương quan với bất kỳ biến giải thích nào trong mô hình (Cov(X_{it}, alpha_i) = 0). REM ước lượng bằng phương pháp Bình phương Tối thiểu Tổng quát Khả thi (FGLS), tận dụng thông tin phương sai cả bên trong (Within) và giữa các cá thể (Between), cho phép ước lượng được cả các biến số bất biến theo thời gian.",
+      "seminal_citation": "Balestra, P., & Nerlove, M. (1966). Pooling cross section and time series data in the estimation of a dynamic model: The demand for natural gas. Econometrica, 34(3), 585–612.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2111",
       "core_definition_en": "Academic definition of Random Effects Model (REM) according to Greene (2018).",
       "domain_tags_en": [
         "Panel Data Econometrics"
-      ]
+      ],
+      "benchmarks": "Kiểm định Breusch-Pagan Lagrange Multiplier (LM Test): So sánh REM với Pooled OLS; nếu p < 0.05, bác bỏ H0, khẳng định phương sai của hiệu ứng ngẫu nhiên sigma_alpha^2 > 0, chứng minh REM vượt trội hơn Pooled OLS. Sau đó chạy kiểm định Hausman để kiểm tra xem REM có bị thiên lệch so với FEM hay không.",
+      "pitfalls": "Giả định ngoại sinh của hiệu ứng ngẫu nhiên rất hiếm khi thỏa mãn trong kinh tế học thực nghiệm (các biến độc lập thường xuyên tương quan với các đặc tính tiềm ẩn của công ty hay cá nhân); việc sử dụng REM khi Hausman test p < 0.05 sẽ tạo ra các ước lượng bị chệch nghiêm trọng.",
+      "apa_reference": "Balestra, P., & Nerlove, M. (1966). Pooling cross section and time series data in the estimation of a dynamic model: The demand for natural gas. Econometrica, 34(3), 585–612."
     },
     {
       "id": "random-forest-algorithm-leo-breiman",
@@ -31564,20 +31751,27 @@
     {
       "id": "sargan-test-of-overidentifying-restrictions",
       "term": "Sargan Test of Overidentifying Restrictions",
-      "vietnamese": "Kiểm định Ràng buộc Nhận dạng Quá mức Sargan",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Applied Econometrics"
+      "vietnamese": "Kiểm định Giới hạn Quá nhận diện Sargan",
+      "vietnamese_variants": [
+        "Kiểm định Sargan",
+        "Sargan overidentification test"
       ],
-      "core_definition": "Kiểm tra tính hợp lệ của các biến công cụ ngoại sinh bổ sung dưới giả định homoskedasticity.",
-      "seminal_citation": "Sargan (1958)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng Biến Công cụ",
+        "Kiểm định 2SLS"
+      ],
+      "core_definition": "Phép kiểm định tiền đề cho kiểm định Hansen J-test, do nhà kinh tế lượng lừng danh J. Denis Sargan (1958) phát triển dành cho phương pháp biến công cụ IV/2SLS. Kiểm định đánh giá xem các điều kiện ràng buộc bổ sung phát sinh từ việc có nhiều biến công cụ hơn số biến nội sinh có tương thích với dữ liệu thực nghiệm hay không.",
+      "seminal_citation": "Sargan, J. D. (1958). The estimation of economic relationships using instrumental variables. Econometrica, 26(3), 393–415. https://doi.org/10.2307/1907619",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Sargan Test of Overidentifying Restrictions according to Sargan (1958).",
       "domain_tags_en": [
         "Applied Econometrics"
-      ]
+      ],
+      "benchmarks": "Thống kê S = n * R^2_{aux} ~ chi^2(L - K). Giả thuyết H0: Các biến công cụ không có tương quan với sai số. Yêu cầu p > 0.05 để khẳng định các công cụ là hợp lệ.",
+      "pitfalls": "Kiểm định Sargan giả định phương sai sai số là đồng nhất (Homoskedasticity). Khi dữ liệu có phương sai thay đổi, Sargan test có xu hướng bác bỏ quá mức H0 ngay cả khi các biến công cụ hoàn toàn hợp lệ. Vì vậy trong các nghiên cứu hiện đại, Reviewer luôn yêu cầu thay thế Sargan test bằng Hansen J-test.",
+      "apa_reference": "Sargan, J. D. (1958). The estimation of economic relationships using instrumental variables. Econometrica, 26(3), 393–415."
     },
     {
       "id": "sargan-hansen-test",
@@ -32539,20 +32733,27 @@
     {
       "id": "sharp-regression-discontinuity",
       "term": "Sharp Regression Discontinuity",
-      "vietnamese": "Hồi quy gián đoạn sắc nét",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Inference"
+      "vietnamese": "Thiết kế Hồi quy Gián đoạn Rõ nét (Sharp RDD)",
+      "vietnamese_variants": [
+        "Sharp RDD",
+        "Deterministic cutoff design"
       ],
-      "core_definition": "xác suất nhận can thiệp nhảy vọt từ 0 lên 1 ngay tại điểm cắt ngưỡng cutoff.",
-      "seminal_citation": "Lee & Lemieux (2010)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Suy luận Nhân quả",
+        "Hồi quy Gián đoạn"
+      ],
+      "core_definition": "Thiết kế hồi quy gián đoạn chuẩn tắc trong đó trạng thái nhận can thiệp là một hàm tiền định đơn trị xác định hoàn toàn bởi biến chỉ định: Mọi cá thể có X_i >= c đều chắc chắn nhận can thiệp (D_i = 1), và mọi cá thể có X_i < c đều chắc chắn không nhận can thiệp (D_i = 0). Bước nhảy xác suất tại điểm cắt c bằng đúng 100% (từ 0 lên 1). Sharp RDD ước lượng Tác động Can thiệp Trung bình Cục bộ ngay tại điểm ngưỡng (ATE_{at cutoff}).",
+      "seminal_citation": "Thistlethwaite, D. L., & Campbell, D. T. (1960). Regression-discontinuity analysis: An alternative to the ex post facto experiment. Journal of Educational Psychology, 51(6), 309–317; Hahn, J., Todd, P., & Van der Klaauw, W. (2001). Identification and estimation of treatment effects with a regression-discontinuity design. Econometrica, 69(1), 201–209.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Sharp Regression Discontinuity according to Lee & Lemieux (2010).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "benchmarks": "Ước lượng hồi quy tuyến tính cục bộ (Local Linear Regression) trong phạm vi băng thông hẹp quanh điểm ngưỡng: c - h <= X_i <= c + h. Lựa chọn băng thông MSE-optimal theo thuật toán Calonico, Cattaneo & Titiunik (CCT 2014). Kiểm định tính liên tục của các biến kiểm soát tiền can thiệp tại điểm cắt (Placebo test on predetermined covariates p > 0.05).",
+      "pitfalls": "Lấy toàn bộ dải dữ liệu xa điểm ngưỡng để hồi quy OLS toàn cục thay vì dùng băng thông cục bộ tối ưu (Local linear); bỏ qua việc kiểm tra tính liên tục mật độ qua kiểm định McCrary.",
+      "apa_reference": "Hahn, J., Todd, P., & Van der Klaauw, W. (2001). Identification and estimation of treatment effects with a regression-discontinuity design. Econometrica, 69(1), 201–209."
     },
     {
       "id": "side-by-side-comparison",
@@ -33515,20 +33716,27 @@
     {
       "id": "staggered-difference-in-differences",
       "term": "Staggered Difference-in-Differences",
-      "vietnamese": "Mô hình DID bậc thang khi các đơn vị nhận chính sách can thiệp ở các mốc thời gian khác nhau (Callaway & Sant'Anna)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Inference"
+      "vietnamese": "Mô hình DiD Thời điểm Can thiệp Lệch pha (Phân rã Goodman-Bacon & CS DiD)",
+      "vietnamese_variants": [
+        "Callaway & Sant’Anna DiD",
+        "Goodman-Bacon decomposition"
       ],
-      "core_definition": "Mô hình DID bậc thang khi các đơn vị nhận chính sách can thiệp ở các mốc thời gian khác nhau (Callaway & Sant'Anna).",
-      "seminal_citation": "Callaway & Sant'Anna (2021)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Kinh tế lượng Hiện đại",
+        "Suy luận Nhân quả Nâng cao"
+      ],
+      "core_definition": "Bước tiến mang tính bước ngoặt của kinh tế lượng thực nghiệm hiện đại: Phát hiện sai lầm nghiêm trọng của mô hình hồi quy hiệu ứng cố định hai chiều truyền thống (Two-Way Fixed Effects - TWFE) khi các đơn vị nhận chính sách can thiệp ở các thời điểm khác nhau (Staggered adoption). Phân rã Goodman-Bacon (2021) chứng minh hệ số TWFE là bình quân gia quyền của nhiều phép so sánh 2x2 DiD, trong đó có những trọng số ÂM NGUY HẠI xuất phát từ việc lấy các đơn vị đã can thiệp từ trước làm nhóm đối chứng cho các đơn vị can thiệp sau, làm đảo lộn hoàn toàn dấu của hệ số thực tế.",
+      "seminal_citation": "Goodman-Bacon, A. (2021). Difference-in-differences with variation in treatment timing. Journal of Econometrics, 225(2), 254–277. https://doi.org/10.1016/j.jeconom.2021.03.014; Callaway, B., & Sant’Anna, P. H. (2021). Difference-in-differences with multiple time periods. Journal of Econometrics, 225(2), 200–230.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Staggered Difference-in-Differences according to Callaway & Sant'Anna (2021).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "benchmarks": "Bắt buộc từ bỏ mô hình TWFE OLS truyền thống khi có staggered timing. Thay thế bằng các ước lượng hiện đại chuẩn Q1: Ước lượng Callaway & Sant'Anna (CS DiD 2021), Sun & Abraham (2021), hoặc Borusyak, Jaravel & Spiess (2024). Báo cáo tác động trung bình theo nhóm can thiệp (Group-time average treatment effects ATT(g,t)) và đồ thị Event-Study tổng hợp.",
+      "pitfalls": "Tiếp tục chạy hồi quy OLS TWFE chuẩn cổ điển khi các bang hoặc công ty áp dụng chính sách ở các năm khác nhau; không kiểm tra tỷ lệ trọng số âm trong phân rã Bacon Decomposition.",
+      "apa_reference": "Callaway, B., & Sant’Anna, P. H. (2021). Difference-in-differences with multiple time periods. Journal of Econometrics, 225(2), 200–230."
     },
     {
       "id": "standard-error-of-measurement-semmeas",
@@ -37298,42 +37506,52 @@
     {
       "id": "vector-autoregression-var",
       "term": "Vector Autoregression (VAR)",
-      "vietnamese": "Mô hình Vectơ Tự hồi quy",
+      "vietnamese": "Mô hình Tự hồi quy Vectơ (Mô hình VAR Sims)",
       "vietnamese_variants": [
-        "VAR"
+        "Mô hình VAR vĩ mô",
+        "Vector Autoregression model"
       ],
       "domain_tags": [
-        "Time Series Econometrics"
+        "Kinh tế lượng Vĩ mô",
+        "Chuỗi thời gian Đa biến"
       ],
-      "core_definition": "Hệ phương trình chuỗi thời gian đa biến tương hỗ.",
-      "seminal_citation": "Sims (1980)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "core_definition": "Mô hình kinh tế lượng đoạt giải Nobel do Christopher A. Sims (1980) tiên phong nhằm giải phóng kinh tế lượng vĩ mô khỏi các giả định nhận diện tiên nghiệm chủ quan và gượng ép ('Incredible identification assumptions' của trường phái Cowles Commission). Trong VAR, toàn bộ các biến trong hệ thống đều được đối xử bình đẳng và coi là biến nội sinh (Endogenous). Mỗi biến được hồi quy trên các giá trị trễ của chính nó và giá trị trễ của tất cả các biến còn lại trong hệ thống.",
+      "seminal_citation": "Sims, C. A. (1980). Macroeconomics and reality. Econometrica, 48(1), 1–48. https://doi.org/10.2307/1912017",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2733",
       "core_definition_en": "Academic definition of Vector Autoregression (VAR) according to Sims (1980).",
       "domain_tags_en": [
         "Time Series Econometrics"
-      ]
+      ],
+      "benchmarks": "Điều kiện tiên quyết: Tất cả các chuỗi đưa vào mô hình VAR phi cấu trúc bắt buộc phải dừng I(0). Lựa chọn bậc trễ tối ưu p dựa trên sự đồng thuận của các tiêu chí thông tin AIC, SC/BIC, HQ và kiểm định tỷ số hợp lý tuần tự (LR test). Kiểm định độ ổn định của hệ thống VAR: Toàn bộ các nghiệm của đa thức đặc trưng (AR Characteristic Polynomial Roots) bắt buộc phải nằm bên trong đường tròn đơn vị (Modulus < 1). Kiểm định phần dư không còn tự tương quan qua LM test (p > 0.05).",
+      "pitfalls": "Bẫy 'Bùng nổ tham số' (Curse of Dimensionality): Khi đưa quá nhiều biến hoặc quá nhiều bậc trễ vào hệ thống, số tham số cần ước lượng bằng k * (k * p + 1), làm suy kiệt bậc tự do của mẫu; chạy mô hình VAR trên các chuỗi không dừng I(1) có đồng liên kết mà không chuyển sang mô hình VECM.",
+      "apa_reference": "Sims, C. A. (1980). Macroeconomics and reality. Econometrica, 48(1), 1–48."
     },
     {
       "id": "vector-error-correction-model-vecm",
       "term": "Vector Error Correction Model (VECM)",
-      "vietnamese": "Mô hình Hiệu chỉnh Sai số Vectơ",
+      "vietnamese": "Mô hình Vectơ Hiệu chỉnh Sai số (Mô hình VECM)",
       "vietnamese_variants": [
-        "VECM"
+        "Mô hình VECM",
+        "Định lý biểu diễn Granger"
       ],
       "domain_tags": [
-        "Time Series Econometrics"
+        "Kinh tế lượng Chuỗi thời gian",
+        "Quan hệ Đồng liên kết"
       ],
-      "core_definition": "Mô hình VAR có bổ sung thành phần hiệu chỉnh dài hạn khi có đồng tích hợp.",
-      "seminal_citation": "Engle & Granger (1987)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "core_definition": "Mô hình hồi quy vectơ động dành riêng cho các chuỗi thời gian không dừng có cùng bậc tích hợp I(1) và tồn tại quan hệ đồng liên kết dài hạn (Cointegrated), dựa trên Định lý Biểu diễn Granger (Granger Representation Theorem - Engle & Granger, 1987). VECM kết hợp hoàn hảo cả hai chiều kích thời gian: (1) Động thái biến động ngắn hạn qua các số hạng sai phân bậc một Delta Y_t; (2) Cơ chế tự điều chỉnh và tốc độ hội tụ về trạng thái cân bằng dài hạn thông qua số hạng hiệu chỉnh sai số (Error Correction Term - ECT hay Cointegrating Equation).",
+      "seminal_citation": "Engle, R. F., & Granger, C. W. J. (1987). Co-integration and error correction: Representation, estimation, and testing. Econometrica, 55(2), 251–276. https://doi.org/10.2307/1913236",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2735",
       "core_definition_en": "Academic definition of Vector Error Correction Model (VECM) according to Engle & Granger (1987).",
       "domain_tags_en": [
         "Time Series Econometrics"
-      ]
+      ],
+      "benchmarks": "Hệ số hiệu chỉnh sai số (ECT_{t-1}): Bắt buộc phải mang DẤU ÂM (alpha < 0) và đạt ý nghĩa thống kê (p < 0.05). Dấu âm đảm bảo cơ chế phản hồi ổn định (khi hệ thống lệch khỏi cân bằng ở thời kỳ trước, nó sẽ tự động bị kéo ngược trở lại cân bằng ở thời kỳ này). Độ lớn tuyệt đối |alpha| phản ánh tốc độ điều chỉnh về cân bằng trong mỗi chu kỳ (ví dụ |alpha| = 0.35 nghĩa là 35% độ lệch cân bằng được khắc phục sau mỗi quý).",
+      "pitfalls": "Hệ số ECT mang dấu dương (hệ thống phân kỳ bùng nổ, không hội tụ về cân bằng); ước lượng VECM khi các bài kiểm định Johansen không phát hiện ra đồng liên kết; bỏ qua việc kiểm định tính trực giao của các cú sốc trong phân tích Cholesky khi giải thích hàm phản ứng đẩy.",
+      "apa_reference": "Engle, R. F., & Granger, C. W. J. (1987). Co-integration and error correction: Representation, estimation, and testing. Econometrica, 55(2), 251–276."
     },
     {
       "id": "verificationism",
@@ -37721,20 +37939,27 @@
     {
       "id": "whites-heteroskedasticity-test",
       "term": "White's Heteroskedasticity Test",
-      "vietnamese": "Kiểm định Phương sai Thay đổi White",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Regression Diagnostics"
+      "vietnamese": "Kiểm định Phương sai Thay đổi Phi tham số White",
+      "vietnamese_variants": [
+        "Kiểm định White",
+        "White's test for heteroskedasticity"
       ],
-      "core_definition": "Kiểm định tổng quát không giả định trước dạng của phương sai sai số.",
-      "seminal_citation": "White (1980)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng",
+        "Kiểm định Chẩn đoán"
+      ],
+      "core_definition": "Phép kiểm định phương sai thay đổi tổng quát và toàn diện nhất trong kinh tế lượng do Halbert White (1980) công bố. Điểm ưu việt tuyệt đối của kiểm định White là tính phi tham số hoàn toàn: (1) Không đòi hỏi giả định sai số phải có phân phối chuẩn; (2) Không yêu cầu nhà nghiên cứu phải tiên đoán trước biến nào gây ra phương sai thay đổi. Phương trình phụ của White hồi quy bình phương phần dư lên tất cả các biến độc lập gốc, bình phương của chúng, và toàn bộ các tích chéo bậc hai (Cross-products) giữa các biến.",
+      "seminal_citation": "White, H. (1980). A heteroskedasticity-consistent covariance matrix estimator and a direct test for heteroskedasticity. Econometrica, 48(4), 817–838. https://doi.org/10.2307/1912934",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of White's Heteroskedasticity Test according to White (1980).",
       "domain_tags_en": [
         "Regression Diagnostics"
-      ]
+      ],
+      "benchmarks": "Giả thuyết H0: Phương sai sai số là không đổi và mô hình không bị đặc tả sai dạng hàm. Thống kê kiểm định LM = n * R^2_{aux} ~ chi^2(df). Bác bỏ H0 khi p < 0.05. Biện pháp xử lý chuẩn mực Q1: Tự động báo cáo Sai số chuẩn vững White (White-Huber Robust Standard Errors) trong bảng hồi quy chính.",
+      "pitfalls": "Khi mô hình có nhiều biến giải thích k, số lượng biến phụ trong phương trình kiểm định White tăng rất nhanh (k*(k+3)/2), làm cạn kiệt bậc tự do khi mẫu nhỏ. Giải pháp là chạy kiểm định White không có tích chéo (No cross-terms) hoặc chỉ hồi quy phần dư lên giá trị dự báo hat{Y} và hat{Y}^2.",
+      "apa_reference": "White, H. (1980). A heteroskedasticity-consistent covariance matrix estimator and a direct test for heteroskedasticity. Econometrica, 48(4), 817–838."
     },
     {
       "id": "whites-test",
