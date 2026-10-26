@@ -36,6 +36,17 @@ export interface MethodologyTerm {
   apa_reference?: string;                    // Tài liệu tham khảo hoàn chỉnh chuẩn APA 7th
   corpus_variants?: CorpusVariant[];         // Các thuật ngữ con / nhánh đo lường trực thuộc
   related_terms?: string[];                  // Các ID thuật ngữ liên quan
+  tier?: string;                             // Phân tầng: "flagship" | "textbook" | "creswell" | "curated" | "encyclopedia" | "awl"
+  stt?: number;                              // Số thứ tự
+  expert_status?: "verified" | "needs_review"; // Trạng thái thẩm định
+  expert_notes?: string;                     // Ghi chú hiệu đính của chuyên gia
+  expert_checks?: {
+    vietnamese?: boolean;
+    definition?: boolean;
+    benchmark?: boolean;
+    pitfalls?: boolean;
+    needs_edit?: boolean;
+  };
   // Các trường tiếng Anh cho phiên bản Anh - Anh thuần túy (Monolingual English)
   core_definition_en?: string;
   paradigm_debates_en?: string;
@@ -53,6 +64,8 @@ export interface AcademicAcronym {
   purpose: string;                           // Mục đích & bản chất trong nghiên cứu
   benchmark?: string;                        // Ngưỡng định lượng tham chiếu
   domain?: string;                           // Lĩnh vực chuyên môn
+  expert_status?: "verified" | "needs_review";
+  expert_notes?: string;
   // Các trường tiếng Anh cho phiên bản Anh - Anh
   purpose_en?: string;
   benchmark_en?: string;

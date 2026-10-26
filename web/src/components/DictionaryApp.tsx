@@ -906,9 +906,29 @@ export default function DictionaryApp({
                             [{activeTerm.part_of_speech}]
                           </span>
                         )}
-                        <span className="text-xs px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900">
-                          {t.concept_level_badge}
-                        </span>
+                        {activeTerm.tier === "flagship" ? (
+                          <span className="text-xs px-2.5 py-0.5 rounded-full bg-amber-50 dark:bg-amber-950/50 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-800 font-bold flex items-center gap-1">
+                            ★ {languageMode === "en" ? "Flagship Core" : "Thuật ngữ Cốt lõi"}
+                          </span>
+                        ) : activeTerm.tier ? (
+                          <span className="text-xs px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 font-medium capitalize">
+                            {activeTerm.tier}
+                          </span>
+                        ) : (
+                          <span className="text-xs px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900">
+                            {t.concept_level_badge}
+                          </span>
+                        )}
+
+                        {activeTerm.expert_status === "verified" ? (
+                          <span className="text-xs px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 font-semibold flex items-center gap-1">
+                            <ShieldCheck size={12} /> {languageMode === "en" ? "Verified" : "Đã Thẩm Định"}
+                          </span>
+                        ) : (
+                          <span className="text-xs px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 font-medium flex items-center gap-1">
+                            <Clock size={12} /> {languageMode === "en" ? "Editorial Dossier" : "Hồ sơ Rà soát"}
+                          </span>
+                        )}
                       </div>
 
                       {/* Phiên âm IPA & Nút loa phát âm */}
@@ -1223,7 +1243,25 @@ export default function DictionaryApp({
                   </section>
                 )}
 
-                {/* 6. KHỐI TRÍCH DẪN UY TÍN */}
+                {/* 6. Ý KIẾN THẨM ĐỊNH CỦA HỘI ĐỒNG CHUYÊN GIA (EXPERT REVIEW DOSSIER) */}
+                {activeTerm.expert_notes && (
+                  <section className="p-4 rounded-xl border-l-4 border-indigo-600 bg-indigo-50/50 dark:bg-indigo-950/30 border border-indigo-200 dark:border-indigo-900/60 space-y-2">
+                    <div className="flex items-center justify-between text-xs font-bold text-indigo-950 dark:text-indigo-300 uppercase tracking-wider">
+                      <span className="flex items-center gap-1.5">
+                        <ShieldCheck size={15} className="text-indigo-600 dark:text-indigo-400" />
+                        {languageMode === "en" ? "Editorial Board & Expert Review Guidance" : "Ghi Chú Hiệu Đính Của Chuyên Gia Thẩm Định"}
+                      </span>
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-100 dark:bg-indigo-900/60 text-indigo-800 dark:text-indigo-300">
+                        ThS. Trần Thanh Tùng (NTTU)
+                      </span>
+                    </div>
+                    <p className="text-slate-800 dark:text-slate-200 text-xs sm:text-sm leading-relaxed font-sans">
+                      {activeTerm.expert_notes}
+                    </p>
+                  </section>
+                )}
+
+                {/* 7. KHỐI TRÍCH DẪN UY TÍN */}
                 <footer className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-800/30 space-y-3">
                   <div className="flex items-center justify-between text-xs font-bold text-purple-900 dark:text-purple-300 uppercase tracking-wider">
                     <span className="flex items-center gap-1.5">
@@ -1363,6 +1401,15 @@ export default function DictionaryApp({
                       <span className="text-xs px-2.5 py-1 rounded-full bg-amber-50 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-900">
                         {t.acronym_badge}
                       </span>
+                      {activeAcronym.expert_status === "verified" ? (
+                        <span className="text-xs px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 font-semibold flex items-center gap-1">
+                          <ShieldCheck size={12} /> {languageMode === "en" ? "Verified" : "Đã Thẩm Định"}
+                        </span>
+                      ) : (
+                        <span className="text-xs px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 font-medium flex items-center gap-1">
+                          <Clock size={12} /> {languageMode === "en" ? "Editorial Dossier" : "Hồ sơ Rà soát"}
+                        </span>
+                      )}
                     </div>
 
                     <div className="flex items-center gap-1.5 shrink-0">
@@ -1448,6 +1495,24 @@ export default function DictionaryApp({
                     </div>
                     <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm sm:text-base font-mono">
                       {getAcronymBenchmark(activeAcronym, languageMode)}
+                    </p>
+                  </section>
+                )}
+
+                {/* Ý KIẾN THẨM ĐỊNH CỦA HỘI ĐỒNG CHUYÊN GIA CHO TỪ VIẾT TẮT */}
+                {activeAcronym.expert_notes && (
+                  <section className="p-4 rounded-xl border-l-4 border-indigo-600 bg-indigo-50/50 dark:bg-indigo-950/30 border border-indigo-200 dark:border-indigo-900/60 space-y-2">
+                    <div className="flex items-center justify-between text-xs font-bold text-indigo-950 dark:text-indigo-300 uppercase tracking-wider">
+                      <span className="flex items-center gap-1.5">
+                        <ShieldCheck size={15} className="text-indigo-600 dark:text-indigo-400" />
+                        {languageMode === "en" ? "Editorial Board & Expert Review Guidance" : "Ghi Chú Hiệu Đính Của Chuyên Gia Thẩm Định"}
+                      </span>
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-100 dark:bg-indigo-900/60 text-indigo-800 dark:text-indigo-300">
+                        ThS. Trần Thanh Tùng (NTTU)
+                      </span>
+                    </div>
+                    <p className="text-slate-800 dark:text-slate-200 text-xs sm:text-sm leading-relaxed font-sans">
+                      {activeAcronym.expert_notes}
                     </p>
                   </section>
                 )}
