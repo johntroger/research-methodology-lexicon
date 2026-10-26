@@ -5,7 +5,7 @@
   "updated_at": "2026-10-25T09:00:01.025Z",
   "terms": [
     {
-      "term": "$HTMT_{.85}$ criterion",
+      "term": "HTMT_.85 criterion",
       "slug": "htmt-85-criterion",
       "vietnamese": "Ngưỡng khắt khe 0.85 cho các khái niệm khác biệt.",
       "domain": "PLS-SEM & Discriminant Validity",
@@ -14,7 +14,7 @@
       "citation": "Henseler et al. (2015)"
     },
     {
-      "term": "$HTMT_{.90}$ criterion",
+      "term": "HTMT_.90 criterion",
       "slug": "htmt-90-criterion",
       "vietnamese": "Ngưỡng 0.90 cho các khái niệm tương đồng.",
       "domain": "PLS-SEM & Discriminant Validity",
@@ -23,7 +23,7 @@
       "citation": "Henseler et al. (2015)"
     },
     {
-      "term": "$HTMT_{\\text{inference}}$",
+      "term": "HTMT_inference",
       "slug": "htmt-text-inference",
       "vietnamese": "Kiểm định khoảng tin cậy bootstrap của HTMT không chứa 1.",
       "domain": "PLS-SEM & Discriminant Validity",
@@ -152,7 +152,7 @@
     {
       "term": "a c ng tuy n (Multicollinearity)",
       "slug": "a-c-ng-tuy-n-multicollinearity",
-      "vietnamese": "Hệ số Tolerance $> 0.10$ hoặc $> 0.20$, VIF (Variance Inflation Factor) $< 5.0$ (chuẩn bảo thủ $< 3.3$).",
+      "vietnamese": "Hệ số Tolerance > 0.10 hoặc > 0.20, VIF (Variance Inflation Factor) < 5.0 (chuẩn bảo thủ < 3.3).",
       "domain": "Methodology & Research Design",
       "citation": "Hair et al. (2018)",
       "source": "Hair et al. (2018)",
@@ -516,9 +516,9 @@
       "slug": "adjusted-goodness-of-fit-index",
       "vietnamese": "Chỉ số Phù hợp Mô hình có Hiệu chỉnh theo Bậc Tự do",
       "domain": "CB-SEM Fit Indices",
-      "source": "Giá trị AGFI $\\ge 0.85$ hoặc $\\ge 0.90$ biểu thị mô hình đạt chuẩn phù hợp.",
+      "source": "Giá trị AGFI ≥ 0.85 hoặc ≥ 0.90 biểu thị mô hình đạt chuẩn phù hợp.",
       "tier": "acronym",
-      "citation": "Giá trị AGFI $\\ge 0.85$ hoặc $\\ge 0.90$ biểu thị mô hình đạt chuẩn phù hợp."
+      "citation": "Giá trị AGFI ≥ 0.85 hoặc ≥ 0.90 biểu thị mô hình đạt chuẩn phù hợp."
     },
     {
       "term": "Adjusted R-squared",
@@ -598,9 +598,9 @@
       "slug": "agfi",
       "vietnamese": "Chỉ số Phù hợp Mô hình có Hiệu chỉnh theo Bậc Tự do (Adjusted Goodness of Fit Index)",
       "domain": "CB-SEM Fit Indices",
-      "source": "Giá trị AGFI $\\ge 0.85$ hoặc $\\ge 0.90$ biểu thị mô hình đạt chuẩn phù hợp.",
+      "source": "Giá trị AGFI ≥ 0.85 hoặc ≥ 0.90 biểu thị mô hình đạt chuẩn phù hợp.",
       "tier": "acronym",
-      "citation": "Giá trị AGFI $\\ge 0.85$ hoặc $\\ge 0.90$ biểu thị mô hình đạt chuẩn phù hợp."
+      "citation": "Giá trị AGFI ≥ 0.85 hoặc ≥ 0.90 biểu thị mô hình đạt chuẩn phù hợp."
     },
     {
       "term": "aggregate",
@@ -668,7 +668,7 @@
     {
       "term": "Alpha if item deleted",
       "slug": "alpha-if-item-deleted",
-      "vietnamese": "7. **Step 7: Evaluate the items** (`Đánh giá định lượng từng mục hỏi`): Phân tích tương quan biến - tổng hiệu chỉnh (Corrected item-total correlation $\\ge 0.30$",
+      "vietnamese": "7. **Step 7: Evaluate the items** (`Đánh giá định lượng từng mục hỏi`): Phân tích tương quan biến - tổng hiệu chỉnh (Corrected item-total correlation ≥ 0.30",
       "domain": "Methodology & Research Design",
       "citation": "DeVellis (2016)",
       "source": "DeVellis (2016)",
@@ -696,7 +696,7 @@
     {
       "term": "Alternative hypothesis",
       "slug": "alternative-hypothesis",
-      "vietnamese": "Giả thuyết đối ($H_1$) — Dự đoán có mối quan hệ hoặc có sự khác biệt giữa các biến số.",
+      "vietnamese": "Giả thuyết đối (H₁) — Dự đoán có mối quan hệ hoặc có sự khác biệt giữa các biến số.",
       "domain": "Research Design (Creswell)",
       "source": "Creswell & Creswell (2023)",
       "tier": "creswell",
@@ -1600,7 +1600,7 @@
     {
       "term": "Average variance extracted (AVE)",
       "slug": "average-variance-extracted-ave",
-      "vietnamese": "Phương sai trích trung bình (chuẩn $> 0.50$).",
+      "vietnamese": "Phương sai trích trung bình (chuẩn > 0.50).",
       "domain": "PLS-SEM & Discriminant Validity",
       "source": "Henseler et al. (2015); HENSELER_2015_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -1797,7 +1797,7 @@
     {
       "term": "Bartlett s Test of Sphericity",
       "slug": "bartlett-s-test-of-sphericity",
-      "vietnamese": "Kiểm định ma trận tương quan có phải là ma trận đơn vị ($p < .05$).",
+      "vietnamese": "Kiểm định ma trận tương quan có phải là ma trận đơn vị (p < .05).",
       "domain": "Methodology & Research Design",
       "citation": "Hair et al. (2018)",
       "source": "Hair et al. (2018)",
@@ -1807,7 +1807,7 @@
     {
       "term": "Bartlett's Test of Sphericity",
       "slug": "bartlett-s-test-of-sphericity",
-      "vietnamese": "Kiểm định ma trận tương quan có phải là ma trận đơn vị ($p < .05$).",
+      "vietnamese": "Kiểm định ma trận tương quan có phải là ma trận đơn vị (p < .05).",
       "domain": "Multivariate Data Analysis",
       "source": "Hair et al. (2018); Hair et al. (2018); Bartlett (1950); HAIR_2018_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -2204,7 +2204,7 @@
     {
       "term": "Bộ Chỉ số Độ phù hợp Gia tăng (Incremental Fit Indices)",
       "slug": "b-ch-s-ph-h-p-gia-t-ng-incremental-fit-indices",
-      "vietnamese": "- CFI (Comparative Fit Index): $> 0.90$ (chấp nhận) hoặc $> 0.95$ (tốt).",
+      "vietnamese": "- CFI (Comparative Fit Index): > 0.90 (chấp nhận) hoặc > 0.95 (tốt).",
       "domain": "Multivariate Data Analysis",
       "source": "Hair et al. (2018)",
       "tier": "index",
@@ -2213,7 +2213,7 @@
     {
       "term": "Bộ Chỉ số Độ phù hợp Tuyệt đối (Absolute Fit Indices)",
       "slug": "b-ch-s-ph-h-p-tuy-t-i-absolute-fit-indices",
-      "vietnamese": "- $\\chi^2/df$ (Normed Chi-square): $< 3.0$ (lý tưởng) hoặc $< 5.0$.",
+      "vietnamese": "- χ²/df (Normed Chi-square): < 3.0 (lý tưởng) hoặc < 5.0.",
       "domain": "Multivariate Data Analysis",
       "source": "Hair et al. (2018)",
       "tier": "index",
@@ -2258,7 +2258,7 @@
     {
       "term": "Bootstrap Confidence Intervals for Indirect Effects",
       "slug": "bootstrap-confidence-intervals-for-indirect-effects",
-      "vietnamese": "Phương pháp tái lấy mẫu (thường 5,000 hoặc 10,000 mẫu lặp) tạo khoảng tin cậy không giả định phân phối chuẩn; khẳng định có tác động trung gian khi khoảng tin cậy $95\\%$ không chứa số 0.",
+      "vietnamese": "Phương pháp tái lấy mẫu (thường 5,000 hoặc 10,000 mẫu lặp) tạo khoảng tin cậy không giả định phân phối chuẩn; khẳng định có tác động trung gian khi khoảng tin cậy 95% không chứa số 0.",
       "domain": "Mediation & Moderation (PROCESS)",
       "source": "Hayes (2022); HAYES_2022_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -2831,9 +2831,9 @@
       "slug": "cda",
       "vietnamese": "Phân tích Diễn ngôn Phê phán (Mô hình Ba chiều Norman Fairclough)",
       "domain": "Qualitative & Linguistic Methodology",
-      "source": "Fairclough, N. (2013). Critical discourse analysis: The critical study of language (2nd ed.). Routledge.; Phân tích đa tầng theo mô hình 3 chiều của Fairclough: Văn bản (Text) $\\rightarrow$ Thực hành diễn ngôn (Discursive practice) $\\rightarrow$ Thực hành xã hội (Social practice).",
+      "source": "Fairclough, N. (2013). Critical discourse analysis: The critical study of language (2nd ed.). Routledge.; Phân tích đa tầng theo mô hình 3 chiều của Fairclough: Văn bản (Text) → Thực hành diễn ngôn (Discursive practice) → Thực hành xã hội (Social practice).",
       "tier": "flagship",
-      "citation": "Fairclough, N. (2013). Critical discourse analysis: The critical study of language (2nd ed.). Routledge.; Phân tích đa tầng theo mô hình 3 chiều của Fairclough: Văn bản (Text) $\\rightarrow$ Thực hành diễn ngôn (Discursive practice) $\\rightarrow$ Thực hành xã hội (Social practice)."
+      "citation": "Fairclough, N. (2013). Critical discourse analysis: The critical study of language (2nd ed.). Routledge.; Phân tích đa tầng theo mô hình 3 chiều của Fairclough: Văn bản (Text) → Thực hành diễn ngôn (Discursive practice) → Thực hành xã hội (Social practice)."
     },
     {
       "term": "CE-FDH Ceiling Line in NCA",
@@ -2876,9 +2876,9 @@
       "slug": "cem",
       "vietnamese": "Phương pháp Ghép cặp Chính xác Thu thô (Iacus, King, & Porro, 2012) (Coarsened Exact Matching)",
       "domain": "Causal Inference",
-      "source": "Giảm thiểu chỉ số mất cân bằng đa biến $\\mathcal{L}_1$ ($L_1$ statistic sau ghép cặp phải nhỏ hơn đáng kể so với trước ghép cặp).",
+      "source": "Giảm thiểu chỉ số mất cân bằng đa biến L₁ (L₁ statistic sau ghép cặp phải nhỏ hơn đáng kể so với trước ghép cặp).",
       "tier": "acronym",
-      "citation": "Giảm thiểu chỉ số mất cân bằng đa biến $\\mathcal{L}_1$ ($L_1$ statistic sau ghép cặp phải nhỏ hơn đáng kể so với trước ghép cặp)."
+      "citation": "Giảm thiểu chỉ số mất cân bằng đa biến L₁ (L₁ statistic sau ghép cặp phải nhỏ hơn đáng kể so với trước ghép cặp)."
     },
     {
       "term": "Central Limit Theorem (CLT)",
@@ -2965,7 +2965,7 @@
     {
       "term": "Chẩn đoán Sai lệch SEM",
       "slug": "ch-n-o-n-sai-l-ch-sem",
-      "vietnamese": "Modification Indices ($MI > 4.0$), Standardized Residual Covariances ($|z| > 2.58$), Heywood cases (Phương sai âm).",
+      "vietnamese": "Modification Indices (MI > 4.0), Standardized Residual Covariances (|z| > 2.58), Heywood cases (Phương sai âm).",
       "domain": "Multivariate Data Analysis",
       "source": "Hair et al. (2018)",
       "tier": "index",
@@ -3223,9 +3223,9 @@
       "slug": "clf",
       "vietnamese": "Nhân tố Tiềm ẩn Chung (Kỹ thuật Thẩm định CMV trong AMOS) (Common Latent Factor)",
       "domain": "CB-SEM & Psychometrics",
-      "source": "So sánh các hệ số tải chuẩn hóa (standardized factor loadings) trước và sau khi có CLF: nếu độ lệch $\\Delta \\lambda < 0.20$, kết luận CMV không làm thay đổi bản chất thang đo.",
+      "source": "So sánh các hệ số tải chuẩn hóa (standardized factor loadings) trước và sau khi có CLF: nếu độ lệch Δ λ < 0.20, kết luận CMV không làm thay đổi bản chất thang đo.",
       "tier": "acronym",
-      "citation": "So sánh các hệ số tải chuẩn hóa (standardized factor loadings) trước và sau khi có CLF: nếu độ lệch $\\Delta \\lambda < 0.20$, kết luận CMV không làm thay đổi bản chất thang đo."
+      "citation": "So sánh các hệ số tải chuẩn hóa (standardized factor loadings) trước và sau khi có CLF: nếu độ lệch Δ λ < 0.20, kết luận CMV không làm thay đổi bản chất thang đo."
     },
     {
       "term": "Closed-ended data",
@@ -3358,9 +3358,9 @@
       "slug": "coarsened-exact-matching",
       "vietnamese": "Phương pháp Ghép cặp Chính xác Thu thô (Iacus, King, & Porro, 2012)",
       "domain": "Causal Inference",
-      "source": "Giảm thiểu chỉ số mất cân bằng đa biến $\\mathcal{L}_1$ ($L_1$ statistic sau ghép cặp phải nhỏ hơn đáng kể so với trước ghép cặp).",
+      "source": "Giảm thiểu chỉ số mất cân bằng đa biến L₁ (L₁ statistic sau ghép cặp phải nhỏ hơn đáng kể so với trước ghép cặp).",
       "tier": "acronym",
-      "citation": "Giảm thiểu chỉ số mất cân bằng đa biến $\\mathcal{L}_1$ ($L_1$ statistic sau ghép cặp phải nhỏ hơn đáng kể so với trước ghép cặp)."
+      "citation": "Giảm thiểu chỉ số mất cân bằng đa biến L₁ (L₁ statistic sau ghép cặp phải nhỏ hơn đáng kể so với trước ghép cặp)."
     },
     {
       "term": "Coarsened Exact Matching (CEM)",
@@ -3514,7 +3514,7 @@
     {
       "term": "Cognitive Aspects of Survey Methodology (CASM)",
       "slug": "cognitive-aspects-of-survey-methodology-casm",
-      "vietnamese": "Khung 4 giai đoạn xử lý tâm lý của người trả lời (Comprehension $\\rightarrow$ Retrieval $\\rightarrow$ Judgment $\\rightarrow$ Response).",
+      "vietnamese": "Khung 4 giai đoạn xử lý tâm lý của người trả lời (Comprehension → Retrieval → Judgment → Response).",
       "domain": "Questionnaire & TSE",
       "source": "Wiley / Beatty & Willis (2020); WILEY_2020_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -3679,7 +3679,7 @@
     {
       "term": "Collinearity assessment",
       "slug": "collinearity-assessment",
-      "vietnamese": "Đánh giá đa cộng tuyến giữa các biến nguyên nhân (VIF $< 3.3$).",
+      "vietnamese": "Đánh giá đa cộng tuyến giữa các biến nguyên nhân (VIF < 3.3).",
       "domain": "PLS-SEM & Discriminant Validity",
       "source": "Henseler et al. (2015); HENSELER_2015_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -3771,9 +3771,9 @@
       "slug": "common-latent-factor",
       "vietnamese": "Nhân tố Tiềm ẩn Chung (Kỹ thuật Thẩm định CMV trong AMOS)",
       "domain": "CB-SEM & Psychometrics",
-      "source": "So sánh các hệ số tải chuẩn hóa (standardized factor loadings) trước và sau khi có CLF: nếu độ lệch $\\Delta \\lambda < 0.20$, kết luận CMV không làm thay đổi bản chất thang đo.",
+      "source": "So sánh các hệ số tải chuẩn hóa (standardized factor loadings) trước và sau khi có CLF: nếu độ lệch Δ λ < 0.20, kết luận CMV không làm thay đổi bản chất thang đo.",
       "tier": "acronym",
-      "citation": "So sánh các hệ số tải chuẩn hóa (standardized factor loadings) trước và sau khi có CLF: nếu độ lệch $\\Delta \\lambda < 0.20$, kết luận CMV không làm thay đổi bản chất thang đo."
+      "citation": "So sánh các hệ số tải chuẩn hóa (standardized factor loadings) trước và sau khi có CLF: nếu độ lệch Δ λ < 0.20, kết luận CMV không làm thay đổi bản chất thang đo."
     },
     {
       "term": "Common Method Bias",
@@ -4057,7 +4057,7 @@
     {
       "term": "Composite reliability (CR)",
       "slug": "composite-reliability-cr",
-      "vietnamese": "Độ tin cậy tổng hợp (chuẩn $> 0.70$).",
+      "vietnamese": "Độ tin cậy tổng hợp (chuẩn > 0.70).",
       "domain": "PLS-SEM & Discriminant Validity",
       "source": "Henseler et al. (2015); HENSELER_2015_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -4318,7 +4318,7 @@
     {
       "term": "Conditional Indirect Effect",
       "slug": "conditional-indirect-effect",
-      "vietnamese": "Tác động gián tiếp của $X$ lên $Y$ qua $M$ là một hàm số phụ thuộc vào giá trị của biến điều tiết $W$.",
+      "vietnamese": "Tác động gián tiếp của X lên Y qua M là một hàm số phụ thuộc vào giá trị của biến điều tiết W.",
       "domain": "Mediation & Moderation (PROCESS)",
       "source": "Hayes (2022); HAYES_2022_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -5238,7 +5238,7 @@
     {
       "term": "Convergent Validity (H i t )",
       "slug": "convergent-validity-h-i-t",
-      "vietnamese": "Factor loading $\\lambda > 0.50$ (lý tưởng $> 0.708$), $AVE > 0.50$, $CR > 0.70$.",
+      "vietnamese": "Factor loading λ > 0.50 (lý tưởng > 0.708), AVE > 0.50, CR > 0.70.",
       "domain": "Methodology & Research Design",
       "citation": "Hair et al. (2018)",
       "source": "Hair et al. (2018)",
@@ -5730,9 +5730,9 @@
       "slug": "critical-discourse-analysis",
       "vietnamese": "Phân tích Diễn ngôn Phê phán (Fairclough / Wodak)",
       "domain": "Qualitative & Critical Studies",
-      "source": "Phân tích đa tầng theo mô hình 3 chiều của Fairclough: Văn bản (Text) $\\rightarrow$ Thực hành diễn ngôn (Discursive practice) $\\rightarrow$ Thực hành xã hội (Social practice).",
+      "source": "Phân tích đa tầng theo mô hình 3 chiều của Fairclough: Văn bản (Text) → Thực hành diễn ngôn (Discursive practice) → Thực hành xã hội (Social practice).",
       "tier": "acronym",
-      "citation": "Phân tích đa tầng theo mô hình 3 chiều của Fairclough: Văn bản (Text) $\\rightarrow$ Thực hành diễn ngôn (Discursive practice) $\\rightarrow$ Thực hành xã hội (Social practice)."
+      "citation": "Phân tích đa tầng theo mô hình 3 chiều của Fairclough: Văn bản (Text) → Thực hành diễn ngôn (Discursive practice) → Thực hành xã hội (Social practice)."
     },
     {
       "term": "Critical Discourse Analysis (Fairclough)",
@@ -5828,7 +5828,7 @@
     {
       "term": "Cronbach's alpha",
       "slug": "cronbach-s-alpha",
-      "vietnamese": "Hệ số tin cậy Alpha (đo lường độ nhất quán nội tại của thang đo, chuẩn $\\ge 0.70$).",
+      "vietnamese": "Hệ số tin cậy Alpha (đo lường độ nhất quán nội tại của thang đo, chuẩn ≥ 0.70).",
       "domain": "Research Onion & Strategy",
       "source": "Saunders et al. (2019); SAUNDERS_2019_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -5922,7 +5922,7 @@
     {
       "term": "Cross-validated redundancy ( Q 2 )",
       "slug": "cross-validated-redundancy-q-2",
-      "vietnamese": "Hệ số dự báo ngoài mẫu của Stone-Geisser ($Q^2 > 0$).",
+      "vietnamese": "Hệ số dự báo ngoài mẫu của Stone-Geisser (Q² > 0).",
       "domain": "Methodology & Research Design",
       "citation": "Henseler et al. (2015)",
       "source": "Henseler et al. (2015)",
@@ -5930,9 +5930,9 @@
       "is_harvested": true
     },
     {
-      "term": "Cross-validated redundancy ($Q^2$)",
+      "term": "Cross-validated redundancy (Q²)",
       "slug": "cross-validated-redundancy-q-2",
-      "vietnamese": "Hệ số dự báo ngoài mẫu của Stone-Geisser ($Q^2 > 0$).",
+      "vietnamese": "Hệ số dự báo ngoài mẫu của Stone-Geisser (Q² > 0).",
       "domain": "PLS-SEM & Discriminant Validity",
       "source": "Henseler et al. (2015)",
       "tier": "index",
@@ -6122,7 +6122,7 @@
     {
       "term": "Đa cộng tuyến (Multicollinearity)",
       "slug": "a-c-ng-tuy-n-multicollinearity",
-      "vietnamese": "Hệ số Tolerance $> 0.10$ hoặc $> 0.20$, VIF (Variance Inflation Factor) $< 5.0$ (chuẩn bảo thủ $< 3.3$).",
+      "vietnamese": "Hệ số Tolerance > 0.10 hoặc > 0.20, VIF (Variance Inflation Factor) < 5.0 (chuẩn bảo thủ < 3.3).",
       "domain": "Multivariate Data Analysis",
       "source": "Hair et al. (2018)",
       "tier": "index",
@@ -6140,7 +6140,7 @@
     {
       "term": "Đánh giá Giá trị Nội dung Thực nghiệm",
       "slug": "nh-gi-gi-tr-n-i-dung-th-c-nghi-m",
-      "vietnamese": "Bộ chỉ số định lượng độ đồng thuận của Anderson & Gerbing ($P_{sa}$ và $C_{sv}$) cùng kỹ thuật phân loại thẻ bài (Card sorting).",
+      "vietnamese": "Bộ chỉ số định lượng độ đồng thuận của Anderson & Gerbing (P_sa và C_sv) cùng kỹ thuật phân loại thẻ bài (Card sorting).",
       "domain": "Construct Validation (MISQ)",
       "source": "MacKenzie et al. (2011)",
       "tier": "index",
@@ -6507,7 +6507,7 @@
     {
       "term": "Deficiencies model of introduction",
       "slug": "deficiencies-model-of-introduction",
-      "vietnamese": "Mô hình mở đầu khiếm khuyết — Mô hình viết mở đầu kinh điển gồm 5 phần: Vấn đề $\\rightarrow$ Y văn đi trước $\\rightarrow$ Khoảng trống/khiếm khuyết $\\rightarrow$ Ý nghĩa đề tài $\\rightarrow$ Mục tiêu.",
+      "vietnamese": "Mô hình mở đầu khiếm khuyết — Mô hình viết mở đầu kinh điển gồm 5 phần: Vấn đề → Y văn đi trước → Khoảng trống/khiếm khuyết → Ý nghĩa đề tài → Mục tiêu.",
       "domain": "Research Design (Creswell)",
       "source": "Creswell & Creswell (2023)",
       "tier": "creswell",
@@ -6913,7 +6913,7 @@
     {
       "term": "Điểm dị biệt & Ảnh hưởng (Outliers & Influential Cases)",
       "slug": "i-m-d-bi-t-nh-h-ng-outliers-influential-cases",
-      "vietnamese": "Mahalanobis Distance ($D^2/df > 3.0$ hoặc $p < .001$), Cook's Distance ($> 1.0$), Leverage values.",
+      "vietnamese": "Mahalanobis Distance (D²/df > 3.0 hoặc p < .001), Cook's Distance (> 1.0), Leverage values.",
       "domain": "Multivariate Data Analysis",
       "source": "Hair et al. (2018)",
       "tier": "index",
@@ -6924,9 +6924,9 @@
       "slug": "dif",
       "vietnamese": "Chức năng Câu hỏi Khác biệt trong Lý thuyết Ứng đáp Câu hỏi IRT (Differential Item Functioning)",
       "domain": "Item Response Theory & Psychometrics",
-      "source": "Kiểm định Mantel-Haenszel hoặc mô hình hồi quy Logistic IRT có $p < .05$ và độ lệch kích thước hiệu ứng lớn (ETS delta classification: Class C biểu thị DIF nghiêm trọng).",
+      "source": "Kiểm định Mantel-Haenszel hoặc mô hình hồi quy Logistic IRT có p < .05 và độ lệch kích thước hiệu ứng lớn (ETS delta classification: Class C biểu thị DIF nghiêm trọng).",
       "tier": "acronym",
-      "citation": "Kiểm định Mantel-Haenszel hoặc mô hình hồi quy Logistic IRT có $p < .05$ và độ lệch kích thước hiệu ứng lớn (ETS delta classification: Class C biểu thị DIF nghiêm trọng)."
+      "citation": "Kiểm định Mantel-Haenszel hoặc mô hình hồi quy Logistic IRT có p < .05 và độ lệch kích thước hiệu ứng lớn (ETS delta classification: Class C biểu thị DIF nghiêm trọng)."
     },
     {
       "term": "Diff-in-Diff",
@@ -6984,9 +6984,9 @@
       "slug": "differential-item-functioning",
       "vietnamese": "Chức năng Câu hỏi Khác biệt trong Lý thuyết Ứng đáp Câu hỏi IRT",
       "domain": "Item Response Theory & Psychometrics",
-      "source": "Kiểm định Mantel-Haenszel hoặc mô hình hồi quy Logistic IRT có $p < .05$ và độ lệch kích thước hiệu ứng lớn (ETS delta classification: Class C biểu thị DIF nghiêm trọng).",
+      "source": "Kiểm định Mantel-Haenszel hoặc mô hình hồi quy Logistic IRT có p < .05 và độ lệch kích thước hiệu ứng lớn (ETS delta classification: Class C biểu thị DIF nghiêm trọng).",
       "tier": "acronym",
-      "citation": "Kiểm định Mantel-Haenszel hoặc mô hình hồi quy Logistic IRT có $p < .05$ và độ lệch kích thước hiệu ứng lớn (ETS delta classification: Class C biểu thị DIF nghiêm trọng)."
+      "citation": "Kiểm định Mantel-Haenszel hoặc mô hình hồi quy Logistic IRT có p < .05 và độ lệch kích thước hiệu ứng lớn (ETS delta classification: Class C biểu thị DIF nghiêm trọng)."
     },
     {
       "term": "Differential Item Functioning (DIF)",
@@ -7028,7 +7028,7 @@
       "source": "ISO 26324 (2012)"
     },
     {
-      "term": "Dijkstra-Henseler $\\rho_A$ (rho_A)",
+      "term": "Dijkstra-Henseler ρ_A (rho_A)",
       "slug": "dijkstra-henseler-rho-a-rho-a",
       "vietnamese": "Hệ số tin cậy nhất quán cho mô hình cấu trúc.",
       "domain": "PLS-SEM & Discriminant Validity",
@@ -7083,7 +7083,7 @@
       "source": "Price (1965)"
     },
     {
-      "term": "Direct Effect ($c'$) vs. Indirect Effect ($ab$) vs. Total Effect ($c = c' + ab$)",
+      "term": "Direct Effect (c') vs. Indirect Effect (ab) vs. Total Effect (c = c' + ab)",
       "slug": "direct-effect-c-vs-indirect-effect-ab-vs-total-effect-c-c-ab",
       "vietnamese": "Tác động trực tiếp, tác động gián tiếp và tác động tổng quát.",
       "domain": "Mediation & Moderation (PROCESS)",
@@ -7131,7 +7131,7 @@
     {
       "term": "Direction of causality rule",
       "slug": "direction-of-causality-rule",
-      "vietnamese": "| `Direction of causality rule` | Quy tắc chiều nhân quả đo lường | Tiêu chuẩn số 1 phân định Reflective (Khái niệm $\\rightarrow$ Biến) vs Formative |",
+      "vietnamese": "| `Direction of causality rule` | Quy tắc chiều nhân quả đo lường | Tiêu chuẩn số 1 phân định Reflective (Khái niệm → Biến) vs Formative |",
       "domain": "Methodology & Research Design",
       "citation": "MacKenzie et al. (2011)",
       "source": "MacKenzie et al. (2011)",
@@ -7231,7 +7231,7 @@
     {
       "term": "Discriminant Validity (Ph n bi t)",
       "slug": "discriminant-validity-ph-n-bi-t",
-      "vietnamese": "Fornell-Larcker ($\\sqrt{AVE} > r$), Cross-loadings, HTMT ($< 0.85$ hoặc $< 0.90$).",
+      "vietnamese": "Fornell-Larcker (√(AVE) > r), Cross-loadings, HTMT (< 0.85 hoặc < 0.90).",
       "domain": "Methodology & Research Design",
       "citation": "Hair et al. (2018)",
       "source": "Hair et al. (2018)",
@@ -7241,7 +7241,7 @@
     {
       "term": "Discriminant Validity (Phân biệt)",
       "slug": "discriminant-validity-ph-n-bi-t",
-      "vietnamese": "Fornell-Larcker ($\\sqrt{AVE} > r$), Cross-loadings, HTMT ($< 0.85$ hoặc $< 0.90$).",
+      "vietnamese": "Fornell-Larcker (√(AVE) > r), Cross-loadings, HTMT (< 0.85 hoặc < 0.90).",
       "domain": "Multivariate Data Analysis",
       "source": "Hair et al. (2018)",
       "tier": "index",
@@ -7775,7 +7775,7 @@
       "is_harvested": true
     },
     {
-      "term": "Effect size ($f^2$)",
+      "term": "Effect size (f²)",
       "slug": "effect-size-f-2",
       "vietnamese": "Kích thước tác động của biến độc lập lên biến phụ thuộc (0.02 nhỏ, 0.15 vừa, 0.35 lớn).",
       "domain": "PLS-SEM & Discriminant Validity",
@@ -9186,9 +9186,9 @@
       "slug": "false-discovery-rate",
       "vietnamese": "Tỷ lệ Khám phá Sai (Benjamini-Hochberg, 1995)",
       "domain": "Multiple Testing & Biostatistics",
-      "source": "Thường kiểm soát ở mức $q = 0.05$ hoặc $0.10$; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power).",
+      "source": "Thường kiểm soát ở mức q = 0.05 hoặc 0.10; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power).",
       "tier": "acronym",
-      "citation": "Thường kiểm soát ở mức $q = 0.05$ hoặc $0.10$; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power)."
+      "citation": "Thường kiểm soát ở mức q = 0.05 hoặc 0.10; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power)."
     },
     {
       "term": "False positive rate",
@@ -9258,9 +9258,9 @@
       "slug": "family-wise-error-rate",
       "vietnamese": "Tỷ lệ Sai số Nhóm (Kiểm định Đa giả thuyết)",
       "domain": "Multiple Testing & Statistics",
-      "source": "Quy tắc Bonferroni: Chia mức ý nghĩa $\\alpha$ (0.05) cho số lượng kiểm định ($m$), mức ý nghĩa mới là $\\alpha / m$.",
+      "source": "Quy tắc Bonferroni: Chia mức ý nghĩa α (0.05) cho số lượng kiểm định (m), mức ý nghĩa mới là α / m.",
       "tier": "acronym",
-      "citation": "Quy tắc Bonferroni: Chia mức ý nghĩa $\\alpha$ (0.05) cho số lượng kiểm định ($m$), mức ý nghĩa mới là $\\alpha / m$."
+      "citation": "Quy tắc Bonferroni: Chia mức ý nghĩa α (0.05) cho số lượng kiểm định (m), mức ý nghĩa mới là α / m."
     },
     {
       "term": "Family-Wise Error Rate Inflation",
@@ -9285,9 +9285,9 @@
       "slug": "fdr",
       "vietnamese": "Tỷ lệ Khám phá Sai (Benjamini-Hochberg, 1995) (False Discovery Rate)",
       "domain": "Multiple Testing & Biostatistics",
-      "source": "Thường kiểm soát ở mức $q = 0.05$ hoặc $0.10$; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power).",
+      "source": "Thường kiểm soát ở mức q = 0.05 hoặc 0.10; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power).",
       "tier": "acronym",
-      "citation": "Thường kiểm soát ở mức $q = 0.05$ hoặc $0.10$; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power)."
+      "citation": "Thường kiểm soát ở mức q = 0.05 hoặc 0.10; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power)."
     },
     {
       "term": "FE",
@@ -9377,9 +9377,9 @@
       "slug": "fimix-pls",
       "vietnamese": "Phân đoạn Hỗn hợp Hữu hạn trong PLS-SEM (Finite Mixture Partial Least Squares)",
       "domain": "PLS-SEM & Segmentation",
-      "source": "Đánh giá số lượng phân đoạn tối ưu ($K$) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC.",
+      "source": "Đánh giá số lượng phân đoạn tối ưu (K) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC.",
       "tier": "acronym",
-      "citation": "Đánh giá số lượng phân đoạn tối ưu ($K$) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC."
+      "citation": "Đánh giá số lượng phân đoạn tối ưu (K) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC."
     },
     {
       "term": "final",
@@ -9422,9 +9422,9 @@
       "slug": "finite-mixture-partial-least-squares",
       "vietnamese": "Phân đoạn Hỗn hợp Hữu hạn trong PLS-SEM",
       "domain": "PLS-SEM & Segmentation",
-      "source": "Đánh giá số lượng phân đoạn tối ưu ($K$) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC.",
+      "source": "Đánh giá số lượng phân đoạn tối ưu (K) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC.",
       "tier": "acronym",
-      "citation": "Đánh giá số lượng phân đoạn tối ưu ($K$) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC."
+      "citation": "Đánh giá số lượng phân đoạn tối ưu (K) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC."
     },
     {
       "term": "First-Stage F-Statistic Threshold",
@@ -9634,7 +9634,7 @@
     {
       "term": "Formative",
       "slug": "formative",
-      "vietnamese": "Kiểm tra đa cộng tuyến (VIF $\\le 3.3$ hoặc $5.0$), kiểm định ý nghĩa thống kê của trọng số chỉ báo ($w_i$), loại bỏ các chỉ báo không có đóng góp độc lập.",
+      "vietnamese": "Kiểm tra đa cộng tuyến (VIF ≤ 3.3 hoặc 5.0), kiểm định ý nghĩa thống kê của trọng số chỉ báo (w_i), loại bỏ các chỉ báo không có đóng góp độc lập.",
       "domain": "Methodology & Research Design",
       "citation": "MacKenzie et al. (2011)",
       "source": "MacKenzie et al. (2011)",
@@ -9909,7 +9909,7 @@
     {
       "term": "Fuzzy RDD",
       "slug": "fuzzy-rdd",
-      "vietnamese": "Xác suất nhận can thiệp tăng vọt tại điểm cắt $c$, xử lý bằng phương pháp biến công cụ (*Instrumental Variables - IV*).",
+      "vietnamese": "Xác suất nhận can thiệp tăng vọt tại điểm cắt c, xử lý bằng phương pháp biến công cụ (*Instrumental Variables - IV*).",
       "domain": "Methodology & Research Design",
       "citation": "Shadish, Cook & Campbell (2002)",
       "source": "Shadish, Cook & Campbell (2002)",
@@ -9957,9 +9957,9 @@
       "slug": "fwer",
       "vietnamese": "Tỷ lệ Sai số Nhóm (Kiểm định Đa giả thuyết) (Family-Wise Error Rate)",
       "domain": "Multiple Testing & Statistics",
-      "source": "Quy tắc Bonferroni: Chia mức ý nghĩa $\\alpha$ (0.05) cho số lượng kiểm định ($m$), mức ý nghĩa mới là $\\alpha / m$.",
+      "source": "Quy tắc Bonferroni: Chia mức ý nghĩa α (0.05) cho số lượng kiểm định (m), mức ý nghĩa mới là α / m.",
       "tier": "acronym",
-      "citation": "Quy tắc Bonferroni: Chia mức ý nghĩa $\\alpha$ (0.05) cho số lượng kiểm định ($m$), mức ý nghĩa mới là $\\alpha / m$."
+      "citation": "Quy tắc Bonferroni: Chia mức ý nghĩa α (0.05) cho số lượng kiểm định (m), mức ý nghĩa mới là α / m."
     },
     {
       "term": "G-Index (Egghe Index)",
@@ -10011,9 +10011,9 @@
       "slug": "garch",
       "vietnamese": "Mô hình Phương sai Thay đổi có Điều kiện Tự hồi quy Tổng quát (Bollerslev, 1986) (Generalized Autoregressive Conditional Heteroskedasticity)",
       "domain": "Financial Econometrics",
-      "source": "Tổng các hệ số ARCH và GARCH ($\\alpha + \\beta$) phải nhỏ hơn 1 để đảm bảo tính dừng của phương sai có điều kiện.",
+      "source": "Tổng các hệ số ARCH và GARCH (α + β) phải nhỏ hơn 1 để đảm bảo tính dừng của phương sai có điều kiện.",
       "tier": "acronym",
-      "citation": "Tổng các hệ số ARCH và GARCH ($\\alpha + \\beta$) phải nhỏ hơn 1 để đảm bảo tính dừng của phương sai có điều kiện."
+      "citation": "Tổng các hệ số ARCH và GARCH (α + β) phải nhỏ hơn 1 để đảm bảo tính dừng của phương sai có điều kiện."
     },
     {
       "term": "GARCH (Generalized ARCH)",
@@ -10112,9 +10112,9 @@
       "slug": "generalized-autoregressive-conditional-heteroskedasticity",
       "vietnamese": "Mô hình Phương sai Thay đổi có Điều kiện Tự hồi quy Tổng quát (Bollerslev, 1986)",
       "domain": "Financial Econometrics",
-      "source": "Tổng các hệ số ARCH và GARCH ($\\alpha + \\beta$) phải nhỏ hơn 1 để đảm bảo tính dừng của phương sai có điều kiện.",
+      "source": "Tổng các hệ số ARCH và GARCH (α + β) phải nhỏ hơn 1 để đảm bảo tính dừng của phương sai có điều kiện.",
       "tier": "acronym",
-      "citation": "Tổng các hệ số ARCH và GARCH ($\\alpha + \\beta$) phải nhỏ hơn 1 để đảm bảo tính dừng của phương sai có điều kiện."
+      "citation": "Tổng các hệ số ARCH và GARCH (α + β) phải nhỏ hơn 1 để đảm bảo tính dừng của phương sai có điều kiện."
     },
     {
       "term": "Generalized Least Squares",
@@ -10224,9 +10224,9 @@
       "slug": "gfi",
       "vietnamese": "Chỉ số Mức độ Phù hợp Mô hình trong CB-SEM (Jöreskog & Sörbom) (Goodness of Fit Index)",
       "domain": "CB-SEM Fit Indices",
-      "source": "Giá trị GFI $\\ge 0.90$ (hoặc khắt khe $\\ge 0.95$) biểu thị mô hình phù hợp tốt với dữ liệu thực tế.",
+      "source": "Giá trị GFI ≥ 0.90 (hoặc khắt khe ≥ 0.95) biểu thị mô hình phù hợp tốt với dữ liệu thực tế.",
       "tier": "acronym",
-      "citation": "Giá trị GFI $\\ge 0.90$ (hoặc khắt khe $\\ge 0.95$) biểu thị mô hình phù hợp tốt với dữ liệu thực tế."
+      "citation": "Giá trị GFI ≥ 0.90 (hoặc khắt khe ≥ 0.95) biểu thị mô hình phù hợp tốt với dữ liệu thực tế."
     },
     {
       "term": "Ghost Authorship",
@@ -10404,9 +10404,9 @@
       "slug": "goodness-of-fit-index",
       "vietnamese": "Chỉ số Mức độ Phù hợp Mô hình trong CB-SEM (Jöreskog & Sörbom)",
       "domain": "CB-SEM Fit Indices",
-      "source": "Giá trị GFI $\\ge 0.90$ (hoặc khắt khe $\\ge 0.95$) biểu thị mô hình phù hợp tốt với dữ liệu thực tế.",
+      "source": "Giá trị GFI ≥ 0.90 (hoặc khắt khe ≥ 0.95) biểu thị mô hình phù hợp tốt với dữ liệu thực tế.",
       "tier": "acronym",
-      "citation": "Giá trị GFI $\\ge 0.90$ (hoặc khắt khe $\\ge 0.95$) biểu thị mô hình phù hợp tốt với dữ liệu thực tế."
+      "citation": "Giá trị GFI ≥ 0.90 (hoặc khắt khe ≥ 0.95) biểu thị mô hình phù hợp tốt với dữ liệu thực tế."
     },
     {
       "term": "GRADE",
@@ -11402,9 +11402,9 @@
       "slug": "ifi",
       "vietnamese": "Chỉ số Phù hợp Gia tăng (Bollen, 1989) (Incremental Fit Index)",
       "domain": "CB-SEM Fit Indices",
-      "source": "Giá trị IFI $\\ge 0.90$ biểu thị mô hình cấu trúc phù hợp tốt với dữ liệu khảo sát.",
+      "source": "Giá trị IFI ≥ 0.90 biểu thị mô hình cấu trúc phù hợp tốt với dữ liệu khảo sát.",
       "tier": "acronym",
-      "citation": "Giá trị IFI $\\ge 0.90$ biểu thị mô hình cấu trúc phù hợp tốt với dữ liệu khảo sát."
+      "citation": "Giá trị IFI ≥ 0.90 biểu thị mô hình cấu trúc phù hợp tốt với dữ liệu khảo sát."
     },
     {
       "term": "IIF",
@@ -11667,9 +11667,9 @@
       "slug": "incremental-fit-index",
       "vietnamese": "Chỉ số Phù hợp Gia tăng (Bollen, 1989)",
       "domain": "CB-SEM Fit Indices",
-      "source": "Giá trị IFI $\\ge 0.90$ biểu thị mô hình cấu trúc phù hợp tốt với dữ liệu khảo sát.",
+      "source": "Giá trị IFI ≥ 0.90 biểu thị mô hình cấu trúc phù hợp tốt với dữ liệu khảo sát.",
       "tier": "acronym",
-      "citation": "Giá trị IFI $\\ge 0.90$ biểu thị mô hình cấu trúc phù hợp tốt với dữ liệu khảo sát."
+      "citation": "Giá trị IFI ≥ 0.90 biểu thị mô hình cấu trúc phù hợp tốt với dữ liệu khảo sát."
     },
     {
       "term": "Incremental Validity",
@@ -11744,7 +11744,7 @@
     {
       "term": "Index of Moderated Mediation (Hayes 2015)",
       "slug": "index-of-moderated-mediation-hayes-2015",
-      "vietnamese": "Thước đo định lượng trực tiếp kiểm định liệu tác động gián tiếp có thực sự bị điều tiết bởi $W$ hay không (thay thế cách so sánh thủ công từng nhóm).",
+      "vietnamese": "Thước đo định lượng trực tiếp kiểm định liệu tác động gián tiếp có thực sự bị điều tiết bởi W hay không (thay thế cách so sánh thủ công từng nhóm).",
       "domain": "Mediation & Moderation (PROCESS)",
       "source": "Hayes (2022); HAYES_2022_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -11772,7 +11772,7 @@
     {
       "term": "Indicator reliability",
       "slug": "indicator-reliability",
-      "vietnamese": "Độ tin cậy của biến quan sát (bình phương hệ số tải Outer loading $> 0.50$).",
+      "vietnamese": "Độ tin cậy của biến quan sát (bình phương hệ số tải Outer loading > 0.50).",
       "domain": "PLS-SEM & Discriminant Validity",
       "source": "Henseler et al. (2015); HENSELER_2015_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -12461,7 +12461,7 @@
     {
       "term": "Internal Validity (SCC)",
       "slug": "internal-validity-scc",
-      "vietnamese": "(`Tính hợp lệ nội tại`): Mối liên hệ có thực sự mang tính nhân quả từ $X$ sang $Y$ hay do biến ngoại lai?",
+      "vietnamese": "(`Tính hợp lệ nội tại`): Mối liên hệ có thực sự mang tính nhân quả từ X sang Y hay do biến ngoại lai?",
       "domain": "Methodology & Research Design",
       "citation": "Shadish, Cook & Campbell (2002)",
       "source": "Shadish, Cook & Campbell (2002)",
@@ -13277,7 +13277,7 @@
     {
       "term": "Kaiser-Meyer-Olkin (KMO)",
       "slug": "kaiser-meyer-olkin-kmo",
-      "vietnamese": "Đo lường độ thích hợp của mẫu (MSA $> 0.50$ tối thiểu, $> 0.70$ khá, $> 0.80$ tốt).",
+      "vietnamese": "Đo lường độ thích hợp của mẫu (MSA > 0.50 tối thiểu, > 0.70 khá, > 0.80 tốt).",
       "domain": "Multivariate Data Analysis",
       "source": "Hair et al. (2018); Hair et al. (2018); Kaiser (1974); HAIR_2018_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -13349,7 +13349,7 @@
     {
       "term": "Khắc phục hạn chế của phương pháp 4 bước Baron & Kenny (1986)",
       "slug": "kh-c-ph-c-h-n-ch-c-a-ph-ng-ph-p-4-b-c-baron-kenny-1986",
-      "vietnamese": "Chứng minh rằng việc yêu cầu biến $X$ phải có tác động tổng quát ý nghĩa thống kê lên $Y$ (bước 1) là sai lầm; đồng thời thay thế kiểm định Sobel yếu kém bằng phương pháp Ước lượng khoảng tin cậy Bootstrap (Bootstrap Confidence Intervals) cho tác động gián tiếp.",
+      "vietnamese": "Chứng minh rằng việc yêu cầu biến X phải có tác động tổng quát ý nghĩa thống kê lên Y (bước 1) là sai lầm; đồng thời thay thế kiểm định Sobel yếu kém bằng phương pháp Ước lượng khoảng tin cậy Bootstrap (Bootstrap Confidence Intervals) cho tác động gián tiếp.",
       "domain": "Mediation & Moderation (PROCESS)",
       "source": "Hayes (2022)",
       "tier": "index",
@@ -13383,9 +13383,9 @@
       "citation": "Yin (2014)"
     },
     {
-      "term": "Kiểm định Suy luận Thống kê ($HTMT_{\\text{inference}}$)",
+      "term": "Kiểm định Suy luận Thống kê (HTMT_inference)",
       "slug": "ki-m-nh-suy-lu-n-th-ng-k-htmt-text-inference",
-      "vietnamese": "Chạy Bootstrapping ($N = 5.000$ mẫu con) để tạo khoảng tin cậy 90% (hoặc 95%). Bắt buộc khoảng tin cậy này không được chứa giá trị 1.0.",
+      "vietnamese": "Chạy Bootstrapping (N = 5.000 mẫu con) để tạo khoảng tin cậy 90% (hoặc 95%). Bắt buộc khoảng tin cậy này không được chứa giá trị 1.0.",
       "domain": "PLS-SEM & Discriminant Validity",
       "source": "Henseler et al. (2015)",
       "tier": "index",
@@ -13523,9 +13523,9 @@
       "slug": "lasso",
       "vietnamese": "Kỹ thuật Co cụm Tuyệt đối Tối thiểu và Chọn Lựa Biến (Tibshirani, 1996) (Least Absolute Shrinkage and Selection Operator)",
       "domain": "Machine Learning & Data Science in Research",
-      "source": "Tham số phạt $\\lambda$ được tinh chỉnh tối ưu thông qua $k$-fold Cross-Validation nhằm tối thiểu hóa sai số dự báo.",
+      "source": "Tham số phạt λ được tinh chỉnh tối ưu thông qua k-fold Cross-Validation nhằm tối thiểu hóa sai số dự báo.",
       "tier": "acronym",
-      "citation": "Tham số phạt $\\lambda$ được tinh chỉnh tối ưu thông qua $k$-fold Cross-Validation nhằm tối thiểu hóa sai số dự báo."
+      "citation": "Tham số phạt λ được tinh chỉnh tối ưu thông qua k-fold Cross-Validation nhằm tối thiểu hóa sai số dự báo."
     },
     {
       "term": "LASSO Regression (L1 Regularization)",
@@ -13611,7 +13611,7 @@
     {
       "term": "Latent Root Criterion",
       "slug": "latent-root-criterion",
-      "vietnamese": "Tiêu chuẩn Eigenvalue $> 1.0$ (chỉ giữ lại các nhân tố giải thích phương sai lớn hơn 1 biến đơn lẻ).",
+      "vietnamese": "Tiêu chuẩn Eigenvalue > 1.0 (chỉ giữ lại các nhân tố giải thích phương sai lớn hơn 1 biến đơn lẻ).",
       "domain": "Multivariate Data Analysis",
       "source": "Hair et al. (2018); HAIR_2018_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -13723,9 +13723,9 @@
       "slug": "least-absolute-shrinkage-and-selection-operator",
       "vietnamese": "Kỹ thuật Co cụm Tuyệt đối Tối thiểu và Chọn Lựa Biến (Tibshirani, 1996)",
       "domain": "Machine Learning & Data Science in Research",
-      "source": "Tham số phạt $\\lambda$ được tinh chỉnh tối ưu thông qua $k$-fold Cross-Validation nhằm tối thiểu hóa sai số dự báo.",
+      "source": "Tham số phạt λ được tinh chỉnh tối ưu thông qua k-fold Cross-Validation nhằm tối thiểu hóa sai số dự báo.",
       "tier": "acronym",
-      "citation": "Tham số phạt $\\lambda$ được tinh chỉnh tối ưu thông qua $k$-fold Cross-Validation nhằm tối thiểu hóa sai số dự báo."
+      "citation": "Tham số phạt λ được tinh chỉnh tối ưu thông qua k-fold Cross-Validation nhằm tối thiểu hóa sai số dự báo."
     },
     {
       "term": "Least Publishable Unit (LPU)",
@@ -14114,7 +14114,7 @@
     {
       "term": "Logistic Regression",
       "slug": "logistic-regression",
-      "vietnamese": "Odds Ratio ($\\text{Exp}(B)$), Hosmer-Lemeshow test.",
+      "vietnamese": "Odds Ratio (Exp(B)), Hosmer-Lemeshow test.",
       "domain": "Multivariate Data Analysis",
       "source": "Hair et al. (2018); Hair et al. (2018); Agresti (2013); HAIR_2018_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -14168,7 +14168,7 @@
     {
       "term": "Lý thuyết Đo lường Cổ điển (Classical Test Theory - CTT)",
       "slug": "l-thuy-t-o-l-ng-c-i-n-classical-test-theory-ctt",
-      "vietnamese": "Phương trình điểm số thực $X = T + E$, các giả định về bài kiểm tra song song (parallel tests), tau-equivalent, và congeneric.",
+      "vietnamese": "Phương trình điểm số thực X = T + E, các giả định về bài kiểm tra song song (parallel tests), tau-equivalent, và congeneric.",
       "domain": "Scale Development & Psychometrics",
       "source": "DeVellis (2016)",
       "tier": "index",
@@ -14688,7 +14688,7 @@
     {
       "term": "Measurement Invariance Cấp độ Cao",
       "slug": "measurement-invariance-c-p-cao",
-      "vietnamese": "Configural $\\rightarrow$ Metric (Weak) $\\rightarrow$ Scalar (Strong) $\\rightarrow$ Strict invariance.",
+      "vietnamese": "Configural → Metric (Weak) → Scalar (Strong) → Strict invariance.",
       "domain": "CB-SEM & Causal Inference",
       "source": "Kline (2023)",
       "tier": "index",
@@ -14998,7 +14998,7 @@
     {
       "term": "Metric invariance (Weak factorial)",
       "slug": "metric-invariance-weak-factorial",
-      "vietnamese": "| `Metric invariance (Weak factorial)` | Bất biến độ đo (hệ số tải nhân tố) | Cố định hệ số tải bằng nhau giữa các nhóm ($\\Delta CFI \\le 0.010$) |",
+      "vietnamese": "| `Metric invariance (Weak factorial)` | Bất biến độ đo (hệ số tải nhân tố) | Cố định hệ số tải bằng nhau giữa các nhóm (Δ CFI ≤ 0.010) |",
       "domain": "Methodology & Research Design",
       "citation": "MacKenzie et al. (2011)",
       "source": "MacKenzie et al. (2011)",
@@ -15336,7 +15336,7 @@
     {
       "term": "Model Chi-square ( chi_M 2 )",
       "slug": "model-chi-square-chi-m-2",
-      "vietnamese": "Bắt buộc kèm bậc tự do ($df$) và giá trị $p$.",
+      "vietnamese": "Bắt buộc kèm bậc tự do (df) và giá trị p.",
       "domain": "Methodology & Research Design",
       "citation": "Kline (2023)",
       "source": "Kline (2023)",
@@ -15344,9 +15344,9 @@
       "is_harvested": true
     },
     {
-      "term": "Model Chi-square ($\\chi_M^2$)",
+      "term": "Model Chi-square (χ_M²)",
       "slug": "model-chi-square-chi-m-2",
-      "vietnamese": "Bắt buộc kèm bậc tự do ($df$) và giá trị $p$.",
+      "vietnamese": "Bắt buộc kèm bậc tự do (df) và giá trị p.",
       "domain": "CB-SEM & Causal Inference",
       "source": "Kline (2023)",
       "tier": "index",
@@ -15355,7 +15355,7 @@
     {
       "term": "Model fit in PLS-SEM",
       "slug": "model-fit-in-pls-sem",
-      "vietnamese": "Độ phù hợp mô hình (SRMR $< 0.08$, d_ULS, d_G).",
+      "vietnamese": "Độ phù hợp mô hình (SRMR < 0.08, d_ULS, d_G).",
       "domain": "PLS-SEM & Discriminant Validity",
       "source": "Henseler et al. (2015); HENSELER_2015_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -15382,7 +15382,7 @@
     {
       "term": "Moderated Moderated Mediation (PROCESS Models 11, 12, 72)",
       "slug": "moderated-moderated-mediation-process-models-11-12-72",
-      "vietnamese": "Mô hình tác động gián tiếp bị điều tiết đồng thời bởi 2 biến điều tiết ($W$ và $Z$).",
+      "vietnamese": "Mô hình tác động gián tiếp bị điều tiết đồng thời bởi 2 biến điều tiết (W và Z).",
       "domain": "Mediation & Moderation (PROCESS)",
       "source": "Hayes (2022)",
       "tier": "index",
@@ -16008,9 +16008,9 @@
       "slug": "newcastle-ottawa-scale",
       "vietnamese": "Thang đo Newcastle-Ottawa Đánh giá Chất lượng Nghiên cứu Không ngẫu nhiên",
       "domain": "Meta-Analysis & Epidemiology",
-      "source": "Hệ thống xếp hạng sao (tối đa 9 sao) qua 3 nhóm tiêu chí: Lựa chọn nhóm nghiên cứu (4 sao), Tính so sánh được (2 sao), và Đo lường kết quả/phơi nhiễm (3 sao). Nghiên cứu $\\ge 7$ sao được xếp loại chất lượng cao.",
+      "source": "Hệ thống xếp hạng sao (tối đa 9 sao) qua 3 nhóm tiêu chí: Lựa chọn nhóm nghiên cứu (4 sao), Tính so sánh được (2 sao), và Đo lường kết quả/phơi nhiễm (3 sao). Nghiên cứu ≥ 7 sao được xếp loại chất lượng cao.",
       "tier": "acronym",
-      "citation": "Hệ thống xếp hạng sao (tối đa 9 sao) qua 3 nhóm tiêu chí: Lựa chọn nhóm nghiên cứu (4 sao), Tính so sánh được (2 sao), và Đo lường kết quả/phơi nhiễm (3 sao). Nghiên cứu $\\ge 7$ sao được xếp loại chất lượng cao."
+      "citation": "Hệ thống xếp hạng sao (tối đa 9 sao) qua 3 nhóm tiêu chí: Lựa chọn nhóm nghiên cứu (4 sao), Tính so sánh được (2 sao), và Đo lường kết quả/phơi nhiễm (3 sao). Nghiên cứu ≥ 7 sao được xếp loại chất lượng cao."
     },
     {
       "term": "Newcastle-Ottawa Scale (NOS)",
@@ -16026,9 +16026,9 @@
       "slug": "nfi",
       "vietnamese": "Chỉ số Phù hợp Chuẩn hóa (Bentler & Bonett, 1980) (Normed Fit Index)",
       "domain": "CB-SEM Fit Indices",
-      "source": "Giá trị NFI $\\ge 0.90$ hoặc $\\ge 0.95$ biểu thị mô hình phù hợp tốt; nhược điểm là bị đánh giá thấp khi cỡ mẫu nhỏ.",
+      "source": "Giá trị NFI ≥ 0.90 hoặc ≥ 0.95 biểu thị mô hình phù hợp tốt; nhược điểm là bị đánh giá thấp khi cỡ mẫu nhỏ.",
       "tier": "acronym",
-      "citation": "Giá trị NFI $\\ge 0.90$ hoặc $\\ge 0.95$ biểu thị mô hình phù hợp tốt; nhược điểm là bị đánh giá thấp khi cỡ mẫu nhỏ."
+      "citation": "Giá trị NFI ≥ 0.90 hoặc ≥ 0.95 biểu thị mô hình phù hợp tốt; nhược điểm là bị đánh giá thấp khi cỡ mẫu nhỏ."
     },
     {
       "term": "Nghiên cứu Tình huống & Logic Tái lập",
@@ -16044,12 +16044,12 @@
       "slug": "ngt",
       "vietnamese": "Kỹ thuật Nhóm Danh nghĩa (Kỹ thuật Đồng thuận Chuyên gia) (Nominal Group Technique)",
       "domain": "Group Decision & Qualitative Consensus",
-      "source": "Quy trình 4 pha: Tạo ý tưởng thầm lặng $\\rightarrow$ Thu thập vòng tròn $\\rightarrow$ Thảo luận làm rõ $\\rightarrow$ Bỏ phiếu xếp hạng độc lập.",
+      "source": "Quy trình 4 pha: Tạo ý tưởng thầm lặng → Thu thập vòng tròn → Thảo luận làm rõ → Bỏ phiếu xếp hạng độc lập.",
       "tier": "acronym",
-      "citation": "Quy trình 4 pha: Tạo ý tưởng thầm lặng $\\rightarrow$ Thu thập vòng tròn $\\rightarrow$ Thảo luận làm rõ $\\rightarrow$ Bỏ phiếu xếp hạng độc lập."
+      "citation": "Quy trình 4 pha: Tạo ý tưởng thầm lặng → Thu thập vòng tròn → Thảo luận làm rõ → Bỏ phiếu xếp hạng độc lập."
     },
     {
-      "term": "Ngưỡng Bảo thủ ($HTMT \\le 0.85$)",
+      "term": "Ngưỡng Bảo thủ (HTMT ≤ 0.85)",
       "slug": "ng-ng-b-o-th-htmt-le-0-85",
       "vietnamese": "Bắt buộc áp dụng khi hai khái niệm có tính độc lập cao về mặt khái niệm (ví dụ: Chất lượng dịch vụ và Lòng trung thành).",
       "domain": "PLS-SEM & Discriminant Validity",
@@ -16058,7 +16058,7 @@
       "citation": "Henseler et al. (2015)"
     },
     {
-      "term": "Ngưỡng Nới lỏng ($HTMT \\le 0.90$)",
+      "term": "Ngưỡng Nới lỏng (HTMT ≤ 0.90)",
       "slug": "ng-ng-n-i-l-ng-htmt-le-0-90",
       "vietnamese": "Cho phép khi hai khái niệm có mức độ tương đồng cao trong lý thuyết (ví dụ: Sự hài lòng và Ý định tiếp tục sử dụng).",
       "domain": "PLS-SEM & Discriminant Validity",
@@ -16069,7 +16069,7 @@
     {
       "term": "Ngưỡng tải thực nghiệm",
       "slug": "ng-ng-t-i-th-c-nghi-m",
-      "vietnamese": "Factor Loading $> 0.50$ (ý nghĩa thực tiễn với cỡ mẫu $N \\ge 120$), $> 0.70$ (cấu trúc rõ nét). Communality (Phương sai trích) $> 0.50$. Cross-loading chênh lệch $< 0.30$.",
+      "vietnamese": "Factor Loading > 0.50 (ý nghĩa thực tiễn với cỡ mẫu N ≥ 120), > 0.70 (cấu trúc rõ nét). Communality (Phương sai trích) > 0.50. Cross-loading chênh lệch< 0.30.",
       "domain": "Multivariate Data Analysis",
       "source": "Hair et al. (2018)",
       "tier": "index",
@@ -16107,9 +16107,9 @@
       "slug": "nnfi",
       "vietnamese": "Chỉ số Phù hợp Phi chuẩn hóa (Tucker & Lewis, 1973) (Non-Normed Fit Index (Tucker-Lewis Index - TLI))",
       "domain": "CB-SEM Fit Indices",
-      "source": "Giá trị TLI/NNFI $\\ge 0.90$ là chấp nhận được; $\\ge 0.95$ là xuất sắc.",
+      "source": "Giá trị TLI/NNFI ≥ 0.90 là chấp nhận được; ≥ 0.95 là xuất sắc.",
       "tier": "acronym",
-      "citation": "Giá trị TLI/NNFI $\\ge 0.90$ là chấp nhận được; $\\ge 0.95$ là xuất sắc."
+      "citation": "Giá trị TLI/NNFI ≥ 0.90 là chấp nhận được; ≥ 0.95 là xuất sắc."
     },
     {
       "term": "Noema and Noesis",
@@ -16137,9 +16137,9 @@
       "slug": "nominal-group-technique",
       "vietnamese": "Kỹ thuật Nhóm Danh nghĩa (Kỹ thuật Đồng thuận Chuyên gia)",
       "domain": "Group Decision & Qualitative Consensus",
-      "source": "Quy trình 4 pha: Tạo ý tưởng thầm lặng $\\rightarrow$ Thu thập vòng tròn $\\rightarrow$ Thảo luận làm rõ $\\rightarrow$ Bỏ phiếu xếp hạng độc lập.",
+      "source": "Quy trình 4 pha: Tạo ý tưởng thầm lặng → Thu thập vòng tròn → Thảo luận làm rõ → Bỏ phiếu xếp hạng độc lập.",
       "tier": "acronym",
-      "citation": "Quy trình 4 pha: Tạo ý tưởng thầm lặng $\\rightarrow$ Thu thập vòng tròn $\\rightarrow$ Thảo luận làm rõ $\\rightarrow$ Bỏ phiếu xếp hạng độc lập."
+      "citation": "Quy trình 4 pha: Tạo ý tưởng thầm lặng → Thu thập vòng tròn → Thảo luận làm rõ → Bỏ phiếu xếp hạng độc lập."
     },
     {
       "term": "Nominal Group Technique (NGT)",
@@ -16195,9 +16195,9 @@
       "slug": "non-normed-fit-index-tucker-lewis-index-tli",
       "vietnamese": "Chỉ số Phù hợp Phi chuẩn hóa (Tucker & Lewis, 1973)",
       "domain": "CB-SEM Fit Indices",
-      "source": "Giá trị TLI/NNFI $\\ge 0.90$ là chấp nhận được; $\\ge 0.95$ là xuất sắc.",
+      "source": "Giá trị TLI/NNFI ≥ 0.90 là chấp nhận được; ≥ 0.95 là xuất sắc.",
       "tier": "acronym",
-      "citation": "Giá trị TLI/NNFI $\\ge 0.90$ là chấp nhận được; $\\ge 0.95$ là xuất sắc."
+      "citation": "Giá trị TLI/NNFI ≥ 0.90 là chấp nhận được; ≥ 0.95 là xuất sắc."
     },
     {
       "term": "Non-Parametric Resampling",
@@ -16322,18 +16322,18 @@
       "slug": "normed-fit-index",
       "vietnamese": "Chỉ số Phù hợp Chuẩn hóa (Bentler & Bonett, 1980)",
       "domain": "CB-SEM Fit Indices",
-      "source": "Giá trị NFI $\\ge 0.90$ hoặc $\\ge 0.95$ biểu thị mô hình phù hợp tốt; nhược điểm là bị đánh giá thấp khi cỡ mẫu nhỏ.",
+      "source": "Giá trị NFI ≥ 0.90 hoặc ≥ 0.95 biểu thị mô hình phù hợp tốt; nhược điểm là bị đánh giá thấp khi cỡ mẫu nhỏ.",
       "tier": "acronym",
-      "citation": "Giá trị NFI $\\ge 0.90$ hoặc $\\ge 0.95$ biểu thị mô hình phù hợp tốt; nhược điểm là bị đánh giá thấp khi cỡ mẫu nhỏ."
+      "citation": "Giá trị NFI ≥ 0.90 hoặc ≥ 0.95 biểu thị mô hình phù hợp tốt; nhược điểm là bị đánh giá thấp khi cỡ mẫu nhỏ."
     },
     {
       "term": "NOS",
       "slug": "nos",
       "vietnamese": "Thang đo Newcastle-Ottawa Đánh giá Chất lượng Nghiên cứu Không ngẫu nhiên (Newcastle-Ottawa Scale)",
       "domain": "Meta-Analysis & Epidemiology",
-      "source": "Hệ thống xếp hạng sao (tối đa 9 sao) qua 3 nhóm tiêu chí: Lựa chọn nhóm nghiên cứu (4 sao), Tính so sánh được (2 sao), và Đo lường kết quả/phơi nhiễm (3 sao). Nghiên cứu $\\ge 7$ sao được xếp loại chất lượng cao.",
+      "source": "Hệ thống xếp hạng sao (tối đa 9 sao) qua 3 nhóm tiêu chí: Lựa chọn nhóm nghiên cứu (4 sao), Tính so sánh được (2 sao), và Đo lường kết quả/phơi nhiễm (3 sao). Nghiên cứu ≥ 7 sao được xếp loại chất lượng cao.",
       "tier": "acronym",
-      "citation": "Hệ thống xếp hạng sao (tối đa 9 sao) qua 3 nhóm tiêu chí: Lựa chọn nhóm nghiên cứu (4 sao), Tính so sánh được (2 sao), và Đo lường kết quả/phơi nhiễm (3 sao). Nghiên cứu $\\ge 7$ sao được xếp loại chất lượng cao."
+      "citation": "Hệ thống xếp hạng sao (tối đa 9 sao) qua 3 nhóm tiêu chí: Lựa chọn nhóm nghiên cứu (4 sao), Tính so sánh được (2 sao), và Đo lường kết quả/phơi nhiễm (3 sao). Nghiên cứu ≥ 7 sao được xếp loại chất lượng cao."
     },
     {
       "term": "notion",
@@ -16383,7 +16383,7 @@
     {
       "term": "Null hypothesis",
       "slug": "null-hypothesis",
-      "vietnamese": "Giả thuyết không ($H_0$) — Dự đoán không có mối quan hệ hoặc không có sự khác biệt giữa các nhóm trong tổng thể.",
+      "vietnamese": "Giả thuyết không (H₀) — Dự đoán không có mối quan hệ hoặc không có sự khác biệt giữa các nhóm trong tổng thể.",
       "domain": "Research Design (Creswell)",
       "source": "Creswell & Creswell (2023)",
       "tier": "creswell",
@@ -16485,7 +16485,7 @@
     {
       "term": "Observed score equation",
       "slug": "observed-score-equation",
-      "vietnamese": "| `Observed score equation` | Phương trình điểm số quan sát | $X_i = T_i + E_i$ với giả định $Cov(T, E) = 0$ |",
+      "vietnamese": "| `Observed score equation` | Phương trình điểm số quan sát | X_i = T_i + E_i với giả định Cov(T, E) = 0 |",
       "domain": "Methodology & Research Design",
       "citation": "DeVellis (2016)",
       "source": "DeVellis (2016)",
@@ -17036,9 +17036,9 @@
       "slug": "par",
       "vietnamese": "Nghiên cứu Hành động có Sự tham gia (Participatory Action Research)",
       "domain": "Qualitative & Community-Based Research",
-      "source": "Chu trình xoắn ốc lặp lặp 4 pha: Lập kế hoạch $\\rightarrow$ Hành động can thiệp $\\rightarrow$ Quan sát $\\rightarrow$ Phản tư đánh giá (Lewin / Kemmis & McTaggart).",
+      "source": "Chu trình xoắn ốc lặp lặp 4 pha: Lập kế hoạch → Hành động can thiệp → Quan sát → Phản tư đánh giá (Lewin / Kemmis & McTaggart).",
       "tier": "acronym",
-      "citation": "Chu trình xoắn ốc lặp lặp 4 pha: Lập kế hoạch $\\rightarrow$ Hành động can thiệp $\\rightarrow$ Quan sát $\\rightarrow$ Phản tư đánh giá (Lewin / Kemmis & McTaggart)."
+      "citation": "Chu trình xoắn ốc lặp lặp 4 pha: Lập kế hoạch → Hành động can thiệp → Quan sát → Phản tư đánh giá (Lewin / Kemmis & McTaggart)."
     },
     {
       "term": "Paradata",
@@ -17137,7 +17137,7 @@
     {
       "term": "Parallel multiple mediator model",
       "slug": "parallel-multiple-mediator-model",
-      "vietnamese": "| `Parallel multiple mediator model` | Mô hình đa trung gian song song | Ước lượng tác động gián tiếp riêng phần của từng $M_i$ khi kiểm soát các $M$ khác |",
+      "vietnamese": "| `Parallel multiple mediator model` | Mô hình đa trung gian song song | Ước lượng tác động gián tiếp riêng phần của từng M_i khi kiểm soát các M khác |",
       "domain": "Methodology & Research Design",
       "citation": "Hayes (2022)",
       "source": "Hayes (2022)",
@@ -17267,9 +17267,9 @@
       "slug": "partial-least-squares-prediction-assessment",
       "vietnamese": "Quy trình Đánh giá Khả năng Dự báo Ngoài Mẫu trong PLS-SEM (Shmueli et al., 2016)",
       "domain": "PLS-SEM & Predictive Analytics",
-      "source": "So sánh RMSE (hoặc MAE) của PLS-SEM với mô hình hồi quy tuyến tính LM: Nếu đa số chỉ báo có sai số nhỏ hơn LM $\\rightarrow$ Mô hình đạt năng lực dự báo cao (High predictive power).",
+      "source": "So sánh RMSE (hoặc MAE) của PLS-SEM với mô hình hồi quy tuyến tính LM: Nếu đa số chỉ báo có sai số nhỏ hơn LM → Mô hình đạt năng lực dự báo cao (High predictive power).",
       "tier": "acronym",
-      "citation": "So sánh RMSE (hoặc MAE) của PLS-SEM với mô hình hồi quy tuyến tính LM: Nếu đa số chỉ báo có sai số nhỏ hơn LM $\\rightarrow$ Mô hình đạt năng lực dự báo cao (High predictive power)."
+      "citation": "So sánh RMSE (hoặc MAE) của PLS-SEM với mô hình hồi quy tuyến tính LM: Nếu đa số chỉ báo có sai số nhỏ hơn LM → Mô hình đạt năng lực dự báo cao (High predictive power)."
     },
     {
       "term": "Partial Least Squares Structural Equation Modeling",
@@ -17350,9 +17350,9 @@
       "slug": "participatory-action-research",
       "vietnamese": "Nghiên cứu Hành động có Sự tham gia",
       "domain": "Qualitative & Community-Based Research",
-      "source": "Chu trình xoắn ốc lặp lặp 4 pha: Lập kế hoạch $\\rightarrow$ Hành động can thiệp $\\rightarrow$ Quan sát $\\rightarrow$ Phản tư đánh giá (Lewin / Kemmis & McTaggart).",
+      "source": "Chu trình xoắn ốc lặp lặp 4 pha: Lập kế hoạch → Hành động can thiệp → Quan sát → Phản tư đánh giá (Lewin / Kemmis & McTaggart).",
       "tier": "acronym",
-      "citation": "Chu trình xoắn ốc lặp lặp 4 pha: Lập kế hoạch $\\rightarrow$ Hành động can thiệp $\\rightarrow$ Quan sát $\\rightarrow$ Phản tư đánh giá (Lewin / Kemmis & McTaggart)."
+      "citation": "Chu trình xoắn ốc lặp lặp 4 pha: Lập kế hoạch → Hành động can thiệp → Quan sát → Phản tư đánh giá (Lewin / Kemmis & McTaggart)."
     },
     {
       "term": "Participatory Action Research (PAR)",
@@ -17792,7 +17792,7 @@
     {
       "term": "Pick-a-Point Approach (Spotlight Analysis)",
       "slug": "pick-a-point-approach-spotlight-analysis",
-      "vietnamese": "Đánh giá tác động tại 3 điểm tiêu chuẩn: Giá trị trung bình ($\\bar{W}$), thấp ($\\bar{W} - 1 SD$), và cao ($\\bar{W} + 1 SD$) hoặc phân vị 16th, 50th, 84th.",
+      "vietnamese": "Đánh giá tác động tại 3 điểm tiêu chuẩn: Giá trị trung bình (W̄), thấp (W̄ - 1 SD), và cao (W̄ + 1 SD) hoặc phân vị 16th, 50th, 84th.",
       "domain": "Mediation & Moderation (PROCESS)",
       "source": "Hayes (2022); HAYES_2022_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -17893,9 +17893,9 @@
       "slug": "plspredict",
       "vietnamese": "Quy trình Đánh giá Khả năng Dự báo Ngoài Mẫu trong PLS-SEM (Shmueli et al., 2016) (Partial Least Squares Prediction Assessment)",
       "domain": "PLS-SEM & Predictive Analytics",
-      "source": "So sánh RMSE (hoặc MAE) của PLS-SEM với mô hình hồi quy tuyến tính LM: Nếu đa số chỉ báo có sai số nhỏ hơn LM $\\rightarrow$ Mô hình đạt năng lực dự báo cao (High predictive power).",
+      "source": "So sánh RMSE (hoặc MAE) của PLS-SEM với mô hình hồi quy tuyến tính LM: Nếu đa số chỉ báo có sai số nhỏ hơn LM → Mô hình đạt năng lực dự báo cao (High predictive power).",
       "tier": "acronym",
-      "citation": "So sánh RMSE (hoặc MAE) của PLS-SEM với mô hình hồi quy tuyến tính LM: Nếu đa số chỉ báo có sai số nhỏ hơn LM $\\rightarrow$ Mô hình đạt năng lực dự báo cao (High predictive power)."
+      "citation": "So sánh RMSE (hoặc MAE) của PLS-SEM với mô hình hồi quy tuyến tính LM: Nếu đa số chỉ báo có sai số nhỏ hơn LM → Mô hình đạt năng lực dự báo cao (High predictive power)."
     },
     {
       "term": "Poisson Distribution",
@@ -19669,9 +19669,9 @@
       "slug": "receiver-operating-characteristic",
       "vietnamese": "Đường cong Đặc trưng Hoạt động của Bộ thu",
       "domain": "Diagnostic & Predictive Modeling",
-      "source": "Diện tích dưới đường cong (AUC) $\\ge 0.80$ biểu thị khả năng phân loại tốt; $\\ge 0.90$ là xuất sắc; $0.50$ tương đương đoán mò ngẫu nhiên.",
+      "source": "Diện tích dưới đường cong (AUC) ≥ 0.80 biểu thị khả năng phân loại tốt; ≥ 0.90 là xuất sắc; 0.50 tương đương đoán mò ngẫu nhiên.",
       "tier": "acronym",
-      "citation": "Diện tích dưới đường cong (AUC) $\\ge 0.80$ biểu thị khả năng phân loại tốt; $\\ge 0.90$ là xuất sắc; $0.50$ tương đương đoán mò ngẫu nhiên."
+      "citation": "Diện tích dưới đường cong (AUC) ≥ 0.80 biểu thị khả năng phân loại tốt; ≥ 0.90 là xuất sắc; 0.50 tương đương đoán mò ngẫu nhiên."
     },
     {
       "term": "Reciprocal Translation Analysis",
@@ -19712,7 +19712,7 @@
     {
       "term": "Reflective",
       "slug": "reflective",
-      "vietnamese": "Đánh giá mức độ phù hợp mô hình (CFA), loại biến có tải trọng $\\lambda < 0.707$ hoặc phần dư chuẩn hóa $|z| > 2.58$, kiểm tra AVE $\\ge 0.50$ và CR $\\ge 0.70$.",
+      "vietnamese": "Đánh giá mức độ phù hợp mô hình (CFA), loại biến có tải trọng λ < 0.707 hoặc phần dư chuẩn hóa |z| > 2.58, kiểm tra AVE ≥ 0.50 và CR ≥ 0.70.",
       "domain": "Methodology & Research Design",
       "citation": "MacKenzie et al. (2011)",
       "source": "MacKenzie et al. (2011)",
@@ -19924,7 +19924,7 @@
     {
       "term": "Relative indirect effect",
       "slug": "relative-indirect-effect",
-      "vietnamese": "| `Relative indirect effect` | Tác động gián tiếp tương đối | Áp dụng khi biến nguyên nhân $X$ là biến định danh nhiều nhóm (Multicategorical) |",
+      "vietnamese": "| `Relative indirect effect` | Tác động gián tiếp tương đối | Áp dụng khi biến nguyên nhân X là biến định danh nhiều nhóm (Multicategorical) |",
       "domain": "Methodology & Research Design",
       "citation": "Hayes (2022)",
       "source": "Hayes (2022)",
@@ -20583,9 +20583,9 @@
       "slug": "roc",
       "vietnamese": "Đường cong Đặc trưng Hoạt động của Bộ thu (Receiver Operating Characteristic)",
       "domain": "Diagnostic & Predictive Modeling",
-      "source": "Diện tích dưới đường cong (AUC) $\\ge 0.80$ biểu thị khả năng phân loại tốt; $\\ge 0.90$ là xuất sắc; $0.50$ tương đương đoán mò ngẫu nhiên.",
+      "source": "Diện tích dưới đường cong (AUC) ≥ 0.80 biểu thị khả năng phân loại tốt; ≥ 0.90 là xuất sắc; 0.50 tương đương đoán mò ngẫu nhiên.",
       "tier": "acronym",
-      "citation": "Diện tích dưới đường cong (AUC) $\\ge 0.80$ biểu thị khả năng phân loại tốt; $\\ge 0.90$ là xuất sắc; $0.50$ tương đương đoán mò ngẫu nhiên."
+      "citation": "Diện tích dưới đường cong (AUC) ≥ 0.80 biểu thị khả năng phân loại tốt; ≥ 0.90 là xuất sắc; 0.50 tương đương đoán mò ngẫu nhiên."
     },
     {
       "term": "ROC Curve (Receiver Operating Characteristic)",
@@ -20718,7 +20718,7 @@
     {
       "term": "Rubin's Potential Outcomes Framework",
       "slug": "rubin-s-potential-outcomes-framework",
-      "vietnamese": "- Kết quả phản thực tế: $Y_i(1)$ (nếu nhận can thiệp) vs $Y_i(0)$ (nếu không nhận can thiệp).",
+      "vietnamese": "- Kết quả phản thực tế: Y_i(1) (nếu nhận can thiệp) vs Y_i(0) (nếu không nhận can thiệp).",
       "domain": "Causal Inference & Quasi-Experiments",
       "source": "Shadish, Cook & Campbell (2002); SHADISH_COOK_CAMPBELL_2002_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -21446,7 +21446,7 @@
     {
       "term": "Serial multiple mediator model",
       "slug": "serial-multiple-mediator-model",
-      "vietnamese": "| `Serial multiple mediator model` | Mô hình đa trung gian nối tiếp | Mô hình hóa chuỗi nhân quả liên hoàn: $X \\rightarrow M_1 \\rightarrow M_2 \\rightarrow Y$ |",
+      "vietnamese": "| `Serial multiple mediator model` | Mô hình đa trung gian nối tiếp | Mô hình hóa chuỗi nhân quả liên hoàn: X → M₁ → M₂ → Y |",
       "domain": "Methodology & Research Design",
       "citation": "Hayes (2022)",
       "source": "Hayes (2022)",
@@ -21456,7 +21456,7 @@
     {
       "term": "Serial Multiple Mediator Model (PROCESS Model 6)",
       "slug": "serial-multiple-mediator-model-process-model-6",
-      "vietnamese": "Biến trung gian $M_1$ tác động tiếp sang biến trung gian $M_2$ trước khi tới biến kết quả $Y$.",
+      "vietnamese": "Biến trung gian M₁ tác động tiếp sang biến trung gian M₂ trước khi tới biến kết quả Y.",
       "domain": "Mediation & Moderation (PROCESS)",
       "source": "Hayes (2022); HAYES_2022_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -21537,7 +21537,7 @@
     {
       "term": "Sharp RDD",
       "slug": "sharp-rdd",
-      "vietnamese": "Đối tượng nhận can thiệp nghiêm ngặt $100\\%$ dựa trên điểm số cắt (*cutoff score* $c$).",
+      "vietnamese": "Đối tượng nhận can thiệp nghiêm ngặt 100% dựa trên điểm số cắt (*cutoff score* c).",
       "domain": "Methodology & Research Design",
       "citation": "Shadish, Cook & Campbell (2002)",
       "source": "Shadish, Cook & Campbell (2002)",
@@ -21638,7 +21638,7 @@
     {
       "term": "Simple Slopes Analysis",
       "slug": "simple-slopes-analysis",
-      "vietnamese": "Ước lượng độ dốc của biến $X$ lên $Y$ tại các mức độ khác nhau của biến điều tiết $W$.",
+      "vietnamese": "Ước lượng độ dốc của biến X lên Y tại các mức độ khác nhau của biến điều tiết W.",
       "domain": "Mediation & Moderation (PROCESS)",
       "source": "Hayes (2022); HAYES_2022_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -22440,7 +22440,7 @@
     {
       "term": "Statistical significance testing",
       "slug": "statistical-significance-testing",
-      "vietnamese": "Kiểm định ý nghĩa thống kê — Đánh giá xác suất (p-value) để quyết định bác bỏ hay chấp nhận giả thuyết không ($H_0$).",
+      "vietnamese": "Kiểm định ý nghĩa thống kê — Đánh giá xác suất (p-value) để quyết định bác bỏ hay chấp nhận giả thuyết không (H₀).",
       "domain": "Research Design (Creswell)",
       "source": "Creswell & Creswell (2023)",
       "tier": "creswell",
@@ -23289,7 +23289,7 @@
     {
       "term": "T t ng quan (Autocorrelation)",
       "slug": "t-t-ng-quan-autocorrelation",
-      "vietnamese": "Durbin-Watson statistic ($1.5 - 2.5$).",
+      "vietnamese": "Durbin-Watson statistic (1.5 - 2.5).",
       "domain": "Methodology & Research Design",
       "citation": "Hair et al. (2018)",
       "source": "Hair et al. (2018)",
@@ -23310,9 +23310,9 @@
       "slug": "ta",
       "vietnamese": "Phân tích Chủ đề (Braun & Clarke, 2006/2019) (Thematic Analysis)",
       "domain": "Qualitative Research Methodology",
-      "source": "Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu $\\rightarrow$ Tạo mã ban đầu $\\rightarrow$ Tìm chủ đề $\\rightarrow$ Rà soát chủ đề $\\rightarrow$ Định nghĩa & đặt tên $\\rightarrow$ Viết báo cáo.",
+      "source": "Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu → Tạo mã ban đầu → Tìm chủ đề → Rà soát chủ đề → Định nghĩa & đặt tên → Viết báo cáo.",
       "tier": "acronym",
-      "citation": "Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu $\\rightarrow$ Tạo mã ban đầu $\\rightarrow$ Tìm chủ đề $\\rightarrow$ Rà soát chủ đề $\\rightarrow$ Định nghĩa & đặt tên $\\rightarrow$ Viết báo cáo."
+      "citation": "Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu → Tạo mã ban đầu → Tìm chủ đề → Rà soát chủ đề → Định nghĩa & đặt tên → Viết báo cáo."
     },
     {
       "term": "Tabulation of Simple Counts / Quasi-Quantification (Lập Bảng Đếm Đơn Giản)",
@@ -23562,7 +23562,7 @@
     {
       "term": "Thẩm định Giá trị Khái niệm (Construct Validity)",
       "slug": "th-m-nh-gi-tr-kh-i-ni-m-construct-validity",
-      "vietnamese": "- Convergent Validity (Hội tụ): Factor loading $\\lambda > 0.50$ (lý tưởng $> 0.708$), $AVE > 0.50$, $CR > 0.70$.",
+      "vietnamese": "- Convergent Validity (Hội tụ): Factor loading λ > 0.50 (lý tưởng > 0.708), AVE > 0.50, CR > 0.70.",
       "domain": "Multivariate Data Analysis",
       "source": "Hair et al. (2018)",
       "tier": "index",
@@ -23571,7 +23571,7 @@
     {
       "term": "Thanh lọc Thang đo Đa diện (Scale Purification)",
       "slug": "thanh-l-c-thang-o-a-di-n-scale-purification",
-      "vietnamese": "Tiêu chuẩn riêng biệt cho Reflective (Loadings $\\ge 0.707$, AVE $\\ge 0.50$, CR $\\ge 0.70$) vs Formative (VIF $\\le 3.3$, Trọng số $w_i$, Vanishing tetrad test).",
+      "vietnamese": "Tiêu chuẩn riêng biệt cho Reflective (Loadings ≥ 0.707, AVE ≥ 0.50, CR ≥ 0.70) vs Formative (VIF ≤ 3.3, Trọng số w_i, Vanishing tetrad test).",
       "domain": "Construct Validation (MISQ)",
       "source": "MacKenzie et al. (2011)",
       "tier": "index",
@@ -23611,7 +23611,7 @@
       "slug": "thematic-analysis",
       "vietnamese": "Phân tích Chủ đề (Phương pháp Phân tích Mẫu hình Ý nghĩa)",
       "domain": "Qualitative Data Analysis",
-      "source": "Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77-101. https://doi.org/10.1191/1478088706qp063oa; Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu $\\rightarrow$ Tạo mã ban đầu $\\rightarrow$ Tìm chủ đề $\\rightarrow$ Rà soát chủ đề $\\rightarrow$ Định nghĩa & đặt tên $\\rightarrow$ Viết báo cáo.; Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77-101. https://doi.org/10.1191/1478088706qp063oa; Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu $\\rightarrow$ Tạo mã ban đầu $\\rightarrow$ Tìm chủ đề $\\rightarrow$ Rà soát chủ đề $\\rightarrow$ Định nghĩa & đặt tên $\\rightarrow$ Viết báo cáo.; Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77-101. https://doi.org/10.1191/1478088706qp063oa; Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu $\\rightarrow$ Tạo mã ban đầu $\\rightarrow$ Tìm chủ đề $\\rightarrow$ Rà soát chủ đề $\\rightarrow$ Định nghĩa & đặt tên $\\rightarrow$ Viết báo cáo.; Saunders et al. (2019); SAUNDERS_2019_EXTRACTION_RESULTS.md",
+      "source": "Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77-101. https://doi.org/10.1191/1478088706qp063oa; Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu → Tạo mã ban đầu → Tìm chủ đề → Rà soát chủ đề → Định nghĩa & đặt tên → Viết báo cáo.; Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77-101. https://doi.org/10.1191/1478088706qp063oa; Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu → Tạo mã ban đầu → Tìm chủ đề → Rà soát chủ đề → Định nghĩa & đặt tên → Viết báo cáo.; Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77-101. https://doi.org/10.1191/1478088706qp063oa; Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu → Tạo mã ban đầu → Tìm chủ đề → Rà soát chủ đề → Định nghĩa & đặt tên → Viết báo cáo.; Saunders et al. (2019); SAUNDERS_2019_EXTRACTION_RESULTS.md",
       "tier": "flagship",
       "corpus_variants_count": 6,
       "corpus_variants_sample": [
@@ -23619,7 +23619,7 @@
         "Deductive Thematic Analysis",
         "Semantic Themes vs. Latent Themes"
       ],
-      "citation": "Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77-101. https://doi.org/10.1191/1478088706qp063oa; Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu $\\rightarrow$ Tạo mã ban đầu $\\rightarrow$ Tìm chủ đề $\\rightarrow$ Rà soát chủ đề $\\rightarrow$ Định nghĩa & đặt tên $\\rightarrow$ Viết báo cáo.; Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77-101. https://doi.org/10.1191/1478088706qp063oa; Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu $\\rightarrow$ Tạo mã ban đầu $\\rightarrow$ Tìm chủ đề $\\rightarrow$ Rà soát chủ đề $\\rightarrow$ Định nghĩa & đặt tên $\\rightarrow$ Viết báo cáo.; Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77-101. https://doi.org/10.1191/1478088706qp063oa; Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu $\\rightarrow$ Tạo mã ban đầu $\\rightarrow$ Tìm chủ đề $\\rightarrow$ Rà soát chủ đề $\\rightarrow$ Định nghĩa & đặt tên $\\rightarrow$ Viết báo cáo.; Saunders et al. (2019); SAUNDERS_2019_EXTRACTION_RESULTS.md"
+      "citation": "Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77-101. https://doi.org/10.1191/1478088706qp063oa; Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu → Tạo mã ban đầu → Tìm chủ đề → Rà soát chủ đề → Định nghĩa & đặt tên → Viết báo cáo.; Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77-101. https://doi.org/10.1191/1478088706qp063oa; Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu → Tạo mã ban đầu → Tìm chủ đề → Rà soát chủ đề → Định nghĩa & đặt tên → Viết báo cáo.; Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77-101. https://doi.org/10.1191/1478088706qp063oa; Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu → Tạo mã ban đầu → Tìm chủ đề → Rà soát chủ đề → Định nghĩa & đặt tên → Viết báo cáo.; Saunders et al. (2019); SAUNDERS_2019_EXTRACTION_RESULTS.md"
     },
     {
       "term": "Thematic Map (Callon's Centrality & Density)",
@@ -24032,7 +24032,7 @@
     {
       "term": "TLI NNFI",
       "slug": "tli-nnfi",
-      "vietnamese": "(Tucker-Lewis Index): $> 0.90$ hoặc $> 0.95$.",
+      "vietnamese": "(Tucker-Lewis Index): > 0.90 hoặc > 0.95.",
       "domain": "Methodology & Research Design",
       "citation": "Hair et al. (2018)",
       "source": "Hair et al. (2018)",
@@ -24327,7 +24327,7 @@
     {
       "term": "TRAPD model",
       "slug": "trapd-model",
-      "vietnamese": "Quy trình dịch thuật bảng hỏi 5 bước chuẩn quốc tế: Translation $\\rightarrow$ Review $\\rightarrow$ Adjudication $\\rightarrow$ Pretesting $\\rightarrow$ Documentation.",
+      "vietnamese": "Quy trình dịch thuật bảng hỏi 5 bước chuẩn quốc tế: Translation → Review → Adjudication → Pretesting → Documentation.",
       "domain": "Questionnaire & TSE",
       "source": "Wiley / Beatty & Willis (2020); WILEY_2020_EXTRACTION_RESULTS.md",
       "tier": "index",
@@ -24483,7 +24483,7 @@
     {
       "term": "Tự tương quan (Autocorrelation)",
       "slug": "t-t-ng-quan-autocorrelation",
-      "vietnamese": "Durbin-Watson statistic ($1.5 - 2.5$).",
+      "vietnamese": "Durbin-Watson statistic (1.5 - 2.5).",
       "domain": "Multivariate Data Analysis",
       "source": "Hair et al. (2018)",
       "tier": "index",
@@ -24900,7 +24900,7 @@
     {
       "term": "Universe score",
       "slug": "universe-score",
-      "vietnamese": "| `Universe score` | Điểm số vũ trụ (điểm số tổng quát) | Tương đương điểm thực $T$ trong không gian đa diện |",
+      "vietnamese": "| `Universe score` | Điểm số vũ trụ (điểm số tổng quát) | Tương đương điểm thực T trong không gian đa diện |",
       "domain": "Methodology & Research Design",
       "citation": "DeVellis (2016)",
       "source": "DeVellis (2016)",

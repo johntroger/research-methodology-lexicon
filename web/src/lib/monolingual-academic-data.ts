@@ -1657,13 +1657,13 @@ export const MONOLINGUAL_ACRONYMS_EN: Record<string, {
   "FIMIX-PLS": {
     "full_name": "Finite Mixture Partial Least Squares",
     "purpose": "An established academic research methodology standard representing Finite Mixture Partial Least Squares, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Danh gia so luong phan doan toi uu ($K$) thong qua cac chi so thong tin AIC3 (Akaike Information Criterion with factor 3) va CAIC.",
+    "benchmark": "Danh gia so luong phan doan toi uu (K) thong qua cac chi so thong tin AIC3 (Akaike Information Criterion with factor 3) va CAIC.",
     "domain": "Academic Acronym"
   },
   "PLSpredict": {
     "full_name": "Partial Least Squares Prediction Assessment",
     "purpose": "An established academic research methodology standard representing Partial Least Squares Prediction Assessment, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "So sanh RMSE (hoac MAE) cua PLS-SEM voi mo hinh hoi quy tuyen tinh LM: Neu da so chi bao co sai so small hon LM $\\rightarrow$ Mo hinh dat nang luc du bao high (High predictive power).",
+    "benchmark": "So sanh RMSE (hoac MAE) cua PLS-SEM voi mo hinh hoi quy tuyen tinh LM: Neu da so chi bao co sai so small hon LM → Mo hinh dat nang luc du bao high (High predictive power).",
     "domain": "Academic Acronym"
   },
   "ULMC": {
@@ -1687,19 +1687,19 @@ export const MONOLINGUAL_ACRONYMS_EN: Record<string, {
   "FDR": {
     "full_name": "False Discovery Rate",
     "purpose": "An established academic research methodology standard representing False Discovery Rate, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Thuong kiem soat o muc $q = 0.05$ hoac $0.10$; it khat khe hon hieu chinh Bonferroni truyen thong, giup bao toan luc test thong ke (statistical power).",
+    "benchmark": "Thuong kiem soat o muc q = 0.05 hoac 0.10; it khat khe hon hieu chinh Bonferroni truyen thong, giup bao toan luc test thong ke (statistical power).",
     "domain": "Academic Acronym"
   },
   "FWER": {
     "full_name": "Family-Wise Error Rate",
     "purpose": "An established academic research methodology standard representing Family-Wise Error Rate, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Quy tac Bonferroni: Chia muc y nghia $\\alpha$ (0.05) cho so luong test ($m$), muc y nghia moi la $\\alpha / m$.",
+    "benchmark": "Quy tac Bonferroni: Chia muc y nghia α (0.05) cho so luong test (m), muc y nghia moi la α / m.",
     "domain": "Academic Acronym"
   },
   "LASSO": {
     "full_name": "Least Absolute Shrinkage and Selection Operator",
     "purpose": "An established academic research methodology standard representing Least Absolute Shrinkage and Selection Operator, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Tham so phat $\\lambda$ duoc tinh chinh toi uu thong qua $k$-fold Cross-Validation nham toi thieu hoa sai so du bao.",
+    "benchmark": "Tham so phat λ duoc tinh chinh toi uu thong qua k-fold Cross-Validation nham toi thieu hoa sai so du bao.",
     "domain": "Academic Acronym"
   },
   "LDA": {
@@ -1723,7 +1723,7 @@ export const MONOLINGUAL_ACRONYMS_EN: Record<string, {
   "TA": {
     "full_name": "Thematic Analysis",
     "purpose": "An established academic research methodology standard representing Thematic Analysis, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Tuan thu nghiem ngat quy trinh 6 buoc: Lam quen du lieu $\\rightarrow$ Tao ma ban dau $\\rightarrow$ Tim chu de $\\rightarrow$ Ra soat chu de $\\rightarrow$ Dinh nghia & dat ten $\\rightarrow$ Viet bao cao.",
+    "benchmark": "Tuan thu nghiem ngat quy trinh 6 buoc: Lam quen du lieu → Tao ma ban dau → Tim chu de → Ra soat chu de → Dinh nghia & dat ten → Viet bao cao.",
     "domain": "Academic Acronym"
   },
   "GT": {
@@ -1735,19 +1735,19 @@ export const MONOLINGUAL_ACRONYMS_EN: Record<string, {
   "CDA": {
     "full_name": "Critical Discourse Analysis",
     "purpose": "An established academic research methodology standard representing Critical Discourse Analysis, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Phan tich da tang theo mo hinh 3 chieu cua Fairclough: Van ban (Text) $\\rightarrow$ Thuc hanh dien ngon (Discursive practice) $\\rightarrow$ Thuc hanh xa hoi (Social practice).",
+    "benchmark": "Phan tich da tang theo mo hinh 3 chieu cua Fairclough: Van ban (Text) → Thuc hanh dien ngon (Discursive practice) → Thuc hanh xa hoi (Social practice).",
     "domain": "Academic Acronym"
   },
   "NGT": {
     "full_name": "Nominal Group Technique",
     "purpose": "An established academic research methodology standard representing Nominal Group Technique, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Quy trinh 4 pha: Tao y tuong tham lang $\\rightarrow$ Thu thap vong tron $\\rightarrow$ Thao luan lam ro $\\rightarrow$ Bo phieu xep hang doc lap.",
+    "benchmark": "Quy trinh 4 pha: Tao y tuong tham lang → Thu thap vong tron → Thao luan lam ro → Bo phieu xep hang doc lap.",
     "domain": "Academic Acronym"
   },
   "ROC": {
     "full_name": "Receiver Operating Characteristic",
     "purpose": "An established academic research methodology standard representing Receiver Operating Characteristic, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Dien tich duoi duong cong (AUC) $\\ge 0.80$ bieu thi kha nang phan loai tot; $\\ge 0.90$ la xuat sac; $0.50$ tuong duong doan mo ngau nhien.",
+    "benchmark": "Dien tich duoi duong cong (AUC) ≥ 0.80 bieu thi kha nang phan loai tot; ≥ 0.90 la xuat sac; 0.50 tuong duong doan mo ngau nhien.",
     "domain": "Academic Acronym"
   },
   "AUC": {
@@ -1819,13 +1819,13 @@ export const MONOLINGUAL_ACRONYMS_EN: Record<string, {
   "GARCH": {
     "full_name": "Generalized Autoregressive Conditional Heteroskedasticity",
     "purpose": "An established academic research methodology standard representing Generalized Autoregressive Conditional Heteroskedasticity, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Tong cac he so ARCH va GARCH ($\\alpha + \\beta$) phai small hon 1 de dam bao tinh dung cua variance co dieu kien.",
+    "benchmark": "Tong cac he so ARCH va GARCH (α + β) phai small hon 1 de dam bao tinh dung cua variance co dieu kien.",
     "domain": "Academic Acronym"
   },
   "CEM": {
     "full_name": "Coarsened Exact Matching",
     "purpose": "An established academic research methodology standard representing Coarsened Exact Matching, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Giam thieu chi so mat can bang da bien $\\mathcal{L}_1$ ($L_1$ statistic sau ghep cap phai small hon dang ke so voi truoc ghep cap).",
+    "benchmark": "Giam thieu chi so mat can bang da bien L₁ (L₁ statistic sau ghep cap phai small hon dang ke so voi truoc ghep cap).",
     "domain": "Academic Acronym"
   },
   "IPW": {
@@ -1843,19 +1843,19 @@ export const MONOLINGUAL_ACRONYMS_EN: Record<string, {
   "CLF": {
     "full_name": "Common Latent Factor",
     "purpose": "An established academic research methodology standard representing Common Latent Factor, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "So sanh cac he so tai chuan hoa (standardized factor loadings) truoc va sau khi co CLF: neu do lech $\\Delta \\lambda < 0.20$, ket luan CMV khong lam thay doi ban chat thang do.",
+    "benchmark": "So sanh cac he so tai chuan hoa (standardized factor loadings) truoc va sau khi co CLF: neu do lech Δ λ < 0.20, ket luan CMV khong lam thay doi ban chat thang do.",
     "domain": "Academic Acronym"
   },
   "DIF": {
     "full_name": "Differential Item Functioning",
     "purpose": "An established academic research methodology standard representing Differential Item Functioning, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Kiem dinh Mantel-Haenszel hoac mo hinh hoi quy Logistic IRT co $p < .05$ va do lech kich thuoc hieu ung large (ETS delta classification: Class C bieu thi DIF severe).",
+    "benchmark": "Kiem dinh Mantel-Haenszel hoac mo hinh hoi quy Logistic IRT co p < .05 va do lech kich thuoc hieu ung large (ETS delta classification: Class C bieu thi DIF severe).",
     "domain": "Academic Acronym"
   },
   "PAR": {
     "full_name": "Participatory Action Research",
     "purpose": "An established academic research methodology standard representing Participatory Action Research, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Chu trinh xoan oc lap lap 4 pha: Lap ke hoach $\\rightarrow$ Hanh dong can thiep $\\rightarrow$ Quan sat $\\rightarrow$ Phan tu danh gia (Lewin / Kemmis & McTaggart).",
+    "benchmark": "Chu trinh xoan oc lap lap 4 pha: Lap ke hoach → Hanh dong can thiep → Quan sat → Phan tu danh gia (Lewin / Kemmis & McTaggart).",
     "domain": "Academic Acronym"
   },
   "MMAT": {
@@ -1873,7 +1873,7 @@ export const MONOLINGUAL_ACRONYMS_EN: Record<string, {
   "NOS": {
     "full_name": "Newcastle-Ottawa Scale",
     "purpose": "An established academic research methodology standard representing Newcastle-Ottawa Scale, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "He thong xep hang sao (toi da 9 sao) qua 3 nhom tieu chi: Lua chon nhom nghien cuu (4 sao), Tinh so sanh duoc (2 sao), va Do luong ket qua/phoi nhiem (3 sao). Nghien cuu $\\ge 7$ sao duoc xep loai chat luong high.",
+    "benchmark": "He thong xep hang sao (toi da 9 sao) qua 3 nhom tieu chi: Lua chon nhom nghien cuu (4 sao), Tinh so sanh duoc (2 sao), va Do luong ket qua/phoi nhiem (3 sao). Nghien cuu ≥ 7 sao duoc xep loai chat luong high.",
     "domain": "Academic Acronym"
   },
   "JIF": {
@@ -1897,31 +1897,31 @@ export const MONOLINGUAL_ACRONYMS_EN: Record<string, {
   "GFI": {
     "full_name": "Goodness of Fit Index",
     "purpose": "An established academic research methodology standard representing Goodness of Fit Index, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Gia tri GFI $\\ge 0.90$ (hoac khat khe $\\ge 0.95$) bieu thi mo hinh phu hop tot voi du lieu thuc te.",
+    "benchmark": "Gia tri GFI ≥ 0.90 (hoac khat khe ≥ 0.95) bieu thi mo hinh phu hop tot voi du lieu thuc te.",
     "domain": "Academic Acronym"
   },
   "AGFI": {
     "full_name": "Adjusted Goodness of Fit Index",
     "purpose": "An established academic research methodology standard representing Adjusted Goodness of Fit Index, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Gia tri AGFI $\\ge 0.85$ hoac $\\ge 0.90$ bieu thi mo hinh dat chuan phu hop.",
+    "benchmark": "Gia tri AGFI ≥ 0.85 hoac ≥ 0.90 bieu thi mo hinh dat chuan phu hop.",
     "domain": "Academic Acronym"
   },
   "NFI": {
     "full_name": "Normed Fit Index",
     "purpose": "An established academic research methodology standard representing Normed Fit Index, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Gia tri NFI $\\ge 0.90$ hoac $\\ge 0.95$ bieu thi mo hinh phu hop tot; nhuoc diem la bi danh gia thap khi co mau small.",
+    "benchmark": "Gia tri NFI ≥ 0.90 hoac ≥ 0.95 bieu thi mo hinh phu hop tot; nhuoc diem la bi danh gia thap khi co mau small.",
     "domain": "Academic Acronym"
   },
   "NNFI": {
     "full_name": "Non-Normed Fit Index (Tucker-Lewis Index - TLI)",
     "purpose": "An established academic research methodology standard representing Non-Normed Fit Index (Tucker-Lewis Index - TLI), widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Gia tri TLI/NNFI $\\ge 0.90$ la acceptable; $\\ge 0.95$ la xuat sac.",
+    "benchmark": "Gia tri TLI/NNFI ≥ 0.90 la acceptable; ≥ 0.95 la xuat sac.",
     "domain": "Academic Acronym"
   },
   "IFI": {
     "full_name": "Incremental Fit Index",
     "purpose": "An established academic research methodology standard representing Incremental Fit Index, widely referenced in quantitative, psychometric, or econometric inquiry.",
-    "benchmark": "Gia tri IFI $\\ge 0.90$ bieu thi mo hinh cau truc phu hop tot voi du lieu khao sat.",
+    "benchmark": "Gia tri IFI ≥ 0.90 bieu thi mo hinh cau truc phu hop tot voi du lieu khao sat.",
     "domain": "Academic Acronym"
   },
   "RMR": {
