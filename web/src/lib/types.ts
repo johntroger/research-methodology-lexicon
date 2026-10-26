@@ -138,3 +138,67 @@ export interface NewTermProposalInput {
   status?: "pending" | "approved" | "rejected";
   createdAt?: string;
 }
+
+/**
+ * Phân loại Chủ đề Thảo luận Học thuật (Talk Page Category)
+ */
+export type DiscussionCategory = 
+  | "methodology_debate" 
+  | "benchmark_dispute" 
+  | "translation_nuance" 
+  | "general";
+
+/**
+ * Bình luận Phản hồi trong Luồng Thảo luận (Discussion Reply)
+ */
+export interface DiscussionReply {
+  id: string;
+  authorUid?: string;
+  authorName: string;
+  authorInstitution?: string;
+  content: string;
+  createdAt: string;
+}
+
+/**
+ * Mục Thảo luận Học thuật (Talk Page Thread)
+ */
+export interface DiscussionItem {
+  id: string;
+  termId: string;
+  termName: string;
+  authorUid?: string;
+  authorName: string;
+  authorEmail?: string;
+  authorInstitution?: string;
+  category: DiscussionCategory;
+  title: string;
+  content: string;
+  doiRef?: string;
+  upvotes: number;
+  upvotedBy?: string[];
+  replies: DiscussionReply[];
+  createdAt: string;
+}
+
+/**
+ * Bản ghi Lịch sử Phiên bản Mục từ (Revision History Entry)
+ */
+export interface TermHistoryEntry {
+  id: string;
+  version: string;
+  termId: string;
+  termName?: string;
+  authorName: string;
+  authorInstitution?: string;
+  editSummary: string;
+  sectionModified: string;
+  supportingSources?: string;
+  timestamp: string;
+  isInitialVersion?: boolean;
+  diffData?: {
+    original: string;
+    proposed: string;
+    sectionName: string;
+  };
+}

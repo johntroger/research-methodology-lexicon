@@ -32,5 +32,10 @@ service cloud.firestore {
       allow create: if true;
       allow read, update, delete: if true;
     }
+
+    // 6. Cho phép đọc và thảo luận học thuật trên từng mục từ (Talk Page)
+    match /discussions/{document=**} {
+      allow read, write: if true;
+    }
   }
 }

@@ -14,10 +14,18 @@ import {
   getDocs,
   query,
   orderBy,
+  where,
   updateDoc,
   serverTimestamp 
 } from "firebase/firestore";
-import { TermRevisionInput, NewTermProposalInput } from "./types";
+import { 
+  TermRevisionInput, 
+  NewTermProposalInput,
+  DiscussionItem,
+  DiscussionReply,
+  DiscussionCategory,
+  TermHistoryEntry
+} from "./types";
 
 export interface TermRevisionItem extends TermRevisionInput {
   id: string;
@@ -429,4 +437,329 @@ export async function reviewNewTermProposal(
     }
   }
   return true;
+}
+
+// =========================================================================
+// GIAI ĐOẠN 3: THẢO LUẬN HỌC THUẬT (TALK PAGE) & LỊCH SỬ PHIÊN BẢN (HISTORY)
+// =========================================================================
+
+const LOCAL_DISCUSSIONS_KEY = "rv_local_discussions";
+
+/**
+ * Đọc danh sách các chủ đề thảo luận học thuật cho một mục từ cụ thể
+ */
+export async function fetchTermDiscussions(termId: string): Promise<DiscussionItem[]> {
+  const items: DiscussionItem[] = [];
+
+  if (isFirebaseConfigured && db) {
+    try {
+      const q = query(
+        collection(db, "discussions"),
+        where("termId", "==", termId),
+        orderBy("createdAt", "desc")
+      );
+      const snapshot = await getDocs(q);
+      snapshot.forEach(docSnap => {
+        const d = docSnap.data();
+        items.push({
+          id: docSnap.id,
+          termId: d.termId,
+          termName: d.termName || "",
+          authorUid: d.authorUid,
+          authorName: d.authorName || "Anonymous Scholar",
+          authorEmail: d.authorEmail,
+          authorInstitution: d.authorInstitution,
+          category: d.category || "general",
+          title: d.title || "",
+          content: d.content || "",
+          doiRef: d.doiRef,
+          upvotes: d.upvotes || 0,
+          upvotedBy: d.upvotedBy || [],
+          replies: d.replies || [],
+          createdAt: d.createdAt?.toDate ? d.createdAt.toDate().toISOString() : (d.createdAt || new Date().toISOString())
+        });
+      });
+      if (items.length > 0) return items;
+    } catch (err) {
+      console.warn("[Discussion] Firestore query error, falling back to local storage:", err);
+    }
+  }
+
+  // Fallback: LocalStorage
+  if (typeof window !== "undefined") {
+    try {
+      const stored = localStorage.getItem(LOCAL_DISCUSSIONS_KEY);
+      if (stored) {
+        const parsed: DiscussionItem[] = JSON.parse(stored);
+        const filtered = parsed.filter(d => d.termId === termId);
+        if (filtered.length > 0) return filtered;
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
+  return [];
+}
+
+/**
+ * Đăng chủ đề thảo luận học thuật mới trên mục từ
+ */
+export async function createTermDiscussion(
+  data: Omit<DiscussionItem, "id" | "createdAt" | "upvotes" | "replies" | "upvotedBy">
+): Promise<DiscussionItem> {
+  const newDiscussion: DiscussionItem = {
+    ...data,
+    id: `disc_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
+    upvotes: 0,
+    upvotedBy: [],
+    replies: [],
+    createdAt: new Date().toISOString()
+  };
+
+  if (isFirebaseConfigured && db) {
+    try {
+      const docRef = await addDoc(collection(db, "discussions"), {
+        ...newDiscussion,
+        createdAt: serverTimestamp()
+      });
+      newDiscussion.id = docRef.id;
+    } catch (err) {
+      console.warn("[Discussion] Firestore write error, saving locally:", err);
+    }
+  }
+
+  // Đồng bộ vào localStorage
+  if (typeof window !== "undefined") {
+    try {
+      const stored = localStorage.getItem(LOCAL_DISCUSSIONS_KEY);
+      const list: DiscussionItem[] = stored ? JSON.parse(stored) : [];
+      list.unshift(newDiscussion);
+      localStorage.setItem(LOCAL_DISCUSSIONS_KEY, JSON.stringify(list));
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
+  return newDiscussion;
+}
+
+/**
+ * Gửi phản hồi (Threaded Reply) vào một chủ đề thảo luận
+ */
+export async function addDiscussionReply(
+  discussionId: string,
+  replyData: Omit<DiscussionReply, "id" | "createdAt">
+): Promise<DiscussionReply> {
+  const reply: DiscussionReply = {
+    ...replyData,
+    id: `reply_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
+    createdAt: new Date().toISOString()
+  };
+
+  if (isFirebaseConfigured && db && !discussionId.startsWith("disc_")) {
+    try {
+      const docRef = doc(db, "discussions", discussionId);
+      const snap = await getDoc(docRef);
+      if (snap.exists()) {
+        const curReplies: DiscussionReply[] = snap.data().replies || [];
+        curReplies.push(reply);
+        await updateDoc(docRef, { replies: curReplies });
+      }
+    } catch (err) {
+      console.warn("[Discussion] Firestore reply error:", err);
+    }
+  }
+
+  // Cập nhật localStorage
+  if (typeof window !== "undefined") {
+    try {
+      const stored = localStorage.getItem(LOCAL_DISCUSSIONS_KEY);
+      if (stored) {
+        const list: DiscussionItem[] = JSON.parse(stored);
+        const item = list.find(d => d.id === discussionId);
+        if (item) {
+          if (!item.replies) item.replies = [];
+          item.replies.push(reply);
+          localStorage.setItem(LOCAL_DISCUSSIONS_KEY, JSON.stringify(list));
+        }
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
+  return reply;
+}
+
+/**
+ * Thả Upvote / Bỏ Upvote cho chủ đề thảo luận
+ */
+export async function toggleDiscussionUpvote(
+  discussionId: string,
+  userIdentifier: string
+): Promise<{ upvotes: number; isUpvoted: boolean }> {
+  let finalUpvotes = 0;
+  let isUpvoted = false;
+
+  if (typeof window !== "undefined") {
+    try {
+      const stored = localStorage.getItem(LOCAL_DISCUSSIONS_KEY);
+      if (stored) {
+        const list: DiscussionItem[] = JSON.parse(stored);
+        const item = list.find(d => d.id === discussionId);
+        if (item) {
+          if (!item.upvotedBy) item.upvotedBy = [];
+          const idx = item.upvotedBy.indexOf(userIdentifier);
+          if (idx >= 0) {
+            item.upvotedBy.splice(idx, 1);
+            item.upvotes = Math.max(0, (item.upvotes || 1) - 1);
+            isUpvoted = false;
+          } else {
+            item.upvotedBy.push(userIdentifier);
+            item.upvotes = (item.upvotes || 0) + 1;
+            isUpvoted = true;
+          }
+          finalUpvotes = item.upvotes;
+          localStorage.setItem(LOCAL_DISCUSSIONS_KEY, JSON.stringify(list));
+        }
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
+  if (isFirebaseConfigured && db && !discussionId.startsWith("disc_")) {
+    try {
+      const docRef = doc(db, "discussions", discussionId);
+      const snap = await getDoc(docRef);
+      if (snap.exists()) {
+        const d = snap.data();
+        let upvotedBy: string[] = d.upvotedBy || [];
+        let count = d.upvotes || 0;
+        const exists = upvotedBy.includes(userIdentifier);
+        if (exists) {
+          upvotedBy = upvotedBy.filter(u => u !== userIdentifier);
+          count = Math.max(0, count - 1);
+          isUpvoted = false;
+        } else {
+          upvotedBy.push(userIdentifier);
+          count += 1;
+          isUpvoted = true;
+        }
+        finalUpvotes = count;
+        await updateDoc(docRef, { upvotes: count, upvotedBy });
+      }
+    } catch (err) {
+      console.warn("[Discussion] Firestore upvote sync error:", err);
+    }
+  }
+
+  return { upvotes: finalUpvotes, isUpvoted };
+}
+
+/**
+ * Đọc Lịch sử Phiên bản Mục từ (Phiên bản Gốc + Các bản sửa đổi cộng đồng đã được Duyệt)
+ */
+export async function fetchTermRevisionHistory(
+  termId: string,
+  termName: string,
+  initialCitation?: string
+): Promise<TermHistoryEntry[]> {
+  const history: TermHistoryEntry[] = [];
+
+  // 1. Tìm các bản sửa đổi đã được duyệt (Approved Revisions) từ Firestore hoặc LocalStorage
+  const approvedRevisions: TermRevisionItem[] = [];
+
+  if (isFirebaseConfigured && db) {
+    try {
+      const q = query(
+        collection(db, "pending_revisions"),
+        where("termId", "==", termId),
+        where("status", "==", "approved")
+      );
+      const snap = await getDocs(q);
+      snap.forEach(d => {
+        approvedRevisions.push({ id: d.id, ...d.data() } as TermRevisionItem);
+      });
+    } catch (err) {
+      console.warn("[History] Firestore approved revisions query error:", err);
+    }
+  }
+
+  // Fallback LocalStorage cho approved revisions
+  if (typeof window !== "undefined") {
+    try {
+      const localRevs: TermRevisionItem[] = JSON.parse(localStorage.getItem("rv_local_revisions") || "[]");
+      const localApproved = localRevs.filter(r => r.termId === termId && r.status === "approved");
+      localApproved.forEach(r => {
+        if (!approvedRevisions.some(existing => existing.id === r.id)) {
+          approvedRevisions.push(r);
+        }
+      });
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
+  // Chuyển đổi các bản sửa đổi đã duyệt thành History Entries
+  approvedRevisions.forEach((rev, index) => {
+    let diffOriginal = "";
+    let diffProposed = "";
+    let sectionName: string = rev.section;
+
+    if (rev.section === "definition") {
+      diffOriginal = rev.originalContent?.coreDefinition || "";
+      diffProposed = rev.proposedContent?.coreDefinition || "";
+      sectionName = "Định nghĩa Cốt lõi";
+    } else if (rev.section === "benchmarks") {
+      diffOriginal = rev.originalContent?.benchmarks || "";
+      diffProposed = rev.proposedContent?.benchmarks || "";
+      sectionName = "Ngưỡng Số liệu";
+    } else if (rev.section === "pitfalls") {
+      diffOriginal = rev.originalContent?.pitfalls || "";
+      diffProposed = rev.proposedContent?.pitfalls || "";
+      sectionName = "Cảnh báo Lỗi sai";
+    } else {
+      diffOriginal = JSON.stringify(rev.originalContent, null, 2);
+      diffProposed = JSON.stringify(rev.proposedContent, null, 2);
+      sectionName = "Toàn bộ mục từ";
+    }
+
+    history.push({
+      id: rev.id,
+      version: `v1.${approvedRevisions.length - index}`,
+      termId: rev.termId,
+      termName: rev.termName,
+      authorName: rev.authorName,
+      authorInstitution: rev.authorInstitution || "Cộng tác viên Học thuật",
+      editSummary: rev.editSummary,
+      sectionModified: sectionName,
+      supportingSources: rev.supportingSources,
+      timestamp: rev.createdAt || new Date().toISOString(),
+      isInitialVersion: false,
+      diffData: {
+        original: diffOriginal,
+        proposed: diffProposed,
+        sectionName
+      }
+    });
+  });
+
+  // 2. Luôn có Phiên bản Khởi tạo (v1.0 - Foundation Editorial Release)
+  history.push({
+    id: `initial_${termId}`,
+    version: "v1.0",
+    termId,
+    termName,
+    authorName: "Hội đồng Biên tập Từ điển Phương pháp Nghiên cứu",
+    authorInstitution: "Research Methodology Lexicon Editorial Board",
+    editSummary: "Ấn bản khởi tạo chuẩn hóa học thuật (Foundation Publication)",
+    sectionModified: "Toàn bộ cấu trúc mục từ",
+    supportingSources: initialCitation || "Scopus / Web of Science Seminal Literature",
+    timestamp: "2026-01-01T00:00:00Z",
+    isInitialVersion: true
+  });
+
+  return history;
 }

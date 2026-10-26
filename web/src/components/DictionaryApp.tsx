@@ -38,7 +38,9 @@ import {
   GitPullRequest,
   PlusCircle,
   Edit3,
-  ShieldCheck
+  ShieldCheck,
+  Clock,
+  MessageSquare
 } from "lucide-react";
 import { MethodologyTerm, AcademicAcronym, SearchItem } from "@/lib/types";
 import { getSearchEngine, SearchOutputItem } from "@/lib/search-engine";
@@ -47,6 +49,8 @@ import CitationModal from "./CitationModal";
 import { FeedbackModal } from "./FeedbackModal";
 import EditTermModal from "./EditTermModal";
 import NewTermModal from "./NewTermModal";
+import TermHistoryView from "./TermHistoryView";
+import TermDiscussionView from "./TermDiscussionView";
 import {
   UI_I18N,
   getTermDefinition,
@@ -92,10 +96,11 @@ export default function DictionaryApp({
   const [isCitationModalOpen, setIsCitationModalOpen] = useState(false);
   const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
 
-  // Wiki Community Contribution State (Phase 1)
+  // Wiki Community Contribution State (Phase 1 & Phase 3)
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [editSection, setEditSection] = useState<"all" | "definition" | "benchmarks" | "pitfalls" | "debates" | "citations">("all");
   const [isNewTermModalOpen, setIsNewTermModalOpen] = useState(false);
+  const [termSubTab, setTermSubTab] = useState<"article" | "history" | "talk">("article");
 
   const handleOpenSectionEdit = (section: "all" | "definition" | "benchmarks" | "pitfalls" | "debates" | "citations") => {
     setEditSection(section);
@@ -233,6 +238,7 @@ export default function DictionaryApp({
       window.scrollTo({ top: 0, behavior: "instant" });
     }
     setReadingProgress(0);
+    setTermSubTab("article");
   }, [selectedId]);
 
   // Kết quả tìm kiếm
@@ -985,6 +991,48 @@ export default function DictionaryApp({
                   </div>
                 </header>
 
+                {/* THANH ĐIỀU HƯỚNG SUB-TABS: MỤC TỪ (ARTICLE) | LỊCH SỬ (HISTORY) | THẢO LUẬN (TALK PAGE) */}
+                <nav className="no-print flex items-center gap-1.5 border-b border-slate-200 dark:border-slate-800 pb-2 text-xs">
+                  <button
+                    onClick={() => setTermSubTab("article")}
+                    className={`px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-1.5 ${
+                      termSubTab === "article"
+                        ? "bg-blue-600 text-white shadow-xs"
+                        : "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800"
+                    }`}
+                  >
+                    <BookOpen size={13} />
+                    <span>{languageMode === "en" ? "Article" : "Mục từ"}</span>
+                  </button>
+
+                  <button
+                    onClick={() => setTermSubTab("history")}
+                    className={`px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-1.5 ${
+                      termSubTab === "history"
+                        ? "bg-blue-600 text-white shadow-xs"
+                        : "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800"
+                    }`}
+                  >
+                    <Clock size={13} />
+                    <span>{languageMode === "en" ? "History & Provenance" : "Lịch sử Phiên bản"}</span>
+                  </button>
+
+                  <button
+                    onClick={() => setTermSubTab("talk")}
+                    className={`px-3 py-1.5 rounded-lg font-semibold transition flex items-center gap-1.5 ${
+                      termSubTab === "talk"
+                        ? "bg-blue-600 text-white shadow-xs"
+                        : "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800"
+                    }`}
+                  >
+                    <MessageSquare size={13} />
+                    <span>{languageMode === "en" ? "Talk & Debates" : "Thảo luận Học thuật"}</span>
+                  </button>
+                </nav>
+
+                {termSubTab === "article" && (
+                  <div className="space-y-6">
+
                 {/* 2. KHỐI ĐỊNH NGHĨA CỐT LÕI */}
                 <section className="p-4 rounded-xl border-l-4 border-blue-600 bg-blue-50/40 dark:bg-blue-950/20 border border-blue-100 dark:border-blue-900/40 space-y-2">
                   <div className="flex items-center justify-between text-xs font-bold text-blue-900 dark:text-blue-300 uppercase tracking-wider">
@@ -1194,8 +1242,34 @@ export default function DictionaryApp({
                     )}
                   </div>
                 </footer>
-              </article>
+              </div>
             )}
+
+            {/* TAB LỊCH SỬ PHIÊN BẢN (REVISION HISTORY & VISUAL DIFF) */}
+            {termSubTab === "history" && (
+              <div className="pt-2">
+                <TermHistoryView
+                  termId={activeTerm.id}
+                  termName={activeTerm.term}
+                  initialCitation={activeTerm.apa_reference || activeTerm.seminal_citation}
+                  languageMode={languageMode}
+                />
+              </div>
+            )}
+
+            {/* TAB THẢO LUẬN HỌC THUẬT (TALK PAGE / DISCUSSION THREADS) */}
+            {termSubTab === "talk" && (
+              <div className="pt-2">
+                <TermDiscussionView
+                  termId={activeTerm.id}
+                  termName={activeTerm.term}
+                  currentUser={currentUser}
+                  languageMode={languageMode}
+                />
+              </div>
+            )}
+          </article>
+        )}
 
             {/* TH2: HIỂN THỊ MỤC TỪ VIẾT TẮT (ACADEMIC ACRONYM) */}
             {activeAcronym && (
