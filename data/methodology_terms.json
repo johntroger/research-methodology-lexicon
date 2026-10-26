@@ -4951,15 +4951,19 @@
     },
     {
       "id": "htmt-085-criterion",
-      "term": "HTMT 0.85 criterion",
-      "vietnamese": "Ngưỡng khắt khe 0.85 cho các khái niệm khác biệt.",
-      "vietnamese_variants": [],
+      "term": "HTMT 0.85 Criterion",
+      "vietnamese": "Tiêu chuẩn tỷ số tương quan dị biệt - đơn nhất ngưỡng 0.85",
+      "vietnamese_variants": [
+        "Ngưỡng HTMT 0.85",
+        "HTMT.85 Threshold",
+        "Henseler HTMT Criterion"
+      ],
       "domain_tags": [
         "PLS-SEM",
         "Discriminant Validity"
       ],
-      "core_definition": "Ngưỡng khắt khe 0.85 cho các khái niệm khác biệt.",
-      "seminal_citation": "Henseler et al. (2015)",
+      "core_definition": "Tiêu chuẩn HTMT 0.85 (Henseler, Ringle, & Sarstedt, 2015) là ngưỡng khắt khe và thận trọng nhất để đánh giá giá trị phân biệt (discriminant validity) giữa hai khái niệm tiềm ẩn trong mô hình SEM (đặc biệt là PLS-SEM). Tiêu chuẩn này quy định rằng tỷ số giữa tương quan trung bình giữa các chỉ báo của hai khái niệm khác nhau (heterotrait) và căn bậc hai của tích tương quan trung bình nội bộ chỉ báo của từng khái niệm (monotrait) không được vượt quá 0.85.",
+      "seminal_citation": "Henseler, Ringle, & Sarstedt (2015)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #1218; LaTeX thô",
@@ -4967,19 +4971,30 @@
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Công thức HTMT: HTMT_ij = [ (1/(K_i*K_j)) * sum sum r_ih,jg ] / sqrt( [ (2/(K_i*(K_i-1))) * sum sum r_ih,ih' ] * [ (2/(K_j*(K_j-1))) * sum sum r_jg,jg' ] ). 2. So sánh từng cặp khái niệm i và j: HTMT_ij < 0.85. 3. Khắc phục triệt để điểm mù của tiêu chuẩn Fornell-Larcker và Cross-loadings truyền thống vốn không thể phát hiện tình trạng thiếu giá trị phân biệt khi các hệ số tải chỉ báo dao động từ 0.60 đến 0.80.",
+      "benchmarks": "Ngưỡng 0.85 là ngưỡng chuẩn mực vàng (Gold standard threshold) được áp dụng khi hai khái niệm trong mô hình có sự khác biệt rõ rệt về mặt định nghĩa lý thuyết (distinct concepts như Lòng trung thành và Sự hài lòng). Nếu HTMT < 0.85: Khẳng định chắc chắn giá trị phân biệt được thiết lập hoàn hảo.",
+      "pitfalls": "Bẫy phản biện: Nếu giá trị HTMT nằm giữa 0.85 và 0.90, tác giả không thể tự động tuyên bố đạt chuẩn nếu hai khái niệm đó được lý thuyết định nghĩa là tách biệt; khi đó phản biện Q1 sẽ yêu cầu gộp hai biến hoặc thực hiện kiểm định suy diễn bootstrap HTMT (HTMT inference test).",
+      "apa_reference": "Henseler, J., Ringle, C. M., & Sarstedt, M. (2015). A new criterion for assessing discriminant validity in variance-based structural equation modeling. Journal of the Academy of Marketing Science, 43(1), 115–135. https://doi.org/10.1007/s11747-014-0403-8",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "htmt-090-criterion",
-      "term": "HTMT 0.90 criterion",
-      "vietnamese": "Ngưỡng 0.90 cho các khái niệm tương đồng.",
-      "vietnamese_variants": [],
+      "term": "HTMT 0.90 Criterion",
+      "vietnamese": "Tiêu chuẩn tỷ số tương quan dị biệt - đơn nhất ngưỡng 0.90",
+      "vietnamese_variants": [
+        "Ngưỡng HTMT 0.90",
+        "HTMT.90 Threshold",
+        "Liberal HTMT Criterion"
+      ],
       "domain_tags": [
         "PLS-SEM",
         "Discriminant Validity"
       ],
-      "core_definition": "Ngưỡng 0.90 cho các khái niệm tương đồng.",
-      "seminal_citation": "Henseler et al. (2015)",
+      "core_definition": "Tiêu chuẩn HTMT 0.90 (Henseler, Ringle, & Sarstedt, 2015) là ngưỡng nới lỏng (liberal threshold) của chỉ số HTMT, được chấp nhận áp dụng trong các trường hợp mà hai khái niệm tiềm ẩn có cấu trúc khái niệm tương đồng rất cao hoặc là các chiều con (sub-dimensions) của cùng một cấu trúc bậc cao (higher-order construct).",
+      "seminal_citation": "Henseler, Ringle, & Sarstedt (2015)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #1219; LaTeX thô",
@@ -4987,19 +5002,29 @@
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Ước lượng ma trận HTMT cho tất cả các cặp biến tiềm ẩn. 2. Đối với các cặp khái niệm có sự chồng lấn khái niệm lý thuyết chặt chẽ (như Nhận thức tính hữu ích và Nhận thức tính dễ sử dụng trong TAM, hoặc Hành vi công dân tổ chức hướng tới cá nhân OCBI và hướng tới tổ chức OCBO), ngưỡng so sánh được nới lên 0.90. 3. Nếu HTMT_ij < 0.90, giá trị phân biệt vẫn được xem là có thể chấp nhận được.",
+      "benchmarks": "Nếu HTMT_ij < 0.90: Chấp nhận giá trị phân biệt đối với các khái niệm tương đồng. Nếu HTMT_ij >= 0.90: Vi phạm nghiêm trọng giá trị phân biệt; hai khái niệm thực chất đang đo lường cùng một thuộc tính tâm lý duy nhất, làm tăng nguy cơ đa cộng tuyến nặng nề trong mô hình cấu trúc.",
+      "pitfalls": "Bẫy phản biện: Lạm dụng ngưỡng 0.90 cho mọi cặp biến mà không có lập luận lý thuyết bảo vệ; các tạp chí Q1 hàng đầu (JM, JAMS, MISQ) thường chất vấn nghiêm khắc nếu tác giả viện dẫn ngưỡng 0.90 cho các biến có định nghĩa lý thuyết hoàn toàn độc lập.",
+      "apa_reference": "Henseler, J., Ringle, C. M., & Sarstedt, M. (2015). A new criterion for assessing discriminant validity in variance-based structural equation modeling. Journal of the Academy of Marketing Science, 43(1), 115–135. https://doi.org/10.1007/s11747-014-0403-8",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "htmt-inference-test",
-      "term": "HTMT inference test",
-      "vietnamese": "Kiểm định khoảng tin cậy bootstrap của HTMT không chứa 1.",
-      "vietnamese_variants": [],
+      "term": "HTMT Inference Test (Bootstrap Confidence Interval)",
+      "vietnamese": "Kiểm định suy diễn thống kê HTMT qua khoảng tin cậy Bootstrap",
+      "vietnamese_variants": [
+        "Kiểm định suy diễn HTMT",
+        "HTMT Bootstrap Confidence Interval Test"
+      ],
       "domain_tags": [
         "PLS-SEM",
         "Discriminant Validity"
       ],
-      "core_definition": "Kiểm định khoảng tin cậy bootstrap của HTMT không chứa 1.",
-      "seminal_citation": "Henseler et al. (2015)",
+      "core_definition": "Kiểm định suy diễn HTMT (Henseler, Ringle, & Sarstedt, 2015) là phép kiểm định giả thuyết thống kê nghiêm ngặt dựa trên kỹ thuật tái chọn mẫu phi tham số Bootstrap, kiểm tra xem liệu tỷ số HTMT trong quần thể có khác biệt có ý nghĩa thống kê so với giá trị 1.0 hay không.",
+      "seminal_citation": "Henseler, Ringle, & Sarstedt (2015); Franke & Sarstedt (2019)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "khuyến nghị hiện nay: cận trên CI một phía < 0.85/0.90 (Franke & Sarstedt 2019) | Trùng #1220; LaTeX thô",
@@ -5007,7 +5032,14 @@
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Thiết lập giả thuyết: H0: HTMT_quần_thể = 1.0 (hai khái niệm hoàn toàn không có giá trị phân biệt). H1: HTMT_quần_thể < 1.0. 2. Chạy quy trình tái chọn mẫu Bootstrap (tối thiểu 5.000 hoặc 10.000 mẫu lặp). 3. Xây dựng khoảng tin cậy 95% (hoặc 90% một phía) hiệu chỉnh độ lệch và tăng tốc (Bias-Corrected and Accelerated - BCa bootstrap confidence interval). 4. Kiểm tra xem khoảng tin cậy BCa 95% có chứa giá trị 1.0 hay không.",
+      "benchmarks": "Chuẩn mực đánh giá: Giá trị phân biệt được khẳng định khi chặn trên của khoảng tin cậy BCa 95% (hoặc 90% một phía) nhỏ hơn 1.0 (ví dụ [0.72, 0.94] không chứa 1.0). Tiêu chuẩn khắt khe hơn (Franke & Sarstedt, 2019) khuyến nghị chặn trên của khoảng tin cậy không được vượt quá ngưỡng 0.85 hoặc 0.90.",
+      "pitfalls": "Bẫy phản biện: Báo cáo khoảng tin cậy phân vị chuẩn (percentile confidence interval) thay vì BCa Bootstrap. Khi dữ liệu mẫu bị lệch hoặc có cỡ mẫu vừa phải, percentile bootstrap có độ phủ sai lệch; bắt buộc phải sử dụng BCa bootstrap confidence interval.",
+      "apa_reference": "Franke, G., & Sarstedt, M. (2019). Heuristics versus statistics in discriminant validity testing: A comparison of four procedures. Internet Research, 29(3), 430–447. https://doi.org/10.1108/IntR-12-2017-0515",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "1-1-1-multilevel-mediation-model",
@@ -5038,16 +5070,20 @@
     },
     {
       "id": "1pl",
-      "term": "1PL (One-Parameter Logistic Model / Rasch Model)",
-      "vietnamese": "Mô hình Logistic Một Tham số (Mô hình Rasch trong Lý thuyết Ứng đáp Câu hỏi - IRT)",
-      "vietnamese_variants": [],
+      "term": "One-Parameter Logistic Model (1PL / Rasch Model)",
+      "vietnamese": "Mô hình Logistic một tham số (Mô hình Rasch trong IRT)",
+      "vietnamese_variants": [
+        "Mô hình 1PL",
+        "Mô hình Rasch",
+        "Item Response Theory 1PL"
+      ],
       "domain_tags": [
         "Lý thuyết Ứng đáp Câu hỏi (IRT)",
         "Tâm trắc học",
         "Đo lường & Thang đo"
       ],
-      "core_definition": "Mô hình cơ bản và chặt chẽ nhất trong Lý thuyết Ứng đáp Câu hỏi (Item Response Theory - IRT), do nhà toán học Đan Mạch Georg Rasch phát triển năm 1960. Mô hình giả định rằng xác suất một cá thể trả lời đúng một câu hỏi kiểm tra chỉ phụ thuộc vào hai yếu tố: năng lực tiềm ẩn của cá thể (ability - theta) và độ khó của câu hỏi (item difficulty - b). Tất cả các câu hỏi trong thang đo được giả định có độ phân biệt (item discrimination - a) bằng nhau và cố định (thường chuẩn hóa a = 1), đồng thời không có yếu tố đoán mò ngẫu nhiên (c = 0).",
-      "seminal_citation": "Rasch, G. (1960). Probabilistic Models for Some Intelligence and Attainment Tests. Copenhagen: Danmarks Paedagogiske Institut.",
+      "core_definition": "Mô hình Logistic một tham số (1PL / Rasch Model - Rasch, 1960) là nền tảng khởi nguồn của Lý thuyết Ứng đáp Câu hỏi (Item Response Theory - IRT). Mô hình biểu diễn xác suất một cá nhân trả lời đúng một câu hỏi kiểm tra (hoặc đồng thuận một mục hỏi thái độ) thuần túy như một hàm toán học phụ thuộc vào hiệu số giữa năng lực tiềm ẩn của cá nhân (theta) và độ khó của mục hỏi (b), giả định rằng tất cả các mục hỏi đều có độ phân biệt (discrimination parameter a) bằng nhau.",
+      "seminal_citation": "Rasch (1960); Wright & Masters (1982)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa định nghĩa toàn diện theo Rasch (1960) và DeVellis (2016); bổ sung cơ chế toán học và ngưỡng Infit/Outfit MNSQ.",
@@ -5055,7 +5091,13 @@
       "domain_tags_en": [
         "General Methodology"
       ],
-      "benchmarks": "Chỉ số Infit MNSQ và Outfit MNSQ nằm trong khoảng lý tưởng [0.70, 1.30] cho thấy câu hỏi phù hợp tốt với mô hình đo lường Rasch (Linacre, 2002); giá trị > 1.4 cảnh báo câu hỏi bị nhiễu hoặc đo lường chệch."
+      "benchmarks": "Chỉ số độ phù hợp Infit MNSQ và Outfit MNSQ lý tưởng nằm trong khoảng [0.5, 1.5] (chuẩn mực ngặt nghèo Linacre, 2002 yêu cầu [0.7, 1.3] cho thang đo trắc nghiệm học thuật). Giá trị MNSQ > 1.5 cho thấy mục hỏi có quá nhiều nhiễu ngẫu nhiên (underfit); MNSQ < 0.5 cho thấy mục hỏi dư thừa lặp lại (overfit).",
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Phương trình đường cong đặc trưng mục hỏi (Item Characteristic Curve - ICC): P(X_ni = 1 | theta_n, b_i) = exp(theta_n - b_i) / [1 + exp(theta_n - b_i)]. 2. Biến đổi Logit: ln[P / (1 - P)] = theta_n - b_i, biến đổi đo lường thứ bậc thành thang đo khoảng cách đều (interval scale) theo đơn vị logit. 3. Đánh giá độ phù hợp (Fit statistics): Tính toán chỉ số Infit MNSQ (nhạy cảm với các phản hồi bất thường gần mức năng lực) và Outfit MNSQ (nhạy cảm với các câu trả lời ngoại lai cực đoan).",
+      "pitfalls": "Bẫy phản biện: Ép dữ liệu vào mô hình Rasch 1PL khi các mục hỏi có độ phân biệt (discrimination) chênh lệch quá lớn giữa các câu hỏi. Khi giả định độ phân biệt đồng nhất bị vi phạm nghiêm trọng, việc tiếp tục áp dụng 1PL sẽ làm sai lệch ước lượng năng lực theta; khi đó bắt buộc phải chuyển sang mô hình 2PL (Birnbaum) hoặc 3PL (có tham số đoán mò guessing).",
+      "apa_reference": "Rasch, G. (1960). Probabilistic models for some intelligence and attainment tests. Danmarks Paedagogiske Institut. (Reprinted by University of Chicago Press, 1980).",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "2-1-1-multilevel-mediation-model",
@@ -5218,15 +5260,19 @@
     },
     {
       "id": "abductive-approach",
-      "term": "Abductive approach",
-      "vietnamese": "Tiếp cận suy luận loại suy (kết hợp quan sát thực tế và đối chiếu lý thuyết để sinh ra lý thuyết mới).",
-      "vietnamese_variants": [],
+      "term": "Abductive Research Approach",
+      "vietnamese": "Tiếp cận nghiên cứu loại suy",
+      "vietnamese_variants": [
+        "Phương pháp tiếp cận loại suy",
+        "Nghiên cứu Abductive",
+        "Lặp chuyển đối thoại lý thuyết - thực tế"
+      ],
       "domain_tags": [
         "Research Onion",
         "Strategy"
       ],
-      "core_definition": "Tiếp cận suy luận loại suy (kết hợp quan sát thực tế và đối chiếu lý thuyết để sinh ra lý thuyết mới).",
-      "seminal_citation": "Saunders et al. (2019); Saunders (2019)",
+      "core_definition": "Tiếp cận nghiên cứu loại suy (Abductive Approach - Peirce, 1903; Alvesson & Kärreman, 2007) là tiến trình suy luận khoa học động di chuyển liên tục qua lại giữa thế giới hiện tượng thực nghiệm và các khuôn khổ lý thuyết có sẵn. Khác với diễn dịch thuần túy (kiểm định giả thuyết từ trên xuống) và quy nạp thuần túy (sinh lý thuyết từ dữ liệu thô từ dưới lên), loại suy khởi nguồn từ việc quan sát thấy một sự kiện bất thường hoặc một 'bí ẩn thực nghiệm' (empirical surprise / anomaly) không thể giải thích bằng các lý thuyết hiện hữu, từ đó sáng tạo ra lời giải thích lý thuyết hợp lý nhất.",
+      "seminal_citation": "Peirce (1903); Dubois & Gadde (2002); Alvesson & Kärreman (2007)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "\"loại suy\" là analogy; abduction = \"suy luận giả định / suy luận giải thích tốt nhất\" | Lộ tên file nội bộ",
@@ -5234,61 +5280,101 @@
       "domain_tags_en": [
         "Research Onion",
         "Strategy"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Nhận diện sự kiện bất thường (Surprising fact C is observed). 2. Khảo sát các giả thuyết khả dĩ: Nếu giả thuyết H đúng, sự kiện C sẽ là điều hiển nhiên (If H were true, C would be a matter of course). 3. Đưa ra lập luận loại suy: Có lý do chính đáng để nghi ngờ rằng H là đúng (Hence, there is reason to suspect that H is true). 4. Tiến hành kiểm chứng và làm sâu sắc hóa H thông qua thu thập dữ liệu bổ sung có chủ đích.",
+      "benchmarks": "Được công nhận là phương pháp luận tạo lý thuyết đột phá nhất trong nghiên cứu tổ chức và quản trị chiến lược (Dubois & Gadde, 2002 - Systematic Combining). Tiêu chuẩn đánh giá: Tính hợp lý lý thuyết (plausibility), tính khai phóng nhận thức (insightfulness), và khả năng giải quyết các mâu thuẫn thực nghiệm.",
+      "pitfalls": "Bẫy phản biện: Nhầm lẫn loại suy với hành vi 'p-hacking' hay bịa đặt giả thuyết sau khi có kết quả (HARKing - Hypothesizing After Results are Known). Nghiên cứu loại suy đòi hỏi sự minh bạch tuyệt đối về quá trình phát hiện sự kiện bất thường và lộ trình tư duy lặp lại chứ không ngụy tạo như một nghiên cứu diễn dịch tuyến tính.",
+      "apa_reference": "Dubois, A., & Gadde, L. E. (2002). Systematic combining: An abductive approach to case research. Journal of Business Research, 55(7), 553–560. https://doi.org/10.1016/S0148-2963(00)00195-8",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "abductive-reasoning",
-      "term": "Abductive Reasoning",
-      "vietnamese": "Suy luận Loại suy",
-      "vietnamese_variants": [],
+      "term": "Abductive Reasoning (Inference to the Best Explanation)",
+      "vietnamese": "Lập luận loại suy (Suy luận đến lời giải thích tốt nhất)",
+      "vietnamese_variants": [
+        "Lập luận Abduction",
+        "Suy luận tìm nguyên nhân hợp lý nhất",
+        "IBE"
+      ],
       "domain_tags": [
         "Logic of Science"
       ],
-      "core_definition": "kết hợp quan sát thực tế đáng ngạc nhiên với lý thuyết để đưa ra giải thích khả dĩ nhất.",
-      "seminal_citation": "Charles Sanders Peirce (1903)",
+      "core_definition": "Lập luận loại suy (Abductive Reasoning) hay Suy luận đến lời giải thích tốt nhất (Inference to the Best Explanation - Harman, 1965; Lipton, 2004) là hình thức suy luận logic chọn lọc lời giải thích khả tín và toàn diện nhất trong số các giả thuyết cạnh tranh để giải mã một hiện tượng quan sát được. Đây là cơ chế tư duy bản chất của các bác sĩ khi chẩn đoán bệnh, các thám tử khi phá án, và các nhà khoa học khi phát hiện các quy luật tự nhiên mới.",
+      "seminal_citation": "Peirce (1931–1958); Harman (1965); Lipton (2004)",
       "tier": "curated",
       "expert_status": "needs_review",
       "expert_notes": "\"Suy luận Loại suy\" sai (analogy) -> \"Suy luận giả định (abduction)\"; trùng #21, #23 | Trùng #23",
       "core_definition_en": "Academic definition of Abductive Reasoning according to Charles Sanders Peirce (1903).",
       "domain_tags_en": [
         "Logic of Science"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Thu thập tập hợp dữ liệu thực nghiệm D chứa đựng hiện tượng cần giải thích. 2. Hình thành không gian các giả thuyết cạnh tranh {H_1, H_2, ..., H_k} có khả năng dẫn đến D. 3. Đánh giá các giả thuyết dựa trên các tiêu chí nhận thức luận: Độ đơn giản (Simplicity / Ockham's razor), Tính bao quát (Consilience), Tính hợp lý (Plausibility) và Khả năng kiểm chứng độc lập. 4. Suy luận chấp nhận giả thuyết H* vượt trội nhất.",
+      "benchmarks": "Tiêu chí Lipton (2004): Phân biệt giữa 'Giả thuyết dễ thương nhất' (Lovelier explanation - cung cấp hiểu biết sâu sắc nhất) và 'Giả thuyết khả dĩ nhất' (Likelier explanation - có xác suất cao nhất). Nghiên cứu khoa học Q1 ưu tiên lời giải thích cân bằng được cả hai khía cạnh này.",
+      "pitfalls": "Bẫy phản biện: 'The Best of a Bad Lot' (van Fraassen, 1989): Rủi ro rằng toàn bộ các giả thuyết được đưa ra xem xét đều sai lầm; khi đó, việc chọn 'lời giải thích tốt nhất' thực chất chỉ là chọn cái ít tệ nhất trong một tập hợp các ý niệm sai lệch.",
+      "apa_reference": "Lipton, P. (2004). Inference to the best explanation (2nd ed.). Routledge. https://doi.org/10.4324/9780203470930",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "abductive-reasoning-peirce",
-      "term": "Abductive Reasoning (Peirce)",
-      "vietnamese": "Lập luận Suy đoán Giải thích Abduction",
-      "vietnamese_variants": [],
+      "term": "Peircean Abduction (Logic of Discovery)",
+      "vietnamese": "Lý thuyết loại suy Peirce (Logic của sự khám phá khoa học)",
+      "vietnamese_variants": [
+        "Loại suy Peircean",
+        "Logic khám phá Peirce",
+        "Peirce's Triad"
+      ],
       "domain_tags": [
         "Scientific Logic"
       ],
-      "core_definition": "Quy nạp tìm kiếm giải thích hợp lý nhất cho một quan sát bất ngờ hoặc dị biệt.",
-      "seminal_citation": "Peirce (1903)",
+      "core_definition": "Loại suy theo trường phái Charles Sanders Peirce (1839–1914) là giai đoạn đầu tiên và duy nhất trong tam giác phương pháp luận khoa học (Loại suy -> Diễn dịch -> Quy nạp) có khả năng sinh ra ý tưởng mới và tri thức mới (novel ideas). Theo Peirce, diễn dịch chỉ chứng minh điều gì đó 'bắt buộc phải là' (must be), quy nạp cho thấy điều gì đó 'thực tế đang là' (is operative), trong khi chỉ có loại suy mới gợi mở điều gì đó 'có thể là' (may be).",
+      "seminal_citation": "Peirce (1903, 1931–1958); Hanson (1958)",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "abduction không phải \"quy nạp\"; gộp với #22 | Trùng #22",
       "core_definition_en": "Academic definition of Abductive Reasoning (Peirce) according to Peirce (1903).",
       "domain_tags_en": [
         "Scientific Logic"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Tiến trình khám phá ba bước Peircean: (1) Giai đoạn Loại suy: Phát hiện dị thường thực nghiệm và đề xuất giả thuyết sáng tạo ban đầu; (2) Giai đoạn Diễn dịch: Rút ra các hệ quả logic có thể kiểm nghiệm được từ giả thuyết đó; (3) Giai đoạn Quy nạp: Thu thập mẫu dữ liệu thực nghiệm để kiểm định tính xác thực của các hệ quả diễn dịch. 2. Đóng vai trò là nền tảng triết học cho chủ nghĩa thực dụng (Pragmatism) và phương pháp nghiên cứu hỗn hợp hiện đại.",
+      "benchmarks": "Được trích dẫn làm nền tảng triết học nhận thức luận vững chắc nhất trong các nghiên cứu định tính xây dựng lý thuyết (Theory-building qualitative research) trên các tạp chí hàng đầu như Academy of Management Review (AMR), Administrative Science Quarterly (ASQ).",
+      "pitfalls": "Bẫy phản biện: Tách rời loại suy khỏi diễn dịch và quy nạp. Lập luận loại suy chỉ là bước khởi đầu sinh giả thuyết; một công trình nghiên cứu khoa học hoàn chỉnh bắt buộc phải khép kín quy trình bằng việc kiểm định diễn dịch và quy nạp thực nghiệm.",
+      "apa_reference": "Peirce, C. S. (1958). Collected papers of Charles Sanders Peirce (Vols. 1–8; C. Hartshorne, P. Weiss, & A. W. Burks, Eds.). Harvard University Press.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "absorptive-capacity-cohen-levinthal",
       "term": "Absorptive Capacity (Cohen & Levinthal)",
-      "vietnamese": "Năng lực Hấp thu Tri thức",
-      "vietnamese_variants": [],
+      "vietnamese": "Năng lực hấp thu tri thức",
+      "vietnamese_variants": [
+        "Khả năng hấp thu tri thức",
+        "Thuyết năng lực hấp thu",
+        "Absorptive Capacity Theory"
+      ],
       "domain_tags": [
         "Strategic Management"
       ],
-      "core_definition": "Khả năng của tổ chức nhận diện giá trị tri thức mới từ bên ngoài, đồng hóa và ứng dụng.",
-      "seminal_citation": "Cohen & Levinthal (1990)",
+      "core_definition": "Năng lực hấp thu tri thức (Absorptive Capacity - ACAP - Cohen & Levinthal, 1989, 1990; Zahra & George, 2002) là lý thuyết nền tảng trong quản trị chiến lược và đổi mới sáng tạo, định nghĩa năng lực của một tổ chức trong việc nhận diện giá trị của tri thức mới bên ngoài môi trường, đồng hóa và chuyển đổi tri thức đó, rồi khai thác thương mại hóa để tạo ra năng lực cạnh tranh vượt trội.",
+      "seminal_citation": "Cohen & Levinthal (1990); Zahra & George (2002)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Absorptive Capacity (Cohen & Levinthal) according to Cohen & Levinthal (1990).",
       "domain_tags_en": [
         "Strategic Management"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Khung cấu trúc tái định hình Zahra & George (2002): Phân rã ACAP thành 2 thành phần bậc cao và 4 chiều kích động: (A) Năng lực hấp thu tiềm năng (Potential ACAP - PACAP: Tiếp nhận tri thức Acquisition và Đồng hóa Assimilation); (B) Năng lực hấp thu thực hiện (Realized ACAP - RACAP: Chuyển đổi Transformation và Khai thác Exploitation). 2. Đo lường định lượng: Thông qua chi tiêu R&D (nghiên cứu kinh tế lượng) hoặc thang đo khảo sát đa chỉ báo Likert bậc hai (nghiên cứu SEM).",
+      "benchmarks": "Đóng vai trò chủ đạo làm biến điều tiết (moderator) hoặc biến trung gian (mediator) trong các mô hình liên kết giữa hợp tác mở (Open Innovation), chuyển giao công nghệ với kết quả đổi mới sản phẩm và hiệu quả tài chính doanh nghiệp. Hệ số hiệu quả chuyển đổi (Activation trigger / Efficiency factor = RACAP / PACAP).",
+      "pitfalls": "Bẫy phản biện: Đo lường ACAP thuần túy bằng tỷ lệ chi tiêu R&D trên doanh thu (R&D intensity) trong các ngành dịch vụ hoặc doanh nghiệp vừa và nhỏ (SMEs). R&D intensity chỉ nắm bắt được một phần nhỏ nỗ lực đầu vào, không phản ánh được quy trình tổ chức chuyển hóa tri thức bên trong; bắt buộc phải sử dụng thang đo đa diện đã được thẩm định chuẩn mực.",
+      "apa_reference": "Cohen, W. M., & Levinthal, D. A. (1990). Absorptive capacity: A new perspective on learning and innovation. Administrative Science Quarterly, 35(1), 128–152. https://doi.org/10.2307/2393553",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "accidental-generalizations",
@@ -5548,15 +5634,19 @@
     },
     {
       "id": "actor-network-theory-ant---latour-callon",
-      "term": "Actor-Network Theory (ANT - Latour, Callon)",
-      "vietnamese": "Thuyết Mạng lưới Tác tử",
-      "vietnamese_variants": [],
+      "term": "Actor-Network Theory (ANT - Latour, Callon, & Law)",
+      "vietnamese": "Thuyết mạng lưới tác tử",
+      "vietnamese_variants": [
+        "Thuyết ANT",
+        "Actor-Network Theory",
+        "Xã hội học về sự dịch chuyển Latour"
+      ],
       "domain_tags": [
         "Science",
         "Technology Studies"
       ],
-      "core_definition": "Coi cả con người và các tạo tác phi con người vật chất đều là các tác tử bình đẳng trong mạng lưới.",
-      "seminal_citation": "Latour (2005), Callon (1986)",
+      "core_definition": "Thuyết mạng lưới tác tử (Actor-Network Theory - ANT - Callon, 1986; Latour, 1987, 2005; Law, 1992) là phương cận lý thuyết xã hội học và nhân học tri thức mang tính đột phá, xóa nhòa ranh giới nhị nguyên giữa con người và phi con người. ANT áp dụng nguyên lý đối xứng tổng quát (generalized symmetry), khẳng định rằng cả thực thể con người (human actors) lẫn các thực thể phi con người (non-human actants như thuật toán, máy móc, văn bản, virus) đều có quyền tác tử (agency) bình đẳng và cấu thành nên các mạng lưới xã hội - kỹ thuật đan xen.",
+      "seminal_citation": "Callon (1986); Latour (1987, 2005)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
@@ -5564,37 +5654,59 @@
       "domain_tags_en": [
         "Science",
         "Technology Studies"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Khái niệm Actant: Bất kỳ thực thể nào tạo ra sự khác biệt hoặc làm biến đổi hướng đi của hành động. 2. Tiến trình dịch chuyển 4 giai đoạn (Translation process - Callon, 1986): (1) Đặt vấn đề (Problematization / Obligatory Passage Point - OPP); (2) Khóa lợi ích (Interessement); (3) Ghi danh / Lôi kéo (Enrolment); (4) Động viên đại diện (Mobilization). 3. Phương pháp luận thực địa: 'Lần theo dấu vết của các tác tử' (Follow the actors) mà không áp đặt các cấu trúc xã hội định sẵn.",
+      "benchmarks": "Được áp dụng đặc biệt hiệu quả trong nghiên cứu hệ thống thông tin (IS research), nghiên cứu chuyển đổi số, tổ chức khoa học công nghệ và đổi mới sinh thái. Tiêu chuẩn đánh giá nghiên cứu ANT là độ dày đặc và tính trung thực của bản tường trình miêu tả (thick description of socio-technical networks).",
+      "pitfalls": "Bẫy phản biện: Hiểu nhầm rằng ANT gán 'ý thức' hay 'đạo đức' cho đồ vật vô tri. ANT không khẳng định đồ vật có ý thức, mà khẳng định đồ vật định hình và ràng buộc các khả năng hành động của con người (material affordances and agency).",
+      "apa_reference": "Latour, B. (2005). Reassembling the social: An introduction to actor-network-theory. Oxford University Press.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "adaptive-trial-design",
       "term": "Adaptive Trial Design",
-      "vietnamese": "Thiết kế Thử nghiệm Thích ứng",
-      "vietnamese_variants": [],
+      "vietnamese": "Thiết kế thử nghiệm thích ứng",
+      "vietnamese_variants": [
+        "Thiết kế thử nghiệm lâm sàng thích ứng",
+        "Adaptive Clinical Trial",
+        "Thiết kế thực nghiệm linh hoạt"
+      ],
       "domain_tags": [
         "Clinical Trial Methodology"
       ],
-      "core_definition": "Cho phép điều chỉnh các tham số thiết kế giữa chừng dựa trên phân tích kết quả tạm thời.",
-      "seminal_citation": "Chow & Chang (2008)",
+      "core_definition": "Thiết kế thử nghiệm thích ứng (Adaptive Trial Design - Chow & Chang, 2008; FDA Guidance, 2019) là thiết kế thực nghiệm ngẫu nhiên có kiểm soát (RCT) cho phép sửa đổi hoặc điều chỉnh các điều kiện thử nghiệm (như tái phân bổ tỷ lệ mẫu, dừng sớm vì tính vượt trội hoặc vì sự vô ích, thay đổi liều lượng can thiệp, loại bỏ các nhánh can thiệp kém hiệu quả) tại các mốc phân tích giữa kỳ (interim analyses) dựa trên dữ liệu tích lũy của chính nghiên cứu, mà vẫn bảo đảm kiểm soát nghiêm ngặt tỷ lệ sai lầm loại I (Family-Wise Error Rate - FWER).",
+      "seminal_citation": "Chow & Chang (2008); FDA (2019)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Adaptive Trial Design according to Chow & Chang (2008).",
       "domain_tags_en": [
         "Clinical Trial Methodology"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Lập kế hoạch tiên nghiệm (Pre-specification): Tất cả các quy tắc thích ứng và ranh giới dừng giữa kỳ (Stopping boundaries: O'Brien-Fleming hoặc Pocock alpha-spending functions) phải được thiết lập chi tiết trong đề cương trước khi thu thập dữ liệu. 2. Tiến hành phân tích giữa kỳ độc lập bởi Ban Giám sát An toàn Dữ liệu (Data Safety Monitoring Board - DSMB). 3. Áp dụng quy tắc thích ứng bảo toàn alpha toàn cục (alpha = 0.05).",
+      "benchmarks": "Được chuẩn hóa theo hướng dẫn chính thức của Cục Quản lý Thực phẩm và Dược phẩm Hoa Kỳ (FDA) và Hiệp hội Thống kê Y sinh Quốc tế. Tối ưu hóa đạo đức nghiên cứu (tránh phơi nhiễm đối tượng tham gia vào nhánh can thiệp độc hại hoặc kém hiệu quả) đồng thời giảm chi phí và thời gian thử nghiệm lên tới 30-40%.",
+      "pitfalls": "Bẫy phản biện: 'Ad-hoc modifications' — Thay đổi quy trình thử nghiệm giữa chừng mà không có quy tắc thích ứng được quy định tiên nghiệm trong đề cương. Mọi can thiệp tùy tiện đều làm bùng nổ sai lầm loại I (phát hiện hiệu ứng giả tạo) và vô hiệu hóa giá trị pháp lý khoa học của thử nghiệm.",
+      "apa_reference": "Chow, S. C., & Chang, M. (2008). Adaptive design methods in clinical trials. Chapman and Hall/CRC. https://doi.org/10.1201/9781420011524",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "adf",
-      "term": "ADF (Augmented Dickey-Fuller Test)",
-      "vietnamese": "Kiểm định Dickey-Fuller Mở rộng (Kiểm định Nghiệm Đơn vị / Tính Dừng)",
-      "vietnamese_variants": [],
+      "term": "ADF Test (Augmented Dickey-Fuller)",
+      "vietnamese": "Kiểm định nghiệm đơn vị Dickey-Fuller mở rộng (ADF)",
+      "vietnamese_variants": [
+        "Kiểm định ADF",
+        "ADF Test",
+        "Kiểm định tính dừng ADF"
+      ],
       "domain_tags": [
         "Kinh tế lượng Chuỗi thời gian",
         "Kiểm định Giả thuyết"
       ],
-      "core_definition": "Phép kiểm định thống kê kinh điển trong kinh tế lượng chuỗi thời gian dùng để kiểm tra xem một chuỗi dữ liệu có chứa nghiệm đơn vị (Unit Root) hay không — tức là chuỗi có phải là chuỗi không dừng (Non-stationary / I(1)) hay chuỗi dừng (Stationary / I(0)). Phiên bản mở rộng (Augmented) do Said & Dickey (1984) phát triển bổ sung thêm các số hạng trễ của sai phân bậc một vào phương trình hồi quy nhằm kiểm soát và triệt tiêu hiện tượng tự tương quan bậc cao trong phần dư. Giả thuyết H0: Chuỗi thời gian có nghiệm đơn vị (chuỗi không dừng); H1: Chuỗi thời gian là chuỗi dừng.",
-      "seminal_citation": "Dickey, D. A., & Fuller, W. A. (1979). Distribution of the estimators for autoregressive time series with a unit root. Journal of the American Statistical Association, 74(366), 427–431; Said, S. E., & Dickey, D. A. (1984). Testing for unit roots in autoregressive-moving average models of unknown order. Biometrika, 71(3), 599–607.",
+      "core_definition": "Kiểm định ADF (Augmented Dickey-Fuller - Dickey & Fuller 1979; Said & Dickey 1984) là phép kiểm định chẩn đoán chuẩn mực nhất để xác định xem một chuỗi thời gian có chứa nghiệm đơn vị (unit root - không dừng) hay là chuỗi dừng (stationary). Bằng cách bổ sung các số hạng sai phân trễ của biến phụ thuộc vào phương trình hồi quy, kiểm định ADF triệt tiêu hoàn toàn sự hiện diện của tự tương quan chuỗi trong phần dư.",
+      "seminal_citation": "Dickey & Fuller (1979); Said & Dickey (1984)",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Đã tách riêng phần ngưỡng kiểm định ra khỏi cột nguồn trích dẫn; dẫn chứng chính xác bài báo kinh điển Dickey & Fuller (1979) và Said & Dickey (1984); bổ sung giả thuyết H0/H1 và ý nghĩa chống hồi quy giả tạo.",
@@ -5602,7 +5714,13 @@
       "domain_tags_en": [
         "Time Series Econometrics"
       ],
-      "benchmarks": "Khi giá trị thống kê t của hệ số trễ nhỏ hơn (âm hơn) giá trị tới hạn MacKinnon ở mức ý nghĩa 5% hoặc 1% (hoặc p-value < 0.05), nhà nghiên cứu bác bỏ giả thuyết H0 và kết luận chuỗi thời gian là chuỗi dừng I(0). Nếu chuỗi không dừng, cần lấy sai phân bậc một để đưa về dừng trước khi ước lượng hồi quy nhằm tránh hiện tượng hồi quy giả tạo (Spurious Regression)."
+      "benchmarks": "Quy tắc kiểm định: So sánh thống kê t_ADF với bảng giá trị tới hạn MacKinnon ở mức ý nghĩa 1%, 5%, 10%. Nếu t_ADF âm hơn giá trị tới hạn (ví dụ t_ADF = -3.85 < -2.89 ở mức 5%, p < 0.05), bác bỏ H0 và khẳng định chuỗi dừng. Nếu chuỗi gốc là không dừng ở bậc mức I(0), lấy sai phân bậc một Delta y_t và kiểm định lại để xác định chuỗi có dừng ở bậc I(1) hay không.",
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Ba dạng phương trình hồi quy ADF: (1) Không hệ số chặn, không xu hướng: Delta y_t = gamma*y_{t-1} + sum [beta_i * Delta y_{t-i}] + e_t; (2) Có hệ số chặn: Delta y_t = alpha_0 + gamma*y_{t-1} + sum [beta_i * Delta y_{t-i}] + e_t; (3) Có cả hệ số chặn và xu hướng thời gian tuyến tính: Delta y_t = alpha_0 + alpha_1*t + gamma*y_{t-1} + sum [beta_i * Delta y_{t-i}] + e_t. 2. Giả thuyết H0: gamma = 0 (tồn tại nghiệm đơn vị, chuỗi không dừng). Giả thuyết H1: gamma < 0 (chuỗi có tính dừng).",
+      "pitfalls": "Bẫy phản biện: (1) Chọn sai cấu trúc ngoại sinh (hằng số / xu hướng) khiến phân phối tới hạn bị sai lệch; (2) Bỏ qua điểm gãy cấu trúc (structural break); khi có điểm gãy cấu trúc, ADF có sức mạnh kiểm định rất yếu và thường kết luận nhầm là chuỗi không dừng (khắc phục bằng kiểm định Zivot-Andrews hoặc Perron).",
+      "apa_reference": "Said, S. E., & Dickey, D. A. (1984). Testing for unit roots in autoregressive-moving average models of unknown order. Biometrika, 71(3), 599–607. https://doi.org/10.1093/biomet/71.3.599",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "adjacency-pairs",
@@ -5720,51 +5838,74 @@
     {
       "id": "agency-theory-jensen-meckling",
       "term": "Agency Theory (Jensen & Meckling)",
-      "vietnamese": "Lý thuyết Người đại diện",
-      "vietnamese_variants": [],
+      "vietnamese": "Lý thuyết người đại diện",
+      "vietnamese_variants": [
+        "Thuyết người đại diện",
+        "Quan hệ đại diện Jensen-Meckling",
+        "Principal-Agent Theory"
+      ],
       "domain_tags": [
         "Corporate Governance"
       ],
-      "core_definition": "Xung đột lợi ích và chi phí phát sinh giữa Bên ủy thác Principal và Bên đại diện Agent.",
-      "seminal_citation": "Jensen & Meckling (1976)",
+      "core_definition": "Lý thuyết người đại diện (Agency Theory - Jensen & Meckling, 1976; Fama & Jensen, 1983; Eisenhardt, 1989) là lý thuyết nền tảng trong quản trị doanh nghiệp, tài chính và kinh tế học vi mô. Lý thuyết mô hình hóa mối quan hệ hợp đồng giữa Bên ủy nhiệm (Principal - cổ đông) và Bên đại diện (Agent - ban điều hành). Do giả định con người có tính tư lợi (self-interest), tính duy lý bị giới hạn và ác cảm rủi ro khác biệt, kết hợp với tình trạng bất đối xứng thông tin (information asymmetry), xung đột lợi ích tất yếu nảy sinh dẫn đến Chi phí đại diện (Agency Costs).",
+      "seminal_citation": "Jensen & Meckling (1976); Eisenhardt (1989)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Agency Theory (Jensen & Meckling) according to Jensen & Meckling (1976).",
       "domain_tags_en": [
         "Corporate Governance"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Hai vấn đề đại diện cốt lõi: Lựa chọn nghịch (Adverse Selection: rủi ro đạo đức trước khi ký hợp đồng do thông tin bị che giấu) và Rủi ro đạo đức (Moral Hazard: hành vi lười biếng hoặc trục lợi sau khi ký hợp đồng do hành động không thể quan sát được). 2. Ba thành phần của chi phí đại diện: Chi phí giám sát của cổ đông (monitoring expenditures), Chi phí cam kết của nhà quản lý (bonding expenditures), và Tổn thất thặng dư ròng (residual loss). 3. Cơ chế kiểm soát: Quản trị hội đồng quản trị độc lập, thù lao gắn với cổ phiếu (stock options), và kỷ luật của thị trường mua bán sáp nhập.",
+      "benchmarks": "Là lý thuyết được sử dụng nhiều nhất để xây dựng giả thuyết nghiên cứu về mối quan hệ giữa cấu trúc sở hữu, tính độc lập của HĐQT, chất lượng kiểm toán và hiệu quả hoạt động doanh nghiệp (Tobin's Q, ROA). Các biến đại diện chuẩn mực: Tỷ lệ thành viên HĐQT độc lập, kiêm nhiệm chức danh CEO-Chủ tịch, tỷ lệ sở hữu của cổ đông lớn.",
+      "pitfalls": "Bẫy phản biện: Bỏ qua lý thuyết xung đột đại diện Loại II (Principal-Principal conflicts). Ở các thị trường mới nổi như Việt Nam và Châu Á, xung đột đại diện chủ yếu không nằm giữa cổ đông và CEO (Loại I) mà nằm giữa cổ đông kiểm soát nắm quyền chi phối và các cổ đông thiểu số (hiện tượng tước đoạt tài sản - tunneling/expropriation).",
+      "apa_reference": "Jensen, M. C., & Meckling, W. H. (1976). Theory of the firm: Managerial behavior, agency costs and ownership structure. Journal of Financial Economics, 3(4), 305–360. https://doi.org/10.1016/0304-405X(76)90026-X",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "agent-based-modeling-abm",
-      "term": "Agent-Based Modeling (ABM)",
-      "vietnamese": "Mô hình Hóa Dựa trên Tác tử",
-      "vietnamese_variants": [],
+      "term": "Agent-Based Modeling (ABM / Multi-Agent Simulation)",
+      "vietnamese": "Mô hình hóa dựa trên tác tử",
+      "vietnamese_variants": [
+        "Mô hình ABM",
+        "Mô phỏng đa tác tử",
+        "Agent-Based Simulation"
+      ],
       "domain_tags": [
         "Computational Social Science"
       ],
-      "core_definition": "Mô phỏng tương tác vi mô tự trị giữa các tác nhân để khám phá hiện tượng trồi hiện vĩ mô.",
-      "seminal_citation": "Epstein & Axtell (1996)",
+      "core_definition": "Mô hình hóa dựa trên tác tử (Agent-Based Modeling - ABM - Epstein & Axtell, 1996; Bonabeau, 2002; Railsback & Grimm, 2019) là kỹ thuật mô phỏng tính toán (computational simulation) từ dưới lên (bottom-up). ABM mô phỏng các hành vi, quyết định và tương tác cục bộ của một quần thể các tác tử tự trị (autonomous agents như người tiêu dùng, nhà đầu tư, doanh nghiệp), từ đó quan sát và phân tích sự xuất hiện (emergence) của các hiện tượng vĩ mô phức tạp mà các phương trình cân bằng kinh tế lượng truyền thống không thể nắm bắt được.",
+      "seminal_citation": "Epstein & Axtell (1996); Bonabeau (2002); Grimm et al. (2020)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Agent-Based Modeling (ABM) according to Epstein & Axtell (1996).",
       "domain_tags_en": [
         "Computational Social Science"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Ba thành phần mô hình: (1) Tập hợp các tác tử với các trạng thái nội tại và quy tắc hành vi thích ứng; (2) Mạng lưới quan hệ và cấu trúc không gian tương tác; (3) Môi trường hoạt động. 2. Vòng lặp mô phỏng theo từng bước thời gian rời rạc (time-step ticks). 3. Giao thức chuẩn mực ODD (Overview, Design concepts, Details protocol - Grimm et al., 2020) để mô tả và tái lập mô hình. 4. Thẩm định mô hình bằng dữ liệu thực nghiệm thông qua phương pháp so khớp khoảnh khắc mô phỏng (Simulated Method of Moments - SMM).",
+      "benchmarks": "Được triển khai trên các nền tảng chuẩn hóa như NetLogo, AnyLogic, hoặc Mesa (Python). Tiêu chuẩn xuất bản Q1 đòi hỏi kiểm định độ nhạy toàn cục (Global Sensitivity Analysis bằng Sobol indices) và kiểm định tính vững trước việc thay đổi hạt giống ngẫu nhiên (seed randomization robustness qua >= 100-1000 lượt chạy Monte Carlo).",
+      "pitfalls": "Bẫy phản biện: 'Black box validation' — Xây dựng mô hình quá nhiều tham số tự do (over-parameterized) khiến mô hình có thể khớp với bất kỳ dữ liệu nào nhưng mất hoàn toàn giá trị giải thích cơ chế nhân quả; không công bố mã nguồn mở (open-source code) vi phạm nghiêm trọng tính khả kiểm chứng của nghiên cứu.",
+      "apa_reference": "Grimm, V., Railsback, S. F., Vincenot, C. E., Berger, U., Gallagher, C., DeAngelis, D. L., ... & Ayllón, D. (2020). The ODD protocol for describing agent-based and other simulation models: A second update to improve clarity, replication, and outreach. Journal of Artificial Societies and Social Simulation, 23(2), 7. https://doi.org/10.18564/jasss.4259",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "akaike-information-criterion",
       "term": "Akaike Information Criterion (AIC)",
       "vietnamese": "Tiêu chuẩn thông tin Akaike",
       "vietnamese_variants": [
-        "AIC"
+        "Chỉ số AIC",
+        "Akaike Information Criterion"
       ],
       "domain_tags": [
         "Acronym NCKH"
       ],
-      "core_definition": "Tiêu chuẩn so sánh giữa các mô hình cạnh tranh không lồng ghép (non-nested models), cân bằng giữa độ khớp dữ liệu và số lượng tham số. Ngưỡng thực nghiệm tham chiếu: Mô hình có giá trị AIC nhỏ hơn là mô hình vượt trội hơn.",
-      "seminal_citation": "Mô hình có giá trị AIC nhỏ hơn là mô hình vượt trội hơn.",
+      "core_definition": "Tiêu chuẩn thông tin Akaike (AIC - Akaike, 1973, 1974) là chỉ số dựa trên lý thuyết thông tin (Information Theory) và độ phân kỳ Kullback-Leibler, dùng để đánh giá và so sánh độ phù hợp tương đối giữa các mô hình thống kê cạnh tranh. AIC cân bằng tối ưu giữa độ khớp dữ liệu (goodness of fit thông qua hàm hợp lý cực đại) và độ phức tạp của mô hình (thông qua hình phạt số lượng tham số ước lượng), nhằm phòng chống hiện tượng quá khớp (overfitting).",
+      "seminal_citation": "Akaike (1973, 1974); Burnham & Anderson (2002)",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
@@ -5772,7 +5913,13 @@
       "domain_tags_en": [
         "Acronym NCKH"
       ],
-      "benchmarks": "Mô hình có giá trị AIC nhỏ hơn là mô hình vượt trội hơn."
+      "benchmarks": "Mô hình có giá trị AIC (hoặc AICc) nhỏ nhất là mô hình tối ưu nhất. Quy tắc Burnhan & Anderson (2002): (1) Delta_AIC <= 2: Mô hình có mức độ ủng hộ thực nghiệm tương đương mô hình tốt nhất; (2) 4 <= Delta_AIC <= 7: Mức độ ủng hộ yếu đi đáng kể; (3) Delta_AIC > 10: Mô hình hầu như không có cơ sở thực nghiệm ủng hộ.",
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Công thức cơ bản: AIC = 2k - 2*ln(L), trong đó k là số tham số ước lượng trong mô hình, L là giá trị cực đại của hàm hợp lý (maximum likelihood). 2. Đối với mẫu nhỏ (khi tỷ lệ n/k < 40), bắt buộc dùng AIC hiệu chỉnh (Corrected AIC - AICc): AICc = AIC + (2k^2 + 2k) / (n - k - 1). 3. Tính chênh lệch Delta_AIC_i = AIC_i - min(AIC) và trọng số Akaike (Akaike weights w_i) để đo lường xác suất một mô hình là tốt nhất trong tập hợp mô hình xem xét.",
+      "pitfalls": "Bẫy phản biện: (1) So sánh AIC giữa các mô hình được ước lượng trên các tập mẫu dữ liệu khác nhau (khác kích thước n hoặc khác biến phụ thuộc bị khuyết); (2) Nhầm lẫn rằng AIC là thước đo tuyệt đối — AIC chỉ có giá trị so sánh tương đối giữa các mô hình cụ thể, một mô hình có AIC nhỏ nhất vẫn có thể là một mô hình tồi tệ nếu toàn bộ tập hợp mô hình được đề xuất đều sai đặc tả.",
+      "apa_reference": "Akaike, H. (1974). A new look at the statistical model identification. IEEE Transactions on Automatic Control, 19(6), 716–723. https://doi.org/10.1109/TAC.1974.1100705",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "algorithmic-bias-in-research",
@@ -5798,14 +5945,17 @@
       "id": "alpha-if-item-deleted",
       "term": "Cronbach's Alpha if Item Deleted",
       "vietnamese": "Hệ số Cronbach's Alpha nếu loại biến quan sát",
-      "vietnamese_variants": [],
+      "vietnamese_variants": [
+        "Alpha if item deleted",
+        "Độ tin cậy khi loại bỏ mục hỏi"
+      ],
       "domain_tags": [
         "Đo lường & Thang đo",
         "Phát triển Thang đo",
         "Phương pháp Định lượng"
       ],
-      "core_definition": "Chỉ số thống kê chẩn đoán trong phân tích độ tin cậy thang đo (Reliability Analysis), cho biết giá trị hệ số Cronbach's Alpha tổng thể của thang đo sẽ tăng lên hay giảm đi nếu loại bỏ một biến quan sát (item) cụ thể ra khỏi thang đo. Nếu giá trị 'Alpha if item deleted' của một biến quan sát cao hơn đáng kể so với Alpha tổng thể hiện tại của thang đo, điều đó chỉ ra rằng biến quan sát đó không nhất quán với các biến còn lại hoặc làm giảm độ tin cậy nội tại của thang đo, và việc loại bỏ biến này sẽ giúp thanh lọc và nâng cao chất lượng thang đo.",
-      "seminal_citation": "DeVellis, R. F. (2016). Scale Development: Theory and Applications (4th ed.). SAGE Publications; Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2018). Multivariate Data Analysis (8th ed.). Cengage Learning.",
+      "core_definition": "Cronbach's Alpha if Item Deleted là chỉ số chẩn đoán tâm lý kinh điển trong quy trình thanh lọc thang đo (scale purification). Chỉ số này mô phỏng giá trị độ tin cậy nhất quán nội tại của thang đo nếu một biến quan sát cụ thể bị loại bỏ hoàn toàn khỏi tập chỉ báo, giúp nhận diện các câu hỏi hoạt động kém hoặc làm suy giảm chất lượng đo lường chung.",
+      "seminal_citation": "Cronbach (1951); Nunnally & Bernstein (1994)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "Đã dọn sạch rác trích xuất bảng Markdown và văn bản cắt cụt; biên tập định nghĩa học thuật chuẩn mực, quy tắc quyết định kết hợp Corrected Item-Total Correlation theo DeVellis (2016) và Hair et al. (2018).",
@@ -5814,7 +5964,13 @@
         "Methodology",
         "Research Design"
       ],
-      "benchmarks": "Quy tắc quyết định trong phát triển thang đo (DeVellis, 2016; Hair et al., 2018): (1) Kết hợp xem xét tương quan biến - tổng hiệu chỉnh (Corrected Item-Total Correlation): các biến có hệ số tương quan biến - tổng < 0.30 (hoặc < 0.40 đối với thang đo đã chuẩn hóa) là ứng viên hàng đầu cần loại bỏ; (2) Chỉ loại bỏ biến nếu việc loại bỏ làm Alpha tổng thể tăng đáng kể và không làm tổn hại đến độ giá trị nội dung (Content Validity) của khái niệm."
+      "benchmarks": "Quy tắc quyết định: (1) Nếu alpha_(-j) > alpha_total VÀ CITC < 0.30 (hoặc < 0.40): Biến j làm suy giảm độ tin cậy thang đo và bắt buộc phải xem xét loại bỏ; (2) Nếu alpha_(-j) xấp xỉ bằng hoặc nhỏ hơn alpha_total: Biến j đóng góp tích cực vào tính nhất quán nội tại của thang đo và cần được giữ lại.",
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Tính toán Cronbach's Alpha tổng thể alpha_total của toàn bộ k biến quan sát. 2. Đối với từng biến thứ j, tính toán lại hệ số alpha_(-j) trên tập hợp (k - 1) biến còn lại. 3. So sánh alpha_(-j) với alpha_total kết hợp với hệ số tương quan biến - tổng hiệu chỉnh (Corrected Item-Total Correlation - CITC).",
+      "pitfalls": "Bẫy phản biện: 'Blind item trimming' — Loại bỏ biến một cách máy móc chỉ để làm tăng nhẹ hệ số Alpha (ví dụ tăng từ 0.88 lên 0.89) trong khi biến đó nắm giữ một khía cạnh ngữ nghĩa cốt lõi của khái niệm. Việc loại bỏ quá đà sẽ làm thu hẹp phạm vi nội dung (content validity compression) của thang đo.",
+      "apa_reference": "Nunnally, J. C., & Bernstein, I. H. (1994). Psychometric theory (3rd ed.). McGraw-Hill.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "alternative-hypothesis",
@@ -6016,20 +6172,31 @@
     {
       "id": "analytic-hierarchy-process-ahp",
       "term": "Analytic Hierarchy Process (AHP)",
-      "vietnamese": "Quy trình Phân tích Thứ bậc AHP",
-      "vietnamese_variants": [],
+      "vietnamese": "Quy trình phân tích thứ bậc AHP",
+      "vietnamese_variants": [
+        "Phương pháp AHP",
+        "Mô hình ra quyết định đa tiêu chí AHP",
+        "Saaty AHP"
+      ],
       "domain_tags": [
         "Decision Science"
       ],
-      "core_definition": "Phương pháp ra quyết định đa tiêu chí qua so sánh bắt cặp ma trận và kiểm tra tính nhất quán CR.",
-      "seminal_citation": "Saaty (1980)",
+      "core_definition": "Quy trình phân tích thứ bậc (AHP - Saaty, 1977, 1980) là phương pháp ra quyết định đa tiêu chí (Multi-Criteria Decision Making - MCDM) có cấu trúc toán học chặt chẽ. AHP phân rã một bài toán quyết định phức tạp thành cấu trúc phân tầng thứ bậc (Mục tiêu tổng quát -> Các tiêu chí chính -> Tiêu chí phụ -> Các phương án lựa chọn), sử dụng các ma trận so sánh từng cặp (pairwise comparison matrices) dựa trên thang đo 1-9 để tính toán vector trọng số ưu tiên.",
+      "seminal_citation": "Saaty (1977, 1980)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Analytic Hierarchy Process (AHP) according to Saaty (1980).",
       "domain_tags_en": [
         "Decision Science"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Xây dựng cấu trúc thứ bậc bài toán. 2. Thu thập ma trận so sánh cặp A = [a_ij] (với a_ij = 1/a_ji và a_ii = 1) dựa trên thang điểm Saaty (1: Quan trọng ngang nhau; 3: Hơi quan trọng hơn; 5: Quan trọng hơn; 7: Rất quan trọng; 9: Cực kỳ quan trọng). 3. Tính toán véc tơ trọng số ưu tiên w bằng phương pháp Véc tơ riêng tương ứng với giá trị riêng cực đại lambda_max: A * w = lambda_max * w. 4. Đánh giá tính nhất quán logic của chuyên gia thông qua Tỷ số nhất quán (Consistency Ratio - CR).",
+      "benchmarks": "Chỉ số nhất quán CI = (lambda_max - n) / (n - 1). Tỷ số nhất quán CR = CI / RI (với RI là chỉ số ngẫu nhiên chuẩn của Saaty). Tiêu chuẩn bắt buộc: CR <= 0.10 (tính nhất quán logic chấp nhận được). Nếu CR > 0.10, dữ liệu so sánh cặp bị mâu thuẫn logic và người ra quyết định bắt buộc phải đánh giá lại các cặp so sánh.",
+      "pitfalls": "Bẫy phản biện: Hiện tượng đảo ngược thứ bậc (Rank Reversal): Khi bổ sung thêm một phương án lựa chọn mới hoặc loại bỏ một phương án cũ, thứ tự ưu tiên giữa các phương án hiện hữu có thể bị đảo lộn bất hợp lý do tính phụ thuộc của hàm chuẩn hóa véc tơ trọng số (khắc phục bằng các mô hình AHP cải tiến hoặc ANP).",
+      "apa_reference": "Saaty, T. L. (1980). The analytic hierarchy process: Planning, priority setting, resource allocation. McGraw-Hill.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "analytic-induction",
@@ -6054,20 +6221,31 @@
     {
       "id": "analytic-network-process-anp",
       "term": "Analytic Network Process (ANP)",
-      "vietnamese": "Quy trình Mạng lưới Phân tích ANP",
-      "vietnamese_variants": [],
+      "vietnamese": "Quy trình mạng lưới phân tích ANP",
+      "vietnamese_variants": [
+        "Phương pháp ANP",
+        "Mô hình mạng lưới quyết định đa tiêu chí Saaty",
+        "ANP Supermatrix"
+      ],
       "domain_tags": [
         "Decision Science"
       ],
-      "core_definition": "Mở rộng của AHP cho phép các mối liên hệ phụ thuộc phản hồi và phi tuyến giữa các tiêu chí.",
-      "seminal_citation": "Saaty (1996)",
+      "core_definition": "Quy trình mạng lưới phân tích (ANP - Saaty, 1996, 2001) là bước phát triển vượt bậc mở rộng từ AHP. Thay vì giả định cấu trúc phân tầng hình cây một chiều nghiêm ngặt (các tiêu chí độc lập với nhau), ANP mô hình hóa bài toán quyết định dưới dạng một mạng lưới phi tuyến tính (network structure) có chứa các mối quan hệ tương hỗ phức tạp, bao gồm vòng lặp nội tại (inner dependence / feedback giữa các phần tử trong cùng cụm) và tương tác ngoại tại (outer dependence giữa các cụm tiêu chí khác nhau).",
+      "seminal_citation": "Saaty (1996, 2001)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Analytic Network Process (ANP) according to Saaty (1996).",
       "domain_tags_en": [
         "Decision Science"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Thiết lập mạng lưới gồm các cụm (clusters) và các nút (nodes) kèm mũi tên phản hồi và tương tác hai chiều. 2. Thực hiện so sánh cặp để xây dựng Siêu ma trận chưa có trọng số (Unweighted Supermatrix). 3. Nhân với ma trận trọng số cụm để thu được Siêu ma trận có trọng số (Weighted Supermatrix - ma trận ngẫu nhiên theo cột). 4. Nâng siêu ma trận có trọng số lên lũy thừa giới hạn cực lớn (W^infty) cho đến khi các cột hội tụ thành các giá trị ổn định (Limit Supermatrix) để trích xuất véc tơ trọng số toàn cục.",
+      "benchmarks": "Được triển khai chuyên nghiệp thông qua phần mềm Super Decisions. Tỷ số nhất quán CR của từng ma trận so sánh cặp vẫn phải tuân thủ nghiêm ngặt CR <= 0.10. ANP được xem là chuẩn mực tối thượng khi phân tích các hệ thống ra quyết định chiến lược có mối liên kết đa chiều (như quản lý chuỗi cung ứng bền vững, đánh giá rủi ro tài chính hệ thống).",
+      "pitfalls": "Bẫy phản biện: Khối lượng câu hỏi so sánh cặp bùng nổ (combinatorial explosion). Trong một mạng lưới phức tạp, số lượng ma trận so sánh cặp có thể lên đến hàng trăm ma trận, gây mệt mỏi nhận thức cực độ cho các chuyên gia và làm giảm sút nghiêm trọng tính nhất quán logic của câu trả lời.",
+      "apa_reference": "Saaty, T. L. (2001). Decision making with dependence and feedback: The analytic network process. RWS Publications.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "analytical-generalization-vs-statistical-generalization",
@@ -6135,21 +6313,32 @@
     },
     {
       "id": "anderson-darling-test",
-      "term": "Anderson-Darling Test",
-      "vietnamese": "Kiểm định Anderson-Darling kiểm tra phân phối chuẩn nhấn mạnh độ nhạy tại hai đuôi phân phối",
-      "vietnamese_variants": [],
+      "term": "Anderson-Darling Test for Normality",
+      "vietnamese": "Kiểm định phân phối chuẩn Anderson-Darling",
+      "vietnamese_variants": [
+        "Kiểm định Anderson-Darling",
+        "A-D Test",
+        "Kiểm định đuôi phân phối thực nghiệm"
+      ],
       "domain_tags": [
         "Normality Diagnostics"
       ],
-      "core_definition": "Kiểm định Anderson-Darling kiểm tra phân phối chuẩn nhấn mạnh độ nhạy tại hai đuôi phân phối.",
-      "seminal_citation": "Stephens (1974)",
+      "core_definition": "Kiểm định Anderson-Darling (Anderson & Darling, 1952, 1954; Stephens, 1974) là phép kiểm định goodness-of-fit dựa trên hàm phân phối tích lũy thực nghiệm (ECDF). Vượt trội hơn kiểm định Kolmogorov-Smirnov truyền thống (vốn chỉ đo khoảng cách cực đại tại trung tâm), kiểm định Anderson-Darling gán trọng số lớn hơn cho hai đuôi của phân phối, khiến nó trở thành phép kiểm tra phân phối chuẩn nhạy bén nhất trong việc phát hiện hiện tượng lệch và đuôi dày (tail departures/fat tails).",
+      "seminal_citation": "Anderson & Darling (1952, 1954); Stephens (1974)",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Anderson-Darling Test according to Stephens (1974).",
       "domain_tags_en": [
         "Normality Diagnostics"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Sắp xếp dữ liệu theo thứ tự tăng dần y_(1) <= y_(2) <= ... <= y_(n). 2. Chuyển đổi dữ liệu chuẩn hóa: z_i = Phi((y_(i) - y_bar) / s). 3. Thống kê kiểm định A^2 = -n - (1/n) * sum_{i=1}^n [ (2i - 1) * ln(z_i) + (2(n - i) + 1) * ln(1 - z_i) ]. 4. Điều chỉnh theo cỡ mẫu n cho trường hợp các tham số trung bình và phương sai chưa biết: A*^2 = A^2 * (1 + 0.75/n + 2.25/n^2).",
+      "benchmarks": "Giả thuyết H0: Dữ liệu tuân theo phân phối chuẩn. Nếu p-value >= 0.05 (thống kê A*^2 < Critical Value 0.752 ở mức 5%): Không thể bác bỏ H0, khẳng định dữ liệu có phân phối chuẩn. Nếu p-value < 0.05: Bác bỏ giả định phân phối chuẩn; đây là chỉ báo nghiêm trọng cảnh báo không nên sử dụng các phương pháp tham số nhạy cảm với ngoại lai đuôi.",
+      "pitfalls": "Bẫy phản biện: Áp dụng bảng giá trị tới hạn gốc của Anderson & Darling (1954) cho trường hợp tham số trung bình và phương sai ước lượng từ mẫu. Khi tham số được ước lượng từ mẫu, bắt buộc phải dùng bảng hiệu chỉnh Stephens (1974) hoặc kiểm định A*^2 điều chỉnh có sẵn trong R/Minitab.",
+      "apa_reference": "Stephens, M. A. (1974). EDF statistics for goodness of fit and some comparisons. Journal of the American Statistical Association, 69(347), 730–737. https://doi.org/10.1080/01621459.1974.10480196",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "anecdotalism",
@@ -6189,15 +6378,19 @@
     },
     {
       "id": "anonymity",
-      "term": "Anonymity",
-      "vietnamese": "Tính ẩn danh trong nghiên cứu (Bảo mật danh tính đối tượng)",
-      "vietnamese_variants": [],
+      "term": "Anonymity in Research Ethics",
+      "vietnamese": "Tính ẩn danh trong đạo đức nghiên cứu",
+      "vietnamese_variants": [
+        "Bảo mật danh tính ẩn danh",
+        "Research Anonymity",
+        "Ẩn danh tuyệt đối vs Bảo mật thông tin"
+      ],
       "domain_tags": [
         "Đạo đức Nghiên cứu",
         "Quy chuẩn Thu thập Dữ liệu"
       ],
-      "core_definition": "Nguyên tắc đạo đức nghiên cứu bảo đảm rằng ngay cả nhóm nghiên cứu cũng không thể liên kết dữ liệu thu thập được với danh tính cá nhân thực tế của người tham gia khảo sát. Khác với tính bảo mật (Confidentiality), ẩn danh loại bỏ mọi thông tin định danh ngay từ khâu thu thập.",
-      "seminal_citation": "Belmont Report (1979). Ethical principles and guidelines for the protection of human subjects of research.",
+      "core_definition": "Tính ẩn danh trong đạo đức nghiên cứu (Anonymity - Sieber, 1992; Wiles et al., 2008) là tiêu chuẩn bảo vệ đối tượng tham gia nghiên cứu ở cấp độ cao nhất. Ẩn danh thực sự đạt được khi và chỉ khi ngay cả bản thân nhà nghiên cứu chính cũng hoàn toàn không thể liên kết hoặc nhận diện danh tính thực tế của đối tượng tham gia với các câu trả lời hay dữ liệu mà họ cung cấp (ví dụ: khảo sát trực tuyến không lưu địa chỉ IP, không hỏi tên hoặc thông tin định danh cá nhân).",
+      "seminal_citation": "Sieber (1992); Wiles et al. (2008)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
@@ -6205,7 +6398,14 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Khảo sát định lượng: Thiết lập chế độ ẩn danh trong công cụ thu thập số (tắt lưu IP, tắt theo dõi vị trí địa lý, không thu thập email). 2. Nghiên cứu định tính: Khi không thể ẩn danh tuyệt đối (do phỏng vấn trực tiếp), bắt buộc phải áp dụng quy trình Ẩn danh hóa dữ liệu (De-identification / Pseudonymization): Thay thế tên thật bằng biệt danh (pseudonyms), xóa bỏ các chi tiết định danh bối cảnh (tên công ty cụ thể, vị trí địa lý hẹp). 3. Ký cam kết bảo mật và lưu trữ dữ liệu mã hóa.",
+      "benchmarks": "Là yêu cầu bắt buộc của Hội đồng Đạo đức Nghiên cứu Thể chế (Institutional Review Board - IRB) trên toàn thế giới theo Tuyên bố Helsinki và Báo cáo Belmont. Minh chứng rõ ràng về tính ẩn danh giúp giảm thiểu triệt để Thiên lệch mong muốn xã hội (Social Desirability Bias) của người trả lời.",
+      "pitfalls": "Bẫy phản biện: Nhầm lẫn giữa 'Tính ẩn danh' (Anonymity) và 'Tính bảo mật' (Confidentiality). Bảo mật nghĩa là nhà nghiên cứu biết danh tính người tham gia nhưng cam kết không tiết lộ cho bên thứ ba; còn Ẩn danh nghĩa là bản thân nhà nghiên cứu cũng không hề biết họ là ai. Hứa hẹn 'ẩn danh tuyệt đối' trong khi tiến hành phỏng vấn sâu trực tiếp là lỗi sai kiến thức đạo đức cơ bản.",
+      "apa_reference": "Wiles, R., Crow, G., Heath, S., & Charles, V. (2008). The management of confidentiality and anonymity in social research. International Journal of Social Research Methodology, 11(5), 417–428. https://doi.org/10.1080/13645570701622231",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "appreciative-inquiry-ai",
@@ -6286,34 +6486,48 @@
     {
       "id": "area-under-the-curve-auc-c-statistic",
       "term": "Area Under the Curve (AUC / C-Statistic)",
-      "vietnamese": "Diện tích Dưới đường cong AUC",
-      "vietnamese_variants": [],
+      "vietnamese": "Diện tích dưới đường cong (Chỉ số AUC / Thống kê C)",
+      "vietnamese_variants": [
+        "Chỉ số AUC",
+        "C-Statistic",
+        "Concordance Statistic",
+        "Chỉ số phân biệt mô hình phân loại"
+      ],
       "domain_tags": [
         "Diagnostic Metrics"
       ],
-      "core_definition": "Chỉ số đo lường năng lực phân loại tổng thể của mô hình dự báo; ngưỡng > 0.8 là tốt.",
-      "seminal_citation": "Hanley & McNeil (1982)",
+      "core_definition": "Diện tích dưới đường cong đặc trưng hoạt động của máy thu (Area Under the ROC Curve - AUC) hay Thống kê C (Concordance Statistic - Hanley & McNeil, 1982) là chỉ số đo lường hiệu năng tổng thể và năng lực phân biệt (discriminative ability) của mô hình phân loại nhị phân (như Logistic, Probit, Random Forest, Cox Regression). Về mặt xác suất, AUC biểu thị xác suất mà mô hình sẽ gán điểm dự báo rủi ro cao hơn cho một cá thể có biến cố xảy ra thực tế (positive) so với một cá thể không gặp biến cố (negative) được chọn ngẫu nhiên.",
+      "seminal_citation": "Hanley & McNeil (1982); DeLong, DeLong, & Clarke-Pearson (1988)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Area Under the Curve (AUC / C-Statistic) according to Hanley & McNeil (1982).",
       "domain_tags_en": [
         "Diagnostic Metrics"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Vẽ đường cong ROC biểu diễn Tỷ lệ Dương tính Thật (True Positive Rate - TPR / Sensitivity) trên trục tung theo Tỷ lệ Dương tính Giả (False Positive Rate - FPR / 1 - Specificity) trên trục hoành qua mọi ngưỡng cắt xác suất khả dĩ c in [0, 1]. 2. Tính diện tích tích phân dưới đường cong ROC: AUC = integral TPR(c) d(FPR(c)). 3. Về mặt phi tham số, AUC tương đương toán học với thống kê Wilcoxon-Mann-Whitney U chia cho tích kích thước hai nhóm: AUC = U / (n_pos * n_neg). 4. Tính sai số chuẩn và khoảng tin cậy 95% theo công thức DeLong et al. (1988).",
+      "benchmarks": "Ngưỡng phân loại Hosmer, Lemeshow, & Sturdivant (2013): (1) AUC = 0.50: Mô hình không có năng lực phân biệt (tương đương đoán mò ngẫu nhiên); (2) 0.70 <= AUC < 0.80: Năng lực phân biệt chấp nhận được (acceptable); (3) 0.80 <= AUC < 0.90: Năng lực phân biệt xuất sắc (excellent); (4) AUC >= 0.90: Năng lực phân biệt vượt trội (outstanding).",
+      "pitfalls": "Bẫy phản biện: Sử dụng AUC trên tập dữ liệu mất cân bằng nhị phân cực đoan (imbalanced datasets: ví dụ tỷ lệ vỡ nợ chỉ chiếm 1%). Trong tình huống này, AUC có thể bị thổi phồng giả tạo do số lượng lớn các trường hợp âm tính; bắt buộc phải báo cáo thêm diện tích dưới đường cong Độ chính xác - Độ nhạy (PR-AUC / Precision-Recall Curve).",
+      "apa_reference": "Hanley, J. A., & McNeil, B. J. (1982). The meaning and use of the area under a receiver operating characteristic (ROC) curve. Radiology, 143(1), 29–36. https://doi.org/10.1148/radiology.143.1.7063747",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "area-under-the-roc-curve",
-      "term": "Area Under the ROC Curve (AUC)",
-      "vietnamese": "Diện tích Dưới Đường cong ROC",
+      "term": "Area Under the Receiver Operating Characteristic Curve (ROC-AUC)",
+      "vietnamese": "Diện tích dưới đường cong đặc trưng hoạt động máy thu (ROC-AUC)",
       "vietnamese_variants": [
-        "AUC"
+        "ROC-AUC Metric",
+        "Đường cong ROC",
+        "Receiver Operating Characteristic Analysis"
       ],
       "domain_tags": [
         "Predictive Analytics",
         "Statistics"
       ],
-      "core_definition": "Chỉ số tổng hợp đo lường mức độ phân tách giữa hai nhóm của mô hình dự báo phân loại trong kinh tế lượng và khoa học dữ liệu. Ngưỡng thực nghiệm tham chiếu: AUC = 0.5 (không có giá trị phân biệt); AUC = 0.7 - 0.8 (chấp nhận được); AUC > 0.8 (tốt); AUC > 0.9 (rất xuất sắc).",
-      "seminal_citation": "AUC = 0.5 (không có giá trị phân biệt); AUC = 0.7 - 0.8 (chấp nhận được); AUC > 0.8 (tốt); AUC > 0.9 (rất xuất sắc).",
+      "core_definition": "Diện tích dưới đường cong ROC (ROC-AUC) là thước đo đánh giá chất lượng mô hình dự báo nhị phân độc lập hoàn toàn với việc lựa chọn một ngưỡng cắt quyết định (decision threshold) cụ thể. Chỉ số này phản ánh toàn diện sự đánh đổi giữa độ nhạy (Sensitivity) và độ đặc hiệu (Specificity) của mô hình trên toàn dải ngưỡng xác suất từ 0 đến 1.",
+      "seminal_citation": "DeLong, DeLong, & Clarke-Pearson (1988); Hosmer & Lemeshow (2000)",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
@@ -6322,7 +6536,13 @@
         "Predictive Analytics",
         "Statistics"
       ],
-      "benchmarks": "AUC = 0.5 (không có giá trị phân biệt); AUC = 0.7 - 0.8 (chấp nhận được); AUC > 0.8 (tốt); AUC > 0.9 (rất xuất sắc)."
+      "benchmarks": "Đường chéo 45 độ đại diện cho AUC = 0.50. Mô hình đạt giá trị chẩn đoán thực tế khi AUC vượt ngưỡng 0.70. Điểm cắt tối ưu (Optimal Cutoff) thường được xác định thông qua Chỉ số Youden (Youden's J statistic = Sensitivity + Specificity - 1) đạt giá trị cực đại.",
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Mô hình phân loại xuất ra xác suất dự báo liên tục p_i = P(Y_i = 1 | X_i). 2. Quét ngưỡng phân loại theta từ 1 về 0: Nếu p_i >= theta thì gán nhãn 1, ngược lại gán 0. 3. Tính toán cặp giá trị (FPR, TPR) tại mỗi ngưỡng và vẽ đường cong ROC. 4. So sánh hai mô hình cạnh tranh bằng kiểm định DeLong (DeLong test) để kiểm tra xem chênh lệch Delta_AUC có ý nghĩa thống kê hay không (p < 0.05).",
+      "pitfalls": "Bẫy phản biện: Nhầm lẫn giữa năng lực phân biệt (Discrimination đo bằng AUC) và độ hiệu chuẩn (Calibration đo bằng kiểm định Hosmer-Lemeshow hoặc Brier score). Một mô hình có AUC rất cao (0.85) vẫn có thể bị sai lệch nghiêm trọng về xác suất dự báo thực tế (bị dự báo quá cao hoặc quá thấp).",
+      "apa_reference": "DeLong, E. R., DeLong, D. M., & Clarke-Pearson, D. L. (1988). Comparing the areas under two or more correlated receiver operating characteristic curves: A nonparametric approach. Biometrics, 44(3), 837–845. https://doi.org/10.2307/2531595",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "arellano-bond-dynamic-panel-gmm",
@@ -6503,23 +6723,34 @@
     },
     {
       "id": "assent-vs-consent",
-      "term": "Assent vs. Consent (Informed Consent vs. Child Assent)",
-      "vietnamese": "Sự Tán thành của Vị thành niên (Assent) vs. Sự Đồng thuận Tự nguyện (Consent) trong Đạo đức Nghiên cứu",
-      "vietnamese_variants": [],
+      "term": "Assent vs. Informed Consent in Research Ethics",
+      "vietnamese": "Sự tán thành của vị thành niên vs. Sự đồng thuận tự nguyện",
+      "vietnamese_variants": [
+        "Assent vs Consent",
+        "Đồng thuận đạo đức nghiên cứu trẻ em",
+        "Informed Consent Protocol"
+      ],
       "domain_tags": [
         "Đạo đức Nghiên cứu",
         "Quy chuẩn Thu thập Dữ liệu",
         "Bảo vệ Đối tượng Dễ bị Tổn thương"
       ],
-      "core_definition": "Hai cấp độ đồng thuận đạo đức có tính chất pháp lý và tâm lý khác nhau trong các nghiên cứu xã hội, hành vi và y sinh có sự tham gia của đối tượng dễ bị tổn thương (vị thành niên dưới 18 tuổi hoặc người bị suy giảm năng lực nhận thức): (1) Sự đồng thuận tự nguyện có hiểu biết đầy đủ (Informed Consent): Thỏa thuận pháp lý chính thức bắt buộc phải có chữ ký của người đủ tuổi thành niên có đầy đủ năng lực hành vi dân sự, hoặc của cha mẹ / người giám hộ hợp pháp (Parental Consent); (2) Sự tán thành tự nguyện (Assent): Sự đồng ý tham gia một cách tự nguyện của chính trẻ em hoặc đối tượng vị thành niên, được giải thích bằng ngôn ngữ đơn giản, dễ hiểu phù hợp với mức độ trưởng thành và nhận thức của các em. Nguyên tắc đạo đức quốc tế (Belmont Report, Tuyên ngôn Helsinki, American Academy of Pediatrics) quy định: Có Consent của cha mẹ nhưng trẻ em từ chối (Dissent) thì nhà nghiên cứu KHÔNG được phép ép buộc trẻ tham gia; bắt buộc phải có cả Consent của phụ huynh VÀ Assent của trẻ em.",
-      "seminal_citation": "National Commission for the Protection of Human Subjects of Biomedical and Behavioral Research (1979). The Belmont Report; American Academy of Pediatrics Committee on Bioethics (1995). Informed consent, parental permission, and assent in pediatric practice. Pediatrics, 95(2), 314–317.",
+      "core_definition": "Sự đồng thuận tự nguyện (Informed Consent) và Sự tán thành (Assent) là hai cấp độ thỏa thuận đạo đức nghiên cứu bắt buộc khi làm việc với các nhóm đối tượng dễ bị tổn thương (vulnerable populations), đặc biệt là trẻ em và người mất năng lực hành vi dân sự. Informed Consent là sự đồng ý hợp pháp có đầy đủ năng lực pháp lý do cha mẹ hoặc người giám hộ hợp pháp ký kết; trong khi Assent là sự thể hiện tự nguyện đồng ý tham gia nghiên cứu của chính đứa trẻ hoặc đối tượng tham gia, được giải thích bằng ngôn ngữ phù hợp với lứa tuổi và trình độ nhận thức của họ.",
+      "seminal_citation": "Belmont Report (1979); Unguru (2011)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "Đã khắc phục lỗi cắt cụt văn bản và dấu ngoặc đơn; làm rõ sự khác biệt giữa quyền pháp lý (Parental Consent) và quyền tự quyết tâm lý (Child Assent) kèm nguyên tắc Dissent theo Belmont Report và AAP (1995).",
       "core_definition_en": "Scholarly peer-reviewed definition of Assent vs. Consent (Informed Consent vs. Child Assent) based on established academic literature.",
       "domain_tags_en": [
         "Research Ethics"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Quy trình kép bắt buộc: Cần đồng thời cả Văn bản Đồng thuận có hiểu biết (Informed Consent) của phụ huynh VÀ Bản Tán thành (Assent Form) được thiết kế riêng cho trẻ em. 2. Nguyên tắc Tôn trọng Tự chủ: Nếu đứa trẻ từ chối (Dissent / từ chối tán thành), nghiên cứu bắt buộc phải dừng lại ngay cả khi cha mẹ đã ký giấy đồng thuận Consent. 3. Thẩm định và phê duyệt bởi Hội đồng IRB.",
+      "benchmarks": "Được quy định nghiêm ngặt trong Bộ Quy chuẩn Đạo đức Liên bang Hoa Kỳ (45 CFR 46, Subpart D) và hướng dẫn của Ủy ban Đạo đức UNESCO / UNICEF. Bắt buộc đối với mọi nghiên cứu giáo dục, tâm lý học phát triển và y tế can thiệp trên trẻ vị thành niên.",
+      "pitfalls": "Bẫy phản biện: Chỉ xin chữ ký đồng thuận của phụ huynh (Consent) mà bỏ qua việc xin ý kiến tán thành của trẻ em (Assent), hoặc tiếp tục can thiệp khi đứa trẻ thể hiện sự khó chịu hoặc từ chối tham gia. Đây là hành vi vi phạm đạo đức nghiên cứu nghiêm trọng.",
+      "apa_reference": "Unguru, Y. (2011). Informed consent and assent in pediatric research. In P. A. Offit (Ed.), Ethical issues in pediatric research (pp. 45–62). Springer.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "atomistic-fallacy-individualistic-fallacy",
@@ -6559,33 +6790,48 @@
     },
     {
       "id": "audit-trail-153",
-      "term": "Audit Trail",
-      "vietnamese": "Dấu vết kiểm toán",
-      "vietnamese_variants": [],
+      "term": "Audit Trail in Research Governance",
+      "vietnamese": "Dấu vết kiểm toán trong quản trị nghiên cứu",
+      "vietnamese_variants": [
+        "Hồ sơ kiểm toán nghiên cứu",
+        "Audit Trail",
+        "Vết kiểm toán dữ liệu"
+      ],
       "domain_tags": [
         "Qualitative Rigour"
       ],
-      "core_definition": "hồ sơ minh bạch lưu trữ toàn bộ các bước ra quyết định nghiên cứu định tính.",
-      "seminal_citation": "Lincoln & Guba (1985)",
+      "core_definition": "Dấu vết kiểm toán trong quản trị nghiên cứu (Audit Trail - Lincoln & Guba, 1985; Rogers & Cowles, 1993) là hệ thống hồ sơ tài liệu ghi chép tuần tự, minh bạch và toàn diện về toàn bộ quy trình, quyết định phương pháp luận, các bước làm sạch dữ liệu và diễn tiến phân tích diễn ra trong suốt vòng đời của dự án nghiên cứu khoa học. Dấu vết kiểm toán cung cấp bằng chứng xác thực cho phép một kiểm toán viên độc lập hoặc người phản biện có thể tái lập, kiểm tra và xác nhận tính liêm chính và độ tin cậy của kết quả nghiên cứu.",
+      "seminal_citation": "Lincoln & Guba (1985); Rogers & Cowles (1993)",
       "tier": "curated",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #154",
       "core_definition_en": "Academic definition of Audit Trail according to Lincoln & Guba (1985).",
       "domain_tags_en": [
         "Qualitative Rigour"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Lưu trữ dữ liệu thô ban đầu (Raw data archives). 2. Nhật ký mã hóa và ghi chú phương pháp (Methodological log & codebooks). 3. Ghi chép tái lập phân tích: Tệp mã lệnh (R scripts, Stata do-files, Python notebooks) có chú thích rõ ràng về việc loại bỏ biến hoặc biến đổi dữ liệu. 4. Nhật ký quyết định của nhóm tác giả (Audit trail logbook) ghi lại thời điểm và lý do của từng điều chỉnh thiết kế.",
+      "benchmarks": "Đóng vai trò là trụ cột quyết định tính xác nhận được (Confirmability) và tính phụ thuộc (Dependability) trong nghiên cứu định tính; bảo đảm tính khả tái lập (Replicability) trong nghiên cứu kinh tế lượng thực nghiệm theo chuẩn mực Open Science (OSF).",
+      "pitfalls": "Bẫy phản biện: Không lưu giữ dấu vết kiểm toán hoặc các file mã lệnh không thể tái tạo được kết quả như trong bài báo xuất bản (Replication failure). Hiện tượng này đang dẫn đến cuộc khủng hoảng tái lập (Replication Crisis) và bài báo có nguy cơ bị gỡ bỏ (retraction) nếu bị phát hiện có sai lệch không thể giải trình.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. Sage Publications.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "audit-trail-in-qualitative-research",
-      "term": "Audit trail in qualitative research",
-      "vietnamese": "Vệt kiểm toán định tính",
-      "vietnamese_variants": [],
+      "term": "Audit Trail in Qualitative Research",
+      "vietnamese": "Vết kiểm toán trong nghiên cứu định tính",
+      "vietnamese_variants": [
+        "Dấu vết kiểm toán định tính",
+        "Qualitative Audit Trail",
+        "Hồ sơ kiểm tra tính đáng tin cậy định tính"
+      ],
       "domain_tags": [
         "Methodology",
         "Research Design"
       ],
-      "core_definition": "Bản lưu vết chi tiết từng quyết định phương pháp luận để phục vụ thẩm định.",
-      "seminal_citation": "Flick et al. (2004)",
+      "core_definition": "Vết kiểm toán trong nghiên cứu định tính (Qualitative Audit Trail - Lincoln & Guba, 1985; Carcary, 2009) là chiến lược thiết yếu bảo vệ tính chuẩn xác và đáng tin cậy (Trustworthiness) của một công trình nghiên cứu định tính. Thông qua việc ghi chép tỉ mỉ và có cấu trúc toàn bộ các bước tư duy diễn giải của nhà nghiên cứu — từ bản ghi âm thô, bản gỡ băng, ghi chú thực địa (field notes), sổ tay phản tư (reflexive journals) đến các giai đoạn phát triển mã code và hình thành chủ đề — vết kiểm toán cho phép người đọc truy xuất nguồn gốc của mọi phát hiện lý thuyết từ dữ liệu gốc.",
+      "seminal_citation": "Lincoln & Guba (1985); Carcary (2009)",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
@@ -6593,7 +6839,14 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Sáu nhóm tài liệu kiểm toán Lincoln & Guba: (1) Dữ liệu thô; (2) Dữ liệu đã rút gọn và phân tích; (3) Cấu trúc tái lập mô hình lý thuyết; (4) Ghi chú tiến trình thực địa; (5) Vật liệu dự định và ý đồ cá nhân; (6) Thông tin phát triển công cụ khảo sát. 2. Thực hiện Kiểm toán bên ngoài (External Audit): Mời một học giả độc lập rà soát ngẫu nhiên vết kiểm toán để kiểm tra xem các diễn giải có bị áp đặt chủ quan hay không.",
+      "benchmarks": "Là tiêu chuẩn vàng trong mọi đề cương luận án tiến sĩ và bài báo định tính chất lượng cao (JBR, JMS, Qualitative Research). Tác giả thường đính kèm một phụ lục tóm tắt dấu vết kiểm toán (Methodological audit appendix) minh họa quy trình từ dữ liệu thô đến chủ đề cuối cùng.",
+      "pitfalls": "Bẫy phản biện: 'Black box qualitative analysis' — Trình bày các chủ đề (themes) như thể chúng tự động 'nảy sinh' (emerged) từ dữ liệu mà không có bất kỳ dấu vết kiểm toán nào chứng minh quy trình trích xuất; các phản biện quốc tế sẽ nghi ngờ tính bịa đặt hoặc thiên kiến thiên vị chủ quan của tác giả.",
+      "apa_reference": "Carcary, M. (2009). The research audit trail: Enhancing trustworthiness in qualitative inquiry. Electronic Journal of Business Research Methods, 7(1), 11–24.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "augmented-dickey-fuller-test",
@@ -6643,20 +6896,32 @@
     {
       "id": "authorship-contributorship-matrix-credit",
       "term": "CRediT (Contributor Roles Taxonomy)",
-      "vietnamese": "Phân loại Vai trò Đóng góp Tác giả CRediT",
-      "vietnamese_variants": [],
+      "vietnamese": "Phân loại vai trò đóng góp tác giả CRediT",
+      "vietnamese_variants": [
+        "Tiêu chuẩn CRediT",
+        "CRediT Taxonomy",
+        "Bảng ma trận vai trò tác giả",
+        "Liêm chính học thuật CRediT"
+      ],
       "domain_tags": [
         "Publication Ethics"
       ],
-      "core_definition": "Chuẩn hóa 14 vai trò đóng góp cụ thể của từng tác giả trong bài báo.",
-      "seminal_citation": "Brand et al. (2015)",
+      "core_definition": "Hệ thống phân loại vai trò đóng góp CRediT (Contributor Roles Taxonomy - Brand et al., 2015; Allen et al., 2019) là tiêu chuẩn quốc tế chuẩn hóa do Viện Tiêu chuẩn Quốc gia Hoa Kỳ (ANSI/NISO Z39.104-2022) phê duyệt nhằm minh bạch hóa và phân định chi tiết vai trò của từng thành viên trong nhóm nghiên cứu khoa học đa tác giả. CRediT phân rã quy trình nghiên cứu thành 14 vai trò độc lập cụ thể, giúp ghi nhận công bằng công sức của các nhà nghiên cứu, ngăn chặn hiện tượng tác giả ma (ghost authorship) và tác giả danh dự/tặng kèm (honorary/gift authorship).",
+      "seminal_citation": "Brand et al. (2015); Allen et al. (2019)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Authorship Contributorship Matrix (CRediT) according to Brand et al. (2015).",
       "domain_tags_en": [
         "Publication Ethics"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. 14 vai trò chuẩn mực CRediT: (1) Conceptualization (Ý tưởng lý thuyết); (2) Data curation (Quản lý dữ liệu); (3) Formal analysis (Phân tích định lượng/định tính); (4) Funding acquisition (Thu hút tài trợ); (5) Investigation (Tiến hành điều tra thực địa); (6) Methodology (Thiết kế phương pháp luận); (7) Project administration (Quản trị dự án); (8) Resources (Cung cấp tài nguyên); (9) Software (Phát triển phần mềm/mã lệnh); (10) Supervision (Giám sát khoa học); (11) Validation (Kiểm định và tái lập kết quả); (12) Visualization (Trực quan hóa đồ thị); (13) Writing – original draft (Viết bản thảo đầu tiên); (14) Writing – review & editing (Đọc phản biện và biên tập). 2. Báo cáo cụ thể từng tác giả nắm giữ những vai trò nào trong phần Author Contributions Statement.",
+      "benchmarks": "Được áp dụng bắt buộc trên hơn 1.000 tạp chí khoa học quốc tế hàng đầu (Elsevier, Springer Nature, Wiley, PLOS, Taylor & Francis, Oxford University Press). Việc chỉ cung cấp tài chính hoặc đọc bản thảo mà không có đóng góp trí tuệ thực chất không đủ điều kiện để đứng tên tác giả theo hướng dẫn ICMJE và CRediT.",
+      "pitfalls": "Bẫy phản biện: 'Gift Authorship' — Đưa tên giáo sư đầu ngành hoặc người đứng đầu đơn vị vào danh sách tác giả mà không liệt kê được bất kỳ vai trò thực chất nào trong bảng phân loại CRediT; khi bị ủy ban liêm chính học thuật điều tra, bài báo có nguy cơ bị rút hoặc đính chính công khai.",
+      "apa_reference": "Brand, A., Allen, L., Altman, M., Hlava, M., & Scott, J. (2015). Beyond authorship: Attribution, contribution, collaboration in research. Learned Publishing, 28(2), 151–155. https://doi.org/10.1087/20150211",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "auto-netnography",
@@ -7018,17 +7283,21 @@
     },
     {
       "id": "back-door-criterion",
-      "term": "Back-Door Criterion",
-      "vietnamese": "Tiêu chuẩn Cửa sau trong Suy luận Nhân quả Đồ thị (DAG)",
-      "vietnamese_variants": [],
+      "term": "Back-Door Criterion (Judea Pearl)",
+      "vietnamese": "Tiêu chuẩn cửa sau trong đồ thị nhân quả",
+      "vietnamese_variants": [
+        "Tiêu chuẩn Back-Door",
+        "Back-door Path Criterion",
+        "Đóng đường dẫn cửa sau"
+      ],
       "domain_tags": [
         "Suy luận Nhân quả",
         "Kinh tế lượng",
         "CB-SEM",
         "Đồ thị Nhân quả (DAG)"
       ],
-      "core_definition": "Một tiêu chuẩn toán học trên Đồ thị Nhân quả Định hướng Phi chu trình (Directed Acyclic Graph - DAG) do Judea Pearl phát triển, nhằm xác định tập hợp các biến số cần kiểm soát (hoặc điều chỉnh trong mô hình hồi quy) để ước lượng tác động nhân quả thuần túy của nguyên nhân X lên kết quả Y mà không bị làm sai lệch bởi các yếu tố gây nhiễu (confounders). Tập hợp biến Z thỏa mãn Tiêu chuẩn Cửa sau đối với cặp (X, Y) nếu: (1) Không có biến nào trong Z là hậu duệ (descendant) của X; (2) Z chặn (block) mọi đường dẫn cửa sau (backdoor path - tức đường dẫn bắt đầu bằng một mũi tên chỉ vào X) nối từ X đến Y. Khi điều kiện này được thỏa mãn, hiệu ứng nhân quả P(Y | do(X)) có thể được xác định đầy đủ từ dữ liệu quan sát thông qua công thức điều chỉnh cửa sau (Back-door Adjustment Formula).",
-      "seminal_citation": "Pearl, J. (1993). Comment: Graphical models, causality and intervention. Statistical Science, 8(3), 266–269; Pearl, J. (2009). Causality: Models, reasoning, and inference (2nd ed.). Cambridge University Press; Elwert, F. (2013). Graphical causal models. In Handbook of causal analysis for social research (pp. 245–273). Springer.",
+      "core_definition": "Tiêu chuẩn cửa sau (Back-Door Criterion - Pearl, 1993, 2000) là định lý toán học nền tảng trong khuôn khổ Đồ thị có hướng phi chu trình (DAGs), cung cấp điều kiện hình thức để xác định xem một tập biến kiểm soát Z có đủ để loại bỏ hoàn toàn thiên lệch do biến gây nhiễu (confounding bias) khi ước lượng tác động nhân quả từ X sang Y hay không.",
+      "seminal_citation": "Pearl (1993, 2000)",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "Trùng #189",
@@ -7036,15 +7305,20 @@
       "domain_tags_en": [
         "Causal Inference"
       ],
-      "benchmarks": "Nguyên tắc kiểm soát tối ưu: Chỉ kiểm soát các biến tiền đề gây nhiễu (common causes) cần thiết để chặn mọi đường dẫn cửa sau. Bắt buộc kiểm tra cấu trúc đồ thị nhân quả DAG trước khi đưa biến kiểm soát vào mô hình hồi quy.",
-      "pitfalls": "BẪY BỘ VA CHẠM (Collider Stratification Bias): Sai lầm chết người phổ biến là đưa mọi biến quan sát có thể vào mô hình kiểm soát. Nếu kiểm soát một biến va chạm (collider - biến nhận hai mũi tên chỉ vào, ví dụ X -> C <- Y hoặc U1 -> C <- U2), việc kiểm soát C sẽ mở ra một đường dẫn nhân quả ngụy tạo mới, biến một mối quan hệ không tương quan thành tương quan giả (Berkson bias).",
+      "benchmarks": "Nếu tập biến Z thỏa mãn tiêu chuẩn cửa sau, phân phối can thiệp P(Y | do(X)) được đồng nhất hóa (identified) từ dữ liệu quan sát thông qua công thức hiệu chỉnh cửa sau (Back-door Adjustment Formula): P(Y | do(X = x)) = sum_z P(Y | X = x, Z = z) * P(Z = z). Trong hồi quy OLS, đưa tập biến Z vào phương trình sẽ cho ước lượng tác động nhân quả không chệch.",
+      "pitfalls": "Bẫy phản biện: 'Collider stratification bias' — Đưa một biến va chạm (collider: biến có hai mũi tên cùng chỉ vào nó -> C <-) vào tập biến kiểm soát Z. Việc kiểm soát một biến collider sẽ mở ra một đường dẫn cửa sau giả tạo vốn đang bị đóng, tạo ra tương quan ảo và làm sai lệch hoàn toàn kết luận nhân quả.",
       "expert_checks": {
         "vietnamese": true,
         "definition": true,
         "benchmark": true,
         "pitfalls": true,
         "needs_edit": false
-      }
+      },
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "Một tập hợp các biến Z thỏa mãn tiêu chuẩn cửa sau đối với cặp biến (X, Y) nếu: 1. Không có biến nào trong Z là hậu duệ (descendant) của X (không phải là biến trung gian hay hệ quả của can thiệp). 2. Tập biến Z chặn (blocks / d-separates) tất cả các đường dẫn cửa sau (back-door paths) nối giữa X và Y — tức là mọi đường dẫn xuất phát từ X bằng một mũi tên đi ngược vào X (<- X ... -> Y).",
+      "apa_reference": "Pearl, J. (2000). Causality: Models, reasoning, and inference. Cambridge University Press.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "bai-perron-test",
@@ -7450,9 +7724,11 @@
     {
       "id": "bayesian-information-criterion-schwarz-criterion",
       "term": "Bayesian Information Criterion (BIC / Schwarz Criterion)",
-      "vietnamese": "Tiêu chuẩn Thông tin Bayes (Chỉ số BIC)",
+      "vietnamese": "Tiêu chuẩn thông tin Bayes (Chỉ số BIC)",
       "vietnamese_variants": [
-        "BIC"
+        "Schwarz Criterion",
+        "Chỉ số BIC",
+        "SBC"
       ],
       "domain_tags": [
         "Phương pháp Định lượng",
@@ -7460,8 +7736,8 @@
         "Kinh tế lượng",
         "CB-SEM"
       ],
-      "core_definition": "Chỉ số thống kê dùng để so sánh và lựa chọn mô hình tối ưu giữa các mô hình cạnh tranh không lồng nhau (non-nested models), dựa trên hàm hợp lý cực đại kết hợp với mức phạt nghiêm ngặt đối với số lượng tham số ước lượng và kích thước mẫu. Công thức xác định: BIC = -2 ln(L) + k * ln(n), trong đó L là giá trị cực đại của hàm hợp lý, k là số lượng tham số tự do trong mô hình, và n là kích thước mẫu quan sát. Khi kích thước mẫu n >= 8, mức phạt của BIC (k * ln(n)) lớn hơn nhiều so với mức phạt 2k của chỉ số AIC (Akaike Information Criterion), do đó BIC ưu tiên các mô hình có tính cô đọng (parsimonious) cao hơn và có tính chất tiệm cận nhất quán (consistent model selection). Mô hình nào có giá trị BIC nhỏ hơn (âm hơn) là mô hình được dữ liệu ủng hộ tốt hơn.",
-      "seminal_citation": "Schwarz, G. (1978). Estimating the dimension of a model. The Annals of Statistics, 6(2), 461–464; Raftery, A. E. (1995). Bayesian model selection in social research. Sociological Methodology, 25, 111–163.",
+      "core_definition": "Tiêu chuẩn thông tin Bayes (BIC - Schwarz, 1978) là tiêu chuẩn lựa chọn mô hình dựa trên suy luận Bayes, đánh giá xác suất hậu nghiệm của một mô hình khi giả định rằng mô hình thực sự (true model) nằm trong tập hợp các mô hình được xem xét. Điểm khác biệt mấu chốt so với AIC là BIC áp dụng hình phạt độ phức tạp tham số tỷ lệ thuận với logarit của kích thước mẫu (k*ln(n)), tạo ra mức phạt khắt khe hơn rất nhiều đối với các mô hình cồng kềnh khi quy mô mẫu lớn.",
+      "seminal_citation": "Schwarz (1978); Kass & Raftery (1995)",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
@@ -7469,15 +7745,20 @@
       "domain_tags_en": [
         "Acronym NCKH"
       ],
-      "benchmarks": "Quy tắc đánh giá mức chênh lệch giữa hai mô hình Delta BIC = BIC_A - BIC_B theo Raftery (1995): (1) Delta BIC trong [0; 2]: Bằng chứng rất yếu (Weak / Not worth more than a bare mention); (2) Delta BIC trong [2; 6]: Bằng chứng đáng kể / tích cực (Positive evidence); (3) Delta BIC trong [6; 10]: Bằng chứng mạnh (Strong evidence); (4) Delta BIC > 10: Bằng chứng rất mạnh / mang tính quyết định (Decisive / Very strong evidence) ủng hộ mô hình có BIC thấp hơn.",
-      "pitfalls": "Không thể dùng BIC để kết luận mô hình được chọn là đúng tuyệt đối; BIC chỉ cho biết mô hình đó tốt nhất trong số các mô hình được so sánh. Khi cỡ mẫu rất lớn, hình phạt k * ln(n) của BIC có thể quá nặng, dẫn đến nguy cơ bỏ sót các tham số có hiệu ứng nhỏ nhưng thực chất (underfitting).",
+      "benchmarks": "Quy tắc Kass & Raftery (1995): (1) Delta_BIC 0 đến 2: Bằng chứng ủng hộ không đáng kể; (2) Delta_BIC 2 đến 6: Bằng chứng ủng hộ tích cực (positive); (3) Delta_BIC 6 đến 10: Bằng chứng ủng hộ mạnh mẽ (strong); (4) Delta_BIC > 10: Bằng chứng ủng hộ tuyệt đối (decisive). BIC có tính nhất quán tiệm cận (asymptotically consistent: xác suất chọn đúng mô hình thực tiến tới 1 khi n tiến ra vô cùng).",
+      "pitfalls": "Bẫy phản biện: Dùng BIC cho các nghiên cứu dự báo ngắn hạn (out-of-sample prediction) với mẫu nhỏ đến trung bình. Trong bối cảnh này, mức phạt nặng nề của BIC thường dẫn đến việc loại bỏ các biến có ảnh hưởng thực chất nhưng kích thước hiệu ứng nhỏ, khiến mô hình bị thiếu biến (AIC thường cho năng lực dự báo thực tế tốt hơn BIC).",
       "expert_checks": {
         "vietnamese": true,
         "definition": true,
         "benchmark": true,
         "pitfalls": true,
         "needs_edit": false
-      }
+      },
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Công thức tính: BIC = k*ln(n) - 2*ln(L), trong đó k là số tham số ước lượng, n là kích thước mẫu quan sát, L là giá trị hợp lý cực đại. 2. Khi n >= 8 (ln(n) > 2), hình phạt của BIC luôn lớn hơn hình phạt của AIC. 3. Tính chênh lệch Delta_BIC_i = BIC_i - min(BIC) và xấp xỉ hệ số Bayes (Bayes Factor: BF xấp xỉ exp(-Delta_BIC / 2)).",
+      "apa_reference": "Schwarz, G. (1978). Estimating the dimension of a model. The Annals of Statistics, 6(2), 461–464. https://doi.org/10.1214/aos/1176344136",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "bealls-list-of-predatory-publishers",
@@ -7621,21 +7902,32 @@
     },
     {
       "id": "between-study-variance-tau-metric",
-      "term": "Between-Study Variance (Tau² Metric)",
-      "vietnamese": "Phương sai Giữa các Nghiên cứu Tau-squared",
-      "vietnamese_variants": [],
+      "term": "Between-Study Variance (Tau-squared Metric)",
+      "vietnamese": "Phương sai giữa các nghiên cứu (Chỉ số Tau-squared)",
+      "vietnamese_variants": [
+        "Chỉ số Tau²",
+        "Tau-squared in Meta-Analysis",
+        "Độ biến thiên giữa các nghiên cứu"
+      ],
       "domain_tags": [
         "Meta-Analysis"
       ],
-      "core_definition": "Ước lượng độ biến thiên thực sự của các kích thước hiệu ứng trong mô hình ngẫu nhiên.",
-      "seminal_citation": "Borenstein et al. (2009)",
+      "core_definition": "Phương sai giữa các nghiên cứu (Tau^2 hay tau-squared - DerSimonian & Laird, 1986; Borenstein et al., 2009) là thước đo quy mô phương sai tuyệt đối của các kích thước hiệu ứng thực sự (true effect sizes) giữa các nghiên cứu độc lập trong mô hình Phân tích gộp Tác động Ngẫu nhiên (Random-Effects Meta-Analysis). Khác với chỉ số tương đối I^2 (đo tỷ lệ phần trăm), Tau^2 phản ánh mức độ phân tán tuyệt đối của hiệu ứng trên chính đơn vị đo lường của biến kết quả.",
+      "seminal_citation": "DerSimonian & Laird (1986); Borenstein et al. (2009)",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #219",
       "core_definition_en": "Academic definition of Between-Study Variance (Tau² Metric) according to Borenstein et al. (2009).",
       "domain_tags_en": [
         "Meta-Analysis"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Mô hình tác động ngẫu nhiên: theta_i = mu + u_i + e_i, trong đó u_i ~ N(0, tau^2) và e_i ~ N(0, v_i). 2. Ước lượng Tau^2 bằng phương pháp mô men DerSimonian-Laird (DL) hoặc chuẩn mực hiện đại Hợp lý cực đại hạn chế (REML / Paule-Mandel): tau^2 = max(0, (Q - (k - 1)) / C). 3. Độ lệch chuẩn giữa các nghiên cứu Tau = sqrt(Tau^2). 4. Tính toán Khoảng dự báo 95% (95% Prediction Interval) cho một nghiên cứu mới trong tương lai: mu_hat +/- t_{k-2} * sqrt(SE^2 + tau^2).",
+      "benchmarks": "Báo cáo song hành cùng chỉ số I^2. Tau^2 > 0 chứng minh sự tồn tại của tính không đồng nhất thực chất giữa các nghiên cứu, khẳng định việc sử dụng mô hình Random-Effects là bắt buộc. Khoảng dự báo 95% (Prediction Interval) dựa trên Tau^2 cung cấp bức tranh thực tế về phạm vi hiệu ứng mà một can thiệp có thể mang lại trong các bối cảnh ứng dụng mới.",
+      "pitfalls": "Bẫy phản biện: Chỉ báo cáo khoảng tin cậy của hiệu ứng trung bình (Confidence Interval of Summary Effect) mà bỏ qua Khoảng dự báo (Prediction Interval) khi Tau^2 lớn. Khoảng tin cậy chỉ phản ánh độ chính xác của ước lượng trung bình, trong khi khoảng dự báo phản ánh độ phân tán thực tế của can thiệp giữa các quần thể khác nhau.",
+      "apa_reference": "Borenstein, M., Hedges, L. V., Higgins, J. P., & Rothstein, H. R. (2009). Introduction to meta-analysis. John Wiley & Sons. https://doi.org/10.1002/9780470743386",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "betweenness-centrality-freeman",
@@ -7678,20 +7970,31 @@
     {
       "id": "bias-variance-tradeoff",
       "term": "Bias-Variance Tradeoff",
-      "vietnamese": "Sự Đánh đổi Độ chệch và Phương sai",
-      "vietnamese_variants": [],
+      "vietnamese": "Sự đánh đổi giữa độ chệch và phương sai",
+      "vietnamese_variants": [
+        "Đánh đổi Bias-Variance",
+        "Dilemma chệch và phương sai",
+        "Lỗi kỳ vọng ngoài mẫu"
+      ],
       "domain_tags": [
         "Statistical Learning"
       ],
-      "core_definition": "Cân bằng giữa sai số đơn giản hóa mô hình và sai số do tính nhạy cảm với biến động dữ liệu.",
-      "seminal_citation": "Geman, Bienenstock & Doursat (1992)",
+      "core_definition": "Sự đánh đổi giữa độ chệch và phương sai (Bias-Variance Tradeoff - Geman, Bienenstock, & Doursat, 1992; Hastie et al., 2009) là nguyên lý trung tâm trong lý thuyết học máy thống kê và kinh tế lượng dự báo. Nguyên lý chỉ ra rằng sai số dự báo kỳ vọng ngoài mẫu (Expected Prediction Error - EPE) của bất kỳ mô hình nào cũng phân rã thành ba thành phần không thể triệt tiêu đồng thời: (1) Bình phương độ chệch (Bias^2); (2) Phương sai của ước lượng (Variance); và (3) Phương sai sai số bất khả quy (Irreducible error sigma^2).",
+      "seminal_citation": "Geman, Bienenstock, & Doursat (1992); Hastie, Tibshirani, & Friedman (2009)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Bias-Variance Tradeoff according to Geman, Bienenstock & Doursat (1992).",
       "domain_tags_en": [
         "Statistical Learning"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Phương trình phân rã sai số bình phương trung bình: E[(y - f_hat(x))^2] = [Bias(f_hat(x))]^2 + Var(f_hat(x)) + sigma^2. 2. Độ chệch (Bias) là sai số hệ thống xuất phát từ các giả định giản lược hóa của mô hình (gây ra hiện tượng underfitting). 3. Phương sai (Variance) là mức độ nhạy cảm của mô hình trước các dao động ngẫu nhiên của tập dữ liệu huấn luyện (gây ra overfitting). 4. Tối ưu hóa điểm cân bằng thông qua kỹ thuật điều chuẩn (Regularization: Ridge, Lasso, Elastic Net) và kiểm định chéo (k-fold Cross-Validation).",
+      "benchmarks": "Khi tăng độ phức tạp của mô hình (thêm biến, tăng bậc đa thức): Bias giảm đơn điệu nhưng Variance tăng bùng nổ. Mục tiêu nghiên cứu là tìm độ phức tạp mô hình tối ưu k* tại điểm cực tiểu của đường cong sai số kiểm tra ngoài mẫu (Test Error Curve).",
+      "pitfalls": "Bẫy phản biện: Cố gắng cực đại hóa R^2 trong mẫu (in-sample R^2) mà không kiểm tra chéo ngoài mẫu. Một mô hình có R^2 = 0.99 trong mẫu thường có phương sai cực lớn và sụp đổ hoàn toàn khi áp dụng dự báo trên dữ liệu thực tế mới.",
+      "apa_reference": "Hastie, T., Tibshirani, R., & Friedman, J. (2009). The elements of statistical learning: Data mining, inference, and prediction (2nd ed.). Springer. https://doi.org/10.1007/978-0-387-84858-7",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "bibliographic-coupling",
@@ -7760,15 +8063,19 @@
     },
     {
       "id": "bifactor-models",
-      "term": "Bifactor Models",
-      "vietnamese": "Mô hình song nhân tố phân tách ảnh hưởng của một nhân tố chung toàn cục (General factor) và các nhân tố chuyên biệt cục bộ (Specific factors).",
-      "vietnamese_variants": [],
+      "term": "Bifactor Models (General-Specific Latent Factor Models)",
+      "vietnamese": "Mô hình song nhân tố (Nhân tố chung và Nhân tố chuyên biệt)",
+      "vietnamese_variants": [
+        "Mô hình Bifactor",
+        "Bifactor CFA",
+        "General-Specific Factor Model"
+      ],
       "domain_tags": [
         "CB-SEM",
         "Causal Inference"
       ],
-      "core_definition": "Mô hình song nhân tố phân tách ảnh hưởng của một nhân tố chung toàn cục (General factor) và các nhân tố chuyên biệt cục bộ (Specific factors).",
-      "seminal_citation": "Kline (2023); Kline (2023)",
+      "core_definition": "Mô hình song nhân tố (Bifactor Model - Holzinger & Swineford, 1937; Reise, 2012) là kỹ thuật mô hình hóa cấu trúc nhân tố tiên tiến, giả định rằng sự biến thiên của từng mục hỏi quan sát được phân tách trực tiếp thành hai nguồn độc lập (trực giao): (1) Một Nhân tố Chung toàn cục (General factor - G) phản ánh thuộc tính tâm lý tổng thể chi phối tất cả các mục hỏi; và (2) Các Nhân tố Chuyên biệt cục bộ (Specific/Domain factors - S) nắm bắt phần phương sai chung riêng biệt của từng khía cạnh cụ thể sau khi đã kiểm soát nhân tố G.",
+      "seminal_citation": "Holzinger & Swineford (1937); Reise (2012)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
@@ -7776,7 +8083,14 @@
       "domain_tags_en": [
         "CB-SEM",
         "Causal Inference"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Ràng buộc mô hình: Tất cả các nhân tố (G và các nhân tố S) được thiết lập trực giao hoàn toàn (covariances = 0). Mỗi mục hỏi tải lên nhân tố G và duy nhất một nhân tố S. 2. Phân rã phương sai: Tính chỉ số Omega phân cấp (Omega Hierarchical - Omega_H): Tỷ lệ phương sai của tổng điểm giải thích được bởi nhân tố G. 3. Tính chỉ số Omega phân cấp cho nhân tố con (Omega_HS): Tỷ lệ phương sai của từng khía cạnh con độc lập với nhân tố G. 4. Tính toán tỷ lệ phương sai giải thích chung (Explained Common Variance - ECV).",
+      "benchmarks": "Tiêu chuẩn Reise et al. (2013) & Rodriguez et al. (2016): (1) Nếu Omega_H > 0.80 và ECV > 0.60-0.70: Thang đo về bản chất là đơn thứ nguyên (essentially unidimensional), nên sử dụng tổng điểm chung (unit-weighted composite score); (2) Nếu Omega_HS của một nhân tố con < 0.50: Nhân tố con đó hầu như không có giá trị thông tin riêng biệt ngoài nhân tố G và không nên báo cáo điểm số riêng của phân thứ nguyên đó.",
+      "pitfalls": "Bẫy phản biện: Thiên vị độ phù hợp (Overfitting bias): Mô hình Bifactor gần như luôn cho chỉ số CFI, TLI cao hơn và RMSEA thấp hơn mô hình bậc hai (second-order) hoặc mô hình tương quan bậc 1 do có nhiều bậc tự do tham số linh hoạt hơn; bắt buộc phải chứng minh tính hợp lệ lý thuyết và dựa vào chỉ số Omega_H / ECV chứ không thể chỉ dựa vào độ phù hợp toàn cục để tuyên bố cấu trúc bifactor.",
+      "apa_reference": "Reise, S. P. (2012). The rediscovery of bifactor measurement models. Multivariate Behavioral Research, 47(5), 667–696. https://doi.org/10.1080/00273171.2012.715555",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "big-five-personality-traits-ocean",
@@ -7831,20 +8145,31 @@
     {
       "id": "bivariate-vs-partial-correlation",
       "term": "Bivariate vs. Partial Correlation",
-      "vietnamese": "Tương quan Hai biến Đơn giản vs. Tương quan Riêng phần",
-      "vietnamese_variants": [],
+      "vietnamese": "Tương quan hai biến đơn giản vs. Tương quan riêng phần",
+      "vietnamese_variants": [
+        "Tương quan riêng",
+        "Partial Correlation Analysis",
+        "Kiểm soát biến thứ ba trong tương quan"
+      ],
       "domain_tags": [
         "Correlation Analysis"
       ],
-      "core_definition": "Kiểm soát ảnh hưởng của các biến thứ ba.",
-      "seminal_citation": "Field (2018)",
+      "core_definition": "Tương quan hai biến (Bivariate Correlation / Pearson r) đo lường mối quan hệ tuyến tính thô giữa hai biến số X và Y mà không tính đến sự can thiệp của bất kỳ yếu tố nào khác. Trong khi đó, Tương quan riêng phần (Partial Correlation r_{xy.z}) đo lường mối liên hệ thực chất giữa X và Y sau khi đã bóc tách và loại bỏ hoàn toàn ảnh hưởng tuyến tính của một hoặc nhiều biến kiểm soát Z (confounding / mediating variables) khỏi cả X và Y.",
+      "seminal_citation": "Yule (1897); Fisher (1924)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Bivariate vs. Partial Correlation according to Field (2018).",
       "domain_tags_en": [
         "Correlation Analysis"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Công thức tương quan riêng bậc một (First-order partial correlation): r_{xy.z} = (r_xy - r_xz * r_yz) / [ sqrt(1 - r_xz^2) * sqrt(1 - r_yz^2) ]. 2. Bản chất hình học: r_{xy.z} chính là hệ số tương quan Pearson giữa phần dư e_x (khi hồi quy X theo Z) và phần dư e_y (khi hồi quy Y theo Z). 3. Kiểm định ý nghĩa thống kê bằng thống kê t với bậc tự do df = N - 2 - k (k là số biến kiểm soát).",
+      "benchmarks": "Đánh giá sự thay đổi giữa r_xy và r_{xy.z}: (1) Nếu r_xy có ý nghĩa nhưng r_{xy.z} tiến sát về 0 (p > 0.05): Mối tương quan ban đầu là tương quan giả tạo (spurious correlation) do Z chi phối cả hai biến; (2) Nếu r_{xy.z} vẫn giữ nguyên độ lớn và ý nghĩa: Mối quan hệ giữa X và Y là thực chất độc lập với Z; (3) Nếu |r_{xy.z}| > |r_xy|: Z đóng vai trò biến ức chế (suppressor variable).",
+      "pitfalls": "Bẫy phản biện: Nhầm lẫn giữa tương quan riêng phần (Partial Correlation) và tương quan bán riêng phần (Semipartial / Part Correlation). Tương quan bán riêng phần chỉ loại bỏ ảnh hưởng của Z khỏi duy nhất một biến độc lập X (dùng để xác định mức tăng thêm R^2 độc nhất trong hồi quy phân cấp).",
+      "apa_reference": "Fisher, R. A. (1924). The distribution of the partial correlation coefficient. Metron, 3, 329–332.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "blindfolding-q2",
@@ -7874,15 +8199,19 @@
     },
     {
       "id": "blindfolding-procedure",
-      "term": "Blindfolding procedure",
-      "vietnamese": "Quy trình làm mù tính toán năng lực dự báo ngoài mẫu.",
-      "vietnamese_variants": [],
+      "term": "Blindfolding Procedure (Stone-Geisser Q-squared)",
+      "vietnamese": "Quy trình làm mù kiểm định năng lực dự báo nội suy Q-squared",
+      "vietnamese_variants": [
+        "Quy trình Blindfolding",
+        "Chỉ số Stone-Geisser Q²",
+        "Predictive Relevance Q²"
+      ],
       "domain_tags": [
         "PLS-SEM",
         "Discriminant Validity"
       ],
-      "core_definition": "Quy trình làm mù tính toán năng lực dự báo ngoài mẫu.",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
+      "core_definition": "Quy trình làm mù (Blindfolding Procedure) là kỹ thuật tái lấy mẫu chia mẫu kiểm tra chéo (cross-validation) trong PLS-SEM dùng để tính toán chỉ số phù hợp dự báo Stone-Geisser (Q^2 - Stone 1974; Geisser 1974). Bằng cách che giấu (bỏ trống) có hệ thống một phần dữ liệu của biến nội sinh, ước lượng lại mô hình và sử dụng các hệ số thu được để dự báo lại các điểm dữ liệu bị khuyết, chỉ số Q^2 đo lường mức độ mà mô hình tái tạo thành công dữ liệu thực tế.",
+      "seminal_citation": "Geisser (1974); Stone (1974); Hair et al. (2019)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "blindfolding KHÔNG đo năng lực dự báo ngoài mẫu – dùng PLSpredict (Shmueli et al. 2019) | Lộ tên file nội bộ",
@@ -7890,7 +8219,14 @@
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Thiết lập khoảng cách bỏ qua (Omission Distance D): Thường chọn D là số nguyên tố từ 5 đến 10 (ví dụ D = 7), sao cho kích thước mẫu N chia cho D không phải là số nguyên. 2. Lặp lại D lần: Tại mỗi vòng d (d = 1...D), xóa các quan sát ở các vị trí d, d+D, d+2D... và dùng phần dữ liệu còn lại để ước lượng tham số. 3. Tính tổng bình phương sai số dự báo (Sum of Squared Errors - SSE) và tổng bình phương sai lệch trung bình (Sum of Squares Total - SSO). 4. Q^2 = 1 - (SSE / SSO).",
+      "benchmarks": "Ngưỡng đánh giá Hair et al. (2019): (1) Q^2 > 0: Mô hình có năng lực dự báo thích hợp (predictive relevance); (2) Q^2 = 0.02 - 0.15: Năng lực dự báo yếu; (3) Q^2 = 0.15 - 0.35: Năng lực dự báo trung bình; (4) Q^2 > 0.35: Năng lực dự báo mạnh. Chỉ áp dụng cho các cấu trúc nội sinh đo lường theo dạng kết quả (reflective constructs).",
+      "pitfalls": "Bẫy phản biện: Nhầm lẫn giữa năng lực dự báo trong mẫu (Q^2 từ Blindfolding) với năng lực dự báo ngoài mẫu thực sự (Out-of-sample prediction). Để kiểm định năng lực dự báo ngoài mẫu chuẩn mực Q1 hiện nay, Shmueli et al. (2016, 2019) khuyến nghị chuyển sang quy trình PLSpredict (so sánh RMSE/MAE giữa PLS-SEM và LM benchmark).",
+      "apa_reference": "Geisser, S. (1974). A predictive approach to the random effect model. Biometrika, 61(1), 101–107. https://doi.org/10.1093/biomet/61.1.101",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "blinding",
@@ -8185,15 +8521,19 @@
     },
     {
       "id": "boundary-condition-variable",
-      "term": "Boundary condition variable",
-      "vietnamese": "Biến điều kiện biên (Phạm vi giới hạn lý thuyết)",
-      "vietnamese_variants": [],
+      "term": "Boundary Condition Variable (Theoretical Scope)",
+      "vietnamese": "Biến điều kiện biên lý thuyết",
+      "vietnamese_variants": [
+        "Biến giới hạn phạm vi lý thuyết",
+        "Boundary Conditions",
+        "Phạm vi hiệu lực lý thuyết"
+      ],
       "domain_tags": [
         "Phát triển Lý thuyết",
         "Mô hình Điều tiết"
       ],
-      "core_definition": "Khái niệm đồng nghĩa với biến điều tiết (Moderator), xác định các ranh giới về bối cảnh, đối tượng hoặc thời gian mà tại đó một lý thuyết hoặc mối quan hệ nhân quả (X tác động lên Y) duy trì hoặc suy giảm hiệu lực.",
-      "seminal_citation": "Busse, C., Kach, A. P., & Wagner, S. M. (2017). Boundary conditions: What they are, how to explore them, why we need them. Journal of Supply Chain Management, 53(1), 93–109.",
+      "core_definition": "Biến điều kiện biên (Boundary Condition Variable - Whetten, 1989; Busse, Kach, & Wagner, 2017) là yếu tố bối cảnh, đặc trưng tổ chức hoặc biến số văn hóa xác định giới hạn không gian và thời gian mà trong đó một lý thuyết hoặc một mối quan hệ nhân quả cụ thể còn giữ nguyên giá trị hiệu lực. Về mặt kinh tế lượng, biến điều kiện biên thường được vận hành hóa dưới dạng Biến Điều tiết (Moderating Variable), trả lời câu hỏi cốt lõi của xây dựng lý thuyết: 'Mối quan hệ này diễn ra KHI NÀO và Ở ĐÂU?' (When and Where).",
+      "seminal_citation": "Whetten (1989); Busse, Kach, & Wagner (2017)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
@@ -8201,7 +8541,14 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Nhận diện các giả định ngầm định của lý thuyết nền (ví dụ: lý thuyết giả định môi trường thị trường hiệu quả, tính minh bạch cao). 2. Xác định các bối cảnh mà các giả định này bị vi phạm (ví dụ: thị trường mới nổi với thể chế yếu kém, khủng hoảng kinh tế, độ phức tạp công nghệ cao). 3. Đưa biến điều kiện biên W vào mô hình tương tác tích (Interaction term X*W). 4. Phân tích độ dốc đơn giản (Simple slope analysis) và vùng ý nghĩa Johnson-Neyman để chỉ ra ngưỡng mà tại đó tác động của X lên Y bị triệt tiêu hoặc đảo ngược.",
+      "benchmarks": "Theo Whetten (1989 - Tiêu chuẩn xây dựng lý thuyết AMR), một công trình chỉ đạt đóng góp lý thuyết thực sự khi nó không chỉ chứng minh 'X tác động đến Y' (What and How) mà còn khám phá ra các điều kiện biên mới (Who, Where, When) làm sâu sắc hóa giới hạn hiểu biết khoa học.",
+      "pitfalls": "Bẫy phản biện: Chọn biến điều tiết ngẫu nhiên không có cơ sở lý thuyết (atheoretical moderation / p-hacking). Phản biện Q1 sẽ từ chối ngay lập tức nếu tác giả đưa một biến điều tiết vào mô hình chỉ vì nó cho kết quả p < 0.05 mà không giải thích được cơ chế biến đó thay đổi các giả định bản thể luận của lý thuyết ra sao.",
+      "apa_reference": "Whetten, D. A. (1989). What constitutes a theoretical contribution?. Academy of Management Review, 14(4), 490–495. https://doi.org/10.5465/amr.1989.4308371",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "boundary-objects-star-griesemer",
@@ -9347,14 +9694,18 @@
     {
       "id": "chuan-bi-du-lieu-phan-tich-kham-pha-data-preparation-eda",
       "term": "Data Preparation & Exploratory Data Analysis (EDA)",
-      "vietnamese": "Chuẩn bị Dữ liệu & Phân tích Khám phá",
-      "vietnamese_variants": [],
+      "vietnamese": "Quy trình làm sạch dữ liệu & Phân tích dữ liệu khám phá",
+      "vietnamese_variants": [
+        "Tiền xử lý dữ liệu và EDA",
+        "Tukey EDA",
+        "Data Cleaning Pipeline"
+      ],
       "domain_tags": [
         "Business Research",
         "Experiments"
       ],
-      "core_definition": "Quy trình 4 bước làm sạch dữ liệu và bộ công cụ EDA của Tukey (Boxplot, Stem-and-leaf, Pareto).",
-      "seminal_citation": "Schindler (2022)",
+      "core_definition": "Quy trình chuẩn bị dữ liệu và Phân tích dữ liệu khám phá (EDA - Tukey, 1977; Wickham & Grolemund, 2017) là giai đoạn tiên quyết mang tính sống còn trong mọi nghiên cứu định lượng. Quy trình này bao gồm việc sàng lọc tính toàn vẹn của dữ liệu, mã hóa biến, phát hiện và xử lý dữ liệu khuyết thiếu (Missing Data: MCAR, MAR, MNAR), nhận diện giá trị ngoại lai cực đoan (Outliers), kiểm tra các giả định phân phối và trực quan hóa cấu trúc dữ liệu trước khi thực hiện bất kỳ phép ước lượng mô hình chính thức nào.",
+      "seminal_citation": "Tukey (1977); Little & Rubin (2019)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Tên mục không phải thuật ngữ",
@@ -9362,7 +9713,14 @@
       "domain_tags_en": [
         "Business Research",
         "Experiments"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Khảo sát cấu trúc: Bảng thống kê mô tả (Mean, SD, Median, IQR, Skewness, Kurtosis). 2. Xử lý giá trị khuyết: Kiểm định Little's MCAR test; áp dụng Multiple Imputation (MI) hoặc Full Information Maximum Likelihood (FIML) thay vì xóa bỏ thô thiển (listwise deletion). 3. Nhận diện ngoại lai: Biểu đồ Boxplot, Điểm Z-score (> 3.0), Khoảng cách Mahalanobis đa biến (D^2 với p < 0.001). 4. Trực quan hóa hình học: Phân phối histogram, biểu đồ phân tán ma trận (scatter plot matrix).",
+      "benchmarks": "Tuân thủ nguyên tắc vàng 'Garbage In, Garbage Out'. Tiêu chuẩn Q1 bắt buộc phải có một tiểu mục riêng biệt trong phần Phương pháp luận (Methodology) mô tả chi tiết quy trình làm sạch dữ liệu và chứng minh các giả định OLS / SEM không bị vi phạm nghiêm trọng.",
+      "pitfalls": "Bẫy phản biện: Tự ý xóa bỏ các quan sát ngoại lai chỉ vì chúng làm lệch kết quả hồi quy theo hướng không mong muốn. Các điểm ngoại lai thực tế (valid outliers) thường chứa đựng thông tin kinh tế quan trọng nhất; chỉ được phép loại bỏ khi chứng minh được đó là lỗi nhập liệu hoặc lỗi đo lường kỹ thuật.",
+      "apa_reference": "Tukey, J. W. (1977). Exploratory data analysis. Addison-Wesley.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "cimo-logic-context-intervention-mechanism-outcome",
@@ -9952,20 +10310,31 @@
     {
       "id": "coefficient-of-variation-cv",
       "term": "Coefficient of Variation (CV)",
-      "vietnamese": "Hệ số Biến thiên",
-      "vietnamese_variants": [],
+      "vietnamese": "Hệ số biến thiên",
+      "vietnamese_variants": [
+        "Hệ số biến thiên CV",
+        "Độ biến động tương đối",
+        "Relative Standard Deviation"
+      ],
       "domain_tags": [
         "Descriptive Statistics"
       ],
-      "core_definition": "Tỷ số giữa độ lệch chuẩn và trung bình; đo lường độ phân tán tương đối không phụ thuộc đơn vị đo.",
-      "seminal_citation": "Pearson (1896)",
+      "core_definition": "Hệ số biến thiên (Coefficient of Variation - CV - Pearson, 1896) là thước đo độ phân tán thống kê chuẩn hóa không thứ nguyên (dimensionless relative dispersion), biểu thị tỷ lệ phần trăm giữa độ lệch chuẩn (s) và giá trị trung bình mẫu (x_bar). CV cho phép so sánh mức độ biến động hoặc rủi ro tương đối giữa các tập dữ liệu có đơn vị đo lường hoàn toàn khác nhau hoặc có quy mô giá trị trung bình chênh lệch nhau rất lớn.",
+      "seminal_citation": "Pearson (1896); Sokal & Rohlf (1995)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Coefficient of Variation (CV) according to Pearson (1896).",
       "domain_tags_en": [
         "Descriptive Statistics"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Công thức tính: CV = (s / x_bar) * 100%, trong đó s là độ lệch chuẩn mẫu và x_bar là trung bình mẫu (x_bar > 0). 2. Hiệu chỉnh cho mẫu nhỏ (Sokal & Rohlf, 1995): CV* = CV * (1 + 1 / (4n)). 3. Ứng dụng rộng rãi trong tài chính (đo lường tỷ số rủi ro trên một đơn vị lợi nhuận kỳ vọng), đo lường độ tin cậy của phương pháp xét nghiệm, và đánh giá tính bất bình đẳng kinh tế.",
+      "benchmarks": "Ngưỡng đánh giá thực nghiệm: (1) CV < 10%: Dữ liệu có độ phân tán rất thấp, độ đồng nhất cực cao; (2) 10% <= CV <= 30%: Mức độ biến động trung bình (phổ biến trong nghiên cứu hành vi và kinh tế vi mô); (3) CV > 30%: Dữ liệu có mức độ phân tán cao, cảnh báo hiện tượng biến thiên mạnh hoặc có ngoại lai.",
+      "pitfalls": "Bẫy phản biện: Tính toán CV trên thang đo khoảng (interval scales như nhiệt độ Celsius hoặc thang đo Likert không có điểm 0 tuyệt đối) hoặc khi giá trị trung bình x_bar tiến sát về 0 hoặc có giá trị âm. CV chỉ có ý nghĩa toán học chặt chẽ trên thang đo tỷ lệ (ratio scales) với điểm gốc 0 thực sự.",
+      "apa_reference": "Pearson, K. (1896). Mathematical contributions to the theory of evolution.—III. Regression, heredity, and panmixia. Philosophical Transactions of the Royal Society of London. Series A, 187, 253–318. https://doi.org/10.1098/rsta.1896.0007",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "coefficient-omega-mcdonald-s",
@@ -10301,21 +10670,32 @@
     },
     {
       "id": "cointegration",
-      "term": "Cointegration",
-      "vietnamese": "Mối quan hệ đồng liên kết dài hạn giữa các chuỗi thời gian không dừng",
-      "vietnamese_variants": [],
+      "term": "Cointegration Analysis",
+      "vietnamese": "Phân tích đồng liên kết",
+      "vietnamese_variants": [
+        "Đồng liên kết kinh tế lượng",
+        "Cointegration Theory",
+        "Mối quan hệ cân bằng dài hạn"
+      ],
       "domain_tags": [
         "Time Series Econometrics"
       ],
-      "core_definition": "Mối quan hệ đồng liên kết dài hạn giữa các chuỗi thời gian không dừng.",
-      "seminal_citation": "Engle & Granger (1987)",
+      "core_definition": "Đồng liên kết (Cointegration - Engle & Granger, 1987; Johansen, 1988) là lý thuyết kinh tế lượng đạt giải Nobel chứng minh rằng hai hoặc nhiều chuỗi thời gian không dừng tích hợp cùng bậc I(d) có thể tồn tại một tổ hợp tuyến tính dừng I(0). Sự tồn tại của mối quan hệ đồng liên kết khẳng định một mối quan hệ cân bằng kinh tế thực chất và bền vững trong dài hạn, ngăn chặn hiện tượng hồi quy giả mạo (spurious regression) và đóng vai trò nền tảng cho việc thiết lập Mô hình Hiệu chỉnh Sai số (Vector Error Correction Model - VECM).",
+      "seminal_citation": "Engle & Granger (1987); Johansen (1988, 1991)",
       "tier": "curated",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Cointegration according to Engle & Granger (1987).",
       "domain_tags_en": [
         "Time Series Econometrics"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Kiểm định nghiệm đơn vị (ADF/PP) để xác định bậc tích hợp của từng chuỗi (chuẩn tắc là cùng bậc I(1)). 2. Phương pháp hai bước Engle-Granger: Bước 1 hồi quy OLS mức y_t theo x_t, trích xuất phần dư e_t; Bước 2 kiểm định nghiệm đơn vị trên phần dư e_t (với giá trị tới hạn Engle-Yoo). 3. Phương pháp véc tơ đa biến Johansen: Ước lượng hệ thống VAR dạng VECM, kiểm định ma trận tác động Pi = alpha * beta' thông qua Thống kê Vết (Trace Statistic) và Thống kê Giá trị riêng cực đại (Maximum Eigenvalue Statistic) để xác định số lượng véc tơ đồng liên kết r.",
+      "benchmarks": "Định lý Biểu diễn Granger (Granger Representation Theorem): Nếu các biến có đồng liên kết, bắt buộc tồn tại một biểu diễn dạng mô hình hiệu chỉnh sai số (ECM). Kiểm định Johansen: Bác bỏ H0 (r = 0) khi Trace Stat > Critical Value 5%, khẳng định có ít nhất r >= 1 mối quan hệ đồng liên kết dài hạn. Bắt buộc báo cáo tiêu chí chọn bậc trễ tối ưu (AIC/SIC) và kiểm định tự tương quan phần dư VAR.",
+      "pitfalls": "Bẫy phản biện: Chạy hồi quy OLS trên các chuỗi I(1) mà không có đồng liên kết. Khi đó, hệ số R^2 cao ngất ngưởng và t-statistic có ý nghĩa thống kê thực chất chỉ là ảo ảnh toán học của hiện tượng hồi quy giả mạo do các chuỗi cùng trôi dạt theo xu hướng thời gian.",
+      "apa_reference": "Engle, R. F., & Granger, C. W. J. (1987). Co-integration and error correction: Representation, estimation, and testing. Econometrica, 55(2), 251–276. https://doi.org/10.2307/1913236",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "collectively-exhaustive-criterion",
@@ -10966,20 +11346,31 @@
     {
       "id": "concept-drift-covariate-shift",
       "term": "Concept Drift & Covariate Shift",
-      "vietnamese": "Trôi Khái niệm và Dịch chuyển Hiệp biến",
-      "vietnamese_variants": [],
+      "vietnamese": "Trôi khái niệm và dịch chuyển hiệp biến",
+      "vietnamese_variants": [
+        "Dịch chuyển phân phối dữ liệu",
+        "Concept Drift",
+        "Covariate Shift in ML"
+      ],
       "domain_tags": [
         "Data Science Methodology"
       ],
-      "core_definition": "Hiện tượng các đặc tính thống kê của dữ liệu thay đổi theo thời gian làm giảm độ chính xác của mô hình.",
-      "seminal_citation": "Gama et al. (2014)",
+      "core_definition": "Trôi khái niệm (Concept Drift) và Dịch chuyển hiệp biến (Covariate Shift - Gama et al., 2014; Sugiyama & Kawanabe, 2012) là các hiện tượng suy giảm hiệu năng mô hình dự báo khi phân phối xác suất của dữ liệu thay đổi theo thời gian giữa giai đoạn huấn luyện (train) và giai đoạn triển khai thực tế (deployment/test). Dịch chuyển hiệp biến xảy ra khi phân phối của các biến độc lập P(X) thay đổi nhưng mối quan hệ P(Y|X) giữ nguyên; trong khi Trôi khái niệm xảy ra khi bản chất mối quan hệ P(Y|X) thay đổi (ví dụ: hành vi lừa đảo trực tuyến thay đổi thủ đoạn mới).",
+      "seminal_citation": "Gama et al. (2014); Sugiyama & Kawanabe (2012)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Concept Drift & Covariate Shift according to Gama et al. (2014).",
       "domain_tags_en": [
         "Data Science Methodology"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Phát hiện Dịch chuyển Hiệp biến: Kiểm định hai mẫu (Two-sample test) so sánh P_train(X) và P_test(X) hoặc dùng Adversarial Validation (huấn luyện mô hình phân biệt dữ liệu train và test, nếu AUC > 0.50 thì có shift). 2. Phát hiện Trôi Khái niệm: Giám sát sai số dự báo theo chuỗi thời gian (Drift Detection Methods: DDM, EDDM) hoặc kiểm tra phân rã hiệu năng mô hình qua cửa sổ trượt (sliding windows). 3. Hiệu chỉnh: Sử dụng trọng số mật độ xác suất (Importance Weighting: P_test(x)/P_train(x)) hoặc tái huấn luyện mô hình thích ứng trực tuyến (online continual learning).",
+      "benchmarks": "Được xem là yêu cầu thẩm định bắt buộc trong các nghiên cứu kinh tế lượng ứng dụng trí tuệ nhân tạo và học máy dự báo tài chính (FinTech, Credit Scoring, Fraud Detection). Báo cáo kiểm định độ ổn định dự báo ngoài thời gian (Out-of-Time - OOT validation).",
+      "pitfalls": "Bẫy phản biện: Áp dụng phương pháp chia mẫu ngẫu nhiên (Random train-test split) trên dữ liệu chuỗi thời gian tài chính có sự biến đổi cấu trúc. Việc này làm rò rỉ dữ liệu tương lai vào quá khứ (look-ahead bias) và hoàn toàn che giấu hiện tượng Concept Drift.",
+      "apa_reference": "Gama, J., Žliobaitė, I., Bifet, A., Pechenizkiy, M., & Bouchachia, A. (2014). A survey on concept drift adaptation. ACM Computing Surveys, 46(4), 1–37. https://doi.org/10.1145/2523813",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "concept-validity",
@@ -11198,15 +11589,20 @@
     },
     {
       "id": "conditional-process-analysis-472",
-      "term": "Conditional Process Analysis",
-      "vietnamese": "Phân tích Tiến trình có Điều kiện kết hợp đồng thời trung gian và điều tiết (PROCESS Macro)",
-      "vietnamese_variants": [],
+      "term": "Conditional Process Analysis (Moderated Mediation)",
+      "vietnamese": "Phân tích tiến trình có điều kiện (Trung gian có điều tiết)",
+      "vietnamese_variants": [
+        "Moderated Mediation",
+        "Mediation with Moderation",
+        "PROCESS Macro Analysis",
+        "Phân tích Hayes"
+      ],
       "domain_tags": [
         "Mediation",
         "Moderation"
       ],
-      "core_definition": "Phân tích Tiến trình có Điều kiện kết hợp đồng thời trung gian và điều tiết (PROCESS Macro).",
-      "seminal_citation": "Hayes (2022)",
+      "core_definition": "Phân tích tiến trình có điều kiện (Conditional Process Analysis - Hayes, 2013, 2018) là khuôn khổ tích hợp phân tích trung gian (Mediation) và phân tích điều tiết (Moderation) trong cùng một mô hình toán học thống nhất. Kỹ thuật này kiểm định giả thuyết rằng cơ chế tác động gián tiếp của biến độc lập X lên biến kết quả Y thông qua biến trung gian M bị thay đổi về độ lớn hoặc chiều hướng tùy thuộc vào giá trị của một hoặc nhiều biến điều tiết W (Moderated Mediation).",
+      "seminal_citation": "Hayes (2013, 2018); Preacher, Rucker, & Hayes (2007)",
       "tier": "curated",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #473",
@@ -11214,7 +11610,14 @@
       "domain_tags_en": [
         "Mediation",
         "Moderation"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Xây dựng hệ phương trình hồi quy tuyến tính: (1) M = a_0 + a_1*X + a_2*W + a_3*X*W + e_1; (2) Y = c'_0 + c'_1*X + b_1*M + b_2*W + b_3*M*W + e_2. 2. Tác động gián tiếp có điều kiện (Conditional Indirect Effect): omega = (a_1 + a_3*W) * b_1 (hoặc dạng phức tạp hơn tùy thuộc vị trí biến điều tiết). 3. Ước lượng khoảng tin cậy BCa Bootstrap (5.000 đến 10.000 mẫu lặp) cho tác động gián tiếp tại các giá trị cụ thể của W (trung bình - 1 SD, trung bình, trung bình + 1 SD). 4. Kiểm định Chỉ số trung gian có điều tiết (Index of Moderated Mediation).",
+      "benchmarks": "Tiêu chuẩn Hayes (2015, 2018): Hiện tượng Trung gian có điều tiết tồn tại có ý nghĩa thống kê khi và chỉ khi Khoảng tin cậy Bootstrap 95% của Chỉ số Trung gian có Điều tiết (Index of Moderated Mediation) KHÔNG chứa giá trị 0. Báo cáo bảng tác động gián tiếp có điều kiện ở 3 mốc phân vị (16th, 50th, 84th) hoặc phương pháp đồ thị Johnson-Neyman.",
+      "pitfalls": "Bẫy phản biện: Chạy hai phân tích riêng biệt (bước 1 chạy trung gian, bước 2 chạy điều tiết trên từng nhánh) bằng quy trình Baron-Kenny cũ kỹ rồi tự suy diễn kết luận. Phương pháp cũ không cung cấp được kiểm định thống kê suy diễn chính thức cho toàn bộ cơ chế tích hợp; bắt buộc phải dùng PROCESS Macro hoặc SEM để kiểm định trực tiếp Index of Moderated Mediation.",
+      "apa_reference": "Hayes, A. F. (2018). Introduction to mediation, moderation, and conditional process analysis: A regression-based approach (2nd ed.). Guilford Press.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "confidence-interval",
@@ -11298,20 +11701,31 @@
     {
       "id": "configural-invariance-testing",
       "term": "Configural Invariance Testing",
-      "vietnamese": "Kiểm định Bất biến Cấu hình",
-      "vietnamese_variants": [],
+      "vietnamese": "Kiểm định bất biến cấu hình đo lường",
+      "vietnamese_variants": [
+        "Bất biến cấu hình",
+        "Configural Invariance",
+        "Kiểm định dạng thức cấu trúc"
+      ],
       "domain_tags": [
         "Measurement Invariance"
       ],
-      "core_definition": "Đảm bảo cấu trúc các nhân tố và biến quan sát tương đồng nhau giữa các nhóm so sánh.",
-      "seminal_citation": "Vandenberg & Lance (2000)",
+      "core_definition": "Kiểm định bất biến cấu hình (Configural Invariance) là bậc kiểm định đầu tiên và nền tảng tiên quyết trong quy trình phân tích bất biến đo lường đa nhóm (Measurement Invariance / MICOM). Kiểm định này xác nhận rằng mô hình đo lường có cùng một cấu trúc nhân tố cơ bản (cùng số lượng nhân tố và cùng một mô thức các biến quan sát tải lên từng nhân tố) trên tất cả các nhóm so sánh (như giới tính, quốc gia, hoặc các mốc thời gian), mà không áp đặt bất kỳ ràng buộc bình đẳng nào lên độ lớn của các hệ số.",
+      "seminal_citation": "Horn & McArdle (1992); Vandenberg & Lance (2000)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Configural Invariance Testing according to Vandenberg & Lance (2000).",
       "domain_tags_en": [
         "Measurement Invariance"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Thiết lập mô hình đa nhóm đồng thời (Multiple-Group CFA / MGCFA) cho tất cả các nhóm. 2. Không ràng buộc bất kỳ tham số nào (các hệ số tải nhân tố, ngưỡng chặn sai số và phương sai đều được ước lượng tự do giữa các nhóm). 3. Đánh giá độ phù hợp toàn cục của mô hình cấu hình (Configural model fit).",
+      "benchmarks": "Mô hình cấu hình được chấp nhận khi các chỉ số độ phù hợp toàn cục đạt chuẩn: CFI >= 0.90 (hoặc >= 0.95), TLI >= 0.90, RMSEA <= 0.08 (hoặc <= 0.06), SRMR <= 0.08 trên toàn bộ hệ thống nhóm gộp. Đồng thời, tất cả các hệ số tải nhân tố trong từng nhóm riêng biệt phải có ý nghĩa thống kê (p < 0.001) và có độ lớn đủ mạnh (> 0.50).",
+      "pitfalls": "Bẫy phản biện: Vội vã tiến hành so sánh trung bình tiềm ẩn (latent mean comparison) hoặc so sánh hệ số đường dẫn cấu trúc (multigroup path analysis) khi mô hình bất biến cấu hình chưa được xác lập hoặc khi không vượt qua được bậc tiếp theo là Bất biến Thang đo (Metric Invariance: Delta_CFI <= 0.010). Mọi so sánh đa nhóm khi đó đều bị sai lệch công cụ đo lường.",
+      "apa_reference": "Vandenberg, R. J., & Lance, C. E. (2000). A review and synthesis of the measurement invariance literature: Suggestions, practices, and recommendations for organizational research. Organizational Research Methods, 3(1), 4–70. https://doi.org/10.1177/109442810031002",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "confirmability",
@@ -11459,16 +11873,20 @@
     },
     {
       "id": "confounding-variable",
-      "term": "Confounding variable (Confounder)",
-      "vietnamese": "Biến gây nhiễu (Biến ngoại lai làm sai lệch quan hệ nhân quả)",
-      "vietnamese_variants": [],
+      "term": "Confounding Variable (Confounder)",
+      "vietnamese": "Biến gây nhiễu",
+      "vietnamese_variants": [
+        "Biến nhiễu",
+        "Confounder",
+        "Yếu tố gây nhiễu nhân quả"
+      ],
       "domain_tags": [
         "Suy luận Nhân quả",
         "Kinh tế lượng",
         "Thiết kế Nghiên cứu"
       ],
-      "core_definition": "Biến số có mối quan hệ đồng thời với cả biến độc lập (nguyên nhân tiềm năng) và biến phụ thuộc (kết cục), dẫn đến mối liên hệ giả tạo (spurious correlation) hoặc làm ước lượng tác động nhân quả bị thiên lệch (Confounding bias). Trong đồ thị nhân quả DAGs, biến gây nhiễu mở ra một 'đường cửa sau' (backdoor path) giữa X và Y, đòi hỏi phải kiểm soát hoặc điều chỉnh biến này để chặn đường nhiễu.",
-      "seminal_citation": "Pearl, J. (2009). Causality: Models, Reasoning, and Inference (2nd ed.). Cambridge University Press.",
+      "core_definition": "Biến gây nhiễu (Confounding Variable / Confounder) là một biến số ngoại lai có mối quan hệ nhân quả đồng thời với cả biến nguyên nhân (biến độc lập X) lẫn biến kết quả (biến phụ thuộc Y). Nếu không được kiểm soát chặt chẽ, biến gây nhiễu sẽ tạo ra mối liên kết giả mạo (spurious association) giữa X và Y, khiến người nghiên cứu ngộ nhận tương quan là nhân quả hoặc đánh giá sai lệch độ lớn và chiều hướng của tác động thực tế.",
+      "seminal_citation": "Miettinen (1974); Pearl (2000); VanderWeele (2019)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "Đã được chuẩn hóa định nghĩa học thuật chuyên sâu chuẩn mực.",
@@ -11476,43 +11894,72 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Cấu trúc tam giác nhân quả cổ điển: Z -> X và Z -> Y (Z là nguyên nhân chung - Common Cause). 2. Phân tích độ lệch: Ước lượng hồi quy thô Y theo X thu được hệ số beta_thô = beta_thực + bias. Phần thiên lệch (bias) có độ lớn bằng tích hệ số gamma_{zx} * gamma_{zy}. 3. Phương pháp triệt tiêu biến nhiễu: Phân bổ ngẫu nhiên (Randomization trong RCT), Đối sánh (Matching: PSM/CEM), Biến công cụ (IV), Hiệu ứng cố định (Fixed Effects), hoặc kiểm soát hồi quy đa biến theo tiêu chuẩn Back-door.",
+      "benchmarks": "Một biến chỉ được xem là confounder thực sự khi nó thỏa mãn 3 điều kiện dịch tễ học / kinh tế lượng: (1) Có tương quan với biến can thiệp X; (2) Là một yếu tố dự báo độc lập của biến kết quả Y; (3) Không nằm trên đường dẫn nhân quả trung gian từ X đến Y (không phải là mediator).",
+      "pitfalls": "Bẫy phản biện: Nhầm lẫn giữa biến gây nhiễu (Confounder) và biến trung gian (Mediator). Kiểm soát một biến trung gian sẽ triệt tiêu hiệu ứng gián tiếp thực sự của X lên Y (hiện tượng over-controlling bias), dẫn đến việc đánh giá thấp tác động tổng thể của chính sách/can thiệp.",
+      "apa_reference": "VanderWeele, T. J. (2019). Principles of confounder selection. European Journal of Epidemiology, 34(3), 211–219. https://doi.org/10.1007/s10654-019-00494-6",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "confounding-variable-control",
-      "term": "Confounding Variable Control",
-      "vietnamese": "Kiểm soát Biến gây Nhiễu",
-      "vietnamese_variants": [],
+      "term": "Confounding Variable Control Strategies",
+      "vietnamese": "Chiến lược kiểm soát biến gây nhiễu",
+      "vietnamese_variants": [
+        "Kiểm soát biến nhiễu",
+        "Khử nhiễu mô hình hồi quy",
+        "Confounder Adjustment"
+      ],
       "domain_tags": [
         "Epidemiological Rigour"
       ],
-      "core_definition": "Đưa các biến có tương quan với cả nguyên nhân và kết cục vào phương trình hồi quy.",
-      "seminal_citation": "Rothman et al. (2008)",
+      "core_definition": "Chiến lược kiểm soát biến gây nhiễu là tập hợp toàn diện các kỹ thuật thiết kế nghiên cứu (study design) và phương pháp thống kê kinh tế lượng (statistical adjustment) được áp dụng nhằm triệt tiêu thiên lệch do các biến ngoại lai gây ra, bảo đảm giả định khả phân vị có điều kiện (Conditional Independence Assumption - CIA: (Y(1), Y(0)) perp D | X) được thỏa mãn trong suy luận nhân quả quan sát.",
+      "seminal_citation": "Rosenbaum & Rubin (1983); Oster (2019)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Confounding Variable Control according to Rothman et al. (2008).",
       "domain_tags_en": [
         "Epidemiological Rigour"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Kiểm soát ở khâu thiết kế: Phân bổ ngẫu nhiên (Randomization), Ghép cặp cá thể (Matching), Giới hạn mẫu đồng nhất (Restriction), Phân tầng thiết kế (Stratification). 2. Kiểm soát ở khâu phân tích thống kê: Đưa vào mô hình hồi quy đa biến (Multivariable regression adjustment), Trọng số xác suất nghịch đảo (IPW), Ghép cặp điểm xu hướng (PSM / CEM), Mô hình tác động cố định (Within-entity Fixed Effects để khử biến nhiễu bất biến thời gian), và Biến công cụ (2SLS/IV cho biến nhiễu không quan sát được).",
+      "benchmarks": "Đánh giá hiệu quả kiểm soát: Bảng cân bằng hiệp biến (Covariate balance table) phải cho thấy chênh lệch trung bình chuẩn hóa (Standardized Mean Difference - SMD) giữa nhóm can thiệp và kiểm chứng sau khi kiểm soát đều nhỏ hơn 0.10. Kiểm định tính bất biến và phân tích độ nhạy Oster (2019) hoặc Rosenbaum bounds để kiểm tra khả năng can thiệp của biến nhiễu chưa quan sát được (unobserved confounders).",
+      "pitfalls": "Bẫy phản biện: Kiểm soát thừa biến (Overcontrol bias) hoặc kiểm soát biến va chạm (Collider stratification). Đưa quá nhiều biến kiểm soát vào mô hình mà không có căn cứ đồ thị DAGs dẫn đến làm suy giảm bậc tự do, bùng nổ đa cộng tuyến và tạo ra các mối tương quan giả mạo.",
+      "apa_reference": "Oster, E. (2019). Unobservable selection and coefficient stability: Theory and evidence. Journal of Business & Economic Statistics, 37(2), 187–204. https://doi.org/10.1080/07350015.2016.1227711",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "confounding-variables",
-      "term": "Confounding variables",
-      "vietnamese": "Biến nhiễu / Biến kiểm soát — Biến ngoại lai không nằm trong giả thuyết chính nhưng cần kiểm soát để tránh làm sai lệch quan hệ nhân quả.",
-      "vietnamese_variants": [],
+      "term": "Confounding Variables in Empirical Research",
+      "vietnamese": "Các biến gây nhiễu trong nghiên cứu thực nghiệm",
+      "vietnamese_variants": [
+        "Hệ thống biến gây nhiễu",
+        "Biến kiểm soát ngoại lai",
+        "Confounders"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Biến nhiễu / Biến kiểm soát — Biến ngoại lai không nằm trong giả thuyết chính nhưng cần kiểm soát để tránh làm sai lệch quan hệ nhân quả.",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Các biến gây nhiễu trong nghiên cứu thực nghiệm là các yếu tố môi trường, đặc trưng cá thể hoặc điều kiện bối cảnh đồng biến thiên với cả biến độc lập lẫn biến phụ thuộc. Việc nhận diện, phân loại và đưa các biến này vào danh mục biến kiểm soát (Control variables) là tiêu chuẩn bắt buộc trong mọi bài báo khoa học định lượng để bảo vệ giá trị hiệu lực nội tại (internal validity) của mô hình.",
+      "seminal_citation": "Angrist & Pischke (2009); Wooldridge (2010)",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Confounding variables according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Lập bản đồ lý thuyết và sơ đồ DAG xác định các biến nhiễu tiềm năng dựa trên tổng quan y văn. 2. Thu thập dữ liệu biến kiểm soát ở các cấp độ: Cấp độ cá nhân (tuổi, giới tính, học vấn, thu nhập), cấp độ doanh nghiệp (quy mô tài sản, đòn bẩy tài chính, tuổi doanh nghiệp, ROA), cấp độ vĩ mô (tăng trưởng GDP, lạm phát, khủng hoảng). 3. Báo cáo mô hình hồi quy theo từng bước phân cấp (Hierarchical block regression): Khối 1 chỉ gồm biến kiểm soát; Khối 2 đưa thêm biến giải thích chính để kiểm tra độ tăng thêm Delta_R^2 và độ ổn định của hệ số beta.",
+      "benchmarks": "Hệ số beta của biến độc lập chính phải giữ vững tính có ý nghĩa thống kê và dấu lý thuyết qua các đặc tả mô hình tăng dần biến kiểm soát. Báo cáo hệ số VIF của toàn bộ tập biến kiểm soát để đảm bảo không bị đa cộng tuyến (VIF < 5.0, tốt nhất < 3.0).",
+      "pitfalls": "Bẫy phản biện: Sử dụng biến kiểm soát bị đo lường sau khi can thiệp xảy ra (Post-treatment variables). Bất kỳ biến nào chịu ảnh hưởng bởi biến can thiệp X đều không được phép dùng làm biến kiểm soát vì sẽ làm triệt tiêu một phần tác động nhân quả thực tế.",
+      "apa_reference": "Angrist, J. D., & Pischke, J. S. (2009). Mostly harmless econometrics: An empiricist's companion. Princeton University Press.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "confusion-matrix-metrics-f1-precision-recall",
@@ -11649,12 +12096,16 @@
     {
       "id": "consistency-ratio-in-ahp-cr",
       "term": "Consistency Ratio in AHP (CR)",
-      "vietnamese": "Tỷ số Nhất quán CR trong AHP",
-      "vietnamese_variants": [],
+      "vietnamese": "Tỷ số nhất quán trong quy trình AHP",
+      "vietnamese_variants": [
+        "Tỷ số CR",
+        "AHP Consistency Ratio",
+        "Kiểm tra tính nhất quán logic Saaty"
+      ],
       "domain_tags": [
         "Decision Science"
       ],
-      "core_definition": "Đánh giá mức độ logic của ma trận so sánh bắt cặp; CR < 0.10 là đạt chuẩn chấp nhận.",
+      "core_definition": "Tỷ số nhất quán (Consistency Ratio - CR - Saaty, 1980) là chỉ số toán học chuẩn mực dùng để kiểm tra tính nhất quán và độ tin cậy logic trong các phán đoán đánh giá so sánh cặp của chuyên gia khi áp dụng phương pháp AHP/ANP. CR đo lường mức độ sai lệch ngẫu nhiên trong các đánh giá bắc cầu (transitivity: nếu A quan trọng hơn B gấp 2 lần, B quan trọng hơn C gấp 3 lần thì A phải quan trọng hơn C gấp 6 lần).",
       "seminal_citation": "Saaty (1980)",
       "tier": "textbook",
       "expert_status": "verified",
@@ -11662,7 +12113,14 @@
       "core_definition_en": "Academic definition of Consistency Ratio in AHP (CR) according to Saaty (1980).",
       "domain_tags_en": [
         "Decision Science"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Tính giá trị riêng cực đại lambda_max của ma trận so sánh cặp kích thước n x n. Khi ma trận hoàn toàn nhất quán, lambda_max = n; khi có mâu thuẫn phán đoán, lambda_max > n. 2. Tính Chỉ số Nhất quán (Consistency Index): CI = (lambda_max - n) / (n - 1). 3. Tra cứu Chỉ số Ngẫu nhiên (Random Index - RI) tương ứng với kích thước ma trận n từ bảng mô phỏng chuẩn Saaty. 4. Tính toán Tỷ số Nhất quán: CR = CI / RI.",
+      "benchmarks": "Ngưỡng chuẩn mực Saaty: (1) Với ma trận n = 3: CR < 0.05; (2) Với ma trận n = 4: CR < 0.08; (3) Với ma trận n >= 5: CR <= 0.10 (chấp nhận tính nhất quán). Nếu CR > 0.10, dữ liệu phán đoán bị xem là thiếu nhất quán ngẫu nhiên quá mức và bài báo nghiên cứu sẽ bị phản biện từ chối nếu không yêu cầu chuyên gia hiệu chỉnh lại ma trận so sánh.",
+      "pitfalls": "Bẫy phản biện: Cưỡng ép làm giảm CR bằng các thuật toán tối ưu hóa toán học tự động mà không có sự tham gia hiệu chỉnh thực tế của chuyên gia. Việc 'làm đẹp' nhân tạo ma trận so sánh cặp làm triệt tiêu tính phản ánh chuyên môn thực chất của phương pháp.",
+      "apa_reference": "Saaty, T. L. (1980). The analytic hierarchy process: Planning, priority setting, resource allocation. McGraw-Hill.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "consistent-pls-plsc",
@@ -12571,21 +13029,32 @@
     },
     {
       "id": "core-designs",
-      "term": "Core designs",
-      "vietnamese": "Các thiết kế hỗn hợp cốt lõi — 3 mô hình nền tảng: Hội tụ (Convergent), Tuần tự giải thích (Explanatory), Tuần tự khám phá (Exploratory).",
-      "vietnamese_variants": [],
+      "term": "Core Mixed Methods Designs (Creswell & Plano Clark)",
+      "vietnamese": "Các thiết kế nghiên cứu phương pháp hỗn hợp cốt lõi",
+      "vietnamese_variants": [
+        "Ba thiết kế hỗn hợp nền tảng",
+        "Creswell Mixed Methods Designs",
+        "Thiết kế Hội tụ, Giải thích và Khám phá"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Các thiết kế hỗn hợp cốt lõi — 3 mô hình nền tảng: Hội tụ (Convergent), Tuần tự giải thích (Explanatory), Tuần tự khám phá (Exploratory).",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Các thiết kế nghiên cứu hỗn hợp cốt lõi (Core Mixed Methods Designs - Creswell & Plano Clark, 2011, 2018) là ba khuôn khổ phương pháp luận chuẩn mực tích hợp dữ liệu định lượng (Quantitative) và dữ liệu định tính (Qualitative) trong cùng một công trình nghiên cứu: (1) Thiết kế Hội tụ song song (Convergent Parallel Design); (2) Thiết kế Tuần tự giải thích (Explanatory Sequential Design - QUAN -> qual); và (3) Thiết kế Tuần tự khám phá (Exploratory Sequential Design - QUAL -> quan).",
+      "seminal_citation": "Creswell & Plano Clark (2011, 2018)",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Core designs according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Qualitative Rigor & Methodology",
+      "operational_mechanism": "1. Thiết kế Hội tụ: Thu thập độc lập định lượng và định tính trong cùng một khung thời gian, phân tích riêng biệt, sau đó tích hợp tại khâu diễn giải bằng Bảng so sánh chung (Joint Display). 2. Thiết kế Tuần tự Giải thích: Giai đoạn 1 thu thập định lượng lớn; Giai đoạn 2 dùng phỏng vấn định tính sâu để giải mã các cơ chế ngầm định hoặc các kết quả dị thường của định lượng. 3. Thiết kế Tuần tự Khám phá: Giai đoạn 1 phỏng vấn định tính để phát triển khái niệm và thang đo; Giai đoạn 2 khảo sát định lượng diện rộng để kiểm định thực nghiệm thang đo mới.",
+      "benchmarks": "Đạt chuẩn mực khi bài báo thể hiện rõ ràng: (1) Điểm tích hợp (Point of Interface: kết nối, tích hợp, hay chuyển hóa); (2) Trọng số ưu tiên (Priority: QUAN, QUAL, hoặc Bình đẳng EQUAL); (3) Sơ đồ quy trình trực quan theo quy ước viết hoa/thường chuẩn của Creswell.",
+      "pitfalls": "Bẫy phản biện: 'Parallel play without integration' — Thu thập cả hai loại dữ liệu nhưng trình bày như hai báo cáo độc lập song song trong cùng một bài báo mà không hề có sự tích hợp dữ liệu thực chất; khi đó phản biện sẽ chất vấn giá trị gia tăng của việc thực hiện nghiên cứu hỗn hợp.",
+      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). Sage Publications.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "coreq-checklist",
@@ -12802,20 +13271,31 @@
     {
       "id": "covariate-balance-diagnostics-table",
       "term": "Covariate Balance Diagnostics Table",
-      "vietnamese": "Bảng Chẩn đoán Cân bằng Hiệp biến",
-      "vietnamese_variants": [],
+      "vietnamese": "Bảng chẩn đoán cân bằng hiệp biến",
+      "vietnamese_variants": [
+        "Bảng cân bằng biến đồng biến",
+        "Balance Table",
+        "Love Plot / SMD Table"
+      ],
       "domain_tags": [
         "Causal Inference"
       ],
-      "core_definition": "Báo cáo độ lệch trung bình chuẩn hóa SMD trước và sau khi ghép cặp PSM.",
-      "seminal_citation": "Austin (2009)",
+      "core_definition": "Bảng chẩn đoán cân bằng hiệp biến (Covariate Balance Table / Balance Test) là công cụ hiển thị định lượng bắt buộc trong mọi nghiên cứu đối sánh nhân quả (PSM, CEM, Entropy Balancing, RCT) và kinh tế lượng thực nghiệm. Bảng báo cáo sự phân phối của tất cả các biến đồng biến nền tảng giữa nhóm can thiệp (Treatment) và nhóm kiểm chứng (Control) ở cả hai trạng thái: Trước khi điều chỉnh (Pre-matching) và Sau khi điều chỉnh (Post-matching).",
+      "seminal_citation": "Rubin (2001); Austin (2009); Ho et al. (2007)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Covariate Balance Diagnostics Table according to Austin (2009).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Tính toán giá trị trung bình và độ lệch chuẩn của từng biến trong cả hai nhóm. 2. Tính Chênh lệch Trung bình Chuẩn hóa (Standardized Mean Difference - SMD): SMD = (mean_T - mean_C) / sqrt((s_T^2 + s_C^2) / 2). 3. Tính Tỷ số Phương sai (Variance Ratio - VR): VR = s_T^2 / s_C^2. 4. Trực quan hóa kết quả bằng biểu đồ Love Plot hiển thị mức độ co cụm của các giá trị SMD về mức 0.",
+      "benchmarks": "Chuẩn mực Rubin (2001) & Austin (2009): (1) SMD sau điều chỉnh: |SMD| < 0.10 (tuyệt đối không vượt quá 0.25) khẳng định hai nhóm đã đạt độ tương đồng hoàn hảo; (2) Tỷ số phương sai VR: Phải nằm trong khoảng [0.80, 1.25] (chấp nhận được [0.50, 2.00]); (3) t-test sau đối sánh không được có ý nghĩa thống kê (p > 0.05).",
+      "pitfalls": "Bẫy phản biện: (1) Chỉ báo cáo giá trị p-value của t-test mà không báo cáo chỉ số SMD; p-value bị phụ thuộc nặng nề vào quy mô mẫu (khi mẫu giảm sau đối sánh, p-value dễ trở nên không có ý nghĩa ngay cả khi độ mất cân bằng thực tế vẫn rất lớn); (2) Bỏ qua kiểm tra độ cân bằng phương sai (Variance Ratio).",
+      "apa_reference": "Austin, P. C. (2009). Balance diagnostics for comparing the similar of treated and untreated subjects in propensity score matches. The American Statistician, 63(3), 218–227. https://doi.org/10.1198/tast.2009.08018",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "cover-story",
@@ -13407,15 +13887,18 @@
     },
     {
       "id": "cross-loadings-criterion",
-      "term": "Cross-loadings criterion",
-      "vietnamese": "Tiêu chuẩn kiểm tra hệ số tải chéo.",
-      "vietnamese_variants": [],
+      "term": "Cross-Loadings Criterion for Discriminant Validity",
+      "vietnamese": "Tiêu chuẩn hệ số tải chéo đánh giá giá trị phân biệt",
+      "vietnamese_variants": [
+        "Tiêu chuẩn Cross-loadings",
+        "Hệ số tải chéo PLS-SEM"
+      ],
       "domain_tags": [
         "PLS-SEM",
         "Discriminant Validity"
       ],
-      "core_definition": "Tiêu chuẩn kiểm tra hệ số tải chéo.",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
+      "core_definition": "Tiêu chuẩn hệ số tải chéo (Cross-Loadings Criterion - Chin, 1998) là phương pháp đánh giá giá trị phân biệt ở cấp độ biến quan sát (chỉ báo) trong mô hình SEM. Tiêu chuẩn yêu cầu hệ số tải nhân tố ngoài (outer loading) của một biến quan sát lên cấu trúc tiềm ẩn mà nó đại diện phải lớn hơn đáng kể so với tất cả các hệ số tải chéo của biến đó lên bất kỳ cấu trúc tiềm ẩn nào khác trong mô hình.",
+      "seminal_citation": "Chin (1998); Hair et al. (2022)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
@@ -13423,7 +13906,14 @@
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "category": "SEM & Psychometrics",
+      "operational_mechanism": "1. Xây dựng bảng ma trận hệ số tải chéo (Cross-loadings matrix) biểu diễn tương quan giữa tất cả các biến quan sát với toàn bộ điểm số biến tiềm ẩn (latent variable scores). 2. Kiểm tra điều kiện từng hàng: Hệ số tải chính lambda_ii phải vượt trội hơn mọi hệ số tải chéo lambda_ij (với j != i). 3. Khoảng cách chênh lệch tối thiểu: Delta_lambda = lambda_ii - max(lambda_ij) phải đạt ngưỡng an toàn.",
+      "benchmarks": "Ngưỡng Chin (1998) & Hair et al. (2022): Hệ số tải chính phải >= 0.70. Khoảng cách giữa hệ số tải chính và hệ số tải chéo cao nhất tối thiểu phải đạt từ 0.10 đến 0.20 đơn vị. Nếu biến quan sát tải lên một cấu trúc khác với mức độ gần bằng cấu trúc gốc (Delta_lambda < 0.10), biến bị nghi ngờ có tính nhập nhằng (ambiguous item).",
+      "pitfalls": "Bẫy phản biện: Chỉ dựa vào tiêu chuẩn Cross-loadings để bảo vệ giá trị phân biệt trên các tạp chí Q1. Nghiên cứu mô phỏng của Henseler et al. (2015) đã chứng minh rằng Cross-loadings có độ nhạy cực kỳ kém (tỷ lệ phát hiện sai sót dưới 50% trong nhiều kịch bản); bắt buộc phải báo cáo tiêu chuẩn HTMT song hành.",
+      "apa_reference": "Chin, W. W. (1998). The partial least squares approach to structural equation modeling. Modern Methods for Business Research, 295(2), 295–336.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "cross-loadings-identification",
@@ -14337,15 +14827,19 @@
     },
     {
       "id": "degree-of-problem-crystallization",
-      "term": "Degree of Problem Crystallization",
-      "vietnamese": "Nghiên cứu khám phá (Exploratory study) vs Nghiên cứu chính thức (Formal study).",
-      "vietnamese_variants": [],
+      "term": "Degree of Problem Crystallization (Exploratory vs. Formal Study)",
+      "vietnamese": "Mức độ kết tinh của vấn đề nghiên cứu (Khám phá vs. Chính thức)",
+      "vietnamese_variants": [
+        "Mức độ kết tinh vấn đề",
+        "Nghiên cứu khám phá vs Nghiên cứu kiểm định",
+        "Problem Crystallization"
+      ],
       "domain_tags": [
         "Business Research",
         "Experiments"
       ],
-      "core_definition": "Nghiên cứu khám phá (Exploratory study) vs Nghiên cứu chính thức (Formal study).",
-      "seminal_citation": "Schindler (2022); Schindler (2022)",
+      "core_definition": "Mức độ kết tinh của vấn đề nghiên cứu (Degree of Problem Crystallization - Cooper & Schindler, 2014) là tiêu chuẩn phân loại thiết kế nghiên cứu dựa trên độ rõ ràng và độ hoàn thiện của câu hỏi nghiên cứu, mục tiêu khoa học và cấu trúc dữ liệu cần thu thập. Thang đo này phân chia nghiên cứu thành hai thái cực: Nghiên cứu Khám phá (Exploratory study: khi vấn đề còn mơ hồ, cấu trúc lỏng lẻo nhằm làm rõ bản chất hiện tượng) và Nghiên cứu Chính thức (Formal study / Confirmatory study: khi vấn đề đã kết tinh rõ ràng, có giả thuyết cụ thể nhằm kiểm định quan hệ nhân quả).",
+      "seminal_citation": "Cooper & Schindler (2014); Churchill (1979)",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
@@ -14353,7 +14847,14 @@
       "domain_tags_en": [
         "Business Research",
         "Experiments"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Nghiên cứu khám phá: Áp dụng khi tri thức về hiện tượng còn sơ khai; sử dụng phỏng vấn chuyên gia, thảo luận nhóm tập trung, phân tích dữ liệu thứ cấp, nghiên cứu tình huống thí điểm. 2. Nghiên cứu chính thức: Áp dụng khi các khái niệm và biến số đã được xác định hoàn chỉnh; sử dụng bảng hỏi chuẩn hóa, mẫu ngẫu nhiên đại diện, mô hình hồi quy / SEM để kiểm định các giả thuyết suy diễn thống kê.",
+      "benchmarks": "Giúp tác giả định vị chính xác mục tiêu của bài báo trong phần Giới thiệu (Introduction). Nghiên cứu sinh tiến sĩ bắt buộc phải nắm rõ mức độ kết tinh để tránh lỗi sử dụng phương pháp định lượng suy diễn cho một vấn đề chưa được định nghĩa rõ ràng về mặt khái niệm.",
+      "pitfalls": "Bẫy phản biện: 'Premature quantification' — Vội vã thiết kế bảng khảo sát Likert và chạy mô hình hồi quy định lượng phức tạp cho một chủ đề mới toanh mà nền tảng lý thuyết chưa hề kết tinh, dẫn đến việc đo lường các khái niệm sai lệch và kết quả vô nghĩa.",
+      "apa_reference": "Cooper, D. R., & Schindler, P. S. (2014). Business research methods (12th ed.). McGraw-Hill Education.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "delivery-and-collection-questionnaire",
@@ -14458,14 +14959,19 @@
     },
     {
       "id": "dependent-variable",
-      "term": "Dependent Variable",
-      "vietnamese": "Biến phụ thuộc",
-      "vietnamese_variants": [],
+      "term": "Dependent Variable (Outcome / Criterion Variable)",
+      "vietnamese": "Biến phụ thuộc (Biến kết quả)",
+      "vietnamese_variants": [
+        "Biến kết quả",
+        "Outcome Variable",
+        "Criterion Variable",
+        "Biến chịu tác động"
+      ],
       "domain_tags": [
         "Acronym NCKH"
       ],
-      "core_definition": "Biến đóng vai trò kết quả chịu tác động của biến độc lập, là đối tượng chính cần được giải thích hoặc dự báo trong mô hình nghiên cứu. Ngưỡng thực nghiệm tham chiếu: Cần được đo lường với độ chuẩn xác cao, kiểm tra dạng hàm phân phối và tránh sai số đo lường.",
-      "seminal_citation": "Cần được đo lường với độ chuẩn xác cao, kiểm tra dạng hàm phân phối và tránh sai số đo lường.",
+      "core_definition": "Biến phụ thuộc (Dependent Variable - DV / Outcome / Criterion) là biến số đại diện cho kết quả, trạng thái hoặc hiện tượng mà nhà nghiên cứu đang tìm cách giải thích, dự báo hoặc chứng minh sự thay đổi của nó dưới tác động của các biến độc lập (IV). Trong mô hình hồi quy và cấu trúc toán học, biến phụ thuộc nằm ở vế trái của phương trình (Y = f(X) + e).",
+      "seminal_citation": "Fisher (1925); Wooldridge (2010)",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
@@ -14473,25 +14979,42 @@
       "domain_tags_en": [
         "Acronym NCKH"
       ],
-      "benchmarks": "Cần được đo lường với độ chuẩn xác cao, kiểm tra dạng hàm phân phối và tránh sai số đo lường."
+      "benchmarks": "Được chọn lọc dựa trên khoảng trống nghiên cứu và mục tiêu giải quyết vấn đề thực tiễn (ví dụ: Tỷ suất sinh lời cổ phiếu, Q-Tobin, Ý định nghỉ việc, Hành vi đổi mới). Biến phụ thuộc phải có đủ mức độ biến thiên (variance); nếu một biến không có sự biến thiên thì không thể thực hiện bất kỳ phép phân tích thống kê nào.",
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Bản chất thang đo: Định hình toàn bộ phương pháp kinh tế lượng cần sử dụng: (A) Liên tục (Continuous) -> OLS / GLS; (B) Nhị phân (Binary 0/1) -> Binary Logit / Probit; (C) Đếm không âm (Count 0, 1, 2...) -> Poisson / Negative Binomial; (D) Thứ bậc (Ordinal) -> Ordered Logit; (E) Bị kiểm duyệt (Censored) -> Tobit; (F) Thời gian dẫn đến biến cố -> Cox Hazard. 2. Đảm bảo độ tin cậy và giá trị hiệu lực đo lường của biến Y.",
+      "pitfalls": "Bẫy phản biện: Chọn biến phụ thuộc có sự suy thoái đo lường (Floor or Ceiling effects) hoặc bị cắt cụt không ngẫu nhiên (Incidental truncation) mà vẫn cố chấp chạy hồi quy OLS tuyến tính thông thường.",
+      "apa_reference": "Wooldridge, J. M. (2010). Econometric analysis of cross section and panel data (2nd ed.). MIT Press.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "dependent-variables",
-      "term": "Dependent variables",
-      "vietnamese": "Biến phụ thuộc (DV) — Biến số đo lường kết quả đầu ra, chịu tác động của biến độc lập (còn gọi là Outcome / Criterion).",
-      "vietnamese_variants": [],
+      "term": "System of Dependent Variables (Multivariate Outcomes)",
+      "vietnamese": "Hệ thống các biến phụ thuộc (Kết quả đa biến)",
+      "vietnamese_variants": [
+        "Nhiều biến phụ thuộc",
+        "Multivariate Dependent Variables",
+        "Vector biến kết quả"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Biến phụ thuộc (DV) — Biến số đo lường kết quả đầu ra, chịu tác động của biến độc lập (còn gọi là Outcome / Criterion).",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Hệ thống các biến phụ thuộc (Multivariate Dependent Variables / Multi-Outcome System) là tập hợp hai hoặc nhiều biến kết quả được xem xét và mô hình hóa đồng thời trong một nghiên cứu, phản ánh tính chất đa diện và phức tạp của các hiện tượng tổ chức và kinh tế (ví dụ: cùng đánh giá đồng thời Hiệu quả tài chính, Hiệu quả xã hội và Hiệu quả môi trường trong mục tiêu phát triển bền vững ESG).",
+      "seminal_citation": "Zellner (1962); Hair et al. (2019)",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Dependent variables according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Kỹ thuật phân tích phù hợp: Phân tích phương sai đa biến (MANOVA: kiểm tra tác động can thiệp lên véc tơ Y), Hệ phương trình hồi quy dường như không liên quan (Seemingly Unrelated Regressions - SUR / Zellner, 1962: cho phép sai số giữa các phương trình Y_1, Y_2 có tương quan đồng thời), và Mô hình phương trình cấu trúc (SEM: mô hình hóa mạng lưới quan hệ đa biến phụ thuộc). 2. Kiểm soát lạm phát sai lầm loại I (Family-Wise Error Rate) khi kiểm định nhiều kết quả độc lập.",
+      "benchmarks": "Khi các biến phụ thuộc có tương quan nội tại với nhau, việc ước lượng đồng thời qua SUR hoặc SEM luôn mang lại hiệu quả thống kê vượt trội hơn so với việc chạy nhiều phương trình OLS riêng lẻ (Zellner's gain). Kiểm định Box's M và ma trận tương quan giữa các phần dư.",
+      "pitfalls": "Bẫy phản biện: Chạy hàng loạt kiểm định t-test hoặc ANOVA một biến riêng biệt cho từng biến kết quả mà không áp dụng hiệu chỉnh đa kiểm định (Multiplicity correction: Bonferroni hoặc Benjamini-Hochberg FDR), dẫn đến nguy cơ sai sót loại I bùng nổ.",
+      "apa_reference": "Zellner, A. (1962). An efficient method of estimating seemingly unrelated regressions and tests for aggregation bias. Journal of the American Statistical Association, 57(298), 348–368. https://doi.org/10.1080/01621459.1962.10480664",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "dersimonian-laird-estimator",
@@ -15439,20 +15962,31 @@
     {
       "id": "dual-process-theory-kahneman---system-1-system-2",
       "term": "Dual-Process Theory (Kahneman - System 1 & System 2)",
-      "vietnamese": "Thuyết Quá trình Nhận thức Kép",
-      "vietnamese_variants": [],
+      "vietnamese": "Thuyết quá trình nhận thức kép (Hệ thống 1 và Hệ thống 2)",
+      "vietnamese_variants": [
+        "Lý thuyết Hệ thống 1 và Hệ thống 2",
+        "Kahneman Dual-Process",
+        "Tư duy Nhanh và Chậm"
+      ],
       "domain_tags": [
         "Cognitive Psychology"
       ],
-      "core_definition": "Hệ thống 1 trực giác nhanh, vô thức vs. Hệ thống 2 lý tính chậm, tốn nỗ lực.",
-      "seminal_citation": "Kahneman (2011)",
+      "core_definition": "Thuyết quá trình nhận thức kép (Dual-Process Theory - Stanovich & West, 2000; Kahneman, 2011; Evans & Stanovich, 2013) là mô hình lý thuyết nền tảng của kinh tế học hành vi và tâm lý học nhận thức. Mô hình giải thích cơ chế tư duy và ra quyết định của con người thông qua sự tương tác giữa hai phương thức xử lý thông tin riêng biệt: Hệ thống 1 (Tư duy nhanh, trực giác, tự động, vô thức, ít tốn năng lượng nhưng dễ mắc bẫy thiên kiến phỏng đoán) và Hệ thống 2 (Tư duy chậm, có chủ đích, đòi hỏi nỗ lực tập trung cao, tính toán logic nhưng lười biếng).",
+      "seminal_citation": "Stanovich & West (2000); Kahneman (2011)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Dual-Process Theory (Kahneman - System 1 & System 2) according to Kahneman (2011).",
       "domain_tags_en": [
         "Cognitive Psychology"
-      ]
+      ],
+      "category": "Quantitative Methods & Research Design",
+      "operational_mechanism": "1. Cơ chế vận hành: Hệ thống 1 liên tục tự động sinh ra các ấn tượng, cảm xúc và linh cảm; Hệ thống 2 thường tiếp nhận các đề xuất này mà không cần kiểm tra kỹ lưỡng, dẫn đến các sai lệch nhận thức có hệ thống (Cognitive Biases: mỏ neo, sẵn có, tự tin thái quá). 2. Can thiệp thực nghiệm: Kích hoạt Hệ thống 2 thông qua áp lực thời gian (time pressure để khóa Hệ thống 2), gánh nặng nhận thức (cognitive load tasks), hoặc kỹ thuật huých (nudging).",
+      "benchmarks": "Là khung lý thuyết chi phối các thiết kế thực nghiệm hành vi (Behavioral experiments) trong tài chính hành vi, marketing tiêu dùng và hoạch định chính sách công. Đạt chuẩn mực Nobel Kinh tế (Kahneman & Tversky).",
+      "pitfalls": "Bẫy phản biện: Nhân hóa hai hệ thống như hai thực thể não bộ độc lập nằm ở các vùng giải phẫu thần kinh riêng biệt. Kahneman nhấn mạnh System 1 và System 2 thuần túy là các cấu trúc lý thuyết ẩn dụ (fictional characters / psychological constructs) để thuận tiện cho việc mô hình hóa các đặc tính xử lý thông tin chứ không phải là hai bán cầu não vật lý.",
+      "apa_reference": "Kahneman, D. (2011). Thinking, fast and slow. Farrar, Straus and Giroux.",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "duality-of-structure",
@@ -15493,20 +16027,31 @@
     {
       "id": "dummy-variable-coding",
       "term": "Dummy Variable Coding",
-      "vietnamese": "Mã hóa Biến Giả",
-      "vietnamese_variants": [],
+      "vietnamese": "Mã hóa biến giả",
+      "vietnamese_variants": [
+        "Biến giả OLS",
+        "Indicator Variable Coding",
+        "Biến nhị phân chỉ thị"
+      ],
       "domain_tags": [
         "Regression Modeling"
       ],
-      "core_definition": "Chuyển đổi biến phân loại k nhóm thành k-1 biến nhị phân 0/1 so với nhóm cơ sở.",
-      "seminal_citation": "Suits (1957)",
+      "core_definition": "Mã hóa biến giả (Dummy / Indicator Variable Coding - Suits, 1957) là kỹ thuật định lượng chuẩn mực cho phép đưa các biến định tính / phân loại (categorical variables như giới tính, ngành kinh doanh, vùng miền, các đợt khủng hoảng) vào mô hình hồi quy tuyến tính dưới dạng các giá trị nhị phân nhận giá trị 0 hoặc 1.",
+      "seminal_citation": "Suits (1957); Gujarati & Porter (2009)",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Dummy Variable Coding according to Suits (1957).",
       "domain_tags_en": [
         "Regression Modeling"
-      ]
+      ],
+      "category": "Econometrics & Causal Inference",
+      "operational_mechanism": "1. Quy tắc bậc tự do: Nếu một biến phân loại có K nhóm (categories), bắt buộc chỉ được tạo và đưa vào mô hình tối đa (K - 1) biến giả. 2. Nhóm bị bỏ lại đóng vai trò là Nhóm Tham chiếu (Reference / Base / Benchmark category). 3. Hệ số hồi quy beta_j của biến giả D_j đo lường sự chênh lệch có ý nghĩa thống kê về giá trị trung bình của biến phụ thuộc Y giữa nhóm j và nhóm tham chiếu, sau khi đã kiểm soát tất cả các biến đồng biến khác.",
+      "benchmarks": "Kiểm định ý nghĩa thống kê: t-statistic của từng biến giả kiểm tra xem nhóm đó có khác biệt so với nhóm cơ sở hay không. Để kiểm định xem biến phân loại K nhóm nói chung có tác động tổng thể có ý nghĩa lên Y hay không, bắt buộc phải dùng kiểm định F đồng thời (Wald test / Incremental F-test) trên toàn bộ (K - 1) biến giả.",
+      "pitfalls": "Bẫy biến giả kinh điển (Dummy Variable Trap): Đưa đồng thời cả K biến giả vào mô hình khi phương trình có chứa hệ số chặn beta_0. Sai sót này dẫn đến hiện tượng đa cộng tuyến hoàn hảo (perfect multicollinearity - tổng các biến giả bằng 1, trùng với cột hằng số), khiến ma trận X'X bị suy biến và phần mềm báo lỗi không thể nghịch đảo.",
+      "apa_reference": "Suits, D. B. (1957). Use of dummy variables in regression equations. Journal of the American Statistical Association, 52(280), 548–551. https://doi.org/10.1080/01621459.1957.10501412",
+      "is_flagship": true,
+      "last_updated": "2026-10-26"
     },
     {
       "id": "dunnetts-test",
