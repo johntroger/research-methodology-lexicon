@@ -17852,15 +17852,18 @@
     },
     {
       "id": "deep-structure-hermeneutics",
-      "term": "Deep-structure hermeneutics",
-      "vietnamese": "Thông diễn học cấu trúc sâu (Lorenzer)",
-      "vietnamese_variants": [],
+      "term": "Deep-Structure Hermeneutics",
+      "vietnamese": "Thông diễn học cấu trúc sâu",
+      "vietnamese_variants": [
+        "Thông diễn cấu trúc chiều sâu",
+        "Phân tích diễn giải cấu trúc tiềm ẩn"
+      ],
       "domain_tags": [
         "Methodology",
         "Research Design"
       ],
-      "core_definition": "Khám phá những xung đột và cơ chế phòng vệ vô thức trong tài liệu.",
-      "seminal_citation": "Flick et al. (2004)",
+      "core_definition": "Deep-Structure Hermeneutics (Tiefenhermeneutik) là một phương pháp luận diễn giải định tính bắt nguồn từ lý thuyết phê phán và phân tâm học xã hội (Habermas, Lorenzer). Phương pháp này tìm cách thấu hiểu các văn bản, hành vi và hiện tượng văn hóa xã hội không chỉ ở bề mặt ý thức (manifest meaning), mà còn giải mã các xung đột vô thức, các áp chế quyền lực và sự tha hóa ý thức hệ bị che giấu dưới các cấu trúc biểu tượng và ngôn ngữ (latent or unconscious deep structure).",
+      "seminal_citation": "Lorenzer, A. (1986). Tiefenhermeneutische Kulturanalyse. In A. Lorenzer (Ed.), Kultur-Analysen (pp. 11-98). Fischer.",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
@@ -17868,19 +17871,27 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Qualitative Research & Philosophy of Science",
+      "operational_mechanism": "Quá trình nghiên cứu vận hành qua 3 tầng phân tích kế tiếp nhau: (1) Phân tích bề mặt biểu hiện (manifest textual analysis) rà soát các phát biểu tường minh, cấu trúc cú pháp và ý đồ chủ quan của tác giả/đối tượng; (2) Phân tích mâu thuẫn và đứt gãy ngôn ngữ (scenic understanding/symptomatic reading), định vị các điểm gián đoạn vô thức, sự ấp úng, lặp lại cưỡng chế, chuyển vị (displacement) hoặc phủ nhận (denial); (3) Tái cấu trúc ý nghĩa sâu (reconstruction of latent socio-psychological structures) liên kết các phản ứng tâm lý vô thức của cá nhân với các xung đột giai cấp, quyền lực cấu trúc và biến thiên lịch sử xã hội rộng lớn.",
+      "benchmarks": "Được coi là đạt chuẩn học thuật khi: (1) Nghiên cứu thiết lập được 'scenic understanding' (hiểu theo bối cảnh kịch tính tâm lý) với các bằng chứng tương tác cụ thể thay vì suy diễn thuần túy; (2) Có quá trình tự phản tư (self-reflexivity) nghiêm ngặt về phản chuyển giao (countertransference) của chính nhà nghiên cứu; (3) Tuân thủ nguyên tắc tam giác giác đạc diễn giải (interpretive triangulation), nơi việc đọc cấu trúc sâu được đối chiếu với lịch sử tiểu sử và thể chế chính trị - xã hội.",
+      "pitfalls": "Cạm bẫy thường gặp là 'áp đặt phân tâm học giáo điều' (wild psychoanalysis), suy diễn vô tội vạ động cơ vô thức của người tham gia mà không có bằng chứng văn bản cụ thể; hoặc 'ý chí luận của nhà phê phán' (hermeneutic tyranny), tự trao quyền đứng trên đối tượng nghiên cứu để phán xét ý thức sai lầm (false consciousness) mà thiếu sự minh bạch phương pháp luận.",
+      "apa_reference": "Lorenzer, A. (1986). Tiefenhermeneutische Kulturanalyse [Deep-structure hermeneutic cultural analysis]. In A. Lorenzer (Ed.), Kultur-Analysen: Psychoanalytische Studien zur Kultur (pp. 11-98). Fischer Taschenbuch Verlag."
     },
     {
       "id": "deep-structure-hermeneutics-alfred-lorenzer",
       "term": "Deep-Structure Hermeneutics (Alfred Lorenzer)",
-      "vietnamese": "(`Thông diễn học cấu trúc sâu`): Kết hợp phân tích tâm lý học chiều sâu và xã hội học để giải mã những xung đột vô thức trong tư liệu văn bản.",
-      "vietnamese_variants": [],
+      "vietnamese": "Thông diễn học cấu trúc sâu theo Alfred Lorenzer",
+      "vietnamese_variants": [
+        "Phương pháp thông diễn chiều sâu Lorenzer",
+        "Phân tích văn hóa phân tâm học Lorenzer"
+      ],
       "domain_tags": [
         "Methodology",
         "Research Design"
       ],
-      "core_definition": "(`Thông diễn học cấu trúc sâu`): Kết hợp phân tích tâm lý học chiều sâu và xã hội học để giải mã những xung đột vô thức trong tư liệu văn bản.",
-      "seminal_citation": "Flick et al. (2004)",
+      "core_definition": "Deep-Structure Hermeneutics của nhà phân tâm học xã hội Alfred Lorenzer là phương pháp nghiên cứu định tính dựa trên khái niệm 'hiểu theo cảnh tượng' (scenic understanding - szenisches Verstehen). Phương pháp giải mã cách thức các hình thức tương tác sống động thời thơ ấu (life-practice interaction forms) bị đè nén, biến dạng và mã hóa vào trong các sản phẩm văn hóa, tác phẩm nghệ thuật, và văn bản tôn giáo/chính trị hiện đại thông qua sự tách rời giữa ngôn ngữ biểu tượng và thực hành cơ thể.",
+      "seminal_citation": "Lorenzer, A. (1970). Kritik des psychoanalytischen Symbolbegriffs. Suhrkamp.",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #704; rác Markdown/bảng; mảnh trích",
@@ -17888,55 +17899,79 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Qualitative Research & Hermeneutics",
+      "operational_mechanism": "Gồm 3 cấp độ diễn giải có hệ thống: (1) Diễn giải logic - biểu hiện (logical-manifest interpretation): hiểu nghĩa đen và logic ngữ nghĩa thông thường của văn bản; (2) Diễn giải tâm lý - biểu cảm (psychological-expressive interpretation): ghi nhận cảm xúc mơ hồ, không khí kích thích hoặc cảm giác khó chịu/bất an do văn bản tạo ra trong nhóm nghiên cứu; (3) Diễn giải theo cảnh tượng (scenic interpretation): tái hiện cảnh huống nguyên thủy bị đè nén mà văn bản vô tình dàn dựng lại, từ đó vạch trần sự đứt gãy giữa 'ngôn ngữ hành động' (action language) và 'ngôn ngữ biểu tượng' (symbolic language).",
+      "benchmarks": "Đạt chuẩn khi: (1) Được triển khai theo hình thức nhóm nghiên cứu thông diễn (interpretive research group) để kiểm soát các phản ứng chuyển giao/phản chuyển giao chủ quan; (2) Tài liệu hóa toàn diện 'nhật ký cảm xúc' và biên bản thảo luận nhóm đối với các hiện tượng rạn nứt ngôn ngữ; (3) Luận chứng rõ ràng sự chuyển hóa từ cấu trúc vi mô của văn bản sang cấu trúc vĩ mô của lịch sử - văn hóa.",
+      "pitfalls": "Lỗi nhà nghiên cứu độc thoại (solitary researcher bias) khi tự mình suy diễn cảnh tượng vô thức mà không qua thảo luận nhóm đối chứng; nhầm lẫn giữa thông diễn học chiều sâu với phân tâm học lâm sàng điều trị cá nhân; biến việc nghiên cứu thành công cụ công kích đạo đức hoặc tâm thần hóa nhân vật lịch sử.",
+      "apa_reference": "Lorenzer, A. (1970). Kritik des psychoanalytischen Symbolbegriffs [Critique of the psychoanalytic concept of symbols]. Suhrkamp Verlag."
     },
     {
       "id": "default-effect-in-behavioral-interventions",
       "term": "Default Effect in Behavioral Interventions",
-      "vietnamese": "Hiệu ứng Lựa chọn Mặc định",
-      "vietnamese_variants": [],
+      "vietnamese": "Hiệu ứng mặc định trong can thiệp hành vi",
+      "vietnamese_variants": [
+        "Hiệu ứng lựa chọn mặc định",
+        "Hiệu ứng thiết lập sẵn trong kiến trúc lựa chọn"
+      ],
       "domain_tags": [
         "Behavioral Economics"
       ],
-      "core_definition": "Tỷ lệ người chọn phương án mặc định luôn chiếm đa số áp đảo do quán tính và chi phí nhận thức.",
-      "seminal_citation": "Johnson & Goldstein (2003)",
+      "core_definition": "Default Effect in Behavioral Interventions là hiện tượng kinh tế học hành vi và kiến trúc lựa chọn (nudge theory) trong đó các cá nhân có xu hướng chấp nhận phương án được thiết lập sẵn (default option) cao hơn đáng kể so với việc chủ động thay đổi sang một lựa chọn khác, xuất phát từ chi phí nhận thức, quán tính tâm lý (inertia), ác cảm tổn thất (loss aversion), hoặc việc coi mặc định như một khuyến nghị ngầm từ người thiết kế chính sách.",
+      "seminal_citation": "Johnson, E. J., & Goldstein, D. (2003). Do defaults save lives? Science, 302(5649), 1338-1339.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Default Effect in Behavioral Interventions according to Johnson & Goldstein (2003).",
       "domain_tags_en": [
         "Behavioral Economics"
-      ]
+      ],
+      "category": "Experimental Design & Behavioral Economics",
+      "operational_mechanism": "Vận hành thông qua thiết kế thử nghiệm ngẫu nhiên có đối chứng (RCT) hoặc thử nghiệm thực địa (field experiment): Người tham gia được phân ngẫu nhiên vào nhóm Opt-in (mặc định là không tham gia, phải tích chọn để tham gia) hoặc nhóm Opt-out (mặc định là tham gia, phải tích chọn để từ chối). Nhà nghiên cứu đo lường tỷ lệ chấp nhận (adoption rate), tính bền vững của hành vi theo thời gian, và đánh giá tác động trung gian của nhận thức về chuẩn mực xã hội cũng như chi phí chuyển đổi (switching costs).",
+      "benchmarks": "Chuẩn mực phân tích: (1) Báo cáo Odds Ratio (OR) hoặc tỷ lệ phần trăm chênh lệch có kiểm soát các biến nhân khẩu học và sở thích nền tảng; (2) Phân tích độ nhạy (sensitivity analysis) để kiểm tra xem hiệu ứng có giảm dần khi các ưu đãi tài chính hoặc thông tin minh bạch tăng lên; (3) Báo cáo kiểm định ý định điều trị (Intention-To-Treat - ITT) và tỷ lệ tuân thủ thực tế (treatment compliance).",
+      "pitfalls": "Đồng nhất sự chấp nhận mặc định thụ động với sự thay đổi sở thích thực sự (preference transformation); bỏ qua các hậu quả đạo đức về quyền tự quyết (manipulation/paternalism); không kiểm tra hiệu ứng bật ngược (backlash effect) khi đối tượng cảm thấy quyền tự do lựa chọn bị xâm phạm (reactance theory).",
+      "apa_reference": "Johnson, E. J., & Goldstein, D. (2003). Do defaults save lives? Science, 302(5649), 1338–1339. https://doi.org/10.1126/science.1091721"
     },
     {
       "id": "deficiencies-in-past-literature",
-      "term": "Deficiencies in past literature",
-      "vietnamese": "Khiếm khuyết trong y văn đi trước — Các khoảng trống hoặc hạn chế của các nghiên cứu trước đó mà đề tài này sẽ giải quyết.",
-      "vietnamese_variants": [],
+      "term": "Deficiencies in Past Literature",
+      "vietnamese": "Khoảng trống khiếm khuyết trong y văn tiền nhiệm",
+      "vietnamese_variants": [
+        "Khiếm khuyết nghiên cứu trước",
+        "Hạn chế của y văn hiện hữu"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Khiếm khuyết trong y văn đi trước — Các khoảng trống hoặc hạn chế của các nghiên cứu trước đó mà đề tài này sẽ giải quyết.",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Deficiencies in Past Literature là phần trọng tâm trong phần mở đầu (Introduction) của một nghiên cứu học thuật chuẩn mực, nơi tác giả phân tích và chỉ ra các hạn chế, sai sót, thiếu sót về phương pháp luận, mẫu nghiên cứu hạn hẹp, lý thuyết chưa đầy đủ hoặc các mâu thuẫn thực nghiệm chưa được giải quyết trong các nghiên cứu đã công bố, từ đó thiết lập tính cấp thiết và tính chính danh khoa học của đề tài hiện tại.",
+      "seminal_citation": "Creswell, J. W., & Creswell, J. D. (2018). Research design: qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications.",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Deficiencies in past literature according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Academic Writing & Research Design",
+      "operational_mechanism": "Được vận hành theo mô hình tạo lập không gian nghiên cứu (CARS model - Swales, Creswell) qua 4 bước lập luận: (1) Tổng thuật ngắn gọn thành tựu chính của các công trình trước; (2) Chỉ ra các điểm khiếm khuyết cụ thể (ví dụ: chỉ nghiên cứu tại các nước phát triển, chỉ dùng thiết kế cắt ngang đơn lẻ, bỏ qua biến điều tiết quan trọng, hoặc thang đo thiếu độ tin cậy); (3) Giải thích hệ quả khoa học của những thiếu sót này (ví dụ: làm thiên lệch kết quả ước lượng, hạn chế khả năng tổng quát hóa); (4) Đề xuất phương án của nghiên cứu hiện tại để khắc phục trực tiếp các khiếm khuyết đó.",
+      "benchmarks": "Đạt chuẩn khi: (1) Khiếm khuyết được hỗ trợ bằng việc trích dẫn trực tiếp các bài báo Q1 uy tín trong 3-5 năm gần nhất thừa nhận chính hạn chế của họ; (2) Phân biệt rành mạch giữa 'chưa ai làm' (novelty fallacy) và 'cần thiết phải làm vì một lý do lý thuyết/thực tiễn sâu sắc' (theoretical/substantive necessity); (3) Trực tiếp kết nối vào câu hỏi nghiên cứu (RQs) và giả thuyết (Hypotheses).",
+      "pitfalls": "Mắc bẫy 'bôi bác tiền nhân' (disparaging past scholars) bằng giọng văn thiếu tôn trọng thay vì phê phán học thuật mang tính xây dựng; hoặc chỉ ra khoảng trống chung chung mơ hồ ('ít có nghiên cứu về đề tài này tại Việt Nam') mà không giải thích được khoảng trống đó hàm chứa thiếu sót gì về mặt lý thuyết hay phương pháp.",
+      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications."
     },
     {
       "id": "deficiencies-model",
-      "term": "Deficiencies model of an introduction",
-      "vietnamese": "Mô hình thiếu sót trong phần mở đầu nghiên cứu",
-      "vietnamese_variants": [],
+      "term": "Deficiencies Model of an Introduction",
+      "vietnamese": "Mô hình khiếm khuyết trong phần mở đầu",
+      "vietnamese_variants": [
+        "Cấu trúc mở đầu dựa trên khiếm khuyết y văn",
+        "Mô hình 5 phần viết phần mở đầu của Creswell"
+      ],
       "domain_tags": [
         "Thiết kế Nghiên cứu",
         "Văn phong Học thuật"
       ],
-      "core_definition": "Khung cấu trúc kinh điển do John Creswell đề xuất để viết phần mở đầu (Introduction) của một đề cương hoặc bài báo khoa học chuẩn quốc tế, gồm 5 phần: (1) Vấn đề nghiên cứu thực tiễn, (2) Các nghiên cứu trước đây đã giải quyết được gì, (3) Khoảng trống / Những thiếu sót trong các nghiên cứu trước (Deficiencies in past literature), (4) Ý nghĩa của việc giải quyết khoảng trống này, và (5) Mục đích nghiên cứu của đề tài.",
-      "seminal_citation": "Creswell, J. W., & Creswell, J. D. (2023). Research Design: Qualitative, Quantitative, and Mixed Methods Approaches (6th ed.). SAGE.",
+      "core_definition": "Deficiencies Model of an Introduction là một khuôn khổ viết phần mở đầu học thuật có tính cấu trúc cao do John W. Creswell phát triển. Mô hình này tổ chức phần Introduction thành năm khối logic chặt chẽ xoay quanh việc xác định vấn đề nghiên cứu và chỉ ra các thiếu sót của y văn quá khứ nhằm thuyết phục hội đồng và người đọc về sự cần thiết tuyệt đối của công trình nghiên cứu.",
+      "seminal_citation": "Creswell, J. W. (2014). Research design: Qualitative, quantitative, and mixed methods approaches (4th ed.). SAGE Publications.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "Đã được chuẩn hóa định nghĩa học thuật chuyên sâu chuẩn mực.",
@@ -17944,73 +17979,105 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Academic Writing & Research Design",
+      "operational_mechanism": "Cấu trúc gồm 5 thành tố tuần tự: (1) Vấn đề nghiên cứu (The Research Problem) - nêu bật hiện tượng thực tiễn hoặc tranh cãi lý thuyết tạo cảm giác cấp bách; (2) Nghiên cứu trước đây về vấn đề (Studies that Have Addressed the Problem) - tổng quan ngắn gọn những gì đã biết; (3) Khiếm khuyết trong các nghiên cứu trước (Deficiencies in Past Literature) - xác định rõ những gì chưa biết hoặc nghiên cứu trước làm sai/chưa tới; (4) Tầm quan trọng của nghiên cứu đối với các đối tượng thụ hưởng (Significance of the Study for Audiences) - nêu rõ đóng góp cho học giả, nhà thực hành và nhà hoạch định chính sách; (5) Mục đích nghiên cứu và câu hỏi nghiên cứu (The Purpose Statement and Research Questions).",
+      "benchmarks": "Tiêu chuẩn bài báo Q1: (1) Đoạn văn mở đầu thu hút sự chú ý ngay trong 2-3 câu đầu tiên (hook); (2) Phần khiếm khuyết chiếm vị trí bản lề ngay trước câu tuyên bố mục đích; (3) Mọi khiếm khuyết nêu ra đều phải có câu trả lời tương ứng trong mục đích và phương pháp nghiên cứu của bài báo.",
+      "pitfalls": "Dành quá nhiều dung lượng cho phần tóm tắt nghiên cứu trước mà quên chỉ ra khiếm khuyết; liệt kê khiếm khuyết không liên quan đến phạm vi giải quyết của nghiên cứu; câu tuyên bố mục đích không ăn khớp trực tiếp với khoảng trống khiếm khuyết đã lập luận.",
+      "apa_reference": "Creswell, J. W. (2014). Research design: Qualitative, quantitative, and mixed methods approaches (4th ed.). SAGE Publications."
     },
     {
       "id": "deficiencies-model-of-introduction",
-      "term": "Deficiencies model of introduction",
-      "vietnamese": "Mô hình mở đầu khiếm khuyết — Mô hình viết mở đầu kinh điển gồm 5 phần: Vấn đề \\rightarrow Y văn đi trước \\rightarrow Khoảng trống/khiếm khuyết \\rightarrow Ý nghĩa đề tài \\rightarrow Mục tiêu.",
-      "vietnamese_variants": [],
+      "term": "Deficiencies Model of Introduction",
+      "vietnamese": "Mô hình viết mở đầu dựa trên khiếm khuyết",
+      "vietnamese_variants": [
+        "Mô hình cấu trúc phần mở đầu 5 bước",
+        "Chiến lược lập luận khiếm khuyết trong Introduction"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Mô hình mở đầu khiếm khuyết — Mô hình viết mở đầu kinh điển gồm 5 phần: Vấn đề \\rightarrow Y văn đi trước \\rightarrow Khoảng trống/khiếm khuyết \\rightarrow Ý nghĩa đề tài \\rightarrow Mục tiêu.",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Deficiencies Model of Introduction là phiên bản quy chuẩn hóa thao tác lập luận mở đầu bài báo khoa học, định vị nghiên cứu như một giải pháp thiết yếu để khắc phục các 'điểm mù' (blind spots), mâu thuẫn phương pháp hoặc sự lạc hậu về mặt khái niệm của tri thức khoa học hiện hữu.",
+      "seminal_citation": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications.",
       "tier": "creswell",
       "expert_status": "needs_review",
       "expert_notes": "LaTeX thô",
       "core_definition_en": "Academic definition of Deficiencies model of introduction according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Academic Writing & Research Design",
+      "operational_mechanism": "Quy trình vận hành văn bản bao gồm việc chuyển đổi các bước lập luận từ hiện tượng thực tiễn (practical tension) sang xung đột lý thuyết (theoretical puzzle). Người viết sử dụng các liên từ tương phản (however, nonetheless, yet, past studies fail to address) để làm nổi bật sự thiếu hụt của các mô hình hiện có, sau đó đưa ra 'purpose statement' đóng vai trò là chiếc cầu nối khép lại khoảng trống đó một cách logic.",
+      "benchmarks": "Được đánh giá xuất sắc khi: (1) Chuyển tiếp mượt mà từ bức tranh toàn cảnh sang khiếm khuyết cụ thể (funnel structure); (2) Nêu rõ ít nhất hai loại khiếm khuyết độc lập (ví dụ: khiếm khuyết về cơ chế trung gian và khiếm khuyết về tính đại diện của bối cảnh văn hóa); (3) Các đối tượng thụ hưởng (audiences) được xác định cụ thể cùng với lợi ích học thuật/thực tiễn mà họ nhận được.",
+      "pitfalls": "Tập trung quá mức vào khiếm khuyết địa lý ('chưa nghiên cứu ở quốc gia X') mà không mang lại hàm ý lý thuyết mới; phóng đại sai lầm của đồng nghiệp trước đó khiến bài viết mang tính công kích cá nhân; thiếu sự kết nối logic giữa khiếm khuyết và thiết kế nghiên cứu thực nghiệm ở chương tiếp theo.",
+      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications."
     },
     {
       "id": "defiers",
       "term": "Defiers",
-      "vietnamese": "Nhóm đối tượng luôn làm ngược lại với sự phân bổ",
-      "vietnamese_variants": [],
+      "vietnamese": "Nhóm đối kháng quy định",
+      "vietnamese_variants": [
+        "Đối tượng đi ngược can thiệp",
+        "Nhóm bất tuân phản nghịch trong suy diễn nhân quả"
+      ],
       "domain_tags": [
         "Causal Inference"
       ],
-      "core_definition": "giả định Monotonicity loại trừ sự tồn tại của nhóm này.",
-      "seminal_citation": "Angrist, Imbens, & Rubin (1996)",
+      "core_definition": "Trong khuôn khổ kết quả tiềm năng (Potential Outcomes Framework) và suy diễn nhân quả biến công cụ (Instrumental Variables - LATE) của Imbens & Angrist, Defiers là nhóm đối tượng luôn làm ngược lại với sự phân bổ của biến công cụ: nếu được chỉ định nhận can thiệp (Z = 1) họ sẽ kiên quyết từ chối (D = 0), nhưng nếu không được chỉ định (Z = 0) họ lại chủ động tìm cách tiếp nhận can thiệp (D = 1).",
+      "seminal_citation": "Angrist, J. D., Imbens, G. W., & Rubin, D. B. (1996). Identification of causal effects using instrumental variables. Journal of the American Statistical Association, 91(434), 444-455.",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Defiers according to Angrist, Imbens, & Rubin (1996).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "category": "Causal Inference & Econometrics",
+      "operational_mechanism": "Toán học hóa nhóm Defiers theo kết quả tiềm năng: $D_i(1) = 0$ và $D_i(0) = 1$. Để ước lượng được Tác động can thiệp cục bộ bình quân (Local Average Treatment Effect - LATE) cho nhóm Tuân thủ (Compliers), định lý Imbens & Angrist bắt buộc phải đặt Giả định tính đơn điệu (Monotonicity Assumption hay No-Defiers Assumption): $D_i(1) \\ge D_i(0)$ đối với mọi cá nhân $i$, tức là tỷ lệ nhóm Defiers trong quần thể nghiên cứu phải bằng 0.",
+      "benchmarks": "Yêu cầu nghiêm ngặt trong phân tích IV: (1) Nhà nghiên cứu phải bảo vệ giả định không có Defiers bằng các lập luận thể chế hoặc thiết kế thực nghiệm vững chắc (ví dụ: việc phân bổ công cụ ngăn chặn hoàn toàn khả năng nhóm không được phân bổ tự tiếp cận điều trị); (2) Trong các trường hợp giả định tính đơn điệu bị nghi ngờ vi phạm, phải sử dụng các phương pháp phân tích độ nhạy (sensitivity bounds) hoặc ước lượng ranh giới Manski.",
+      "pitfalls": "Xem nhẹ giả định Monotonicity và mặc định rằng hệ số IV/2SLS luôn là LATE; khi nhóm Defiers tồn tại dù chỉ một tỷ lệ nhỏ, ước lượng LATE có thể bị thổi phồng nghiêm trọng hoặc đảo ngược dấu nhân quả so với thực tế.",
+      "apa_reference": "Angrist, J. D., Imbens, G. W., & Rubin, D. B. (1996). Identification of causal effects using instrumental variables. Journal of the American Statistical Association, 91(434), 444–455. https://doi.org/10.1080/01621459.1996.10476902"
     },
     {
       "id": "definition-of-terms",
-      "term": "Definition of terms",
-      "vietnamese": "Định nghĩa thuật ngữ — Phần chuyên biệt trong đề cương định nghĩa rõ ràng các thuật ngữ then chốt để người đọc hiểu đúng ngữ cảnh nghiên cứu.",
-      "vietnamese_variants": [],
+      "term": "Definition of Terms",
+      "vietnamese": "Định nghĩa thuật ngữ",
+      "vietnamese_variants": [
+        "Định nghĩa các khái niệm vận hành",
+        "Xác định thuật ngữ nghiên cứu"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Định nghĩa thuật ngữ — Phần chuyên biệt trong đề cương định nghĩa rõ ràng các thuật ngữ then chốt để người đọc hiểu đúng ngữ cảnh nghiên cứu.",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Definition of Terms là phần quy chuẩn trong đề cương nghiên cứu, luận án tiến sĩ hoặc bài báo khoa học nhằm xác lập rõ ràng và chuẩn xác ranh giới ngữ nghĩa của các biến số, khái niệm lý thuyết và thuật ngữ kỹ thuật cốt lõi được sử dụng trong công trình, bao gồm cả định nghĩa khái niệm (conceptual definition) và định nghĩa thao tác (operational definition).",
+      "seminal_citation": "Kerlinger, F. N. (1986). Foundations of behavioral research (3rd ed.). Holt, Rinehart and Winston.",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Definition of terms according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Academic Writing & Research Design",
+      "operational_mechanism": "Quy trình thiết lập định nghĩa gồm 2 tầng: (1) Định nghĩa khái niệm (Conceptual definition): liên kết thuật ngữ với hệ thống lý thuyết nền tảng từ y văn uy tín, vạch rõ phạm vi ngoại diên và nội hàm của khái niệm; (2) Định nghĩa thao tác (Operational definition): mô tả chính xác cách thức khái niệm đó được quan sát, thao tác hoặc đo lường trong nghiên cứu cụ thể (ví dụ: công cụ đo, thang đo Likert, chỉ số kế toán, hoặc tiêu chí phân loại định tính).",
+      "benchmarks": "Đạt chuẩn tiến sĩ / Q1: (1) Mọi khái niệm đo lường trong mô hình nghiên cứu đều phải có định nghĩa thao tác tương ứng; (2) Trích dẫn đúng nguồn gốc học thuật của định nghĩa gốc thay vì trích từ từ điển phổ thông (như Oxford hay Wikipedia); (3) Sự nhất quán ngữ nghĩa xuyên suốt từ phần lý thuyết đến các mục hỏi trong bảng câu hỏi.",
+      "pitfalls": "Định nghĩa mang tính vòng tròn (tautology), dùng chính thuật ngữ đó để giải thích cho nó; sao chép nguyên văn định nghĩa chung chung mà không cụ thể hóa vào ngữ cảnh nghiên cứu; mâu thuẫn giữa định nghĩa khái niệm đã tuyên bố và thang đo thực tế được sử dụng trong bảng câu hỏi.",
+      "apa_reference": "Kerlinger, F. N. (1986). Foundations of behavioral research (3rd ed.). Holt, Rinehart and Winston."
     },
     {
       "id": "definitive-concepts-khai-niem-dinh-nghia-cung",
       "term": "Definitive Concepts",
-      "vietnamese": "Khái niệm Định nghĩa Cứng (Đối lập với Sensitizing Concepts)",
-      "vietnamese_variants": [],
+      "vietnamese": "Khái niệm xác định (Khái niệm định nghĩa cứng)",
+      "vietnamese_variants": [
+        "Khái niệm tiền định",
+        "Khái niệm thao tác hóa cố định"
+      ],
       "domain_tags": [
         "Triangulation",
         "Sociological Methods"
       ],
-      "core_definition": "Chỉ ra chính xác các thuộc tính đo lường cố định (phù hợp với định lượng).",
-      "seminal_citation": "Denzin (1978)",
+      "core_definition": "Definitive Concepts (khái niệm do Herbert Blumer đặt ra đối lập với 'Sensitizing Concepts') là những khái niệm được định nghĩa rõ ràng, cố định và được thao tác hóa thông qua một tập hợp các đặc tính, tiêu chí hoặc chỉ báo lượng hóa chính xác, quy định cụ thể đối tượng nào thuộc về khái niệm và đối tượng nào không trước khi tiến hành nghiên cứu thực nghiệm.",
+      "seminal_citation": "Blumer, H. (1954). What is wrong with social theory? American Sociological Review, 19(1), 3-10.",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Tên mục không phải thuật ngữ",
@@ -18018,43 +18085,64 @@
       "domain_tags_en": [
         "Triangulation",
         "Sociological Methods"
-      ]
+      ],
+      "category": "Qualitative Research & Philosophy of Science",
+      "operational_mechanism": "Trong thiết kế nghiên cứu diễn dịch (deductive design), các khái niệm xác định cung cấp một khuôn khổ tĩnh: nhà nghiên cứu xác lập các ranh giới khái niệm nghiêm ngặt, chuyển đổi chúng thành các biến số đo lường độc lập/phụ thuộc, và tiến hành thu thập dữ liệu để kiểm định xem các thực thể quan sát có thỏa mãn các thuộc tính định trước hay không.",
+      "benchmarks": "Chuẩn mực phương pháp: (1) Đạt độ nhất quán cao về mặt đo lường (construct validity, high discriminant validity); (2) Các tiêu chí loại trừ (exclusion criteria) và bao hàm (inclusion criteria) được mô tả tường minh và có thể lặp lại; (3) Phù hợp tối đa cho các thiết kế định lượng, khảo sát diện rộng và phân tích hồi quy.",
+      "pitfalls": "Áp đặt khái niệm xác định một cách khiên cưỡng vào nghiên cứu định tính khám phá, dẫn đến việc bỏ sót những khía cạnh phong phú, mới mẻ hoặc các sắc thái phi chuẩn mực của thế giới xã hội mà các biến số cố định không thể thâu tóm được.",
+      "apa_reference": "Blumer, H. (1954). What is wrong with social theory? American Sociological Review, 19(1), 3–10. https://doi.org/10.2307/2088165"
     },
     {
       "id": "degenerating-vs-progressive-research-programme",
       "term": "Degenerating vs. Progressive Research Programme",
-      "vietnamese": "Chương trình Nghiên cứu Suy thoái vs. Tiến bộ",
-      "vietnamese_variants": [],
+      "vietnamese": "Chương trình nghiên cứu suy thoái và tiến bộ",
+      "vietnamese_variants": [
+        "Chương trình nghiên cứu Lakatos",
+        "Chương trình thoái hóa so với tiến bộ"
+      ],
       "domain_tags": [
         "Philosophy of Science"
       ],
-      "core_definition": "Chỉ chữa cháy bảo vệ lý thuyết cũ vs. Dự báo được hiện tượng mới.",
-      "seminal_citation": "Lakatos (1970)",
+      "core_definition": "Degenerating vs. Progressive Research Programme là khung phương pháp luận triết học khoa học của Imre Lakatos. Một 'chương trình nghiên cứu tiến bộ' (progressive research programme) có khả năng tiên đoán những sự kiện mới mẻ bất ngờ và các tiên đoán này được thực nghiệm xác nhận; ngược lại, một 'chương trình nghiên cứu suy thoái' (degenerating research programme) chỉ liên tục đưa ra các giả thuyết chắp vá hậu nghiệm (ad hoc hypotheses) để bảo vệ 'lõi cứng' (hard core) trước các bằng chứng phản nghiệm mà không tạo ra thêm tri thức mới nào.",
+      "seminal_citation": "Lakatos, I. (1978). The methodology of scientific research programmes: Philosophical papers (Vol. 1). Cambridge University Press.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Degenerating vs. Progressive Research Programme according to Lakatos (1970).",
       "domain_tags_en": [
         "Philosophy of Science"
-      ]
+      ],
+      "category": "Philosophy of Science & Epistemology",
+      "operational_mechanism": "Cấu trúc một chương trình nghiên cứu gồm: (1) Lõi cứng (Hard Core) - các giả định căn bản bất khả xâm phạm; (2) Vành đai bảo vệ (Protective Belt) - các giả thuyết phụ trợ có thể điều chỉnh; (3) Quy tắc phỏng đoán tích cực và tiêu cực (Heuristics). Sự chuyển dịch tiến bộ (progressive problemshift) diễn ra cả về lý thuyết (tiên đoán hiện tượng mới) và thực nghiệm (chứng thực hiện tượng mới). Sự chuyển dịch suy thoái (degenerating problemshift) diễn ra khi lý thuyết luôn chạy theo sau các khám phá thực nghiệm để cố thanh minh cho các thất bại dự báo.",
+      "benchmarks": "Đạt chuẩn khi đánh giá sự phát triển của một trường phái lý thuyết: (1) Đánh giá một chuỗi các lý thuyết $T_1, T_2, ..., T_n$ qua thời gian thay vì một lý thuyết đơn lẻ; (2) Chứng minh được sự gia tăng nội dung thực nghiệm vượt trội (excess empirical content); (3) Luận giải được tại sao một mô hình lý thuyết mới vượt trội hơn mô hình cũ dựa trên năng lực giải thích hiện tượng dị thường (anomalies).",
+      "pitfalls": "Vội vàng khai tử một chương trình nghiên cứu non trẻ khi nó vừa gặp những phản nghiệm đầu tiên; lầm tưởng việc liên tục thêm các biến điều tiết phức tạp một cách tùy tiện vào mô hình hồi quy là 'tiến bộ lý thuyết' trong khi thực chất chỉ là hành vi suy thoái chắp vá vành đai bảo vệ.",
+      "apa_reference": "Lakatos, I. (1978). The methodology of scientific research programmes: Philosophical papers (Vol. 1, J. Worrall & G. Currie, Eds.). Cambridge University Press. https://doi.org/10.1017/CBO9780511621123"
     },
     {
       "id": "degree-centrality-indegree-outdegree",
       "term": "Degree Centrality (Indegree & Outdegree)",
-      "vietnamese": "Độ Trung tâm Bậc",
-      "vietnamese_variants": [],
+      "vietnamese": "Độ trung tâm bậc (Bậc vào & Bậc ra)",
+      "vietnamese_variants": [
+        "Chỉ số trung tâm liên kết",
+        "Bậc kết nối mạng lưới xã hội"
+      ],
       "domain_tags": [
         "Network Science"
       ],
-      "core_definition": "Số lượng liên kết trực tiếp kết nối với một nút; Bậc vào Indegree vs. Bậc ra Outdegree.",
-      "seminal_citation": "Freeman (1978)",
+      "core_definition": "Degree Centrality là chỉ số cơ bản trong phân tích mạng lưới xã hội (SNA), đo lường tổng số lượng liên kết trực tiếp gắn liền với một nút (node/actor). Trong các mạng có hướng (directed networks), chỉ số được phân rã thành: In-degree (Bậc vào) phản ánh số liên kết hướng về nút (thước đo độ uy tín, sự nổi tiếng hoặc sự đón nhận) và Out-degree (Bậc ra) phản ánh số liên kết từ nút hướng ra ngoài (thước đo mức độ chủ động giao tiếp hoặc sự lan tỏa).",
+      "seminal_citation": "Freeman, L. C. (1978). Centrality in social networks conceptual clarification. Social Networks, 1(3), 215-239.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Degree Centrality (Indegree & Outdegree) according to Freeman (1978).",
       "domain_tags_en": [
         "Network Science"
-      ]
+      ],
+      "category": "Social Network Analysis & Graph Theory",
+      "operational_mechanism": "Công thức toán học trên ma trận kề $A = [a_{ij}]$: Với mạng vô hướng, $C_D(i) = \\sum_{j} a_{ij}$. Với mạng có hướng, In-degree là $k_i^{in} = \\sum_{j} a_{ji}$ và Out-degree là $k_i^{out} = \\sum_{j} a_{ij}$. Để so sánh giữa các mạng có quy mô khác nhau, giá trị này được chuẩn hóa (normalized degree centrality) bằng cách chia cho $(N - 1)$, trong đó $N$ là tổng số nút của toàn mạng lưới.",
+      "benchmarks": "Chuẩn mực phân tích SNA: (1) Báo cáo cả giá trị thô và giá trị chuẩn hóa; (2) Kiểm tra phân phối bậc mạng lưới (degree distribution) - phân biệt giữa mạng ngẫu nhiên (phân phối Poisson) và mạng không quy mô (scale-free network tuân theo luật lũy thừa Power Law $P(k) \\sim k^{-\\gamma}$); (3) Tích hợp với các chỉ số khác như Betweenness Centrality và Closeness Centrality để có bức tranh toàn diện.",
+      "pitfalls": "Nhầm lẫn giữa In-degree và Out-degree trong mạng có hướng dẫn đến giải thích sai chiều quan hệ quyền lực hoặc dòng chảy tri thức; sử dụng Degree Centrality cục bộ để đưa ra kết luận về tầm ảnh hưởng toàn cục (global reach) của nút trong toàn mạng.",
+      "apa_reference": "Freeman, L. C. (1978). Centrality in social networks conceptual clarification. Social Networks, 1(3), 215–239. https://doi.org/10.1016/0378-8733(78)90021-7"
     },
     {
       "id": "degree-of-problem-crystallization",
@@ -18089,15 +18177,18 @@
     },
     {
       "id": "delivery-and-collection-questionnaire",
-      "term": "Delivery and collection questionnaire",
-      "vietnamese": "Bảng hỏi phát tận tay và thu hồi trực tiếp.",
-      "vietnamese_variants": [],
+      "term": "Delivery and Collection Questionnaire",
+      "vietnamese": "Bảng câu hỏi phát tận tay và thu hồi trực tiếp",
+      "vietnamese_variants": [
+        "Bảng hỏi giao nhận trực tiếp",
+        "Khảo sát phát và thu hồi tận nơi"
+      ],
       "domain_tags": [
         "Research Onion",
         "Strategy"
       ],
-      "core_definition": "Bảng hỏi phát tận tay và thu hồi trực tiếp.",
-      "seminal_citation": "Saunders et al. (2019); Saunders (2019)",
+      "core_definition": "Delivery and Collection Questionnaire là một phương pháp thu thập dữ liệu khảo sát trong đó điều tra viên trực tiếp mang bảng câu hỏi giấy đến trao tận tay người được phỏng vấn, giải thích mục đích nghiên cứu, để người tham gia tự điền (self-administered), và sau đó điều tra viên quay lại thu hồi trực tiếp vào một thời điểm đã thỏa thuận trước.",
+      "seminal_citation": "Saunders, M., Lewis, P., & Thornhill, A. (2019). Research methods for business students (8th ed.). Pearson Education.",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
@@ -18105,43 +18196,64 @@
       "domain_tags_en": [
         "Research Onion",
         "Strategy"
-      ]
+      ],
+      "category": "Survey Methodology & Data Collection",
+      "operational_mechanism": "Phương pháp dung hòa ưu điểm của khảo sát tự điền và phỏng vấn trực tiếp: (1) Tiếp cận cá nhân tạo lập sự tin cậy và cam kết ban đầu, giúp giải đáp nhanh các thắc mắc về hướng dẫn điền; (2) Đảm bảo tính riêng tư và thời gian suy ngẫm cho đối tượng nghiên cứu khi trả lời các câu hỏi nhạy cảm; (3) Việc hẹn ngày giờ thu hồi cụ thể tạo động lực tâm lý hoàn thành, giúp nâng cao đáng kể tỷ lệ phản hồi (response rate) so với gửi thư truyền thống hay gửi link online thụ động.",
+      "benchmarks": "Chuẩn mực báo cáo: (1) Báo cáo rõ tỷ lệ phát ra, tỷ lệ thu hồi và tỷ lệ bảng hỏi hợp lệ sau khi làm sạch; (2) Đạt tỷ lệ phản hồi kỳ vọng từ 65% đến 85% trong các bối cảnh tổ chức/doanh nghiệp; (3) Kiểm tra hiện tượng thiên lệch không phản hồi (non-response bias) giữa những người trả lời ngay đợt đầu và những người phải nhắc nhở nhiều lần (Armstrong & Overton test).",
+      "pitfalls": "Chi phí di chuyển và thời gian thực địa cao; nguy cơ điều tra viên can thiệp vào câu trả lời của đối tượng khi giải thích; người tham gia có thể để người khác điền thay trong thời gian giữ bảng hỏi mà nhà nghiên cứu không kiểm soát được.",
+      "apa_reference": "Saunders, M., Lewis, P., & Thornhill, A. (2019). Research methods for business students (8th ed.). Pearson Education."
     },
     {
       "id": "delphi-consensus-criteria",
       "term": "Delphi Consensus Criteria",
-      "vietnamese": "Tiêu chí Đồng thuận Delphi",
-      "vietnamese_variants": [],
+      "vietnamese": "Tiêu chí đồng thuận Delphi",
+      "vietnamese_variants": [
+        "Tiêu chuẩn đồng thuận phương pháp Delphi",
+        "Ngưỡng đồng thuận chuyên gia Delphi"
+      ],
       "domain_tags": [
         "Consensus Methodology"
       ],
-      "core_definition": "Ngưỡng định lượng xác định sự đồng thuận của chuyên gia, như tỷ lệ phần trăm >= 75% hoặc IQR <= 1.",
-      "seminal_citation": "Diamond et al. (2014)",
+      "core_definition": "Delphi Consensus Criteria là hệ thống các tiêu chuẩn định lượng và định tính được thiết lập tiên nghiệm (a priori) nhằm xác định thời điểm và mức độ mà hội đồng chuyên gia ẩn danh đạt được sự nhất trí ý kiến (consensus) sau các vòng lấy ý kiến lặp lại có phản hồi kiểm soát (controlled iterative feedback) trong kỹ thuật Delphi.",
+      "seminal_citation": "Hsu, C. C., & Sandford, B. A. (2007). The Delphi technique: Making sense of consensus. Practical Assessment, Research, and Evaluation, 12(1), Article 10.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Delphi Consensus Criteria according to Diamond et al. (2014).",
       "domain_tags_en": [
         "Consensus Methodology"
-      ]
+      ],
+      "category": "Quantitative & Qualitative Mixed Methods",
+      "operational_mechanism": "Được vận hành qua các chỉ số thống kê đo lường độ phân tán và tập trung: (1) Tỷ lệ phần trăm đồng thuận (ví dụ: $\\ge 70\\%$ hoặc $\\ge 80\\%$ chuyên gia đánh giá từ 7 điểm trở lên trên thang Likert 9 điểm); (2) Khoảng phân vị (Interquartile Range - IQR $\\le 1.0$ hoặc $\\le 1.5$ biểu thị mức độ phân tán hẹp của ý kiến); (3) Độ lệch chuẩn (SD) hoặc Hệ số biến thiên (CV $\\le 0.30$); (4) Hệ số phù hợp Kendall W ($W \\ge 0.70$) đối với các bài toán xếp hạng ưu tiên.",
+      "benchmarks": "Chuẩn mực nghiên cứu Delphi xuất sắc: (1) Toàn bộ tiêu chí đồng thuận phải được xác định trước vòng 1 (a priori specification) để tránh việc dừng vòng khảo sát tùy tiện; (2) Báo cáo đầy đủ cả chỉ số xu hướng trung tâm (Median/Mean) và chỉ số phân tán (IQR/SD) cho từng mục hỏi qua từng vòng; (3) Báo cáo tỷ lệ hao hụt chuyên gia (panel attrition rate) qua các vòng (yêu cầu tỷ lệ giữ chân $> 70-80\\%$).",
+      "pitfalls": "Thay đổi tiêu chí đồng thuận giữa chừng để ép dữ liệu 'đạt đồng thuận'; nhầm lẫn giữa sự ổn định của ý kiến (stability) qua các vòng với sự đồng thuận thực sự (consensus); tạo áp lực tâm lý khiến chuyên gia thiểu số phải thay đổi quan điểm theo số đông trong bản tổng hợp phản hồi.",
+      "apa_reference": "Hsu, C. C., & Sandford, B. A. (2007). The Delphi technique: Making sense of consensus. Practical Assessment, Research, and Evaluation, 12(1), Article 10. https://doi.org/10.7275/pdz9-th90"
     },
     {
       "id": "demarcation-problem",
       "term": "Demarcation Problem",
-      "vietnamese": "Vấn đề phân định ranh giới giữa khoa học thực sự và ngụy khoa học (Karl Popper)",
-      "vietnamese_variants": [],
+      "vietnamese": "Vấn đề phân định ranh giới khoa học",
+      "vietnamese_variants": [
+        "Bài toán phân định khoa học và giả khoa học",
+        "Tiêu chí phân giới Popper"
+      ],
       "domain_tags": [
         "Philosophy of Science"
       ],
-      "core_definition": "Vấn đề phân định ranh giới giữa khoa học thực sự và ngụy khoa học (Karl Popper).",
-      "seminal_citation": "Popper (1959)",
+      "core_definition": "Demarcation Problem là bài toán trung tâm trong triết học khoa học do Karl Popper đặt ra, nhằm xác lập các tiêu chí tri thức luận rõ ràng để phân biệt giữa khoa học chân chính (science) với phi khoa học (non-science), tiền khoa học (pre-science) và đặc biệt là ngụy khoa học / giả khoa học (pseudoscience).",
+      "seminal_citation": "Popper, K. (1959). The logic of scientific discovery. Hutchinson & Co.",
       "tier": "curated",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Demarcation Problem according to Popper (1959).",
       "domain_tags_en": [
         "Philosophy of Science"
-      ]
+      ],
+      "category": "Philosophy of Science & Epistemology",
+      "operational_mechanism": "Popper bác bỏ nguyên tắc xác minh thực chứng (inductive verificationism) của chủ nghĩa thực chứng logic (Vienna Circle) và thay thế bằng Tiêu chí khả phản nghiệm (Falsifiability): Một hệ thống lý thuyết chỉ được coi là khoa học nếu nó đưa ra những khẳng định có thể bị bác bỏ bởi những quan sát hoặc thử nghiệm thực nghiệm tiềm tàng. Nếu một lý thuyết được cấu tạo sao cho nó luôn đúng trong mọi trường hợp và có thể giải thích mọi kết quả có thể xảy ra (như chiêm tinh học hay tâm phân học cổ điển theo góc nhìn của Popper), nó không thuộc phạm vi khoa học thực nghiệm.",
+      "benchmarks": "Đạt chuẩn lập luận triết học khoa học: (1) Nhận diện rõ tiêu chí phản nghiệm của Popper cũng như các phản biện sau đó của Kuhn (khuôn mẫu và giải đố khoa học) và Lakatos (chương trình nghiên cứu tiến bộ); (2) Phân biệt ranh giới giữa 'khả năng bị bác bỏ về mặt nguyên tắc' (falsifiability in principle) và 'sự bác bỏ thực tế' (actual falsification); (3) Vận dụng để bảo vệ tính hợp thức của giả thuyết nghiên cứu trong đề cương tiến sĩ.",
+      "pitfalls": "Đồng nhất giữa 'phi khoa học' và 'vô giá trị' (Popper khẳng định văn học nghệ thuật hay đạo đức học có ý nghĩa to lớn nhưng không phải khoa học thực nghiệm); lầm tưởng rằng một lý thuyết chỉ cần bị một dữ liệu trái ngược bác bỏ là phải vứt bỏ ngay (bỏ qua luận đề Duhem-Quine về giả thuyết phụ trợ).",
+      "apa_reference": "Popper, K. (1959). The logic of scientific discovery. Hutchinson & Co."
     },
     {
       "id": "dependability",
@@ -18173,20 +18285,28 @@
     {
       "id": "dependability-lincoln-guba",
       "term": "Dependability (Lincoln & Guba)",
-      "vietnamese": "Tính Ổn định Phụ thuộc Dependability",
-      "vietnamese_variants": [],
+      "vietnamese": "Tính khả phụ thuộc (Lincoln & Guba)",
+      "vietnamese_variants": [
+        "Độ tin cậy trong nghiên cứu định tính",
+        "Tính ổn định và có thể kiểm tra"
+      ],
       "domain_tags": [
         "Qualitative Trustworthiness"
       ],
-      "core_definition": "Tương đương độ tin cậy: quy trình nghiên cứu được lưu vết rõ ràng, minh bạch.",
-      "seminal_citation": "Lincoln & Guba (1985)",
+      "core_definition": "Dependability là một trong bốn tiêu chí cốt lõi thiết lập độ tin cậy khoa học (trustworthiness) của nghiên cứu định tính theo khung lý thuyết kinh điển của Yvonna Lincoln và Egon Guba (tương đương với khái niệm Reliability trong nghiên cứu định lượng), phản ánh mức độ mà toàn bộ quá trình nghiên cứu diễn ra một cách logic, có thể truy vết, và được tài liệu hóa minh bạch để các nhà nghiên cứu độc lập có thể thẩm định và kiểm toán (audit).",
+      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications.",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #727",
       "core_definition_en": "Academic definition of Dependability (Lincoln & Guba) according to Lincoln & Guba (1985).",
       "domain_tags_en": [
         "Qualitative Trustworthiness"
-      ]
+      ],
+      "category": "Qualitative Research & Trustworthiness",
+      "operational_mechanism": "Được vận hành chủ yếu thông qua Đường vết thẩm tra (Audit Trail) và Kiểm toán độc lập (Inquiry Audit): Nhà nghiên cứu lưu trữ có hệ thống (1) Dữ liệu thô (ghi âm, bản gỡ băng, nhật ký điền dã); (2) Biên bản mã hóa và phân tích dữ liệu (codebooks, sơ đồ khái niệm); (3) Ghi chú tổng hợp và tái cấu trúc (suy ngẫm lý thuyết, biên bản họp nhóm); (4) Nhật ký tiến trình phương pháp luận (ghi lại mọi quyết định thay đổi thiết kế hoặc câu hỏi). Chuyên gia kiểm toán bên ngoài rà soát hồ sơ này để chứng thực rằng các kết luận được rút ra một cách nhất quán từ dữ liệu thực tế.",
+      "benchmarks": "Tiêu chuẩn bài báo định tính Q1: (1) Mô tả chi tiết audit trail với các bước xử lý dữ liệu minh bạch; (2) Thực hiện mã hóa độc lập liên người nghiên cứu (inter-coder agreement) hoặc thảo luận đồng nghiệp (peer debriefing); (3) Cung cấp trích dẫn mã hóa đối sánh trong phụ lục.",
+      "pitfalls": "Đánh đồng Dependability với việc lặp lại chính xác kết quả trong bối cảnh khác (vốn bất khả thi trong định tính do tính đặc thù ngữ cảnh); thiếu lưu trữ các quyết định sửa đổi mã hóa khiến người phản biện không thể tái hiện lại logic phân tích.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications. https://doi.org/10.1016/0149-7189(87)90014-7"
     },
     {
       "id": "dependent-variable",
@@ -18250,38 +18370,54 @@
     {
       "id": "dersimonian-laird-estimator",
       "term": "DerSimonian-Laird Estimator",
-      "vietnamese": "Ước lượng Sai số DerSimonian-Laird",
-      "vietnamese_variants": [],
+      "vietnamese": "Ước lượng lượng DerSimonian-Laird",
+      "vietnamese_variants": [
+        "Phương pháp DerSimonian-Laird trong phân tích tổng hợp",
+        "Ước lượng phương sai giữa các nghiên cứu DL"
+      ],
       "domain_tags": [
         "Meta-Analysis"
       ],
-      "core_definition": "Thuật toán ước lượng phương sai giữa các nghiên cứu tau-squared trong mô hình hiệu ứng ngẫu nhiên.",
-      "seminal_citation": "DerSimonian & Laird (1986)",
+      "core_definition": "DerSimonian-Laird (DL) Estimator là phương pháp ước lượng phi tham số dựa trên phương pháp mô-men (method of moments) để tính toán phương sai giữa các nghiên cứu (between-study variance, ký hiệu là $\\tau^2$) trong mô hình tác động ngẫu nhiên (random-effects model) của phân tích tổng hợp (meta-analysis).",
+      "seminal_citation": "DerSimonian, R., & Laird, N. (1986). Meta-analysis in clinical trials. Controlled Clinical Trials, 7(3), 177-188.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of DerSimonian-Laird Estimator according to DerSimonian & Laird (1986).",
       "domain_tags_en": [
         "Meta-Analysis"
-      ]
+      ],
+      "category": "Meta-Analysis & Biostatistics",
+      "operational_mechanism": "Công thức tính $\\tau_{DL}^2$ dựa trên thống kê kiểm định tính không đồng nhất Cochran Q: $\\tau_{DL}^2 = \\max\\left(0, \\frac{Q - (k - 1)}{\\sum w_i - \\frac{\\sum w_i^2}{\\sum w_i}}\\right)$, trong đó $k$ là số lượng nghiên cứu độc lập, $w_i = 1/v_i$ là trọng số tác động cố định (nghịch đảo phương sai nội bộ). Trọng số ngẫu nhiên sau đó được điều chỉnh thành $w_i^* = 1 / (v_i + \\tau^2)$ để tổng hợp cỡ tác động bình quân (pooled effect size).",
+      "benchmarks": "Chuẩn mực phân tích tổng hợp y khoa / kinh tế học: (1) Báo cáo $\\tau^2$, Cochran Q, p-value và chỉ số không đồng nhất $I^2$; (2) Cung cấp khoảng tin cậy của cỡ tác động tổng hợp và khoảng dự đoán (prediction interval); (3) Khi số lượng nghiên cứu nhỏ ($k < 15$) hoặc độ biến thiên phương sai lớn, cần so sánh kiểm định độ nhạy với ước lượng REML (Restricted Maximum Likelihood) hoặc Paule-Mandel.",
+      "pitfalls": "Phương pháp DL có xu hướng đánh giá thấp phương sai $\\tau^2$ khi cỡ mẫu của các nghiên cứu không đồng đều hoặc số lượng nghiên cứu nhỏ, dẫn đến việc khoảng tin cậy bị thu hẹp giả tạo và làm tăng tỷ lệ sai lầm loại I (false positives).",
+      "apa_reference": "DerSimonian, R., & Laird, N. (1986). Meta-analysis in clinical trials. Controlled Clinical Trials, 7(3), 177–188. https://doi.org/10.1016/0197-2456(86)90046-2"
     },
     {
       "id": "descriptive-analysis",
-      "term": "Descriptive analysis",
-      "vietnamese": "Phân tích thống kê mô tả — Trình bày các chỉ số trung bình (Mean), độ lệch chuẩn (SD) và tần số để tóm tắt dữ liệu.",
-      "vietnamese_variants": [],
+      "term": "Descriptive Analysis",
+      "vietnamese": "Phân tích mô tả",
+      "vietnamese_variants": [
+        "Thống kê mô tả",
+        "Phương pháp phân tích dữ liệu mô tả"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Phân tích thống kê mô tả — Trình bày các chỉ số trung bình (Mean), độ lệch chuẩn (SD) và tần số để tóm tắt dữ liệu.",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Descriptive Analysis là giai đoạn đầu tiên và nền tảng trong phân tích dữ liệu định lượng, sử dụng các phương pháp số học và đồ thị để tóm tắt, sắp xếp và mô tả các đặc tính căn bản của một tập dữ liệu mẫu mà không nhằm mục đích suy diễn hay khái quát hóa vượt ra ngoài phạm vi dữ liệu quan sát được.",
+      "seminal_citation": "Tukey, J. W. (1977). Exploratory data analysis. Addison-Wesley.",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Descriptive analysis according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Quantitative Methods & Applied Statistics",
+      "operational_mechanism": "Vận hành thông qua 3 trụ cột chỉ số thống kê: (1) Thước đo xu hướng trung tâm (Measures of Central Tendency): Trung bình cộng (Mean), Trung vị (Median), Yếu vị (Mode); (2) Thước đo độ phân tán (Measures of Dispersion): Phương sai (Variance), Độ lệch chuẩn (Standard Deviation), Khoảng biến thiên (Range), Khoảng tứ phân vị (IQR); (3) Thước đo hình dạng phân phối (Measures of Distribution Shape): Độ lệch (Skewness) và Độ nhọn (Kurtosis), kết hợp trực quan hóa bằng biểu đồ Histogram, Boxplot và Scatterplot.",
+      "benchmarks": "Chuẩn mực học thuật: (1) Đối với biến phân phối chuẩn: báo cáo Mean và SD; đối với biến phân phối lệch (skewed) hoặc có giá trị ngoại lai: ưu tiên báo cáo Median và IQR; (2) Trình bày bảng đặc điểm nhân khẩu học và biến số nghiên cứu với đầy đủ giá trị nhỏ nhất (Min), lớn nhất (Max), số lượng quan sát hợp lệ (N) và tỷ lệ khuyết dữ liệu (Missing rate).",
+      "pitfalls": "Chỉ báo cáo Mean mà bỏ qua kiểm tra độ lệch phân phối, che giấu các dị biệt nguy hiểm; sử dụng Mean cho biến định danh hoặc thứ bậc dạng khoảng cách không đều; dừng lại ở phân tích mô tả thuần túy mà không chuyển tiếp sang phân tích suy luận trong các nghiên cứu giả thuyết.",
+      "apa_reference": "Tukey, J. W. (1977). Exploratory data analysis. Addison-Wesley."
     },
     {
       "id": "descriptive-coding",
@@ -18325,51 +18461,70 @@
     },
     {
       "id": "descriptive-method",
-      "term": "Descriptive method",
-      "vietnamese": "Phương pháp mô tả — Phương pháp mô tả hiện trạng các đặc điểm của một hiện tượng mà không can thiệp hay thay đổi môi trường.",
-      "vietnamese_variants": [],
+      "term": "Descriptive Method",
+      "vietnamese": "Phương pháp nghiên cứu mô tả",
+      "vietnamese_variants": [
+        "Phương pháp mô tả thực nghiệm",
+        "Thiết kế nghiên cứu mô tả"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Phương pháp mô tả — Phương pháp mô tả hiện trạng các đặc điểm của một hiện tượng mà không can thiệp hay thay đổi môi trường.",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Descriptive Method là thiết kế nghiên cứu khoa học nhằm ghi nhận, mô tả và làm sáng tỏ tình trạng hiện tại, bản chất, tần suất hoặc quy luật phân bố của một hiện tượng, đối tượng, cộng đồng hoặc bối cảnh mà không can thiệp, thao túng biến số độc lập hay cố gắng xác lập quan hệ nhân quả đa biến.",
+      "seminal_citation": "Babbie, E. R. (2020). The practice of social research (15th ed.). Cengage Learning.",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Descriptive method according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Research Methodology & Epistemology",
+      "operational_mechanism": "Triển khai thông qua các công cụ thu thập dữ liệu đa dạng: khảo sát cắt ngang diện rộng (cross-sectional surveys), quan sát tự nhiên (naturalistic observation), phân tích tài liệu thứ cấp và nghiên cứu ca mô tả (descriptive case study). Nghiên cứu trả lời các câu hỏi 'Ai', 'Cái gì', 'Ở đâu', 'Khi nào' và 'Bao nhiêu' (Who, What, Where, When, How much) nhằm cung cấp một bức tranh toàn cảnh chính xác làm tiền đề cho các nghiên cứu giải thích (explanatory) hoặc can thiệp (experimental) sau đó.",
+      "benchmarks": "Đạt chuẩn khoa học khi: (1) Khung mẫu và chiến lược chọn mẫu bảo đảm tính đại diện cao cho quần thể mục tiêu; (2) Công cụ đo lường đạt độ tin cậy và độ giá trị nội dung đã được thẩm định; (3) Tỷ lệ sai số đo lường (margin of error) và độ tin cậy (confidence level) được tuyên bố minh bạch.",
+      "pitfalls": "Tự ý đưa ra các kết luận nguyên nhân - kết quả từ dữ liệu mô tả thuần túy (lỗi khẳng định nhân quả trái phép); mô tả rời rạc thiếu khung phân loại khái niệm mạch lạc; thiếu định nghĩa thao tác chính xác khiến các quan sát viên hiểu sai tiêu chí ghi nhận.",
+      "apa_reference": "Babbie, E. R. (2020). The practice of social research (15th ed.). Cengage Learning."
     },
     {
       "id": "design-artefact-constructs-models-methods-instantiations",
       "term": "Design Artefact (Constructs, Models, Methods, Instantiations)",
-      "vietnamese": "Tạo tác Thiết kế",
-      "vietnamese_variants": [],
+      "vietnamese": "Hiện vật thiết kế (Khái niệm, Mô hình, Phương pháp, Bản cài đặt)",
+      "vietnamese_variants": [
+        "Tạo tác nghiên cứu thiết kế",
+        "Sản phẩm thiết kế DSR"
+      ],
       "domain_tags": [
         "Design Science"
       ],
-      "core_definition": "4 dạng tạo tác khoa học: Khái niệm, Mô hình, Phương pháp và Thực thể ứng dụng.",
-      "seminal_citation": "March & Smith (1995)",
+      "core_definition": "Design Artefact là sản phẩm nhân tạo hữu hình được tạo ra trong Nghiên cứu khoa học thiết kế (Design Science Research - DSR) nhằm giải quyết một vấn đề thực tiễn xác định. Theo phân loại kinh điển của March & Smith (1995), hiện vật thiết kế được phân thành bốn loại hình cơ bản: Khái niệm (Constructs - từ vựng/ngôn ngữ mô tả vấn đề), Mô hình (Models - tập hợp các mệnh đề diễn tả quan hệ), Phương pháp (Methods - các thuật toán/hướng dẫn từng bước), và Bản cài đặt thực tế (Instantiations - hệ thống phần mềm, công cụ vật lý hoặc quy trình thực thi cụ thể).",
+      "seminal_citation": "March, S. T., & Smith, G. F. (1995). Design and natural science research on information technology. Decision Support Systems, 15(4), 251-266.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Design Artefact (Constructs, Models, Methods, Instantiations) according to March & Smith (1995).",
       "domain_tags_en": [
         "Design Science"
-      ]
+      ],
+      "category": "Design Science Research & Information Systems",
+      "operational_mechanism": "Vận hành thông qua chu trình lặp Build-and-Evaluate (Xây dựng và Đánh giá): Nhà nghiên cứu (1) Phát triển hệ thống Constructs để định hình không gian bài toán; (2) Xây dựng Models để biểu diễn giải pháp; (3) Thiết kế Methods quy định quy trình thực thi; (4) Chế tạo Instantiations hoạt động trong môi trường thực tế, sau đó đánh giá độ hữu dụng (utility), hiệu năng (performance) và độ tin cậy của hiện vật đối với mục tiêu kinh doanh/xã hội đề ra.",
+      "benchmarks": "Chuẩn mực bài báo DSR trên các tạp chí IS hàng đầu (MISQ, ISR): (1) Hiện vật phải giải quyết được một vấn đề thực tiễn chưa có lời giải hoặc giải quyết vượt trội hơn các giải pháp hiện hành; (2) Đóng góp tri thức thiết kế (Design Knowledge Contribution) được định vị rõ ràng theo ma trận Gregor & Hevner; (3) Đánh giá thực nghiệm nghiêm ngặt (rigorous evaluation) bằng thực nghiệm, nghiên cứu tình huống hoặc mô phỏng.",
+      "pitfalls": "Chỉ tạo ra bản cài đặt kỹ thuật (Instantiations) mà không trừu tượng hóa được đóng góp lý thuyết (Constructs/Models/Methods), biến công trình thành một dự án phần mềm ứng dụng thông thường thay vì một nghiên cứu khoa học DSR.",
+      "apa_reference": "March, S. T., & Smith, G. F. (1995). Design and natural science research on information technology. Decision Support Systems, 15(4), 251–266. https://doi.org/10.1016/0167-9236(94)00041-2"
     },
     {
       "id": "design-science-research-dsr",
       "term": "Design Science Research (DSR)",
-      "vietnamese": "Nghiên cứu Khoa học Thiết kế",
-      "vietnamese_variants": [],
+      "vietnamese": "Nghiên cứu khoa học thiết kế",
+      "vietnamese_variants": [
+        "Phương pháp luận khoa học thiết kế",
+        "Nghiên cứu tạo tác giải pháp DSR"
+      ],
       "domain_tags": [
         "Information Systems",
         "Management"
       ],
-      "core_definition": "Phương pháp nghiên cứu tập trung sáng tạo và đánh giá các tạo tác artifact để giải quyết vấn đề thực tế.",
-      "seminal_citation": "Hevner et al. (2004)",
+      "core_definition": "Design Science Research (DSR) là một hệ hình nghiên cứu học thuật tập trung vào việc kiến tạo và đánh giá các hiện vật nhân tạo (artefacts) mang tính đột phá nhằm giải quyết các vấn đề tổ chức và thực tiễn phức tạp, tạo ra đóng góp kép: tri thức giải pháp ứng dụng và tri thức thiết kế học thuật (design knowledge).",
+      "seminal_citation": "Hevner, A. R., March, S. T., Park, J., & Ram, S. (2004). Design science in information systems research. MIS Quarterly, 28(1), 75-105.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
@@ -18377,43 +18532,64 @@
       "domain_tags_en": [
         "Information Systems",
         "Management"
-      ]
+      ],
+      "category": "Design Science Research & Information Systems",
+      "operational_mechanism": "Quy trình DSR chuẩn tắc (theo Peffers et al., 2007) vận hành qua 6 giai đoạn tuần tự lặp lại: (1) Xác định vấn đề và động cơ nghiên cứu (Problem identification and motivation); (2) Xác định mục tiêu của giải pháp (Define objectives for a solution); (3) Thiết kế và phát triển hiện vật (Design and development); (4) Trình diễn giải pháp trong bối cảnh cụ thể (Demonstration); (5) Đánh giá hiện vật theo các tiêu chí khoa học (Evaluation); (6) Truyền thông kết quả nghiên cứu (Communication).",
+      "benchmarks": "Tuân thủ 7 nguyên tắc vàng của Hevner et al. (2004): (1) Thiết kế như một hiện vật; (2) Tính phù hợp với vấn đề; (3) Đánh giá thiết kế nghiêm ngặt; (4) Đóng góp nghiên cứu rõ ràng; (5) Tính chặt chẽ của phương pháp; (6) Thiết kế như một quá trình tìm kiếm giải pháp; (7) Truyền thông nghiên cứu đến cả học giả lẫn nhà thực hành.",
+      "pitfalls": "Thiếu sự đánh giá nghiêm ngặt (lỏng lẻo trong bước Evaluation, chỉ kiểm tra tính chạy được của công cụ mà không chứng minh được tính ưu việt hơn hiện trạng); nhầm lẫn giữa phát triển sản phẩm thương mại thường nhật với nghiên cứu học thuật.",
+      "apa_reference": "Hevner, A. R., March, S. T., Park, J., & Ram, S. (2004). Design science in information systems research. MIS Quarterly, 28(1), 75–105. https://doi.org/10.2307/25148625"
     },
     {
       "id": "desk-rejection-desk-reject",
       "term": "Desk Rejection (Desk Reject)",
-      "vietnamese": "Từ chối Bài từ Bàn Biên tập",
-      "vietnamese_variants": [],
+      "vietnamese": "Từ chối bản thảo ngay từ bàn biên tập",
+      "vietnamese_variants": [
+        "Loại bản thảo không qua bình duyệt",
+        "Từ chối sơ bộ của tổng biên tập"
+      ],
       "domain_tags": [
         "Academic Publishing"
       ],
-      "core_definition": "Biên tập viên trưởng từ chối bản thảo ngay từ đầu mà không gửi ra ngoài bình duyệt.",
-      "seminal_citation": "Summers (2001)",
+      "core_definition": "Desk Rejection là quyết định của Tổng biên tập (Editor-in-Chief) hoặc Biên tập viên phụ trách (Handling Editor) từ chối một bài báo khoa học ngay sau khi nộp mà không gửi bản thảo đến các chuyên gia bình duyệt độc lập (external peer reviewers), thường diễn ra trong vòng vài ngày đến vài tuần sau khi nộp.",
+      "seminal_citation": "Bergh, D. D. (2002). Deriving acceptable formats from desk rejections: A reviewer's perspective. In Academy of Management Review (Vol. 27, Issue 4).",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Desk Rejection (Desk Reject) according to Summers (2001).",
       "domain_tags_en": [
         "Academic Publishing"
-      ]
+      ],
+      "category": "Academic Publishing & Peer Review",
+      "operational_mechanism": "Quy trình thẩm định sơ bộ của ban biên tập quét qua các rào cản nghiêm ngặt: (1) Sự phù hợp với tôn chỉ và mục đích của tạp chí (Aims and Scope check); (2) Đóng góp lý thuyết và thực tiễn có đủ tầm (insufficient theoretical contribution or novelty); (3) Các lỗ hổng phương pháp luận chí mạng (fatal methodological flaws - ví dụ cỡ mẫu quá nhỏ, thiết kế sai hoàn toàn); (4) Tuân thủ hướng dẫn tác giả (Author guidelines, tỷ lệ đạo văn, cấu trúc bài báo).",
+      "benchmarks": "Tỷ lệ desk rejection tại các tạp chí Q1 quốc tế hàng đầu (như AMJ, JMR, JOM) thường dao động từ 50% đến 80% tổng số bản thảo nhận được. Để vượt qua: bài báo phải có câu hỏi nghiên cứu sắc bén, định vị rõ khoảng trống lý thuyết ngay trong 3 trang đầu, và thư ngỏ gửi tổng biên tập (cover letter) phải nêu bật sự liên quan trực tiếp đến các cuộc hội thoại học thuật hiện tại của tạp chí.",
+      "pitfalls": "Nộp bài cho tạp chí sai đối tượng độc giả (mismatched scope); viết phần mở đầu mờ nhạt không làm bật được câu hỏi 'So What?'; bỏ qua các trích dẫn bài báo gần đây trên chính tạp chí đó, khiến ban biên tập nhận định rằng tác giả không theo dõi các thảo luận học thuật của họ.",
+      "apa_reference": "Bergh, D. D. (2002). Deriving acceptable formats from desk rejections: A reviewer's perspective. Academy of Management Review, 27(4), 502–504."
     },
     {
       "id": "deviant-case-analysis-phan-tich-ca-di-biet",
       "term": "Deviant Case Analysis",
-      "vietnamese": "Phân tích Ca Dị biệt / Ngoại lệ",
-      "vietnamese_variants": [],
+      "vietnamese": "Phân tích trường hợp dị biệt",
+      "vietnamese_variants": [
+        "Phân tích ca ngoại lệ",
+        "Phân tích trường hợp bất thường trong nghiên cứu định tính"
+      ],
       "domain_tags": [
         "Qualitative Research Rigour"
       ],
-      "core_definition": "Chủ động tìm kiếm và phân tích sâu các trường hợp ngoại lệ mâu thuẫn với nhận định ban đầu để sửa đổi lý thuyết.",
-      "seminal_citation": "Silverman (2016)",
+      "core_definition": "Deviant Case Analysis là một chiến lược phân tích định tính và nghiên cứu trường hợp có hệ thống, trong đó nhà nghiên cứu chủ động tìm kiếm, phân tích sâu các trường hợp, đối tượng hoặc sự kiện không tuân theo quy luật chung, mâu thuẫn với giả thuyết nghiên cứu hoặc đi chệch khỏi mô hình lý thuyết đang hình thành, nhằm tinh chỉnh, mở rộng hoặc xác lập lại ranh giới hiệu lực của lý thuyết.",
+      "seminal_citation": "Silverman, D. (2015). Interpreting qualitative data (5th ed.). SAGE Publications.",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Deviant Case Analysis (Phân tích Ca Dị biệt) according to Silverman (2016).",
       "domain_tags_en": [
         "Qualitative Research Rigour"
-      ]
+      ],
+      "category": "Qualitative Research & Comparative Case Study",
+      "operational_mechanism": "Quy trình thực hiện theo phương pháp so sánh liên tục (constant comparative method): (1) Xây dựng một quy luật hoặc mô hình sơ bộ dựa trên phần lớn các trường hợp chuẩn mực; (2) Xác định ca dị biệt (ví dụ: một doanh nghiệp khởi nghiệp thành công rực rỡ dù hoàn toàn thiếu vốn và quan hệ, trong khi lý thuyết cho rằng vốn và mạng lưới là điều kiện tiên quyết); (3) Tiến hành điều tra sâu ca dị biệt này để phát hiện các cơ chế bù trừ hoặc các biến số ẩn giấu; (4) Sửa đổi và tái cấu trúc mô hình lý thuyết tổng quát để có thể bao hàm và giải thích được cả trường hợp chuẩn lẫn trường hợp ngoại lệ.",
+      "benchmarks": "Đạt chuẩn nghiên cứu định tính xuất sắc: (1) Minh bạch hóa toàn bộ quá trình phát hiện ca dị biệt (negative case / disconfirming evidence search); (2) Đóng vai trò là phương pháp kiểm tra tính chân thực (rigor/validity check) nhằm chống lại thiên lệch xác nhận (confirmation bias); (3) Luận chứng rõ ràng mô hình lý thuyết mới có phạm vi bao quát và năng lực dự báo cao hơn mô hình ban đầu như thế nào.",
+      "pitfalls": "Bỏ qua hoặc cố tình loại bỏ các ca dị biệt xem như 'nhiễu' nhằm làm đẹp kết quả nghiên cứu; hoặc ngược lại, thay đổi toàn bộ lý thuyết chỉ dựa trên một ca dị biệt mà không kiểm chứng xem đó là ngoại lệ do bối cảnh cá biệt hay là một cơ chế xã hội thực sự.",
+      "apa_reference": "Silverman, D. (2015). Interpreting qualitative data (5th ed.). SAGE Publications."
     },
     {
       "id": "dfbetas-diagnostic",
@@ -18447,20 +18623,28 @@
     {
       "id": "dffits-diagnostic",
       "term": "DFFITS Diagnostic",
-      "vietnamese": "Chỉ số DFFITS",
-      "vietnamese_variants": [],
+      "vietnamese": "Chỉ số chẩn đoán DFFITS",
+      "vietnamese_variants": [
+        "Chỉ số mức độ ảnh hưởng giá trị dự báo DFFITS",
+        "Chẩn đoán điểm ảnh hưởng hồi quy"
+      ],
       "domain_tags": [
         "Regression Diagnostics"
       ],
-      "core_definition": "Đo lường số sai số chuẩn mà giá trị dự báo y-hat thay đổi khi loại bỏ quan sát thứ i.",
-      "seminal_citation": "Belsley, Kuh & Welsch (1980)",
+      "core_definition": "DFFITS (Difference in Fits) là một chỉ số chẩn đoán hồi quy tham số đo lường mức độ thay đổi của giá trị dự báo (fitted value) của một quan sát cụ thể khi quan sát đó bị loại bỏ khỏi quá trình ước lượng mô hình hồi quy OLS, kết hợp đồng thời cả phần dư chuẩn hóa (studentized residual - độ lớn ngoại lai) và đòn bẩy (leverage - độ dị biệt không gian biến độc lập).",
+      "seminal_citation": "Belsley, D. A., Kuh, E., & Welsch, R. E. (1980). Regression diagnostics: Identifying influential data and sources of collinearity. John Wiley & Sons.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of DFFITS Diagnostic according to Belsley, Kuh & Welsch (1980).",
       "domain_tags_en": [
         "Regression Diagnostics"
-      ]
+      ],
+      "category": "Regression Diagnostics & Econometrics",
+      "operational_mechanism": "Công thức toán học của DFFITS cho quan sát thứ $i$: $DFFITS_i = \\frac{\\hat{y}_i - \\hat{y}_{i(i)}}{s_{(i)} \\sqrt{h_{ii}}} = r_i \\sqrt{\\frac{h_{ii}}{1 - h_{ii}}}$, trong đó $\\hat{y}_i$ là giá trị dự báo khi có quan sát $i$, $\\hat{y}_{i(i)}$ là giá trị dự báo khi loại bỏ quan sát $i$, $s_{(i)}$ là sai số chuẩn của hồi quy khi bỏ quan sát $i$, $h_{ii}$ là giá trị đòn bẩy (leverage), và $r_i$ là phần dư sinh viên hóa loại trừ (externally studentized residual).",
+      "benchmarks": "Quy tắc ngưỡng chuẩn (Belsley, Kuh, & Welsch, 1980): Quan sát được coi là có ảnh hưởng quá mức (influential observation) nếu $|DFFITS_i| > 2 \\sqrt{\\frac{p}{n}}$ đối với các mẫu dữ liệu lớn, hoặc $|DFFITS_i| > 1$ đối với các tập dữ liệu nhỏ, trong đó $p$ là số lượng hệ số ước lượng (bao gồm hệ số chặn) và $n$ là kích thước mẫu.",
+      "pitfalls": "Tự động xóa bỏ các quan sát có $|DFFITS|$ vượt ngưỡng mà không điều tra bản chất của điểm dữ liệu (có thể là lỗi nhập liệu, nhưng cũng có thể là khám phá kinh tế quan trọng); không kết hợp kiểm tra chéo với Cook's Distance và DFBETAS để xác định chính xác hệ số nào bị ảnh hưởng.",
+      "apa_reference": "Belsley, D. A., Kuh, E., & Welsch, R. E. (1980). Regression diagnostics: Identifying influential data and sources of collinearity. John Wiley & Sons. https://doi.org/10.1002/0471725153"
     },
     {
       "id": "diagnostic-odds-ratio",
@@ -18494,20 +18678,28 @@
     {
       "id": "dialectical-pluralism-in-mmr",
       "term": "Dialectical Pluralism in MMR",
-      "vietnamese": "Thuyết Đa nguyên Biện chứng",
-      "vietnamese_variants": [],
+      "vietnamese": "Chủ nghĩa đa nguyên biện chứng trong nghiên cứu phương pháp hỗn hợp",
+      "vietnamese_variants": [
+        "Lập trường đa nguyên biện chứng",
+        "Khuôn khổ triết học đa nguyên biện chứng MMR"
+      ],
       "domain_tags": [
         "Mixed Methods Philosophy"
       ],
-      "core_definition": "Chấp nhận và chủ động khai thác các mâu thuẫn giữa các hệ hình triết học khác nhau.",
-      "seminal_citation": "Johnson (2017)",
+      "core_definition": "Dialectical Pluralism in MMR (được phát triển bởi R. Burke Johnson và Kathleen Collins) là một lập trường siêu phương pháp luận (metaparadigm) cho nghiên cứu phương pháp hỗn hợp, chủ trương đón nhận, tôn trọng và đối thoại tích cực giữa các hệ hình triết học khác biệt (thực chứng, kiến tạo luận, phê phán, thực dụng) thay vì cố gắng đồng hóa chúng vào một hệ hình duy nhất, từ đó khai thác sự va đập tư tưởng để tạo ra sự hiểu biết toàn diện và sâu sắc hơn.",
+      "seminal_citation": "Johnson, R. B. (2017). Dialectical pluralism: A metaparadigm whose time has come. Journal of Mixed Methods Research, 11(2), 156-173.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Dialectical Pluralism in MMR according to Johnson (2017).",
       "domain_tags_en": [
         "Mixed Methods Philosophy"
-      ]
+      ],
+      "category": "Mixed Methods Research & Philosophy of Science",
+      "operational_mechanism": "Vận hành qua quy trình 4 giai đoạn đối thoại biện chứng: (1) Lắng nghe đa hệ hình (Listening to multiple paradigms): xem xét câu hỏi nghiên cứu dưới lăng kính của cả bản thể luận khách quan lẫn chủ quan; (2) Đối chiếu căng thẳng phương pháp luận (Juxtaposing tensions): triển khai đồng thời hoặc kế tiếp các kỹ thuật thu thập định lượng và định tính nghiêm ngặt; (3) Tương tác biện chứng (Dialectical engagement): so sánh các phát hiện mâu thuẫn để nhận diện sự đa tầng của hiện thực; (4) Tích hợp tạo sinh (Generative synthesis): tạo ra tri thức mới vượt lên trên giới hạn của từng phương pháp đơn lẻ.",
+      "benchmarks": "Đạt chuẩn nghiên cứu MMR cao cấp: (1) Trình bày rõ ràng triết lý biện chứng trong phần bản thể luận và nhận thức luận; (2) Báo cáo ma trận tích hợp phương pháp (joint display) phân tích rõ sự tương đồng và dị biệt giữa hai luồng dữ liệu; (3) Giải thích sâu sắc lý do tại sao sự bất đồng thuận giữa định tính và định lượng lại làm giàu thêm giá trị lý thuyết.",
+      "pitfalls": "Rơi vào tình trạng hỗn loạn phương pháp luận (eclecticism/sloppy research) khi sử dụng nhiều phương pháp tùy tiện mà không có sự phản tư triết học; bỏ qua các mâu thuẫn giữa định tính và định lượng thay vì dùng tư duy biện chứng để giải mã chúng.",
+      "apa_reference": "Johnson, R. B. (2017). Dialectical pluralism: A metaparadigm whose time has come. Journal of Mixed Methods Research, 11(2), 156–173. https://doi.org/10.1177/1558689815607692"
     },
     {
       "id": "dickey-fuller-test-df",
@@ -18570,31 +18762,42 @@
     {
       "id": "difference-gmm",
       "term": "Difference GMM",
-      "vietnamese": "Phương pháp GMM sai phân lấy sai phân bậc một để triệt tiêu hiệu ứng cố định cá thể",
-      "vietnamese_variants": [],
+      "vietnamese": "Phương pháp mô-men khái quát hóa sai phân",
+      "vietnamese_variants": [
+        "Ước lượng Arellano-Bond GMM",
+        "Hồi quy GMM sai phân bậc một"
+      ],
       "domain_tags": [
         "Panel Econometrics"
       ],
-      "core_definition": "Phương pháp GMM sai phân lấy sai phân bậc một để triệt tiêu hiệu ứng cố định cá thể.",
-      "seminal_citation": "Arellano & Bond (1991)",
+      "core_definition": "Difference GMM (do Manuel Arellano và Stephen Bond phát triển năm 1991) là phương pháp ước lượng bán tham số cho các mô hình bảng động (dynamic panel models - có biến phụ thuộc trễ $y_{i,t-1}$ làm biến giải thích), giải quyết triệt để vấn đề nội sinh phát sinh từ hiệu ứng cố định không quan sát được và mối tương quan giữa biến trễ với sai số thông qua việc lấy sai phân bậc một và sử dụng các biến trễ sâu hơn làm biến công cụ.",
+      "seminal_citation": "Arellano, M., & Bond, S. (1991). Some tests of specification for panel data: Monte Carlo evidence and an application to employment equations. The Review of Economic Studies, 58(2), 277-297.",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Difference GMM according to Arellano & Bond (1991).",
       "domain_tags_en": [
         "Panel Econometrics"
-      ]
+      ],
+      "category": "Econometrics & Panel Data Analysis",
+      "operational_mechanism": "Mô hình: $y_{it} = \\alpha y_{i,t-1} + x'_{it}\\beta + u_i + \\varepsilon_{it}$. Lấy sai phân bậc một để triệt tiêu hiệu ứng cố định $u_i$: $\\Delta y_{it} = \\alpha \\Delta y_{i,t-1} + \\Delta x'_{it}\\beta + \\Delta \\varepsilon_{it}$. Vì $\\Delta y_{i,t-1} = y_{i,t-1} - y_{i,t-2}$ có tương quan với $\\Delta \\varepsilon_{it} = \\varepsilon_{it} - \\varepsilon_{i,t-1}$, phương pháp sử dụng các biến trễ ở mức (levels) từ thời kỳ $t-2$ trở về trước ($y_{i,t-2}, y_{i,t-3}, ...$) làm biến công cụ hợp lệ cho phương trình sai phân, tối ưu hóa qua ma trận trọng số GMM.",
+      "benchmarks": "Kiểm định bắt buộc theo chuẩn Q1: (1) Kiểm định Arellano-Bond về tự tương quan sai số: Bắt buộc bác bỏ $H_0$ ở AR(1) ($p < 0.05$) nhưng không được bác bỏ $H_0$ ở AR(2) ($p > 0.10$); (2) Kiểm định Hansen J-test hoặc Sargan test về tính xác định quá mức của biến công cụ ($0.10 < p < 0.25$); (3) Kiểm soát số lượng biến công cụ (instrument count) không được vượt quá số lượng đơn vị chéo (groups $N$).",
+      "pitfalls": "Hiện tượng 'biến công cụ yếu' (weak instruments) khi chuỗi thời gian có tính tự tương quan cao (gần bước ngẫu nhiên random walk), khiến ước lượng Difference GMM bị chệch nghiêm trọng về phía OLS (khi đó phải chuyển sang dùng System GMM của Blundell & Bond); bùng nổ số lượng công cụ (instrument proliferation) làm mất hiệu lực của kiểm định Hansen.",
+      "apa_reference": "Arellano, M., & Bond, S. (1991). Some tests of specification for panel data: Monte Carlo evidence and an application to employment equations. The Review of Economic Studies, 58(2), 277–297. https://doi.org/10.2307/2297968"
     },
     {
       "id": "difference-in-differences-758",
       "term": "Difference-in-Differences",
-      "vietnamese": "Khác biệt trong khác biệt (Sai phân kép)",
-      "vietnamese_variants": [],
+      "vietnamese": "Phương pháp sai phân kép (DID)",
+      "vietnamese_variants": [
+        "Sai khác trong sai khác",
+        "Ước lượng tác động chính sách DID"
+      ],
       "domain_tags": [
         "Acronym NCKH"
       ],
-      "core_definition": "Phương pháp bán thực nghiệm kinh tế lượng đánh giá tác động chính sách bằng cách so sánh sự thay đổi theo thời gian giữa nhóm can thiệp và nhóm đối chứng. Ngưỡng thực nghiệm tham chiếu: Giả định xu thế song song (Parallel Trends Assumption) bắt buộc phải được kiểm định thỏa mãn trước can thiệp.",
-      "seminal_citation": "Giả định xu thế song song (Parallel Trends Assumption) bắt buộc phải được kiểm định thỏa mãn trước can thiệp.",
+      "core_definition": "Difference-in-Differences (DID) là một thiết kế nghiên cứu bán thực nghiệm và phương pháp kinh tế lượng suy diễn nhân quả, ước lượng tác động xử lý trung bình (Average Treatment Effect) bằng cách so sánh sự thay đổi theo thời gian của kết quả ở nhóm can thiệp (treatment group) với sự thay đổi theo thời gian của kết quả ở nhóm đối chứng (control group).",
+      "seminal_citation": "Card, D., & Krueger, A. B. (1994). Minimum wages and employment: A case study of the fast-food industry in New Jersey and Pennsylvania. American Economic Review, 84(4), 772-793.",
       "tier": "acronym",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
@@ -18602,75 +18805,104 @@
       "domain_tags_en": [
         "Acronym NCKH"
       ],
-      "benchmarks": "Giả định xu thế song song (Parallel Trends Assumption) bắt buộc phải được kiểm định thỏa mãn trước can thiệp."
+      "benchmarks": "Chuẩn mực kinh tế lượng hàng đầu (AER, QJE): (1) Kiểm định Giả định xu hướng song song (Parallel Trends Assumption) bằng biểu đồ phân tích sự kiện (event-study plot) chứng minh các hệ số trước can thiệp (leads) không khác biệt có ý nghĩa thống kê so với 0; (2) Trong bối cảnh can thiệp so le theo thời gian (staggered adoption), phải sử dụng các bộ ước lượng hiện đại chống sai lệch do trọng số âm (như Callaway & Sant'Anna, 2021; Sun & Abraham, 2021; de Chaisemartin & D'Haultfoeuille, 2020) thay vì mô hình TWFE truyền thống; (3) Báo cáo sai số chuẩn cụm (clustered standard errors) ở cấp độ can thiệp.",
+      "category": "Causal Inference & Quasi-Experimental Design",
+      "operational_mechanism": "Mô hình hồi quy hai chiều cố định chuẩn tắc (TWFE): $Y_{it} = \\alpha + \\beta_1 Post_t + \\beta_2 Treat_i + \\delta (Treat_i \\times Post_t) + \\varepsilon_{it}$, trong đó hệ số sai phân kép $\\delta = (\\bar{Y}_{T, sau} - \\bar{Y}_{T, truoc}) - (\\bar{Y}_{C, sau} - \\bar{Y}_{C, truoc})$ phản ánh tác động nhân quả thuần túy sau khi đã triệt tiêu các đặc tính cố định bất biến theo thời gian của các nhóm và các xu hướng chung của thời gian.",
+      "pitfalls": "Vi phạm giả định xu hướng song song do các cú sốc đặc thù xảy ra đồng thời với chính sách; sử dụng mô hình TWFE truyền thống cho thiết kế can thiệp so le dẫn đến sai lệch nghiêm trọng khi tác động can thiệp biến thiên theo thời gian; bỏ qua hiệu ứng lan tỏa (spillover effects) vi phạm giả định SUTVA.",
+      "apa_reference": "Card, D., & Krueger, A. B. (1994). Minimum wages and employment: A case study of the fast-food industry in New Jersey and Pennsylvania. American Economic Review, 84(4), 772–793."
     },
     {
       "id": "differential-item-functioning-dif",
       "term": "Differential Item Functioning (DIF)",
-      "vietnamese": "Chức năng Câu hỏi Dị biệt",
+      "vietnamese": "Chức năng câu hỏi vi phân (DIF)",
       "vietnamese_variants": [
-        "DIF"
+        "Hoạt động mục hỏi khác biệt",
+        "Thiên lệch câu hỏi kiểm tra DIF"
       ],
       "domain_tags": [
         "Psychometrics"
       ],
-      "core_definition": "Hiện tượng một câu hỏi có xác suất trả lời đúng khác nhau giữa các nhóm dù cùng năng lực.",
-      "seminal_citation": "Holland & Wainer (1993)",
+      "core_definition": "Differential Item Functioning (DIF) là một hiện tượng đo lường trong tâm trắc học (psychometrics) và lý thuyết ứng đáp câu hỏi (IRT), xảy ra khi các cá nhân thuộc các nhóm nhân khẩu học hoặc văn hóa khác nhau (ví dụ: giới tính, chủng tộc, ngôn ngữ) nhưng có cùng mức độ năng lực thực tế hoặc cùng thuộc tính tiềm ẩn (latent trait level, $\\theta$) lại có xác suất trả lời đúng hoặc tán thành một câu hỏi (item) khác nhau một cách có ý nghĩa thống kê.",
+      "seminal_citation": "Holland, P. W., & Wainer, H. (Eds.). (1993). Differential item functioning. Lawrence Erlbaum Associates.",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #761",
       "core_definition_en": "Academic definition of Differential Item Functioning (DIF) according to Holland & Wainer (1993).",
       "domain_tags_en": [
         "Psychometrics"
-      ]
+      ],
+      "category": "Psychometrics & Item Response Theory (IRT)",
+      "operational_mechanism": "Được phát hiện và phân loại qua 2 dạng: (1) Uniform DIF: Sự chênh lệch xác suất phản hồi giữa nhóm trọng tâm (focal group) và nhóm đối chiếu (reference group) giữ nguyên không đổi trên toàn bộ dải năng lực $\\theta$ (đường cong đặc trưng câu hỏi ICC dịch chuyển song song, thể hiện sự thiên lệch tham số độ khó $b$); (2) Non-uniform DIF: Sự chênh lệch biến thiên tùy theo mức độ năng lực (đường ICC cắt nhau, phản ánh sự khác biệt về tham số độ phân biệt $a$). Các phương pháp thống kê chẩn đoán gồm Mantel-Haenszel test, Hồi quy Logistic phân cấp (Lord's Wald test), và so sánh hàm hợp lý trong IRT.",
+      "benchmarks": "Chuẩn mực thẩm định thang đo quốc tế: (1) Kiểm tra DIF là điều kiện tiên quyết bắt buộc trước khi kết luận về tính bất biến đo lường (measurement invariance); (2) Báo cáo chỉ số cỡ tác động của DIF (ví dụ: Mantel-Haenszel delta difference ETS classification: loại A - không đáng kể, loại B - trung bình, loại C - nghiêm trọng); (3) Các câu hỏi bị DIF loại C bắt buộc phải loại bỏ hoặc hiệu chỉnh tham số riêng cho từng nhóm.",
+      "pitfalls": "Đánh đồng sự khác biệt về điểm số thô giữa các nhóm (impact/group differences) với DIF (DIF chỉ tồn tại khi đã kiểm soát và đồng nhất năng lực thực tế giữa hai nhóm); kiểm tra DIF trên các mẫu con quá nhỏ dẫn đến thiếu công suất thống kê.",
+      "apa_reference": "Holland, P. W., & Wainer, H. (Eds.). (1993). Differential item functioning. Lawrence Erlbaum Associates. https://doi.org/10.4324/9780203357811"
     },
     {
       "id": "diffusion-of-treatments",
       "term": "Diffusion of Treatments",
-      "vietnamese": "Sự lan tỏa can thiệp",
-      "vietnamese_variants": [],
+      "vietnamese": "Sự khuếch tán can thiệp",
+      "vietnamese_variants": [
+        "Lan tỏa can thiệp thực nghiệm",
+        "Rò rỉ tác động can thiệp sang nhóm đối chứng"
+      ],
       "domain_tags": [
         "Internal Validity Threats"
       ],
-      "core_definition": "nhóm can thiệp chia sẻ bí quyết hoặc tài liệu cho nhóm đối chứng làm mất tính cách ly.",
-      "seminal_citation": "Shadish et al. (2002)",
+      "core_definition": "Diffusion of Treatments là một mối đe dọa nghiêm trọng đối với độ giá trị nội tại (internal validity) trong các thiết kế nghiên cứu thực nghiệm và bán thực nghiệm, xảy ra khi thông tin, tài liệu, kỹ năng hoặc các yếu tố của can thiệp (treatment) vô tình bị rò rỉ, chia sẻ hoặc bắt chước từ người tham gia nhóm can thiệp sang người tham gia nhóm đối chứng (control group).",
+      "seminal_citation": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin.",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Diffusion of Treatments according to Shadish et al. (2002).",
       "domain_tags_en": [
         "Internal Validity Threats"
-      ]
+      ],
+      "category": "Experimental Design & Internal Validity",
+      "operational_mechanism": "Khi nhóm đối chứng tiếp nhận một phần hoặc toàn bộ can thiệp thông qua giao tiếp xã hội hoặc quan sát gián tiếp, khoảng cách hiệu quả thực tế giữa hai nhóm bị thu hẹp giả tạo ($Y_{treatment} - Y_{control} \\to 0$). Điều này dẫn đến sai lầm loại II (Type II error), khiến nhà nghiên cứu đưa ra kết luận sai lầm rằng can thiệp không có hiệu quả, trong khi thực tế can thiệp rất hiệu quả nhưng đã bị 'nhiễm' sang nhóm đối chứng.",
+      "benchmarks": "Biện pháp phòng ngừa và kiểm soát theo chuẩn CONSORT: (1) Thiết kế thử nghiệm ngẫu nhiên theo cụm (Cluster Randomized Controlled Trial - cRCT), phân bổ ngẫu nhiên ở cấp độ trường học, bệnh viện, hoặc chi nhánh doanh nghiệp thay vì cấp độ cá nhân để cách ly không gian; (2) Thực hiện cam kết không chia sẻ thông tin (non-disclosure protocol); (3) Khảo sát kiểm tra mức độ ô nhiễm can thiệp (contamination check) ở nhóm đối chứng vào cuối nghiên cứu.",
+      "pitfalls": "Phân chia ngẫu nhiên nhóm can thiệp và nhóm đối chứng làm việc chung trong cùng một văn phòng hoặc cùng một lớp học; không đo lường mức độ tiếp xúc với can thiệp của nhóm đối chứng dẫn đến việc đánh giá thấp hiệu quả thực sự của chính sách.",
+      "apa_reference": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin."
     },
     {
       "id": "digital-object-identifier-doi",
       "term": "Digital Object Identifier (DOI)",
-      "vietnamese": "Định danh Đối tượng Số DOI",
-      "vietnamese_variants": [],
+      "vietnamese": "Định danh đối tượng kỹ thuật số (DOI)",
+      "vietnamese_variants": [
+        "Mã nhận dạng số DOI",
+        "Chuỗi định danh tài liệu điện tử"
+      ],
       "domain_tags": [
         "Scholarly Infrastructure"
       ],
-      "core_definition": "Chuỗi ký tự duy nhất toàn cầu định danh vĩnh viễn cho một bài báo khoa học hoặc tập dữ liệu.",
-      "seminal_citation": "ISO 26324 (2012)",
+      "core_definition": "Digital Object Identifier (DOI) là một chuỗi ký tự số và chữ cái chuẩn hóa toàn cầu (tiêu chuẩn ISO 26324) do Tổ chức DOI Quốc tế (IDF) quản lý, cung cấp một định danh duy nhất và liên kết vĩnh viễn (persistent identifier) tới một ấn phẩm học thuật, bài báo, bộ dữ liệu hoặc sách trên không gian mạng, không bị gián đoạn hay mất kết nối khi máy chủ thay đổi địa chỉ URL.",
+      "seminal_citation": "Paskin, N. (2010). Digital object identifier (DOI®) system. In Encyclopedia of library and information sciences (3rd ed., pp. 1586-1592). CRC Press.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Digital Object Identifier (DOI) according to ISO 26324 (2012).",
       "domain_tags_en": [
         "Scholarly Infrastructure"
-      ]
+      ],
+      "category": "Academic Publishing & Bibliometrics",
+      "operational_mechanism": "Cấu trúc DOI gồm 2 phần ngăn cách bởi dấu gạch chéo: Tiền tố (Prefix, ví dụ: 10.1016 bắt đầu bằng 10 biểu thị tổ chức đăng ký như Crossref và mã nhà xuất bản) và Hậu tố (Suffix, chuỗi định danh duy nhất do nhà xuất bản gán cho bài báo cụ thể). Khi người đọc bấm vào liên kết dạng `https://doi.org/10.xxxx/yyyy`, hệ thống xử lý phân giải DOI toàn cầu (Handle System) sẽ tự động điều hướng người dùng tới trang web lưu trữ bài viết hiện hành của nhà xuất bản.",
+      "benchmarks": "Chuẩn mực trích dẫn APA 7th và Scopus/WoS: (1) Bắt buộc phải cung cấp DOI cho mọi tài liệu tham khảo có DOI dưới định dạng URL đầy đủ có giao thức https (`https://doi.org/...`), không sử dụng tiền tố cũ `doi:` hay `http://dx.doi.org/`; (2) DOI đảm bảo khả năng lập chỉ mục tự động, đếm trích dẫn (citation tracking) và liên kết chéo y văn giữa các nhà xuất bản.",
+      "pitfalls": "Dán liên kết truy cập nội bộ thư viện trường (như proxy EZproxy) vào trích dẫn thay vì DOI chuẩn tắc; bỏ qua việc đăng ký DOI cho các bộ dữ liệu nghiên cứu công khai (data repositories) làm giảm khả năng trích dẫn dữ liệu.",
+      "apa_reference": "Paskin, N. (2010). Digital object identifier (DOI®) system. In M. J. Bates & M. N. Maack (Eds.), Encyclopedia of library and information sciences (3rd ed., pp. 1586–1592). CRC Press. https://doi.org/10.1081/E-ELIS3-120044418"
     },
     {
       "id": "dijkstra-henseler-rhoa-rhoa",
       "term": "Dijkstra-Henseler \\rho_A (rho_A)",
-      "vietnamese": "Hệ số tin cậy nhất quán cho mô hình cấu trúc.",
-      "vietnamese_variants": [],
+      "vietnamese": "Hệ số độ tin cậy nhất quán Dijkstra-Henseler rho_A",
+      "vietnamese_variants": [
+        "Chỉ số rho_A Henseler",
+        "Độ tin cậy vững Dijkstra-Henseler trong PLS-SEM"
+      ],
       "domain_tags": [
         "PLS-SEM",
         "Discriminant Validity"
       ],
-      "core_definition": "Hệ số tin cậy nhất quán cho mô hình cấu trúc.",
-      "seminal_citation": "Henseler et al. (2015)",
+      "core_definition": "Dijkstra-Henseler rho_A ($\\rho_A$) là chỉ số đo lường độ tin cậy nhất quán nội tại (internal consistency reliability) chuẩn xác nhất cho các cấu trúc phản ánh (reflective constructs) trong mô hình phương trình cấu trúc bình phương bé nhất từng phần (PLS-SEM), giải quyết triệt để vấn đề Cronbach's alpha đánh giá thấp (underestimate) và Composite Reliability (CR) đánh giá cao (overestimate) độ tin cậy thực tế.",
+      "seminal_citation": "Dijkstra, T. K., & Henseler, J. (2015). Consistent partial least squares path modeling. MIS Quarterly, 39(2), 297-316.",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #767; LaTeX thô",
@@ -18678,19 +18910,27 @@
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "category": "Structural Equation Modeling (PLS-SEM)",
+      "operational_mechanism": "Công thức tính toán: $\\rho_A = (\\hat{w}'\\hat{w})^2 \\frac{\\hat{w}'(S - \\text{diag}(S))\\hat{w}}{\\hat{w}'(\\hat{\\Sigma} - \\text{diag}(\\hat{\\Sigma}))\\hat{w}}$, trong đó $\\hat{w}$ là véc-tơ trọng số chuẩn hóa của biến tiềm ẩn, $S$ là ma trận hiệp phương sai mẫu của các chỉ báo, và $\\hat{\\Sigma}$ là ma trận hiệp phương sai ước lượng được tái tạo bởi mô hình. $\\rho_A$ sử dụng các trọng số PLS để ước lượng độ tin cậy nhất quán mà không đòi hỏi giả định thắt chặt tau-equivalence như Cronbach's alpha.",
+      "benchmarks": "Tiêu chuẩn kiểm định trong PLS-SEM (Hair et al., Henseler et al.): (1) $\\rho_A \\ge 0.70$ cho nghiên cứu khẳng định chuẩn mực; (2) $\\rho_A \\ge 0.80$ hoặc $0.90$ cho các thang đo trong bối cảnh nâng cao; (3) Giá trị $\\rho_A$ thường nằm ở khoảng giữa Cronbach's alpha và CR ($Alpha \\le \\rho_A \\le CR$), phản ánh xấp xỉ chính xác nhất độ tin cậy thang đo.",
+      "pitfalls": "Bỏ qua $\\rho_A$ và chỉ báo cáo Cronbach's alpha và CR truyền thống; hiểu sai rằng $\\rho_A > 0.95$ là xuất sắc (giá trị quá cao $> 0.95$ cho thấy sự dư thừa câu hỏi - indicator redundancy và làm suy giảm tính đơn nguyên của cấu trúc).",
+      "apa_reference": "Dijkstra, T. K., & Henseler, J. (2015). Consistent partial least squares path modeling. MIS Quarterly, 39(2), 297–316. https://doi.org/10.25300/MISQ/2015/39.2.02"
     },
     {
       "id": "dijkstra-henseler-rhoa-rhoa-767",
       "term": "Dijkstra-Henseler rho_A (rho_A)",
-      "vietnamese": "Hệ số tin cậy nhất quán cho mô hình cấu trúc.",
-      "vietnamese_variants": [],
+      "vietnamese": "Chỉ số độ tin cậy Dijkstra-Henseler rho_A (Thao tác hóa PLSc)",
+      "vietnamese_variants": [
+        "Hệ số nhất quán rho_A",
+        "Chỉ số tin cậy nhất quán PLSc"
+      ],
       "domain_tags": [
         "Methodology",
         "Research Design"
       ],
-      "core_definition": "Hệ số tin cậy nhất quán cho mô hình cấu trúc.",
-      "seminal_citation": "Henseler et al. (2015)",
+      "core_definition": "Dijkstra-Henseler rho_A là một tham số cốt lõi trong thuật toán Bình phương bé nhất từng phần nhất quán (Consistent PLS - PLSc). Chỉ số này không chỉ đóng vai trò kiểm tra độ tin cậy mà còn được dùng trực tiếp làm nhân tử hiệu chỉnh (correction factor) để điều chỉnh hệ số tải và tương quan giữa các biến tiềm ẩn, loại bỏ độ chệch cố hữu của PLS-SEM truyền thống.",
+      "seminal_citation": "Henseler, J., Ringle, C. M., & Sarstedt, M. (2016). Testing measurement invariance of composites using partial least squares. International Marketing Review, 33(3), 405-431.",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #766",
@@ -18698,55 +18938,79 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Structural Equation Modeling (PLS-SEM)",
+      "operational_mechanism": "Trong PLSc, thuật toán tính toán ma trận hệ số tải và hiệp phương sai của các biến tiềm ẩn thô, sau đó chia cho căn bậc hai của hệ số $\\rho_A$ tương ứng để hiệu chỉnh suy giảm do sai số đo lường (attenuation correction): $Corr(X, Y)^* = \\frac{Corr(X, Y)}{\\sqrt{\\rho_{A(X)} \\rho_{A(Y)}}}$. Quá trình này giúp các ước lượng đường dẫn trong PLSc hội tụ tiệm cận về các giá trị tham số thực tương đương với CB-SEM.",
+      "benchmarks": "Ngưỡng chấp nhận chuẩn: (1) Ngưỡng sàn tối thiểu $\\rho_A \\ge 0.707$ (đảm bảo hơn 50% phương sai của biến tiềm ẩn được giải thích bởi các chỉ báo); (2) Bắt buộc phải báo cáo khi sử dụng phần mềm SmartPLS 3/4 hoặc gói lệnh `cSEM` / `SEinR` trong R.",
+      "pitfalls": "Áp dụng $\\rho_A$ cho các cấu trúc nguyên nhân/kết tinh (formative/composite constructs) - nơi mà các chỉ báo không bắt buộc phải có tính nhất quán nội tại; nhầm lẫn giữa $\\rho_A$ của Dijkstra-Henseler với hệ số Dillon-Goldstein's rho (chính là Composite Reliability).",
+      "apa_reference": "Henseler, J., Ringle, C. M., & Sarstedt, M. (2016). Testing measurement invariance of composites using partial least squares. International Marketing Review, 33(3), 405–431. https://doi.org/10.1108/IMR-09-2014-0304"
     },
     {
       "id": "dinh-nghia-khai-niem-hoc-thuat-construct-conceptualization",
       "term": "Construct Conceptualization",
-      "vietnamese": "Định nghĩa Khái niệm Học thuật",
-      "vietnamese_variants": [],
+      "vietnamese": "Khái niệm hóa cấu trúc học thuật",
+      "vietnamese_variants": [
+        "Xác lập khái niệm nghiên cứu",
+        "Định nghĩa và đóng khung cấu trúc lý thuyết"
+      ],
       "domain_tags": [
         "Construct Validation (MISQ)"
       ],
-      "core_definition": "Phân biệt thuộc tính trừu tượng (Intension) và đối tượng quy chiếu (Extension) theo Sartori (1984) và Schwab (1980).",
-      "seminal_citation": "MacKenzie et al. (2011)",
+      "core_definition": "Construct Conceptualization là giai đoạn nền tảng và tối quan trọng trong quy trình nghiên cứu khoa học, trong đó nhà nghiên cứu định nghĩa một cách chặt chẽ, trừu tượng và toàn diện một thuộc tính, hiện tượng tâm lý hoặc hành vi không thể quan sát trực tiếp (latent construct), phân định rõ ranh giới ngữ nghĩa, các chiều kích cấu thành (dimensions), và mối quan hệ của nó trong mạng lưới ý niệm (nomological network).",
+      "seminal_citation": "MacKenzie, S. B., Podsakoff, P. M., & Podsakoff, N. P. (2011). Construct measurement and validation procedures in MIS and behavioral sciences: Integrating alternative perspectives. MIS Quarterly, 35(2), 293-334.",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Định nghĩa Khái niệm Học thuật (Construct Conceptualization) according to MacKenzie et al. (2011).",
       "domain_tags_en": [
         "Construct Validation (MISQ)"
-      ]
+      ],
+      "category": "Research Methodology & Measurement Theory",
+      "operational_mechanism": "Quy trình thực hiện theo MacKenzie, Podsakoff, & Podsakoff (2011): (1) Rà soát toàn diện y văn để tổng hợp các định nghĩa hiện hữu; (2) Xác định rõ bản chất hiện thực của cấu trúc (đặc tính của cá nhân, nhóm, hay tổ chức); (3) Vạch rõ ranh giới ngoại diên (construct boundary) - cấu trúc này khác biệt cụ thể với các khái niệm tương tự lân cận ở điểm nào; (4) Xác định cấu trúc là đơn chiều (unidimensional) hay đa chiều (multidimensional); (5) Nếu đa chiều, xác định rõ bản chất mô hình hóa là cấu trúc phản ánh (reflective) hay hình thành (formative/composite).",
+      "benchmarks": "Chuẩn mực bài báo Q1 chuyên về phát triển thang đo (JAP, JMR): (1) Đưa ra định nghĩa khái niệm tường minh, không chứa đựng các từ ngữ đa nghĩa hoặc vòng luẩn quẩn; (2) Phân tích đối sánh bảng ma trận các định nghĩa trong quá khứ; (3) Thiết lập mạng lưới quy nạp danh pháp (nomological network) kết nối cấu trúc với các tiền đề (antecedents) và hệ quả (consequences) lý thuyết rõ ràng.",
+      "pitfalls": "Hiện tượng 'bình mới rượu cũ' (Jangle Fallacy) - đặt tên mới cho một cấu trúc vốn đã tồn tại lâu đời; hoặc 'rượu mới bình cũ' (Jingle Fallacy) - dùng cùng một tên gọi cho hai cấu trúc có bản chất đo lường hoàn toàn khác nhau; định nghĩa khái niệm thiếu ăn khớp với các mục hỏi trong thang đo thực nghiệm.",
+      "apa_reference": "MacKenzie, S. B., Podsakoff, P. M., & Podsakoff, N. P. (2011). Construct measurement and validation procedures in MIS and behavioral sciences: Integrating alternative perspectives. MIS Quarterly, 35(2), 293–334. https://doi.org/10.2307/23044045"
     },
     {
       "id": "direct-citation-analysis",
       "term": "Direct Citation Analysis",
-      "vietnamese": "Phân tích Trích dẫn Trực tiếp",
-      "vietnamese_variants": [],
+      "vietnamese": "Phân tích trích dẫn trực tiếp",
+      "vietnamese_variants": [
+        "Phương pháp trích dẫn trực tiếp",
+        "Phân tích mạng lưới trích dẫn trực tiếp"
+      ],
       "domain_tags": [
         "Scientometrics"
       ],
-      "core_definition": "Khảo sát các đường dẫn truyền thụ tri thức trực tiếp giữa các công trình.",
-      "seminal_citation": "Price (1965)",
+      "core_definition": "Direct Citation Analysis là phương pháp trắc lượng thư mục (bibliometrics) định lượng các mối liên kết tri thức dựa trên sự kiện trích dẫn trực tiếp: một bài báo $A$ xuất bản sau trích dẫn đích danh bài báo $B$ xuất bản trước trong danh mục tài liệu tham khảo, phản ánh dòng chảy tri thức lịch sử và sự kế thừa khoa học giữa các công trình.",
+      "seminal_citation": "Garfield, E. (1979). Citation indexing: Its theory and application in science, technology, and humanities. John Wiley & Sons.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Direct Citation Analysis according to Price (1965).",
       "domain_tags_en": [
         "Scientometrics"
-      ]
+      ],
+      "category": "Bibliometrics & Scientometrics",
+      "operational_mechanism": "Xây dựng ma trận kề mạng lưới trích dẫn có hướng (directed citation network), trong đó các nút là bài báo khoa học và các cung hướng từ bài trích dẫn đến bài được trích dẫn. Các thuật toán phân cụm mạng lưới (như Louvain, VOS, hoặc Walktrap) được áp dụng để phân rã mạng lưới thành các cụm chủ đề nghiên cứu (research traditions) và xác định các bài báo cốt lõi (seminal papers) có In-degree cao nhất.",
+      "benchmarks": "So sánh với Co-citation (Đồng trích dẫn) và Bibliographic Coupling (Ghép cặp thư mục): (1) Phân tích trích dẫn trực tiếp là phương pháp duy nhất bảo toàn chiều thời gian lịch sử của sự phát triển tri thức; (2) Thích hợp nhất để truy vết phả hệ khoa học (genealogy of ideas) và sự hình thành của các đột phá khoa học mới nổi (emerging paradigms); (3) Cần chuẩn hóa số lượng trích dẫn theo năm xuất bản và lĩnh vực chuyên môn (Field-Weighted Citation Impact).",
+      "pitfalls": "Bỏ qua độ trễ trích dẫn (citation lag) khiến các bài báo xuất sắc mới xuất bản bị đánh giá thấp do chưa kịp tích lũy trích dẫn; không phân biệt được mục đích trích dẫn (trích dẫn kế thừa khen ngợi so với trích dẫn phản biện phê phán sai lầm).",
+      "apa_reference": "Garfield, E. (1979). Citation indexing: Its theory and application in science, technology, and humanities. John Wiley & Sons."
     },
     {
       "id": "direct-effect-c-vs-indirect-effect-ab-vs-total-effect-c-c-ab",
       "term": "Direct Effect (c') vs. Indirect Effect (ab) vs. Total Effect (c = c' + ab)",
-      "vietnamese": "Tác động trực tiếp, tác động gián tiếp và tác động tổng quát.",
-      "vietnamese_variants": [],
+      "vietnamese": "Tác động trực tiếp (c') so với Tác động gián tiếp (ab) so với Tác động tổng thể (c = c' + ab)",
+      "vietnamese_variants": [
+        "Phân rã tác động trung gian",
+        "Hệ số trực tiếp, gián tiếp và tổng thể"
+      ],
       "domain_tags": [
         "Mediation",
         "Moderation (PROCESS)"
       ],
-      "core_definition": "Tác động trực tiếp, tác động gián tiếp và tác động tổng quát.",
-      "seminal_citation": "Hayes (2022)",
+      "core_definition": "Trong phân tích trung gian thống kê (statistical mediation analysis), sự phân rã hiệu ứng giữa biến độc lập $X$ và biến phụ thuộc $Y$ thông qua biến trung gian $M$ được phân định thành 3 thành tố toán học: Tác động tổng thể (Total Effect, $c$) đo lường toàn bộ mối quan hệ giữa $X$ và $Y$; Tác động trực tiếp (Direct Effect, $c'$) đo lường ảnh hưởng của $X$ lên $Y$ khi đã kiểm soát biến trung gian $M$; và Tác động gián tiếp (Indirect Effect, $ab$) phản ánh ảnh hưởng của $X$ lên $Y$ truyền dẫn thông qua $M$.",
+      "seminal_citation": "Hayes, A. F. (2018). Introduction to mediation, moderation, and conditional process analysis: A regression-based approach (2nd ed.). Guilford Press.",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "LaTeX thô",
@@ -18754,19 +19018,27 @@
       "domain_tags_en": [
         "Mediation",
         "Moderation (PROCESS)"
-      ]
+      ],
+      "category": "Structural Equation Modeling & Mediation Analysis",
+      "operational_mechanism": "Hệ thống phương trình hồi quy tuyến tính chuẩn tắc: (1) $Y = i_1 + cX + e_1$; (2) $M = i_2 + aX + e_2$; (3) $Y = i_3 + c'X + bM + e_3$. Trong các mô hình tuyến tính không có tương tác biến $X \\times M$, đẳng thức phân rã luôn thỏa mãn: $c = c' + a \\times b$. Đánh giá sự trung gian hiện đại (theo Zhao, Lynch, & Chen, 2010; Hayes, 2018) dựa vào kiểm định Bootstrap cho tích số $ab$: (i) Trung gian bổ sung (Complementary mediation): cả $ab$ và $c'$ đều có ý nghĩa thống kê và cùng dấu; (ii) Trung gian cạnh tranh (Competitive mediation): cả hai có ý nghĩa nhưng trái dấu; (iii) Chỉ có trung gian gián tiếp (Indirect-only mediation): $ab$ có ý nghĩa nhưng $c'$ không có ý nghĩa.",
+      "benchmarks": "Chuẩn mực báo cáo học thuật: (1) Tuyệt đối không dựa vào giả định phân phối chuẩn Sobel test; bắt buộc sử dụng phương pháp Bootstrap phi tham số với tối thiểu 5,000 đến 10,000 lần lặp; (2) Khoảng tin cậy Bootstrap 95% có hiệu chỉnh độ chệch (BCa 95% CI) của $ab$ không được chứa số 0; (3) Báo cáo chỉ số tỷ lệ trung gian (ratio of indirect to total effect, $P_M = \\frac{ab}{c}$) khi $c$ và $ab$ cùng chiều.",
+      "pitfalls": "Dựa vào quy trình 4 bước lỗi thời của Baron & Kenny (1986) đòi hỏi $c$ phải có ý nghĩa thống kê trước mới được kiểm định trung gian (bỏ sót các mô hình trung gian cạnh tranh triệt tiêu tác động tổng thể); kết luận sai về chiều nhân quả khi dữ liệu chỉ là cắt ngang đơn thời điểm.",
+      "apa_reference": "Hayes, A. F. (2018). Introduction to mediation, moderation, and conditional process analysis: A regression-based approach (2nd ed.). Guilford Press."
     },
     {
       "id": "direct-realism",
       "term": "Direct Realism",
-      "vietnamese": "Chủ nghĩa hiện thực trực tiếp (Hiện thực ngây thơ)",
-      "vietnamese_variants": [],
+      "vietnamese": "Chủ nghĩa hiện thực trực tiếp",
+      "vietnamese_variants": [
+        "Thực tại luận trực tiếp",
+        "Chủ nghĩa hiện thực ngây thơ (Naive Realism)"
+      ],
       "domain_tags": [
         "Triết học Khoa học",
         "Hành củ Nghiên cứu"
       ],
-      "core_definition": "Lập trường triết học cho rằng những gì chúng ta trải nghiệm qua các giác quan chính là bức tranh mô tả chính xác thế giới thực tại đúng như bản chất vốn có của nó (ngược với Hiện thực phê phán).",
-      "seminal_citation": "Saunders, M., Lewis, P., & Thornhill, A. (2019). Research Methods for Business Students (8th ed.). Pearson.",
+      "core_definition": "Direct Realism (hay Naive Realism) là lập trường bản thể luận và nhận thức luận trong triết học khoa học cho rằng thế giới vật chất bên ngoài tồn tại hoàn toàn độc lập với tâm trí con người, và các giác quan của chúng ta cung cấp cho ta nhận thức trực tiếp, không bị biến dạng về hiện thực khách quan đó đúng như bản chất vốn có của nó.",
+      "seminal_citation": "Russell, B. (1912). The problems of philosophy. Williams and Norgate.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
@@ -18774,39 +19046,53 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Philosophy of Science & Epistemology",
+      "operational_mechanism": "Đối lập với Chủ nghĩa duy tâm (Idealism) và Chủ nghĩa hiện thực phê phán (Critical Realism): Hiện thực trực tiếp cho rằng không có tầng trung gian biểu tượng (representational barrier) ngăn cách giữa thế giới khách quan và người quan sát. Trong nghiên cứu thực nghiệm thô sơ, lập trường này dẫn đến giả định rằng dữ liệu quan sát được qua giác quan hoặc thiết bị đo lường phản ánh chân lý thuần khiết 1:1 của tự nhiên mà không bị can thiệp bởi khung lý thuyết, thiên lệch nhận thức hay định chế xã hội.",
+      "benchmarks": "Đánh giá trong phương pháp luận nghiên cứu: (1) Nhận thức được các giới hạn của Direct Realism trước các hiện tượng ảo giác, sai số giác quan và sự phụ thuộc lý thuyết của quan sát (theory-ladenness of observation); (2) Thường được sử dụng làm điểm đối chiếu để biện minh cho sự chuyển dịch sang Chủ nghĩa hiện thực phê phán của Roy Bhaskar (phân biệt giữa thực tại cơ chế sâu và hiện tượng kinh nghiệm bề mặt).",
+      "pitfalls": "Đồng nhất kết quả đo lường cụ thể với bản chất hiện thực khách quan; coi thường vai trò của các cấu tạo xã hội và ngôn ngữ trong việc định hình tri thức khoa học.",
+      "apa_reference": "Russell, B. (1912). The problems of philosophy. Williams and Norgate."
     },
     {
       "id": "directed-acyclic-graph-dag",
       "term": "Directed Acyclic Graph (DAG)",
-      "vietnamese": "Đồ thị Có hướng Phi chu trình",
+      "vietnamese": "Đồ thị có hướng phi chu trình (DAG)",
       "vietnamese_variants": [
-        "DAG"
+        "Biểu đồ nhân quả phi chu trình",
+        "Sơ đồ mạng nhân quả DAG"
       ],
       "domain_tags": [
         "Causal Inference"
       ],
-      "core_definition": "Mô hình trực quan biểu diễn cấu trúc nhân quả và điều kiện nhận dạng tham số.",
-      "seminal_citation": "Pearl (2009)",
+      "core_definition": "Directed Acyclic Graph (DAG) là một công cụ toán học và đồ thị hình học do Judea Pearl phát triển trong khuôn khổ suy diễn nhân quả hiện đại. Đồ thị bao gồm các nút (đại diện cho các biến số) kết nối với nhau bằng các mũi tên có hướng (đại diện cho mối quan hệ nhân quả trực tiếp) mà không tồn tại bất kỳ vòng lặp khép kín nào (acyclic - một biến không thể tự làm nguyên nhân gián tiếp của chính nó).",
+      "seminal_citation": "Pearl, J. (1995). Causal diagrams for empirical research. Biometrika, 82(4), 669-688.",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #774",
       "core_definition_en": "Academic definition of Directed Acyclic Graph (DAG) according to Pearl (2009).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "category": "Causal Inference & Epidemiology",
+      "operational_mechanism": "DAG sử dụng tiêu chuẩn phân tách d ($d$-separation) để mã hóa các giả định độc lập có điều kiện giữa các biến số. Đồ thị nhận diện chính xác 3 cấu trúc nhân quả nền tảng: (1) Chuỗi nhân quả (Chains: $X \\to M \\to Y$); (2) Ngã rẽ chung (Forks / Confounders: $X \\leftarrow Z \\to Y$); (3) Va chạm (Colliders: $X \\to C \\leftarrow Y$). Dựa trên quy tắc ngõ sau (backdoor criterion), DAG chỉ dẫn chính xác tập hợp các biến số cần kiểm soát (covariates) để triệt tiêu nhiễu và cảnh báo nghiêm cấm kiểm soát các biến va chạm (collider stratification bias).",
+      "benchmarks": "Chuẩn mực suy diễn nhân quả quốc tế (Epidemiology, Biometrika, Econometrics): (1) Trình bày DAG trực quan trước khi thực hiện hồi quy; (2) Chứng minh toán học rằng tập biến kiểm soát được chọn thỏa mãn tiêu chuẩn backdoor; (3) Minh định rõ các biến nhiễu chưa quan sát được (unobserved confounders) và phân tích độ nhạy.",
+      "pitfalls": "Kiểm soát nhầm biến va chạm (controlling for a collider) hoặc biến trung gian (mediator), vô tình tạo ra tương quan giả giữa can thiệp và kết quả (Berkson's bias / M-bias); vẽ DAG thiếu các biến nhiễu tiềm ẩn đã được y văn cảnh báo.",
+      "apa_reference": "Pearl, J. (1995). Causal diagrams for empirical research. Biometrika, 82(4), 669–688. https://doi.org/10.1093/biomet/82.4.669"
     },
     {
       "id": "direction-of-causality-rule",
-      "term": "Direction of causality rule",
-      "vietnamese": "Quy tắc chiều nhân quả đo lường",
-      "vietnamese_variants": [],
+      "term": "Direction of Causality Rule",
+      "vietnamese": "Quy tắc xác định chiều nhân quả",
+      "vietnamese_variants": [
+        "Nguyên tắc bất đối xứng thời gian nhân quả",
+        "Xác lập chiều tác động nhân quả"
+      ],
       "domain_tags": [
         "Methodology",
         "Research Design"
       ],
-      "core_definition": "Tiêu chuẩn số 1 phân định Reflective (Khái niệm \\rightarrow Biến) vs Formative.",
-      "seminal_citation": "MacKenzie et al. (2011)",
+      "core_definition": "Direction of Causality Rule là nguyên tắc phương pháp luận căn bản đòi hỏi nhà nghiên cứu phải chứng minh một cách thực nghiệm và logic rằng nguyên nhân phải diễn ra trước kết quả về mặt thời gian (temporal precedence) và không thể tồn tại quan hệ nhân quả ngược (reverse causality) làm biến kết quả tác động trở lại biến nguyên nhân.",
+      "seminal_citation": "Mill, J. S. (1843). A system of logic, ratiocinative and inductive. John W. Parker.",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
@@ -18814,73 +19100,105 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Research Methodology & Causal Inference",
+      "operational_mechanism": "Vận hành thông qua 3 tiêu chuẩn kinh điển của John Stuart Mill để xác lập quan hệ nhân quả: (1) Tương quan thực nghiệm (Empirical association) - biến $X$ và $Y$ đồng biến thiên; (2) Trình tự thời gian phù hợp (Appropriate time order) - sự thay đổi của $X$ xảy ra trước sự thay đổi của $Y$; (3) Loại trừ các giải thích thay thế (Elimination of alternative explanations) - không có biến thứ ba $Z$ gây ra tương quan giả. Các công cụ phương pháp luận để bảo vệ chiều nhân quả gồm: thiết kế thử nghiệm có can thiệp thời gian, nghiên cứu chuỗi thời gian trễ (cross-lagged panel models), và kiểm định nhân quả Granger.",
+      "benchmarks": "Đạt chuẩn nghiên cứu định lượng Q1: (1) Thu thập dữ liệu đa thời điểm (longitudinal data) với độ trễ thời gian (time lag) hợp lý về mặt lý thuyết; (2) Thực hiện kiểm định nhân quả đảo chiều (reverse causality testing) bằng hồi quy mô hình chéo; (3) Trong dữ liệu cắt ngang, phải dựa vào các cú sốc ngoại sinh tự nhiên (natural experiments) hoặc biến công cụ vững chắc.",
+      "pitfalls": "Khẳng định chiều nhân quả $X \\to Y$ từ một cuộc khảo sát cắt ngang đồng thời mà không có bất kỳ biện pháp kiểm soát thời gian hay biến công cụ nào; nhầm lẫn giữa tương quan thuận chiều với quan hệ nguyên nhân - kết quả.",
+      "apa_reference": "Mill, J. S. (1843). A system of logic, ratiocinative and inductive. John W. Parker."
     },
     {
       "id": "directional-expectations-in-fsqca",
       "term": "Directional Expectations in fsQCA",
-      "vietnamese": "Kỳ vọng Định hướng trong fsQCA",
-      "vietnamese_variants": [],
+      "vietnamese": "Kỳ vọng định hướng trong fsQCA",
+      "vietnamese_variants": [
+        "Giả định định hướng lý thuyết QCA",
+        "Kỳ vọng chiều tác động điều kiện trong QCA"
+      ],
       "domain_tags": [
         "Configurational Methods"
       ],
-      "core_definition": "Các giả thuyết lý thuyết định trước về việc sự hiện diện hay vắng mặt của điều kiện sẽ đóng góp vào kết cục.",
-      "seminal_citation": "Ragin (2008)",
+      "core_definition": "Directional Expectations in fsQCA là các giả định lý thuyết được nhà nghiên cứu xác lập tiên nghiệm (a priori) về chiều hướng tác động của từng điều kiện (sự hiện diện hay sự vắng mặt của một điều kiện là có lợi cho việc tạo ra kết quả), được phần mềm sử dụng để đưa các 'tàn dư logic' (logical remainders - các cấu hình không có quan sát thực nghiệm) vào thuật toán rút gọn nhằm tạo ra Lời giải trung gian (Intermediate Solution).",
+      "seminal_citation": "Ragin, C. C. (2008). Redesigning social inquiry: Fuzzy sets and beyond. University of Chicago Press.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Directional Expectations in fsQCA according to Ragin (2008).",
       "domain_tags_en": [
         "Configurational Methods"
-      ]
+      ],
+      "category": "Qualitative Comparative Analysis (QCA)",
+      "operational_mechanism": "Trong quy trình phân tích bảng chân trị (truth table minimization) của Ragin: (1) Thuật toán tạo ra Lời giải phức hợp (Complex Solution) không sử dụng bất kỳ tàn dư logic nào; (2) Tạo ra Lời giải giản lược (Parsimonious Solution) dung nạp mọi tàn dư logic bất kể chiều lý thuyết để tối đa hóa sự tinh gọn; (3) Tạo ra Lời giải trung gian (Intermediate Solution) bằng cách chỉ đưa vào những tàn dư logic nào phù hợp với các kỳ vọng định hướng đã được lý thuyết và kiến thức chuyên sâu ủng hộ.",
+      "benchmarks": "Chuẩn mực nghiên cứu QCA hàng đầu (Schneider & Wagemann, 2012): (1) Bắt buộc phải công bố và biện minh tường minh cho từng kỳ vọng định hướng trong bảng phụ lục; (2) Lời giải trung gian phải luôn là một tập con của lời giải giản lược và là một tập mẹ của lời giải phức hợp; (3) Phân tích đối sánh các điều kiện cốt lõi (core conditions - xuất hiện trong cả parsimonious và intermediate) và điều kiện ngoại vi (peripheral conditions).",
+      "pitfalls": "Thiết lập kỳ vọng định hướng một cách hậu nghiệm (post hoc) sau khi thấy kết quả phân tích để 'làm đẹp' lời giải; đưa ra các kỳ vọng mâu thuẫn lẫn nhau khiến thuật toán không thể hội tụ.",
+      "apa_reference": "Ragin, C. C. (2008). Redesigning social inquiry: Fuzzy sets and beyond. University of Chicago Press. https://doi.org/10.7208/chicago/9780226703770.001.0001"
     },
     {
       "id": "directional-hypothesis",
-      "term": "Directional hypothesis",
-      "vietnamese": "Giả thuyết có hướng — Dự đoán rõ chiều hướng tác động cụ thể (ví dụ: tác động dương, cao hơn, thấp hơn).",
-      "vietnamese_variants": [],
+      "term": "Directional Hypothesis",
+      "vietnamese": "Giả thuyết định hướng",
+      "vietnamese_variants": [
+        "Giả thuyết một phía",
+        "Giả thuyết có hướng"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Giả thuyết có hướng — Dự đoán rõ chiều hướng tác động cụ thể (ví dụ: tác động dương, cao hơn, thấp hơn).",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Directional Hypothesis (hay One-tailed Hypothesis) là một phát biểu giả thuyết nghiên cứu nêu rõ không chỉ sự tồn tại của mối quan hệ hoặc sự khác biệt giữa các biến số, mà còn xác định chính xác chiều hướng cụ thể của mối quan hệ đó (ví dụ: tương quan thuận hay nghịch, cao hơn hay thấp hơn, làm tăng hay làm giảm).",
+      "seminal_citation": "Kerlinger, F. N., & Lee, H. B. (2000). Foundations of behavioral research (4th ed.). Wadsworth.",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Directional hypothesis according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Hypothesis Testing & Research Design",
+      "operational_mechanism": "Được xây dựng dựa trên cơ sở lập luận lý thuyết vững chắc hoặc các bằng chứng thực nghiệm tiền nhiệm thuyết phục. Về mặt thống kê: Giả thuyết định hướng tương ứng với kiểm định một phía (one-tailed test), nơi toàn bộ mức ý nghĩa $\\alpha$ (thường là 0.05) được dồn về một phía của phân phối xác suất ($H_1: \\beta > 0$ hoặc $H_1: \\beta < 0$), làm tăng công suất thống kê (statistical power) để phát hiện hiệu ứng theo chiều đã dự đoán so với kiểm định hai phía.",
+      "benchmarks": "Chuẩn mực bài báo Q1: (1) Giả thuyết phải được suy diễn logic từ một khung lý thuyết nền tảng (như RBV, TPB, Agency Theory) thay vì đưa ra suy đoán tùy tiện; (2) Ngay cả khi đặt giả thuyết định hướng, nhiều tạp chí kinh tế lượng và tâm lý học vẫn yêu cầu báo cáo p-value của kiểm định hai phía (two-tailed p-value) để duy trì sự thận trọng khoa học.",
+      "pitfalls": "Đặt giả thuyết định hướng sau khi đã chạy hồi quy và nhìn thấy kết quả (hiện tượng HARKing - Hypothesizing After the Results are Known); bất ngờ đảo ngược giả thuyết khi dữ liệu cho kết quả ngược chiều thay vì thừa nhận giả thuyết ban đầu bị bác bỏ.",
+      "apa_reference": "Kerlinger, F. N., & Lee, H. B. (2000). Foundations of behavioral research (4th ed.). Wadsworth."
     },
     {
       "id": "disability-adjusted-life-year-daly",
       "term": "Disability-Adjusted Life Year (DALY)",
-      "vietnamese": "Năm Sống Điều chỉnh theo Mức độ Tàn tật",
-      "vietnamese_variants": [],
+      "vietnamese": "Năm sống điều chỉnh theo mức độ khuyết tật (DALY)",
+      "vietnamese_variants": [
+        "Số năm sống hiệu chỉnh theo bệnh tật DALY",
+        "Chỉ số gánh nặng bệnh tật DALY"
+      ],
       "domain_tags": [
         "Global Health"
       ],
-      "core_definition": "Thước đo số năm sống khỏe mạnh bị mất đi do bệnh tật hoặc tử vong sớm.",
-      "seminal_citation": "Murray & Lopez (1996)",
+      "core_definition": "Disability-Adjusted Life Year (DALY) là một thước đo tổng hợp tiêu chuẩn quốc tế do Tổ chức Y tế Thế giới (WHO) và Ngân hàng Thế giới phát triển, đo lường gánh nặng bệnh tật toàn cầu (Global Burden of Disease) bằng cách định lượng khoảng cách giữa tình trạng sức khỏe thực tế của một quần thể so với một chuẩn mực lý tưởng nơi mọi người đều sống thọ đến tuổi già mà không bị tàn tật.",
+      "seminal_citation": "Murray, C. J., & Lopez, A. D. (1996). The global burden of disease: A comprehensive assessment of mortality and disability from diseases, injuries, and risk factors in 1990 and projected to 2020. Harvard University Press.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Disability-Adjusted Life Year (DALY) according to Murray & Lopez (1996).",
       "domain_tags_en": [
         "Global Health"
-      ]
+      ],
+      "category": "Health Economics & Epidemiology",
+      "operational_mechanism": "Công thức tính toán: $DALY = YLL + YLD$, trong đó: (1) $YLL$ (Years of Life Lost) là số năm sống tiềm tàng bị mất đi do tử vong sớm, tính bằng số ca tử vong nhân với kỳ vọng sống chuẩn ở độ tuổi tử vong ($YLL = N \\times L$); (2) $YLD$ (Years Lived with Disability) là số năm sống chung với tình trạng khuyết tật/bệnh tật, tính bằng số ca mắc mới nhân với thời gian kéo dài trung bình và trọng số khuyết tật ($YLD = I \\times DW \\times L$, với trọng số $DW$ dao động từ 0 - hoàn toàn khỏe mạnh đến 1 - tương đương tử vong).",
+      "benchmarks": "Chuẩn mực phân tích hiệu quả - chi phí y tế (CEA/CUA): (1) Đánh giá chi phí trên mỗi DALY tránh được (Cost per DALY averted); (2) So sánh với ngưỡng chi trả của WHO (thường là 1 đến 3 lần GDP bình quân đầu người trên mỗi DALY); (3) Sử dụng bảng trọng số khuyết tật chuẩn hóa từ Nghiên cứu Gánh nặng Bệnh tật Toàn cầu (GBD Study của IHME).",
+      "pitfalls": "Bỏ qua các tranh cãi đạo đức về việc định giá cuộc sống của người khuyết tật thấp hơn người khỏe mạnh; không cập nhật các thay đổi phương pháp luận của GBD (ví dụ: các phiên bản GBD gần đây đã bãi bỏ việc chiết khấu theo thời gian và trọng số theo độ tuổi).",
+      "apa_reference": "Murray, C. J., & Lopez, A. D. (1996). The global burden of disease: A comprehensive assessment of mortality and disability from diseases, injuries, and risk factors in 1990 and projected to 2020. Harvard University Press."
     },
     {
       "id": "disattenuated-correlation",
-      "term": "Disattenuated correlation",
-      "vietnamese": "Hệ số tương quan đã hiệu chỉnh suy giảm sai số đo lường.",
-      "vietnamese_variants": [],
+      "term": "Disattenuated Correlation",
+      "vietnamese": "Hệ số tương quan hiệu chỉnh suy giảm",
+      "vietnamese_variants": [
+        "Tương quan khử suy giảm",
+        "Tương quan hiệu chỉnh sai số đo lường Spearman"
+      ],
       "domain_tags": [
         "PLS-SEM",
         "Discriminant Validity"
       ],
-      "core_definition": "Hệ số tương quan đã hiệu chỉnh suy giảm sai số đo lường.",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
+      "core_definition": "Disattenuated Correlation (do Charles Spearman đề xuất năm 1904) là hệ số tương quan giữa hai biến tiềm ẩn được hiệu chỉnh bằng toán học nhằm loại bỏ tác động làm suy giảm (attenuation) của sai số đo lường ngẫu nhiên không hoàn hảo từ các công cụ quan sát, ước lượng mối tương quan thực sự nếu cả hai biến đều được đo lường với độ tin cậy tuyệt đối.",
+      "seminal_citation": "Spearman, C. (1904). The proof and measurement of association between two things. The American Journal of Psychology, 15(1), 72-101.",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
@@ -18888,37 +19206,53 @@
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "category": "Psychometrics & Measurement Error",
+      "operational_mechanism": "Công thức hiệu chỉnh Spearman: $r_{xy}^* = \\frac{r_{xy}}{\\sqrt{r_{xx'} r_{yy'}}}$, trong đó $r_{xy}$ là hệ số tương quan quan sát được giữa hai thang đo $X$ và $Y$, $r_{xx'}$ là độ tin cậy của thang đo $X$ (như Cronbach's alpha hoặc test-retest), và $r_{yy'}$ là độ tin cậy của thang đo $Y$.",
+      "benchmarks": "Ứng dụng trong thẩm định giá trị phân biệt (discriminant validity) và phân tích tổng hợp (meta-analysis): (1) Nếu $r_{xy}^* > 0.85$ hoặc $0.90$, hai cấu trúc bị coi là trùng lặp nghiêm trọng về mặt ngữ nghĩa (thiếu giá trị phân biệt); (2) Trong phân tích tổng hợp Hunter-Schmidt, hiệu chỉnh suy giảm là bước bắt buộc để tái tạo cỡ tác động thực nghiệm chân thực.",
+      "pitfalls": "Tính toán ra giá trị $r_{xy}^* > 1.00$ khi độ tin cậy mẫu bị ước lượng thấp giả tạo hoặc có sự vi phạm giả định sai số ngẫu nhiên không tương quan; nhầm lẫn giữa tương quan quan sát được với tương quan thực sự khi giải thích độ mạnh của quan hệ lý thuyết.",
+      "apa_reference": "Spearman, C. (1904). The proof and measurement of association between two things. The American Journal of Psychology, 15(1), 72–101. https://doi.org/10.2307/1412159"
     },
     {
       "id": "discipline-based-theory",
-      "term": "Discipline-based theory",
-      "vietnamese": "Lý thuyết chuyên ngành — Khung lý thuyết được kế thừa từ một chuyên ngành khoa học cụ thể (như Tâm lý học, Xã hội học, Quản trị).",
-      "vietnamese_variants": [],
+      "term": "Discipline-Based Theory",
+      "vietnamese": "Lý thuyết nền tảng bộ môn",
+      "vietnamese_variants": [
+        "Lý thuyết gốc chuyên ngành",
+        "Hệ thống lý thuyết môn phái"
+      ],
       "domain_tags": [
         "Research Design (Creswell)"
       ],
-      "core_definition": "Lý thuyết chuyên ngành — Khung lý thuyết được kế thừa từ một chuyên ngành khoa học cụ thể (như Tâm lý học, Xã hội học, Quản trị).",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Discipline-Based Theory là hệ thống các lý thuyết lớn (grand theories) hoặc lý thuyết phạm vi trung (middle-range theories) bắt nguồn và phát triển từ một ngành khoa học nền tảng chính thống (như Kinh tế học, Tâm lý học, Xã hội học, hoặc Sinh học tiến hóa), cung cấp các tiền đề bản thể luận, giả định hành vi và bộ khái niệm gốc để giải thích các hiện tượng ứng dụng trong các lĩnh vực liên ngành như Quản trị kinh doanh, Marketing hoặc Hệ thống thông tin.",
+      "seminal_citation": "Whetten, D. A. (1989). What constitutes a theoretical contribution? Academy of Management Review, 14(4), 490-495.",
       "tier": "creswell",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Discipline-based theory according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Philosophy of Science & Theoretical Frameworks",
+      "operational_mechanism": "Quá trình mượn và bản địa hóa lý thuyết (theory borrowing and contextualization): Nhà nghiên cứu (1) Tiếp nhận các giả định cốt lõi của lý thuyết gốc (ví dụ: giả định con người duy lý của kinh tế học hoặc giả định nhận thức bị giới hạn của tâm lý học nhận thức); (2) Thao tác hóa lại các mệnh đề lý thuyết cho phù hợp với bối cảnh đặc thù của tổ chức; (3) Kiểm định xem các cơ chế của lý thuyết gốc có còn được duy trì hay bị điều tiết bởi các đặc trưng của ngành ứng dụng.",
+      "benchmarks": "Chuẩn mực bài báo Q1 (AMR, SMJ): (1) Tránh việc chỉ áp dụng cơ học lý thuyết gốc vào ngành ứng dụng mà phải tạo ra sự mở rộng lý thuyết (theoretical extension); (2) Nắm vững và trích dẫn các tài liệu kinh điển nguyên gốc từ ngành mẹ thay vì trích dẫn thứ cấp; (3) Nhận diện rõ giới hạn và xung đột khi dung hợp các lý thuyết xuất phát từ các bộ môn có giả định đối lập nhau.",
+      "pitfalls": "Hiện tượng 'xâm lăng lý thuyết nông cạn' (shallow theoretical borrowing) khi chỉ lấy nhãn mác của lý thuyết gốc mà không hiểu rõ các tiền đề toán học hoặc triết học kèm theo; mâu thuẫn nhận thức luận khi ghép nối các lý thuyết có tiền đề xung đột trong cùng một mô hình.",
+      "apa_reference": "Whetten, D. A. (1989). What constitutes a theoretical contribution? Academy of Management Review, 14(4), 490–495. https://doi.org/10.5465/amr.1989.4308371"
     },
     {
       "id": "discourse-analysis",
-      "term": "Discourse analysis",
-      "vietnamese": "Phân tích diễn ngôn (phân tích cấu trúc ngôn ngữ và ngữ cảnh quyền lực trong dữ liệu định tính).",
-      "vietnamese_variants": [],
+      "term": "Discourse Analysis",
+      "vietnamese": "Phân tích diễn ngôn",
+      "vietnamese_variants": [
+        "Phương pháp phân tích ngôn cảnh",
+        "Nghiên cứu cấu trúc diễn ngôn"
+      ],
       "domain_tags": [
         "Research Onion",
         "Strategy"
       ],
-      "core_definition": "Phân tích diễn ngôn (phân tích cấu trúc ngôn ngữ và ngữ cảnh quyền lực trong dữ liệu định tính).",
-      "seminal_citation": "Saunders et al. (2019); Saunders (2019)",
+      "core_definition": "Discourse Analysis (DA) là một tập hợp các phương pháp nghiên cứu định tính phân tích cách thức ngôn ngữ (cả văn bản viết, lời nói và giao tiếp phi ngôn ngữ) được sử dụng vượt ra ngoài ranh giới câu đơn lẻ trong các bối cảnh xã hội cụ thể, nghiên cứu cách ngôn ngữ phản ánh, kiến tạo và duy trì các mối quan hệ quyền lực, bản sắc xã hội và trật tự thể chế.",
+      "seminal_citation": "Fairclough, N. (1992). Discourse and social change. Polity Press.",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
@@ -18926,55 +19260,79 @@
       "domain_tags_en": [
         "Research Onion",
         "Strategy"
-      ]
+      ],
+      "category": "Qualitative Research & Sociolinguistics",
+      "operational_mechanism": "Bao gồm nhiều trường phái tiếp cận: từ vi mô như Phân tích hội thoại (Conversation Analysis - nghiên cứu cấu trúc lượt lời và sự tương tác tuần tự) đến vĩ mô như Phân tích diễn ngôn phê phán (Critical Discourse Analysis - CDA theo Fairclough, Foucault - phân tích sự thẩm thấu của ý thức hệ và quyền lực giai cấp vào văn bản). Quá trình phân tích giải mã cấu trúc ngữ pháp, từ vựng tu từ, ẩn dụ, và đặc biệt là những điều 'không được nói ra' (silences/exclusions) để vạch trần các diễn ngôn chi phối thế giới quan.",
+      "benchmarks": "Đạt chuẩn nghiên cứu định tính Q1: (1) Trình bày rõ trường phái DA áp dụng (ngôn ngữ học cấu trúc, Foucault, hay CDA); (2) Cung cấp các đoạn trích văn bản nguyên bản kèm theo phân tích liên văn bản (intertextuality) chi tiết từng từ; (3) Đảm bảo tính phản tư nghiêm ngặt về vị thế quyền lực của chính nhà nghiên cứu.",
+      "pitfalls": "Biến phân tích diễn ngôn thành phân tích nội dung định lượng tầm thường bằng cách đếm từ khóa; áp đặt suy diễn ý thức hệ chủ quan của nhà nghiên cứu mà không tìm thấy căn cứ văn bản cụ thể; tách rời ngôn ngữ khỏi ngữ cảnh xã hội lịch sử cụ thể sản sinh ra nó.",
+      "apa_reference": "Fairclough, N. (1992). Discourse and social change. Polity Press."
     },
     {
       "id": "discrete-event-simulation-des",
       "term": "Discrete-Event Simulation (DES)",
-      "vietnamese": "Mô phỏng Biến cố Rời rạc",
-      "vietnamese_variants": [],
+      "vietnamese": "Mô phỏng sự kiện rời rạc (DES)",
+      "vietnamese_variants": [
+        "Kỹ thuật mô phỏng DES",
+        "Mô phỏng hệ thống sự kiện rời rạc"
+      ],
       "domain_tags": [
         "Operations Research"
       ],
-      "core_definition": "Mô hình hóa hoạt động của một hệ thống theo chuỗi các biến cố xảy ra tại các thời điểm rời rạc.",
-      "seminal_citation": "Law (2015)",
+      "core_definition": "Discrete-Event Simulation (DES) là phương pháp mô hình hóa và mô phỏng điện toán cho các hệ thống phức tạp, trong đó trạng thái của hệ thống chỉ thay đổi tại các thời điểm rời rạc khi một sự kiện cụ thể xảy ra, thay vì biến thiên liên tục theo thời gian, cho phép phân tích hành vi ngẫu nhiên của các chuỗi xếp hàng, dòng chảy quy trình và tắc nghẽn tài nguyên.",
+      "seminal_citation": "Law, A. M. (2015). Simulation modeling and analysis (5th ed.). McGraw-Hill Education.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Discrete-Event Simulation (DES) according to Law (2015).",
       "domain_tags_en": [
         "Operations Research"
-      ]
+      ],
+      "category": "Simulation & Operations Research",
+      "operational_mechanism": "Hệ thống DES vận hành thông qua các thực thể cốt lõi: (1) Thực thể (Entities - khách hàng, bệnh nhân, đơn hàng di chuyển qua hệ thống); (2) Tài nguyên (Resources - nhân viên, máy móc, giường bệnh phục vụ các thực thể); (3) Hàng đợi (Queues - nơi thực thể chờ khi tài nguyên bận); (4) Đồng hồ mô phỏng (Simulation Clock - nhảy tức thì từ sự kiện hiện tại sang thời điểm xảy ra sự kiện tiếp theo trong danh sách sự kiện tương lai); (5) Phân phối xác suất ngẫu nhiên biểu diễn thời gian phục vụ và khoảng thời gian giữa các lần đến.",
+      "benchmarks": "Chuẩn mực nghiên cứu vận trù học (Operations Research, Management Science): (1) Quy trình Xác thực và Kiểm chứng (Verification and Validation - V&V) nghiêm ngặt đối chiếu đầu ra mô phỏng với dữ liệu lịch sử thực tế; (2) Thực hiện nhiều lượt chạy lặp ngẫu nhiên (multiple replications) và tính toán khoảng tin cậy 95% cho các chỉ số hiệu năng (KPIs như thời gian chờ, tỷ lệ sử dụng tài nguyên); (3) Phân tích thời gian khởi động (warm-up period) để loại bỏ trạng thái chuyển tiếp ban đầu.",
+      "pitfalls": "Bỏ qua thời gian khởi động khiến kết quả bị sai lệch bởi trạng thái rỗng ban đầu của hệ thống; giả định các phân phối ngẫu nhiên chuẩn tắc (như phân phối Poisson/Chuẩn) mà không kiểm định độ phù hợp phân phối với dữ liệu thực nghiệm; không thực hiện phân tích độ nhạy.",
+      "apa_reference": "Law, A. M. (2015). Simulation modeling and analysis (5th ed.). McGraw-Hill Education."
     },
     {
       "id": "discriminant-analysis",
       "term": "Discriminant Analysis",
-      "vietnamese": "Phân tích biệt số dự báo xác suất một quan sát thuộc về nhóm nào dựa trên tập hợp biến dự báo",
-      "vietnamese_variants": [],
+      "vietnamese": "Phân tích hàm phân biệt",
+      "vietnamese_variants": [
+        "Phân tích phân biệt Fisher",
+        "Hàm phân biệt tuyến tính LDA"
+      ],
       "domain_tags": [
         "Multivariate Statistics"
       ],
-      "core_definition": "Phân tích biệt số dự báo xác suất một quan sát thuộc về nhóm nào dựa trên tập hợp biến dự báo.",
-      "seminal_citation": "Hair et al. (2018)",
+      "core_definition": "Discriminant Analysis (phân tích hàm phân biệt tuyến tính - Linear Discriminant Analysis / LDA do Ronald Fisher phát triển) là một kỹ thuật thống kê đa biến được sử dụng khi biến phụ thuộc là biến định danh rời rạc gồm hai hoặc nhiều nhóm, và các biến độc lập là các biến định lượng liên tục, nhằm tìm kiếm sự kết hợp tuyến tính tối ưu của các biến độc lập để phân biệt rõ nhất giữa các nhóm và dự báo phân loại cho các quan sát mới.",
+      "seminal_citation": "Fisher, R. A. (1936). The use of multiple measurements in taxonomic problems. Annals of Eugenics, 7(2), 179-188.",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Discriminant Analysis according to Hair et al. (2018).",
       "domain_tags_en": [
         "Multivariate Statistics"
-      ]
+      ],
+      "category": "Multivariate Statistics & Applied Econometrics",
+      "operational_mechanism": "Thuật toán tìm kiếm véc-tơ trọng số $w$ để tối đa hóa tỷ số Fisher: $J(w) = \\frac{w^T S_B w}{w^T S_W w}$, trong đó $S_B$ là ma trận hiệp phương sai giữa các nhóm (between-class scatter) và $S_W$ là ma trận hiệp phương sai nội bộ nhóm (within-class scatter). Hệ thống tạo ra $k - 1$ hàm phân biệt trực giao (với $k$ là số nhóm), mỗi hàm tối đa hóa khả năng tách biệt các tâm nhóm (centroids).",
+      "benchmarks": "Chuẩn mực thống kê ứng dụng: (1) Kiểm định sự khác biệt tâm nhóm đa biến bằng Wilks' Lambda ($\\Lambda$) và kiểm định F xấp xỉ; (2) Kiểm tra giả định đồng nhất ma trận hiệp phương sai bằng Box's M test (nếu vi phạm phải chuyển sang QDA - Quadratic Discriminant Analysis); (3) Đánh giá độ chính xác phân loại bằng phương pháp kiểm định chéo loại trừ một (Leave-one-out cross-validation) và so sánh với tỷ lệ trúng ngẫu nhiên (Press's Q statistic).",
+      "pitfalls": "Vi phạm nghiêm trọng giả định phân phối chuẩn đa biến và tính đồng nhất hiệp phương sai dẫn đến việc phân loại sai lệch; cỡ mẫu của nhóm nhỏ nhất nhỏ hơn số lượng biến độc lập gây mất ổn định tham số.",
+      "apa_reference": "Fisher, R. A. (1936). The use of multiple measurements in taxonomic problems. Annals of Eugenics, 7(2), 179–188. https://doi.org/10.1111/j.1469-1809.1936.tb02137.x"
     },
     {
       "id": "discriminant-validity-ph-n-bi-t",
       "term": "Discriminant Validity (Ph n bi t)",
-      "vietnamese": "Fornell-Larcker (\\sqrt{AVE} > r), Cross-loadings, HTMT (< 0.85 hoặc < 0.90).",
-      "vietnamese_variants": [],
+      "vietnamese": "Độ giá trị phân biệt (Bản chuẩn hóa)",
+      "vietnamese_variants": [
+        "Tính phân biệt thang đo",
+        "Giá trị phân biệt trong mô hình đo lường"
+      ],
       "domain_tags": [
         "Methodology",
         "Research Design"
       ],
-      "core_definition": "Fornell-Larcker (\\sqrt{AVE} > r), Cross-loadings, HTMT (< 0.85 hoặc < 0.90).",
-      "seminal_citation": "Hair et al. (2018)",
+      "core_definition": "Discriminant Validity là một thuộc tính đo lường tối quan trọng của mô hình đo lường phản ánh, chứng minh rằng một cấu trúc lý thuyết thực sự độc đáo, khác biệt và không trùng lặp về mặt thống kê và thực nghiệm với các cấu trúc lý thuyết khác trong cùng một mô hình nghiên cứu.",
+      "seminal_citation": "Henseler, J., Ringle, C. M., & Sarstedt, M. (2015). A new criterion for assessing discriminant validity in variance-based structural equation modeling. Journal of the Academy of Marketing Science, 43(1), 115-135.",
       "tier": "textbook",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #787, #789; LaTeX thô; tên mục lỗi font/cắt",
@@ -18982,25 +19340,38 @@
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Psychometrics & Structural Equation Modeling",
+      "operational_mechanism": "Được kiểm định thông qua ba phương pháp tiếp cận kế tiếp nhau: (1) Phương pháp truyền thống Fornell-Larcker (1981): Căn bậc hai phương sai trích trung bình ($\\sqrt{AVE}$) của một cấu trúc phải lớn hơn hệ số tương quan giữa cấu trúc đó với bất kỳ cấu trúc nào khác; (2) Kiểm tra hệ số tải chéo (cross-loadings): Hệ số tải ngoài của mỗi chỉ báo lên cấu trúc của nó phải cao hơn tất cả các hệ số tải chéo của nó lên các cấu trúc khác ít nhất 0.10; (3) Tỷ số dị biệt - đơn nhất HTMT (Heterotrait-Monotrait Ratio): Phương pháp hiện đại và nghiêm ngặt nhất dựa trên tỷ lệ tương quan đa đặc tính - đa phương pháp.",
+      "benchmarks": "Chuẩn mực bài báo Q1 (Henseler et al., 2015; Hair et al., 2022): (1) Bắt buộc phải báo cáo ma trận HTMT; (2) Ngưỡng chấp nhận HTMT khắt khe là $HTMT < 0.85$ (cho các cấu trúc có sự khác biệt khái niệm rõ ràng) hoặc $HTMT < 0.90$ (cho các cấu trúc tương đồng); (3) Khoảng tin cậy Bootstrap 95% hoặc 97.5% của HTMT không được chứa giá trị 1.00.",
+      "pitfalls": "Chỉ dựa vào tiêu chuẩn Fornell-Larcker vốn đã được chứng minh là có độ nhạy rất kém trong việc phát hiện sự thiếu hụt giá trị phân biệt khi các hệ số tải chỉ báo không đồng nhất; giữ lại các câu hỏi có hiện tượng tải chéo cao làm sai lệch quan hệ cấu trúc.",
+      "apa_reference": "Henseler, J., Ringle, C. M., & Sarstedt, M. (2015). A new criterion for assessing discriminant validity in variance-based structural equation modeling. Journal of the Academy of Marketing Science, 43(1), 115–135. https://doi.org/10.1007/s11747-014-0403-8"
     },
     {
       "id": "discriminant-validity-phan-biet",
       "term": "Discriminant Validity",
-      "vietnamese": "Fornell-Larcker (\\sqrt{AVE} > r), Cross-loadings, HTMT (< 0.85 hoặc < 0.90).",
-      "vietnamese_variants": [],
+      "vietnamese": "Độ giá trị phân biệt",
+      "vietnamese_variants": [
+        "Giá trị phân biệt Fornell-Larcker",
+        "Tính phân biệt cấu trúc tiềm ẩn"
+      ],
       "domain_tags": [
         "Multivariate Data Analysis"
       ],
-      "core_definition": "Fornell-Larcker (\\sqrt{AVE} > r), Cross-loadings, HTMT (< 0.85 hoặc < 0.90).",
-      "seminal_citation": "Hair et al. (2018)",
+      "core_definition": "Discriminant Validity là tiêu chí đo lường xác nhận rằng các chỉ báo của một biến tiềm ẩn không phản ánh hoặc nắm bắt cùng một hiện tượng với các chỉ báo của một biến tiềm ẩn khác, thiết lập sự độc lập thực nghiệm tương ứng với sự phân biệt ranh giới lý thuyết.",
+      "seminal_citation": "Fornell, C., & Larcker, D. F. (1981). Evaluating structural equation models with unobservable variables and measurement error. Journal of Marketing Research, 18(1), 39-50.",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #787, #788; LaTeX thô; tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Discriminant Validity (Phân biệt) according to Hair et al. (2018).",
       "domain_tags_en": [
         "Multivariate Data Analysis"
-      ]
+      ],
+      "category": "Psychometrics & Structural Equation Modeling",
+      "operational_mechanism": "Vận hành theo tiêu chuẩn Fornell & Larcker (1981): Với hai cấu trúc bất kỳ $i$ và $j$, điều kiện cần là $AVE_i > r_{ij}^2$ và $AVE_j > r_{ij}^2$ (trong đó $r_{ij}$ là hệ số tương quan giữa hai cấu trúc). Trong CB-SEM (Amos, LISREL, Mplus), kiểm định giá trị phân biệt khắt khe hơn bằng kiểm định sai số tỷ số hợp lý ($\\chi^2$ difference test) giữa mô hình không hạn chế và mô hình gán tương quan bằng 1 ($H_0: \rho = 1$); nếu $\\Delta \\chi^2 (df = 1) > 3.84$ ($p < 0.05$), giá trị phân biệt được xác lập.",
+      "benchmarks": "Tiêu chuẩn báo cáo: (1) Bảng ma trận Fornell-Larcker trình bày các giá trị $\\sqrt{AVE}$ trên đường chéo chính và các hệ số tương quan ở phần tam giác dưới; mọi giá trị đường chéo phải lớn hơn hẳn các giá trị cùng hàng và cùng cột; (2) Kết hợp kiểm tra chỉ số HTMT để khẳng định tính vững; (3) Cần chứng minh tính phân biệt giữa cấu trúc độc lập và cấu trúc phụ thuộc để loại trừ thiên lệch đơn phương pháp (CMB).",
+      "pitfalls": "Báo cáo ma trận Fornell-Larcker nhưng so sánh nhầm giữa $AVE$ với tương quan thay vì căn bậc hai của AVE; lờ đi các giá trị tương quan quá cao ($r > 0.85$) vốn cảnh báo hiện tượng đa cộng tuyến hoặc trùng lắp khái niệm.",
+      "apa_reference": "Fornell, C., & Larcker, D. F. (1981). Evaluating structural equation models with unobservable variables and measurement error. Journal of Marketing Research, 18(1), 39–50. https://doi.org/10.1177/002224378101800104"
     },
     {
       "id": "disproportionate-stratified-sampling",
@@ -19034,14 +19405,17 @@
     {
       "id": "do-luong-phi-can-thiep-unobtrusive-measures",
       "term": "Unobtrusive Measures",
-      "vietnamese": "Đo lường Phi Can thiệp trong Thu thập Dữ liệu",
-      "vietnamese_variants": [],
+      "vietnamese": "Đo lường phi can thiệp",
+      "vietnamese_variants": [
+        "Biện pháp đo lường không xâm lấn",
+        "Phương pháp thu thập dữ liệu gián tiếp"
+      ],
       "domain_tags": [
         "Business Research",
         "Experiments"
       ],
-      "core_definition": "Kỹ thuật thu thập dữ liệu tự nhiên qua dấu vết vật lý (Accretion & Erosion) không làm biến dạng hành vi đối tượng.",
-      "seminal_citation": "Schindler (2022)",
+      "core_definition": "Unobtrusive Measures (được giới thiệu bởi Webb, Campbell, Schwartz, & Sechrest, 1966) là các phương pháp và kỹ thuật thu thập dữ liệu nghiên cứu khoa học xã hội mà đối tượng nghiên cứu hoàn toàn không nhận thức được rằng họ đang bị quan sát hoặc đo lường, loại bỏ triệt để phản ứng đối kháng (reactivity), hiệu ứng Hawthorne và thiên lệch mong muốn xã hội (social desirability bias).",
+      "seminal_citation": "Webb, E. J., Campbell, D. T., Schwartz, R. D., & Sechrest, L. (1966). Unobtrusive measures: Nonreactive research in the social sciences. Rand McNally.",
       "tier": "index",
       "expert_status": "needs_review",
       "expert_notes": "Tên mục không phải thuật ngữ",
@@ -19049,61 +19423,90 @@
       "domain_tags_en": [
         "Business Research",
         "Experiments"
-      ]
+      ],
+      "category": "Research Methodology & Data Collection",
+      "operational_mechanism": "Được phân thành bốn nhóm nguồn dữ liệu chính: (1) Dấu vết hao mòn và tích tụ vật lý (Physical traces: erosion measures như độ mòn của gạch lát sàn bảo tàng để đo độ quan tâm của du khách, hoặc accretion measures như lượng rác tái chế để đo hành vi bảo vệ môi trường); (2) Hồ sơ lưu trữ tài liệu (Archives: hồ sơ khai sinh, thuế, biên bản họp, văn bản hành chính); (3) Quan sát đơn giản không can thiệp (Simple observation: vị trí ngồi trong phòng họp, khoảng cách tiếp xúc cơ thể); (4) Dấu vết số thời gian thực (Digital footprints: lịch sử tìm kiếm Google Trends, dữ liệu định vị GPS, nhật ký nhấp chuột).",
+      "benchmarks": "Chuẩn mực phương pháp luận: (1) Được sử dụng như một phương thức tam giác đạc phương pháp (methodological triangulation) hiệu quả nhất để kiểm chứng chéo các dữ liệu thu được từ khảo sát tự khai (self-report surveys); (2) Phải tuân thủ nghiêm ngặt các nguyên tắc đạo đức nghiên cứu (IRB), chỉ áp dụng cho các dữ liệu công khai và tuyệt đối bảo mật danh tính cá nhân.",
+      "pitfalls": "Nguy cơ xâm phạm quyền riêng tư và đạo đức nghiên cứu nếu quan sát ở những không gian bán riêng tư mà không có sự đồng thuận; các suy diễn nhân quả từ dấu vết vật lý có thể bị nhiễu bởi các biến cố ngẫu nhiên ngoài tầm kiểm soát của nhà nghiên cứu.",
+      "apa_reference": "Webb, E. J., Campbell, D. T., Schwartz, R. D., & Sechrest, L. (1966). Unobtrusive measures: Nonreactive research in the social sciences. Rand McNally."
     },
     {
       "id": "do-calculus",
       "term": "Do-Calculus",
-      "vietnamese": "Giải tích Can thiệp (do-operator) biến đổi biểu thức xác suất can thiệp thành các xác suất quan sát thuần túy",
-      "vietnamese_variants": [],
+      "vietnamese": "Giải tích can thiệp Do-Calculus",
+      "vietnamese_variants": [
+        "Toán tử do-calculus Pearl",
+        "Đại số suy diễn nhân quả can thiệp"
+      ],
       "domain_tags": [
         "Causal Inference"
       ],
-      "core_definition": "Giải tích Can thiệp (do-operator) biến đổi biểu thức xác suất can thiệp thành các xác suất quan sát thuần túy.",
-      "seminal_citation": "Pearl (2009)",
+      "core_definition": "Do-Calculus là một hệ thống suy diễn toán học hình thức gồm 3 quy tắc biến đổi do Judea Pearl phát triển, cho phép ánh xạ và chuyển đổi các biểu thức xác suất có chứa toán tử can thiệp thực nghiệm $P(Y | do(X))$ thành các biểu thức xác suất thuần túy quan sát được $P(Y | X, Z)$, từ đó xác định xem một tác động nhân quả có thể nhận dạng được (identifiable) từ dữ liệu phi thực nghiệm hay không.",
+      "seminal_citation": "Pearl, J. (1995). Causal diagrams for empirical research. Biometrika, 82(4), 669-688.",
       "tier": "encyclopedia",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Do-Calculus according to Pearl (2009).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "category": "Causal Inference & Artificial Intelligence",
+      "operational_mechanism": "Vận hành dựa trên đồ thị nhân quả DAG và 3 quy tắc tương đương hình thái: (1) Quy tắc 1 (Bỏ qua quan sát): Bổ sung/loại bỏ các quan sát điều kiện khi chúng độc lập điều kiện ($d$-separated) trên đồ thị can thiệp; (2) Quy tắc 2 (Hoán đổi hành động và quan sát): Thay thế toán tử can thiệp $do(Z)$ bằng quan sát điều kiện $Z$ khi thỏa mãn tiêu chuẩn ngõ sau; (3) Quy tắc 3 (Bỏ qua hành động can thiệp): Xóa bỏ hoàn toàn toán tử can thiệp $do(Z)$ khi biến đó không có đường dẫn nhân quả tới kết quả. Hoàn thành chứng minh khi biểu thức kết quả không còn chứa bất kỳ toán tử $do(.)$ nào.",
+      "benchmarks": "Đỉnh cao lý thuyết suy diễn nhân quả: (1) Chứng minh được định lý hoàn chỉnh của Do-calculus (Shpitser & Pearl, 2006): Do-calculus là điều kiện cần và đủ; nếu một tác động nhân quả không thể nhận dạng bằng Do-calculus thì nó vĩnh viễn không thể nhận dạng được từ cấu trúc dữ liệu đó; (2) Cơ sở nền tảng của các thuật toán nhận dạng tự động trong AI và khoa học dữ liệu hiện đại.",
+      "pitfalls": "Đòi hỏi giả định cấu trúc mạng DAG phải được chỉ định chính xác; nếu DAG giả định thiếu một cung nhân quả hoặc đảo ngược chiều quan hệ, toàn bộ các biến đổi Do-calculus sẽ dẫn đến các biểu thức ước lượng sai lệch hoàn toàn.",
+      "apa_reference": "Pearl, J. (1995). Causal diagrams for empirical research. Biometrika, 82(4), 669–688. https://doi.org/10.1093/biomet/82.4.669"
     },
     {
       "id": "dor",
-      "term": "DOR",
-      "vietnamese": "Tỷ số Chênh Chẩn đoán",
-      "vietnamese_variants": [],
+      "term": "Diagnostic Odds Ratio (DOR)",
+      "vietnamese": "Tỷ số chênh chẩn đoán (DOR)",
+      "vietnamese_variants": [
+        "Tỷ lệ Odds chẩn đoán DOR",
+        "Chỉ số hiệu năng chẩn đoán tổng hợp"
+      ],
       "domain_tags": [
         "Diagnostic Meta-Analysis"
       ],
-      "core_definition": "Meta-Analysis Thử nghiệm Chẩn đoán) (Diagnostic Odds Ratio.",
-      "seminal_citation": "DOR = 1 biểu thị công cụ không có khả năng phân biệt bệnh tật; DOR càng lớn hơn 1 biểu thị độ chính xác chẩn đoán càng vượt trội.",
+      "core_definition": "Diagnostic Odds Ratio (DOR) là một chỉ số thống kê tổng hợp đo lường hiệu lực và độ chính xác phân biệt của một xét nghiệm hoặc công cụ chẩn đoán y khoa, xác định tỷ số giữa cơ hội có kết quả xét nghiệm dương tính ở người thực sự mắc bệnh so với cơ hội có kết quả dương tính ở người hoàn toàn không mắc bệnh.",
+      "seminal_citation": "Glas, A. S., Lijmer, J. G., Prins, M. H., Bonsel, G. J., & Bossuyt, P. M. (2003). The diagnostic odds ratio: A single indicator of test performance. Journal of Clinical Epidemiology, 56(11), 1129-1135.",
       "tier": "acronym",
       "expert_status": "needs_review",
       "expert_notes": "Nguồn ghi ngưỡng",
       "core_definition_en": "Academic definition of DOR according to DOR = 1 biểu thị công cụ không có khả năng phân biệt bệnh tật; DOR càng lớn hơn 1 biểu thị độ chính xác chẩn đoán càng vượt trội..",
       "domain_tags_en": [
         "Diagnostic Meta-Analysis"
-      ]
+      ],
+      "category": "Meta-Analysis & Diagnostic Medicine",
+      "operational_mechanism": "Công thức tính toán từ bảng phân loại $2 \\times 2$: $DOR = \\frac{TP / FN}{FP / TN} = \\frac{TP \\times TN}{FP \\times FN} = \\frac{\\text{Sensitivity} / (1 - \\text{Sensitivity})}{(1 - \\text{Specificity}) / \\text{Specificity}} = \\frac{PLR}{NLR}$, trong đó $TP$ là dương tính thật, $TN$ là âm tính thật, $FP$ là dương tính giả, $FN$ là âm tính giả, $PLR$ là tỷ số khả dĩ dương tính và $NLR$ là tỷ số khả dĩ âm tính. Giá trị DOR dao động từ 0 đến vô cùng.",
+      "benchmarks": "Ngưỡng đánh giá học thuật: (1) $DOR = 1.0$ cho thấy công cụ chẩn đoán không có giá trị phân biệt (kết quả tương đương tung đồng xu ngẫu nhiên); (2) $DOR > 10$ cho thấy công cụ có hiệu năng chẩn đoán tốt; $DOR > 50-100$ phản ánh công cụ chẩn đoán xuất sắc; (3) Trong phân tích tổng hợp chẩn đoán (DTA meta-analysis), log(DOR) thường được mô hình hóa bằng hồi quy lưỡng biến (bivariate model) hoặc mô hình HSROC (Hierarchical Summary Receiver Operating Characteristic).",
+      "pitfalls": "Bỏ qua thực tế rằng DOR là chỉ số độc lập với tỷ lệ hiện mắc (prevalence) nhưng lại không cung cấp trực tiếp xác suất mắc bệnh hậu nghiệm cho bệnh nhân cá thể (vẫn cần kết hợp với độ nhạy, độ đặc hiệu và giá trị dự báo PPV/NPV); không thể áp dụng khi một ô trong bảng $2 \\times 2$ bằng 0 nếu không cộng thêm hằng số làm mịn (continuity correction).",
+      "apa_reference": "Glas, A. S., Lijmer, J. G., Prins, M. H., Bonsel, G. J., & Bossuyt, P. M. (2003). The diagnostic odds ratio: A single indicator of test performance. Journal of Clinical Epidemiology, 56(11), 1129–1135. https://doi.org/10.1016/S0895-4356(03)00177-X"
     },
     {
       "id": "double-machine-learning-dml",
       "term": "Double Machine Learning (DML)",
-      "vietnamese": "Học Máy Kép trong Nhân quả",
-      "vietnamese_variants": [],
+      "vietnamese": "Học máy kép (DML)",
+      "vietnamese_variants": [
+        "Khung học máy khử chệch Neyman DML",
+        "Kinh tế lượng học máy DML Chernozhukov"
+      ],
       "domain_tags": [
         "Advanced Causal Inference"
       ],
-      "core_definition": "Kết hợp thuật toán ML linh hoạt với phương pháp ước lượng Neyman orthogonal để suy luận nhân quả.",
-      "seminal_citation": "Chernozhukov et al. (2018)",
+      "core_definition": "Double Machine Learning (DML, do Victor Chernozhukov và cộng sự tiên phong) là một phương pháp kinh tế lượng hiện đại kết hợp sức mạnh dự báo phi tham số phức tạp của các thuật toán Học máy (Random Forests, XGBoost, Deep Neural Networks) để kiểm soát các biến nhiễu số chiều cao (high-dimensional confounders), đồng thời vẫn bảo đảm tính suy diễn thống kê hợp thức (khoảng tin cậy và kiểm định giả thuyết căn bậc hai mẫu chuẩn tắc) cho tham số nhân quả trọng tâm.",
+      "seminal_citation": "Chernozhukov, V., Chetverikov, D., Demirer, M., Duflo, E., Hansen, C., Newey, W., & Robins, J. (2018). Double/debiased machine learning for treatment and structural parameters. The Econometrics Journal, 21(1), C1-C68.",
       "tier": "textbook",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Double Machine Learning (DML) according to Chernozhukov et al. (2018).",
       "domain_tags_en": [
         "Advanced Causal Inference"
-      ]
+      ],
+      "category": "Causal Inference & Machine Learning",
+      "operational_mechanism": "Vận hành dựa trên 2 nguyên lý toán học nền tảng: (1) Tính trực giao Neyman (Neyman Orthogonality): Thiết lập phương trình điểm số trực giao (orthogonalized scores / Frisch-Waugh-Lovell logic) sao cho sai số ước lượng của các hàm nhiễu phi tham số (nuisance parameters) chỉ tác động bậc hai lên ước lượng của tham số nhân quả chính, triệt tiêu độ chệch điều chuẩn (regularization bias); (2) Phân chia mẫu chéo (Cross-fitting / Sample splitting): Chia dữ liệu thành các phần riêng biệt để huấn luyện mô hình học máy cho biến can thiệp và biến kết quả trên một phần mẫu, rồi ước lượng tham số nhân quả trên phần mẫu còn lại, loại bỏ hiện tượng quá khớp (overfitting bias).",
+      "benchmarks": "Chuẩn mực kinh tế lượng và khoa học dữ liệu hàng đầu (Econometrica, JASA, JRSS-B): (1) Đạt tốc độ hội tụ căn bậc hai mẫu chuẩn tắc $\\sqrt{N}(\\hat{\\theta} - \\theta_0) \\to_d N(0, V)$; (2) Sử dụng tối thiểu $K = 5$ fold cross-fitting; (3) Khuyến nghị chạy đa phân vùng (multiple cross-fitting splits) và lấy trung vị ước lượng để loại bỏ tính ngẫu nhiên của việc chia mẫu.",
+      "pitfalls": "Áp dụng học máy trực tiếp vào mô hình hồi quy OLS (Naïve ML) mà không dùng điểm số trực giao Neyman, dẫn đến phân phối ước lượng bị chệch nghiêm trọng và khoảng tin cậy không hợp lệ; dữ liệu vi phạm giả định vùng hỗ trợ chung (overlap/positivity).",
+      "apa_reference": "Chernozhukov, V., Chetverikov, D., Demirer, M., Duflo, E., Hansen, C., Newey, W., & Robins, J. (2018). Double/debiased machine learning for treatment and structural parameters. The Econometrics Journal, 21(1), C1–C68. https://doi.org/10.1111/ectj.12097"
     },
     {
       "id": "double-barreled-items",
