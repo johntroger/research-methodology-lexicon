@@ -366,6 +366,28 @@ export default function DictionaryApp({
     }
   };
 
+  // Nhảy liên kết siêu văn bản tới biến thể / thuật ngữ liên quan
+  const handleJumpToVariant = (variantName: string) => {
+    const cleanName = variantName.trim().toLowerCase();
+    const match = initialTerms.find(
+      (t) =>
+        t.term.toLowerCase() === cleanName ||
+        t.term.toLowerCase().startsWith(cleanName + " (") ||
+        t.term.toLowerCase().includes(`(${cleanName})`) ||
+        t.id.toLowerCase() === cleanName.replace(/[^a-z0-9]/g, "-")
+    );
+    if (match) {
+      setSelectedId(match.id);
+      setMobileTab("detail");
+      if (contentScrollRef.current) {
+        contentScrollRef.current.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    } else {
+      setSearchQuery(variantName);
+      setMobileTab("list");
+    }
+  };
+
   // Sao chép văn bản
   const handleCopy = (text: string, sectionKey: string) => {
     navigator.clipboard.writeText(text);
@@ -1203,24 +1225,33 @@ export default function DictionaryApp({
                 {/* 5. CÁC BIẾN THỂ CON / THUẬT NGỮ LIÊN ĐỚI */}
                 {activeTerm.corpus_variants && activeTerm.corpus_variants.length > 0 && (
                   <section className="space-y-2.5 pt-2">
-                    <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
-                      <Layers size={14} /> {t.sec_variants}
-                    </h3>
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
+                        <Layers size={14} /> {t.sec_variants}
+                      </h3>
+                      <span className="text-[11px] text-blue-600 dark:text-blue-400 font-medium hidden sm:inline">
+                        {languageMode === "en" ? "Click any variant to jump" : "Nhấp vào biến thể để tra cứu nhanh"}
+                      </span>
+                    </div>
                     <div className="grid grid-cols-1 gap-2">
                       {activeTerm.corpus_variants.map((v, i) => (
                         <div
                           key={i}
-                          className="p-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-800/40 flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4"
+                          onClick={() => handleJumpToVariant(v.v)}
+                          className="p-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-800/40 hover:bg-blue-50/70 dark:hover:bg-slate-800/90 hover:border-blue-300 dark:hover:border-blue-600 transition cursor-pointer flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 group shadow-2xs"
                         >
                           <div>
-                            <span className="font-semibold text-sm text-slate-900 dark:text-white">
-                              {v.v}
-                            </span>{" "}
-                            {languageMode === "vi" && v.vn && (
-                              <span className="text-xs text-blue-700 dark:text-blue-300 font-medium">
-                                ({v.vn})
-                              </span>
-                            )}
+                            <div className="flex items-center gap-1.5 flex-wrap">
+                              <span className="font-semibold text-sm text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">
+                                {v.v}
+                              </span>{" "}
+                              {languageMode === "vi" && v.vn && (
+                                <span className="text-xs text-blue-700 dark:text-blue-300 font-medium">
+                                  ({v.vn})
+                                </span>
+                              )}
+                              <ArrowRight size={13} className="text-blue-500 opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 transition shrink-0" />
+                            </div>
                             {v.rel && (
                               <p className="text-xs text-slate-500 mt-0.5">
                                 {languageMode === "vi"
@@ -1524,6 +1555,18 @@ export default function DictionaryApp({
           </div>
         </main>
       </div>
+
+      {/* NÚT NỔI QUAY LẠI DANH SÁCH TRÊN DI ĐỘNG (MOBILE FLOATING BACK BUTTON) */}
+      {mobileTab === "detail" && (
+        <button
+          onClick={() => setMobileTab("list")}
+          className="no-print sm:hidden fixed bottom-5 right-5 z-40 bg-blue-600 hover:bg-blue-700 active:scale-95 text-white px-4 py-2.5 rounded-full shadow-2xl border border-blue-500/50 flex items-center gap-2 text-xs font-semibold transition"
+          title={languageMode === "en" ? "Back to list" : "Quay lại danh sách"}
+        >
+          <ChevronLeft size={16} />
+          <span>{languageMode === "en" ? `List (${searchResults.length})` : `Danh mục (${searchResults.length})`}</span>
+        </button>
+      )}
 
       {/* MODAL XUẤT TRÍCH DẪN ĐA ĐỊNH DẠNG (APA / BibTeX / RIS) */}
       {activeTerm && (
