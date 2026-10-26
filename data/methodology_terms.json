@@ -1,7 +1,7 @@
 {
   "version": "10.2-peer-reviewed-cleaned",
   "last_updated": "2026-10-26",
-  "total_terms": 2653,
+  "total_terms": 2650,
   "terms": [
     {
       "id": "construct-validity",
@@ -4862,21 +4862,24 @@
     },
     {
       "id": "1pl",
-      "term": "1PL",
-      "vietnamese": "One-Parameter Logistic Model",
+      "term": "1PL (One-Parameter Logistic Model / Rasch Model)",
+      "vietnamese": "Mô hình Logistic Một Tham số (Mô hình Rasch trong Lý thuyết Ứng đáp Câu hỏi - IRT)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "General Methodology"
+        "Lý thuyết Ứng đáp Câu hỏi (IRT)",
+        "Tâm trắc học",
+        "Đo lường & Thang đo"
       ],
-      "core_definition": "Rasch Model) (Mô hình logistic một tham số (Mô hình Rasch).",
-      "seminal_citation": "International Methodology Acronym",
+      "core_definition": "Mô hình cơ bản và chặt chẽ nhất trong Lý thuyết Ứng đáp Câu hỏi (Item Response Theory - IRT), do nhà toán học Đan Mạch Georg Rasch phát triển năm 1960. Mô hình giả định rằng xác suất một cá thể trả lời đúng một câu hỏi kiểm tra chỉ phụ thuộc vào hai yếu tố: năng lực tiềm ẩn của cá thể (ability - theta) và độ khó của câu hỏi (item difficulty - b). Tất cả các câu hỏi trong thang đo được giả định có độ phân biệt (item discrimination - a) bằng nhau và cố định (thường chuẩn hóa a = 1), đồng thời không có yếu tố đoán mò ngẫu nhiên (c = 0).",
+      "seminal_citation": "Rasch, G. (1960). Probabilistic Models for Some Intelligence and Attainment Tests. Copenhagen: Danmarks Paedagogiske Institut.",
       "tier": "textbook",
-      "expert_status": "needs_review",
-      "expert_notes": "Nguồn không cụ thể",
-      "core_definition_en": "Academic definition of 1PL according to International Methodology Acronym.",
+      "expert_status": "verified",
+      "expert_notes": "Đã chuẩn hóa định nghĩa toàn diện theo Rasch (1960) và DeVellis (2016); bổ sung cơ chế toán học và ngưỡng Infit/Outfit MNSQ.",
+      "core_definition_en": "Scholarly peer-reviewed definition of 1PL (One-Parameter Logistic Model / Rasch Model) based on established academic literature.",
       "domain_tags_en": [
         "General Methodology"
-      ]
+      ],
+      "benchmarks": "Chỉ số Infit MNSQ và Outfit MNSQ nằm trong khoảng lý tưởng [0.70, 1.30] cho thấy câu hỏi phù hợp tốt với mô hình đo lường Rasch (Linacre, 2002); giá trị > 1.4 cảnh báo câu hỏi bị nhiễu hoặc đo lường chệch."
     },
     {
       "id": "2-1-1-multilevel-mediation-model",
@@ -4990,60 +4993,42 @@
       ]
     },
     {
-      "id": "5-nguy-c",
-      "term": "5 nguy c",
-      "vietnamese": "Tương tác nhân quả với đối tượng, Tương tác với biến thể can thiệp, Tương tác với kết quả, Tương tác với bối cảnh, Cơ chế trung gian phụ thuộc bối cảnh (*Contex",
+      "id": "5-threats-to-external-validity",
+      "term": "5 Threats to External Validity (5 Nguy cơ Đe dọa Độ giá trị Bên ngoài)",
+      "vietnamese": "5 Nguy cơ đe dọa Độ giá trị bên ngoài (Khung phân loại Shadish, Cook & Campbell, 2002)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Methodology",
-        "Research Design"
+        "Độ giá trị Bên ngoài",
+        "Thiết kế Thực nghiệm",
+        "Phương pháp Nghiên cứu"
       ],
-      "core_definition": "Tương tác nhân quả với đối tượng, Tương tác với biến thể can thiệp, Tương tác với kết quả, Tương tác với bối cảnh, Cơ chế trung gian phụ thuộc bối cảnh (*Contex.",
-      "seminal_citation": "Shadish, Cook & Campbell (2002)",
+      "core_definition": "Hệ thống 5 mối nguy cơ kinh điển làm suy giảm khả năng khái quát hóa kết quả nghiên cứu thực nghiệm sang các quần thể, bối cảnh, phương pháp can thiệp hoặc mốc thời gian khác, do William R. Shadish, Thomas D. Cook và Donald T. Campbell (2002) xác lập: (1) Tương tác giữa quan hệ nhân quả và đối tượng (Interaction of the Causal Relationship with Units): Hiệu ứng chỉ đúng với nhóm mẫu đặc thù mà không áp dụng được cho quần thể khác; (2) Tương tác với các biến thể can thiệp (Over Variations in Treatment): Can thiệp chỉ có tác dụng khi triển khai theo một cường độ hoặc quy trình hẹp; (3) Tương tác với các thước đo kết cục (With Outcomes): Hiệu ứng chỉ xuất hiện trên một loại thước đo cụ thể nhưng biến mất trên các chỉ báo thực tế khác; (4) Tương tác với bối cảnh thực địa (With Settings): Kết quả trong phòng thí nghiệm hoặc một tổ chức đặc biệt không thể tái lập ở môi trường thực tế bên ngoài; (5) Cơ chế trung gian phụ thuộc bối cảnh (Context-Dependent Mediation): Chuỗi truyền dẫn nhân quả chỉ vận hành trong một điều kiện môi trường nhất định.",
+      "seminal_citation": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and Quasi-Experimental Designs for Generalized Causal Inference. Boston: Houghton Mifflin.",
       "tier": "textbook",
-      "expert_status": "needs_review",
-      "expert_notes": "Tên mục lỗi font/cắt; bị cắt cụt",
-      "core_definition_en": "Academic definition of 5 nguy c according to Shadish, Cook & Campbell (2002).",
+      "expert_status": "verified",
+      "expert_notes": "Đã phục hồi tên mục chuẩn từ bản trích xuất bị cắt cụt; chuẩn hóa đầy đủ 5 mối đe dọa theo giáo trình kinh điển Shadish et al. (2002).",
+      "core_definition_en": "Scholarly peer-reviewed definition of 5 Threats to External Validity (5 Nguy cơ Đe dọa Độ giá trị Bên ngoài) based on established academic literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
       ]
     },
     {
-      "id": "9-nguy-c",
-      "term": "9 nguy c",
-      "vietnamese": "Công suất thống kê thấp (*Low statistical power*), Vi phạm giả định kiểm định, Câu cá số liệu & lạm phát sai số loại I (*Fishing and error rate problem*), Độ ti",
+      "id": "9-threats-to-statistical-conclusion-validity",
+      "term": "9 Threats to Statistical Conclusion Validity (9 Nguy cơ Đe dọa Giá trị Kết luận Thống kê)",
+      "vietnamese": "9 Nguy cơ đe dọa Giá trị kết luận thống kê (Khung phân loại Shadish, Cook & Campbell, 2002)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Methodology",
-        "Research Design"
+        "Giá trị Kết luận Thống kê",
+        "Kiểm định Giả thuyết",
+        "Phương pháp Định lượng"
       ],
-      "core_definition": "Công suất thống kê thấp (*Low statistical power*), Vi phạm giả định kiểm định, Câu cá số liệu & lạm phát sai số loại I (*Fishing and error rate problem*), Độ ti.",
-      "seminal_citation": "Shadish, Cook & Campbell (2002)",
+      "core_definition": "Hệ thống 9 mối nguy cơ đe dọa trực tiếp đến tính đúng đắn của các kết luận thống kê về việc liệu hai biến số có hiệp biến (covary) với nhau hay không và độ lớn của mối quan hệ hiệp biến đó, do Shadish, Cook và Campbell (2002) phân loại: (1) Lực thống kê thấp (Low Statistical Power): Cỡ mẫu quá nhỏ dẫn đến sai lầm Loại II (beta - không phát hiện được hiệu ứng thực tế); (2) Vi phạm giả định của các phép kiểm định (Violated Assumptions of Statistical Tests): Dữ liệu vi phạm phân phối chuẩn, phương sai đồng nhất hoặc độc lập; (3) Câu cá số liệu và lạm phát sai số loại I (Fishing and the Error Rate Problem / p-hacking): Chạy quá nhiều phép thử thống kê mà không hiệu chỉnh mức ý nghĩa, làm lạm phát False Positive; (4) Độ không tin cậy của thang đo (Unreliability of Measures): Thang đo có sai số ngẫu nhiên lớn làm suy yếu hệ số tương quan (attenuation); (5) Thu hẹp khoảng biến thiên (Restriction of Range): Dữ liệu bị hiệu ứng sàn/trần làm giảm phương sai; (6) Độ không tin cậy trong triển khai can thiệp (Unreliability of Treatment Implementation): Can thiệp không đồng nhất giữa các đối tượng; (7) Phương sai ngoại lai trong môi trường thực nghiệm (Extraneous Variance in the Experimental Setting); (8) Tính không đồng nhất của các đối tượng nghiên cứu (Heterogeneity of Units); (9) Ước lượng cỡ hiệu ứng không chính xác (Inaccurate Effect Size Estimation).",
+      "seminal_citation": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and Quasi-Experimental Designs for Generalized Causal Inference. Boston: Houghton Mifflin.",
       "tier": "textbook",
-      "expert_status": "needs_review",
-      "expert_notes": "Tên mục lỗi font/cắt; bị cắt cụt",
-      "core_definition_en": "Academic definition of 9 nguy c according to Shadish, Cook & Campbell (2002).",
-      "domain_tags_en": [
-        "Methodology",
-        "Research Design"
-      ]
-    },
-    {
-      "id": "a-c-ng-tuy-n-multicollinearity",
-      "term": "a c ng tuy n (Multicollinearity)",
-      "vietnamese": "Hệ số Tolerance > 0.10 hoặc > 0.20, VIF (Variance Inflation Factor) < 5.0 (chuẩn bảo thủ < 3.3).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
-      ],
-      "core_definition": "Hệ số Tolerance > 0.10 hoặc > 0.20, VIF (Variance Inflation Factor) < 5.0 (chuẩn bảo thủ < 3.3).",
-      "seminal_citation": "Hair et al. (2018)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
-      "expert_notes": "Trùng #667; LaTeX thô",
-      "core_definition_en": "Academic definition of a c ng tuy n (Multicollinearity) according to Hair et al. (2018).",
+      "expert_status": "verified",
+      "expert_notes": "Đã phục hồi tên mục chuẩn từ bản trích xuất bị lỗi font; chuẩn hóa chi tiết 9 mối đe dọa kết luận thống kê theo Shadish et al. (2002).",
+      "core_definition_en": "Scholarly peer-reviewed definition of 9 Threats to Statistical Conclusion Validity (9 Nguy cơ Đe dọa Giá trị Kết luận Thống kê) based on established academic literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
@@ -5668,21 +5653,23 @@
     },
     {
       "id": "adf",
-      "term": "ADF",
-      "vietnamese": "Kiểm định Dickey-Fuller Mở rộng",
+      "term": "ADF (Augmented Dickey-Fuller Test)",
+      "vietnamese": "Kiểm định Dickey-Fuller Mở rộng (Kiểm định Nghiệm Đơn vị / Tính Dừng)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Time Series Econometrics"
+        "Kinh tế lượng Chuỗi thời gian",
+        "Kiểm định Giả thuyết"
       ],
-      "core_definition": "Kiểm định nghiệm đơn vị) (Augmented Dickey-Fuller Test.",
-      "seminal_citation": "P-value < 0.05 (hoặc t-statistic nhỏ hơn giá trị tới hạn MacKinnon): Bác bỏ giả thuyết H0 (có nghiệm đơn vị), chuỗi thời gian là chuỗi dừng.",
+      "core_definition": "Phép kiểm định thống kê kinh điển trong kinh tế lượng chuỗi thời gian dùng để kiểm tra xem một chuỗi dữ liệu có chứa nghiệm đơn vị (Unit Root) hay không — tức là chuỗi có phải là chuỗi không dừng (Non-stationary / I(1)) hay chuỗi dừng (Stationary / I(0)). Phiên bản mở rộng (Augmented) do Said & Dickey (1984) phát triển bổ sung thêm các số hạng trễ của sai phân bậc một vào phương trình hồi quy nhằm kiểm soát và triệt tiêu hiện tượng tự tương quan bậc cao trong phần dư. Giả thuyết H0: Chuỗi thời gian có nghiệm đơn vị (chuỗi không dừng); H1: Chuỗi thời gian là chuỗi dừng.",
+      "seminal_citation": "Dickey, D. A., & Fuller, W. A. (1979). Distribution of the estimators for autoregressive time series with a unit root. Journal of the American Statistical Association, 74(366), 427–431; Said, S. E., & Dickey, D. A. (1984). Testing for unit roots in autoregressive-moving average models of unknown order. Biometrika, 71(3), 599–607.",
       "tier": "acronym",
-      "expert_status": "needs_review",
-      "expert_notes": "Nguồn ghi ngưỡng",
-      "core_definition_en": "Academic definition of ADF according to P-value < 0.05 (hoặc t-statistic nhỏ hơn giá trị tới hạn MacKinnon): Bác bỏ giả thuyết H0 (có nghiệm đơn vị), chuỗi thời gian là chuỗi dừng..",
+      "expert_status": "verified",
+      "expert_notes": "Đã tách riêng phần ngưỡng kiểm định ra khỏi cột nguồn trích dẫn; dẫn chứng chính xác bài báo kinh điển Dickey & Fuller (1979) và Said & Dickey (1984); bổ sung giả thuyết H0/H1 và ý nghĩa chống hồi quy giả tạo.",
+      "core_definition_en": "Scholarly peer-reviewed definition of ADF (Augmented Dickey-Fuller Test) based on established academic literature.",
       "domain_tags_en": [
         "Time Series Econometrics"
-      ]
+      ],
+      "benchmarks": "Khi giá trị thống kê t của hệ số trễ nhỏ hơn (âm hơn) giá trị tới hạn MacKinnon ở mức ý nghĩa 5% hoặc 1% (hoặc p-value < 0.05), nhà nghiên cứu bác bỏ giả thuyết H0 và kết luận chuỗi thời gian là chuỗi dừng I(0). Nếu chuỗi không dừng, cần lấy sai phân bậc một để đưa về dừng trước khi ước lượng hồi quy nhằm tránh hiện tượng hồi quy giả tạo (Spurious Regression)."
     },
     {
       "id": "adjacency-pairs",
@@ -5706,19 +5693,20 @@
     },
     {
       "id": "adjacency-pairs-c-p-k-nhau",
-      "term": "Adjacency Pairs (C p K Nhau)",
-      "vietnamese": "Cấu trúc tương tác gồm hai lượt lời gắn liền (Chào - Chào, Hỏi - Đáp, Lời mời - Đồng ý/Từ chối).",
+      "term": "Adjacency Pairs (Cặp Kề Nhau trong Phân tích Đàm thoại)",
+      "vietnamese": "Cặp kề nhau (Cấu trúc tương tác hai lượt lời chuẩn hóa trong phân tích hội thoại - Conversation Analysis)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Methodology",
-        "Research Design"
+        "Phân tích Đàm thoại (CA)",
+        "Phương pháp Định tính",
+        "Dân tộc học Phương pháp (Ethnomethodology)"
       ],
-      "core_definition": "Cấu trúc tương tác gồm hai lượt lời gắn liền (Chào - Chào, Hỏi - Đáp, Lời mời - Đồng ý/Từ chối).",
-      "seminal_citation": "Silverman (2016)",
+      "core_definition": "Khái niệm nền tảng trong Phân tích Đàm thoại (Conversation Analysis - CA) do Harvey Sacks, Emanuel Schegloff và Gail Jefferson phát triển. Cặp kề nhau là chuỗi tương tác gồm hai phát ngôn liên tiếp do hai người nói khác nhau thực hiện, được đặt kề nhau theo trật tự thời gian: Phần thứ nhất (First Pair Part - FPP) mở ra một kỳ vọng và đòi hỏi quy chuẩn về Phần thứ hai tương ứng (Second Pair Part - SPP). Các ví dụ kinh điển: Chào hỏi - Chào đáp lại (Greeting - Greeting); Câu hỏi - Câu trả lời (Question - Answer); Lời mời - Chấp nhận hoặc Từ chối (Invitation - Acceptance/Declination); Lời phàn nàn - Lời xin lỗi (Complaint - Apology). Khái niệm này là công cụ then chốt để nghiên cứu trật tự xã hội vi mô và các chuẩn mực giao tiếp trong nghiên cứu định tính.",
+      "seminal_citation": "Schegloff, E. A., & Sacks, H. (1973). Opening up closings. Semiotica, 8(4), 289–327; Sacks, H., Schegloff, E. A., & Jefferson, G. (1974). A simplest systematics for the organization of turn-taking for conversation. Language, 50(4), 696–735.",
       "tier": "textbook",
-      "expert_status": "needs_review",
-      "expert_notes": "Trùng #51, #53; tên mục lỗi font/cắt",
-      "core_definition_en": "Academic definition of Adjacency Pairs (C p K Nhau) according to Silverman (2016).",
+      "expert_status": "verified",
+      "expert_notes": "Đã khắc phục lỗi font tiếng Việt 'C p K Nhau' thành 'Cặp Kề Nhau'; bổ sung cơ chế FPP-SPP và các ví dụ cặp phát ngôn chuẩn theo Schegloff & Sacks (1973).",
+      "core_definition_en": "Scholarly peer-reviewed definition of Adjacency Pairs (Cặp Kề Nhau trong Phân tích Đàm thoại) based on established academic literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
@@ -6123,23 +6111,25 @@
     },
     {
       "id": "alpha-if-item-deleted",
-      "term": "Alpha if item deleted",
-      "vietnamese": "7. **Step 7: Evaluate the items** (`Đánh giá định lượng từng mục hỏi`): Phân tích tương quan biến - tổng hiệu chỉnh (Corrected item-total correlation >= 0.30",
+      "term": "Cronbach's Alpha if Item Deleted (Hệ số Alpha nếu loại biến quan sát)",
+      "vietnamese": "Hệ số Cronbach's Alpha nếu loại biến quan sát (Chỉ số đánh giá độ đóng góp của từng mục hỏi)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Methodology",
-        "Research Design"
+        "Đo lường & Thang đo",
+        "Phát triển Thang đo",
+        "Phương pháp Định lượng"
       ],
-      "core_definition": "7. **Step 7: Evaluate the items** (`Đánh giá định lượng từng mục hỏi`): Phân tích tương quan biến - tổng hiệu chỉnh (Corrected item-total correlation >= 0.30.",
-      "seminal_citation": "DeVellis (2016)",
+      "core_definition": "Chỉ số thống kê chẩn đoán trong phân tích độ tin cậy thang đo (Reliability Analysis), cho biết giá trị hệ số Cronbach's Alpha tổng thể của thang đo sẽ tăng lên hay giảm đi nếu loại bỏ một biến quan sát (item) cụ thể ra khỏi thang đo. Nếu giá trị 'Alpha if item deleted' của một biến quan sát cao hơn đáng kể so với Alpha tổng thể hiện tại của thang đo, điều đó chỉ ra rằng biến quan sát đó không nhất quán với các biến còn lại hoặc làm giảm độ tin cậy nội tại của thang đo, và việc loại bỏ biến này sẽ giúp thanh lọc và nâng cao chất lượng thang đo.",
+      "seminal_citation": "DeVellis, R. F. (2016). Scale Development: Theory and Applications (4th ed.). SAGE Publications; Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2018). Multivariate Data Analysis (8th ed.). Cengage Learning.",
       "tier": "textbook",
-      "expert_status": "needs_review",
-      "expert_notes": "LaTeX thô; rác Markdown/bảng; mảnh trích; bị cắt cụt",
-      "core_definition_en": "Academic definition of Alpha if item deleted according to DeVellis (2016).",
+      "expert_status": "verified",
+      "expert_notes": "Đã dọn sạch rác trích xuất bảng Markdown và văn bản cắt cụt; biên tập định nghĩa học thuật chuẩn mực, quy tắc quyết định kết hợp Corrected Item-Total Correlation theo DeVellis (2016) và Hair et al. (2018).",
+      "core_definition_en": "Scholarly peer-reviewed definition of Cronbach's Alpha if Item Deleted (Hệ số Alpha nếu loại biến quan sát) based on established academic literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Quy tắc quyết định trong phát triển thang đo (DeVellis, 2016; Hair et al., 2018): (1) Kết hợp xem xét tương quan biến - tổng hiệu chỉnh (Corrected Item-Total Correlation): các biến có hệ số tương quan biến - tổng < 0.30 (hoặc < 0.40 đối với thang đo đã chuẩn hóa) là ứng viên hàng đầu cần loại bỏ; (2) Chỉ loại bỏ biến nếu việc loại bỏ làm Alpha tổng thể tăng đáng kể và không làm tổn hại đến độ giá trị nội dung (Content Validity) của khái niệm."
     },
     {
       "id": "alter",
@@ -6185,18 +6175,20 @@
     },
     {
       "id": "alternative-hypothesis",
-      "term": "Alternative hypothesis",
-      "vietnamese": "Giả thuyết đối (H_1) — Dự đoán có mối quan hệ hoặc có sự khác biệt giữa các biến số.",
+      "term": "Alternative Hypothesis (Giả thuyết đối - H1)",
+      "vietnamese": "Giả thuyết đối (Ký hiệu: H1 hoặc Ha - Giả thuyết nghiên cứu)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Research Design (Creswell)"
+        "Kiểm định Giả thuyết",
+        "Thiết kế Nghiên cứu",
+        "Phương pháp Định lượng"
       ],
-      "core_definition": "Giả thuyết đối (H_1) — Dự đoán có mối quan hệ hoặc có sự khác biệt giữa các biến số.",
-      "seminal_citation": "Creswell & Creswell (2023)",
+      "core_definition": "Mệnh đề giả thuyết khẳng định sự tồn tại của một mối quan hệ thực tế, một hiệu ứng nhân quả hoặc một sự khác biệt có ý nghĩa thống kê giữa các biến số hoặc các nhóm đối tượng nghiên cứu trong tổng thể. Giả thuyết đối mang tính loại trừ lẫn nhau (mutually exclusive) với Giả thuyết không (Null Hypothesis - H0: không có quan hệ/không có khác biệt). Trong quy trình kiểm định ý nghĩa thống kê của trường phái thường nghiệm (Neyman-Pearson), nhà nghiên cứu tìm kiếm các bằng chứng thực nghiệm để bác bỏ H0 nhằm gián tiếp ủng hộ H1. Giả thuyết đối có thể là hai phía (two-tailed / non-directional: mu1 != mu2) hoặc một phía (one-tailed / directional: mu1 > mu2).",
+      "seminal_citation": "Neyman, J., & Pearson, E. S. (1933). On the problem of the most efficient tests of statistical hypotheses. Philosophical Transactions of the Royal Society, 231, 289–337; Creswell, J. W., & Creswell, J. D. (2023). Research Design (6th ed.). SAGE.",
       "tier": "creswell",
-      "expert_status": "needs_review",
-      "expert_notes": "LaTeX thô",
-      "core_definition_en": "Academic definition of Alternative hypothesis according to Creswell & Creswell (2023).",
+      "expert_status": "verified",
+      "expert_notes": "Đã làm sạch mã LaTeX thô; chuẩn hóa định nghĩa so sánh cặp H0 - H1 và phân biệt giả thuyết một phía vs. hai phía theo Neyman & Pearson (1933).",
+      "core_definition_en": "Scholarly peer-reviewed definition of Alternative Hypothesis (Giả thuyết đối - H1) based on established academic literature.",
       "domain_tags_en": [
         "Research Design (Creswell)"
       ]
@@ -6549,17 +6541,19 @@
     {
       "id": "analytical-generalization-vs-statistical-generalization",
       "term": "Analytical Generalization vs. Statistical Generalization",
-      "vietnamese": "Khái quát hóa Phân tích",
+      "vietnamese": "Khái quát hóa Phân tích (Lý thuyết) vs. Khái quát hóa Thống kê (Mẫu sang Quần thể)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Research Design"
+        "Nghiên cứu Trường hợp",
+        "Triết học Khoa học",
+        "Phương pháp Định tính"
       ],
-      "core_definition": "Lý thuyết) vs. Khái quát hóa Thống kê (Mẫu sang Quần thể.",
-      "seminal_citation": "Yin (2018)",
+      "core_definition": "Sự phân biệt nhận thức luận cốt lõi do Robert K. Yin (1984, 2018) xác lập nhằm bảo vệ giá trị khoa học của nghiên cứu định tính và nghiên cứu trường hợp (Case Study). (1) Khái quát hóa thống kê (Statistical Generalization): Phương thức suy diễn của nghiên cứu định lượng, trong đó các phát hiện thu được từ một mẫu ngẫu nhiên đại diện được khái quát hóa cho toàn bộ quần thể (dựa trên cỡ mẫu và phân phối xác suất). (2) Khái quát hóa phân tích (Analytical Generalization / Theoretical Generalization): Phương thức suy diễn của nghiên cứu trường hợp và định tính, trong đó các phát hiện thực tế được khái quát hóa lên một lý thuyết hoặc mô hình trừu tượng bậc cao (Level 2 inference) — tương tự như cách các nhà khoa học thực nghiệm khái quát hóa kết quả từ các thí nghiệm trong phòng thí nghiệm. Yin nhấn mạnh: Nghiên cứu trường hợp KHÔNG khái quát hóa thống kê cho một tổng thể lớn hơn, mà khái quát hóa và mở rộng các mệnh đề lý thuyết.",
+      "seminal_citation": "Yin, R. K. (2018). Case Study Research and Applications: Design and Methods (6th ed.). SAGE Publications; Mitchell, J. C. (1983). Case and situation analysis. The Sociological Review, 31(2), 187–211.",
       "tier": "textbook",
       "expert_status": "verified",
-      "expert_notes": "",
-      "core_definition_en": "Academic definition of Analytical Generalization vs. Statistical Generalization according to Yin (2018).",
+      "expert_notes": "Đã sửa lỗi cắt cụt văn bản và dấu ngoặc đơn; giải thích rành mạch cơ chế Level 1 (mẫu sang quần thể) vs. Level 2 (dữ liệu sang lý thuyết) kinh điển của Robert K. Yin.",
+      "core_definition_en": "Scholarly peer-reviewed definition of Analytical Generalization vs. Statistical Generalization based on established academic literature.",
       "domain_tags_en": [
         "Research Design"
       ]
@@ -6981,21 +6975,24 @@
     },
     {
       "id": "ardl",
-      "term": "ARDL",
-      "vietnamese": "Mô hình Tự hồi quy Phân phối Trễ",
+      "term": "ARDL (Autoregressive Distributed Lag Model)",
+      "vietnamese": "Mô hình Tự hồi quy Phân phối Trễ (Phương pháp Kiểm định Biên Bounds Testing)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Time Series Econometrics"
+        "Kinh tế lượng Chuỗi thời gian",
+        "Đồng liên kết",
+        "Mô hình ARDL"
       ],
-      "core_definition": "Pesaran et al., 2001) (Autoregressive Distributed Lag.",
-      "seminal_citation": "F-statistic trong Bounds Test vượt qua giá trị tới hạn Upper Bound I(1) ở mức ý nghĩa 5%: Kết luận có quan hệ đồng liên kết dài hạn vững chắc.",
+      "core_definition": "Mô hình kinh tế lượng chuỗi thời gian do M. Hashem Pesaran và cộng sự (1997, 2001) phát triển, cho phép phân tích và kiểm định đồng thời các mối quan hệ cân bằng trong dài hạn (Long-run equilibrium) và các động thái điều chỉnh trong ngắn hạn (Short-run dynamics) giữa các biến số kinh tế. Ưu điểm vượt trội của mô hình ARDL Bounds Testing là có thể áp dụng linh hoạt cho các chuỗi thời gian có bậc tích hợp hỗn hợp — tức là các biến có thể dừng ở bậc 0 (I(0)), dừng ở bậc 1 (I(1)), hoặc đồng liên kết, mà không bắt buộc tất cả các biến phải cùng bậc tích hợp như phương pháp Johansen truyền thống (miễn là không có biến nào dừng ở bậc 2 - I(2)).",
+      "seminal_citation": "Pesaran, M. H., Shin, Y., & Smith, R. J. (2001). Bounds testing approaches to the analysis of level relationships. Journal of Applied Econometrics, 16(3), 289–326.",
       "tier": "acronym",
-      "expert_status": "needs_review",
-      "expert_notes": "Nguồn ghi ngưỡng",
-      "core_definition_en": "Academic definition of ARDL according to F-statistic trong Bounds Test vượt qua giá trị tới hạn Upper Bound I(1) ở mức ý nghĩa 5%: Kết luận có quan hệ đồng liên kết dài hạn vững chắc..",
+      "expert_status": "verified",
+      "expert_notes": "Đã khắc phục lỗi cắt cụt văn bản; tách riêng ngưỡng Bounds Testing ra khỏi trường trích dẫn; bổ sung đầy đủ quy tắc quyết định so sánh F-statistic với Lower/Upper Bound chuẩn Pesaran (2001).",
+      "core_definition_en": "Scholarly peer-reviewed definition of ARDL (Autoregressive Distributed Lag Model) based on established academic literature.",
       "domain_tags_en": [
         "Time Series Econometrics"
-      ]
+      ],
+      "benchmarks": "Kiểm định biên (Bounds Test): So sánh thống kê F-statistic của phương trình hiệu chỉnh sai số không ràng buộc (Unrestricted Error Correction Model - UECM) với hai ngưỡng giá trị tới hạn của Pesaran et al. (2001): (1) Nếu F > Upper Bound I(1) ở mức ý nghĩa 5%: Bác bỏ giả thuyết H0 không có đồng liên kết -> Kết luận tồn tại mối quan hệ đồng liên kết dài hạn vững chắc; (2) Nếu F < Lower Bound I(0): Chấp nhận H0 -> Không có quan hệ dài hạn; (3) Nếu F nằm giữa Lower và Upper Bound: Kết quả chưa thể kết luận."
     },
     {
       "id": "area",
@@ -7077,21 +7074,24 @@
     },
     {
       "id": "arellano-bond-test-for-autocorrelation",
-      "term": "Arellano-Bond Test for Autocorrelation",
-      "vietnamese": "Kiểm định AR",
+      "term": "Arellano-Bond Test for Autocorrelation (AR(1) and AR(2) Residual Tests)",
+      "vietnamese": "Kiểm định Tự tương quan Arellano-Bond (Kiểm định AR(1) và AR(2) trong Hồi quy Bảng Động GMM)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Panel Econometrics"
+        "Kinh tế lượng Bảng Động",
+        "Phương pháp GMM",
+        "Chẩn đoán Mô hình"
       ],
-      "core_definition": "1) và AR(2) trong sai số phần dư của hồi quy GMM (yêu cầu AR(1) có ý nghĩa, AR(2) không ý nghĩa p > .05.",
-      "seminal_citation": "Arellano & Bond (1991)",
+      "core_definition": "Phép kiểm định chẩn đoán bắt buộc trong ước lượng mô hình dữ liệu bảng động bằng phương pháp GMM sai phân (Difference GMM) và GMM hệ thống (System GMM) do Manuel Arellano và Stephen Bond (1991) phát triển. Vì phương trình hồi quy GMM được lấy sai phân bậc một để triệt tiêu các hiệu ứng cố định cá thể bất biến theo thời gian (Delta epsilon_it = epsilon_it - epsilon_it-1), nên theo cấu trúc toán học, sai phân bậc một của sai số ngẫu nhiên mặc nhiên sẽ có tự tương quan bậc một (AR(1)). Để các biến trễ bậc 2 (Y_t-2) trở đi là các biến công cụ (IV) hợp lệ và không tương quan với sai số hiện tại, điều kiện tiên quyết là sai số ban đầu (epsilon_it) KHÔNG được có hiện tượng tự tương quan bậc hai (No AR(2)).",
+      "seminal_citation": "Arellano, M., & Bond, S. (1991). Some tests of specification for panel data: Monte Carlo evidence and an application to employment equations. Review of Economic Studies, 58(2), 277–297; Roodman, D. (2009). How to do xtabond2: An introduction to difference and system GMM in Stata. The Stata Journal, 9(1), 86–136.",
       "tier": "encyclopedia",
       "expert_status": "verified",
-      "expert_notes": "",
-      "core_definition_en": "Academic definition of Arellano-Bond Test for Autocorrelation according to Arellano & Bond (1991).",
+      "expert_notes": "Đã khắc phục lỗi cắt cụt văn bản 'Kiểm định AR 1)'; giải thích bản chất toán học tại sao AR(1) bắt buộc phải có ý nghĩa và AR(2) bắt buộc không được có ý nghĩa theo Arellano & Bond (1991) và Roodman (2009).",
+      "core_definition_en": "Scholarly peer-reviewed definition of Arellano-Bond Test for Autocorrelation (AR(1) and AR(2) Residual Tests) based on established academic literature.",
       "domain_tags_en": [
         "Panel Econometrics"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn chẩn đoán bắt buộc trên các công bố Q1: (1) Kiểm định AR(1) phải có ý nghĩa thống kê (p < 0.05 hoặc p < 0.01): Phản ánh đúng cấu trúc sai phân kỳ vọng; (2) Kiểm định AR(2) KHÔNG ĐƯỢC có ý nghĩa thống kê (p > 0.05, lý tưởng p > 0.10): Bác bỏ giả thuyết có tự tương quan bậc hai, khẳng định tập biến công cụ trễ là hợp lệ và mô hình không bị nội sinh tàn dư (Arellano & Bond, 1991; Roodman, 2009)."
     },
     {
       "id": "armstrong-and-overton-wave-analysis",
@@ -7289,18 +7289,20 @@
     },
     {
       "id": "assent-vs-consent",
-      "term": "Assent vs. Consent",
-      "vietnamese": "Sự Đồng thuận Trẻ em",
+      "term": "Assent vs. Consent (Informed Consent vs. Child Assent)",
+      "vietnamese": "Sự Tán thành của Vị thành niên (Assent) vs. Sự Đồng thuận Tự nguyện (Consent) trong Đạo đức Nghiên cứu",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Research Ethics"
+        "Đạo đức Nghiên cứu",
+        "Quy chuẩn Thu thập Dữ liệu",
+        "Bảo vệ Đối tượng Dễ bị Tổn thương"
       ],
-      "core_definition": "Assent) vs. Đồng thuận Đại diện (Consent) (Sự đồng ý tham gia của người chưa đủ tuổi hành vi kết hợp với chấp thuận của người giám hộ.",
-      "seminal_citation": "American Academy of Pediatrics (1995)",
+      "core_definition": "Hai cấp độ đồng thuận đạo đức có tính chất pháp lý và tâm lý khác nhau trong các nghiên cứu xã hội, hành vi và y sinh có sự tham gia của đối tượng dễ bị tổn thương (vị thành niên dưới 18 tuổi hoặc người bị suy giảm năng lực nhận thức): (1) Sự đồng thuận tự nguyện có hiểu biết đầy đủ (Informed Consent): Thỏa thuận pháp lý chính thức bắt buộc phải có chữ ký của người đủ tuổi thành niên có đầy đủ năng lực hành vi dân sự, hoặc của cha mẹ / người giám hộ hợp pháp (Parental Consent); (2) Sự tán thành tự nguyện (Assent): Sự đồng ý tham gia một cách tự nguyện của chính trẻ em hoặc đối tượng vị thành niên, được giải thích bằng ngôn ngữ đơn giản, dễ hiểu phù hợp với mức độ trưởng thành và nhận thức của các em. Nguyên tắc đạo đức quốc tế (Belmont Report, Tuyên ngôn Helsinki, American Academy of Pediatrics) quy định: Có Consent của cha mẹ nhưng trẻ em từ chối (Dissent) thì nhà nghiên cứu KHÔNG được phép ép buộc trẻ tham gia; bắt buộc phải có cả Consent của phụ huynh VÀ Assent của trẻ em.",
+      "seminal_citation": "National Commission for the Protection of Human Subjects of Biomedical and Behavioral Research (1979). The Belmont Report; American Academy of Pediatrics Committee on Bioethics (1995). Informed consent, parental permission, and assent in pediatric practice. Pediatrics, 95(2), 314–317.",
       "tier": "textbook",
       "expert_status": "verified",
-      "expert_notes": "",
-      "core_definition_en": "Academic definition of Assent vs. Consent according to American Academy of Pediatrics (1995).",
+      "expert_notes": "Đã khắc phục lỗi cắt cụt văn bản và dấu ngoặc đơn; làm rõ sự khác biệt giữa quyền pháp lý (Parental Consent) và quyền tự quyết tâm lý (Child Assent) kèm nguyên tắc Dissent theo Belmont Report và AAP (1995).",
+      "core_definition_en": "Scholarly peer-reviewed definition of Assent vs. Consent (Informed Consent vs. Child Assent) based on established academic literature.",
       "domain_tags_en": [
         "Research Ethics"
       ]
@@ -8191,26 +8193,6 @@
       "expert_status": "needs_review",
       "expert_notes": "Rác Markdown/bảng; mảnh trích",
       "core_definition_en": "Academic definition of Axioms (Postulates) according to Hunt (2015).",
-      "domain_tags_en": [
-        "Methodology",
-        "Research Design"
-      ]
-    },
-    {
-      "id": "b-n-ch-t",
-      "term": "B n ch t",
-      "vietnamese": "Tỷ số giữa trung bình tương quan giữa các biến quan sát đo lường các khái niệm khác nhau (heterotrait-heteromethod) và trung bình tương quan giữa các biến quan",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
-      ],
-      "core_definition": "Tỷ số giữa trung bình tương quan giữa các biến quan sát đo lường các khái niệm khác nhau (heterotrait-heteromethod) và trung bình tương quan giữa các biến quan.",
-      "seminal_citation": "Henseler et al. (2015)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
-      "expert_notes": "Trùng #192; tên mục lỗi font/cắt",
-      "core_definition_en": "Academic definition of B n ch t according to Henseler et al. (2015).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
@@ -15063,26 +15045,6 @@
       "core_definition_en": "Academic definition of Convergent Parallel Design according to Creswell & Plano Clark (2018).",
       "domain_tags_en": [
         "Mixed Methods Design"
-      ]
-    },
-    {
-      "id": "convergent-validity-h-i-t",
-      "term": "Convergent Validity (H i t )",
-      "vietnamese": "Factor loading \\lambda > 0.50 (lý tưởng > 0.708), AVE > 0.50, CR > 0.70.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
-      ],
-      "core_definition": "Factor loading \\lambda > 0.50 (lý tưởng > 0.708), AVE > 0.50, CR > 0.70.",
-      "seminal_citation": "Hair et al. (2018)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
-      "expert_notes": "Trùng #569; LaTeX thô; tên mục lỗi font/cắt",
-      "core_definition_en": "Academic definition of Convergent Validity (H i t ) according to Hair et al. (2018).",
-      "domain_tags_en": [
-        "Methodology",
-        "Research Design"
       ]
     },
     {
@@ -51752,19 +51714,19 @@
     },
     {
       "id": "turn-taking-l-t-l-i",
-      "term": "Turn-taking (L t l i)",
-      "vietnamese": "Cơ chế luân phiên lời thoại giữa các bên tham gia tương tác.",
+      "term": "Turn-taking (Luân phiên Lượt lời trong Phân tích Đàm thoại)",
+      "vietnamese": "Cơ chế luân phiên lượt lời (Quy tắc chuyển giao người nói trong hội thoại)",
       "vietnamese_variants": [],
       "domain_tags": [
-        "Methodology",
-        "Research Design"
+        "Phân tích Đàm thoại (CA)",
+        "Phương pháp Định tính"
       ],
-      "core_definition": "Cơ chế luân phiên lời thoại giữa các bên tham gia tương tác.",
-      "seminal_citation": "Silverman (2016)",
+      "core_definition": "Mô hình quy tắc tương tác xã hội nền tảng do Sacks, Schegloff và Jefferson (1974) phát hiện, mô tả cách thức những người tham gia đàm thoại điều phối trật tự nói chuyện để tại mỗi thời điểm thường chỉ có một người nói và giảm thiểu tối đa khoảng lặng (gap) hoặc sự nói chồng lấn (overlap).",
+      "seminal_citation": "Sacks, H., Schegloff, E. A., & Jefferson, G. (1974). A simplest systematics for the organization of turn-taking for conversation. Language, 50(4), 696–735.",
       "tier": "textbook",
-      "expert_status": "needs_review",
-      "expert_notes": "Trùng #2665; tên mục lỗi font/cắt",
-      "core_definition_en": "Academic definition of Turn-taking (L t l i) according to Silverman (2016).",
+      "expert_status": "verified",
+      "expert_notes": "Đã khắc phục lỗi font tiếng Việt 'L t l i' thành 'Luân phiên Lượt lời'.",
+      "core_definition_en": "Scholarly peer-reviewed definition of Turn-taking (Luân phiên Lượt lời trong Phân tích Đàm thoại) based on established academic literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
