@@ -11,9 +11,21 @@ import {
   setDoc, 
   collection, 
   addDoc, 
+  getDocs,
+  query,
+  orderBy,
+  updateDoc,
   serverTimestamp 
 } from "firebase/firestore";
 import { TermRevisionInput, NewTermProposalInput } from "./types";
+
+export interface TermRevisionItem extends TermRevisionInput {
+  id: string;
+}
+
+export interface NewTermProposalItem extends NewTermProposalInput {
+  id: string;
+}
 
 const LOCAL_STORAGE_BOOKMARKS_KEY = "rv_user_bookmarks";
 
@@ -277,4 +289,144 @@ export async function submitNewTermProposal(proposal: NewTermProposalInput): Pro
     recordSubmissionTimestamp();
   }
   return { success: true };
+}
+
+/**
+ * Tải danh sách đề xuất chỉnh sửa mục từ (Cho trang Kiểm duyệt)
+ */
+export async function fetchPendingRevisions(): Promise<TermRevisionItem[]> {
+  if (isFirebaseConfigured && db) {
+    try {
+      const q = query(collection(db, "pending_revisions"), orderBy("createdAt", "desc"));
+      const snapshot = await getDocs(q);
+      const items: TermRevisionItem[] = [];
+      snapshot.forEach((doc) => {
+        const data = doc.data();
+        items.push({
+          id: doc.id,
+          ...data,
+          createdAt: data.createdAt?.toDate ? data.createdAt.toDate().toISOString() : data.createdAt || new Date().toISOString()
+        } as TermRevisionItem);
+      });
+      return items;
+    } catch (err) {
+      console.warn("[Moderation] Firestore fetch revisions error:", err);
+    }
+  }
+
+  // Fallback: đọc từ localStorage
+  if (typeof window !== "undefined") {
+    const local = JSON.parse(localStorage.getItem("rv_local_revisions") || "[]");
+    return local.map((item: any, idx: number) => ({
+      id: `local-rev-${idx}`,
+      ...item
+    }));
+  }
+  return [];
+}
+
+/**
+ * Tải danh sách đề xuất thuật ngữ mới (Cho trang Kiểm duyệt)
+ */
+export async function fetchPendingTerms(): Promise<NewTermProposalItem[]> {
+  if (isFirebaseConfigured && db) {
+    try {
+      const q = query(collection(db, "pending_terms"), orderBy("createdAt", "desc"));
+      const snapshot = await getDocs(q);
+      const items: NewTermProposalItem[] = [];
+      snapshot.forEach((doc) => {
+        const data = doc.data();
+        items.push({
+          id: doc.id,
+          ...data,
+          createdAt: data.createdAt?.toDate ? data.createdAt.toDate().toISOString() : data.createdAt || new Date().toISOString()
+        } as NewTermProposalItem);
+      });
+      return items;
+    } catch (err) {
+      console.warn("[Moderation] Firestore fetch new terms error:", err);
+    }
+  }
+
+  // Fallback: đọc từ localStorage
+  if (typeof window !== "undefined") {
+    const local = JSON.parse(localStorage.getItem("rv_local_new_terms") || "[]");
+    return local.map((item: any, idx: number) => ({
+      id: `local-term-${idx}`,
+      ...item
+    }));
+  }
+  return [];
+}
+
+/**
+ * Phê duyệt hoặc Từ chối bản sửa đổi mục từ
+ */
+export async function reviewTermRevision(
+  revisionId: string, 
+  status: "approved" | "rejected", 
+  reviewerNote?: string
+): Promise<boolean> {
+  if (isFirebaseConfigured && db && !revisionId.startsWith("local-")) {
+    try {
+      const docRef = doc(db, "pending_revisions", revisionId);
+      await updateDoc(docRef, {
+        status,
+        reviewerNote: reviewerNote || "",
+        reviewedAt: serverTimestamp()
+      });
+      return true;
+    } catch (err) {
+      console.error("[Moderation] Update revision status error:", err);
+    }
+  }
+
+  // Fallback update localStorage
+  if (typeof window !== "undefined") {
+    const localRevs = JSON.parse(localStorage.getItem("rv_local_revisions") || "[]");
+    const idx = parseInt(revisionId.replace("local-rev-", ""), 10);
+    if (!isNaN(idx) && localRevs[idx]) {
+      localRevs[idx].status = status;
+      localRevs[idx].reviewerNote = reviewerNote || "";
+      localRevs[idx].reviewedAt = new Date().toISOString();
+      localStorage.setItem("rv_local_revisions", JSON.stringify(localRevs));
+    }
+  }
+  return true;
+}
+
+/**
+ * Phê duyệt hoặc Từ chối bản đề xuất thuật ngữ mới
+ */
+export async function reviewNewTermProposal(
+  proposalId: string, 
+  status: "approved" | "rejected", 
+  reviewerNote?: string
+): Promise<boolean> {
+  if (isFirebaseConfigured && db && !proposalId.startsWith("local-")) {
+    try {
+      const docRef = doc(db, "pending_terms", proposalId);
+      await updateDoc(docRef, {
+        status,
+        reviewerNote: reviewerNote || "",
+        reviewedAt: serverTimestamp()
+      });
+      return true;
+    } catch (err) {
+      console.error("[Moderation] Update proposal status error:", err);
+    }
+  }
+
+  // Fallback update localStorage
+  if (typeof window !== "undefined") {
+    const localTerms = JSON.parse(localStorage.getItem("rv_local_new_terms") || "[]");
+    const idx = parseInt(proposalId.replace("local-term-", ""), 10);
+    if (!isNaN(idx) && localTerms[idx]) {
+      localTerms[idx].status = status;
+      localTerms[idx].reviewerNote = reviewerNote || "";
+      localTerms[idx].reviewedAt = new Date().toISOString();
+      localStorage.setItem("rv_local_new_terms", JSON.stringify(localTerms));
+    }
+  }
+  return true;
 }

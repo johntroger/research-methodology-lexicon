@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useMemo, useRef } from "react";
+import Link from "next/link";
 import {
   Search,
   BookOpen,
@@ -36,7 +37,8 @@ import {
   Globe,
   GitPullRequest,
   PlusCircle,
-  Edit3
+  Edit3,
+  ShieldCheck
 } from "lucide-react";
 import { MethodologyTerm, AcademicAcronym, SearchItem } from "@/lib/types";
 import { getSearchEngine, SearchOutputItem } from "@/lib/search-engine";
@@ -545,6 +547,15 @@ export default function DictionaryApp({
             >
               <Printer size={16} />
             </button>
+
+            {/* Bảng điều khiển Kiểm duyệt Học thuật (Wiki Moderation Phase 2) */}
+            <Link
+              href="/moderation"
+              className="p-1.5 sm:p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-blue-950/40 hover:text-blue-600 dark:hover:text-blue-400 transition hidden sm:inline-flex"
+              title="Bảng điều khiển Kiểm duyệt Học thuật (Editorial Moderation Dashboard)"
+            >
+              <ShieldCheck size={16} className="text-blue-600 dark:text-blue-400" />
+            </Link>
 
             {/* Google Authentication (Login / Profile) */}
             <div className="border-l border-slate-200 dark:border-slate-800 pl-1 sm:pl-1.5 ml-0.5">
