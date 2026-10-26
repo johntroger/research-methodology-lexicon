@@ -13,6 +13,7 @@ import {
   addDoc, 
   serverTimestamp 
 } from "firebase/firestore";
+import { TermRevisionInput, NewTermProposalInput } from "./types";
 
 const LOCAL_STORAGE_BOOKMARKS_KEY = "rv_user_bookmarks";
 
@@ -161,4 +162,119 @@ export async function submitUserFeedback(feedback: FeedbackInput): Promise<boole
     localStorage.setItem("rv_local_feedbacks", JSON.stringify(localFeedbacks));
   }
   return true;
+}
+
+/**
+ * Kiểm tra giới hạn tần suất gửi đóng góp (Tối đa 3 lượt / 24h trên client)
+ */
+export function checkSubmissionRateLimit(): { allowed: boolean; remaining: number } {
+  if (typeof window === "undefined") return { allowed: true, remaining: 3 };
+  try {
+    const now = Date.now();
+    const oneDayMs = 24 * 60 * 60 * 1000;
+    const history: number[] = JSON.parse(localStorage.getItem("rv_submission_history") || "[]");
+    const validHistory = history.filter(ts => now - ts < oneDayMs);
+    
+    if (validHistory.length >= 3) {
+      return { allowed: false, remaining: 0 };
+    }
+    return { allowed: true, remaining: 3 - validHistory.length };
+  } catch {
+    return { allowed: true, remaining: 3 };
+  }
+}
+
+/**
+ * Ghi nhận một lượt gửi thành công vào rate limit
+ */
+function recordSubmissionTimestamp(): void {
+  if (typeof window === "undefined") return;
+  try {
+    const now = Date.now();
+    const oneDayMs = 24 * 60 * 60 * 1000;
+    const history: number[] = JSON.parse(localStorage.getItem("rv_submission_history") || "[]");
+    const validHistory = history.filter(ts => now - ts < oneDayMs);
+    validHistory.push(now);
+    localStorage.setItem("rv_submission_history", JSON.stringify(validHistory));
+  } catch (e) {
+    console.warn("rate limit record error", e);
+  }
+}
+
+/**
+ * Gửi đề xuất chỉnh sửa mục từ (Wiki Revision)
+ */
+export async function submitTermRevision(revision: TermRevisionInput): Promise<{ success: boolean; error?: string }> {
+  // 1. Kiểm tra rate limit
+  const rateLimit = checkSubmissionRateLimit();
+  if (!rateLimit.allowed) {
+    return { 
+      success: false, 
+      error: "Bạn đã gửi đủ 3 đóng góp trong 24 giờ. Vui lòng quay lại vào ngày mai để đảm bảo chất lượng học thuật!" 
+    };
+  }
+
+  // 2. Gửi vào Firestore
+  if (isFirebaseConfigured && db) {
+    try {
+      const revisionsCol = collection(db, "pending_revisions");
+      await addDoc(revisionsCol, {
+        ...revision,
+        createdAt: serverTimestamp(),
+        status: "pending"
+      });
+      recordSubmissionTimestamp();
+      return { success: true };
+    } catch (err: any) {
+      console.error("[Wiki] Firestore revision submit error:", err);
+    }
+  }
+
+  // Fallback: ghi vào localStorage
+  if (typeof window !== "undefined") {
+    const localRevs = JSON.parse(localStorage.getItem("rv_local_revisions") || "[]");
+    localRevs.push({ ...revision, createdAt: new Date().toISOString(), status: "pending" });
+    localStorage.setItem("rv_local_revisions", JSON.stringify(localRevs));
+    recordSubmissionTimestamp();
+  }
+  return { success: true };
+}
+
+/**
+ * Gửi đề xuất tạo thuật ngữ mới
+ */
+export async function submitNewTermProposal(proposal: NewTermProposalInput): Promise<{ success: boolean; error?: string }> {
+  // 1. Kiểm tra rate limit
+  const rateLimit = checkSubmissionRateLimit();
+  if (!rateLimit.allowed) {
+    return { 
+      success: false, 
+      error: "Bạn đã gửi đủ 3 đóng góp trong 24 giờ. Vui lòng quay lại vào ngày mai!" 
+    };
+  }
+
+  // 2. Gửi vào Firestore
+  if (isFirebaseConfigured && db) {
+    try {
+      const proposalsCol = collection(db, "pending_terms");
+      await addDoc(proposalsCol, {
+        ...proposal,
+        createdAt: serverTimestamp(),
+        status: "pending"
+      });
+      recordSubmissionTimestamp();
+      return { success: true };
+    } catch (err: any) {
+      console.error("[Wiki] Firestore new term submit error:", err);
+    }
+  }
+
+  // Fallback: ghi vào localStorage
+  if (typeof window !== "undefined") {
+    const localProposals = JSON.parse(localStorage.getItem("rv_local_new_terms") || "[]");
+    localProposals.push({ ...proposal, createdAt: new Date().toISOString(), status: "pending" });
+    localStorage.setItem("rv_local_new_terms", JSON.stringify(localProposals));
+    recordSubmissionTimestamp();
+  }
+  return { success: true };
 }

@@ -20,5 +20,17 @@ service cloud.firestore {
     match /users/{userId}/{document=**} {
       allow read, write: if true;
     }
+
+    // 4. Cho phép người dùng gửi bản đề xuất chỉnh sửa mục từ (Wiki Revision)
+    match /pending_revisions/{document=**} {
+      allow create: if true;
+      allow read, update, delete: if true;
+    }
+
+    // 5. Cho phép người dùng gửi đề xuất thuật ngữ mới
+    match /pending_terms/{document=**} {
+      allow create: if true;
+      allow read, update, delete: if true;
+    }
   }
 }

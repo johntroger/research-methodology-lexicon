@@ -33,13 +33,18 @@ import {
   LogOut,
   MessageSquarePlus,
   User as UserIcon,
-  Globe
+  Globe,
+  GitPullRequest,
+  PlusCircle,
+  Edit3
 } from "lucide-react";
 import { MethodologyTerm, AcademicAcronym, SearchItem } from "@/lib/types";
 import { getSearchEngine, SearchOutputItem } from "@/lib/search-engine";
 import { speakAcademicTerm } from "@/lib/speech-helper";
 import CitationModal from "./CitationModal";
 import { FeedbackModal } from "./FeedbackModal";
+import EditTermModal from "./EditTermModal";
+import NewTermModal from "./NewTermModal";
 import {
   UI_I18N,
   getTermDefinition,
@@ -84,6 +89,16 @@ export default function DictionaryApp({
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
   const [isCitationModalOpen, setIsCitationModalOpen] = useState(false);
   const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
+
+  // Wiki Community Contribution State (Phase 1)
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+  const [editSection, setEditSection] = useState<"all" | "definition" | "benchmarks" | "pitfalls" | "debates" | "citations">("all");
+  const [isNewTermModalOpen, setIsNewTermModalOpen] = useState(false);
+
+  const handleOpenSectionEdit = (section: "all" | "definition" | "benchmarks" | "pitfalls" | "debates" | "citations") => {
+    setEditSection(section);
+    setIsEditModalOpen(true);
+  };
   
   // Phiên bản ngôn ngữ: 'vi' (Anh - Việt) hoặc 'en' (Anh - Anh thuần túy)
   const [languageMode, setLanguageMode] = useState<"vi" | "en">("vi");
@@ -408,6 +423,10 @@ export default function DictionaryApp({
           setIsCitationModalOpen(false);
         } else if (isFeedbackModalOpen) {
           setIsFeedbackModalOpen(false);
+        } else if (isEditModalOpen) {
+          setIsEditModalOpen(false);
+        } else if (isNewTermModalOpen) {
+          setIsNewTermModalOpen(false);
         } else if (isZenMode) {
           setIsZenMode(false);
         } else if (searchQuery) {
@@ -418,7 +437,7 @@ export default function DictionaryApp({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isZenMode, searchQuery, isCitationModalOpen, isFeedbackModalOpen]);
+  }, [isZenMode, searchQuery, isCitationModalOpen, isFeedbackModalOpen, isEditModalOpen, isNewTermModalOpen]);
 
   return (
     <div
@@ -687,6 +706,16 @@ export default function DictionaryApp({
                 {searchResults.length} {t.terms_count}
               </span>
             </div>
+
+            {/* Nút Đề xuất thuật ngữ mới (Wiki Contribution Phase 1) */}
+            <button
+              onClick={() => setIsNewTermModalOpen(true)}
+              className="w-full py-1.5 px-2.5 text-xs font-semibold text-emerald-700 dark:text-emerald-300 bg-emerald-50/80 dark:bg-emerald-950/40 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 border border-emerald-200 dark:border-emerald-800 rounded-lg transition flex items-center justify-center gap-1.5 shadow-xs"
+              title={t.tooltip_new_term}
+            >
+              <PlusCircle size={14} className="text-emerald-600 dark:text-emerald-400" />
+              <span>{t.btn_new_term}</span>
+            </button>
           </div>
 
           {/* Dải nhảy nhanh A-Z */}
@@ -898,6 +927,16 @@ export default function DictionaryApp({
                         <span>{t.cite_button}</span>
                       </button>
 
+                      {/* Nút Đề xuất Chỉnh sửa Mục từ (Wiki Revision) */}
+                      <button
+                        onClick={() => handleOpenSectionEdit("all")}
+                        className="px-2.5 py-1.5 text-xs font-semibold bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700 rounded-md transition flex items-center gap-1.5 shadow-xs"
+                        title={t.tooltip_edit_term}
+                      >
+                        <GitPullRequest size={14} className="text-blue-600 dark:text-blue-400" />
+                        <span className="hidden sm:inline">{t.btn_edit_term}</span>
+                      </button>
+
                       <button
                         onClick={() => setIsFeedbackModalOpen(true)}
                         className="p-1.5 sm:px-2 sm:py-1.5 text-xs font-medium border border-slate-200 dark:border-slate-700 rounded-md hover:bg-emerald-50 dark:hover:bg-emerald-950/30 hover:border-emerald-300 text-slate-500 hover:text-emerald-600 transition"
@@ -941,13 +980,22 @@ export default function DictionaryApp({
                     <span className="flex items-center gap-1.5">
                       <BookOpen size={14} /> {t.sec_definition}
                     </span>
-                    <button
-                      onClick={() => handleCopy(getTermDefinition(activeTerm, languageMode), "def")}
-                      className="no-print text-slate-400 hover:text-blue-600 transition"
-                      title={t.copy_tooltip}
-                    >
-                      {copiedSection === "def" ? <Check size={13} className="text-green-600" /> : <Copy size={13} />}
-                    </button>
+                    <div className="flex items-center gap-1.5 no-print">
+                      <button
+                        onClick={() => handleOpenSectionEdit("definition")}
+                        className="text-slate-400 hover:text-blue-600 transition p-0.5 rounded"
+                        title={t.btn_edit_section}
+                      >
+                        <Edit3 size={13} />
+                      </button>
+                      <button
+                        onClick={() => handleCopy(getTermDefinition(activeTerm, languageMode), "def")}
+                        className="text-slate-400 hover:text-blue-600 transition p-0.5 rounded"
+                        title={t.copy_tooltip}
+                      >
+                        {copiedSection === "def" ? <Check size={13} className="text-green-600" /> : <Copy size={13} />}
+                      </button>
+                    </div>
                   </div>
                   <p className="text-slate-800 dark:text-slate-200 leading-relaxed font-serif text-base sm:text-lg">
                     {getTermDefinition(activeTerm, languageMode)}
@@ -961,17 +1009,26 @@ export default function DictionaryApp({
                       <span className="flex items-center gap-1.5">
                         <AlertTriangle size={14} /> {t.sec_pitfalls}
                       </span>
-                      <button
-                        onClick={() => handleCopy(getTermPitfalls(activeTerm, languageMode) || "", "pitfalls")}
-                        className="no-print text-slate-400 hover:text-amber-600 transition"
-                        title={t.copy_tooltip}
-                      >
-                        {copiedSection === "pitfalls" ? (
-                          <Check size={13} className="text-green-600" />
-                        ) : (
-                          <Copy size={13} />
-                        )}
-                      </button>
+                      <div className="flex items-center gap-1.5 no-print">
+                        <button
+                          onClick={() => handleOpenSectionEdit("pitfalls")}
+                          className="text-slate-400 hover:text-amber-600 transition p-0.5 rounded"
+                          title={t.btn_edit_section}
+                        >
+                          <Edit3 size={13} />
+                        </button>
+                        <button
+                          onClick={() => handleCopy(getTermPitfalls(activeTerm, languageMode) || "", "pitfalls")}
+                          className="text-slate-400 hover:text-amber-600 transition p-0.5 rounded"
+                          title={t.copy_tooltip}
+                        >
+                          {copiedSection === "pitfalls" ? (
+                            <Check size={13} className="text-green-600" />
+                          ) : (
+                            <Copy size={13} />
+                          )}
+                        </button>
+                      </div>
                     </div>
                     <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
                       {getTermPitfalls(activeTerm, languageMode)}
@@ -988,17 +1045,26 @@ export default function DictionaryApp({
                           <span className="flex items-center gap-1.5">
                             <Sparkles size={14} /> {t.sec_benchmarks}
                           </span>
-                          <button
-                            onClick={() => handleCopy(getTermBenchmarks(activeTerm, languageMode) || "", "benchmarks")}
-                            className="no-print text-slate-400 hover:text-emerald-600 transition"
-                            title={t.copy_tooltip}
-                          >
-                            {copiedSection === "benchmarks" ? (
-                              <Check size={13} className="text-green-600" />
-                            ) : (
-                              <Copy size={13} />
-                            )}
-                          </button>
+                          <div className="flex items-center gap-1.5 no-print">
+                            <button
+                              onClick={() => handleOpenSectionEdit("benchmarks")}
+                              className="text-slate-400 hover:text-emerald-600 transition p-0.5 rounded"
+                              title={t.btn_edit_section}
+                            >
+                              <Edit3 size={13} />
+                            </button>
+                            <button
+                              onClick={() => handleCopy(getTermBenchmarks(activeTerm, languageMode) || "", "benchmarks")}
+                              className="text-slate-400 hover:text-emerald-600 transition p-0.5 rounded"
+                              title={t.copy_tooltip}
+                            >
+                              {copiedSection === "benchmarks" ? (
+                                <Check size={13} className="text-green-600" />
+                              ) : (
+                                <Copy size={13} />
+                              )}
+                            </button>
+                          </div>
                         </div>
                         <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm sm:text-base font-mono">
                           {getTermBenchmarks(activeTerm, languageMode)}
@@ -1071,22 +1137,31 @@ export default function DictionaryApp({
                     <span className="flex items-center gap-1.5">
                       <GraduationCap size={15} /> {t.sec_literature}
                     </span>
-                    <button
-                      onClick={() =>
-                        handleCopy(
-                          `${activeTerm.apa_reference || activeTerm.seminal_citation}`,
-                          "footer_ref"
-                        )
-                      }
-                      className="no-print text-slate-400 hover:text-purple-600 transition"
-                      title={t.copy_tooltip}
-                    >
-                      {copiedSection === "footer_ref" ? (
-                        <Check size={13} className="text-green-600" />
-                      ) : (
-                        <Copy size={13} />
-                      )}
-                    </button>
+                    <div className="flex items-center gap-1.5 no-print">
+                      <button
+                        onClick={() => handleOpenSectionEdit("citations")}
+                        className="text-slate-400 hover:text-purple-600 transition p-0.5 rounded"
+                        title={t.btn_edit_section}
+                      >
+                        <Edit3 size={13} />
+                      </button>
+                      <button
+                        onClick={() =>
+                          handleCopy(
+                            `${activeTerm.apa_reference || activeTerm.seminal_citation}`,
+                            "footer_ref"
+                          )
+                        }
+                        className="text-slate-400 hover:text-purple-600 transition p-0.5 rounded"
+                        title={t.copy_tooltip}
+                      >
+                        {copiedSection === "footer_ref" ? (
+                          <Check size={13} className="text-green-600" />
+                        ) : (
+                          <Copy size={13} />
+                        )}
+                      </button>
+                    </div>
                   </div>
 
                   <div className="text-xs space-y-1.5 text-slate-600 dark:text-slate-400">
@@ -1234,6 +1309,28 @@ export default function DictionaryApp({
         currentTerm={activeTerm ? { id: activeTerm.id, term: activeTerm.term } : undefined}
         userEmail={currentUser?.email || undefined}
         languageMode={languageMode}
+      />
+
+      {/* MODAL ĐỀ XUẤT CHỈNH SỬA MỤC TỪ (WIKI REVISION - PHASE 1) */}
+      {activeTerm && (
+        <EditTermModal
+          term={activeTerm}
+          section={editSection}
+          isOpen={isEditModalOpen}
+          onClose={() => setIsEditModalOpen(false)}
+          languageMode={languageMode}
+          currentUser={currentUser}
+          onLoginRequired={handleGoogleLogin}
+        />
+      )}
+
+      {/* MODAL ĐỀ XUẤT THUẬT NGỮ MỚI (WIKI NEW TERM - PHASE 1) */}
+      <NewTermModal
+        isOpen={isNewTermModalOpen}
+        onClose={() => setIsNewTermModalOpen(false)}
+        languageMode={languageMode}
+        currentUser={currentUser}
+        onLoginRequired={handleGoogleLogin}
       />
     </div>
   );

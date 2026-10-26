@@ -84,7 +84,12 @@ export const UI_I18N = {
     feedback_submit: "Gửi góp ý",
     feedback_submitting: "Đang gửi...",
     feedback_success_title: "Cảm ơn đóng góp của bạn!",
-    feedback_success_desc: "Ý kiến của bạn đã được ghi nhận. Ban biên tập sẽ rà soát và cập nhật trong các phiên bản tiếp theo."
+    feedback_success_desc: "Ý kiến của bạn đã được ghi nhận. Ban biên tập sẽ rà soát và cập nhật trong các phiên bản tiếp theo.",
+    btn_edit_term: "Sửa mục từ",
+    btn_edit_section: "Sửa phần này",
+    btn_new_term: "+ Đề xuất từ mới",
+    tooltip_edit_term: "Đề xuất chỉnh sửa học thuật cho mục từ này (Cơ chế Wiki)",
+    tooltip_new_term: "Đề xuất bổ sung một thuật ngữ phương pháp mới vào từ điển",
   },
   en: {
     app_title: "Research Methodology Lexicon",
@@ -166,7 +171,12 @@ export const UI_I18N = {
     feedback_submit: "Submit Feedback",
     feedback_submitting: "Submitting...",
     feedback_success_title: "Thank you for your academic contribution!",
-    feedback_success_desc: "Your feedback has been logged. The editorial committee will review it for upcoming lexicon revisions."
+    feedback_success_desc: "Your feedback has been logged. The editorial committee will review it for upcoming lexicon revisions.",
+    btn_edit_term: "Edit Term",
+    btn_edit_section: "Edit Section",
+    btn_new_term: "+ Propose Term",
+    tooltip_edit_term: "Propose scholarly revisions for this entry (Wiki peer-review)",
+    tooltip_new_term: "Propose a new research methodology term to the lexicon",
   }
 };
 

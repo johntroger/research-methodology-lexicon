@@ -74,3 +74,67 @@ export interface SearchItem {
   snippet_en?: string;
   domain_en?: string;
 }
+
+/**
+ * Dữ liệu Đề xuất Chỉnh sửa Mục từ (Wiki-Style Revision)
+ */
+export interface TermRevisionInput {
+  termId: string;
+  termName: string;
+  section: "all" | "definition" | "benchmarks" | "pitfalls" | "debates" | "citations";
+  languageMode: "vi" | "en";
+  authorUid?: string;
+  authorName: string;
+  authorEmail?: string;
+  authorInstitution?: string;
+  editSummary: string;               // Lý do chỉnh sửa (bắt buộc)
+  supportingSources: string;          // Nguồn trích dẫn / DOI (bắt buộc)
+  originalContent: {
+    coreDefinition?: string;
+    benchmarks?: string;
+    pitfalls?: string;
+    debates?: string;
+    seminalCitation?: string;
+    apaReference?: string;
+  };
+  proposedContent: {
+    coreDefinition?: string;
+    benchmarks?: string;
+    pitfalls?: string;
+    debates?: string;
+    seminalCitation?: string;
+    apaReference?: string;
+  };
+  status?: "pending" | "approved" | "rejected";
+  createdAt?: string;
+}
+
+/**
+ * Dữ liệu Đề xuất Tạo Thuật ngữ Mới
+ */
+export interface NewTermProposalInput {
+  term: string;                      // Tên tiếng Anh (bắt buộc)
+  ipa?: string;
+  partOfSpeech?: string;
+  vietnamese: string;                // Tiếng Việt (bắt buộc)
+  vietnameseVariants?: string[];
+  domainTags: string[];
+  coreDefinition: string;            // Bắt buộc
+  coreDefinitionEn?: string;
+  benchmarks?: string;
+  benchmarksEn?: string;
+  pitfalls?: string;
+  pitfallsEn?: string;
+  paradigmDebates?: string;
+  paradigmDebatesEn?: string;
+  seminalCitation?: string;
+  apaReference?: string;
+  proposalReason: string;            // Lý do đề xuất (bắt buộc)
+  supportingSources: string;         // Nguồn tài liệu uy tín (bắt buộc)
+  authorUid?: string;
+  authorName: string;
+  authorEmail?: string;
+  authorInstitution?: string;
+  status?: "pending" | "approved" | "rejected";
+  createdAt?: string;
+}
