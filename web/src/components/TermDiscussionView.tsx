@@ -399,7 +399,7 @@ export default function TermDiscussionView({
                 type="text"
                 value={authorName}
                 onChange={(e) => setAuthorName(e.target.value)}
-                placeholder={isEn ? "Dr. John Doe" : "TS. Nguyễn Văn A"}
+                placeholder={isEn ? "M.Sc. Tran Thanh Tung" : "ThS. Trần Thanh Tùng"}
                 className="w-full px-3 py-2 text-xs rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -412,7 +412,7 @@ export default function TermDiscussionView({
                 type="text"
                 value={authorInstitution}
                 onChange={(e) => setAuthorInstitution(e.target.value)}
-                placeholder={isEn ? "University of Economics..." : "ĐH Kinh tế..."}
+                placeholder={isEn ? "Nguyen Tat Thanh University (NTTU)..." : "Trường Đại học Nguyễn Tất Thành (NTTU)..."}
                 className="w-full px-3 py-2 text-xs rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>

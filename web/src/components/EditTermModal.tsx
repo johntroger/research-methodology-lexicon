@@ -281,7 +281,7 @@ export default function EditTermModal({
                     type="text"
                     value={institution}
                     onChange={(e) => setInstitution(e.target.value)}
-                    placeholder={isEn ? "e.g. Oxford, Harvard, UEH, VNU..." : "Ví dụ: ĐH Kinh tế TP.HCM, ĐHQG Hà Nội..."}
+                    placeholder={isEn ? "e.g. NTTU, Oxford, Harvard, VNU..." : "Ví dụ: Trường Đại học Nguyễn Tất Thành, ĐHQG..."}
                     className="w-full px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-blue-500"
                   />
                 </div>

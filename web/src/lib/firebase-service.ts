@@ -774,62 +774,23 @@ export async function fetchHallOfFameScholars(): Promise<{
   totalApprovedEdits: number;
   totalParticipatingInstitutions: number;
 }> {
-  // 1. Dữ liệu học giả nền tảng (Foundation Scholars & Senior Reviewers)
+  // 1. Dữ liệu học giả minh họa: ThS. Trần Thanh Tùng (Admin & Ban Biên tập)
   const initialScholars: ScholarContributor[] = [
     {
-      id: "scholar-1",
-      name: "GS.TS. Nguyễn Văn Hùng",
-      institution: "Đại học Kinh tế Quốc dân (NEU)",
+      id: "admin-tung",
+      name: "ThS. Trần Thanh Tùng (Admin & Editor-in-Chief)",
+      institution: "Trường Đại học Nguyễn Tất Thành (NTTU)",
       badge: "senior_fellow",
-      approvedRevisionsCount: 14,
-      approvedNewTermsCount: 4,
-      totalContributions: 18,
-      recentTermsContributed: ["Confirmatory Factor Analysis", "Construct Validity", "Common Method Bias"],
-      joinedAt: "2026-01-15"
-    },
-    {
-      id: "scholar-2",
-      name: "PGS.TS. Trần Thị Mai Lan",
-      institution: "Đại học Kinh tế TP. Hồ Chí Minh (UEH)",
-      badge: "senior_fellow",
-      approvedRevisionsCount: 11,
-      approvedNewTermsCount: 3,
-      totalContributions: 14,
-      recentTermsContributed: ["Heterotrait-Monotrait Ratio (HTMT)", "Average Variance Extracted (AVE)"],
-      joinedAt: "2026-01-20"
-    },
-    {
-      id: "scholar-3",
-      name: "TS. Lê Hoàng Quân",
-      institution: "Trường Đại học Ngoại thương (FTU)",
-      badge: "contributing_scholar",
-      approvedRevisionsCount: 7,
-      approvedNewTermsCount: 2,
-      totalContributions: 9,
-      recentTermsContributed: ["Endogeneity & Instrumental Variables", "Statistical Power & G*Power"],
-      joinedAt: "2026-02-01"
-    },
-    {
-      id: "scholar-4",
-      name: "TS. Vũ Minh Thảo",
-      institution: "RMIT University Vietnam",
-      badge: "contributing_scholar",
-      approvedRevisionsCount: 5,
-      approvedNewTermsCount: 1,
-      totalContributions: 6,
-      recentTermsContributed: ["Discriminant Validity", "Structural Equation Modeling"],
-      joinedAt: "2026-02-10"
-    },
-    {
-      id: "scholar-5",
-      name: "ThS. Nghiên cứu sinh Đỗ Quốc Bảo",
-      institution: "Đại học Quốc gia Hà Nội (VNU-IS)",
-      badge: "peer_reviewer",
-      approvedRevisionsCount: 3,
-      approvedNewTermsCount: 0,
-      totalContributions: 3,
-      recentTermsContributed: ["Cronbach's Alpha", "Composite Reliability (CR)"],
-      joinedAt: "2026-02-25"
+      approvedRevisionsCount: 15,
+      approvedNewTermsCount: 10,
+      totalContributions: 25,
+      recentTermsContributed: [
+        "Confirmatory Factor Analysis (CFA)", 
+        "Structural Equation Modeling (SEM)", 
+        "Construct Validity", 
+        "Common Method Bias (CMB)"
+      ],
+      joinedAt: "2026-01-01"
     }
   ];
 

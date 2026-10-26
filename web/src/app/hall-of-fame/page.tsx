@@ -231,7 +231,7 @@ export default function HallOfFamePage() {
               <span>{t.podiumTitle}</span>
             </h3>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className={`grid gap-3 ${top3.length === 1 ? "grid-cols-1 max-w-md mx-auto" : top3.length === 2 ? "grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto" : "grid-cols-1 sm:grid-cols-3"}`}>
               {top3.map((scholar, idx) => {
                 const medalColors = [
                   "border-amber-400 bg-amber-50/50 dark:bg-amber-950/20 text-amber-700 dark:text-amber-400",
