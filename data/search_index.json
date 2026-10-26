@@ -2362,7 +2362,7 @@
     {
       "term": "Box-Cox Power Transformation",
       "slug": "box-cox-power-transformation",
-      "vietnamese": "Biến đổi Lũy thừa Box-Cox (Họ hàm toán học tham số lambda biến đổi dữ liệu dương lệch về phân phối chuẩn)",
+      "vietnamese": "Biến đổi Lũy thừa Box-Cox (Họ hàm toán học tham số λ biến đổi dữ liệu dương lệch về phân phối chuẩn)",
       "domain": "Data Transformations",
       "citation": "Box & Cox (1964)",
       "category": "encyclopedia",
@@ -2930,9 +2930,9 @@
       "slug": "cfi",
       "vietnamese": "Chỉ số phù hợp so sánh (Comparative Fit Index)",
       "domain": "Acronym NCKH",
-      "source": "CFI >= 0.95 (lý tưởng), CFI >= 0.90 (chấp nhận được / Hu & Bentler, 1999; Hair et al., 2018).",
+      "source": "CFI ≥ 0.95 (lý tưởng), CFI ≥ 0.90 (chấp nhận được / Hu & Bentler, 1999; Hair et al., 2018).",
       "tier": "acronym",
-      "citation": "CFI >= 0.95 (lý tưởng), CFI >= 0.90 (chấp nhận được / Hu & Bentler, 1999; Hair et al., 2018)."
+      "citation": "CFI ≥ 0.95 (lý tưởng), CFI ≥ 0.90 (chấp nhận được / Hu & Bentler, 1999; Hair et al., 2018)."
     },
     {
       "term": "CFI (ho c TLI)",
@@ -3037,7 +3037,7 @@
     {
       "term": "Chi-square test",
       "slug": "chi-square-test",
-      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's alpha`, `ANOVA`, `Chi-square test`, `Pear",
+      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's α`, `ANOVA`, `Chi-square test`, `Pear",
       "domain": "Methodology & Research Design",
       "citation": "Saunders et al. (2019)",
       "source": "Saunders et al. (2019)",
@@ -3576,7 +3576,7 @@
       "citation": "Cohen (1988)"
     },
     {
-      "term": "Cohen's Kappa Coefficient",
+      "term": "Cohen's κ Coefficient",
       "slug": "cohen-s-kappa-coefficient",
       "vietnamese": "Hệ số Kappa Cohen (Đo lường mức độ đồng thuận giữa hai người đánh giá phân loại sau khi đã loại trừ xác suất ngẫu nhiên)",
       "domain": "Measurement Rigour",
@@ -3860,9 +3860,9 @@
       "slug": "comparative-fit-index",
       "vietnamese": "Chỉ số phù hợp so sánh",
       "domain": "Acronym NCKH",
-      "source": "CFI >= 0.95 (lý tưởng), CFI >= 0.90 (chấp nhận được / Hu & Bentler, 1999; Hair et al., 2018).",
+      "source": "CFI ≥ 0.95 (lý tưởng), CFI ≥ 0.90 (chấp nhận được / Hu & Bentler, 1999; Hair et al., 2018).",
       "tier": "acronym",
-      "citation": "CFI >= 0.95 (lý tưởng), CFI >= 0.90 (chấp nhận được / Hu & Bentler, 1999; Hair et al., 2018)."
+      "citation": "CFI ≥ 0.95 (lý tưởng), CFI ≥ 0.90 (chấp nhận được / Hu & Bentler, 1999; Hair et al., 2018)."
     },
     {
       "term": "compatible",
@@ -4050,9 +4050,9 @@
       "slug": "composite-reliability",
       "vietnamese": "Độ tin cậy tổng hợp",
       "domain": "Acronym NCKH",
-      "source": "CR >= 0.70 (chấp nhận trong nghiên cứu khám phá), >= 0.80 (nghiên cứu khẳng định), không nên > 0.95 vì có thể trùng lặp câu hỏi (Hair et al., 2018).",
+      "source": "CR ≥ 0.70 (chấp nhận trong nghiên cứu khám phá), ≥ 0.80 (nghiên cứu khẳng định), không nên > 0.95 vì có thể trùng lặp câu hỏi (Hair et al., 2018).",
       "tier": "acronym",
-      "citation": "CR >= 0.70 (chấp nhận trong nghiên cứu khám phá), >= 0.80 (nghiên cứu khẳng định), không nên > 0.95 vì có thể trùng lặp câu hỏi (Hair et al., 2018)."
+      "citation": "CR ≥ 0.70 (chấp nhận trong nghiên cứu khám phá), ≥ 0.80 (nghiên cứu khẳng định), không nên > 0.95 vì có thể trùng lặp câu hỏi (Hair et al., 2018)."
     },
     {
       "term": "Composite reliability (CR)",
@@ -4063,7 +4063,7 @@
       "tier": "index",
       "is_variant": true,
       "canonical_parent": "reliability",
-      "relation_type": "Chỉ số tin cậy chuẩn mực trong SEM dựa trên factor loadings (chuẩn >= 0.70)",
+      "relation_type": "Chỉ số tin cậy chuẩn mực trong SEM dựa trên factor loadings (chuẩn ≥ 0.70)",
       "citation": "Henseler et al. (2015); HENSELER_2015_EXTRACTION_RESULTS.md"
     },
     {
@@ -4632,7 +4632,7 @@
     {
       "term": "Consistency Benchmark in fsQCA",
       "slug": "consistency-benchmark-in-fsqca",
-      "vietnamese": "Chuẩn Độ Nhất quán Consistency (Đo lường mức độ cấu hình thực tế luôn dẫn đến kết cục; chuẩn khuyến nghị >= 0.80)",
+      "vietnamese": "Chuẩn Độ Nhất quán Consistency (Đo lường mức độ cấu hình thực tế luôn dẫn đến kết cục; chuẩn khuyến nghị ≥ 0.80)",
       "domain": "Configurational Metrics",
       "citation": "Ragin (2006)",
       "category": "encyclopedia",
@@ -4995,9 +4995,9 @@
       "slug": "content-validity-index",
       "vietnamese": "Chỉ số giá trị nội dung",
       "domain": "Acronym NCKH",
-      "source": "I-CVI >= 0.78 (đối với hội đồng 6-10 chuyên gia), S-CVI/Ave >= 0.90 (Lynn, 1986; Polit & Beck, 2006).",
+      "source": "I-CVI ≥ 0.78 (đối với hội đồng 6-10 chuyên gia), S-CVI/Ave ≥ 0.90 (Lynn, 1986; Polit & Beck, 2006).",
       "tier": "acronym",
-      "citation": "I-CVI >= 0.78 (đối với hội đồng 6-10 chuyên gia), S-CVI/Ave >= 0.90 (Lynn, 1986; Polit & Beck, 2006)."
+      "citation": "I-CVI ≥ 0.78 (đối với hội đồng 6-10 chuyên gia), S-CVI/Ave ≥ 0.90 (Lynn, 1986; Polit & Beck, 2006)."
     },
     {
       "term": "Content Validity Index (CVI - I-CVI & S-CVI)",
@@ -5420,7 +5420,7 @@
     {
       "term": "Corrected Item-Total Correlation",
       "slug": "corrected-item-total-correlation",
-      "vietnamese": "Tương quan Biến - Tổng Hiệu chỉnh (Tương quan giữa một biến quan sát với tổng điểm các biến còn lại; chuẩn >= 0.30)",
+      "vietnamese": "Tương quan Biến - Tổng Hiệu chỉnh (Tương quan giữa một biến quan sát với tổng điểm các biến còn lại; chuẩn ≥ 0.30)",
       "domain": "Scale Reliability",
       "citation": "Nunnally & Bernstein (1994)",
       "category": "encyclopedia",
@@ -5594,9 +5594,9 @@
       "slug": "cr",
       "vietnamese": "Độ tin cậy tổng hợp (Composite Reliability)",
       "domain": "Acronym NCKH",
-      "source": "CR >= 0.70 (chấp nhận trong nghiên cứu khám phá), >= 0.80 (nghiên cứu khẳng định), không nên > 0.95 vì có thể trùng lặp câu hỏi (Hair et al., 2018).",
+      "source": "CR ≥ 0.70 (chấp nhận trong nghiên cứu khám phá), ≥ 0.80 (nghiên cứu khẳng định), không nên > 0.95 vì có thể trùng lặp câu hỏi (Hair et al., 2018).",
       "tier": "acronym",
-      "citation": "CR >= 0.70 (chấp nhận trong nghiên cứu khám phá), >= 0.80 (nghiên cứu khẳng định), không nên > 0.95 vì có thể trùng lặp câu hỏi (Hair et al., 2018)."
+      "citation": "CR ≥ 0.70 (chấp nhận trong nghiên cứu khám phá), ≥ 0.80 (nghiên cứu khẳng định), không nên > 0.95 vì có thể trùng lặp câu hỏi (Hair et al., 2018)."
     },
     {
       "term": "CR-FDH Ceiling Line in NCA",
@@ -5818,7 +5818,7 @@
     {
       "term": "Cronbach s alpha",
       "slug": "cronbach-s-alpha",
-      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's alpha`, `ANOVA`, `Chi-square test`, `Pear",
+      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's α`, `ANOVA`, `Chi-square test`, `Pear",
       "domain": "Methodology & Research Design",
       "citation": "Saunders et al. (2019)",
       "source": "Saunders et al. (2019)",
@@ -5826,7 +5826,7 @@
       "is_harvested": true
     },
     {
-      "term": "Cronbach's alpha",
+      "term": "Cronbach's α",
       "slug": "cronbach-s-alpha",
       "vietnamese": "Hệ số tin cậy Alpha (đo lường độ nhất quán nội tại của thang đo, chuẩn ≥ 0.70).",
       "domain": "Research Onion & Strategy",
@@ -5834,7 +5834,7 @@
       "tier": "index",
       "is_variant": true,
       "canonical_parent": "reliability",
-      "relation_type": "Chỉ số nhất quán nội tại truyền thống (chuẩn >= 0.70)",
+      "relation_type": "Chỉ số nhất quán nội tại truyền thống (chuẩn ≥ 0.70)",
       "citation": "Saunders et al. (2019); SAUNDERS_2019_EXTRACTION_RESULTS.md"
     },
     {
@@ -6088,9 +6088,9 @@
       "slug": "cvi",
       "vietnamese": "Chỉ số giá trị nội dung (Content Validity Index)",
       "domain": "Acronym NCKH",
-      "source": "I-CVI >= 0.78 (đối với hội đồng 6-10 chuyên gia), S-CVI/Ave >= 0.90 (Lynn, 1986; Polit & Beck, 2006).",
+      "source": "I-CVI ≥ 0.78 (đối với hội đồng 6-10 chuyên gia), S-CVI/Ave ≥ 0.90 (Lynn, 1986; Polit & Beck, 2006).",
       "tier": "acronym",
-      "citation": "I-CVI >= 0.78 (đối với hội đồng 6-10 chuyên gia), S-CVI/Ave >= 0.90 (Lynn, 1986; Polit & Beck, 2006)."
+      "citation": "I-CVI ≥ 0.78 (đối với hội đồng 6-10 chuyên gia), S-CVI/Ave ≥ 0.90 (Lynn, 1986; Polit & Beck, 2006)."
     },
     {
       "term": "CVR",
@@ -6606,7 +6606,7 @@
     {
       "term": "Delphi Consensus Criteria",
       "slug": "delphi-consensus-criteria",
-      "vietnamese": "Tiêu chí Đồng thuận Delphi (Ngưỡng định lượng xác định sự đồng thuận của chuyên gia, như tỷ lệ phần trăm >= 75% hoặc IQR <= 1)",
+      "vietnamese": "Tiêu chí Đồng thuận Delphi (Ngưỡng định lượng xác định sự đồng thuận của chuyên gia, như tỷ lệ phần trăm ≥ 75% hoặc IQR ≤ 1)",
       "domain": "Consensus Methodology",
       "citation": "Diamond et al. (2014)",
       "category": "encyclopedia",
@@ -7028,7 +7028,7 @@
       "source": "ISO 26324 (2012)"
     },
     {
-      "term": "Dijkstra-Henseler ρ_A (rho_A)",
+      "term": "Dijkstra-Henseler ρ_A (ρ_A)",
       "slug": "dijkstra-henseler-rho-a-rho-a",
       "vietnamese": "Hệ số tin cậy nhất quán cho mô hình cấu trúc.",
       "domain": "PLS-SEM & Discriminant Validity",
@@ -7037,7 +7037,7 @@
       "citation": "Henseler et al. (2015)"
     },
     {
-      "term": "Dijkstra-Henseler rho_A (rho_A)",
+      "term": "Dijkstra-Henseler ρ_A (ρ_A)",
       "slug": "dijkstra-henseler-rho-a-rho-a",
       "vietnamese": "Hệ số tin cậy nhất quán cho mô hình cấu trúc.",
       "domain": "Methodology & Research Design",
@@ -7742,9 +7742,9 @@
       "slug": "efa",
       "vietnamese": "Phân tích nhân tố khám phá (Exploratory Factor Analysis)",
       "domain": "Acronym NCKH",
-      "source": "KMO >= 0.50 (tốt nếu >= 0.80), Bartlett's test p < 0.05, Eigenvalue > 1, Tổng phương sai trích >= 50%, Factor loading >= 0.50 (Hair et al., 2018).",
+      "source": "KMO ≥ 0.50 (tốt nếu ≥ 0.80), Bartlett's test p < 0.05, Eigenvalue > 1, Tổng phương sai trích ≥ 50%, Factor loading ≥ 0.50 (Hair et al., 2018).",
       "tier": "acronym",
-      "citation": "KMO >= 0.50 (tốt nếu >= 0.80), Bartlett's test p < 0.05, Eigenvalue > 1, Tổng phương sai trích >= 50%, Factor loading >= 0.50 (Hair et al., 2018)."
+      "citation": "KMO ≥ 0.50 (tốt nếu ≥ 0.80), Bartlett's test p < 0.05, Eigenvalue > 1, Tổng phương sai trích ≥ 50%, Factor loading ≥ 0.50 (Hair et al., 2018)."
     },
     {
       "term": "Effect Coding (-1, 0, 1)",
@@ -7861,7 +7861,7 @@
     {
       "term": "Eigenvalue-Greater-Than-One Rule",
       "slug": "eigenvalue-greater-than-one-rule",
-      "vietnamese": "Quy tắc Giá trị Riêng Lớn hơn 1 (Tiêu chuẩn Kaiser giữ lại các nhân tố có eigenvalue >= 1 trong EFA)",
+      "vietnamese": "Quy tắc Giá trị Riêng Lớn hơn 1 (Tiêu chuẩn Kaiser giữ lại các nhân tố có eigenvalue ≥ 1 trong EFA)",
       "domain": "Factor Analysis",
       "citation": "Kaiser (1960)",
       "category": "encyclopedia",
@@ -8869,9 +8869,9 @@
       "slug": "exploratory-factor-analysis",
       "vietnamese": "Phân tích nhân tố khám phá",
       "domain": "Acronym NCKH",
-      "source": "KMO >= 0.50 (tốt nếu >= 0.80), Bartlett's test p < 0.05, Eigenvalue > 1, Tổng phương sai trích >= 50%, Factor loading >= 0.50 (Hair et al., 2018).",
+      "source": "KMO ≥ 0.50 (tốt nếu ≥ 0.80), Bartlett's test p < 0.05, Eigenvalue > 1, Tổng phương sai trích ≥ 50%, Factor loading ≥ 0.50 (Hair et al., 2018).",
       "tier": "acronym",
-      "citation": "KMO >= 0.50 (tốt nếu >= 0.80), Bartlett's test p < 0.05, Eigenvalue > 1, Tổng phương sai trích >= 50%, Factor loading >= 0.50 (Hair et al., 2018)."
+      "citation": "KMO ≥ 0.50 (tốt nếu ≥ 0.80), Bartlett's test p < 0.05, Eigenvalue > 1, Tổng phương sai trích ≥ 50%, Factor loading ≥ 0.50 (Hair et al., 2018)."
     },
     {
       "term": "Exploratory Sequential Design",
@@ -9119,9 +9119,9 @@
       "citation": "Hair et al. (2018); HAIR_2018_EXTRACTION_RESULTS.md"
     },
     {
-      "term": "Factorial Design (2x2, 2x3)",
-      "slug": "factorial-design-2x2-2x3",
-      "vietnamese": "Thiết kế Thực nghiệm Thừa số (Mô hình 2x2, 2x3)",
+      "term": "Factorial Design (2 × 2, 2 × 3)",
+      "slug": "factorial-design-2 × 2-2 × 3",
+      "vietnamese": "Thiết kế Thực nghiệm Thừa số (Mô hình 2 × 2, 2 × 3)",
       "domain": "Experimental Methodology",
       "source": "Kirk, R. E. (2013). Experimental design: Procedures for the behavioral sciences (4th ed.). SAGE Publications.",
       "tier": "flagship",
@@ -9130,7 +9130,7 @@
     {
       "term": "Factorial Experiment",
       "slug": "factorial-experiment",
-      "vietnamese": "Thiết kế Thực nghiệm Thừa số (Mô hình 2x2, 2x3)",
+      "vietnamese": "Thiết kế Thực nghiệm Thừa số (Mô hình 2 × 2, 2 × 3)",
       "domain": "Experimental Methodology",
       "source": "Kirk, R. E. (2013). Experimental design: Procedures for the behavioral sciences (4th ed.). SAGE Publications.",
       "tier": "flagship",
@@ -9447,7 +9447,7 @@
     {
       "term": "Fisher's Exact Test",
       "slug": "fisher-s-exact-test",
-      "vietnamese": "Kiểm định chính xác Fisher dùng cho bảng chéo 2x2 khi có ô có tần số kỳ vọng nhỏ hơn 5",
+      "vietnamese": "Kiểm định chính xác Fisher dùng cho bảng chéo 2 × 2 khi có ô có tần số kỳ vọng nhỏ hơn 5",
       "domain": "Categorical Data",
       "source": "Fisher (1922)",
       "tier": "encyclopedia",
@@ -9490,9 +9490,9 @@
       "source": "Borenstein et al. (2010)"
     },
     {
-      "term": "Fleiss' Kappa",
+      "term": "Fleiss' κ",
       "slug": "fleiss-kappa",
-      "vietnamese": "Hệ số Fleiss' Kappa đo lường độ tin cậy liên đánh giá viên cho nhiều hơn 2 người đánh giá trên thang đo định danh",
+      "vietnamese": "Hệ số Fleiss' κ đo lường độ tin cậy liên đánh giá viên cho nhiều hơn 2 người đánh giá trên thang đo định danh",
       "domain": "Inter-Rater Reliability",
       "source": "Fleiss (1971)",
       "tier": "encyclopedia",
@@ -10356,9 +10356,9 @@
       "slug": "gof",
       "vietnamese": "Độ phù hợp của mô hình (Goodness of Fit)",
       "domain": "Acronym NCKH",
-      "source": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = sqrt(AVE_tb * R²_tb).",
+      "source": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb * R²_tb).",
       "tier": "acronym",
-      "citation": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = sqrt(AVE_tb * R²_tb)."
+      "citation": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb * R²_tb)."
     },
     {
       "term": "Gold Standard Clinical Trial",
@@ -10381,7 +10381,7 @@
     {
       "term": "Goodman-Bacon Decomposition",
       "slug": "goodman-bacon-decomposition",
-      "vietnamese": "Phép phân rã Goodman-Bacon chứng minh ước lượng TWFE là trung bình có trọng số của mọi cặp so sánh 2x2 trong DID",
+      "vietnamese": "Phép phân rã Goodman-Bacon chứng minh ước lượng TWFE là trung bình có trọng số của mọi cặp so sánh 2 × 2 trong DID",
       "domain": "Causal Inference",
       "source": "Goodman-Bacon (2021)",
       "tier": "encyclopedia",
@@ -10395,9 +10395,9 @@
       "slug": "goodness-of-fit",
       "vietnamese": "Độ phù hợp của mô hình",
       "domain": "Acronym NCKH",
-      "source": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = sqrt(AVE_tb * R²_tb).",
+      "source": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb * R²_tb).",
       "tier": "acronym",
-      "citation": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = sqrt(AVE_tb * R²_tb)."
+      "citation": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb * R²_tb)."
     },
     {
       "term": "Goodness of Fit Index",
@@ -10597,7 +10597,7 @@
     {
       "term": "H-Index (Hirsch Index)",
       "slug": "h-index-hirsch-index",
-      "vietnamese": "Chỉ số H (Đo lường đồng thời năng suất và tầm ảnh hưởng trích dẫn của nhà khoa học: h bài có >= h trích dẫn)",
+      "vietnamese": "Chỉ số H (Đo lường đồng thời năng suất và tầm ảnh hưởng trích dẫn của nhà khoa học: h bài có ≥ h trích dẫn)",
       "domain": "Scientometrics",
       "citation": "Hirsch (2005)",
       "category": "encyclopedia",
@@ -10944,9 +10944,9 @@
       "slug": "heuristic",
       "vietnamese": "nguyên tắc kinh nghiệm / quy tắc phỏng đoán [noun / adjective]",
       "domain": "Academic Vocabulary (AWL)",
-      "source": "Hair's threshold of Cronbach's alpha > 0.70 serves as a useful rule-of-thumb heuristic.",
+      "source": "Hair's threshold of Cronbach's α > 0.70 serves as a useful rule-of-thumb heuristic.",
       "tier": "awl",
-      "citation": "Hair's threshold of Cronbach's alpha > 0.70 serves as a useful rule-of-thumb heuristic."
+      "citation": "Hair's threshold of Cronbach's α > 0.70 serves as a useful rule-of-thumb heuristic."
     },
     {
       "term": "Heuristic Inquiry",
@@ -12317,7 +12317,7 @@
     {
       "term": "Inter-Coder Agreement Rate Benchmark",
       "slug": "inter-coder-agreement-rate-benchmark",
-      "vietnamese": "Chuẩn Tỷ lệ Đồng thuận Giữa các Người Mã hóa (Đạt tối thiểu 80% hoặc chỉ số Cohen's Kappa >= 0.70)",
+      "vietnamese": "Chuẩn Tỷ lệ Đồng thuận Giữa các Người Mã hóa (Đạt tối thiểu 80% hoặc chỉ số Cohen's κ ≥ 0.70)",
       "domain": "Qualitative Rigour",
       "citation": "Miles & Huberman (1994)",
       "category": "encyclopedia",
@@ -12578,7 +12578,7 @@
     {
       "term": "Interquartile range",
       "slug": "interquartile-range",
-      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's alpha`, `ANOVA`, `Chi-square test`, `Pear",
+      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's α`, `ANOVA`, `Chi-square test`, `Pear",
       "domain": "Methodology & Research Design",
       "citation": "Saunders et al. (2019)",
       "source": "Saunders et al. (2019)",
@@ -13286,7 +13286,7 @@
     {
       "term": "Kaiser-Meyer-Olkin Measure (KMO)",
       "slug": "kaiser-meyer-olkin-measure-kmo",
-      "vietnamese": "Hệ số Đo lường Mức độ Phù hợp KMO (Đánh giá mức độ phù hợp của dữ liệu cho phân tích nhân tố EFA; chuẩn >= 0.50)",
+      "vietnamese": "Hệ số Đo lường Mức độ Phù hợp KMO (Đánh giá mức độ phù hợp của dữ liệu cho phân tích nhân tố EFA; chuẩn ≥ 0.50)",
       "domain": "Factor Analysis",
       "citation": "Kaiser (1974)",
       "category": "encyclopedia",
@@ -14519,27 +14519,27 @@
       "source": "McCrary (2008)"
     },
     {
-      "term": "McDonald's Coefficient Omega vs. Cronbach's Alpha",
+      "term": "McDonald's Coefficient Omega vs. Cronbach's α",
       "slug": "mcdonald-s-coefficient-omega-vs-cronbach-s-alpha",
-      "vietnamese": "Hệ số tin cậy Omega của McDonald vs. Cronbach's Alpha",
+      "vietnamese": "Hệ số tin cậy Omega của McDonald vs. Cronbach's α",
       "domain": "Research Methodology",
       "source": "Kline, R. B. (2023). Principles and practice of structural equation modeling (5th ed.). The Guilford Press.",
       "tier": "flagship",
       "citation": "Kline, R. B. (2023). Principles and practice of structural equation modeling (5th ed.). The Guilford Press."
     },
     {
-      "term": "McDonald's Omega (Omega Hierarchical & Total)",
+      "term": "McDonald's ω (Omega Hierarchical & Total)",
       "slug": "mcdonald-s-omega-omega-hierarchical-total",
-      "vietnamese": "Hệ số Độ tin cậy McDonald's Omega (Chỉ số đo độ tin cậy nội tại ưu việt hơn Cronbach's alpha khi vi phạm tính tau-equivalent)",
+      "vietnamese": "Hệ số Độ tin cậy McDonald's ω (Chỉ số đo độ tin cậy nội tại ưu việt hơn Cronbach's α khi vi phạm tính tau-equivalent)",
       "domain": "Psychometrics",
       "citation": "McDonald (1999)",
       "category": "encyclopedia",
       "source": "McDonald (1999)"
     },
     {
-      "term": "McDonald's Omega (Omega Total & Hierarchical)",
+      "term": "McDonald's ω (Omega Total & Hierarchical)",
       "slug": "mcdonald-s-omega-omega-total-hierarchical",
-      "vietnamese": "Hệ số tin cậy McDonald's Omega thay thế hoàn hảo cho Cronbach's Alpha khi vi phạm tính chất Tau-equivalence",
+      "vietnamese": "Hệ số tin cậy McDonald's ω thay thế hoàn hảo cho Cronbach's α khi vi phạm tính chất Tau-equivalence",
       "domain": "Psychometrics",
       "source": "McDonald (1999)",
       "tier": "encyclopedia",
@@ -15555,7 +15555,7 @@
     {
       "term": "Multi-Factor Design",
       "slug": "multi-factor-design",
-      "vietnamese": "Thiết kế Thực nghiệm Thừa số (Mô hình 2x2, 2x3)",
+      "vietnamese": "Thiết kế Thực nghiệm Thừa số (Mô hình 2 × 2, 2 × 3)",
       "domain": "Experimental Methodology",
       "source": "Kirk, R. E. (2013). Experimental design: Procedures for the behavioral sciences (4th ed.). SAGE Publications.",
       "tier": "flagship",
@@ -15717,7 +15717,7 @@
     {
       "term": "Multiple regression",
       "slug": "multiple-regression",
-      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's alpha`, `ANOVA`, `Chi-square test`, `Pear",
+      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's α`, `ANOVA`, `Chi-square test`, `Pear",
       "domain": "Methodology & Research Design",
       "citation": "Saunders et al. (2019)",
       "source": "Saunders et al. (2019)",
@@ -16960,7 +16960,7 @@
     {
       "term": "p-value",
       "slug": "p-value",
-      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's alpha`, `ANOVA`, `Chi-square test`, `Pear",
+      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's α`, `ANOVA`, `Chi-square test`, `Pear",
       "domain": "Methodology & Research Design",
       "citation": "Saunders et al. (2019)",
       "source": "Saunders et al. (2019)",
@@ -17494,7 +17494,7 @@
     {
       "term": "Pearson s r",
       "slug": "pearson-s-r",
-      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's alpha`, `ANOVA`, `Chi-square test`, `Pear",
+      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's α`, `ANOVA`, `Chi-square test`, `Pear",
       "domain": "Methodology & Research Design",
       "citation": "Saunders et al. (2019)",
       "source": "Saunders et al. (2019)",
@@ -18532,7 +18532,7 @@
       "tier": "encyclopedia",
       "is_variant": true,
       "canonical_parent": "meta-analysis",
-      "relation_type": "Sơ đồ 4 bước sàng lọc tài liệu: Nhận diện -> Sàng lọc -> Đủ điều kiện -> Đưa vào tổng hợp",
+      "relation_type": "Sơ đồ 4 bước sàng lọc tài liệu: Nhận diện → Sàng lọc → Đủ điều kiện → Đưa vào tổng hợp",
       "citation": "Page et al. (2021)"
     },
     {
@@ -19359,7 +19359,7 @@
     {
       "term": "R-squared",
       "slug": "r-squared",
-      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's alpha`, `ANOVA`, `Chi-square test`, `Pear",
+      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's α`, `ANOVA`, `Chi-square test`, `Pear",
       "domain": "Methodology & Research Design",
       "citation": "Saunders et al. (2019)",
       "source": "Saunders et al. (2019)",
@@ -21440,7 +21440,7 @@
       "category": "encyclopedia",
       "is_variant": true,
       "canonical_parent": "Mediating Variable",
-      "relation_type": "Chuỗi nhân quả nối tiếp: X -> M1 -> M2 -> Y",
+      "relation_type": "Chuỗi nhân quả nối tiếp: X → M1 → M2 → Y",
       "source": "Hayes (2018)"
     },
     {
@@ -22010,7 +22010,7 @@
     {
       "term": "Spatial Weight Matrix (W Matrix)",
       "slug": "spatial-weight-matrix-w-matrix",
-      "vietnamese": "Ma trận Trọng số Không gian (Ma trận N x N biểu diễn quan hệ lân cận địa lý hoặc khoảng cách kinh tế giữa các vùng)",
+      "vietnamese": "Ma trận Trọng số Không gian (Ma trận N × N biểu diễn quan hệ lân cận địa lý hoặc khoảng cách kinh tế giữa các vùng)",
       "domain": "Spatial Econometrics",
       "citation": "Anselin (1988)",
       "category": "encyclopedia",
@@ -22019,7 +22019,7 @@
     {
       "term": "Spearman s rho",
       "slug": "spearman-s-rho",
-      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's alpha`, `ANOVA`, `Chi-square test`, `Pear",
+      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's α`, `ANOVA`, `Chi-square test`, `Pear",
       "domain": "Methodology & Research Design",
       "citation": "Saunders et al. (2019)",
       "source": "Saunders et al. (2019)",
@@ -22244,7 +22244,7 @@
     {
       "term": "Standard Error of Measurement (SEm)",
       "slug": "standard-error-of-measurement-sem",
-      "vietnamese": "Sai số Đo lường Chuẩn (Đo lường mức độ phân tán của điểm số quan sát quanh điểm số thực: SEm = SD * sqrt(1 - r))",
+      "vietnamese": "Sai số Đo lường Chuẩn (Đo lường mức độ phân tán của điểm số quan sát quanh điểm số thực: SEm = SD * √(1 - r))",
       "domain": "Psychometrics",
       "citation": "Harvill (1991)",
       "category": "encyclopedia",
@@ -22419,7 +22419,7 @@
     {
       "term": "Statistical Power & Type II Error Rate",
       "slug": "statistical-power-type-ii-error-rate",
-      "vietnamese": "Năng lực Thống kê và Tỷ lệ Sai lầm Loại II (Xác suất bác bỏ chính xác giả thuyết H0 khi H0 thực sự sai: 1 - Beta, chuẩn >= 0.80)",
+      "vietnamese": "Năng lực Thống kê và Tỷ lệ Sai lầm Loại II (Xác suất bác bỏ chính xác giả thuyết H0 khi H0 thực sự sai: 1 - Beta, chuẩn ≥ 0.80)",
       "domain": "Statistical Inference",
       "citation": "Cohen (1988)",
       "category": "standards",
@@ -23371,7 +23371,7 @@
     {
       "term": "Tau-equivalent tests",
       "slug": "tau-equivalent-tests",
-      "vietnamese": "| `Tau-equivalent tests` | Bài kiểm tra tương đương tau | Bắt buộc để Cronbach's alpha không bị ước lượng chệch |",
+      "vietnamese": "| `Tau-equivalent tests` | Bài kiểm tra tương đương tau | Bắt buộc để Cronbach's α không bị ước lượng chệch |",
       "domain": "Methodology & Research Design",
       "citation": "DeVellis (2016)",
       "source": "DeVellis (2016)",
@@ -23510,9 +23510,9 @@
       "slug": "test-information-function",
       "vietnamese": "Hàm thông tin toàn bài kiểm tra",
       "domain": "Acronym NCKH",
-      "source": "Sai số chuẩn đo lường SE(theta) = 1 / sqrt(TIF(theta)); TIF càng cao thì sai số đo lường càng nhỏ.",
+      "source": "Sai số chuẩn đo lường SE(theta) = 1 / √(TIF(theta)); TIF càng cao thì sai số đo lường càng nhỏ.",
       "tier": "acronym",
-      "citation": "Sai số chuẩn đo lường SE(theta) = 1 / sqrt(TIF(theta)); TIF càng cao thì sai số đo lường càng nhỏ."
+      "citation": "Sai số chuẩn đo lường SE(theta) = 1 / √(TIF(theta)); TIF càng cao thì sai số đo lường càng nhỏ."
     },
     {
       "term": "Test Information Function (TIF)",
@@ -23987,9 +23987,9 @@
       "slug": "tif",
       "vietnamese": "Hàm thông tin toàn bài kiểm tra (Test Information Function)",
       "domain": "Acronym NCKH",
-      "source": "Sai số chuẩn đo lường SE(theta) = 1 / sqrt(TIF(theta)); TIF càng cao thì sai số đo lường càng nhỏ.",
+      "source": "Sai số chuẩn đo lường SE(theta) = 1 / √(TIF(theta)); TIF càng cao thì sai số đo lường càng nhỏ.",
       "tier": "acronym",
-      "citation": "Sai số chuẩn đo lường SE(theta) = 1 / sqrt(TIF(theta)); TIF càng cao thì sai số đo lường càng nhỏ."
+      "citation": "Sai số chuẩn đo lường SE(theta) = 1 / √(TIF(theta)); TIF càng cao thì sai số đo lường càng nhỏ."
     },
     {
       "term": "Time",
@@ -24025,9 +24025,9 @@
       "slug": "tli",
       "vietnamese": "Chỉ số Tucker-Lewis (Tucker-Lewis Index (Non-Normed Fit Index / NNFI))",
       "domain": "Acronym NCKH",
-      "source": "TLI >= 0.95 (lý tưởng), TLI >= 0.90 (chấp nhận được).",
+      "source": "TLI ≥ 0.95 (lý tưởng), TLI ≥ 0.90 (chấp nhận được).",
       "tier": "acronym",
-      "citation": "TLI >= 0.95 (lý tưởng), TLI >= 0.90 (chấp nhận được)."
+      "citation": "TLI ≥ 0.95 (lý tưởng), TLI ≥ 0.90 (chấp nhận được)."
     },
     {
       "term": "TLI NNFI",
@@ -24494,9 +24494,9 @@
       "slug": "tucker-lewis-index-non-normed-fit-index-nnfi",
       "vietnamese": "Chỉ số Tucker-Lewis",
       "domain": "Acronym NCKH",
-      "source": "TLI >= 0.95 (lý tưởng), TLI >= 0.90 (chấp nhận được).",
+      "source": "TLI ≥ 0.95 (lý tưởng), TLI ≥ 0.90 (chấp nhận được).",
       "tier": "acronym",
-      "citation": "TLI >= 0.95 (lý tưởng), TLI >= 0.90 (chấp nhận được)."
+      "citation": "TLI ≥ 0.95 (lý tưởng), TLI ≥ 0.90 (chấp nhận được)."
     },
     {
       "term": "Tukey's HSD Post-Hoc Test",
@@ -24605,7 +24605,7 @@
     {
       "term": "Two-Way Factorial Arrangement",
       "slug": "two-way-factorial-arrangement",
-      "vietnamese": "Thiết kế Thực nghiệm Thừa số (Mô hình 2x2, 2x3)",
+      "vietnamese": "Thiết kế Thực nghiệm Thừa số (Mô hình 2 × 2, 2 × 3)",
       "domain": "Experimental Methodology",
       "source": "Kirk, R. E. (2013). Experimental design: Procedures for the behavioral sciences (4th ed.). SAGE Publications.",
       "tier": "flagship",
@@ -24660,7 +24660,7 @@
     {
       "term": "Type I II error",
       "slug": "type-i-ii-error",
-      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's alpha`, `ANOVA`, `Chi-square test`, `Pear",
+      "vietnamese": "| **Phân tích Định lượng (Quantitative Statistics)** | ~140 | `Nominal / Ordinal / Interval / Ratio data`, `Cronbach's α`, `ANOVA`, `Chi-square test`, `Pear",
       "domain": "Methodology & Research Design",
       "citation": "Saunders et al. (2019)",
       "source": "Saunders et al. (2019)",
