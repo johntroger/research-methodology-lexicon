@@ -50140,33 +50140,46 @@
     {
       "id": "sample-size-determination-via-power-analysis",
       "term": "Sample Size Determination via Power Analysis",
-      "vietnamese": "Xác định Cỡ mẫu bằng Phân tích Năng lực Thống kê",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Sampling Rigour"
+      "vietnamese": "Xác định quy mô mẫu qua phân tích năng lực thống kê (Power Analysis)",
+      "vietnamese_variants": [
+        "Ước lượng cỡ mẫu bằng phân tích lực thống kê",
+        "Xác định kích thước mẫu tiên nghiệm (A priori Power Analysis)"
       ],
-      "core_definition": "Tính toán cỡ mẫu tối thiểu bằng phần mềm G*Power.",
-      "seminal_citation": "Faul et al. (2007)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Thiết kế Thực nghiệm",
+        "Năng lực Thống kê (Statistical Power)",
+        "Phương pháp Định lượng"
+      ],
+      "core_definition": "Quy trình toán học thống kê tiên nghiệm (a priori power analysis) nhằm tính toán số lượng đơn vị quan sát tối thiểu cần thiết để phát hiện một kích thước hiệu ứng (effect size) giả định với một mức ý nghĩa thống kê định trước (thường α = 0.05) và một xác suất tránh sai số loại II (năng lực kiểm định 1 - β, thường ≥ 0.80). Công cụ phổ biến nhất là G*Power của Faul et al. hoặc các gói pwr trong R.",
+      "seminal_citation": "Cohen, J. (1988). Statistical Power Analysis for the Behavioral Sciences (2nd ed.). Lawrence Erlbaum Associates; Faul, F., Erdfelder, E., Lang, A. G., & Buchner, A. (2007). G*Power 3: A flexible statistical power analysis program for the social, behavioral, and biomedical sciences. Behavior Research Methods, 39(2), 175–191. https://doi.org/10.3758/BF03193146",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Sample Size Determination via Power Analysis according to Faul et al. (2007).",
       "domain_tags_en": [
         "Sampling Rigour"
-      ]
+      ],
+      "benchmarks": "Ngưỡng tiêu chuẩn quốc tế: Mức ý nghĩa α = 0.05; Năng lực kiểm định tối thiểu 1 - β = 0.80 (đối với nghiên cứu lâm sàng hoặc các tạp chí Q1 hàng đầu thường yêu cầu 0.90 hoặc 0.95). Bắt buộc phải biện minh cho kích thước hiệu ứng dự kiến (Cohen's d, f², w) dựa trên các nghiên cứu tiền kiểm (pilot study), nghiên cứu tương đương trước đó hoặc phân tích tổng hợp (meta-analysis).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Thực hiện phân tích năng lực hậu nghiệm (Post-hoc power analysis dựa trên p-value quan sát được) để bào chữa cho kết quả p > 0.05 — Hoenig & Heisey (2001) đã chứng minh điều này hoàn toàn vô nghĩa và luẩn quẩn về mặt toán học; chọn bừa cỡ mẫu theo quy tắc kinh nghiệm ngón tay cái (ví dụ: N = 5 * số câu hỏi) mà không chạy G*Power khi gửi bài tạp chí Q1.",
+      "apa_reference": "Faul, F., Erdfelder, E., Lang, A. G., & Buchner, A. (2007). G*Power 3: A flexible statistical power analysis program for the social, behavioral, and biomedical sciences. Behavior Research Methods, 39(2), 175–191.",
+      "is_flagship": true
     },
     {
       "id": "sample-phenomenon-of-interest-design-evaluation-research-type",
-      "term": "Sample, Phenomenon of Interest, Design, Evaluation, Research type",
-      "vietnamese": "Khung xác định câu hỏi nghiên cứu định tính và hỗn hợp (Cooke et al., 2012)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Synthesis",
-        "Methodology"
+      "term": "SPIDER Framework (Sample, Phenomenon of Interest, Design, Evaluation, Research Type)",
+      "vietnamese": "Khung tìm kiếm SPIDER trong tổng quan định tính và hỗn hợp",
+      "vietnamese_variants": [
+        "Khung SPIDER trong tổng hợp y văn định tính",
+        "Công cụ cấu trúc câu hỏi nghiên cứu định tính SPIDER"
       ],
-      "core_definition": "Khung tìm kiếm tài liệu thay thế cho PICO, được tối ưu riêng cho các nghiên cứu định tính và phương pháp hỗn hợp (Mixed Methods). Ngưỡng thực nghiệm tham chiếu: Được các reviewer Q1 đánh giá cao khi xây dựng tiêu chí sàng lọc tài liệu định tính thay vì ép dùng khung PICO của nghiên cứu y sinh.",
-      "seminal_citation": "Được các reviewer Q1 đánh giá cao khi xây dựng tiêu chí sàng lọc tài liệu định tính thay vì ép dùng khung PICO của nghiên cứu y sinh.",
-      "tier": "acronym",
+      "domain_tags": [
+        "Tổng quan Hệ thống (Systematic Review)",
+        "Phương pháp Định tính",
+        "Tổng hợp Bằng chứng (Evidence Synthesis)"
+      ],
+      "core_definition": "Khung tìm kiếm và cấu trúc câu hỏi tổng quan y văn do Alison Cooke, Deborah Smith và Andrew Booth đề xuất năm 2012, được thiết kế đặc thù để thay thế khung PICO truyền thống (vốn thiên về can thiệp lâm sàng định lượng) trong các tổng quan nghiên cứu định tính và phương pháp hỗn hợp. Khung SPIDER gồm 5 thành phần: S (Sample - Mẫu đối tượng), PI (Phenomenon of Interest - Hiện tượng quan tâm), D (Design - Thiết kế nghiên cứu), E (Evaluation - Đánh giá/Trải nghiệm/Nhận thức), và R (Research type - Loại hình nghiên cứu: Qualitative, Quantitative, Mixed methods).",
+      "seminal_citation": "Cooke, A., Smith, D., & Booth, A. (2012). Beyond PICO: The SPIDER tool for qualitative evidence synthesis. Qualitative Health Research, 22(10), 1435–1443. https://doi.org/10.1177/1049732312452938",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of Sample, Phenomenon of Interest, Design, Evaluation, Research type according to Được các reviewer Q1 đánh giá cao khi xây dựng tiêu chí sàng lọc tài liệu định tính thay vì ép dùng khung PICO của nghiên cứu y sinh..",
@@ -50174,63 +50187,92 @@
         "Qualitative Synthesis",
         "Methodology"
       ],
-      "benchmarks": "Được các reviewer Q1 đánh giá cao khi xây dựng tiêu chí sàng lọc tài liệu định tính thay vì ép dùng khung PICO của nghiên cứu y sinh."
+      "benchmarks": "Độ nhạy và độ đặc hiệu tìm kiếm: Khung SPIDER có độ đặc hiệu (specificity) cao hơn đáng kể so với PICO khi lọc các nghiên cứu về hành vi, trải nghiệm xã hội và nhận thức sâu, giúp giảm thiểu số lượng bài báo không liên quan trong giai đoạn sàng lọc ban đầu.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Áp dụng khung PICO cứng nhắc cho các câu hỏi tổng quan thuần định tính về trải nghiệm người dùng hoặc cảm nhận văn hóa; đưa từ khóa 'Research type' quá hẹp trong chuỗi tìm kiếm khiến bỏ sót các bài báo chất lượng cao không gắn nhãn phương pháp rõ ràng trong tiêu đề.",
+      "apa_reference": "Cooke, A., Smith, D., & Booth, A. (2012). Beyond PICO: The SPIDER tool for qualitative evidence synthesis. Qualitative Health Research, 22(10), 1435–1443.",
+      "is_flagship": true
     },
     {
       "id": "sampling-error",
       "term": "Sampling Error",
-      "vietnamese": "Sai số chọn mẫu phát sinh do chỉ khảo sát một mẫu thay vì toàn bộ quần thể nghiên cứu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Survey Methodology"
+      "vietnamese": "Sai số chọn mẫu",
+      "vietnamese_variants": [
+        "Sai số ngẫu nhiên do chọn mẫu",
+        "Độ chệch mẫu thống kê"
       ],
-      "core_definition": "Sai số chọn mẫu phát sinh do chỉ khảo sát một mẫu thay vì toàn bộ quần thể nghiên cứu.",
-      "seminal_citation": "Kish (1965)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Lý thuyết Chọn mẫu",
+        "Thống kê Suy luận",
+        "Phương pháp Định lượng"
+      ],
+      "core_definition": "Khoảng sai lệch thống kê không thể tránh khỏi giữa giá trị ước lượng của một tham số thu được từ một mẫu ngẫu nhiên (sample statistic, ví dụ: trung bình mẫu x̄) và giá trị thực sự của tham số đó trong toàn bộ tổng thể nghiên cứu (population parameter, ví dụ: kỳ vọng μ). Sai số chọn mẫu phát sinh thuần túy do tính ngẫu nhiên khi chỉ thu thập một phần của tổng thể, phân biệt rõ với sai số phi chọn mẫu (non-sampling error).",
+      "seminal_citation": "Cochran, W. G. (1977). Sampling Techniques (3rd ed.). John Wiley & Sons; Kish, L. (1965). Survey Sampling. John Wiley & Sons.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Sampling Error according to Kish (1965).",
       "domain_tags_en": [
         "Survey Methodology"
-      ]
+      ],
+      "benchmarks": "Mối quan hệ định lượng: Sai số chuẩn của giá trị trung bình SE = σ / √n. Khi quy mô mẫu n tăng lên, sai số chọn mẫu sẽ giảm dần theo quy tắc căn bậc hai (nghĩa là muốn giảm một nửa sai số chọn mẫu thì cỡ mẫu phải tăng gấp bốn lần). Khoảng tin cậy 95% = x̄ ± 1.96 * SE.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Nhầm lẫn sai số chọn mẫu (sampling error - sai số ngẫu nhiên có thể lượng hóa và kiểm soát bằng cỡ mẫu) với thiên lệch chọn mẫu (sampling bias - sai số hệ thống do khung mẫu sai hoặc phương pháp lấy mẫu hỏng khiến kết quả bị lệch hướng vĩnh viễn dù tăng cỡ mẫu bao nhiêu).",
+      "apa_reference": "Cochran, W. G. (1977). Sampling Techniques (3rd ed.). John Wiley & Sons.",
+      "is_flagship": true
     },
     {
       "id": "sampling-frame",
-      "term": "Sampling frame",
-      "vietnamese": "Khung chọn mẫu (danh sách đầy đủ toàn bộ các phần tử của quần thể mục tiêu).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Onion",
-        "Strategy"
+      "term": "Sampling Frame",
+      "vietnamese": "Khung chọn mẫu / Khung mẫu",
+      "vietnamese_variants": [
+        "Danh sách khung mẫu",
+        "Tập hợp cơ sở chọn mẫu khảo sát"
       ],
-      "core_definition": "Khung chọn mẫu (danh sách đầy đủ toàn bộ các phần tử của quần thể mục tiêu).",
-      "seminal_citation": "Saunders et al. (2019); Saunders (2019)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Lý thuyết Chọn mẫu",
+        "Phương pháp Khảo sát",
+        "Thiết kế Nghiên cứu"
+      ],
+      "core_definition": "Danh sách, danh bạ, bản đồ hoặc hệ thống định danh thực tế toàn diện chứa đựng tất cả các đơn vị mẫu (sampling units) từ tổng thể mục tiêu (target population) mà từ đó nhà nghiên cứu tiến hành rút mẫu ngẫu nhiên. Ví dụ: danh sách toàn bộ doanh nghiệp đăng ký tại Sở Kế hoạch Đầu tư, danh sách sinh viên có mã số tại một trường đại học, hoặc sổ hộ khẩu tại một địa phương.",
+      "seminal_citation": "Kish, L. (1965). Survey Sampling. John Wiley & Sons; Groves, R. M., Fowler, F. J., Couper, M. P., Lepkowski, J. M., Singer, E., & Tourangeau, R. (2009). Survey Methodology (2nd ed.). John Wiley & Sons.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Sampling frame according to Saunders et al. (2019); Saunders (2019).",
       "domain_tags_en": [
         "Research Onion",
         "Strategy"
-      ]
+      ],
+      "benchmarks": "Đánh giá chất lượng khung mẫu: Một khung mẫu hoàn hảo phải đáp ứng 4 tiêu chí: (1) Tính đầy đủ (Completeness - không bỏ sót đối tượng), (2) Tính chính xác (Accuracy - không chứa đối tượng ảo hoặc đã giải thể), (3) Tính cập nhật (Currency), và (4) Không trùng lặp (No duplicates). Tỷ lệ bao phủ (coverage rate) lý tưởng phải đạt trên 90%.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Thiên lệch do khung mẫu không hoàn chỉnh (Coverage error / Under-coverage) — ví dụ: dùng danh bạ điện thoại bàn để khảo sát ý kiến giới trẻ, bỏ sót hoàn toàn nhóm đối tượng chỉ dùng điện thoại di động; kết luận đại diện cho cả nước khi khung mẫu chỉ rút từ một thành phố lớn.",
+      "apa_reference": "Kish, L. (1965). Survey Sampling. John Wiley & Sons.",
+      "is_flagship": true
     },
     {
       "id": "san-francisco-declaration-on-research-assessment-dora",
       "term": "San Francisco Declaration on Research Assessment (DORA)",
-      "vietnamese": "Tuyên bố DORA San Francisco",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Evaluation"
+      "vietnamese": "Tuyên ngôn San Francisco về Đánh giá Nghiên cứu (DORA)",
+      "vietnamese_variants": [
+        "Tuyên bố DORA về đánh giá khoa học",
+        "Sáng kiến cải cách đánh giá nghiên cứu DORA"
       ],
-      "core_definition": "Tuyên ngôn quốc tế kêu gọi chấm dứt việc dùng Impact Factor để đánh giá từng cá nhân nhà khoa học.",
-      "seminal_citation": "ASCB (2013)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Xuất bản Học thuật",
+        "Đạo đức & Đánh giá Nghiên cứu",
+        "Chính sách Khoa học"
+      ],
+      "core_definition": "Tuyên ngôn quốc tế mang tính bước ngoặt được ký kết năm 2012 tại Hội nghị Thường niên của Hiệp hội Sinh học Tế bào Hoa Kỳ (ASCB), nhằm chấm dứt việc lạm dụng Hệ số Tác động của Tạp chí (Journal Impact Factor - JIF) như một thước đo thay thế đại diện cho chất lượng của từng bài báo khoa học cá nhân hoặc năng lực đóng góp của một nhà khoa học trong việc bổ nhiệm, cấp quỹ tài trợ và thăng hàm học thuật.",
+      "seminal_citation": "Alberts, B. (2013). Impacting research assessment. Science, 340(6134), 787. https://doi.org/10.1126/science.1239912; Cagan, R. (2013). The San Francisco Declaration on Research Assessment. Disease Models & Mechanisms, 6(4), 869–870. https://doi.org/10.1242/dmm.012955",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of San Francisco Declaration on Research Assessment (DORA) according to ASCB (2013).",
       "domain_tags_en": [
         "Research Evaluation"
-      ]
+      ],
+      "benchmarks": "Khuyến nghị cốt lõi của DORA: (1) Đánh giá bài báo dựa trên giá trị nội dung khoa học thực chất của chính bài viết đó chứ không dựa vào tên tuổi hoặc chỉ số JIF của tạp chí nơi bài đăng; (2) Công nhận đa dạng các sản phẩm học thuật (bộ dữ liệu mở, phần mềm mã nguồn mở, bằng sáng chế, chính sách thực tiễn); (3) Khuyến khích minh bạch dữ liệu và trích dẫn trực tiếp.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đánh đồng việc bài báo xuất bản trên tạp chí IF cao là mặc nhiên có phương pháp luận hoàn hảo mà không đọc phản biện nội dung; cơ quan tuyển dụng sử dụng JIF làm điều kiện tiên quyết độc tôn vi phạm trực tiếp tinh thần cải cách khoa học của DORA và Leiden Manifesto.",
+      "apa_reference": "Cagan, R. (2013). The San Francisco Declaration on Research Assessment. Disease Models & Mechanisms, 6(4), 869–870.",
+      "is_flagship": true
     },
     {
       "id": "sargan-test-of-overidentifying-restrictions",
@@ -50260,77 +50302,112 @@
     },
     {
       "id": "sargan-hansen-test",
-      "term": "Sargan-Hansen Test",
-      "vietnamese": "Kiểm định giới hạn nhận dạng quá mức cho các biến công cụ trong hồi quy GMM/2SLS",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Econometrics"
+      "term": "Sargan-Hansen Test of Overidentifying Restrictions",
+      "vietnamese": "Kiểm định ràng buộc nhận dạng quá mức Sargan-Hansen",
+      "vietnamese_variants": [
+        "Kiểm định tính hợp lệ của biến công cụ Hansen J-test",
+        "Kiểm định Sargan về ngoại sinh biến công cụ"
       ],
-      "core_definition": "Kiểm định giới hạn nhận dạng quá mức cho các biến công cụ trong hồi quy GMM/2SLS.",
-      "seminal_citation": "Hansen (1982)",
-      "tier": "curated",
+      "domain_tags": [
+        "Kinh tế lượng Nâng cao",
+        "Phương pháp Biến công cụ (IV / 2SLS)",
+        "Hệ thống GMM"
+      ],
+      "core_definition": "Kiểm định chẩn đoán kinh tế lượng thiết yếu trong phương pháp Biến công cụ (2SLS) và Phương pháp Mô-men Tổng quát (GMM) khi số lượng biến công cụ (L) lớn hơn số lượng biến nội sinh (K). Kiểm định Sargan (dưới giả định phương sai sai số đồng nhất) và kiểm định J của Hansen (vững trước hiện tượng phương sai thay đổi và tự tương quan) kiểm tra tính hợp lệ đồng thời của các biến công cụ: nghĩa là các biến công cụ thực sự ngoại sinh (không tương quan với sai số mô hình) và được loại trừ chính xác khỏi phương trình chính.",
+      "seminal_citation": "Sargan, J. D. (1958). The estimation of economic relationships using instrumental variables. Econometrica, 26(3), 393–415. https://doi.org/10.2307/1907619; Hansen, L. P. (1982). Large sample properties of generalized method of moments estimators. Econometrica, 50(4), 1029–1054. https://doi.org/10.2307/1912775; Roodman, D. (2009). A note on the theme of too many instruments. Oxford Bulletin of Economics and Statistics, 71(1), 135–158.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Sargan-Hansen Test according to Hansen (1982).",
       "domain_tags_en": [
         "Econometrics"
-      ]
+      ],
+      "benchmarks": "Quy tắc quyết định thống kê: Giả thuyết vô hiệu H0 là các biến công cụ hoàn toàn hợp lệ (orthogonal to the error term). Thống kê J phân phối xấp xỉ Chi-square với (L - K) bậc tự do. Để mô hình được chấp nhận, p-value BẮT BUỘC PHẢI > 0.05 (thường mong muốn 0.10 < p < 0.25). Nếu p < 0.05, bác bỏ H0, chứng minh ít nhất một biến công cụ bị nội sinh hoặc phương trình chính bị bỏ sót biến nghiêm trọng.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Nhầm lẫn quy tắc kiểm định — vui mừng khi p < 0.05 trong khi p < 0.05 đồng nghĩa với mô hình bị hỏng hoàn toàn; hiện tượng 'quá nhiều biến công cụ' (instrument proliferation trong System GMM) làm thống kê Hansen J suy thoái với p-value tiến sát 1.000 (Roodman, 2009 cảnh báo p = 1.000 là dấu hiệu giả tạo cảnh báo nguy cơ kiểm định mất năng lực).",
+      "apa_reference": "Hansen, L. P. (1982). Large sample properties of generalized method of moments estimators. Econometrica, 50(4), 1029–1054.",
+      "is_flagship": true
     },
     {
       "id": "satisficing-vs-optimizing-krosnick",
-      "term": "Satisficing vs. Optimizing (Krosnick)",
-      "vietnamese": "Chiến lược Thỏa hiệp vs. Tối ưu hóa",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Survey Methodology"
+      "term": "Satisficing vs. Optimizing in Survey Response (Krosnick)",
+      "vietnamese": "Thỏa hiệp nhận thức so với Tối ưu hóa trong phản hồi khảo sát (Lý thuyết Krosnick)",
+      "vietnamese_variants": [
+        "Lý thuyết hành vi trả lời khảo sát Krosnick",
+        "Chiến lược Satisficing trong khảo sát bảng hỏi"
       ],
-      "core_definition": "Người trả lời chọn đại đáp án tốn ít nỗ lực nhận thức nhất thay vì suy nghĩ kỹ.",
-      "seminal_citation": "Krosnick (1991)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phương pháp Khảo sát",
+        "Thiết kế Bảng hỏi",
+        "Tâm lý học Nhận thức"
+      ],
+      "core_definition": "Lý thuyết nhận thức về quá trình trả lời khảo sát do Jon A. Krosnick phát triển năm 1991, phân chia hành vi của người tham gia thành hai thái cực: Tối ưu hóa (Optimizing - người trả lời thực hiện đủ 4 bước nhận thức: hiểu câu hỏi, truy xuất ký ức liên quan, tích hợp đánh giá và chọn phương án chính xác nhất) và Thỏa hiệp (Satisficing - người trả lời đi đường tắt nhận thức, tiêu tốn ít nỗ lực nhất có thể để hoàn thành bảng hỏi bằng cách chọn phương án đầu tiên khả dĩ, chọn cột giữa, hoặc chọn một điểm cố định từ đầu đến cuối - straightlining).",
+      "seminal_citation": "Krosnick, J. A. (1991). Response strategies for coping with the cognitive demands of attitude measures in surveys. Applied Cognitive Psychology, 5(3), 213–236. https://doi.org/10.1002/acp.2350050305; Krosnick, J. A. (1999). Survey research. Annual Review of Psychology, 50(1), 537–560.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Satisficing vs. Optimizing (Krosnick) according to Krosnick (1991).",
       "domain_tags_en": [
         "Survey Methodology"
-      ]
+      ],
+      "benchmarks": "Công thức xác suất Satisficing: Tỷ lệ Satisficing tăng lên khi: (1) Độ khó của tác vụ tăng (Task difficulty: câu hỏi dài, từ ngữ trừu tượng, thang đo quá phức tạp), (2) Năng lực nhận thức của người tham gia thấp (Respondent ability), và (3) Động lực tham gia thấp (Respondent motivation).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Bảng hỏi quá dài (> 20 phút) làm bùng phát hiện tượng Satisficing nghiêm trọng ở nửa sau bảng hỏi; không chèn các bẫy kiểm tra chú ý (Attention Check Items / Instructional Manipulation Checks) để thanh lọc những người trả lời thỏa hiệp hời hợt trước khi đưa vào phân tích định lượng.",
+      "apa_reference": "Krosnick, J. A. (1991). Response strategies for coping with the cognitive demands of attitude measures in surveys. Applied Cognitive Psychology, 5(3), 213–236.",
+      "is_flagship": true
     },
     {
       "id": "saturation",
-      "term": "Saturation",
-      "vietnamese": "Bão hòa dữ liệu — Điểm dừng thu thập dữ liệu định tính khi không còn phát hiện thêm ý niệm hoặc thông tin mới nào.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Data Saturation / Theoretical Saturation",
+      "vietnamese": "Sự bão hòa dữ liệu / Bão hòa lý thuyết trong nghiên cứu định tính",
+      "vietnamese_variants": [
+        "Điểm bão hòa thông tin",
+        "Tính bão hòa lý thuyết (Theoretical Saturation)"
       ],
-      "core_definition": "Bão hòa dữ liệu — Điểm dừng thu thập dữ liệu định tính khi không còn phát hiện thêm ý niệm hoặc thông tin mới nào.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Phương pháp Định tính",
+        "Lý thuyết Nền (Grounded Theory)",
+        "Thiết kế Chọn mẫu Định tính"
+      ],
+      "core_definition": "Nguyên tắc vàng chỉ dẫn thời điểm dừng thu thập dữ liệu trong nghiên cứu định tính, đặc biệt là trong Lý thuyết Nền (Grounded Theory do Glaser & Strauss khởi xướng). Sự bão hòa lý thuyết đạt được khi việc tiếp tục thu thập thêm dữ liệu (phỏng vấn thêm, quan sát thêm) không còn mang lại bất kỳ thuộc tính, khía cạnh, chiều kích mới nào cho các khái niệm và danh mục mã hóa (categories), và mối quan hệ giữa các danh mục lý thuyết đã được xác lập vững chắc.",
+      "seminal_citation": "Glaser, B. G., & Strauss, A. L. (1967). The Discovery of Grounded Theory: Strategies for Qualitative Research. Aldine Publishing; Guest, G., Bunce, A., & Johnson, L. (2006). How many interviews are enough? Experimenting with data saturation and variability. Field Methods, 18(1), 59–82. https://doi.org/10.1177/1525822X05279903",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Saturation according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn chứng minh bão hòa chuẩn Q1: Nghiên cứu không được chỉ tuyên bố suông 'dữ liệu đã đạt bão hòa'. Phải báo cáo rõ ràng: ma trận xuất hiện mã (code saturation matrix), số lượng phỏng vấn bổ sung sau khi không còn mã mới (run-length / stopping criterion, ví dụ: 3 cuộc phỏng vấn liên tiếp không phát sinh mã mới), và bảng theo dõi quá trình bão hòa theo Guest et al. (2006).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Dừng phỏng vấn ở cỡ mẫu quá nhỏ (ví dụ: N = 6) và tuyên bố đạt bão hòa mà không có bằng chứng phân tích; nhầm lẫn giữa 'bão hòa dữ liệu bề mặt' (nghe lại những câu chuyện quen thuộc lặp đi lặp lại) với 'bão hòa lý thuyết sâu' (các phạm trù lý thuyết đã được phát triển trọn vẹn mọi khía cạnh).",
+      "apa_reference": "Guest, G., Bunce, A., & Johnson, L. (2006). How many interviews are enough? Experimenting with data saturation and variability. Field Methods, 18(1), 59–82.",
+      "is_flagship": true
     },
     {
       "id": "scalar-invariance-strong-factorial",
-      "term": "Scalar invariance (Strong factorial)",
-      "vietnamese": "Bất biến ngưỡng chặn (hệ số tự do item)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Scalar Invariance (Strong Factorial Invariance)",
+      "vietnamese": "Bất biến vô hướng (Bất biến nhân tố mạnh trong phân tích đa nhóm)",
+      "vietnamese_variants": [
+        "Độ bất biến điểm chặn thang đo",
+        "Strong Invariance trong CFA đa nhóm"
       ],
-      "core_definition": "Bắt buộc thỏa mãn để được phép so sánh giá trị trung bình giữa các nhóm.",
-      "seminal_citation": "MacKenzie et al. (2011)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Độ bất biến Đo lường (Measurement Invariance)",
+        "MGCFA & CB-SEM",
+        "Nghiên cứu Đa văn hóa"
+      ],
+      "core_definition": "Cấp độ thứ ba trong phân cấp kiểm định bất biến đo lường qua phân tích nhân tố khẳng định đa nhóm (Multi-Group CFA). Sau khi đã đạt bất biến hình thái (Configural) và bất biến hệ số tải (Metric/Weak), kiểm định bất biến vô hướng (Scalar Invariance) yêu cầu cố định các hệ số chặn (intercepts) của từng biến quan sát bằng nhau giữa các nhóm (ví dụ: giữa nam và nữ, hoặc giữa các quốc gia). Đạt được Scalar Invariance là ĐIỀU KIỆN TIÊN QUYẾT BẮT BUỘC để có thể so sánh giá trị trung bình tiềm ẩn (latent means) giữa các nhóm.",
+      "seminal_citation": "Vandenberg, R. J., & Lance, C. E. (2000). A review and synthesis of the measurement invariance literature: Suggestions, practices, and recommendations for organizational research. Organizational Research Methods, 3(1), 4–70. https://doi.org/10.1177/109442810031002; Cheung, G. W., & Rensvold, R. B. (2002). Evaluating goodness-of-fit indexes for testing measurement invariance. Structural Equation Modeling, 9(2), 233–255.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Scalar invariance (Strong factorial) according to MacKenzie et al. (2011).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Ngưỡng đánh giá so sánh mô hình (Cheung & Rensvold, 2002; Chen, 2007): Khi so sánh mô hình Scalar Invariance với mô hình Metric Invariance, vì $\\Delta\\chi^2$ quá nhạy với cỡ mẫu, mô hình được xem là bất biến khi: $\\Delta\\text{CFI} \\ge -0.010$ kết hợp với $\\Delta\\text{RMSEA} \\le 0.015$ hoặc $\\Delta\\text{SRMR} \\le 0.010$.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Tiến hành so sánh trung bình (t-test, ANOVA hoặc so sánh Latent Mean) giữa các quốc gia hay các nhóm xã hội khi CHƯA ĐẠT ĐƯỢC Scalar Invariance (hoặc Partial Scalar Invariance với tối thiểu 2 chỉ báo có hệ số chặn bằng nhau), dẫn đến nguy cơ sai lệch nghiêm trọng do văn hóa cho điểm khác nhau (response style) chứ không phải do khác biệt thực chất.",
+      "apa_reference": "Cheung, G. W., & Rensvold, R. B. (2002). Evaluating goodness-of-fit indexes for testing measurement invariance. Structural Equation Modeling, 9(2), 233–255.",
+      "is_flagship": true
     },
     {
       "id": "scalar-invariance-strong-invariance",
@@ -50446,143 +50523,209 @@
     {
       "id": "scenario-planning-methodology",
       "term": "Scenario Planning Methodology",
-      "vietnamese": "Phương pháp Quy hoạch Kịch bản",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Futures Research"
+      "vietnamese": "Phương pháp luận hoạch định kịch bản tương lai",
+      "vietnamese_variants": [
+        "Phương pháp xây dựng kịch bản chiến lược",
+        "Hoạch định kịch bản dự báo (Scenario Analysis)"
       ],
-      "core_definition": "Xây dựng các câu chuyện mạch lạc về các tương lai khả dĩ để đưa ra quyết định chiến lược.",
-      "seminal_citation": "Wack (1985), Schoemaker (1995)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Quản trị Chiến lược",
+        "Phương pháp Nghiên cứu Tương lai (Futures Studies)",
+        "Phương pháp Định tính & Chuyên gia"
+      ],
+      "core_definition": "Phương pháp luận nghiên cứu định tính và chiến lược có hệ thống (bắt nguồn từ Tập đoàn Royal Dutch Shell và Viện RAND), được thiết kế để giúp các tổ chức dự phóng và thích ứng với các tương lai khả dĩ trong điều kiện môi trường có độ bất định cao (high uncertainty). Khác với các mô hình dự báo định lượng truyền thống (vốn giả định tương lai là sự ngoại suy tuyến tính từ quá khứ), hoạch định kịch bản xây dựng một tập hợp các kịch bản tương phản, mạch lạc và có thể xảy ra dựa trên các động lực thay đổi cốt lõi (driving forces).",
+      "seminal_citation": "Wack, P. (1985). Scenarios: Uncharted waters ahead. Harvard Business Review, 63(5), 72–89; Schoemaker, P. J. (1995). Scenario planning: A tool for strategic thinking. Sloan Management Review, 36(2), 25–40.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Scenario Planning Methodology according to Wack (1985), Schoemaker (1995).",
       "domain_tags_en": [
         "Futures Research"
-      ]
+      ],
+      "benchmarks": "Quy trình ma trận 2x2 kinh điển: Xác định các yếu tố bất định then chốt (critical uncertainties) và có tác động mạnh nhất; chọn 2 trục bất định độc lập phân cực để tạo thành ma trận 4 góc phần tư kịch bản; xây dựng các câu chuyện mô tả chi tiết kèm các chỉ dấu cảnh báo sớm (early warning indicators) cho từng kịch bản.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Xây dựng các kịch bản theo kiểu phân loại tốt/xấu/trung bình (optimistic / pessimistic / base-case) làm mất đi tính tương phản đa chiều của các biến số môi trường; tạo ra các kịch bản viễn tưởng không có cơ sở dữ liệu thực nghiệm hoặc chuyên gia bảo chứng.",
+      "apa_reference": "Schoemaker, P. J. (1995). Scenario planning: A tool for strategic thinking. Sloan Management Review, 36(2), 25–40.",
+      "is_flagship": true
     },
     {
       "id": "scheffes-test",
-      "term": "Scheffé's Test",
-      "vietnamese": "Kiểm định Scheffe bảo thủ nhất dùng cho mọi so sánh cặp và so sánh phức tạp sau ANOVA",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Post-Hoc Statistics"
+      "term": "Scheffé's Post-Hoc Test",
+      "vietnamese": "Kiểm định hậu nghiệm Scheffé (trong phân tích phương sai ANOVA)",
+      "vietnamese_variants": [
+        "Phép kiểm định so sánh bội Scheffé",
+        "Kiểm định tương phản hậu nghiệm Scheffé"
       ],
-      "core_definition": "Kiểm định Scheffe bảo thủ nhất dùng cho mọi so sánh cặp và so sánh phức tạp sau ANOVA.",
-      "seminal_citation": "Scheffé (1953)",
-      "tier": "encyclopedia",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phân tích Phương sai (ANOVA)",
+        "So sánh Bội (Multiple Comparisons)",
+        "Thống kê Suy luận"
+      ],
+      "core_definition": "Kiểm định so sánh cặp hậu nghiệm (post-hoc test) do Henry Scheffé phát triển năm 1953, cho phép nhà nghiên cứu kiểm định tất cả các tương phản tuyến tính khả dĩ (possible linear contrasts) giữa các giá trị trung bình nhóm sau khi kiểm định F trong ANOVA đạt ý nghĩa thống kê. Scheffé là phương pháp thận trọng (conservative) nhất trong các phép kiểm so sánh bội, kiểm soát chặt chẽ sai số loại I trên toàn bộ họ kiểm định (familywise error rate) ngay cả khi các nhóm có cỡ mẫu hoàn toàn không bằng nhau.",
+      "seminal_citation": "Scheffé, H. (1953). A method for judging all contrasts in the analysis of variance. Biometrika, 40(1/2), 87–104. https://doi.org/10.2307/2333100; Scheffé, H. (1959). The Analysis of Variance. John Wiley & Sons.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Scheffé's Test according to Scheffé (1953).",
       "domain_tags_en": [
         "Post-Hoc Statistics"
-      ]
+      ],
+      "benchmarks": "Tính ứng dụng: Được ưu tiên lựa chọn khi: (1) Cỡ mẫu giữa các nhóm có sự chênh lệch lớn (unbalanced group sizes), và (2) Nhà nghiên cứu muốn kiểm định các so sánh phức hợp (complex contrasts - ví dụ: trung bình của nhóm 1 và nhóm 2 so với nhóm 3) thay vì chỉ so sánh từng cặp đơn lẻ.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Sử dụng kiểm định Scheffé cho các so sánh từng cặp đơn giản (pairwise comparisons) khi cỡ mẫu cân bằng — do tính chất quá thận trọng (năng lực thống kê thấp hơn Tukey's HSD), Scheffé dễ dẫn đến sai số loại II (bỏ sót các khác biệt thực sự có ý nghĩa); chạy Scheffé khi F-test ban đầu chưa đạt ý nghĩa thống kê (p > 0.05).",
+      "apa_reference": "Scheffé, H. (1953). A method for judging all contrasts in the analysis of variance. Biometrika, 40(1/2), 87–104.",
+      "is_flagship": true
     },
     {
       "id": "science-citation-index-expanded-scie",
       "term": "Science Citation Index Expanded (SCIE)",
-      "vietnamese": "Chỉ mục Trích dẫn Khoa học Mở rộng SCIE",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Academic Indexing"
+      "vietnamese": "Chỉ mục trích dẫn khoa học mở rộng (Cơ sở dữ liệu SCIE - Clarivate)",
+      "vietnamese_variants": [
+        "Danh mục SCIE Web of Science",
+        "Cơ sở dữ liệu trích dẫn SCIE"
       ],
-      "core_definition": "Danh mục các tạp chí khoa học tự nhiên và kỹ thuật danh giá hàng đầu thế giới.",
-      "seminal_citation": "Clarivate (2020)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Xuất bản Học thuật",
+        "Trắc lượng Khoa học (Scientometrics)",
+        "Web of Science & Clarivate"
+      ],
+      "core_definition": "Cơ sở dữ liệu chỉ mục trích dẫn học thuật danh giá toàn cầu thuộc danh mục cốt lõi (Web of Science Core Collection) do Clarivate quản lý, kế thừa từ Science Citation Index (SCI) do Eugene Garfield sáng lập năm 1964 tại Viện Thông tin Khoa học (ISI). SCIE chỉ mục hơn 9.500 tạp chí khoa học tự nhiên, kỹ thuật và y sinh hàng đầu thế giới, trải rộng trên 178 chuyên ngành với các tiêu chí sàng lọc chất lượng biên tập và liêm chính học thuật nghiêm ngặt.",
+      "seminal_citation": "Garfield, E. (1964). Science Citation Index: A new dimension in indexing. Science, 144(3619), 649–654. https://doi.org/10.1126/science.144.3619.649; Garfield, E. (1979). Citation Indexing: Its Theory and Application in Science, Technology, and Humanities. John Wiley & Sons.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Science Citation Index Expanded (SCIE) according to Clarivate (2020).",
       "domain_tags_en": [
         "Academic Indexing"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn đánh giá tạp chí: Các tạp chí nằm trong SCIE được tính toán và công bố Hệ số Tác động (Journal Impact Factor - JIF) hàng năm trong báo cáo Journal Citation Reports (JCR) và được phân hạng theo tứ phân vị (Q1, Q2, Q3, Q4) dựa trên thứ hạng JIF trong chuyên ngành.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Nhầm lẫn giữa tạp chí nằm trong SCIE Core Collection với các tạp chí thuộc Emerging Sources Citation Index (ESCI) hoặc chỉ được index trên nền tảng Zoological Record/BIOSIS; gửi bài vào các tạp chí bị Clarivate cảnh báo hoặc rút khỏi danh mục (suppressed/delisted journals) do thao túng trích dẫn.",
+      "apa_reference": "Garfield, E. (1964). Science Citation Index: A new dimension in indexing. Science, 144(3619), 649–654.",
+      "is_flagship": true
     },
     {
       "id": "sciencedirect-elsevier",
-      "term": "ScienceDirect (Elsevier)",
-      "vietnamese": "Nền tảng Tạp chí Khoa học Toàn văn ScienceDirect",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scholarly Publishing"
+      "term": "ScienceDirect (Elsevier Platform)",
+      "vietnamese": "Nền tảng xuất bản học thuật điện tử ScienceDirect (Elsevier)",
+      "vietnamese_variants": [
+        "Cơ sở dữ liệu toàn văn ScienceDirect",
+        "Nền tảng tài liệu khoa học Elsevier"
       ],
-      "core_definition": "Nền tảng trực tuyến truy cập hàng triệu bài báo nghiên cứu bình duyệt của Elsevier.",
-      "seminal_citation": "Elsevier (1997)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Tổng quan Y văn (Literature Review)",
+        "Khoa học Dữ liệu & Xuất bản",
+        "Tìm kiếm Học thuật"
+      ],
+      "core_definition": "Nền tảng phân phối tài liệu toàn văn (full-text platform) trực tuyến hàng đầu thế giới của nhà xuất bản Elsevier, cung cấp quyền truy cập tới hơn 19 triệu bài báo khoa học và chương sách từ hơn 2.500 tạp chí bình duyệt và 40.000 đầu sách học thuật chất lượng cao. ScienceDirect là một trong những nguồn dữ liệu nguồn sơ cấp thiết yếu nhất cho các nghiên cứu tổng quan hệ thống và phân tích tổng hợp trên toàn cầu.",
+      "seminal_citation": "Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., ... & Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. BMJ, 372, n71. https://doi.org/10.1136/bmj.n71",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of ScienceDirect (Elsevier) according to Elsevier (1997).",
       "domain_tags_en": [
         "Scholarly Publishing"
-      ]
+      ],
+      "benchmarks": "Chiến lược khai thác: Sử dụng cú pháp tìm kiếm nâng cao (Advanced Search) với các toán tử Boolean, lọc theo nhóm chuyên ngành (Physical Sciences, Life Sciences, Health Sciences, Social Sciences & Humanities), xuất danh mục trích dẫn đồng loạt dưới dạng file .RIS / BibTeX để nạp vào các phần mềm quản lý trích dẫn (Mendeley, Zotero).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Chỉ tra cứu trên ScienceDirect mà coi đó là tổng quan toàn diện, bỏ qua các nghiên cứu quan trọng từ các nhà xuất bản lớn khác như SpringerNature, Wiley, Taylor & Francis hoặc IEEE; không ghi nhận ngày truy xuất và cú pháp chuỗi từ khóa chính xác trong báo cáo PRISMA.",
+      "apa_reference": "Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., ... & Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. BMJ, 372, n71.",
+      "is_flagship": true
     },
     {
       "id": "scientific-integrity-officer",
-      "term": "Scientific Integrity Officer",
-      "vietnamese": "Cán bộ Liêm chính Khoa học",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Governance"
+      "term": "Scientific Integrity Officer (Research Integrity Officer - RIO)",
+      "vietnamese": "Cán bộ phụ trách Liêm chính Khoa học (RIO)",
+      "vietnamese_variants": [
+        "Chuyên viên thanh tra liêm chính nghiên cứu",
+        "Ủy viên giám sát đạo đức học thuật"
       ],
-      "core_definition": "Người chịu trách nhiệm điều tra và xử lý các cáo buộc gian lận dữ liệu, đạo văn và sai phạm nghiên cứu.",
-      "seminal_citation": "Office of Research Integrity (ORI, 2011)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Liêm chính Khoa học (Research Integrity)",
+        "Quản trị Học thuật",
+        "Đạo đức Nghiên cứu"
+      ],
+      "core_definition": "Chức danh quản trị chuyên trách tại các trường đại học, viện nghiên cứu hoặc cơ quan cấp quỹ tài trợ (như NIH, NSF), chịu trách nhiệm thực thi các chính sách liêm chính nghiên cứu, tiếp nhận tố cáo, tổ chức điều tra sơ bộ (inquiry) và điều tra chính thức (investigation) về các hành vi sai trái trong nghiên cứu khoa học (Research Misconduct: FFP - Bịa đặt dữ liệu, Ngụy tạo dữ liệu, Đạo văn; xung đột lợi ích tài chính; vi phạm quy chuẩn đạo đức thử nghiệm).",
+      "seminal_citation": "Office of Research Integrity. (2011). Handling Misconduct: The Inquiry and Investigation Process. U.S. Department of Health and Human Services; National Academies of Sciences, Engineering, and Medicine. (2017). Fostering Integrity in Research. The National Academies Press. https://doi.org/10.17226/21896",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Scientific Integrity Officer according to Office of Research Integrity (ORI, 2011).",
       "domain_tags_en": [
         "Research Governance"
-      ]
+      ],
+      "benchmarks": "Quy trình điều tra chuẩn mực: RIO phải đảm bảo nguyên tắc bảo mật thông tin tuyệt đối cho người tố giác (whistleblower) và đối tượng bị tố cáo; thu giữ và bảo toàn dữ liệu gốc (evidence sequestration); thành lập hội đồng chuyên gia độc lập không có xung đột lợi ích; và ban hành báo cáo kết luận điều tra chính thức trình lên lãnh đạo cơ quan.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Cơ quan nghiên cứu không có quy trình xử lý tố cáo minh bạch hoặc để xảy ra tình trạng bao che cho các nhà khoa học có chức vụ cao; RIO để rò rỉ thông tin trước khi có kết luận chính thức gây tổn hại uy tín cá nhân của nhà nghiên cứu vô tội.",
+      "apa_reference": "National Academies of Sciences, Engineering, and Medicine. (2017). Fostering Integrity in Research. The National Academies Press.",
+      "is_flagship": true
     },
     {
       "id": "scientific-realism",
-      "term": "Scientific realism",
-      "vietnamese": "Chủ nghĩa thực nghiệm khoa học",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Scientific Realism",
+      "vietnamese": "Chủ nghĩa hiện thực khoa học",
+      "vietnamese_variants": [
+        "Thuyết hiện thực khoa học",
+        "Lập trường hiện thực khoa học trong triết học"
       ],
-      "core_definition": "Khung nhận thức luận khẳng định thực tại khách quan và tiệm cận chân lý.",
-      "seminal_citation": "Hunt (2015)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Triết học Khoa học",
+        "Bản thể luận & Nhận thức luận",
+        "Phương pháp Luận Nghiên cứu"
+      ],
+      "core_definition": "Lập trường triết học nền tảng khẳng định rằng thế giới vật lý và xã hội tồn tại khách quan độc lập với tâm trí và nhận thức của con người; và các lý thuyết khoa học tốt nhất hiện có phản ánh thực tại một cách chân thực (hoặc xấp xỉ chân thực), bao gồm cả những thực thể không thể quan sát trực tiếp được (unobservable entities, ví dụ: electron, gen, hoặc các cấu trúc xã hội ngầm như 'vốn xã hội', 'văn hóa tổ chức'). Luận điểm trung tâm là 'Luận cứ Phép màu' (No-Miracles Argument của Hilary Putnam): thành công vượt bậc của khoa học sẽ là một phép màu nếu các lý thuyết không mô tả đúng thực tại.",
+      "seminal_citation": "Putnam, H. (1975). Mathematics, Matter and Method. Cambridge University Press; Boyd, R. N. (1983). On the current status of the issue of scientific realism. Erkenntnis, 19(1/3), 45–90. https://doi.org/10.1007/BF00174775; Psillos, S. (1999). Scientific Realism: How Science Tracks Truth. Routledge.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Scientific realism according to Hunt (2015).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Hệ quả phương pháp luận: Khoa học không chỉ dừng lại ở việc cứu vãn hiện tượng (instrumentalism/empiricism) hay mô tả kinh nghiệm, mà mục tiêu tối hậu là khám phá các cơ chế nhân quả tiềm ẩn (causal mechanisms). Nghiên cứu đòi hỏi phải kiểm định giả thuyết và xây dựng các mô hình giải thích có chiều sâu bản thể luận.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Rơi vào hiện thực ngây thơ (naive realism) tin rằng dữ liệu đo lường phản ánh 100% bản chất tự nhiên mà không có sai số; hoặc rơi vào thuyết công cụ cực đoan (instrumentalism) chỉ quan tâm đến khả năng khớp số liệu thống kê mà bỏ qua tính chân thực của cơ chế lý thuyết.",
+      "apa_reference": "Boyd, R. N. (1983). On the current status of the issue of scientific realism. Erkenntnis, 19(1/3), 45–90.",
+      "is_flagship": true
     },
     {
       "id": "scientific-research-programmes",
-      "term": "Scientific Research Programmes",
-      "vietnamese": "Chương trình Nghiên cứu Khoa học của Imre Lakatos",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Philosophy of Science"
+      "term": "Methodology of Scientific Research Programmes (MSRP - Lakatos)",
+      "vietnamese": "Phương pháp luận các chương trình nghiên cứu khoa học (MSRP Lakatos)",
+      "vietnamese_variants": [
+        "Chương trình nghiên cứu khoa học của Imre Lakatos",
+        "Khung lý thuyết MSRP"
       ],
-      "core_definition": "gồm Lõi cứng Hard Core và Vành đai Bảo vệ Protective Belt.",
-      "seminal_citation": "Lakatos (1978)",
-      "tier": "curated",
+      "domain_tags": [
+        "Triết học Khoa học",
+        "Tiến hóa Lý thuyết",
+        "Phương pháp Luận Nghiên cứu"
+      ],
+      "core_definition": "Khuôn khổ triết học khoa học do Imre Lakatos phát triển nhằm dung hòa thuyết bác bỏ (falsificationism) của Karl Popper và cấu trúc các cuộc cách mạng khoa học (paradigms) của Thomas Kuhn. Một chương trình nghiên cứu khoa học (SRP) bao gồm: (1) Lõi cứng (Hard Core) - các giả định nền tảng bất khả xâm phạm được bảo vệ bởi (2) Vành đai bảo vệ (Protective Belt) gồm các giả thuyết phụ trợ có thể điều chỉnh hoặc thay thế, (3) Chỉ dẫn phủ định (Negative Heuristic - cấm tấn công vào lõi cứng), và (4) Chỉ dẫn khẳng định (Positive Heuristic - định hướng cách phát triển và tinh chỉnh vành đai bảo vệ).",
+      "seminal_citation": "Lakatos, I. (1970). Falsification and the methodology of scientific research programmes. In I. Lakatos & A. Musgrave (Eds.), Criticism and the Growth of Knowledge (pp. 91–196). Cambridge University Press. https://doi.org/10.1017/CBO9781139171434.009; Lakatos, I. (1978). The Methodology of Scientific Research Programmes: Philosophical Papers (Vol. 1). Cambridge University Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Scientific Research Programmes according to Lakatos (1978).",
       "domain_tags_en": [
         "Philosophy of Science"
-      ]
+      ],
+      "benchmarks": "Đánh giá tính tiến bộ: Một chương trình nghiên cứu được coi là tiến bộ (Progressive) nếu các cải biến lý thuyết dẫn đến việc dự báo được các hiện tượng mới lạ chưa từng biết (novel facts) và được thực nghiệm xác nhận; ngược lại, chương trình bị thoái hóa (Degenerating) nếu nó chỉ liên tục đưa ra các giả thuyết chữa cháy hậu nghiệm (ad-hoc modifications) để đối phó với các bằng chứng phản nghiệm.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Từ bỏ một khung lý thuyết lớn ngay khi gặp một ngoại lệ thực nghiệm đơn lẻ (bác bỏ ngây thơ); hoặc ngược lại, cố chấp bảo vệ một mô hình nghiên cứu đã thoái hóa bằng hàng loạt giả định phụ gượng ép mà không tạo ra bất kỳ tri thức mới nào.",
+      "apa_reference": "Lakatos, I. (1970). Falsification and the methodology of scientific research programmes. In I. Lakatos & A. Musgrave (Eds.), Criticism and the Growth of Knowledge (pp. 91–196). Cambridge University Press.",
+      "is_flagship": true
     },
     {
       "id": "scimago-journal-rank",
-      "term": "SCImago Journal Rank",
-      "vietnamese": "Chỉ số Xếp hạng Tạp chí SCImago (Scopus / Elsevier)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scientometrics",
-        "Scopus Indexing"
+      "term": "SCImago Journal Rank (SJR Metric)",
+      "vietnamese": "Chỉ số xếp hạng tạp chí SCImago (Chỉ số SJR)",
+      "vietnamese_variants": [
+        "Thước đo uy tín tạp chí SJR",
+        "Chỉ số ảnh hưởng dựa trên mạng lưới trích dẫn SJR"
       ],
-      "core_definition": "Thước đo ảnh hưởng khoa học của tạp chí dựa trên thuật toán PageRank của Google, gán trọng số trích dẫn cao hơn cho các trích dẫn đến từ những tạp chí có uy tín lớn. Ngưỡng thực nghiệm tham chiếu: Phân chia thứ hạng tạp chí thành 4 phân vị: Q1 (top 25%), Q2 (25% - 50%), Q3 (50% - 75%), và Q4 (bottom 25%) theo từng lĩnh vực chuyên ngành.",
-      "seminal_citation": "Phân chia thứ hạng tạp chí thành 4 phân vị: Q1 (top 25%), Q2 (25% - 50%), Q3 (50% - 75%), và Q4 (bottom 25%) theo từng lĩnh vực chuyên ngành.",
-      "tier": "acronym",
+      "domain_tags": [
+        "Trắc lượng Khoa học (Scientometrics)",
+        "Đánh giá Tạp chí Khoa học",
+        "Scopus & Scimago"
+      ],
+      "core_definition": "Chỉ số trắc lượng khoa học đo lường tầm ảnh hưởng và uy tín khoa học của các tạp chí học thuật được chỉ mục trong cơ sở dữ liệu Scopus của Elsevier, do nhóm nghiên cứu SCImago (Đại học Granada, Tây Ban Nha) phát triển. Khác với Impact Factor (vốn đếm thô số trích dẫn), SJR áp dụng thuật toán PageRank của Google trên mạng lưới trích dẫn học thuật: một trích dẫn đến từ một tạp chí danh giá hàng đầu (SJR cao) sẽ có trọng số giá trị lớn hơn nhiều so với một trích dẫn đến từ một tạp chí ít tên tuổi.",
+      "seminal_citation": "González-Pereira, B., Guerrero-Bote, V. P., & Moya-Anegón, F. (2010). A new approach to the metric of journals’ scientific prestige: The SJR indicator. Journal of Informetrics, 4(3), 379–391. https://doi.org/10.1016/j.joi.2010.03.002; Guerrero-Bote, V. P., & Moya-Anegón, F. (2012). A further step forward in measuring journals' scientific prestige: The SJR2 indicator. Journal of Informetrics, 6(4), 674–688.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of SCImago Journal Rank according to Phân chia thứ hạng tạp chí thành 4 phân vị: Q1 (top 25%), Q2 (25% - 50%), Q3 (50% - 75%), và Q4 (bottom 25%) theo từng lĩnh vực chuyên ngành..",
@@ -50590,99 +50733,146 @@
         "Scientometrics",
         "Scopus Indexing"
       ],
-      "benchmarks": "Phân chia thứ hạng tạp chí thành 4 phân vị: Q1 (top 25%), Q2 (25% - 50%), Q3 (50% - 75%), và Q4 (bottom 25%) theo từng lĩnh vực chuyên ngành."
+      "benchmarks": "Đặc tính tính toán: SJR tính toán số trích dẫn nhận được trong 3 năm gần nhất chia cho số bài báo xuất bản, có điều chỉnh theo uy tín của nguồn trích dẫn và chuẩn hóa theo lĩnh vực chuyên môn. Thang đo SJR là thước đo tương đối; giá trị SJR = 1.00 đại diện cho mức uy tín trung bình của tạp chí trong cơ sở dữ liệu Scopus.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đồng nhất SJR của tạp chí với chất lượng của từng bài báo cá nhân đăng trong tạp chí đó; so sánh trực tiếp chỉ số SJR thô giữa hai lĩnh vực hoàn toàn khác nhau (ví dụ: Khoa học máy tính so với Y học) mà không quy đổi về phân vị (Quartiles).",
+      "apa_reference": "González-Pereira, B., Guerrero-Bote, V. P., & Moya-Anegón, F. (2010). A new approach to the metric of journals’ scientific prestige: The SJR indicator. Journal of Informetrics, 4(3), 379–391.",
+      "is_flagship": true
     },
     {
       "id": "scimago-journal-rank-sjr",
-      "term": "SCImago Journal Rank (SJR)",
-      "vietnamese": "Chỉ số Xếp hạng Tạp chí SJR",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scientometrics"
+      "term": "SCImago Journal & Country Rank Platform (SJR Tiers & Quartiles)",
+      "vietnamese": "Hệ thống phân hạng tạp chí SCImago (Phân vị Q1-Q4 và Xếp hạng Quốc gia)",
+      "vietnamese_variants": [
+        "Cổng thông tin SCImago SJR",
+        "Phân hạng tạp chí Scopus theo SCImago"
       ],
-      "core_definition": "Đo lường tầm ảnh hưởng dựa trên thuật toán PageRank gán trọng số trích dẫn uy tín.",
-      "seminal_citation": "González-Pereira et al. (2010)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Trắc lượng Khoa học (Scientometrics)",
+        "Chính sách Khoa học & Đánh giá",
+        "Scopus & Scimago"
+      ],
+      "core_definition": "Cổng thông tin trắc lượng khoa học mở công khai (SCImago Journal & Country Rank - SJR) cung cấp các chỉ số đánh giá tạp chí và năng suất nghiên cứu khoa học của các quốc gia dựa trên dữ liệu Scopus. Nền tảng phân chia các tạp chí trong từng chuyên ngành cụ thể thành 4 nhóm tứ phân vị: Q1 (top 25% cao nhất), Q2 (25% - 50%), Q3 (50% - 75%), và Q4 (25% thấp nhất) dựa trên chỉ số uy tín SJR.",
+      "seminal_citation": "Butler, D. (2008). Free journal-ranking tool enters citation market. Nature, 451(7174), 6. https://doi.org/10.1038/451006a; Moya-Anegón, F., Chinchilla-Rodríguez, Z., Vargas-Quesada, B., Corera-Álvarez, E., Muñoz-Fernández, F. J., & González-Molina, A. (2007). Coverage analysis of Scopus: A journal metric approach. Scientometrics, 73(1), 53–78.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2291",
       "core_definition_en": "Academic definition of SCImago Journal Rank (SJR) according to González-Pereira et al. (2010).",
       "domain_tags_en": [
         "Scientometrics"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn thẩm định hồ sơ: Các trường đại học và cơ quan quản lý nghiên cứu thường sử dụng phân vị Q1/Q2 SCImago làm chuẩn mực tài trợ hoặc yêu cầu tốt nghiệp tiến sĩ. Hệ thống cập nhật phân vị định kỳ vào tháng 5-6 hàng năm; khi báo cáo, tác giả bắt buộc phải ghi rõ năm xếp hạng và chuyên ngành cụ thể (subject category) vì một tạp chí có thể là Q1 ở ngành này nhưng là Q2 ở ngành khác.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đăng bài vào các tạp chí 'bị ngừng chỉ mục' (Discontinued in Scopus) nhưng vẫn còn hiển thị xếp hạng cũ trên SCImago; không kiểm tra danh mục Scopus Sources mới nhất để xác minh tính hợp lệ hiện hành của tạp chí.",
+      "apa_reference": "Moya-Anegón, F., Chinchilla-Rodríguez, Z., Vargas-Quesada, B., Corera-Álvarez, E., Muñoz-Fernández, F. J., & González-Molina, A. (2007). Coverage analysis of Scopus: A journal metric approach. Scientometrics, 73(1), 53–78.",
+      "is_flagship": true
     },
     {
       "id": "scoping-review-2295",
-      "term": "Scoping Review",
-      "vietnamese": "Tổng quan phạm vi",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Systematic Review"
+      "term": "Scoping Review (Broad Evidence Mapping)",
+      "vietnamese": "Tổng quan phạm vi (Tổng quan rà soát bản đồ bằng chứng)",
+      "vietnamese_variants": [
+        "Nghiên cứu tổng quan phạm vi",
+        "Rà soát toàn cảnh y văn (Scoping Study)"
       ],
-      "core_definition": "khảo sát bản đồ tổng thể phạm vi và tính chất của tài liệu nghiên cứu.",
-      "seminal_citation": "Arksey & O'Malley (2005)",
-      "tier": "curated",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Tổng quan Hệ thống (Systematic Review)",
+        "Thiết kế Tổng quan Y văn",
+        "Tổng hợp Bằng chứng (Evidence Synthesis)"
+      ],
+      "core_definition": "Một hình thức tổng hợp bằng chứng khoa học có hệ thống nhằm mục đích lập bản đồ toàn cảnh (mapping) các tài liệu nghiên cứu hiện có về một chủ đề rộng, làm rõ các khái niệm và định nghĩa then chốt trong y văn, xác định các loại hình bằng chứng sẵn có, và chỉ ra những khoảng trống tri thức (knowledge gaps) lớn chưa được khám phá. Khác với tổng quan hệ thống truyền thống (vốn trả lời một câu hỏi lâm sàng rất hẹp), tổng quan phạm vi có phạm vi câu hỏi bao quát hơn và thường không bắt buộc phải đánh giá nguy cơ sai lệch (Risk of Bias) nghiêm ngặt.",
+      "seminal_citation": "Munn, Z., Peters, M. D., Stern, C., Tufanaru, C., McArthur, A., & Aromataris, E. (2018). Systematic review or scoping review? Guidance for authors when choosing between a systematic or scoping review approach. BMC Medical Research Methodology, 18(1), 143. https://doi.org/10.1186/s12874-018-0611-x; Tricco, A. C., Lillie, E., Zarin, W., O'Brien, K. K., Colquhoun, H., Levac, D., ... & Straus, S. E. (2018). PRISMA Extension for Scoping Reviews (PRISMA-ScR): Checklist and explanation. Annals of Internal Medicine, 169(7), 467–473.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2296",
       "core_definition_en": "Academic definition of Scoping Review according to Arksey & O'Malley (2005).",
       "domain_tags_en": [
         "Systematic Review"
-      ]
+      ],
+      "benchmarks": "Chỉ định áp dụng: Được thực hiện khi: (1) Lĩnh vực nghiên cứu còn mới mẻ hoặc đa ngành phức tạp, (2) Cần làm rõ phạm vi trước khi quyết định thực hiện một tổng quan hệ thống chính thức, hoặc (3) Cần khảo sát cách thức các nhà nghiên cứu đã thao tác hóa một khái niệm lý thuyết.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Thực hiện Scoping Review một cách cẩu thả như một bài điểm báo truyền thống mà không có đề cương (protocol) đã đăng ký trước; cố tình đưa ra các kết luận khuyến nghị thực hành y khoa/chính sách mạnh mẽ khi chưa thẩm định chất lượng phương pháp luận của các nghiên cứu đưa vào.",
+      "apa_reference": "Munn, Z., Peters, M. D., Stern, C., Tufanaru, C., McArthur, A., & Aromataris, E. (2018). Systematic review or scoping review? Guidance for authors when choosing between a systematic or scoping review approach. BMC Medical Research Methodology, 18(1), 143.",
+      "is_flagship": true
     },
     {
       "id": "scoping-review-methodology-arksey-omalley",
-      "term": "Scoping Review Methodology (Arksey & O'Malley)",
-      "vietnamese": "Phương pháp Tổng quan Phạm vi",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Evidence Synthesis"
+      "term": "Scoping Review Methodology (Arksey & O'Malley Framework)",
+      "vietnamese": "Phương pháp luận tổng quan phạm vi theo khung Arksey & O'Malley",
+      "vietnamese_variants": [
+        "Khung 5 giai đoạn Arksey & O'Malley",
+        "Quy trình thực hiện Scoping Review chuẩn hóa"
       ],
-      "core_definition": "Bản đồ hóa phạm vi, tính chất và đặc điểm của kho bằng chứng về một chủ đề rộng.",
-      "seminal_citation": "Arksey & O'Malley (2005)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Tổng quan Hệ thống (Systematic Review)",
+        "Phương pháp Luận Tổng quan",
+        "Hướng dẫn JBI & PRISMA-ScR"
+      ],
+      "core_definition": "Khung phương pháp luận kinh điển gồm 5 giai đoạn cốt lõi (kèm giai đoạn 6 tùy chọn) do Hilary Arksey và Lisa O'Malley đề xuất năm 2005, sau đó được Levac, Colquhoun và O'Brien (2010) cũng như Viện Joanna Briggs (JBI) chuẩn hóa. Quy trình bao gồm: Giai đoạn 1: Xác định câu hỏi nghiên cứu; Giai đoạn 2: Nhận diện các nghiên cứu liên quan; Giai đoạn 3: Lựa chọn nghiên cứu theo tiêu chí dung nạp/loại trừ; Giai đoạn 4: Lập biểu đồ dữ liệu (Charting the data); Giai đoạn 5: Đối chiếu, tóm tắt và báo cáo kết quả; và Giai đoạn 6 (tùy chọn): Tham vấn các bên liên quan (Consultation exercise).",
+      "seminal_citation": "Arksey, H., & O'Malley, L. (2005). Scoping studies: Towards a methodological framework. International Journal of Social Research Methodology, 8(1), 19–32. https://doi.org/10.1080/1364557032000119616; Levac, D., Colquhoun, H., & O'Brien, K. K. (2010). Scoping studies: Advancing the methodology. Implementation Science, 5(1), 69. https://doi.org/10.1186/1748-5908-5-69",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Scoping Review Methodology (Arksey & O'Malley) according to Arksey & O'Malley (2005).",
       "domain_tags_en": [
         "Evidence Synthesis"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn báo cáo: Bắt buộc phải tuân thủ danh mục kiểm tra PRISMA-ScR (20 mục kiểm tra cốt lõi), trình bày biểu đồ dòng PRISMA Flow Diagram minh bạch từng khâu sàng lọc, và lập bảng tổng hợp ma trận dữ liệu (Data Charting Matrix) chi tiết.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Bỏ qua giai đoạn lập biểu đồ dữ liệu (Data Charting) và trích xuất dữ liệu không có sự tham gia của 2 nhà nghiên cứu độc lập (screening and extraction must be duplicated); không giải trình rõ ràng các tiêu chí loại trừ bài báo.",
+      "apa_reference": "Arksey, H., & O'Malley, L. (2005). Scoping studies: Towards a methodological framework. International Journal of Social Research Methodology, 8(1), 19–32.",
+      "is_flagship": true
     },
     {
       "id": "scopus-database-elsevier",
       "term": "Scopus Database (Elsevier)",
-      "vietnamese": "Cơ sở Dữ liệu Scopus",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scientometrics",
-        "Publishing"
+      "vietnamese": "Cơ sở dữ liệu trích dẫn và tóm tắt Scopus (Elsevier)",
+      "vietnamese_variants": [
+        "Hệ thống cơ sở dữ liệu Scopus",
+        "Chỉ mục học thuật Scopus"
       ],
-      "core_definition": "Hệ thống cơ sở dữ liệu tóm tắt và trích dẫn khoa học bình duyệt lớn nhất thế giới của Elsevier.",
-      "seminal_citation": "Elsevier (2004)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Trắc lượng Khoa học (Scientometrics)",
+        "Tổng quan Y văn (Literature Review)",
+        "Cơ sở Dữ liệu Học thuật"
+      ],
+      "core_definition": "Cơ sở dữ liệu tóm tắt và trích dẫn học thuật bình duyệt lớn nhất thế giới do Elsevier xây dựng từ năm 2004, bao phủ hơn 27.000 tạp chí bình duyệt, 300.000 sách và 11 triệu bài kỷ yếu hội thảo từ hơn 7.000 nhà xuất bản quốc tế. Scopus cung cấp các công cụ trắc lượng khoa học mạnh mẽ như theo dõi trích dẫn, chỉ số CiteScore, SJR, SNIP, và chỉ số h-index của tác giả, đóng vai trò nền tảng dữ liệu cho các bảng xếp hạng đại học toàn cầu (THE, QS).",
+      "seminal_citation": "Burnham, J. F. (2006). Scopus database: A review. Biomedical Digital Libraries, 3(1), 1. https://doi.org/10.1186/1742-5581-3-1; Baas, J., Schotten, M., Plume, A., Côté, G., & Karimi, R. (2020). Scopus as a curated, high-quality bibliometric data source for academic research in quantitative science studies. Quantitative Science Studies, 1(1), 377–386. https://doi.org/10.1162/qss_a_00019",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Scopus Database (Elsevier) according to Elsevier (2004).",
       "domain_tags_en": [
         "Scientometrics",
         "Publishing"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn tìm kiếm hệ thống: Sử dụng mã trường Scopus (Field Codes: TITLE-ABS-KEY, AUTH, AFFIL, DOCTYPE) kết hợp toán tử Boolean và toán tử tiệm cận (W/n, PRE/n); xuất kết quả dưới dạng tệp .CSV đầy đủ thông tin trích dẫn để phân tích trắc lượng mạng lưới bằng phần mềm VOSviewer hoặc Bibliometrix (R package).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đăng bài vào các tạp chí vừa bị Scopus loại bỏ (Scopus Discontinued list - cập nhật hàng tháng) do hành vi xuất bản bất thường; không đồng bộ mã định danh tác giả (Scopus Author ID / ORCID) dẫn đến bài báo bị phân tán vào nhiều hồ sơ tác giả khác nhau.",
+      "apa_reference": "Baas, J., Schotten, M., Plume, A., Côté, G., & Karimi, R. (2020). Scopus as a curated, high-quality bibliometric data source for academic research in quantitative science studies. Quantitative Science Studies, 1(1), 377–386.",
+      "is_flagship": true
     },
     {
       "id": "scree-plot-inspection-cattell",
-      "term": "Scree Plot Inspection (Cattell)",
-      "vietnamese": "Thẩm định Biểu đồ Độ dốc Scree Plot",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Factor Analysis"
+      "term": "Scree Plot Inspection (Cattell's Scree Test)",
+      "vietnamese": "Kiểm tra biểu đồ dốc sỏi Cattell (trong phân tích nhân tố khám phá EFA)",
+      "vietnamese_variants": [
+        "Thử nghiệm biểu đồ Scree Plot của Cattell",
+        "Kiểm định điểm gãy Scree Test"
       ],
-      "core_definition": "Quan sát điểm gấp khúc của đường cong biểu diễn eigenvalue để xác định số nhân tố.",
-      "seminal_citation": "Cattell (1966)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phân tích Nhân tố Khám phá (EFA)",
+        "Phân tích Thành phần Chính (PCA)",
+        "Đo lường & Tâm trắc học"
+      ],
+      "core_definition": "Phương pháp đồ thị trực quan do Raymond B. Cattell đề xuất năm 1966 để xác định số lượng nhân tố tối ưu cần trích xuất trong phân tích nhân tố khám phá (EFA) hoặc phân tích thành phần chính (PCA). Đồ thị biểu diễn các giá trị riêng (eigenvalues) trên trục tung tương ứng với thứ tự các nhân tố trên trục hoành. Thuật ngữ 'scree' xuất phát từ hiện tượng địa chất học chỉ đống sỏi vụn nằm dưới chân vách núi dốc: điểm uốn (elbow point) nơi đường dốc đứng chuyển sang sườn thoải ngang xác định số lượng nhân tố thực sự có giá trị.",
+      "seminal_citation": "Cattell, R. B. (1966). The scree test for the number of factors. Multivariate Behavioral Research, 1(2), 245–276. https://doi.org/10.1207/s15327906mbr0102_10; Zwick, W. R., & Velicer, W. F. (1986). Comparison of five rules for determining the number of components to retain. Psychological Bulletin, 99(3), 432–442.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Scree Plot Inspection (Cattell) according to Cattell (1966).",
       "domain_tags_en": [
         "Factor Analysis"
-      ]
+      ],
+      "benchmarks": "Quy tắc quyết định: Nhà nghiên cứu trích xuất tất cả các nhân tố nằm TRƯỚC điểm gãy uốn (elbow) của đường dốc. Mặc dù trực quan, Scree Plot thường mang tính chủ quan khi có nhiều điểm uốn; do đó, các nghiên cứu Q1 hiện đại bắt buộc phải kết hợp Scree Plot với Phân tích Song song Horn (Horn's Parallel Analysis) - phương pháp chuẩn vàng khách quan nhất hiện nay.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Chỉ dựa vào quy tắc cơ học Kaiser-Guttman (Eigenvalue > 1.0) vốn có xu hướng giữ lại quá nhiều nhân tố rác (over-factoring); tranh cãi chủ quan về vị trí điểm uốn mà không chạy kiểm định Parallel Analysis đối chứng.",
+      "apa_reference": "Cattell, R. B. (1966). The scree test for the number of factors. Multivariate Behavioral Research, 1(2), 245–276.",
+      "is_flagship": true
     },
     {
       "id": "scree-test-criterion",
@@ -50712,59 +50902,84 @@
     },
     {
       "id": "script",
-      "term": "Script",
-      "vietnamese": "Khung câu mẫu (Khuôn mẫu) — Đoạn văn khung có sẵn các khoảng trống để người viết điền các biến số hoặc hiện tượng vào theo chuẩn.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Script (Interview Protocol & Qualitative Transcript)",
+      "vietnamese": "Kịch bản phỏng vấn và Bản gỡ băng ghi âm trong nghiên cứu định tính",
+      "vietnamese_variants": [
+        "Đề cương hướng dẫn phỏng vấn sâu",
+        "Văn bản sao chép lời thoại (Interview Transcript)"
       ],
-      "core_definition": "Khung câu mẫu (Khuôn mẫu) — Đoạn văn khung có sẵn các khoảng trống để người viết điền các biến số hoặc hiện tượng vào theo chuẩn.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Phương pháp Định tính",
+        "Thu thập Dữ liệu Phỏng vấn",
+        "Phân tích Chủ đề (Thematic Analysis)"
+      ],
+      "core_definition": "Thuật ngữ hai chiều trong nghiên cứu định tính: (1) Kịch bản phỏng vấn (Interview Script / Protocol) - văn bản hướng dẫn định hình dòng chảy câu hỏi, câu hỏi gặng (probes), lời mở đầu đạo đức và cam kết bảo mật danh tính của người nghiên cứu; và (2) Bản gỡ băng (Verbatim Transcript) - văn bản hóa từng từ ngữ, khoảng dừng, tiếng thở dài, cử chỉ của người được phỏng vấn từ băng ghi âm để đưa vào phần mềm phân tích định tính (NVivo, ATLAS.ti, MAXQDA).",
+      "seminal_citation": "Kvale, S. (1996). InterViews: An Introduction to Qualitative Research Interviewing. SAGE Publications; Poland, B. D. (1995). Transcription quality as an aspect of rigor in qualitative research. Qualitative Inquiry, 1(3), 290–310. https://doi.org/10.1177/107780049500100302",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Script according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "benchmarks": "Độ tin cậy của bản gỡ: Bản sao chép phải đạt chuẩn gỡ băng nguyên văn (verbatim transcription); thực hiện bước 'member checking' (gửi lại bản ghi thoại cho người tham gia kiểm tra độ chính xác); và mã hóa làm sạch danh tính (anonymization) ngay trên văn bản trước khi chia sẻ trong nhóm nghiên cứu.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Tự ý sửa chữa, chau chuốt câu từ của người được phỏng vấn làm mất đi sắc thái cảm xúc và bối cảnh chân thực; thiếu kịch bản gặng hỏi (probing script) khiến các cuộc phỏng vấn hời hợt chỉ thu được câu trả lời một chiều ngắn ngủi.",
+      "apa_reference": "Poland, B. D. (1995). Transcription quality as an aspect of rigor in qualitative research. Qualitative Inquiry, 1(3), 290–310.",
+      "is_flagship": true
     },
     {
       "id": "seci-model-of-knowledge-creation",
-      "term": "SECI Model of Knowledge Creation",
-      "vietnamese": "Mô hình Sáng tạo Tri thức SECI",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Knowledge Management"
+      "term": "SECI Model of Knowledge Creation (Nonaka & Takeuchi)",
+      "vietnamese": "Mô hình sáng tạo tri thức SECI (Nonaka & Takeuchi)",
+      "vietnamese_variants": [
+        "Vòng xoắn ốc tri thức SECI",
+        "Mô hình chuyển hóa tri thức ẩn và hiện"
       ],
-      "core_definition": "Xã hội hóa Socialization, Ngoại hóa Externalization, Kết hợp Combination, Nội hóa Internalization.",
-      "seminal_citation": "Nonaka & Takeuchi (1995)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Quản trị Tri thức (Knowledge Management)",
+        "Hành vi Tổ chức",
+        "Khung Khái niệm Lý thuyết"
+      ],
+      "core_definition": "Mô hình lý thuyết kinh điển về quản trị tri thức do Ikujiro Nonaka và Hirotaka Takeuchi phát triển năm 1995, giải thích cơ chế chuyển hóa động giữa hai dạng tri thức: Tri thức ẩn (Tacit knowledge - kinh nghiệm cá nhân, bí quyết khó diễn đạt) và Tri thức hiện (Explicit knowledge - văn bản, công thức, quy trình số hóa). Mô hình vận hành như một vòng xoắn ốc liên tục qua 4 phương thức chuyển hóa: (1) Xã hội hóa (Socialization: Tacit -> Tacit), (2) Ngoại hóa (Externalization: Tacit -> Explicit), (3) Kết hợp (Combination: Explicit -> Explicit), và (4) Nội hóa (Internalization: Explicit -> Tacit).",
+      "seminal_citation": "Nonaka, I. (1994). A dynamic theory of organizational knowledge creation. Organization Science, 5(1), 14–37. https://doi.org/10.1287/orsc.5.1.14; Nonaka, I., & Takeuchi, H. (1995). The Knowledge-Creating Company: How Japanese Companies Create the Dynamics of Innovation. Oxford University Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of SECI Model of Knowledge Creation according to Nonaka & Takeuchi (1995).",
       "domain_tags_en": [
         "Knowledge Management"
-      ]
+      ],
+      "benchmarks": "Ứng dụng trong nghiên cứu định lượng/định tính: Được sử dụng làm nền tảng lý thuyết cho các nghiên cứu về đổi mới sáng tạo tổ chức, học tập tổ chức và chuyển đổi số. Thao tác hóa mô hình thường thông qua thang đo Likert đo lường 4 chiều kích chuyển hóa hoặc nghiên cứu tình huống sâu về không gian tương tác (Ba).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Xem mô hình SECI như một quy trình cơ học một chiều khép kín thay vì một vòng xoắn ốc tiến hóa mở rộng không ngừng (expanding spiral); bỏ qua yếu tố bối cảnh tương tác chia sẻ tri thức (khái niệm 'Ba' của Nonaka & Konno).",
+      "apa_reference": "Nonaka, I., & Takeuchi, H. (1995). The Knowledge-Creating Company: How Japanese Companies Create the Dynamics of Innovation. Oxford University Press.",
+      "is_flagship": true
     },
     {
       "id": "seemingly-unrelated-regressions-sur",
-      "term": "Seemingly Unrelated Regressions (SUR)",
-      "vietnamese": "Hệ Hồi quy Dường như Không liên quan",
+      "term": "Seemingly Unrelated Regressions (SUR - Zellner's Model)",
+      "vietnamese": "Hệ phương trình hồi quy dường như không liên quan (Mô hình SUR Zellner)",
       "vietnamese_variants": [
-        "SUR"
+        "Mô hình hồi quy SUR",
+        "Ước lượng SUR cho hệ phương trình đồng thời"
       ],
       "domain_tags": [
-        "Econometrics"
+        "Kinh tế lượng Nâng cao",
+        "Hệ Phương trình Đồng thời",
+        "Phương pháp Định lượng"
       ],
-      "core_definition": "Ước lượng đồng thời nhiều phương trình có sai số tương quan chéo.",
-      "seminal_citation": "Zellner (1962)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "core_definition": "Kỹ thuật kinh tế lượng do Arnold Zellner đề xuất năm 1962, dùng để ước lượng đồng thời một hệ thống gồm nhiều phương trình hồi quy tuyến tính. Mặc dù thoạt nhìn bề ngoài các phương trình này có vẻ độc lập vì mỗi phương trình có biến phụ thuộc riêng và tập biến độc lập riêng, nhưng chúng thực chất có mối liên hệ ngầm chặt chẽ thông qua các phần dư sai số có tương quan với nhau (contemporaneous correlation of error terms, ví dụ: các cú sốc vĩ mô tác động đồng thời lên nhiều ngành kinh tế hoặc nhiều quyết định của cùng một doanh nghiệp).",
+      "seminal_citation": "Zellner, A. (1962). An efficient method of estimating seemingly unrelated regressions and tests for aggregation bias. Journal of the American Statistical Association, 57(298), 348–368. https://doi.org/10.1080/01621459.1962.10480664; Greene, W. H. (2018). Econometric Analysis (8th ed.). Pearson.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2310",
       "core_definition_en": "Academic definition of Seemingly Unrelated Regressions (SUR) according to Zellner (1962).",
       "domain_tags_en": [
         "Econometrics"
-      ]
+      ],
+      "benchmarks": "Hiệu quả thống kê (Efficiency gain): Khi phần dư giữa các phương trình có tương quan đương thời đáng kể (kiểm định Breusch-Pagan test of independence bác bỏ H0 với p < 0.05) và các phương trình có tập biến độc lập khác nhau, phương pháp ước lượng Khả năng tổng quát hóa bình phương bé nhất (FGLS) trong mô hình SUR sẽ hiệu quả hơn nhiều (sai số chuẩn nhỏ hơn) so với chạy OLS riêng lẻ từng phương trình.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Áp dụng SUR khi tất cả các phương trình trong hệ có cùng một tập biến độc lập hệt nhau — trong trường hợp này, Zellner đã chứng minh hệ số ước lượng SUR đồng nhất hoàn toàn với kết quả OLS chạy riêng rẽ từng phương trình; bỏ qua hiện tượng nội sinh trong các phương trình (đòi hỏi phải nâng cấp lên 3SLS thay vì SUR).",
+      "apa_reference": "Zellner, A. (1962). An efficient method of estimating seemingly unrelated regressions and tests for aggregation bias. Journal of the American Statistical Association, 57(298), 348–368.",
+      "is_flagship": true
     },
     {
       "id": "selection-threat",
@@ -50836,96 +51051,139 @@
     },
     {
       "id": "self-determination-theory-sdt",
-      "term": "Self-Determination Theory (SDT)",
-      "vietnamese": "Lý thuyết Tự quyết",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Psychological Theory"
+      "term": "Self-Determination Theory (SDT - Deci & Ryan)",
+      "vietnamese": "Lý thuyết Tự quyết (Lý thuyết Động lực SDT)",
+      "vietnamese_variants": [
+        "Thuyết tự quyết Deci & Ryan",
+        "Lý thuyết động lực nội tại và nhu cầu tâm lý cơ bản"
       ],
-      "core_definition": "Hành vi được thúc đẩy bởi 3 nhu cầu tâm lý căn bản: Tự chủ Autonomy, Năng lực Competence, và Gắn kết Relatedness.",
-      "seminal_citation": "Deci & Ryan (1985/2000)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Tâm lý học Hành vi",
+        "Hành vi Tổ chức & Giáo dục",
+        "Khung Khái niệm Lý thuyết"
+      ],
+      "core_definition": "Đại lý thuyết kinh điển về động lực con người và sự phát triển nhân cách do Edward L. Deci và Richard M. Ryan sáng lập từ thập niên 1980. SDT phân biệt rõ rệt giữa chất lượng của động lực: Động lực tự chủ (Autonomous motivation - xuất phát từ động lực nội tại và giá trị cá nhân) so với Động lực bị kiểm soát (Controlled motivation - xuất phát từ áp lực bên ngoài, phần thưởng hoặc cảm giác tội lỗi). Trọng tâm của lý thuyết là 3 Nhu cầu Tâm lý Cơ bản (Basic Psychological Needs): Tự chủ (Autonomy), Năng lực (Competence), và Gắn kết quan hệ (Relatedness).",
+      "seminal_citation": "Deci, E. L., & Ryan, R. M. (1985). Intrinsic Motivation and Self-Determination in Human Behavior. Plenum Press. https://doi.org/10.1007/978-1-4899-2271-7; Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. American Psychologist, 55(1), 68–78. https://doi.org/10.1037/0003-066X.55.1.68",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Self-Determination Theory (SDT) according to Deci & Ryan (1985/2000).",
       "domain_tags_en": [
         "Psychological Theory"
-      ]
+      ],
+      "benchmarks": "Ứng dụng mô hình hóa: Thang đo BPNS (Basic Psychological Need Satisfaction) và Thang đo Tự điều chỉnh (Self-Regulation Questionnaire) thường được dùng làm tiền đề (antecedents) hoặc biến trung gian dự báo sự gắn kết công việc, đổi mới sáng tạo, hoặc sức khỏe tâm lý. Chỉ số Tự quyết tương đối (Relative Autonomy Index - RAI) được dùng để định lượng mức độ tự chủ của cá nhân.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đơn giản hóa lý thuyết bằng cách đối lập nhị nguyên thô thiển giữa 'nội tại' và 'ngoại tại' mà bỏ qua dải phổ liên tục của các hình thức tự điều chỉnh (external, introjected, identified, integrated regulation); trích dẫn SDT mà không kiểm định vai trò thỏa mãn 3 nhu cầu tâm lý cốt lõi.",
+      "apa_reference": "Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. American Psychologist, 55(1), 68–78.",
+      "is_flagship": true
     },
     {
       "id": "self-efficacy-theory-albert-bandura",
       "term": "Self-Efficacy Theory (Albert Bandura)",
-      "vietnamese": "Lý thuyết Niềm tin Năng lực Bản thân",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Psychological Theory"
+      "vietnamese": "Lý thuyết Năng lực Tự thân (Albert Bandura)",
+      "vietnamese_variants": [
+        "Thuyết niềm tin vào năng lực bản thân",
+        "Thuyết tự hiệu quả Bandura"
       ],
-      "core_definition": "Niềm tin của cá nhân vào khả năng thực hiện thành công các hành động để đạt mục tiêu.",
-      "seminal_citation": "Bandura (1977/1997)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Tâm lý học Nhận thức Xã hội",
+        "Hành vi Cá nhân & Tổ chức",
+        "Khung Khái niệm Lý thuyết"
+      ],
+      "core_definition": "Thành tố cốt lõi trong Lý thuyết Nhận thức Xã hội (Social Cognitive Theory) của Albert Bandura, định nghĩa niềm tin năng lực tự thân là sự tin tưởng của một cá nhân vào khả năng tổ chức và thực hiện các hành động cần thiết để đạt được những mục tiêu hoặc thành tích cụ thể. Bandura xác định 4 nguồn gốc tạo dựng năng lực tự thân: (1) Trải nghiệm làm chủ thành công trong quá khứ (Mastery experiences - nguồn mạnh nhất), (2) Trải nghiệm gián tiếp quan sát người khác (Vicarious experiences / Social modeling), (3) Thuyết phục xã hội bằng lời (Social persuasion), và (4) Trạng thái cảm xúc và sinh lý (Somatic and emotional states).",
+      "seminal_citation": "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215. https://doi.org/10.1037/0033-295X.84.2.191; Bandura, A. (1997). Self-Efficacy: The Exercise of Control. W. H. Freeman.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Self-Efficacy Theory (Albert Bandura) according to Bandura (1977/1997).",
       "domain_tags_en": [
         "Psychological Theory"
-      ]
+      ],
+      "benchmarks": "Đo lường và thao tác hóa: Bandura khuyến nghị thang đo tự hiệu quả phải mang tính đặc thù theo lĩnh vực (domain-specific - ví dụ: Entrepreneurial Self-Efficacy, Computer Self-Efficacy) thay vì dùng thang đo chung chung; phân biệt rõ giữa kỳ vọng năng lực (efficacy expectation) và kỳ vọng kết quả (outcome expectation).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đánh đồng niềm tin năng lực tự thân với lòng tự trọng (self-esteem - tự trọng là phán đoán về giá trị bản thân, tự hiệu quả là phán đoán về năng lực hành động cụ thể); sử dụng thang đo tự hiệu quả chung chung không đo lường đúng bối cảnh thực nghiệm.",
+      "apa_reference": "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+      "is_flagship": true
     },
     {
       "id": "self-presentation-theory-goffman-spt",
-      "term": "Self-Presentation Theory (Goffman SPT)",
-      "vietnamese": "Lý thuyết Tự thể hiện Bản thân",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Sociology",
-        "Qualitative Theory"
+      "term": "Self-Presentation Theory (Impression Management - Erving Goffman)",
+      "vietnamese": "Lý thuyết Trình diễn Bản thân và Quản trị Ấn tượng (Erving Goffman)",
+      "vietnamese_variants": [
+        "Thuyết trình diễn xã hội học kịch nghệ",
+        "Lý thuyết quản lý ấn tượng cá nhân"
       ],
-      "core_definition": "Khung xã hội học kịch nghệ phân tích hành vi quản trị ấn tượng qua sân khấu trước và sân khấu sau.",
-      "seminal_citation": "Goffman (1959), Basabain et al. (2021)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Xã hội học & Tương tác Biểu trưng",
+        "Hành vi Người tiêu dùng & Mạng xã hội",
+        "Khung Khái niệm Lý thuyết"
+      ],
+      "core_definition": "Khung lý thuyết xã hội học kịch nghệ (Dramaturgical perspective) do Erving Goffman sáng lập năm 1959, ví hành vi xã hội của con người như các vở diễn trên sân khấu. Cá nhân liên tục thực hiện việc trình diễn bản thân (Self-Presentation / Impression Management) để điều chỉnh và kiểm soát ấn tượng mà người khác hình thành về họ. Goffman phân chia không gian xã hội thành Sân khấu phía trước (Front Stage - nơi diễn ra các hành vi được trau chuốt, kiểm soát theo chuẩn mực xã hội) và Sân khấu phía sau (Back Stage - nơi cá nhân cởi bỏ vai diễn, thư giãn và bộc lộ con người thực).",
+      "seminal_citation": "Goffman, E. (1959). The Presentation of Self in Everyday Life. Anchor Books; Schlenker, B. R. (1980). Impression Management: The Self-Concept, Social Identity, and Interpersonal Relations. Brooks/Cole.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Self-Presentation Theory (Goffman SPT) according to Goffman (1959), Basabain et al. (2021).",
       "domain_tags_en": [
         "Sociology",
         "Qualitative Theory"
-      ]
+      ],
+      "benchmarks": "Ứng dụng trong thời đại số: Là khung lý thuyết chủ đạo để giải thích hành vi khoe thành tích, chụp ảnh selfie, xây dựng thương hiệu cá nhân và chia sẻ thông tin trên mạng xã hội (Facebook, TikTok, LinkedIn); phân biệt giữa trình diễn chân thực (Authentic self-presentation) và trình diễn lý tưởng hóa (Idealized self-presentation).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Áp dụng lý thuyết vào khảo sát mạng xã hội nhưng chỉ đo lường hành vi bề mặt mà không giải thích động cơ tâm lý sâu kín phía sau việc kiểm soát ấn tượng; thiếu sự bối cảnh hóa văn hóa (ví dụ: văn hóa phương Đông coi trọng 'thể diện' so với phương Tây đề cao cá tính độc lập).",
+      "apa_reference": "Goffman, E. (1959). The Presentation of Self in Everyday Life. Anchor Books.",
+      "is_flagship": true
     },
     {
       "id": "sem",
-      "term": "SEM",
-      "vietnamese": "Mô hình phương trình cấu trúc",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Acronym NCKH"
+      "term": "Covariance-Based Structural Equation Modeling (CB-SEM)",
+      "vietnamese": "Mô hình Phương trình Cấu trúc Dựa trên Hiệp phương sai (CB-SEM)",
+      "vietnamese_variants": [
+        "Mô hình cấu trúc tuyến tính SEM",
+        "Phân tích CB-SEM kiểm định lý thuyết"
       ],
-      "core_definition": "Kỹ thuật phân tích đa biến thế hệ hai kết hợp phân tích nhân tố khẳng định (CFA) và phân tích đường dẫn (path analysis) để kiểm định đồng thời các mối quan hệ phức tạp. Ngưỡng thực nghiệm tham chiếu: Mô hình đo lường đạt độ tin cậy và giá trị hội tụ/phân biệt trước khi đánh giá mô hình cấu trúc.",
-      "seminal_citation": "Mô hình đo lường đạt độ tin cậy và giá trị hội tụ/phân biệt trước khi đánh giá mô hình cấu trúc.",
-      "tier": "acronym",
+      "domain_tags": [
+        "CB-SEM & CFA",
+        "Mô hình Hóa Đa biến",
+        "Kiểm định Lý thuyết"
+      ],
+      "core_definition": "Kỹ thuật thống kê đa biến nâng cao thế hệ thứ hai do Karl Jöreskog và Dag Sörbom phát triển (hiện thực hóa trong các phần mềm LISREL, AMOS, Mplus, lavaan). CB-SEM kết hợp giữa phân tích nhân tố khẳng định (CFA - mô hình đo lường) và phân tích đường dẫn (Path analysis - mô hình cấu trúc), tối thiểu hóa sự khác biệt giữa ma trận hiệp phương sai mẫu quan sát S và ma trận hiệp phương sai hàm ý bởi mô hình lý thuyết Σ bằng phương pháp ước lượng Hợp lý Cực đại (Maximum Likelihood - ML).",
+      "seminal_citation": "Jöreskog, K. G. (1970). A general method for estimating a linear structural equation system. Psychometrika, 35(2), 177–215. https://doi.org/10.1007/BF02310790; Hu, L. T., & Bentler, P. M. (1999). Cutoff criteria for fit indexes in covariance structure analysis: Conventional criteria versus new alternatives. Structural Equation Modeling, 6(1), 1–55.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of SEM according to Mô hình đo lường đạt độ tin cậy và giá trị hội tụ/phân biệt trước khi đánh giá mô hình cấu trúc..",
       "domain_tags_en": [
         "Acronym NCKH"
       ],
-      "benchmarks": "Mô hình đo lường đạt độ tin cậy và giá trị hội tụ/phân biệt trước khi đánh giá mô hình cấu trúc."
+      "benchmarks": "Bộ tiêu chuẩn đánh giá độ phù hợp toàn diện (Hu & Bentler, 1999): Kiểm định Chi-square $\\chi^2$ (mong muốn $p > 0.05$, hoặc $\\chi^2/df < 3.0$); các chỉ số tương đối CFI $\\ge 0.95$ (chấp nhận được $\\ge 0.90$), TLI $\\ge 0.95$ (chấp nhận được $\\ge 0.90$); chỉ số sai số tuyệt đối RMSEA $\\le 0.06$ (chấp nhận được $\\le 0.08$) và SRMR $\\le 0.08$. Yêu cầu cỡ mẫu tối thiểu thường từ $N \\ge 200$ đến 500 quan sát.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Áp dụng CB-SEM trên tập dữ liệu vi phạm nghiêm trọng giả định phân phối chuẩn đa biến (Multivariate Normality) mà không sử dụng hiệu chỉnh Satorra-Bentler (MLR); sửa đổi mô hình theo chỉ số MI (Modification Indices) mà không có lý thuyết dẫn dắt; mô hình bị lỗi nhận dạng (Under-identified model).",
+      "apa_reference": "Jöreskog, K. G. (1970). A general method for estimating a linear structural equation system. Psychometrika, 35(2), 177–215.",
+      "is_flagship": true
     },
     {
       "id": "sem-pls",
-      "term": "SEM-PLS",
-      "vietnamese": "Mô hình Phương trình Cấu trúc Bình phương Bé nhất Từng phần",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Structural Equation Modeling"
+      "term": "Partial Least Squares Structural Equation Modeling (PLS-SEM)",
+      "vietnamese": "Mô hình Phương trình Cấu trúc Bình phương Bé nhất Từng phần (PLS-SEM)",
+      "vietnamese_variants": [
+        "Phương pháp PLS-SEM dựa trên phương sai",
+        "Phân tích cấu trúc PLS"
       ],
-      "core_definition": "PLS-SEM) (Partial Least Squares Structural Equation Modeling.",
-      "seminal_citation": "Lựa chọn số 1 cho các nghiên cứu dự báo, mô hình có cấu trúc phức tạp, thang đo kết hợp Formative, hoặc dữ liệu không phân phối chuẩn.",
-      "tier": "acronym",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "PLS-SEM & Composite Models",
+        "Mô hình Hóa Dự báo",
+        "Phương pháp Định lượng"
+      ],
+      "core_definition": "Phương pháp mô hình hóa phương trình cấu trúc dựa trên phương sai (variance-based SEM) do Herman Wold sáng tạo và được nhóm tác giả Joe Hair, Marko Sarstedt, Christian Ringle phổ biến rộng rãi. PLS-SEM ước lượng các tham số mô hình thông qua chuỗi thuật toán bình phương bé nhất từng phần, tối đa hóa phương sai giải thích được của các cấu trúc nội sinh ($R^2$), đặc biệt xuất sắc trong nghiên cứu khám phá, mô hình có cấu trúc kết hợp (formative constructs) hoặc mô hình phân cấp bậc cao (hierarchical component models).",
+      "seminal_citation": "Wold, H. (1982). Soft modeling: The basic design and some extensions. In K. G. Jöreskog & H. Wold (Eds.), Systems Under Indirect Observation: Causality, Structure, Prediction (Part II, pp. 1–54). North-Holland; Hair, J. F., Hult, G. T. M., Ringle, C. M., & Sarstedt, M. (2022). A Primer on Partial Least Squares Structural Equation Modeling (PLS-SEM) (3rd ed.). SAGE Publications.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "\"lựa chọn số 1\" quá mức; lựa chọn PLS/CB-SEM tùy mục tiêu và bản chất khái niệm (composite vs common factor) | Nguồn ghi ngưỡng",
       "core_definition_en": "Academic definition of SEM-PLS according to Lựa chọn số 1 cho các nghiên cứu dự báo, mô hình có cấu trúc phức tạp, thang đo kết hợp Formative, hoặc dữ liệu không phân phối chuẩn..",
       "domain_tags_en": [
         "Structural Equation Modeling"
-      ]
+      ],
+      "benchmarks": "Quy trình đánh giá 2 bước chuẩn quốc tế (Hair et al., 2022): Bước 1: Mô hình đo lường phản chiếu (Outer loadings $\\ge 0.708$, Cronbach's $\\alpha \\ge 0.70$, CR $\\ge 0.70$, AVE $\\ge 0.50$, HTMT $\\le 0.85$ hoặc 0.90); Bước 2: Mô hình cấu trúc (VIF nội sinh $< 3.0$, kiểm định $t$-value qua Bootstrap 5,000 hoặc 10,000 mẫu, $R^2$, kích thước hiệu ứng $f^2$, và năng lực dự báo ngoài mẫu $Q^2_{\\text{predict}}$).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Lạm dụng PLS-SEM chỉ vì 'cỡ mẫu nhỏ' mà không biện minh cho mục tiêu dự báo hoặc mô hình định dạng; báo cáo chỉ số độ phù hợp CB-SEM (CFI, TLI, RMSEA) cho PLS-SEM; bỏ qua kiểm định độ phân biệt HTMT.",
+      "apa_reference": "Hair, J. F., Hult, G. T. M., Ringle, C. M., & Sarstedt, M. (2022). A Primer on Partial Least Squares Structural Equation Modeling (PLS-SEM) (3rd ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "semantic-differential-scale",
@@ -50972,43 +51230,59 @@
     },
     {
       "id": "semantic-scholar-knowledge-graph",
-      "term": "Semantic Scholar Knowledge Graph",
-      "vietnamese": "Biểu đồ Tri thức Semantic Scholar",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "AI",
-        "Scientometrics"
+      "term": "Semantic Scholar Open Research Corpus (S2ORC & Knowledge Graph)",
+      "vietnamese": "Đồ thị Tri thức và Cơ sở Dữ liệu Nghiên cứu Mở Semantic Scholar",
+      "vietnamese_variants": [
+        "Cơ sở dữ liệu Semantic Scholar AI",
+        "Đồ thị tri thức học thuật S2ORC"
       ],
-      "core_definition": "Công cụ tìm kiếm học thuật ứng dụng AI phân tích tầm ảnh hưởng trích dẫn.",
-      "seminal_citation": "Allen Institute for AI (2015)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Trí tuệ Nhân tạo & NLP",
+        "Tổng quan Y văn Tự động",
+        "Trắc lượng Khoa học (Scientometrics)"
+      ],
+      "core_definition": "Công cụ tìm kiếm và đồ thị tri thức học thuật ứng dụng trí tuệ nhân tạo do Viện Trí tuệ Nhân tạo Allen (AI2) phát triển. Semantic Scholar sử dụng các mô hình học máy và xử lý ngôn ngữ tự nhiên (NLP) tiên tiến để phân tích ngữ cảnh của hàng trăm triệu bài báo khoa học, phân loại trích dẫn theo mức độ ảnh hưởng thực chất (Highly Influential Citations) và phân biệt trích dẫn là 'kế thừa phương pháp' hay 'so sánh kết quả', vượt trội so với các công cụ đếm trích dẫn cơ học truyền thống.",
+      "seminal_citation": "Ammar, W., Peters, M., Bhagavatula, C., & Rao, R. (2018). Construction of the literature graph in Semantic Scholar. In Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics (pp. 84–91). https://doi.org/10.18653/v1/N18-3011; Kinney, R., Anastasiades, C., Authur, R., et al. (2023). The Semantic Scholar Open Data Platform. arXiv preprint arXiv:2301.10140.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Semantic Scholar Knowledge Graph according to Allen Institute for AI (2015).",
       "domain_tags_en": [
         "AI",
         "Scientometrics"
-      ]
+      ],
+      "benchmarks": "Chỉ số Trích dẫn Ảnh hưởng Cao: Hệ thống lọc và gắn nhãn các trích dẫn có tác động quyết định đến luận điểm của bài viết (dựa trên tần suất xuất hiện và vị trí trong phần Phương pháp/Thảo luận); cung cấp tóm tắt thông minh TLDR (Too Long; Didn't Read) dài 1 câu trích xuất tự động bằng mô hình ngôn ngữ.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Chỉ trích dẫn thông tin từ đoạn tóm tắt ngắn TLDR do AI tạo ra mà không đọc bài báo gốc dẫn đến hiểu sai ngữ cảnh khoa học; coi đồ thị tri thức AI là nguồn thay thế tuyệt đối cho việc rà soát thủ công có hệ thống.",
+      "apa_reference": "Ammar, W., Peters, M., Bhagavatula, C., & Rao, R. (2018). Construction of the literature graph in Semantic Scholar. In Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics (pp. 84–91).",
+      "is_flagship": true
     },
     {
       "id": "semi-structured-interview",
-      "term": "Semi-structured interview",
-      "vietnamese": "Phỏng vấn bán cấu trúc (phỏng vấn theo khung chủ đề nhưng linh hoạt đào sâu).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Onion",
-        "Strategy"
+      "term": "Semi-Structured Interview",
+      "vietnamese": "Phỏng vấn bán cấu trúc",
+      "vietnamese_variants": [
+        "Phỏng vấn định tính bán cấu trúc",
+        "Kỹ thuật phỏng vấn sâu có hướng dẫn"
       ],
-      "core_definition": "Phỏng vấn bán cấu trúc (phỏng vấn theo khung chủ đề nhưng linh hoạt đào sâu).",
-      "seminal_citation": "Saunders et al. (2019); Saunders (2019)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phương pháp Định tính",
+        "Thu thập Dữ liệu",
+        "Phương pháp Luận Nghiên cứu"
+      ],
+      "core_definition": "Phương pháp thu thập dữ liệu định tính linh hoạt nhưng có định hướng, trong đó người phỏng vấn sử dụng một khung hướng dẫn phỏng vấn (interview guide) bao gồm các chủ đề cốt lõi và danh mục các câu hỏi mở đã chuẩn bị trước, nhưng có toàn quyền thay đổi thứ tự câu hỏi, đặt thêm các câu hỏi gặng (probing questions) và đào sâu vào những góc nhìn bất ngờ xuất hiện từ phản hồi của người tham gia.",
+      "seminal_citation": "Kvale, S., & Brinkmann, S. (2009). InterViews: Learning the Craft of Qualitative Research Interviewing (2nd ed.). SAGE Publications; Bernard, H. R. (2017). Research Methods in Anthropology: Qualitative and Quantitative Approaches (6th ed.). Rowman & Littlefield.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Semi-structured interview according to Saunders et al. (2019); Saunders (2019).",
       "domain_tags_en": [
         "Research Onion",
         "Strategy"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn thiết kế hướng dẫn phỏng vấn: Hướng dẫn gồm 5 đến 10 câu hỏi mở then chốt kèm các câu hỏi gợi mở phụ (probes: 'Tại sao?', 'Bạn có thể cho một ví dụ cụ thể?'); thời lượng phỏng vấn lý tưởng kéo dài từ 45 đến 90 phút; ghi âm có sự đồng thuận và gỡ băng nguyên văn (verbatim transcription).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Biến cuộc phỏng vấn thành bảng hỏi trắc nghiệm cứng nhắc (đọc từng câu không tương tác); hoặc ngược lại, buông lỏng hoàn toàn để người tham gia đi lạc đề xa khỏi câu hỏi nghiên cứu; đặt câu hỏi dẫn dắt (leading questions) làm sai lệch dữ liệu gốc.",
+      "apa_reference": "Kvale, S., & Brinkmann, S. (2009). InterViews: Learning the Craft of Qualitative Research Interviewing (2nd ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "semi-structured-interview-protocol",
@@ -51054,261 +51328,376 @@
     {
       "id": "sensemaking-in-organizations-karl-weick",
       "term": "Sensemaking in Organizations (Karl Weick)",
-      "vietnamese": "Quá trình Tạo nghĩa Weick",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Organizational Behavior"
+      "vietnamese": "Lý thuyết Kiến tạo Ý nghĩa trong Tổ chức (Karl Weick)",
+      "vietnamese_variants": [
+        "Thuyết tạo nghĩa tổ chức Sensemaking",
+        "Tiếp cận kiến tạo ý nghĩa trong xử lý khủng hoảng"
       ],
-      "core_definition": "Con người cấu trúc các trải nghiệm mơ hồ bằng cách tạo nghĩa hồi cố qua hành động.",
-      "seminal_citation": "Weick (1995)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Lý thuyết Tổ chức",
+        "Quản trị Khủng hoảng & Thay đổi",
+        "Phương pháp Định tính"
+      ],
+      "core_definition": "Khung lý thuyết xã hội học tổ chức đột phá do Karl E. Weick phát triển năm 1995. Kiến tạo ý nghĩa (Sensemaking) là quá trình cấu trúc hóa thực tại mà qua đó con người gán ý nghĩa và hiểu được những tình huống mơ hồ, bất định hoặc các cú sốc bất ngờ bằng cách rút ra các chỉ dấu (cues), gán nhãn, và tạo dựng một câu chuyện hợp lý (plausible narrative) để định hướng hành động. 7 đặc tính cốt lõi của Sensemaking gồm: (1) Căn cứ vào bản sắc (Grounded in identity construction), (2) Hồi cứu (Retrospective), (3) Ban hành bối cảnh (Enactive of sensible environments), (4) Mang tính xã hội (Social), (5) Đang diễn ra liên tục (Ongoing), (6) Tập trung vào các chỉ dấu trích xuất (Focused on extracted cues), và (7) Hướng tới tính hợp lý hơn là tính chính xác tuyệt đối (Driven by plausibility rather than accuracy).",
+      "seminal_citation": "Weick, K. E. (1995). Sensemaking in Organizations. SAGE Publications; Weick, K. E., Sutcliffe, K. M., & Obstfeld, D. (2005). Organizing and the process of sensemaking. Organization Science, 16(4), 409–421. https://doi.org/10.1287/orsc.1050.0133",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Sensemaking in Organizations (Karl Weick) according to Weick (1995).",
       "domain_tags_en": [
         "Organizational Behavior"
-      ]
+      ],
+      "benchmarks": "Ứng dụng phương pháp luận: Thường được nghiên cứu thông qua phân tích tự sự (narrative analysis), nghiên cứu tình huống sâu về các cuộc khủng hoảng tổ chức (ví dụ: thảm họa Mann Gulch, tai nạn vũ trụ Challenger) để giải mã cơ chế phản ứng của con người trước tình trạng sụp đổ ý nghĩa (cosmology episode).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đánh đồng Sensemaking với việc giải thích thông tin thụ động (interpretation); bỏ qua đặc tính 'Enactment' (con người vừa kiến tạo ý nghĩa vừa hành động để định hình chính môi trường của họ).",
+      "apa_reference": "Weick, K. E. (1995). Sensemaking in Organizations. SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "sensitivity-statistical-power",
-      "term": "Sensitivity (Statistical Power)",
-      "vietnamese": "Độ nhạy - khả năng phát hiện chính xác khi có vi phạm.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "PLS-SEM",
-        "Discriminant Validity"
+      "term": "Sensitivity Analysis in Statistical Power (Sensitivity Power Analysis)",
+      "vietnamese": "Phân tích độ nhạy năng lực thống kê (Xác định kích thước hiệu ứng tối thiểu có thể phát hiện)",
+      "vietnamese_variants": [
+        "Phân tích độ nhạy kích thước hiệu ứng (Sensitivity Power)",
+        "Ước lượng MDES trong G*Power"
       ],
-      "core_definition": "Độ nhạy - khả năng phát hiện chính xác khi có vi phạm.",
-      "seminal_citation": "Henseler et al. (2015); Henseler et al. (2015)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Năng lực Thống kê (Statistical Power)",
+        "Thiết kế Thực nghiệm",
+        "Phương pháp Định lượng"
+      ],
+      "core_definition": "Một dạng phân tích năng lực thống kê chuyên sâu được thực hiện nhằm xác định Kích thước Hiệu ứng Tối thiểu Có thể Phát hiện được (Minimum Detectable Effect Size - MDES) với một cỡ mẫu có sẵn cố định (N), mức ý nghĩa thống kê định trước (thường α = 0.05) và mức năng lực kiểm định mong muốn (thường 1 - β = 0.80). Phân tích này đặc biệt quan trọng khi nhà nghiên cứu bị giới hạn nguồn lực về cỡ mẫu (ví dụ: chỉ có thể khảo sát tối đa 150 CEO hoặc 80 bệnh nhân hiếm).",
+      "seminal_citation": "Faul, F., Erdfelder, E., Buchner, A., & Lang, A. G. (2009). Statistical power analyses using G*Power 3.1: Tests for correlation and regression analyses. Behavior Research Methods, 41(4), 1149–1160. https://doi.org/10.3758/BRM.41.4.1149; Bloom, H. S. (1995). Minimum detectable effects: A simple way to report the statistical power of experimental designs. Evaluation Review, 19(5), 547–556.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Sensitivity (Statistical Power) according to Henseler et al. (2015); Henseler et al. (2015).",
       "domain_tags_en": [
         "PLS-SEM",
         "Discriminant Validity"
-      ]
+      ],
+      "benchmarks": "Đánh giá khả thi thực nghiệm: Nếu phân tích độ nhạy chỉ ra rằng với N = 100, mô hình chỉ có thể phát hiện được kích thước hiệu ứng rất lớn (ví dụ: Cohen's d > 0.80 hoặc f² > 0.35) trong khi thực tế lý thuyết của ngành chỉ kỳ vọng hiệu ứng nhỏ (d = 0.20), nghiên cứu sẽ bị coi là thiếu năng lực thống kê (underpowered) và không đủ độ tin cậy để bác bỏ giả thuyết vô hiệu.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Triển khai nghiên cứu thực nghiệm với cỡ mẫu nhỏ cố định mà không chạy Sensitivity Power Analysis; kết luận biến độc lập 'không có tác động' (p > 0.05) khi thực chất là do mẫu quá bé không đủ nhạy để phát hiện hiệu ứng thực tế.",
+      "apa_reference": "Faul, F., Erdfelder, E., Buchner, A., & Lang, A. G. (2009). Statistical power analyses using G*Power 3.1: Tests for correlation and regression analyses. Behavior Research Methods, 41(4), 1149–1160.",
+      "is_flagship": true
     },
     {
       "id": "sensitivity-analysis-indicates",
-      "term": "Sensitivity Analysis Indicates",
-      "vietnamese": "Phân tích Độ nhạy Chỉ ra rằng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodological Reporting"
+      "term": "Sensitivity Analysis (Robustness Bounds & Boundary Conditions)",
+      "vietnamese": "Phân tích độ nhạy mô hình và biên giới hạn suy luận",
+      "vietnamese_variants": [
+        "Kiểm tra độ nhạy tham số",
+        "Phân tích biên dao động mô hình"
       ],
-      "core_definition": "Báo cáo mức độ ổn định của kết luận khi thay đổi các giả định then chốt.",
-      "seminal_citation": "Saltelli et al. (2008)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng & Thống kê",
+        "Đánh giá Tính vững (Robustness)",
+        "Mô hình Hóa Toán học"
+      ],
+      "core_definition": "Quy trình phương pháp luận có hệ thống nhằm khảo sát xem kết quả đầu ra và kết luận khoa học của một mô hình thay đổi như thế nào khi các thông số đầu vào, giả định phân phối, điểm cắt dữ liệu (cutoffs), hoặc các tham số chưa quan sát được (unobserved confounding parameters) bị biến đổi trong các khoảng biến thiên hợp lý. Ví dụ: phân tích độ nhạy Rosenbaum Bounds trong Propensity Score Matching để kiểm tra độ nhạy trước biến nội sinh chưa quan sát.",
+      "seminal_citation": "Rosenbaum, P. R. (2002). Observational Studies (2nd ed.). Springer. https://doi.org/10.1007/978-1-4757-3692-2; Saltelli, A., Ratto, M., Andres, T., Campolongo, F., Cariboni, J., Gatelli, D., Saisana, M., & Tarantola, S. (2008). Global Sensitivity Analysis: The Primer. John Wiley & Sons.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Sensitivity Analysis Indicates according to Saltelli et al. (2008).",
       "domain_tags_en": [
         "Methodological Reporting"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn báo cáo Rosenbaum Bounds (Gamma Γ): Thống kê Γ (Gamma) đo lường mức độ mà một yếu tố gây nhiễu chưa quan sát được phải làm thay đổi tỷ lệ nhận can thiệp gấp bao nhiêu lần để làm triệt tiêu tác động nhân quả có ý nghĩa thống kê. Giá trị Γ $\\ge 2.0$ (hoặc $\\ge 3.0$) chứng tỏ kết quả cực kỳ bền vững trước thiên lệch ẩn.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Tuyên bố kết quả nghiên cứu là bất biến nhưng chỉ chạy một thông số duy nhất; che giấu các kịch bản mà ở đó hệ số đảo chiều hoặc mất ý nghĩa thống kê; không giải thích cơ chế kinh tế/xã hội tại các điểm gãy độ nhạy.",
+      "apa_reference": "Rosenbaum, P. R. (2002). Observational Studies (2nd ed.). Springer.",
+      "is_flagship": true
     },
     {
       "id": "sensitizing-concepts-blumer",
-      "term": "Sensitizing concepts (Blumer)",
-      "vietnamese": "Khái niệm định hướng cảm thụ",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Sensitizing Concepts (Herbert Blumer)",
+      "vietnamese": "Khái niệm định hướng cảm thụ (Sensitizing Concepts của Herbert Blumer)",
+      "vietnamese_variants": [
+        "Khái niệm khơi gợi định tính Blumer",
+        "Khái niệm định hướng nhận thức"
       ],
-      "core_definition": "Khái niệm gợi ý hướng nhìn và cảm nhận thay vì định nghĩa cứng nhắc.",
-      "seminal_citation": "Flick et al. (2004)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Tương tác Biểu trưng (Symbolic Interactionism)",
+        "Triết học Khoa học",
+        "Phương pháp Định tính"
+      ],
+      "core_definition": "Khái niệm nhận thức luận do nhà xã hội học Herbert Blumer đề xuất năm 1954 để phân biệt với 'Khái niệm dứt khoát' (Definitive concepts trong nghiên cứu thực chứng). Trong khi khái niệm dứt khoát đưa ra định nghĩa thao tác hóa cứng nhắc với các chỉ báo định lượng bất biến, thì Khái niệm định hướng cảm thụ (Sensitizing concept) chỉ đóng vai trò như một lăng kính gợi ý, một phương hướng chỉ đường (a general sense of reference and guidance) giúp nhà nghiên cứu tiếp cận dữ liệu thực địa mà không áp đặt các khuôn mẫu tiên nghiệm gò ép.",
+      "seminal_citation": "Blumer, H. (1954). What is wrong with social theory? American Sociological Review, 19(1), 3–10. https://doi.org/10.2307/2088165; Blumer, H. (1969). Symbolic Interactionism: Perspective and Method. Prentice-Hall.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Sensitizing concepts (Blumer) according to Flick et al. (2004).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Nguyên tắc ứng dụng: Sensitizing concepts cung cấp xuất phát điểm mở đầu cho việc quan sát và phỏng vấn; nhà nghiên cứu liên tục tinh chỉnh, mở rộng hoặc thậm chí tái định nghĩa các khái niệm này trong quá trình tương tác với dữ liệu thực tế tại thực địa.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Biến khái niệm định hướng thành một cái khung cứng nhắc để 'ép dữ liệu vào khuôn' (forcing the data) vi phạm bản chất của nghiên cứu quy nạp; ngụy biện rằng vì dùng sensitizing concepts nên không cần bất kỳ sự rõ ràng nào về mặt lý thuyết.",
+      "apa_reference": "Blumer, H. (1954). What is wrong with social theory? American Sociological Review, 19(1), 3–10.",
+      "is_flagship": true
     },
     {
       "id": "sensitizing-concepts-khai-niem-dinh-huong",
-      "term": "Sensitizing Concepts",
-      "vietnamese": "Khái niệm Định hướng (Herbert Blumer)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Triangulation",
-        "Sociological Methods"
+      "term": "Sensitizing Concepts in Qualitative Coding & Analysis",
+      "vietnamese": "Vận dụng khái niệm định hướng trong mã hóa và phân tích định tính",
+      "vietnamese_variants": [
+        "Ứng dụng sensitizing concepts trong phân tích chủ đề",
+        "Khái niệm mồi định tính trong phân tích dữ liệu"
       ],
-      "core_definition": "Cung cấp cho nhà nghiên cứu một hướng nhìn gợi ý chung về nơi cần tìm kiếm dữ liệu mà không áp đặt định kiến lên thực tế (nền tảng của định tính và Grounded Theory).",
-      "seminal_citation": "Denzin (1978)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phương pháp Định tính",
+        "Mã hóa Dữ liệu (Qualitative Coding)",
+        "Lý thuyết Nền (Grounded Theory)"
+      ],
+      "core_definition": "Quy trình tác nghiệp sử dụng các khái niệm định hướng lý thuyết làm điểm tựa ban đầu (starting points) trong quá trình đọc sâu, ghi chú ý tưởng (memos) và mã hóa dữ liệu định tính. Kathy Charmaz (Constructivist Grounded Theory) nhấn mạnh rằng nhà nghiên cứu không thể bước vào thực địa với một tâm trí trống rỗng hoàn toàn (tabula rasa); thay vào đó, các sensitizing concepts từ lý thuyết tiền nhiệm được sử dụng để cảnh báo nhà nghiên cứu về những mẫu hình có thể quan sát, đồng thời vẫn giữ thái độ cởi mở để dữ liệu định hình các danh mục mã hóa mới.",
+      "seminal_citation": "Charmaz, K. (2006). Constructing Grounded Theory: A Practical Guide Through Qualitative Analysis. SAGE Publications; Bowen, G. A. (2006). Grounded theory and sensitizing concepts. International Journal of Qualitative Methods, 5(3), 12–23. https://doi.org/10.1177/160940690600500304",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2328; tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Sensitizing Concepts (Khái niệm Định hướng) according to Denzin (1978).",
       "domain_tags_en": [
         "Triangulation",
         "Sociological Methods"
-      ]
+      ],
+      "benchmarks": "Chiến lược mã hóa chuẩn mực: Bắt đầu bằng việc lập danh mục các sensitizing concepts và câu hỏi gợi mở trong sổ tay nghiên cứu; trong quá trình mã hóa mở (open coding), nhà nghiên cứu phải kiểm tra xem các mã trích xuất từ lời nói của người tham gia (in vivo codes) có thách thức, làm phong phú hay phủ nhận các khái niệm ban đầu này hay không.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đọc dữ liệu chỉ để tìm kiếm những trích dẫn khớp với các sensitizing concepts đã định sẵn (confirmation bias); lờ đi các phát hiện mâu thuẫn hoặc hiện tượng dị biệt (deviant cases) không nằm trong dự kiến lý thuyết ban đầu.",
+      "apa_reference": "Bowen, G. A. (2006). Grounded theory and sensitizing concepts. International Journal of Qualitative Methods, 5(3), 12–23.",
+      "is_flagship": true
     },
     {
       "id": "sequential-legitimation",
-      "term": "Sequential Legitimation",
-      "vietnamese": "Tính Hợp thức Nối tiếp",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Mixed Methods Legitimation"
+      "term": "Sequential Legitimation (Mixed Methods)",
+      "vietnamese": "Tính chính danh tuần tự trong thiết kế nghiên cứu hỗn hợp",
+      "vietnamese_variants": [
+        "Độ giá trị thứ tự trong nghiên cứu hỗn hợp",
+        "Tính chính danh thời gian nghiên cứu tuần tự"
       ],
-      "core_definition": "Tránh nguy cơ kết quả của giai đoạn 1 bị thiên lệch do ảnh hưởng của giai đoạn 2.",
-      "seminal_citation": "Onwuegbuzie & Johnson (2006)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phương pháp Hỗn hợp (Mixed Methods)",
+        "Độ giá trị & Tính Chính danh",
+        "Thiết kế Nghiên cứu"
+      ],
+      "core_definition": "Một trong 9 tiêu chuẩn đánh giá tính chính danh (legitimation types) trong mô hình phương pháp hỗn hợp của Onwuegbuzie & Johnson (2006). Tiêu chuẩn này đánh giá xem thứ tự triển khai giữa giai đoạn định lượng và giai đoạn định tính (ví dụ: QUAN -> qual trong thiết kế giải thích tuần tự, hoặc QUAL -> quan trong thiết kế khám phá tuần tự) có tạo ra các hiệu ứng thiên lệch thứ tự (order effects) làm sai lệch các suy luận tích hợp (meta-inferences) hay không.",
+      "seminal_citation": "Onwuegbuzie, A. J., & Johnson, R. B. (2006). The validity issue in mixed research. Research in the Schools, 13(1), 48–63; Creswell, J. W., & Plano Clark, V. L. (2018). Designing and Conducting Mixed Methods Research (3rd ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Sequential Legitimation according to Onwuegbuzie & Johnson (2006).",
       "domain_tags_en": [
         "Mixed Methods Legitimation"
-      ]
+      ],
+      "benchmarks": "Biện minh phương pháp luận: Nhà nghiên cứu bắt buộc phải giải trình rõ ràng lý do chọn lựa thứ tự tiến hành: Giai đoạn 1 cung cấp thông tin gì để định hình công cụ hoặc chọn mẫu cho Giai đoạn 2; và chứng minh rằng kết quả sẽ không bị đảo lộn nếu thứ tự hai giai đoạn bị hoán đổi.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Triển khai hai giai đoạn rời rạc theo thời gian nhưng không có điểm kết nối phương pháp luận (integration point); không đánh giá nguy cơ việc người tham gia đã tham gia giai đoạn 1 bị thiên lệch nhận thức khi tiếp tục tham gia giai đoạn 2.",
+      "apa_reference": "Onwuegbuzie, A. J., & Johnson, R. B. (2006). The validity issue in mixed research. Research in the Schools, 13(1), 48–63.",
+      "is_flagship": true
     },
     {
       "id": "serial-multiple-mediation",
       "term": "Serial Multiple Mediation",
-      "vietnamese": "Mô hình Trung gian Đa biến Nối tiếp",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Advanced Mediation"
+      "vietnamese": "Phân tích trung gian chuỗi đa biến (Mô hình trung gian nối tiếp)",
+      "vietnamese_variants": [
+        "Hiệu ứng trung gian nối tiếp",
+        "Phân tích đa trung gian chuỗi"
       ],
-      "core_definition": "Chuỗi nhân quả trong đó X tác động lên M1, M1 tác động lên M2, rồi M2 tác động lên Y.",
-      "seminal_citation": "Hayes (2018)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phân tích Trung gian (Mediation)",
+        "Mô hình SEM & PROCESS",
+        "Phương pháp Định lượng"
+      ],
+      "core_definition": "Mô hình phân tích quan hệ nhân quả phức tạp trong đó biến độc lập X tác động lên biến phụ thuộc Y thông qua hai hoặc nhiều biến trung gian ($M_1, M_2, \\dots, M_k$) theo một trật tự thời gian hoặc logic nhân quả nối tiếp (causal sequence: $X \\to M_1 \\to M_2 \\to Y$). Khác với mô hình trung gian song song (parallel mediation - giả định các biến trung gian không tác động lẫn nhau), mô hình chuỗi cho phép $M_1$ trực tiếp tác động lên $M_2$, mở ra cơ chế giải thích sâu sắc từng mắt xích trong chuỗi nhân quả.",
+      "seminal_citation": "Hayes, A. F. (2018). Introduction to Mediation, Moderation, and Conditional Process Analysis: A Regression-Based Approach (2nd ed.). The Guilford Press; Taylor, A. B., MacKinnon, D. P., & Tein, J. Y. (2008). Tests of the three-path mediated effect. Organizational Research Methods, 11(2), 241–269. https://doi.org/10.1177/1094428107300344",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Serial Multiple Mediation according to Hayes (2018).",
       "domain_tags_en": [
         "Advanced Mediation"
-      ]
+      ],
+      "benchmarks": "Đánh giá các đường dẫn gián tiếp (Indirect effects): Mô hình thường có 3 đường dẫn gián tiếp riêng biệt: (1) $X \\to M_1 \\to Y$, (2) $X \\to M_2 \\to Y$, và (3) Đường dẫn chuỗi nối tiếp $X \\to M_1 \\to M_2 \\to Y$. Mỗi đường dẫn được kiểm định ý nghĩa thống kê bằng khoảng tin cậy Bootstrap 95% không chứa số 0 (thường sử dụng PROCESS Model 6 của Andrew F. Hayes).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Thiết lập trật tự chuỗi nhân quả $M_1 \\to M_2$ một cách tùy tiện trên dữ liệu cắt ngang đơn lẻ (cross-sectional data) mà không có lý thuyết vững chắc hoặc bằng chứng thời gian bảo chứng; đảo ngược vị trí $M_1$ và $M_2$ mà kết quả vẫn khớp tương tự (mô hình tương đương).",
+      "apa_reference": "Hayes, A. F. (2018). Introduction to Mediation, Moderation, and Conditional Process Analysis: A Regression-Based Approach (2nd ed.). The Guilford Press.",
+      "is_flagship": true
     },
     {
       "id": "serial-multiple-mediator-model",
-      "term": "Serial multiple mediator model",
-      "vietnamese": "Mô hình đa trung gian nối tiếp",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Serial Multiple Mediator Model (Structural Specification)",
+      "vietnamese": "Mô hình đa trung gian chuỗi (Đặc tả cấu trúc và nhận dạng)",
+      "vietnamese_variants": [
+        "Mô hình trung gian nhiều biến nối tiếp",
+        "Đặc tả cấu trúc đường dẫn chuỗi"
       ],
-      "core_definition": "Mô hình hóa chuỗi nhân quả liên hoàn: X → M_1 → M_2 → Y.",
-      "seminal_citation": "Hayes (2022)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phân tích Trung gian (Mediation)",
+        "Mô hình SEM",
+        "Phương pháp Định lượng"
+      ],
+      "core_definition": "Mô hình cấu trúc giải thích mối quan hệ nhân quả phức tạp trong đó biến độc lập X tác động đến biến phụ thuộc Y thông qua một chuỗi các biến trung gian liên kết mắt xích (ví dụ: $M_1$ và $M_2$). Khác với mô hình song song (parallel), mô hình chuỗi đặc tả một đường dẫn định hướng trực tiếp từ $M_1$ sang $M_2$ ($d_{21}$), phản ánh giả định lý thuyết rằng sự thay đổi ở biến trung gian thứ nhất là nguyên nhân kích hoạt sự thay đổi ở biến trung gian thứ hai trước khi dẫn tới kết quả cuối cùng.",
+      "seminal_citation": "MacKinnon, D. P. (2008). Introduction to Statistical Mediation Analysis. Lawrence Erlbaum Associates; Hayes, A. F. (2018). Introduction to Mediation, Moderation, and Conditional Process Analysis: A Regression-Based Approach (2nd ed.). The Guilford Press.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Serial multiple mediator model according to Hayes (2022).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Phân rã hiệu ứng tổng thể (Total effect decomposition): Tổng tác động $c = c' + a_1 b_1 + a_2 b_2 + a_1 d_{21} b_2$. Trong đó, $a_1 d_{21} b_2$ là hiệu ứng gián tiếp chuỗi (serial indirect effect). Đòi hỏi phải báo cáo kiểm định Bootstrap 95% CI cho từng hiệu ứng thành phần và so sánh tương phản độ mạnh yếu giữa các đường dẫn (pairwise contrasts).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Áp dụng mô hình chuỗi khi thứ tự logic thời gian giữa $M_1$ và $M_2$ không thể chứng minh được; đảo chiều mũi tên $M_2 \\to M_1$ mà không có lập luận phản biện; thiếu biến kiểm soát dẫn đến hiện tượng nhiễu tương quan giả mạo giữa $M_1$ và $M_2$.",
+      "apa_reference": "MacKinnon, D. P. (2008). Introduction to Statistical Mediation Analysis. Lawrence Erlbaum Associates.",
+      "is_flagship": true
     },
     {
       "id": "serial-multiple-mediator-model-process-model-6",
       "term": "Serial Multiple Mediator Model (PROCESS Model 6)",
-      "vietnamese": "Biến trung gian M_1 tác động tiếp sang biến trung gian M_2 trước khi tới biến kết quả Y.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Mediation",
-        "Moderation (PROCESS)"
+      "vietnamese": "Mô hình trung gian chuỗi PROCESS Model 6 (Andrew F. Hayes)",
+      "vietnamese_variants": [
+        "Thực hành PROCESS Model 6 của Hayes",
+        "Phân tích trung gian chuỗi trong SPSS/R/SAS"
       ],
-      "core_definition": "Biến trung gian M_1 tác động tiếp sang biến trung gian M_2 trước khi tới biến kết quả Y.",
-      "seminal_citation": "Hayes (2022); Hayes (2022)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phân tích Trung gian (Mediation)",
+        "Công cụ PROCESS Hayes",
+        "Phương pháp Định lượng"
+      ],
+      "core_definition": "Mô hình tính toán chuẩn hóa được cài đặt sẵn trong macro PROCESS của Andrew F. Hayes (Model 6), ước lượng hệ 3 phương trình hồi quy OLS đồng thời: (1) $M_1 = i_1 + a_1 X + e_1$, (2) $M_2 = i_2 + a_2 X + d_{21} M_1 + e_2$, và (3) $Y = i_3 + c' X + b_1 M_1 + b_2 M_2 + e_3$. PROCESS tự động tạo ra các mẫu tái lấy mẫu Bootstrap (thường 5,000 hoặc 10,000 mẫu lặp) để tính toán khoảng tin cậy hiệu chỉnh độ chệch (Bias-Corrected Bootstrap CI) cho tất cả các tác động gián tiếp cụ thể và hiệu ứng gián tiếp tổng thể.",
+      "seminal_citation": "Hayes, A. F. (2018). Introduction to Mediation, Moderation, and Conditional Process Analysis: A Regression-Based Approach (2nd ed.). The Guilford Press; Preacher, K. J., & Hayes, A. F. (2008). Asymptotic and resampling strategies for assessing and comparing indirect effects in multiple mediator models. Behavior Research Methods, 40(3), 879–891. https://doi.org/10.3758/BRM.40.3.879",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2333; LaTeX thô; lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Serial Multiple Mediator Model (PROCESS Model 6) according to Hayes (2022); Hayes (2022).",
       "domain_tags_en": [
         "Mediation",
         "Moderation (PROCESS)"
-      ]
+      ],
+      "benchmarks": "Chuẩn mực báo cáo bảng biểu: Bắt buộc trình bày bảng hệ số đường dẫn với sai số chuẩn SE, giá trị $t$, $p$-value, hệ số $R^2$ của từng phương trình; bảng phân rã các hiệu ứng gián tiếp (Ind1: $X \\to M_1 \\to Y$; Ind2: $X \\to M_2 \\to Y$; Ind3: $X \\to M_1 \\to M_2 \\to Y$) kèm khoảng tin cậy 95% LLCI và ULCI.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Báo cáo kiểm định Sobel test truyền thống (vốn giả định sai phân phối chuẩn cho tích hệ số) thay vì Bootstrap CI; kết luận biến trung gian hoàn toàn (full mediation) một cách vội vã chỉ vì $c'$ không có ý nghĩa thống kê trong khi năng lực kiểm định của mẫu chưa đủ.",
+      "apa_reference": "Hayes, A. F. (2018). Introduction to Mediation, Moderation, and Conditional Process Analysis: A Regression-Based Approach (2nd ed.). The Guilford Press.",
+      "is_flagship": true
     },
     {
       "id": "servant-leadership-theory-greenleaf",
-      "term": "Servant Leadership Theory (Greenleaf)",
-      "vietnamese": "Lý thuyết Lãnh đạo Phục vụ",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Leadership Studies"
+      "term": "Servant Leadership Theory (Robert K. Greenleaf)",
+      "vietnamese": "Lý thuyết Lãnh đạo Phục vụ (Robert K. Greenleaf)",
+      "vietnamese_variants": [
+        "Thuyết lãnh đạo tôi tớ",
+        "Mô hình lãnh đạo Servant Leadership"
       ],
-      "core_definition": "Triết lý lãnh đạo trong đó ưu tiên cao nhất là phục vụ và phát triển cấp dưới.",
-      "seminal_citation": "Greenleaf (1977)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Lý thuyết Lãnh đạo",
+        "Hành vi Tổ chức (OB)",
+        "Khung Khái niệm Lý thuyết"
+      ],
+      "core_definition": "Khung lý thuyết lãnh đạo nhân văn kinh điển do Robert K. Greenleaf đề xướng năm 1970, đảo ngược hoàn toàn quan niệm truyền thống về quyền lực trong tổ chức. Triết lý cốt lõi khẳng định rằng một nhà lãnh đạo vĩ đại trước hết phải là một người phục vụ (servant first): họ đặt nhu cầu, sự phát triển, quyền lợi và hạnh phúc của nhân viên và cộng đồng lên trên lợi ích cá nhân của mình. Thử nghiệm tối hậu của lý thuyết: 'Những người được phục vụ có trưởng thành hơn không? Họ có trở nên tự chủ, khôn ngoan hơn và có xu hướng trở thành người phục vụ người khác hay không?'.",
+      "seminal_citation": "Greenleaf, R. K. (1977). Servant Leadership: A Journey into the Nature of Legitimate Power and Greatness. Paulist Press; van Dierendonck, D. (2011). Servant leadership: A review and synthesis. Journal of Management, 37(4), 1228–1261. https://doi.org/10.1177/0149206310380462; Liden, R. C., Wayne, S. J., Zhao, H., & Henderson, D. (2008). Servant leadership: Development of a multidimensional measure and multi-level assessment. The Leadership Quarterly, 19(2), 161–177.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Servant Leadership Theory (Greenleaf) according to Greenleaf (1977).",
       "domain_tags_en": [
         "Leadership Studies"
-      ]
+      ],
+      "benchmarks": "Thao tác hóa thang đo: Được đo lường qua các thang đo đa chiều chuẩn mực như Thang đo Lãnh đạo Phục vụ của van Dierendonck (SLS - 8 chiều kích: Trao quyền, Khiêm tốn, Tính xác thực, Chấp nhận giữa các cá nhân, Hướng dẫn, Quản lý ủy thác, Can đảm, và Tha thứ) hoặc thang đo 7 chiều kích của Liden et al. (2008).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Xem lãnh đạo phục vụ như một phẩm chất tôn giáo/đạo đức trừu tượng mà không thao tác hóa thành các hành vi quản trị cụ thể; nhầm lẫn giữa lãnh đạo phục vụ với lãnh đạo chuyển đổi (Transformational Leadership - vốn tập trung vào việc đạt được tầm nhìn của tổ chức thay vì ưu tiên phát triển bản thân nhân viên).",
+      "apa_reference": "van Dierendonck, D. (2011). Servant leadership: A review and synthesis. Journal of Management, 37(4), 1228–1261.",
+      "is_flagship": true
     },
     {
       "id": "shap",
-      "term": "SHAP",
-      "vietnamese": "Giải thích Cộng gộp dựa trên Lý thuyết Trò chơi Shapley",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Explainable AI",
-        "Econometrics"
+      "term": "SHAP (SHapley Additive exPlanations Framework)",
+      "vietnamese": "Khung giải thích cộng tính Shapley trong học máy (Khung SHAP)",
+      "vietnamese_variants": [
+        "Phương pháp diễn giải mô hình SHAP",
+        "Khung giải thích trí tuệ nhân tạo SHAP"
       ],
-      "core_definition": "Lundberg & Lee, 2017) (Shapley Additive Explanations.",
-      "seminal_citation": "Đáp ứng đầy đủ 3 tính chất tiên nghiệm toán học: Local accuracy, Missingness, và Consistency.",
-      "tier": "acronym",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Học máy & XAI (Explainable AI)",
+        "Khoa học Dữ liệu",
+        "Phương pháp Định lượng Nâng cao"
+      ],
+      "core_definition": "Khung lý thuyết giải thích mô hình học máy hộp đen (Explainable AI - XAI) thống nhất do Scott Lundberg và Su-In Lee phát triển năm 2017. SHAP kết nối lý thuyết trò chơi hợp tác (Cooperative Game Theory) của Lloyd Shapley với các phương pháp giải thích cục bộ hiện đại (như LIME, DeepLIFT). SHAP định nghĩa giá trị đóng góp của từng biến đầu vào cho dự báo của mô hình dưới dạng một bộ phân bổ cộng tính công bằng, thỏa mãn 4 tiên đề toán học khắt khe: Tính hiệu quả, Tính đối xứng, Tính biến bù nhìn và Tính cộng tính.",
+      "seminal_citation": "Lundberg, S. M., & Lee, S. I. (2017). A unified approach to interpreting model predictions. Advances in Neural Information Processing Systems, 30, 4765–4774; Lundberg, S. M., Erion, G., Chen, H., DeGrave, A., Prutkin, J. M., Nair, B., ... & Lee, S. I. (2020). From local explanations to global understanding with explainable AI for trees. Nature Machine Intelligence, 2(1), 56–67. https://doi.org/10.1038/s42256-019-0138-9",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Nguồn ghi ngưỡng",
       "core_definition_en": "Academic definition of SHAP according to Đáp ứng đầy đủ 3 tính chất tiên nghiệm toán học: Local accuracy, Missingness, và Consistency..",
       "domain_tags_en": [
         "Explainable AI",
         "Econometrics"
-      ]
+      ],
+      "benchmarks": "Đặc tính toán học: Giá trị dự báo của mô hình bằng tổng giá trị nền cơ sở (base value - trung bình toàn tập) cộng với tổng giá trị SHAP của tất cả các biến số: $f(x) = \\phi_0 + \\sum_{i=1}^M \\phi_i$. Được tối ưu hóa cho các mô hình cây phức tạp (TreeSHAP) như XGBoost, LightGBM, Random Forest với tốc độ tính toán nhanh gấp hàng nghìn lần thuật toán Shapley cổ điển.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đánh đồng giá trị SHAP (mức độ đóng góp vào dự báo của thuật toán) với tác động nhân quả (causal effects); giải thích các biến số có tương quan cao (multicollinear features) mà không kiểm tra hiện tượng phân chia đóng góp giữa các biến.",
+      "apa_reference": "Lundberg, S. M., & Lee, S. I. (2017). A unified approach to interpreting model predictions. Advances in Neural Information Processing Systems, 30, 4765–4774.",
+      "is_flagship": true
     },
     {
       "id": "shap-values-shapley-additive-explanations",
-      "term": "SHAP Values (Shapley Additive Explanations)",
-      "vietnamese": "Giá trị SHAP",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Explainable AI"
+      "term": "SHAP Values (Individual Feature Attribution & Local Explanations)",
+      "vietnamese": "Giá trị SHAP và giải thích cục bộ cấp độ cá thể",
+      "vietnamese_variants": [
+        "Chỉ số đóng góp đặc trưng SHAP",
+        "Giải thích cục bộ bằng giá trị SHAP"
       ],
-      "core_definition": "Đo lường đóng góp biên công bằng của từng biến số vào kết quả dự báo của mô hình hộp đen dựa trên lý thuyết trò chơi.",
-      "seminal_citation": "Lundberg & Lee (2017)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Học máy & XAI (Explainable AI)",
+        "Đánh giá Mô hình",
+        "Khoa học Dữ liệu"
+      ],
+      "core_definition": "Thước đo định lượng chính xác mức độ đóng góp (attribution) của một đặc trưng cụ thể (feature) vào kết quả dự báo của một quan sát đơn lẻ trong mô hình học máy. Giá trị SHAP biểu thị mức độ dịch chuyển (dương hoặc âm) mà biến số đó tạo ra, kéo dự báo của đối tượng rời xa khỏi giá trị kỳ vọng trung bình của toàn bộ tập dữ liệu mẫu. Công cụ hiển thị trực quan kinh điển là biểu đồ lực kéo (Force plot) và biểu đồ thác nước (Waterfall plot).",
+      "seminal_citation": "Shapley, L. S. (1953). A value for n-person games. In Contributions to the Theory of Games (Vol. 2, pp. 307–317). Princeton University Press; Lundberg, S. M., & Lee, S. I. (2017). A unified approach to interpreting model predictions. Advances in Neural Information Processing Systems, 30, 4765–4774.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of SHAP Values (Shapley Additive Explanations) according to Lundberg & Lee (2017).",
       "domain_tags_en": [
         "Explainable AI"
-      ]
+      ],
+      "benchmarks": "Diễn giải biểu đồ Waterfall: Trục hoành bắt đầu từ $E[f(X)]$ (giá trị nền). Mỗi thanh biểu thị một giá trị SHAP $\\phi_i$: thanh màu đỏ (đẩy kết quả dự báo tăng lên) và thanh màu xanh (kéo kết quả dự báo giảm xuống), tổng cộng đưa đến giá trị dự báo cuối cùng $f(x)$.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Diễn giải giá trị SHAP cho một cá thể đơn lẻ rồi vội vàng khái quát hóa thành quy luật cho toàn bộ tổng thể; không báo cáo giá trị nền $E[f(X)]$ khiến độc giả không thể thẩm định thang đo cơ sở của mô hình.",
+      "apa_reference": "Lundberg, S. M., & Lee, S. I. (2017). A unified approach to interpreting model predictions. Advances in Neural Information Processing Systems, 30, 4765–4774.",
+      "is_flagship": true
     },
     {
       "id": "shapiro-wilk-test",
-      "term": "Shapiro-Wilk Test",
-      "vietnamese": "Kiểm định phân phối chuẩn Shapiro-Wilk",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Normality Diagnostics"
+      "term": "Shapiro-Wilk Test of Normality",
+      "vietnamese": "Kiểm định phân phối chuẩn Shapiro-Wilk (Kiểm định W)",
+      "vietnamese_variants": [
+        "Kiểm định tính chuẩn Shapiro-Wilk",
+        "Phép thử chuẩn Shapiro-Wilk"
       ],
-      "core_definition": "phép thử có lực kiểm định mạnh nhất cho mẫu n < 2.000.",
-      "seminal_citation": "Shapiro & Wilk (1965)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Kiểm định Phân phối",
+        "Thống kê Suy luận",
+        "Phương pháp Định lượng"
+      ],
+      "core_definition": "Kiểm định thống kê suy luận do Samuel Sanford Shapiro và Martin Wilk phát triển năm 1965, nhằm kiểm tra giả định phân phối chuẩn (normality assumption) của một biến liên tục. Thống kê W tính toán tỷ số giữa bình phương của một tổ hợp tuyến tính các thống kê thứ tự (order statistics) và tổng bình phương các độ lệch thông thường quanh giá trị trung bình. Shapiro-Wilk được chứng minh thực nghiệm là kiểm định có năng lực thống kê cao nhất trong tất cả các bài kiểm tra phân phối chuẩn cho cỡ mẫu vừa và nhỏ.",
+      "seminal_citation": "Shapiro, S. S., & Wilk, M. B. (1965). An analysis of variance test for normality (complete samples). Biometrika, 52(3/4), 591–611. https://doi.org/10.2307/2333709; Razali, N. M., & Wah, Y. B. (2011). Power comparisons of Shapiro-Wilk, Kolmogorov-Smirnov, Lilliefors and Anderson-Darling tests. Journal of Statistical Modeling and Analytics, 2(1), 21–33.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Shapiro-Wilk Test according to Shapiro & Wilk (1965).",
       "domain_tags_en": [
         "Normality Diagnostics"
-      ]
+      ],
+      "benchmarks": "Quy tắc quyết định thống kê: Giả thuyết vô hiệu $H_0$ là dữ liệu tuân theo phân phối chuẩn. Nếu $p$-value $> 0.05$, không bác bỏ $H_0$ (dữ liệu đạt phân phối chuẩn); nếu $p < 0.05$, dữ liệu vi phạm phân phối chuẩn. Thường được áp dụng tối ưu cho cỡ mẫu $N$ từ 3 đến 2,000 quan sát; với $N > 2,000$, kiểm định trở nên quá nhạy (những sai lệch siêu nhỏ không đáng kể cũng bị $p < 0.05$).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Áp dụng Shapiro-Wilk trên các mẫu dữ liệu lớn ($N > 5,000$) rồi chuyển sang dùng kiểm định phi tham số chỉ vì $p < 0.05$ (trong khi theo Định lý Giới hạn Trung tâm CLT, phân phối trung bình mẫu vẫn chuẩn); phụ thuộc mù quáng vào $p$-value mà không đối chiếu biểu đồ trực quan Q-Q plot và độ lệch Skewness/Kurtosis (nằm trong khoảng $[-1, +1]$ hoặc $[-2, +2]$).",
+      "apa_reference": "Shapiro, S. S., & Wilk, M. B. (1965). An analysis of variance test for normality (complete samples). Biometrika, 52(3/4), 591–611.",
+      "is_flagship": true
     },
     {
       "id": "shapley-additive-explanations",
-      "term": "Shapley Additive Explanations",
-      "vietnamese": "Giải thích Cộng gộp dựa trên Lý thuyết Trò chơi Shapley (Lundberg & Lee, 2017)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Explainable AI",
-        "Econometrics"
+      "term": "SHAP Global Interpretability (Summary & Dependence Plots)",
+      "vietnamese": "Diễn giải toàn cục bằng giải thích cộng tính Shapley (Biểu đồ tóm tắt và phụ thuộc SHAP)",
+      "vietnamese_variants": [
+        "Diễn giải mô hình học máy toàn cục SHAP",
+        "Phân tích tầm quan trọng biến số SHAP Summary"
       ],
-      "core_definition": "Đo lường mức độ đóng góp biên (marginal contribution) công bằng của từng biến số vào dự báo của bất kỳ mô hình máy học phức tạp nào. Ngưỡng thực nghiệm tham chiếu: Đáp ứng đầy đủ 3 tính chất tiên nghiệm toán học: Local accuracy, Missingness, và Consistency.",
-      "seminal_citation": "Đáp ứng đầy đủ 3 tính chất tiên nghiệm toán học: Local accuracy, Missingness, và Consistency.",
-      "tier": "acronym",
+      "domain_tags": [
+        "Học máy & XAI (Explainable AI)",
+        "Trực quan hóa Dữ liệu",
+        "Khoa học Dữ liệu"
+      ],
+      "core_definition": "Ứng dụng cấp độ toàn cục (global interpretability) của khung SHAP để hiểu sâu sắc hành vi tổng thể của một mô hình học máy phức tạp trên toàn bộ tập dữ liệu kiểm thử. Công cụ cốt lõi bao gồm: (1) Biểu đồ tóm tắt bầy ong (SHAP Summary / Beeswarm plot) kết hợp giữa mức độ quan trọng của biến và hướng tác động (dương/âm) theo giá trị thực tế của biến đó; và (2) Biểu đồ phụ thuộc (SHAP Dependence plot) hiển thị quan hệ phi tuyến và hiệu ứng tương tác (interaction effects) giữa các biến số.",
+      "seminal_citation": "Lundberg, S. M., Erion, G., Chen, H., DeGrave, A., Prutkin, J. M., Nair, B., ... & Lee, S. I. (2020). From local explanations to global understanding with explainable AI for trees. Nature Machine Intelligence, 2(1), 56–67. https://doi.org/10.1038/s42256-019-0138-9; Molnar, C. (2022). Interpretable Machine Learning: A Guide for Making Black Box Models Explainable (2nd ed.). christophm.github.io/interpretable-ml-book/.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of Shapley Additive Explanations according to Đáp ứng đầy đủ 3 tính chất tiên nghiệm toán học: Local accuracy, Missingness, và Consistency..",
@@ -51316,7 +51705,10 @@
         "Explainable AI",
         "Econometrics"
       ],
-      "benchmarks": "Đáp ứng đầy đủ 3 tính chất tiên nghiệm toán học: Local accuracy, Missingness, và Consistency."
+      "benchmarks": "Đọc biểu đồ Beeswarm: Các biến được xếp từ trên xuống dưới theo tầm quan trọng giảm dần (Mean $|\\text{SHAP}|$). Mỗi dấu chấm là một quan sát; màu đỏ biểu thị giá trị thực tế của biến cao, màu xanh biểu thị giá trị thấp. Nếu các chấm đỏ tập trung bên phải trục 0, biến số có tác động thúc đẩy dương tới kết quả dự báo.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Chỉ báo cáo biểu đồ tầm quan trọng đặc trưng truyền thống (Feature Importance dựa trên Gini impurity vốn bị thiên lệch thiên vị các biến liên tục nhiều giá trị) mà không đối chiếu với SHAP Summary plot; giải thích nhầm lẫn giữa giá trị của đặc trưng (feature value) và giá trị đóng góp của đặc trưng (SHAP value).",
+      "apa_reference": "Lundberg, S. M., Erion, G., Chen, H., DeGrave, A., Prutkin, J. M., Nair, B., ... & Lee, S. I. (2020). From local explanations to global understanding with explainable AI for trees. Nature Machine Intelligence, 2(1), 56–67.",
+      "is_flagship": true
     },
     {
       "id": "sharp-rdd",
@@ -51358,23 +51750,31 @@
     },
     {
       "id": "sharp-rdd-vs-fuzzy-rdd",
-      "term": "Sharp RDD vs Fuzzy RDD",
-      "vietnamese": "RDD sắc nét vs. RDD mờ",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Sharp RDD vs. Fuzzy RDD (Regression Discontinuity Design)",
+      "vietnamese": "Hồi quy gián đoạn sắc nét và Hồi quy gián đoạn mờ (Sharp vs Fuzzy RDD)",
+      "vietnamese_variants": [
+        "Thiết kế hồi quy đứt gãy rõ ràng vs mờ",
+        "Phân loại Sharp RDD và Fuzzy RDD"
       ],
-      "core_definition": "Phân bổ tuân thủ tuyệt đối 100% vs. Xác suất nhận can thiệp tăng vọt tại điểm cắt.",
-      "seminal_citation": "Shadish, Cook & Campbell (2002)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Kinh tế lượng Nâng cao",
+        "Thiết kế Bán thực nghiệm",
+        "Suy luận Nhân quả"
+      ],
+      "core_definition": "Hai biến thể nền tảng của Thiết kế Hồi quy Gián đoạn (RDD) dựa trên mức độ tuân thủ quy tắc phân bổ can thiệp tại điểm cắt (cutoff $c$): (1) Sharp RDD (Sắc nét) xảy ra khi xác suất nhận can thiệp nhảy vọt tuyệt đối từ 0 lên 1 ngay tại điểm cắt (tuân thủ hoàn hảo: $P(D = 1 | X \\ge c) = 1$ và $P(D = 1 | X < c) = 0$), tác động nhân quả được ước lượng bằng bước nhảy trung bình của biến phụ thuộc; (2) Fuzzy RDD (Mờ) xảy ra khi điểm cắt chỉ làm thay đổi một phần xác suất nhận can thiệp nhưng không tuyệt đối ($0 < |P(D = 1 | X \\ge c) - P(D = 1 | X < c)| < 1$), việc vượt qua ngưỡng đóng vai trò như một Biến công cụ (Instrumental Variable) và tác động nhân quả được ước lượng qua 2SLS (Local Average Treatment Effect - LATE).",
+      "seminal_citation": "Thistlethwaite, D. L., & Campbell, D. T. (1960). Regression-discontinuity analysis: An alternative to the ex post facto experiment. Journal of Educational Psychology, 51(6), 309–317. https://doi.org/10.1037/h0044319; Hahn, J., Todd, P., & Van der Klaauw, W. (2001). Identification and estimation of treatment effects with a regression-discontinuity design. Econometrica, 69(1), 201–209. https://doi.org/10.1111/1468-0262.00183; Lee, D. S., & Lemieux, T. (2010). Regression discontinuity designs in economics. Journal of Economic Literature, 48(2), 281–355.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Sharp RDD vs Fuzzy RDD according to Shadish, Cook & Campbell (2002).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Công thức nhận dạng tham số: Trong Sharp RDD, $\\tau_{\\text{SRDD}} = \\lim_{x \\downarrow c} E[Y|X=x] - \\lim_{x \\uparrow c} E[Y|X=x]$. Trong Fuzzy RDD, $\\tau_{\\text{FRDD}} = [\\lim_{x \\downarrow c} E[Y|X=x] - \\lim_{x \\uparrow c} E[Y|X=x]] / [\\lim_{x \\downarrow c} E[D|X=x] - \\lim_{x \\uparrow c} E[D|X=x]]$. Bắt buộc phải kiểm định McCrary density test để loại trừ thao túng điểm cắt.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Áp dụng công thức Sharp RDD khi tỷ lệ tuân thủ không hoàn hảo khiến tác động nhân quả bị đánh giá thấp nghiêm trọng; bỏ qua kiểm định bước nhảy của biến can thiệp ở mẫu số trong Fuzzy RDD (weak instrument problem).",
+      "apa_reference": "Hahn, J., Todd, P., & Van der Klaauw, W. (2001). Identification and estimation of treatment effects with a regression-discontinuity design. Econometrica, 69(1), 201–209.",
+      "is_flagship": true
     },
     {
       "id": "sharp-regression-discontinuity",
@@ -51404,77 +51804,112 @@
     },
     {
       "id": "side-by-side-comparison",
-      "term": "Side-by-side comparison",
-      "vietnamese": "So sánh song song kề nhau — Kỹ thuật thảo luận trình bày phát hiện định lượng trước, sau đó ngay lập tức đưa ra phát hiện định tính để đối sánh.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Side-by-Side Comparison (Joint Display in Mixed Methods)",
+      "vietnamese": "So sánh song hành và Bảng hiển thị tích hợp (Joint Display trong phương pháp hỗn hợp)",
+      "vietnamese_variants": [
+        "Hiển thị đối sánh định lượng - định tính",
+        "Bảng đối chiếu tích hợp kết quả hỗn hợp"
       ],
-      "core_definition": "So sánh song song kề nhau — Kỹ thuật thảo luận trình bày phát hiện định lượng trước, sau đó ngay lập tức đưa ra phát hiện định tính để đối sánh.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Phương pháp Hỗn hợp (Mixed Methods)",
+        "Tích hợp Dữ liệu (Integration)",
+        "Trình bày Kết quả Nghiên cứu"
+      ],
+      "core_definition": "Công cụ trực quan hóa phương pháp luận then chốt trong nghiên cứu hỗn hợp do Timothy Guetterman, Michael Fetters và John Creswell phát triển. Bảng hiển thị tích hợp (Joint Display) đặt các phát hiện thống kê định lượng (bảng số liệu, hệ số hồi quy, tỷ lệ phần trăm) và các bằng chứng định tính (trích dẫn nguyên văn lời nói, chủ đề mã hóa) cạnh nhau trong cùng một ma trận cấu trúc, nhằm tạo ra các suy luận tích hợp sâu sắc (meta-inferences) mà từng phương pháp riêng lẻ không thể mang lại.",
+      "seminal_citation": "Fetters, M. D., Curry, L. A., & Creswell, J. W. (2013). Achieving integration in mixed methods designs—principles and practices. Health Services Research, 48(6pt2), 2134–2156. https://doi.org/10.1111/1475-6773.12117; Guetterman, T. C., Fetters, M. D., & Creswell, J. W. (2015). Integrating quantitative and qualitative results in health science mixed methods research through joint displays. The Annals of Family Medicine, 13(6), 554–561.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Side-by-side comparison according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "benchmarks": "Cấu trúc cột ma trận chuẩn mực: (1) Cột Khái niệm/Chủ đề nghiên cứu, (2) Cột Kết quả Định lượng (Statistical Results with $p$-values, $N$), (3) Cột Bằng chứng Định tính (Verbatim Quotes & Themes), và (4) Cột Đánh giá Tích hợp (Tương đồng - Confirmation, Mâu thuẫn - Discordance, hoặc Mở rộng - Expansion).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Báo cáo kết quả định lượng và định tính ở hai chương hoàn toàn riêng biệt mà không bao giờ đối chiếu tích hợp chúng; che giấu sự bất đồng hoặc mâu thuẫn giữa số liệu khảo sát và lời phỏng vấn thay vì phân tích sâu cơ chế tạo ra sự khác biệt.",
+      "apa_reference": "Fetters, M. D., Curry, L. A., & Creswell, J. W. (2013). Achieving integration in mixed methods designs—principles and practices. Health Services Research, 48(6pt2), 2134–2156.",
+      "is_flagship": true
     },
     {
       "id": "signaling-theory-in-management-spence",
-      "term": "Signaling Theory in Management (Spence)",
-      "vietnamese": "Lý thuyết Tín hiệu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Economics",
-        "Management"
+      "term": "Signaling Theory in Management (Michael Spence)",
+      "vietnamese": "Lý thuyết Tín hiệu trong Quản trị (Michael Spence)",
+      "vietnamese_variants": [
+        "Thuyết phát tín hiệu thị trường",
+        "Lý thuyết thông tin bất cân xứng và tín hiệu Spence"
       ],
-      "core_definition": "Cách thức các bên giải quyết bất cân xứng thông tin bằng cách phát ra các tín hiệu đáng tin cậy và tốn kém chi phí.",
-      "seminal_citation": "Spence (1973), Connelly et al. (2011)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Lý thuyết Quản trị & Kinh tế học",
+        "Thông tin Bất cân xứng (Asymmetric Information)",
+        "Khung Khái niệm Lý thuyết"
+      ],
+      "core_definition": "Khung lý thuyết kinh tế và quản trị kinh điển do Michael Spence phát triển năm 1973 (giải Nobel Kinh tế 2001), giải quyết vấn đề bất cân xứng thông tin (information asymmetry) giữa hai bên trong giao dịch xã hội hoặc thị trường. Để thuyết phục bên nhận thông tin (receiver) về năng lực hoặc chất lượng tiềm ẩn không thể quan sát được của mình, bên gửi thông tin (signaler) phải phát ra các tín hiệu đáng tin cậy. Điểm mấu chốt là Chi phí phát tín hiệu (Signaling cost): một tín hiệu chỉ có giá trị khi chi phí tạo ra nó đủ đắt đỏ để bên có chất lượng thấp không thể bắt chước giả mạo (cân bằng tách biệt - separating equilibrium).",
+      "seminal_citation": "Spence, M. (1973). Job market signaling. The Quarterly Journal of Economics, 87(3), 355–374. https://doi.org/10.2307/1882010; Connelly, B. L., Certo, S. T., Ireland, R. D., & Reutzel, C. R. (2011). Signaling theory: A review and assessment. Journal of Management, 37(1), 39–67. https://doi.org/10.1177/0149206310388419",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Signaling Theory in Management (Spence) according to Spence (1973), Connelly et al. (2011).",
       "domain_tags_en": [
         "Economics",
         "Management"
-      ]
+      ],
+      "benchmarks": "Ứng dụng trong nghiên cứu quản trị: Được dùng để giải thích tại sao doanh nghiệp chi tiền làm chứng nhận CSR, kiểm toán Big 4, niêm yết chứng khoán nước ngoài, hoặc bằng cấp tiến sĩ của sáng lập viên để thu hút vốn đầu tư mạo hiểm; mô hình gồm 4 thành tố: Signaler -> Signal -> Receiver -> Feedback loop.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Sử dụng các hành động có chi phí quá thấp hoặc không tốn phí làm biến đại diện cho tín hiệu (cheap talk - lời nói suông), vốn không có giá trị bảo chứng trong lý thuyết tín hiệu; bỏ qua việc đo lường mức độ tiếp nhận và giải mã tín hiệu của bên nhận.",
+      "apa_reference": "Connelly, B. L., Certo, S. T., Ireland, R. D., & Reutzel, C. R. (2011). Signaling theory: A review and assessment. Journal of Management, 37(1), 39–67.",
+      "is_flagship": true
     },
     {
       "id": "significance-of-the-study",
-      "term": "Significance of the study",
-      "vietnamese": "Ý nghĩa và đóng góp của đề tài — Lý giải rõ ràng đề tài sẽ mang lại lợi ích cụ thể gì cho giới học thuật, nhà quản lý và thực tiễn.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Significance of the Study (Scholarly & Practical Value)",
+      "vietnamese": "Ý nghĩa và Giá trị đóng góp của nghiên cứu (Trả lời câu hỏi 'So What?')",
+      "vietnamese_variants": [
+        "Tầm quan trọng của đề tài nghiên cứu",
+        "Đóng góp lý thuyết và thực tiễn của công trình"
       ],
-      "core_definition": "Ý nghĩa và đóng góp của đề tài — Lý giải rõ ràng đề tài sẽ mang lại lợi ích cụ thể gì cho giới học thuật, nhà quản lý và thực tiễn.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Thiết kế Nghiên cứu",
+        "Phát triển Đề tài",
+        "Viết Học thuật"
+      ],
+      "core_definition": "Phần nội dung bắt buộc trong đề cương nghiên cứu, luận án tiến sĩ và phần Mở đầu của bài báo khoa học chuẩn Q1, giải trình mạch lạc lý do tại sao nghiên cứu này lại quan trọng và đáng để thực hiện (answering the fundamental 'So What?' question). Phần này định vị rõ rệt những đóng góp độc đáo của công trình trên 3 bình diện: (1) Đóng góp lý thuyết (bổ khuyết lỗ hổng tri thức, mở rộng phạm vi áp dụng của lý thuyết), (2) Đóng góp phương pháp luận (thang đo mới, thiết kế thực nghiệm chặt chẽ hơn), và (3) Đóng góp thực tiễn/quản trị (hàm ý chính sách, giải pháp vận hành cho nhà quản lý).",
+      "seminal_citation": "Locke, L. F., Spirduso, W. W., & Silverman, S. J. (2013). Proposals That Work: A Guide for Planning Dissertations and Grant Proposals (6th ed.). SAGE Publications; Booth, W. C., Colomb, G. G., Williams, J. M., Bizup, J., & FitzGerald, W. T. (2016). The Craft of Research (4th ed.). University of Chicago Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Significance of the study according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "benchmarks": "Cấu trúc lập luận chuẩn mực: Không viết chung chung mà phải cụ thể hóa: Lý thuyết nào được hưởng lợi? Đối tượng thụ hưởng chính sách là ai? Nếu nghiên cứu này không được thực hiện thì khoa học và thực tiễn sẽ phải gánh chịu những tổn thất hoặc nhận thức sai lầm nào?",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Viết phần ý nghĩa nghiên cứu như một bản báo cáo thành tích tâng bốc chủ quan không có căn cứ y văn; chỉ nêu đóng góp thực tiễn hời hợt cho một doanh nghiệp cụ thể mà không khái quát hóa được đóng góp lý thuyết khoa học cho ngành.",
+      "apa_reference": "Booth, W. C., Colomb, G. G., Williams, J. M., Bizup, J., & FitzGerald, W. T. (2016). The Craft of Research (4th ed.). University of Chicago Press.",
+      "is_flagship": true
     },
     {
       "id": "silhouette-coefficient",
-      "term": "Silhouette Coefficient",
-      "vietnamese": "Hệ số Bóng Silhouette",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Clustering Evaluation"
+      "term": "Silhouette Coefficient (Silhouette Score in Cluster Analysis)",
+      "vietnamese": "Hệ số Silhouette đánh giá chất lượng phân cụm",
+      "vietnamese_variants": [
+        "Chỉ số Silhouette Score",
+        "Độ đo độ kết dính và độ tách biệt phân cụm"
       ],
-      "core_definition": "Đo lường mức độ tương đồng của một điểm với cụm của chính nó so với các cụm khác; chuẩn > 0.5.",
-      "seminal_citation": "Rousseeuw (1987)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phân tích Phân cụm (Cluster Analysis)",
+        "Học máy Không giám sát",
+        "Đánh giá Hiệu năng"
+      ],
+      "core_definition": "Chỉ số đánh giá độ tin cậy và chất lượng phân cụm nội tại (internal clustering validation) do Peter J. Rousseeuw đề xuất năm 1987. Với mỗi điểm dữ liệu $i$, hệ số Silhouette $s(i)$ so sánh mức độ gắn kết nội cụm $a(i)$ (khoảng cách trung bình giữa $i$ và tất cả các điểm khác trong cùng cụm) với mức độ phân tách cụm láng giềng gần nhất $b(i)$ (khoảng cách trung bình giữa $i$ và các điểm thuộc cụm gần nhất khác): $s(i) = [b(i) - a(i)] / \\max(a(i), b(i))$.",
+      "seminal_citation": "Rousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis. Journal of Computational and Applied Mathematics, 20, 53–65. https://doi.org/10.1016/0377-0427(87)90125-7; Kaufman, L., & Rousseeuw, P. J. (1990). Finding Groups in Data: An Introduction to Cluster Analysis. John Wiley & Sons.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Silhouette Coefficient according to Rousseeuw (1987).",
       "domain_tags_en": [
         "Clustering Evaluation"
-      ]
+      ],
+      "benchmarks": "Thang đo và quy tắc Kaufman & Rousseeuw (1990): Hệ số dao động từ -1.0 đến +1.0: (1) $0.71 - 1.00$: Cấu trúc phân cụm rất mạnh (Strong structure); (2) $0.51 - 0.70$: Cấu trúc phân cụm hợp lý (Reasonable structure); (3) $0.26 - 0.50$: Cấu trúc yếu (Weak structure); (4) $\\le 0.25$: Không có cấu trúc cụm thực chất. Thường được dùng để tìm số cụm tối ưu $k$ kết hợp với phương pháp Elbow.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Áp dụng Silhouette Score (vốn sử dụng khoảng cách Euclidean) cho các cụm có hình dạng phức tạp phi tuyến hoặc mật độ phân tán dị biệt (như trong thuật toán DBSCAN), dẫn đến đánh giá sai chất lượng phân cụm thực tế.",
+      "apa_reference": "Rousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis. Journal of Computational and Applied Mathematics, 20, 53–65.",
+      "is_flagship": true
     },
     {
       "id": "simple-random-sampling",
