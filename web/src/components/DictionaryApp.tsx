@@ -1217,13 +1217,6 @@ export default function DictionaryApp({
             {/* TH1: HIỂN THỊ MỤC TỪ CHÍNH (METHODOLOGY TERM) */}
             {activeTerm && (
               <article className="space-y-6">
-                {/* THANH ĐIỀU HƯỚNG MỤC LỤC TRONG TRANG (STICKY TABLE OF CONTENTS / SCROLLSPY) */}
-                <StickyTableOfContents
-                  sections={tocSections}
-                  containerRef={contentScrollRef}
-                  languageMode={languageMode}
-                />
-
                 {/* 1. TIÊU ĐỀ THUẬT NGỮ & PHÁT ÂM */}
                 <header className="border-b border-slate-200 dark:border-slate-800 pb-5 space-y-2.5">
                   <div className="flex items-start justify-between gap-4">
@@ -1416,6 +1409,12 @@ export default function DictionaryApp({
 
                 {termSubTab === "article" && (
                   <div className="space-y-6">
+                    {/* DẢI ĐIỀU HƯỚNG NHANH CÁC PHÂN MỤC TRONG BÀI (IN-FLOW SECTION ANCHORS) */}
+                    <StickyTableOfContents
+                      sections={tocSections}
+                      containerRef={contentScrollRef}
+                      languageMode={languageMode}
+                    />
 
                 {/* 2. KHỐI ĐỊNH NGHĨA CỐT LÕI */}
                 <section id="section-definition" className="p-4 rounded-xl border-l-4 border-blue-600 bg-blue-50/40 dark:bg-blue-950/20 border border-blue-100 dark:border-blue-900/40 space-y-2">
