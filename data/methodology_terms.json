@@ -44591,280 +44591,489 @@
     },
     {
       "id": "positivism",
-      "term": "Positivism",
-      "vietnamese": "Chủ nghĩa Thực chứng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Philosophy of Science"
+      "term": "Positivism (Auguste Comte & Logical Positivism)",
+      "vietnamese": "Chủ nghĩa thực chứng",
+      "vietnamese_variants": [
+        "Hệ hình thực chứng",
+        "Positivism",
+        "Chủ nghĩa thực chứng logic",
+        "Triết học thực chứng"
       ],
-      "core_definition": "hệ hình triết học cho rằng thực tại khách quan có thể đo lường qua số liệu thực chứng.",
-      "seminal_citation": "Auguste Comte (1848)",
-      "tier": "curated",
+      "domain_tags": [
+        "research-design",
+        "philosophy-of-science",
+        "epistemology",
+        "quantitative-methods"
+      ],
+      "core_definition": "Hệ hình triết học và nhận thức luận do Auguste Comte khởi xướng và được phát triển bởi trường phái Thực chứng Logic (Vienna Circle), khẳng định rằng tri thức xác thực duy nhất là tri thức dựa trên kinh nghiệm cảm tính được kiểm chứng thông qua các phương pháp khoa học tự nhiên, quan sát khách quan và định lượng toán học, hoàn toàn loại bỏ các suy đoán siêu hình học (metaphysics) (Comte, 1853; Ayer, 1936).",
+      "seminal_citation": "Comte, A. (1853). The positive philosophy of Auguste Comte (H. Martineau, Trans.). Chapman.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Positivism according to Auguste Comte (1848).",
       "domain_tags_en": [
         "Philosophy of Science"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Về bản thể luận (ontology): Thực tại tồn tại khách quan bên ngoài ý thức con người và bị chi phối bởi các quy luật tự nhiên nhân quả bất biến. Về nhận thức luận (epistemology): Nhà nghiên cứu hoàn toàn độc lập, tách rời và giữ lập trường trung lập đối với khách thể nghiên cứu (dualism / objectivism). Về phương pháp luận: Sử dụng phương pháp diễn dịch (deduction), thao tác hóa khái niệm thành biến số đo lường được, và kiểm định giả thuyết thống kê nghiêm ngặt.",
+      "benchmarks": "Đảm bảo tính khách quan (objectivity) và khả năng tái lập độc lập (replicability); Thiết kế nghiên cứu thực nghiệm hoặc định lượng có kiểm soát chặt chẽ các biến gây nhiễu; Báo cáo chuẩn xác các sai số đo lường và khoảng tin cậy thống kê.",
+      "pitfalls": "Ngộ nhận rằng các hiện tượng xã hội và tâm lý phức tạp có thể quy giản hoàn toàn thành các con số toán học rời rạc mà không bị mất đi chiều sâu ngữ cảnh (reductionism); ảo tưởng về sự trung lập giá trị tuyệt đối trong khi chính việc chọn đề tài và công cụ đo lường đã chứa đựng định kiến văn hóa.",
+      "apa_reference": "Ayer, A. J. (1936). Language, truth and logic. Victor Gollancz. / Comte, A. (1853). The positive philosophy of Auguste Comte (H. Martineau, Trans.). Chapman."
     },
     {
       "id": "positivism-post-positivism",
-      "term": "Positivism & Post-Positivism",
-      "vietnamese": "Chủ nghĩa Thực chứng và Hậu Thực chứng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Philosophy of Science"
+      "term": "Positivism vs. Post-Positivism Paradigm Shift",
+      "vietnamese": "Chuyển dịch hệ hình từ Thực chứng sang Hậu thực chứng",
+      "vietnamese_variants": [
+        "Thực chứng và hậu thực chứng",
+        "Positivism and post-positivism",
+        "Bước chuyển hệ hình triết học",
+        "Post-positivism shift"
       ],
-      "core_definition": "Thực tại tồn tại khách quan bên ngoài nhưng chỉ có thể nắm bắt không hoàn hảo.",
-      "seminal_citation": "Popper (1959), Phillips & Burbules (2000)",
-      "tier": "textbook",
+      "domain_tags": [
+        "research-design",
+        "philosophy-of-science",
+        "epistemology",
+        "research-paradigms"
+      ],
+      "core_definition": "Bước chuyển biến nhận thức luận căn bản trong triết học khoa học thế kỷ 20, chuyển từ niềm tin tuyệt đối của chủ nghĩa thực chứng cổ điển (thực tại khách quan có thể được đo lường chính xác tuyệt đối) sang chủ nghĩa hiện thực phê phán (critical realism) của hậu thực chứng: thừa nhận thực tại khách quan tồn tại độc lập nhưng con người chỉ có thể tri nhận nó một cách tương đối, không hoàn hảo và luôn tiềm ẩn sai số xác suất (Popper, 1959; Phillips & Burbules, 2000).",
+      "seminal_citation": "Phillips, D. C., & Burbules, N. C. (2000). Postpositivism and educational research. Rowman & Littlefield.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Positivism & Post-Positivism according to Popper (1959), Phillips & Burbules (2000).",
       "domain_tags_en": [
         "Philosophy of Science"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Hậu thực chứng thay thế nguyên tắc xác nhận (verification) bằng nguyên tắc kiểm chứng sai (falsification) của Karl Popper; chuyển từ niềm tin chân lý tuyệt đối sang chấp nhận các kết luận mang tính tạm thời (tentative knowledge); thừa nhận rằng mọi quan sát đều 'nhiễm lý thuyết' (theory-laden observations) và nhà nghiên cứu phải liên tục áp dụng tam giác đạc (triangulation) để kiểm soát thiên lệch.",
+      "benchmarks": "Chuyển đổi ngôn ngữ báo cáo học thuật từ khẳng định 'chứng minh chân lý' (proves the theory) sang 'bằng chứng ủng hộ giả thuyết' (evidence supports the hypothesis); Thừa nhận các hạn chế phương pháp luận và kiểm định giả thuyết không (NHST); Áp dụng đa phương pháp (multiple methods) để thu hẹp sai số đo lường.",
+      "pitfalls": "Dùng lẫn lộn thuật ngữ thực chứng và hậu thực chứng; khẳng định rằng nghiên cứu định lượng đã 'chứng minh 100% bản chất tự nhiên' (vẫn tư duy theo thực chứng ngây thơ thế kỷ 19); bỏ qua việc thảo luận các nguồn sai số hệ thống tiềm ẩn trong quá trình đo lường.",
+      "apa_reference": "Phillips, D. C., & Burbules, N. C. (2000). Postpositivism and educational research. Rowman & Littlefield. / Popper, K. R. (1959). The logic of scientific discovery. Hutchinson."
     },
     {
       "id": "post-hoc-classification",
-      "term": "Post hoc classification",
-      "vietnamese": "Phân loại hậu nghiệm",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Post-Hoc Classification (Data-Driven Typology)",
+      "vietnamese": "Phân loại hậu nghiệm (Phân loại dựa trên dữ liệu)",
+      "vietnamese_variants": [
+        "Phân loại post-hoc",
+        "Post-hoc typology",
+        "Phân nhóm sau thu thập dữ liệu",
+        "Phân loại thăm dò thực nghiệm"
       ],
-      "core_definition": "Phân loại dựa trên cấu trúc dữ liệu thực nghiệm (phân tích cụm, v.v.).",
-      "seminal_citation": "Hunt (2015)",
-      "tier": "textbook",
+      "domain_tags": [
+        "data-analysis",
+        "cluster-analysis",
+        "typology",
+        "unsupervised-learning"
+      ],
+      "core_definition": "Kỹ thuật phân nhóm hoặc phân loại các quan sát thành các cụm (clusters), hình mẫu (typologies) hoặc phân đoạn (segments) dựa trên các thuật toán thống kê khám phá áp dụng trên dữ liệu thực nghiệm đã thu thập (như phân tích cụm k-means, phân tích lớp tiềm ẩn LCA), thay vì phân loại dựa trên các tiêu chí lý thuyết tiền định trước khi nghiên cứu (Everitt et al., 2011; Hair et al., 2019).",
+      "seminal_citation": "Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). Cluster analysis (5th ed.). John Wiley & Sons.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Post hoc classification according to Hunt (2015).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "data-analysis",
+      "is_flagship": true,
+      "operational_mechanism": "Thuật toán đo lường khoảng cách đa biến (Euclidean distance, Mahalanobis distance) hoặc ước lượng hàm hợp lý cực đại để tối đa hóa độ tương đồng bên trong nhóm (within-cluster homogeneity) và tối đa hóa độ khác biệt giữa các nhóm (between-cluster heterogeneity). Sau khi các nhóm hình thành, nhà nghiên cứu phân tích đặc trưng của từng cụm để đặt tên và định danh ý nghĩa thực tiễn.",
+      "benchmarks": "Đánh giá số cụm tối ưu qua hệ số Silhouette (> 0.50 biểu thị cấu trúc cụm tốt), chỉ số Calinski-Harabasz, hoặc BIC trong Latent Class Analysis (LCA); Bắt buộc phải kiểm định độ giá trị ngoài (external validity) bằng cách đối chiếu các cụm mới với các biến kết cục độc lập không tham gia vào quá trình phân nhóm.",
+      "pitfalls": "Đặt tên cho các cụm phân loại hậu nghiệm một cách chủ quan tùy tiện mà không có cơ sở lý thuyết vững chắc; áp dụng thuật toán phân cụm trên dữ liệu có biến dị ngẫu nhiên không có cấu trúc thực sự (clustering noise); quên chuẩn hóa dữ liệu (z-score standardization) khi các biến có thang đo khác nhau làm biến có độ phân tán lớn lấn át toàn bộ quá trình phân nhóm.",
+      "apa_reference": "Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). Cluster analysis (5th ed.). John Wiley & Sons. / Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2019). Multivariate data analysis (8th ed.). Cengage Learning."
     },
     {
       "id": "post-hoc-pairwise-comparisons",
       "term": "Post-Hoc Pairwise Comparisons",
-      "vietnamese": "So sánh Bắt cặp Hậu nghiệm",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Experimental Statistics"
+      "vietnamese": "So sánh từng cặp hậu nghiệm",
+      "vietnamese_variants": [
+        "So sánh cặp sau kiểm định",
+        "Post-hoc tests",
+        "So sánh đa bội từng cặp",
+        "Pairwise comparisons"
       ],
-      "core_definition": "Các phép kiểm định cặp sau ANOVA để xác định chính xác cặp nhóm nào khác biệt.",
-      "seminal_citation": "Field (2018)",
-      "tier": "textbook",
+      "domain_tags": [
+        "data-analysis",
+        "anova",
+        "hypothesis-testing",
+        "multiple-comparisons"
+      ],
+      "core_definition": "Tập hợp các phép kiểm định thống kê được thực hiện sau khi kiểm định F tổng thể trong phân tích phương sai (ANOVA) đạt mức ý nghĩa thống kê (p < 0.05), nhằm xác định chính xác cặp giá trị trung bình giữa các nhóm nào có sự khác biệt có ý nghĩa thống kê, trong khi vẫn kiểm soát chặt chẽ sự gia tăng sai lầm loại I của toàn bộ phép thử (Family-Wise Error Rate - FWER) (Tukey, 1949; Maxwell, Delaney, & Kelley, 2018).",
+      "seminal_citation": "Tukey, J. W. (1949). Comparing individual means in the analysis of variance. Biometrics, 5(2), 99-114.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Post-Hoc Pairwise Comparisons according to Field (2018).",
       "domain_tags_en": [
         "Experimental Statistics"
-      ]
+      ],
+      "category": "data-analysis",
+      "is_flagship": true,
+      "operational_mechanism": "Khi so sánh k nhóm, số lượng phép so sánh từng cặp là k(k - 1)/2. Nếu thực hiện nhiều kiểm định t độc lập thông thường ở mức alpha = 0.05, xác suất mắc ít nhất một sai lầm loại I sẽ tăng vọt lên 1 - (1 - 0.05)^c. Các thủ tục hậu nghiệm (như Tukey's HSD, Scheffé, Bonferroni, Games-Howell) điều chỉnh mức alpha hoặc sử dụng phân phối Studentized Range để giữ tỷ lệ FWER luôn <= 0.05.",
+      "benchmarks": "Lựa chọn đúng thủ tục: Sử dụng Tukey's HSD khi phương sai đồng nhất và cỡ mẫu bằng nhau; Sử dụng Gabriel hoặc Hochberg khi cỡ mẫu không bằng nhau; Bắt buộc dùng Games-Howell khi phương sai giữa các nhóm không đồng nhất (Levene's test p < 0.05); Báo cáo đầy đủ chênh lệch trung bình (Mean Difference), sai số chuẩn SE, và giá trị p hiệu chỉnh.",
+      "pitfalls": "Chạy post-hoc tests khi kiểm định F của ANOVA không có ý nghĩa thống kê (p > 0.05) - trừ một số ngoại lệ của planned contrasts; lạm dụng kiểm định Fisher's LSD (vốn không hề kiểm soát FWER khi số nhóm > 3); sử dụng Tukey's HSD khi phương sai vi phạm tính đồng nhất nghiêm trọng.",
+      "apa_reference": "Maxwell, S. E., Delaney, H. D., & Kelley, K. (2018). Designing experiments and analyzing data: A model comparison perspective (3rd ed.). Routledge. / Tukey, J. W. (1949). Comparing individual means in the analysis of variance. Biometrics, 5(2), 99-114. https://doi.org/10.2307/3001913"
     },
     {
       "id": "post-hoc-tests-tukeys-hsd",
-      "term": "Post-Hoc Tests (Tukey's HSD)",
-      "vietnamese": "Kiểm định hậu định Tukey HSD so sánh từng cặp trung bình sau khi ANOVA có ý nghĩa",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Post-Hoc Statistics"
+      "term": "Tukey's Honestly Significant Difference (Tukey's HSD)",
+      "vietnamese": "Kiểm định khác biệt thực sự có ý nghĩa Tukey (Tukey's HSD)",
+      "vietnamese_variants": [
+        "Kiểm định Tukey HSD",
+        "Tukey's HSD test",
+        "Kiểm định hậu nghiệm Tukey",
+        "Tukey range test"
       ],
-      "core_definition": "Kiểm định hậu định Tukey HSD so sánh từng cặp trung bình sau khi ANOVA có ý nghĩa.",
-      "seminal_citation": "Tukey (1949)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "data-analysis",
+        "anova",
+        "parametric-tests",
+        "multiple-comparisons"
+      ],
+      "core_definition": "Phép kiểm định so sánh từng cặp hậu nghiệm tham số kinh điển do John Tukey phát triển, dựa trên phân phối biên độ Student hóa (Studentized range distribution q), được thiết kế để so sánh tất cả các cặp giá trị trung bình khả dĩ sau khi ANOVA một yếu tố hoặc nhiều yếu tố đạt ý nghĩa thống kê, đảm bảo tỷ lệ sai lầm loại I cho toàn bộ tập hợp so sánh không vượt quá ngưỡng alpha danh nghĩa (Tukey, 1949; Hochberg & Tamhane, 1987).",
+      "seminal_citation": "Tukey, J. W. (1949). Comparing individual means in the analysis of variance. Biometrics, 5(2), 99-114.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Post-Hoc Tests (Tukey's HSD) according to Tukey (1949).",
       "domain_tags_en": [
         "Post-Hoc Statistics"
-      ]
+      ],
+      "category": "data-analysis",
+      "is_flagship": true,
+      "operational_mechanism": "Tính toán giá trị ngưỡng chênh lệch tối thiểu có ý nghĩa thống kê: HSD = q_crit * √(MS_within / n), trong đó q_crit tra bảng phân phối Studentized range ứng với số nhóm k, bậc tự do trong nhóm df, và mức alpha; MS_within là phương sai nội bộ nhóm trích từ bảng ANOVA, và n là số quan sát mỗi nhóm. Mọi cặp trung bình có độ lệch tuyệt đối |X̄_i - X̄_j| >= HSD đều được kết luận là khác biệt có ý nghĩa thống kê.",
+      "benchmarks": "Áp dụng lý tưởng khi dữ liệu phân phối chuẩn, phương sai các nhóm đồng nhất (Levene's test p > 0.05) và cỡ mẫu các nhóm bằng nhau (hoặc xấp xỉ bằng nhau qua Tukey-Kramer adjustment); Có độ mạnh thống kê cao hơn nhiều so với thủ tục bảo thủ Scheffé khi chỉ quan tâm đến so sánh từng cặp giản đơn.",
+      "pitfalls": "Áp dụng Tukey's HSD khi giả định phương sai đồng nhất bị vi phạm nghiêm trọng (trường hợp này phải chuyển sang Games-Howell); nhầm lẫn giữa Tukey's HSD với Tukey's b (một thủ tục trung gian không kiểm soát hoàn toàn FWER); áp dụng cho các so sánh phức tạp (complex contrasts kết hợp nhiều nhóm) vốn đòi hỏi kiểm định Scheffé.",
+      "apa_reference": "Hochberg, Y., & Tamhane, A. C. (1987). Multiple comparison procedures. John Wiley & Sons. / Tukey, J. W. (1949). Comparing individual means in the analysis of variance. Biometrics, 5(2), 99-114. https://doi.org/10.2307/3001913"
     },
     {
       "id": "post-publication-peer-review",
-      "term": "Post-Publication Peer Review",
-      "vietnamese": "Phản biện Sau Xuất bản",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Academic Publishing"
+      "term": "Post-Publication Peer Review (PPPR)",
+      "vietnamese": "Phản biện đồng cấp sau xuất bản",
+      "vietnamese_variants": [
+        "Đánh giá sau công bố",
+        "PPPR",
+        "Bình duyệt sau xuất bản",
+        "Giám sát học thuật cộng đồng"
       ],
-      "core_definition": "Cộng đồng khoa học tiếp tục bình duyệt, nhận xét và phản hồi sau khi bài đã xuất bản chính thức.",
-      "seminal_citation": "Hunter (2012)",
-      "tier": "textbook",
+      "domain_tags": [
+        "general",
+        "open-science",
+        "research-integrity",
+        "scholarly-publishing"
+      ],
+      "core_definition": "Tiến trình đánh giá, thẩm định, phản biện và thảo luận khoa học diễn ra công khai sau khi một bài báo nghiên cứu đã được chính thức xuất bản trên tạp chí hoặc máy chủ tiền in (preprint servers), do toàn thể cộng đồng khoa học thực hiện thông qua các nền tảng mở như PubPeer, F1000Research, hoặc phần bình luận của tạp chí (Hunter, 2012; Teixeira da Silva & Dobránszki, 2015).",
+      "seminal_citation": "Hunter, J. (2012). Post-publication peer review: Opening the dialogue. Frontiers in Computational Neuroscience, 6, 63.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Post-Publication Peer Review according to Hunter (2012).",
       "domain_tags_en": [
         "Academic Publishing"
-      ]
+      ],
+      "category": "general",
+      "is_flagship": true,
+      "operational_mechanism": "Khắc phục những giới hạn cố hữu của hệ thống phản biện trước xuất bản truyền thống (vốn chỉ dựa vào 2-3 chuyên gia ẩn danh và dễ bỏ sót các sai sót thống kê, gian lận hình ảnh hoặc ngụy tạo dữ liệu). PPPR cho phép hàng nghìn nhà nghiên cứu trên thế giới soi chiếu công trình, tái lập phân tích dựa trên dữ liệu mở, và thúc đẩy các đính chính (corrections) hoặc thu hồi bài báo (retractions) khi phát hiện vi phạm liêm chính.",
+      "benchmarks": "Đóng góp quyết định vào phong trào Khoa học Mở (Open Science); Là kênh thông tin chủ lực để phát hiện các bài báo kém chất lượng từ các nhà máy sản xuất bài báo (paper mills); Cung cấp minh chứng cho các ban biên tập tạp chí quốc tế xử lý các vụ việc gian lận khoa học.",
+      "pitfalls": "Nguy cơ xuất hiện các bình luận mang tính công kích cá nhân hoặc nặc danh phá hoại uy tín học thuật; các tác giả bài báo phớt lờ các câu hỏi phản biện nghiêm túc trên PubPeer; ban biên tập tạp chí chậm trễ hoặc từ chối điều tra các bằng chứng khoa học được vạch trần bởi cộng đồng PPPR.",
+      "apa_reference": "Hunter, J. (2012). Post-publication peer review: Opening the dialogue. Frontiers in Computational Neuroscience, 6, 63. https://doi.org/10.3389/fncom.2012.00063 / Teixeira da Silva, J. A., & Dobránszki, J. (2015). Problems with traditional science publishing and finding a wider role for post-publication peer review. Accountability in Research, 22(1), 22-40. https://doi.org/10.1080/08989621.2014.899909"
     },
     {
       "id": "posterior-distribution",
-      "term": "Posterior Distribution",
-      "vietnamese": "Phân phối Hậu nghiệm",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Bayesian Statistics"
+      "term": "Posterior Distribution (Bayesian Inference)",
+      "vietnamese": "Phân phối hậu nghiệm (Suy diễn thống kê Bayes)",
+      "vietnamese_variants": [
+        "Phân phối xác suất hậu nghiệm",
+        "Posterior probability distribution",
+        "Phân phối Bayes hậu nghiệm",
+        "p(θ|D)"
       ],
-      "core_definition": "Phân phối xác suất có điều kiện của tham số sau khi đã cập nhật dữ liệu quan sát qua định lý Bayes.",
-      "seminal_citation": "Gelman et al. (2013)",
-      "tier": "textbook",
+      "domain_tags": [
+        "data-analysis",
+        "bayesian-statistics",
+        "probability-theory",
+        "statistical-inference"
+      ],
+      "core_definition": "Phân phối xác suất có điều kiện của các tham số chưa biết (θ) sau khi đã quan sát và cập nhật bằng chứng từ dữ liệu thực nghiệm (D), thu được bằng cách kết hợp phân phối tiên nghiệm (prior distribution p(θ)) với hàm hợp lý của dữ liệu (likelihood function p(D|θ)) thông qua Định lý Bayes (Gelman et al., 2013; McElreath, 2020).",
+      "seminal_citation": "Gelman, A., Carlin, J. B., Stern, H. S., Dunson, D. B., Vehtari, A., & Rubin, D. B. (2013). Bayesian data analysis (3rd ed.). CRC Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Posterior Distribution according to Gelman et al. (2013).",
       "domain_tags_en": [
         "Bayesian Statistics"
-      ]
+      ],
+      "category": "data-analysis",
+      "is_flagship": true,
+      "operational_mechanism": "Công thức toán học: p(θ|D) = [p(D|θ) × p(θ)] / p(D) ∝ p(D|θ) × p(θ), nghĩa là 'Hậu nghiệm tỷ lệ thuận với Hợp lý nhân với Tiên nghiệm'. Toàn bộ các suy diễn thống kê Bayes (ước lượng điểm trung bình hậu nghiệm, khoảng tin cậy mật độ hậu nghiệm cao nhất HPDI / Credible Intervals) đều được trích xuất trực tiếp từ hình dạng của phân phối hậu nghiệm thông qua các thuật toán MCMC (như Gibbs, Stan HMC).",
+      "benchmarks": "Báo cáo đầy đủ trung bình hậu nghiệm (Posterior Mean), trung vị hậu nghiệm (Posterior Median), độ lệch chuẩn hậu nghiệm (Posterior SD), và Khoảng Tương tín 95% (95% Highest Posterior Density Interval - HPDI); Kiểm tra chẩn đoán độ hội tụ chuỗi MCMC qua R-hat < 1.01 và Effective Sample Size (ESS > 400).",
+      "pitfalls": "Đồng nhất khoảng tương tín Bayes 95% (Credible Interval - xác suất thực sự tham số nằm trong khoảng là 95%) với khoảng tin cậy thường nghiệm 95% (Frequentist Confidence Interval); sử dụng tiên nghiệm quá hẹp hoặc chủ quan làm bóp méo phân phối hậu nghiệm khi cỡ mẫu nhỏ; phân phối hậu nghiệm đa đỉnh (multimodal) khiến việc báo cáo giá trị trung bình đơn lẻ gây hiểu lầm.",
+      "apa_reference": "Gelman, A., Carlin, J. B., Stern, H. S., Dunson, D. B., Vehtari, A., & Rubin, D. B. (2013). Bayesian data analysis (3rd ed.). CRC Press. https://doi.org/10.1201/b16018 / McElreath, R. (2020). Statistical rethinking: A Bayesian course with examples in R and Stan (2nd ed.). CRC Press."
     },
     {
       "id": "postmodernism",
-      "term": "Postmodernism",
-      "vietnamese": "Chủ nghĩa hậu hiện đại trong nghiên cứu khoa học",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Triết học Khoa học",
-        "Hành củ Nghiên cứu"
+      "term": "Postmodernism in Social Inquiry",
+      "vietnamese": "Chủ nghĩa hậu hiện đại trong nghiên cứu xã hội",
+      "vietnamese_variants": [
+        "Hệ hình hậu hiện đại",
+        "Postmodernism",
+        "Triết học hậu hiện đại",
+        "Phê phán hậu hiện đại"
       ],
-      "core_definition": "Trường phái triết học hoài nghi các đại tự sự (grand narratives) và các chân lý phổ quát, nhấn mạnh vai trò của quyền lực, ngôn ngữ và các mối quan hệ xã hội trong việc kiến tạo tri thức.",
-      "seminal_citation": "Lyotard, J. F. (1984). The Postmodern Condition: A Report on Knowledge. University of Minnesota Press.",
-      "tier": "textbook",
+      "domain_tags": [
+        "research-design",
+        "philosophy-of-science",
+        "critical-theory",
+        "qualitative-methods"
+      ],
+      "core_definition": "Trào lưu triết học và phê phán lý thuyết xuất hiện vào nửa cuối thế kỷ 20, đặc trưng bởi sự hoài nghi sâu sắc đối với các đại tự sự (metanarratives / grand theories) về sự tiến bộ của lý tính và khoa học phổ quát, khẳng định rằng mọi tri thức đều gắn liền với quyền lực, mang tính cục bộ, phân mảnh, tương đối và được kiến tạo qua diễn ngôn ngôn ngữ (Lyotard, 1984; Foucault, 1980; Rosenau, 1992).",
+      "seminal_citation": "Lyotard, J. F. (1984). The postmodern condition: A report on knowledge (G. Bennington & B. Massumi, Trans.). University of Minnesota Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Postmodernism according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Trong nghiên cứu định tính, chủ nghĩa hậu hiện đại giải cấu trúc (deconstructs) các khái niệm quyền lực chân lý tuyệt đối, tập trung vào việc lắng nghe tiếng nói bên lề (marginalized voices), phân tích diễn ngôn phê phán (critical discourse analysis), và thúc đẩy tính phản tư triệt để (hyper-reflexivity) về vai trò của nhà nghiên cứu trong việc áp đặt cấu trúc lên câu chuyện của đối tượng khảo sát.",
+      "benchmarks": "Sự hiện diện của phân tích giải cấu trúc quyền lực và diễn ngôn; Nhận thức rõ ràng về tính vị trí xã hội của nhà nghiên cứu (positionality and reflexivity); Chấp nhận sự hiện diện của các mâu thuẫn, khoảng trống và nhiều tầng nghĩa trong dữ liệu định tính mà không cố ép vào một khung lý thuyết thống nhất duy nhất.",
+      "pitfalls": "Rơi vào chủ nghĩa hư vô nhận thức luận (epistemic nihilism / extreme relativism) phủ nhận hoàn toàn sự tồn tại của thực tại khách quan, khiến nghiên cứu mất đi tính ứng dụng thực tiễn; phong cách viết lạm dụng thuật ngữ trừu tượng khó hiểu ngụy trang cho sự thiếu hụt phương pháp luận nghiêm cẩn; biến nghiên cứu thành bài tiểu luận phê bình văn học thuần túy.",
+      "apa_reference": "Foucault, M. (1980). Power/knowledge: Selected interviews and other writings, 1972-1977. Pantheon Books. / Lyotard, J. F. (1984). The postmodern condition: A report on knowledge (G. Bennington & B. Massumi, Trans.). University of Minnesota Press."
     },
     {
       "id": "postpositivist-perspective",
-      "term": "Postpositivist perspective",
-      "vietnamese": "Góc nhìn hậu thực chứng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Triết học Khoa học"
+      "term": "Postpositivist Perspective (Critical Realist Epistemology)",
+      "vietnamese": "Quan điểm hậu thực chứng (Nhận thức luận hiện thực phê phán)",
+      "vietnamese_variants": [
+        "Góc nhìn hậu thực chứng",
+        "Postpositivist perspective",
+        "Quan điểm khoa học hậu thực chứng",
+        "Tư duy nghiên cứu hậu thực chứng"
       ],
-      "core_definition": "Thế giới quan khoa học thừa nhận rằng mặc dù thực tại khách quan tồn tại độc lập, nhận thức và công cụ của con người luôn có sai số, do đó chân lý khoa học chỉ có thể được kiểm chứng tiệm cận (thuyết bất toàn / Fallibilism).",
-      "seminal_citation": "Phillips, D. C., & Burbules, N. C. (2000). Postpositivism and Educational Research. Rowman & Littlefield.",
-      "tier": "textbook",
+      "domain_tags": [
+        "research-design",
+        "epistemology",
+        "philosophy-of-science",
+        "quantitative-rigor"
+      ],
+      "core_definition": "Góc nhìn nhận thức luận hiện đại chi phối phần lớn các nghiên cứu khoa học hành vi và quản trị định lượng, duy trì mục tiêu tìm kiếm các quy luật và mối liên hệ nhân quả khách quan nhưng từ bỏ tính giáo điều của chủ nghĩa thực chứng cũ, thừa nhận rằng mọi phép đo lường khoa học của con người đều tiềm ẩn sai số và mọi lý thuyết khoa học đều có thể bị sửa đổi hoặc bác bỏ trong tương lai (Phillips & Burbules, 2000; Creswell & Creswell, 2018).",
+      "seminal_citation": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Postpositivist perspective according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Thao tác hóa qua quy trình khoa học chuẩn tắc: Bắt đầu từ lý thuyết hiện hữu -> Đặt giả thuyết có thể kiểm chứng sai -> Thu thập dữ liệu thực nghiệm bằng công cụ đo lường chuẩn hóa -> Kiểm soát các biến nhiễu ngoại lai -> Phân tích thống kê suy diễn -> Đánh giá mức độ ủng hộ của chứng cứ đối với lý thuyết, đồng thời chỉ rõ các giới hạn phương pháp luận.",
+      "benchmarks": "Đảm bảo tính minh bạch và khả năng tái lập công khai (open data / open code); Đánh giá toàn diện các nguy cơ đe dọa độ giá trị (threats to internal, external, construct, and statistical conclusion validity theo Shadish, Cook, & Campbell, 2002); Tôn trọng tiêu chuẩn đạo đức nghiên cứu bảo vệ đối tượng khảo sát.",
+      "pitfalls": "Rơi trở lại vào tư duy thực chứng ngây thơ khi tự nhận rằng nghiên cứu của mình đã 'chứng minh chân lý vĩnh cửu' (proves the truth); bỏ qua các giả định toán học của các mô hình kinh tế lượng hoặc thống kê; không thực hiện các kiểm định độ nhạy (robustness checks) để kiểm tra tính vững chắc của kết luận.",
+      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications. / Phillips, D. C., & Burbules, N. C. (2000). Postpositivism and educational research. Rowman & Littlefield."
     },
     {
       "id": "postpositivist-worldview",
-      "term": "Postpositivist worldview",
-      "vietnamese": "Thế giới quan Hậu thực chứng — Hệ hình của nghiên cứu định lượng; tin vào tính khách quan nhưng thừa nhận sai số; nhấn mạnh quyết định luận và kiểm định giả thuyết.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Postpositivist Worldview (Creswell's Four Worldviews)",
+      "vietnamese": "Thế giới quan hậu thực chứng (Phân loại bốn thế giới quan của Creswell)",
+      "vietnamese_variants": [
+        "Thế giới quan hậu thực chứng",
+        "Postpositivist worldview",
+        "Hệ hình hậu thực chứng Creswell",
+        "Tư duy định lượng hậu thực chứng"
       ],
-      "core_definition": "Thế giới quan Hậu thực chứng — Hệ hình của nghiên cứu định lượng; tin vào tính khách quan nhưng thừa nhận sai số; nhấn mạnh quyết định luận và kiểm định giả thuyết.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "research-design",
+        "research-paradigms",
+        "philosophy-of-science",
+        "methodological-foundations"
+      ],
+      "core_definition": "Một trong 4 thế giới quan nghiên cứu then chốt (cùng với Constructivist, Transformative, và Pragmatic) được John W. Creswell chuẩn hóa, định hình tư duy cho các nhà nghiên cứu theo đuổi phương pháp định lượng truyền thống, dựa trên 4 đặc trưng cốt lõi: Tính tiền định quy giản (reductionism), Thuyết duy lý nhân quả (determinism), Đo lường thực nghiệm khách quan (empirical observation and measurement), và Kiểm định lý thuyết (theory verification) (Creswell & Creswell, 2018).",
+      "seminal_citation": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Postpositivist worldview according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Vận hành như một lăng kính chỉ đạo toàn bộ thiết kế nghiên cứu: Nhà nghiên cứu phân rã ý tưởng phức tạp thành các biến số rời rạc (reductionism), tìm kiếm các nguyên nhân tất định chi phối các kết quả (determinism), xây dựng thang đo Likert hoặc công cụ trắc lượng để thu thập dữ liệu (measurement), và dùng dữ liệu thực nghiệm để kiểm định lại hệ thống giả thuyết rút ra từ lý thuyết gốc.",
+      "benchmarks": "Có phần trình bày rõ ràng về thế giới quan trong chương phương pháp luận của luận án; Đảm bảo sự gắn kết chặt chẽ và nhất quán giữa thế giới quan hậu thực chứng với thiết kế nghiên cứu thực nghiệm hoặc điều tra khảo sát định lượng; Trình bày đầy đủ mô hình phương trình cấu trúc (SEM) hoặc mô hình hồi quy nhân quả.",
+      "pitfalls": "Áp dụng thế giới quan hậu thực chứng nhưng sử dụng phương pháp phỏng vấn định tính tự do quy nạp mà không có cấu trúc kiểm định; coi thường các giá trị diễn giải văn hóa bản địa; không nhận thức được rằng thế giới quan của mình chỉ là một trong nhiều cách tiếp cận hiện thực xã hội.",
+      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications. / Phillips, D. C., & Burbules, N. C. (2000). Postpositivism and educational research. Rowman & Littlefield."
     },
     {
       "id": "potential-outcomes-framework",
-      "term": "Potential Outcomes Framework",
-      "vietnamese": "Khung kết quả tiềm năng xác định hiệu ứng nhân quả là sự khác biệt giữa kết quả khi nhận can thiệp Y(1) và khi không nhận Y(0)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Inference"
+      "term": "Potential Outcomes Framework (Rubin Causal Model - RCM)",
+      "vietnamese": "Khung kết quả tiềm năng (Mô hình nhân quả Rubin)",
+      "vietnamese_variants": [
+        "Mô hình kết quả tiềm năng",
+        "Rubin causal model",
+        "RCM",
+        "Potential outcomes framework",
+        "Khung suy diễn nhân quả Rubin"
       ],
-      "core_definition": "Khung kết quả tiềm năng xác định hiệu ứng nhân quả là sự khác biệt giữa kết quả khi nhận can thiệp Y(1) và khi không nhận Y(0).",
-      "seminal_citation": "Holland (1986)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "data-analysis",
+        "causal-inference",
+        "econometrics",
+        "epidemiology"
+      ],
+      "core_definition": "Khung lý thuyết và toán học nền tảng định nghĩa suy diễn nhân quả hiện đại do Donald B. Rubin khởi xướng (kế thừa từ Jerzy Neyman), định nghĩa hiệu ứng nhân quả ở cấp độ cá thể là sự khác biệt giữa hai kết quả tiềm năng: kết quả sẽ quan sát được nếu cá thể đó nhận can thiệp Y(1), và kết quả sẽ quan sát được nếu cá thể đó không nhận can thiệp Y(0) (Rubin, 1974; Holland, 1986; Imbens & Rubin, 2015).",
+      "seminal_citation": "Rubin, D. B. (1974). Estimating causal effects of treatments in randomized and nonrandomized studies. Journal of Educational Psychology, 66(5), 688-701.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Potential Outcomes Framework according to Holland (1986).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "category": "data-analysis",
+      "is_flagship": true,
+      "operational_mechanism": "Dẫn đến 'Vấn đề cơ bản của suy diễn nhân quả' (Fundamental Problem of Causal Inference): Với bất kỳ cá thể cụ thể nào, ta chỉ có thể quan sát được một trong hai trạng thái thực tế (hoặc Y(1) nếu được can thiệp, hoặc Y(0) nếu đối chứng), trạng thái còn lại là phản thực tế (counterfactual) không thể quan sát được. Do đó, khung RCM tập trung vào việc ước lượng Hiệu ứng Can thiệp Trung bình trên tổng thể (Average Treatment Effect - ATE = E[Y(1) - Y(0)]) thông qua ngẫu hóa hoặc các giả định nhận dạng (Unconfoundedness, Overlap, SUTVA).",
+      "benchmarks": "Kiểm tra thỏa mãn 3 giả định nhận dạng cốt lõi: (1) SUTVA (Stable Unit Treatment Value Assumption); (2) Giả định không có yếu tố nhiễu không quan sát (Unconfoundedness / Ignorability); (3) Giả định vùng hỗ trợ chung (Common support / Positivity); Cung cấp cơ sở toán học cho các phương pháp PSM, IPW, DiD, RDD, và IV.",
+      "pitfalls": "Vi phạm giả định SUTVA khi có sự lan truyền hiệu ứng can thiệp giữa các cá thể (spillover / interference effects) khiến Y(1) của cá thể này phụ thuộc vào trạng thái can thiệp của cá thể khác; ngộ nhận rằng việc kiểm soát nhiều biến đồng biến tự động đảm bảo tính bất khả nhiễu (unconfoundedness) mà bỏ qua nhiễu ẩn (unobserved confounders).",
+      "apa_reference": "Holland, P. W. (1986). Statistics and causal inference. Journal of the American Statistical Association, 81(396), 945-960. https://doi.org/10.1080/01621459.1986.10478354 / Imbens, G. W., & Rubin, D. B. (2015). Causal inference in statistics, social, and biomedical sciences: An introduction. Cambridge University Press. https://doi.org/10.1017/CBO9781139025751"
     },
     {
       "id": "pragmatic-clinical-trial-pct",
       "term": "Pragmatic Clinical Trial (PCT)",
-      "vietnamese": "Thử nghiệm Lâm sàng Thực tế",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Clinical Trial Methodology"
+      "vietnamese": "Thử nghiệm lâm sàng thực tiễn",
+      "vietnamese_variants": [
+        "Thử nghiệm lâm sàng thực tế",
+        "Pragmatic trial",
+        "PCT",
+        "Thử nghiệm hiệu quả đời thực",
+        "Pragmatic randomized trial"
       ],
-      "core_definition": "Đánh giá hiệu quả can thiệp trong điều kiện thực tế đời thường thay vì điều kiện lý tưởng.",
-      "seminal_citation": "Thorpe et al. (2009)",
-      "tier": "textbook",
+      "domain_tags": [
+        "research-design",
+        "clinical-trials",
+        "comparative-effectiveness",
+        "implementation-science"
+      ],
+      "core_definition": "Thiết kế thử nghiệm ngẫu nhiên có đối chứng được tiến hành trong điều kiện thực tế lâm sàng hàng ngày (routine clinical practice), với tiêu chí lựa chọn đối tượng rộng rãi và linh hoạt, nhằm đánh giá hiệu quả thực tế của các can thiệp y tế (effectiveness) để trực tiếp cung cấp thông tin cho các quyết định chính sách và thực hành lâm sàng đời thực (Schwartz & Lellouch, 1967; Thorpe et al., 2009; Loudon et al., 2015).",
+      "seminal_citation": "Schwartz, D., & Lellouch, J. (1967). Explanatory and pragmatic attitudes in therapeutical trials. Journal of Chronic Diseases, 20(8), 637-648.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Pragmatic Clinical Trial (PCT) according to Thorpe et al. (2009).",
       "domain_tags_en": [
         "Clinical Trial Methodology"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Khác biệt rõ rệt với thử nghiệm giải thích (Explanatory trials) vốn diễn ra trong môi trường phòng thí nghiệm kiểm soát nghiêm ngặt với bệnh nhân lý tưởng (đánh giá efficacy). PCT tuyển chọn bệnh nhân đa dạng, nhiều bệnh lý đi kèm, theo dõi kết cục qua hồ sơ bệnh án điện tử (EHR), và so sánh can thiệp mới với các phác đồ chăm sóc thông thường (usual care).",
+      "benchmarks": "Đánh giá tính thực tiễn bằng công cụ bánh xe PRECIS-2 (PRagmatic Explanatory Continuum Indicator Summary) trên 9 chiều kích: Tiêu chuẩn chọn mẫu, Tuyển mộ, Bối cảnh tổ chức, Tính linh hoạt can thiệp, Tuân thủ, Theo dõi, Biến kết cục, và Phân tích chính (phân tích ITT bắt buộc); Đạt điểm số PRECIS-2 cao ở hầu hết các trục.",
+      "pitfalls": "Thiếu sự tuân thủ can thiệp (poor adherence) hoặc tỷ lệ chuyển nhóm cao trong điều kiện lâm sàng đời thực làm suy giảm độ mạnh thống kê; hiểu lầm rằng tính thực tiễn đồng nghĩa với việc lơi lỏng các quy chuẩn đạo đức nghiên cứu lâm sàng (GCP); không kiểm soát đầy đủ sự không đồng nhất giữa các trung tâm y tế tham gia.",
+      "apa_reference": "Loudon, K., Treweek, S., Sullivan, F., Donnan, P., Thorpe, K. E., & Zwarenstein, M. (2015). The PRECIS-2 tool: Designing trials that fit for purpose. BMJ, 350, h2147. https://doi.org/10.1136/bmj.h2147 / Thorpe, K. E., Zwarenstein, M., Oxman, A. D., Treweek, S., Furberg, C. D., Altman, D. G., ... & Chalkidou, K. (2009). A pragmatic-explanatory continuum indicator summary (PRECIS): A tool to help trial designers. Journal of Clinical Epidemiology, 62(5), 464-475. https://doi.org/10.1016/j.jclinepi.2008.12.011"
     },
     {
       "id": "pragmatic-perspective",
-      "term": "Pragmatic perspective",
-      "vietnamese": "Góc nhìn chủ nghĩa thực dụng trong nghiên cứu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Thế giới quan Triết học",
-        "Phương pháp Hỗn hợp"
+      "term": "Pragmatic Perspective in Methodology",
+      "vietnamese": "Góc nhìn thực dụng trong phương pháp luận",
+      "vietnamese_variants": [
+        "Quan điểm thực dụng luận",
+        "Pragmatic perspective",
+        "Tiếp cận thực dụng phương pháp luận",
+        "Phương pháp luận thực dụng"
       ],
-      "core_definition": "Lập trường triết học không bị ràng buộc vào một hệ thống triết học thực chứng hay diễn giải duy nhất, mà tập trung vào câu hỏi nghiên cứu và hậu quả thực tế của hành động; là nền tảng triết học chủ đạo của nghiên cứu hỗn hợp.",
-      "seminal_citation": "Tashakkori, A., & Teddlie, C. (2010). SAGE Handbook of Mixed Methods in Social & Behavioral Research. SAGE.",
-      "tier": "textbook",
+      "domain_tags": [
+        "research-design",
+        "philosophy-of-science",
+        "mixed-methods",
+        "methodological-pluralism"
+      ],
+      "core_definition": "Quan điểm phương pháp luận lấy mục đích giải quyết vấn đề thực tiễn làm trọng tâm tối thượng, khẳng định rằng giá trị của một phương pháp nghiên cứu hay một chân lý học thuật không nằm ở sự trừu tượng của hệ hình lý thuyết, mà nằm ở hiệu quả thực tế và hệ quả hành động (practical consequences) mà nó mang lại cho câu hỏi nghiên cứu cụ thể (Dewey, 1938; Morgan, 2007; Tashakkori & Teddlie, 2010).",
+      "seminal_citation": "Morgan, D. L. (2007). Paradigms lost and pragmatism regained: Methodological implications of combining qualitative and quantitative methods. Journal of Mixed Methods Research, 1(1), 48-76.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Pragmatic perspective according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Bác bỏ cuộc chiến hệ hình (paradigm wars) giữa định lượng và định tính. Cho phép nhà nghiên cứu tự do lựa chọn kết hợp linh hoạt bất kỳ công cụ thu thập và phân tích dữ liệu nào (đa phương pháp, phương pháp hỗn hợp) miễn là chúng phục vụ tối ưu nhất việc trả lời câu hỏi nghiên cứu, chuyển động qua lại giữa tư duy quy nạp (induction), diễn dịch (deduction) và suy diễn giả định khả dĩ nhất (abduction).",
+      "benchmarks": "Đóng vai trò là nền tảng triết học chủ đạo cho nghiên cứu phương pháp hỗn hợp (Mixed Methods Research); Xây dựng câu hỏi nghiên cứu xuất phát từ bài toán thực tế của xã hội hoặc tổ chức; Minh chứng tính hữu ích thực tiễn (utility) và khả năng ứng dụng của kết quả nghiên cứu.",
+      "pitfalls": "Trở thành tấm bình phong để biện minh cho việc làm ẩu hoặc thiếu kỷ luật phương pháp luận ('làm bất cứ cái gì tiện lợi mà không cần cơ sở lý thuyết'); nhầm lẫn chủ nghĩa thực dụng triết học sâu sắc với chủ nghĩa cơ hội tùy tiện (crude opportunism); bỏ qua việc kiểm chứng tính tương thích logic giữa các kỹ thuật được pha trộn.",
+      "apa_reference": "Dewey, J. (1938). Logic: The theory of inquiry. Henry Holt and Company. / Morgan, D. L. (2007). Paradigms lost and pragmatism regained: Methodological implications of combining qualitative and quantitative methods. Journal of Mixed Methods Research, 1(1), 48-76. https://doi.org/10.1177/2345678906292462"
     },
     {
       "id": "pragmatic-worldview",
-      "term": "Pragmatic worldview",
-      "vietnamese": "Thế giới quan Thực dụng — Hệ hình triết học cốt lõi của nghiên cứu hỗn hợp; tập trung vào hành động thực tế và câu hỏi: phương pháp nào giải quyết tốt nhất bài toán.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Pragmatic Worldview (Creswell's Mixed Methods Paradigm)",
+      "vietnamese": "Thế giới quan thực dụng (Hệ hình phương pháp hỗn hợp theo Creswell)",
+      "vietnamese_variants": [
+        "Thế giới quan thực dụng",
+        "Pragmatic worldview",
+        "Hệ hình thực dụng luận Creswell",
+        "Thế giới quan hỗn hợp"
       ],
-      "core_definition": "Thế giới quan Thực dụng — Hệ hình triết học cốt lõi của nghiên cứu hỗn hợp; tập trung vào hành động thực tế và câu hỏi: phương pháp nào giải quyết tốt nhất bài toán.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "research-design",
+        "mixed-methods",
+        "philosophy-of-science",
+        "pragmatism"
+      ],
+      "core_definition": "Một trong 4 thế giới quan nghiên cứu cốt lõi được John W. Creswell chuẩn hóa, cung cấp nền tảng triết học chủ đạo cho nghiên cứu phương pháp hỗn hợp (mixed methods research), tập trung vào câu hỏi nghiên cứu và hậu quả thực tế của ứng dụng thay vì tranh cãi về bản chất trừu tượng của thực tại (Creswell & Creswell, 2018; Tashakkori & Teddlie, 2010).",
+      "seminal_citation": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Pragmatic worldview according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Nhà nghiên cứu tự do sử dụng đa dạng các kỹ thuật thu thập và phân tích dữ liệu cả định lượng lẫn định tính; coi trọng cả dữ liệu khách quan lẫn trải nghiệm chủ quan; áp dụng tư duy suy diễn giả định khả dĩ nhất (abductive reasoning) để di chuyển linh hoạt giữa quy nạp và diễn dịch nhằm tìm ra giải pháp tối ưu cho vấn đề thực tiễn.",
+      "benchmarks": "Được viện dẫn chính thức trong đề cương nghiên cứu phương pháp hỗn hợp để hợp thức hóa việc pha trộn hai hệ hình; Thể hiện rõ tiêu chí 'hướng tới hậu quả' (consequences of action) và 'lấy vấn đề làm trung tâm' (problem-centered approach); Minh chứng tính bổ trợ thực chất giữa hai luồng dữ liệu.",
+      "pitfalls": "Lạm dụng thế giới quan thực dụng như một cái cớ để né tránh việc giải thích phương pháp luận hoặc che giấu việc thu thập dữ liệu cẩu thả; hiểu sai thành chủ nghĩa cơ hội thuần túy không có nguyên tắc học thuật; bỏ qua việc tích hợp sâu sắc giữa định lượng và định tính ở khâu thảo luận.",
+      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications. / Tashakkori, A., & Teddlie, C. (Eds.). (2010). SAGE handbook of mixed methods in social & behavioral research (2nd ed.). SAGE Publications."
     },
     {
       "id": "pragmatism-peirce-james-dewey",
-      "term": "Pragmatism (Peirce, James, Dewey)",
-      "vietnamese": "Chủ nghĩa thực dụng coi chân lý của một lý thuyết được quyết định bởi giá trị ứng dụng thực tiễn của nó trong hành động",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Philosophy of Science"
+      "term": "Classical Pragmatism (Peirce, James, Dewey Tradition)",
+      "vietnamese": "Chủ nghĩa thực dụng cổ điển (Truyền thống Peirce, James và Dewey)",
+      "vietnamese_variants": [
+        "Triết học thực dụng cổ điển",
+        "Pragmatism",
+        "Thực dụng luận Peirce-James-Dewey",
+        "Chủ nghĩa thực dụng Mỹ"
       ],
-      "core_definition": "Chủ nghĩa thực dụng coi chân lý của một lý thuyết được quyết định bởi giá trị ứng dụng thực tiễn của nó trong hành động.",
-      "seminal_citation": "Dewey (1938)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "research-design",
+        "philosophy-of-science",
+        "epistemology",
+        "pragmatism"
+      ],
+      "core_definition": "Truyền thống triết học độc đáo của Mỹ do Charles Sanders Peirce sáng lập, được William James và John Dewey phát triển, khẳng định rằng ý nghĩa của một khái niệm hoặc tính xác thực của một mệnh đề khoa học được định nghĩa bằng các hiệu quả thực tiễn và hệ quả hành động có thể quan sát được mà nó tạo ra trong đời sống thực nghiệm (Peirce, 1878; James, 1907; Dewey, 1938).",
+      "seminal_citation": "Peirce, C. S. (1878). How to make our ideas clear. Popular Science Monthly, 12, 286-302.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #1979",
       "core_definition_en": "Academic definition of Pragmatism (Peirce, James, Dewey) according to Dewey (1938).",
       "domain_tags_en": [
         "Philosophy of Science"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Bao gồm 3 trụ cột phương pháp luận: (1) Cách ngôn thực dụng của Peirce (Pragmatic Maxim) - làm rõ ý nghĩa khái niệm qua các hệ quả thực nghiệm; (2) Thuyết chân lý thực dụng của James (Pragmatic Theory of Truth) - chân lý là những gì vận hành hiệu quả trong trải nghiệm; (3) Thuyết truy vấn thực nghiệm của Dewey (Theory of Inquiry) - nghiên cứu là một tiến trình giải quyết vấn đề liên tục để khôi phục trạng thái cân bằng cho con người trong môi trường sống.",
+      "benchmarks": "Đóng vai trò là cội nguồn triết học cho toàn bộ trào lưu nghiên cứu hành động (Action Research) và phương pháp hỗn hợp đương đại; Thay thế khái niệm chân lý bất biến tĩnh tại bằng khái niệm tri thức tạm thời hữu ích (warranted assertibility); Vận dụng suy diễn giả định (abduction) để sáng tạo giả thuyết mới.",
+      "pitfalls": "Quy giản chủ nghĩa thực dụng sâu sắc của Dewey thành thứ 'thực dụng thô thiển' (vulgar pragmatism) theo nghĩa trục lợi vật chất ngắn hạn; hiểu sai rằng chân lý là bất kỳ điều gì mang lại cảm giác dễ chịu; phủ nhận vai trò của logic hình thức và sự nghiêm cẩn toán học.",
+      "apa_reference": "Dewey, J. (1938). Logic: The theory of inquiry. Henry Holt and Company. / James, W. (1907). Pragmatism: A new name for some old ways of thinking. Longmans, Green, and Co. / Peirce, C. S. (1878). How to make our ideas clear. Popular Science Monthly, 12, 286-302."
     },
     {
       "id": "pre-experimental",
@@ -44912,58 +45121,100 @@
     {
       "id": "pre-registration-of-research-plans",
       "term": "Pre-registration of Research Plans",
-      "vietnamese": "Đăng ký Trước Kế hoạch Nghiên cứu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Open Science"
+      "vietnamese": "Đăng ký trước kế hoạch nghiên cứu",
+      "vietnamese_variants": [
+        "Đăng ký trước đề cương",
+        "Pre-registration",
+        "Đăng ký kế hoạch nghiên cứu",
+        "Nghiên cứu đăng ký trước"
       ],
-      "core_definition": "Biện pháp công khai thiết kế nghiên cứu và giả thuyết trước khi thu thập dữ liệu để triệt tiêu QRP.",
-      "seminal_citation": "Nosek et al. (2018)",
-      "tier": "textbook",
+      "domain_tags": [
+        "research-design",
+        "open-science",
+        "research-integrity",
+        "reproducibility"
+      ],
+      "core_definition": "Thực hành nghiên cứu minh bạch then chốt của phong trào Khoa học Mở, yêu cầu nhà nghiên cứu công bố và đóng băng (freeze with timestamp) kế hoạch nghiên cứu, hệ thống giả thuyết, thiết kế chọn mẫu và quy trình phân tích dữ liệu trên một hệ thống lưu trữ độc lập có mốc thời gian trước khi tiến hành thu thập hoặc tiếp cận số liệu thực nghiệm (Nosek et al., 2018; Wagenmakers et al., 2012).",
+      "seminal_citation": "Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. Proceedings of the National Academy of Sciences, 115(11), 2600-2606.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Pre-registration of Research Plans according to Nosek et al. (2018).",
       "domain_tags_en": [
         "Open Science"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Tạo ra một ranh giới rõ ràng, không thể đảo ngược giữa nghiên cứu khẳng định (confirmatory / hypothesis-testing research) và nghiên cứu thăm dò (exploratory / hypothesis-generating research). Cơ chế này triệt tiêu triệt để các hành vi thao túng nghiên cứu nghi vấn (QRPs) như p-hacking, loại bỏ ngoại lai tùy tiện, đổi biến kết cục và HARKing (đặt giả thuyết sau khi đã biết kết quả).",
+      "benchmarks": "Hồ sơ đăng ký phải có mốc thời gian bất biến (immutable timestamp) trước thời điểm thu thập dữ liệu; Nộp trên các nền tảng chuẩn hóa (OSF, AsPredicted, ClinicalTrials.gov, AEA Registry); Báo cáo minh bạch mọi sai lệch (deviations) so với kế hoạch đăng ký trước trong bài báo chính thức; Nhận huy hiệu Preregistered Badge từ các tạp chí uy tín.",
+      "pitfalls": "Đăng ký kế hoạch quá mơ hồ ('chúng tôi sẽ đo lường sự hài lòng và phân tích thống kê') khiến nhà nghiên cứu vẫn giữ nguyên toàn bộ bậc tự do để p-hack; 'đăng ký trước hồi cứu' (retrospective preregistration) sau khi đã chạy thử dữ liệu; coi nghiên cứu thăm dò là kém giá trị (thăm dò hoàn toàn có giá trị khoa học nếu được dán nhãn trung thực).",
+      "apa_reference": "Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. Proceedings of the National Academy of Sciences, 115(11), 2600-2606. https://doi.org/10.1073/pnas.1708274114 / Wagenmakers, E. J., Wetzels, R., Borsboom, D., van der Maas, H. L., & Kievit, R. A. (2012). An agenda for purely confirmatory research. Perspectives on Psychological Science, 7(6), 632-638. https://doi.org/10.1177/1745691612463078"
     },
     {
       "id": "precoding-vs-postcoding",
-      "term": "Precoding vs Postcoding",
-      "vietnamese": "Mã hóa trước vs. Mã hóa sau",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Precoding vs. Postcoding (Survey Instrument Design)",
+      "vietnamese": "Mã hóa trước và Mã hóa sau (Thiết kế công cụ khảo sát)",
+      "vietnamese_variants": [
+        "Precoding và postcoding",
+        "Mã hóa trước vs mã hóa sau",
+        "Mã hóa câu hỏi khảo sát",
+        "Mã hóa dữ liệu điều tra"
       ],
-      "core_definition": "Gán mã số câu trả lời: Trong thiết kế bảng hỏi vs. Sau khi thu thập dữ liệu định tính.",
-      "seminal_citation": "Schindler (2022)",
-      "tier": "textbook",
+      "domain_tags": [
+        "data-collection",
+        "survey-methodology",
+        "data-processing",
+        "measurement"
+      ],
+      "core_definition": "Hai chiến lược gán mã số định lượng cho các phản hồi khảo sát trong phương pháp điều tra bảng hỏi: Precoding (mã hóa trước) gán sẵn các giá trị số cho các phương án trả lời đóng ngay trên phiếu khảo sát trước khi phát hành; trong khi Postcoding (mã hóa sau) phân tích và xây dựng hệ thống mã số cho các câu trả lời mở sau khi đã thu thập toàn bộ dữ liệu thực địa (Fowler, 2014; Groves et al., 2009).",
+      "seminal_citation": "Groves, R. M., Fowler, F. J., Couper, M. P., Lepkowski, J. M., Singer, E., & Tourangeau, R. (2009). Survey methodology (2nd ed.). John Wiley & Sons.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Precoding vs Postcoding according to Schindler (2022).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "data-collection",
+      "is_flagship": true,
+      "operational_mechanism": "Precoding chuẩn hóa quy trình nhập liệu, tiết kiệm tối đa thời gian và chi phí xử lý dữ liệu, đồng thời triệt tiêu sai số chủ quan của nhân viên mã hóa. Postcoding đòi hỏi xây dựng từ điển mã hóa (codebook), đọc lướt một mẫu phản hồi đại diện để xây dựng danh mục danh nghĩa, kiểm định độ tin cậy liên mã hóa viên (inter-coder reliability), và gán mã số hồi cứu.",
+      "benchmarks": "Precoding phải đảm bảo các phương án trả lời có tính loại trừ lẫn nhau (mutually exclusive) và vét cạn toàn diện (collectively exhaustive); Postcoding đòi hỏi kiểm định độ tin cậy mã hóa giữa tối thiểu 2 chuyên viên độc lập đạt Cohen's Kappa >= 0.80; Xây dựng Sổ tay mã hóa (Codebook) hoàn chỉnh lưu trữ trong cơ sở dữ liệu.",
+      "pitfalls": "Precoding thiếu phương án bao quát khiến người trả lời bị ép vào các lựa chọn không phản ánh đúng thực tế; postcoding thiếu quy tắc phân loại chặt chẽ dẫn đến việc cùng một nội dung trả lời bị gán vào các mã số khác nhau; không kiểm tra sai số nhập liệu đối với các câu hỏi mã hóa trước.",
+      "apa_reference": "Fowler, F. J. (2014). Survey research methods (5th ed.). SAGE Publications. / Groves, R. M., Fowler, F. J., Couper, M. P., Lepkowski, J. M., Singer, E., & Tourangeau, R. (2009). Survey methodology (2nd ed.). John Wiley & Sons."
     },
     {
       "id": "predatory-journals-predatory-publishing",
-      "term": "Predatory Journals (Predatory Publishing)",
-      "vietnamese": "Tạp chí Săn mồi / Tạp chí Gian lận",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Academic Integrity"
+      "term": "Predatory Journals and Predatory Publishing",
+      "vietnamese": "Tạp chí săn mồi và Xuất bản học thuật trục lợi",
+      "vietnamese_variants": [
+        "Tạp chí dỏm",
+        "Tạp chí mạo danh",
+        "Predatory publishing",
+        "Tạp chí giả khoa học",
+        "Xuất bản săn mồi"
       ],
-      "core_definition": "Các tạp chí thu phí APC của tác giả mà không thực hiện bình duyệt nghiêm túc.",
-      "seminal_citation": "Beall (2012)",
-      "tier": "textbook",
+      "domain_tags": [
+        "general",
+        "scholarly-publishing",
+        "research-ethics",
+        "academic-integrity"
+      ],
+      "core_definition": "Thực thể xuất bản học thuật trục lợi mang tính gian lận, ưu tiên lợi ích tài chính cá nhân lên trên sự liêm chính học thuật bằng cách thu phí xử lý bài báo (APC) của tác giả mà không cung cấp quy trình phản biện đồng cấp thực chất, giả mạo ban biên tập, ngụy tạo chỉ số ảnh hưởng (fake impact factors), và sử dụng thư rác để chèo kéo bản thảo (Beall, 2012; Grudniewicz et al., 2019).",
+      "seminal_citation": "Beall, J. (2012). Predatory publishers are corrupting open access. Nature, 489(7415), 179-179.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Predatory Journals (Predatory Publishing) according to Beall (2012).",
       "domain_tags_en": [
         "Academic Integrity"
-      ]
+      ],
+      "category": "general",
+      "is_flagship": true,
+      "operational_mechanism": "Khai thác mô hình xuất bản truy cập mở thu phí tác giả (Author-Pays Open Access). Các dấu hiệu nhận diện: chấp nhận bài siêu tốc (trong vòng vài ngày), website đạo nhái giao diện tạp chí danh tiếng (hijacked journals), ban biên tập không có hồ sơ học thuật thực tế hoặc đưa tên các giáo sư nổi tiếng vào mà không được phép, và tuyên bố thuộc các cơ sở dữ liệu ảo không được công nhận.",
+      "benchmarks": "Thẩm định tạp chí thông qua danh mục chính thống: Master Journal List của Web of Science (WoS Core: SCIE, SSCI, AHCI), Scopus, Directory of Open Access Journals (DOAJ), và Ủy ban Đạo đức Xuất bản (COPE); Vận dụng chiến dịch kiểm tra 'Think. Check. Submit.' trước khi nộp bài; Tuyệt đối tránh xa các tạp chí trong danh sách cảnh báo của Beall's List.",
+      "pitfalls": "Công bố kết quả nghiên cứu trên tạp chí săn mồi khiến công trình bị cộng đồng khoa học từ chối trích dẫn và hủy hoại vĩnh viễn uy tín học thuật của tác giả; nhầm lẫn giữa một tạp chí mở chất lượng mới thành lập với tạp chí săn mồi; trả tiền cho các công ty trung gian hứa hẹn 'bao đăng bài Scopus/ISI nhanh'.",
+      "apa_reference": "Beall, J. (2012). Predatory publishers are corrupting open access. Nature, 489(7415), 179-179. https://doi.org/10.1038/489179a / Grudniewicz, A., Moher, D., Cobey, K. D., Bryson, G. L., Cukier, S., Allen, K., ... & Lalu, M. M. (2019). Predatory journals: No definition, no defence. Nature, 576(7786), 210-212. https://doi.org/10.1038/d41586-019-03759-y"
     },
     {
       "id": "prediction-interval-in-meta-analysis",
@@ -45038,39 +45289,68 @@
     },
     {
       "id": "predictor-variables",
-      "term": "Predictor variables",
-      "vietnamese": "Biến dự báo — Biến số dùng để dự báo kết quả đầu ra trong các nghiên cứu khảo sát tương quan (Survey design).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Predictor Variables (Independent Variables in Modeling)",
+      "vietnamese": "Biến dự báo (Biến độc lập trong mô hình hóa)",
+      "vietnamese_variants": [
+        "Biến dự đoán",
+        "Predictor variable",
+        "Biến giải thích",
+        "Explanatory variable",
+        "Biến độc lập"
       ],
-      "core_definition": "Biến dự báo — Biến số dùng để dự báo kết quả đầu ra trong các nghiên cứu khảo sát tương quan (Survey design).",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "general",
+        "regression-analysis",
+        "quantitative-methods",
+        "statistical-modeling"
+      ],
+      "core_definition": "Các biến số toán học hoặc thực nghiệm được sử dụng trong các mô hình thống kê và học máy để ước lượng, giải thích hoặc dự báo sự biến thiên của biến kết quả (outcome variable) hoặc biến tiêu chí (criterion variable) (Cohen et al., 2003; Wooldridge, 2010). Trong thiết kế thực nghiệm, biến dự báo tương ứng với biến độc lập (IV) được nhà nghiên cứu chủ động thao tác hóa.",
+      "seminal_citation": "Cohen, J., Cohen, P., West, S. G., & Aiken, L. S. (2003). Applied multiple regression/correlation analysis for the behavioral sciences (3rd ed.). Lawrence Erlbaum Associates.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Predictor variables according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "general",
+      "is_flagship": true,
+      "operational_mechanism": "Đóng vai trò là các đầu vào (X) trong phương trình hồi quy Y = f(X) + ε. Tác động của từng biến dự báo lên biến phụ thuộc được lượng hóa thông qua hệ số hồi quy riêng phần (unstandardized coefficient b hoặc standardized beta β), phản ánh mức độ thay đổi của Y khi biến dự báo đó thay đổi một đơn vị trong điều kiện cố định tất cả các biến dự báo khác.",
+      "benchmarks": "Đảm bảo tính ngoại sinh nghiêm ngặt trong mô hình nhân quả (Cov(X, ε) = 0); Kiểm tra hiện tượng đa cộng tuyến thông qua Hệ số Phóng đại Phương sai (VIF < 5.0 hoặc tối ưu < 3.0); Lựa chọn tập biến dự báo tối ưu dựa trên nền tảng lý thuyết vững chắc thay vì chạy thuật toán stepwise regression tùy tiện.",
+      "pitfalls": "Nhầm lẫn giữa năng lực dự báo thống kê đơn thuần (statistical prediction) với mối quan hệ nhân quả thực sự (causal explanation) - một biến dự báo tốt có thể chỉ là một biến đại diện (proxy) hoặc có quan hệ ngụy tạo với biến kết quả; bỏ qua biến dự báo then chốt gây thiên lệch biến bị bỏ sót; đưa quá nhiều biến dự báo không liên quan làm loãng mô hình.",
+      "apa_reference": "Cohen, J., Cohen, P., West, S. G., & Aiken, L. S. (2003). Applied multiple regression/correlation analysis for the behavioral sciences (3rd ed.). Lawrence Erlbaum Associates. / Wooldridge, J. M. (2010). Econometric analysis of cross section and panel data (2nd ed.). MIT Press."
     },
     {
       "id": "preference-organization-cau-truc-uu-tien",
-      "term": "Preference Organization",
-      "vietnamese": "Cấu trúc Ưu tiên trong Phân tích Đàm thoại",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Research Rigour"
+      "term": "Preference Organization in Conversation Analysis",
+      "vietnamese": "Cấu trúc ưu tiên trong phân tích đàm thoại",
+      "vietnamese_variants": [
+        "Cấu trúc ưu tiên đàm thoại",
+        "Preference organization",
+        "Hành động ưa thích và không ưa thích",
+        "Preferred and dispreferred actions"
       ],
-      "core_definition": "Phản ứng đồng thuận thường diễn ra nhanh chóng, trong khi phản ứng từ chối thường kèm theo sự trì hoãn, ngập ngừng và giải thích nguyên nhân.",
-      "seminal_citation": "Silverman (2016)",
-      "tier": "index",
+      "domain_tags": [
+        "qualitative-analysis",
+        "conversation-analysis",
+        "ethnomethodology",
+        "sociolinguistics"
+      ],
+      "core_definition": "Khái niệm phương pháp luận nền tảng trong Phân tích Đàm thoại (Conversation Analysis - CA) do Harvey Sacks và Anita Pomerantz phát triển, mô tả trật tự cấu trúc chuẩn tắc chi phối cách thức người tham gia giao tiếp phản hồi trong các cặp kề cận (adjacency pairs, ví dụ: lời mời - chấp nhận/từ chối, câu hỏi - trả lời/lảng tránh), phân biệt giữa hành động được ưu tiên (preferred turn) và hành động không được ưu tiên (dispreferred turn) (Sacks, Schegloff, & Jefferson, 1974; Pomerantz, 1984).",
+      "seminal_citation": "Pomerantz, A. (1984). Agreeing and disagreeing with assessments: Some features of preferred/dispreferred turn shapes. In J. M. Atkinson & J. Heritage (Eds.), Structures of social action (pp. 57-101). Cambridge University Press.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Preference Organization (Cấu trúc Ưu tiên) according to Silverman (2016).",
       "domain_tags_en": [
         "Qualitative Research Rigour"
-      ]
+      ],
+      "category": "qualitative-analysis",
+      "is_flagship": true,
+      "operational_mechanism": "Không phản ánh mong muốn tâm lý chủ quan cá nhân mà phản ánh cấu trúc hình thức ngôn ngữ: Hành động ưu tiên (như chấp nhận lời mời, đồng thuận quan điểm) có cấu trúc đơn giản, diễn ra tức thì không có khoảng lặng; ngược lại, hành động không ưu tiên (như từ chối lời mời, bất đồng ý kiến) có cấu trúc phức tạp, kèm theo khoảng lặng ngập ngừng (pauses), từ đệm (well, uhm), lời xin lỗi, và các lý do giải thích thanh minh (accounts).",
+      "benchmarks": "Áp dụng hệ thống phiên âm chuẩn hóa Jefferson Transcription System (ghi nhận độ dài khoảng lặng tính bằng phần mười giây, ngữ điệu lên xuống, tiếng thở); Nhận diện chính xác cấu trúc vi mô của các lượt lời không ưu tiên; Minh chứng được cách các chủ thể bảo vệ thể diện xã hội (facework) thông qua cấu trúc hội thoại.",
+      "pitfalls": "Hiểu sai khái niệm 'preference' theo nghĩa sở thích tâm lý cá nhân của người nói thay vì đặc tính cấu trúc chuẩn tắc của ngôn ngữ; phiên âm cẩu thả bỏ qua các khoảng lặng ngập ngừng vốn là chỉ dấu cốt lõi của hành vi không ưu tiên; diễn giải ý nghĩa phát ngôn tách rời khỏi bối cảnh chuỗi lượt lời tương tác (sequential context).",
+      "apa_reference": "Pomerantz, A. (1984). Agreeing and disagreeing with assessments: Some features of preferred/dispreferred turn shapes. In J. M. Atkinson & J. Heritage (Eds.), Structures of social action (pp. 57-101). Cambridge University Press. / Sacks, H., Schegloff, E. A., & Jefferson, G. (1974). A simplest systematics for the organization of turn-taking for conversation. Language, 50(4), 696-735. https://doi.org/10.1353/lan.1974.0010"
     },
     {
       "id": "preferred-reporting-items-for-systematic-reviews-and-meta-analyses",
@@ -45107,112 +45387,194 @@
     {
       "id": "preprint-repository-posting-protocols",
       "term": "Preprint Repository Posting Protocols",
-      "vietnamese": "Giao thức Đăng bài trên Kho Tiền xuất bản",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Open Science"
+      "vietnamese": "Quy chuẩn đăng tải bản thảo trên kho lưu trữ tiền in",
+      "vietnamese_variants": [
+        "Quy trình đăng bản thảo preprint",
+        "Preprint posting protocols",
+        "Giao thức kho tiền in",
+        "Quy định tải bài preprint"
       ],
-      "core_definition": "Chia sẻ sớm công trình nghiên cứu và xác lập quyền ưu tiên khám phá.",
-      "seminal_citation": "Bourne et al. (2017)",
-      "tier": "textbook",
+      "domain_tags": [
+        "general",
+        "open-science",
+        "scholarly-publishing",
+        "academic-workflow"
+      ],
+      "core_definition": "Tập hợp các quy tắc chuẩn hóa, hướng dẫn đạo đức và quy trình kỹ thuật điều chỉnh việc các tác giả tự lưu trữ và công bố công khai bản thảo nghiên cứu hoàn chỉnh trước khi trải qua phản biện đồng cấp chính thức trên các máy chủ tiền in chuyên ngành hoặc đa ngành (Bourne et al., 2017; Sever et al., 2019).",
+      "seminal_citation": "Bourne, P. E., Polka, J. K., Vale, R. D., & Kiley, R. (2017). Ten simple rules to consider regarding preprint submission. PLOS Computational Biology, 13(5), e1005473.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Preprint Repository Posting Protocols according to Bourne et al. (2017).",
       "domain_tags_en": [
         "Open Science"
-      ]
+      ],
+      "category": "general",
+      "is_flagship": true,
+      "operational_mechanism": "Bao gồm các bước bắt buộc: Kiểm tra chính sách tiền in của tạp chí đích thông qua cơ sở dữ liệu Sherpa Romeo (đảm bảo tạp chí cho phép đăng preprint mà không vi phạm quy tắc Ingelfinger); Lựa chọn giấy phép bản quyền phù hợp (Creative Commons CC-BY hoặc CC-BY-NC); Đăng ký mã định danh vĩnh viễn (persistent DOI); Cập nhật các phiên bản sửa đổi (versioning) và liên kết DOI bài báo chính thức sau khi được chấp nhận xuất bản.",
+      "benchmarks": "Đảm bảo tuân thủ nghiêm ngặt quy định bảo mật danh tính người tham gia nghiên cứu (de-identification) và không công bố dữ liệu nhạy cảm chưa được IRB phê duyệt; Kiểm tra xác nhận đồng thuận của 100% các đồng tác giả trước khi tải lên; Khai báo xung đột lợi ích và nguồn tài trợ đầy đủ trong bản thảo preprint.",
+      "pitfalls": "Đăng tải bản thảo lên máy chủ tiền in khi nhắm tới các tạp chí có chính sách ẩn danh đôi (double-blind peer review) nghiêm ngặt khiến phản biện viên có thể dễ dàng tìm ra danh tính tác giả qua Google; chọn nhầm giấy phép bản quyền độc quyền làm mất quyền xuất bản thương mại sau này; không cập nhật liên kết đến bài báo chính thức sau khi xuất bản.",
+      "apa_reference": "Bourne, P. E., Polka, J. K., Vale, R. D., & Kiley, R. (2017). Ten simple rules to consider regarding preprint submission. PLOS Computational Biology, 13(5), e1005473. https://doi.org/10.1371/journal.pcbi.1005473 / Sever, R., Roeder, D., & Hindle, S. (2019). bioRxiv and medRxiv: Preprints for the life and health sciences. Cold Spring Harbor Laboratory Press."
     },
     {
       "id": "preprint-servers-arxiv-ssrn-medrxiv-socarxiv",
       "term": "Preprint Servers (arXiv, SSRN, medRxiv, SocArXiv)",
-      "vietnamese": "Máy chủ Bản thảo Tiền xuất bản",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scholarly Communication"
+      "vietnamese": "Các máy chủ lưu trữ bản thảo tiền in chuyên ngành",
+      "vietnamese_variants": [
+        "Máy chủ preprint",
+        "Kho lưu trữ tiền in",
+        "Preprint repositories",
+        "Hệ thống máy chủ arXiv SSRN medRxiv"
       ],
-      "core_definition": "Kho lưu trữ công khai các bản thảo khoa học trước khi trải qua quy trình bình duyệt chính thức.",
-      "seminal_citation": "Ginsparg (1991)",
-      "tier": "textbook",
+      "domain_tags": [
+        "general",
+        "open-science",
+        "scholarly-communication",
+        "research-dissemination"
+      ],
+      "core_definition": "Các nền tảng hạ tầng số học thuật trực tuyến phi thương mại hoặc thương mại cung cấp quyền truy cập mở công cộng vĩnh viễn và miễn phí tới các bản thảo khoa học chưa qua phản biện đồng cấp, được phân chia theo từng lĩnh vực khoa học then chốt: arXiv (Vật lý, Toán học, Khoa học Máy tính), SSRN (Khoa học Xã hội, Kinh tế, Quản trị), medRxiv (Y sinh học và Sức khỏe), và SocArXiv (Xã hội học và Khoa học Hành vi) (Ginsparg, 2011; Sever et al., 2019).",
+      "seminal_citation": "Ginsparg, P. (2011). ArXiv at 20. Nature, 476(7359), 145-147.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Preprint Servers (arXiv, SSRN, medRxiv, SocArXiv) according to Ginsparg (1991).",
       "domain_tags_en": [
         "Scholarly Communication"
-      ]
+      ],
+      "category": "general",
+      "is_flagship": true,
+      "operational_mechanism": "Hoạt động dựa trên quy trình sàng lọc sơ bộ (basic screening) trong vòng 24-48 giờ để loại trừ thư rác, nội dung đạo văn rõ rệt hoặc các phát ngôn nguy hại đến sức khỏe cộng đồng trước khi cấp mã DOI vĩnh viễn. Cho phép xác lập quyền ưu tiên khám phá khoa học (priority of discovery), thu thập phản hồi sớm từ cộng đồng toàn cầu, và tăng tốc độ phổ biến tri thức trước thời gian thẩm định kéo dài của các tạp chí truyền thống.",
+      "benchmarks": "Được tích hợp tự động vào hồ sơ khoa học Google Scholar, ORCID, và Web of Science; Đóng vai trò là nguồn dữ liệu chính để tìm kiếm y văn xám (grey literature) trong các tổng quan hệ thống nhằm giảm thiểu thiên lệch xuất bản; Đáp ứng tiêu chuẩn truy cập mở FAIR.",
+      "pitfalls": "Trích dẫn các phát hiện trên máy chủ tiền in như chân lý lâm sàng hoặc thực nghiệm đã được kiểm chứng mà không lưu ý người đọc đây là tài liệu chưa qua phản biện đồng cấp; vội vã đưa ra các thông cáo báo chí truyền thông đại chúng dựa trên các kết quả tiền in chưa được thẩm định vững chắc.",
+      "apa_reference": "Ginsparg, P. (2011). ArXiv at 20. Nature, 476(7359), 145-147. https://doi.org/10.1038/476145a / Sever, R., Roeder, D., & Hindle, S. (2019). bioRxiv and medRxiv: Preprints for the life and health sciences. Cold Spring Harbor Laboratory Press."
     },
     {
       "id": "preregistered-analysis-plan-pap",
       "term": "Preregistered Analysis Plan (PAP)",
-      "vietnamese": "Kế hoạch Phân tích Đăng ký Trước",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Open Science"
+      "vietnamese": "Kế hoạch phân tích tiền đăng ký chi tiết",
+      "vietnamese_variants": [
+        "Bản kế hoạch phân tích tiền đăng ký",
+        "PAP",
+        "Kế hoạch phân tích chi tiết PAP",
+        "Pre-analysis plan"
       ],
-      "core_definition": "Văn bản chi tiết toàn bộ các bước xử lý dữ liệu và mô hình hồi quy để ngăn chặn thiên kiến.",
-      "seminal_citation": "Olken (2015)",
-      "tier": "textbook",
+      "domain_tags": [
+        "research-design",
+        "empirical-economics",
+        "experimental-design",
+        "open-science"
+      ],
+      "core_definition": "Tài liệu phương pháp luận chi tiết và toàn diện ở mức độ kỹ thuật cao được đăng ký công khai trước khi tiếp cận dữ liệu, quy định cụ thể từng phương trình hồi quy, định nghĩa chính xác các biến số, tiêu chí loại bỏ ngoại lai, phương pháp xử lý dữ liệu khuyết, ma trận biến kiểm soát và các kiểm định hiệu chỉnh đa giả thuyết (Christensen & Miguel, 2018; Olken, 2015).",
+      "seminal_citation": "Olken, B. A. (2015). Promises and perils of pre-analysis plans. Journal of Economic Perspectives, 29(3), 61-80.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Preregistered Analysis Plan (PAP) according to Olken (2015).",
       "domain_tags_en": [
         "Open Science"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Đặc biệt phổ biến và gần như trở thành tiêu chuẩn bắt buộc trong các thử nghiệm thực địa ngẫu nhiên (RCTs) thuộc kinh tế học phát triển và khoa học chính trị (trên nền tảng AEA RCT Registry hoặc EGAP). PAP ràng buộc nhà nghiên cứu tuân thủ các quy tắc phân tích đã định, khóa chặt toàn bộ 'bậc tự do của nhà nghiên cứu' (researcher degrees of freedom) để ngăn chặn việc lựa chọn mô hình tùy tiện theo kết quả p-value.",
+      "benchmarks": "Đầy đủ các thông số kỹ thuật: công thức hồi quy toán học cụ thể, phân nhóm mẫu (subgroup analyses), các biến kết cục tiên phát và thứ cấp, và mã lệnh lập trình giả định (pseudo-code hoặc R/Stata scripts); Phân định minh xác trong báo cáo cuối cùng giữa các bảng phân tích tuân thủ PAP và các phân tích khám phá bổ sung ngoài PAP (non-PAP exploratory analyses).",
+      "pitfalls": "Viết kế hoạch PAP quá cứng nhắc đến mức không thể thích ứng khi phát sinh các biến cố dữ liệu thực địa ngoài dự kiến; che giấu các kết quả không có ý nghĩa thống kê xuất phát từ phân tích theo PAP; không giải trình minh bạch lý do dẫn đến các thay đổi sai lệch so với kế hoạch ban đầu.",
+      "apa_reference": "Christensen, G., & Miguel, E. (2018). Transparency, reproducibility, and the credibility of economics research. Journal of Economic Literature, 56(3), 920-980. https://doi.org/10.1257/jel.20171350 / Olken, B. A. (2015). Promises and perils of pre-analysis plans. Journal of Economic Perspectives, 29(3), 61-80. https://doi.org/10.1257/jep.29.3.61"
     },
     {
       "id": "preregistration-1999",
-      "term": "Preregistration",
-      "vietnamese": "Đăng ký trước nghiên cứu — Khai báo công khai thiết kế và giả thuyết lên kho dữ liệu mở trước khi chạy số để tránh 'p-hacking'.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Confirmatory Preregistration Protocol",
+      "vietnamese": "Quy chuẩn đăng ký trước nghiên cứu khẳng định",
+      "vietnamese_variants": [
+        "Quy chuẩn đăng ký trước",
+        "Confirmatory research registration",
+        "Giao thức đăng ký trước",
+        "Preregistration protocol"
       ],
-      "core_definition": "Đăng ký trước nghiên cứu — Khai báo công khai thiết kế và giả thuyết lên kho dữ liệu mở trước khi chạy số để tránh 'p-hacking'.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "research-design",
+        "methodological-transparency",
+        "reproducibility-crisis",
+        "open-science"
+      ],
+      "core_definition": "Quy trình thiết lập văn bản cam kết phương pháp luận chuẩn tắc nhằm bảo toàn giá trị khoa học của kiểm định ý nghĩa thống kê (NHST), bảo đảm rằng các giả định xác suất toán học của phân phối thống kê không bị vi phạm do việc săn lùng kết quả sau khi đã quan sát dữ liệu (Wagenmakers et al., 2012; Lakens, 2019).",
+      "seminal_citation": "Wagenmakers, E. J., Wetzels, R., Borsboom, D., van der Maas, H. L., & Kievit, R. A. (2012). An agenda for purely confirmatory research. Perspectives on Psychological Science, 7(6), 632-638.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Preregistration according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Nhà nghiên cứu hoàn thành biểu mẫu chuẩn hóa gồm 8 đến 12 câu hỏi cốt lõi (tiêu biểu như biểu mẫu AsPredicted.org): (1) Giả thuyết chính là gì?; (2) Biến phụ thuộc được đo lường như thế nào?; (3) Các điều kiện can thiệp gồm những gì?; (4) Các phân tích thống kê cụ thể sẽ chạy?; (5) Quy tắc xử lý ngoại lai và dữ liệu khuyết?; (6) Cỡ mẫu chính xác và quy tắc dừng thu thập mẫu (stopping rule)?; (7) Các phân tích phụ; (8) Tuyên bố về tính độc lập của việc đăng ký trước thời điểm thu thập dữ liệu.",
+      "benchmarks": "Đảm bảo tính cụ thể cao nhất có thể (high specificity); Giới hạn thời gian phong tỏa bảo mật tối đa 2 đến 4 năm trước khi công khai toàn diện; Cho phép liên kết trực tiếp đường dẫn URL của chứng nhận đăng ký vào bài báo nộp phản biện đồng cấp quốc tế.",
+      "pitfalls": "Đăng ký trước nhưng vi phạm quy tắc dừng thu thập mẫu (tiếp tục thu thập thêm mẫu khi kết quả p cận biên 0.05); không công bố đường link đăng ký trước trong bản thảo nộp tạp chí; nhầm lẫn việc đăng ký đề tài với hội đồng khoa học cơ sở với quy chuẩn đăng ký trước minh bạch quốc tế.",
+      "apa_reference": "Lakens, D. (2019). The value of preregistration for psychological science: A conceptual analysis. Japanese Psychological Review, 62(3), 221-230. / Wagenmakers, E. J., Wetzels, R., Borsboom, D., van der Maas, H. L., & Kievit, R. A. (2012). An agenda for purely confirmatory research. Perspectives on Psychological Science, 7(6), 632-638. https://doi.org/10.1177/1745691612463078"
     },
     {
       "id": "principal-component-analysis-pca",
       "term": "Principal Component Analysis (PCA)",
-      "vietnamese": "Phân tích Thành phần Chính",
+      "vietnamese": "Phân tích thành phần chính",
       "vietnamese_variants": [
-        "PCA"
+        "Phương pháp PCA",
+        "Phân tích cấu tử chính",
+        "Rút gọn chiều dữ liệu PCA",
+        "Principal components"
       ],
       "domain_tags": [
-        "Dimensionality Reduction"
+        "data-analysis",
+        "dimensionality-reduction",
+        "multivariate-statistics",
+        "unsupervised-learning"
       ],
-      "core_definition": "Kỹ thuật giảm chiều dữ liệu trực giao bảo toàn tối đa phương sai của tập biến số.",
-      "seminal_citation": "Pearson (1901), Hotelling (1933)",
-      "tier": "textbook",
+      "core_definition": "Kỹ thuật thống kê đa biến và giảm chiều dữ liệu không giám sát kinh điển do Karl Pearson và Harold Hotelling phát minh, biến đổi một tập hợp các biến số gốc có tương quan với nhau thành một tập hợp các biến mới trực giao (không tương quan lẫn nhau) gọi là các thành phần chính (Principal Components - PCs), được sắp xếp theo thứ tự giảm dần của phương sai được giải thích (Pearson, 1901; Hotelling, 1933; Jolliffe & Cadima, 2016).",
+      "seminal_citation": "Pearson, K. (1901). On lines and planes of closest fit to systems of points in space. The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science, 2(11), 559-572.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #2006",
       "core_definition_en": "Academic definition of Principal Component Analysis (PCA) according to Pearson (1901), Hotelling (1933).",
       "domain_tags_en": [
         "Dimensionality Reduction"
-      ]
+      ],
+      "category": "data-analysis",
+      "is_flagship": true,
+      "operational_mechanism": "Dựa trên phép phân rã phổ (spectral decomposition) hoặc phân tích giá trị suy biến (Singular Value Decomposition - SVD) của ma trận hiệp phương sai hoặc ma trận tương quan dữ liệu. Thành phần chính thứ nhất (PC1) tối đa hóa phương sai của dữ liệu chiếu; PC2 trực giao với PC1 và giải thích phương sai lớn thứ hai; và tiếp tục cho đến PCk. Tổng phương sai của toàn bộ dữ liệu gốc được bảo toàn hoàn toàn.",
+      "benchmarks": "Tiêu chí lựa chọn số lượng thành phần chính: Tiêu chuẩn Kaiser-Guttman (chỉ giữ lại các thành phần có giá trị riêng Eigenvalue > 1.0); Tiêu chuẩn đồ thị sỏi Scree Plot (điểm uốn elbow point); và Tỷ lệ phương sai tích lũy được giải thích (Cumulative Variance Explained >= 60% đến 80%); Chuẩn hóa dữ liệu bắt buộc (z-score scaling) trước khi phân tích nếu các biến có đơn vị đo khác nhau.",
+      "pitfalls": "Nhầm lẫn sâu sắc giữa PCA (kỹ thuật giảm chiều toán học giải thích toàn bộ phương sai biến quan sát) với Phân tích Nhân tố Khám phá (EFA - mô hình đo lường biến tiềm ẩn chỉ phân tích phương sai chung common variance); diễn giải các điểm số PCA như là các cấu trúc tâm lý tiềm ẩn thực sự; quên chuẩn hóa dữ liệu khiến biến có phương sai lớn thống trị toàn bộ các thành phần chính.",
+      "apa_reference": "Hotelling, H. (1933). Analysis of a complex of statistical variables into principal components. Journal of Educational Psychology, 24(6), 417-441. https://doi.org/10.1037/h0071325 / Jolliffe, I. T., & Cadima, J. (2016). Principal component analysis: A review and recent developments. Philosophical Transactions of the Royal Society A, 374(2065), 20150202. https://doi.org/10.1098/rsta.2015.0202 / Pearson, K. (1901). On lines and planes of closest fit to systems of points in space. The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science, 2(11), 559-572. https://doi.org/10.1080/14786440109462720"
     },
     {
       "id": "prior-distribution-priors",
-      "term": "Prior Distribution (Priors)",
-      "vietnamese": "Phân phối Tiên nghiệm",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Bayesian Statistics"
+      "term": "Prior Distribution (Bayesian Priors)",
+      "vietnamese": "Phân phối tiên nghiệm (Tiên nghiệm Bayes)",
+      "vietnamese_variants": [
+        "Phân phối xác suất tiên nghiệm",
+        "Priors",
+        "Phân phối trước thực nghiệm",
+        "p(θ)"
       ],
-      "core_definition": "Phân phối xác suất phản ánh tri thức hoặc niềm tin về tham số trước khi quan sát dữ liệu.",
-      "seminal_citation": "Gelman et al. (2013)",
-      "tier": "textbook",
+      "domain_tags": [
+        "data-analysis",
+        "bayesian-statistics",
+        "probability-theory",
+        "statistical-inference"
+      ],
+      "core_definition": "Phân phối xác suất p(θ) biểu thị toàn bộ trạng thái tri thức, niềm tin hoặc thông tin hiện có về tham số chưa biết (θ) trước khi tiến hành quan sát và thu thập dữ liệu thực nghiệm mới trong chu trình suy diễn thống kê Bayes (Gelman et al., 2013; McElreath, 2020).",
+      "seminal_citation": "Gelman, A., Carlin, J. B., Stern, H. S., Dunson, D. B., Vehtari, A., & Rubin, D. B. (2013). Bayesian data analysis (3rd ed.). CRC Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Prior Distribution (Priors) according to Gelman et al. (2013).",
       "domain_tags_en": [
         "Bayesian Statistics"
-      ]
+      ],
+      "category": "data-analysis",
+      "is_flagship": true,
+      "operational_mechanism": "Phân loại thành các nhóm tiên nghiệm chính: (1) Tiên nghiệm phi thông tin / yếu (Non-informative / Weakly informative priors, ví dụ phân phối phẳng Uniform hoặc phân phối chuẩn phương sai rộng) - cho phép dữ liệu thực nghiệm quyết định hoàn toàn kết quả; (2) Tiên nghiệm có thông tin (Informative priors) - tích hợp kiến thức từ các phân tích tổng hợp hoặc lý thuyết trước đó; (3) Tiên nghiệm điều chuẩn (Regularizing priors) - giúp co cụm các tham số để chống hiện tượng overfitting; (4) Tiên nghiệm liên hợp (Conjugate priors) - cho ra phân phối hậu nghiệm có cùng dạng hàm toán học với tiên nghiệm.",
+      "benchmarks": "Bắt buộc phải tiến hành Phân tích độ nhạy của tiên nghiệm (Prior Sensitivity Analysis) để kiểm tra xem kết luận hậu nghiệm có bị biến dạng nghiêm trọng khi thay đổi dạng phân phối tiên nghiệm hay không; Khuyến nghị sử dụng các tiên nghiệm có tính điều chuẩn yếu (weakly informative regularizing priors) thay vì các tiên nghiệm hoàn toàn phẳng (flat priors) trong các mô hình đa cấp phức tạp.",
+      "pitfalls": "Sử dụng tiên nghiệm phẳng nghiêm ngặt (Uniform(-∞, +∞)) có thể tạo ra các tiên nghiệm bất khả quy (improper priors) khiến chuỗi MCMC không hội tụ hoặc gây ra các suy diễn sai lệch ở các mô hình phi tuyến; áp đặt các tiên nghiệm có thông tin quá chủ quan mà không có cơ sở chứng cứ thực nghiệm trước đó; quên báo cáo công khai phương trình và siêu tham số của toàn bộ các tiên nghiệm được sử dụng.",
+      "apa_reference": "Gelman, A., Carlin, J. B., Stern, H. S., Dunson, D. B., Vehtari, A., & Rubin, D. B. (2013). Bayesian data analysis (3rd ed.). CRC Press. https://doi.org/10.1201/b16018 / McElreath, R. (2020). Statistical rethinking: A Bayesian course with examples in R and Stan (2nd ed.). CRC Press."
     },
     {
       "id": "prisma-2020-statement",
@@ -45246,77 +45608,132 @@
     },
     {
       "id": "prisma-flow-diagram",
-      "term": "PRISMA Flow Diagram",
-      "vietnamese": "Sơ đồ dòng chảy PRISMA hiển thị minh bạch 4 bước: Nhận diện, Sàng lọc, Đủ điều kiện và Đưa vào phân tích tổng hợp",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Systematic Review"
+      "term": "PRISMA 2020 Flow Diagram",
+      "vietnamese": "Sơ đồ dòng chảy PRISMA 2020",
+      "vietnamese_variants": [
+        "Sơ đồ PRISMA",
+        "PRISMA flow diagram",
+        "Lưu đồ tuyển chọn tài liệu PRISMA",
+        "PRISMA 2020 statement flowchart"
       ],
-      "core_definition": "Sơ đồ dòng chảy PRISMA hiển thị minh bạch 4 bước: Nhận diện, Sàng lọc, Đủ điều kiện và Đưa vào phân tích tổng hợp.",
-      "seminal_citation": "Page et al. (2021)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "research-design",
+        "systematic-reviews",
+        "meta-analysis",
+        "prisma-guidelines"
+      ],
+      "core_definition": "Công cụ trực quan hóa phương pháp luận chuẩn hóa bắt buộc theo Tuyên bố PRISMA 2020 (Preferred Reporting Items for Systematic Reviews and Meta-Analyses), minh họa toàn bộ tiến trình sàng lọc và tuyển chọn tài liệu học thuật theo từng bước, ghi nhận chính xác số lượng bài báo được tìm thấy, loại bỏ và đưa vào phân tích cuối cùng (Page et al., 2021).",
+      "seminal_citation": "Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., ... & Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. BMJ, 372, n71.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "\"Đủ điều kiện (Eligibility)\" là giai đoạn của PRISMA 2009; PRISMA 2020 gộp vào Screening",
       "core_definition_en": "Academic definition of PRISMA Flow Diagram according to Page et al. (2021).",
       "domain_tags_en": [
         "Systematic Review"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Cấu trúc sơ đồ được phân tách thành hai luồng độc lập: (1) Luồng tìm kiếm qua các cơ sở dữ liệu học thuật và sổ đăng ký (Databases and registers); (2) Luồng tìm kiếm qua các phương thức khác (Other methods: trang web tổ chức, y văn xám, tìm kiếm trích dẫn ngược/xuôi citation searching). Mỗi ô trong sơ đồ phải hiển thị số lượng bản ghi (n) cụ thể.",
+      "benchmarks": "Bắt buộc phải áp dụng biểu mẫu cập nhật PRISMA 2020 Flow Diagram (thay thế biểu mẫu PRISMA 2009 cũ); Phải báo cáo rõ ràng công cụ quản lý trùng lặp và số lượng bản ghi trùng lặp bị loại bỏ; Bắt buộc phân loại chi tiết các lý do loại trừ bài báo ở bước thẩm định toàn văn (full-text eligibility assessment).",
+      "pitfalls": "Sử dụng mẫu sơ đồ PRISMA 2009 lỗi thời khi gửi bài cho các tạp chí Q1 hiện nay; không giải trình lý do cụ thể tại sao các bài báo toàn văn bị loại bỏ ở vòng cuối; số lượng bài báo ở các ô trong sơ đồ không khớp với tổng số liệu thống kê trình bày trong bài viết.",
+      "apa_reference": "Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., ... & Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. BMJ, 372, n71. https://doi.org/10.1136/bmj.n71 / Moher, D., Liberati, A., Tetzlaff, J., & Altman, D. G. (2009). Preferred reporting items for systematic reviews and meta-analyses: The PRISMA statement. Annals of Internal Medicine, 151(4), 264-269. https://doi.org/10.7326/0003-4819-151-4-200908180-00135"
     },
     {
       "id": "prisma-flow-diagram-four-phases",
-      "term": "PRISMA Flow Diagram Four Phases",
-      "vietnamese": "Bốn Giai đoạn Sơ đồ Dòng chảy PRISMA",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Systematic Review Rigour"
+      "term": "PRISMA Four-Phase Selection Process",
+      "vietnamese": "Quy trình tuyển chọn bốn giai đoạn của PRISMA",
+      "vietnamese_variants": [
+        "Bốn giai đoạn PRISMA",
+        "PRISMA 4 phases",
+        "Tiến trình sàng lọc 4 bước PRISMA",
+        "Identification, Screening, Eligibility, Included"
       ],
-      "core_definition": "Xác định - Sàng lọc - Đủ điều kiện - Đưa vào tổng hợp.",
-      "seminal_citation": "Page et al. (2021)",
-      "tier": "textbook",
+      "domain_tags": [
+        "research-design",
+        "systematic-reviews",
+        "literature-screening",
+        "meta-analysis"
+      ],
+      "core_definition": "Khung tiến trình sàng lọc tài liệu có cấu trúc 4 giai đoạn chuẩn mực trong các tổng quan hệ thống: (1) Nhận diện (Identification), (2) Sàng lọc sơ bộ (Screening), (3) Thẩm định tính hợp lệ toàn văn (Eligibility), và (4) Đưa vào phân tích tổng hợp (Included) (Page et al., 2021; Liberati et al., 2009).",
+      "seminal_citation": "Liberati, A., Altman, D. G., Tetzlaff, J., Mulrow, C., Gøtzsche, P. C., Ioannidis, J. P., ... & Moher, D. (2009). The PRISMA statement for reporting systematic reviews and meta-analyses of studies that evaluate health care interventions: Explanation and elaboration. Annals of Internal Medicine, 151(4), W-65.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "\"Bốn giai đoạn\" là PRISMA 2009, không phải Page et al. (2021) – sửa hoặc ghi rõ phiên bản",
       "core_definition_en": "Academic definition of PRISMA Flow Diagram Four Phases according to Page et al. (2021).",
       "domain_tags_en": [
         "Systematic Review Rigour"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Giai đoạn 1 (Identification): Thu thập bản ghi từ các cơ sở dữ liệu và loại bỏ các bản ghi trùng lặp; Giai đoạn 2 (Screening): Đọc tiêu đề và tóm tắt (title/abstract screening) độc lập bởi 2 nhà nghiên cứu để loại các bài không liên quan; Giai đoạn 3 (Eligibility): Đọc toàn văn (full-text reading) đối chiếu với bảng tiêu chí chọn/loại và ghi nhận lý do loại trừ; Giai đoạn 4 (Included): Xác định số lượng nghiên cứu cuối cùng đưa vào tổng hợp định tính và meta-analysis định lượng.",
+      "benchmarks": "Đảm bảo tối thiểu 2 nhà nghiên cứu độc lập thực hiện sàng lọc ở cả giai đoạn Screening và Eligibility; Đo lường mức độ đồng thuận giữa hai chuyên viên sàng lọc bằng hệ số Cohen's Kappa (thường yêu cầu Kappa >= 0.75 hoặc 0.80); Mọi điểm bất đồng phải được giải quyết qua bên thứ ba (third reviewer adjudication).",
+      "pitfalls": "Chỉ một người thực hiện sàng lọc tài liệu (vi phạm nguyên tắc chuẩn mực kép của Cochrane và PRISMA); không ghi chép và báo cáo cụ thể bảng danh mục các bài báo bị loại kèm lý do ở giai đoạn toàn văn; tự ý thay đổi tiêu chí lựa chọn/loại trừ giữa chừng mà không có sự giải trình lý do phương pháp luận.",
+      "apa_reference": "Liberati, A., Altman, D. G., Tetzlaff, J., Mulrow, C., Gøtzsche, P. C., Ioannidis, J. P., ... & Moher, D. (2009). The PRISMA statement for reporting systematic reviews and meta-analyses of studies that evaluate health care interventions: Explanation and elaboration. Annals of Internal Medicine, 151(4), W-65. https://doi.org/10.7326/0003-4819-151-4-200908180-00136 / Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., ... & Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. BMJ, 372, n71. https://doi.org/10.1136/bmj.n71"
     },
     {
       "id": "probability-sampling",
-      "term": "Probability sampling",
-      "vietnamese": "Chọn mẫu xác suất (Chọn mẫu ngẫu nhiên)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Kỹ thuật Chọn mẫu",
-        "Phương pháp Định lượng"
+      "term": "Probability Sampling (Random Sampling Techniques)",
+      "vietnamese": "Chọn mẫu xác suất (Các kỹ thuật lấy mẫu ngẫu nhiên)",
+      "vietnamese_variants": [
+        "Lấy mẫu xác suất",
+        "Chọn mẫu ngẫu nhiên",
+        "Probability sampling methods",
+        "Kỹ thuật lấy mẫu xác suất"
       ],
-      "core_definition": "Phương pháp chọn mẫu trong đó mọi cá thể trong tổng thể nghiên cứu (sampling frame) đều có xác suất được chọn lớn hơn 0 và được xác định trước. Đây là điều kiện tiên quyết để suy diễn thống kê từ mẫu ra tổng thể.",
-      "seminal_citation": "Kish, L. (1965). Survey Sampling. John Wiley & Sons.",
-      "tier": "textbook",
+      "domain_tags": [
+        "data-collection",
+        "sampling-theory",
+        "survey-methodology",
+        "quantitative-methods"
+      ],
+      "core_definition": "Phương pháp chọn mẫu trong nghiên cứu định lượng trong đó mọi đơn vị trong quần thể mục tiêu đều có một xác suất được lựa chọn vào mẫu hoàn toàn biết trước và khác không (non-zero known probability), đảm bảo tính đại diện thống kê và cho phép ước lượng sai số chọn mẫu chuẩn xác (Cochran, 1977; Kish, 1965).",
+      "seminal_citation": "Kish, L. (1965). Survey sampling. John Wiley & Sons.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Probability sampling according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "data-collection",
+      "is_flagship": true,
+      "operational_mechanism": "Bao gồm 4 kỹ thuật nền tảng: (1) Lấy mẫu ngẫu nhiên đơn giản (Simple Random Sampling - SRS); (2) Lấy mẫu hệ thống (Systematic Sampling); (3) Lấy mẫu phân tầng (Stratified Sampling); (4) Lấy mẫu theo cụm (Cluster Sampling / Multistage Sampling). Đòi hỏi phải có một khung chọn mẫu hoàn chỉnh (sampling frame) liệt kê danh sách toàn bộ các đơn vị của quần thể.",
+      "benchmarks": "Là điều kiện tiên quyết toán học để thực hiện suy diễn thống kê tham số (parametric inferential statistics); Cho phép tính toán chính xác sai số chuẩn (Standard Error), khoảng tin cậy (Confidence Intervals), và hiệu ứng thiết kế mẫu (Design Effect - deff); Tỷ lệ phản hồi (response rate) cần đạt tối thiểu 60-70% để hạn chế thiên lệch không phản hồi.",
+      "pitfalls": "Khung chọn mẫu bị thiếu sót hoặc lỗi thời (coverage error) khiến một bộ phận dân số bị loại trừ; nhầm lẫn giữa chọn mẫu ngẫu nhiên xác suất với việc chọn mẫu tiện lợi ngẫu hứng (haphazard / convenience sampling - như phát phiếu khảo sát cho người đi đường); không tính toán trọng số chọn mẫu (sampling weights) khi tỷ lệ chọn giữa các tầng không bằng nhau.",
+      "apa_reference": "Cochran, W. G. (1977). Sampling techniques (3rd ed.). John Wiley & Sons. / Kish, L. (1965). Survey sampling. John Wiley & Sons."
     },
     {
       "id": "probes",
-      "term": "Probes",
-      "vietnamese": "Câu hỏi thăm dò (Probes) — Các câu hỏi phụ gợi ý người tham gia giải thích rõ hơn hoặc đào sâu thêm ý vừa phát biểu.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Probes and Probing Questions in Qualitative Interviewing",
+      "vietnamese": "Câu hỏi thăm dò và Kỹ thuật khơi sâu trong phỏng vấn định tính",
+      "vietnamese_variants": [
+        "Câu hỏi đào sâu",
+        "Probing questions",
+        "Kỹ thuật thăm dò định tính",
+        "Follow-up probes"
       ],
-      "core_definition": "Câu hỏi thăm dò (Probes) — Các câu hỏi phụ gợi ý người tham gia giải thích rõ hơn hoặc đào sâu thêm ý vừa phát biểu.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "data-collection",
+        "qualitative-methods",
+        "interviewing",
+        "fieldwork"
+      ],
+      "core_definition": "Tập hợp các câu hỏi phụ và kỹ thuật tương tác ngắn được người phỏng vấn sử dụng linh hoạt ngay trong cuộc phỏng vấn sâu hoặc thảo luận nhóm, nhằm kích thích người tham gia giải thích chi tiết hơn, làm rõ các ý phát biểu mơ hồ, đưa ra ví dụ cụ thể hoặc mở rộng dòng suy nghĩ của họ mà không gợi ý câu trả lời (Patton, 2015; Creswell & Poth, 2018).",
+      "seminal_citation": "Patton, M. Q. (2015). Qualitative research & evaluation methods (4th ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Probes according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "data-collection",
+      "is_flagship": true,
+      "operational_mechanism": "Phân loại thành các dạng thăm dò chuyên biệt: (1) Thăm dò làm rõ nghĩa (Clarification probes: 'Bạn có thể nói rõ hơn về cụm từ... nghĩa là gì?'); (2) Thăm dò chi tiết mở rộng (Detail probes: 'Ai là người có mặt lúc đó?', 'Chuyện gì xảy ra tiếp theo?'); (3) Thăm dò cảm xúc/ý nghĩa (Elaboration probes: 'Điều đó khiến bạn cảm thấy như thế nào?'); (4) Thăm dò im lặng (Silent probe: giữ im lặng lắng nghe 3-5 giây để đối tượng tiếp tục dòng tự sự).",
+      "benchmarks": "Đảm bảo tính trung lập tuyệt đối (non-leading probes); Không áp đặt quan điểm hoặc tỏ thái độ phán xét đối với phản hồi của đối tượng; Giúp biến các câu trả lời ngắn bề nổi thành các dữ liệu mô tả dày dặn ('thick descriptions') phục vụ phân tích chủ đề sâu sắc.",
+      "pitfalls": "Sử dụng câu hỏi thăm dò mang tính dẫn dụ hoặc mớm cung (leading probes, ví dụ: 'Có phải bạn cảm thấy rất bức xúc không?'); ngắt lời người tham gia quá sớm khiến dòng tự nhiên bị bẻ gãy; lạm dụng câu hỏi 'Tại sao' (Why) tạo cảm giác bị thẩm vấn hoặc phòng vệ tâm lý cho đối tượng.",
+      "apa_reference": "Creswell, J. W., & Poth, C. N. (2018). Qualitative inquiry and research design: Choosing among five approaches (4th ed.). SAGE Publications. / Patton, M. Q. (2015). Qualitative research & evaluation methods (4th ed.). SAGE Publications."
     },
     {
       "id": "process-coding",
@@ -45361,43 +45778,69 @@
     },
     {
       "id": "process-macro-andrew-f-hayes",
-      "term": "PROCESS Macro (Andrew F. Hayes)",
-      "vietnamese": "Công cụ Phân tích Mô hình Điều tiết & Trung gian PROCESS",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Mediation",
-        "Moderation"
+      "term": "PROCESS Macro Theoretical Framework (Andrew F. Hayes)",
+      "vietnamese": "Khung lý thuyết Macro PROCESS của Andrew F. Hayes",
+      "vietnamese_variants": [
+        "Macro PROCESS của Hayes",
+        "PROCESS macro",
+        "Phân tích trung gian và điều tiết PROCESS",
+        "Hệ thống mô hình PROCESS"
       ],
-      "core_definition": "Tiện ích chuyên biệt chạy các mô hình đường dẫn phức tạp.",
-      "seminal_citation": "Hayes (2018/2022)",
-      "tier": "textbook",
+      "domain_tags": [
+        "data-analysis",
+        "mediation-analysis",
+        "moderation-analysis",
+        "conditional-process-analysis"
+      ],
+      "core_definition": "Khung phương pháp luận thống kê tích hợp và hệ thống mô hình hồi quy do Andrew F. Hayes sáng lập, hợp nhất phân tích biến trung gian (mediation analysis) và biến điều tiết (moderation analysis) thành một lý thuyết tổng quát gọi là Phân tích Quá trình có Điều kiện (Conditional Process Analysis) (Hayes, 2018, 2022).",
+      "seminal_citation": "Hayes, A. F. (2022). Introduction to mediation, moderation, and conditional process analysis: A regression-based approach (3rd ed.). Guilford Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of PROCESS Macro (Andrew F. Hayes) according to Hayes (2018/2022).",
       "domain_tags_en": [
         "Mediation",
         "Moderation"
-      ]
+      ],
+      "category": "data-analysis",
+      "is_flagship": true,
+      "operational_mechanism": "Cung cấp thư viện chuẩn hóa gồm hơn 90 mô hình đường dẫn định sẵn (numbered model templates), cho phép kiểm tra các cơ chế phức tạp như: trung gian có điều tiết (moderated mediation), điều tiết có trung gian (mediated moderation), trung gian song song (parallel), và trung gian nối tiếp (serial mediation). Thay thế cách tiếp cận từng bước cổ điển của Baron & Kenny (1986) bằng phương pháp kiểm định trực tiếp hiệu ứng gián tiếp phi tham số.",
+      "benchmarks": "Sử dụng kiểm định chỉ số trung gian có điều tiết (Index of Moderated Mediation) để kiểm tra chính thức xem hiệu ứng gián tiếp có thay đổi có ý nghĩa thống kê theo các mức độ của biến điều tiết hay không; Áp dụng phương pháp Bootstrap tối thiểu 5,000 lần mẫu để xây dựng khoảng tin cậy không tham số.",
+      "pitfalls": "Lạm dụng kiểm định Sobel test truyền thống vốn giả định sai lệch về phân phối chuẩn của tích số hai hệ số hồi quy (a*b); chọn sai mô hình mẫu định sẵn trong thư viện PROCESS; giải thích mối quan hệ nhân quả một chiều vững chắc từ dữ liệu khảo sát cắt ngang một thời điểm duy nhất.",
+      "apa_reference": "Baron, R. M., & Kenny, D. A. (1986). The moderator-mediator variable distinction in social psychological research: Conceptual, strategic, and statistical considerations. Journal of Personality and Social Psychology, 51(6), 1173-1182. https://doi.org/10.1037/0022-3514.51.6.1173 / Hayes, A. F. (2022). Introduction to mediation, moderation, and conditional process analysis: A regression-based approach (3rd ed.). Guilford Press."
     },
     {
       "id": "process-macro-for-spss-sas-r",
-      "term": "PROCESS macro for SPSS SAS R",
-      "vietnamese": "Bộ công cụ tính toán PROCESS (Hayes)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "PROCESS Macro Computational Tool for SPSS, SAS, and R",
+      "vietnamese": "Công cụ tính toán PROCESS Macro trên SPSS, SAS và R",
+      "vietnamese_variants": [
+        "Phần mềm PROCESS macro",
+        "PROCESS script cho SPSS",
+        "Gói lệnh PROCESS trong R",
+        "Công cụ kiểm định trung gian điều tiết PROCESS"
       ],
-      "core_definition": "Bộ công cụ tính toán tự động các mô hình hồi quy OLS trung gian và điều tiết.",
-      "seminal_citation": "Hayes (2022)",
-      "tier": "textbook",
+      "domain_tags": [
+        "data-analysis",
+        "statistical-software",
+        "bootstrap-estimation",
+        "applied-econometrics"
+      ],
+      "core_definition": "Bộ công cụ lập trình tính toán thống kê mã nguồn tự do được viết bằng cú pháp macro dành riêng cho các phần mềm IBM SPSS, SAS và ngôn ngữ R, tự động hóa toàn bộ việc ước lượng hồi quy OLS hoặc hồi quy Logistic đa tầng, phân tích độ dốc đơn giản (simple slopes) và thuật toán lấy mẫu lại bootstrap (Hayes, 2022).",
+      "seminal_citation": "Hayes, A. F. (2022). Introduction to mediation, moderation, and conditional process analysis: A regression-based approach (3rd ed.). Guilford Press.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of PROCESS macro for SPSS SAS R according to Hayes (2022).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "data-analysis",
+      "is_flagship": true,
+      "operational_mechanism": "Người dùng gọi lệnh thông qua hộp thoại giao diện đồ họa (GUI trong SPSS) hoặc câu lệnh cú pháp (syntax). Thuật toán tự động căn tâm các biến độc lập và biến điều tiết để tránh đa cộng tuyến khi tạo biến tích số tương tác, tự động chạy kỹ thuật rọi đèn Johnson-Neyman (floodlight analysis) để tìm ngưỡng chuyển đổi ý nghĩa thống kê chính xác, và xuất bảng báo cáo định dạng chuẩn.",
+      "benchmarks": "Cài đặt seed ngẫu nhiên (seed number) để đảm bảo kết quả bootstrap có thể tái lập chính xác 100%; Sử dụng đồ thị kỹ thuật Johnson-Neyman trực quan hóa khoảng giá trị của biến điều tiết mà tại đó hiệu ứng của X lên Y có ý nghĩa thống kê; Báo cáo đầy đủ bảng giá trị hiệu ứng tại các phân vị trung bình, -1SD và +1SD.",
+      "pitfalls": "Không cài đặt seed ngẫu nhiên dẫn đến kết quả khoảng tin cậy bootstrap bị thay đổi số lẻ giữa các lần chạy lại; nhầm lẫn thứ tự nhập biến trong câu lệnh syntax khiến vai trò của biến độc lập X, trung gian M và điều tiết W bị tráo đổi; áp dụng PROCESS cho dữ liệu quan sát lặp lại đa cấp phức tạp mà không dùng mô hình tuyến tính phân cấp (HLM).",
+      "apa_reference": "Hayes, A. F. (2018). Partial, conditional, and moderated moderated mediation: Quantification, testing, and interpretation. Communication Monographs, 85(1), 4-40. https://doi.org/10.1080/03637751.2017.1352100 / Hayes, A. F. (2022). Introduction to mediation, moderation, and conditional process analysis: A regression-based approach (3rd ed.). Guilford Press."
     },
     {
       "id": "prolonged-engagement",
@@ -45454,59 +45897,100 @@
     },
     {
       "id": "proportion-of-substantive-agreement-psa",
-      "term": "Proportion of substantive agreement (Psa)",
-      "vietnamese": "Tỷ lệ đồng thuận nội dung thực chất",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Proportion of Substantive Agreement (Psa)",
+      "vietnamese": "Tỷ lệ đồng thuận nội dung thực chất (Psa)",
+      "vietnamese_variants": [
+        "Chỉ số Psa",
+        "Proportion of substantive agreement",
+        "Độ đồng thuận nội dung thang đo",
+        "Chỉ số Psa của Anderson & Gerbing"
       ],
-      "core_definition": "Tỷ lệ chuyên gia gán đúng câu hỏi vào định nghĩa khái niệm mục tiêu.",
-      "seminal_citation": "MacKenzie et al. (2011)",
-      "tier": "textbook",
+      "domain_tags": [
+        "measurement",
+        "content-validity",
+        "scale-development",
+        "psychometrics"
+      ],
+      "core_definition": "Chỉ số tâm lý trắc lượng lượng hóa do James C. Anderson và David W. Gerbing đề xuất, dùng để đánh giá độ giá trị nội dung (content validity) của từng câu hỏi quan sát (items) trong quá trình phát triển thang đo mới, đo lường tỷ lệ các chuyên gia thẩm định gán chính xác câu hỏi đó vào đúng khái niệm lý thuyết mục tiêu so với tổng số chuyên gia tham gia đánh giá (Anderson & Gerbing, 1991).",
+      "seminal_citation": "Anderson, J. C., & Gerbing, D. W. (1991). Predicting the performance of measures in a confirmatory factor analysis with a pretest assessment of substantive validities. Journal of Applied Psychology, 76(5), 732-740.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Proportion of substantive agreement (Psa) according to MacKenzie et al. (2011).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "measurement",
+      "is_flagship": true,
+      "operational_mechanism": "Trong một bảng hỏi đánh giá nội dung, các chuyên gia nhận được định nghĩa của nhiều khái niệm lý thuyết và được yêu cầu phân loại từng câu hỏi vào khái niệm phù hợp nhất. Chỉ số được tính bằng: Psa = n_c / N, trong đó n_c là số lượng chuyên gia gán câu hỏi vào đúng khái niệm mục tiêu được định trước, và N là tổng số chuyên gia. Thường được sử dụng kết hợp với Hệ số Phân định Nội dung thực chất (Substantive-validity coefficient - Csv).",
+      "benchmarks": "Ngưỡng chấp nhận chuẩn mực: Psa >= 0.75 hoặc tối ưu >= 0.80 khẳng định câu hỏi có độ giá trị nội dung vững chắc; Kiểm định ý nghĩa thống kê của Psa thông qua phân phối nhị thức (binomial test) với giả thuyết không là gán ngẫu nhiên (p < 0.05).",
+      "pitfalls": "Giữ lại các câu hỏi có Psa thấp (< 0.70) dẫn đến nguy cơ câu hỏi bị tải chéo (cross-loading) sang các nhân tố khác trong phân tích EFA sau này; chỉ sử dụng một số lượng quá ít chuyên gia (dưới 5 người) khiến kiểm định nhị thức không đủ độ mạnh thống kê; bỏ qua chỉ số Csv khi câu hỏi có thể bị gán nhầm sang một khái niệm đối thủ cạnh tranh cụ thể.",
+      "apa_reference": "Anderson, J. C., & Gerbing, D. W. (1991). Predicting the performance of measures in a confirmatory factor analysis with a pretest assessment of substantive validities. Journal of Applied Psychology, 76(5), 732-740. https://doi.org/10.1037/0021-9010.76.5.732 / MacKenzie, S. B., Podsakoff, P. M., & Podsakoff, N. P. (2011). Construct measurement and validation procedures in MIS and behavioral research: Integrating new and existing techniques. MIS Quarterly, 35(2), 293-334. https://doi.org/10.2307/23044045"
     },
     {
       "id": "proportionate-stratified-sampling",
       "term": "Proportionate Stratified Sampling",
-      "vietnamese": "Chọn mẫu phân tầng tỷ lệ",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Sampling Techniques"
+      "vietnamese": "Chọn mẫu phân tầng theo tỷ lệ",
+      "vietnamese_variants": [
+        "Lấy mẫu phân tầng tỷ lệ",
+        "Proportionate stratified sampling",
+        "Chọn mẫu theo tỷ lệ các tầng",
+        "Phân tầng đồng tỷ lệ"
       ],
-      "core_definition": "cỡ mẫu từng tầng tỷ lệ thuận với quy mô tầng trong quần thể.",
-      "seminal_citation": "Cochran (1977)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "data-collection",
+        "sampling-theory",
+        "survey-methodology",
+        "quantitative-methods"
+      ],
+      "core_definition": "Kỹ thuật chọn mẫu xác suất nâng cao trong đó quần thể nghiên cứu được chia thành các nhóm phụ loại trừ lẫn nhau gọi là các tầng (strata) dựa trên các đặc tính quan trọng (như giới tính, độ tuổi, vùng miền, quy mô doanh nghiệp), sau đó mẫu ngẫu nhiên từ mỗi tầng được rút ra với tỷ lệ lấy mẫu hoàn toàn bằng nhau: n_h / N_h = n / N (Cochran, 1977; Kish, 1965).",
+      "seminal_citation": "Cochran, W. G. (1977). Sampling techniques (3rd ed.). John Wiley & Sons.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Proportionate Stratified Sampling according to Cochran (1977).",
       "domain_tags_en": [
         "Sampling Techniques"
-      ]
+      ],
+      "category": "data-collection",
+      "is_flagship": true,
+      "operational_mechanism": "Cơ cấu tỷ lệ phần trăm của từng nhóm trong mẫu thu được phản ánh chính xác cấu trúc thực tế của quần thể tổng thể mà không làm méo mó cơ cấu. Kỹ thuật này triệt tiêu phương sai giữa các tầng (between-strata variance), giúp giảm thiểu sai số chuẩn của ước lượng trung bình và tăng độ chính xác thống kê so với phương pháp lấy mẫu ngẫu nhiên đơn giản.",
+      "benchmarks": "Đảm bảo tính đồng nhất tối đa bên trong từng tầng (within-strata homogeneity) và tính dị biệt tối đa giữa các tầng (between-strata heterogeneity); Hiệu quả thống kê vượt trội hơn Simple Random Sampling (sai số chuẩn luôn nhỏ hơn hoặc bằng SRS); Không yêu cầu phải tính toán trọng số tái hiệu chỉnh phức tạp trong phân tích dữ liệu cơ bản.",
+      "pitfalls": "Không áp dụng được khi có các tầng quy mô quá nhỏ trong quần thể (ví dụ nhóm thiểu số chiếm 1%), vì tỷ lệ lấy mẫu đồng đều sẽ dẫn đến kích thước mẫu của tầng đó quá ít (chỉ 1-2 người), không đủ để phân tích thống kê riêng biệt (trường hợp này phải chuyển sang Disproportionate Stratified Sampling); đòi hỏi phải có thông tin phân tầng chính xác của toàn bộ quần thể trước khi lấy mẫu.",
+      "apa_reference": "Cochran, W. G. (1977). Sampling techniques (3rd ed.). John Wiley & Sons. / Kish, L. (1965). Survey sampling. John Wiley & Sons."
     },
     {
       "id": "proquest-dissertations-and-theses-global-pqdt",
-      "term": "ProQuest Dissertations and Theses Global (PQDT)",
-      "vietnamese": "Kho Luận án và Luận văn Toàn cầu ProQuest",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scholarly Repositories"
+      "term": "ProQuest Dissertations & Theses Global (PQDT)",
+      "vietnamese": "Cơ sở dữ liệu Luận án và Luận văn Toàn cầu ProQuest (PQDT)",
+      "vietnamese_variants": [
+        "Cơ sở dữ liệu PQDT",
+        "ProQuest dissertations",
+        "Kho luận án tiến sĩ toàn cầu ProQuest",
+        "PQDT database"
       ],
-      "core_definition": "Bộ sưu tập luận án tiến sĩ và thạc sĩ toàn văn lớn nhất thế giới.",
-      "seminal_citation": "ProQuest (1938-present)",
-      "tier": "textbook",
+      "domain_tags": [
+        "general",
+        "grey-literature",
+        "systematic-reviews",
+        "literature-search"
+      ],
+      "core_definition": "Cơ sở dữ liệu thư mục và toàn văn lớn nhất thế giới về các luận án tiến sĩ và luận văn thạc sĩ đến từ hàng nghìn trường đại học uy tín trên toàn cầu do ProQuest duy trì, đóng vai trò là kho y văn xám (grey literature) học thuật chính thống quan trọng hàng đầu trong nghiên cứu tổng quan hệ thống và phân tích tổng hợp (Lipsey & Wilson, 2001; Rothstein, Sutton, & Borenstein, 2005).",
+      "seminal_citation": "Lipsey, M. W., & Wilson, D. B. (2001). Practical meta-analysis. SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of ProQuest Dissertations and Theses Global (PQDT) according to ProQuest (1938-present).",
       "domain_tags_en": [
         "Scholarly Repositories"
-      ]
+      ],
+      "category": "general",
+      "is_flagship": true,
+      "operational_mechanism": "Lưu trữ hàng triệu công trình nghiên cứu chưa từng được xuất bản trên các tạp chí định kỳ (thường là các nghiên cứu có kết quả không có ý nghĩa thống kê hoặc hiệu ứng nhỏ - null results). Việc truy vấn PQDT giúp nhà nghiên cứu thu thập được các bộ dữ liệu thực nghiệm chưa công bố, từ đó triệt tiêu thiên lệch xuất bản (publication bias / file-drawer problem) khi ước lượng kích thước hiệu ứng trung bình.",
+      "benchmarks": "Được Cochrane Handbook và hướng dẫn Campbell Collaboration khuyến nghị bắt buộc phải truy vấn khi thực hiện tìm kiếm y văn xám; Sử dụng các bộ lọc nâng cao theo trường đại học, chuyên ngành, năm bảo vệ và tên giáo sư hướng dẫn; Báo cáo số lượng bản ghi PQDT sàng lọc trong sơ đồ PRISMA.",
+      "pitfalls": "Chỉ tìm kiếm tài liệu trên các tạp chí xuất bản thương mại mà bỏ qua cơ sở dữ liệu PQDT, khiến phân tích tổng hợp bị thổi phồng độ lớn hiệu ứng thực tế do chỉ chứa các bài có p < 0.05; không đánh giá chất lượng phương pháp luận của các luận văn chưa qua phản biện độc lập trước khi gộp dữ liệu.",
+      "apa_reference": "Lipsey, M. W., & Wilson, D. B. (2001). Practical meta-analysis. SAGE Publications. / Rothstein, H. R., Sutton, A. J., & Borenstein, M. (Eds.). (2005). Publication bias in meta-analysis: Prevention, assessment and adjustments. John Wiley & Sons. https://doi.org/10.1002/0470870168"
     },
     {
       "id": "prospect-theory-kahneman-tversky",
@@ -45546,225 +46030,390 @@
     },
     {
       "id": "prospective-meta-analysis",
-      "term": "Prospective Meta-Analysis",
-      "vietnamese": "Phân tích gộp tiến cứu lên kế hoạch tổng hợp các nghiên cứu từ trước khi kết quả của các nghiên cứu đó được công bố",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Meta-Analysis"
+      "term": "Prospective Meta-Analysis (PMA)",
+      "vietnamese": "Phân tích tổng hợp tiến cứu",
+      "vietnamese_variants": [
+        "Meta-analysis tiến cứu",
+        "Prospective meta-analysis",
+        "PMA",
+        "Phân tích tổng hợp nghiên cứu tương lai"
       ],
-      "core_definition": "Phân tích gộp tiến cứu lên kế hoạch tổng hợp các nghiên cứu từ trước khi kết quả của các nghiên cứu đó được công bố.",
-      "seminal_citation": "Ghersi et al. (2018)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "data-analysis",
+        "meta-analysis",
+        "evidence-based-medicine",
+        "clinical-trials"
+      ],
+      "core_definition": "Phương pháp phân tích tổng hợp nâng cao trong đó các nghiên cứu thành phần (thường là các thử nghiệm ngẫu nhiên lâm sàng RCTs) được xác định, đánh giá và thống nhất đưa vào kế hoạch phân tích tổng hợp TRƯỚC KHI kết quả của bất kỳ nghiên cứu thành phần nào được biết hoặc công bố (Ghersi et al., 2018; Bero et al., 2015).",
+      "seminal_citation": "Bero, L., Chartres, N., Diong, J., Fabbri, A., Ghersi, D., Lam, J., ... & Woloshin, S. (2015). The prospective meta-analysis: An introduction to a method for systematic reviews. Cochrane Database of Systematic Reviews, (10), ED000106.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Prospective Meta-Analysis according to Ghersi et al. (2018).",
       "domain_tags_en": [
         "Meta-Analysis"
-      ]
+      ],
+      "category": "data-analysis",
+      "is_flagship": true,
+      "operational_mechanism": "Các nhóm nghiên cứu độc lập trên thế giới liên kết thành một liên minh nghiên cứu (collaborative group), cùng thống nhất trước một đề cương đo lường chung, các biến kết cục chuẩn hóa, phương pháp thu thập dữ liệu và kế hoạch phân tích thống kê. Dữ liệu sau đó được thu thập song song tại nhiều quốc gia và gộp lại để phân tích theo đúng đề cương tiền định.",
+      "benchmarks": "Được xếp vào đỉnh cao nhất của tháp bằng chứng y học chứng cứ, vượt trội hơn phân tích tổng hợp hồi cứu (retrospective meta-analysis) vì loại bỏ hoàn toàn thiên lệch xuất bản (publication bias), thiên lệch lựa chọn bài báo (selection bias) và hiện tượng p-hacking; Đăng ký đề cương PMA công khai trên PROSPERO trước khi mở khóa dữ liệu.",
+      "pitfalls": "Đòi hỏi chi phí điều phối và thời gian tổ chức rất lớn qua nhiều năm; rủi ro một số nhóm nghiên cứu thành phần bỏ cuộc giữa chừng hoặc không tuân thủ đúng quy trình đo lường đã thỏa thuận; nhầm lẫn giữa một thử nghiệm đa trung tâm quy mô lớn (multicenter RCT) với một phân tích tổng hợp tiến cứu PMA gồm nhiều nghiên cứu độc lập.",
+      "apa_reference": "Bero, L., Chartres, N., Diong, J., Fabbri, A., Ghersi, D., Lam, J., ... & Woloshin, S. (2015). The prospective meta-analysis: An introduction to a method for systematic reviews. Cochrane Database of Systematic Reviews, (10), ED000106. https://doi.org/10.1002/14651858.ED000106 / Ghersi, D., Berlin, J., & Askie, L. (2018). Prospective meta-analysis. In J. P. T. Higgins et al. (Eds.), Cochrane handbook for systematic reviews of interventions (version 5.2.0). The Cochrane Collaboration."
     },
     {
       "id": "prospero",
-      "term": "PROSPERO",
-      "vietnamese": "Cơ sở dữ liệu Đăng ký trước Đề cương Tổng quan Hệ thống Quốc tế (International Prospective Register of Systematic Reviews)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Open Science",
-        "Meta-Analysis"
+      "term": "PROSPERO (International Prospective Register of Systematic Reviews)",
+      "vietnamese": "Cơ sở dữ liệu đăng ký trước quốc tế cho tổng quan hệ thống (PROSPERO)",
+      "vietnamese_variants": [
+        "Hệ thống PROSPERO",
+        "Sổ đăng ký PROSPERO",
+        "Cơ sở dữ liệu PROSPERO",
+        "PROSPERO registry"
       ],
-      "core_definition": "Cơ sở dữ liệu Đăng ký trước Đề cương Tổng quan Hệ thống Quốc tế (International Prospective Register of Systematic Reviews).",
-      "seminal_citation": "Số đăng ký PROSPERO (CRD420...) được các tạp chí y học, xã hội học và quản trị uy tín yêu cầu cung cấp ngay trong phần Phương pháp.",
-      "tier": "acronym",
+      "domain_tags": [
+        "research-design",
+        "systematic-reviews",
+        "open-science",
+        "evidence-based-medicine"
+      ],
+      "core_definition": "Cơ sở dữ liệu đăng ký trước trực tuyến công khai và miễn phí dành riêng cho các đề cương nghiên cứu tổng quan hệ thống và phân tích tổng hợp trong lĩnh vực y tế và khoa học xã hội, do Trung tâm Đánh giá và Phổ biến (CRD) thuộc Đại học York và Viện Nghiên cứu Y tế Quốc gia Anh (NIHR) quản lý (Booth et al., 2012; Chien et al., 2012).",
+      "seminal_citation": "Booth, A., Clarke, M., Dooley, G., Ghersi, D., Moher, D., Petticrew, M., & Stewart, L. (2012). The nuts and bolts of PROSPERO: An international prospective register of systematic reviews. Systematic Reviews, 1(1), 1-9.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Nguồn ghi ngưỡng",
       "core_definition_en": "Academic definition of PROSPERO according to Số đăng ký PROSPERO (CRD420...) được các tạp chí y học, xã hội học và quản trị uy tín yêu cầu cung cấp ngay trong phần Phương pháp..",
       "domain_tags_en": [
         "Open Science",
         "Meta-Analysis"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Cung cấp mã số đăng ký định danh vĩnh viễn (ví dụ CRD42023xxxxxx) cho từng đề cương nghiên cứu được nộp. Hồ sơ đăng ký lưu trữ có mốc thời gian vĩnh viễn các tiêu chí PICO, chiến lược tìm kiếm, tiêu chí chọn mẫu và phương pháp phân tích tổng hợp, giúp ngăn ngừa việc trùng lặp đề tài nghiên cứu không cần thiết và chống lại việc hoán đổi biến kết cục sau này.",
+      "benchmarks": "Được hầu hết các tạp chí y sinh quốc tế uy tín (The Lancet, BMJ, JAMA) và chuẩn mực PRISMA 2020 yêu cầu bắt buộc phải có mã đăng ký PROSPERO trước khi nộp bài báo; Đề cương phải được nộp và chấp nhận trước khi nhóm nghiên cứu bắt đầu tiến hành trích xuất dữ liệu (data extraction).",
+      "pitfalls": "Nộp hồ sơ đăng ký PROSPERO sau khi đã hoàn thành việc phân tích dữ liệu hoặc sau khi bài báo đã viết xong (retrospective registration sẽ bị từ chối cấp mã hoặc bị đánh dấu cảnh báo vi phạm); không cập nhật các thay đổi điều chỉnh đề cương trên hồ sơ PROSPERO công khai.",
+      "apa_reference": "Booth, A., Clarke, M., Dooley, G., Ghersi, D., Moher, D., Petticrew, M., & Stewart, L. (2012). The nuts and bolts of PROSPERO: An international prospective register of systematic reviews. Systematic Reviews, 1(1), 1-9. https://doi.org/10.1186/2046-4053-1-2 / Chien, P. F., Khan, K. S., & Siassakos, D. (2012). Registration of systematic reviews: PROSPERO. BJOG: An International Journal of Obstetrics & Gynaecology, 119(8), 903-905. https://doi.org/10.1111/j.1471-0528.2011.03242.x"
     },
     {
       "id": "prospero-registration",
-      "term": "PROSPERO Registration",
-      "vietnamese": "Đăng ký Đề cương PROSPERO",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Evidence-Based Rigour"
+      "term": "PROSPERO Protocol Registration Process",
+      "vietnamese": "Quy trình đăng ký đề cương trên hệ thống PROSPERO",
+      "vietnamese_variants": [
+        "Quy trình đăng ký PROSPERO",
+        "Đăng ký đề cương PROSPERO",
+        "Thủ tục đăng ký PROSPERO",
+        "PROSPERO registration procedure"
       ],
-      "core_definition": "Đăng ký công khai đề cương tổng quan hệ thống quốc tế trước khi tiến hành để tránh thiên lệch.",
-      "seminal_citation": "Booth et al. (2012)",
-      "tier": "textbook",
+      "domain_tags": [
+        "research-design",
+        "systematic-reviews",
+        "protocol-registration",
+        "research-governance"
+      ],
+      "core_definition": "Quy trình hành chính và kỹ thuật chuẩn hóa để lập hồ sơ, khai báo chi tiết và thẩm định công khai đề cương nghiên cứu tổng quan hệ thống trên nền tảng PROSPERO nhằm đảm bảo tính minh bạch phương pháp luận và phòng ngừa trùng lặp nghiên cứu trong y văn quốc tế (Booth et al., 2012; Stewart et al., 2012).",
+      "seminal_citation": "Stewart, L., Moher, D., & Clarke, M. (2012). Presenting the new prospective register of systematic reviews. Cochrane Database of Systematic Reviews, (2), ED000038.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of PROSPERO Registration according to Booth et al. (2012).",
       "domain_tags_en": [
         "Evidence-Based Rigour"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Bao gồm 33 trường thông tin chuẩn mực bắt buộc và tự chọn: Tiêu đề nghiên cứu, Dự kiến ngày bắt đầu và kết thúc, Câu hỏi PICO chi tiết, Chiến lược tìm kiếm đầy đủ cho ít nhất 1 cơ sở dữ liệu lớn, Tiêu chí lựa chọn/loại trừ, Phương pháp đánh giá nguy cơ sai lệch (Risk of Bias), Tiêu chí tổng hợp dữ liệu, và Kế hoạch phân tích phân nhóm (subgroup analysis).",
+      "benchmarks": "Thời điểm nộp hồ sơ phải trước khi tiến hành sàng lọc kết quả toàn văn hoặc trước khi bắt đầu trích xuất dữ liệu; Báo cáo đầy đủ mã số đăng ký PROSPERO trong phần Tóm tắt (Abstract) và Phương pháp (Methods) của bài báo chính thức; Cập nhật tiến độ hoàn thành trên hệ thống định kỳ.",
+      "pitfalls": "Kê khai thông tin hời hợt hoặc để trống các trường phân tích thống kê khiến hồ sơ bị trả lại nhiều lần; không giải trình minh bạch sự khác biệt giữa đề cương đã đăng ký trên PROSPERO và bài báo cuối cùng; đăng ký trùng lặp một chủ đề đã có nhiều nhóm nghiên cứu khác đăng ký trước mà không có sự khác biệt về phạm vi.",
+      "apa_reference": "Booth, A., Clarke, M., Dooley, G., Ghersi, D., Moher, D., Petticrew, M., & Stewart, L. (2012). The nuts and bolts of PROSPERO: An international prospective register of systematic reviews. Systematic Reviews, 1(1), 1-9. https://doi.org/10.1186/2046-4053-1-2 / Stewart, L., Moher, D., & Clarke, M. (2012). Presenting the new prospective register of systematic reviews. Cochrane Database of Systematic Reviews, (2), ED000038. https://doi.org/10.1002/14651858.ED000038"
     },
     {
       "id": "protopathic-bias",
-      "term": "Protopathic Bias",
-      "vietnamese": "Thiên lệch Bệnh nguyên Ban đầu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Epidemiological Bias"
+      "term": "Protopathic Bias (Reverse Causality in Pharmacoepidemiology)",
+      "vietnamese": "Thiên lệch tiền chứng (Mối quan hệ nhân quả đảo ngược trong dịch tễ dược học)",
+      "vietnamese_variants": [
+        "Thiên lệch protopathic",
+        "Protopathic bias",
+        "Sai lệch điều trị tiền triệu",
+        "Thiên lệch nhân quả đảo ngược y khoa"
       ],
-      "core_definition": "Một triệu chứng sớm chưa được chẩn đoán dẫn đến việc dùng thuốc, gây hiểu lầm thuốc gây ra bệnh.",
-      "seminal_citation": "Horwitz & Feinstein (1980)",
-      "tier": "textbook",
+      "domain_tags": [
+        "research-design",
+        "pharmacoepidemiology",
+        "causal-inference",
+        "epidemiology"
+      ],
+      "core_definition": "Dạng sai lệch hệ thống nghiêm trọng thuộc nhóm nhân quả đảo ngược (reverse causality) trong nghiên cứu dịch tễ học quan sát, xảy ra khi một can thiệp y tế hoặc loại thuốc được kê đơn để điều trị các triệu chứng sớm chưa được chẩn đoán của một bệnh lý tiềm ẩn, khiến việc phân tích hồi cứu ngộ nhận rằng chính loại thuốc đó là nguyên nhân gây ra bệnh lý này (Horwitz & Feinstein, 1980; Tamim et al., 2007).",
+      "seminal_citation": "Horwitz, R. I., & Feinstein, A. R. (1980). The problem of 'protopathic bias' in epidemiologic studies of disease-drug associations. Cancer, 45(4), 803-808.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Protopathic Bias according to Horwitz & Feinstein (1980).",
       "domain_tags_en": [
         "Epidemiological Bias"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Ví dụ điển hình: Sử dụng thuốc giảm đau NSAIDs để chữa triệu chứng đau bụng mơ hồ của bệnh ung thư dạ dày giai đoạn sớm chưa phát hiện. Trong nghiên cứu bệnh - chứng hồi cứu, những người bị ung thư dạ dày có tỷ lệ dùng NSAIDs cao hơn nhóm chứng, dẫn đến kết luận sai lầm rằng dùng NSAIDs làm tăng nguy cơ ung thư dạ dày. Thời gian ủ bệnh (latent period) giữa triệu chứng đầu tiên và chẩn đoán chính thức là nguồn gốc của sai lệch.",
+      "benchmarks": "Khắc phục bắt buộc bằng phương pháp thời gian trễ (Lag-time analysis / Index date shifting) - loại trừ toàn bộ các phơi nhiễm thuốc xảy ra trong khoảng thời gian cửa sổ từ 6 tháng đến 2 năm ngay trước ngày chẩn đoán bệnh; Tiến hành phân tích độ nhạy với nhiều khoảng thời gian trễ khác nhau.",
+      "pitfalls": "Không áp dụng khoảng thời gian trễ (lag period) trong các nghiên cứu cơ sở dữ liệu lớn (Big Data / EHR claims databases); ngộ nhận một mối liên hệ thống kê mạnh là bằng chứng nhân quả mà bỏ qua khả năng thuốc được dùng cho triệu chứng sớm của bệnh; không phân biệt được giữa protopathic bias và confounding by indication.",
+      "apa_reference": "Horwitz, R. I., & Feinstein, A. R. (1980). The problem of 'protopathic bias' in epidemiologic studies of disease-drug associations. Cancer, 45(4), 803-808. https://doi.org/10.1002/1097-0142(19800215)45:4<803::aid-cncr2820450433>3.0.co;2-x / Tamim, H., Monfared, A. A., & LeLorier, J. (2007). Application of lag-time into study design to counteract protopathic bias: A case study of selective serotonin reuptake inhibitors and breast cancer. Pharmacoepidemiology and Drug Safety, 16(11), 1198-1205. https://doi.org/10.1002/pds.1482"
     },
     {
       "id": "psychological-capital-psycap---luthans",
-      "term": "Psychological Capital (PsyCap - Luthans)",
-      "vietnamese": "Vốn Tâm lý PsyCap",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Organizational Behavior"
+      "term": "Psychological Capital (PsyCap - HERO Framework)",
+      "vietnamese": "Vốn tâm lý (Khung HERO của Luthans)",
+      "vietnamese_variants": [
+        "Vốn tâm lý PsyCap",
+        "Psychological capital",
+        "Mô hình HERO",
+        "Năng lực tâm lý tích cực"
       ],
-      "core_definition": "Trạng thái phát triển tâm lý tích cực gồm 4 trụ cột HERO: Hope, Efficacy, Resilience, Optimism.",
-      "seminal_citation": "Luthans et al. (2007)",
-      "tier": "textbook",
+      "domain_tags": [
+        "measurement",
+        "organizational-behavior",
+        "positive-psychology",
+        "psychometrics"
+      ],
+      "core_definition": "Cấu trúc tâm lý bậc hai (second-order core construct) biểu thị trạng thái phát triển tâm lý tích cực của cá nhân do Fred Luthans cùng các cộng sự phát triển, được cấu thành từ 4 nguồn lực tích cực cốt lõi (HERO): Hy vọng (Hope - Snyder), Hiệu quả bản thân (Efficacy - Bandura), Khả năng phục hồi (Resilience - Masten), và Lạc quan (Optimism - Seligman) (Luthans, Youssef, & Avolio, 2007; Luthans et al., 2005).",
+      "seminal_citation": "Luthans, F., Youssef, C. M., & Avolio, B. J. (2007). Psychological capital: Developing the human competitive edge. Oxford University Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Psychological Capital (PsyCap - Luthans) according to Luthans et al. (2007).",
       "domain_tags_en": [
         "Organizational Behavior"
-      ]
+      ],
+      "category": "measurement",
+      "is_flagship": true,
+      "operational_mechanism": "Được đo lường phổ biến thông qua thang đo chuẩn hóa PCQ-24 (Psychological Capital Questionnaire 24 items, mỗi chiều kích gồm 6 câu Likert 6 điểm). Kiểm định mô hình đo lường đòi hỏi chạy phân tích nhân tố khẳng định bậc hai (second-order CFA) để chứng minh rằng yếu tố cốt lõi tổng thể PsyCap giải thích phương sai vượt trội hơn bất kỳ chiều kích riêng lẻ nào.",
+      "benchmarks": "Độ tin cậy tổng hợp (CR) và Cronbach's alpha >= 0.85 cho toàn bộ thang đo PsyCap tổng và >= 0.75 cho từng chiều kích thành phần; Phương sai trích xuất trung bình (AVE) > 0.50; Mô hình bậc hai đạt các chỉ số phù hợp mô hình (CFI >= 0.95, TLI >= 0.95, RMSEA <= 0.06, SRMR <= 0.08).",
+      "pitfalls": "Tách rời 4 chiều kích thành các biến độc lập riêng rẽ mà không kiểm định cấu trúc bậc hai; thu thập dữ liệu tự báo cáo (self-report) tại một thời điểm duy nhất cùng với biến kết quả hiệu suất công việc gây thổi phồng mối quan hệ do Common Method Variance (CMV); nhầm lẫn PsyCap (mang tính trạng thái có thể đào tạo phát triển được - state-like) với các đặc điểm tính cách cố định (trait-like).",
+      "apa_reference": "Luthans, F., Avolio, B. J., Avey, J. B., & Norman, S. M. (2007). Positive psychological capital: Measurement and relationship with performance and satisfaction. Personnel Psychology, 60(3), 541-572. https://doi.org/10.1111/j.1744-6570.2007.00083.x / Luthans, F., Youssef, C. M., & Avolio, B. J. (2007). Psychological capital: Developing the human competitive edge. Oxford University Press."
     },
     {
       "id": "psychological-contract-theory-rousseau",
-      "term": "Psychological Contract Theory (Rousseau)",
-      "vietnamese": "Lý thuyết Hợp đồng Tâm lý",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Organizational Behavior"
+      "term": "Psychological Contract Theory (Denise Rousseau)",
+      "vietnamese": "Lý thuyết hợp đồng tâm lý (Denise Rousseau)",
+      "vietnamese_variants": [
+        "Hợp đồng tâm lý",
+        "Psychological contract theory",
+        "Lý thuyết hợp đồng tâm lý tổ chức",
+        "Vi phạm hợp đồng tâm lý"
       ],
-      "core_definition": "Niềm tin của cá nhân về các nghĩa vụ và quyền lợi tương hỗ ngầm định giữa người lao động và tổ chức.",
-      "seminal_citation": "Rousseau (1989/1995)",
-      "tier": "textbook",
+      "domain_tags": [
+        "research-design",
+        "organizational-behavior",
+        "human-resources",
+        "social-exchange-theory"
+      ],
+      "core_definition": "Khung lý thuyết tổ chức do Denise M. Rousseau hệ thống hóa, định nghĩa hợp đồng tâm lý là hệ thống niềm tin cá nhân của người lao động về các nghĩa vụ và lợi ích trao đổi tương hỗ giữa họ và tổ chức sử dụng lao động, vốn không được ghi chép chính thức trong hợp đồng lao động pháp lý nhưng được ngầm hiểu dựa trên các cam kết và kỳ vọng thực tế (Rousseau, 1989, 1995).",
+      "seminal_citation": "Rousseau, D. M. (1989). Psychological and implied contracts in organizations. Employee Responsibilities and Rights Journal, 2(2), 121-139.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Psychological Contract Theory (Rousseau) according to Rousseau (1989/1995).",
       "domain_tags_en": [
         "Organizational Behavior"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Phân loại thành hai hình thái hợp đồng chủ yếu: Hợp đồng giao dịch (Transactional contracts - ngắn hạn, cụ thể về kinh tế) và Hợp đồng quan hệ (Relational contracts - dài hạn, gắn bó cảm xúc, phát triển sự nghiệp). Mô hình phân tích trọng tâm là hiện tượng 'Vi phạm hợp đồng tâm lý' (Psychological contract breach/violation) dẫn đến suy giảm gắn kết, gia tăng ý định thôi việc và hành vi tiêu cực.",
+      "benchmarks": "Đo lường qua thang đo đa hướng (như thang đo của Robinson & Morrison, 2000 hoặc Raja et al., 2004); Phân biệt rõ rệt giữa hai khái niệm: Cảm nhận vi phạm nhận thức (Breach - nhận thức rằng công ty không thực hiện lời hứa) và Cảm xúc tổn thương (Violation - trạng thái cảm xúc phẫn nộ, thất vọng); Độ tin cậy thang đo alpha >= 0.80.",
+      "pitfalls": "Đánh đồng hợp đồng tâm lý cá nhân với văn hóa tổ chức hoặc kỳ vọng chung chung; đo lường vi phạm hợp đồng chỉ từ một phía nhân viên mà bỏ qua góc nhìn của nhà quản lý (thiếu thiết kế dyadic nghiên cứu cặp); không kiểm soát các yếu tố tính cách nền tảng (như xu hướng hoài nghi tính cách neuroticism).",
+      "apa_reference": "Robinson, S. L., & Morrison, E. W. (2000). The development of psychological contract breach and violation: A longitudinal study. Journal of Organizational Behavior, 21(5), 525-546. https://doi.org/10.1002/1099-1379(200008)21:5<525::AID-JOB40>3.0.CO;2-T / Rousseau, D. M. (1995). Psychological contracts in organizations: Understanding written and unwritten agreements. SAGE Publications."
     },
     {
       "id": "psychological-safety-in-research-teams",
-      "term": "Psychological Safety in Research Teams",
-      "vietnamese": "An toàn Tâm lý trong Nhóm Nghiên cứu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Organizational Psychology"
+      "term": "Psychological Safety in Research Teams (Amy Edmondson)",
+      "vietnamese": "An toàn tâm lý trong các đội ngũ nghiên cứu",
+      "vietnamese_variants": [
+        "An toàn tâm lý nhóm",
+        "Psychological safety",
+        "Môi trường an toàn tâm lý",
+        "Lý thuyết an toàn tâm lý Edmondson"
       ],
-      "core_definition": "Niềm tin của thành viên rằng nhóm an toàn để chấp nhận rủi ro và thừa nhận sai sót.",
-      "seminal_citation": "Edmondson (1999)",
-      "tier": "textbook",
+      "domain_tags": [
+        "measurement",
+        "team-dynamics",
+        "organizational-behavior",
+        "research-culture"
+      ],
+      "core_definition": "Khái niệm tâm lý tổ chức cấp độ nhóm (team-level construct) do Amy C. Edmondson khởi xướng, phản ánh niềm tin chung của các thành viên trong nhóm rằng tập thể đó an toàn để chấp nhận rủi ro giữa các cá nhân (interpersonal risk-taking) - nghĩa là không ai bị trừng phạt, làm bẽ mặt hay chế giễu khi phát biểu ý kiến trái chiều, thừa nhận sai sót, hoặc đặt câu hỏi phản biện khoa học (Edmondson, 1999, 2019).",
+      "seminal_citation": "Edmondson, A. (1999). Psychological safety and learning behavior in work teams. Administrative Science Quarterly, 44(2), 350-383.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Psychological Safety in Research Teams according to Edmondson (1999).",
       "domain_tags_en": [
         "Organizational Psychology"
-      ]
+      ],
+      "category": "measurement",
+      "is_flagship": true,
+      "operational_mechanism": "Được đo lường bằng thang đo 7 mục chuẩn hóa của Edmondson (1999). Khi áp dụng trong nghiên cứu khoa học và phòng lab học thuật, an toàn tâm lý là biến số trung gian quan trọng thúc đẩy học hỏi nhóm (team learning behavior), đổi mới sáng tạo, phát hiện sớm các sai sót nghiên cứu và ngăn chặn gian lận dữ liệu.",
+      "benchmarks": "Đòi hỏi kiểm định tính hợp lệ của việc gộp dữ liệu cá nhân lên cấp độ nhóm (data aggregation metrics) thông qua: Hệ số tương quan trong nhóm r_wg(j) >= 0.70, Hệ số tương quan nội lớp ICC(1) >= 0.12 và ICC(2) >= 0.60; Độ tin cậy thang đo Cronbach's alpha >= 0.80.",
+      "pitfalls": "Nhầm lẫn an toàn tâm lý với sự dĩ hòa vi quý, xuê xoa hoặc hạ thấp tiêu chuẩn học thuật (Edmondson nhấn mạnh an toàn tâm lý kết hợp với tiêu chuẩn cao mới tạo ra môi trường học tập hiệu suất cao); phân tích dữ liệu an toàn tâm lý ở cấp độ cá nhân đơn thuần mà không chạy mô hình đa cấp (multilevel modeling HLM).",
+      "apa_reference": "Edmondson, A. (1999). Psychological safety and learning behavior in work teams. Administrative Science Quarterly, 44(2), 350-383. https://doi.org/10.2307/2666999 / Edmondson, A. C. (2019). The fearless organization: Creating psychological safety in the workplace for learning, innovation, and growth. John Wiley & Sons."
     },
     {
       "id": "pubmed-central-pmc",
       "term": "PubMed Central (PMC)",
-      "vietnamese": "Kho Lưu trữ PubMed Central",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scholarly Repositories"
+      "vietnamese": "Kho lưu trữ mở toàn văn PubMed Central (PMC)",
+      "vietnamese_variants": [
+        "Kho PMC",
+        "PubMed Central repository",
+        "Cơ sở dữ liệu PMC",
+        "Kho toàn văn miễn phí PMC"
       ],
-      "core_definition": "Kho lưu trữ văn bản toàn văn truy cập mở các bài báo y sinh học thuộc Viện Y tế Quốc gia Hoa Kỳ NIH.",
-      "seminal_citation": "NLM (2000)",
-      "tier": "textbook",
+      "domain_tags": [
+        "general",
+        "open-access",
+        "biomedical-literature",
+        "systematic-reviews"
+      ],
+      "core_definition": "Kho lưu trữ số truy cập mở toàn văn miễn phí của Thư viện Y khoa Quốc gia Hoa Kỳ (NLM) và Viện Y tế Quốc gia Hoa Kỳ (NIH), lưu trữ vĩnh viễn các bài báo nghiên cứu y sinh và khoa học sự sống đã qua phản biện đồng cấp xuất phát từ các đề tài nhận tài trợ công của chính phủ Mỹ và các quỹ quốc tế (Lipman, 2000; NIH, 2008).",
+      "seminal_citation": "Lipman, D. J. (2000). PubMed Central: A free online archive of the life science journal literature. Science, 287(5451), 251-251.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of PubMed Central (PMC) according to NLM (2000).",
       "domain_tags_en": [
         "Scholarly Repositories"
-      ]
+      ],
+      "category": "general",
+      "is_flagship": true,
+      "operational_mechanism": "Mỗi bài báo trong PMC được gán một mã định danh duy nhất gọi là PMCID (ví dụ PMC1234567), phân biệt rõ ràng với mã PMID của cơ sở dữ liệu thư mục PubMed. Toàn bộ văn bản được lập chỉ mục ở định dạng chuẩn XML JATS (Journal Article Tag Suite), cho phép khai thác văn bản và dữ liệu tự động (text and data mining) quy mô lớn.",
+      "benchmarks": "Tuân thủ chính sách truy cập công của NIH (NIH Public Access Policy yêu cầu đưa bản thảo vào PMC trong vòng tối đa 12 tháng kể từ khi xuất bản); Là nguồn truy xuất toàn văn miễn phí hợp pháp phục vụ việc đọc thẩm định eligibility trong các tổng quan hệ thống y học chứng cứ.",
+      "pitfalls": "Nhầm lẫn giữa PubMed (cơ sở dữ liệu thư mục chỉ mục chứa tóm tắt và trích dẫn) với PubMed Central (kho lưu trữ toàn văn miễn phí); tìm kiếm thiếu sót do chỉ dựa vào từ khóa tự do mà không kết hợp cây từ vựng chuẩn hóa MeSH.",
+      "apa_reference": "Lipman, D. J. (2000). PubMed Central: A free online archive of the life science journal literature. Science, 287(5451), 251-251. https://doi.org/10.1126/science.287.5451.251 / National Institutes of Health. (2008). Revised policy on enhancing public access to archived publications resulting from NIH-funded research (Notice NOT-OD-08-033). US Department of Health and Human Services."
     },
     {
       "id": "punctuated-equilibrium-theory",
-      "term": "Punctuated Equilibrium Theory",
-      "vietnamese": "Lý thuyết Cân bằng Đứt đoạn",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Policy Studies",
-        "Evolutionary Biology"
+      "term": "Punctuated Equilibrium Theory in Policy and Organizations",
+      "vietnamese": "Lý thuyết cân bằng ngắt quãng trong chính sách và tổ chức",
+      "vietnamese_variants": [
+        "Cân bằng ngắt quãng",
+        "Punctuated equilibrium theory",
+        "Lý thuyết biến đổi ngắt quãng",
+        "Mô hình cân bằng đứt đoạn"
       ],
-      "core_definition": "Các giai đoạn ổn định lâu dài bị gián đoạn đột ngột bởi những biến đổi bùng phát quy mô lớn.",
-      "seminal_citation": "Eldredge & Gould (1972), Baumgartner & Jones (1993)",
-      "tier": "textbook",
+      "domain_tags": [
+        "research-design",
+        "public-policy",
+        "organizational-change",
+        "institutional-theory"
+      ],
+      "core_definition": "Khung lý thuyết giải thích động lực biến đổi dài hạn do Frank R. Baumgartner và Bryan D. Jones (trong chính sách công) cùng Michael L. Tushman và Elaine Romanelli (trong nghiên cứu tổ chức) phát triển (mượn ý tưởng sinh học tiến hóa của Gould & Eldredge), khẳng định rằng các hệ thống xã hội và tổ chức vận hành qua các thời kỳ ổn định tiệm tiến kéo dài (periods of incremental stability), bị ngắt quãng bởi những biến đổi bùng nổ quy mô lớn, đột ngột và sâu sắc (punctuations) (Baumgartner & Jones, 1993; Romanelli & Tushman, 1994).",
+      "seminal_citation": "Baumgartner, F. R., & Jones, B. D. (1993). Agendas and instability in American politics. University of Chicago Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Punctuated Equilibrium Theory according to Eldredge & Gould (1972), Baumgartner & Jones (1993).",
       "domain_tags_en": [
         "Policy Studies",
         "Evolutionary Biology"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Cơ chế vận hành dựa trên sự tương tác giữa hai yếu tố: hình ảnh chính sách (policy image - cách vấn đề được đóng khung trên truyền thông) và đấu trường thể chế (policy venues). Khi sự chú ý của công chúng bùng nổ, sự phản hồi tích cực (positive feedback) sẽ phá vỡ liên minh độc quyền chính sách hiện tại, tạo ra các bước nhảy chính sách đột biến được phân phối theo quy luật hàm mũ (leptokurtic / fat-tailed distributions).",
+      "benchmarks": "Đòi hỏi thiết kế nghiên cứu chuỗi thời gian dọc quy mô lớn (longitudinal macro time-series) kéo dài nhiều thập kỷ; Sử dụng kiểm định phân phối Leptokurtic (chỉ số Kurtosis > 3 chứng minh sự hiện diện của các bước nhảy biến đổi ngắt quãng so với phân phối chuẩn); Báo cáo đầy đủ ngân sách và dữ liệu luật pháp từ Dự án Chương trình Chính sách (Policy Agendas Project).",
+      "pitfalls": "Áp dụng lý thuyết cân bằng ngắt quãng trên chuỗi dữ liệu thời gian quá ngắn (dưới 5-10 năm) khiến không thể phân biệt giữa biến động ngẫu nhiên hàng năm với sự ngắt quãng hệ thống thực sự; ngộ nhận rằng mọi thay đổi chính sách đều là tiệm tiến; bỏ qua việc đo lường vai trò đóng khung chương trình nghị sự của truyền thông.",
+      "apa_reference": "Baumgartner, F. R., & Jones, B. D. (1993). Agendas and instability in American politics. University of Chicago Press. / Romanelli, E., & Tushman, M. L. (1994). Organizational transformation as punctuated equilibrium: An empirical test. Academy of Management Journal, 37(5), 1141-1166. https://doi.org/10.5465/256669"
     },
     {
       "id": "purpose-of-study",
-      "term": "Purpose of Study",
-      "vietnamese": "Báo cáo (Reporting), Mô tả (Descriptive), Giải thích nhân quả (Causal-explanatory), Dự báo nhân quả (Causal-predictive).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Business Research",
-        "Experiments"
+      "term": "Purpose of the Study (Research Purpose Framework)",
+      "vietnamese": "Mục đích nghiên cứu (Khung xác lập mục đích nghiên cứu)",
+      "vietnamese_variants": [
+        "Mục đích của đề tài",
+        "Research purpose",
+        "Mục tiêu nghiên cứu tổng thể",
+        "Ý định nghiên cứu cốt lõi"
       ],
-      "core_definition": "Báo cáo (Reporting), Mô tả (Descriptive), Giải thích nhân quả (Causal-explanatory), Dự báo nhân quả (Causal-predictive).",
-      "seminal_citation": "Schindler (2022); Schindler (2022)",
-      "tier": "index",
+      "domain_tags": [
+        "research-design",
+        "methodological-foundations",
+        "proposal-writing",
+        "dissertation-standards"
+      ],
+      "core_definition": "Thành tố phương pháp luận cốt lõi và quan trọng nhất trong một công trình khoa học hoặc đề cương luận án, trình bày một cách cô đọng và rõ ràng lý do tổng thể tại sao nghiên cứu được thực hiện, mục tiêu giải quyết vấn đề khoa học, và đóng góp lý thuyết hoặc thực tiễn dự kiến đạt được (Creswell & Creswell, 2018; Locke, Spirduso, & Silverman, 2014).",
+      "seminal_citation": "Locke, L. F., Spirduso, W. W., & Silverman, S. J. (2014). Proposals that work: A guide for planning dissertations and grant proposals (6th ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Purpose of Study according to Schindler (2022); Schindler (2022).",
       "domain_tags_en": [
         "Business Research",
         "Experiments"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Đóng vai trò là 'trục xương sống' định hướng toàn bộ công trình: kết nối khoảng trống nghiên cứu (research gap) với câu hỏi nghiên cứu, quyết định việc lựa chọn hệ hình triết học, chi phối thiết kế nghiên cứu (định lượng, định tính hay hỗn hợp), và thiết lập tiêu chí đánh giá thành công của luận án.",
+      "benchmarks": "Phải xuất hiện ngay ở phần cuối của chương mở đầu (Introduction); Định hình rõ ranh giới nghiên cứu (delimitations) và phạm vi tác động; Tạo sự nhất quán 1:1 giữa mục đích nghiên cứu, các câu hỏi nghiên cứu cụ thể, và kết luận đóng góp mới.",
+      "pitfalls": "Trình bày mục đích nghiên cứu mơ hồ, chung chung hoặc mang tính hành động quản lý tác nghiệp ('mục đích là để nâng cao doanh số') thay vì mục đích khám phá quy luật khoa học; nhầm lẫn giữa mục đích nghiên cứu (purpose) với các bước kỹ thuật thực hiện (objectives/tasks); có sự bất nhất giữa mục đích tuyên bố và phương pháp thực tế triển khai.",
+      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications. / Locke, L. F., Spirduso, W. W., & Silverman, S. J. (2014). Proposals that work: A guide for planning dissertations and grant proposals (6th ed.). SAGE Publications."
     },
     {
       "id": "purpose-statement",
-      "term": "Purpose statement",
-      "vietnamese": "Tuyên bố mục đích nghiên cứu — Câu văn quan trọng nhất toàn bộ đề tài, tóm tắt ý định tổng thể và định hướng bao trùm của nghiên cứu.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Purpose Statement Formulation (Creswell's Script)",
+      "vietnamese": "Tuyên ngôn mục đích nghiên cứu (Cấu trúc mẫu của Creswell)",
+      "vietnamese_variants": [
+        "Câu tuyên ngôn mục đích",
+        "Purpose statement",
+        "Đoạn văn tuyên bố mục đích nghiên cứu",
+        "Mẫu câu mục đích nghiên cứu Creswell"
       ],
-      "core_definition": "Tuyên bố mục đích nghiên cứu — Câu văn quan trọng nhất toàn bộ đề tài, tóm tắt ý định tổng thể và định hướng bao trùm của nghiên cứu.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "research-design",
+        "proposal-writing",
+        "academic-writing",
+        "methodological-script"
+      ],
+      "core_definition": "Một đoạn văn chuẩn mực duy nhất có cấu trúc ngữ pháp và thuật ngữ phương pháp luận được John W. Creswell chuẩn hóa, truyền đạt minh xác và trọn vẹn toàn bộ ý định trọng tâm của công trình nghiên cứu, bao gồm thiết kế nghiên cứu, các biến số chính (đối với định lượng) hoặc hiện tượng trọng tâm (đối với định tính), đối tượng tham gia và địa bàn khảo sát cụ thể (Creswell & Creswell, 2018).",
+      "seminal_citation": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Purpose statement according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "research-design",
+      "is_flagship": true,
+      "operational_mechanism": "Tuân thủ nghiêm ngặt các công thức mẫu (scripts): Đối với định lượng: 'Mục đích của nghiên cứu thực nghiệm/khảo sát này là kiểm định lý thuyết [Lý thuyết X] giải thích mối liên hệ giữa [Biến độc lập] và [Biến phụ thuộc], có kiểm soát [Biến kiểm soát], trên đối tượng [Mẫu] tại [Địa bàn]'; Đối với định tính: 'Mục đích của nghiên cứu hiện tượng học/dân tộc học này là khám phá/thấu hiểu [Hiện tượng trọng tâm] của [Người tham gia] tại [Bối cảnh]'.",
+      "benchmarks": "Đoạn văn bắt đầu trực tiếp bằng cụm từ tín hiệu chuẩn: 'Mục đích của nghiên cứu này là...' (The purpose of this study is...); Nhận diện chính xác tên thiết kế nghiên cứu phương pháp luận; Sử dụng các động từ hành động phi định kiến (đối với định tính dùng: khám phá, mô tả; đối với định lượng dùng: kiểm định, so sánh).",
+      "pitfalls": "Sử dụng các động từ mang định kiến hoặc giả định trước kết quả trong nghiên cứu định tính (như: 'chứng minh rằng...', 'chỉ ra sự đúng đắn của...'); thiếu thông tin về bối cảnh địa bàn hoặc nhóm đối tượng; viết câu mục đích quá dài dòng phức tạp khiến người đọc không nắm được biến độc lập và biến phụ thuộc chính.",
+      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications. / Wilkinson, A. M. (1991). The scientist's handbook for writing papers and dissertations. Prentice Hall."
     },
     {
       "id": "purposefully-sample",
-      "term": "Purposefully sample",
-      "vietnamese": "Chọn mẫu có mục đích — Chủ động lựa chọn những người tham gia có kinh nghiệm phong phú nhất về hiện tượng nghiên cứu.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Purposeful Sampling Strategies (Patton's Typology)",
+      "vietnamese": "Các chiến lược chọn mẫu có chủ đích (Phân loại của Patton)",
+      "vietnamese_variants": [
+        "Chọn mẫu có chủ đích",
+        "Purposeful sampling",
+        "Lấy mẫu có mục đích",
+        "Chiến lược chọn mẫu định tính"
       ],
-      "core_definition": "Chọn mẫu có mục đích — Chủ động lựa chọn những người tham gia có kinh nghiệm phong phú nhất về hiện tượng nghiên cứu.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "data-collection",
+        "qualitative-methods",
+        "sampling-strategy",
+        "fieldwork"
+      ],
+      "core_definition": "Chiến lược lựa chọn đối tượng khảo sát phi xác suất chủ đạo trong nghiên cứu định tính do Michael Quinn Patton hệ thống hóa, dựa trên việc lựa chọn có chủ ý các trường hợp giàu thông tin (information-rich cases) có thể cung cấp sự hiểu biết sâu sắc nhất về hiện tượng nghiên cứu, thay vì nhằm mục đích khái quát hóa thống kê ra toàn thể dân số (Patton, 2015; Palinkas et al., 2015).",
+      "seminal_citation": "Patton, M. Q. (2015). Qualitative research & evaluation methods (4th ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Purposefully sample according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "data-collection",
+      "is_flagship": true,
+      "operational_mechanism": "Bao gồm hơn 16 chiến lược lấy mẫu chuyên biệt: (1) Lấy mẫu trường hợp cực đoan/dị thường (Extreme/deviant case); (2) Lấy mẫu biến thiên tối đa (Maximum variation sampling); (3) Lấy mẫu thuần nhất (Homogeneous sampling); (4) Lấy mẫu trường hợp điển hình (Typical case); (5) Lấy mẫu trường hợp then chốt (Critical case); (6) Lấy mẫu dựa trên tiêu chí (Criterion sampling); (7) Lấy mẫu phát sinh theo lý thuyết (Theoretical sampling).",
+      "benchmarks": "Giải trình rõ ràng tiêu chí lựa chọn chiến lược mẫu phù hợp với câu hỏi nghiên cứu định tính; Đạt mức bão hòa dữ liệu / bão hòa lý thuyết (data saturation / theoretical saturation); Báo cáo minh bạch hồ sơ đặc trưng của các đối tượng tham gia.",
+      "pitfalls": "Ngụy trang việc lấy mẫu thuận tiện lười biếng (convenience sampling) thành chọn mẫu có chủ đích; dừng thu thập mẫu quá sớm trước khi đạt bão hòa ý nghĩa; cố gắng áp dụng công thức tính cỡ mẫu định lượng vào thiết kế chọn mẫu có chủ đích định tính.",
+      "apa_reference": "Palinkas, L. A., Horwitz, S. M., Green, C. A., Wisdom, J. P., Duan, N., & Hoagwood, K. (2015). Purposeful sampling for qualitative data collection and analysis in mixed method implementation research. Administration and Policy in Mental Health and Mental Health Services Research, 42(5), 533-544. https://doi.org/10.1007/s10488-013-0528-y / Patton, M. Q. (2015). Qualitative research & evaluation methods (4th ed.). SAGE Publications."
     },
     {
       "id": "purposive-sampling-judgmental",
@@ -45799,15 +46448,22 @@
     {
       "id": "qmle",
       "term": "Quasi-Maximum Likelihood Estimation (QMLE)",
-      "vietnamese": "Ước lượng Tựa Hợp lý Cực đại",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Econometrics",
-        "Non-linear Models"
+      "vietnamese": "Ước lượng Hợp lý Cực đại Tựa (QMLE)",
+      "vietnamese_variants": [
+        "Ước lượng giả hợp lý cực đại",
+        "QMLE",
+        "Pseudo-maximum likelihood",
+        "Ước lượng QML"
       ],
-      "core_definition": "Ước lượng tham số khi hàm hợp lý được xác định dưới giả định phân phối chuẩn nhưng phân phối thực tế của dữ liệu có thể không chuẩn. Ngưỡng thực nghiệm tham chiếu: Cho ước lượng vững về các hệ số ngay cả khi vi phạm phân phối chuẩn, miễn là hàm kỳ vọng có điều kiện được định dạng đúng; bắt buộc dùng sai số chuẩn vững (Huber-White Sandwich standard errors).",
-      "seminal_citation": "Cho ước lượng vững về các hệ số ngay cả khi vi phạm phân phối chuẩn, miễn là hàm kỳ vọng có điều kiện được định dạng đúng; bắt buộc dùng sai số chuẩn vững (Huber-White Sandwich standard errors).",
-      "tier": "acronym",
+      "domain_tags": [
+        "data-analysis",
+        "econometrics",
+        "statistical-inference",
+        "robust-estimation"
+      ],
+      "core_definition": "Phương pháp ước lượng tham số kinh tế lượng bán tham số vững do Halbert White và Christian Gourieroux phát triển, tối đa hóa một hàm hợp lý được thiết lập dựa trên một giả định phân phối cụ thể (như phân phối chuẩn), nhưng vẫn đảm bảo thu được các ước lượng tham số vững và tiệm cận chuẩn ngay cả khi phân phối thực sự của dữ liệu vi phạm giả định ban đầu, miễn là phương trình giá trị kỳ vọng có điều kiện (conditional mean) được xác định đúng đắn (White, 1982; Gourieroux, Monfort, & Trognon, 1984).",
+      "seminal_citation": "White, H. (1982). Maximum likelihood estimation of misspecified models. Econometrica, 50(1), 1-25.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of QMLE according to Cho ước lượng vững về các hệ số ngay cả khi vi phạm phân phối chuẩn, miễn là hàm kỳ vọng có điều kiện được định dạng đúng; bắt buộc dùng sai số chuẩn vững (Huber-White Sandwich standard errors)..",
@@ -45815,58 +46471,97 @@
         "Econometrics",
         "Non-linear Models"
       ],
-      "benchmarks": "Cho ước lượng vững về các hệ số ngay cả khi vi phạm phân phối chuẩn, miễn là hàm kỳ vọng có điều kiện được định dạng đúng; bắt buộc dùng sai số chuẩn vững (Huber-White Sandwich standard errors)."
+      "benchmarks": "Đảm bảo hàm kỳ vọng có điều kiện E[y|x] không bị xác định sai dạng hàm; Bắt buộc phải báo cáo sai số chuẩn vững QMLE (robust/sandwich standard errors) cho các kiểm định t và kiểm định Wald; Thường được áp dụng phổ biến trong mô hình Poisson QMLE cho dữ liệu đếm hoặc GARCH cho chuỗi thời gian tài chính.",
+      "category": "data-analysis",
+      "is_flagship": true,
+      "operational_mechanism": "Khi giả định phân phối sai, ma trận thông tin Fisher không còn bằng nghịch đảo của ma trận đạo hàm bậc hai (Hessian). Do đó, QMLE bắt buộc phải sử dụng ma trận hiệp phương sai dạng 'bánh kẹp' (Sandwich Covariance Matrix Estimator / Huber-White robust standard errors): V = A^(-1) B A^(-1), trong đó A là ma trận Hessian và B là ma trận tích các gradient của hàm log-likelihood.",
+      "pitfalls": "Sử dụng sai số chuẩn hợp lý cực đại thông thường (non-robust standard errors) khi chạy QMLE, dẫn đến sai số chuẩn bị chệch nghiêm trọng và thổi phồng ý nghĩa thống kê; xác định sai hàm kỳ vọng có điều kiện khiến ước lượng QMLE mất hoàn toàn tính vững (inconsistent).",
+      "apa_reference": "Gourieroux, C., Monfort, A., & Trognon, A. (1984). Pseudo maximum likelihood methods: Theory. Econometrica, 52(3), 681-700. https://doi.org/10.2307/1913471 / White, H. (1982). Maximum likelihood estimation of misspecified models. Econometrica, 50(1), 1-25. https://doi.org/10.2307/1912526"
     },
     {
       "id": "qualitative-codebook",
-      "term": "Qualitative codebook",
-      "vietnamese": "Sổ mã định tính — Bảng danh mục định nghĩa rõ ràng từng mã, ví dụ minh họa và tiêu chí gán mã để bảo đảm nhất quán.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Qualitative Codebook Development",
+      "vietnamese": "Quy trình xây dựng sổ tay mã hóa định tính",
+      "vietnamese_variants": [
+        "Sổ tay mã hóa định tính",
+        "Qualitative codebook",
+        "Bảng hướng dẫn mã hóa",
+        "Coding manual"
       ],
-      "core_definition": "Sổ mã định tính — Bảng danh mục định nghĩa rõ ràng từng mã, ví dụ minh họa và tiêu chí gán mã để bảo đảm nhất quán.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "qualitative-analysis",
+        "coding-process",
+        "data-analysis",
+        "inter-coder-reliability"
+      ],
+      "core_definition": "Tài liệu kỹ thuật phương pháp luận chuẩn mực lưu trữ danh mục toàn bộ các mã phân tích (codes) được sử dụng trong một dự án nghiên cứu định tính, cung cấp định nghĩa rõ ràng, quy tắc áp dụng và ví dụ minh họa nhằm đảm bảo tính nhất quán nội tại của nhà nghiên cứu và thiết lập độ tin cậy giữa nhiều người mã hóa (MacQueen et al., 1998; Saldaña, 2021).",
+      "seminal_citation": "MacQueen, K. M., McLellan, E., Kay, K., & Milstein, B. (1998). Codebook development for team-based qualitative research. CAM Journal, 10(2), 31-36.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Qualitative codebook according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "qualitative-analysis",
+      "is_flagship": true,
+      "operational_mechanism": "Cấu trúc chuẩn của một mã trong codebook gồm 5 thành phần bắt buộc: (1) Nhãn mã (Code label / mnemonic); (2) Định nghĩa ngắn gọn (Brief definition); (3) Định nghĩa chi tiết đầy đủ (Full definition bao gồm cơ sở lý thuyết); (4) Tiêu chí khi nào NÊN áp dụng mã (Inclusion criteria); (5) Tiêu chí khi nào KHÔNG NÊN áp dụng mã (Exclusion criteria / decision rules); (6) Đoạn trích ví dụ điển hình từ dữ liệu thực tế (Typical anchor quotes).",
+      "benchmarks": "Đạt chuẩn kiểm định độ tin cậy liên mã hóa viên (Inter-coder agreement: Cohen's Kappa >= 0.80 hoặc Percentage Agreement >= 85-90%); Sổ tay mã hóa phải có cấu trúc cây thứ bậc (hierarchical tree / parent-child codes); Lưu trữ và cập nhật lịch sử phiên bản mã hóa trong các phần mềm QDA (NVivo, MAXQDA, ATLAS.ti).",
+      "pitfalls": "Xây dựng codebook với các định nghĩa mơ hồ trùng lặp khiến các người mã hóa gán mã ngẫu nhiên; không cập nhật codebook khi có các mã mới nảy sinh từ dữ liệu quy nạp; bỏ qua việc kiểm tra độ trôi mã hóa (coder drift - sự thay đổi cách áp dụng mã của chính một người mã hóa theo thời gian).",
+      "apa_reference": "MacQueen, K. M., McLellan, E., Kay, K., & Milstein, B. (1998). Codebook development for team-based qualitative research. CAM Journal, 10(2), 31-36. https://doi.org/10.1177/1525822X980100020301 / Saldaña, J. (2021). The coding manual for qualitative researchers (4th ed.). SAGE Publications."
     },
     {
       "id": "qualitative-comparative-analysis-qca",
-      "term": "Qualitative Comparative Analysis (QCA)",
-      "vietnamese": "Phân tích Định tính So sánh QCA",
+      "term": "Qualitative Comparative Analysis (QCA Methodological Framework)",
+      "vietnamese": "Khung phương pháp luận Phân tích So sánh Định tính (QCA)",
       "vietnamese_variants": [
-        "QCA"
+        "Phương pháp QCA",
+        "Qualitative Comparative Analysis",
+        "Phân tích so sánh tập mờ",
+        "Phương pháp lý thuyết tập hợp"
       ],
       "domain_tags": [
-        "Configurational Methods"
+        "data-analysis",
+        "qca",
+        "fsqca",
+        "set-theoretic-methods",
+        "configurational-analysis"
       ],
-      "core_definition": "Phương pháp so sánh dựa trên đại số Boole và tập hợp mờ để khảo sát tính nhân quả cấu hình.",
-      "seminal_citation": "Ragin (1987/2008)",
-      "tier": "textbook",
+      "core_definition": "Khung phương pháp luận nghiên cứu cấu hình dựa trên lý thuyết tập hợp (set-theoretic approach) và đại số Boolean do Charles C. Ragin sáng lập, kết nối ưu thế phân tích định tính chuyên sâu về trường hợp (case-oriented) với khả năng khái quát hóa so sánh trên mẫu quy mô vừa và lớn (variable-oriented) (Ragin, 1987, 2008).",
+      "seminal_citation": "Ragin, C. C. (1987). The comparative method: Moving beyond qualitative and quantitative strategies. University of California Press.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #2069",
       "core_definition_en": "Academic definition of Qualitative Comparative Analysis (QCA) according to Ragin (1987/2008).",
       "domain_tags_en": [
         "Configurational Methods"
-      ]
+      ],
+      "category": "data-analysis",
+      "is_flagship": true,
+      "operational_mechanism": "Bao gồm 3 biến thể chính: QCA tập rõ (Crisp-Set QCA - csQCA), QCA tập mờ (Fuzzy-Set QCA - fsQCA), và QCA đa giá trị (Multi-Value QCA - mvQCA). Dựa trên 3 tiền đề nhân quả phi tuyến tính phức tạp: Tính tương đương kết quả (Equifinality - nhiều con đường cấu hình khác nhau cùng dẫn đến một kết quả), Tính kết hợp liên đới (Conjunctural causation - một điều kiện chỉ phát huy tác dụng khi kết hợp với điều kiện khác), và Tính bất đối xứng nhân quả (Asymmetry - nguyên nhân dẫn đến sự xuất hiện của kết quả không phải là sự đảo ngược nguyên nhân dẫn đến sự vắng mặt của kết quả).",
+      "benchmarks": "Đánh giá Điều kiện Cần (Necessary Condition) với độ nhất quán Consistency >= 0.90; Xây dựng Bảng Chân Trị (Truth Table) với ngưỡng cắt số ca quan sát (frequency cutoff >= 1 hoặc 2) và ngưỡng nhất quán thô (raw consistency cutoff >= 0.80); Báo cáo đầy đủ 3 giải pháp: Complex, Parsimonious và Intermediate Solutions theo chuẩn Fiss (2011).",
+      "pitfalls": "Diễn giải kết quả QCA theo tư duy tuyến tính hồi quy (như hiểu nhầm điều kiện cấu hình thành biến độc lập có hệ số tác động biên); bỏ qua phân tích bất đối xứng cho kết quả phủ định (~Y); lạm dụng quá nhiều điều kiện đầu vào trên cỡ mẫu nhỏ gây ra bẫy hạn chế đa dạng nghiêm trọng (limited diversity).",
+      "apa_reference": "Fiss, P. C. (2011). Building better causal theories: A fuzzy set approach to typologies in organization research. Academy of Management Journal, 54(2), 393-420. https://doi.org/10.5465/amj.2011.60263120 / Ragin, C. C. (1987). The comparative method: Moving beyond qualitative and quantitative strategies. University of California Press. / Ragin, C. C. (2008). Redesigning social inquiry: Fuzzy sets and beyond. University of Chicago Press."
     },
     {
       "id": "qualitative-content-analysis-philipp-mayring",
-      "term": "Qualitative Content Analysis (Philipp Mayring)",
-      "vietnamese": "Phân tích Nội dung Định tính theo Philipp Mayring",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Inductive and Deductive Qualitative Content Analysis (Mayring's Dual Procedures)",
+      "vietnamese": "Quy trình mã hóa quy nạp và diễn dịch trong phân tích nội dung định tính Mayring",
+      "vietnamese_variants": [
+        "Quy trình phân tích Mayring",
+        "Mã hóa quy nạp và diễn dịch Mayring",
+        "Mayring's qualitative content analysis procedures",
+        "Inductive category development Mayring"
       ],
-      "core_definition": "Quy trình phân tích văn bản định tính có hệ thống và được kiểm soát theo quy tắc do Philipp Mayring (2000, 2014) phát triển. Khác với phân tích định lượng thuần túy đếm từ hoặc phân tích thông diễn học tự do, phương pháp này kết hợp ưu thế định lượng (bước mã hóa theo hệ thống danh mục định sẵn) và định tính (phân loại diễn giải sâu ngữ cảnh). Hai kỹ thuật chính: (1) Rút gọn quy nạp (Inductive Category Formation - hình thành mã trực tiếp từ văn bản); (2) Phân loại diễn dịch (Deductive Category Assignment - áp dụng khung lý thuyết sẵn có với định nghĩa danh mục, ví dụ neo điển hình và quy tắc mã hóa rõ ràng).",
-      "seminal_citation": "Mayring, P. (2000). Qualitative content analysis. Forum: Qualitative Social Research, 1(2); Mayring, P. (2014). Qualitative content analysis: Theoretical foundation, basic procedures and software solution. Klagenfurt.",
-      "tier": "textbook",
+      "domain_tags": [
+        "qualitative-analysis",
+        "content-analysis",
+        "inductive-coding",
+        "deductive-coding"
+      ],
+      "core_definition": "Hai quy trình kỹ thuật phân tích cốt lõi trong phương pháp luận Phân tích Nội dung Định tính do Philipp Mayring chuẩn hóa: (1) Hình thành danh mục quy nạp (Inductive Category Development) rút trích các khái niệm trực tiếp từ vật liệu văn bản thông qua việc rút gọn từng bước; và (2) Gán danh mục diễn dịch (Deductive Category Assignment) áp dụng hệ thống khái niệm lý thuyết tiền định thông qua các quy tắc phân loại nghiêm ngặt (Mayring, 2000, 2014; Schreier, 2012).",
+      "seminal_citation": "Mayring, P. (2014). Qualitative content analysis: Theoretical foundation, basic procedures and software solution. SSOAR.",
+      "tier": "flagship",
       "expert_status": "needs_review",
       "expert_notes": "Trùng #2071; rác Markdown/bảng; mảnh trích",
       "core_definition_en": "Academic definition of Qualitative Content Analysis (Philipp Mayring) according to Flick et al. (2004).",
@@ -45874,8 +46569,12 @@
         "Methodology",
         "Research Design"
       ],
-      "benchmarks": "Bắt buộc xây dựng Sổ tay mã hóa (Coding Agenda / Coding Manual) gồm 4 cột: Tên danh mục (Category), Định nghĩa (Definition), Mẫu ví dụ neo (Anchor example), và Quy tắc phân định (Coding rule). Kiểm tra độ tin cậy giữa các người mã hóa (Inter-coder reliability) bằng Cohen's κ ≥ 0.80.",
-      "pitfalls": "Tránh ngộ nhận phân tích nội dung định tính chỉ đơn thuần là đếm tần suất từ khóa. Mayring nhấn mạnh mục tiêu tối hậu là thấu cảm và nắm bắt cấu trúc ngữ nghĩa ngữ cảnh của thông điệp."
+      "benchmarks": "Đánh giá độ tin cậy liên mã hóa viên (Inter-coder reliability) thông qua hệ số Cohen's Kappa >= 0.80 hoặc Krippendorff's Alpha >= 0.80 trên tập mẫu kiểm tra; Tuân thủ mô hình quy trình bước 8 giai đoạn của Mayring; Phân định rõ ràng giữa đơn vị mã hóa (coding unit), đơn vị ngữ cảnh (context unit), và đơn vị ghi nhận (recording unit).",
+      "pitfalls": "Trộn lẫn lộn xộn giữa phân tích quy nạp và diễn dịch mà không có ranh giới quy trình rõ ràng; không xây dựng quy tắc phân định ranh giới (decision rules) giữa các danh mục tương tự nhau khiến người mã hóa nhầm lẫn; quy giản phương pháp Mayring thành việc đếm tần suất từ khóa thuần túy.",
+      "category": "qualitative-analysis",
+      "is_flagship": true,
+      "operational_mechanism": "Quy trình quy nạp thực hiện qua chu trình: Xác định đơn vị phân tích -> Rút gọn văn bản (paraphrasing) -> Khái quát hóa mức độ trừu tượng -> Giảm thiểu và gộp danh mục -> Kiểm tra phản tư lại văn bản gốc sau khi mã hóa 10-50% dữ liệu. Quy trình diễn dịch bắt buộc phải thiết lập Bảng hướng dẫn mã hóa (Coding Guide) 4 cột: Tên danh mục (Category), Định nghĩa tường minh (Definition), Mẫu ví dụ neo điển hình (Anchor examples), và Quy tắc mã hóa ranh giới (Decision/coding rules).",
+      "apa_reference": "Mayring, P. (2000). Qualitative content analysis. Forum Qualitative Sozialforschung / Forum: Qualitative Social Research, 1(2), Art. 20. https://doi.org/10.17169/fqs-1.2.1089 / Mayring, P. (2014). Qualitative content analysis: Theoretical foundation, basic procedures and software solution. SSOAR. / Schreier, M. (2012). Qualitative content analysis in practice. SAGE Publications."
     },
     {
       "id": "qualitative-documents",
