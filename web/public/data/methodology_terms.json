@@ -59537,20 +59537,31 @@
     {
       "id": "violin-plot",
       "term": "Violin Plot",
-      "vietnamese": "Biểu đồ Hình đàn Violin",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Data Visualization"
+      "vietnamese": "Biểu đồ Violin (Đồ thị Hình đàn vĩ cầm)",
+      "vietnamese_variants": [
+        "Đồ thị violin",
+        "Biểu đồ phân phối mật độ kết hợp hộp"
       ],
-      "core_definition": "Kết hợp biểu đồ hộp với đường mật độ nhân KDE hiển thị chi tiết hình dáng phân phối.",
+      "domain_tags": [
+        "Data Visualization",
+        "Exploratory Data Analysis",
+        "Descriptive Statistics",
+        "Quantitative Methodology"
+      ],
+      "core_definition": "A hybrid statistical data visualization technique that integrates a standard box plot with a rotated, mirrored kernel density estimation (KDE) plot, depicting both summary statistics and the full multivariant distributional shape of continuous data across groups.",
       "seminal_citation": "Hintze & Nelson (1998)",
-      "tier": "textbook",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Violin Plot according to Hintze & Nelson (1998).",
       "domain_tags_en": [
         "Data Visualization"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In contrast to conventional box plots (which show only five-number summaries: minimum, lower quartile, median, upper quartile, maximum) and can conceal multimodal or bimodal distributions, violin plots estimate the continuous probability density function f(x) using a kernel smoother (typically Gaussian with Silverman's rule-of-thumb bandwidth). The resulting density profile is mirrored around a central vertical axis, with an embedded miniature box plot displaying the median marker and interquartile range (IQR).",
+      "benchmarks": "Kernel bandwidth must be reported to avoid oversmoothing (masking multimodality) or undersmoothing (creating spurious peaks); sample size per group (n >= 30) should be sufficient for stable non-parametric density estimation.",
+      "pitfalls": "Applying violin plots to tiny sample sizes (n < 20) where kernel density smoothing creates illusory peaks not supported by empirical observations; truncating density tails mechanically at zero without boundary correction when plotting strictly non-negative variables.",
+      "apa_reference": "Hintze, J. L., & Nelson, R. D. (1998). Violin plots: A compound display of numbers and distributions. The American Statistician, 52(2), 181–184. https://doi.org/10.1080/00031305.1998.10480559"
     },
     {
       "id": "visual-analog-scale",
@@ -59594,57 +59605,90 @@
     },
     {
       "id": "visual-ethnography-sarah-pink",
-      "term": "Visual Ethnography (Sarah Pink)",
-      "vietnamese": "Dân tộc học Hình ảnh",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Inquiry"
+      "term": "Visual Ethnography",
+      "vietnamese": "Dân tộc học Thị giác (Sarah Pink)",
+      "vietnamese_variants": [
+        "Phương pháp dân tộc học hình ảnh",
+        "Nghiên cứu thị giác trong nhân học"
       ],
-      "core_definition": "Ứng dụng máy ảnh, video và hình ảnh số để nắm bắt các trải nghiệm văn hóa đa giác quan.",
-      "seminal_citation": "Pink (2007/2013)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Qualitative Inquiry",
+        "Visual Methods",
+        "Ethnography",
+        "Anthropology"
+      ],
+      "core_definition": "A sensory, reflexive qualitative research methodology formulated by Sarah Pink that utilizes visual media (photography, video, digital imagery) not merely as passive illustrative records of social reality, but as active, collaborative, and embodied mediums for exploring sensory experiences, spatial practices, and cultural meanings.",
+      "seminal_citation": "Pink (2001, 2013); Banks (2001)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Visual Ethnography (Sarah Pink) according to Pink (2007/2013).",
       "domain_tags_en": [
         "Qualitative Inquiry"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Researchers engage in visual fieldwork using three collaborative modalities: (1) Researcher-produced imagery (video recording everyday practices alongside participants); (2) Participant-produced imagery (photo-voice, visual diaries); and (3) Photo/video-elicitation interviews (using images as collaborative prompts during interviews to evoke tacit knowledge, emotions, and bodily memories). Analysis treats images as intertextual representations embedded in social relationships, requiring reflexive accounting of how the researcher's presence and camera shaped the encounter.",
+      "benchmarks": "Methodological audit trail detailing equipment, framing decisions, and relational context; participant informed consent protocols addressing image dissemination, copyright, and digital privacy (GDPR / visual ethics).",
+      "pitfalls": "Treating photographs and video recordings as objective, transparent mirrors of empirical reality (naive visual realism); ignoring the power dynamics and gaze of the researcher during image capture and editorial selection.",
+      "apa_reference": "Pink, S. (2013). Doing visual ethnography (3rd ed.). SAGE Publications."
     },
     {
       "id": "vosviewer-cluster-visualization-mapping",
       "term": "VOSviewer Cluster Visualization Mapping",
-      "vietnamese": "Bản đồ Trực quan Cụm Khoa học VOSviewer",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scientometric Mapping"
+      "vietnamese": "Bản đồ Trực quan hóa Phân cụm VOSviewer",
+      "vietnamese_variants": [
+        "Bản đồ mạng lưới cụm VOSviewer",
+        "Bản đồ trắc lượng khoa học kỹ thuật VOS"
       ],
-      "core_definition": "Hiển thị các cụm màu tương đồng dựa trên khoảng cách mạng lưới chuẩn hóa.",
-      "seminal_citation": "van Eck & Waltman (2010)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Bibliometrics",
+        "Scientometrics",
+        "Knowledge Mapping",
+        "Science Mapping"
+      ],
+      "core_definition": "A scientometric network layout and clustering algorithm implemented in VOSviewer (Visualization of Similarities) developed by Nees Jan van Eck and Ludo Waltman, which positions bibliometric nodes in low-dimensional Euclidean space and partitions them into color-coded thematic clusters based on association strength.",
+      "seminal_citation": "van Eck & Waltman (2009, 2010)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of VOSviewer Cluster Visualization Mapping according to van Eck & Waltman (2010).",
       "domain_tags_en": [
         "Scientometric Mapping"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Unlike multidimensional scaling (MDS), VOS minimizes a weighted sum of squared Euclidean distances between pairs of nodes, where weights are proportional to their normalized association strength s_{ij} = c_{ij} / (w_i * w_j). Clustered partitioning is executed simultaneously using a modularity-based optimization algorithm (smart local moving algorithm) governed by a resolution parameter gamma. The resulting maps feature nodes whose sizes reflect citation/occurrence weights and colors designate cohesive thematic research clusters.",
+      "benchmarks": "Association strength normalization; minimum occurrence threshold explicitly declared (e.g., minimum 5 or 10 citations/co-occurrences); reporting clustering parameters (resolution parameter gamma, typically 1.0; minimum cluster size).",
+      "pitfalls": "Accepting default software clustering without qualitative validation of cluster themes (black-box bibliometrics); confusing distance between clusters with definitive semantic opposition (projection distortions in 2D space).",
+      "apa_reference": "van Eck, N. J., & Waltman, L. (2010). Software survey: VOSviewer, a computer program for bibliometric mapping. Scientometrics, 84(2), 523–538. https://doi.org/10.1007/s11192-009-0146-3"
     },
     {
       "id": "vosviewer-software",
       "term": "VOSviewer Software",
       "vietnamese": "Phần mềm VOSviewer",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scientometric Tools"
+      "vietnamese_variants": [
+        "Công cụ phân tích trắc lượng VOSviewer",
+        "Ứng dụng trực quan hóa mạng lưới khoa học VOSviewer"
       ],
-      "core_definition": "Công cụ trực quan hóa mạng lưới khoa học dựa trên thuật toán VOS - Visualization of Similarities.",
+      "domain_tags": [
+        "Scientometrics",
+        "Bibliometrics",
+        "Computational Tools",
+        "Literature Review"
+      ],
+      "core_definition": "A specialized Java-based software tool developed by the Centre for Science and Technology Studies (CWTS) at Leiden University dedicated to constructing, analyzing, and visualizing bibliometric networks of scholarly literature (co-authorship, co-occurrence, citation, bibliographic coupling, and co-citation).",
       "seminal_citation": "van Eck & Waltman (2010)",
-      "tier": "textbook",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of VOSviewer Software according to van Eck & Waltman (2010).",
       "domain_tags_en": [
         "Scientometric Tools"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "VOSviewer ingests standardized bibliographic metadata exports from major databases (Web of Science, Scopus, PubMed, Dimensions, Crossref). It provides three visualization overlays: (1) Network Visualization (thematic clusters and connecting edges); (2) Overlay Visualization (mapping temporal evolution or citation impact via gradient color bars); and (3) Density Visualization (identifying intellectual hot-spots based on node concentration). It incorporates integrated natural language processing (NLP) to extract noun phrases from titles and abstracts.",
+      "benchmarks": "Clear reporting of database query string, timespan, document types, and citation window; explicit threshold filtering values (e.g., top 1% or minimum citation cutoffs); export of thesaurus file to merge synonyms and disambiguate author names.",
+      "pitfalls": "Failing to clean bibliographic data using a custom thesaurus file, causing variant spellings of author names or synonymous keywords to split into fragmented artifactual clusters; purely descriptive visual reporting without theoretical synthesis.",
+      "apa_reference": "van Eck, N. J., & Waltman, L. (2010). Software survey: VOSviewer, a computer program for bibliometric mapping. Scientometrics, 84(2), 523–538. https://doi.org/10.1007/s11192-009-0146-3"
     },
     {
       "id": "wald-test-in-econometrics",
@@ -59683,38 +59727,60 @@
     {
       "id": "walking-interview-go-along-method",
       "term": "Walking Interview (Go-Along Method)",
-      "vietnamese": "Phỏng vấn Vừa đi vừa Trò chuyện",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Data Collection"
+      "vietnamese": "Phỏng vấn Đi cùng (Phương pháp Go-Along)",
+      "vietnamese_variants": [
+        "Phỏng vấn di động",
+        "Kỹ thuật phỏng vấn đi dạo cùng người tham gia"
       ],
-      "core_definition": "Nhà nghiên cứu đồng hành cùng người tham gia trong không gian sống thực địa.",
-      "seminal_citation": "Kusenbach (2003)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Qualitative Inquiry",
+        "Mobile Methodologies",
+        "Urban Studies",
+        "Phenomenology"
+      ],
+      "core_definition": "An in-situ qualitative data collection methodology formulated by Margarethe Kusenbach wherein the researcher physically walks alongside the participant through their familiar everyday geographic environment (neighborhood, workplace, urban street), conducting an open-ended interview prompted by spontaneous spatial and environmental encounters.",
+      "seminal_citation": "Kusenbach (2003); Carpiano (2009)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Walking Interview (Go-Along Method) according to Kusenbach (2003).",
       "domain_tags_en": [
         "Qualitative Data Collection"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "The method merges traditional semi-structured interviewing with participant observation in physical motion. As participants navigate their habitual terrain, physical landscapes, smells, street intersections, and social encounters act as environmental prompts that trigger spatial perceptions, localized biographies, social boundary demarcations, and unconscious place attachments that rarely emerge within static interview rooms. Data collection combines audio recording, GPS tracking, fieldnotes, and geo-referenced photography.",
+      "benchmarks": "Explicit documentation of route selection (participant-led vs researcher-led); spatial fieldnotes detailing environmental noise, route deviations, and spatial landmarks; ethical risk assessment regarding outdoor public recording.",
+      "pitfalls": "Audio recording failure due to ambient urban noise, wind, and traffic interference; participant safety hazards or physical exhaustion during walking routes; researcher dominating the spatial direction rather than allowing participant-led navigation.",
+      "apa_reference": "Kusenbach, M. (2003). Street phenomenology: The go-along as ethnographic research tool. Ethnography, 4(3), 455–485. https://doi.org/10.1177/146613810343007"
     },
     {
       "id": "watanabe-akaike-information-criterion-waic",
-      "term": "Watanabe-Akaike Information Criterion (WAIC)",
-      "vietnamese": "Tiêu chuẩn Thông tin Watanabe-Akaike",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Bayesian Model Assessment"
+      "term": "Watanabe-Akaike Information Criterion",
+      "vietnamese": "Tiêu chuẩn Thông tin Watanabe-Akaike (WAIC)",
+      "vietnamese_variants": [
+        "Tiêu chuẩn thông tin Widely Applicable Information Criterion",
+        "Chỉ số WAIC trong thống kê Bayes"
       ],
-      "core_definition": "Tiêu chuẩn so sánh mô hình Bayes tổng quát dựa trên toàn bộ phân phối hậu nghiệm.",
-      "seminal_citation": "Watanabe (2010)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Bayesian Statistics",
+        "Model Selection",
+        "Information Theory",
+        "Computational Statistics"
+      ],
+      "core_definition": "A fully Bayesian model selection criterion and out-of-sample predictive accuracy metric developed by Sumio Watanabe that estimates the expected log pointwise predictive density (elpd) of a Bayesian model using the full posterior distribution and penalizing effective number of parameters.",
+      "seminal_citation": "Watanabe (2010); Gelman, Hwang, & Vehtari (2014)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Watanabe-Akaike Information Criterion (WAIC) according to Watanabe (2010).",
       "domain_tags_en": [
         "Bayesian Model Assessment"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Unlike AIC or BIC (which evaluate likelihood strictly at the point maximum likelihood estimate) and DIC (which uses the posterior mean deviance and fails in singular or mixture models), WAIC is computed by averaging likelihoods pointwise over posterior MCMC draws: WAIC = -2 * ( lppd - p_{WAIC} ), where lppd is the log pointwise predictive density and p_{WAIC} is the penalty for effective parameters (computed as the sum of posterior variances of the log-predictive density for each data point). WAIC asymptotically approaches Leave-One-Out (LOO) cross-validation.",
+      "benchmarks": "Difference in WAIC (Delta WAIC) between competing models accompanied by the standard error of the difference (SE_{diff}); models with Delta WAIC > 2*SE_{diff} are declared statistically superior; checking individual p_{WAIC} components for high-leverage outliers (> 0.4).",
+      "pitfalls": "Using WAIC on time-series or spatially dependent models without adjusting for non-exchangeable data structures; relying on WAIC when posterior draws exhibit poor convergence (R-hat > 1.05).",
+      "apa_reference": "Gelman, A., Hwang, J., & Vehtari, A. (2014). Understanding predictive information criteria for Bayesian models. Statistics and Computing, 24(6), 997–1016. https://doi.org/10.1007/s11222-013-9416-2"
     },
     {
       "id": "weak-instruments-problem",
@@ -59755,96 +59821,148 @@
     {
       "id": "weakness-minimization-legitimation",
       "term": "Weakness Minimization Legitimation",
-      "vietnamese": "Tính Hợp thức Giảm thiểu Nhược điểm",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Mixed Methods Legitimation"
+      "vietnamese": "Tính Hợp thức Giảm thiểu Điểm yếu (Mô hình Onwuegbuzie & Johnson)",
+      "vietnamese_variants": [
+        "Tính chính danh bù trừ điểm yếu",
+        "Nguyên tắc bù trừ nhược điểm trong nghiên cứu hỗn hợp"
       ],
-      "core_definition": "Sử dụng ưu điểm của phương pháp này bù đắp điểm yếu của phương pháp kia.",
+      "domain_tags": [
+        "Mixed Methods",
+        "Research Validity",
+        "Legitimation Typology",
+        "Methodological Rigor"
+      ],
+      "core_definition": "A specific legitimation (validity) type within Onwuegbuzie and Johnson's mixed-methods evaluation framework asserting that the inherent methodological weaknesses of one approach (e.g., quantitative lack of context) must be explicitly compensated for by the distinct strengths of the complementary approach (e.g., qualitative thick description).",
       "seminal_citation": "Onwuegbuzie & Johnson (2006)",
-      "tier": "textbook",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Weakness Minimization Legitimation according to Onwuegbuzie & Johnson (2006).",
       "domain_tags_en": [
         "Mixed Methods Legitimation"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In designing mixed-methods inquiry, researchers formulate a systematic weakness-minimization matrix. If the quantitative phase is threatened by low contextual validity or lack of depth, an in-depth qualitative phase is integrated to unpack nuances. Conversely, if the qualitative phase is constrained by small sample size and lack of statistical generalizability, a quantitative survey phase is deployed. The overall meta-inferences are legitimate only if the composite design genuinely offsets the liabilities of each individual strand.",
+      "benchmarks": "Inclusion of an explicit legitimation section in methodology chapters discussing how specific vulnerabilities in each method were structurally neutralized by the integrated design.",
+      "pitfalls": "Compounding weaknesses rather than minimizing them (e.g., using an unvalidated quantitative survey alongside an un-reflexive, rushed qualitative interview); superficial juxtaposition of methods without genuine cross-strand integration.",
+      "apa_reference": "Onwuegbuzie, A. J., & Johnson, R. B. (2006). The validity issue in mixed research. Research in the Schools, 13(1), 48–63."
     },
     {
       "id": "web-of-science-core-collection",
       "term": "Web of Science Core Collection",
-      "vietnamese": "Cơ sở Dữ liệu Web of Science",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scientometrics",
-        "Publishing"
+      "vietnamese": "Bộ Sưu tập Cốt lõi Web of Science (WoS Core Collection)",
+      "vietnamese_variants": [
+        "Cơ sở dữ liệu Web of Science",
+        "Hệ thống chỉ mục WoS Core Collection Clarivate"
       ],
-      "core_definition": "Cơ sở dữ liệu trích dẫn khoa học chuẩn mực quốc tế của Clarivate bao gồm SCIE, SSCI, AHCI.",
-      "seminal_citation": "Garfield (1964)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Bibliometrics",
+        "Academic Publishing",
+        "Scientometrics",
+        "Literature Retrieval"
+      ],
+      "core_definition": "The premier global multidisciplinary citation indexing database curated by Clarivate Analytics, indexing high-impact, peer-reviewed scholarly journals across science, social sciences, arts, and humanities through stringent editorial quality and citation impact criteria.",
+      "seminal_citation": "Garfield (1955, 1964)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Web of Science Core Collection according to Garfield (1964).",
       "domain_tags_en": [
         "Scientometrics",
         "Publishing"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "WoS Core Collection encompasses four primary flagship journal citation indices: (1) Science Citation Index Expanded (SCIE), (2) Social Sciences Citation Index (SSCI), (3) Arts & Humanities Citation Index (AHCI), and (4) Emerging Sources Citation Index (ESCI), alongside Conference Proceedings (CPCI) and Book Citation Index (BKCI). It provides complete cover-to-cover indexing of all author affiliations, funding acknowledgments, and cited reference lists, powering Journal Citation Reports (JCR) and Journal Impact Factor (JIF) calculations.",
+      "benchmarks": "Verification of journal indexing via Master Journal List (MJL); documentation of precise WoS search strings, editions queried, and exact date of retrieval for systematic review reproducibility.",
+      "pitfalls": "Confusing the broader Web of Science platform (which includes regional indices like KCI or SciELO) with the selective Web of Science Core Collection (SCIE/SSCI); relying on uncleaned citation metrics without accounting for disciplinary citation normalization.",
+      "apa_reference": "Garfield, E. (1955). Citation indexes for science: A new dimension in documentation through association of ideas. Science, 122(3159), 108–111. https://doi.org/10.1126/science.122.3159.108"
     },
     {
       "id": "weibull-distribution",
       "term": "Weibull Distribution",
       "vietnamese": "Phân phối Weibull",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Survival Analysis"
+      "vietnamese_variants": [
+        "Phân phối thời gian sống Weibull",
+        "Mô hình xác suất độ tin cậy Weibull"
       ],
-      "core_definition": "Mô hình hóa độ tin cậy cơ khí và phân tích thời gian sống sót với tỷ lệ nguy cơ biến đổi.",
-      "seminal_citation": "Weibull (1951)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Survival Analysis",
+        "Reliability Engineering",
+        "Duration Modeling",
+        "Biostatistics"
+      ],
+      "core_definition": "A versatile continuous probability distribution widely used in survival analysis, event-history modeling, and reliability engineering to model time-to-event data where the hazard rate (failure rate) varies monotonically over time.",
+      "seminal_citation": "Weibull (1951); Kalbfleisch & Prentice (2002)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Weibull Distribution according to Weibull (1951).",
       "domain_tags_en": [
         "Survival Analysis"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "The two-parameter Weibull distribution has probability density function f(t) = (k / lambda) * (t / lambda)^{k - 1} * exp(-(t / lambda)^k) for t >= 0, parameterized by scale lambda > 0 and shape k > 0. The hazard function is h(t) = (k / lambda) * (t / lambda)^{k - 1}. Crucially: (1) If k = 1, the hazard rate is constant over time (reducing to the memoryless Exponential distribution); (2) If k < 1, the hazard decreases over time ('infant mortality'); (3) If k > 1, the hazard increases over time ('wear-out failure' / aging).",
+      "benchmarks": "Estimation via Maximum Likelihood Estimation (MLE) or parametric accelerated failure time (AFT) models; reporting shape parameter k with 95% confidence intervals and Likelihood Ratio tests against exponential restriction (k = 1).",
+      "pitfalls": "Assuming a Weibull model when the true hazard rate is non-monotonic (e.g., bathtub curve or log-logistic unimodal curve); ignoring right-censoring in survival data when estimating Weibull parameters.",
+      "apa_reference": "Weibull, W. (1951). A statistical distribution function of wide applicability. Journal of Applied Mechanics, 18(3), 293–297. https://doi.org/10.1115/1.4010337"
     },
     {
       "id": "weighted-least-squares-wls",
-      "term": "Weighted Least Squares (WLS)",
-      "vietnamese": "Bình phương Tối thiểu Có trọng số",
+      "term": "Weighted Least Squares",
+      "vietnamese": "Bình phương Tối thiểu Có trọng số (WLS)",
       "vietnamese_variants": [
-        "WLS"
+        "Phương pháp hồi quy WLS",
+        "Ước lượng bình phương bé nhất có trọng số"
       ],
       "domain_tags": [
-        "Econometrics"
+        "Econometrics",
+        "Linear Regression",
+        "Heteroskedasticity",
+        "Applied Statistics"
       ],
-      "core_definition": "Gán trọng số nghịch đảo với phương sai sai số để khắc phục heteroskedasticity.",
-      "seminal_citation": "Greene (2018)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "core_definition": "A generalized form of ordinary least squares (OLS) regression that incorporates non-negative weights inversely proportional to the error variance of each observation, producing BLUE (Best Linear Unbiased Estimator) parameter estimates in the presence of known heteroskedasticity.",
+      "seminal_citation": "Aitken (1936); Wooldridge (2020)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2766",
       "core_definition_en": "Academic definition of Weighted Least Squares (WLS) according to Greene (2018).",
       "domain_tags_en": [
         "Econometrics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "When the Gauss-Markov homoscedasticity assumption is violated (Var(epsilon_i | X_i) = sigma^2 * h_i), OLS remains unbiased but loses efficiency and generates biased standard errors. WLS transforms the linear model by multiplying each observation by w_i = 1 / sqrt(h_i). The minimized objective function becomes sum w_i^2 * (Y_i - X_i*beta)^2. Observations with smaller variance (higher precision) are assigned higher weights, while high-variance observations are downweighted.",
+      "benchmarks": "Goldfeld-Quandt or Breusch-Pagan test verifying heteroskedasticity structure; weights must be theoretically or empirically justified (e.g., inverse of sample size when regressing group means, w_i = n_i).",
+      "pitfalls": "Misspecifying the error variance weight function h_i (if the assumed variance structure is incorrect, WLS can be less efficient than OLS and yield inconsistent standard errors); using WLS when White/Huber-White robust standard errors would suffice without distributional assumptions.",
+      "apa_reference": "Wooldridge, J. M. (2020). Introductory econometrics: A modern approach (7th ed.). Cengage Learning."
     },
     {
       "id": "welchs-t-test-unequal-variances-t-test",
-      "term": "Welch's t-test (Unequal Variances t-test)",
-      "vietnamese": "Kiểm định t Welch",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Parametric Statistics"
+      "term": "Welch's t-test",
+      "vietnamese": "Kiểm định t của Welch (Kiểm định t Phương sai Không đồng nhất)",
+      "vietnamese_variants": [
+        "Kiểm định t Welch-Satterthwaite",
+        "Kiểm định so sánh hai trung bình phương sai không bằng nhau"
       ],
-      "core_definition": "So sánh trung bình hai mẫu độc lập khi không thỏa mãn giả định đồng nhất phương sai.",
-      "seminal_citation": "Welch (1947)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Inferential Statistics",
+        "Parametric Tests",
+        "Hypothesis Testing",
+        "Biostatistics"
+      ],
+      "core_definition": "An adaptation of Student's two-sample t-test that evaluates differences between two independent group means without assuming equality of population variances (homoscedasticity) and without requiring equal group sample sizes.",
+      "seminal_citation": "Welch (1938, 1947); Satterthwaite (1946)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Welch's t-test (Unequal Variances t-test) according to Welch (1947).",
       "domain_tags_en": [
         "Parametric Statistics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "The test statistic is computed as: t = (X_bar_1 - X_bar_2) / sqrt(s_1^2 / n_1 + s_2^2 / n_2). Unlike Student's t-test (which pools sample variances), Welch's test uses separate sample variances. The degrees of freedom are adjusted downwards using the Welch-Satterthwaite equation: df = (s_1^2/n_1 + s_2^2/n_2)^2 / [ (s_1^2/n_1)^2 / (n_1 - 1) + (s_2^2/n_2)^2 / (n_2 - 1) ], which typically yields fractional degrees of freedom and robustly controls Type I error.",
+      "benchmarks": "Modern statistical guidelines (Delacre et al., 2017) recommend using Welch's t-test as the default default two-sample test rather than running Levene's test first (two-stage testing inflates overall Type I error).",
+      "pitfalls": "Using standard Student's t-test when sample sizes are unequal (n_1 != n_2) and variances differ, which severely distorts true alpha rates (inflating to > 0.15 when smaller group has larger variance); rounding fractional degrees of freedom arbitrarily.",
+      "apa_reference": "Delacre, M., Lakens, D., & Leys, C. (2017). Why psychologists should by default use Welch's t-test instead of Student's t-test. International Review of Social Psychology, 30(1), 92–101. https://doi.org/10.5334/irsp.82"
     },
     {
       "id": "westerlund-panel-cointegration-test",
@@ -59875,21 +59993,32 @@
     },
     {
       "id": "wharton-research-data-services-wrds",
-      "term": "Wharton Research Data Services (WRDS)",
-      "vietnamese": "Dịch vụ Dữ liệu Nghiên cứu Wharton WRDS",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Financial Data Infrastructure"
+      "term": "Wharton Research Data Services",
+      "vietnamese": "Dịch vụ Dữ liệu Nghiên cứu Wharton (WRDS)",
+      "vietnamese_variants": [
+        "Hệ thống cơ sở dữ liệu tài chính WRDS",
+        "Nền tảng dữ liệu hàn lâm WRDS"
       ],
-      "core_definition": "Nền tảng truy cập tập trung dữ liệu tài chính, kế toán và kinh tế học chuẩn mực.",
-      "seminal_citation": "Wharton School (1997)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Empirical Finance",
+        "Accounting Research",
+        "Data Infrastructure",
+        "Corporate Governance"
+      ],
+      "core_definition": "A globally recognized web-based business research data infrastructure and analytics platform hosted by the Wharton School of the University of Pennsylvania, providing standardized access to premier financial, accounting, corporate governance, and economic datasets.",
+      "seminal_citation": "Wharton Research Data Services (1997); Core, Guay, & Larcker (2003)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Wharton Research Data Services (WRDS) according to Wharton School (1997).",
       "domain_tags_en": [
         "Financial Data Infrastructure"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "WRDS acts as a unified data extraction and merging hub linking disparate archival financial databases using common historical security identifiers (CUSIP, PERMNO, GVKEY, Ticker). Core integrated modules include: (1) CRSP (stock prices, returns, trading volumes); (2) Compustat (corporate balance sheets, income statements, cash flows); (3) IBES (analyst earnings forecasts and recommendations); (4) Thomson Reuters / Refinitiv (institutional ownership 13F); and (5) Execucomp (executive compensation). Enables remote query execution via SQL, Python, R, and SAS.",
+      "benchmarks": "Full transparency of sample construction in empirical corporate finance manuscripts: reporting exact database merge routines (CRSP-Compustat merged linking table CCM), sample selection criteria, and winsorization protocols.",
+      "pitfalls": "Failing to account for historical CUSIP changes over time without using permanent identifiers (PERMNO for CRSP or GVKEY for Compustat); survivorship bias caused by failing to include delisted firms from CRSP delisting returns files.",
+      "apa_reference": "Core, J. E., Guay, W. R., & Larcker, D. F. (2003). Executive equity compensation and incentives: A survey. Economic Policy Review, 9(1), 27–50."
     },
     {
       "id": "whites-heteroskedasticity-test",
@@ -59919,111 +60048,177 @@
     },
     {
       "id": "whites-test",
-      "term": "White's Test",
-      "vietnamese": "Kiểm định White phát hiện hiện tượng phương sai thay đổi không tuyến tính",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Econometrics"
+      "term": "White's Test for Heteroskedasticity",
+      "vietnamese": "Kiểm định Phương sai Thay đổi của White",
+      "vietnamese_variants": [
+        "Kiểm định heteroskedasticity White",
+        "Thử nghiệm kiểm tra phương sai sai số thay đổi"
       ],
-      "core_definition": "Kiểm định White phát hiện hiện tượng phương sai thay đổi không tuyến tính.",
+      "domain_tags": [
+        "Applied Econometrics",
+        "Diagnostic Testing",
+        "Linear Regression",
+        "Residual Analysis"
+      ],
+      "core_definition": "A general statistical test developed by Halbert White that detects arbitrary, unspecified forms of heteroskedasticity in an OLS regression model without requiring linear or monotonic assumptions regarding error variance structures.",
       "seminal_citation": "White (1980)",
-      "tier": "curated",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of White's Test according to White (1980).",
       "domain_tags_en": [
         "Econometrics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "The test proceeds by: (1) Estimating the original OLS model and saving squared residuals e_i^2; (2) Regressing e_i^2 on all original independent variables, their squared terms, and all non-redundant cross-product interaction terms: e_i^2 = alpha_0 + sum alpha_j*X_j + sum beta_j*X_j^2 + sum sum gamma_{jk}*X_j*X_k + u_i; (3) Computing the test statistic LM = N * R_{aux}^2, which asymptotically follows a chi-square distribution with degrees of freedom equal to the number of regressors in the auxiliary regression (excluding intercept).",
+      "benchmarks": "Chi-square p-value < 0.05 rejects H_0 (homoscedasticity) and confirms heteroskedasticity, mandating the use of White's heteroskedasticity-consistent standard errors (HC0, HC1, HC2, HC3).",
+      "pitfalls": "Loss of degrees of freedom in small samples: with k regressors, the auxiliary regression includes k + k + k*(k-1)/2 variables, rapidly exhausting sample size (addressed by using fitted values Y_hat and Y_hat^2 as regressors in the restricted White test).",
+      "apa_reference": "White, H. (1980). A heteroskedasticity-consistent covariance matrix estimator and a direct test for heteroskedasticity. Econometrica, 48(4), 817–838. https://doi.org/10.2307/1912934"
     },
     {
       "id": "wilcoxon-signed-rank-test",
       "term": "Wilcoxon Signed-Rank Test",
-      "vietnamese": "Kiểm định phi tham số Wilcoxon thay thế t-test cặp cho dữ liệu ghép đôi",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Non-Parametric Statistics"
+      "vietnamese": "Kiểm định Dấu hạng Wilcoxon",
+      "vietnamese_variants": [
+        "Kiểm định Wilcoxon cho mẫu cặp",
+        "Thử nghiệm phi tham số so sánh cặp phụ thuộc"
       ],
-      "core_definition": "Kiểm định phi tham số Wilcoxon thay thế t-test cặp cho dữ liệu ghép đôi.",
+      "domain_tags": [
+        "Non-Parametric Statistics",
+        "Inferential Statistics",
+        "Paired Comparisons",
+        "Biostatistics"
+      ],
+      "core_definition": "A non-parametric statistical hypothesis test used to compare two paired, matched, or repeated-measures conditions to determine whether their population median ranks differ significantly, serving as the distribution-free alternative to the paired-samples t-test.",
       "seminal_citation": "Wilcoxon (1945)",
-      "tier": "encyclopedia",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Wilcoxon Signed-Rank Test according to Wilcoxon (1945).",
       "domain_tags_en": [
         "Non-Parametric Statistics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "For n paired observations (X_i, Y_i), the test calculates differences d_i = X_i - Y_i, discarding differences equal to zero. The absolute differences |d_i| are ranked from smallest (1) to largest, with tied ranks receiving average ranks. The signed-rank statistic W is the sum of ranks corresponding to positive differences (W+). Under H_0 (symmetric distribution of differences around zero), W+ has an expected value of n*(n+1)/4. For n > 20, a standard normal z-approximation with continuity correction is used.",
+      "benchmarks": "Reporting test statistic W, z-value, exact or asymptotic p-value, and non-parametric effect size r = |z| / sqrt(N); median difference with interquartile range (IQR).",
+      "pitfalls": "Assuming the test compares medians without the prerequisite assumption that the distribution of differences is symmetric (if the difference distribution is asymmetric, the test evaluates pseudomedians or median signed ranks, not raw medians).",
+      "apa_reference": "Wilcoxon, F. (1945). Individual comparisons by ranking methods. Biometrics Bulletin, 1(6), 80–83. https://doi.org/10.2307/3001968"
     },
     {
       "id": "wild-bootstrap",
       "term": "Wild Bootstrap",
-      "vietnamese": "Kỹ thuật Wild Bootstrap",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Econometrics"
+      "vietnamese": "Thủ tục Tự nhân bản Hoang dã (Wild Bootstrap)",
+      "vietnamese_variants": [
+        "Kỹ thuật Wild Cluster Bootstrap",
+        "Phương pháp bootstrap đa cụm vững"
       ],
-      "core_definition": "Phương pháp tái chọn mẫu nhân phần dư với biến ngẫu nhiên hai điểm để vững với heteroskedasticity.",
-      "seminal_citation": "Wu (1986)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Econometrics",
+        "Resampling Methods",
+        "Clustered Standard Errors",
+        "Inference"
+      ],
+      "core_definition": "A specialized resampling technique formulated by C. F. J. Wu and developed for clustered panel settings by Cameron, Gelbach, and Miller, designed to provide accurate asymptotic inference and hypothesis testing in regression models with arbitrary heteroskedasticity and a small number of clusters (G < 30–50).",
+      "seminal_citation": "Wu (1986); Cameron, Gelbach, & Miller (2008)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Wild Bootstrap according to Wu (1986).",
       "domain_tags_en": [
         "Econometrics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "When clusters are few, standard cluster-robust standard errors (CRSE / Liang-Zeger) over-reject the null hypothesis catastrophically due to downward bias in covariance estimates. The Wild Cluster Bootstrap resamples residuals at the cluster level rather than individual observations. In each bootstrap draw b, all residuals in cluster g are multiplied by a scalar weight v_g drawn from an external distribution (e.g., Rademacher distribution: +1 with probability 0.5, -1 with probability 0.5), preserving the within-cluster correlation structure.",
+      "benchmarks": "Recommended benchmark: mandatory when evaluating policy interventions or state-level reforms with G < 30 clusters; report wild cluster bootstrap p-values based on at least B = 999 or 9,999 replications.",
+      "pitfalls": "Using standard pairs cluster bootstrap with few clusters, which breaks down because clusters with zero treatment are frequently sampled; selecting continuous weights when Rademacher two-point weights provide superior finite-sample properties.",
+      "apa_reference": "Cameron, A. C., Gelbach, J. B., & Miller, D. L. (2008). Bootstrap-based improvements for inference with clustered errors. The Review of Economics and Statistics, 90(3), 414–427. https://doi.org/10.1162/rest.90.3.414"
     },
     {
       "id": "wiley-online-library",
       "term": "Wiley Online Library",
       "vietnamese": "Thư viện Trực tuyến Wiley",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scholarly Publishing"
+      "vietnamese_variants": [
+        "Cơ sở dữ liệu học thuật Wiley",
+        "Nền tảng xuất bản tạp chí quốc tế Wiley"
       ],
-      "core_definition": "Cổng xuất bản hàng nghìn tạp chí khoa học chuyên ngành quốc tế của John Wiley & Sons.",
+      "domain_tags": [
+        "Scholarly Publishing",
+        "Academic Databases",
+        "Scientific Communication",
+        "Research Literature"
+      ],
+      "core_definition": "A leading global multidisciplinary academic publishing platform and digital database hosted by John Wiley & Sons, hosting millions of articles across high-impact journals, reference works, and protocols in science, medicine, social sciences, and humanities.",
       "seminal_citation": "Wiley (2010)",
-      "tier": "textbook",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Wiley Online Library according to Wiley (2010).",
       "domain_tags_en": [
         "Scholarly Publishing"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Wiley Online Library serves as a primary full-text discovery portal for major scholarly societies (e.g., American Finance Association, Strategic Management Society). It provides advanced boolean search querying, cited-by tracking, CrossRef DOIs, and ORCID integration. In scientometric reviews, researchers retrieve bibliographic metadata for systematic mapping and verify peer-review standards across high-ranking journals (e.g., Journal of Finance, Strategic Management Journal).",
+      "benchmarks": "Documentation of exact search queries, DOI references, and database coverage filters; verifying open-access licensing agreements (CC BY vs CC BY-NC) for text and data mining compliance.",
+      "pitfalls": "Assuming all items on commercial publisher platforms are peer-reviewed research papers (platforms also host editorials, book reviews, errata, and retracted notices that must be systematically filtered out of systematic reviews).",
+      "apa_reference": "John Wiley & Sons. (2020). Wiley Online Library database and search syntax guide. Wiley."
     },
     {
       "id": "wilks-lambda",
       "term": "Wilks' Lambda",
-      "vietnamese": "Thống kê Wilks' Lambda trong MANOVA đo lường tỷ lệ phương sai không được giải thích bởi các nhóm (càng nhỏ càng tốt)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Multivariate Statistics"
+      "vietnamese": "Hệ số Lambda của Wilks",
+      "vietnamese_variants": [
+        "Thống kê Wilks Lambda",
+        "Kiểm định Wilks trong MANOVA"
       ],
-      "core_definition": "Thống kê Wilks' Lambda trong MANOVA đo lường tỷ lệ phương sai không được giải thích bởi các nhóm (càng nhỏ càng tốt).",
-      "seminal_citation": "Hair et al. (2018)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Multivariate Statistics",
+        "MANOVA",
+        "Discriminant Analysis",
+        "Inferential Statistics"
+      ],
+      "core_definition": "A classic multivariate test statistic developed by Samuel S. Wilks used in Multivariate Analysis of Variance (MANOVA) and Discriminant Function Analysis to test whether there are statistically significant differences among group centroids on a linear combination of multiple dependent variables.",
+      "seminal_citation": "Wilks (1932); Rao (1951)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Wilks' Lambda according to Hair et al. (2018).",
       "domain_tags_en": [
         "Multivariate Statistics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Wilks' Lambda (Lambda) is calculated as the ratio of the determinant of the error (within-groups) sum of squares and cross-products matrix (E) to the determinant of the total sum of squares and cross-products matrix (T = H + E): Lambda = det(E) / det(H + E) = prod_{i=1}^s (1 / (1 + lambda_i)), where lambda_i are the eigenvalues of E^{-1}H. Lambda ranges from 0 to 1: values close to 0 indicate strong group differentiation (high between-groups variance), while values near 1 indicate little to no group separation. For inference, Lambda is converted to Rao's F-approximation.",
+      "benchmarks": "Report Wilks' Lambda value alongside Rao's approximate F-statistic, degrees of freedom, and p-value (e.g., Lambda = 0.68, F(6, 240) = 8.12, p < .001, partial eta^2 = .17); multivariate normality and Box's M test of equality of covariance matrices (p > 0.001) required.",
+      "pitfalls": "Reporting univariate ANOVA tests without first establishing a significant omnibus Wilks' Lambda (inflating family-wise Type I error rates); using Wilks' Lambda when Box's M test is severely violated with unequal sample sizes (Pillai's Trace is robust and preferred in such conditions).",
+      "apa_reference": "Wilks, S. S. (1932). Certain generalizations in the analysis of variance. Biometrika, 24(3/4), 471–494. https://doi.org/10.2307/2331962"
     },
     {
       "id": "winsorized-mean",
       "term": "Winsorized Mean",
-      "vietnamese": "Số trung bình Winsor",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Robust Statistics"
+      "vietnamese": "Trung bình Winsor hóa",
+      "vietnamese_variants": [
+        "Ước lượng trung bình Winsor",
+        "Số trung bình thay thế ngoại lai"
       ],
-      "core_definition": "Thay thế các giá trị ngoại lai cực đoan bằng giá trị phần trăm tương ứng trước khi tính trung bình.",
-      "seminal_citation": "Dixon (1960)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Robust Statistics",
+        "Data Cleaning",
+        "Descriptive Statistics",
+        "Quantitative Finance"
+      ],
+      "core_definition": "A robust measure of central tendency named after Charles P. Winsor that handles extreme outliers not by trimming or discarding them, but by replacing extreme values in the upper and lower tails with the nearest non-extreme percentile values before computing the arithmetic mean.",
+      "seminal_citation": "Dixon (1960); Tukey (1962)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Winsorized Mean according to Dixon (1960).",
       "domain_tags_en": [
         "Robust Statistics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In a sample of size n sorted in ascending order, a g-Winsorized mean replaces the g lowest observations with the value of the (g+1)-th observation, and the g highest observations with the value of the (n-g)-th observation. The Winsorized mean is then the standard arithmetic mean of this modified dataset. Unlike trimming (which reduces sample size n), Winsorizing preserves the total number of observations, retaining sample weight while shielding estimates from distortive heavy tails and data-entry errors.",
+      "benchmarks": "In empirical accounting and corporate finance, continuous accounting variables (e.g., ROA, leverage, Tobin's Q) are conventionally Winsorized at the 1st and 99th percentiles (or 5th and 95th percentiles) to prevent extreme leverage points from biasing OLS regressions.",
+      "pitfalls": "Winsorizing variables mechanically without reporting the exact cutoff percentiles; Winsorizing dummy variables, categorical indicators, or natural bounded scales (e.g., 5-point Likert scales); calculating standard errors using standard OLS formulas without adjusting for Winsorization variance.",
+      "apa_reference": "Tukey, J. W. (1962). The future of data analysis. The Annals of Mathematical Statistics, 33(1), 1–67. https://doi.org/10.1214/aoms/1177704711"
     },
     {
       "id": "within-case-analysis-vs-cross-case-synthesis",
@@ -60068,22 +60263,33 @@
     },
     {
       "id": "within-case-and-cross-case-design",
-      "term": "Within-case and cross-case design",
-      "vietnamese": "Thiết kế phân tích nội trường hợp và xuyên trường hợp",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Nghiên cứu Trường hợp"
+      "term": "Within-Case and Cross-Case Analysis Design",
+      "vietnamese": "Thiết kế Phân tích Trong từng Trường hợp và Xuyên Trường hợp",
+      "vietnamese_variants": [
+        "Thiết kế nghiên cứu đa trường hợp Yin & Miles-Huberman",
+        "Phân tích so sánh đa tình huống"
       ],
-      "core_definition": "Phương pháp phân tích trong nghiên cứu đa trường hợp (Multiple Case Study): trước hết phân tích sâu sắc từng trường hợp độc lập (within-case analysis), sau đó so sánh đối chiếu giữa các trường hợp với nhau (cross-case analysis) để phát hiện các quy luật chung.",
-      "seminal_citation": "Yin, R. K. (2018). Case Study Research and Applications (6th ed.). SAGE Publications.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Case Study Research",
+        "Qualitative Methodology",
+        "Comparative Analysis",
+        "Process Tracing"
+      ],
+      "core_definition": "A two-stage comparative qualitative research design articulated by Robert Yin and Miles & Huberman, where researchers first conduct an intensive, holistic within-case investigation of each individual case before executing systematic cross-case pattern matching across cases.",
+      "seminal_citation": "Eisenhardt (1989); Yin (2018); Miles, Huberman, & Saldaña (2020)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Within-case and cross-case design according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Phase 1 (Within-Case Analysis): Each case (organization, project, community) is analyzed as an autonomous, bounded system. Researchers construct thick narrative case descriptions, temporal event chronologies, and causal process-tracing networks to unpack context-specific causal dynamics. Phase 2 (Cross-Case Analysis): Researchers construct cross-case comparative matrices, pattern matching, and replication logic (literal replication: predicting similar results; theoretical replication: predicting contrasting results for predictable reasons) to build transferable, robust theoretical frameworks.",
+      "benchmarks": "Case study protocol detailing literal vs theoretical replication rationale (minimum 4 to 8 cases recommended for analytical generalizability by Eisenhardt, 1989); structured cross-case display tables summarizing themes across cases.",
+      "pitfalls": "Rushing into cross-case aggregation prematurely before achieving a deep, nuanced understanding of the unique contextual dynamics of each individual case; treating multiple cases as statistical sample points rather than independent experiments.",
+      "apa_reference": "Yin, R. K. (2018). Case study research and applications: Design and methods (6th ed.). SAGE Publications."
     },
     {
       "id": "within-method-triangulation",
@@ -60115,87 +60321,136 @@
     {
       "id": "wooldridge-test-for-panel-autocorrelation",
       "term": "Wooldridge Test for Panel Autocorrelation",
-      "vietnamese": "Kiểm định Tự tương quan Bảng Wooldridge",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Panel Data Econometrics"
+      "vietnamese": "Kiểm định Tự tương quan Dữ liệu Bảng của Wooldridge",
+      "vietnamese_variants": [
+        "Kiểm định tương quan chuỗi trong panel data Wooldridge",
+        "Thử nghiệm tự tương quan bậc một trong mô hình Fixed Effects"
       ],
-      "core_definition": "Kiểm tra hiện tượng tự tương quan bậc một trong phần dư mô hình tác động cố định.",
-      "seminal_citation": "Wooldridge (2002)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Panel Econometrics",
+        "Diagnostic Testing",
+        "Fixed Effects Models",
+        "Applied Econometrics"
+      ],
+      "core_definition": "An intuitive and robust econometric diagnostic test developed by Jeffrey M. Wooldridge that detects first-order serial correlation (AR(1)) in the idiosyncratic error terms of linear panel data models with fixed or random effects.",
+      "seminal_citation": "Wooldridge (2002, 2010)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Wooldridge Test for Panel Autocorrelation according to Wooldridge (2002).",
       "domain_tags_en": [
         "Panel Data Econometrics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In a linear panel model y_{it} = X_{it}*beta + c_i + u_{it}, first-differencing eliminates the individual fixed effects c_i: Delta y_{it} = Delta X_{it}*beta + Delta u_{it}. If the original errors u_{it} are uncorrelated (no serial correlation), then Cov(Delta u_{it}, Delta u_{i, t-1}) = -0.5*sigma^2_u. The Wooldridge procedure estimates the first-differenced OLS regression, extracts residuals e_{it}, and regresses e_{it} on its lagged value e_{i, t-1} in a pooled OLS regression clustered at the panel unit level, testing whether the coefficient equals -0.5.",
+      "benchmarks": "F-test p-value < 0.05 rejects H_0 (no first-order autocorrelation) and confirms serial correlation, mandating the use of panel-robust standard errors (Arellano / Rogers clustered standard errors) or FGLS / Prais-Winsten transformations.",
+      "pitfalls": "Ignoring panel autocorrelation in short-T, large-N micro-panels, which severely inflates t-statistics and leads to massive Type I errors; confusing serial correlation of errors with dynamic panel models (lagged dependent variables).",
+      "apa_reference": "Wooldridge, J. M. (2010). Econometric analysis of cross section and panel data (2nd ed.). MIT Press."
     },
     {
       "id": "work-engagement-schaufeli-et-al",
-      "term": "Work Engagement (Schaufeli et al.)",
-      "vietnamese": "Sự Gắn kết Công việc",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Organizational Psychology"
+      "term": "Work Engagement (UWES Scale)",
+      "vietnamese": "Sự Gắn kết Công việc (Thang đo UWES Schaufeli et al.)",
+      "vietnamese_variants": [
+        "Mức độ gắn kết với công việc",
+        "Mô hình gắn kết công việc Schaufeli"
       ],
-      "core_definition": "Trạng thái tâm lý tích cực liên quan đến công việc đặc trưng bởi Sức sống Vigor, Cống hiến Dedication, và Say mê Absorption.",
-      "seminal_citation": "Schaufeli et al. (2002)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Organizational Behavior",
+        "Occupational Health Psychology",
+        "Psychometrics",
+        "Job Demands-Resources"
+      ],
+      "core_definition": "A positive, fulfilling, work-related state of mind characterized by Vigor, Dedication, and Absorption, formulated by Wilmar Schaufeli and colleagues as the pervasive, persistent affective-cognitive antipole to job burnout within the Job Demands-Resources (JD-R) framework.",
+      "seminal_citation": "Schaufeli, Salanova, González-Romá, & Bakker (2002); Schaufeli, Bakker, & Salanova (2006)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Work Engagement (Schaufeli et al.) according to Schaufeli et al. (2002).",
       "domain_tags_en": [
         "Organizational Psychology"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Work engagement is measured psychometrically using the Utrecht Work Engagement Scale (UWES-17 or the shortened UWES-9). The construct decomposes into three core dimensions: (1) Vigor (high levels of energy, mental resilience while working, willingness to invest effort); (2) Dedication (strong psychological involvement, enthusiasm, inspiration, pride, challenge); and (3) Absorption (being happily engrossed and deeply immersed in work, where time passes rapidly). Evaluated via second-order confirmatory factor analysis (CFA) or composite structural equation models.",
+      "benchmarks": "UWES-9 reliability: Cronbach's alpha and Composite Reliability (CR) >= 0.85 across all three dimensions; second-order factor loadings > 0.70; construct validity demonstrated via negative correlations with Maslach Burnout Inventory (MBI) exhaustion scales.",
+      "pitfalls": "Conflating work engagement with workaholism (engagement is positive and voluntary; workaholism is an obsessive, compulsive addiction accompanied by negative well-being); failing to establish discriminant validity between engagement and job satisfaction or organizational commitment.",
+      "apa_reference": "Schaufeli, W. B., Bakker, A. B., & Salanova, M. (2006). The measurement of work engagement with a short questionnaire: A cross-national study. Educational and Psychological Measurement, 66(4), 701–716. https://doi.org/10.1177/0013164405282471"
     },
     {
       "id": "world-values-survey-wvs",
-      "term": "World Values Survey (WVS)",
-      "vietnamese": "Khảo sát Giá trị Toàn cầu WVS",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Comparative Social Science"
+      "term": "World Values Survey",
+      "vietnamese": "Khảo sát Giá trị Thế giới (Dự án WVS)",
+      "vietnamese_variants": [
+        "Cơ sở dữ liệu khảo sát giá trị toàn cầu WVS",
+        "Dữ liệu đa quốc gia World Values Survey"
       ],
-      "core_definition": "Dự án nghiên cứu xuyên quốc gia lớn nhất khảo sát niềm tin, giá trị và văn hóa nhân loại.",
-      "seminal_citation": "Inglehart et al. (1981-present)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Comparative Sociology",
+        "Political Science",
+        "Cross-Cultural Research",
+        "Survey Research"
+      ],
+      "core_definition": "A landmark global cross-national research project and longitudinal survey database founded by Ronald Inglehart, investigating human values, cultural evolution, socio-political beliefs, and religious attitudes across nearly 120 societies encompassing over 95% of the world's population.",
+      "seminal_citation": "Inglehart (1997); Inglehart & Welzel (2005)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of World Values Survey (WVS) according to Inglehart et al. (1981-present).",
       "domain_tags_en": [
         "Comparative Social Science"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Administered in periodic waves (from Wave 1 in 1981 to Wave 7+) using standardized, nationally representative probability samples (minimum N = 1,000–1,500 respondents per nation). The core theoretical model operationalizes two major dimensions of cross-cultural variation: (1) Traditional vs Secular-Rational values, and (2) Survival vs Self-Expression values, visually represented in the Inglehart-Welzel Cultural Map. Data are harmonized with population weights to allow multilevel comparative cross-national regressions.",
+      "benchmarks": "Application of sampling weights (W_WEIGHT or S_WEIGHT) in cross-national regressions; measurement invariance testing (MGCFA or alignment methods) across linguistic translations prior to pooled cross-cultural comparisons.",
+      "pitfalls": "Running pooled cross-national OLS models without cluster adjustments for country-level sampling design; ignoring cultural response bias (extreme response styles or acquiescence) when analyzing Likert scale items across diverse cultures.",
+      "apa_reference": "Inglehart, R., & Welzel, C. (2005). Modernization, cultural change, and democracy: The human development sequence. Cambridge University Press. https://doi.org/10.1017/CBO9780511790881"
     },
     {
       "id": "worldview",
-      "term": "Worldview",
-      "vietnamese": "Thế giới quan khoa học — Khung niềm tin, triết lý chung định hướng cách nhìn thế giới và thực hành nghiên cứu của nhà khoa học.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Research Worldview (Scientific Paradigm)",
+      "vietnamese": "Thế giới quan Nghiên cứu (Hệ hình Khoa học)",
+      "vietnamese_variants": [
+        "Thế giới quan triết học",
+        "Hệ thống niềm tin nghiên cứu Creswell"
       ],
-      "core_definition": "Thế giới quan khoa học — Khung niềm tin, triết lý chung định hướng cách nhìn thế giới và thực hành nghiên cứu của nhà khoa học.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Philosophy of Science",
+        "Research Design",
+        "Epistemology",
+        "Methodological Foundations"
+      ],
+      "core_definition": "The overarching philosophical orientation, foundational belief system, and epistemic lens through which a researcher conceptualizes the nature of reality, truth, and the scientific inquiry process, guiding the selection of research design and methodological procedures.",
+      "seminal_citation": "Kuhn (1962); Guba & Lincoln (1994); Creswell & Creswell (2018)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Worldview according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "John Creswell codifies four major scientific worldviews that anchor empirical investigations: (1) Postpositivism: Determinism, reductionism, empirical observation, and quantitative hypothesis testing; (2) Constructivism: Multiple socially constructed realities, inductive theory generation, and qualitative narrative inquiry; (3) Transformative: Social justice agenda, empowering marginalized voices, and action-oriented mixed methods; and (4) Pragmatism: Problem-centered inquiry, pluralistic methodologies, and practical consequences guiding method selection.",
+      "benchmarks": "Explicit articulation of philosophical assumptions in dissertation Chapter 1 or research proposals: Ontology (nature of reality), Epistemology (nature of knowledge), Axiology (role of values), and Methodology (process of research).",
+      "pitfalls": "Methodological dissonance: professing a social constructivist philosophy while designing a strictly mechanical, deductive hypothesis-testing quantitative survey; omitting philosophical justification entirely, leaving research choices ungrounded.",
+      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications."
     },
     {
       "id": "xai",
-      "term": "Explainable Artificial Intelligence (XAI in Research)",
-      "vietnamese": "Trí tuệ Nhân tạo có Thể Giải thích được trong Nghiên cứu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "AI",
-        "Computational Research"
+      "term": "Explainable Artificial Intelligence in Research",
+      "vietnamese": "Trí tuệ Nhân tạo Có thể Giải thích được trong Nghiên cứu (XAI)",
+      "vietnamese_variants": [
+        "Phương pháp giải thích mô hình AI",
+        "Kỹ thuật XAI diễn giải hộp đen học máy"
       ],
-      "core_definition": "Các kỹ thuật và phương pháp giúp mở 'hộp đen' (black box) của các thuật toán máy học phức tạp, giải trình lý do mô hình đưa ra dự báo trong nghiên cứu thực nghiệm. Ngưỡng thực nghiệm tham chiếu: Bắt buộc áp dụng trong các nghiên cứu ra quyết định y khoa, tài chính và chính sách công (SHAP values, LIME).",
-      "seminal_citation": "Bắt buộc áp dụng trong các nghiên cứu ra quyết định y khoa, tài chính và chính sách công (SHAP values, LIME).",
-      "tier": "acronym",
+      "domain_tags": [
+        "Computational Social Science",
+        "Machine Learning",
+        "Explainable AI",
+        "Methodology"
+      ],
+      "core_definition": "A suite of algorithmic techniques and interpretability frameworks designed to unpack complex, opaque machine learning 'black-box' models (deep neural networks, gradient boosting), providing human-interpretable explanations of feature importance, decision boundaries, and individual predictions.",
+      "seminal_citation": "Lundberg & Lee (2017); Ribeiro, Singh, & Guestrin (2016); Molnar (2020)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of XAI according to Bắt buộc áp dụng trong các nghiên cứu ra quyết định y khoa, tài chính và chính sách công (SHAP values, LIME)..",
@@ -60203,79 +60458,127 @@
         "AI",
         "Computational Research"
       ],
-      "benchmarks": "Bắt buộc áp dụng trong các nghiên cứu ra quyết định y khoa, tài chính và chính sách công (SHAP values, LIME)."
+      "benchmarks": "Reporting global feature importance summary plots alongside individual local waterfall/force plots; demonstrating axiomatic consistency via SHAP values; cross-validating machine learning interpretations against traditional econometric regressions.",
+      "is_flagship": true,
+      "operational_mechanism": "In academic empirical research, XAI bridges predictive accuracy and theoretical explainability. Core techniques include: (1) SHAP (SHapley Additive exPlanations, derived from cooperative game theory), which computes the exact marginal contribution of each variable to a prediction while satisfying efficiency, symmetry, and additivity axioms; (2) LIME (Local Interpretable Model-agnostic Explanations), which fits local surrogate linear models around specific instances; and (3) Partial Dependence Plots (PDP) and Accumulated Local Effects (ALE) to visualize non-linear marginal effects.",
+      "pitfalls": "Conflating post-hoc model interpretability with causal inference (SHAP values describe how the model uses features, not whether features cause the real-world outcome); failing to account for feature correlations, which can distort surrogate explanations.",
+      "apa_reference": "Lundberg, S. M., & Lee, S.-I. (2017). A unified approach to interpreting model predictions. In Advances in Neural Information Processing Systems (NeurIPS 2017) (Vol. 30, pp. 4765–4774)."
     },
     {
       "id": "xgboost-extreme-gradient-boosting",
-      "term": "XGBoost (Extreme Gradient Boosting)",
-      "vietnamese": "Thuật toán Tăng cường Độ dốc Cực đại XGBoost",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Machine Learning"
+      "term": "Extreme Gradient Boosting",
+      "vietnamese": "Thuật toán XGBoost (Tăng cường Độ dốc Cực trị)",
+      "vietnamese_variants": [
+        "Mô hình học máy XGBoost",
+        "Thuật toán cây quyết định tăng cường cực đại Chen & Guestrin"
       ],
-      "core_definition": "Hệ thống tăng cường cây tối ưu hóa song song và điều chuẩn mạnh mẽ.",
+      "domain_tags": [
+        "Machine Learning",
+        "Supervised Learning",
+        "Predictive Modeling",
+        "Computational Econometrics"
+      ],
+      "core_definition": "A highly optimized, scalable end-to-end tree boosting algorithm developed by Tianqi Chen and Carlos Guestrin that constructs an ensemble of decision trees sequentially using second-order Taylor approximations of the loss function, incorporating built-in L1/L2 regularization to prevent overfitting.",
       "seminal_citation": "Chen & Guestrin (2016)",
-      "tier": "textbook",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of XGBoost (Extreme Gradient Boosting) according to Chen & Guestrin (2016).",
       "domain_tags_en": [
         "Machine Learning"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "XGBoost minimizes a regularized objective function: Obj = sum L(y_i, y_hat_i) + sum Omega(f_k), where Omega(f_k) = gamma*T + 0.5*lambda*sum w_j^2 penalizes tree complexity (number of leaves T and leaf weights w). Unlike traditional gradient boosting (which uses first-order gradients), XGBoost computes both first (gradients g_i) and second derivatives (hessians h_i) of the loss function. It features weighted quantile sketch algorithms for approximate split finding, sparsity-aware handling of missing values, and parallelized out-of-core computing.",
+      "benchmarks": "Systematic hyperparameter tuning via Bayesian optimization or 10-fold cross-validation (learning_rate / eta = 0.01–0.1, max_depth = 3–6, subsample = 0.8, colsample_bytree = 0.8); reporting test-set AUC-ROC, F1-score, or RMSE.",
+      "pitfalls": "Overfitting on small tabular datasets when tree depth is unconstrained (max_depth > 10); evaluating model performance on training data without strict nested cross-validation or out-of-sample holdout test partitions.",
+      "apa_reference": "Chen, T., & Guestrin, C. (2016). XGBoost: A scalable tree boosting system. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (pp. 785–794). https://doi.org/10.1145/2939672.2939785"
     },
     {
       "id": "yeo-johnson-power-transformation",
       "term": "Yeo-Johnson Power Transformation",
       "vietnamese": "Biến đổi Lũy thừa Yeo-Johnson",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Data Transformations"
+      "vietnamese_variants": [
+        "Phép chuyển đổi biến Yeo-Johnson",
+        "Kỹ thuật biến đổi chuẩn hóa số liệu đa biến"
       ],
-      "core_definition": "Mở rộng biến đổi Box-Cox cho phép áp dụng cả trên dữ liệu nhận giá trị âm và số 0.",
+      "domain_tags": [
+        "Data Transformation",
+        "Applied Statistics",
+        "Econometrics",
+        "Parametric Assumptions"
+      ],
+      "core_definition": "A generalized parametric power transformation developed by In-Kwon Yeo and Richard A. Johnson that modifies continuous variables to stabilize variance and approximate normal distributions, overcoming the fundamental limitation of the Box-Cox transformation by supporting zero and negative values.",
       "seminal_citation": "Yeo & Johnson (2000)",
-      "tier": "textbook",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Yeo-Johnson Power Transformation according to Yeo & Johnson (2000).",
       "domain_tags_en": [
         "Data Transformations"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "The Yeo-Johnson transformation psi(lambda, y) is defined piecewise across four mathematical regimes depending on whether y >= 0 or y < 0, and whether transformation parameter lambda equals 0, 2, or other values: (1) For y >= 0 and lambda != 0: ((y + 1)^lambda - 1) / lambda; (2) For y >= 0 and lambda = 0: log(y + 1); (3) For y < 0 and lambda != 2: -((-y + 1)^{2 - lambda} - 1) / (2 - lambda); (4) For y < 0 and lambda = 2: -log(-y + 1). Optimal lambda is estimated via Maximum Likelihood Estimation.",
+      "benchmarks": "Normality tests (Shapiro-Wilk or Anderson-Darling p > 0.05) and residual homoscedasticity checks before and after transformation; reporting estimated lambda with 95% profile likelihood confidence intervals.",
+      "pitfalls": "Applying standard Box-Cox transformations to variables with zero or negative financial returns (which yields mathematical undefined errors or mandates ad-hoc arbitrary constants); interpreting regression coefficients on transformed scales without proper back-transformation.",
+      "apa_reference": "Yeo, I. K., & Johnson, R. A. (2000). A new family of power transformations to improve normality or symmetry. Biometrika, 87(4), 954–959. https://doi.org/10.1093/biomet/87.4.954"
     },
     {
       "id": "youdens-j-statistic",
       "term": "Youden's J Statistic",
-      "vietnamese": "Chỉ số Youden J",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Diagnostic Metrics"
+      "vietnamese": "Chỉ số J của Youden (Chỉ số Thông tri Youden)",
+      "vietnamese_variants": [
+        "Chỉ số Youden J",
+        "Ngưỡng phân loại tối ưu ROC Youden"
       ],
-      "core_definition": "Điểm cắt tối ưu trên đường cong ROC cân bằng giữa độ nhạy và độ đặc hiệu: J = Sensitivity + Specificity - 1.",
+      "domain_tags": [
+        "Diagnostic Testing",
+        "ROC Analysis",
+        "Biostatistics",
+        "Predictive Analytics"
+      ],
+      "core_definition": "A single summary statistic developed by W. J. Youden used in Receiver Operating Characteristic (ROC) curve analysis to quantify the overall diagnostic effectiveness of a continuous biomarker or predictive classifier and to mathematically determine the optimal decision threshold cutoff.",
       "seminal_citation": "Youden (1950)",
-      "tier": "textbook",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Youden's J Statistic according to Youden (1950).",
       "domain_tags_en": [
         "Diagnostic Metrics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Youden's index evaluates the vertical distance between the ROC curve and the diagonal chance line: J = Sensitivity + Specificity - 1 = True Positive Rate - False Positive Rate. J ranges from 0 (completely useless diagnostic test, identical to random chance) to 1.0 (perfect diagnostic test with 100% sensitivity and 100% specificity). The optimal classification cutoff c* is chosen as the point on the ROC curve that maximizes J(c) across all possible empirical threshold values.",
+      "benchmarks": "Reporting the optimal cutoff threshold c* alongside maximized J statistic, accompanied by 95% bootstrap confidence intervals for sensitivity and specificity at that chosen cutoff.",
+      "pitfalls": "Implicitly assuming equal clinical or financial costs for false positives and false negatives (Youden's J weights sensitivity and specificity equally; if false negatives carry fatal consequences, decision curve analysis or cost-weighted cutoffs must be utilized instead).",
+      "apa_reference": "Youden, W. J. (1950). Index for rating diagnostic tests. Cancer, 3(1), 32–35. https://doi.org/10.1002/1097-0142(1950)3:1<32::aid-cncr2820030106>3.0.co;2-3"
     },
     {
       "id": "zenodo-open-access-repository",
       "term": "Zenodo Open Access Repository",
-      "vietnamese": "Kho Lưu trữ Khoa học Mở Zenodo",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Open Science"
+      "vietnamese": "Kho Lưu trữ Dữ liệu Mở Zenodo (CERN)",
+      "vietnamese_variants": [
+        "Kho lưu trữ khoa học mở Zenodo",
+        "Cổng lưu trữ dữ liệu nghiên cứu Zenodo"
       ],
-      "core_definition": "Nền tảng chia sẻ dữ liệu nghiên cứu, mã nguồn và tài liệu mở do CERN phát triển.",
-      "seminal_citation": "CERN & OpenAIRE (2013)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Open Science",
+        "Research Data Management",
+        "FAIR Principles",
+        "Data Archiving"
+      ],
+      "core_definition": "A general-purpose open-access digital research repository operated by the European Organization for Nuclear Research (CERN) under the EU OpenAIRE program, dedicated to preserving, sharing, and assigning persistent digital object identifiers (DOIs) to research data, software codes, and preprints.",
+      "seminal_citation": "European Organization for Nuclear Research & OpenAIRE (2013); Wilkinson et al. (2016)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Zenodo Open Access Repository according to CERN & OpenAIRE (2013).",
       "domain_tags_en": [
         "Open Science"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Zenodo operationalizes the FAIR Data Principles (Findable, Accessible, Interoperable, Reusable). Researchers deposit raw survey datasets, computational scripts, replication packages, and preprints. Zenodo immediately issues a persistent DataCite DOI, provides automated versioning (minting a concept DOI for all versions and specific DOIs for each release), integrates directly with GitHub repositories for software preservation, and guarantees long-term digital preservation within CERN's scientific cloud infrastructure.",
+      "benchmarks": "Mandatory deposit of replication code and anonymized data packages in top-tier journal policies; reporting exact Zenodo DOI and version release in manuscript data availability statements.",
+      "pitfalls": "Uploading sensitive, un-anonymized human subject survey data violating privacy laws (GDPR / HIPAA); treating Zenodo as an unversioned backup drive rather than publishing structured, documented replication archives with README and codebooks.",
+      "apa_reference": "Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Baak, A., ... & Mons, B. (2016). The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data, 3, 160018. https://doi.org/10.1038/sdata.2016.18"
     },
     {
       "id": "zero-inflated-negative-binomial-zinb",
@@ -60351,56 +60654,89 @@
     {
       "id": "zero-order-correlation",
       "term": "Zero-Order Correlation",
-      "vietnamese": "Tương quan Bậc không",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Correlation Analysis"
+      "vietnamese": "Tương quan Bậc không (Tương quan Tuyến tính Thô)",
+      "vietnamese_variants": [
+        "Hệ số tương quan bivariate bậc 0",
+        "Tương quan thô không kiểm soát"
       ],
-      "core_definition": "Hệ số tương quan tuyến tính đơn giản Pearson giữa hai biến mà chưa kiểm soát biến nào.",
-      "seminal_citation": "Cohen et al. (2003)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Applied Statistics",
+        "Bivariate Analysis",
+        "Correlation Analysis",
+        "Linear Regression"
+      ],
+      "core_definition": "The conventional, unadjusted Pearson product-moment correlation coefficient (r) between two continuous variables, calculated without controlling, partialling out, or holding constant the influence of any third or confounding variables (zero covariates partialled out).",
+      "seminal_citation": "Pearson (1896); Cohen, Cohen, West, & Aiken (2003)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Zero-Order Correlation according to Cohen et al. (2003).",
       "domain_tags_en": [
         "Correlation Analysis"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Computed as r_{xy} = Cov(X, Y) / (SD_X * SD_Y). It represents the baseline bivariate linear association between two variables. In multiple regression and mediation modeling, comparing zero-order correlations against partial correlations (r_{xy.z}) or standardized regression coefficients (beta) reveals confounding, mediation, or suppression effects: if r_{xy} is significant but beta drops to zero after adding Z, Z fully mediates or confounds the relationship.",
+      "benchmarks": "Reporting bivariate correlation matrices with sample sizes and two-tailed significance levels (p < .05, p < .01, p < .001) as Table 1/2 in all quantitative empirical manuscripts.",
+      "pitfalls": "Inferring direct causal relationships from significant zero-order correlations without controlling for omitted confounding variables (spurious correlation / third-variable problem); interpreting near-zero correlations as independence when strong non-linear relationships exist.",
+      "apa_reference": "Cohen, J., Cohen, P., West, S. G., & Aiken, L. S. (2003). Applied multiple regression/correlation analysis for the behavioral sciences (3rd ed.). Lawrence Erlbaum Associates."
     },
     {
       "id": "zettelkasten-knowledge-management-luhmann",
-      "term": "Zettelkasten Knowledge Management (Luhmann)",
-      "vietnamese": "Hệ thống Ghi chú Hộp phiếu Zettelkasten",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Knowledge Management"
+      "term": "Zettelkasten Knowledge Management",
+      "vietnamese": "Hệ thống Quản lý Tri thức Hộp phiếu (Zettelkasten Luhmann)",
+      "vietnamese_variants": [
+        "Phương pháp ghi chú Zettelkasten",
+        "Hệ thống phiếu ghi chép liên kết mạng lưới Luhmann"
       ],
-      "core_definition": "Mạng lưới liên kết các ghi chú phi tuyến tính giúp nảy sinh ý tưởng nghiên cứu đột phá.",
-      "seminal_citation": "Luhmann (1981), Ahrens (2017)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Academic Productivity",
+        "Knowledge Management",
+        "Qualitative Synthesis",
+        "Theory Construction"
+      ],
+      "core_definition": "An organic, non-hierarchical, networked note-taking and knowledge management methodology formulated by German sociologist Niklas Luhmann, designed to augment cognitive synthesis, emergent thinking, and prolific theoretical writing by cross-referencing atomic conceptual notes.",
+      "seminal_citation": "Luhmann (1981, 1992); Ahrens (2017)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Zettelkasten Knowledge Management (Luhmann) according to Luhmann (1981), Ahrens (2017).",
       "domain_tags_en": [
         "Knowledge Management"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "The system operates under three fundamental structural principles: (1) Atomicity: Each index card (Zettel) contains exactly one self-contained, autonomous idea written in the researcher's own words; (2) Networked Linking: Notes are not filed in static hierarchical folders, but assigned alphanumeric branch addresses (Folgezettel) and linked bidirectionally via hyperlinks to existing conceptual neighbors; and (3) Distinction of note types: Fleeting notes (temporary captures), Literature notes (selective summaries of cited papers), and Permanent notes (evergreen conceptual synthesis integrated into the slip-box network).",
+      "benchmarks": "Implementation via digital networked tools (Obsidian, Roam Research, Logseq) with bidirectional linking ([[wiki-links]]) and persistent conceptual tagging; synthesis notes serving as direct first-draft outlines for journal manuscripts.",
+      "pitfalls": "Passive collector's fallacy: collecting thousands of copy-pasted highlights without converting them into autonomous, synthesized permanent notes; imposing rigid, rigid top-down folder taxonomies that stifle emergent cross-disciplinary connections.",
+      "apa_reference": "Ahrens, S. (2017). How to take smart notes: One simple technique to boost writing, learning and thinking–for students, academics and nonfiction book writers. CreateSpace."
     },
     {
       "id": "zipfs-law-in-scientometrics",
       "term": "Zipf's Law in Scientometrics",
-      "vietnamese": "Định luật Tần suất Từ Zipf",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Bibliometrics"
+      "vietnamese": "Định luật Zipf trong Trắc lượng Khoa học",
+      "vietnamese_variants": [
+        "Quy luật phân bố tần suất từ Zipf",
+        "Định luật phân phối lũy thừa từ vựng học thuật"
       ],
-      "core_definition": "Tần suất xuất hiện của một từ tỷ lệ nghịch với thứ hạng của nó trong danh sách.",
-      "seminal_citation": "Zipf (1949)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Scientometrics",
+        "Informetrics",
+        "Quantitative Linguistics",
+        "Power Laws"
+      ],
+      "core_definition": "An empirical power-law distribution formulated by George Kingsley Zipf stating that in any large natural language text corpus or scientific publication database, the frequency of any word or keyword is inversely proportional to its frequency rank: f(r) proportional to 1 / r^s (where s approx 1).",
+      "seminal_citation": "Zipf (1935, 1949); Luhn (1958)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Zipf's Law in Scientometrics according to Zipf (1949).",
       "domain_tags_en": [
         "Bibliometrics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "When words or author keywords across a scientific discipline are sorted by frequency, the most frequent term occurs approximately twice as often as the second most frequent, three times as often as the third, and so on. In scientometrics and text mining, Zipf's Law dictates that: (1) Extremely high-frequency terms (stop words: 'the', 'of') carry negligible semantic information; (2) Extremely low-frequency terms (hapax legomena: occurring only once) generate noisy sparsity; (3) The middle-frequency zone (Luhn's cutoffs) contains the high-value substantive descriptors optimal for topic modeling and scientific mapping.",
+      "benchmarks": "Log-log rank-frequency plots must display a linear slope near -1.0 (log(f) = C - s*log(r)); applied in NLP preprocessing to establish vocabulary truncation thresholds.",
+      "pitfalls": "Assuming pure Zipfian linearity across the extreme tails without testing for generalized Zipf-Mandelbrot adjustments; failing to prune stop words before running keyword co-occurrence maps, resulting in distorted network hubs.",
+      "apa_reference": "Zipf, G. K. (1949). Human behavior and the principle of least effort: An introduction to human ecology. Addison-Wesley."
     },
     {
       "id": "directed-acyclic-graphs",
