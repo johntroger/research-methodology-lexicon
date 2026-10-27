@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200, height=630, initial-scale=1.0">
+  <title>Banner Research Methodology Lexicon - Editorial Minimalist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,700;1,6..72,500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: #FAF9F6;
+      background-image: 
+        radial-gradient(at 100% 0%, rgba(224, 231, 255, 0.5) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, rgba(243, 244, 246, 0.8) 0px, transparent 50%);
+      color: #111827;
+      display: flex;
+      position: relative;
+    }
+
+    .border-decor {
+      position: absolute;
+      inset: 20px;
+      border: 1px solid #E5E7EB;
+      border-radius: 20px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      width: 1200px;
+      height: 630px;
+      padding: 50px 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .left-col {
+      width: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .top-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tagline {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #4B5563;
+      margin-bottom: 12px;
+    }
+
+    .tagline-line {
+      width: 32px;
+      height: 2px;
+      background: #1E3A8A;
+    }
+
+    h1.brand-title {
+      font-family: 'Newsreader', serif;
+      font-size: 42px;
+      line-height: 1.1;
+      font-weight: 700;
+      color: #0F172A;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    h1.brand-title em {
+      font-style: italic;
+      color: #1E40AF;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      font-weight: 500;
+      color: #4B5563;
+      line-height: 1.45;
+      margin-bottom: 22px;
+    }
+
+    .features-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .feature-item {
+      background: #FFFFFF;
+      border: 1px solid #E5E7EB;
+      border-radius: 12px;
+      padding: 13px 16px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+
+    .feature-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 4px;
+    }
+
+    .feature-bullet {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #1E40AF;
+    }
+
+    .feature-desc {
+      font-size: 12px;
+      font-weight: 500;
+      color: #6B7280;
+      line-height: 1.35;
+    }
+
+    .bottom-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #E5E7EB;
+      padding-top: 14px;
+      gap: 12px;
+    }
+
+    .academic-cred {
+      font-size: 12px;
+      font-weight: 600;
+      color: #374151;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .free-badge {
+      background: #111827;
+      color: #FFFFFF;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+
+    .app-types {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: #1E40AF;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* Right QR Column */
+    .right-col {
+      width: 380px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .qr-card {
+      width: 350px;
+      background: #FFFFFF;
+      border-radius: 20px;
+      padding: 26px 22px 20px;
+      border: 1px solid #E5E7EB;
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.06);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .qr-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #6B7280;
+      margin-bottom: 4px;
+    }
+
+    .qr-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 14px;
+    }
+
+    .qr-frame {
+      background: #FAF9F6;
+      border: 1px solid #E5E7EB;
+      border-radius: 14px;
+      padding: 10px;
+      margin-bottom: 14px;
+    }
+
+    .qr-frame img {
+      width: 185px;
+      height: 185px;
+      display: block;
+    }
+
+    .url-display {
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 12px;
+      font-weight: 600;
+      color: #111827;
+      background: #F3F4F6;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      width: 100%;
+    }
+
+    .footnote {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: #059669;
+    }
+  </style>
+</head>
+<body>
+  <div class="border-decor"></div>
+
+  <div class="container">
+    <div class="left-col">
+      <div class="top-section">
+        <div class="tagline">
+          <div class="tagline-line"></div>
+          <span>Scholarship & Scientific Methodology</span>
+        </div>
+
+        <h1 class="brand-title">
+          Research Methodology<br>
+          <em>Lexicon</em> (Anh - Việt)
+        </h1>
+
+        <p class="subtitle">
+          Cẩm nang tra cứu thuật ngữ phương pháp nghiên cứu khoa học chuẩn xác, trích dẫn học thuật và ngưỡng kiểm định thống kê.
+        </p>
+      </div>
+
+      <div class="features-list">
+        <div class="feature-item">
+          <div class="feature-header">
+            <div class="feature-bullet"></div>
+            Định Nghĩa Chuẩn Q1
+          </div>
+          <div class="feature-desc">Creswell (2023), SAGE, Hair, Hayes, Henseler & Kline</div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-header">
+            <div class="feature-bullet" style="background:#059669;"></div>
+            Ngưỡng Thống Kê
+          </div>
+          <div class="feature-desc">AVE > 0.5, HTMT < 0.85, VIF < 3.3, Cronbach's α > 0.7</div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-header">
+            <div class="feature-bullet" style="background:#DC2626;"></div>
+            Reviewer Red Flags
+          </div>
+          <div class="feature-desc">Phát hiện bẫy sai lầm hay bị ban phản biện chất vấn</div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-header">
+            <div class="feature-bullet" style="background:#D97706;"></div>
+            Trích Dẫn 1-Click
+          </div>
+          <div class="feature-desc">Xuất định dạng APA 7th, BibTeX, Zotero & Mendeley</div>
+        </div>
+      </div>
+
+      <div class="bottom-bar">
+        <div class="academic-cred">
+          <span class="free-badge">FREE 100%</span>
+          <span>Dành cho NCS (PhD), Thạc sĩ & Giảng viên</span>
+        </div>
+        <div class="app-types">
+          Nền tảng Web • Mobile & PC
+        </div>
+      </div>
+    </div>
+
+    <div class="right-col">
+      <div class="qr-card">
+        <div class="qr-label">Truy Cập Nhanh</div>
+        <div class="qr-title">Quét Mã Để Khám Phá</div>
+
+        <div class="qr-frame">
+          <img src="qr-code.svg" alt="QR Code" width="185" height="185">
+        </div>
+
+        <div class="url-display">vnresearch-dictionary.vercel.app</div>
+        <div class="footnote">✓ Hoàn toàn miễn phí • Sử dụng ngay</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -21,6 +21,7 @@ import {
 import { 
   TermRevisionInput, 
   NewTermProposalInput,
+  AiReviewEvaluation,
   DiscussionItem,
   DiscussionReply,
   DiscussionCategory,
@@ -442,6 +443,46 @@ export async function reviewNewTermProposal(
       localTerms[idx].reviewerNote = reviewerNote || "";
       localTerms[idx].reviewedAt = new Date().toISOString();
       localStorage.setItem("rv_local_new_terms", JSON.stringify(localTerms));
+    }
+  }
+  return true;
+}
+
+/**
+ * Lưu kết quả thẩm định AI vào Firestore cho Revision
+ */
+export async function saveAiEvaluationToRevision(
+  revisionId: string, 
+  aiEvaluation: AiReviewEvaluation
+): Promise<boolean> {
+  if (isFirebaseConfigured && db && !revisionId.startsWith("local-")) {
+    try {
+      const docRef = doc(db, "pending_revisions", revisionId);
+      await updateDoc(docRef, { aiEvaluation });
+      return true;
+    } catch (err) {
+      console.error("[Moderation] Save AI evaluation to revision error:", err);
+      return false;
+    }
+  }
+  return true;
+}
+
+/**
+ * Lưu kết quả thẩm định AI vào Firestore cho New Term Proposal
+ */
+export async function saveAiEvaluationToNewTerm(
+  proposalId: string, 
+  aiEvaluation: AiReviewEvaluation
+): Promise<boolean> {
+  if (isFirebaseConfigured && db && !proposalId.startsWith("local-")) {
+    try {
+      const docRef = doc(db, "pending_terms", proposalId);
+      await updateDoc(docRef, { aiEvaluation });
+      return true;
+    } catch (err) {
+      console.error("[Moderation] Save AI evaluation to proposal error:", err);
+      return false;
     }
   }
   return true;

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080, initial-scale=1.0">
+  <title>Banner Square Research Methodology Lexicon - Academic Executive Dark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      width: 1080px;
+      height: 1080px;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #0B1120;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(30, 58, 138, 0.45) 0%, transparent 55%),
+        radial-gradient(circle at 85% 85%, rgba(14, 165, 233, 0.25) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.8) 0%, transparent 100%);
+      color: #F8FAFC;
+      display: flex;
+      position: relative;
+    }
+
+    .grid-lines {
+      position: absolute;
+      inset: 0;
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      width: 1080px;
+      height: 1080px;
+      padding: 56px 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Top Section */
+    .top-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(30, 58, 138, 0.5);
+      border: 1px solid rgba(96, 165, 250, 0.35);
+      color: #93C5FD;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      backdrop-filter: blur(8px);
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #60A5FA;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #60A5FA;
+    }
+
+    h1.brand-title {
+      font-size: 44px;
+      line-height: 1.15;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+
+    h1.brand-title .accent-text {
+      background: linear-gradient(135deg, #60A5FA 0%, #38BDF8 50%, #F59E0B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      font-weight: 400;
+      color: #94A3B8;
+      line-height: 1.45;
+      max-width: 860px;
+      margin-bottom: 24px;
+    }
+
+    /* Features Grid (2x2) */
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .feature-card {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .feature-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .icon-blue { background: rgba(37, 99, 235, 0.2); color: #60A5FA; border: 1px solid rgba(96, 165, 250, 0.3); }
+    .icon-emerald { background: rgba(5, 150, 105, 0.2); color: #34D399; border: 1px solid rgba(52, 211, 153, 0.3); }
+    .icon-rose { background: rgba(225, 29, 72, 0.2); color: #FB7185; border: 1px solid rgba(251, 113, 133, 0.3); }
+    .icon-amber { background: rgba(217, 119, 6, 0.2); color: #FBBF24; border: 1px solid rgba(251, 191, 36, 0.3); }
+
+    .feature-text h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #F1F5F9;
+      margin-bottom: 4px;
+    }
+
+    .feature-text p {
+      font-size: 12.5px;
+      font-weight: 400;
+      color: #94A3B8;
+      line-height: 1.4;
+    }
+
+    /* QR Showcase Card (Horizontal Split) */
+    .qr-showcase {
+      background: rgba(15, 23, 42, 0.85);
+      border-radius: 24px;
+      padding: 24px 32px;
+      box-shadow: 
+        0 25px 50px -12px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(96, 165, 250, 0.2);
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin-bottom: 24px;
+      backdrop-filter: blur(16px);
+    }
+
+    .qr-frame {
+      background: #FFFFFF;
+      padding: 12px;
+      border-radius: 20px;
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .qr-frame img {
+      width: 190px;
+      height: 190px;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .qr-details {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .qr-header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(37, 99, 235, 0.25);
+      border: 1px solid rgba(96, 165, 250, 0.4);
+      color: #93C5FD;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 9999px;
+      margin-bottom: 8px;
+      width: fit-content;
+    }
+
+    .qr-details h3 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .url-pill {
+      background: rgba(30, 41, 59, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 14px;
+      font-weight: 700;
+      color: #F8FAFC;
+      margin-bottom: 12px;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .qr-value-points {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .value-point {
+      font-size: 13px;
+      font-weight: 500;
+      color: #CBD5E1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .value-point svg {
+      color: #34D399;
+      flex-shrink: 0;
+    }
+
+    /* Bottom Trust Line */
+    .bottom-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 18px;
+      gap: 16px;
+    }
+
+    .target-audience {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #CBD5E1;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .target-tag {
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #E2E8F0;
+      white-space: nowrap;
+    }
+
+    .platform-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #38BDF8;
+      background: rgba(14, 165, 233, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      padding: 5px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-lines"></div>
+
+  <div class="container">
+    <div class="top-section">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        CÔNG CỤ NCKH CHUẨN QUỐC TẾ • MIỄN PHÍ 100%
+      </div>
+
+      <h1 class="brand-title">
+        Research Methodology<br>
+        <span class="accent-text">Lexicon (Anh - Việt)</span>
+      </h1>
+
+      <p class="subtitle">
+        Hệ thống tra cứu thuật ngữ phương pháp nghiên cứu khoa học chuẩn mực dành cho Giảng viên, Nghiên cứu sinh (PhD) và Học viên cao học.
+      </p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon icon-blue">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+        </div>
+        <div class="feature-text">
+          <h4>Định Nghĩa Chuẩn Mực</h4>
+          <p>Trích xuất từ Creswell (2023), SAGE, Hair, Hayes, Kline & Henseler</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon icon-emerald">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <div class="feature-text">
+          <h4>Ngưỡng Kiểm Định Thống Kê</h4>
+          <p>AVE > 0.5, HTMT < 0.85, VIF < 3.3, Cronbach's alpha > 0.7...</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon icon-rose">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <div class="feature-text">
+          <h4>Cảnh Báo Reviewer Red Flags</h4>
+          <p>Nhận diện bẫy sai lầm hay bị phản biện từ chối bài báo Q1</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon icon-amber">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <div class="feature-text">
+          <h4>1-Click APA 7th & BibTeX</h4>
+          <p>Xuất trích dẫn tức thì cho Zotero, Mendeley & LaTeX Overleaf</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="qr-showcase">
+      <div class="qr-frame">
+        <img src="qr-code.svg" alt="QR Code Tra Cứu Website" width="190" height="190">
+      </div>
+
+      <div class="qr-details">
+        <div class="qr-header-badge">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/></svg>
+          QUÉT MÃ TRUY CẬP NGAY
+        </div>
+        <h3>Trải Nghiệm Nền Tảng Trực Tuyến</h3>
+
+        <div class="url-pill">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          vnresearch-dictionary.vercel.app
+        </div>
+
+        <div class="qr-value-points">
+          <div class="value-point">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Sử dụng hoàn toàn miễn phí • Không cần đăng ký tài khoản
+          </div>
+          <div class="value-point">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Tra cứu siêu tốc &lt; 5ms • Phát âm tiếng Anh chuẩn mực
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <div class="target-audience">
+        <span>Dành cho:</span>
+        <span class="target-tag">Nghiên cứu sinh</span>
+        <span class="target-tag">Giảng viên</span>
+        <span class="target-tag">Học viên Thạc sĩ</span>
+      </div>
+      <div class="platform-pill">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span>Nền tảng Web • Mobile & PC</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

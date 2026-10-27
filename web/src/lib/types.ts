@@ -124,6 +124,43 @@ export interface TermRevisionInput {
   };
   status?: "pending" | "approved" | "rejected";
   createdAt?: string;
+  aiEvaluation?: AiReviewEvaluation;
+}
+
+/**
+ * Cấu trúc Thẩm định Học thuật của Trí tuệ Nhân tạo (Gemini AI Evaluation)
+ */
+export interface AiReviewCriteria {
+  definition_rigor: number;         // 0 - 100: Độ chính xác, rõ ràng và tính khái niệm hóa của định nghĩa
+  empirical_benchmarks: number;     // 0 - 100: Độ tin cậy của ngưỡng số liệu thực nghiệm
+  pitfalls_validity: number;        // 0 - 100: Tính xác thực của cạm bẫy phương pháp luận
+  citation_integrity: number;       // 0 - 100: Độ chính xác của trích dẫn, chống bịa nguồn/DOI
+  academic_tone: number;            // 0 - 100: Văn phong học thuật chuẩn mực, không dùng từ ngữ cảm tính/văn nói
+}
+
+export interface AiReviewEvaluation {
+  verdict: "approve" | "reject" | "needs_revision"; // Quyết định khuyến nghị
+  academic_score: number;                            // Điểm tổng quát (0 - 100)
+  summary: string;                                   // Tóm tắt lý do thẩm định (2-3 câu súc tích bằng tiếng Việt)
+  criteria: AiReviewCriteria;
+  red_flags: string[];                               // Danh sách các cảnh báo vi phạm nghiêm trọng (nếu có)
+  key_strengths: string[];                           // Các điểm mạnh đáng ghi nhận
+  suggested_editorial_notes: string;                 // Gợi ý phản hồi biên tập cho tác giả
+  evaluated_at: string;                              // Thời gian thẩm định (ISO)
+  model: string;                                     // Tên model thực hiện thẩm định (ví dụ: gemini-2.5-flash)
+}
+
+export interface AiReviewRequest {
+  type: "revision" | "new_term";
+  termName: string;
+  payload: TermRevisionInput | NewTermProposalInput;
+  adminPasscode?: string;
+}
+
+export interface AiReviewResponse {
+  success: boolean;
+  evaluation?: AiReviewEvaluation;
+  error?: string;
 }
 
 /**
@@ -154,6 +191,7 @@ export interface NewTermProposalInput {
   authorInstitution?: string;
   status?: "pending" | "approved" | "rejected";
   createdAt?: string;
+  aiEvaluation?: AiReviewEvaluation;
 }
 
 /**

@@ -16,18 +16,27 @@ import {
   Filter, 
   ExternalLink,
   GraduationCap,
-  MessageSquare
+  MessageSquare,
+  Sparkles,
+  ChevronDown,
+  ChevronUp,
+  Bot,
+  AlertTriangle
 } from "lucide-react";
 import { 
   fetchPendingRevisions, 
   fetchPendingTerms, 
   reviewTermRevision, 
   reviewNewTermProposal,
+  saveAiEvaluationToRevision,
+  saveAiEvaluationToNewTerm,
   TermRevisionItem,
   NewTermProposalItem,
   subscribeToAuth
 } from "@/lib/firebase-service";
+import { requestAiReview } from "@/lib/submission-guard";
 import VisualDiffViewer from "@/components/VisualDiffViewer";
+import AiReviewCritiqueCard from "@/components/AiReviewCritiqueCard";
 import type { User } from "firebase/auth";
 
 const ADMIN_PASSCODE = process.env.NEXT_PUBLIC_ADMIN_PASSCODE || "Tranthanhtung";
@@ -45,6 +54,79 @@ export default function ModerationPage() {
   const [newTerms, setNewTerms] = useState<NewTermProposalItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [actionLoadingId, setActionLoadingId] = useState<string | null>(null);
+
+  // AI Moderation States
+  const [aiAnalyzingId, setAiAnalyzingId] = useState<string | null>(null);
+  const [isBatchAnalyzing, setIsBatchAnalyzing] = useState(false);
+  const [expandedAiCards, setExpandedAiCards] = useState<Record<string, boolean>>({});
+
+  const toggleAiCard = (id: string) => {
+    setExpandedAiCards(prev => ({ ...prev, [id]: !prev[id] }));
+  };
+
+  const handleTriggerAiReviewRevision = async (rev: TermRevisionItem) => {
+    setAiAnalyzingId(rev.id);
+    try {
+      const res = await requestAiReview("revision", rev.termName, rev);
+      if (res.success && res.evaluation) {
+        setRevisions(prev => prev.map(r => r.id === rev.id ? { ...r, aiEvaluation: res.evaluation } : r));
+        await saveAiEvaluationToRevision(rev.id, res.evaluation);
+        setExpandedAiCards(prev => ({ ...prev, [rev.id]: true }));
+      }
+    } catch (err) {
+      console.error("AI Review error:", err);
+    } finally {
+      setAiAnalyzingId(null);
+    }
+  };
+
+  const handleTriggerAiReviewNewTerm = async (term: NewTermProposalItem) => {
+    setAiAnalyzingId(term.id);
+    try {
+      const res = await requestAiReview("new_term", term.term, term);
+      if (res.success && res.evaluation) {
+        setNewTerms(prev => prev.map(t => t.id === term.id ? { ...t, aiEvaluation: res.evaluation } : t));
+        await saveAiEvaluationToNewTerm(term.id, res.evaluation);
+        setExpandedAiCards(prev => ({ ...prev, [term.id]: true }));
+      }
+    } catch (err) {
+      console.error("AI Review error:", err);
+    } finally {
+      setAiAnalyzingId(null);
+    }
+  };
+
+  const handleBatchAiAudit = async () => {
+    setIsBatchAnalyzing(true);
+    try {
+      if (activeTab === "revisions") {
+        const pending = revisions.filter(r => (r.status || "pending") === "pending" && !r.aiEvaluation);
+        for (const rev of pending) {
+          setAiAnalyzingId(rev.id);
+          const res = await requestAiReview("revision", rev.termName, rev);
+          if (res.success && res.evaluation) {
+            setRevisions(prev => prev.map(r => r.id === rev.id ? { ...r, aiEvaluation: res.evaluation } : r));
+            await saveAiEvaluationToRevision(rev.id, res.evaluation);
+          }
+        }
+      } else {
+        const pending = newTerms.filter(t => (t.status || "pending") === "pending" && !t.aiEvaluation);
+        for (const term of pending) {
+          setAiAnalyzingId(term.id);
+          const res = await requestAiReview("new_term", term.term, term);
+          if (res.success && res.evaluation) {
+            setNewTerms(prev => prev.map(t => t.id === term.id ? { ...t, aiEvaluation: res.evaluation } : t));
+            await saveAiEvaluationToNewTerm(term.id, res.evaluation);
+          }
+        }
+      }
+    } catch (err) {
+      console.error("Batch AI review error:", err);
+    } finally {
+      setAiAnalyzingId(null);
+      setIsBatchAnalyzing(false);
+    }
+  };
 
   // Lắng nghe auth & tải dữ liệu
   useEffect(() => {
@@ -270,22 +352,34 @@ export default function ModerationPage() {
               </button>
             </div>
 
-            {/* Filter buttons: pending / approved / rejected / all */}
-            <div className="flex items-center gap-1 text-xs">
-              <span className="text-slate-400 mr-1 text-[11px] hidden sm:inline">Lọc:</span>
-              {(["pending", "approved", "rejected", "all"] as const).map((st) => (
-                <button
-                  key={st}
-                  onClick={() => setStatusFilter(st)}
-                  className={`px-2.5 py-1 rounded-md capitalize font-medium transition ${
-                    statusFilter === st
-                      ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-xs"
-                      : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200"
-                  }`}
-                >
-                  {st === "pending" ? "Chờ duyệt" : st === "approved" ? "Đã duyệt" : st === "rejected" ? "Từ chối" : "Tất cả"}
-                </button>
-              ))}
+            {/* Filter buttons & Batch AI Audit */}
+            <div className="flex items-center gap-2 flex-wrap">
+              <button
+                onClick={handleBatchAiAudit}
+                disabled={isBatchAnalyzing}
+                className="px-3 py-1 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-xs disabled:opacity-50"
+                title="Tự động gọi Gemini AI thẩm định tất cả các mục chưa được đánh giá"
+              >
+                <Sparkles size={13} className={isBatchAnalyzing ? "animate-spin" : ""} />
+                <span>{isBatchAnalyzing ? "Đang quét AI..." : "Quét AI Tất Cả Chờ Duyệt"}</span>
+              </button>
+
+              <div className="flex items-center gap-1 text-xs">
+                <span className="text-slate-400 mr-1 text-[11px] hidden sm:inline">Lọc:</span>
+                {(["pending", "approved", "rejected", "all"] as const).map((st) => (
+                  <button
+                    key={st}
+                    onClick={() => setStatusFilter(st)}
+                    className={`px-2.5 py-1 rounded-md capitalize font-medium transition ${
+                      statusFilter === st
+                        ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-xs"
+                        : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200"
+                    }`}
+                  >
+                    {st === "pending" ? "Chờ duyệt" : st === "approved" ? "Đã duyệt" : st === "rejected" ? "Từ chối" : "Tất cả"}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -323,6 +417,22 @@ export default function ModerationPage() {
                             <span className="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 font-mono">
                               {rev.languageMode === "en" ? "🌐 English" : "🇻🇳 Anh - Việt"}
                             </span>
+                            {rev.aiEvaluation && (
+                              <span className={`px-2 py-0.5 rounded-full text-[11px] font-bold flex items-center gap-1 border ${
+                                rev.aiEvaluation.academic_score >= 80
+                                  ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800"
+                                  : rev.aiEvaluation.academic_score >= 60
+                                  ? "bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 border-amber-300 dark:border-amber-800"
+                                  : "bg-red-100 text-red-800 dark:bg-red-950 dark:text-red-300 border-red-300 dark:border-red-800"
+                              }`}>
+                                <Sparkles size={11} />
+                                <span>
+                                  {rev.aiEvaluation.academic_score >= 80 
+                                    ? `AI Verified (${rev.aiEvaluation.academic_score})` 
+                                    : `AI: ${rev.aiEvaluation.academic_score}/100`}
+                                </span>
+                              </span>
+                            )}
                             {isApproved && (
                               <span className="px-2 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">
                                 ✓ Đã phê duyệt
@@ -352,7 +462,17 @@ export default function ModerationPage() {
 
                         {/* Nút hành động một chạm */}
                         {isPending && (
-                          <div className="flex items-center gap-2 shrink-0">
+                          <div className="flex items-center gap-2 shrink-0 flex-wrap">
+                            <button
+                              onClick={() => handleTriggerAiReviewRevision(rev)}
+                              disabled={aiAnalyzingId === rev.id}
+                              className="px-3 py-1.5 rounded-lg border border-indigo-200 dark:border-indigo-800 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 font-medium text-xs transition flex items-center gap-1 disabled:opacity-50"
+                              title="Yêu cầu Gemini AI thẩm định"
+                            >
+                              <Sparkles size={12} className={aiAnalyzingId === rev.id ? "animate-spin text-indigo-600" : ""} />
+                              <span>{aiAnalyzingId === rev.id ? "Đang quét AI..." : rev.aiEvaluation ? "AI Thẩm định lại" : "AI Thẩm định"}</span>
+                            </button>
+
                             <button
                               onClick={() => handleReviewRevision(rev.id, "approved")}
                               disabled={actionLoadingId === rev.id}
@@ -372,6 +492,40 @@ export default function ModerationPage() {
                           </div>
                         )}
                       </div>
+
+                      {/* HỘP KẾT QUẢ THẨM ĐỊNH GEMINI AI (NẾU CÓ) */}
+                      {rev.aiEvaluation && (
+                        <div className="p-3.5 rounded-xl bg-indigo-50/50 dark:bg-indigo-950/20 border border-indigo-200/80 dark:border-indigo-900/60 text-xs space-y-2">
+                          <div className="flex items-center justify-between gap-2 flex-wrap">
+                            <div className="flex items-center gap-2">
+                              <div className="p-1 rounded bg-indigo-600 text-white shrink-0">
+                                <Sparkles size={13} />
+                              </div>
+                              <span className="font-bold text-indigo-950 dark:text-indigo-200">
+                                Thẩm định Gemini AI • Điểm: {rev.aiEvaluation.academic_score}/100 
+                                ({rev.aiEvaluation.verdict === "approve" ? "Đề xuất Phê duyệt" : rev.aiEvaluation.verdict === "needs_revision" ? "Đề xuất Xem xét" : "Đề xuất Từ chối"})
+                              </span>
+                            </div>
+                            <button
+                              onClick={() => toggleAiCard(rev.id)}
+                              className="text-[11px] text-indigo-600 dark:text-indigo-400 font-semibold hover:underline flex items-center gap-1"
+                            >
+                              <span>{expandedAiCards[rev.id] ? "Thu gọn kết quả AI" : "Xem chi tiết tiêu chí & cờ đỏ"}</span>
+                              {expandedAiCards[rev.id] ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
+                            </button>
+                          </div>
+
+                          <p className="text-slate-700 dark:text-slate-300 italic pl-1 leading-relaxed">
+                            "{rev.aiEvaluation.summary}"
+                          </p>
+
+                          {expandedAiCards[rev.id] && (
+                            <div className="pt-2">
+                              <AiReviewCritiqueCard evaluation={rev.aiEvaluation} mode="dashboard_view" />
+                            </div>
+                          )}
+                        </div>
+                      )}
 
                       {/* Hai trường học thuật: Lý do sửa & Nguồn DOI */}
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800 text-xs">
@@ -478,6 +632,22 @@ export default function ModerationPage() {
                             <span className="font-semibold text-blue-700 dark:text-blue-300">
                               ({item.vietnamese})
                             </span>
+                            {item.aiEvaluation && (
+                              <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold flex items-center gap-1 border ${
+                                item.aiEvaluation.academic_score >= 80
+                                  ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800"
+                                  : item.aiEvaluation.academic_score >= 60
+                                  ? "bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 border-amber-300 dark:border-amber-800"
+                                  : "bg-red-100 text-red-800 dark:bg-red-950 dark:text-red-300 border-red-300 dark:border-red-800"
+                              }`}>
+                                <Sparkles size={10} />
+                                <span>
+                                  {item.aiEvaluation.academic_score >= 80 
+                                    ? `AI Verified (${item.aiEvaluation.academic_score})` 
+                                    : `AI: ${item.aiEvaluation.academic_score}/100`}
+                                </span>
+                              </span>
+                            )}
                             {isApproved && (
                               <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">
                                 ✓ Đã bổ sung
@@ -498,7 +668,17 @@ export default function ModerationPage() {
                         </div>
 
                         {isPending && (
-                          <div className="flex items-center gap-2 shrink-0">
+                          <div className="flex items-center gap-2 shrink-0 flex-wrap">
+                            <button
+                              onClick={() => handleTriggerAiReviewNewTerm(item)}
+                              disabled={aiAnalyzingId === item.id}
+                              className="px-3 py-1.5 rounded-lg border border-indigo-200 dark:border-indigo-800 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 font-medium text-xs transition flex items-center gap-1 disabled:opacity-50"
+                              title="Yêu cầu Gemini AI thẩm định"
+                            >
+                              <Sparkles size={12} className={aiAnalyzingId === item.id ? "animate-spin text-indigo-600" : ""} />
+                              <span>{aiAnalyzingId === item.id ? "Đang quét AI..." : item.aiEvaluation ? "AI Thẩm định lại" : "AI Thẩm định"}</span>
+                            </button>
+
                             <button
                               onClick={() => handleReviewNewTerm(item.id, "approved")}
                               disabled={actionLoadingId === item.id}
@@ -518,6 +698,40 @@ export default function ModerationPage() {
                           </div>
                         )}
                       </div>
+
+                      {/* HỘP KẾT QUẢ THẨM ĐỊNH GEMINI AI (NẾU CÓ) */}
+                      {item.aiEvaluation && (
+                        <div className="p-3.5 rounded-xl bg-indigo-50/50 dark:bg-indigo-950/20 border border-indigo-200/80 dark:border-indigo-900/60 text-xs space-y-2">
+                          <div className="flex items-center justify-between gap-2 flex-wrap">
+                            <div className="flex items-center gap-2">
+                              <div className="p-1 rounded bg-indigo-600 text-white shrink-0">
+                                <Sparkles size={13} />
+                              </div>
+                              <span className="font-bold text-indigo-950 dark:text-indigo-200">
+                                Thẩm định Gemini AI • Điểm: {item.aiEvaluation.academic_score}/100 
+                                ({item.aiEvaluation.verdict === "approve" ? "Đề xuất Phê duyệt" : item.aiEvaluation.verdict === "needs_revision" ? "Đề xuất Xem xét" : "Đề xuất Từ chối"})
+                              </span>
+                            </div>
+                            <button
+                              onClick={() => toggleAiCard(item.id)}
+                              className="text-[11px] text-indigo-600 dark:text-indigo-400 font-semibold hover:underline flex items-center gap-1"
+                            >
+                              <span>{expandedAiCards[item.id] ? "Thu gọn kết quả AI" : "Xem chi tiết tiêu chí & cờ đỏ"}</span>
+                              {expandedAiCards[item.id] ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
+                            </button>
+                          </div>
+
+                          <p className="text-slate-700 dark:text-slate-300 italic pl-1 leading-relaxed">
+                            "{item.aiEvaluation.summary}"
+                          </p>
+
+                          {expandedAiCards[item.id] && (
+                            <div className="pt-2">
+                              <AiReviewCritiqueCard evaluation={item.aiEvaluation} mode="dashboard_view" />
+                            </div>
+                          )}
+                        </div>
+                      )}
 
                       {/* Phân loại & Lý do */}
                       <div className="space-y-2">

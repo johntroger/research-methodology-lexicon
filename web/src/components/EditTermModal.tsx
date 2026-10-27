@@ -13,11 +13,16 @@ import {
   LogIn,
   GraduationCap
 } from "lucide-react";
-import { MethodologyTerm, TermRevisionInput } from "@/lib/types";
+import { MethodologyTerm, TermRevisionInput, AiReviewEvaluation } from "@/lib/types";
 import { 
   submitTermRevision, 
   checkSubmissionRateLimit 
 } from "@/lib/firebase-service";
+import { 
+  validateRevisionLocally, 
+  requestAiReview 
+} from "@/lib/submission-guard";
+import AiReviewCritiqueCard from "./AiReviewCritiqueCard";
 import { 
   getTermDefinition, 
   getTermBenchmarks, 
@@ -67,6 +72,12 @@ export default function EditTermModal({
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [rateLimitInfo, setRateLimitInfo] = useState({ allowed: true, remaining: 3 });
 
+  // AI Review States
+  const [isAiReviewing, setIsAiReviewing] = useState(false);
+  const [aiEvaluation, setAiEvaluation] = useState<AiReviewEvaluation | null>(null);
+  const [showAiDrawer, setShowAiDrawer] = useState(false);
+  const [pendingRevisionData, setPendingRevisionData] = useState<TermRevisionInput | null>(null);
+
   // Khởi tạo giá trị ban đầu từ mục từ hiện tại
   useEffect(() => {
     if (isOpen) {
@@ -80,6 +91,9 @@ export default function EditTermModal({
       setSupportingSources("");
       setErrorMessage(null);
       setIsSuccess(false);
+      setShowAiDrawer(false);
+      setAiEvaluation(null);
+      setPendingRevisionData(null);
       setRateLimitInfo(checkSubmissionRateLimit());
     }
   }, [isOpen, term, languageMode]);
@@ -120,7 +134,6 @@ export default function EditTermModal({
       return;
     }
 
-    setIsSubmitting(true);
     setErrorMessage(null);
 
     const revisionData: TermRevisionInput = {
@@ -152,17 +165,89 @@ export default function EditTermModal({
       }
     };
 
-    const res = await submitTermRevision(revisionData);
-    setIsSubmitting(false);
+    // 1. Kiểm tra tĩnh sơ bộ (Local Validation Guard)
+    const localVal = validateRevisionLocally(revisionData);
+    if (!localVal.isValid) {
+      setErrorMessage(localVal.error || "Dữ liệu chưa hợp lệ.");
+      return;
+    }
 
-    if (res.success) {
-      setIsSuccess(true);
-      setTimeout(() => {
-        setIsSuccess(false);
-        onClose();
-      }, 2200);
-    } else {
-      setErrorMessage(res.error || (isEn ? "Failed to submit revision." : "Gửi đề xuất thất bại."));
+    // 2. Kích hoạt Thẩm định Học thuật Thời gian thực với Gemini AI
+    setIsAiReviewing(true);
+    setShowAiDrawer(false);
+
+    try {
+      const aiRes = await requestAiReview("revision", term.term, revisionData);
+      setIsAiReviewing(false);
+
+      if (aiRes.success && aiRes.evaluation) {
+        const evaluation: AiReviewEvaluation = aiRes.evaluation;
+        setAiEvaluation(evaluation);
+        revisionData.aiEvaluation = evaluation;
+
+        // Nếu được phê duyệt hoặc điểm >= 80 (Đạt chuẩn)
+        if (evaluation.verdict === "approve" || evaluation.academic_score >= 80) {
+          setIsSubmitting(true);
+          const res = await submitTermRevision(revisionData);
+          setIsSubmitting(false);
+
+          if (res.success) {
+            setIsSuccess(true);
+            setTimeout(() => {
+              setIsSuccess(false);
+              onClose();
+            }, 2600);
+          } else {
+            setErrorMessage(res.error || (isEn ? "Failed to submit revision." : "Gửi đề xuất thất bại."));
+          }
+        } else {
+          // Chưa đạt chuẩn: mở bảng góp ý AI để người dùng chỉnh sửa
+          setPendingRevisionData(revisionData);
+          setShowAiDrawer(true);
+        }
+      } else {
+        // Fallback: nếu AI lỗi, vẫn cho phép gửi thủ công bình thường
+        setIsSubmitting(true);
+        const res = await submitTermRevision(revisionData);
+        setIsSubmitting(false);
+
+        if (res.success) {
+          setIsSuccess(true);
+          setTimeout(() => {
+            setIsSuccess(false);
+            onClose();
+          }, 2200);
+        } else {
+          setErrorMessage(res.error || (isEn ? "Failed to submit revision." : "Gửi đề xuất thất bại."));
+        }
+      }
+    } catch (err: any) {
+      console.error("[EditTermModal AI Submit Error]", err);
+      setIsAiReviewing(false);
+      setErrorMessage("Lỗi trong quá trình thẩm định AI. Vui lòng thử lại.");
+    }
+  };
+
+  const handleForceSubmit = async () => {
+    if (!pendingRevisionData) return;
+    setIsSubmitting(true);
+    try {
+      const res = await submitTermRevision(pendingRevisionData);
+      setIsSubmitting(false);
+
+      if (res.success) {
+        setShowAiDrawer(false);
+        setIsSuccess(true);
+        setTimeout(() => {
+          setIsSuccess(false);
+          onClose();
+        }, 2200);
+      } else {
+        setErrorMessage(res.error || (isEn ? "Failed to submit revision." : "Gửi đề xuất thất bại."));
+      }
+    } catch (err) {
+      setIsSubmitting(false);
+      setErrorMessage("Gửi đề xuất thất bại.");
     }
   };
 
@@ -202,21 +287,67 @@ export default function EditTermModal({
 
         {/* Content Body */}
         {isSuccess ? (
-          <div className="p-10 flex flex-col items-center justify-center text-center space-y-3">
+          <div className="p-8 sm:p-10 flex flex-col items-center justify-center text-center space-y-3.5">
             <div className="w-14 h-14 rounded-full bg-emerald-100 dark:bg-emerald-950/60 border border-emerald-300 dark:border-emerald-800 text-emerald-600 dark:text-emerald-400 flex items-center justify-center animate-bounce">
               <CheckCircle2 size={32} />
             </div>
-            <h4 className="text-lg font-bold text-slate-900 dark:text-white">
-              {isEn ? "Revision Proposal Submitted!" : "Đề xuất chỉnh sửa đã được ghi nhận!"}
-            </h4>
+            
+            <div className="space-y-1">
+              <h4 className="text-lg font-bold text-slate-900 dark:text-white">
+                {isEn ? "Revision Proposal Submitted!" : "Đề xuất Chỉnh sửa Đã Được Ghi Nhận!"}
+              </h4>
+              {aiEvaluation && (
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800">
+                  <Sparkles size={13} />
+                  <span>AI Verified • Điểm Thẩm Định: {aiEvaluation.academic_score}/100</span>
+                </div>
+              )}
+            </div>
+
+            {aiEvaluation?.summary && (
+              <p className="text-xs text-slate-700 dark:text-slate-300 max-w-md bg-emerald-50/60 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900/60 p-3 rounded-xl italic">
+                "{aiEvaluation.summary}"
+              </p>
+            )}
+
             <p className="text-xs text-slate-500 dark:text-slate-400 max-w-md leading-relaxed">
               {isEn
-                ? "Your proposed changes have entered the pending peer-review queue. Once verified against seminal citations, they will be merged into the live lexicon."
-                : "Đóng góp học thuật của bạn đã vào hàng đợi kiểm duyệt (Pending Queue). Hội đồng biên tập sẽ so sánh bằng Red/Green Diff và sáp nhập vào bản phát hành mới nhất."}
+                ? "Your proposed changes have been verified and placed in the priority moderation queue for editorial confirmation."
+                : "Đóng góp học thuật của bạn đã được gắn cờ ưu tiên (AI Verified) và chuyển đến Ban biên tập để hoàn tất cập nhật vào bản chính thức."}
             </p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="flex-1 overflow-y-auto p-5 space-y-4 text-xs">
+            {/* Banner trạng thái khi AI đang thẩm định */}
+            {isAiReviewing && (
+              <div className="p-4 rounded-xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/80 dark:bg-indigo-950/40 flex items-center gap-3 animate-pulse">
+                <div className="p-2 rounded-lg bg-indigo-600 text-white shrink-0">
+                  <Sparkles size={16} className="animate-spin" />
+                </div>
+                <div className="text-xs space-y-0.5">
+                  <strong className="text-indigo-950 dark:text-indigo-200 block font-bold">
+                    {isEn ? "Gemini AI is peer-reviewing your submission..." : "Trợ lý AI đang thẩm định học thuật chuẩn Q1..."}
+                  </strong>
+                  <p className="text-indigo-700 dark:text-indigo-300 text-[11px]">
+                    {isEn 
+                      ? "Evaluating conceptual rigor, empirical benchmarks, and citation integrity in real-time." 
+                      : "Đang kiểm tra tính chính xác của định nghĩa, ngưỡng số liệu và tính xác thực của nguồn DOI/trích dẫn..."}
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {/* Bảng góp ý chi tiết từ AI nếu chưa đạt chuẩn */}
+            {showAiDrawer && aiEvaluation && (
+              <AiReviewCritiqueCard 
+                evaluation={aiEvaluation}
+                onEditAgain={() => setShowAiDrawer(false)}
+                onForceSubmit={handleForceSubmit}
+                isSubmitting={isSubmitting}
+                mode="modal_feedback"
+              />
+            )}
+
             {/* Banner yêu cầu đăng nhập nếu là Guest */}
             {!currentUser && (
               <div className="p-3.5 rounded-xl border border-amber-200 dark:border-amber-900/60 bg-amber-50 dark:bg-amber-950/30 flex items-center justify-between gap-3">
@@ -444,15 +575,25 @@ export default function EditTermModal({
                 </button>
                 <button
                   type="submit"
-                  disabled={isSubmitting || hasVietnameseViolation || !currentUser}
-                  className="px-4 py-1.5 text-xs font-semibold bg-blue-600 hover:bg-blue-700 disabled:opacity-50 text-white rounded-lg transition flex items-center gap-1.5 shadow-xs"
+                  disabled={isSubmitting || isAiReviewing || hasVietnameseViolation || !currentUser}
+                  className="px-4 py-1.5 text-xs font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 disabled:opacity-50 text-white rounded-lg transition flex items-center gap-1.5 shadow-xs"
                 >
-                  <Send size={13} />
-                  <span>
-                    {isSubmitting 
-                      ? (isEn ? "Submitting..." : "Đang gửi...") 
-                      : (isEn ? "Submit Revision" : "Gửi Đề Xuất")}
-                  </span>
+                  {isAiReviewing ? (
+                    <>
+                      <Sparkles size={13} className="animate-spin" />
+                      <span>{isEn ? "AI Reviewing..." : "AI Đang thẩm định..."}</span>
+                    </>
+                  ) : isSubmitting ? (
+                    <>
+                      <Send size={13} className="animate-pulse" />
+                      <span>{isEn ? "Submitting..." : "Đang gửi..."}</span>
+                    </>
+                  ) : (
+                    <>
+                      <Sparkles size={13} />
+                      <span>{isEn ? "AI Review & Submit" : "Thẩm định AI & Gửi"}</span>
+                    </>
+                  )}
                 </button>
               </div>
             </div>

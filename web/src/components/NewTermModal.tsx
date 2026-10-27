@@ -10,13 +10,19 @@ import {
   BookOpen, 
   ShieldAlert,
   LogIn,
-  GraduationCap
+  GraduationCap,
+  Sparkles
 } from "lucide-react";
-import { NewTermProposalInput } from "@/lib/types";
+import { NewTermProposalInput, AiReviewEvaluation } from "@/lib/types";
 import { 
   submitNewTermProposal, 
   checkSubmissionRateLimit 
 } from "@/lib/firebase-service";
+import { 
+  validateNewTermLocally, 
+  requestAiReview 
+} from "@/lib/submission-guard";
+import AiReviewCritiqueCard from "./AiReviewCritiqueCard";
 import type { User } from "firebase/auth";
 
 interface NewTermModalProps {
@@ -74,6 +80,12 @@ export default function NewTermModal({
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
+  // AI Review States
+  const [isAiReviewing, setIsAiReviewing] = useState(false);
+  const [aiEvaluation, setAiEvaluation] = useState<AiReviewEvaluation | null>(null);
+  const [showAiDrawer, setShowAiDrawer] = useState(false);
+  const [pendingProposalData, setPendingProposalData] = useState<NewTermProposalInput | null>(null);
+
   if (!isOpen) return null;
 
   const rateLimitInfo = checkSubmissionRateLimit();
@@ -110,7 +122,6 @@ export default function NewTermModal({
       return;
     }
 
-    setIsSubmitting(true);
     setErrorMessage(null);
 
     const proposalData: NewTermProposalInput = {
@@ -136,17 +147,89 @@ export default function NewTermModal({
       authorInstitution: institution.trim() || undefined
     };
 
-    const res = await submitNewTermProposal(proposalData);
-    setIsSubmitting(false);
+    // 1. Tầng Kiểm tra Tĩnh sơ bộ (Local Validation Guard)
+    const localVal = validateNewTermLocally(proposalData);
+    if (!localVal.isValid) {
+      setErrorMessage(localVal.error || "Dữ liệu đề xuất chưa hợp lệ.");
+      return;
+    }
 
-    if (res.success) {
-      setIsSuccess(true);
-      setTimeout(() => {
-        setIsSuccess(false);
-        onClose();
-      }, 2200);
-    } else {
-      setErrorMessage(res.error || (isEn ? "Failed to submit new term proposal." : "Gửi đề xuất thuật ngữ mới thất bại."));
+    // 2. Kích hoạt Thẩm định Học thuật Thời gian thực với Gemini AI
+    setIsAiReviewing(true);
+    setShowAiDrawer(false);
+
+    try {
+      const aiRes = await requestAiReview("new_term", term.trim(), proposalData);
+      setIsAiReviewing(false);
+
+      if (aiRes.success && aiRes.evaluation) {
+        const evaluation: AiReviewEvaluation = aiRes.evaluation;
+        setAiEvaluation(evaluation);
+        proposalData.aiEvaluation = evaluation;
+
+        // Nếu đạt chuẩn (Verdict approve hoặc điểm >= 80)
+        if (evaluation.verdict === "approve" || evaluation.academic_score >= 80) {
+          setIsSubmitting(true);
+          const res = await submitNewTermProposal(proposalData);
+          setIsSubmitting(false);
+
+          if (res.success) {
+            setIsSuccess(true);
+            setTimeout(() => {
+              setIsSuccess(false);
+              onClose();
+            }, 2600);
+          } else {
+            setErrorMessage(res.error || (isEn ? "Failed to submit new term proposal." : "Gửi đề xuất thuật ngữ mới thất bại."));
+          }
+        } else {
+          // Chưa đạt chuẩn: Mở bảng góp ý AI để người dùng chỉnh sửa hoàn thiện
+          setPendingProposalData(proposalData);
+          setShowAiDrawer(true);
+        }
+      } else {
+        // Fallback: Nếu AI lỗi, vẫn cho phép gửi thủ công
+        setIsSubmitting(true);
+        const res = await submitNewTermProposal(proposalData);
+        setIsSubmitting(false);
+
+        if (res.success) {
+          setIsSuccess(true);
+          setTimeout(() => {
+            setIsSuccess(false);
+            onClose();
+          }, 2200);
+        } else {
+          setErrorMessage(res.error || (isEn ? "Failed to submit new term proposal." : "Gửi đề xuất thuật ngữ mới thất bại."));
+        }
+      }
+    } catch (err: any) {
+      console.error("[NewTermModal AI Submit Error]", err);
+      setIsAiReviewing(false);
+      setErrorMessage("Lỗi trong quá trình thẩm định AI. Vui lòng thử lại.");
+    }
+  };
+
+  const handleForceSubmit = async () => {
+    if (!pendingProposalData) return;
+    setIsSubmitting(true);
+    try {
+      const res = await submitNewTermProposal(pendingProposalData);
+      setIsSubmitting(false);
+
+      if (res.success) {
+        setShowAiDrawer(false);
+        setIsSuccess(true);
+        setTimeout(() => {
+          setIsSuccess(false);
+          onClose();
+        }, 2200);
+      } else {
+        setErrorMessage(res.error || (isEn ? "Failed to submit new term proposal." : "Gửi đề xuất thuật ngữ mới thất bại."));
+      }
+    } catch (err) {
+      setIsSubmitting(false);
+      setErrorMessage("Gửi đề xuất thuật ngữ mới thất bại.");
     }
   };
 
@@ -183,21 +266,67 @@ export default function NewTermModal({
 
         {/* Content Body */}
         {isSuccess ? (
-          <div className="p-10 flex flex-col items-center justify-center text-center space-y-3">
+          <div className="p-8 sm:p-10 flex flex-col items-center justify-center text-center space-y-3.5">
             <div className="w-14 h-14 rounded-full bg-emerald-100 dark:bg-emerald-950/60 border border-emerald-300 dark:border-emerald-800 text-emerald-600 dark:text-emerald-400 flex items-center justify-center animate-bounce">
               <CheckCircle2 size={32} />
             </div>
-            <h4 className="text-lg font-bold text-slate-900 dark:text-white">
-              {isEn ? "New Term Proposal Submitted!" : "Đề xuất thuật ngữ mới đã được gửi thành công!"}
-            </h4>
+
+            <div className="space-y-1">
+              <h4 className="text-lg font-bold text-slate-900 dark:text-white">
+                {isEn ? "New Term Proposal Submitted!" : "Đề xuất Thuật ngữ Mới Đã Gửi Thành Công!"}
+              </h4>
+              {aiEvaluation && (
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800">
+                  <Sparkles size={13} />
+                  <span>AI Verified • Điểm Thẩm Định: {aiEvaluation.academic_score}/100</span>
+                </div>
+              )}
+            </div>
+
+            {aiEvaluation?.summary && (
+              <p className="text-xs text-slate-700 dark:text-slate-300 max-w-md bg-emerald-50/60 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900/60 p-3 rounded-xl italic">
+                "{aiEvaluation.summary}"
+              </p>
+            )}
+
             <p className="text-xs text-slate-500 dark:text-slate-400 max-w-md leading-relaxed">
               {isEn
-                ? "The editorial committee will review your proposal and seminal literature references before indexing it into the official dictionary."
-                : "Hội đồng biên tập sẽ thẩm định định nghĩa và tài liệu tham khảo trước khi bổ sung chính thức vào danh mục thuật ngữ."}
+                ? "Your term proposal has achieved AI approval and entered the priority moderation queue for editorial confirmation."
+                : "Thuật ngữ mới của bạn đã vượt qua thẩm định AI và được xếp vào hàng đợi ưu tiên để Ban biên tập phê duyệt chính thức."}
             </p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="flex-1 overflow-y-auto p-5 space-y-4 text-xs">
+            {/* Banner trạng thái khi AI đang thẩm định */}
+            {isAiReviewing && (
+              <div className="p-4 rounded-xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/80 dark:bg-indigo-950/40 flex items-center gap-3 animate-pulse">
+                <div className="p-2 rounded-lg bg-indigo-600 text-white shrink-0">
+                  <Sparkles size={16} className="animate-spin" />
+                </div>
+                <div className="text-xs space-y-0.5">
+                  <strong className="text-indigo-950 dark:text-indigo-200 block font-bold">
+                    {isEn ? "Gemini AI is peer-reviewing your new term proposal..." : "Trợ lý AI đang thẩm định học thuật chuẩn Q1..."}
+                  </strong>
+                  <p className="text-indigo-700 dark:text-indigo-300 text-[11px]">
+                    {isEn 
+                      ? "Analyzing conceptualization, empirical benchmarks, and seminal citations in real-time." 
+                      : "Đang phân tích tính khái niệm hóa, ngưỡng thực nghiệm và tính xác thực của nguồn trích dẫn..."}
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {/* Bảng góp ý chi tiết từ AI nếu chưa đạt chuẩn */}
+            {showAiDrawer && aiEvaluation && (
+              <AiReviewCritiqueCard 
+                evaluation={aiEvaluation}
+                onEditAgain={() => setShowAiDrawer(false)}
+                onForceSubmit={handleForceSubmit}
+                isSubmitting={isSubmitting}
+                mode="modal_feedback"
+              />
+            )}
+
             {/* Banner đăng nhập nếu chưa auth */}
             {!currentUser && (
               <div className="p-3.5 rounded-xl border border-amber-200 dark:border-amber-900/60 bg-amber-50 dark:bg-amber-950/30 flex items-center justify-between gap-3">
@@ -463,15 +592,25 @@ export default function NewTermModal({
                 </button>
                 <button
                   type="submit"
-                  disabled={isSubmitting || !currentUser}
-                  className="px-4 py-1.5 text-xs font-semibold bg-emerald-600 hover:bg-emerald-700 disabled:opacity-50 text-white rounded-lg transition flex items-center gap-1.5 shadow-xs"
+                  disabled={isSubmitting || isAiReviewing || !currentUser}
+                  className="px-4 py-1.5 text-xs font-semibold bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 disabled:opacity-50 text-white rounded-lg transition flex items-center gap-1.5 shadow-xs"
                 >
-                  <Send size={13} />
-                  <span>
-                    {isSubmitting 
-                      ? (isEn ? "Submitting..." : "Đang gửi...") 
-                      : (isEn ? "Submit New Term" : "Gửi Đề Xuất Thuật Ngữ")}
-                  </span>
+                  {isAiReviewing ? (
+                    <>
+                      <Sparkles size={13} className="animate-spin" />
+                      <span>{isEn ? "AI Reviewing..." : "AI Đang thẩm định..."}</span>
+                    </>
+                  ) : isSubmitting ? (
+                    <>
+                      <Send size={13} className="animate-pulse" />
+                      <span>{isEn ? "Submitting..." : "Đang gửi..."}</span>
+                    </>
+                  ) : (
+                    <>
+                      <Sparkles size={13} />
+                      <span>{isEn ? "AI Review & Propose" : "Thẩm định AI & Gửi"}</span>
+                    </>
+                  )}
                 </button>
               </div>
             </div>
