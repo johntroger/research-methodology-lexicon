@@ -21,7 +21,11 @@ import {
   ChevronDown,
   ChevronUp,
   Bot,
-  AlertTriangle
+  AlertTriangle,
+  Crown,
+  LogIn,
+  LogOut,
+  UserCheck
 } from "lucide-react";
 import { 
   fetchPendingRevisions, 
@@ -30,6 +34,8 @@ import {
   reviewNewTermProposal,
   saveAiEvaluationToRevision,
   saveAiEvaluationToNewTerm,
+  loginWithGoogle,
+  logoutUser,
   TermRevisionItem,
   NewTermProposalItem,
   subscribeToAuth
@@ -38,6 +44,14 @@ import { requestAiReview } from "@/lib/submission-guard";
 import VisualDiffViewer from "@/components/VisualDiffViewer";
 import AiReviewCritiqueCard from "@/components/AiReviewCritiqueCard";
 import type { User } from "firebase/auth";
+
+const SUPER_ADMIN_EMAILS = [
+  "tranthanhtung37@gmail.com",
+  ...(process.env.NEXT_PUBLIC_ADMIN_EMAILS || "")
+    .split(",")
+    .map(e => e.trim().toLowerCase())
+    .filter(Boolean)
+];
 
 const ADMIN_PASSCODE = process.env.NEXT_PUBLIC_ADMIN_PASSCODE || "Tranthanhtung";
 
@@ -128,12 +142,14 @@ export default function ModerationPage() {
     }
   };
 
+  const isSuperAdmin = Boolean(currentUser?.email && SUPER_ADMIN_EMAILS.includes(currentUser.email.toLowerCase()));
+
   // Lắng nghe auth & tải dữ liệu
   useEffect(() => {
     const unsub = subscribeToAuth((u) => {
       setCurrentUser(u);
-      // Nếu đã đăng nhập, tự động mở khóa
-      if (u) {
+      // Tự động nhận diện và mở khóa nếu là Super Admin
+      if (u && u.email && SUPER_ADMIN_EMAILS.includes(u.email.toLowerCase())) {
         setIsUnlocked(true);
       }
     });
@@ -141,6 +157,22 @@ export default function ModerationPage() {
     loadData();
     return () => unsub();
   }, []);
+
+  const handleGoogleLogin = async () => {
+    try {
+      const user = await loginWithGoogle();
+      if (user && user.email && SUPER_ADMIN_EMAILS.includes(user.email.toLowerCase())) {
+        setIsUnlocked(true);
+      }
+    } catch (err) {
+      console.error("Login error:", err);
+    }
+  };
+
+  const handleLogout = async () => {
+    await logoutUser();
+    setIsUnlocked(false);
+  };
 
   const loadData = async () => {
     setIsLoading(true);
@@ -231,6 +263,28 @@ export default function ModerationPage() {
         </div>
 
         <div className="flex items-center gap-2">
+          {currentUser && (
+            <div className="flex items-center gap-1.5 text-xs px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+              {isSuperAdmin ? (
+                <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-bold">
+                  <Crown size={13} className="text-amber-500" />
+                  <span>Admin: {currentUser.email}</span>
+                </span>
+              ) : (
+                <span className="text-slate-600 dark:text-slate-300">
+                  {currentUser.email}
+                </span>
+              )}
+              <button
+                onClick={handleLogout}
+                className="text-slate-400 hover:text-red-500 ml-1 transition"
+                title="Đăng xuất"
+              >
+                <LogOut size={12} />
+              </button>
+            </div>
+          )}
+
           <button
             onClick={loadData}
             disabled={isLoading}
@@ -246,20 +300,50 @@ export default function ModerationPage() {
       {/* 2. GIAO DIỆN KHÓA / XÁC THỰC QUẢN TRỊ VIÊN */}
       {!isUnlocked ? (
         <div className="flex-1 flex items-center justify-center p-4">
-          <div className="w-full max-w-md p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xl space-y-4 text-center">
+          <div className="w-full max-w-md p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xl space-y-5 text-center">
             <div className="w-12 h-12 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-900 text-blue-600 dark:text-blue-400 flex items-center justify-center mx-auto">
               <Lock size={22} />
             </div>
-            <div>
+            <div className="space-y-1">
               <h2 className="text-lg font-bold text-slate-900 dark:text-white">
                 Khu vực Thẩm định & Phê duyệt
               </h2>
-              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                Dành riêng cho Hội đồng Biên tập Từ điển Phương pháp Nghiên cứu. Nhập mã PIN quản trị viên hoặc đăng nhập Google.
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                Dành riêng cho Hội đồng Biên tập Từ điển. Đăng nhập Google bằng tài khoản Quản trị viên (<span className="font-mono text-blue-600 dark:text-blue-400">tranthanhtung37@gmail.com</span>) hoặc nhập mã PIN.
               </p>
             </div>
 
-            <form onSubmit={handleUnlockWithPasscode} className="space-y-3 pt-2">
+            {/* Nút Đăng nhập Google một chạm cho Super Admin */}
+            <div className="space-y-2">
+              <button
+                type="button"
+                onClick={handleGoogleLogin}
+                className="w-full py-2.5 px-4 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold text-xs transition shadow-xs flex items-center justify-center gap-2"
+              >
+                <Crown size={15} className="text-amber-500" />
+                <span>Đăng nhập với Google (tranthanhtung37@gmail.com)</span>
+              </button>
+
+              {currentUser && !isSuperAdmin && (
+                <div className="p-2.5 rounded-lg bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900 text-amber-800 dark:text-amber-300 text-xs">
+                  <p>Tài khoản hiện tại (<span className="font-mono">{currentUser.email}</span>) không thuộc danh sách Quản trị viên.</p>
+                  <button
+                    onClick={handleLogout}
+                    className="underline mt-1 font-bold block mx-auto text-amber-900 dark:text-amber-200"
+                  >
+                    Đăng xuất để đổi tài khoản
+                  </button>
+                </div>
+              )}
+            </div>
+
+            <div className="flex items-center gap-3 text-xs text-slate-400">
+              <div className="h-px bg-slate-200 dark:bg-slate-800 flex-1" />
+              <span>hoặc dùng mã PIN dự phòng</span>
+              <div className="h-px bg-slate-200 dark:bg-slate-800 flex-1" />
+            </div>
+
+            <form onSubmit={handleUnlockWithPasscode} className="space-y-3 pt-1">
               <input
                 type="password"
                 value={passcode}
@@ -277,7 +361,7 @@ export default function ModerationPage() {
                 className="w-full py-2 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs transition shadow-xs flex items-center justify-center gap-1.5"
               >
                 <Unlock size={14} />
-                <span>Mở khóa Bảng Kiểm duyệt</span>
+                <span>Mở khóa bằng mã PIN</span>
               </button>
             </form>
           </div>
