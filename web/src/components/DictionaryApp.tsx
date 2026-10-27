@@ -432,28 +432,78 @@ export default function DictionaryApp({
     }
   };
 
-  // Lắng nghe phím tắt: `/` (tìm kiếm), `Ctrl+B` (thu gọn sidebar), `F` (zen mode)
+  // Lắng nghe phím tắt: `/` (tìm kiếm), `Ctrl+B` (thu gọn sidebar), `F` (zen mode), `↓` / `↑` (chuyển mục từ)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "/" && document.activeElement !== searchInputRef.current) {
+      // Bỏ qua nếu đang mở bất kỳ modal nào (tránh can thiệp nhập liệu trong form)
+      const isAnyModalOpen =
+        isCitationModalOpen ||
+        isFeedbackModalOpen ||
+        isLoginModalOpen ||
+        isEditModalOpen ||
+        isNewTermModalOpen;
+
+      if (e.key === "/" && document.activeElement !== searchInputRef.current && !isAnyModalOpen) {
         e.preventDefault();
         searchInputRef.current?.focus();
         searchInputRef.current?.select();
+        return;
       }
 
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "b") {
         e.preventDefault();
         setIsSidebarCollapsed((prev) => !prev);
+        return;
       }
 
       if (
         (e.key === "f" || e.key === "F") &&
         document.activeElement !== searchInputRef.current &&
         !e.ctrlKey &&
-        !e.metaKey
+        !e.metaKey &&
+        !isAnyModalOpen
       ) {
         e.preventDefault();
         setIsZenMode((prev) => !prev);
+        return;
+      }
+
+      // Di chuyển lên / xuống giữa các mục từ bằng phím mũi tên ArrowDown và ArrowUp
+      if (!isAnyModalOpen && (e.key === "ArrowDown" || e.key === "ArrowUp")) {
+        // Chỉ xử lý nếu không đang gõ trong một textarea hoặc input khác ngoài thanh tìm kiếm
+        const isTypingInOtherInput =
+          document.activeElement &&
+          document.activeElement !== searchInputRef.current &&
+          (document.activeElement.tagName === "INPUT" ||
+            document.activeElement.tagName === "TEXTAREA");
+
+        if (!isTypingInOtherInput && searchResults.length > 0) {
+          e.preventDefault();
+          const currentIndex = searchResults.findIndex((item) => item.id === selectedId);
+
+          let nextIndex = currentIndex;
+          if (e.key === "ArrowDown") {
+            nextIndex = currentIndex < searchResults.length - 1 ? currentIndex + 1 : 0;
+          } else if (e.key === "ArrowUp") {
+            nextIndex = currentIndex > 0 ? currentIndex - 1 : searchResults.length - 1;
+          }
+
+          const nextItem = searchResults[nextIndex];
+          if (nextItem) {
+            setSelectedId(nextItem.id);
+            // Cuộn mượt danh sách để mục từ được chọn luôn hiển thị trong tầm mắt
+            const el = document.getElementById(`list-item-${nextItem.id}`);
+            if (el) {
+              el.scrollIntoView({ block: "nearest", behavior: "smooth" });
+            }
+          }
+          return;
+        }
+      }
+
+      if (!isAnyModalOpen && e.key === "Enter" && document.activeElement === searchInputRef.current) {
+        searchInputRef.current?.blur();
+        return;
       }
 
       if (e.key === "Escape") {
@@ -477,7 +527,17 @@ export default function DictionaryApp({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isZenMode, searchQuery, isCitationModalOpen, isFeedbackModalOpen, isLoginModalOpen, isEditModalOpen, isNewTermModalOpen]);
+  }, [
+    isZenMode,
+    searchQuery,
+    isCitationModalOpen,
+    isFeedbackModalOpen,
+    isLoginModalOpen,
+    isEditModalOpen,
+    isNewTermModalOpen,
+    searchResults,
+    selectedId
+  ]);
 
   return (
     <div
@@ -767,9 +827,14 @@ export default function DictionaryApp({
                 </button>
               </div>
 
-              <span className="text-slate-400 text-[11px] font-mono">
-                {searchResults.length} {t.terms_count}
-              </span>
+              <div className="flex items-center gap-1.5 text-slate-400 text-[11px] font-mono">
+                <span className="hidden sm:inline-flex items-center gap-0.5 text-[10px] px-1 py-0.2 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 font-semibold" title={languageMode === "en" ? "Use Up/Down Arrow keys to navigate terms" : "Dùng phím Mũi tên Lên/Xuống để chuyển từ"}>
+                  ↑↓
+                </span>
+                <span>
+                  {searchResults.length} {t.terms_count}
+                </span>
+              </div>
             </div>
 
             {/* Nút Đề xuất thuật ngữ mới (Wiki Contribution Phase 1) */}
