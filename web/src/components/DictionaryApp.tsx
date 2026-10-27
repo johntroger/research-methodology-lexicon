@@ -961,7 +961,7 @@ export default function DictionaryApp({
         <main
           ref={contentScrollRef}
           onScroll={handleScroll}
-          className={`h-full flex-1 overflow-y-auto bg-white dark:bg-slate-900 p-4 sm:p-8 md:p-12 transition-all ${
+          className={`h-full flex-1 overflow-y-auto bg-white dark:bg-slate-900 px-4 sm:px-6 md:px-8 lg:px-10 py-6 transition-all ${
             mobileTab === "list" ? "hidden sm:block" : "block"
           }`}
         >
@@ -972,7 +972,13 @@ export default function DictionaryApp({
           />
 
           {/* KHUNG NỘI DUNG TỐI ƯU CÔNG THÁI HỌC */}
-          <div className={`max-w-3xl mx-auto space-y-6 ${getFontSizeClass()} print-clean`}>
+          <div
+            className={`w-full ${
+              isSidebarCollapsed
+                ? "max-w-5xl lg:max-w-6xl xl:max-w-7xl"
+                : "max-w-4xl lg:max-w-5xl xl:max-w-6xl"
+            } mx-auto space-y-6 ${getFontSizeClass()} print-clean`}
+          >
             {/* TH1: HIỂN THỊ MỤC TỪ CHÍNH (METHODOLOGY TERM) */}
             {activeTerm && (
               <article className="space-y-6">
