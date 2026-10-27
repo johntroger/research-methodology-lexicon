@@ -58,6 +58,8 @@ import TermHistoryView from "./TermHistoryView";
 import TermDiscussionView from "./TermDiscussionView";
 import LoginModal from "./LoginModal";
 import FormattedAcademicText from "./FormattedAcademicText";
+import CommandPalette, { RecentSearchItem } from "./CommandPalette";
+import StickyTableOfContents, { TocSectionItem } from "./StickyTableOfContents";
 import {
   UI_I18N,
   getTermDefinition,
@@ -104,6 +106,24 @@ export default function DictionaryApp({
   const [isCitationModalOpen, setIsCitationModalOpen] = useState(false);
   const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+
+  // Global Command Palette & Lịch sử Tra cứu gần đây (Phase 1)
+  const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
+  const [recentSearches, setRecentSearches] = useState<RecentSearchItem[]>([]);
+
+  // Tải Lịch sử Tra cứu từ localStorage
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      try {
+        const raw = localStorage.getItem("rv_recent_searches");
+        if (raw) {
+          setRecentSearches(JSON.parse(raw));
+        }
+      } catch (e) {
+        console.warn("Lỗi đọc recent searches:", e);
+      }
+    }
+  }, []);
 
   // Wiki Community Contribution State (Phase 1 & Phase 3)
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
@@ -182,6 +202,55 @@ export default function DictionaryApp({
   const handleLogout = async () => {
     await logoutUser();
     setCurrentUser(null);
+  };
+
+  // Cập nhật Lịch sử Tra cứu khi chuyển mục từ
+  useEffect(() => {
+    if (!selectedId || typeof window === "undefined") return;
+
+    const termItem = initialTerms.find((t) => t.id === selectedId);
+    let itemToAdd: RecentSearchItem | null = null;
+
+    if (termItem) {
+      itemToAdd = {
+        id: termItem.id,
+        term: termItem.term,
+        vietnamese: termItem.vietnamese,
+        doc_type: "term"
+      };
+    } else if (selectedId.startsWith("acronym-")) {
+      const key = Object.keys(initialAcronyms).find(
+        (k) => `acronym-${k.toLowerCase().replace(/[^a-z0-9]/g, "-")}` === selectedId
+      );
+      if (key && initialAcronyms[key]) {
+        itemToAdd = {
+          id: selectedId,
+          term: `${key} - ${initialAcronyms[key].full_name}`,
+          vietnamese: initialAcronyms[key].vietnamese,
+          doc_type: "acronym"
+        };
+      }
+    }
+
+    if (itemToAdd) {
+      setRecentSearches((prev) => {
+        const filtered = prev.filter((item) => item.id !== itemToAdd!.id);
+        const updated = [itemToAdd!, ...filtered].slice(0, 10);
+        try {
+          localStorage.setItem("rv_recent_searches", JSON.stringify(updated));
+        } catch (err) {
+          // ignore
+        }
+        return updated;
+      });
+    }
+  }, [selectedId, initialTerms, initialAcronyms]);
+
+  const handleClearRecentSearches = () => {
+    setRecentSearches([]);
+    if (typeof window !== "undefined") {
+      localStorage.removeItem("rv_recent_searches");
+    }
   };
 
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -338,6 +407,91 @@ export default function DictionaryApp({
     return null;
   }, [initialAcronyms, selectedId]);
 
+  // Danh sách các phân mục chi tiết của mục từ (phục vụ Table of Contents / Scrollspy)
+  const tocSections: TocSectionItem[] = useMemo(() => {
+    if (!activeTerm) return [];
+    const list: TocSectionItem[] = [
+      {
+        id: "section-definition",
+        label: languageMode === "en" ? "Core Definition" : "Định nghĩa cốt lõi",
+        shortLabel: languageMode === "en" ? "Definition" : "Định nghĩa",
+        icon: BookOpen
+      }
+    ];
+
+    if (getTermOperationalMechanism(activeTerm, languageMode)) {
+      list.push({
+        id: "section-mechanism",
+        label: languageMode === "en" ? "Mechanism" : "Cơ chế vận hành",
+        shortLabel: languageMode === "en" ? "Mechanism" : "Cơ chế",
+        icon: Cpu
+      });
+    }
+
+    if (getTermPitfalls(activeTerm, languageMode)) {
+      list.push({
+        id: "section-pitfalls",
+        label: languageMode === "en" ? "Pitfalls & Mistakes" : "Cạm bẫy dùng từ",
+        shortLabel: languageMode === "en" ? "Pitfalls" : "Cạm bẫy",
+        icon: AlertTriangle
+      });
+    }
+
+    if (getTermBenchmarks(activeTerm, languageMode) || getTermDebates(activeTerm, languageMode)) {
+      list.push({
+        id: "section-benchmarks",
+        label: languageMode === "en" ? "Benchmarks & Debates" : "Ngưỡng số & Tranh luận",
+        shortLabel: languageMode === "en" ? "Benchmarks" : "Ngưỡng số",
+        icon: Sparkles
+      });
+    }
+
+    if (activeTerm.corpus_variants && activeTerm.corpus_variants.length > 0) {
+      list.push({
+        id: "section-variants",
+        label: languageMode === "en" ? "Corpus Variants" : "Biến thể nội hàm",
+        shortLabel: languageMode === "en" ? "Variants" : "Biến thể",
+        icon: Layers
+      });
+    }
+
+    if (activeTerm.expert_notes) {
+      list.push({
+        id: "section-expert-notes",
+        label: languageMode === "en" ? "Expert Notes" : "Ghi chú hiệu đính",
+        shortLabel: languageMode === "en" ? "Notes" : "Hiệu đính",
+        icon: ShieldCheck
+      });
+    }
+
+    if (activeTerm.related_terms && activeTerm.related_terms.length > 0) {
+      list.push({
+        id: "section-related",
+        label: languageMode === "en" ? "Related Terms" : "Thuật ngữ liên quan",
+        shortLabel: languageMode === "en" ? "Related" : "Liên quan",
+        icon: Network
+      });
+    }
+
+    if (activeTerm.apa_reference || activeTerm.seminal_citation) {
+      list.push({
+        id: "section-citations",
+        label: languageMode === "en" ? "Citations & APA" : "Trích dẫn kinh điển",
+        shortLabel: languageMode === "en" ? "Citations" : "Trích dẫn",
+        icon: GraduationCap
+      });
+    }
+
+    list.push({
+      id: "section-provenance",
+      label: languageMode === "en" ? "Scholarly Provenance" : "Ghi nhận đóng góp",
+      shortLabel: languageMode === "en" ? "Provenance" : "Vinh danh",
+      icon: Award
+    });
+
+    return list;
+  }, [activeTerm, languageMode]);
+
   // Dải chữ cái A-Z
   const alphabetLetters = useMemo(() => {
     const letters = new Set<string>();
@@ -441,11 +595,19 @@ export default function DictionaryApp({
     const handleKeyDown = (e: KeyboardEvent) => {
       // Bỏ qua nếu đang mở bất kỳ modal nào (tránh can thiệp nhập liệu trong form)
       const isAnyModalOpen =
+        isCommandPaletteOpen ||
         isCitationModalOpen ||
         isFeedbackModalOpen ||
         isLoginModalOpen ||
         isEditModalOpen ||
         isNewTermModalOpen;
+
+      // Phím tắt toàn cầu mở Command Palette: Ctrl + K hoặc Cmd + K
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        setIsCommandPaletteOpen((prev) => !prev);
+        return;
+      }
 
       if (e.key === "/" && document.activeElement !== searchInputRef.current && !isAnyModalOpen) {
         e.preventDefault();
@@ -511,7 +673,9 @@ export default function DictionaryApp({
       }
 
       if (e.key === "Escape") {
-        if (isCitationModalOpen) {
+        if (isCommandPaletteOpen) {
+          setIsCommandPaletteOpen(false);
+        } else if (isCitationModalOpen) {
           setIsCitationModalOpen(false);
         } else if (isFeedbackModalOpen) {
           setIsFeedbackModalOpen(false);
@@ -534,6 +698,7 @@ export default function DictionaryApp({
   }, [
     isZenMode,
     searchQuery,
+    isCommandPaletteOpen,
     isCitationModalOpen,
     isFeedbackModalOpen,
     isLoginModalOpen,
@@ -563,6 +728,21 @@ export default function DictionaryApp({
               </h1>
             </div>
           </div>
+
+          {/* Nút bấm nhanh mở Command Palette (Ctrl + K) trên Header */}
+          <button
+            onClick={() => setIsCommandPaletteOpen(true)}
+            className="hidden lg:flex items-center gap-2.5 px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800/80 text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 border border-slate-200/90 dark:border-slate-700/80 text-xs transition hover:border-blue-400 shadow-2xs"
+            title="Tra cứu nhanh toàn bộ từ điển (Ctrl + K)"
+          >
+            <Search size={13} className="text-blue-600 dark:text-blue-400" />
+            <span className="text-slate-400 text-xs font-normal">
+              {languageMode === "en" ? "Search 1,874 terms & acronyms..." : "Tra cứu 1,874 thuật ngữ & viết tắt..."}
+            </span>
+            <kbd className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 font-bold text-slate-600 dark:text-slate-300">
+              Ctrl K
+            </kbd>
+          </button>
 
           {/* Thanh công cụ phải: Bộ chuyển ngôn ngữ Realtime, Góp ý, Phông chữ, Theme, Zen, Auth */}
           <div className="flex items-center gap-1 sm:gap-1.5 shrink-0">
@@ -782,17 +962,50 @@ export default function DictionaryApp({
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder={t.search_placeholder}
-                className="w-full pl-9 pr-8 py-2 text-sm bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white placeholder:text-slate-400 shadow-sm"
+                className="w-full pl-9 pr-14 sm:pr-16 py-2 text-sm bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white placeholder:text-slate-400 shadow-sm"
               />
-              {searchQuery && (
+              {searchQuery ? (
                 <button
                   onClick={() => setSearchQuery("")}
                   className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-0.5"
                 >
                   <X size={14} />
                 </button>
+              ) : (
+                <button
+                  onClick={() => setIsCommandPaletteOpen(true)}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 hidden sm:inline-flex items-center gap-0.5 text-[10px] font-mono font-medium px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-500 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-slate-600 transition border border-slate-200 dark:border-slate-600"
+                  title="Mở Bảng Lệnh Toàn Cầu (Ctrl + K)"
+                >
+                  <span>Ctrl K</span>
+                </button>
               )}
             </div>
+
+            {/* Lịch sử Tra cứu gần đây (Recent Searches Quick Chips) */}
+            {recentSearches.length > 0 && !searchQuery && (
+              <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5 text-[11px]">
+                <span className="text-slate-400 shrink-0 font-medium">
+                  {languageMode === "en" ? "Recent:" : "Gần đây:"}
+                </span>
+                {recentSearches.slice(0, 6).map((item) => (
+                  <button
+                    key={item.id}
+                    onClick={() => {
+                      setSelectedId(item.id);
+                      setMobileTab("detail");
+                    }}
+                    className={`shrink-0 px-2 py-0.5 rounded-md border text-[11px] transition ${
+                      item.id === selectedId
+                        ? "bg-blue-100 dark:bg-blue-950/60 border-blue-300 dark:border-blue-800 text-blue-700 dark:text-blue-300 font-semibold"
+                        : "bg-slate-100/70 dark:bg-slate-800 border-slate-200 dark:border-slate-700/60 text-slate-600 dark:text-slate-400 hover:text-blue-600 hover:border-blue-300"
+                    }`}
+                  >
+                    {item.term.split(" - ")[0]}
+                  </button>
+                ))}
+              </div>
+            )}
 
             {/* Bộ lọc Tab & Số đếm */}
             <div className="flex items-center justify-between text-xs">
@@ -983,9 +1196,34 @@ export default function DictionaryApp({
                 : "max-w-4xl lg:max-w-5xl xl:max-w-6xl"
             } mx-auto space-y-6 ${getFontSizeClass()} print-clean`}
           >
+            {/* Thanh điều hướng tức thì trên Mobile (Mobile Instant Navigation Header) */}
+            <div className="no-print sm:hidden flex items-center justify-between pb-3 mb-2 border-b border-slate-200 dark:border-slate-800">
+              <button
+                onClick={() => setMobileTab("list")}
+                className="flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 px-3 py-1.5 rounded-lg border border-blue-200 dark:border-blue-900 transition"
+              >
+                <ChevronLeft size={16} />
+                <span>{languageMode === "en" ? "← Back to Terms List" : "← Danh mục tra cứu"}</span>
+              </button>
+              <button
+                onClick={() => setIsCommandPaletteOpen(true)}
+                className="flex items-center gap-1 text-xs font-medium text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 shadow-2xs"
+              >
+                <Search size={13} className="text-blue-600 dark:text-blue-400" />
+                <span>Ctrl+K</span>
+              </button>
+            </div>
+
             {/* TH1: HIỂN THỊ MỤC TỪ CHÍNH (METHODOLOGY TERM) */}
             {activeTerm && (
               <article className="space-y-6">
+                {/* THANH ĐIỀU HƯỚNG MỤC LỤC TRONG TRANG (STICKY TABLE OF CONTENTS / SCROLLSPY) */}
+                <StickyTableOfContents
+                  sections={tocSections}
+                  containerRef={contentScrollRef}
+                  languageMode={languageMode}
+                />
+
                 {/* 1. TIÊU ĐỀ THUẬT NGỮ & PHÁT ÂM */}
                 <header className="border-b border-slate-200 dark:border-slate-800 pb-5 space-y-2.5">
                   <div className="flex items-start justify-between gap-4">
@@ -1180,7 +1418,7 @@ export default function DictionaryApp({
                   <div className="space-y-6">
 
                 {/* 2. KHỐI ĐỊNH NGHĨA CỐT LÕI */}
-                <section className="p-4 rounded-xl border-l-4 border-blue-600 bg-blue-50/40 dark:bg-blue-950/20 border border-blue-100 dark:border-blue-900/40 space-y-2">
+                <section id="section-definition" className="p-4 rounded-xl border-l-4 border-blue-600 bg-blue-50/40 dark:bg-blue-950/20 border border-blue-100 dark:border-blue-900/40 space-y-2">
                   <div className="flex items-center justify-between text-xs font-bold text-blue-900 dark:text-blue-300 uppercase tracking-wider">
                     <span className="flex items-center gap-1.5">
                       <BookOpen size={14} /> {t.sec_definition}
@@ -1211,7 +1449,7 @@ export default function DictionaryApp({
 
                 {/* 2.5 KHỐI CƠ CHẾ VẬN HÀNH & MÔ HÌNH PHƯƠNG PHÁP LUẬN */}
                 {getTermOperationalMechanism(activeTerm, languageMode) && (
-                  <section className="p-4 rounded-xl border-l-4 border-indigo-600 bg-indigo-50/40 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900/40 space-y-2">
+                  <section id="section-mechanism" className="p-4 rounded-xl border-l-4 border-indigo-600 bg-indigo-50/40 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900/40 space-y-2">
                     <div className="flex items-center justify-between text-xs font-bold text-indigo-900 dark:text-indigo-300 uppercase tracking-wider">
                       <span className="flex items-center gap-1.5">
                         <Cpu size={14} /> {t.sec_operational_mechanism}
@@ -1236,7 +1474,7 @@ export default function DictionaryApp({
 
                 {/* 3. KHỐI BẪY DÙNG TỪ & LỖI THƯỜNG GẶP */}
                 {getTermPitfalls(activeTerm, languageMode) && (
-                  <section className="p-4 rounded-xl border-l-4 border-amber-500 bg-amber-50/40 dark:bg-amber-950/20 border border-amber-100 dark:border-amber-900/40 space-y-2">
+                  <section id="section-pitfalls" className="p-4 rounded-xl border-l-4 border-amber-500 bg-amber-50/40 dark:bg-amber-950/20 border border-amber-100 dark:border-amber-900/40 space-y-2">
                     <div className="flex items-center justify-between text-xs font-bold text-amber-900 dark:text-amber-300 uppercase tracking-wider">
                       <span className="flex items-center gap-1.5">
                         <AlertTriangle size={14} /> {t.sec_pitfalls}
@@ -1272,7 +1510,7 @@ export default function DictionaryApp({
 
                 {/* 4. KHỐI CHỈ SỐ NGƯỠNG HOẶC ĐỐI ĐẦU HỌC THUẬT */}
                 {(getTermBenchmarks(activeTerm, languageMode) || getTermDebates(activeTerm, languageMode)) && (
-                  <section className="p-4 rounded-xl border-l-4 border-emerald-600 bg-emerald-50/40 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40 space-y-3">
+                  <section id="section-benchmarks" className="p-4 rounded-xl border-l-4 border-emerald-600 bg-emerald-50/40 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40 space-y-3">
                     {getTermBenchmarks(activeTerm, languageMode) && (
                       <div className="space-y-1">
                         <div className="flex items-center justify-between text-xs font-bold text-emerald-900 dark:text-emerald-300 uppercase tracking-wider">
@@ -1325,7 +1563,7 @@ export default function DictionaryApp({
 
                 {/* 5. CÁC BIẾN THỂ CON / THUẬT NGỮ LIÊN ĐỚI */}
                 {activeTerm.corpus_variants && activeTerm.corpus_variants.length > 0 && (
-                  <section className="space-y-2.5 pt-2">
+                  <section id="section-variants" className="space-y-2.5 pt-2">
                     <div className="flex items-center justify-between">
                       <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
                         <Layers size={14} /> {t.sec_variants}
@@ -1380,7 +1618,7 @@ export default function DictionaryApp({
 
                 {/* 6. Ý KIẾN THẨM ĐỊNH CỦA HỘI ĐỒNG CHUYÊN GIA (EXPERT REVIEW DOSSIER) */}
                 {activeTerm.expert_notes && (
-                  <section className="p-4 rounded-xl border-l-4 border-indigo-600 bg-indigo-50/50 dark:bg-indigo-950/30 border border-indigo-200 dark:border-indigo-900/60 space-y-2">
+                  <section id="section-expert-notes" className="p-4 rounded-xl border-l-4 border-indigo-600 bg-indigo-50/50 dark:bg-indigo-950/30 border border-indigo-200 dark:border-indigo-900/60 space-y-2">
                     <div className="flex items-center justify-between text-xs font-bold text-indigo-950 dark:text-indigo-300 uppercase tracking-wider">
                       <span className="flex items-center gap-1.5">
                         <ShieldCheck size={15} className="text-indigo-600 dark:text-indigo-400" />
@@ -1398,7 +1636,7 @@ export default function DictionaryApp({
 
                 {/* 6.5 KHỐI THUẬT NGỮ LIÊN QUAN & XEM THÊM (RELATED TERMS & CROSS-REFERENCES) */}
                 {activeTerm.related_terms && activeTerm.related_terms.length > 0 && (
-                  <section className="p-4 sm:p-5 rounded-xl border border-blue-200/80 dark:border-blue-900/50 bg-blue-50/30 dark:bg-blue-950/20 space-y-3">
+                  <section id="section-related" className="p-4 sm:p-5 rounded-xl border border-blue-200/80 dark:border-blue-900/50 bg-blue-50/30 dark:bg-blue-950/20 space-y-3">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <div className="p-1.5 rounded-lg bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400">
@@ -1465,7 +1703,7 @@ export default function DictionaryApp({
                 )}
 
                 {/* 7. KHỐI TRÍCH DẪN UY TÍN */}
-                <footer className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-800/30 space-y-3">
+                <footer id="section-citations" className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-800/30 space-y-3">
                   <div className="flex items-center justify-between text-xs font-bold text-purple-900 dark:text-purple-300 uppercase tracking-wider">
                     <span className="flex items-center gap-1.5">
                       <GraduationCap size={15} /> {t.sec_literature}
@@ -1518,7 +1756,7 @@ export default function DictionaryApp({
                 </footer>
 
                 {/* 11. KHỐI VINH DANH HỌC GIẢ HIỆU ĐÍNH (SCHOLARLY CONTRIBUTORS ATTRIBUTION) */}
-                <section className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/40 space-y-3">
+                <section id="section-provenance" className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/40 space-y-3">
                   <div className="flex items-center justify-between text-xs border-b border-slate-200/60 dark:border-slate-800 pb-2">
                     <div className="flex items-center gap-1.5 text-slate-800 dark:text-slate-200 font-bold">
                       <Award size={14} className="text-amber-500" />
@@ -1793,6 +2031,25 @@ export default function DictionaryApp({
           }
         }}
         languageMode={languageMode}
+      />
+
+      {/* COMMAND PALETTE TOÀN CẦU (CTRL + K / CMD + K) */}
+      <CommandPalette
+        isOpen={isCommandPaletteOpen}
+        onClose={() => setIsCommandPaletteOpen(false)}
+        terms={initialTerms}
+        acronyms={initialAcronyms}
+        languageMode={languageMode}
+        onSelectTerm={(id) => {
+          setSelectedId(id);
+          setMobileTab("detail");
+        }}
+        onToggleLanguage={() => handleToggleLanguage(languageMode === "vi" ? "en" : "vi")}
+        onToggleZenMode={() => setIsZenMode((prev) => !prev)}
+        onOpenNewTermModal={() => setIsNewTermModalOpen(true)}
+        onFilterSaved={() => setFilterType("saved")}
+        recentSearches={recentSearches}
+        onClearRecentSearches={handleClearRecentSearches}
       />
     </div>
   );
