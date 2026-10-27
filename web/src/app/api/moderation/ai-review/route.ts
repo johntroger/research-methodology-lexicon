@@ -11,7 +11,7 @@ import {
   validateNewTermLocally 
 } from "../../../../lib/submission-guard";
 
-const DEFAULT_GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+const DEFAULT_GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-3.8-flash";
 
 /**
  * System Prompt chuẩn hóa cho Thẩm định viên Học thuật Q1
@@ -202,32 +202,69 @@ Vui lòng thẩm định đề xuất sau:
 ${JSON.stringify(payload, null, 2)}
 `;
 
-    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${DEFAULT_GEMINI_MODEL}:generateContent?key=${apiKey}`;
+    const requestedModel = process.env.GEMINI_MODEL || "gemini-3.8-flash";
+    const modelsToTry = [
+      requestedModel,
+      "gemini-3.8-flash",
+      "gemini-3.6-flash",
+      "gemini-3-flash",
+      "gemini-2.5-flash",
+      "gemini-2.0-flash",
+      "gemini-1.5-flash"
+    ].filter((m, idx, arr) => arr.indexOf(m) === idx);
 
-    const apiResponse = await fetch(endpoint, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        systemInstruction: {
-          parts: [{ text: SYSTEM_PROMPT }]
-        },
-        contents: [
-          {
-            parts: [{ text: userPrompt }]
-          }
-        ],
-        generationConfig: {
-          temperature: 0.2,
-          responseMimeType: "application/json"
+    let apiResponse: Response | null = null;
+    let usedModel = requestedModel;
+
+    for (const model of modelsToTry) {
+      const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+
+      try {
+        const res = await fetch(endpoint, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            systemInstruction: {
+              parts: [{ text: SYSTEM_PROMPT }]
+            },
+            contents: [
+              {
+                parts: [{ text: userPrompt }]
+              }
+            ],
+            generationConfig: {
+              temperature: 0.2,
+              responseMimeType: "application/json"
+            }
+          })
+        });
+
+        if (res.ok) {
+          apiResponse = res;
+          usedModel = model;
+          break;
         }
-      })
-    });
 
-    if (!apiResponse.ok) {
-      const errorText = await apiResponse.text();
-      console.error("[Gemini AI] API Error:", apiResponse.status, errorText);
+        // Nếu model trả về 404 (chưa kích hoạt mã này trên endpoint), tiếp tục thử mã kế tiếp
+        if (res.status === 404) {
+          console.warn(`[Gemini AI] Model "${model}" trả về 404, tự động chuyển sang mô hình tiếp theo...`);
+          continue;
+        } else {
+          apiResponse = res;
+          usedModel = model;
+          break;
+        }
+      } catch (fetchErr) {
+        console.warn(`[Gemini AI] Lỗi kết nối model "${model}":`, fetchErr);
+        continue;
+      }
+    }
+
+    if (!apiResponse || !apiResponse.ok) {
+      const errorText = apiResponse ? await apiResponse.text() : "No response";
+      console.error("[Gemini AI] API Error:", apiResponse?.status, errorText);
 
       // Fallback thông minh nếu API gặp sự cố (ví dụ quota tạm thời)
       const fallbackEval = generateHeuristicEvaluation(type, termName, payload);
@@ -262,7 +299,7 @@ ${JSON.stringify(payload, null, 2)}
       key_strengths: Array.isArray(evaluationJson.key_strengths) ? evaluationJson.key_strengths : [],
       suggested_editorial_notes: evaluationJson.suggested_editorial_notes || "Xem xét kỹ các tài liệu trích dẫn trước khi phê duyệt.",
       evaluated_at: new Date().toISOString(),
-      model: DEFAULT_GEMINI_MODEL
+      model: usedModel
     };
 
     return NextResponse.json<AiReviewResponse>({
