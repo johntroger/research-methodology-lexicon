@@ -57542,75 +57542,119 @@
     },
     {
       "id": "trim-and-fill-method-duval-tweedie",
-      "term": "Trim and Fill Method (Duval & Tweedie)",
-      "vietnamese": "Phương pháp cắt và điền của Duval & Tweedie ước lượng số lượng nghiên cứu bị giấu trong ngăn kéo và tái tính toán hiệu ứng gộp",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Meta-Analysis"
+      "term": "Trim and Fill Method",
+      "vietnamese": "Phương pháp Cắt và Điền (Duval & Tweedie)",
+      "vietnamese_variants": [
+        "Kỹ thuật Trim and Fill",
+        "Phương pháp hiệu chỉnh độ lệch xuất bản Duval & Tweedie"
       ],
-      "core_definition": "Phương pháp cắt và điền của Duval & Tweedie ước lượng số lượng nghiên cứu bị giấu trong ngăn kéo và tái tính toán hiệu ứng gộp.",
-      "seminal_citation": "Duval & Tweedie (2000)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Meta-Analysis",
+        "Publication Bias",
+        "Quantitative Synthesis",
+        "Evidence-Based Medicine"
+      ],
+      "core_definition": "A non-parametric, rank-based data augmentation algorithm developed by Sue Duval and Richard Tweedie for meta-analyses, designed to detect, quantify, and impute missing studies attributable to publication bias on an asymmetrical funnel plot, thereby recalculating an adjusted, bias-corrected summary effect size.",
+      "seminal_citation": "Duval & Tweedie (2000a, 2000b)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Trim and Fill Method (Duval & Tweedie) according to Duval & Tweedie (2000).",
       "domain_tags_en": [
         "Meta-Analysis"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "The algorithm iterates in two stages: (1) Trimming: It estimates the number of asymmetric, extreme studies on the right or left of the funnel plot, temporarily removes (trims) them from the dataset, and recalculates the central pooled summary effect size of the symmetrically distributed remainder; (2) Filling: It mirrors the trimmed studies symmetrically around the newly estimated center to create imputed pseudo-studies, recombining them into the complete dataset to re-estimate the overall meta-analytic pooled effect size under fixed-effects or random-effects models.",
+      "benchmarks": "Report both the unadjusted pooled effect size and the trim-and-fill adjusted effect size alongside 95% confidence intervals; the number of imputed studies (k_0) using L_0 or R_0 estimators must be explicitly declared; a shift in statistical significance after imputation indicates vulnerability to publication bias.",
+      "pitfalls": "Assuming asymmetry in funnel plots is exclusively caused by publication bias (small-study effects, clinical heterogeneity, or methodological differences can generate funnel asymmetry, causing trim-and-fill to erroneously impute non-existent studies); poor performance when between-study heterogeneity is substantial (I^2 > 75%).",
+      "apa_reference": "Duval, S., & Tweedie, R. (2000). Trim and fill: A simple funnel-plot-based method of testing and adjusting for publication bias in meta-analysis. Biometrics, 56(2), 455–463. https://doi.org/10.1111/j.0006-341x.2000.00455.x"
     },
     {
       "id": "trimmed-mean",
       "term": "Trimmed Mean",
-      "vietnamese": "Số trung bình Cắt ngọn",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Robust Statistics"
+      "vietnamese": "Trung bình Cắt tỉa (Trung bình Rút gọn)",
+      "vietnamese_variants": [
+        "Số trung bình cắt tỉa",
+        "Ước lượng trung bình loại bỏ ngoại lai"
       ],
-      "core_definition": "Giá trị trung bình tính toán sau khi đã loại bỏ một tỷ lệ % nhất định các quan sát cực đoan hai đầu.",
-      "seminal_citation": "Tukey (1960)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Robust Statistics",
+        "Exploratory Data Analysis",
+        "Descriptive Statistics",
+        "Quantitative Methodology"
+      ],
+      "core_definition": "A robust measure of central tendency computed by discarding a predetermined percentage (typically 5%, 10%, or 20%) of the smallest and largest sorted observations from an empirical distribution and calculating the arithmetic mean of the remaining sample, dramatically increasing the breakdown point against extreme outliers.",
+      "seminal_citation": "Tukey (1960); Wilcox (2017)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Trimmed Mean according to Tukey (1960).",
       "domain_tags_en": [
         "Robust Statistics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Given a sample of size n ordered as X_(1) <= X_(2) <= ... <= X_(n), a g-trimmed mean (where g = floor(alpha * n)) removes the lowest g and highest g observations. The alpha-trimmed mean is formulated as X_bar_(alpha) = (1 / (n - 2g)) * sum_{i = g + 1}^{n - g} X_(i). It serves as a mathematical compromise between the sample mean (alpha = 0, breakdown point 0%, vulnerable to a single catastrophic outlier) and the median (alpha = 0.50, breakdown point 50%, high robustness but potentially lower statistical efficiency in normal distributions).",
+      "benchmarks": "A 20% trimmed mean (alpha = 0.20) is widely recommended by robust statisticians (Wilcox, 2017) as achieving high relative statistical efficiency (near 90% relative to OLS under normality) while offering robust protection under heavy-tailed and skewed distributions.",
+      "pitfalls": "Using standard OLS standard errors on trimmed samples without employing Huber-White or Winsorized variance estimators, which biases standard error calculations downward; failing to report the trimming percentage alpha.",
+      "apa_reference": "Wilcox, R. R. (2017). Introduction to robust estimation and hypothesis testing (4th ed.). Academic Press."
     },
     {
       "id": "triple-blind-peer-review",
       "term": "Triple-Blind Peer Review",
-      "vietnamese": "Phản biện Kín Ba chiều",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Academic Publishing"
+      "vietnamese": "Bình duyệt Ẩn danh Ba bên (Bình duyệt Tam mù)",
+      "vietnamese_variants": [
+        "Quy trình phản biện tam mù",
+        "Đánh giá ẩn danh ba chiều"
       ],
-      "core_definition": "Ẩn danh tính tác giả đối với cả Biên tập viên, Phản biện và Ngược lại.",
-      "seminal_citation": "Nature (2015)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Scholarly Publishing",
+        "Research Integrity",
+        "Peer Review",
+        "Scientometrics"
+      ],
+      "core_definition": "A rigorous scholarly evaluation protocol wherein the identities of the authors, peer reviewers, and handling academic editors are completely anonymized from one another throughout the manuscript evaluation and decision-making process, eliminating institutional prestige, gender, ethnic, and geographic biases.",
+      "seminal_citation": "Blank (1991); Snodgrass (2006)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Triple-Blind Peer Review according to Nature (2015).",
       "domain_tags_en": [
         "Academic Publishing"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "The journal's editorial office manager or an automated editorial management system decouples author identifying metadata (names, institutional affiliations, acknowledgments, self-citations) before assigning the submission to an academic editor. The editor reviews the blinded submission and selects peer reviewers without knowing the authors' identity. Reviewers submit evaluations without knowing author identities, and the editor issues decisions blinded to the authors' pedigree, ensuring evaluation rests solely on methodological merit, theoretical rigor, and data integrity.",
+      "benchmarks": "Complete redaction of self-referential language, institutional grant disclosures, and preprint identifiers; cryptographic or hashed manuscript tracking in editorial software; reporting bias reduction audit metrics in journal annual transparency reports.",
+      "pitfalls": "De-anonymization vulnerabilities arising from preprints (arXiv, SSRN, Research Square) or conference presentations where code and titles are searchable via Google; added administrative friction and overhead in managing triple blinding without automated editorial platforms.",
+      "apa_reference": "Blank, R. M. (1991). The effects of double-blind versus single-blind reviewing: Experimental evidence from The American Economic Review. The American Economic Review, 81(5), 1041–1067."
     },
     {
       "id": "tripod-statement",
       "term": "TRIPOD Statement",
       "vietnamese": "Tuyên bố TRIPOD",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Reporting Guidelines"
+      "vietnamese_variants": [
+        "Hướng dẫn báo cáo mô hình dự đoán TRIPOD",
+        "Quy chuẩn báo cáo mô hình tiên lượng"
       ],
-      "core_definition": "Chuẩn mực báo cáo các mô hình dự báo đa biến cá nhân hóa.",
-      "seminal_citation": "Collins et al. (2015)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Reporting Guidelines",
+        "Clinical Epidemiology",
+        "Predictive Analytics",
+        "Health Informatics"
+      ],
+      "core_definition": "An evidence-based, 22-item reporting checklist and guideline (Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis) designed to improve the transparency, completeness, and reproducibility of studies developing, validating, or updating clinical and statistical multivariable prediction models.",
+      "seminal_citation": "Collins, Reitsma, Altman, & Moons (2015)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of TRIPOD Statement according to Collins et al. (2015).",
       "domain_tags_en": [
         "Reporting Guidelines"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "TRIPOD establishes strict methodological disclosure standards covering: (1) Title and abstract structure specifying model development vs external validation; (2) Detailed participant eligibility, setting, and study dates; (3) Explicit definitions of predictor variables and blinded outcome assessment; (4) Sample size justification (events per variable [EPV]); (5) Missing data handling (recommending multiple imputation over complete-case deletion); (6) Model specification, discrimination metrics (C-index, AUC), and calibration curves; and (7) Risk stratification cutoffs.",
+      "benchmarks": "Submission of completed TRIPOD checklist alongside manuscript; reporting discrimination (AUC/C-statistic with 95% CI) and calibration (Hosmer-Lemeshow or calibration slope and intercept with calibration plot); events per variable (EPV) >= 10 to 20 for development.",
+      "pitfalls": "Reporting only discrimination (AUC) without reporting calibration plots (a model can have high discrimination but severely miscalibrated risk probabilities); evaluating predictive performance exclusively on the training set without internal bootstrap validation or external out-of-sample validation.",
+      "apa_reference": "Collins, G. S., Reitsma, J. B., Altman, D. G., & Moons, K. G. (2015). Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis (TRIPOD): The TRIPOD statement. Annals of Internal Medicine, 162(1), 55–63. https://doi.org/10.7326/M14-0697"
     },
     {
       "id": "true-experiment",
@@ -57655,43 +57699,63 @@
     },
     {
       "id": "true-experimental",
-      "term": "True Experimental",
-      "vietnamese": "Thử nghiệm có nhóm đối chứng trước - sau (Pretest-posttest control group), Thử nghiệm đối chứng chỉ sau can thiệp (Posttest-only control group), Thiết kế 4 nhóm của Solomon (Solomon four-group design).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Business Research",
-        "Experiments"
+      "term": "True Experimental Design",
+      "vietnamese": "Thiết kế Thực nghiệm Chuẩn (Thực nghiệm Đích thực)",
+      "vietnamese_variants": [
+        "Thiết kế thí nghiệm ngẫu nhiên",
+        "Thực nghiệm kiểm soát chặt chẽ"
       ],
-      "core_definition": "Thử nghiệm có nhóm đối chứng trước - sau (Pretest-posttest control group), Thử nghiệm đối chứng chỉ sau can thiệp (Posttest-only control group), Thiết kế 4 nhóm của Solomon (Solomon four-group design).",
-      "seminal_citation": "Schindler (2022); Schindler (2022)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Experimental Design",
+        "Causal Inference",
+        "Methodology",
+        "Psychometrics"
+      ],
+      "core_definition": "The gold standard causal research methodology characterized by the researcher's active manipulation of at least one independent variable, the inclusion of at least one control or comparison group, and the strict random assignment (randomization) of experimental units across conditions, eliminating systematic selection confounding.",
+      "seminal_citation": "Fisher (1935); Campbell & Stanley (1963)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of True Experimental according to Schindler (2022); Schindler (2022).",
       "domain_tags_en": [
         "Business Research",
         "Experiments"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Random assignment ensures that all observed and unobserved participant characteristics (confounders, genetic predispositions, cognitive differences) are distributed probabilistically symmetrically across treatment and control groups prior to intervention. Classical archetypes include the Pretest-Posttest Control Group Design, Posttest-Only Control Group Design, and Solomon Four-Group Design. Analysis typically proceeds through Analysis of Variance (ANOVA), ANCOVA (controlling for baseline pretest score to maximize statistical power), or mixed-effects regression.",
+      "benchmarks": "Verification of baseline covariate balance via standardized mean differences (SMD < 0.10 or non-significant balance F-tests); statistical power 1 - beta >= 0.80 under two-tailed alpha = 0.05; pre-registration in clinical/OSF trial registries.",
+      "pitfalls": "Attrition bias: differential participant dropouts across experimental arms undermining initial randomization equivalence; compensatory rivalry or John Henry effect in the control group; ethical constraints preventing randomization of harmful exposures.",
+      "apa_reference": "Campbell, D. T., & Stanley, J. C. (1963). Experimental and quasi-experimental designs for research. Rand McNally."
     },
     {
       "id": "true-score-theory",
-      "term": "True score theory",
-      "vietnamese": "Lý thuyết điểm số thực",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "True Score Theory",
+      "vietnamese": "Lý thuyết Điểm thực (Lý thuyết Kiểm tra Cổ điển - CTT)",
+      "vietnamese_variants": [
+        "Thuyết điểm số thực",
+        "Mô hình đo lường điểm chân thực"
       ],
-      "core_definition": "Giả định điểm số kỳ vọng không có sai số ngẫu nhiên.",
-      "seminal_citation": "DeVellis (2016)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Psychometrics",
+        "Measurement Theory",
+        "Classical Test Theory",
+        "Quantitative Psychology"
+      ],
+      "core_definition": "A foundational psychometric paradigm within Classical Test Theory (CTT) postulating that every observed test score (X) is a linear composite of an unobservable, latent true score (T) and an unsystematic, random measurement error component (E), formalized as X = T + E.",
+      "seminal_citation": "Spearman (1904); Lord & Novick (1968)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of True score theory according to DeVellis (2016).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "The theory rests on three core axiomatic assumptions: (1) The expected value of random measurement error is zero (E(E) = 0); (2) The correlation between true score and error is zero (rho_{T, E} = 0); and (3) The errors from parallel measurements are uncorrelated (rho_{E1, E2} = 0). Consequently, total observed variance partitions additively: Var(X) = Var(T) + Var(E). Reliability (r_xx) is mathematically defined as the ratio of true score variance to total observed variance: r_xx = Var(T) / Var(X).",
+      "benchmarks": "Reliability coefficients (Cronbach's alpha, McDonald's omega, test-retest r) >= 0.70 for exploratory research, >= 0.80 for established scales, and >= 0.90 for high-stakes individual diagnostic assessments; Standard Error of Measurement (SEM = SD_X * sqrt(1 - r_xx)) must be reported.",
+      "pitfalls": "Sample dependency: item difficulty and person scores cannot be separated from the specific validation sample (addressed by Item Response Theory); assuming measurement error variance is uniform across all score levels (homoscedasticity fallacy).",
+      "apa_reference": "Lord, F. M., & Novick, M. R. (1968). Statistical theories of mental test scores. Addison-Wesley."
     },
     {
       "id": "trustworthiness",
@@ -57725,77 +57789,119 @@
     {
       "id": "truth-table-algorithm-in-fsqca",
       "term": "Truth Table Algorithm in fsQCA",
-      "vietnamese": "Thuật toán Bảng Chân lý fsQCA",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Configurational Methods"
+      "vietnamese": "Thuật toán Bảng chân lý trong fsQCA",
+      "vietnamese_variants": [
+        "Thuật toán bảng giá trị chân lý",
+        "Quy trình rút gọn bảng chân lý QCA"
       ],
-      "core_definition": "Liệt kê toàn bộ 2ᵏ tổ hợp logic có thể có của các điều kiện tiền đề.",
-      "seminal_citation": "Ragin (2008)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Qualitative Comparative Analysis",
+        "Configurational Methods",
+        "fsQCA",
+        "Set-Theoretic Methods"
+      ],
+      "core_definition": "A set-theoretic reduction procedure in fuzzy-set Qualitative Comparative Analysis (fsQCA) developed by Charles Ragin that transforms continuous fuzzy-set membership scores into an exhaustive multidimensional configuration matrix (truth table of 2^k rows) and minimizes it via Boolean algebra (Quine-McCluskey algorithm) to identify necessary and sufficient causal conditions.",
+      "seminal_citation": "Ragin (1987, 2008)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Truth Table Algorithm in fsQCA according to Ragin (2008).",
       "domain_tags_en": [
         "Configurational Methods"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "The algorithm proceeds in three phases: (1) Constructing the truth table of 2^k rows, where each row represents a unique combination of presence or absence of k conditions; (2) Classifying empirical cases into rows based on fuzzy-set membership > 0.50 and applying frequency cutoffs (excluding low-frequency configurations); (3) Calculating raw consistency scores for each row (proportion of fuzzy membership in the configuration subset of the outcome), designating rows with consistency >= 0.80 as sufficient (outcome = 1), and minimizing expressions into complex, parsimonious, and intermediate solutions using directional counterfactuals.",
+      "benchmarks": "Raw consistency threshold >= 0.80 (never below 0.75); PRI (Proportional Reduction in Inconsistency) consistency >= 0.70 to avoid simultaneous subset relations; frequency cutoff >= 1 for small-N (10–50 cases) and >= 2–5 for large-N studies.",
+      "pitfalls": "Including too many antecedent conditions relative to case sample size (k > 7–8 causes massive limited diversity, where the vast majority of the 2^k configurations have zero empirical cases); mechanically relying on parsimonious solutions with untenable easy/difficult counterfactual assumptions.",
+      "apa_reference": "Ragin, C. C. (2008). Redesigning social inquiry: Fuzzy sets and beyond. University of Chicago Press."
     },
     {
       "id": "tucker-lewis-index-non-normed-fit-index-nnfi",
-      "term": "Tucker-Lewis Index (Non-Normed Fit Index / NNFI)",
-      "vietnamese": "Chỉ số Tucker-Lewis",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Acronym NCKH"
+      "term": "Tucker-Lewis Index",
+      "vietnamese": "Chỉ số Tucker-Lewis (TLI / NNFI)",
+      "vietnamese_variants": [
+        "Chỉ số độ phù hợp không chuẩn hóa NNFI",
+        "Chỉ số TLI trong mô hình SEM"
       ],
-      "core_definition": "Chỉ số phù hợp so sánh có phạt độ phức tạp của mô hình (thưởng cho mô hình cô đọng / parsimonious). Ngưỡng thực nghiệm tham chiếu: TLI ≥ 0.95 (lý tưởng), TLI ≥ 0.90 (chấp nhận được).",
-      "seminal_citation": "TLI ≥ 0.95 (lý tưởng), TLI ≥ 0.90 (chấp nhận được).",
-      "tier": "acronym",
+      "domain_tags": [
+        "Structural Equation Modeling",
+        "Confirmatory Factor Analysis",
+        "Psychometrics",
+        "Multivariate Statistics"
+      ],
+      "core_definition": "An incremental goodness-of-fit metric in Confirmatory Factor Analysis (CFA) and Structural Equation Modeling (SEM) that compares the chi-square per degree of freedom of the hypothesized model against a baseline null (independence) model, incorporating a direct penalty for model complexity.",
+      "seminal_citation": "Tucker & Lewis (1973); Hu & Bentler (1999)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of Tucker-Lewis Index (Non-Normed Fit Index / NNFI) according to TLI ≥ 0.95 (lý tưởng), TLI ≥ 0.90 (chấp nhận được)..",
       "domain_tags_en": [
         "Acronym NCKH"
       ],
-      "benchmarks": "TLI ≥ 0.95 (lý tưởng), TLI ≥ 0.90 (chấp nhận được)."
+      "benchmarks": "Hu & Bentler (1999) cutoffs: TLI >= 0.90 indicates acceptable fit; TLI >= 0.95 indicates superior/excellent fit when evaluated in conjunction with RMSEA <= 0.06 and SRMR <= 0.08.",
+      "is_flagship": true,
+      "operational_mechanism": "TLI is computed as: TLI = ( (chi^2_null / df_null) - (chi^2_target / df_target) ) / ( (chi^2_null / df_null) - 1 ). Unlike the Normed Fit Index (NFI), TLI is non-normed, meaning values can occasionally fall slightly below 0 or exceed 1.0. Because it adjusts chi-square by degrees of freedom, it imposes a mathematical penalty on parsimonious over-parameterization, rewarding researchers who achieve acceptable empirical fit with fewer estimated parameters.",
+      "pitfalls": "Interpreting TLI values > 1.0 as a calculation error (it simply reflects a model whose target chi-square is smaller than its degrees of freedom); relying exclusively on TLI in very small samples (N < 150) where TLI shows high sampling variability.",
+      "apa_reference": "Hu, L. T., & Bentler, P. M. (1999). Cutoff criteria for fit indexes in covariance structure analysis: Conventional criteria versus new alternatives. Structural Equation Modeling, 6(1), 1–55. https://doi.org/10.1080/10705519909540118"
     },
     {
       "id": "tukeys-hsd-post-hoc-test",
-      "term": "Tukey's HSD Post-Hoc Test",
-      "vietnamese": "Kiểm định Hậu nghiệm Tukey's Honestly Significant Difference (So sánh bắt cặp trung bình kiểm soát FWER khi phương sai đồng nhất)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Experimental Statistics"
+      "term": "Tukey's Honestly Significant Difference Test",
+      "vietnamese": "Kiểm định HSD của Tukey",
+      "vietnamese_variants": [
+        "Kiểm định hậu nghiệm Tukey HSD",
+        "Thử nghiệm sai biệt có ý nghĩa thực sự Tukey"
       ],
-      "core_definition": "Kiểm định Hậu nghiệm Tukey's Honestly Significant Difference (So sánh bắt cặp trung bình kiểm soát FWER khi phương sai đồng nhất).",
-      "seminal_citation": "Tukey (1949)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Post-Hoc Tests",
+        "ANOVA",
+        "Inferential Statistics",
+        "Experimental Methodology"
+      ],
+      "core_definition": "A single-step multiple comparison post-hoc procedure applied following a statistically significant Analysis of Variance (ANOVA) F-test to determine which specific pairs of group means differ significantly from one another while rigorously controlling the family-wise error rate (FWER) at alpha.",
+      "seminal_citation": "Tukey (1949, 1953)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Tukey's HSD Post-Hoc Test according to Tukey (1949).",
       "domain_tags_en": [
         "Experimental Statistics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Tukey's HSD calculates a minimum honestly significant difference cutoff: HSD = q_{alpha, k, df_e} * sqrt(MS_within / n), where q is the studentized range statistic for k groups and df_e error degrees of freedom, MS_within is the mean square within-groups variance from ANOVA, and n is sample size per condition (or harmonic mean n_h under unequal group sizes, termed the Tukey-Kramer method). Any absolute difference between pairwise means |Y_bar_i - Y_bar_j| exceeding HSD is declared statistically significant at the family-wise alpha level.",
+      "benchmarks": "Applies to all pairwise group comparisons; requires homogeneity of variances (Levene's test p > 0.05). If variance homogeneity is violated, Games-Howell post-hoc test must be reported instead.",
+      "pitfalls": "Applying standard Tukey's test when group sample sizes are severely unbalanced without using the Tukey-Kramer harmonic mean adjustment; conducting pairwise Tukey tests when the omnibus ANOVA F-test was non-significant (data fishing / p-hacking).",
+      "apa_reference": "Tukey, J. W. (1949). Comparing individual means in the analysis of variance. Biometrics, 5(2), 99–114. https://doi.org/10.2307/3001913"
     },
     {
       "id": "turn-taking-l-t-l-i",
       "term": "Turn-Taking in Conversation Analysis",
-      "vietnamese": "Luân phiên Lượt lời trong Phân tích Đàm thoại",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Phân tích Đàm thoại (CA)",
-        "Phương pháp Định tính"
+      "vietnamese": "Cơ chế Luân phiên Lượt lời trong Phân tích Hội thoại",
+      "vietnamese_variants": [
+        "Cấu trúc lượt nói",
+        "Quy tắc chuyển giao lượt lời"
       ],
-      "core_definition": "Mô hình quy tắc tương tác xã hội nền tảng do Sacks, Schegloff và Jefferson (1974) phát hiện, mô tả cách thức những người tham gia đàm thoại điều phối trật tự nói chuyện để tại mỗi thời điểm thường chỉ có một người nói và giảm thiểu tối đa khoảng lặng (gap) hoặc sự nói chồng lấn (overlap).",
-      "seminal_citation": "Sacks, H., Schegloff, E. A., & Jefferson, G. (1974). A simplest systematics for the organization of turn-taking for conversation. Language, 50(4), 696–735.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Conversation Analysis",
+        "Sociolinguistics",
+        "Qualitative Micro-Analysis",
+        "Interactional Linguistics"
+      ],
+      "core_definition": "The fundamental structural organization of human spoken interaction formulated by Harvey Sacks, Emanuel Schegloff, and Gail Jefferson, describing how conversational participants coordinate speaking rights, manage transitions, and minimize simultaneous talk (overlap) and silence (gaps).",
+      "seminal_citation": "Sacks, Schegloff, & Jefferson (1974)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã khắc phục lỗi font tiếng Việt 'L t l i' thành 'Luân phiên Lượt lời'.",
       "core_definition_en": "Scholarly peer-reviewed definition of Turn-taking (Luân phiên Lượt lời trong Phân tích Đàm thoại) based on established academic literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Turn-taking operates via two structural components: (1) Turn-Constructional Units (TCUs), which are grammatical, prosodic, and pragmatic interactional segments whose completion projects a Transition Relevance Place (TRP); and (2) Turn-Allocation Rules: At a TRP, Rule 1 allocates the turn (current speaker selects next; if not, next speaker self-selects; if not, current speaker may continue). Violations of order prompt repair sequences to restore social alignment and intersubjectivity.",
+      "benchmarks": "Verbatim transcriptions using the Jefferson Transcription System, incorporating precise pauses in tenths of seconds (e.g., (0.4)), intonation shifts, micro-overlaps, and audible breath intakes; systematic analysis of repair sequences.",
+      "pitfalls": "Analyzing spoken interaction purely from unannotated literary transcripts that omit millisecond pauses, intonational pitch contours, and micropause overlaps; imposing macro-sociological categories (gender, power) before demonstrating that participants themselves orient to those categories within the micro-interaction.",
+      "apa_reference": "Sacks, H., Schegloff, E. A., & Jefferson, G. (1974). A simplest systematics for the organization of turn-taking for conversation. Language, 50(4), 696–735. https://doi.org/10.2307/412243"
     },
     {
       "id": "two-parameter-logistic-model",
@@ -57870,22 +57976,33 @@
     },
     {
       "id": "two-phase-sequential-design",
-      "term": "Two-phase sequential design",
-      "vietnamese": "Thiết kế hai giai đoạn tuần tự",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Phương pháp Hỗn hợp"
+      "term": "Two-Phase Sequential Design",
+      "vietnamese": "Thiết kế Tuần tự Hai giai đoạn",
+      "vietnamese_variants": [
+        "Thiết kế nghiên cứu nối tiếp hai bước",
+        "Thiết kế phương pháp hỗn hợp tuần tự"
       ],
-      "core_definition": "Mô hình nghiên cứu hỗn hợp triển khai theo hai bước nối tiếp nhau: kết quả của giai đoạn thứ nhất định hướng hoặc giải thích cho giai đoạn thu thập dữ liệu thứ hai.",
-      "seminal_citation": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and Conducting Mixed Methods Research (3rd ed.). SAGE.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Mixed Methods",
+        "Research Design",
+        "Methodology",
+        "Quantitative-Qualitative Integration"
+      ],
+      "core_definition": "A mixed-methods research architecture wherein quantitative and qualitative data collection and analytical phases occur consecutively in time, with the methodological procedures and findings of the second phase deliberately built upon, informed by, or explaining the empirical results of the first phase.",
+      "seminal_citation": "Creswell & Plano Clark (2018); Greene, Caracelli, & Graham (1989)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Two-phase sequential design according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Two primary configurations exist: (1) Explanatory Sequential Design (QUAN -> qual): A broad initial quantitative survey (Phase 1) tests hypotheses, followed by purposive qualitative interviews (Phase 2) to unpack mechanisms, explain outlier responses, or illuminate surprising null results; (2) Exploratory Sequential Design (QUAL -> quan): Initial in-depth qualitative fieldwork (Phase 1) explores an under-theorized phenomenon to develop measurement constructs, followed by quantitative scale testing and validation on a representative sample (Phase 2).",
+      "benchmarks": "Explicit integration at the connection point (joint display tables, sampling linkage, or instrument development); clear specification of priority/weighting (e.g., QUAN dominant or equal status); visual procedural flowcharts displaying timing and integration points.",
+      "pitfalls": "Treating the two phases as independent, disconnected silos without meaningful cross-method integration; failing to explain how the sampling frame of Phase 2 connects systematically to the findings of Phase 1.",
+      "apa_reference": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and conducting mixed methods research (3rd ed.). SAGE Publications."
     },
     {
       "id": "two-stage-least-squares",
@@ -57917,39 +58034,61 @@
     },
     {
       "id": "two-tailed-vs-one-tailed-p-value",
-      "term": "Two-Tailed vs. One-Tailed p-value",
-      "vietnamese": "Giá trị p Hai phía vs. Một phía",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Inferential Statistics"
+      "term": "Two-Tailed vs One-Tailed Hypothesis Testing",
+      "vietnamese": "Kiểm định Giả thuyết Hai phía so với Một phía",
+      "vietnamese_variants": [
+        "Giá trị p hai đuôi và một đuôi",
+        "Kiểm định định hướng so với không định hướng"
       ],
-      "core_definition": "Kiểm định giả thuyết không định hướng vs. Giả thuyết có định hướng chiều tác động.",
-      "seminal_citation": "Field (2018)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Inferential Statistics",
+        "Hypothesis Testing",
+        "Econometrics",
+        "Biostatistics"
+      ],
+      "core_definition": "The statistical specification of the rejection region for the null hypothesis (H_0), distinguishing between non-directional tests (two-tailed, allocating alpha / 2 to both extreme tails of the sampling distribution) and directional tests (one-tailed, concentrating the entire alpha risk in a single specified tail).",
+      "seminal_citation": "Neyman & Pearson (1933); Ruxton & Neuhäuser (2010)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Two-Tailed vs. One-Tailed p-value according to Field (2018).",
       "domain_tags_en": [
         "Inferential Statistics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In two-tailed testing, H_1: theta != theta_0, and H_0 is rejected if the test statistic falls into either extreme tail (|t| >= t_{crit, alpha/2}), testing for any departure from equality. In one-tailed testing, H_1 specifies an explicit theoretical direction (H_1: theta > theta_0 or theta < theta_0), placing all alpha in one tail (t >= t_{crit, alpha}). This lowers the critical value threshold and boosts statistical power, but forfeits the statistical ability to reject H_0 if the true empirical effect lies in the opposite direction.",
+      "benchmarks": "Two-tailed tests are the mandatory academic default across peer-reviewed journals; one-tailed tests are legitimate exclusively when pre-registered with compelling theoretical justification or when effects in the reverse direction are conceptually or physically meaningless.",
+      "pitfalls": "Post-hoc switching from two-tailed to one-tailed testing after seeing an empirical p-value fall between 0.05 and 0.10 (a blatant form of p-hacking / selective reporting); failing to report the directional hypothesis prior to data collection.",
+      "apa_reference": "Ruxton, G. D., & Neuhäuser, M. (2010). When should we use one-tailed hypothesis testing? Methods in Ecology and Evolution, 1(2), 114–117. https://doi.org/10.1111/j.2041-210X.2010.00014.x"
     },
     {
       "id": "two-way-anova",
-      "term": "Two-Way ANOVA",
-      "vietnamese": "Phân tích phương sai hai chiều kiểm tra tác động chính và tương tác của hai nhân tố",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Parametric Statistics"
+      "term": "Two-Way Analysis of Variance",
+      "vietnamese": "Phân tích Biến thiên Hai chiều (Two-Way ANOVA)",
+      "vietnamese_variants": [
+        "Phân tích ANOVA hai yếu tố",
+        "Kiểm định phương sai hai nhân tố"
       ],
-      "core_definition": "Phân tích phương sai hai chiều kiểm tra tác động chính và tương tác của hai nhân tố.",
-      "seminal_citation": "Kirk (2013)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Inferential Statistics",
+        "Experimental Design",
+        "ANOVA",
+        "General Linear Model"
+      ],
+      "core_definition": "A factorial extension of the General Linear Model that simultaneously evaluates the effects of two categorical independent variables (factors A and B) on a continuous dependent variable, enabling the statistical decomposition and testing of two main effects and one interaction effect (A x B).",
+      "seminal_citation": "Fisher (1925, 1935)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Two-Way ANOVA according to Kirk (2013).",
       "domain_tags_en": [
         "Parametric Statistics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Total sum of squares (TSS) partitions additively: TSS = SS_A + SS_B + SS_{AB} + SS_error. Three independent F-tests are conducted: (1) Main effect of Factor A (MS_A / MS_error); (2) Main effect of Factor B (MS_B / MS_error); and (3) Interaction effect (MS_{AB} / MS_error). A significant interaction indicates that the effect of Factor A on the dependent variable depends systematically on the level of Factor B, requiring simple main effects analysis rather than broad generalizations of main effects.",
+      "benchmarks": "Levene's test of homogeneity of variance (p > 0.05); Shapiro-Wilk test of normality on regression residuals; reporting partial eta-squared (eta^2_p) effect sizes alongside F-statistics and degrees of freedom (e.g., F(2, 144) = 4.32, p = .015, eta^2_p = .057).",
+      "pitfalls": "Interpreting main effects in the presence of a strong, disordinal (crossing) interaction effect; conducting multiple uncorrected pairwise t-tests instead of formal post-hoc procedures (Tukey/Bonferroni).",
+      "apa_reference": "Field, A. (2018). Discovering statistics using IBM SPSS statistics (5th ed.). SAGE Publications."
     },
     {
       "id": "type-1-single-case-holistic-design",
@@ -58117,363 +58256,564 @@
     },
     {
       "id": "type-i-construct-superordinate-construct",
-      "term": "Type I construct (Superordinate construct)",
-      "vietnamese": "Khái niệm bậc hai kết quả (Reflective-Reflective)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Type I Higher-Order Construct",
+      "vietnamese": "Khái niệm Cấp cao Loại I (Phản xạ - Phản xạ)",
+      "vietnamese_variants": [
+        "Mô hình đo lường đa cấp Loại 1",
+        "Cấu trúc bậc hai phản chiếu - phản chiếu"
       ],
-      "core_definition": "Khái niệm tổng quát chi phối các chiều con; các chiều con c.",
-      "seminal_citation": "MacKenzie et al. (2011)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Structural Equation Modeling",
+        "PLS-SEM",
+        "CB-SEM",
+        "Measurement Theory"
+      ],
+      "core_definition": "A hierarchical, higher-order multidimensional construct specification characterized by reflective relationships at both levels of abstraction: the first-order lower constructs reflectively manifest their individual indicator items, and the second-order higher construct reflectively manifests the lower-order dimensions.",
+      "seminal_citation": "Jarvis, MacKenzie, & Podsakoff (2003); Sarstedt et al. (2019)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Type I construct (Superordinate construct) according to MacKenzie et al. (2011).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In Type I models (Reflective-Reflective), the higher-order component (HOC) represents an underlying latent common core that causes variation in the lower-order components (LOCs). An increase in the higher-order latent trait simultaneously increases all lower-order dimensions. Evaluated in PLS-SEM via the repeated indicator approach or two-stage approach. Measurement assessment requires evaluating internal consistency reliability (Composite Reliability, Cronbach's alpha), convergent validity (Average Variance Extracted [AVE] >= 0.50), and discriminant validity (HTMT) at both first-order and second-order levels.",
+      "benchmarks": "Second-order factor loadings of LOCs onto HOC should be >= 0.708 (or >= 0.70) and statistically significant (p < 0.001); higher-order AVE >= 0.50; Composite Reliability (CR) >= 0.70–0.80.",
+      "pitfalls": "Conceptual misspecification: forcing a reflective-reflective Type I structure when the dimensions actually define or form the construct (Type II) rather than reflect it; failing to test discriminant validity between the lower-order dimensions.",
+      "apa_reference": "Sarstedt, M., Hair, J. F., Cheah, J. H., Becker, J. M., & Ringle, C. M. (2019). How to specify, estimate, and validate higher-order constructs in PLS-SEM. Australasian Marketing Journal, 27(3), 197–211. https://doi.org/10.1016/j.ausmj.2019.05.003"
     },
     {
       "id": "type-i-ii-error",
-      "term": "Type I and Type II Errors (Alpha and Beta Errors)",
-      "vietnamese": "Sai lầm Loại I và Sai lầm Loại II (Sai số Alpha và Beta)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Kiểm định Giả thuyết",
-        "Lực Thống kê"
+      "term": "Type I and Type II Errors",
+      "vietnamese": "Sai số Loại I và Sai số Loại II (Sai lầm Alpha và Beta)",
+      "vietnamese_variants": [
+        "Lỗi loại 1 và lỗi loại 2 trong kiểm định",
+        "Sai lầm dương tính giả và âm tính giả"
       ],
-      "core_definition": "Hai loại sai lầm cơ bản trong kiểm định giả thuyết thống kê: Sai lầm Loại I (alpha - False Positive) xảy ra khi bác bỏ giả thuyết H0 trong khi H0 thực sự đúng. Sai lầm Loại II (beta - False Negative) xảy ra khi không bác bỏ H0 trong khi H0 thực sự sai. Lực kiểm định thống kê (Statistical Power) được định nghĩa là 1 - beta.",
-      "seminal_citation": "Neyman, J., & Pearson, E. S. (1933). On the problem of the most efficient tests of statistical hypotheses. Philosophical Transactions of the Royal Society, 231, 289–337.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Inferential Statistics",
+        "Statistical Power",
+        "Hypothesis Testing",
+        "Philosophy of Science"
+      ],
+      "core_definition": "The fundamental dichotomous statistical decision errors in null hypothesis significance testing: Type I error (alpha) occurs when a true null hypothesis is incorrectly rejected (false positive); Type II error (beta) occurs when a false null hypothesis fails to be rejected (false negative).",
+      "seminal_citation": "Neyman & Pearson (1933); Cohen (1988)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Type I and Type II Errors (Alpha and Beta Errors) according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In Neyman-Pearson decision theory, researchers set the alpha threshold (typically alpha = 0.05) to control maximum acceptable Type I error risk. Statistical power is mathematically defined as 1 - beta (the probability of correctly rejecting a false null hypothesis given a specified effect size and sample size). An inverse relationship exists between alpha and beta: tightening alpha (e.g., from 0.05 to 0.01) inflates beta unless sample size n is proportionally expanded.",
+      "benchmarks": "Type I error rate fixed a priori at alpha = 0.05 (or corrected via FDR / Bonferroni in multiple testing); statistical power 1 - beta >= 0.80 (meaning beta <= 0.20) as the minimum international benchmark for Q1 empirical research.",
+      "pitfalls": "Focusing solely on minimizing Type I error (alpha = 0.01) in underpowered studies, which dramatically increases Type II errors and wastes empirical resources; failing to conduct an a priori statistical power calculation before data collection.",
+      "apa_reference": "Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Lawrence Erlbaum Associates."
     },
     {
       "id": "type-ii-construct-aggregate-construct",
-      "term": "Type II construct (Aggregate construct)",
-      "vietnamese": "Khái niệm bậc hai nguyên nhân (Formative-Reflective)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Type II Higher-Order Construct",
+      "vietnamese": "Khái niệm Cấp cao Loại II (Phản xạ - Cấu thành)",
+      "vietnamese_variants": [
+        "Mô hình đa cấp Phản chiếu - Định hình",
+        "Cấu trúc bậc hai Reflective-Formative"
       ],
-      "core_definition": "Các chiều con phản ánh biến quan sát; nhưng chiều con hợp th.",
-      "seminal_citation": "MacKenzie et al. (2011)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Structural Equation Modeling",
+        "PLS-SEM",
+        "Measurement Theory",
+        "Psychometrics"
+      ],
+      "core_definition": "A hierarchical construct specification wherein lower-order components (LOCs) are measured reflectively by their respective survey indicators, but these LOCs form or define the higher-order component (HOC) through formative, causal-manifest relationships (Reflective-Formative).",
+      "seminal_citation": "Jarvis, MacKenzie, & Podsakoff (2003); Becker et al. (2012)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Type II construct (Aggregate construct) according to MacKenzie et al. (2011).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In Type II constructs (e.g., Job Satisfaction formed by satisfaction with pay, supervision, and work environment), each dimension captures an autonomous facet of the overarching construct. The LOCs do not need to correlate strongly with one another, and dropping one LOC changes the conceptual definition of the HOC. Evaluated via the extended repeated indicator approach or two-stage approach in PLS-SEM. Validation requires testing multicollinearity among LOCs (Variance Inflation Factor [VIF]) and evaluating the significance and size of outer weights.",
+      "benchmarks": "VIF among lower-order dimensions must be < 3.0 (or < 5.0 in conservative thresholds) to rule out critical collinearity; formative outer weights should be statistically significant (p < 0.05), or outer loadings >= 0.50 if weights are non-significant.",
+      "pitfalls": "Evaluating the second-order formative relationship using reflective criteria like Cronbach's alpha or AVE (which are mathematically invalid for formative specifications); ignoring high collinearity between dimensions causing sign-reversals in outer weights.",
+      "apa_reference": "Becker, J. M., Klein, K., & Wetzels, M. (2012). Hierarchical latent variable models in PLS-SEM: Guidelines for using reflective-formative type models. Long Range Planning, 45(5-6), 359–394. https://doi.org/10.1016/j.lrp.2012.10.001"
     },
     {
       "id": "type-iii-construct",
-      "term": "Type III construct",
-      "vietnamese": "Khái niệm hỗn hợp (Reflective-Formative)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Type III Higher-Order Construct",
+      "vietnamese": "Khái niệm Cấp cao Loại III (Cấu thành - Phản xạ)",
+      "vietnamese_variants": [
+        "Mô hình đa cấp Formative-Reflective",
+        "Cấu trúc bậc hai Định hình - Phản chiếu"
       ],
-      "core_definition": "Biến quan sát hợp thành chiều con; chiều con là kết quả của khái niệm tổng.",
-      "seminal_citation": "MacKenzie et al. (2011)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Structural Equation Modeling",
+        "PLS-SEM",
+        "Measurement Theory",
+        "Multivariate Statistics"
+      ],
+      "core_definition": "A multidimensional construct specification characterized by formative relationships at the first-order level (indicators form the lower-order components) and reflective relationships at the second-order level (the higher-order construct reflects into the lower-order components).",
+      "seminal_citation": "Jarvis, MacKenzie, & Podsakoff (2003); Hair et al. (2022)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Type III construct according to MacKenzie et al. (2011).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In Type III models (Formative-Reflective), each lower-order component is formed by a combination of specific causal indicators, while the higher-order component is a general underlying entity whose variations causally drive the lower-order dimensions. Although theoretically conceivable, Type III constructs are rare in empirical business and social research because of extreme identification challenges in CB-SEM and severe multicollinearity and interpretability burdens in PLS-SEM.",
+      "benchmarks": "Lower-order formative indicators must pass VIF < 3.0; higher-order reflective relationships must achieve factor loadings >= 0.708, AVE >= 0.50, and CR >= 0.70.",
+      "pitfalls": "Severe identification problems in covariance-based SEM requiring additional reflective markers; confusion between Type II and Type III causing faulty indicator assignments in PLS path modeling.",
+      "apa_reference": "Hair, J. F., Hult, G. T. M., Ringle, C. M., & Sarstedt, M. (2022). A primer on partial least squares structural equation modeling (PLS-SEM) (3rd ed.). SAGE Publications."
     },
     {
       "id": "type-iv-construct",
-      "term": "Type IV construct",
-      "vietnamese": "Khái niệm nguyên nhân thuần túy (Formative-Formative)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Type IV Higher-Order Construct",
+      "vietnamese": "Khái niệm Cấp cao Loại IV (Cấu thành - Cấu thành)",
+      "vietnamese_variants": [
+        "Mô hình đa cấp Formative-Formative",
+        "Cấu trúc bậc hai Định hình - Định hình"
       ],
-      "core_definition": "Biến quan sát hợp thành chiều con; chiều con hợp thành khái niệm tổng.",
-      "seminal_citation": "MacKenzie et al. (2011)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Structural Equation Modeling",
+        "PLS-SEM",
+        "Composite Modeling",
+        "Measurement Theory"
+      ],
+      "core_definition": "A hierarchical composite construct architecture characterized by formative measurement relationships across both tiers of abstraction: lower-order components are formed formatively by their raw indicators, and the higher-order construct is formed formatively by the lower-order components.",
+      "seminal_citation": "Jarvis, MacKenzie, & Podsakoff (2003); Wetzels, Odekerken-Schröder, & van Oppen (2009)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Type IV construct according to MacKenzie et al. (2011).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Type IV models (Formative-Formative) represent pure composite systems (e.g., Corporate Social Responsibility formed by discrete environmental, philanthropic, and labor practice dimensions, each formed by distinct objective policy metrics). Neither indicators nor dimensions are assumed to correlate. Estimation proceeds through the two-stage PLS-SEM approach, extracting latent variable scores of LOCs in Stage 1 and using them as formative indicators of the HOC in Stage 2. Multi-collinearity diagnostics must be conducted across both tiers.",
+      "benchmarks": "Collinearity tolerance: VIF must be strictly < 3.0 (or < 5.0) at both indicator and dimensional levels; all significant outer weights (p < 0.05) or substantial outer loadings (>= 0.50) must be demonstrated.",
+      "pitfalls": "Attempting to estimate Type IV constructs in CB-SEM without substantial auxiliary reflective markers, resulting in model under-identification; failing to capture the full conceptual domain, leading to omitted indicator bias in formative components.",
+      "apa_reference": "Wetzels, M., Odekerken-Schröder, G., & van Oppen, C. (2009). Using PLS path modeling for assessing hierarchical construct models: Guidelines and empirical illustration. MIS Quarterly, 33(1), 177–195. https://doi.org/10.2307/20650284"
     },
     {
       "id": "typical-case-sampling",
       "term": "Typical Case Sampling",
-      "vietnamese": "Chọn mẫu trường hợp điển hình",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Sampling"
+      "vietnamese": "Chọn mẫu Trường hợp Điển hình",
+      "vietnamese_variants": [
+        "Phương pháp lấy mẫu trường hợp tiêu biểu",
+        "Lấy mẫu đại diện điển hình trong nghiên cứu định tính"
       ],
-      "core_definition": "mô tả và minh họa những gì được coi là chuẩn tắc bình thường trong bối cảnh.",
-      "seminal_citation": "Patton (2015)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Qualitative Sampling",
+        "Purposive Sampling",
+        "Case Study Methodology",
+        "Qualitative Inquiry"
+      ],
+      "core_definition": "A purposive sampling strategy in qualitative and case study research that deliberately selects individuals, communities, or organizations that exemplify the normal, average, or standard characteristics of a phenomenon, designed to illustrate what is typical rather than generalize statistically to a population.",
+      "seminal_citation": "Patton (1990, 2015)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Typical Case Sampling according to Patton (2015).",
       "domain_tags_en": [
         "Qualitative Sampling"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Researchers utilize demographic databases, preliminary quantitative surveys, or consensus from key informants to identify the statistical median or normative cultural profile of the target group. Cases falling within modal boundaries (e.g., median household income, typical school size, standard organizational tenure) are selected. In-depth fieldwork then documents the everyday experiences, routine processes, and structural dynamics of this typical setting to provide rich contextual insight for outside readers unfamiliar with the setting.",
+      "benchmarks": "Case selection rationale must be supported by empirical descriptive statistics establishing why the chosen case represents the modal or median condition; must clearly delimit findings as contextual illustrations rather than statistical population estimates.",
+      "pitfalls": "Claiming generalizability or statistical representativeness from a qualitative typical case study; failing to define the normative baseline, leading to idiosyncratic selection disguised as typicality.",
+      "apa_reference": "Patton, M. Q. (2015). Qualitative research & evaluation methods: Integrating theory and practice (4th ed.). SAGE Publications."
     },
     {
       "id": "u-shaped-relationship-testing",
       "term": "U-Shaped Relationship Testing",
-      "vietnamese": "Kiểm định Mối quan hệ Hình chữ U",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Nonlinear Regression"
+      "vietnamese": "Kiểm định Mối quan hệ Phi tuyến Hình chữ U (và U-ngược)",
+      "vietnamese_variants": [
+        "Kiểm định phi tuyến tính bậc hai",
+        "Quy trình kiểm định quan hệ chữ U theo Lind & Mehlum"
       ],
-      "core_definition": "Đánh giá mức giảm ban đầu sau đó phục hồi tăng mạnh khi vượt qua đáy.",
-      "seminal_citation": "Haans et al. (2016)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Applied Econometrics",
+        "Strategic Management",
+        "Nonlinear Modeling",
+        "Quantitative Methodology"
+      ],
+      "core_definition": "A rigorous econometric testing framework formulated by Jo Thori Lind and Halvor Mehlum to verify whether an empirical curvilinear relationship between an independent variable and dependent variable exhibits a genuine U-shaped or inverted U-shaped pattern rather than a plateauing, monotonic, or convex artifact.",
+      "seminal_citation": "Lind & Mehlum (2010); Haans, Pieters, & He (2016)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of U-Shaped Relationship Testing according to Haans et al. (2016).",
       "domain_tags_en": [
         "Nonlinear Regression"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In a quadratic model Y = beta_0 + beta_1*X + beta_2*X^2 + Controls + epsilon, researchers historically relied solely on a statistically significant quadratic coefficient beta_2. Lind & Mehlum (2010) demonstrated that a significant beta_2 is insufficient. A valid U-shape requires a 3-step test: (1) beta_1 + 2*beta_2*X_min < 0 and beta_1 + 2*beta_2*X_max > 0 (for U-shape) or opposite signs (for inverted U); (2) The extreme turning point X* = -beta_1 / (2*beta_2) must fall well within the empirical range of X; and (3) The Sasabuchi test of joint slope differences must be statistically significant (p < 0.05).",
+      "benchmarks": "Sasabuchi test p-value < 0.05; Fieller 95% confidence interval for the turning point X* must be fully bounded inside the empirical data range [X_min, X_max]; quadratic coefficient p < 0.05.",
+      "pitfalls": "Declaring an inverted U-shape when the turning point lies outside or at the extreme 99th percentile of the data distribution (which represents merely diminishing returns / logarithmic flattening rather than a true downturn); relying solely on the p-value of X^2.",
+      "apa_reference": "Lind, J. T., & Mehlum, H. (2010). With or without U? The appropriate test for a U-shaped relationship. Oxford Bulletin of Economics and Statistics, 72(1), 109–118. https://doi.org/10.1111/j.1468-0084.2009.00569.x"
     },
     {
       "id": "umbrella-review-overview-of-reviews",
-      "term": "Umbrella Review (Overview of Reviews)",
-      "vietnamese": "Tổng quan Bao trùm",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Evidence Synthesis"
+      "term": "Umbrella Review",
+      "vietnamese": "Tổng quan Bao trùm (Tổng quan các Tổng quan hệ thống)",
+      "vietnamese_variants": [
+        "Tổng quan trên các tổng quan",
+        "Nghiên cứu tổng quan đa tầng",
+        "Overview of reviews"
       ],
-      "core_definition": "Tổng hợp bằng chứng từ nhiều tổng quan hệ thống và phân tích gộp về cùng một vấn đề.",
-      "seminal_citation": "Aromataris et al. (2015)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Evidence Synthesis",
+        "Systematic Review",
+        "Meta-Analysis",
+        "Evidence-Based Policy"
+      ],
+      "core_definition": "A tertiary evidence synthesis methodology that systematically searches, compiles, critically appraises, and synthesizes the findings of multiple existing systematic reviews and meta-analyses addressing a shared broad clinical, organizational, or policy research domain.",
+      "seminal_citation": "Smith et al. (2011); Aromataris et al. (2015)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Umbrella Review (Overview of Reviews) according to Aromataris et al. (2015).",
       "domain_tags_en": [
         "Evidence Synthesis"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Umbrella reviews follow systematic protocols (registered in PROSPERO). Researchers search major databases exclusively for published systematic reviews and meta-analyses. Methodological quality of included reviews is appraised using standardized tools (AMSTAR-2 or ROBIS). Primary study overlap across reviews is formally calculated and visualized via the Corrected Covered Area (CCA) index. Findings are synthesized into comprehensive evidence maps ranking the strength and consistency of pooled evidence.",
+      "benchmarks": "Methodological appraisal using AMSTAR-2; calculation of Corrected Covered Area (CCA: 0–5% slight overlap, 6–10% moderate, 11–15% high, >15% very high overlap); adherence to PRIOR (Preferred Reporting Items for Overviews of Reviews) guidelines.",
+      "pitfalls": "Failing to account for primary study overlap (double counting the same clinical trial across multiple included meta-analyses, which artfully inflates evidence weight); including outdated reviews alongside modern updated reviews without critical synthesis.",
+      "apa_reference": "Aromataris, E., Fernandez, R., Godfrey, C. M., Holly, C., Khalil, H., & Tungpunkom, P. (2015). Summarizing systematic reviews: Methodological development, conduct and reporting of an umbrella review approach. International Journal of Evidence-Based Healthcare, 13(3), 132–140. https://doi.org/10.1097/XEB.0000000000000055"
     },
     {
       "id": "unconfoundedness-assumption-conditional-independence",
-      "term": "Unconfoundedness Assumption (Conditional Independence)",
-      "vietnamese": "Giả định không có nhiễu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Inference"
+      "term": "Unconfoundedness Assumption",
+      "vietnamese": "Giả định Không bị Nhiễu (Độc lập Có điều kiện)",
+      "vietnamese_variants": [
+        "Giả định tính ngoại sinh có điều kiện",
+        "Conditional Independence Assumption (CIA)"
       ],
-      "core_definition": "kết quả tiềm năng độc lập với việc gán can thiệp khi đã kiểm soát tập biến X.",
-      "seminal_citation": "Rosenbaum & Rubin (1983)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Causal Inference",
+        "Econometrics",
+        "Potential Outcomes Framework",
+        "Propensity Score Matching"
+      ],
+      "core_definition": "A cardinal identification assumption in the Rubin Causal Model (Potential Outcomes Framework) stating that, conditional on a vector of observed pre-treatment covariates X, treatment assignment D is statistically independent of potential outcomes: (Y(0), Y(1)) perp D | X.",
+      "seminal_citation": "Rosenbaum & Rubin (1983); Imbens (2004)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Unconfoundedness Assumption (Conditional Independence) according to Rosenbaum & Rubin (1983).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Also referred to as Conditional Independence (CIA) or Selection on Observables, this assumption posits that researchers have measured all variables that simultaneously influence both treatment participation and the potential outcomes. Once conditioned on X (via OLS, Propensity Score Matching, or Doubly Robust TMLE), the remaining variation in treatment assignment is as good as randomly assigned, eliminating omitted variable bias and allowing the Average Treatment Effect (ATE) to be identified non-parametrically.",
+      "benchmarks": "Unconfoundedness is fundamentally untestable using observational data alone because counterfactuals are unobserved. Authors must provide rigorous institutional/substantive justification and conduct Rosenbaum bounds sensitivity analyses or Oster (2019) coefficient stability tests (delta > 1.0).",
+      "pitfalls": "Assuming unconfoundedness holds when unobserved confounders (e.g., manager ability, patient motivation) drive treatment selection; conditioning on post-treatment variables or collider variables, which opens backdoor paths and creates collider bias.",
+      "apa_reference": "Rosenbaum, P. R., & Rubin, D. B. (1983). The central role of the propensity score in observational studies for causal effects. Biometrika, 70(1), 41–55. https://doi.org/10.1093/biomet/70.1.41"
     },
     {
       "id": "underdetermination-of-theory-by-data",
       "term": "Underdetermination of Theory by Data",
-      "vietnamese": "Tính bất tất định của lý thuyết bởi dữ liệu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Philosophy of Science"
+      "vietnamese": "Tính Bất định của Lý thuyết trước Dữ liệu (Luận đề Duhem-Quine)",
+      "vietnamese_variants": [
+        "Sự bất toàn định của lý thuyết",
+        "Luận đề bất định Duhem-Quine"
       ],
-      "core_definition": "luôn có nhiều lý thuyết đối nghịch cùng tương thích với cùng một tập dữ liệu.",
-      "seminal_citation": "Quine (1975)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Philosophy of Science",
+        "Epistemology",
+        "Methodology",
+        "Scientific Realism"
+      ],
+      "core_definition": "An epistemological thesis in the philosophy of science asserting that any finite set of empirical observations or data can always be accommodated by multiple logically distinct, mutually incompatible theoretical explanations.",
+      "seminal_citation": "Duhem (1906/1954); Quine (1951)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Underdetermination of Theory by Data according to Quine (1975).",
       "domain_tags_en": [
         "Philosophy of Science"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Rooted in the Duhem-Quine thesis, it establishes that scientific hypotheses can never be tested in total empirical isolation; they are evaluated as part of a complex web of auxiliary assumptions, measurement instrument theories, and background conditions (H and A_1 and A_2 -> E). When an empirical prediction fails (~E), logic indicates that at least one component in the web is false, but it cannot logically dictate whether the core hypothesis H or an auxiliary assumption A_i is responsible. Scientists can always salvage a favored theory by modifying auxiliary hypotheses.",
+      "benchmarks": "Scholarly argumentation must explicitly transparentize auxiliary assumptions (ceteris paribus, instrument calibration, functional forms); rival hypotheses must be tested competitively rather than testing a single theory in isolation.",
+      "pitfalls": "Dogmatic confirmation: claiming empirical data 'proves' a theory when alternative theoretical frameworks fit the identical data equally well; ignoring the vulnerability of auxiliary assumptions during hypothesis testing.",
+      "apa_reference": "Quine, W. V. O. (1951). Two dogmas of empiricism. The Philosophical Review, 60(1), 20–43. https://doi.org/10.2307/2181906"
     },
     {
       "id": "underdetermination-thesis",
-      "term": "Underdetermination thesis",
-      "vietnamese": "Luận đề bất định (Duhem-Quine)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Underdetermination Thesis",
+      "vietnamese": "Luận đề Bất định",
+      "vietnamese_variants": [
+        "Luận điểm bất toàn định luận thuyết khoa học",
+        "Duhem-Quine underdetermination thesis"
       ],
-      "core_definition": "Dữ liệu thực nghiệm không bao giờ đủ để xác định duy nhất một lý thuyết.",
-      "seminal_citation": "Hunt (2015)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Philosophy of Science",
+        "Epistemology",
+        "Sociology of Scientific Knowledge",
+        "Logic"
+      ],
+      "core_definition": "The overarching philosophical principle encompassing both weak underdetermination (practical data limitations leave competing theories unresolved) and strong underdetermination (infinite possible theories are empirically equivalent across all possible observational evidence).",
+      "seminal_citation": "Quine (1975); Newton-Smith (1981)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Underdetermination thesis according to Hunt (2015).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In research methodology, the thesis dismantles naive Popperian falsificationism. When an empirical test yields a disconfirming anomaly, researchers face the underdetermination dilemma: does the anomaly reflect a fatal flaw in the core theoretical mechanism, or does it stem from measurement error, misspecified functional forms, or unmodeled contextual moderators? Resolving underdetermination requires non-empirical theoretical virtues (parsimony via Occam's razor, explanatory breadth, internal elegance, and fruitfulness).",
+      "benchmarks": "Peer review standard: Authors must address credible alternative rival explanations for their findings, justifying why their chosen theoretical mechanism provides a superior explanatory account compared to competing formulations.",
+      "pitfalls": "Relativist nihilism: claiming that because theories are underdetermined, all scientific claims are arbitrary social constructions; ignoring empirical constraints that eliminate large swathes of untenable theories.",
+      "apa_reference": "Newton-Smith, W. H. (1981). The rationality of science. Routledge & Kegan Paul."
     },
     {
       "id": "underlying-causal-mechanism",
       "term": "Underlying Causal Mechanism",
-      "vietnamese": "Cơ chế Nhân quả Ẩn sâu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodological Collocations"
+      "vietnamese": "Cơ chế Nhân quả Ngầm định (Cơ chế Nhân quả Cốt lõi)",
+      "vietnamese_variants": [
+        "Cơ chế nhân quả bản chất",
+        "Chuỗi tác động nhân quả trung gian"
       ],
-      "core_definition": "Chuỗi các quá trình trung gian giải thích tại sao nguyên nhân tạo ra kết quả.",
-      "seminal_citation": "Hedström & Ylikoski (2010)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Causal Inference",
+        "Process Tracing",
+        "Realist Evaluation",
+        "Philosophy of Social Science"
+      ],
+      "core_definition": "The generative, unobservable or partially observable ontological process, relational sequence, or intermediate chain of events through which an antecedent condition (cause X) produces, transmits, and actualizes a change in an outcome (effect Y).",
+      "seminal_citation": "Hedström & Ylikoski (2010); Pawson & Tilley (1997)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Underlying Causal Mechanism according to Hedström & Ylikoski (2010).",
       "domain_tags_en": [
         "Methodological Collocations"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In critical realism and process-tracing methodology, explaining causality requires transcending mere statistical association (the 'black box' of input-output correlations). Researchers identify causal mechanisms through: (1) Causal mediation models (M decomposing total effect into indirect path a*b and direct path c'); (2) Process-tracing tests (Hoop tests, Smoking-gun tests) investigating fine-grained qualitative evidentiary traces; and (3) Context-Mechanism-Outcome (CMO) configurations in realist evaluation (Pawson & Tilley).",
+      "benchmarks": "Empirical verification requires identifying specific transmission channels; in quantitative models, indirect mediation effect must be verified via non-parametric bootstrapping (5,000 resamples, 95% bias-corrected CI excluding 0).",
+      "pitfalls": "Confusing statistical correlation or Granger causality with an explanatory causal mechanism; treating the mediator M as a pure mathematical artifact without demonstrating substantive theoretical transmission.",
+      "apa_reference": "Hedström, P., & Ylikoski, P. (2010). Causal mechanisms in the social sciences. Annual Review of Sociology, 36, 49–67. https://doi.org/10.1146/annurev.soc.012809.102632"
     },
     {
       "id": "uniform-distribution-continuous-discrete",
       "term": "Uniform Distribution (Continuous & Discrete)",
-      "vietnamese": "Phân phối Đều",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Probability",
-        "Distributions"
+      "vietnamese": "Phân phối Đồng đều (Liên tục và Rời rạc)",
+      "vietnamese_variants": [
+        "Phân phối đều",
+        "Phân phối xác suất hình chữ nhật"
       ],
-      "core_definition": "Phân phối xác suất mà mọi giá trị trong khoảng xác định đều có xác suất xuất hiện như nhau.",
-      "seminal_citation": "Casella & Berger (2002)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Probability Theory",
+        "Mathematical Statistics",
+        "Monte Carlo Simulation",
+        "Random Sampling"
+      ],
+      "core_definition": "A fundamental symmetric probability distribution characterized by a constant, uniform probability density or mass across a defined finite interval [a, b], wherein every outcome or subinterval of equal length is equally likely to occur.",
+      "seminal_citation": "Laplace (1812); Fishman (1996)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Uniform Distribution (Continuous & Discrete) according to Casella & Berger (2002).",
       "domain_tags_en": [
         "Probability",
         "Distributions"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In the continuous case U(a, b), the probability density function is f(x) = 1 / (b - a) for a <= x <= b (zero elsewhere). Mean is (a + b) / 2 and variance is (b - a)^2 / 12. In the discrete case, every discrete integer element has probability 1 / k. In computational research, pseudo-random number generators generate continuous U(0, 1) variates, which serve as the mathematical foundation for Inverse Transform Sampling to simulate all other probability distributions (Normal, Exponential, Weibull) in Monte Carlo simulations.",
+      "benchmarks": "Goodness-of-fit testing for uniformity using Kolmogorov-Smirnov test or Chi-Square test (p > 0.05); pseudo-random generator cycle length >= 2^19937 - 1 (Mersenne Twister standard in R, Python, and Stata).",
+      "pitfalls": "Assuming empirical survey or social data naturally follows a uniform distribution without testing (social phenomena almost always exhibit central tendency and tail decay); applying statistical tests requiring normal distributions to uniform data.",
+      "apa_reference": "Fishman, G. S. (1996). Monte Carlo: Concepts, algorithms, and applications. Springer-Verlag. https://doi.org/10.1007/978-1-4612-4026-6"
     },
     {
       "id": "uniform-manifold-approximation-and-projection-umap",
-      "term": "Uniform Manifold Approximation and Projection (UMAP)",
-      "vietnamese": "Kỹ thuật UMAP",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Dimensionality Reduction"
+      "term": "Uniform Manifold Approximation and Projection",
+      "vietnamese": "Thuật toán UMAP (Xấp xỉ và Chiếu Đa tạp Đồng đều)",
+      "vietnamese_variants": [
+        "Kỹ thuật giảm chiều phi tuyến UMAP",
+        "Phương pháp nhúng đa tạp dữ liệu UMAP"
       ],
-      "core_definition": "Thuật toán giảm chiều dữ liệu phi tuyến dựa trên hình học vi phân bảo toàn cả cấu trúc cục bộ và toàn cục.",
-      "seminal_citation": "McInnes et al. (2018)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Dimensionality Reduction",
+        "Machine Learning",
+        "Unsupervised Learning",
+        "Data Visualization"
+      ],
+      "core_definition": "A non-linear dimensionality reduction algorithm founded on Riemannian geometry and algebraic topology by Leland McInnes, designed to project high-dimensional data into low-dimensional manifolds (2D/3D) while preserving both local neighbor relationships and global topological data structure with superior computational scalability.",
+      "seminal_citation": "McInnes, Healy, & Melville (2018)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Uniform Manifold Approximation and Projection (UMAP) according to McInnes et al. (2018).",
       "domain_tags_en": [
         "Dimensionality Reduction"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "UMAP assumes data lies on a local Riemannian manifold with a locally constant metric. It constructs a fuzzy simplicial set representation in high-dimensional space where edge weights reflect the probability that points are connected. A low-dimensional representation is then optimized by minimizing the cross-entropy (via stochastic gradient descent) between the high-dimensional fuzzy simplicial set and the low-dimensional equivalent. Key hyperparameters include n_neighbors (balancing local vs global focus) and min_dist (controlling cluster tightness).",
+      "benchmarks": "Report hyperparameter settings (n_neighbors = 15–50, min_dist = 0.1–0.5, metric = 'euclidean' or 'cosine'); computational runtime is substantially faster than t-SNE on large samples (N > 100,000) while retaining superior preservation of global inter-cluster geometry.",
+      "pitfalls": "Over-interpreting absolute inter-cluster distances as exact geometric distances; treating UMAP purely as a plug-and-play visualizer without testing sensitivity across varying n_neighbors and random seeds.",
+      "apa_reference": "McInnes, L., Healy, J., & Melville, J. (2018). UMAP: Uniform Manifold Approximation and Projection for dimension reduction. arXiv preprint arXiv:1802.03426."
     },
     {
       "id": "unique-coverage-in-fsqca",
       "term": "Unique Coverage in fsQCA",
-      "vietnamese": "Độ Bao phủ Duy nhất fsQCA",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Configurational Metrics"
+      "vietnamese": "Độ bao phủ Độc nhất trong fsQCA",
+      "vietnamese_variants": [
+        "Chỉ số Unique Coverage",
+        "Độ bao hàm riêng biệt của cấu hình nguyên nhân"
       ],
-      "core_definition": "Tỷ lệ kết cục chỉ được giải thích độc quyền bởi duy nhất cấu hình đó mà không cấu hình nào khác giải thích được.",
-      "seminal_citation": "Ragin (2006)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Qualitative Comparative Analysis",
+        "fsQCA",
+        "Set-Theoretic Methods",
+        "Configurational Analysis"
+      ],
+      "core_definition": "A diagnostic metric in Qualitative Comparative Analysis (QCA) that quantifies the proportion of memberships in the outcome condition that is exclusively explained or covered by a specific causal path (recipe), beyond what is covered by any other alternative sufficient paths in the solution.",
+      "seminal_citation": "Ragin (2006, 2008)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Unique Coverage in fsQCA according to Ragin (2006).",
       "domain_tags_en": [
         "Configurational Metrics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In set theory, equifinality dictates that multiple distinct causal configurations can lead to the same outcome. Raw coverage measures the total proportion of the outcome covered by a path (including overlaps with other paths). Unique coverage subtracts the overlapping memberships shared with other solution paths: Unique Coverage_i = Raw Coverage_total - Raw Coverage_{-i}. A causal path with high raw coverage but near-zero unique coverage indicates that its explanatory power is entirely redundant with alternative recipes in the model.",
+      "benchmarks": "Unique coverage values > 0.00 are required for an individual path to be considered uniquely necessary or non-redundant; total solution coverage should exceed 0.25 to 0.50 for meaningful empirical models.",
+      "pitfalls": "Discarding paths with small unique coverage (0.01–0.05) prematurely if they represent theoretically critical niche trajectories; confusing unique coverage with statistical effect size or R-squared.",
+      "apa_reference": "Ragin, C. C. (2008). Redesigning social inquiry: Fuzzy sets and beyond. University of Chicago Press."
     },
     {
       "id": "unit-of-analysis-micro-meso-macro",
       "term": "Unit of Analysis (Micro, Meso, Macro)",
-      "vietnamese": "Đơn vị Phân tích",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design"
+      "vietnamese": "Đơn vị Phân tích (Vi mô, Trung mô, Vĩ mô)",
+      "vietnamese_variants": [
+        "Cấp độ phân tích nghiên cứu",
+        "Đối tượng đo lường phân tích"
       ],
-      "core_definition": "Đối tượng căn bản được đo lường và phân tích trong nghiên cứu: cá nhân, nhóm, tổ chức, sự kiện, chính sách.",
-      "seminal_citation": "Trochim (2006)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Research Design",
+        "Methodology",
+        "Multilevel Modeling",
+        "Sociology"
+      ],
+      "core_definition": "The fundamental entity, level of aggregation, or social phenomenon (individual, group, organization, nation) about which data are collected and empirical conclusions are drawn, delineating micro (individual), meso (group/organizational), and macro (institutional/national) analytical tiers.",
+      "seminal_citation": "Robinson (1950); Blalock (1984); Klein & Kozlowski (2000)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Unit of Analysis (Micro, Meso, Macro) according to Trochim (2006).",
       "domain_tags_en": [
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Clear specification of the unit of analysis aligns theoretical constructs, sampling design, and statistical modeling. When hypotheses span multiple tiers (e.g., how organizational culture influences individual employee burnout), researchers must utilize Hierarchical Linear Modeling (HLM) or Multilevel Structural Equation Modeling (MSEM) to properly partition variance between within-group and between-group levels, preventing the aggregation or disaggregation of cross-level variance.",
+      "benchmarks": "Intraclass Correlation Coefficient (ICC(1) > 0.05–0.10 and ICC(2) > 0.60–0.70) must be reported to justify aggregating individual survey responses to the meso/organizational level.",
+      "pitfalls": "Ecological fallacy: inferring individual-level behaviors directly from aggregate macro-level statistics; atomistic fallacy: generalizing individual-level traits directly to organizational or national-level systems.",
+      "apa_reference": "Klein, K. J., & Kozlowski, S. W. (2000). Multilevel theory, research, and methods in organizations: Foundations, extensions, and new directions. Jossey-Bass."
     },
     {
       "id": "unit-root-test",
       "term": "Unit Root Test",
-      "vietnamese": "Kiểm định nghiệm đơn vị xác định chuỗi thời gian có dừng hay không (ADF, PP, KPSS)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Time Series Econometrics"
+      "vietnamese": "Kiểm định Nghiệm đơn vị",
+      "vietnamese_variants": [
+        "Kiểm định tính dừng chuỗi thời gian",
+        "Kiểm định nghiệm đơn vị ADF và PP"
       ],
-      "core_definition": "Kiểm định nghiệm đơn vị xác định chuỗi thời gian có dừng hay không (ADF, PP, KPSS).",
-      "seminal_citation": "Dickey & Fuller (1979)",
-      "tier": "curated",
+      "domain_tags": [
+        "Time-Series Econometrics",
+        "Stationarity",
+        "Macroeconometrics",
+        "Financial Econometrics"
+      ],
+      "core_definition": "A formal statistical hypothesis test used to determine whether a time-series variable is non-stationary and possesses a unit root (integrated of order one, I(1)), a vital diagnostic step required to avoid spurious regressions in econometric modeling.",
+      "seminal_citation": "Dickey & Fuller (1979); Phillips & Perron (1988); Kwiatkowski et al. (1992)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Unit Root Test according to Dickey & Fuller (1979).",
       "domain_tags_en": [
         "Time Series Econometrics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In an autoregressive AR(1) process Y_t = rho*Y_{t-1} + e_t, if |rho| = 1, the series contains a unit root and shocks have permanent memory. The standard Augmented Dickey-Fuller (ADF) test regresses Delta Y_t = alpha + beta*t + gamma*Y_{t-1} + sum delta_i*Delta Y_{t-i} + e_t and tests H_0: gamma = 0 against H_1: gamma < 0 using non-standard Dickey-Fuller tau distributions. The Phillips-Perron (PP) test uses non-parametric Newey-West corrections for serial correlation. The KPSS test inverts the hypotheses (testing H_0: stationary vs H_1: unit root).",
+      "benchmarks": "Test statistics must be compared against simulated Dickey-Fuller critical values (not standard Student's t); joint confirmation using both ADF/PP (H_0: unit root) and KPSS (H_0: stationary) provides robust classification.",
+      "pitfalls": "Low statistical power in small sample sizes (T < 50), often failing to reject a false unit root; confusing structural breaks with unit roots (addressed by Zivot-Andrews structural break unit root tests).",
+      "apa_reference": "Dickey, D. A., & Fuller, W. A. (1979). Distribution of the estimators for autoregressive time series with a unit root. Journal of the American Statistical Association, 74(366a), 427–431. https://doi.org/10.1080/01621459.1979.10482531"
     },
     {
       "id": "unitising-data",
-      "term": "Unitising data",
-      "vietnamese": "Đơn vị hóa dữ liệu định tính",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Phân tích Định tính",
-        "Mã hóa Dữ liệu"
+      "term": "Unitising Qualitative Data",
+      "vietnamese": "Đơn vị hóa Dữ liệu Định tính",
+      "vietnamese_variants": [
+        "Phân tách đơn vị dữ liệu phân tích",
+        "Quy trình cắt lát văn bản định tính"
       ],
-      "core_definition": "Quy trình phân chia các văn bản hoặc dữ liệu định tính dài thành các đoạn hoặc đơn vị ý nghĩa nhỏ nhất (units of meaning) có thể hiểu được một cách độc lập để tiến hành gán mã (coding).",
-      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic Inquiry. SAGE Publications.",
-      "tier": "textbook",
+      "domain_tags": [
+        "Qualitative Content Analysis",
+        "Data Preparation",
+        "Text Analysis",
+        "Coding Reliability"
+      ],
+      "core_definition": "The systematic preparatory procedure in qualitative content analysis and discourse studies wherein continuous unstructured textual, audio, or visual materials are segmented into distinct, discrete, and manageable analytical units (recording units or meaning units) prior to coding.",
+      "seminal_citation": "Krippendorff (1980, 2018); Guetzkow (1950)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được biên tập và chuẩn hóa định nghĩa học thuật theo giáo trình kinh điển.",
       "core_definition_en": "Rigorous scholarly definition of Unitising data according to established research methodology literature.",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Researchers select a specific unitising criterion: (1) Syntactic units (words, sentences, paragraphs); (2) Temporal/spatial units (turns of talk, time increments); or (3) Thematic/meaning units (segments of text expressing a single coherent idea or concept). Unitising reliability is rigorously quantified using specialized metrics such as Guetzkow's U or Krippendorff's alpha_U, which assess whether multiple independent coders segment the identical boundary locations within the raw data stream.",
+      "benchmarks": "Krippendorff's unitising alpha (alpha_U) >= 0.80 establishes high unitising reliability; explicit boundary definitions must be codified in a formal unitising manual.",
+      "pitfalls": "Proceeding directly to category coding without explicit unitising rules, leading to coders assigning categories to overlapping, inconsistent text spans; calculating inter-rater reliability on pre-segmented units while ignoring unitising disagreements.",
+      "apa_reference": "Krippendorff, K. (2018). Content analysis: An introduction to its methodology (4th ed.). SAGE Publications."
     },
     {
       "id": "universe-score",
-      "term": "Universe score",
-      "vietnamese": "Điểm số vũ trụ (điểm số tổng quát)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Universe Score",
+      "vietnamese": "Điểm Vũ trụ (Điểm Tổng thể trong Thuyết Tổng quát hóa)",
+      "vietnamese_variants": [
+        "Điểm vũ trụ đo lường",
+        "Universe score trong Generalizability Theory"
       ],
-      "core_definition": "Tương đương điểm thực T trong không gian đa diện.",
-      "seminal_citation": "DeVellis (2016)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Generalizability Theory",
+        "Psychometrics",
+        "Measurement Error",
+        "Educational Assessment"
+      ],
+      "core_definition": "The theoretical expected score of an individual across all admissible conditions, facets, occasions, and raters within the universe of generalization, serving as the Generalizability Theory (G-Theory) counterpart to the classical 'true score'.",
+      "seminal_citation": "Cronbach, Gleser, Nanda, & Rajaratnam (1972); Brennan (2001)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Universe score according to DeVellis (2016).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In G-Theory (Cronbach et al.), measurement error is decomposed into multiple sources of variance (facets: raters, test forms, testing occasions) using ANOVA variance component estimation. The universe score mu_p represents the person's average performance if they could be assessed across all possible combinations of conditions. The generalizability coefficient (G-coefficient, analogous to reliability) is computed as: E_rho^2 = sigma^2_p / (sigma^2_p + sigma^2_delta), where sigma^2_delta is the relative error variance.",
+      "benchmarks": "G-coefficient >= 0.80 for high-stakes decision-making; Decision Studies (D-studies) must be conducted to optimize the number of items and raters needed to minimize error variance.",
+      "pitfalls": "Confusing relative error variance (for ranking people) with absolute error variance (Phi coefficient for criterion-referenced cutoff decisions); calculating G-coefficients without verifying the independence of facet interactions.",
+      "apa_reference": "Brennan, R. L. (2001). Generalizability theory. Springer-Verlag. https://doi.org/10.1007/978-1-4757-3456-0"
     },
     {
       "id": "unmeasured-latent-marker-construct",
@@ -58520,229 +58860,355 @@
     },
     {
       "id": "unmeasured-latent-method-construct-ulmc",
-      "term": "Unmeasured Latent Method Construct (ULMC)",
-      "vietnamese": "Kỹ thuật Biến Tiềm ẩn Phương pháp Không đo lường",
+      "term": "Unmeasured Latent Method Construct",
+      "vietnamese": "Cấu trúc Phương pháp Tiềm ẩn Chưa đo lường (Kỹ thuật ULMC)",
       "vietnamese_variants": [
-        "ULMC"
+        "Phương pháp nhân tố chung tiềm ẩn ULMC",
+        "Kiểm soát phương sai phương pháp chung bằng ULMC"
       ],
       "domain_tags": [
-        "Methodological Rigour"
+        "Common Method Bias",
+        "Structural Equation Modeling",
+        "CFA",
+        "Measurement Validation"
       ],
-      "core_definition": "Kỹ thuật kiểm soát CMB bằng cách mô hình hóa một biến chung.",
-      "seminal_citation": "Podsakoff et al. (2003)",
-      "tier": "textbook",
+      "core_definition": "A rigorous statistical control technique in Confirmatory Factor Analysis (CFA) and SEM used to detect and partial out Common Method Variance (CMV) by adding an unmeasured, latent method factor whose paths load onto all substantive indicators in the measurement model.",
+      "seminal_citation": "Podsakoff, MacKenzie, Lee, & Podsakoff (2003); Williams, Cote, & Buckley (1989)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Unmeasured Latent Method Construct (ULMC) according to Podsakoff et al. (2003).",
       "domain_tags_en": [
         "Methodological Rigour"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "All substantive indicators load on their theoretical constructs. In addition, an auxiliary latent method factor is created with zero direct correlations to the substantive constructs. All survey items load onto this method factor. Model fit and factor loadings are compared before and after the introduction of the method construct (nested model chi-square difference test). If the substantive structural paths and factor loadings remain statistically significant and structurally unchanged after partialling out the method factor, the researcher demonstrates that common method bias does not threaten the findings.",
+      "benchmarks": "Chi-square difference test (Delta chi^2) and change in CFI (Delta CFI < 0.010); average variance explained by the unmeasured method factor should be < 25% (Williams, Cote, & Buckley, 1989 benchmark).",
+      "pitfalls": "Model under-identification: failing to constrain method factor loadings to equality if degrees of freedom are insufficient; over-correcting and stripping substantive trait variance if the method factor absorbs true shared substantive meaning.",
+      "apa_reference": "Podsakoff, P. M., MacKenzie, S. B., Lee, J. Y., & Podsakoff, N. P. (2003). Common method biases in behavioral research: A critical review of the literature and recommended remedies. Journal of Applied Psychology, 88(5), 879–903. https://doi.org/10.1037/0021-9010.88.5.879"
     },
     {
       "id": "unmeasured-latent-method-factor",
-      "term": "Unmeasured latent method factor",
-      "vietnamese": "Nhân tố phương pháp tiềm ẩn không đo lường",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Unmeasured Latent Method Factor Technique",
+      "vietnamese": "Kỹ thuật Nhân tố Phương pháp Tiềm ẩn",
+      "vietnamese_variants": [
+        "Kiểm soát sai lệch phương pháp bằng biến tiềm ẩn",
+        "Mô hình CFA kiểm soát CMV"
       ],
-      "core_definition": "Kỹ thuật thống kê kiểm soát sai lệch phương pháp chung (CMV / Podsakoff).",
-      "seminal_citation": "MacKenzie et al. (2011)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Structural Equation Modeling",
+        "Common Method Bias",
+        "Psychometrics",
+        "Multivariate Statistics"
+      ],
+      "core_definition": "The statistical implementation within covariance-based SEM that models common method variance as a distinct latent construct with no explicit observable indicators of its own, isolating shared response style variance from substantive construct variance.",
+      "seminal_citation": "Williams & Anderson (1994); Podsakoff et al. (2012)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Unmeasured latent method factor according to MacKenzie et al. (2011).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Implemented by allowing each observed manifest item y_i to load on its substantive latent factor xi_j and simultaneously on a general method factor M: y_i = lambda_{ij}*xi_j + gamma_i*M + epsilon_i, where Cov(xi_j, M) = 0 and Var(M) = 1. Researchers estimate two specifications: (1) Constrained model (gamma_1 = gamma_2 = ... = gamma_k, assuming equal method bias across items), and (2) Unconstrained model (freely estimating each gamma_i). Comparison demonstrates whether method effects are uniform or item-specific.",
+      "benchmarks": "Constrained vs unconstrained model chi-square difference test; reporting the percentage of indicator variance attributable to substantive trait, method factor, and unique error; statistical significance of structural betas maintained.",
+      "pitfalls": "Allowing the method factor to correlate with substantive constructs, which leads to gross parameter distortion; treating the method factor technique as a substitute for procedural remedies during survey administration.",
+      "apa_reference": "Podsakoff, P. M., MacKenzie, S. B., & Podsakoff, N. P. (2012). Sources of method bias in social science research and recommendations on how to control it. Annual Review of Psychology, 63, 539–569. https://doi.org/10.1146/annurev-psych-120710-100452"
     },
     {
       "id": "unobtrusive-measures",
-      "term": "Unobtrusive measures",
-      "vietnamese": "Đo lường phi can thiệp (Webb et al.)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Unobtrusive Measures",
+      "vietnamese": "Thước đo Phi xâm lấn (Đo lường Không gây phiền hà)",
+      "vietnamese_variants": [
+        "Phương pháp thu thập dữ liệu không can thiệp",
+        "Thước đo không phản ứng"
       ],
-      "core_definition": "Kỹ thuật thu thập dữ liệu gián tiếp không làm thay đổi hành vi đối tượng.",
-      "seminal_citation": "Schindler (2022)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Research Methods",
+        "Data Collection",
+        "Non-Reactive Research",
+        "Behavioral Science"
+      ],
+      "core_definition": "A class of non-reactive data collection methods and measurement strategies in social science where data are gathered without the research subjects' direct awareness of being observed, completely neutralizing Hawthorne effects, social desirability, and evaluation apprehension.",
+      "seminal_citation": "Webb, Campbell, Schwartz, & Sechrest (1966)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Unobtrusive measures according to Schindler (2022).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Pioneered by Eugene Webb and Donald Campbell, unobtrusive measures encompass four main operational categories: (1) Physical erosion measures (e.g., wear and tear on floor tiles in a museum to evaluate exhibit popularity); (2) Physical accretion measures (e.g., graffiti, trash accumulation, wear on library books); (3) Running archival records (public municipal records, census registries); and (4) Episodic digital traces (search engine query volumes, web scrapings, social media clickstreams).",
+      "benchmarks": "Triangulation benchmark: unobtrusive measures are ideally deployed alongside traditional reactive surveys/interviews to cross-validate self-reported behaviors against objective physical/digital traces.",
+      "pitfalls": "Ethical and privacy concerns regarding covert tracking without informed consent (institutional review board scrutiny required); selective survival bias in archival and erosion artifacts.",
+      "apa_reference": "Webb, E. J., Campbell, D. T., Schwartz, R. D., & Sechrest, L. (1966). Unobtrusive measures: Nonreactive research in the social sciences. Rand McNally."
     },
     {
       "id": "unsupervised-learning-paradigm",
       "term": "Unsupervised Learning Paradigm",
-      "vietnamese": "Hệ hình Học không Giám sát",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Machine Learning"
+      "vietnamese": "Hệ hình Học máy Không giám sát",
+      "vietnamese_variants": [
+        "Phương pháp học không giám sát",
+        "Học máy không nhãn trong nghiên cứu"
       ],
-      "core_definition": "Khám phá cấu trúc tiềm ẩn, cụm hoặc phân phối của dữ liệu mà không cần nhãn định trước.",
-      "seminal_citation": "Hastie et al. (2009)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Machine Learning",
+        "Computational Methods",
+        "Clustering",
+        "Pattern Recognition"
+      ],
+      "core_definition": "A core machine learning paradigm wherein algorithms discover latent patterns, intrinsic geometries, clusters, or underlying data representations from input feature matrices (X) without the guidance of explicit outcome target labels or supervisory feedback (Y).",
+      "seminal_citation": "Hastie, Tibshirani, & Friedman (2009)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Unsupervised Learning Paradigm according to Hastie et al. (2009).",
       "domain_tags_en": [
         "Machine Learning"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Unsupervised learning tackles three primary operational tasks: (1) Clustering: Partitioning data points into homogeneous subsets based on similarity/distance metrics (K-Means, DBSCAN, Hierarchical Clustering); (2) Dimensionality Reduction: Learning low-dimensional manifold representations that preserve variance or neighborhood topologies (PCA, t-SNE, UMAP); and (3) Latent Density / Topic Modeling: Estimating probabilistic latent distributions (Gaussian Mixture Models, Latent Dirichlet Allocation [LDA] for text corpora).",
+      "benchmarks": "Clustering evaluation: Silhouette Coefficient (> 0.50 reasonable, > 0.70 strong), Davies-Bouldin Index (lower is better), and Elbow/Gap statistic for determining optimal k clusters.",
+      "pitfalls": "Reifying discovered clusters as objective natural entities without external validity checks; failing to standardize/normalize numerical input features (variables with large scales mechanically dominate distance metrics).",
+      "apa_reference": "Hastie, T., Tibshirani, R., & Friedman, J. (2009). The elements of statistical learning: Data mining, inference, and prediction (2nd ed.). Springer. https://doi.org/10.1007/978-0-387-84858-7"
     },
     {
       "id": "upper-echelons-theory-hambrick-mason",
-      "term": "Upper Echelons Theory (Hambrick & Mason)",
-      "vietnamese": "Lý thuyết Tầng lớp Thượng tầng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Strategic Leadership"
+      "term": "Upper Echelons Theory",
+      "vietnamese": "Lý thuyết Vị thế Thượng tầng (Hambrick & Mason)",
+      "vietnamese_variants": [
+        "Thuyết tầng lớp lãnh đạo cấp cao",
+        "Mô hình đặc điểm đội ngũ quản lý cấp cao"
       ],
-      "core_definition": "Các lựa chọn chiến lược và hiệu quả hoạt động phản ánh các đặc điểm nhận thức và nhân khẩu học của TMT.",
-      "seminal_citation": "Hambrick & Mason (1984), Hambrick (2007)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Strategic Management",
+        "Corporate Governance",
+        "Executive Leadership",
+        "Organizational Theory"
+      ],
+      "core_definition": "A foundational strategic management theory formulated by Donald Hambrick and Phyllis Mason stating that organizational outcomes, strategic choices, and performance trajectories are reflections of the values, cognitive bases, and psychological perceptions of the firm's top management team (TMT).",
+      "seminal_citation": "Hambrick & Mason (1984); Hambrick (2007)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Upper Echelons Theory (Hambrick & Mason) according to Hambrick & Mason (1984), Hambrick (2007).",
       "domain_tags_en": [
         "Strategic Leadership"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Because strategic situations are highly complex and ambiguous, executive decision-making is heavily filtered by bounded rationality. The theory posits that observable managerial demographic characteristics (age, functional career track, educational background, socioeconomic roots, and executive tenure) serve as valid proxies for underlying cognitive frames and core values. These executive traits shape strategic choices (e.g., R&D intensity, international diversification, acquisitions) which ultimately determine corporate performance.",
+      "benchmarks": "Empirical operationalization requires panel econometric models of TMT characteristics (mean and heterogeneity/dispersion metrics such as Blau's Index or coefficient of variation); must control for firm fixed effects and endogeneity in executive appointment.",
+      "pitfalls": "Treating demographic proxies as direct measures of psychological constructs without verifying cognitive mechanisms (demographic reductionism); ignoring board of director governance oversight and CEO-TMT power asymmetries.",
+      "apa_reference": "Hambrick, D. C., & Mason, P. A. (1984). Upper echelons: The organization as a reflection of its top managers. Academy of Management Review, 9(2), 193–206. https://doi.org/10.5465/amr.1984.4277628"
     },
     {
       "id": "utaut-unified-theory-of-acceptance-and-use-of-technology",
-      "term": "UTAUT (Unified Theory of Acceptance and Use of Technology)",
-      "vietnamese": "Mô hình Thống nhất Chấp nhận và Sử dụng Công nghệ",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Information Systems"
+      "term": "Unified Theory of Acceptance and Use of Technology",
+      "vietnamese": "Lý thuyết Thống nhất về Chấp nhận và Sử dụng Công nghệ (UTAUT)",
+      "vietnamese_variants": [
+        "Mô hình UTAUT",
+        "Mô hình chấp nhận công nghệ hợp nhất Venkatesh"
       ],
-      "core_definition": "Tích hợp 8 mô hình công nghệ với 4 yếu tố cốt lõi.",
-      "seminal_citation": "Venkatesh et al. (2003)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Information Systems",
+        "Technology Adoption",
+        "Behavioral Science",
+        "Structural Equation Modeling"
+      ],
+      "core_definition": "A comprehensive technology adoption framework developed by Viswanath Venkatesh and colleagues synthesizing eight prominent behavioral models (TAM, TRA, TPB, MM, MPCU, IDT, SCT, C-TAM-TPB) into four core determinants of behavioral intention and technology use, moderated by key demographic factors.",
+      "seminal_citation": "Venkatesh, Morris, Davis, & Davis (2003)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of UTAUT (Unified Theory of Acceptance and Use of Technology) according to Venkatesh et al. (2003).",
       "domain_tags_en": [
         "Information Systems"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "The model establishes four cardinal direct determinants: (1) Performance Expectancy (perceived usefulness), (2) Effort Expectancy (perceived ease of use), and (3) Social Influence, which directly predict Behavioral Intention; and (4) Facilitating Conditions, which directly predicts Actual Use Behavior alongside Behavioral Intention. The model incorporates four key moderating variables: Gender, Age, Experience, and Voluntariness of use, significantly boosting explained variance (R^2 ≈ 70% in intention).",
+      "benchmarks": "Structural equation modeling evaluation: all four core constructs measured via validated multi-item Likert scales; construct reliability (CR >= 0.80, AVE >= 0.50); multi-group analysis (MGA) for moderating effects.",
+      "pitfalls": "Omission of the essential moderating variables (Gender, Age, Experience), which drops explained variance from 70% down to conventional 40% levels; applying UTAUT in purely voluntary consumer contexts without adapting it to UTAUT2 (which adds Hedonic Motivation, Price Value, and Habit).",
+      "apa_reference": "Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS Quarterly, 27(3), 425–478. https://doi.org/10.2307/30036540"
     },
     {
       "id": "validity-in-quantitative-research",
-      "term": "Validity in quantitative research",
-      "vietnamese": "Độ giá trị trong định lượng — Mức độ mà các kết luận rút ra từ điểm số đo lường là chính xác, có ý nghĩa và hữu ích.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Validity in Quantitative Research",
+      "vietnamese": "Độ giá trị trong Nghiên cứu Định lượng",
+      "vietnamese_variants": [
+        "Tính chuẩn xác của nghiên cứu định lượng",
+        "Hệ thống giá trị nghiên cứu Shadish, Cook & Campbell"
       ],
-      "core_definition": "Độ giá trị trong định lượng — Mức độ mà các kết luận rút ra từ điểm số đo lường là chính xác, có ý nghĩa và hữu ích.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Research Methodology",
+        "Quantitative Research",
+        "Measurement Theory",
+        "Internal & External Validity"
+      ],
+      "core_definition": "The degree of methodological soundness, conceptual truth, and approximate correctness with which an empirical quantitative study operationalizes its constructs, measures its variables, establishes causal inferences, and generalizes findings across target populations and ecological settings.",
+      "seminal_citation": "Campbell & Stanley (1963); Shadish, Cook, & Campbell (2002)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Validity in quantitative research according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Shadish, Cook, and Campbell (2002) conceptualize quantitative validity across four interconnected systemic dimensions: (1) Statistical Conclusion Validity: Appropriate statistical power and adherence to model assumptions to detect covariation; (2) Internal Validity: The degree to which covariation between X and Y reflects a genuine causal relationship rather than confounding; (3) Construct Validity: The degree to which operational indicators genuinely represent higher-order theoretical concepts; and (4) External Validity: The extent to which causal inferences hold across variations in persons, settings, treatments, and outcomes.",
+      "benchmarks": "Comprehensive validity assessment matrix covering all 4 tiers; statistical power >= 0.80; construct convergent validity (AVE >= 0.50, factor loadings >= 0.70); explicit delimitation of boundary conditions for external generalization.",
+      "pitfalls": "Treating validity as a binary property (a study is not simply 'valid' or 'invalid', but valid for specific stated claims); elevating external generalizability at the catastrophic expense of internal validity.",
+      "apa_reference": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin."
     },
     {
       "id": "validity-strategies",
-      "term": "Validity strategies",
-      "vietnamese": "Chiến lược củng cố độ giá trị — 8 chiến lược kinh điển: Tam giác đạc, Kiểm tra thành viên, Mô tả đậm đặc, Công khai phản tỉnh, Phản biện đồng đẳng...",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Qualitative Validity Strategies",
+      "vietnamese": "Chiến lược Bảo đảm Độ giá trị trong Nghiên cứu Định tính",
+      "vietnamese_variants": [
+        "Biện pháp kiểm định tính chân thực định tính",
+        "Chiến lược tăng cường độ tin cậy Creswell"
       ],
-      "core_definition": "Chiến lược củng cố độ giá trị — 8 chiến lược kinh điển: Tam giác đạc, Kiểm tra thành viên, Mô tả đậm đặc, Công khai phản tỉnh, Phản biện đồng đẳng...",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Qualitative Inquiry",
+        "Methodological Rigor",
+        "Trustworthiness",
+        "Triangulation"
+      ],
+      "core_definition": "A set of systematic procedural and reflexive techniques employed by qualitative researchers to verify the accuracy, authenticity, and credibility of qualitative findings from the standpoint of the researcher, the participants, and external reviewers.",
+      "seminal_citation": "Creswell & Miller (2000); Lincoln & Guba (1985)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Validity strategies according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "John Creswell codifies eight primary validity strategies: (1) Triangulation of multiple data sources, methods, and theories; (2) Member checking: taking themes and interpretations back to participants for verification; (3) Rich, thick description to convey detailed context; (4) Clarifying researcher bias/reflexivity; (5) Presenting negative or discrepant information that contradicts emergent themes; (6) Prolonged engagement and persistent observation in the field; (7) Peer debriefing to provide external critique; and (8) An external audit trail of all coding records and raw audio.",
+      "benchmarks": "High-rigor qualitative studies in top Q1 journals must implement at least two to four distinct validity strategies concurrently (e.g., triangulation + member checking + reflexive audit trail).",
+      "pitfalls": "Reporting member checking without documenting how participant disagreements were addressed or resolved; treating qualitative validity strategies as mechanical tick-box exercises rather than deep reflexive commitments.",
+      "apa_reference": "Creswell, J. W., & Miller, D. L. (2000). Determining validity in qualitative inquiry. Theory Into Practice, 39(3), 124–130. https://doi.org/10.1207/s15430421tip3903_2"
     },
     {
       "id": "value-at-risk-var",
-      "term": "Value at Risk (VaR)",
-      "vietnamese": "Giá trị Chịu rủi ro VaR",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Risk Management"
+      "term": "Value at Risk",
+      "vietnamese": "Giá trị Chịu rủi ro (Chỉ số VaR)",
+      "vietnamese_variants": [
+        "Thước đo rủi ro tài chính VaR",
+        "Chỉ số tổn thất tối đa kỳ vọng"
       ],
-      "core_definition": "Mức tổn thất tối đa có thể xảy ra của một danh mục đầu tư tại một mức tin cậy định trước trong một khoảng thời gian.",
-      "seminal_citation": "J.P. Morgan RiskMetrics (1996)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Financial Econometrics",
+        "Quantitative Finance",
+        "Risk Management",
+        "Actuarial Science"
+      ],
+      "core_definition": "A standardized statistical risk metric quantifying the maximum expected monetary loss that a financial portfolio or asset could experience over a defined holding period (e.g., 1 day or 10 days) at a given statistical confidence level (e.g., 95% or 99%) under normal market conditions.",
+      "seminal_citation": "J.P. Morgan RiskMetrics (1996); Jorion (2006)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Value at Risk (VaR) according to J.P. Morgan RiskMetrics (1996).",
       "domain_tags_en": [
         "Risk Management"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Formally defined as VaR_{alpha}(X) = -inf { x in R : F_X(x) > 1 - alpha }. Computed via three primary methodologies: (1) Parametric / Variance-Covariance method (assuming normal or Student-t distribution, VaR = -z_{alpha} * sigma * W); (2) Historical Simulation (empirical percentile of past historical return distributions without distributional assumptions); and (3) Monte Carlo Simulation (generating thousands of stochastic price paths via geometric Brownian motion). Regulatory frameworks (Basel Accords) require backtesting VaR against actual daily losses using Kupiec's POF test.",
+      "benchmarks": "Reporting exact holding period (1-day vs 10-day) and confidence tier (95% vs 99%); Kupiec proportion of failures (POF) test p-value > 0.05 (confirming model does not under-estimate risk exceedances).",
+      "pitfalls": "VaR is not sub-additive (not a coherent risk measure in the sense of Artzner et al., 1999) under non-normal distributions, which discourages diversification; VaR says nothing about the severity of losses beyond the cutoff threshold (addressed by Expected Shortfall / Conditional VaR).",
+      "apa_reference": "Jorion, P. (2006). Value at risk: The new benchmark for managing financial risk (3rd ed.). McGraw-Hill."
     },
     {
       "id": "value-co-destruction",
       "term": "Value Co-Destruction",
-      "vietnamese": "Sự Cùng Hủy diệt Giá trị",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Service Science",
-        "Marketing Theory"
+      "vietnamese": "Đồng Hủy hoại Giá trị (Sự suy giảm giá trị tương tác)",
+      "vietnamese_variants": [
+        "Hiện tượng triệt tiêu giá trị",
+        "Đồng phá hủy giá trị trong dịch vụ"
       ],
-      "core_definition": "Quá trình tương tác bất đối xứng hoặc xung đột giữa doanh nghiệp và khách hàng làm suy giảm giá trị của cả hai bên.",
-      "seminal_citation": "Plé & Chumpitaz Cáceres (2010), Scaraboto (2015), Bansal et al. (2024)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Service-Dominant Logic",
+        "Marketing Theory",
+        "Consumer Behavior",
+        "Service Management"
+      ],
+      "core_definition": "A foundational concept in Service-Dominant (S-D) Logic and service science describing an interactive process between service systems (e.g., firm and customer) where the misuse, accidental misapplication, or non-integration of operant and operand resources results in a decline in the well-being of at least one participating actor.",
+      "seminal_citation": "Plé & Chumpitaz Cáceres (2010); Echeverri & Skålén (2011)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Value Co-Destruction according to Plé & Chumpitaz Cáceres (2010), Scaraboto (2015), Bansal et al. (2024).",
       "domain_tags_en": [
         "Service Science",
         "Marketing Theory"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Serving as the dialectical counterpart to Value Co-Creation (Vargo & Lusch), value co-destruction occurs when interacting parties fail to align operational expectations, lack requisite skills, or behave opportunistically. Qualitative process-tracing models (Plé & Chumpitaz Cáceres) unpack four generative mechanisms: resource loss, role ambiguity, communication breakdown, and power asymmetry. Quantitative models operationalize scale items measuring perceived resource draining, negative emotions, and relationship termination.",
+      "benchmarks": "Empirical papers must model both co-creation and co-destruction simultaneously to avoid pro-sociality bias in service evaluations; longitudinal or critical incident technique (CIT) qualitative data preferred.",
+      "pitfalls": "Treating value co-destruction as merely a synonym for service failure (service failure is a one-sided firm deficit, whereas co-destruction specifically entails reciprocal or interactive resource loss); failing to account for customer-side misbehavior.",
+      "apa_reference": "Plé, L., & Chumpitaz Cáceres, R. (2010). Not always co-creation: Introducing interactional co-destruction of value in service-dominant logic. Journal of Services Marketing, 24(6), 430–437. https://doi.org/10.1108/08876041011072546"
     },
     {
       "id": "values-coding",
       "term": "Values Coding",
-      "vietnamese": "Mã hóa Giá trị",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Coding"
+      "vietnamese": "Mã hóa Giá trị (Mã hóa Hệ giá trị - Niềm tin - Thái độ)",
+      "vietnamese_variants": [
+        "Kỹ thuật Values Coding Saldaña",
+        "Mã hóa thế giới quan và niềm tin"
       ],
-      "core_definition": "Định danh hệ thống Giá trị, Niềm tin và Thái độ của đối tượng nghiên cứu.",
-      "seminal_citation": "Saldaña (2021)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Qualitative Coding",
+        "Qualitative Analysis",
+        "Affective Coding Methods",
+        "Phenomenology"
+      ],
+      "core_definition": "A specialized first-cycle qualitative coding method developed by Johnny Saldaña that analyzes and codes qualitative text, transcripts, or fieldnotes to reflect a participant's integrated values (what they deem important), attitudes (how they feel about things), and beliefs (what they hold to be true about reality).",
+      "seminal_citation": "Saldaña (2009, 2021)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Values Coding according to Saldaña (2021).",
       "domain_tags_en": [
         "Qualitative Coding"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "The coder assigns codes using three distinct affective tags: (1) V: [Value]—capturing moral, aesthetic, or personal priorities (e.g., V: WORK ETHIC); (2) A: [Attitude]—evaluative stances towards entities, institutions, or policies (e.g., A: SKEPTICAL OF REFORM); and (3) B: [Belief]—axioms or personal philosophies shaping interpretation (e.g., B: EDUCATION EMPOWERS). The trio of V-A-B codes provides a multidimensional map of the participant's inner cognitive world and cultural standpoint.",
+      "benchmarks": "Coding manuals must provide clear operational definitions separating a Value from an Attitude and a Belief; inter-coder consensus exercises to ensure consistent discrimination among the three components.",
+      "pitfalls": "Conflating attitudes (evaluative judgments) with core values (fundamental principles); imposing the researcher's personal moral values onto the participant's narrative expressions.",
+      "apa_reference": "Saldaña, J. (2021). The coding manual for qualitative researchers (4th ed.). SAGE Publications."
     },
     {
       "id": "vanishing-tetrad-test",
-      "term": "Vanishing tetrad test",
-      "vietnamese": "Kiểm định bộ bốn triệt tiêu (Bollen & Ting)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Vanishing Tetrad Test",
+      "vietnamese": "Kiểm định Tứ phân Triệt tiêu (Bollen-Ting Test)",
+      "vietnamese_variants": [
+        "Kiểm định tetrad tiêu biến",
+        "Kiểm định lựa chọn chỉ báo phản xạ hay cấu thành Bollen & Ting"
       ],
-      "core_definition": "Kiểm định thực nghiệm xác định mô hình phản ánh hay cấu thành.",
-      "seminal_citation": "MacKenzie et al. (2011)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Structural Equation Modeling",
+        "Measurement Theory",
+        "Model Specification",
+        "Psychometrics"
+      ],
+      "core_definition": "A rigorous statistical specification test developed by Kenneth Bollen and Kwok-Fai Ting used to empirically determine whether a set of survey indicators is reflectively (effect) or formatively (causal) related to a latent construct by examining whether implied tetrad differences among indicator covariances equal zero.",
+      "seminal_citation": "Bollen & Ting (2000)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Vanishing tetrad test according to MacKenzie et al. (2011).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In a reflective construct, all indicators are driven by a single common latent factor. By Spearman's tetrad theorem, the difference between cross-products of covariances between four indicators must equal zero: sigma_{12}*sigma_{34} - sigma_{13}*sigma_{24} = 0 (a vanishing tetrad). If indicators are formative (causal), this tetrad difference does not vanish (remains non-zero). Bollen & Ting established a simultaneous chi-square test across all non-redundant tetrads to statistically reject reflective specifications.",
+      "benchmarks": "Tetrad difference test chi-square p-value > 0.05 supports the vanishing tetrad hypothesis (confirming a reflective measurement model); p < 0.05 rejects reflective specification, providing strong empirical evidence of a formative or multidimensional model.",
+      "pitfalls": "Conducting tetrad tests on sets of fewer than four indicators (mathematically requires at least four indicators per latent variable to form a tetrad); ignoring theoretical meaning and relying blindly on statistical tetrad outcomes.",
+      "apa_reference": "Bollen, K. A., & Ting, K. F. (2000). A tetrad test for causal indicators. Psychological Methods, 5(1), 3–22. https://doi.org/10.1037/1082-989X.5.1.3"
     },
     {
       "id": "variable-returns-to-scale-bcc-model",
@@ -58781,21 +59247,32 @@
     },
     {
       "id": "variance-decomposition-proportions-vdp",
-      "term": "Variance Decomposition Proportions (VDP)",
-      "vietnamese": "Tỷ lệ Phân rã Phương sai",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Regression Diagnostics"
+      "term": "Variance Decomposition Proportions",
+      "vietnamese": "Tỷ lệ Phân rã Phương sai (VDP)",
+      "vietnamese_variants": [
+        "Chỉ số VDP trong đa cộng tuyến",
+        "Phân rã phương sai kiểm định collinearity Belsley"
       ],
-      "core_definition": "Phối hợp với Condition Index để định danh chính xác các biến dính đa cộng tuyến.",
-      "seminal_citation": "Belsley et al. (1980)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Collinearity Diagnostics",
+        "Applied Econometrics",
+        "Multivariate Statistics",
+        "Linear Regression"
+      ],
+      "core_definition": "A sophisticated matrix diagnostic tool developed by Belsley, Kuh, and Welsch that decomposes the variance of each regression coefficient across the singular values (principal eigenvalues) of the design matrix, identifying not only the presence but the exact regressors involved in degrading multicollinearity.",
+      "seminal_citation": "Belsley, Kuh, & Welsch (1980)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Variance Decomposition Proportions (VDP) according to Belsley et al. (1980).",
       "domain_tags_en": [
         "Regression Diagnostics"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Calculated through Singular Value Decomposition (SVD) of the scaled regressor matrix X. Two condition metrics are evaluated in conjunction: (1) Condition Index (CI = sqrt(lambda_{max} / lambda_k)), which measures the overall degree of linear dependency; and (2) Variance Decomposition Proportions (pi_{kj}), which indicate the proportion of variance of coefficient b_j associated with eigenvalue lambda_k. Degrading multicollinearity is formally diagnosed when a high Condition Index is accompanied by high variance proportions on two or more distinct regression coefficients.",
+      "benchmarks": "Belsley, Kuh, & Welsch (1980) diagnostic standard: A Condition Index (CI) >= 30 associated with Variance Decomposition Proportions (VDP) >= 0.50 on two or more coefficients indicates severe, degrading multicollinearity.",
+      "pitfalls": "Relying exclusively on bivariate correlation matrices or VIF, which can miss complex linear dependencies involving three or more regressors; omitting the intercept term during condition index calculations.",
+      "apa_reference": "Belsley, D. A., Kuh, E., & Welsch, R. E. (1980). Regression diagnostics: Identifying influential data and sources of collinearity. John Wiley & Sons. https://doi.org/10.1002/0471725153"
     },
     {
       "id": "variance-based-sem-pls-sem",
@@ -58915,92 +59392,147 @@
     {
       "id": "verificationism",
       "term": "Verificationism",
-      "vietnamese": "Nguyên lý kiểm chứng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Philosophy of Science"
+      "vietnamese": "Thuyết Khả chứng (Chủ nghĩa Xác minh)",
+      "vietnamese_variants": [
+        "Nguyên lý xác minh của chủ nghĩa thực chứng logic",
+        "Tiêu chuẩn ý nghĩa khả chứng"
       ],
-      "core_definition": "một mệnh đề chỉ có ý nghĩa nhận thức khi nó có thể được kiểm chứng bằng kinh nghiệm giác quan.",
-      "seminal_citation": "Ayer (1936)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Philosophy of Science",
+        "Logical Positivism",
+        "Epistemology",
+        "Philosophy of Language"
+      ],
+      "core_definition": "A foundational philosophical and epistemological doctrine formulated by the logical positivists of the Vienna Circle asserting that a non-analytic proposition is cognitively meaningful if and only if it is empirically verifiable through sensory observation or experiential evidence.",
+      "seminal_citation": "Ayer (1936); Schlick (1936)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Verificationism according to Ayer (1936).",
       "domain_tags_en": [
         "Philosophy of Science"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Verificationism divides statements into three classes: (1) Tautologies / analytic truths of logic and mathematics; (2) Empirically verifiable synthetic statements of empirical science; and (3) Metaphysical, ethical, or theological assertions, which logical positivists dismissed as strictly 'meaningless' (nonsense). In historical research methodology, strong verificationism (complete verification) collapsed because universal scientific laws (e.g., 'all ravens are black') cannot be verified by any finite set of observations, giving birth to Carnap's confirmationism and Popper's falsificationism.",
+      "benchmarks": "Distinguish historical logical verificationism from modern empirical falsificationism and confirmation holism; acknowledge the philosophical limits of verificationism in dissertation philosophy chapters.",
+      "pitfalls": "Applying rigid verificationism to metaphysical constructs, human emotion, or ethical values; ignoring the fatal self-refutation paradox (the verification principle itself is neither empirically verifiable nor an analytic tautology).",
+      "apa_reference": "Ayer, A. J. (1936). Language, truth and logic. Victor Gollancz."
     },
     {
       "id": "versus-coding",
       "term": "Versus Coding",
-      "vietnamese": "Mã hóa Đối kháng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Coding"
+      "vietnamese": "Mã hóa Đối lập (Versus Coding Saldaña)",
+      "vietnamese_variants": [
+        "Mã hóa nhị phân xung đột",
+        "Kỹ thuật mã hóa đối kháng"
       ],
-      "core_definition": "Ghi nhận các cặp xung đột quyền lực hoặc mâu thuẫn nhận thức dạng X vs. Y.",
-      "seminal_citation": "Saldaña (2021)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Qualitative Coding",
+        "Qualitative Inquiry",
+        "Conflict Analysis",
+        "Discourse Analysis"
+      ],
+      "core_definition": "A qualitative first-cycle coding technique introduced by Johnny Saldaña that identifies and codes explicit binary oppositions, ideological conflicts, interpersonal tensions, and competing value systems within qualitative data using an 'X vs. Y' format.",
+      "seminal_citation": "Saldaña (2009, 2021); Wolcott (1994)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Versus Coding according to Saldaña (2021).",
       "domain_tags_en": [
         "Qualitative Coding"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Researchers scan qualitative transcripts and documents for narrative friction, competing perspectives, or structural antagonisms. Codes are entered as explicit dichotomies: (1) Stakeholder conflicts (e.g., MANAGEMENT VS. UNION WORKERS); (2) Conceptual/philosophical dualisms (e.g., PROFITS VS. SUSTAINABILITY); or (3) Identity struggles (e.g., PROFESSIONAL IDENTITY VS. MATERNAL GUILT). The method isolates the core fault lines around which organizational or cultural contestation revolves.",
+      "benchmarks": "Versus codes must be backed by direct verbatim quotes demonstrating that both sides of the conflict are actively voiced by participants; synthesis must advance beyond simple dichotomies to identify mediating or dialectical outcomes.",
+      "pitfalls": "Imposing artificial polarized binaries onto complex, nuanced phenomena where participants experience ambivalence or moderate compromises; taking sides as an advocacy researcher rather than documenting the systemic interaction.",
+      "apa_reference": "Saldaña, J. (2021). The coding manual for qualitative researchers (4th ed.). SAGE Publications."
     },
     {
       "id": "vigilante-marketing",
       "term": "Vigilante Marketing",
-      "vietnamese": "Tiếp thị Dân phòng Tự phát",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Consumer Culture Theory"
+      "vietnamese": "Tiếp thị Tự phát (Tiếp thị Tự giác của Người tiêu dùng)",
+      "vietnamese_variants": [
+        "Tiếp thị bán chuyên",
+        "Chiến dịch quảng bá do người tiêu dùng khởi xướng"
       ],
-      "core_definition": "Hiện tượng người tiêu dùng tự nguyện sáng tạo và lan truyền các thông điệp tiếp thị thương hiệu mà không cần doanh nghiệp thuê.",
-      "seminal_citation": "Muñiz & Schau (2007), Bansal et al. (2024)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Consumer Behavior",
+        "Marketing Theory",
+        "User-Generated Content",
+        "Brand Management"
+      ],
+      "core_definition": "An unpaid, uncommissioned grassroots consumer phenomenon wherein dedicated brand enthusiasts independently create, produce, and disseminate unauthorized marketing communications, advertising campaigns, or brand advocacy materials on behalf of a brand without corporate sponsorship or oversight.",
+      "seminal_citation": "Muniz & Schau (2007)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "\"Tiếp thị dân phòng\" là dịch sao phỏng – đề xuất \"tiếp thị tự phát do người tiêu dùng khởi xướng\"; ngoài phạm vi PPNC",
       "core_definition_en": "Academic definition of Vigilante Marketing according to Muñiz & Schau (2007), Bansal et al. (2024).",
       "domain_tags_en": [
         "Consumer Culture Theory"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "Vigilante marketing is driven by high affective brand love, consumer identity fusion, and social media democratization. Consumers create viral video commercials, parodies, or fan websites to support a beloved brand or critique competitors. In marketing methodology, researchers capture this phenomenon through netnography, digital trace analysis, sentiment mining, and qualitative brand community interviews to measure brand equity impacts and corporate co-optation risks.",
+      "benchmarks": "Empirical investigation must measure both positive brand equity elevation and negative brand reputation risks (uncontrolled message dissemination, copyright conflicts); netnographic field observation protocols (Kozinets, 2020).",
+      "pitfalls": "Conflating vigilante marketing with company-seeded influencer marketing or brand ambassador programs (vigilante marketing is strictly consumer-initiated and unauthorized); assuming all vigilante content aligns with official brand guidelines.",
+      "apa_reference": "Muniz, A. M., & Schau, H. J. (2007). Vigilante marketing and consumer-created communications. Journal of Advertising, 36(3), 35–50. https://doi.org/10.2753/JOA0091-3367360303"
     },
     {
       "id": "vignette-technique-in-survey-interviews",
       "term": "Vignette Technique in Survey & Interviews",
-      "vietnamese": "Kỹ thuật Tình huống Giả định Vignette",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Data Collection Techniques"
+      "vietnamese": "Kỹ thuật Kịch bản Tình huống trong Khảo sát và Phỏng vấn",
+      "vietnamese_variants": [
+        "Phương pháp kịch bản tình huống",
+        "Kỹ thuật vignette thực nghiệm"
       ],
-      "core_definition": "Sử dụng các mẩu chuyện ngắn để thăm dò chuẩn mực đạo đức và phán đoán của đối tượng.",
-      "seminal_citation": "Finch (1987), Hughes (1998)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Survey Methodology",
+        "Experimental Surveys",
+        "Qualitative Interviewing",
+        "Behavioral Ethics"
+      ],
+      "core_definition": "A hybrid methodological technique that presents participants with short, carefully constructed hypothetical scenarios or narrative descriptions of fictional characters, dilemmas, or situations, prompting them to provide evaluative judgments, behavioral predictions, or decisions.",
+      "seminal_citation": "Rossi & Nock (1982); Finch (1987); Alexander & Becker (1978)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Vignette Technique in Survey & Interviews according to Finch (1987), Hughes (1998).",
       "domain_tags_en": [
         "Data Collection Techniques"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "In experimental factorial survey designs (Rossi & Nock), key dimensions within the vignette are systematically randomized (e.g., varying character gender, race, severity of offense) across respondents, allowing researchers to isolate the causal impact of specific contextual cues on judgments while controlling social desirability bias. In qualitative interviews, vignettes serve as non-threatening elicitation devices, encouraging participants to discuss sensitive, stigmatized, or taboo topics (e.g., corporate fraud, medical errors) objectively.",
+      "benchmarks": "Vignette design must maximize ecological realism (believability); in factorial survey experiments, random assignment of vignette factors must be validated via balance checks; orthogonal or D-efficient experimental designs must be utilized.",
+      "pitfalls": "Vignette abstraction bias: discrepancy between how participants state they would act in a hypothetical scenario versus how they behave in actual real-world conditions; cognitive overload caused by overly verbose scenarios.",
+      "apa_reference": "Alexander, C. S., & Becker, H. J. (1978). The use of vignettes in survey research. The Public Opinion Quarterly, 42(1), 93–104. https://doi.org/10.1086/268432"
     },
     {
       "id": "vikor-multi-criteria-method",
       "term": "VIKOR Multi-Criteria Method",
-      "vietnamese": "Phương pháp Thỏa hiệp VIKOR",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Decision Science"
+      "vietnamese": "Phương pháp Đa tiêu chí VIKOR",
+      "vietnamese_variants": [
+        "Phương pháp tối ưu hóa thỏa hiệp VIKOR",
+        "Kỹ thuật ra quyết định thỏa hiệp đa thuộc tính"
       ],
-      "core_definition": "Xác định giải pháp thỏa hiệp đa mục tiêu dựa trên khoảng cách gần nhất với giá trị lý tưởng.",
-      "seminal_citation": "Opricovic (1998)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Multi-Criteria Decision Analysis",
+        "MCDA",
+        "Operations Research",
+        "Management Science"
+      ],
+      "core_definition": "A multi-criteria decision-making (MCDM) compromise ranking methodology developed by Serafim Opricovic that determines compromise solution rankings from a set of conflicting criteria based on measuring closeness to the ideal solution using an L_p metric aggregating group utility and individual regret.",
+      "seminal_citation": "Opricovic (1998); Opricovic & Tzeng (2004)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of VIKOR Multi-Criteria Method according to Opricovic (1998).",
       "domain_tags_en": [
         "Decision Science"
-      ]
+      ],
+      "is_flagship": true,
+      "operational_mechanism": "VIKOR establishes the best f*_j and worst f-_j values for all criteria. For each alternative, it computes: (1) S_i = sum w_j*(f*_j - f_ij) / (f*_j - f-_j) (representing group utility / average regret); (2) R_i = max_j [w_j*(f*_j - f_ij) / (f*_j - f-_j)] (representing individual regret / worst performance); and (3) Q_i = v*(S_i - S*) / (S- - S*) + (1 - v)*(R_i - R*) / (R- - R*), where v is the weight of strategy of the majority of criteria (typically v = 0.50). Alternatives are ranked by Q, and a compromise solution is validated if it satisfies acceptable advantage and acceptable stability conditions.",
+      "benchmarks": "Acceptable advantage condition: Q(a'') - Q(a') >= 1 / (m - 1); acceptable stability in decision making: alternative a' must also be best-ranked by S or R; sensitivity analysis testing v from 0.0 to 1.0.",
+      "pitfalls": "Failing to check the two prerequisite conditions (acceptable advantage and acceptable stability), leading to incorrect single-winner recommendations instead of proposing a compromise set; arbitrary assignment of criterion weights without objective derivation (Entropy) or rigorous subjective derivation (AHP).",
+      "apa_reference": "Opricovic, S., & Tzeng, G. H. (2004). Compromise solution by MCDM methods: A comparative analysis of VIKOR and TOPSIS. European Journal of Operational Research, 156(2), 445–455. https://doi.org/10.1016/S0377-2217(03)00020-1"
     },
     {
       "id": "violin-plot",
