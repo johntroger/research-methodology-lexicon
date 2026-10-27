@@ -55410,22 +55410,30 @@
     },
     {
       "id": "ta",
-      "term": "TA",
-      "vietnamese": "Phân tích Chủ đề (Braun & Clarke, 2006/2019)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Research Methodology"
+      "term": "Thematic Analysis (TA Paradigm)",
+      "vietnamese": "Phân tích Chủ đề (Hệ hình Phương pháp luận Thematic Analysis)",
+      "vietnamese_variants": [
+        "Phương pháp phân tích chủ đề định tính",
+        "Hệ hình Thematic Analysis"
       ],
-      "core_definition": "Phương pháp định tính nền tảng dùng để xác định, phân tích và báo cáo các mẫu hình ý nghĩa (themes) xuyên suốt bộ dữ liệu phỏng vấn, tài liệu hoặc văn bản. Ngưỡng thực nghiệm tham chiếu: Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu → Tạo mã ban đầu → Tìm chủ đề → Rà soát chủ đề → Định nghĩa & đặt tên → Viết báo cáo.",
-      "seminal_citation": "Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu → Tạo mã ban đầu → Tìm chủ đề → Rà soát chủ đề → Định nghĩa & đặt tên → Viết báo cáo.",
-      "tier": "acronym",
+      "domain_tags": [
+        "Phương pháp Định tính",
+        "Phân tích Chủ đề (Thematic Analysis)",
+        "Mã hóa Dữ liệu"
+      ],
+      "core_definition": "Phương pháp nền tảng trong nghiên cứu định tính dùng để nhận diện, phân tích, tổ chức, mô tả và báo cáo các chủ đề (themes) xuất hiện lặp đi lặp lại trong một tập dữ liệu văn bản. Virginia Braun và Victoria Clarke (2006, 2019) phân biệt 3 trường phái TA chính: (1) Coding Reliability TA (Boyatzis - sử dụng sách mã định trước, tính hệ số Cohen's Kappa), (2) Codebook TA (Template analysis, Framework analysis), và (3) Reflexive Thematic Analysis (Braun & Clarke - hoàn toàn định tính diễn giải, coi tính phản tư của người nghiên cứu là công cụ phân tích không thể tách rời).",
+      "seminal_citation": "Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77–101. https://doi.org/10.1191/1478088706qp063oa; Braun, V., & Clarke, V. (2021). Thematic Analysis: A Practical Guide. SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of TA according to Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu → Tạo mã ban đầu → Tìm chủ đề → Rà soát chủ đề → Định nghĩa & đặt tên → Viết báo cáo..",
       "domain_tags_en": [
         "Qualitative Research Methodology"
       ],
-      "benchmarks": "Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu → Tạo mã ban đầu → Tìm chủ đề → Rà soát chủ đề → Định nghĩa & đặt tên → Viết báo cáo."
+      "benchmarks": "Định nghĩa một chủ đề thực chất (A Theme): Không phải là bản tóm tắt câu hỏi phỏng vấn hay một chủ đề chủ đề hời hợt (topic summary); một chủ đề thực sự phải là một ý niệm thống nhất (central organizing concept) chứa đựng một mô hình ý nghĩa được kiến tạo sâu sắc xuyên suốt dữ liệu.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Nhầm lẫn giữa Reflexive TA của Braun & Clarke với Coding Reliability TA (cố gắng tính toán độ tin cậy liên thẩm định inter-coder reliability khi áp dụng Reflexive TA); biến câu hỏi phỏng vấn thành tên các chủ đề trong báo cáo.",
+      "apa_reference": "Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77–101.",
+      "is_flagship": true
     },
     {
       "id": "tabulation-of-simple-counts-quasi-quantification-lap-bang-dem-don-gian",
@@ -55464,153 +55472,221 @@
     },
     {
       "id": "tacit-knowledge-vs-explicit-knowledge-polanyi",
-      "term": "Tacit Knowledge vs. Explicit Knowledge (Polanyi)",
-      "vietnamese": "Tri thức Ẩn vs. Tri thức Hiện",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Epistemology"
+      "term": "Tacit Knowledge vs. Explicit Knowledge (Michael Polanyi)",
+      "vietnamese": "Tri thức ẩn so với Tri thức hiện (Michael Polanyi)",
+      "vietnamese_variants": [
+        "Tri thức ngầm vs Tri thức hiện hữu",
+        "Phân biệt Tacit và Explicit Knowledge Polanyi"
       ],
-      "core_definition": "Tri thức kinh nghiệm khó diễn đạt thành lời vs. Tri thức đã được mã hóa thành văn bản.",
-      "seminal_citation": "Polanyi (1966), Nonaka & Takeuchi (1995)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Quản trị Tri thức (Knowledge Management)",
+        "Triết học Nhận thức luận",
+        "Lý thuyết Tổ chức"
+      ],
+      "core_definition": "Sự phân biệt nhận thức luận kinh điển do triết gia Michael Polanyi đề xuất năm 1966 trong tác phẩm 'The Tacit Dimension'. Tiền đề cốt lõi khẳng định: 'Chúng ta biết nhiều hơn những gì chúng ta có thể nói ra' (We know more than we can tell). (1) Tri thức ẩn (Tacit Knowledge) là tri thức cá nhân bám rễ sâu trong hành động, kinh nghiệm sống, trực giác và bí quyết nghề nghiệp, cực kỳ khó văn bản hóa hoặc truyền đạt bằng lời; (2) Tri thức hiện (Explicit Knowledge) là tri thức đã được mã hóa, số hóa thành văn bản, công thức, sơ đồ và quy trình, có thể dễ dàng chuyển giao qua đào tạo.",
+      "seminal_citation": "Polanyi, M. (1966). The Tacit Dimension. Doubleday & Company; Nonaka, I., & von Krogh, G. (2009). Perspective—Tacit knowledge and knowledge conversion: Controversy and advancement in organizational knowledge creation theory. Organization Science, 20(3), 635–652. https://doi.org/10.1287/orsc.1080.0412",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Tacit Knowledge vs. Explicit Knowledge (Polanyi) according to Polanyi (1966), Nonaka & Takeuchi (1995).",
       "domain_tags_en": [
         "Epistemology"
-      ]
+      ],
+      "benchmarks": "Ứng dụng trong nghiên cứu tổ chức: Là nền tảng cho Lý thuyết Sáng tạo Tri thức (Mô hình SECI của Nonaka & Takeuchi) và Lý thuyết Năng lực Cạnh tranh dựa trên Tri thức (Knowledge-Based View - KBV: chính tri thức ẩn khó sao chép mới là nguồn gốc tạo ra lợi thế cạnh tranh bền vững của doanh nghiệp).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Cho rằng mọi tri thức ẩn đều có thể chuyển hóa 100% thành tri thức hiện (Polanyi khẳng định tri thức ẩn luôn là nền tảng ngầm hỗ trợ cho mọi tri thức hiện); đo lường tri thức ẩn trong bảng hỏi định lượng bằng các câu hỏi bề mặt.",
+      "apa_reference": "Polanyi, M. (1966). The Tacit Dimension. Doubleday & Company.",
+      "is_flagship": true
     },
     {
       "id": "targeted-maximum-likelihood-estimation-tmle",
-      "term": "Targeted Maximum Likelihood Estimation (TMLE)",
-      "vietnamese": "Ước lượng Hợp lý Cực đại Hướng đích",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Advanced Causal Inference"
+      "term": "Targeted Maximum Likelihood Estimation (TMLE - van der Laan & Rose)",
+      "vietnamese": "Ước lượng Hợp lý Cực đại Hướng đích (Phương pháp TMLE)",
+      "vietnamese_variants": [
+        "Học máy hướng đích TMLE",
+        "Bộ ước lượng vững kép bán tham số TMLE"
       ],
-      "core_definition": "Phương pháp bán tham số tối ưu hóa trực tiếp thông số nhân quả cần tìm.",
-      "seminal_citation": "van der Laan & Rose (2011)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Suy luận Nhân quả Hiện đại",
+        "Học máy & Kinh tế lượng",
+        "Thống kê Y sinh Nâng cao"
+      ],
+      "core_definition": "Phương pháp ước lượng bán tham số tiên tiến kết hợp học máy và suy luận nhân quả do Mark J. van der Laan và Sherri Rose phát triển (Targeted Learning). TMLE tối ưu hóa sự đánh đổi giữa độ chệch và phương sai bằng cách sử dụng các thuật toán học máy linh hoạt (Super Learner) để ước lượng mô hình kết cục và mô hình xác suất can thiệp (propensity score), sau đó thực hiện một bước hiệu chỉnh 'hướng đích' (targeted fluctuation step) tập trung trực tiếp vào tham số nhân quả quan tâm (như ATE), thỏa mãn tính chất Vững kép (Doubly Robust) và đạt hiệu quả tiệm cận bán tham số.",
+      "seminal_citation": "van der Laan, M. J., & Rose, S. (2011). Targeted Learning: Causal Inference for Observational and Experimental Data. Springer. https://doi.org/10.1007/978-1-4419-9782-1; Schuler, M. S., & Rose, S. (2017). Targeted maximum likelihood estimation for causal inference in observational studies. American Journal of Epidemiology, 185(1), 65–73.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Targeted Maximum Likelihood Estimation (TMLE) according to van der Laan & Rose (2011).",
       "domain_tags_en": [
         "Advanced Causal Inference"
-      ]
+      ],
+      "benchmarks": "Tính ưu việt toán học: TMLE luôn hội tụ đúng về giá trị tham số nhân quả nếu một trong hai mô hình (mô hình kết quả hoặc mô hình can thiệp) được đặc tả đúng; cung cấp khoảng tin cậy tiệm cận chuẩn Wald chính xác và p-value hợp lệ ngay cả khi sử dụng các thuật toán học máy phức tạp (Random Forest, Gradient Boosting).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Áp dụng các thuật toán học máy thông thường vào hồi quy nhân quả mà không sử dụng hiệu chỉnh hướng đích TMLE hoặc Double Machine Learning (Chernozhukov et al.), dẫn đến hiện tượng sai số chính quy hóa (regularization bias) làm hỏng hoàn toàn việc kiểm định giả thuyết; vi phạm điều kiện vùng hỗ trợ chung (positivity violation).",
+      "apa_reference": "van der Laan, M. J., & Rose, S. (2011). Targeted Learning: Causal Inference for Observational and Experimental Data. Springer.",
+      "is_flagship": true
     },
     {
       "id": "tau-equivalent-tests",
-      "term": "Tau-equivalent tests",
-      "vietnamese": "Bài kiểm tra tương đương tau",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Tau-Equivalent Measurement Model (Essential Tau-Equivalence)",
+      "vietnamese": "Mô hình đo lường tương đương Tau (Giả định cốt lõi của Cronbach's Alpha)",
+      "vietnamese_variants": [
+        "Đo lường Tau-Equivalent",
+        "Giả định hệ số tải bằng nhau trong đo lường tâm trắc"
       ],
-      "core_definition": "Bắt buộc để Cronbach's α không bị ước lượng chệch.",
-      "seminal_citation": "DeVellis (2016)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Lý thuyết Trắc nghiệm Cổ điển (CTT)",
+        "Đo lường & Tâm trắc học",
+        "Độ tin cậy Thang đo"
+      ],
+      "core_definition": "Mô hình đo lường tâm trắc học khắt khe quy định rằng tất cả các biến quan sát (items) trong cùng một thang đo đơn hướng đều đo lường cùng một cấu trúc tiềm ẩn với cùng một mức độ chính xác như nhau — nghĩa là các hệ số tải nhân tố chưa chuẩn hóa (unstandardized factor loadings) của tất cả các câu hỏi bắt buộc phải bằng nhau hoàn toàn ($lambda_1 = lambda_2 = dots = lambda_k$), mặc dù phương sai sai số đo lường của từng câu hỏi có thể khác nhau.",
+      "seminal_citation": "Novick, M. R., & Lewis, C. (1967). Coefficient alpha and the reliability of composite measurements. Psychometrika, 32(1), 1–13. https://doi.org/10.1007/BF02289400; McNeish, D. (2018). Thanks coefficient alpha, we’ll take it from here. Psychological Methods, 23(3), 412–433. https://doi.org/10.1037/met0000144",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Tau-equivalent tests according to DeVellis (2016).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Hệ quả phương pháp luận đối với Cronbach's Alpha: Nhà tâm trắc học Lee Cronbach và Kenneth Bollen đã chứng minh rằng: Hệ số Cronbach's Alpha CHỈ LÀ THƯỚC ĐO CHÍNH XÁC CỦA ĐỘ TIN CẬY KHI GIẢ ĐỊNH TAU-EQUIVALENCE ĐƯỢC THỎA MÃN. Nếu các biến quan sát có hệ số tải khác nhau (mô hình congeneric - phổ biến nhất trong thực tế), Cronbach's alpha sẽ luôn ĐÁNH GIÁ THẤP (underestimate) độ tin cậy thực sự của thang đo. Do đó, các tạp chí Q1 luôn yêu cầu báo cáo Độ tin cậy Tổng hợp (Composite Reliability - CR / McDonald's Omega $omega$).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Báo cáo duy nhất hệ số Cronbach's Alpha trong mô hình CB-SEM/PLS-SEM mà không kiểm định giả định Tau-equivalence; xóa bỏ câu hỏi chỉ để nâng alpha lên trong khi các hệ số tải bị chênh lệch lớn.",
+      "apa_reference": "McNeish, D. (2018). Thanks coefficient alpha, we’ll take it from here. Psychological Methods, 23(3), 412–433.",
+      "is_flagship": true
     },
     {
       "id": "taylor-francis-online",
-      "term": "Taylor & Francis Online",
-      "vietnamese": "Nền tảng Tạp chí Taylor & Francis",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scholarly Publishing"
+      "term": "Taylor & Francis Online Platform (Scholarly Search & Systematic Reviews)",
+      "vietnamese": "Nền tảng xuất bản học thuật Taylor & Francis Online (trong tổng quan hệ thống)",
+      "vietnamese_variants": [
+        "Cơ sở dữ liệu toàn văn Taylor & Francis",
+        "Hệ thống tạp chí Routledge / T&F"
       ],
-      "core_definition": "Cổng xuất bản hàng nghìn tạp chí khoa học xã hội, nhân văn và công nghệ.",
-      "seminal_citation": "Informa (2011)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Tổng quan Y văn (Literature Review)",
+        "Khoa học Dữ liệu & Xuất bản",
+        "Tìm kiếm Học thuật"
+      ],
+      "core_definition": "Nền tảng xuất bản học thuật điện tử toàn cầu của Tập đoàn Taylor & Francis (bao gồm nhà xuất bản Routledge danh tiếng), cung cấp quyền truy cập tới hơn 2.700 tạp chí bình duyệt quốc tế chất lượng cao trải rộng trên các lĩnh vực Khoa học Xã hội, Nhân văn, Giáo dục, Kinh tế và Khoa học Tự nhiên. Trong quy trình tổng quan hệ thống (SLR), Taylor & Francis Online là một trong những cơ sở dữ liệu nguồn sơ cấp bắt buộc phải tra cứu theo chuẩn PRISMA.",
+      "seminal_citation": "Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., ... & Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. BMJ, 372, n71. https://doi.org/10.1136/bmj.n71",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Taylor & Francis Online according to Informa (2011).",
       "domain_tags_en": [
         "Scholarly Publishing"
-      ]
+      ],
+      "benchmarks": "Chiến lược tra cứu: Xây dựng chuỗi truy vấn Boolean chính xác, lọc theo phạm vi xuất bản bình duyệt (Peer-reviewed journals), trích xuất tệp danh mục tham khảo (.RIS) để rà soát trùng lặp trên EndNote/Rayyan.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Chỉ tìm kiếm trên một nhà xuất bản đơn lẻ mà coi là tổng quan toàn diện; không ghi nhận thời gian truy xuất và cú pháp tìm kiếm chính xác trong phụ lục bài báo.",
+      "apa_reference": "Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., ... & Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. BMJ, 372, n71.",
+      "is_flagship": true
     },
     {
       "id": "technology-acceptance-model-tam",
-      "term": "Technology Acceptance Model (TAM)",
-      "vietnamese": "Mô hình Chấp nhận Công nghệ TAM",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Information Systems"
+      "term": "Technology Acceptance Model (TAM - Fred Davis)",
+      "vietnamese": "Mô hình Chấp nhận Công nghệ (Mô hình TAM)",
+      "vietnamese_variants": [
+        "Thuyết chấp nhận công nghệ Davis",
+        "Mô hình TAM / TAM2 / TAM3"
       ],
-      "core_definition": "Dự báo hành vi sử dụng qua Cảm nhận Hữu ích PU và Cảm nhận Dễ sử dụng PEOU.",
-      "seminal_citation": "Davis (1989)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Hệ thống Thông tin (IS)",
+        "Hành vi Người tiêu dùng & Công nghệ",
+        "Khung Khái niệm Lý thuyết"
+      ],
+      "core_definition": "Mô hình lý thuyết hành vi ứng dụng công nghệ phổ biến nhất thế giới do Fred D. Davis phát triển năm 1989 (kế thừa từ Thuyết Hành động Hợp lý TRA của Fishbein & Ajzen). TAM giải thích cơ chế người dùng chấp nhận hoặc từ chối một công nghệ thông tin mới thông qua hai niềm tin nhận thức cốt lõi: (1) Nhận thức về Tính Hữu ích (Perceived Usefulness - PU: mức độ người dùng tin rằng công nghệ sẽ nâng cao hiệu suất làm việc); và (2) Nhận thức về Tính Dễ sử dụng (Perceived Ease of Use - PEOU: mức độ người dùng tin rằng sử dụng công nghệ sẽ không tốn nhiều nỗ lực). PEOU tác động trực tiếp lên PU; cả hai cùng định hình Thái độ (Attitude), dẫn đến Ý định hành vi (Behavioral Intention) và Hành vi sử dụng thực tế (Actual System Use).",
+      "seminal_citation": "Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology. MIS Quarterly, 13(3), 319–340. https://doi.org/10.2307/249008; Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS Quarterly, 27(3), 425–478.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Technology Acceptance Model (TAM) according to Davis (1989).",
       "domain_tags_en": [
         "Information Systems"
-      ]
+      ],
+      "benchmarks": "Sự phát triển mô hình hóa: Mở rộng thành TAM2 (Venkatesh & Davis, 2000 bổ sung ảnh hưởng xã hội và quy trình nhận thức), TAM3 (Venkatesh & Bala, 2008), và đỉnh cao là Mô hình Thống nhất Chấp nhận và Sử dụng Công nghệ (UTAUT của Venkatesh et al., 2003 giải thích tới 70% phương sai ý định sử dụng).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Áp dụng mô hình TAM nguyên bản 1989 một cách lặp lại sáo rỗng cho các công nghệ hiện đại (như AI, Fintech, Metaverse) mà không bổ sung các biến số bối cảnh mới (như Niềm tin số, Rủi ro nhận thức, Bảo mật dữ liệu); chỉ đo lường ý định tự khai báo (self-reported intention) mà không có dữ liệu sử dụng thực tế.",
+      "apa_reference": "Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology. MIS Quarterly, 13(3), 319–340.",
+      "is_flagship": true
     },
     {
       "id": "template-analysis",
-      "term": "Template analysis",
-      "vietnamese": "Phân tích khuôn mẫu (kỹ thuật định tính dùng bảng mã hóa mẫu linh hoạt).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Onion",
-        "Strategy"
+      "term": "Template Analysis (Nigel King)",
+      "vietnamese": "Phân tích Bản mẫu (Phương pháp Template Analysis của Nigel King)",
+      "vietnamese_variants": [
+        "Phương pháp phân tích mẫu định tính",
+        "Kỹ thuật mã hóa Template Analysis"
       ],
-      "core_definition": "Phân tích khuôn mẫu (kỹ thuật định tính dùng bảng mã hóa mẫu linh hoạt).",
-      "seminal_citation": "Saunders et al. (2019); Saunders (2019)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phương pháp Định tính",
+        "Phân tích Chủ đề (Thematic Analysis)",
+        "Mã hóa Dữ liệu"
+      ],
+      "core_definition": "Một phong cách phân tích chủ đề định tính có cấu trúc phân tầng cao do Nigel King phát triển. Đặc trưng cốt lõi của Template Analysis là việc xây dựng một 'Bản mẫu mã hóa' ban đầu (initial coding template) dựa trên việc đọc kỹ một tập con nhỏ dữ liệu (khoảng 2-3 cuộc phỏng vấn) kết hợp với các chủ đề định hướng tiên nghiệm (a priori themes). Sau đó, bản mẫu này được áp dụng tuần tự cho toàn bộ dữ liệu còn lại, liên tục được điều chỉnh, bổ sung nhánh mới, xóa bỏ hoặc tái cấu trúc phân cấp (hierarchical coding: mã cấp 1, cấp 2, cấp 3) cho đến khi đạt được bản mẫu cuối cùng (final template).",
+      "seminal_citation": "King, N. (2004). Using templates in the thematic analysis of text. In C. Cassell & G. Symon (Eds.), Essential Guide to Qualitative Methods in Organizational Research (pp. 256–270). SAGE Publications; Brooks, J., McCluskey, S., Turley, E., & King, N. (2015). The utility of template analysis in qualitative psychology research. Qualitative Research in Psychology, 12(2), 202–222. https://doi.org/10.1080/14780887.2014.955224",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Template analysis according to Saunders et al. (2019); Saunders (2019).",
       "domain_tags_en": [
         "Research Onion",
         "Strategy"
-      ]
+      ],
+      "benchmarks": "Tính linh hoạt và cân bằng: Template Analysis nằm ở vị trí trung gian hoàn hảo giữa phương pháp quá đóng (Content Analysis cứng nhắc) và phương pháp quá mở (Grounded Theory). Phù hợp nhất khi nghiên cứu có quy mô mẫu lớn hoặc nhóm nghiên cứu đa thành viên.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Giữ bản mẫu tiên nghiệm quá cứng nhắc khiến nghiên cứu bỏ sót các phát hiện mới mẻ bất ngờ từ dữ liệu thực tế; phát triển quá nhiều cấp phân tầng (quá 4 cấp) làm bản mẫu trở nên rối rắm và mất khả năng khái quát hóa.",
+      "apa_reference": "Brooks, J., McCluskey, S., Turley, E., & King, N. (2015). The utility of template analysis in qualitative psychology research. Qualitative Research in Psychology, 12(2), 202–222.",
+      "is_flagship": true
     },
     {
       "id": "temporal-order",
-      "term": "Temporal order",
-      "vietnamese": "Trật tự thời gian — Nguyên tắc bắt buộc biến nguyên nhân (X) phải xuất hiện trước biến kết quả (Y) trong tiến trình thời gian.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Temporal Order / Precedence in Causal Inference",
+      "vietnamese": "Trật tự Thời gian / Tính Tiên quyết Thời gian trong Suy luận Nhân quả",
+      "vietnamese_variants": [
+        "Thứ tự thời gian nguyên nhân - kết quả",
+        "Tiêu chuẩn thời gian John Stuart Mill"
       ],
-      "core_definition": "Trật tự thời gian — Nguyên tắc bắt buộc biến nguyên nhân (X) phải xuất hiện trước biến kết quả (Y) trong tiến trình thời gian.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Suy luận Nhân quả",
+        "Thiết kế Thực nghiệm & Bán thực nghiệm",
+        "Triết học Khoa học"
+      ],
+      "core_definition": "Điều kiện tiên quyết không thể thương lượng trong suy luận nhân quả (bắt nguồn từ triết học Hume và John Stuart Mill): một nguyên nhân tiềm năng X bắt buộc phải diễn ra trước kết quả Y theo trật tự thời gian thực tế ($t_X < t_Y$). Nếu không thể chứng minh X xảy ra trước Y, nghiên cứu không thể loại trừ khả năng quan hệ nhân quả đảo ngược (Reverse Causality: chính Y gây ra X chứ không phải ngược lại).",
+      "seminal_citation": "Mill, J. S. (1843). A System of Logic, Ratiocinative and Inductive. John W. Parker; Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and Quasi-Experimental Designs for Generalized Causal Inference. Houghton Mifflin.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Temporal order according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "benchmarks": "Ưu thế của thiết kế nghiên cứu: Dữ liệu cắt ngang đơn lẻ (Cross-sectional data thu thập tại một thời điểm) hoàn toàn bất lực trong việc xác lập trật tự thời gian. Để đảm bảo tính tiên quyết thời gian, nhà nghiên cứu bắt buộc phải sử dụng: (1) Thiết kế thực nghiệm có can thiệp thao tác (Experimental manipulation); (2) Thiết kế nghiên cứu thuần tập theo thời gian (Longitudinal Panel Design / Cross-lagged panel models); hoặc (3) Mô hình độ trễ thời gian (Distributed Lag models).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Sử dụng khảo sát cắt ngang một lần (single-shot survey) để kiểm định mô hình trung gian hoặc kết luận quan hệ nhân quả, bị reviewer Q1 từ chối lập tức do vi phạm điều kiện trật tự thời gian; ngụy biện rằng 'sau sự kiện đó đồng nghĩa do sự kiện đó' (ngụy biện Post hoc ergo propter hoc).",
+      "apa_reference": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and Quasi-Experimental Designs for Generalized Causal Inference. Houghton Mifflin.",
+      "is_flagship": true
     },
     {
       "id": "test-information-function-tif",
-      "term": "Test Information Function (TIF)",
-      "vietnamese": "Hàm thông tin bài kiểm tra trong IRT biểu thị độ chính xác đo lường của toàn bộ bài test tại từng mức năng lực theta",
+      "term": "Test Information Function (TIF in Item Response Theory)",
+      "vietnamese": "Hàm Thông tin Bài kiểm tra (Hàm TIF trong Lý thuyết Ứng đáp Câu hỏi IRT)",
       "vietnamese_variants": [
-        "TIF"
+        "Độ chính xác đo lường theo năng lực TIF",
+        "Đường cong thông tin bài trắc nghiệm IRT"
       ],
       "domain_tags": [
-        "Item Response Theory"
+        "Lý thuyết Ứng đáp Câu hỏi (IRT)",
+        "Đo lường & Tâm trắc học Nâng cao",
+        "Đánh giá Năng lực"
       ],
-      "core_definition": "Hàm thông tin bài kiểm tra trong IRT biểu thị độ chính xác đo lường của toàn bộ bài test tại từng mức năng lực theta.",
-      "seminal_citation": "Lord (1980)",
-      "tier": "encyclopedia",
-      "expert_status": "needs_review",
+      "core_definition": "Hàm toán học trong Lý thuyết Ứng đáp Câu hỏi (Item Response Theory - IRT), đo lường mức độ chính xác và lượng thông tin thống kê mà toàn bộ một bài kiểm tra/thang đo cung cấp tương ứng với từng mức độ năng lực tiềm ẩn khác nhau của cá nhân (ký hiệu là $\\theta$ hay Theta). Hàm TIF bằng tổng các Hàm Thông tin Câu hỏi riêng lẻ (Item Information Functions - IIF): $I(\\theta) = \\sum_{i=1}^n I_i(\\theta)$.",
+      "seminal_citation": "Lord, F. M. (1980). Applications of Item Response Theory to Practical Testing Problems. Lawrence Erlbaum Associates; Embretson, S. E., & Reise, S. P. (2000). Item Response Theory for Psychologists. Lawrence Erlbaum Associates.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2556",
       "core_definition_en": "Academic definition of Test Information Function (TIF) according to Lord (1980).",
       "domain_tags_en": [
         "Item Response Theory"
-      ]
+      ],
+      "benchmarks": "Đột phá vượt trội so với CTT: Trong Lý thuyết Cổ điển CTT, sai số đo lường SEM được coi là một hằng số cố định cho mọi người; trong khi trong IRT, hàm TIF chứng minh rằng sai số đo lường chuẩn $\\text{SE}(\\theta) = 1 / \\sqrt{I(\\theta)}$ thay đổi liên tục theo từng mức năng lực $\\theta$. Một bài kiểm tra có thể cực kỳ chính xác ở nhóm năng lực trung bình nhưng hoàn toàn mất chính xác ở nhóm năng lực xuất sắc hoặc yếu kém.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đánh giá một bài kiểm tra trắc nghiệm là 'tin cậy cho tất cả mọi người' mà không vẽ đồ thị TIF để xem bài đo chính xác ở khoảng năng lực nào; sử dụng bài thi có hàm TIF tập trung ở giữa để tuyển chọn thí sinh có năng lực xuất sắc.",
+      "apa_reference": "Embretson, S. E., & Reise, S. P. (2000). Item Response Theory for Psychologists. Lawrence Erlbaum Associates.",
+      "is_flagship": true
     },
     {
       "id": "testing-threat-practice-effects",
@@ -55640,39 +55716,57 @@
     },
     {
       "id": "text-recycling-self-plagiarism",
-      "term": "Text Recycling (Self-Plagiarism)",
-      "vietnamese": "Tái chế Văn bản / Tự Đạo văn",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Ethics"
+      "term": "Text Recycling (Self-Plagiarism & Publication Ethics)",
+      "vietnamese": "Tái chế văn bản và Tự đạo văn trong xuất bản học thuật (Text Recycling)",
+      "vietnamese_variants": [
+        "Hành vi tự đạo văn",
+        "Tái sử dụng văn bản của chính mình trong bài báo mới"
       ],
-      "core_definition": "Hành vi sao chép lại các đoạn văn bản từ các công trình trước của chính mình mà không trích dẫn.",
-      "seminal_citation": "Roig (2015)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Liêm chính Khoa học (Research Integrity)",
+        "Đạo đức Xuất bản",
+        "Quy chuẩn COPE"
+      ],
+      "core_definition": "Hành vi tác giả tái sử dụng các phần câu từ, đoạn văn bản, bảng biểu hoặc dữ liệu từ các công trình đã công bố trước đây của chính mình vào một bài báo mới mà không có sự trích dẫn minh bạch hoặc vượt quá giới hạn đạo đức cho phép. Dự án Nghiên cứu Tái chế Văn bản (Text Recycling Research Project - TRRP) và Ủy ban Đạo đức Xuất bản (COPE) phân biệt giữa: (1) Tái chế văn bản hợp pháp (thường chấp nhận ở phần mô tả Phương pháp thí nghiệm phức tạp nếu được trích dẫn rõ ràng); và (2) Tự đạo văn sai trái (khi tái chế phần Kết quả, Thảo luận hoặc Mở đầu để xuất bản nhiều bài trùng lặp).",
+      "seminal_citation": "COPE Council. (2019). Text Recycling Guidelines. Committee on Publication Ethics. https://doi.org/10.24318/cope.2019.2.6; Moskovitz, C. (2019). Text recycling in scientific writing. Accountability in Research, 26(2), 101–124. https://doi.org/10.1080/08989621.2019.1584852",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Text Recycling (Self-Plagiarism) according to Roig (2015).",
       "domain_tags_en": [
         "Research Ethics"
-      ]
+      ],
+      "benchmarks": "Bộ quy tắc ứng xử COPE: Bắt buộc tác giả phải: (1) Trích dẫn rõ ràng bài báo gốc trước đó; (2) Thông báo minh bạch cho Tổng biên tập trong Thư ngỏ gửi bài (Cover Letter) về phần văn bản được tái sử dụng; (3) Kiểm tra bản quyền (Copyright transfer) xem nhà xuất bản trước có giữ độc quyền văn bản đó hay không.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Sao chép y nguyên phần Tổng quan y văn và Thảo luận của luận án hoặc bài báo trước vào bài báo mới khiến phần mềm iThenticate/CrossCheck báo trùng lặp tỷ lệ cao (> 20-30%), dẫn đến bài bị từ chối thẳng thừng vì vi phạm liêm chính xuất bản.",
+      "apa_reference": "Moskovitz, C. (2019). Text recycling in scientific writing. Accountability in Research, 26(2), 101–124.",
+      "is_flagship": true
     },
     {
       "id": "tgarch-gjr-garch",
-      "term": "TGARCH / GJR-GARCH",
-      "vietnamese": "Mô hình GARCH Ngưỡng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Financial Econometrics"
+      "term": "TGARCH and GJR-GARCH Models (Asymmetric Volatility & Leverage Effect)",
+      "vietnamese": "Mô hình GARCH Ngưỡng và GJR-GARCH (Phương sai Bất đối xứng và Hiệu ứng Đòn bẩy)",
+      "vietnamese_variants": [
+        "Mô hình TGARCH Zakoian",
+        "Mô hình GJR-GARCH Glosten-Jagannathan-Runkle"
       ],
-      "core_definition": "Threshold GARCH phân tích hiệu ứng đòn bẩy trong biến động tài chính.",
-      "seminal_citation": "Glosten, Jagannathan & Runkle (1993)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng Tài chính",
+        "Mô hình Chuỗi Thời gian Biến động",
+        "Kinh tế lượng Nâng cao"
+      ],
+      "core_definition": "Các mô hình kinh tế lượng tài chính phi tuyến tính mở rộng từ mô hình GARCH chuẩn của Bollerslev, nhằm nắm bắt 'Hiệu ứng Đòn bẩy' (Leverage Effect của Fischer Black, 1976) — hiện tượng bất đối xứng thực tế trên thị trường tài chính khi tin xấu (cú sốc lợi suất âm) thường gây ra sự bùng nổ biến động phương sai mạnh hơn nhiều so với tin tốt (cú sốc lợi suất dương) có cùng độ lớn. (1) Mô hình GJR-GARCH (Glosten, Jagannathan & Runkle, 1993) chèn thêm một biến chỉ báo nhị phân $I_{t-1} = 1$ khi $\\varepsilon_{t-1} < 0$; (2) Mô hình TGARCH (Threshold GARCH của Zakoian, 1994) mô hình hóa trực tiếp độ lệch chuẩn có điều kiện thay vì phương sai.",
+      "seminal_citation": "Glosten, L. R., Jagannathan, R., & Runkle, D. E. (1993). On the relation between the expected value and the volatility of the nominal excess return on stocks. The Journal of Finance, 48(5), 1779–1801. https://doi.org/10.1111/j.1540-6261.1993.tb05128.x; Zakoian, J. M. (1994). Threshold heteroskedastic models. Journal of Economic Dynamics and Control, 18(5), 931–955.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of TGARCH / GJR-GARCH according to Glosten, Jagannathan & Runkle (1993).",
       "domain_tags_en": [
         "Financial Econometrics"
-      ]
+      ],
+      "benchmarks": "Kiểm định bất đối xứng: Phương trình phương sai có điều kiện trong GJR-GARCH: $\\sigma_t^2 = \\omega + (\\alpha + \\gamma I_{t-1}) \\varepsilon_{t-1}^2 + \\beta \\sigma_{t-1}^2$. Nếu hệ số bất đối xứng $\\gamma > 0$ và có ý nghĩa thống kê ($p < 0.05$), hiệu ứng đòn bẩy bất đối xứng được xác nhận (tin xấu khuếch đại biến động thêm một lượng $\\gamma$).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Sử dụng mô hình GARCH(1,1) đối xứng truyền thống cho dữ liệu lợi suất thị trường chứng khoán vốn luôn có tính bất đối xứng nghiêm trọng; vi phạm điều kiện tính dừng không âm của phương sai $(\\alpha + \\beta + \\gamma / 2 < 1)$.",
+      "apa_reference": "Glosten, L. R., Jagannathan, R., & Runkle, D. E. (1993). On the relation between the expected value and the volatility of the nominal excess return on stocks. The Journal of Finance, 48(5), 1779–1801.",
+      "is_flagship": true
     },
     {
       "id": "thanh-loc-thang-do-da-dien-scale-purification",
@@ -55717,149 +55811,220 @@
     },
     {
       "id": "the-mixed-methods-design",
-      "term": "the mixed methods design",
-      "vietnamese": "5 `the mixed methods design` **0.62** 6 lần Giữ lại làm mục từ phụ hoặc từ đồng nghĩa",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Mixed Methods Research Core Designs (Creswell & Plano Clark)",
+      "vietnamese": "Các Thiết kế Cốt lõi của Phương pháp Nghiên cứu Hỗn hợp (Creswell & Plano Clark)",
+      "vietnamese_variants": [
+        "Khung thiết kế nghiên cứu hỗn hợp chuẩn mực",
+        "Mô hình thiết kế Mixed Methods Creswell"
       ],
-      "core_definition": "5 `the mixed methods design` **0.62** 6 lần Giữ lại làm mục từ phụ hoặc từ đồng nghĩa.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phương pháp Hỗn hợp (Mixed Methods)",
+        "Thiết kế Phương pháp Luận",
+        "Tích hợp Định lượng và Định tính"
+      ],
+      "core_definition": "Khung phân loại thiết kế phương pháp hỗn hợp chuẩn vàng quốc tế do John W. Creswell và Vicki L. Plano Clark (2018) hệ thống hóa. Bao gồm 3 thiết kế cốt lõi chính: (1) Thiết kế Hội tụ Song song (Convergent Parallel Design: QUAN + QUAL thu thập đồng thời, hòa trộn ở khâu phân tích); (2) Thiết kế Giải thích Tuần tự (Explanatory Sequential Design: QUAN -> qual - dùng định tính để giải thích sâu các kết quả số liệu định lượng bất ngờ); (3) Thiết kế Khám phá Tuần tự (Exploratory Sequential Design: QUAL -> quan - dùng định tính ban đầu để khám phá và phát triển công cụ thang đo mới rồi kiểm định định lượng quy mô lớn).",
+      "seminal_citation": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and Conducting Mixed Methods Research (3rd ed.). SAGE Publications; Tashakkori, A., Johnson, R. B., & Teddlie, C. (2020). Foundations of Mixed Methods Research (2nd ed.). SAGE Publications.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Rác Markdown/bảng",
       "core_definition_en": "Academic definition of the mixed methods design according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Ký hiệu chuẩn hóa Creswell: Viết hoa (QUAN/QUAL) biểu thị phương pháp giữ trọng số ưu tiên chủ đạo; viết thường (quan/qual) biểu thị phương pháp đóng vai trò bổ trợ thứ cấp; dấu cộng (+) biểu thị tiến hành đồng thời; mũi tên (->) biểu thị tiến hành tuần tự theo thời gian.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Thực hiện nghiên cứu hỗn hợp nhưng thực chất là hai nghiên cứu tách rời bị đặt cạnh nhau mà KHÔNG CÓ ĐIỂM TÍCH HỢP (Point of Integration); không báo cáo các suy luận tích hợp (meta-inferences) giải quyết trực tiếp câu hỏi nghiên cứu hỗn hợp.",
+      "apa_reference": "Creswell, J. W., & Plano Clark, V. L. (2018). Designing and Conducting Mixed Methods Research (3rd ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "theil-index-of-entropy-inequality",
-      "term": "Theil Index of Entropy Inequality",
-      "vietnamese": "Chỉ số Bất bình đẳng Theil",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Development Economics"
+      "term": "Theil Index of Entropy Inequality (Henri Theil)",
+      "vietnamese": "Chỉ số Bất bình đẳng Theil (Thước đo Entropy Theil)",
+      "vietnamese_variants": [
+        "Hệ số Theil Index",
+        "Thước đo bất bình đẳng thông tin Theil"
       ],
-      "core_definition": "Thước đo dựa trên lý thuyết thông tin entropy có khả năng phân rã bất bình đẳng nội bộ và giữa các nhóm.",
-      "seminal_citation": "Theil (1967)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Đo lường Bất bình đẳng Kinh tế",
+        "Lý thuyết Thông tin & Entropy",
+        "Kinh tế học Phát triển"
+      ],
+      "core_definition": "Chỉ số kinh tế lượng đo lường mức độ bất bình đẳng thu nhập, tài sản hoặc cơ hội do nhà kinh tế lượng Henri Theil phát triển năm 1967, dựa trên khái niệm Entropy thông tin của Claude Shannon. Điểm ưu việt vượt trội của chỉ số Theil so với Hệ số Gini truyền thống là Tính chất Phân rã Hoàn hảo (Subgroup Decomposability): tổng mức bất bình đẳng toàn xã hội $T$ có thể được phân rã chính xác thành hai thành phần cộng tính không có phần dư: (1) Bất bình đẳng nội bộ các nhóm (Within-group inequality: $T_W$), và (2) Bất bình đẳng giữa các nhóm với nhau (Between-group inequality: $T_B$).",
+      "seminal_citation": "Theil, H. (1967). Economics and Information Theory. North-Holland; Bourguignon, F. (1979). Decomposable inequality measures. Econometrica, 47(4), 901–920. https://doi.org/10.2307/1914138",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Theil Index of Entropy Inequality according to Theil (1967).",
       "domain_tags_en": [
         "Development Economics"
-      ]
+      ],
+      "benchmarks": "Công thức Theil T: $T = (1/N) \\sum_{i=1}^N (y_i / \\mu) \\ln(y_i / \\mu)$, trong đó $y_i$ là thu nhập cá nhân và $\\mu$ là thu nhập trung bình. Giá trị Theil = 0 biểu thị bình đẳng tuyệt đối; giá trị càng lớn biểu thị bất bình đẳng càng trầm trọng.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Nhầm lẫn giữa Theil's T (gán trọng số theo thu nhập) và Theil's L (Mean Log Deviation gán trọng số theo dân số); so sánh trực tiếp giá trị Theil giữa các nghiên cứu phân chia nhóm phụ khác nhau.",
+      "apa_reference": "Theil, H. (1967). Economics and Information Theory. North-Holland.",
+      "is_flagship": true
     },
     {
       "id": "thematic-map-callons-centrality-density",
-      "term": "Thematic Map (Callon's Centrality & Density)",
-      "vietnamese": "Bản đồ Chuyên đề Callon",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scientometrics"
+      "term": "Thematic Map (Callon's Centrality and Density Matrix)",
+      "vietnamese": "Bản đồ Chủ đề Trắc lượng Thư mục (Ma trận Tâm điểm và Mật độ Callon)",
+      "vietnamese_variants": [
+        "Bản đồ chiến lược chủ đề Callon",
+        "Phân tích cụm từ đồng xuất hiện Co-word"
       ],
-      "core_definition": "Phân loại các cụm chủ đề thành Motor themes, Basic themes, Niche themes và Emerging themes.",
-      "seminal_citation": "Cobo et al. (2011)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Trắc lượng Khoa học (Scientometrics)",
+        "Phân tích Từ đồng xuất hiện (Co-word)",
+        "Tổng quan Y văn Trắc lượng"
+      ],
+      "core_definition": "Công cụ trực quan hóa cấu trúc trí tuệ của một chuyên ngành khoa học do Michel Callon và các cộng sự phát triển năm 1991. Dựa trên phân tích mạng lưới các từ khóa đồng xuất hiện (Co-word Analysis), bản đồ phân chia không gian nghiên cứu thành ma trận 2 chiều gồm 4 góc phần tư dựa trên: (1) Độ tập trung (Callon's Centrality - đo lường mức độ liên kết bên ngoài giữa cụm từ khóa đó với các cụm từ khóa khác trong toàn ngành); và (2) Độ mật độ (Callon's Density - đo lường mức độ gắn kết nội tại bên trong cụm).",
+      "seminal_citation": "Callon, M., Courtial, J. P., & Laville, F. (1991). Co-word analysis as a tool for describing the network of representations in science. Scientometrics, 22(1), 155–205. https://doi.org/10.1007/BF02019280; Cobo, M. J., López-Herrera, A. G., Herrera-Viedma, E., & Herrera, F. (2011). An approach for detecting, quantifying, and visualizing the evolution of a research field: A practical application to Fuzzy Logic research. Journal of Informetrics, 5(1), 146–166.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Thematic Map (Callon's Centrality & Density) according to Cobo et al. (2011).",
       "domain_tags_en": [
         "Scientometrics"
-      ]
+      ],
+      "benchmarks": "Bốn góc phần tư chiến lược: (1) Góc phần tư I (Centrality cao, Density cao): Chủ đề Động lực cốt lõi (Motor themes - phát triển mạnh và trọng tâm của ngành); (2) Góc phần tư II (Centrality thấp, Density cao): Chủ đề Chuyên biệt ngách (Niche / Specialized themes - phát triển sâu nội tại nhưng tách biệt); (3) Góc phần tư III (Centrality thấp, Density thấp): Chủ đề Mới nổi hoặc Suy tàn (Emerging or Declining themes); (4) Góc phần tư IV (Centrality cao, Density thấp): Chủ đề Cơ sở nền tảng (Basic and Transversal themes).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đọc biểu đồ ma trận Callon mà không làm sạch từ đồng nghĩa (thesaurus cleaning) khiến cùng một khái niệm bị phân tán thành nhiều từ khóa rác làm sai lệch tọa độ trung tâm.",
+      "apa_reference": "Callon, M., Courtial, J. P., & Laville, F. (1991). Co-word analysis as a tool for describing the network of representations in science. Scientometrics, 22(1), 155–205.",
+      "is_flagship": true
     },
     {
       "id": "theoretical-density",
-      "term": "Theoretical Density",
-      "vietnamese": "Độ Đậm đặc Lý thuyết",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Grounded Theory"
+      "term": "Theoretical Density in Grounded Theory",
+      "vietnamese": "Độ dày lý thuyết / Mật độ lý thuyết trong Lý thuyết Nền",
+      "vietnamese_variants": [
+        "Độ phong phú mạng lưới khái niệm",
+        "Mật độ quan hệ giữa các danh mục lý thuyết"
       ],
-      "core_definition": "Mức độ phong phú và liên kết chặt chẽ giữa các khái niệm và thuộc tính trong lý thuyết mới.",
-      "seminal_citation": "Strauss & Corbin (1998)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Lý thuyết Nền (Grounded Theory)",
+        "Phát triển Lý thuyết Định tính",
+        "Phương pháp Định tính"
+      ],
+      "core_definition": "Thuộc tính chất lượng khoa học trong Lý thuyết Nền (Glaser & Strauss, 1967; Strauss & Corbin, 1990), phản ánh mức độ phong phú, sâu sắc và chặt chẽ của mạng lưới các mối quan hệ liên kết giữa các khái niệm, danh mục mã hóa (categories) và các thuộc tính/chiều kích (properties and dimensions) của chúng. Một lý thuyết có độ dày lý thuyết cao không chỉ đơn thuần liệt kê các danh mục rời rạc, mà tích hợp chúng thành một hệ thống giải thích đa chiều có khả năng bao quát được các biến thể phức tạp của hiện tượng trong đời thực.",
+      "seminal_citation": "Glaser, B. G. (1978). Theoretical Sensitivity: Advances in the Methodology of Grounded Theory. The Sociology Press; Strauss, A., & Corbin, J. (1990). Basics of Qualitative Research: Grounded Theory Procedures and Techniques. SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Theoretical Density according to Strauss & Corbin (1998).",
       "domain_tags_en": [
         "Grounded Theory"
-      ]
+      ],
+      "benchmarks": "Đạt độ dày lý thuyết: Được xây dựng thông qua việc liên tục viết các ghi chú lý thuyết (theoretical memos), đối chiếu mẫu hình liên tục và tích hợp các điều kiện bối cảnh, chiến lược hành động và hệ quả (Paradigm model).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Dừng nghiên cứu ở mức độ phân loại mã hóa bề mặt (under-developed thin categories); các danh mục chỉ đứng độc lập mà không có các mũi tên liên kết cơ chế tương hỗ.",
+      "apa_reference": "Strauss, A., & Corbin, J. (1990). Basics of Qualitative Research: Grounded Theory Procedures and Techniques. SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "theoretical-end-point",
-      "term": "Theoretical end point",
-      "vietnamese": "Điểm kết lý thuyết — Vị trí mà lý thuyết xuất hiện ở cuối nghiên cứu định tính quy nạp (lý thuyết được đúc kết từ dữ liệu).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Theoretical End Point (Data Collection Stopping Criteria)",
+      "vietnamese": "Điểm dừng lý thuyết (Tiêu chuẩn kết thúc thu thập dữ liệu định tính)",
+      "vietnamese_variants": [
+        "Điểm kết thúc bão hòa lý thuyết",
+        "Tiêu chí dừng thu thập dữ liệu"
       ],
-      "core_definition": "Điểm kết lý thuyết — Vị trí mà lý thuyết xuất hiện ở cuối nghiên cứu định tính quy nạp (lý thuyết được đúc kết từ dữ liệu).",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Phương pháp Định tính",
+        "Thiết kế Chọn mẫu",
+        "Lý thuyết Nền (Grounded Theory)"
+      ],
+      "core_definition": "Thời điểm phương pháp luận được xác định một cách có nguyên tắc trong quá trình nghiên cứu định tính, khi việc tiếp tục thu thập thêm dữ liệu (phỏng vấn thêm người, quan sát thêm bối cảnh) không còn mang lại bất kỳ sự phát triển, bổ sung hay thách thức nào đối với khung lý thuyết đang hình thành. Điểm dừng lý thuyết đồng nghĩa với việc đã đạt được sự bão hòa lý thuyết (Theoretical Saturation) trọn vẹn trên tất cả các phạm trù phân tích cốt lõi.",
+      "seminal_citation": "Francis, J. J., Johnston, M., Robertson, C., Glidewell, L., Entwistle, V., Eccles, M. P., & Grimshaw, J. M. (2010). What is an adequate sample size? Operationalising data saturation for theory-based interview studies. Psychology and Health, 25(10), 1229–1245. https://doi.org/10.1080/08870440903194015",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Theoretical end point according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "benchmarks": "Quy tắc kiểm định điểm dừng (Stopping rules của Francis et al., 2010): Thiết lập tiên nghiệm: (1) Cỡ mẫu ban đầu tối thiểu (thường $N = 10 - 12$ cuộc phỏng vấn); (2) Tiêu chuẩn kiểm tra điểm dừng (Stopping criterion - ví dụ: 3 cuộc phỏng vấn liên tiếp tiếp theo không phát sinh thêm bất kỳ mã mới nào).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Tự ý dừng thu thập dữ liệu chỉ vì hết kinh phí hoặc mệt mỏi mà tuyên bố đã chạm 'điểm dừng lý thuyết'; không ghi chép nhật ký theo dõi quá trình xuất hiện mã mới để chứng minh điểm dừng.",
+      "apa_reference": "Francis, J. J., Johnston, M., Robertson, C., Glidewell, L., Entwistle, V., Eccles, M. P., & Grimshaw, J. M. (2010). What is an adequate sample size? Operationalising data saturation for theory-based interview studies. Psychology and Health, 25(10), 1229–1245.",
+      "is_flagship": true
     },
     {
       "id": "theoretical-replication-tai-lap-ly-thuyet",
-      "term": "Theoretical Replication",
-      "vietnamese": "Tái lập Lý thuyết trong Nghiên cứu Đa tình huống",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Case Study Research"
+      "term": "Theoretical Replication (Robert K. Yin's Multiple-Case Design)",
+      "vietnamese": "Tái lập lý thuyết trong nghiên cứu đa tình huống (Robert K. Yin)",
+      "vietnamese_variants": [
+        "Nhân bản lý thuyết",
+        "Tái lập tương phản có dự báo trước"
       ],
-      "core_definition": "Lựa chọn các ca dự báo cho ra kết quả trái ngược nhau nhưng vì những nguyên nhân có thể giải thích được bằng lý thuyết.",
-      "seminal_citation": "Yin (2014)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Nghiên cứu Tình huống (Case Study)",
+        "Thiết kế Nghiên cứu Định tính",
+        "Phương pháp So sánh"
+      ],
+      "core_definition": "Chiến lược lựa chọn các tình huống nghiên cứu trong thiết kế đa tình huống (Multiple-Case Study Design) do Robert K. Yin đề xuất. Trái ngược với Tái lập Nguyên văn (Literal Replication - lựa chọn các tình huống tương đồng để dự báo các kết quả tương tự nhau), Tái lập Lý thuyết (Theoretical Replication) chủ động lựa chọn các tình huống CÓ ĐẶC ĐIỂM BỐI CẢNH TƯƠNG PHẢN NHAU nhưng sự tương phản này được lý thuyết dự báo trước là sẽ dẫn đến các kết quả khác biệt vì những lý do có thể giải thích được.",
+      "seminal_citation": "Yin, R. K. (2018). Case Study Research and Applications: Design and Methods (6th ed.). SAGE Publications; Eisenhardt, K. M. (1989). Building theories from case study research. Academy of Management Review, 14(4), 532–550.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Theoretical Replication (Tái lập Lý thuyết) according to Yin (2014).",
       "domain_tags_en": [
         "Case Study Research"
-      ]
+      ],
+      "benchmarks": "Ứng dụng trong xây dựng lý thuyết: Ví dụ: chọn một doanh nghiệp thành công rực rỡ và một doanh nghiệp thất bại thảm hại trong cùng một ngành để kiểm định xem liệu sự hiện diện hay vắng mặt của biến số chiến lược có tạo ra kết quả đối lập đúng như lý thuyết dự đoán hay không.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Chọn các tình huống ngẫu nhiên hoặc thuận tiện rồi gán nhãn là 'tái lập lý thuyết'; không giải trình được cơ chế lý thuyết tiên nghiệm nào dự báo sự khác biệt giữa các ca.",
+      "apa_reference": "Yin, R. K. (2018). Case Study Research and Applications: Design and Methods (6th ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "theoretical-sampling-in-qualitative-research",
-      "term": "Theoretical Sampling in Qualitative Research",
-      "vietnamese": "Chọn mẫu Lý thuyết",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Grounded Theory"
+      "term": "Theoretical Sampling in Qualitative Research (Glaser & Strauss)",
+      "vietnamese": "Chọn mẫu lý thuyết trong nghiên cứu định tính (Glaser & Strauss)",
+      "vietnamese_variants": [
+        "Lấy mẫu theo định hướng lý thuyết",
+        "Chiến lược chọn mẫu Grounded Theory"
       ],
-      "core_definition": "Quá trình thu thập dữ liệu tiếp theo được dẫn dắt bởi sự phát triển của lý thuyết đang nổi lên.",
-      "seminal_citation": "Glaser & Strauss (1967)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Lý thuyết Nền (Grounded Theory)",
+        "Thiết kế Chọn mẫu Định tính",
+        "Thu thập Dữ liệu"
+      ],
+      "core_definition": "Quy trình thu thập dữ liệu có định hướng lý thuyết cốt lõi trong Lý thuyết Nền (Grounded Theory). Nhà nghiên cứu thu thập, mã hóa và phân tích dữ liệu đồng thời, sau đó quyết định xem nên thu thập dữ liệu tiếp theo từ ai, ở đâu, về hiện tượng gì dựa trên chính những khoảng trống và nhu cầu phát triển của lý thuyết đang hình thành. Mục tiêu của chọn mẫu lý thuyết KHÔNG PHẢI LÀ ĐẠI DIỆN DÂN SỐ THỐNG KÊ, mà là để phát triển, làm phong phú và kiểm tra các thuộc tính của các danh mục lý thuyết.",
+      "seminal_citation": "Glaser, B. G., & Strauss, A. L. (1967). The Discovery of Grounded Theory: Strategies for Qualitative Research. Aldine Publishing; Draucker, C. B., Martsolf, D. S., Ross, R., & Rusk, T. B. (2007). Theoretical sampling and category development in grounded theory. Qualitative Health Research, 17(8), 1137–1148.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Theoretical Sampling in Qualitative Research according to Glaser & Strauss (1967).",
       "domain_tags_en": [
         "Grounded Theory"
-      ]
+      ],
+      "benchmarks": "Đặc tính thích ứng liên tục: Cỡ mẫu và danh sách người tham gia không thể xác định cứng nhắc ngay từ đầu đề cương; người nghiên cứu theo đuổi các manh mối khái niệm (conceptual leads) cho đến khi đạt bão hòa lý thuyết.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Tuyên bố sử dụng 'chọn mẫu lý thuyết' nhưng thực chất lại chọn mẫu thuận tiện (hỏi người quen) hoặc chọn mẫu định ngạch theo nhân khẩu học (tuổi, giới tính) mà không gắn liền với việc lấp đầy các khoảng trống khái niệm.",
+      "apa_reference": "Glaser, B. G., & Strauss, A. L. (1967). The Discovery of Grounded Theory: Strategies for Qualitative Research. Aldine Publishing.",
+      "is_flagship": true
     },
     {
       "id": "theoretical-sampling-strategy",
-      "term": "Theoretical Sampling Strategy",
-      "vietnamese": "Chiến lược Chọn mẫu Lý thuyết",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Grounded Theory"
+      "term": "Theoretical Sampling Strategy (Tactical Execution & Negative Cases)",
+      "vietnamese": "Chiến lược tác nghiệp chọn mẫu lý thuyết và Tìm kiếm trường hợp phủ định",
+      "vietnamese_variants": [
+        "Chiến thuật chọn mẫu lý thuyết",
+        "Kỹ thuật Negative Case Sampling"
       ],
-      "core_definition": "Chọn các trường hợp tiếp theo dựa trên khoảng trống lý thuyết đang nổi lên.",
-      "seminal_citation": "Glaser & Strauss (1967)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phương pháp Định tính",
+        "Lý thuyết Nền (Grounded Theory)",
+        "Kỹ thuật Kiểm chứng Độ tin cậy"
+      ],
+      "core_definition": "Các thủ thuật tác nghiệp cụ thể để triển khai chọn mẫu lý thuyết trên thực địa, đặc biệt là chiến lược Chủ động Tìm kiếm Trường hợp Phủ định (Negative / Deviant Case Sampling). Sau khi một mô hình lý thuyết sơ bộ được hình thành, nhà nghiên cứu chủ động tìm kiếm những đối tượng hoặc tình huống không khớp với lý thuyết hiện tại, nhằm thử thách giới hạn, tìm ra các điều kiện biên (boundary conditions) và tinh chỉnh lý thuyết trở nên toàn diện và vững chắc hơn.",
+      "seminal_citation": "Corbin, J., & Strauss, A. (2015). Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory (4th ed.). SAGE Publications; Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic Inquiry. SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Theoretical Sampling Strategy according to Glaser & Strauss (1967).",
       "domain_tags_en": [
         "Grounded Theory"
-      ]
+      ],
+      "benchmarks": "Hồ sơ kiểm toán chọn mẫu: Bắt buộc phải lưu giữ bảng nhật ký chọn mẫu lý thuyết (Theoretical Sampling Log) ghi rõ: Lý thuyết đang thiếu chiều kích gì? -> Quyết định phỏng vấn ai tiếp theo để kiểm tra? -> Kết quả phát hiện mới là gì?",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Phớt lờ hoặc loại bỏ các ca mâu thuẫn trái chiều (confirmation bias); không chứng minh được bước chuyển tiếp logic giữa các đợt thu thập dữ liệu tiếp theo.",
+      "apa_reference": "Corbin, J., & Strauss, A. (2015). Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory (4th ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "theoretical-saturation",
@@ -55904,21 +56069,30 @@
     },
     {
       "id": "theoretical-saturation-assessment",
-      "term": "Theoretical Saturation Assessment",
-      "vietnamese": "Đánh giá Bão hòa Lý thuyết",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Grounded Theory"
+      "term": "Theoretical Saturation Assessment (Systematic Auditing & Metrics)",
+      "vietnamese": "Đánh giá bão hòa lý thuyết (Kiểm toán Hệ thống và Các thước đo Bão hòa)",
+      "vietnamese_variants": [
+        "Thẩm định điểm bão hòa lý thuyết",
+        "Đo lường bão hòa dữ liệu định tính"
       ],
-      "core_definition": "Thời điểm không có thuộc tính hoặc khía cạnh mới nào xuất hiện thêm trong dữ liệu.",
-      "seminal_citation": "Saunders et al. (2018)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phương pháp Định tính",
+        "Thẩm định Chất lượng Nghiên cứu",
+        "Lý thuyết Nền (Grounded Theory)"
+      ],
+      "core_definition": "Quy trình kiểm toán phương pháp luận nghiêm ngặt để xác minh và chứng minh bằng chứng thực nghiệm rằng nghiên cứu định tính đã thực sự đạt được sự bão hòa lý thuyết chứ không phải là một tuyên bố cảm tính. Bao gồm việc đánh giá 3 cấp độ bão hòa theo Hennink & Kaiser (2022): (1) Bão hòa Mã (Code Saturation - không còn mã mới xuất hiện), (2) Bão hòa Ý nghĩa (Meaning Saturation - hiểu sâu sắc mọi khía cạnh tinh tế và sắc thái của từng mã), và (3) Bão hòa Lý thuyết (Theoretical Saturation - mối quan hệ giữa các cấu trúc lý thuyết đã hoàn chỉnh).",
+      "seminal_citation": "Hennink, M., & Kaiser, B. N. (2022). Sample sizes for saturation in qualitative research: A systematic review of empirical tests. Social Science & Medicine, 292, 114523. https://doi.org/10.1016/j.socscimed.2021.114523; Guest, G., Namey, E., & Chen, M. (2020). A simple method to assess and report thematic saturation in qualitative research. PLoS ONE, 15(5), e0232076.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Theoretical Saturation Assessment according to Saunders et al. (2018).",
       "domain_tags_en": [
         "Grounded Theory"
-      ]
+      ],
+      "benchmarks": "Công cụ minh chứng chuẩn mực: Bắt buộc trình bày: (1) Bảng tích lũy mã mới theo từng cuộc phỏng vấn (Cumulative code saturation curve); (2) Tỷ lệ bão hòa mã (ví dụ: đạt 92% mã mới trong 10 cuộc phỏng vấn đầu tiên); và (3) Ma trận phạm trù lý thuyết đầy đủ.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Chỉ tuyên bố một câu suông 'Dữ liệu đã đạt bão hòa lý thuyết sau 12 cuộc phỏng vấn' mà không có bảng số liệu hay biểu đồ chứng minh quá trình bão hòa.",
+      "apa_reference": "Hennink, M., & Kaiser, B. N. (2022). Sample sizes for saturation in qualitative research: A systematic review of empirical tests. Social Science & Medicine, 292, 114523.",
+      "is_flagship": true
     },
     {
       "id": "theoretical-sensitivity",
@@ -55963,75 +56137,111 @@
     },
     {
       "id": "theoretical-standpoint",
-      "term": "Theoretical standpoint",
-      "vietnamese": "Lập trường lý thuyết — Góc nhìn lý thuyết định hướng cách nhà nghiên cứu định vị vấn đề trong nghiên cứu định tính.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Theoretical Standpoint (Epistemological Positionality of Researcher)",
+      "vietnamese": "Lập trường lý thuyết và Vị thế nhận thức luận của nhà nghiên cứu",
+      "vietnamese_variants": [
+        "Vị thế lý thuyết của tác giả",
+        "Lập trường phản tư của người nghiên cứu"
       ],
-      "core_definition": "Lập trường lý thuyết — Góc nhìn lý thuyết định hướng cách nhà nghiên cứu định vị vấn đề trong nghiên cứu định tính.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Nhận thức luận Nghiên cứu",
+        "Tính phản tư (Reflexivity)",
+        "Phương pháp Định tính"
+      ],
+      "core_definition": "Tập hợp các giả định nhận thức luận, bản thể luận và lăng kính lý thuyết mà nhà nghiên cứu mang theo khi bước vào bối cảnh nghiên cứu. Trong các nghiên cứu định tính và phê phán chuẩn mực, tác giả bắt buộc phải trình bày một 'Tuyên bố Vị thế' (Positionality Statement) công khai rõ ràng: xuất thân văn hóa, giới tính, vị thế quyền lực, trải nghiệm cá nhân và định kiến lý thuyết của mình có thể ảnh hưởng như thế nào đến cách tiếp cận đối tượng, thu thập dữ liệu và diễn giải kết quả.",
+      "seminal_citation": "Holmes, A. G. D. (2020). Researcher positionality: A consideration of its influence and place in qualitative research. International Journal of Education, 8(2), 1–10; Bourke, B. (2014). Positionality: Reflecting on the research process. The Qualitative Report, 19(33), 1–9.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Theoretical standpoint according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "benchmarks": "Thực hành tính phản tư (Reflexivity): Nhà nghiên cứu không cố giả vờ mình là một cỗ máy trung tính vô hình; thay vào đó, họ biến chính mối quan hệ giữa chủ thể và khách thể nghiên cứu thành một nguồn dữ liệu có giá trị phân tích khoa học.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Viết tuyên bố vị thế như một bản tự sự đời tư sướt mướt không có liên hệ gì tới câu hỏi nghiên cứu; hoặc ngược lại, hoàn toàn phớt lờ vị thế của bản thân khiến kết quả bị thiên lệch vô thức mà không biết.",
+      "apa_reference": "Holmes, A. G. D. (2020). Researcher positionality: A consideration of its influence and place in qualitative research. International Journal of Education, 8(2), 1–10.",
+      "is_flagship": true
     },
     {
       "id": "theoretical-underpinning",
-      "term": "Theoretical Underpinning",
-      "vietnamese": "Cơ sở Lý thuyết Chống lưng",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Rigour"
+      "term": "Theoretical Underpinning (Theoretical Foundation of Research)",
+      "vietnamese": "Nền tảng Lý thuyết dẫn dắt nghiên cứu (Theoretical Foundation)",
+      "vietnamese_variants": [
+        "Cơ sở lý thuyết nền tảng",
+        "Khung lý thuyết bảo chứng mô hình"
       ],
-      "core_definition": "Các học thuyết khoa học cốt lõi làm bệ đỡ cho mô hình và giả thuyết nghiên cứu.",
-      "seminal_citation": "Whetten (1989)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Thiết kế Nghiên cứu",
+        "Phát triển Khung Khái niệm",
+        "Viết Học thuật Chuẩn Q1"
+      ],
+      "core_definition": "Lý thuyết khoa học lớn (Grand theory hoặc Mid-range theory - ví dụ: Resource-Based View, Social Exchange Theory, Theory of Planned Behavior) được lựa chọn làm 'hòn đá tảng' bảo chứng và dẫn dắt toàn bộ cấu trúc lập luận của công trình nghiên cứu. Nền tảng lý thuyết giải thích cơ chế sâu xa (The 'Why') tại sao biến X lại tác động lên biến Y, cung cấp logic biện minh cho các giả thuyết nghiên cứu và định hướng lựa chọn phương pháp đo lường.",
+      "seminal_citation": "Whetten, D. A. (1989). What constitutes a theoretical contribution? Academy of Management Review, 14(4), 490–495. https://doi.org/10.5465/amr.1989.4308371; Sutton, R. I., & Staw, B. M. (1995). What theory is not. Administrative Science Quarterly, 40(3), 371–384.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Theoretical Underpinning according to Whetten (1989).",
       "domain_tags_en": [
         "Research Rigour"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn đánh giá phản biện Q1 (Whetten, 1989): Một nghiên cứu có nền tảng lý thuyết vững chắc phải trả lời được 4 câu hỏi: What (các biến số nào được chọn?), How (chúng liên kết với nhau ra sao?), Why (logic lý thuyết nền nào bảo chứng cho mối liên kết đó?), và Who/Where/When (điều kiện biên của lý thuyết).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Lỗi 'Gắn mác lý thuyết hời hợt' (Theoretical window-dressing) — nhắc tên một lý thuyết nổi tiếng ở phần Mở đầu nhưng suốt phần Xây dựng giả thuyết và Thảo luận lại không hề vận dụng logic của lý thuyết đó; chắp vá nhiều lý thuyết có bản thể luận mâu thuẫn nhau mà không có sự dung hòa.",
+      "apa_reference": "Whetten, D. A. (1989). What constitutes a theoretical contribution? Academy of Management Review, 14(4), 490–495.",
+      "is_flagship": true
     },
     {
       "id": "theory-in-quantitative-research",
-      "term": "Theory in quantitative research",
-      "vietnamese": "Lý thuyết trong định lượng — Tập hợp các cấu trúc khái niệm, định nghĩa và mệnh đề có mối liên hệ với nhau nhằm dự đoán và giải thích hiện tượng.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Role of Theory in Quantitative Research (Deductive Paradigm)",
+      "vietnamese": "Vai trò của Lý thuyết trong Nghiên cứu Định lượng (Hệ hình Diễn dịch)",
+      "vietnamese_variants": [
+        "Vận dụng lý thuyết trong nghiên cứu diễn dịch định lượng",
+        "Thao tác hóa lý thuyết thành biến số"
       ],
-      "core_definition": "Lý thuyết trong định lượng — Tập hợp các cấu trúc khái niệm, định nghĩa và mệnh đề có mối liên hệ với nhau nhằm dự đoán và giải thích hiện tượng.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Phương pháp Định lượng",
+        "Hệ hình Diễn dịch (Deductive)",
+        "Thiết kế Nghiên cứu"
+      ],
+      "core_definition": "Cách thức lý thuyết vận hành trong hệ hình nghiên cứu định lượng thực chứng (Positivist / Post-positivist paradigm). Khác với nghiên cứu định tính (nơi lý thuyết là kết quả đầu ra), trong nghiên cứu định lượng, lý thuyết đứng ở vị trí khởi đầu định hình (a priori framework): Lý thuyết trừu tượng -> Diễn dịch thành các Giả thuyết cụ thể có thể kiểm chứng (Hypotheses) -> Thao tác hóa thành các Biến số và Thang đo thực nghiệm (Operationalization) -> Thu thập số liệu -> Kiểm định thống kê để Khẳng định hoặc Bác bỏ giả thuyết.",
+      "seminal_citation": "Popper, K. (1959). The Logic of Scientific Discovery. Hutchinson; Creswell, J. W., & Creswell, J. D. (2018). Research Design: Qualitative, Quantitative, and Mixed Methods Approaches (5th ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Theory in quantitative research according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "benchmarks": "Tính khép kín logic: Toàn bộ quá trình kiểm định phải trung thành với các dự báo của lý thuyết ban đầu. Mọi sự mở rộng biến số mới đều phải được biện minh từ khoảng trống của lý thuyết nền.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Thực hành HARKing (Hypothesizing After the Results are Known - lén lút sửa đổi giả thuyết sau khi chạy số liệu thấy không khớp để tạo ra một câu chuyện thành công giả tạo); chọn các chỉ báo đo lường không phản ánh đúng cấu trúc khái niệm của lý thuyết (Construct invalidity).",
+      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2018). Research Design: Qualitative, Quantitative, and Mixed Methods Approaches (5th ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "theory-of-planned-behavior-tpb",
-      "term": "Theory of Planned Behavior (TPB)",
-      "vietnamese": "Lý thuyết Hành vi Có kế hoạch",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Social Psychology"
+      "term": "Theory of Planned Behavior (TPB - Icek Ajzen)",
+      "vietnamese": "Lý thuyết Hành vi Có kế hoạch (Lý thuyết TPB)",
+      "vietnamese_variants": [
+        "Thuyết hành vi dự định Ajzen",
+        "Mô hình TPB trong dự báo hành vi"
       ],
-      "core_definition": "Dự báo ý định hành vi qua Thái độ, Chuẩn chủ quan và Nhận thức Kiểm soát Hành vi PBC.",
-      "seminal_citation": "Ajzen (1991)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Tâm lý học Hành vi & Xã hội",
+        "Hành vi Người tiêu dùng",
+        "Khung Khái niệm Lý thuyết"
+      ],
+      "core_definition": "Một trong những khung lý thuyết tâm lý học hành vi có sức ảnh hưởng lớn nhất thế giới do Icek Ajzen công bố năm 1991 (mở rộng từ Thuyết Hành động Hợp lý TRA bằng cách bổ sung yếu tố kiểm soát). TPB khẳng định rằng tiền đề trực tiếp nhất quyết định Hành vi thực tế (Actual Behavior) của con người là Ý định Hành vi (Behavioral Intention). Ý định này lại được định hình đồng thời bởi 3 thành tố nhận thức: (1) Thái độ đối với hành vi (Attitude toward the behavior); (2) Chuẩn mực chủ quan (Subjective Norm - áp lực xã hội từ những người quan trọng xung quanh); và (3) Nhận thức về Kiểm soát Hành vi (Perceived Behavioral Control - PBC: mức độ tự tin về nguồn lực và khả năng thực hiện hành vi).",
+      "seminal_citation": "Ajzen, I. (1991). The theory of planned behavior. Organizational Behavior and Human Decision Processes, 50(2), 179–211. https://doi.org/10.1016/0749-5978(91)90020-T; Ajzen, I. (2011). The theory of planned behaviour: Reactions and reflections. Psychology & Health, 26(9), 1113–1127.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Theory of Planned Behavior (TPB) according to Ajzen (1991).",
       "domain_tags_en": [
         "Social Psychology"
-      ]
+      ],
+      "benchmarks": "Đặc tính mô hình hóa SEM: PBC vừa tác động gián tiếp lên Hành vi thông qua Ý định, vừa có thể tác động trực tiếp lên Hành vi thực tế khi nhận thức kiểm soát phản ánh chính xác khả năng kiểm soát thực tế (Actual Behavioral Control). Thang đo chuẩn mực sử dụng thang đo Likert 7 điểm theo hướng dẫn chính thức của Ajzen.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Bỏ qua Khoảng cách giữa Ý định và Hành vi (Intention-Behavior Gap - con người có ý định làm điều tốt nhưng thực tế lại không làm do thói quen hoặc cám dỗ); chỉ đo lường ý định tự khai báo rồi tuyên bố đã giải thích được hành vi thực tế.",
+      "apa_reference": "Ajzen, I. (1991). The theory of planned behavior. Organizational Behavior and Human Decision Processes, 50(2), 179–211.",
+      "is_flagship": true
     },
     {
       "id": "theory-triangulation-tam-giac-dac-ly-thuyet",
@@ -56062,81 +56272,120 @@
     },
     {
       "id": "theory-laden-observation",
-      "term": "Theory-laden observation",
-      "vietnamese": "Quan sát tải lý thuyết",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Theory-Ladenness of Observation (Hanson, Popper, Kuhn)",
+      "vietnamese": "Tính Thấm đẫm Lý thuyết của Quan sát (Luận điểm Hanson, Popper, Kuhn)",
+      "vietnamese_variants": [
+        "Quan sát thấm đẫm lý thuyết",
+        "Nhận thức luận về tính không trung lập của quan sát"
       ],
-      "core_definition": "Nhận thức luận: Dữ liệu thu thập luôn bị chi phối bởi lăng kính lý thuyết.",
-      "seminal_citation": "Hunt (2015)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Triết học Khoa học",
+        "Nhận thức luận",
+        "Phương pháp Luận Nghiên cứu"
+      ],
+      "core_definition": "Luận điểm triết học khoa học mang tính bước ngoặt do Norwood Russell Hanson đề xuất năm 1958 và được Karl Popper, Thomas Kuhn ủng hộ. Luận điểm bác bỏ hoàn toàn quan niệm ngây thơ của chủ nghĩa thực chứng logic cho rằng con người có thể thực hiện những quan sát thực nghiệm hoàn toàn thuần khiết, khách quan và trung tính. Mọi quan sát khoa học luôn 'thấm đẫm lý thuyết' (Theory-laden): những gì một nhà khoa học nhìn thấy, cách họ đo lường và diễn giải dữ liệu luôn bị lọc qua lăng kính của các lý thuyết, ngôn ngữ, niềm tin tiên nghiệm và hệ hình (paradigm) mà họ đang theo đuổi.",
+      "seminal_citation": "Hanson, N. R. (1958). Patterns of Discovery: An Inquiry into the Conceptual Foundations of Science. Cambridge University Press; Kuhn, T. S. (1962). The Structure of Scientific Revolutions. University of Chicago Press.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Theory-laden observation according to Hunt (2015).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Hệ quả phương pháp luận: Dữ liệu không bao giờ tự nói lên tiếng nói của nó (Data never speak for themselves); không có sự phân biệt rạch ròi tuyệt đối giữa 'ngôn ngữ quan sát thuần túy' và 'ngôn ngữ lý thuyết'. Nhà nghiên cứu bắt buộc phải nhận thức rõ các giả định lý thuyết ngầm ẩn đằng sau các công cụ đo lường của mình.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Tuyên bố rằng kết quả nghiên cứu của mình là 'khách quan 100% không chịu bất kỳ ảnh hưởng nào của lý thuyết'; ngụy biện rằng vì quan sát thấm đẫm lý thuyết nên khoa học rơi vào chủ nghĩa hoài nghi hoàn toàn (các thí nghiệm kiểm chứng chéo vẫn giúp phát hiện những bất thường chống lại lý thuyết).",
+      "apa_reference": "Hanson, N. R. (1958). Patterns of Discovery: An Inquiry into the Conceptual Foundations of Science. Cambridge University Press.",
+      "is_flagship": true
     },
     {
       "id": "thick-description-2589",
-      "term": "Thick Description",
-      "vietnamese": "Mô tả dày đặc",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Ethnography"
+      "term": "Thick Description (Clifford Geertz & Gilbert Ryle)",
+      "vietnamese": "Mô tả Dày (Khái niệm Mô tả Diễn giải Văn hóa của Clifford Geertz)",
+      "vietnamese_variants": [
+        "Phương pháp mô tả sâu bối cảnh văn hóa",
+        "Thick Description trong dân tộc học"
       ],
-      "core_definition": "mô tả bối cảnh văn hóa chi tiết biến hành vi thành hành động có ý nghĩa.",
-      "seminal_citation": "Geertz (1973)",
-      "tier": "curated",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Dân tộc học (Ethnography)",
+        "Phương pháp Định tính Diễn giải",
+        "Nhân học & Xã hội học"
+      ],
+      "core_definition": "Khái niệm phương pháp luận nền tảng trong nghiên cứu định tính và nhân học diễn giải, được Clifford Geertz phát triển năm 1973 (dựa trên ý tưởng ban đầu của triết gia Gilbert Ryle). 'Mô tả dày' không chỉ đơn thuần ghi chép lại hành vi vật lý bề mặt (Mô tả mỏng - Thin Description: ví dụ miêu tả mí mắt co giật), mà giải thích sâu sắc toàn bộ bối cảnh văn hóa, ý nghĩa biểu trưng, mạng lưới ý định và cảm xúc xã hội đằng sau hành vi đó (đó là cái nháy mắt giao ước bí mật, một cử chỉ tán tỉnh hay một tật máy cơ).",
+      "seminal_citation": "Geertz, C. (1973). The Interpretation of Cultures: Selected Essays. Basic Books; Ryle, G. (1968). The thinking of thoughts: What is 'Le Penseur' doing? University Lectures, University of Saskatchewan.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2590",
       "core_definition_en": "Academic definition of Thick Description according to Geertz (1973).",
       "domain_tags_en": [
         "Ethnography"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn đánh giá tính chuyển giao (Transferability): Trong tiêu chuẩn chất lượng của Lincoln & Guba (1985), Mô tả Dày là công cụ DUY NHẤT giúp độc giả có đủ thông tin chi tiết về bối cảnh văn hóa - xã hội để tự đánh giá xem các phát hiện của nghiên cứu có thể chuyển giao sang bối cảnh khác của họ hay không.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Nhầm lẫn mô tả dày với việc viết dài dòng lan man kể lể chi tiết vụn vặt vô nghĩa mà không có sự giải mã ý nghĩa văn hóa và phân tích lý thuyết sâu sắc bên trong; thiếu tiếng nói và trích dẫn nguyên văn của người bản địa.",
+      "apa_reference": "Geertz, C. (1973). The Interpretation of Cultures: Selected Essays. Basic Books.",
+      "is_flagship": true
     },
     {
       "id": "thiet-ke-chuoi-thoi-gian-gian-doan-interrupted-time-series-design---its",
-      "term": "Interrupted Time-Series Design (ITS)",
-      "vietnamese": "Thiết kế Chuỗi Thời gian Gián đoạn",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Inference",
-        "Quasi-Experiments"
+      "term": "Interrupted Time-Series Design",
+      "vietnamese": "Thiết kế chuỗi thời gian gián đoạn",
+      "vietnamese_variants": [
+        "Nghiên cứu chuỗi thời gian đứt đoạn",
+        "Thiết kế can thiệp chuỗi thời gian"
       ],
-      "core_definition": "Đánh giá tác động can thiệp qua các chuỗi quan sát liên tục trước và sau điểm can thiệp, kiểm soát xu thế lịch sử và tính tự tương quan (autocorrelation).",
-      "seminal_citation": "Shadish, Cook & Campbell (2002)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Econometrics",
+        "Epidemiology",
+        "Public Policy",
+        "Impact Evaluation"
+      ],
+      "core_definition": "A quasi-experimental research design that evaluates the causal impact of an intervention, policy change, or exogenous event by analyzing longitudinal outcome measurements taken at multiple equally spaced time points before and after the intervention point.",
+      "seminal_citation": "Campbell & Stanley (1963); Shadish, Cook, & Campbell (2002)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Thiết kế Chuỗi Thời gian Gián đoạn (Interrupted Time-Series Design - ITS) according to Shadish, Cook & Campbell (2002).",
       "domain_tags_en": [
         "Causal Inference",
         "Quasi-Experiments"
-      ]
+      ],
+      "category": "Causal Inference & Quasi-Experimental Designs",
+      "is_flagship": true,
+      "operational_mechanism": "Researchers collect a continuous longitudinal series of observations (Y_t) across time. Using segmented linear regression: Y_t = β_0 + β_1*T_t + β_2*D_t + β_3*P_t + ε_t, where T_t represents continuous time from baseline, D_t is a dummy variable indicating pre- vs post-intervention period (capturing immediate level change or step change β_2), and P_t is continuous time elapsed since the intervention (capturing change in trajectory or slope β_3). Auto-regressive errors (ARIMA or Newey-West standard errors) are routinely applied to correct for autocorrelation and seasonal cycles.",
+      "benchmarks": "Requires at least 8 to 12 observation points before and 8 to 12 points after the intervention (minimum total 20–24 points; ideally >50 to model ARIMA noise processes adequately). Durbin-Watson statistic must be checked near 2.0 or formal Ljung-Box test (p > 0.05) to ensure zero residual autocorrelation.",
+      "pitfalls": "Failing to control for underlying secular historical trends leading to confounding attribution; history threat (co-occurring interventions coinciding with the intervention date); unmodelled autocorrelation that severely inflates Type I error rates.",
+      "apa_reference": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin."
     },
     {
       "id": "thiet-ke-hoi-quy-gian-doan-regression-discontinuity-design---rdd",
-      "term": "Regression Discontinuity Design (RDD)",
-      "vietnamese": "Thiết kế Hồi quy Gián đoạn",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Inference",
-        "Quasi-Experiments"
+      "term": "Regression Discontinuity Design",
+      "vietnamese": "Thiết kế hồi quy gián đoạn",
+      "vietnamese_variants": [
+        "Thiết kế điểm gãy hồi quy",
+        "Phương pháp hồi quy đứt đoạn"
       ],
-      "core_definition": "Phương pháp bán thực nghiệm mạnh nhất có khả năng tiệm cận mức độ tin cậy của thử nghiệm ngẫu nhiên (Randomized Experiment) khi phân bổ đối tượng dựa trên điểm cắt (Cutoff score).",
-      "seminal_citation": "Shadish, Cook & Campbell (2002)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Applied Econometrics",
+        "Labor Economics",
+        "Policy Evaluation",
+        "Quantitative Sociology"
+      ],
+      "core_definition": "A quasi-experimental impact evaluation design that estimates local average treatment effects (LATE) by exploiting an exogenous cutoff threshold on a continuous assignment variable (running or forcing variable) that strictly or probabilistically governs treatment assignment.",
+      "seminal_citation": "Thistlethwaite & Campbell (1960); Hahn, Todd, & van der Klaauw (2001); Imbens & Lemieux (2008)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Thiết kế Hồi quy Gián đoạn (Regression Discontinuity Design - RDD) according to Shadish, Cook & Campbell (2002).",
       "domain_tags_en": [
         "Causal Inference",
         "Quasi-Experiments"
-      ]
+      ],
+      "category": "Causal Inference & Quasi-Experimental Designs",
+      "is_flagship": true,
+      "operational_mechanism": "Entities falling just above or below a known cutoff (c) are assumed to be virtually identical in potential outcomes conditional on smooth unobserved characteristics. In Sharp RDD, treatment assignment D = 1[X >= c] is deterministic. In Fuzzy RDD, the cutoff induces a discontinuity in the probability of treatment, estimated via two-stage instrumental variables (2SLS). Estimation utilizes non-parametric local polynomial regression (typically local linear) with optimal bandwidth selection (Imbens-Kalyanaraman or Calonico-Cattaneo-Titiunik robust bias-corrected inference).",
+      "benchmarks": "McCrary density test of the running variable must show no manipulation/sorting discontinuity at cutoff (p > 0.05). Covariate balance tests must demonstrate continuity across the threshold (p > 0.05). Optimal bandwidths (CCT bandwidth) with triangular kernel weighting must be reported alongside sensitivity checks across bandwidth multiples (0.5x, 1x, 2x).",
+      "pitfalls": "Strategic manipulation or self-selection around the cutoff threshold; mis-specifying polynomial functional forms (high-order polynomials inducing boundary bias); claiming external validity beyond the immediate local neighborhood of the threshold.",
+      "apa_reference": "Imbens, G. W., & Lemieux, T. (2008). Regression discontinuity designs: A guide to practice. Journal of Econometrics, 142(2), 615–635. https://doi.org/10.1016/j.jeconom.2007.05.001"
     },
     {
       "id": "thiet-ke-thuc-nghiem-kiem-soat-nguy-co-hop-le",
@@ -56226,57 +56475,93 @@
     },
     {
       "id": "think-aloud-protocol-ericsson-simon",
-      "term": "Think-Aloud Protocol (Ericsson & Simon)",
-      "vietnamese": "Giao thức Nói to Suy nghĩ",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Cognitive Psychology"
+      "term": "Think-Aloud Protocol",
+      "vietnamese": "Giao thức suy nghĩ thành tiếng",
+      "vietnamese_variants": [
+        "Phương pháp độc thoại tư duy",
+        "Kỹ thuật verbal protocol"
       ],
-      "core_definition": "Người tham gia phát âm thành lời toàn bộ dòng suy nghĩ trong khi thực hiện một tác vụ.",
-      "seminal_citation": "Ericsson & Simon (1984/1993)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Cognitive Psychology",
+        "HCI",
+        "Behavioral Economics",
+        "User Experience Research"
+      ],
+      "core_definition": "A qualitative and cognitive data collection method where participants are instructed to verbalize their unfiltered stream of conscious thoughts, cognitive steps, and decision-making heuristics while performing a specific problem-solving task.",
+      "seminal_citation": "Ericsson & Simon (1980, 1993)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2595",
       "core_definition_en": "Academic definition of Think-Aloud Protocol (Ericsson & Simon) according to Ericsson & Simon (1984/1993).",
       "domain_tags_en": [
         "Cognitive Psychology"
-      ]
+      ],
+      "category": "Qualitative Data Collection & Process Tracing",
+      "is_flagship": true,
+      "operational_mechanism": "Participants are given explicit practice tasks to articulate their immediate inner working-memory contents without explaining, interpreting, or rationalizing why they take specific actions (avoiding Level 3 retrospective introspection). The session is audio/video recorded and transcribed into segmented verbal protocols. Transcripts are systematically segmented into cognitive operators, coded according to a formal problem-space ontology, and analyzed for procedural bottlenecks, cognitive load distribution, and heuristic shifts.",
+      "benchmarks": "Inter-rater reliability of protocol coding (Cohen's kappa or Krippendorff's alpha >= 0.80). Protocol prompts must remain strictly neutral (e.g., 'keep talking') without eliciting meta-cognitive rationalization.",
+      "pitfalls": "Reactivity bias, where the verbalization requirement alters cognitive processing speed or task strategy; confounding concurrent think-aloud with retrospective justification (asking participants 'why' they did something during the task).",
+      "apa_reference": "Ericsson, K. A., & Simon, H. A. (1993). Protocol analysis: Verbal reports as data (Rev. ed.). MIT Press."
     },
     {
       "id": "think-check-submit-initiative",
       "term": "Think. Check. Submit. Initiative",
-      "vietnamese": "Chiến dịch Think-Check-Submit",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Academic Publishing"
+      "vietnamese": "Sáng kiến Think. Check. Submit.",
+      "vietnamese_variants": [
+        "Quy trình kiểm định tạp chí uy tín",
+        "Bộ tiêu chí sàng lọc tạp chí săn mồi"
       ],
-      "core_definition": "Bộ hướng dẫn kiểm tra quốc tế giúp nhà nghiên cứu nhận diện và phòng tránh các tạp chí săn mồi.",
-      "seminal_citation": "ALPSP & DOAJ (2015)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Scholarly Publishing",
+        "Research Integrity",
+        "Scientometrics",
+        "Doctoral Training"
+      ],
+      "core_definition": "A cross-industry global scholarly publishing initiative providing a structured checklist and vetting framework to guide researchers in identifying legitimate, reputable academic journals and avoiding predatory or deceptive publishers.",
+      "seminal_citation": "Think. Check. Submit. Committee (2015)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Think. Check. Submit. Initiative according to ALPSP & DOAJ (2015).",
       "domain_tags_en": [
         "Academic Publishing"
-      ]
+      ],
+      "category": "Research Ethics & Academic Publishing",
+      "is_flagship": true,
+      "operational_mechanism": "Researchers follow a sequential 3-phase due-diligence protocol: (1) 'Think'—evaluate whether the journal is known, read, and cited by peers in the specific field; (2) 'Check'—verify editorial board composition with verified academic affiliations, transparent peer-review workflows, indexing in recognized index databases (Web of Science, Scopus, DOAJ), clear APC fees, and physical contact information; (3) 'Submit'—proceed with submission only when all rigorous legitimacy checks are validated.",
+      "benchmarks": "Target journal must possess verifiable indexing in Master Journal List (Clarivate WoS Core Collection) or Scopus, DOAJ seal where applicable, transparent peer-review guidelines, and active COPE (Committee on Publication Ethics) membership.",
+      "pitfalls": "Relying purely on fabricated impact factors (e.g., Global Impact Factor, Universal Impact Factor) advertised on predatory journal landing pages; confusing hijacked journals (cloned URLs of legitimate journals) with genuine publication venues.",
+      "apa_reference": "Think. Check. Submit. (2015). Think. Check. Submit.: Choose the right journal for your research. https://thinkchecksubmit.org/"
     },
     {
       "id": "thong-dien-hoc-khach-quan-objective-hermeneutics-ulrich-oevermann",
-      "term": "Objective Hermeneutics (Ulrich Oevermann)",
-      "vietnamese": "Thông diễn học Khách quan theo Ulrich Oevermann",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Methodology"
+      "term": "Objective Hermeneutics",
+      "vietnamese": "Thông diễn học khách quan",
+      "vietnamese_variants": [
+        "Thông diễn học cấu trúc",
+        "Phương pháp giải thích khách quan Oevermann"
       ],
-      "core_definition": "Phương pháp giải mã cấu trúc ý nghĩa ngầm ẩn (latent structures of meaning) bên dưới bề mặt văn bản mà không bị phụ thuộc vào ý định chủ quan của tác giả.",
-      "seminal_citation": "Flick et al. (2004)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Sociology",
+        "Hermeneutics",
+        "Micro-sociology",
+        "Textual Analysis"
+      ],
+      "core_definition": "A methodological approach to textual and social analysis founded by Ulrich Oevermann that reconstructs the objective latent meaning structures and rule-governed generative grammars embedded in social action and expressions, independent of the subjective intentions of actors.",
+      "seminal_citation": "Oevermann et al. (1979); Oevermann (2000)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Tên mục không phải thuật ngữ",
       "core_definition_en": "Academic definition of Thông diễn học Khách quan (Objective Hermeneutics / Ulrich Oevermann) according to Flick et al. (2004).",
       "domain_tags_en": [
         "Qualitative Methodology"
-      ]
+      ],
+      "category": "Qualitative & Interpretive Methodologies",
+      "is_flagship": true,
+      "operational_mechanism": "Analysis proceeds through rigorous sequential analysis of natural textual protocols (transcripts, interaction logs). Researchers dissect the material utterance-by-utterance under 8 procedural principles: context-freedom, literal meaning exploration, intentionality suspension, thought experiments (generating hypothetical alternatives), sequence preservation, total consistency, communicative embedding, and validity trial. It isolates the generative structural selection rule that determined why this specific action was actualized rather than potential alternatives.",
+      "benchmarks": "Requires collaborative interpretation group sessions (Interpretationsteams) to prevent subjective bias; complete explication of hypothetical alternative choices at each sequential branch before analyzing next utterances.",
+      "pitfalls": "Projecting subjective psychological motives onto social actors rather than deciphering objective relational structures; violating sequentiality by using subsequent text knowledge to interpret early conversational turns.",
+      "apa_reference": "Oevermann, U., Allert, T., Konau, E., & Krambeck, J. (1979). Die Methodologie einer 'objektiven Hermeneutik' und ihre allgemeine forschungslogische Bedeutung in den Sozialwissenschaften. In H.-G. Soeffner (Ed.), Interpretative Verfahren in den Sozial- und Textwissenschaften (pp. 352–434). J.B. Metzler."
     },
     {
       "id": "threats-to-internal-validity",
@@ -56394,41 +56679,62 @@
     {
       "id": "three-stage-least-squares",
       "term": "Three-Stage Least Squares",
-      "vietnamese": "Phương pháp Bình phương Bé nhất Ba giai đoạn (Zellner & Theil, 1962)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Econometrics"
+      "vietnamese": "Bình phương tối thiểu ba giai đoạn",
+      "vietnamese_variants": [
+        "Phương pháp 3SLS",
+        "Ước lượng hồi quy hệ phương trình ba bước"
       ],
-      "core_definition": "Ước lượng hệ phương trình đồng thời kết hợp 2SLS để giải quyết nội sinh và SUR để giải quyết tương quan giữa các sai số của các phương trình khác nhau. Ngưỡng thực nghiệm tham chiếu: Hiệu quả hơn 2SLS khi các phần dư có tương quan chéo đáng kể và toàn bộ hệ phương trình được định dạng chuẩn xác.",
-      "seminal_citation": "Hiệu quả hơn 2SLS khi các phần dư có tương quan chéo đáng kể và toàn bộ hệ phương trình được định dạng chuẩn xác.",
-      "tier": "acronym",
+      "domain_tags": [
+        "Econometrics",
+        "Simultaneous Equation Models",
+        "Macroeconomics",
+        "Quantitative Finance"
+      ],
+      "core_definition": "A systems estimation technique for simultaneous equation econometric models that combines Two-Stage Least Squares (2SLS) with Seemingly Unrelated Regressions (SUR) to produce asymptotically efficient, consistent estimates while accounting for cross-equation error covariance.",
+      "seminal_citation": "Zellner & Theil (1962)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of Three-Stage Least Squares according to Hiệu quả hơn 2SLS khi các phần dư có tương quan chéo đáng kể và toàn bộ hệ phương trình được định dạng chuẩn xác..",
       "domain_tags_en": [
         "Econometrics"
       ],
-      "benchmarks": "Hiệu quả hơn 2SLS khi các phần dư có tương quan chéo đáng kể và toàn bộ hệ phương trình được định dạng chuẩn xác."
+      "benchmarks": "Order condition and rank condition for identification must be satisfied for each equation in the structural system. Breusch-Pagan Lagrange Multiplier test of error independence across equations (p < 0.05 indicates cross-equation error correlation, justifying 3SLS over 2SLS).",
+      "category": "Econometric Modeling & Time Series",
+      "is_flagship": true,
+      "operational_mechanism": "3SLS operates in three distinct sequential phases: Stage 1 develops instrumented values for all endogenous regressors by regressing them on all predetermined/exogenous system instruments via OLS. Stage 2 estimates 2SLS on each structural equation independently to calculate consistent structural disturbance residuals. Stage 3 computes the full cross-equation asymptotic covariance matrix of residuals (Sigma) and performs a Generalized Least Squares (GLS) estimation over the stacked simultaneous system.",
+      "pitfalls": "System contamination vulnerability: misspecification in one equation contaminates the parameter estimates of all other equations in the system; in the presence of weak instruments, 3SLS estimator variance and bias degrade severely compared to limited-information estimators (2SLS, LIML).",
+      "apa_reference": "Zellner, A., & Theil, H. (1962). Three-stage least-squares: Simultaneous estimation of simultaneous equations. Econometrica, 30(1), 54–78. https://doi.org/10.2307/1911287"
     },
     {
       "id": "three-stage-least-squares-3sls",
-      "term": "Three-Stage Least Squares (3SLS)",
-      "vietnamese": "Bình phương Tối thiểu Ba giai đoạn",
+      "term": "Three-Stage Least Squares Specification & Efficiency",
+      "vietnamese": "Đặc tả và hiệu quả của bình phương tối thiểu ba giai đoạn (3SLS)",
       "vietnamese_variants": [
-        "3SLS"
+        "Hiệu quả tiệm cận của 3SLS",
+        "Kiểm định đặc tả hệ 3SLS"
       ],
       "domain_tags": [
-        "Econometrics"
+        "Econometrics",
+        "System Estimators",
+        "Empirical IO",
+        "Macroeconometric Modeling"
       ],
-      "core_definition": "Kết hợp 2SLS và SUR để ước lượng hệ phương trình đồng thời có biến nội sinh.",
-      "seminal_citation": "Zellner & Theil (1962)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "core_definition": "The full-information system estimation framework of 3SLS, characterized by asymptotic efficiency gains over equation-by-equation 2SLS when error terms across simultaneous equations exhibit contemporaneous correlation and all equations are correctly specified.",
+      "seminal_citation": "Zellner & Theil (1962); Greene (2018)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2604",
       "core_definition_en": "Academic definition of Three-Stage Least Squares (3SLS) according to Zellner & Theil (1962).",
       "domain_tags_en": [
         "Econometrics"
-      ]
+      ],
+      "category": "Econometric Modeling & Time Series",
+      "is_flagship": true,
+      "operational_mechanism": "In multi-equation macro- or structural industrial organization models, endogenous feedback loops create simultaneous causality. While 2SLS achieves equation-by-equation consistency, it discards cross-equation contemporaneous covariance information. 3SLS weights the system by Sigma^-1 (inverse of residual variance-covariance matrix). Specification testing requires Hausman system specification tests comparing 2SLS (robust to cross-equation misspecification) vs 3SLS (efficient under correct system specification) to verify asymptotic validity.",
+      "benchmarks": "Hausman test chi-square p-value > 0.05 (confirming no system misspecification bias). Asymptotic variance of 3SLS must be strictly smaller than or equal to 2SLS covariance matrices (Var(2SLS) - Var(3SLS) is positive semi-definite).",
+      "pitfalls": "Assuming 3SLS is always superior to 2SLS without conducting Hausman specification tests; unexamined cross-equation error heteroskedasticity violating standard GLS assumptions (requiring GMM system estimators instead).",
+      "apa_reference": "Greene, W. H. (2018). Econometric analysis (8th ed.). Pearson."
     },
     {
       "id": "thurstone-scaling",
@@ -56468,81 +56774,126 @@
     },
     {
       "id": "time",
-      "term": "Time",
-      "vietnamese": "Thu thập dữ liệu ở nhiều thời điểm khác nhau.",
-      "vietnamese_variants": [],
+      "term": "Temporal Dimension in Research",
+      "vietnamese": "Chiều kích thời gian trong nghiên cứu",
+      "vietnamese_variants": [
+        "Yếu tố thời gian trong thiết kế",
+        "Tính thời đoạn trong nghiên cứu khoa học"
+      ],
       "domain_tags": [
         "Methodology",
-        "Research Design"
+        "Philosophy of Science",
+        "Longitudinal Research",
+        "Social Epistemology"
       ],
-      "core_definition": "Thu thập dữ liệu ở nhiều thời điểm khác nhau.",
-      "seminal_citation": "Denzin (1978)",
-      "tier": "textbook",
+      "core_definition": "The structural parameter and chronological continuum within research design that dictates how empirical phenomena, causal relationships, and observation windows are sampled, tracked, and modeled across duration, sequence, and timing.",
+      "seminal_citation": "Blalock (1964); George & Bennett (2005)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Time according to Denzin (1978).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Research Design & Methodology Fundamentals",
+      "is_flagship": true,
+      "operational_mechanism": "The temporal dimension determines research architecture: static snapshot designs (cross-sectional, retrospective) versus dynamic sequential designs (longitudinal, repeated cross-sections, event studies, panel data). Operationally, temporal ordering (X preceding Y in time) is a fundamental prerequisite for causal identification. Temporal granularity dictates whether observations represent continuous event streams, discrete time ticks, or aggregated macro intervals.",
+      "benchmarks": "Temporal alignment must conform to the theoretical latency of the causal mechanism (e.g., policy implementation lag vs immediate behavioral nudge). Longitudinal designs must report inter-wave retention rates (>= 70–80% retention preferred across annual survey panels).",
+      "pitfalls": "Cross-sectional hubris: drawing directional causal conclusions from concurrent single-point observations without establishing temporal precedence; immortal time bias in observational studies.",
+      "apa_reference": "George, A. L., & Bennett, A. (2005). Case studies and theory development in the social sciences. MIT Press."
     },
     {
       "id": "time-dimension",
-      "term": "Time Dimension",
-      "vietnamese": "Cắt ngang (Cross-sectional) vs Dọc theo thời gian (Longitudinal).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Business Research",
-        "Experiments"
+      "term": "Time Horizons: Cross-sectional vs Longitudinal",
+      "vietnamese": "Khung thời gian nghiên cứu: Cắt ngang so với Dài hạn",
+      "vietnamese_variants": [
+        "Chân trời thời gian trong nghiên cứu",
+        "Thiết kế thời gian cắt ngang và chuỗi thời gian"
       ],
-      "core_definition": "Cắt ngang (Cross-sectional) vs Dọc theo thời gian (Longitudinal).",
-      "seminal_citation": "Schindler (2022); Schindler (2022)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Research Methodology",
+        "Survey Research",
+        "Panel Analysis",
+        "Empirical Design"
+      ],
+      "core_definition": "The deliberate choice of research horizon defining whether empirical inquiry captures a static cross-sectional snapshot of phenomenon at a single moment or captures temporal dynamics through longitudinal panel, cohort, or trend tracking over time.",
+      "seminal_citation": "Saunders, Lewis, & Thornhill (2019); Menard (2002)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Time Dimension according to Schindler (2022); Schindler (2022).",
       "domain_tags_en": [
         "Business Research",
         "Experiments"
-      ]
+      ],
+      "category": "Research Design & Methodology Fundamentals",
+      "is_flagship": true,
+      "operational_mechanism": "Cross-sectional designs gather multi-variable data from diverse entities simultaneously, maximizing variance and sample breadth at lower cost but leaving unobserved time-invariant heterogeneity uncontrolled. Longitudinal designs (panel, prospective cohort) track identical units across T periods (T >= 2), enabling fixed effects estimation to eliminate time-invariant unobserved confounding (c_i) and capture developmental trajectories, lag structures, and life-course transitions.",
+      "benchmarks": "Panel studies must report attrition analysis (Little's MCAR test or attrition probit regressions, p > 0.05). Cross-sectional studies must explicitly delimit scope to associative or correlational claims unless exogenous instrumental variables or natural experiments are exploited.",
+      "pitfalls": "Panel attrition bias distorting sample representativeness over time; panel conditioning (Hawthorne-like measurement reactivity induced by repeated testing); asserting causal mediation in single-wave cross-sectional data.",
+      "apa_reference": "Saunders, M., Lewis, P., & Thornhill, A. (2019). Research methods for business students (8th ed.). Pearson Education."
     },
     {
       "id": "time-series-analysis",
-      "term": "Time-series analysis",
-      "vietnamese": "(Phân tích chuỗi thời gian).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Time-Series Analysis & Decomposition",
+      "vietnamese": "Phân tích và phân rã chuỗi thời gian",
+      "vietnamese_variants": [
+        "Mô hình hóa chuỗi thời gian",
+        "Phân tích chuỗi số liệu thời gian"
       ],
-      "core_definition": "(Phân tích chuỗi thời gian).",
-      "seminal_citation": "Yin (2014)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Applied Econometrics",
+        "Forecasting",
+        "Quantitative Finance",
+        "Data Science"
+      ],
+      "core_definition": "A family of statistical and econometric techniques dedicated to analyzing chronologically sequenced, equally spaced empirical observations to model underlying temporal dynamics, forecast future trajectories, and test dynamic causal interdependencies.",
+      "seminal_citation": "Box & Jenkins (1970); Granger & Newbold (1974)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Time-series analysis according to Yin (2014).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Econometric Modeling & Time Series",
+      "is_flagship": true,
+      "operational_mechanism": "A classical time-series Y_t is mathematically decomposed into four components: secular trend (T_t), cyclical fluctuations (C_t), seasonal patterns (S_t), and irregular/stochastic noise (I_t), under additive (Y_t = T_t + C_t + S_t + I_t) or multiplicative models. Analysis requires stationarity verification through Augmented Dickey-Fuller (ADF) or Phillips-Perron tests, followed by ARIMA/SARIMAX parameter identification via Autocorrelation (ACF) and Partial Autocorrelation Functions (PACF), or multivariate Vector Autoregressions (VAR) with cointegration analysis (Johansen test).",
+      "benchmarks": "Stationarity condition: roots of AR polynomial must lie strictly outside the unit circle; residual diagnostics must show no remaining autocorrelation (Box-Pierce / Ljung-Box Q p > 0.05) and no ARCH effects (Engle LM test p > 0.05).",
+      "pitfalls": "Spurious regression: estimating OLS on non-stationary I(1) series yielding high R-squared (> 0.90) and significant t-statistics that reflect shared stochastic drift rather than true causal relationships; data snooping in lag selection.",
+      "apa_reference": "Box, G. E. P., Jenkins, G. M., Reinsel, G. C., & Ljung, G. M. (2015). Time series analysis: Forecasting and control (5th ed.). John Wiley & Sons."
     },
     {
       "id": "tobins-q-ratio",
-      "term": "Tobin's Q Ratio",
-      "vietnamese": "Tỷ số Q của Tobin",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Corporate Finance"
+      "term": "Tobin's Q Ratio in Corporate Finance",
+      "vietnamese": "Hệ số Tobin's Q trong tài chính doanh nghiệp",
+      "vietnamese_variants": [
+        "Chỉ số Tobin Q",
+        "Tỷ số Q của Tobin"
       ],
-      "core_definition": "Tỷ số giữa giá trị thị trường của doanh nghiệp chia cho chi phí thay thế tài sản; đo lường tiềm năng đầu tư và giá trị vô hình.",
-      "seminal_citation": "Tobin (1969)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Corporate Finance",
+        "Financial Economics",
+        "Accounting Research",
+        "Strategic Management"
+      ],
+      "core_definition": "A standardized financial metric developed by James Tobin representing the ratio between the market value of a firm's assets (or enterprise value) and the current replacement cost of those physical assets, widely used in empirical corporate governance and strategy as a proxy for firm valuation and growth opportunities.",
+      "seminal_citation": "Tobin (1969); Chung & Pruitt (1994)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Tobin's Q Ratio according to Tobin (1969).",
       "domain_tags_en": [
         "Corporate Finance"
-      ]
+      ],
+      "category": "Measurement & Scale Development",
+      "is_flagship": true,
+      "operational_mechanism": "The classical formula is Q = (Market Value of Equity + Book Value of Total Debt) / (Replacement Cost of Total Assets). In empirical archival research where replacement costs are unobservable, researchers utilize Chung & Pruitt (1994) approximate Q: Q ≈ (MVE + PS + DEBT) / TA, where MVE is share price multiplied by common shares outstanding, PS is liquidating value of preferred stock, DEBT is short-term liabilities minus short-term assets plus long-term debt, and TA is total book assets. Values Q > 1 indicate market-recognized intangible assets, intellectual capital, brand equity, or growth potential exceeding physical capital costs.",
+      "benchmarks": "Q values typically range from 0.5 to 5.0 in empirical corporate finance samples; extreme outliers (>10 or negative assets) must be winsorized at 1st and 99th percentiles. Endogeneity between governance mechanisms and Q requires instrumental variables or firm fixed-effects estimation.",
+      "pitfalls": "Treating Tobin's Q as a pure operating performance measure rather than a market expectation / valuation proxy; failing to control for industry-fixed effects or year-fixed effects to purge macroeconomic valuation cycles.",
+      "apa_reference": "Chung, K. H., & Pruitt, S. W. (1994). A simple approximation of Tobin's q. Financial Management, 23(3), 70–74. https://doi.org/10.2307/3665623"
     },
     {
       "id": "tobit-model",
@@ -56574,81 +56925,126 @@
     },
     {
       "id": "top-labeled-grid-vs-fully-labeled-grid",
-      "term": "Top-labeled grid vs Fully labeled grid",
-      "vietnamese": "So sánh định dạng bảng lưới nhãn đầu cột và bảng lưới nhãn đầy đủ từng ô.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Top-labeled Grid vs Fully Labeled Grid in Surveys",
+      "vietnamese": "Lưới câu hỏi nhãn đỉnh so với Lưới dán nhãn toàn bộ trong khảo sát",
+      "vietnamese_variants": [
+        "Thiết kế bảng câu hỏi ma trận nhãn cột so với nhãn đầy đủ",
+        "Định dạng bảng ma trận trong khảo sát trực tuyến"
       ],
-      "core_definition": "So sánh định dạng bảng lưới nhãn đầu cột và bảng lưới nhãn đầy đủ từng ô.",
-      "seminal_citation": "Wiley - Beatty & Willis (2020)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Survey Methodology",
+        "Questionnaire Design",
+        "Measurement Error",
+        "Web Surveys"
+      ],
+      "core_definition": "A methodological comparison in survey instrument design evaluating measurement precision, cognitive response burden, and satisficing tendencies between matrix question formats that display response scale labels only at the top of columns versus those that repeat labels for every row item.",
+      "seminal_citation": "Dillman, Smyth, & Christian (2014); Tourangeau, Couper, & Conrad (2004)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2617",
       "core_definition_en": "Academic definition of Top-labeled grid vs Fully labeled grid according to Wiley - Beatty & Willis (2020).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Survey Design & Sampling Methods",
+      "is_flagship": true,
+      "operational_mechanism": "In top-labeled grids, response options (e.g., Likert scale anchors: Strongly Disagree to Strongly Agree) are positioned solely in the header row, and respondents evaluate rows of statements beneath them. In fully labeled grids, every radio button or response cell explicitly repeats verbal labels. On mobile and responsive web surveys, top-labeled grids frequently induce visual misalignment, horizontal scrolling, and straightlining. Fully labeled vertical lists or card-sort layouts reduce cognitive load and prevent response errors.",
+      "benchmarks": "Straightlining rate (uniform response across all rows) should be monitored and tested; straightlining > 5–10% indicates severe survey satisficing. Completion times and break-off rates must be evaluated across desktop and mobile devices.",
+      "pitfalls": "Deploying wide top-labeled grids on mobile-optimized survey platforms causing respondent fatigue and accidental tapping errors; assuming verbal meaning of numeric middle points is transparent without full labeling.",
+      "apa_reference": "Dillman, D. A., Smyth, J. D., & Christian, L. M. (2014). Internet, phone, mail, and mixed-mode surveys: The tailored design method (4th ed.). John Wiley & Sons."
     },
     {
       "id": "top-labeled-grid-vs-fully-labeled-grid-2617",
-      "term": "Top-labeled grid vs. Fully labeled grid",
-      "vietnamese": "So sánh định dạng bảng lưới nhãn đầu cột và bảng lưới nhãn đầy đủ từng ô.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Questionnaire",
-        "TSE"
+      "term": "Measurement Error in Top-labeled vs Fully Labeled Grids",
+      "vietnamese": "Sai số đo lường trong lưới nhãn đỉnh và lưới nhãn toàn bộ",
+      "vietnamese_variants": [
+        "Sai lệch đo lường do định dạng ma trận câu hỏi",
+        "Ảnh hưởng của thiết kế lưới câu hỏi lên chất lượng dữ liệu"
       ],
-      "core_definition": "So sánh định dạng bảng lưới nhãn đầu cột và bảng lưới nhãn đầy đủ từng ô.",
-      "seminal_citation": "Wiley / Beatty & Willis (2020)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Survey Methodology",
+        "Measurement Theory",
+        "Psychometrics",
+        "Data Quality"
+      ],
+      "core_definition": "The empirical psychometric assessment of measurement variance, non-differentiation bias, and cognitive anchoring effects induced by presenting survey items in tabular matrix top-labeled structures versus fully verbally anchored item formats.",
+      "seminal_citation": "Couper, Tourangeau, Conrad, & Crawford (2004); Revilla, Saris, & Krosnick (2014)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2616",
       "core_definition_en": "Academic definition of Top-labeled grid vs. Fully labeled grid according to Wiley / Beatty & Willis (2020).",
       "domain_tags_en": [
         "Questionnaire",
         "TSE"
-      ]
+      ],
+      "category": "Survey Design & Sampling Methods",
+      "is_flagship": true,
+      "operational_mechanism": "Survey methodologists examine differential measurement error using split-ballot web survey experiments. In top-labeled grids, respondents systematically anchor their attention on extreme endpoints, leading to higher end-aversion or extreme response bias depending on device screen width. Fully labeled formats provide uniform semantic anchors for intermediate categories, improving criterion validity and lowering random measurement noise in structural equation modeling (SEM) indicators.",
+      "benchmarks": "Multitrait-multimethod (MTMM) or confirmatory factor analysis (CFA) tests for measurement invariance: metric invariance must hold across presentation formats (ΔCFI < 0.010, ΔRMSEA < 0.015).",
+      "pitfalls": "Ignoring device heterogeneity (smartphones vs tablets vs desktop PCs) when analyzing grid responses; combining matrix responses with single-item formats without testing for measurement equivalence.",
+      "apa_reference": "Couper, M. P., Tourangeau, R., Conrad, F. G., & Crawford, S. D. (2004). What they see is what they get: Response options for web surveys. Social Science Computer Review, 22(1), 111–127. https://doi.org/10.1177/0894439303259848"
     },
     {
       "id": "topical-scope",
-      "term": "Topical Scope",
-      "vietnamese": "Nghiên cứu trường hợp (Case study) vs Nghiên cứu thống kê (Statistical study).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Business Research",
-        "Experiments"
+      "term": "Topical Scope in Research Proposals",
+      "vietnamese": "Phạm vi chủ đề trong đề cương nghiên cứu",
+      "vietnamese_variants": [
+        "Giới hạn nội dung nghiên cứu",
+        "Phạm vi nội dung đề tài"
       ],
-      "core_definition": "Nghiên cứu trường hợp (Case study) vs Nghiên cứu thống kê (Statistical study).",
-      "seminal_citation": "Schindler (2022); Schindler (2022)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Research Methodology",
+        "Doctoral Proposal",
+        "Theoretical Framing",
+        "Literature Delimitation"
+      ],
+      "core_definition": "The clearly demarcated substantive, conceptual, and theoretical boundary that defines the precise phenomena, theoretical perspectives, and empirical variables included within an investigation while explicitly bounding what lies outside the project's remit.",
+      "seminal_citation": "Creswell & Creswell (2018); Locke, Spirduso, & Silverman (2014)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Topical Scope according to Schindler (2022); Schindler (2022).",
       "domain_tags_en": [
         "Business Research",
         "Experiments"
-      ]
+      ],
+      "category": "Research Design & Methodology Fundamentals",
+      "is_flagship": true,
+      "operational_mechanism": "In research proposals and dissertation chapter 1, the topical scope is formulated through explicit inclusion and exclusion criteria. It aligns the overarching research question with relevant theoretical constructs, operational definitions, population parameters, and contextual boundaries. Defining topical scope prevents conceptual over-extension ('boiling the ocean') and ensures feasibility, theoretical coherence, and resource alignment.",
+      "benchmarks": "Proposal must feature an explicit 'Scope and Delimitations' section clearly stating what is in-scope vs out-of-scope; research questions must directly map to every component of the specified topical scope.",
+      "pitfalls": "Topic creep: expanding research objectives during the study without adjusting methodology or theoretical framing; excessive breadth resulting in superficial descriptive analysis rather than deep analytical rigor.",
+      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2018). Research design: Qualitative, quantitative, and mixed methods approaches (5th ed.). SAGE Publications."
     },
     {
       "id": "topsis-method",
-      "term": "TOPSIS Method",
-      "vietnamese": "Phương pháp TOPSIS",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Decision Science"
+      "term": "TOPSIS Multi-Criteria Decision Analysis",
+      "vietnamese": "Phương pháp ra quyết định đa tiêu chí TOPSIS",
+      "vietnamese_variants": [
+        "Phương pháp TOPSIS",
+        "Kỹ thuật sắp xếp thứ tự ưu tiên theo sự tương đồng với giải pháp lý tưởng"
       ],
-      "core_definition": "Ra quyết định lựa chọn phương án có khoảng cách hình học gần nhất với giải pháp lý tưởng và xa nhất giải pháp phản lý tưởng.",
+      "domain_tags": [
+        "Operations Research",
+        "Management Science",
+        "MCDA",
+        "Industrial Engineering"
+      ],
+      "core_definition": "A multi-criteria decision analysis (MCDA) technique developed by Hwang and Yoon that ranks a finite set of alternatives based on the geometric principle that the chosen alternative should have the shortest Euclidean distance from the positive-ideal solution and the farthest distance from the negative-ideal solution.",
       "seminal_citation": "Hwang & Yoon (1981)",
-      "tier": "textbook",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of TOPSIS Method according to Hwang & Yoon (1981).",
       "domain_tags_en": [
         "Decision Science"
-      ]
+      ],
+      "category": "Quantitative Methods & Statistical Inference",
+      "is_flagship": true,
+      "operational_mechanism": "Execution follows 6 algorithmic steps: (1) Formulate decision matrix X of m alternatives against n criteria; (2) Calculate normalized matrix R = x_ij / sqrt(sum(x_kj^2)); (3) Construct weighted normalized matrix V = w_j * r_ij (where sum(w_j)=1); (4) Determine positive-ideal solution A* (max for benefit, min for cost criteria) and negative-ideal solution A' (min for benefit, max for cost criteria); (5) Compute separation distances S_i* and S_i' using Euclidean metric; (6) Calculate relative closeness coefficient C_i = S_i' / (S_i* + S_i'), with 0 <= C_i <= 1. Alternatives are ranked in descending order of C_i.",
+      "benchmarks": "Consistency of weights: criterion weights must sum to 1.000 (derived objectively via Entropy or subjectively via AHP/Delphi). Sensitivity analysis must test rank stability against ±5% to ±20% variations in criterion weights.",
+      "pitfalls": "Rank reversal phenomenon: introducing or removing an irrelevant alternative can alter the relative ranking of remaining alternatives; failing to normalize benefit vs cost criteria uniformly.",
+      "apa_reference": "Hwang, C. L., & Yoon, K. (1981). Multiple attribute decision making: Methods and applications. Springer-Verlag. https://doi.org/10.1007/978-3-642-48318-9"
     },
     {
       "id": "total-factor-productivity-tfp-growth-accounting",
@@ -56687,59 +57083,94 @@
     },
     {
       "id": "total-∑-of-squares-tss",
-      "term": "Total Sum of Squares (TSS)",
-      "vietnamese": "Tổng Bình phương Toàn phần",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Regression Analysis"
+      "term": "Total Sum of Squares",
+      "vietnamese": "Tổng các độ lệch bình phương toàn phần (TSS)",
+      "vietnamese_variants": [
+        "Tổng bình phương tổng thể",
+        "Độ biến thiên toàn phần TSS"
       ],
-      "core_definition": "Tổng biến thiên của biến phụ thuộc xung quanh giá trị trung bình: TSS = ESS + RSS.",
-      "seminal_citation": "Wooldridge (2010)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Statistics",
+        "Econometrics",
+        "Linear Regression",
+        "ANOVA"
+      ],
+      "core_definition": "The fundamental scalar quantity in regression analysis and ANOVA representing the total observed empirical dispersion or variability of a dependent variable around its sample mean.",
+      "seminal_citation": "Fisher (1925); Wooldridge (2020)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Total Sum of Squares (TSS) according to Wooldridge (2010).",
       "domain_tags_en": [
         "Regression Analysis"
-      ]
+      ],
+      "category": "Quantitative Methods & Statistical Inference",
+      "is_flagship": true,
+      "operational_mechanism": "Mathematically computed as TSS = sum((Y_i - Y_mean)^2). Under ordinary least squares (OLS) with a constant term, the total variation partitions strictly into orthogonal components: TSS = ESS + RSS (Explained Sum of Squares sum((Y_hat_i - Y_mean)^2) plus Residual Sum of Squares sum(e_i^2)). Dividing TSS by degrees of freedom (N - 1) yields the sample variance of Y. The coefficient of determination R-squared is directly defined as R^2 = 1 - (RSS / TSS) = ESS / TSS.",
+      "benchmarks": "Degrees of freedom for TSS = N - 1. When a regression model is estimated without an intercept, the orthogonal partitioning theorem breaks down and R^2 can become mathematically negative.",
+      "pitfalls": "Interpreting TSS as a measure of model goodness-of-fit (TSS reflects sample variation of Y, whereas RSS/TSS determines fit); calculating R^2 in no-intercept or non-linear models where TSS != ESS + RSS.",
+      "apa_reference": "Wooldridge, J. M. (2020). Introductory econometrics: A modern approach (7th ed.). Cengage Learning."
     },
     {
       "id": "trading-zones-peter-galison",
-      "term": "Trading Zones (Peter Galison)",
-      "vietnamese": "Vùng Giao thương Học thuật",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "History",
-        "Philosophy of Science"
+      "term": "Trading Zones in Interdisciplinary Science",
+      "vietnamese": "Vùng giao thương trong khoa học liên ngành",
+      "vietnamese_variants": [
+        "Khái niệm Trading Zones của Galison",
+        "Không gian phối hợp tri thức liên ngành"
       ],
-      "core_definition": "Không gian phối hợp giữa các nhà khoa học từ các hệ hình khác nhau thông qua ngôn ngữ trung gian.",
-      "seminal_citation": "Galison (1997)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Science & Technology Studies",
+        "Epistemology",
+        "Interdisciplinary Research",
+        "Sociology of Science"
+      ],
+      "core_definition": "A conceptual framework developed by Peter Galison describing an intermediate epistemic and socio-technical space where distinct scientific subcultures, paradigms, or disciplines coordinate actions and exchange knowledge by creating simplified boundary languages (pidgins and creoles) despite profound differences in underlying theoretical commitments.",
+      "seminal_citation": "Galison (1997); Gorman (2010)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Trading Zones (Peter Galison) according to Galison (1997).",
       "domain_tags_en": [
         "History",
         "Philosophy of Science"
-      ]
+      ],
+      "category": "Philosophy of Science & Epistemology",
+      "is_flagship": true,
+      "operational_mechanism": "Borrowed from anthropological linguistics, the trading zone explains how theoretical physicists, experimentalists, and instrument-makers collaborate without requiring universal consensus on deep epistemological assumptions. Participants develop contact languages (jargon and boundary objects) that facilitate local, pragmatic coordination. Over time, thin pidgins can evolve into fully expressive creoles, giving rise to novel hybrid disciplines (e.g., computational biology, cognitive neuroscience, econometrics).",
+      "benchmarks": "Qualitative analysis of interdisciplinary collaboration must map epistemic boundary work, shared instrumentation or software tools (boundary objects), and the evolution of shared terminological standards.",
+      "pitfalls": "Assuming interdisciplinary success requires complete theoretical homogenization across disciplines; treating trading zones as frictionless consensus spaces rather than negotiated zones of power, institutional tension, and partial translation.",
+      "apa_reference": "Galison, P. (1997). Image and logic: A material culture of microphysics. University of Chicago Press."
     },
     {
       "id": "transaction-cost-economics-tce",
-      "term": "Transaction Cost Economics (TCE)",
-      "vietnamese": "Kinh tế học Chi phí Giao dịch",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Organizational Economics"
+      "term": "Transaction Cost Economics",
+      "vietnamese": "Kinh tế học chi phí giao dịch (TCE)",
+      "vietnamese_variants": [
+        "Lý thuyết chi phí giao dịch",
+        "Kinh tế học thể chế mới TCE"
       ],
-      "core_definition": "Doanh nghiệp lựa chọn ranh giới cấu trúc quản trị để tối thiểu hóa chi phí giao dịch và nguy cơ cơ hội.",
-      "seminal_citation": "Williamson (1975/1985)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Strategic Management",
+        "Organizational Economics",
+        "Institutional Theory",
+        "Governance"
+      ],
+      "core_definition": "A foundational governance theory pioneered by Ronald Coase and Oliver Williamson positing that the comparative economic efficiency of organizational forms (markets, hybrids, or hierarchies) is determined by minimizing the sum of production costs and transaction costs incurred in contract negotiation, monitoring, and enforcement.",
+      "seminal_citation": "Coase (1937); Williamson (1975, 1985)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Transaction Cost Economics (TCE) according to Williamson (1975/1985).",
       "domain_tags_en": [
         "Organizational Economics"
-      ]
+      ],
+      "category": "Theoretical & Conceptual Frameworks",
+      "is_flagship": true,
+      "operational_mechanism": "TCE assumes human actors operate under bounded rationality and opportunism (guile). The critical operational dimensions determining contractual hazards and transaction costs are: (1) Asset specificity (physical, site, human, or dedicated assets lacking salvage value outside the relationship), (2) Environmental and behavioral uncertainty, and (3) Transaction frequency. As asset specificity and opportunism risks increase, market governance fails due to holdup problems, driving economic activities into bilateral hybrids or vertically integrated corporate hierarchies.",
+      "benchmarks": "Empirical operationalization requires multi-item Likert scales or archival metrics measuring asset specificity, transactional uncertainty, and opportunism hazards; discrete choice models (logit/probit) or hazard rate models predict governance mode choices (make vs buy).",
+      "pitfalls": "Measuring only production costs while omitting ex-ante and ex-post transaction costs; treating opportunism as a constant rather than an empirically testable probability modulated by trust, formal contracts, and relational governance.",
+      "apa_reference": "Williamson, O. E. (1985). The economic institutions of capitalism: Firms, markets, relational contracting. Free Press."
     },
     {
       "id": "transcendental-phenomenology",
@@ -56788,39 +57219,63 @@
     },
     {
       "id": "transcendental-phenomenology-husserl",
-      "term": "Transcendental Phenomenology (Husserl)",
-      "vietnamese": "Hiện tượng học Siêu nghiệm Husserl",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Philosophy"
+      "term": "Transcendental Phenomenology",
+      "vietnamese": "Hiện tượng học siêu nghiệm (Husserl)",
+      "vietnamese_variants": [
+        "Hiện tượng học thuần túy",
+        "Phương pháp hiện tượng học Husserl"
       ],
-      "core_definition": "Khám phá cấu trúc bản chất của trải nghiệm qua việc loại bỏ các định kiến đời thường.",
-      "seminal_citation": "Husserl (1913/1931)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phenomenology",
+        "Qualitative Inquiry",
+        "Philosophy of Science",
+        "Epistemology"
+      ],
+      "core_definition": "A rigorous descriptive philosophical and qualitative methodology founded by Edmund Husserl that aims to uncover the essential, invariant structures (essences or eidetic structures) of conscious human experience through systematic suspension of the natural attitude and presuppositions.",
+      "seminal_citation": "Husserl (1913/1931); Moustakas (1994)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2631",
       "core_definition_en": "Academic definition of Transcendental Phenomenology (Husserl) according to Husserl (1913/1931).",
       "domain_tags_en": [
         "Qualitative Philosophy"
-      ]
+      ],
+      "category": "Qualitative & Interpretive Methodologies",
+      "is_flagship": true,
+      "operational_mechanism": "The methodology hinges on two cardinal analytical movements: (1) Epoché (bracketing), wherein the researcher systematically suspends all prior theoretical models, scientific beliefs, and common-sense assumptions regarding the external objective existence of the phenomenon; (2) Transcendental and Eidetic Reduction (free imaginative variation), wherein researchers mentally strip or modify various incidental characteristics of an experiential phenomenon to isolate those invariant structural features without which the phenomenon would cease to be what it is.",
+      "benchmarks": "Phenomenological bracketing must be explicitly documented via reflexive journals; eidetic analysis must culminate in a structural description synthesizing 'what' was experienced (textural) and 'how' it was experienced (structural).",
+      "pitfalls": "Confounding Husserlian descriptive transcendental phenomenology with Heideggerian hermeneutic (interpretive) phenomenology (Husserl brackets to describe pure consciousness, while Heidegger asserts being-in-the-world is inescapably interpretive); failing to maintain epoché during qualitative coding.",
+      "apa_reference": "Moustakas, C. (1994). Phenomenological research methods. SAGE Publications. https://doi.org/10.4135/9781412995658"
     },
     {
       "id": "transfer-learning-in-research",
-      "term": "Transfer Learning in Research",
-      "vietnamese": "Học Chuyển giao trong Nghiên cứu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Machine Learning"
+      "term": "Transfer Learning in Scholarly NLP & AI",
+      "vietnamese": "Học chuyển giao trong nghiên cứu xử lý ngôn ngữ tự nhiên và AI",
+      "vietnamese_variants": [
+        "Phương pháp học chuyển giao",
+        "Mô hình tiền huấn luyện trong nghiên cứu khoa học"
       ],
-      "core_definition": "Tận dụng mô hình đã huấn luyện trước trên tập dữ liệu khổng lồ để tinh chỉnh trên tập dữ liệu nhỏ.",
-      "seminal_citation": "Pan & Yang (2010)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Machine Learning",
+        "NLP",
+        "Computational Social Science",
+        "Artificial Intelligence"
+      ],
+      "core_definition": "A machine learning paradigm where knowledge, representations, and feature extractors learned from solving a broad foundational task on large-scale datasets (pre-training) are reused and adapted to solve a related, downstream task with smaller labeled datasets (fine-tuning).",
+      "seminal_citation": "Pan & Yang (2010); Devlin, Chang, Lee, & Toutanova (2019)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Transfer Learning in Research according to Pan & Yang (2010).",
       "domain_tags_en": [
         "Machine Learning"
-      ]
+      ],
+      "category": "Computational & Digital Methods",
+      "is_flagship": true,
+      "operational_mechanism": "In academic NLP and text analysis, transfer learning leverages foundational transformer architectures (e.g., BERT, RoBERTa, SciBERT, LLMs). Phase 1: Models are pre-trained on massive corpora via self-supervised objectives (masked language modeling, next sentence prediction). Phase 2: Domain adaptation or task-specific fine-tuning replaces the final classification head and updates model weights via backpropagation on a specialized labeled research dataset using low learning rates (e.g., 2e-5) with AdamW optimizer.",
+      "benchmarks": "Performance evaluation must report Macro-F1, Precision, Recall, and Accuracy on held-out test partitions (80/10/10 split) with 5-fold cross-validation; comparative baselines must benchmark against standard lexical models (TF-IDF + SVM/Logistic Regression).",
+      "pitfalls": "Catastrophic forgetting during aggressive fine-tuning; data leakage between pre-training corpora and downstream evaluation test sets; failing to freeze foundational layers when training data is excessively sparse.",
+      "apa_reference": "Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT), 4171–4186."
     },
     {
       "id": "transferability",
@@ -56851,39 +57306,63 @@
     },
     {
       "id": "transferability-lincoln-guba",
-      "term": "Transferability (Lincoln & Guba)",
-      "vietnamese": "Tính Chuyển giao Transferability",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Qualitative Trustworthiness"
+      "term": "Transferability in Qualitative Trustworthiness",
+      "vietnamese": "Tính chuyển giao trong độ tin cậy nghiên cứu định lượng",
+      "vietnamese_variants": [
+        "Khả năng chuyển giao của Lincoln & Guba",
+        "Tính khái quát hóa theo ngữ cảnh trong định tính"
       ],
-      "core_definition": "Tương đương giá trị ngoại tại: cung cấp mô tả đậm đặc để độc giả tự phán đoán bối cảnh áp dụng.",
-      "seminal_citation": "Lincoln & Guba (1985)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Qualitative Inquiry",
+        "Research Trustworthiness",
+        "Methodological Rigor",
+        "Case Study"
+      ],
+      "core_definition": "The qualitative parallel to external validity within Lincoln and Guba's trustworthiness framework, defining the degree to which findings, theoretical insights, and contextual understandings generated from a specific qualitative study can be meaningfully applied or transferred to other contexts, settings, or populations.",
+      "seminal_citation": "Lincoln & Guba (1985); Guba & Lincoln (1989)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2635",
       "core_definition_en": "Academic definition of Transferability (Lincoln & Guba) according to Lincoln & Guba (1985).",
       "domain_tags_en": [
         "Qualitative Trustworthiness"
-      ]
+      ],
+      "category": "Qualitative Data Collection & Process Tracing",
+      "is_flagship": true,
+      "operational_mechanism": "Unlike quantitative generalizability (statistical inference from sample to population based on random sampling), transferability places the responsibility of generalizing on the potential adopter ('reader/receiver') rather than the original researcher. Operationally, the original researcher must provide 'thick description' (rich, nuanced contextual, environmental, temporal, and demographic documentation of the research setting and participants), enabling subsequent researchers to judge contextual similarity and transfer fittingness.",
+      "benchmarks": "Thick description must encompass detailed socio-cultural context, purposeful sampling parameters, audit trails, and reflexive positionality statements; purposive sampling variation must be explicitly rationalized.",
+      "pitfalls": "Making statistical generalization claims from small purposeful qualitative samples; providing superficial, context-free descriptions that render transferability evaluations impossible for peer reviewers.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications."
     },
     {
       "id": "transformational-leadership-theory-bass",
-      "term": "Transformational Leadership Theory (Bass)",
-      "vietnamese": "Lý thuyết Lãnh đạo Chuyển hóa",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Leadership Studies"
+      "term": "Transformational Leadership Theory",
+      "vietnamese": "Lý thuyết lãnh đạo chuyển đổi (Bass)",
+      "vietnamese_variants": [
+        "Thuyết lãnh đạo chuyển hóa",
+        "Mô hình lãnh đạo chuyển đổi Bass & Avolio"
       ],
-      "core_definition": "Lãnh đạo truyền cảm hứng qua 4I: Ảnh hưởng lý tưởng, Động viên truyền cảm hứng, Kích thích trí tuệ, Quan tâm cá nhân.",
-      "seminal_citation": "Bass (1985), Avolio & Bass (2004)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Organizational Behavior",
+        "Management",
+        "Human Resources",
+        "Applied Psychology"
+      ],
+      "core_definition": "A seminal organizational behavior theory formulated by Bernard Bass (expanding on James MacGregor Burns) asserting that effective leaders inspire, motivate, and transform followers to exceed performance expectations and transcend self-interest for the collective organizational good through four distinct behavioral dimensions (the '4 Is').",
+      "seminal_citation": "Bass (1985); Avolio & Bass (2004)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Transformational Leadership Theory (Bass) according to Bass (1985), Avolio & Bass (2004).",
       "domain_tags_en": [
         "Leadership Studies"
-      ]
+      ],
+      "category": "Theoretical & Conceptual Frameworks",
+      "is_flagship": true,
+      "operational_mechanism": "The theoretical construct comprises four operational dimensions: (1) Idealized Influence (serving as charismatic role models of high ethical integrity), (2) Inspirational Motivation (articulating an appealing, compelling future vision), (3) Intellectual Stimulation (challenging conventional assumptions and encouraging innovation), and (4) Individualized Consideration (acting as mentors and attending to each follower's developmental needs). Empirically operationalized via the Multifactor Leadership Questionnaire (MLQ 5X) using second-order CFA models.",
+      "benchmarks": "Multifactor Leadership Questionnaire (MLQ 5X) subscale reliabilities (Cronbach's alpha and Composite Reliability >= 0.80); second-order factor loadings for the 4 dimensions should exceed 0.70 in structural equation models.",
+      "pitfalls": "Common method bias (CMB) when subordinates rate both leadership behaviors and their own job performance/satisfaction on the same survey instrument (requires multi-source dyadic sampling); high multicollinearity among the four transformational dimensions.",
+      "apa_reference": "Bass, B. M. (1985). Leadership and performance beyond expectations. Free Press."
     },
     {
       "id": "transformative-mixed-methods-design",
@@ -56928,61 +57407,95 @@
     },
     {
       "id": "transformative-worldview",
-      "term": "Transformative worldview",
-      "vietnamese": "Thế giới quan Chuyển đổi / Biến đổi — Hệ hình kết hợp nghiên cứu với chính trị và hành động xã hội để chống bất bình đẳng và bảo vệ các nhóm yếu thế.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Transformative Paradigm Worldview",
+      "vietnamese": "Thế giới quan chuyển đổi (Donna Mertens)",
+      "vietnamese_variants": [
+        "Hệ hình nghiên cứu giải phóng và công bằng xã hội",
+        "Thế giới quan biến đổi xã hội"
       ],
-      "core_definition": "Thế giới quan Chuyển đổi / Biến đổi — Hệ hình kết hợp nghiên cứu với chính trị và hành động xã hội để chống bất bình đẳng và bảo vệ các nhóm yếu thế.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Mixed Methods",
+        "Epistemology",
+        "Social Justice",
+        "Evaluation Research"
+      ],
+      "core_definition": "A philosophical paradigm and research worldview articulated by Donna Mertens that explicitly centers inquiry around social justice, power asymmetries, human rights, and the empowerment of marginalized, underrepresented, or oppressed communities.",
+      "seminal_citation": "Mertens (2007, 2010); Creswell & Creswell (2018)",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Transformative worldview according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "category": "Philosophy of Science & Epistemology",
+      "is_flagship": true,
+      "operational_mechanism": "Transformative research adopts an explicitly normative, change-oriented epistemological stance: (1) Axiology—ethical commitment to social justice and cultural responsiveness; (2) Ontology—reality is shaped by social, political, economic, and cultural values and power dynamics; (3) Epistemology—knowledge is co-constructed through authentic relational engagement between researcher and community; (4) Methodology—utilizes mixed-methods designs where community stakeholders participate in framing research questions, data collection, and action recommendations.",
+      "benchmarks": "Research protocol must incorporate community-based participatory research (CBPR) mechanisms, indigenous research ethics, and measurable social action outcomes or policy advocacy initiatives.",
+      "pitfalls": "Subordinating methodological rigor to ideological advocacy without robust empirical validity checks; tokenistic community participation where marginalized participants lack genuine decision-making power over the research design.",
+      "apa_reference": "Mertens, D. M. (2010). Research and evaluation in education and psychology: Integrating diversity with quantitative, qualitative, and mixed methods (3rd ed.). SAGE Publications."
     },
     {
       "id": "trapd-model",
-      "term": "TRAPD model",
-      "vietnamese": "Quy trình dịch thuật bảng hỏi 5 bước chuẩn quốc tế: Translation → Review → Adjudication → Pretesting → Documentation.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Questionnaire",
-        "TSE"
+      "term": "TRAPD Cross-Cultural Translation Model",
+      "vietnamese": "Mô hình biên dịch và thẩm định bảng hỏi xuyên văn hóa TRAPD",
+      "vietnamese_variants": [
+        "Quy trình thích ứng bảng hỏi TRAPD",
+        "Mô hình dịch thuật bảng câu hỏi đa ngôn ngữ Harkness"
       ],
-      "core_definition": "Quy trình dịch thuật bảng hỏi 5 bước chuẩn quốc tế: Translation → Review → Adjudication → Pretesting → Documentation.",
-      "seminal_citation": "Wiley / Beatty & Willis (2020); Wiley (2020)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Cross-Cultural Research",
+        "Survey Methodology",
+        "Psychometrics",
+        "Comparative Sociology"
+      ],
+      "core_definition": "A rigorous, team-based survey translation and adaptation methodology developed by Janet Harkness for multinational, multicultural, and multiregional surveys (3MC) that replaces conventional mechanical back-translation with an iterative five-stage committee review process.",
+      "seminal_citation": "Harkness (2003); Harkness et al. (2010)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "LaTeX thô; lộ tên file nội bộ",
       "core_definition_en": "Academic definition of TRAPD model according to Wiley / Beatty & Willis (2020); Wiley (2020).",
       "domain_tags_en": [
         "Questionnaire",
         "TSE"
-      ]
+      ],
+      "category": "Survey Design & Sampling Methods",
+      "is_flagship": true,
+      "operational_mechanism": "TRAPD is an acronym for five sequential procedural stages: (1) Translation—two or more independent parallel forward translations from source to target language; (2) Review—a bilingual committee consisting of translators, survey methodologists, and substantive experts adjudicates discrepancies and selects optimal translations; (3) Adjudication—the project director or designated authority makes final selections; (4) Pretesting—the translated instrument is cognitive pre-tested with target population respondents; (5) Documentation—all translation decisions, cultural adaptations, and rationale are systematically logged in an audit trail.",
+      "benchmarks": "Independent parallel translators must possess native target language competence and professional survey fluency; cognitive interviews (n >= 15–30 target respondents) must establish conceptual, semantic, and normative equivalence.",
+      "pitfalls": "Relying exclusively on traditional back-translation, which often produces literal but unnatural or semantically distorted phrasing; failing to document adaptation rationales for cross-national data harmonizers.",
+      "apa_reference": "Harkness, J. A. (2003). Questionnaire translation. In J. A. Harkness, F. J. R. van de Vijver, & P. P. Mohler (Eds.), Cross-cultural survey methods (pp. 35–56). John Wiley & Sons."
     },
     {
       "id": "treatment-diffusion",
-      "term": "Treatment diffusion",
-      "vietnamese": "Rò rỉ can thiệp (lan truyền can thiệp)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Treatment Diffusion Threat to Internal Validity",
+      "vietnamese": "Hiện tượng lan tỏa can thiệp đe dọa giá trị nội tại",
+      "vietnamese_variants": [
+        "Khuếch tán can thiệp",
+        "Sự thẩm thấu can thiệp sang nhóm đối chứng"
       ],
-      "core_definition": "Nhóm đối chứng vô tình học lỏm hoặc tiếp cận can thiệp của nhóm thực nghiệm.",
-      "seminal_citation": "Shadish, Cook & Campbell (2002)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Experimental Design",
+        "Internal Validity",
+        "Policy Evaluation",
+        "RCT"
+      ],
+      "core_definition": "A major threat to internal validity in experimental and quasi-experimental designs occurring when participants in the control group inadvertently or intentionally gain access to the intervention, treatment materials, or information intended exclusively for the experimental treatment group.",
+      "seminal_citation": "Campbell & Stanley (1963); Shadish, Cook, & Campbell (2002)",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Treatment diffusion according to Shadish, Cook & Campbell (2002).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "category": "Causal Inference & Quasi-Experimental Designs",
+      "is_flagship": true,
+      "operational_mechanism": "When treatment materials, pedagogical techniques, or technological tools spill over to the control arm (through peer communication, proximity, or imitation), the actual contrast between treatment and control conditions diminishes. Mathematically, the observed difference (Y_treatment - Y_control) is biased toward zero, leading to severe attenuation of treatment effect estimates and causing Type II errors (failing to detect a true causal effect).",
+      "benchmarks": "Cluster randomization (randomizing at the school, clinic, village, or regional level rather than individual level) with adequate intraclass correlation coefficient (ICC) adjustment; compliance monitoring surveys measuring contamination exposure in the control arm.",
+      "pitfalls": "Randomizing individuals in close spatial or communicative proximity without isolation protocols; ignoring contamination and conducting naive intention-to-treat (ITT) without instrumental variable / Complier Average Causal Effect (CACE) adjustments.",
+      "apa_reference": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and quasi-experimental designs for generalized causal inference. Houghton Mifflin."
     },
     {
       "id": "treatment-non-compliance",
