@@ -48652,598 +48652,878 @@
     {
       "id": "relational-ethics-in-autoethnography",
       "term": "Relational Ethics in Autoethnography",
-      "vietnamese": "Đạo đức Mối quan hệ trong Tự Dân tộc học",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Ethics"
+      "vietnamese": "Đạo đức quan hệ trong tự dân tộc học",
+      "vietnamese_variants": [
+        "Đạo đức liên cá nhân trong tự truyện học thuật",
+        "Trách nhiệm đạo đức với người liên quan trong tự dân tộc học"
       ],
-      "core_definition": "Trách nhiệm đạo đức bảo vệ danh tính, cảm xúc của gia đình và người thân xuất hiện trong câu chuyện.",
-      "seminal_citation": "Ellis (2007), Lapadat (2017), Chang (2016)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phương pháp Định tính",
+        "Tự dân tộc học (Autoethnography)",
+        "Đạo đức Nghiên cứu"
+      ],
+      "core_definition": "Nguyên tắc đạo đức trọng tâm trong nghiên cứu tự dân tộc học do Carolyn Ellis đề xuất, nhấn mạnh rằng câu chuyện của nhà nghiên cứu không bao giờ tách rời khỏi mạng lưới quan hệ xã hội với người thân, bạn bè, đồng nghiệp hoặc cộng đồng được đề cập. Nhà nghiên cứu phải liên tục tự chất vấn về trách nhiệm đạo đức, sự tổn thương tiềm tàng và việc bảo vệ nhân phẩm của những 'nhân vật bất đắc dĩ' xuất hiện trong văn bản tự sự của mình.",
+      "seminal_citation": "Ellis, C. (2007). Telling secrets, revealing lives: Relational ethics in research with intimate others. Qualitative Inquiry, 13(1), 3–29. https://doi.org/10.1177/1077800406294947",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Relational Ethics in Autoethnography according to Ellis (2007), Lapadat (2017), Chang (2016).",
       "domain_tags_en": [
         "Research Ethics"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn đánh giá: Nhà nghiên cứu phải thực hiện 'process consent' (xin chấp thuận theo tiến trình phản hồi qua nhiều giai đoạn viết), trao quyền đọc duyệt bản thảo cho những người có liên quan trước khi công bố (member checking of narratives), và sẵn sàng che giấu danh tính hoặc lược bỏ các chi tiết nhạy cảm có nguy cơ hủy hoại các mối quan hệ đời thực.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Xem tự dân tộc học là đặc quyền cá nhân để bộc lộ bí mật hoặc chỉ trích người khác mà không có sự đồng thuận; ngụy biện rằng vì là 'câu chuyện của tôi' nên không cần hội đồng đạo đức (IRB) phê duyệt. Bài báo sẽ bị từ chối ngay lập tức nếu làm lộ danh tính người thứ ba trong các tình huống nhạy cảm.",
+      "apa_reference": "Ellis, C. (2007). Telling secrets, revealing lives: Relational ethics in research with intimate others. Qualitative Inquiry, 13(1), 3–29.",
+      "is_flagship": true
     },
     {
       "id": "relative-indirect-effect",
-      "term": "Relative indirect effect",
-      "vietnamese": "Tác động gián tiếp tương đối",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Relative Indirect Effect",
+      "vietnamese": "Tác động gián tiếp tương đối (trong mô hình trung gian biến độc lập phân loại)",
+      "vietnamese_variants": [
+        "Hiệu ứng gián tiếp tương đối",
+        "Tác động trung gian tương đối theo biến phân loại"
       ],
-      "core_definition": "Áp dụng khi biến nguyên nhân X là biến định danh nhiều nhóm (Multicategorical).",
-      "seminal_citation": "Hayes (2022)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phân tích Trung gian (Mediation)",
+        "Mô hình SEM",
+        "Phương pháp Định lượng"
+      ],
+      "core_definition": "Tác động gián tiếp của một biến độc lập định danh nhiều nhóm (multicategorical independent variable) lên biến phụ thuộc thông qua biến trung gian, được lượng hóa so với một nhóm đối chứng cơ sở (reference/baseline category). Phương pháp này sử dụng mã hóa biến giả (dummy coding) hoặc mã hóa tương phản (contrast coding) theo khuôn khổ của Hayes & Preacher (2014).",
+      "seminal_citation": "Hayes, A. F., & Preacher, K. J. (2014). Statistical mediation analysis with a multicategorical independent variable. British Journal of Mathematical and Statistical Psychology, 67(3), 451–470. https://doi.org/10.1111/bmsp.12028",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Relative indirect effect according to Hayes (2022).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Ngưỡng kiểm định: Mỗi nhóm so sánh sẽ có một hệ số tác động gián tiếp tương đối riêng biệt kèm khoảng tin cậy Bootstrap 95% (thường 5,000 mẫu lặp). Hiệu ứng được xem là có ý nghĩa thống kê khi khoảng tin cậy Bootstrap 95% (Bias-Corrected CI) không chứa giá trị 0.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Phân tích trung gian biến phân loại nhiều nhóm như một biến liên tục (continuous) mà không mã hóa dummy/indicator; bỏ qua việc so sánh đa cặp với nhóm chuẩn; kết luận chung chung về vai trò trung gian mà không phân rã từng tác động tương đối của từng nhóm can thiệp.",
+      "apa_reference": "Hayes, A. F., & Preacher, K. J. (2014). Statistical mediation analysis with a multicategorical independent variable. British Journal of Mathematical and Statistical Psychology, 67(3), 451–470.",
+      "is_flagship": true
     },
     {
       "id": "relativism-vs-realism-controversy",
-      "term": "Relativism vs Realism Controversy",
-      "vietnamese": "(`Tranh biện Chủ nghĩa tương đối vs. Chủ nghĩa thực nghiệm`): Phản bác luận điểm \"anything goes\" của Feyerabend và chủ nghĩa kiến tạo xã hội cực đoan; bảo vệ tí",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Relativism vs. Realism Controversy",
+      "vietnamese": "Tranh luận giữa thuyết tương đối và thuyết hiện thực",
+      "vietnamese_variants": [
+        "Tranh biện Bản thể luận Tương đối luận vs Hiện thực luận",
+        "Xung đột triết học Realism vs Relativism"
       ],
-      "core_definition": "(`Tranh biện Chủ nghĩa tương đối vs. Chủ nghĩa thực nghiệm`): Phản bác luận điểm \"anything goes\" của Feyerabend và chủ nghĩa kiến tạo xã hội cực đoan; bảo vệ tí.",
-      "seminal_citation": "Hunt (2015)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Triết học Khoa học",
+        "Bản thể luận (Ontology)",
+        "Phương pháp Luận Nghiên cứu"
+      ],
+      "core_definition": "Tranh luận nền tảng trong triết học khoa học và phương pháp luận nghiên cứu xã hội về bản chất của thực tại và chân lý. Thuyết hiện thực (Realism) khẳng định một thế giới khách quan tồn tại độc lập với nhận thức và ngôn ngữ của con người, trong khi Thuyết tương đối (Relativism/Constructivism) lập luận rằng thực tại là cấu tạo mang tính xã hội, phụ thuộc vào bối cảnh văn hóa, lịch sử và ngôn ngữ, do đó không tồn tại một chân lý phổ quát duy nhất.",
+      "seminal_citation": "Bhaskar, R. (1975). A Realist Theory of Science. Leeds Books; Guba, E. G., & Lincoln, Y. S. (1994). Competing paradigms in qualitative research. In N. K. Denzin & Y. S. Lincoln (Eds.), Handbook of Qualitative Research (pp. 105–117). Sage Publications.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Realism ≠ \"chủ nghĩa thực nghiệm\" – dịch \"chủ nghĩa hiện thực\" | Rác Markdown/bảng; mảnh trích; bị cắt cụt",
       "core_definition_en": "Academic definition of Relativism vs Realism Controversy according to Hunt (2015).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Tiêu chí thẩm định: Nhà nghiên cứu phải duy trì tính nhất quán triết học (philosophical alignment): Nếu chấp nhận Realism, thiết kế nghiên cứu hướng tới đo lường khách quan, kiểm định giả thuyết và suy luận nhân quả; nếu chấp nhận Relativism, thiết kế phải tập trung vào hiểu sâu đa nghĩa, bối cảnh hóa và tính phản tư (reflexivity). Critical Realism đóng vai trò cầu nối giải quyết tranh biện này.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Rơi vào 'sự mâu thuẫn nhận thức luận' (epistemological schizophrenia) — tuyên bố theo thuyết kiến tạo/tương đối nhưng lại dùng các thước đo định lượng khách quan để khẳng định quy luật phổ quát, hoặc ngược lại, dùng lập trường thực chứng để thu thập phỏng vấn sâu mà bỏ qua bối cảnh kiến tạo nghĩa.",
+      "apa_reference": "Guba, E. G., & Lincoln, Y. S. (1994). Competing paradigms in qualitative research. In N. K. Denzin & Y. S. Lincoln (Eds.), Handbook of Qualitative Research (pp. 105–117). Sage Publications.",
+      "is_flagship": true
     },
     {
       "id": "relevance",
-      "term": "Relevance",
-      "vietnamese": "(`Tính phù hợp & Đóng góp`): Nghiên cứu phải mang lại giá trị tri thức mới cho lý thuyết hoặc thực tiễn.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Relevance (Methodological & Scholarly)",
+      "vietnamese": "Tính phù hợp / Tính thích đáng học thuật",
+      "vietnamese_variants": [
+        "Độ thích đáng phương pháp luận",
+        "Tính xác đáng của nghiên cứu"
       ],
-      "core_definition": "(`Tính phù hợp & Đóng góp`): Nghiên cứu phải mang lại giá trị tri thức mới cho lý thuyết hoặc thực tiễn.",
-      "seminal_citation": "Flick et al. (2004)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Thiết kế Nghiên cứu",
+        "Đánh giá Nghiên cứu",
+        "Phương pháp Luận Tổng quát"
+      ],
+      "core_definition": "Mức độ mà câu hỏi nghiên cứu, phương pháp luận và dữ liệu thu thập đáp ứng trực tiếp và xác đáng mục tiêu khoa học cũng như giải quyết vấn đề thực tiễn. Trong nghiên cứu định tính và hỗn hợp, tính thích đáng (relevance) là một tiêu chuẩn chất lượng chủ chốt đo lường xem các phát hiện có mang lại ý nghĩa sâu sắc cho nhóm đối tượng nghiên cứu và lý thuyết chuyên ngành hay không.",
+      "seminal_citation": "Hammersley, M. (1992). What's Wrong with Ethnography? Methodological Explorations. Routledge. https://doi.org/10.4324/9780203413289",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Rác Markdown/bảng; mảnh trích",
       "core_definition_en": "Academic definition of Relevance according to Flick et al. (2004).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Đánh giá chất lượng: Tính thích đáng phải được chứng minh qua 3 trục: (1) Theoretical relevance (bổ khuyết khoảng trống tri thức đã xác định), (2) Methodological relevance (phương pháp đo lường tương thích chính xác với biến số), và (3) Practical/Managerial relevance (hàm ý chính sách/quản trị cụ thể, khả thi).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Nghiên cứu thực hiện phương pháp luận phức tạp nhưng giải quyết câu hỏi vô nghĩa hoặc đã có lời giải hiển nhiên ('so-what' critique); thiếu tính tương thích giữa câu hỏi nghiên cứu và phương pháp phân tích (method-question mismatch).",
+      "apa_reference": "Hammersley, M. (1992). What's Wrong with Ethnography? Methodological Explorations. Routledge.",
+      "is_flagship": true
     },
     {
       "id": "reliability",
-      "term": "Reliability",
-      "vietnamese": "Độ tin cậy đo lường — Tính nhất quán và ổn định của điểm số đo lường qua các lần đo hoặc giữa các mục hỏi.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Reliability (Psychometric & Methodological)",
+      "vietnamese": "Độ tin cậy của thang đo và đo lường",
+      "vietnamese_variants": [
+        "Độ nhất quán nội tại",
+        "Độ ổn định phép đo",
+        "Tính khả tín của thang đo"
       ],
-      "core_definition": "Độ tin cậy đo lường — Tính nhất quán và ổn định của điểm số đo lường qua các lần đo hoặc giữa các mục hỏi.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Đo lường & Tâm trắc học",
+        "CB-SEM & PLS-SEM",
+        "Phương pháp Định lượng"
+      ],
+      "core_definition": "Mức độ mà một công cụ đo lường mang lại kết quả nhất quán, ổn định và có thể lặp lại khi đo lường cùng một cấu trúc (construct) trong các điều kiện tương đương. Độ tin cậy thể hiện sự vắng mặt của sai số ngẫu nhiên (random error) trong phép đo, thường được đánh giá qua độ nhất quán nội tại (internal consistency), độ ổn định qua thời gian (test-retest), hoặc sự đồng thuận giữa các giám khảo (inter-rater reliability).",
+      "seminal_citation": "Cronbach, L. J. (1951). Coefficient alpha and the internal structure of tests. Psychometrika, 16(3), 297–334. https://doi.org/10.1007/BF02310555; Nunnally, J. C. (1978). Psychometric Theory (2nd ed.). McGraw-Hill.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2174, #2175",
       "core_definition_en": "Academic definition of Reliability according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "benchmarks": "Ngưỡng tiêu chuẩn: Cronbach's Alpha (α) ≥ 0.70 (nghiên cứu khám phá có thể chấp nhận ≥ 0.60; nghiên cứu khẳng định yêu cầu ≥ 0.70 - 0.80); Composite Reliability (CR) ≥ 0.70; Rho_A trong PLS-SEM ≥ 0.70; hệ số Cohen's Kappa trong đánh giá liên giám khảo ≥ 0.61 (tốt) và ≥ 0.81 (rất tốt). Lưu ý: α > 0.95 thường cảnh báo hiện tượng trùng lặp câu hỏi (item redundancy).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đồng nhất độ tin cậy với độ giá trị (validity) — một thang đo có thể cực kỳ tin cậy nhưng hoàn toàn vô giá trị nếu nó đo sai cấu trúc; xóa bỏ bừa bãi các biến quan sát chỉ để nâng Cronbach's alpha làm suy giảm độ bao phủ nội dung của thang đo.",
+      "apa_reference": "Cronbach, L. J. (1951). Coefficient alpha and the internal structure of tests. Psychometrika, 16(3), 297–334.",
+      "is_flagship": true
     },
     {
       "id": "repeated-measures-anova",
       "term": "Repeated Measures ANOVA",
-      "vietnamese": "Phân tích phương sai đo lường lặp lại cho thiết kế nội nhóm Within-Subjects",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Parametric Statistics"
+      "vietnamese": "Phân tích phương sai các phép đo lặp lại (RM-ANOVA)",
+      "vietnamese_variants": [
+        "ANOVA đo lặp",
+        "Mô hình phương sai nội nhóm (Within-subjects ANOVA)"
       ],
-      "core_definition": "Phân tích phương sai đo lường lặp lại cho thiết kế nội nhóm Within-Subjects.",
-      "seminal_citation": "Maxwell et al. (2018)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Phân tích Phương sai (ANOVA)",
+        "Dữ liệu Chuỗi Thời gian / Bảng",
+        "Thiết kế Thực nghiệm"
+      ],
+      "core_definition": "Kỹ thuật thống kê suy luận so sánh giá trị trung bình của ba hoặc nhiều phép đo có liên quan được thu thập trên cùng một nhóm đối tượng nghiên cứu tại các thời điểm khác nhau hoặc dưới các điều kiện thực nghiệm khác nhau. Phương pháp này giúp kiểm soát biến thiên giữa các cá thể (individual differences), gia tăng năng lực thống kê (statistical power) so với ANOVA độc lập.",
+      "seminal_citation": "Box, G. E. P. (1954). Some theorems on quadratic forms applied in the study of analysis of variance problems, II. Effects of inequality of variance and of correlation between errors in the two-way classification. The Annals of Mathematical Statistics, 25(3), 484–498. https://doi.org/10.1214/aoms/1177728717",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Repeated Measures ANOVA according to Maxwell et al. (2018).",
       "domain_tags_en": [
         "Parametric Statistics"
-      ]
+      ],
+      "benchmarks": "Giả định bắt buộc: Giả định tính cầu (Sphericity) được kiểm định bằng Mauchly's test of sphericity (p > 0.05). Nếu p < 0.05 (vi phạm tính cầu), bắt buộc hiệu chỉnh bậc tự do bằng hệ số Greenhouse-Geisser (nếu ε < 0.75) hoặc Huynh-Feldt (nếu ε ≥ 0.75). Kích thước hiệu ứng được báo cáo qua Partial Eta Squared (η²p: 0.01 nhỏ, 0.06 vừa, 0.14 lớn).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Vi phạm giả định sphericity nhưng vẫn báo cáo kết quả F-test nguyên bản dẫn đến lạm phát sai số loại I (Type I error); không kiểm soát hiệu ứng thứ tự thử nghiệm (carryover/order effects) bằng kỹ thuật đảo thứ tự ngẫu nhiên (counterbalancing / Latin square).",
+      "apa_reference": "Box, G. E. P. (1954). Some theorems on quadratic forms applied in the study of analysis of variance problems, II. The Annals of Mathematical Statistics, 25(3), 484–498.",
+      "is_flagship": true
     },
     {
       "id": "replication-crisis",
       "term": "Replication Crisis",
-      "vietnamese": "Khủng hoảng Tái lập",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Open Science"
+      "vietnamese": "Khủng hoảng khả năng lặp lại / Khủng hoảng tái lập khoa học",
+      "vietnamese_variants": [
+        "Cuộc khủng hoảng tái lập",
+        "Khủng hoảng khả năng tái hiện kết quả nghiên cứu",
+        "Reproducibility Crisis"
       ],
-      "core_definition": "hiện tượng nhiều phát hiện khoa học lớn không thể lặp lại được khi làm lại thực nghiệm.",
-      "seminal_citation": "Open Science Collaboration (2015)",
-      "tier": "curated",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Triết học Khoa học",
+        "Khoa học Mở & Minh bạch",
+        "Đạo đức Nghiên cứu"
+      ],
+      "core_definition": "Hiện tượng phương pháp luận và khủng hoảng niềm tin lan rộng bắt đầu từ đầu thập niên 2010 trong các ngành khoa học xã hội, tâm lý học, y sinh học và kinh tế, khi các nhà nghiên cứu độc lập phát hiện rằng một tỷ lệ lớn các phát hiện kinh điển đã công bố không thể tái lập lại kết quả khi thực hiện thực nghiệm lặp lại với cỡ mẫu chuẩn. Nguyên nhân bắt nguồn từ thực hành nghiên cứu đáng ngờ (QRPs), p-hacking, HARKing, và thiên lệch xuất bản (publication bias).",
+      "seminal_citation": "Ioannidis, J. P. A. (2005). Why most published research findings are false. PLoS Medicine, 2(8), e124. https://doi.org/10.1371/journal.pmed.0020124; Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. Science, 349(6251), aac4716. https://doi.org/10.1126/science.aac4716",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "\"nhiều\" thay vì \"phần lớn\"; tỷ lệ tái lập khác nhau theo ngành (OSC 2015; Camerer et al. 2016) | Trùng #2182",
       "core_definition_en": "Academic definition of Replication Crisis according to Open Science Collaboration (2015).",
       "domain_tags_en": [
         "Open Science"
-      ]
+      ],
+      "benchmarks": "Bằng chứng then chốt: Báo cáo của Open Science Collaboration (2015) trên Science cho thấy chỉ 36% trong số 100 nghiên cứu tâm lý học thực nghiệm hàng đầu tái lập được ý nghĩa thống kê; kích thước hiệu ứng trung bình giảm đi một nửa so với bản gốc. Tỷ lệ p-value tập trung sát ngưỡng 0.04 - 0.049 là dấu hiệu cảnh báo p-hacking.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Thực hiện nghiên cứu thiếu công khai dữ liệu và mã nguồn (open data/code); không đăng ký trước đề cương nghiên cứu (pre-registration); phân tích hậu nghiệm rồi trình bày như giả thuyết ban đầu (HARKing); viện dẫn các bài báo đã bị vạch trần là ngụy tạo hoặc không thể tái lập mà không có đánh giá phản biện.",
+      "apa_reference": "Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. Science, 349(6251), aac4716.",
+      "is_flagship": true
     },
     {
       "id": "replication-crisis-reproducibility-project",
       "term": "Replication Crisis (Reproducibility Project)",
-      "vietnamese": "Cuộc Khủng hoảng Tái lặp",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Open Science"
+      "vietnamese": "Dự án Tái lập Tâm lý học và Khủng hoảng Nhân bản kết quả",
+      "vietnamese_variants": [
+        "Dự án khả năng tái lập kết quả nghiên cứu (Reproducibility Project: Psychology)",
+        "Sáng kiến Open Science Framework về tái lập nghiên cứu"
       ],
-      "core_definition": "Hiện tượng phần lớn các công trình nghiên cứu nổi tiếng không thể lặp lại kết quả khi chạy lại.",
-      "seminal_citation": "Open Science Collaboration (2015)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Khoa học Mở & Minh bạch",
+        "Tâm lý học Thực nghiệm",
+        "Phương pháp Luận Đánh giá"
+      ],
+      "core_definition": "Dự án cộng tác học thuật quy mô lớn do Brian Nosek và Trung tâm Khoa học Mở (Center for Open Science) khởi xướng, nhằm tái lập trực tiếp 100 nghiên cứu tâm lý học thực nghiệm được công bố trên ba tạp chí danh tiếng hàng đầu vào năm 2008. Kết quả dự án là bằng chứng thực nghiệm chấn động kích hoạt phong trào cải cách khoa học mở trên toàn cầu.",
+      "seminal_citation": "Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. Science, 349(6251), aac4716. https://doi.org/10.1126/science.aac4716",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "\"phần lớn\" quá mức; trùng #2181 | Trùng #2181",
       "core_definition_en": "Academic definition of Replication Crisis (Reproducibility Project) according to Open Science Collaboration (2015).",
       "domain_tags_en": [
         "Open Science"
-      ]
+      ],
+      "benchmarks": "Kết quả định lượng then chốt: Trong 100 nghiên cứu, 97% bản gốc công bố p < 0.05, nhưng ở nghiên cứu tái lập chỉ có 36% đạt ý nghĩa thống kê (p < 0.05); kích thước hiệu ứng trung bình giảm từ r = 0.403 xuống r = 0.197. 82% tác giả tái lập báo cáo hiệu ứng yếu hơn bản gốc.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đánh giá thấp tầm quan trọng của việc báo cáo power analysis chính xác; tin tưởng mù quáng vào các hiệu ứng tâm lý 'kinh điển' có cỡ mẫu siêu nhỏ (N < 30) mà không có kiểm chứng thực nghiệm độc lập.",
+      "apa_reference": "Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. Science, 349(6251), aac4716.",
+      "is_flagship": true
     },
     {
       "id": "representativeness-heuristic",
       "term": "Representativeness Heuristic",
-      "vietnamese": "Phỏng đoán Tính đại diện",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Cognitive Psychology"
+      "vietnamese": "Kinh nghiệm suy nghiệm tính đại diện",
+      "vietnamese_variants": [
+        "Quy tắc suy nghiệm đại diện",
+        "Thiên lệch nhận thức về tính đại diện"
       ],
-      "core_definition": "Đánh giá xác suất đối tượng thuộc về một nhóm dựa trên mức độ tương đồng bề mặt với hình mẫu của nhóm.",
-      "seminal_citation": "Kahneman & Tversky (1972)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế học Hành vi",
+        "Tâm lý học Nhận thức",
+        "Thiết kế Thực nghiệm"
+      ],
+      "core_definition": "Một lối tắt nhận thức (heuristic) trong phán đoán và ra quyết định do Amos Tversky và Daniel Kahneman phát hiện, trong đó con người ước lượng xác suất của một sự kiện hay đối tượng thuộc về một nhóm dựa trên mức độ tương đồng giữa sự kiện đó với khuôn mẫu (prototype) sẵn có trong tâm trí, thay vì căn cứ vào xác suất tiên nghiệm (base-rate probability).",
+      "seminal_citation": "Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131. https://doi.org/10.1126/science.185.4157.1124",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Representativeness Heuristic according to Kahneman & Tversky (1972).",
       "domain_tags_en": [
         "Cognitive Psychology"
-      ]
+      ],
+      "benchmarks": "Hệ quả phương pháp luận: Heuristic này dẫn đến các sai lầm suy luận nghiêm trọng trong nghiên cứu hành vi và khảo sát ý kiến: (1) Bỏ qua tỷ lệ nền (Base-rate neglect), (2) Ngụy biện kết hợp (Conjunction fallacy / Linda problem), và (3) Ảo tưởng về quy luật số nhỏ (Insensitivity to sample size).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Khi thiết kế bảng hỏi kịch bản thực nghiệm, nhà nghiên cứu vô tình gài bẫy mô tả khuôn mẫu quá chi tiết khiến người trả lời phán đoán sai lệch; hoặc nhà nghiên cứu tự rơi vào bẫy này khi tin rằng một mẫu khảo sát thuận tiện nhỏ có thể đại diện hoàn hảo cho một tổng thể phức tạp.",
+      "apa_reference": "Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131.",
+      "is_flagship": true
     },
     {
       "id": "reproducible-research-workflow",
       "term": "Reproducible Research Workflow",
-      "vietnamese": "Quy trình Nghiên cứu Tái lập",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Computational Reproducibility"
+      "vietnamese": "Quy trình nghiên cứu có thể tái lập",
+      "vietnamese_variants": [
+        "Quy trình nghiên cứu khả tái lập",
+        "Dòng công việc khoa học minh bạch (Reproducible Workflow)"
       ],
-      "core_definition": "Sử dụng mã lệnh R Markdown, Quarto hoặc Jupyter Notebook để liên kết trực tiếp dữ liệu, phân tích và bài viết.",
-      "seminal_citation": "Peng (2011)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Khoa học Mở & Minh bạch",
+        "Lập trình & Khoa học Dữ liệu",
+        "Phương pháp Luận Định lượng"
+      ],
+      "core_definition": "Tập hợp các chuẩn mực, công cụ và quy trình làm việc có hệ thống cho phép bất kỳ nhà nghiên cứu độc lập nào cũng có thể tái tạo chính xác từng bảng số liệu, đồ thị và kết luận thống kê từ dữ liệu gốc thô và mã nguồn tự động hóa. Quy trình này kết hợp quản lý phiên bản (Git), tài liệu tính toán động (R Markdown, Quarto, Jupyter), quản lý môi trường phần mềm (Docker, renv), và kho lưu trữ mở (OSF, Zenodo).",
+      "seminal_citation": "Peng, R. D. (2011). Reproducible research in computational science. Science, 334(6060), 1226–1227. https://doi.org/10.1126/science.1213847; The Turing Way Community. (2022). The Turing Way: A handbook for reproducible, ethical and collaborative data science. Zenodo. https://doi.org/10.5281/zenodo.3233853",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Reproducible Research Workflow according to Peng (2011).",
       "domain_tags_en": [
         "Computational Reproducibility"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn FAIR & Turing Way: Dữ liệu và mã nguồn phải tuân thủ chuẩn FAIR (Findable, Accessible, Interoperable, Reusable); kịch bản phân tích không chứa thao tác thủ công (no point-and-click); mọi đường dẫn tương đối (relative paths); có tài liệu hướng dẫn kèm tệp Dockerfile hoặc file lock phiên bản gói phụ thuộc (requirements.txt / renv.lock).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Xử lý làm sạch dữ liệu thủ công trong Excel mà không lưu lại lịch sử bước làm; chia sẻ mã nguồn với đường dẫn tuyệt đối (hard-coded local paths C:\\Users\\...); không ghi rõ phiên bản phần mềm hoặc seed ngẫu nhiên (random seed) cho các thuật toán mô phỏng/Bootstrap.",
+      "apa_reference": "Peng, R. D. (2011). Reproducible research in computational science. Science, 334(6060), 1226–1227.",
+      "is_flagship": true
     },
     {
       "id": "research-approach",
-      "term": "Research approach",
-      "vietnamese": "Cách tiếp cận nghiên cứu — Kế hoạch và thủ tục nghiên cứu bao gồm từ các giả định triết học rộng lớn đến các phương pháp thu thập, phân tích và diễn giải dữ liệu chi tiết.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Research Approach (Deductive, Inductive, Abductive)",
+      "vietnamese": "Cách tiếp cận nghiên cứu (Diễn dịch, Quy nạp, Thoái diễn)",
+      "vietnamese_variants": [
+        "Phương pháp tiếp cận nghiên cứu",
+        "Lối tiếp cận suy luận khoa học"
       ],
-      "core_definition": "Cách tiếp cận nghiên cứu — Kế hoạch và thủ tục nghiên cứu bao gồm từ các giả định triết học rộng lớn đến các phương pháp thu thập, phân tích và diễn giải dữ liệu chi tiết.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Thiết kế Nghiên cứu",
+        "Triết học Khoa học",
+        "Phương pháp Luận Tổng quát"
+      ],
+      "core_definition": "Khung lập luận logic định hướng mối quan hệ giữa lý thuyết và dữ liệu thực nghiệm trong một công trình khoa học. Nghiên cứu có thể vận dụng cách tiếp cận diễn dịch (Deductive - từ lý thuyết trừu tượng phát triển giả thuyết và thu thập dữ liệu để kiểm định), quy nạp (Inductive - từ quan sát thực nghiệm cụ thể phát hiện mẫu hình và khái quát hóa thành lý thuyết mới), hoặc thoái diễn (Abductive - xuất phát từ hiện tượng bất thường để tìm ra lời giải thích hợp lý nhất).",
+      "seminal_citation": "Saunders, M., Lewis, P., & Thornhill, A. (2019). Research Methods for Business Students (8th ed.). Pearson Education; Peirce, C. S. (1903). Pragmatism as a Principle and Method of Right Thinking. Harvard University Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Research approach according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "benchmarks": "Sự tương thích cấu trúc: Thiết kế định lượng kiểm định mô hình bắt buộc áp dụng Deductive; nghiên cứu định tính Grounded Theory thường bắt đầu từ Inductive; nghiên cứu Critical Realism hoặc nghiên cứu tình huống hỗn hợp giải thích cơ chế nhân quả ẩn thường vận dụng Abductive.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Thiếu nhất quán giữa cách tiếp cận và mục tiêu nghiên cứu; tuyên bố áp dụng diễn dịch thuần túy nhưng lại âm thầm sửa đổi giả thuyết sau khi thấy kết quả phân tích dữ liệu không khớp (HARKing); tuyên bố quy nạp hoàn toàn nhưng lại áp đặt khung lý thuyết có sẵn vào mã hóa định tính.",
+      "apa_reference": "Saunders, M., Lewis, P., & Thornhill, A. (2019). Research Methods for Business Students (8th ed.). Pearson Education.",
+      "is_flagship": true
     },
     {
       "id": "research-design",
-      "term": "Research design",
-      "vietnamese": "Thiết kế nghiên cứu — Các quy trình và thủ tục điều tra trong khuôn khổ các phương pháp định lượng, định tính và hỗn hợp.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Research Design",
+      "vietnamese": "Thiết kế nghiên cứu",
+      "vietnamese_variants": [
+        "Kế hoạch thiết kế nghiên cứu",
+        "Khung thiết kế phương pháp luận"
       ],
-      "core_definition": "Thiết kế nghiên cứu — Các quy trình và thủ tục điều tra trong khuôn khổ các phương pháp định lượng, định tính và hỗn hợp.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Thiết kế Nghiên cứu",
+        "Phương pháp Luận Tổng quát",
+        "Đánh giá Nghiên cứu"
+      ],
+      "core_definition": "Bản thiết kế tổng thể (blueprint) vạch ra kế hoạch chiến lược và cơ chế vận hành để tích hợp logic các thành phần của nghiên cứu (triết học nghiên cứu, câu hỏi nghiên cứu, phương pháp chọn mẫu, kỹ thuật thu thập và phân tích dữ liệu) nhằm trả lời câu hỏi nghiên cứu một cách thuyết phục, hợp lý và giảm thiểu tối đa các sai số hệ thống.",
+      "seminal_citation": "Creswell, J. W., & Creswell, J. D. (2018). Research Design: Qualitative, Quantitative, and Mixed Methods Approaches (5th ed.). SAGE Publications; Yin, R. K. (2018). Case Study Research and Applications: Design and Methods (6th ed.). SAGE Publications.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Research design according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn đánh giá: Thiết kế nghiên cứu phải đảm bảo 4 tiêu chuẩn giá trị cốt lõi: (1) Construct validity (đo lường đúng khái niệm), (2) Internal validity (suy luận quan hệ nhân quả không bị gây nhiễu), (3) External validity (khả năng khái quát hóa), và (4) Statistical conclusion validity (năng lực thống kê và kiểm định phù hợp).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Nhầm lẫn giữa 'thiết kế nghiên cứu' (chiến lược tổng thể) và 'phương pháp nghiên cứu' (công cụ thu thập cụ thể); lựa chọn thiết kế không thể trả lời câu hỏi nghiên cứu (ví dụ: dùng khảo sát cắt ngang đơn lẻ để kết luận tác động can thiệp nhân quả dài hạn).",
+      "apa_reference": "Creswell, J. W., & Creswell, J. D. (2018). Research Design: Qualitative, Quantitative, and Mixed Methods Approaches (5th ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "research-environment",
-      "term": "Research Environment",
-      "vietnamese": "Thực địa (Field), Phòng thí nghiệm (Laboratory), Mô phỏng (Simulation).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Business Research",
-        "Experiments"
+      "term": "Research Environment (Context & Ecology)",
+      "vietnamese": "Môi trường nghiên cứu / Bối cảnh nghiên cứu",
+      "vietnamese_variants": [
+        "Bối cảnh môi trường thực nghiệm",
+        "Hệ sinh thái nghiên cứu"
       ],
-      "core_definition": "Thực địa (Field), Phòng thí nghiệm (Laboratory), Mô phỏng (Simulation).",
-      "seminal_citation": "Schindler (2022); Schindler (2022)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Thiết kế Nghiên cứu",
+        "Phương pháp Định tính & Thực nghiệm",
+        "Đạo đức Nghiên cứu"
+      ],
+      "core_definition": "Không gian vật lý, văn hóa, tổ chức và xã hội nơi nghiên cứu diễn ra và dữ liệu được thu thập. Môi trường nghiên cứu có thể dao động từ phòng thí nghiệm được kiểm soát nghiêm ngặt (laboratory setting) đến bối cảnh tự nhiên đời thực (naturalistic / field setting), có ảnh hưởng quyết định đến tính giá trị sinh thái (ecological validity) và mức độ kiểm soát các biến ngoại lai.",
+      "seminal_citation": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic Inquiry. SAGE Publications; Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and Quasi-Experimental Designs for Generalized Causal Inference. Houghton Mifflin.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Research Environment according to Schindler (2022); Schindler (2022).",
       "domain_tags_en": [
         "Business Research",
         "Experiments"
-      ]
+      ],
+      "benchmarks": "Đánh giá phương pháp: Trong nghiên cứu định nghiệm phòng lab, đòi hỏi kiểm soát chặt chẽ ánh sáng, nhiệt độ, tiếng ồn để tối đa hóa internal validity; trong nghiên cứu điền dã thực địa (field research), nhà nghiên cứu phải mô tả chi tiết bối cảnh thể chế, thời điểm thu thập (thick description) để độc giả thẩm định tính chuyển giao (transferability).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Bỏ qua hiệu ứng phòng lab (Hawthorne effect) khi người tham gia thay đổi hành vi vì biết mình đang bị theo dõi; không bối cảnh hóa dữ liệu thực địa dẫn đến áp đặt các giải thích khiên cưỡng không phản ánh đúng thực tế văn hóa bản địa.",
+      "apa_reference": "Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic Inquiry. SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "research-methods",
-      "term": "Research methods",
-      "vietnamese": "Phương pháp nghiên cứu — Các hình thức thu thập dữ liệu, phân tích và diễn giải cụ thể mà nhà nghiên cứu đề xuất cho nghiên cứu của mình.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Research Methods",
+      "vietnamese": "Phương pháp nghiên cứu (Công cụ và kỹ thuật tác nghiệp)",
+      "vietnamese_variants": [
+        "Kỹ thuật thu thập và phân tích dữ liệu",
+        "Biện pháp tác nghiệp nghiên cứu"
       ],
-      "core_definition": "Phương pháp nghiên cứu — Các hình thức thu thập dữ liệu, phân tích và diễn giải cụ thể mà nhà nghiên cứu đề xuất cho nghiên cứu của mình.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Phương pháp Luận Tổng quát",
+        "Thiết kế Nghiên cứu",
+        "Công cụ Thu thập Dữ liệu"
+      ],
+      "core_definition": "Các công cụ, kỹ thuật, thủ tục và quy trình tác nghiệp cụ thể được nhà nghiên cứu triển khai để thu thập, xử lý và phân tích dữ liệu thực nghiệm (ví dụ: phỏng vấn bán cấu trúc, khảo sát bảng hỏi, quan sát tham dự, mô hình hồi quy đa biến, phân tích chủ đề). Khái niệm này phân biệt rõ rệt với 'phương pháp luận' (methodology - hệ thống triết học và nguyên lý chỉ đạo việc lựa chọn phương pháp).",
+      "seminal_citation": "Saunders, M., Lewis, P., & Thornhill, A. (2019). Research Methods for Business Students (8th ed.). Pearson Education; Bryman, A. (2016). Social Research Methods (5th ed.). Oxford University Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Research methods according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn đánh giá: Phương pháp nghiên cứu phải được trình bày với độ chi tiết cao (operational transparency) cho phép người khác tái lặp: mô tả quy trình chọn mẫu, cách thức liên hệ, biên bản phỏng vấn/bảng hỏi, phần mềm sử dụng (kèm số phiên bản), và các bước xử lý biến.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đánh đồng 'methods' với 'methodology'; chỉ liệt kê tên các công cụ mà không giải thích cơ chế thu thập và lý do chọn lựa kỹ thuật đó; thiếu mô tả chi tiết về quy trình thí điểm (pilot testing) bảng hỏi hoặc hướng dẫn phỏng vấn.",
+      "apa_reference": "Saunders, M., Lewis, P., & Thornhill, A. (2019). Research Methods for Business Students (8th ed.). Pearson Education.",
+      "is_flagship": true
     },
     {
       "id": "research-onion",
-      "term": "Research Onion",
-      "vietnamese": "Mô hình Củ hành Nghiên cứu (khung 6 lớp kinh điển của Saunders từ Triết học đến Kỹ thuật phân tích).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Onion",
-        "Strategy"
+      "term": "Research Onion Model",
+      "vietnamese": "Mô hình củ hành nghiên cứu (Mô hình Saunders)",
+      "vietnamese_variants": [
+        "Khung phân tầng phương pháp luận củ hành",
+        "Mô hình các lớp lang nghiên cứu"
       ],
-      "core_definition": "Mô hình Củ hành Nghiên cứu (khung 6 lớp kinh điển của Saunders từ Triết học đến Kỹ thuật phân tích).",
-      "seminal_citation": "Saunders et al. (2019); Saunders (2019)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phương pháp Luận Tổng quát",
+        "Thiết kế Nghiên cứu",
+        "Triết học Khoa học"
+      ],
+      "core_definition": "Khung khái niệm phân tầng nổi tiếng do Mark Saunders, Philip Lewis và Adrian Thornhill phát triển năm 2007, mô tả các tầng nấc logic mà nhà nghiên cứu phải bóc tách tuần tự khi xây dựng đề cương phương pháp luận. Mô hình gồm 6 lớp lang từ ngoài vào trong: (1) Triết học nghiên cứu (Philosophies), (2) Cách tiếp cận lý thuyết (Approaches), (3) Chiến lược nghiên cứu (Strategies), (4) Lựa chọn phương pháp (Methodological choices), (5) Khung thời gian (Time horizons), và (6) Kỹ thuật thu thập và xử lý dữ liệu (Techniques and procedures).",
+      "seminal_citation": "Saunders, M., Lewis, P., & Thornhill, A. (2007). Research Methods for Business Students (4th ed.). Financial Times Prentice Hall.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Research Onion according to Saunders et al. (2019); Saunders (2019).",
       "domain_tags_en": [
         "Research Onion",
         "Strategy"
-      ]
+      ],
+      "benchmarks": "Yêu cầu tính liên kết (Methodological alignment): Mọi lựa chọn ở các lớp bên trong phải tương thích hoàn toàn với lớp bên ngoài (ví dụ: Triết học Thực chứng -> Diễn dịch -> Khảo sát định lượng -> Cắt ngang -> Hồi quy; hoặc Triết học Diễn giải -> Quy nạp -> Tình huống/Dân tộc học -> Đơn phương pháp định tính -> Phân tích chủ đề).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Sao chép hình vẽ mô hình củ hành vào luận án như một đồ họa trang trí mà không phân tích sâu sắc sự liên kết logic giữa các tầng; chọn triết học thực chứng (positivism) nhưng chiến lược lại là phỏng vấn sâu thuần túy mà không có lý giải phương pháp luận.",
+      "apa_reference": "Saunders, M., Lewis, P., & Thornhill, A. (2007). Research Methods for Business Students (4th ed.). Financial Times Prentice Hall.",
+      "is_flagship": true
     },
     {
       "id": "research-problem",
-      "term": "Research problem",
-      "vietnamese": "Vấn đề nghiên cứu — Tình huống thực tiễn hoặc mâu thuẫn lý thuyết dẫn đến nhu cầu cấp thiết phải thực hiện nghiên cứu.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Research Problem",
+      "vietnamese": "Vấn đề nghiên cứu",
+      "vietnamese_variants": [
+        "Vấn đề khoa học cần giải quyết",
+        "Thực trạng nan giải trong nghiên cứu"
       ],
-      "core_definition": "Vấn đề nghiên cứu — Tình huống thực tiễn hoặc mâu thuẫn lý thuyết dẫn đến nhu cầu cấp thiết phải thực hiện nghiên cứu.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
+      "domain_tags": [
+        "Thiết kế Nghiên cứu",
+        "Phát triển Đề tài",
+        "Phương pháp Luận Tổng quát"
+      ],
+      "core_definition": "Một tình thế nan giải, một câu hỏi hóc búa, một mâu thuẫn lý thuyết hoặc một lỗ hổng tri thức thực nghiệm chưa được giải quyết trong y văn mà nghiên cứu được thiết kế để làm sáng tỏ. Vấn đề nghiên cứu là nền tảng khởi nguồn định hình toàn bộ mục tiêu, câu hỏi nghiên cứu, giả thuyết và lựa chọn phương pháp luận của công trình.",
+      "seminal_citation": "Booth, W. C., Colomb, G. G., Williams, J. M., Bizup, J., & FitzGerald, W. T. (2016). The Craft of Research (4th ed.). University of Chicago Press; Kerlinger, F. N. (1986). Foundations of Behavioral Research (3rd ed.). Holt, Rinehart and Winston.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Research problem according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "benchmarks": "Cấu trúc 'Problem Statement' chuẩn mực: Phải hội tụ đủ 4 yếu tố cốt lõi: (1) Hiện trạng bối cảnh lý tưởng hoặc thực tế, (2) Sự mâu thuẫn/lỗ hổng tri thức (The Gap/Conflict), (3) Hậu quả nếu vấn đề không được giải quyết (Consequences/Significance), và (4) Đóng góp kỳ vọng của nghiên cứu (Purpose/Solution).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Nhầm lẫn vấn đề quản trị thực tế (business/managerial problem - ví dụ: doanh thu sụt giảm) với vấn đề khoa học (research problem - ví dụ: thiếu cơ chế giải thích mối quan hệ giữa lãnh đạo chuyển đổi và hành vi đổi mới sáng tạo); đặt vấn đề nghiên cứu quá chung chung hoặc chỉ là một chủ đề mô tả thuần túy.",
+      "apa_reference": "Booth, W. C., Colomb, G. G., Williams, J. M., Bizup, J., & FitzGerald, W. T. (2016). The Craft of Research (4th ed.). University of Chicago Press.",
+      "is_flagship": true
     },
     {
       "id": "research-question",
-      "term": "Research Question",
-      "vietnamese": "(`Câu hỏi Nghiên cứu`): Chuyển hóa bài toán quản trị thành nhiệm vụ tìm kiếm thông tin khoa học (ví dụ: *\"Các yếu tố nào về chất lượng dịch vụ và giá cả tác độn",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Research Question (RQ)",
+      "vietnamese": "Câu hỏi nghiên cứu (RQ)",
+      "vietnamese_variants": [
+        "Câu hỏi khoa học trọng tâm",
+        "Nghi vấn nghiên cứu"
       ],
-      "core_definition": "(`Câu hỏi Nghiên cứu`): Chuyển hóa bài toán quản trị thành nhiệm vụ tìm kiếm thông tin khoa học (ví dụ: *\"Các yếu tố nào về chất lượng dịch vụ và giá cả tác độn.",
-      "seminal_citation": "Schindler (2022)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Thiết kế Nghiên cứu",
+        "Phát triển Đề tài",
+        "Phương pháp Luận Tổng quát"
+      ],
+      "core_definition": "Câu hỏi rõ ràng, sắc bén và có thể khảo sát được bằng phương pháp khoa học (empirical inquiry), xác định chính xác điều mà nhà nghiên cứu muốn khám phá, đo lường hoặc giải thích. Câu hỏi nghiên cứu dẫn dắt mọi quyết định phương pháp luận, từ việc chọn nguồn dữ liệu, biến số đo lường, đến kỹ thuật phân tích thống kê hoặc định tính.",
+      "seminal_citation": "Hulley, S. B., Cummings, S. R., Browner, W. S., Grady, D. G., & Newman, T. B. (2013). Designing Clinical Research (4th ed.). Lippincott Williams & Wilkins; Sandberg, J., & Alvesson, M. (2011). Ways of constructing research questions: Gap-spotting or problematization? Organization, 18(1), 23–44. https://doi.org/10.1177/1350508410372151",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Rác Markdown/bảng; mảnh trích; bị cắt cụt",
       "core_definition_en": "Academic definition of Research Question according to Schindler (2022).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn FINER và PICOT: Câu hỏi nghiên cứu chất lượng cao phải đạt chuẩn FINER (Feasible - khả thi, Interesting - thú vị, Novel - mới mẻ, Ethical - đạo đức, Relevant - thích đáng). Đối với nghiên cứu can thiệp, áp dụng khung PICOT (Population, Intervention, Comparison, Outcome, Time). Phải chuyển hóa mượt mà thành giả thuyết (đối với định lượng) hoặc chủ đề phỏng vấn (đối với định tính).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đặt câu hỏi dạng đóng Có/Không (Yes/No questions); đặt câu hỏi quá rộng hoặc quá hẹp không thể thiết kế nghiên cứu; câu hỏi mang tính phán xét đạo đức thuần túy mà không thể kiểm chứng bằng dữ liệu thực nghiệm.",
+      "apa_reference": "Sandberg, J., & Alvesson, M. (2011). Ways of constructing research questions: Gap-spotting or problematization? Organization, 18(1), 23–44.",
+      "is_flagship": true
     },
     {
       "id": "researcher-control-of-variables",
       "term": "Researcher Control of Variables",
-      "vietnamese": "Thực nghiệm (Experimental study) vs Hậu nghiệm (Ex post facto study).",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Business Research",
-        "Experiments"
+      "vietnamese": "Sự kiểm soát biến số của nhà nghiên cứu",
+      "vietnamese_variants": [
+        "Kiểm soát biến ngoại lai",
+        "Kỹ thuật cô lập biến số trong thực nghiệm"
       ],
-      "core_definition": "Thực nghiệm (Experimental study) vs Hậu nghiệm (Ex post facto study).",
-      "seminal_citation": "Schindler (2022); Schindler (2022)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Thiết kế Thực nghiệm",
+        "Kinh tế lượng & Thống kê",
+        "Suy luận Nhân quả"
+      ],
+      "core_definition": "Khả năng của nhà nghiên cứu trong việc thao tác (manipulate), cô lập, giữ cố định hoặc loại bỏ ảnh hưởng của các biến ngoại lai (extraneous/confounding variables) nhằm đảm bảo rằng sự thay đổi quan sát được trên biến phụ thuộc thực sự do biến độc lập gây ra, tối đa hóa tính giá trị nội tại (internal validity) của nghiên cứu.",
+      "seminal_citation": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and Quasi-Experimental Designs for Generalized Causal Inference. Houghton Mifflin; Pearl, J. (2009). Causality: Models, Reasoning, and Inference (2nd ed.). Cambridge University Press.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Researcher Control of Variables according to Schindler (2022); Schindler (2022).",
       "domain_tags_en": [
         "Business Research",
         "Experiments"
-      ]
+      ],
+      "benchmarks": "Cơ chế kiểm soát: Được thực hiện qua 3 cấp độ: (1) Thiết kế thực nghiệm (ngẫu nhiên hóa - Randomization, ghép cặp - Matching, cô lập môi trường lab), (2) Kiểm soát thống kê (Statistical control qua hồi quy đa biến, ANCOVA, biến giả cố định thời gian/thực thể), và (3) Thiết kế bán thực nghiệm (RDD, DiD, Biến công cụ IV).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đưa vào quá nhiều biến kiểm soát không có cơ sở lý thuyết (bad controls) gây ra hiện tượng kiểm soát biến trung gian (mediator conditioning) hoặc biến va chạm (collider bias), làm biến dạng ước lượng nhân quả chân thực.",
+      "apa_reference": "Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and Quasi-Experimental Designs for Generalized Causal Inference. Houghton Mifflin.",
+      "is_flagship": true
     },
     {
       "id": "resentful-demoralization",
       "term": "Resentful Demoralization",
-      "vietnamese": "Sự thoái chí bất mãn",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Internal Validity Threats"
+      "vietnamese": "Sự suy sụp do bất mãn (trong nhóm đối chứng thực nghiệm)",
+      "vietnamese_variants": [
+        "Hiệu ứng nản lòng bất mãn",
+        "Thiên lệch suy giảm động lực nhóm đối chứng"
       ],
-      "core_definition": "nhóm đối chứng cảm thấy bất công và chán nản từ bỏ nỗ lực làm lệch kết quả so sánh.",
-      "seminal_citation": "Shadish et al. (2002)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Thiết kế Thực nghiệm",
+        "Mối đe dọa Giá trị Nội tại",
+        "Tâm lý học Thực nghiệm"
+      ],
+      "core_definition": "Một mối đe dọa nghiêm trọng đối với tính giá trị nội tại (threat to internal validity) trong các thiết kế thực nghiệm xã hội và giáo dục. Hiện tượng này xảy ra khi các thành viên thuộc nhóm đối chứng (control group) biết được rằng nhóm thực nghiệm đang được thụ hưởng một can thiệp hoặc phần thưởng hấp dẫn, dẫn đến tâm lý thất vọng, phẫn uất, buông xuôi và giảm nỗ lực hoạt động đáng kể.",
+      "seminal_citation": "Cook, T. D., & Campbell, D. T. (1979). Quasi-Experimentation: Design & Analysis Issues for Field Settings. Rand McNally; Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and Quasi-Experimental Designs for Generalized Causal Inference. Houghton Mifflin.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Resentful Demoralization according to Shadish et al. (2002).",
       "domain_tags_en": [
         "Internal Validity Threats"
-      ]
+      ],
+      "benchmarks": "Hệ quả phương pháp luận: Sự suy sụp nỗ lực của nhóm đối chứng làm kết quả thực hiện của họ tụt dốc giả tạo, từ đó phóng đại quá mức chênh lệch giữa hai nhóm (overestimation of intervention effect). Ngược lại với hiệu ứng bù đắp cạnh tranh (Compensatory rivalry / John Henry effect).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Không áp dụng kỹ thuật làm mù (blinding/masking) khi can thiệp có tính nhạy cảm cao; không theo dõi tinh thần và tỷ lệ bỏ cuộc (attrition) của nhóm đối chứng; ngộ nhận rằng mức tăng trưởng vượt trội của nhóm thực nghiệm hoàn toàn do hiệu lực can thiệp.",
+      "apa_reference": "Cook, T. D., & Campbell, D. T. (1979). Quasi-Experimentation: Design & Analysis Issues for Field Settings. Rand McNally.",
+      "is_flagship": true
     },
     {
       "id": "reset",
-      "term": "RESET",
-      "vietnamese": "Kiểm định Lỗi Định dạng Phương trình Hồi quy Ramsey",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Econometrics Diagnostics"
+      "term": "Ramsey's RESET Test (Regression Equation Specification Error Test)",
+      "vietnamese": "Kiểm định sai số đặc tả phương trình hồi quy Ramsey (Kiểm định RESET)",
+      "vietnamese_variants": [
+        "Kiểm định RESET của Ramsey",
+        "Kiểm định dạng hàm hồi quy Ramsey"
       ],
-      "core_definition": "1969) (Ramsey Regression Equation Specification Error Test.",
-      "seminal_citation": "P-value > 0.05: Không bác bỏ giả thuyết H0, kết luận mô hình không có bằng chứng vi phạm dạng hàm.",
-      "tier": "acronym",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Kinh tế lượng (Econometrics)",
+        "Chẩn đoán Mô hình Hồi quy",
+        "Phương pháp Định lượng"
+      ],
+      "core_definition": "Kiểm định chẩn đoán kinh tế lượng tổng quát do James B. Ramsey đề xuất năm 1969, nhằm phát hiện các sai số đặc tả mô hình hồi quy OLS (model specification errors). Kiểm định này kiểm tra xem mô hình có bị: (1) Bỏ sót biến số quan trọng (omitted variables), (2) Sai dạng hàm toán học (incorrect functional form, ví dụ: phi tuyến tính nhưng mô hình hóa tuyến tính), hoặc (3) Tương quan giữa biến độc lập và sai số (nội sinh).",
+      "seminal_citation": "Ramsey, J. B. (1969). Tests for specification errors in classical linear least-squares regression analysis. Journal of the Royal Statistical Society: Series B (Methodological), 31(2), 350–371. https://doi.org/10.1111/j.2517-6161.1969.tb00796.x",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Nguồn ghi ngưỡng",
       "core_definition_en": "Academic definition of RESET according to P-value > 0.05: Không bác bỏ giả thuyết H0, kết luận mô hình không có bằng chứng vi phạm dạng hàm..",
       "domain_tags_en": [
         "Econometrics Diagnostics"
-      ]
+      ],
+      "benchmarks": "Quy tắc quyết định: Kiểm định bổ sung các lũy thừa của giá trị dự báo (ví dụ: ŷ², ŷ³, ŷ⁴) vào phương trình hồi quy phụ và kiểm định F-test (hoặc Wald test) đồng thời các hệ số mới: Nếu p-value < 0.05, bác bỏ giả thuyết H0 (mô hình đặc tả đúng), kết luận mô hình bị sai đặc tả dạng hàm nghiêm trọng; nếu p-value > 0.05, không có bằng chứng sai đặc tả.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Tiếp tục giải thích hệ số hồi quy OLS khi kiểm định RESET bị bác bỏ (p < 0.05); nhầm lẫn rằng vượt qua kiểm định RESET đồng nghĩa với mô hình hoàn hảo không có hiện tượng nội sinh (RESET chỉ phát hiện được dạng hàm và một số biến bỏ sót nhất định).",
+      "apa_reference": "Ramsey, J. B. (1969). Tests for specification errors in classical linear least-squares regression analysis. Journal of the Royal Statistical Society: Series B (Methodological), 31(2), 350–371.",
+      "is_flagship": true
     },
     {
       "id": "residual-∑-of-squares-rss",
       "term": "Residual Sum of Squares (RSS)",
-      "vietnamese": "Tổng Bình phương Phần dư",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Regression Analysis"
+      "vietnamese": "Tổng bình phương phần dư (RSS / SSE)",
+      "vietnamese_variants": [
+        "Tổng phần dư bình phương",
+        "Sum of Squared Errors (SSE)"
       ],
-      "core_definition": "Phần biến thiên của biến phụ thuộc không được mô hình giải thích.",
-      "seminal_citation": "Greene (2018)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phân tích Hồi quy OLS",
+        "Thống kê Toán",
+        "Kinh tế lượng"
+      ],
+      "core_definition": "Tổng bình phương của tất cả các phần dư (hiệu số giữa giá trị thực tế quan sát y_i và giá trị dự báo từ mô hình ŷ_i) trong phân tích hồi quy: RSS = ∑(y_i - ŷ_i)². Trong phương pháp bình phương bé nhất thông thường (OLS), đường hồi quy được xác định bằng cách tối thiểu hóa chính đại lượng RSS này.",
+      "seminal_citation": "Gauss, C. F. (1809). Theoria Motus Corporum Coelestium in Sectionibus Conicis Solem Ambientium. Perthes et Besser; Wooldridge, J. M. (2020). Introductory Econometrics: A Modern Approach (7th ed.). Cengage Learning.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Residual Sum of Squares (RSS) according to Greene (2018).",
       "domain_tags_en": [
         "Regression Analysis"
-      ]
+      ],
+      "benchmarks": "Mối quan hệ phân tích phương sai: Tổng biến thiên toàn phần (TSS) = Tổng bình phương giải thích (ESS) + Tổng bình phương phần dư (RSS). Hệ số xác định R² = 1 - (RSS / TSS). Độ lệch chuẩn của hồi quy (Standard Error of Regression, SER) = √(RSS / (N - k)). RSS càng nhỏ, mô hình càng khớp tốt với tập dữ liệu mẫu.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Cố tình thêm vô số biến độc lập vào mô hình chỉ để ép RSS giảm xuống, dẫn đến hiện tượng quá khớp (overfitting); so sánh trực tiếp RSS giữa hai mô hình có biến phụ thuộc được biến đổi thang đo khác nhau (ví dụ: y so với ln(y)).",
+      "apa_reference": "Wooldridge, J. M. (2020). Introductory Econometrics: A Modern Approach (7th ed.). Cengage Learning.",
+      "is_flagship": true
     },
     {
       "id": "resource-advantage-r-a-theory",
-      "term": "Resource-advantage (R-A) theory",
-      "vietnamese": "Lý thuyết Lợi thế - Nguồn lực",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Resource-Advantage (R-A) Theory",
+      "vietnamese": "Lý thuyết Lợi thế nguồn lực (Lý thuyết R-A)",
+      "vietnamese_variants": [
+        "Lý thuyết cạnh tranh nguồn lực Hunt & Morgan",
+        "Thuyết R-A trong Marketing và Chiến lược"
       ],
-      "core_definition": "Lý thuyết cạnh tranh động giải thích lợi thế bền vững từ nguồn lực dị biệt.",
-      "seminal_citation": "Hunt (2015)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Lý thuyết Quản trị & Marketing",
+        "Chiến lược Kinh doanh",
+        "Khung Khái niệm Lý thuyết"
+      ],
+      "core_definition": "Lý thuyết tiến hóa về cạnh tranh do Shelby D. Hunt và Robert M. Morgan phát triển năm 1995, mở rộng từ Lý thuyết dựa trên nguồn lực (RBV) và kinh tế học thể chế. Lý thuyết R-A xem cạnh tranh là một quá trình liên tục tìm kiếm lợi thế nguồn lực (vật chất, tài chính, con người, pháp lý, tổ chức, thông tin và quan hệ) nhằm đạt được vị thế chi phí thấp hơn hoặc giá trị vượt trội trong phân khúc thị trường, từ đó đem lại hiệu quả tài chính vượt bậc.",
+      "seminal_citation": "Hunt, S. D., & Morgan, R. M. (1995). The comparative advantage theory of competition. Journal of Marketing, 59(2), 1–15. https://doi.org/10.1177/002224299505900201; Hunt, S. D. (2000). A General Theory of Competition: Resources, Competences, Productivity, Economic Growth. SAGE Publications.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Resource-advantage (R-A) theory according to Hunt (2015).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Ứng dụng trong xây dựng mô hình nghiên cứu: Lý thuyết R-A thường được dùng làm nền tảng lý thuyết (theoretical foundation) cho các mô hình SEM khảo sát mối quan hệ giữa Năng lực tiếp thị/đổi mới sáng tạo -> Định vị thị trường -> Hiệu quả kinh doanh; đặc biệt nhấn mạnh tính bất đồng nhất (heterogeneity) của nguồn lực và thị trường không hoàn hảo.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Trích dẫn lý thuyết R-A như một khái niệm chung chung mà không vạch rõ mối liên kết nhân quả giữa nguồn lực cụ thể và lợi thế định vị thị trường; nhầm lẫn giữa nguồn lực (resources) và năng lực cạnh tranh động (dynamic capabilities).",
+      "apa_reference": "Hunt, S. D., & Morgan, R. M. (1995). The comparative advantage theory of competition. Journal of Marketing, 59(2), 1–15.",
+      "is_flagship": true
     },
     {
       "id": "resource-based-view-of-the-firm-rbv",
       "term": "Resource-Based View of the Firm (RBV)",
-      "vietnamese": "Quan điểm Dựa trên Nguồn lực",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Strategic Management"
+      "vietnamese": "Quan điểm dựa trên nguồn lực của doanh nghiệp (Lý thuyết RBV)",
+      "vietnamese_variants": [
+        "Lý thuyết nguồn lực RBV",
+        "Tiếp cận dựa vào nguồn lực nội bộ doanh nghiệp"
       ],
-      "core_definition": "Lợi thế cạnh tranh bền vững bắt nguồn từ các nguồn lực có giá trị, hiếm, khó sao chép và không thay thế được - VRIN.",
-      "seminal_citation": "Barney (1991)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Quản trị Chiến lược",
+        "Khung Khái niệm Lý thuyết",
+        "Lý thuyết Tổ chức"
+      ],
+      "core_definition": "Khung lý thuyết chiến lược kinh điển do Birger Wernerfelt khởi xướng và Jay Barney hoàn thiện, khẳng định rằng lợi thế cạnh tranh bền vững (sustainable competitive advantage) và hiệu quả vượt trội của doanh nghiệp bắt nguồn từ việc sở hữu và khai thác các nguồn lực nội bộ có tính chất VRIN (Valuable - Có giá trị, Rare - Hiếm có, Inimitable - Khó sao chép, Non-substitutable - Không thể thay thế) hoặc khung VRIO (bổ sung Organized to capture value).",
+      "seminal_citation": "Wernerfelt, B. (1984). A resource-based view of the firm. Strategic Management Journal, 5(2), 171–180. https://doi.org/10.1002/smj.4250050207; Barney, J. (1991). Firm resources and sustained competitive advantage. Journal of Management, 17(1), 99–120. https://doi.org/10.1177/014920639101700108",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Resource-Based View of the Firm (RBV) according to Barney (1991).",
       "domain_tags_en": [
         "Strategic Management"
-      ]
+      ],
+      "benchmarks": "Vận dụng phương pháp luận: Khi áp dụng RBV vào nghiên cứu thực nghiệm, nhà nghiên cứu phải thao tác hóa (operationalize) nguồn lực thành các cấu trúc đo lường cụ thể (ví dụ: vốn con người, văn hóa đổi mới, năng lực số hóa) và chứng minh cơ chế dẫn đến hiệu quả doanh nghiệp thông qua phân tích hồi quy, SEM hoặc fsQCA.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Rơi vào bẫy ngụy biện luẩn quẩn (tautological trap) mà Priem & Butler (2001) từng chỉ trích: định nghĩa nguồn lực thành công là nguồn lực tạo ra lợi thế cạnh tranh, rồi lại dùng lợi thế cạnh tranh để chứng minh nguồn lực có giá trị; không kiểm soát bối cảnh môi trường biến động khiến nguồn lực bị lỗi thời.",
+      "apa_reference": "Barney, J. (1991). Firm resources and sustained competitive advantage. Journal of Management, 17(1), 99–120.",
+      "is_flagship": true
     },
     {
       "id": "response-bias",
-      "term": "Response bias",
-      "vietnamese": "Sai lệch do không phản hồi — Tác động sai lệch khi nhóm người không phản hồi có quan điểm khác hẳn nhóm phản hồi.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Design (Creswell)"
+      "term": "Response Bias",
+      "vietnamese": "Thiên lệch phản hồi / Sai lệch trả lời",
+      "vietnamese_variants": [
+        "Thiên kiến phản hồi trong khảo sát",
+        "Sai số trả lời khảo sát"
       ],
-      "core_definition": "Sai lệch do không phản hồi — Tác động sai lệch khi nhóm người không phản hồi có quan điểm khác hẳn nhóm phản hồi.",
-      "seminal_citation": "Creswell & Creswell (2023)",
-      "tier": "creswell",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phương pháp Khảo sát",
+        "Thiết kế Bảng hỏi",
+        "Đo lường & Tâm trắc học"
+      ],
+      "core_definition": "Xu hướng mang tính hệ thống của người tham gia khảo sát trả lời các câu hỏi theo một cách thức sai lệch hoặc không trung thực so với niềm tin, thái độ hoặc hành vi thực tế của họ. Thiên lệch phản hồi bao gồm nhiều dạng thái: thiên vị mong muốn xã hội (social desirability bias), xu hướng luôn đồng thuận (acquiescence bias / yea-saying), thiên lệch chọn phương án cực đoan (extreme responding), hoặc thiên lệch phương án trung lập (central tendency bias).",
+      "seminal_citation": "Podsakoff, P. M., MacKenzie, S. B., Lee, J. Y., & Podsakoff, N. P. (2003). Common method biases in behavioral research: A critical review of the literature and recommended remedies. Journal of Applied Psychology, 88(5), 879–903. https://doi.org/10.1037/0021-9010.88.5.879; Paulhus, D. L. (1991). Measurement and control of response bias. In Measures of Personality and Social Psychological Attitudes (pp. 17–59). Academic Press.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "SAI NGHĨA – response bias (thiên lệch trả lời) ≠ non-response bias (thiên lệch không hồi đáp)",
       "core_definition_en": "Academic definition of Response bias according to Creswell & Creswell (2023).",
       "domain_tags_en": [
         "Research Design (Creswell)"
-      ]
+      ],
+      "benchmarks": "Kỹ thuật kiểm soát: Sử dụng các câu hỏi đảo ngược (reverse-coded items) để phát hiện acquiescence; chèn thang đo mong muốn xã hội của Marlow-Crowne để kiểm soát biến số; bảo mật tuyệt đối danh tính người trả lời (anonymity guarantee); và kiểm tra tính bất biến đo lường (measurement invariance).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Không kiểm tra và làm sạch các câu trả lời bất cẩn (careless/straightlining responses - ví dụ: chọn toàn điểm 5 từ đầu đến cuối); đặt câu hỏi mang tính định hướng hoặc áp đặt đạo đức khiến người trả lời chỉ phản hồi điều xã hội mong muốn.",
+      "apa_reference": "Podsakoff, P. M., MacKenzie, S. B., Lee, J. Y., & Podsakoff, N. P. (2003). Common method biases in behavioral research: A critical review of the literature and recommended remedies. Journal of Applied Psychology, 88(5), 879–903.",
+      "is_flagship": true
     },
     {
       "id": "response-burden",
-      "term": "Response burden",
-      "vietnamese": "Gánh nặng nhận thức đặt lên người trả lời khi câu hỏi quá dài hoặc đòi hỏi lục lọi trí nhớ quá mức.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Questionnaire",
-        "TSE"
+      "term": "Response Burden",
+      "vietnamese": "Gánh nặng phản hồi khảo sát",
+      "vietnamese_variants": [
+        "Áp lực khảo sát đối với người tham gia",
+        "Gánh nặng điền bảng hỏi"
       ],
-      "core_definition": "Gánh nặng nhận thức đặt lên người trả lời khi câu hỏi quá dài hoặc đòi hỏi lục lọi trí nhớ quá mức.",
-      "seminal_citation": "Wiley / Beatty & Willis (2020); Wiley (2020)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phương pháp Khảo sát",
+        "Thiết kế Bảng hỏi",
+        "Thu thập Dữ liệu"
+      ],
+      "core_definition": "Mức độ nỗ lực về nhận thức, thời gian, tâm lý hoặc thể chất mà một người tham gia khảo sát phải gánh chịu để hoàn thành công cụ đo lường (bảng hỏi, nhật ký, phỏng vấn). Gánh nặng phản hồi cao là nguyên nhân hàng đầu dẫn đến tình trạng từ chối tham gia, bỏ dở giữa chừng (survey drop-out), trả lời cẩu thả (satisficing) và làm suy giảm chất lượng dữ liệu khảo sát.",
+      "seminal_citation": "Rolstad, S., Adler, J., & Rydén, A. (2011). Response burden and questionnaire length. Value in Health, 14(8), 1101–1108. https://doi.org/10.1016/j.jval.2011.06.003; Dillman, D. A., Smyth, J. D., & Christian, L. M. (2014). Internet, Phone, Mail, and Mixed-Mode Surveys: The Tailored Design Method (4th ed.). John Wiley & Sons.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Response burden according to Wiley / Beatty & Willis (2020); Wiley (2020).",
       "domain_tags_en": [
         "Questionnaire",
         "TSE"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn thiết kế: Thời gian hoàn thành bảng hỏi trực tuyến lý tưởng là từ 10 đến 15 phút (tối đa không quá 20 phút); hạn chế tối đa ma trận câu hỏi lưới (grid/matrix questions) dài dòng trên điện thoại di động; phân bố nhận thức hợp lý bằng các câu hỏi ngắn gọn, rõ ràng.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Thiết kế bảng hỏi khổng lồ gồm hàng trăm thang đo trùng lặp; bắt buộc trả lời mọi câu hỏi (forced answering) khi gánh nặng quá cao dẫn đến người tham gia chọn bừa để kết thúc; không báo cáo thời gian trung vị hoàn thành bảng hỏi (survey median duration) để chứng minh chất lượng dữ liệu sạch.",
+      "apa_reference": "Rolstad, S., Adler, J., & Rydén, A. (2011). Response burden and questionnaire length. Value in Health, 14(8), 1101–1108.",
+      "is_flagship": true
     },
     {
       "id": "response-latency-response-time-measurement",
-      "term": "Response latency (Response-time measurement)",
-      "vietnamese": "Đo thời gian phản hồi (độ trễ) bằng đồng hồ bấm giờ chủ động để kiểm tra tính chắc chắn của câu trả lời.",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Questionnaire",
-        "TSE"
+      "term": "Response Latency (Response-Time Measurement)",
+      "vietnamese": "Độ trễ phản hồi / Thời gian phản hồi trong thực nghiệm",
+      "vietnamese_variants": [
+        "Thời gian phản hồi nhận thức (Response Time - RT)",
+        "Đo lường tốc độ phản xạ nhận thức"
       ],
-      "core_definition": "Đo thời gian phản hồi (độ trễ) bằng đồng hồ bấm giờ chủ động để kiểm tra tính chắc chắn của câu trả lời.",
-      "seminal_citation": "Wiley / Beatty & Willis (2020); Wiley (2020)",
-      "tier": "index",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Tâm lý học Thực nghiệm",
+        "Kinh tế học Hành vi",
+        "Khoa học Thần kinh & Nhận thức"
+      ],
+      "core_definition": "Khoảng thời gian chính xác (thường đo bằng mili-giây ms) từ thời điểm kích thích thực nghiệm xuất hiện trên màn hình cho đến khi người tham gia thực hiện thao tác phản hồi (bấm phím hoặc nhấp chuột). Thời gian phản hồi là một chỉ số khách quan phản ánh tốc độ xử lý nhận thức, mức độ nỗ lực trí tuệ, mức độ xung đột nhận thức hoặc thái độ tiềm ẩn (implicit attitudes).",
+      "seminal_citation": "Luce, R. D. (1986). Response Times: Their Role in Inferring Elementary Mental Organization. Oxford University Press; Greenwald, A. G., McGhee, D. E., & Schwartz, J. L. (1998). Measuring individual differences in implicit cognition: The implicit association test. Journal of Personality and Social Psychology, 74(6), 1464–1480. https://doi.org/10.1037/0022-3514.74.6.1464",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Lộ tên file nội bộ",
       "core_definition_en": "Academic definition of Response latency (Response-time measurement) according to Wiley / Beatty & Willis (2020); Wiley (2020).",
       "domain_tags_en": [
         "Questionnaire",
         "TSE"
-      ]
+      ],
+      "benchmarks": "Quy chuẩn xử lý dữ liệu: Trong các thực nghiệm như Stroop Task hay IAT (Implicit Association Test), dữ liệu thời gian phản hồi thường bị lệch dương nghiêm trọng (positive skew), đòi hỏi phải biến đổi logarit (log-transformation) hoặc cắt tỉa ngoại lai (ví dụ: loại bỏ các phản xạ < 200ms do đoán mò và > 2000ms do mất tập trung).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Phân tích trực tiếp giá trị trung bình thô của thời gian phản hồi bằng ANOVA/hồi quy tuyến tính mà không kiểm tra độ lệch phân phối hoặc lọc ngoại lai; bỏ qua sự đánh đổi giữa tốc độ và độ chính xác (speed-accuracy tradeoff).",
+      "apa_reference": "Greenwald, A. G., McGhee, D. E., & Schwartz, J. L. (1998). Measuring individual differences in implicit cognition: The implicit association test. Journal of Personality and Social Psychology, 74(6), 1464–1480.",
+      "is_flagship": true
     },
     {
       "id": "restricted-maximum-likelihood-reml-in-meta-analysis",
       "term": "Restricted Maximum Likelihood (REML) in Meta-Analysis",
-      "vietnamese": "Hợp lý Cực đại Giới hạn REML trong Meta-Analysis",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Meta-Analysis"
+      "vietnamese": "Hợp lý cực đại có giới hạn (REML) trong phân tích tổng hợp",
+      "vietnamese_variants": [
+        "Ước lượng REML cho phương sai giữa các nghiên cứu",
+        "Phương pháp REML trong Meta-Analysis"
       ],
-      "core_definition": "Ước lượng tau-squared không thiên lệch được khuyến nghị chuẩn bởi Cochrane.",
-      "seminal_citation": "Viechtbauer (2005)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phân tích Tổng hợp (Meta-Analysis)",
+        "Mô hình Đa cấp (HLM)",
+        "Thống kê Nâng cao"
+      ],
+      "core_definition": "Phương pháp ước lượng hợp lý cực đại có giới hạn (REML) được sử dụng để ước lượng phương sai giữa các nghiên cứu (between-study variance τ² hay tau-squared) trong các mô hình hiệu ứng ngẫu nhiên (random-effects meta-analysis) và mô hình đa cấp. Khác với phương pháp hợp lý cực đại thông thường (ML) thường có xu hướng đánh giá thấp phương sai do không tính đến bậc tự do đã mất khi ước lượng các hiệu ứng cố định, REML mang lại ước lượng không chệch (unbiased) và ổn định hơn ngay cả khi số lượng nghiên cứu tổng hợp không quá lớn.",
+      "seminal_citation": "Viechtbauer, W. (2005). Bias and efficiency of meta-analytic variance estimators in the random-effects model. Journal of Educational and Behavioral Statistics, 30(3), 261–293. https://doi.org/10.3102/10769986030003261; Harville, D. A. (1977). Maximum likelihood approaches to variance component estimation and to related problems. Journal of the American Statistical Association, 72(358), 320–338.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Restricted Maximum Likelihood (REML) in Meta-Analysis according to Viechtbauer (2005).",
       "domain_tags_en": [
         "Meta-Analysis"
-      ]
+      ],
+      "benchmarks": "Khuyến nghị phương pháp luận: Được Cochrane Handbook và Viechtbauer (2005) khuyến nghị là một trong những phương pháp chuẩn mực nhất để ước lượng τ² cùng với DerSimonian-Laird và Paule-Mandel. Khi số lượng nghiên cứu k < 10, REML kết hợp hiệu chỉnh Knapp-Hartung mang lại tỷ lệ bao phủ khoảng tin cậy tối ưu.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Sử dụng phương pháp mô hình hiệu ứng cố định (fixed-effects) khi mức độ dị biệt (heterogeneity I²) cao vượt 50%; hoặc dùng phương pháp DerSimonian-Laird cổ điển khi dữ liệu có sự chênh lệch lớn về cỡ mẫu mà không thực hiện kiểm tra độ nhạy với REML.",
+      "apa_reference": "Viechtbauer, W. (2005). Bias and efficiency of meta-analytic variance estimators in the random-effects model. Journal of Educational and Behavioral Statistics, 30(3), 261–293.",
+      "is_flagship": true
     },
     {
       "id": "retraction-notice",
       "term": "Retraction Notice",
-      "vietnamese": "Thông báo Rút bài Báo khoa học",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Integrity"
+      "vietnamese": "Thông cáo thu hồi bài báo khoa học",
+      "vietnamese_variants": [
+        "Thông báo rút bài báo học thuật",
+        "Lệnh rút bài do vi phạm liêm chính"
       ],
-      "core_definition": "Tuyên bố chính thức của tòa soạn hủy bỏ bài báo do phát hiện gian lận hoặc sai sót nghiêm trọng.",
-      "seminal_citation": "COPE (2019)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Xuất bản Học thuật",
+        "Liêm chính Khoa học (Research Integrity)",
+        "Đạo đức Nghiên cứu"
+      ],
+      "core_definition": "Một văn bản chính thức do tổng biên tập tạp chí khoa học hoặc nhà xuất bản ban hành để thông báo rộng rãi tới cộng đồng học thuật rằng một bài báo đã công bố trước đó bị rút bỏ và không còn được xem là một phần của kho tàng tri thức khoa học đáng tin cậy. Lý do thu hồi có thể do sai sót khoa học trung thực nhưng làm sụp đổ kết luận (honest error) hoặc do hành vi gian lận học thuật nghiêm trọng (FFP: Fabrication, Falsification, Plagiarism; thao túng phản biện, vi phạm đạo đức tác giả).",
+      "seminal_citation": "COPE Council. (2019). COPE Retraction Guidelines. Committee on Publication Ethics. https://doi.org/10.24318/cope.2019.1.4",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Retraction Notice according to COPE (2019).",
       "domain_tags_en": [
         "Research Integrity"
-      ]
+      ],
+      "benchmarks": "Chuẩn mực COPE (Committee on Publication Ethics): Thông cáo thu hồi bắt buộc phải giải thích chi tiết lý do thu hồi, ai là người yêu cầu rút (tác giả, viện nghiên cứu hay tổng biên tập), bài báo gốc phải được gắn dấu mờ (watermark) 'RETRACTED' trên từng trang PDF và giữ nguyên trên website tạp chí để phục vụ lưu trữ lịch sử chứ không được xóa sổ âm thầm.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Tiếp tục trích dẫn bài báo đã bị thu hồi như một tài liệu khoa học hợp lệ (Retraction zombie citation); xóa bài báo khỏi website mà không công bố thông cáo thu hồi minh bạch vi phạm hướng dẫn COPE.",
+      "apa_reference": "COPE Council. (2019). COPE Retraction Guidelines. Committee on Publication Ethics.",
+      "is_flagship": true
     },
     {
       "id": "retrieval-augmented-generation-rag",
-      "term": "Retrieval-Augmented Generation (RAG)",
-      "vietnamese": "Tạo sinh Tăng cường Truy xuất",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "AI in Research"
+      "term": "Retrieval-Augmented Generation (RAG) in Research",
+      "vietnamese": "Tạo sinh tăng cường truy xuất thông tin (RAG trong nghiên cứu)",
+      "vietnamese_variants": [
+        "Mô hình RAG trong rà soát y văn tự động",
+        "Truy xuất kết hợp tạo sinh tài liệu"
       ],
-      "core_definition": "Kỹ thuật truy xuất các tài liệu khoa học đáng tin cậy để làm ngữ cảnh sinh văn bản cho LLM.",
-      "seminal_citation": "Lewis et al. (2020)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Trí tuệ Nhân tạo & NLP",
+        "Phương pháp Tổng quan Y văn",
+        "Khoa học Dữ liệu"
+      ],
+      "core_definition": "Kiến trúc mô hình kết hợp giữa kỹ thuật truy xuất thông tin (information retrieval từ cơ sở dữ liệu tài liệu khoa học chuyên sâu hoặc vector database) và mô hình ngôn ngữ lớn (LLM) để sinh văn bản học thuật có căn cứ trích dẫn chính xác. Trong nghiên cứu phương pháp luận, RAG giúp khắc phục căn bệnh ảo giác (hallucination) của AI bằng cách buộc mô hình phải neo các câu trả lời vào các đoạn trích nguyên bản từ các bài báo khoa học có thật.",
+      "seminal_citation": "Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W. T., Rocktäschel, T., Riedel, S., & Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. Advances in Neural Information Processing Systems, 33, 9459–9474.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Retrieval-Augmented Generation (RAG) according to Lewis et al. (2020).",
       "domain_tags_en": [
         "AI in Research"
-      ]
+      ],
+      "benchmarks": "Đánh giá hiệu năng RAG: Được lượng hóa qua các thước đo RAG Triad: (1) Context Relevance (mức độ sát hợp của tài liệu truy xuất được so với câu hỏi), (2) Groundedness / Faithfulness (mức độ câu trả lời được rút ra trực tiếp từ tài liệu truy xuất mà không bịa đặt), và (3) Answer Relevance (câu trả lời đáp ứng đúng trọng tâm nghi vấn).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Lạm dụng RAG để viết tổng quan y văn tự động mà không đối chiếu lại toàn văn bài báo gốc (PDF gốc); tin tưởng tuyệt đối vào các phân đoạn văn bản nhỏ (chunks) bị cắt xén làm sai lệch ngữ cảnh và ý đồ của tác giả nguyên bản.",
+      "apa_reference": "Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., ... & Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. Advances in Neural Information Processing Systems, 33, 9459–9474.",
+      "is_flagship": true
     },
     {
       "id": "retroduction-abduction-in-critical-realism",
       "term": "Retroduction / Abduction in Critical Realism",
-      "vietnamese": "Suy luận Phục hồi Cơ chế",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Critical Realism"
+      "vietnamese": "Thoái diễn và suy luận hồi quy cơ chế trong chủ nghĩa hiện thực phê phán",
+      "vietnamese_variants": [
+        "Suy luận quy thoái (Retroduction)",
+        "Lập luận truy nguyên cấu trúc sâu"
       ],
-      "core_definition": "Lập luận từ các hiện tượng quan sát được quay ngược lại khám phá các cơ chế sâu cấu thành nên hiện tượng.",
-      "seminal_citation": "Bhaskar (1979), Sayer (1992)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Chủ nghĩa Hiện thực Phê phán (Critical Realism)",
+        "Triết học Khoa học",
+        "Phương pháp Luận Định tính"
+      ],
+      "core_definition": "Phương thức suy luận triết học nền tảng trong Chủ nghĩa Hiện thực Phê phán (Roy Bhaskar), đi từ quan sát các hiện tượng và sự kiện ở tầng hiện thực kinh nghiệm (the empirical) hoặc sự kiện thực tế (the actual) để suy diễn ngược về sự tồn tại của các cơ chế tạo sinh (generative mechanisms), cấu trúc sâu và quyền năng nhân quả (causal powers) ở tầng thực tại sâu kín (the real) - những yếu tố nếu không tồn tại thì hiện tượng quan sát được sẽ không thể xảy ra.",
+      "seminal_citation": "Bhaskar, R. (1975). A Realist Theory of Science. Leeds Books; Danermark, B., Ekström, M., & Karlsson, J. C. (2019). Explaining Society: Critical Realism in the Social Sciences (2nd ed.). Routledge. https://doi.org/10.4324/9781351017831",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "abduction ≠ retroduction (Danermark et al. 2002) – không gộp",
       "core_definition_en": "Academic definition of Retroduction / Abduction in Critical Realism according to Bhaskar (1979), Sayer (1992).",
       "domain_tags_en": [
         "Critical Realism"
-      ]
+      ],
+      "benchmarks": "Quy trình thực thi: Nhà nghiên cứu đặt câu hỏi trung tâm: 'Thế giới thực tế phải có cấu trúc như thế nào để hiện tượng X này có thể xảy ra?'; kết hợp Abduction (tái mô tả hiện tượng dưới các khái niệm lý thuyết trừu tượng mới) và Retroduction (chứng minh sự tồn tại của cơ chế nhân quả ngầm thông qua loại trừ các giả thuyết cạnh tranh).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Nhầm lẫn Retroduction với suy luận diễn dịch đơn thuần; chỉ mô tả các mối tương quan bề mặt giữa các biến số mà không giải thích được cơ chế tạo sinh nào đang vận hành ngầm bên dưới bối cảnh xã hội cụ thể.",
+      "apa_reference": "Danermark, B., Ekström, M., & Karlsson, J. C. (2019). Explaining Society: Critical Realism in the Social Sciences (2nd ed.). Routledge.",
+      "is_flagship": true
     },
     {
       "id": "revise-and-resubmit-rr",
       "term": "Revise and Resubmit (R&R)",
-      "vietnamese": "Yêu cầu Chỉnh sửa và Nộp lại",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Academic Publishing"
+      "vietnamese": "Quyết định sửa chữa và nộp lại bài báo (R&R)",
+      "vietnamese_variants": [
+        "Yêu cầu chỉnh sửa và nộp lại bản thảo",
+        "Quy trình giải trình phản biện R&R"
       ],
-      "core_definition": "Quyết định của tạp chí cho phép tác giả sửa chữa lớn và nộp lại để xem xét vòng 2.",
-      "seminal_citation": "Belcher (2019)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Xuất bản Học thuật",
+        "Quy trình Bình duyệt (Peer Review)",
+        "Giao tiếp Học thuật"
+      ],
+      "core_definition": "Quyết định biên tập của một tạp chí khoa học cho biết bài báo chưa thể được chấp nhận ngay nhưng có tiềm năng học thuật rõ rệt nếu tác giả thực hiện các chỉnh sửa đáng kể theo yêu cầu của các chuyên gia bình duyệt (thường chia thành Major Revision hoặc Minor Revision) và nộp lại kèm bản giải trình chi tiết (Response to Reviewers).",
+      "seminal_citation": "Kumar, M. (2014). Effective response to reviewer comments: The 'do's and 'don't's. Journal of Young Pharmacists, 6(4), 1–2. https://doi.org/10.5530/jyp.2014.4.1; Mudrak, B. (2015). Peer review: How to respond to reviewers. Nature. https://doi.org/10.1038/nature.2015.17060",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Revise and Resubmit (R&R) according to Belcher (2019).",
       "domain_tags_en": [
         "Academic Publishing"
-      ]
+      ],
+      "benchmarks": "Chiến lược chuẩn mực chuẩn Q1: Tác giả phải xây dựng 'Rebuttal Letter' theo quy tắc 'Point-by-Point': (1) Trích dẫn nguyên văn từng ý kiến nhận xét của từng Reviewer, (2) Lời cảm ơn và giải thích phương án sửa chữa thấu đáo, (3) Trích dẫn đoạn văn đã viết lại kèm số trang và số dòng cụ thể trong bản thảo đã theo dõi dấu vết sửa đổi (Track Changes).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Thái độ phòng thủ, tranh cãi gay gắt với Reviewer mà không có bằng chứng khoa học; bỏ sót một số ý kiến phản biện nhạy cảm mà không trả lời; chỉ hứa hẹn sửa trong thư giải trình nhưng không thực sự sửa trong nội dung bản thảo.",
+      "apa_reference": "Kumar, M. (2014). Effective response to reviewer comments: The 'do's and 'don't's. Journal of Young Pharmacists, 6(4), 1–2.",
+      "is_flagship": true
     },
     {
       "id": "rhetorical-structure-in-academic-writing",
-      "term": "Rhetorical Structure in Academic Writing",
-      "vietnamese": "Cấu trúc Tu từ trong Văn phong Học thuật",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Academic Writing"
+      "term": "Rhetorical Structure in Academic Writing (CARS Model)",
+      "vietnamese": "Cấu trúc tu từ trong văn phong học thuật (Mô hình CARS Swales)",
+      "vietnamese_variants": [
+        "Cấu trúc diễn ngôn học thuật",
+        "Mô hình lập luận CARS của John Swales"
       ],
-      "core_definition": "Cách thức tổ chức lập luận, cấu trúc IMRAD và việc sử dụng đại từ khách quan trong bài báo.",
-      "seminal_citation": "Swales (1990)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Viết Học thuật",
+        "Ngôn ngữ học Ứng dụng",
+        "Thiết kế Bản thảo Khoa học"
+      ],
+      "core_definition": "Tổ chức chiến lược các bước lập luận và nước đi tu từ (rhetorical moves) trong văn bản khoa học, tiêu biểu là mô hình CARS (Create a Research Space) do John Swales đề xuất cho phần Mở đầu (Introduction). Mô hình gồm 3 bước đi chiến lược: Move 1: Thiết lập lãnh địa nghiên cứu (Establishing a territory), Move 2: Thiết lập khoảng trống học thuật (Establishing a niche / identifying a gap), và Move 3: Chiếm lĩnh khoảng trống đó bằng nghiên cứu hiện tại (Occupying the niche).",
+      "seminal_citation": "Swales, J. M. (1990). Genre Analysis: English in Academic and Research Settings. Cambridge University Press; Swales, J. M. (2004). Research Genres: Explorations and Applications. Cambridge University Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Rhetorical Structure in Academic Writing according to Swales (1990).",
       "domain_tags_en": [
         "Academic Writing"
-      ]
+      ],
+      "benchmarks": "Bộ tiêu chuẩn nước đi tu từ: Move 1 đòi hỏi nhấn mạnh tầm quan trọng của chủ đề và điểm lại y văn nền; Move 2 bắt buộc sử dụng các từ nối phủ định hoặc tương phản (However, Despite, Little is known, Remains elusive) để làm nổi bật sự thiếu hụt tri thức; Move 3 công bố mục tiêu, câu hỏi nghiên cứu và giá trị đóng góp mới.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Viết phần mở đầu lan man như một tiểu luận mô tả mà không định vị rõ 'Research Niche' (thiếu Move 2); tự tâng bốc công trình mà không dẫn chứng các hạn chế của các nghiên cứu tiền nhiệm.",
+      "apa_reference": "Swales, J. M. (1990). Genre Analysis: English in Academic and Research Settings. Cambridge University Press.",
+      "is_flagship": true
     },
     {
       "id": "ridge-regression-l2-regularization",
@@ -49275,20 +49555,29 @@
     {
       "id": "right-censoring-vs-left-censoring",
       "term": "Right Censoring vs. Left Censoring",
-      "vietnamese": "Dữ liệu Kiểm duyệt Phải vs. Kiểm duyệt Trái",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Survival Analysis"
+      "vietnamese": "Cắt cụt phải và cắt cụt trái trong phân tích sống sót",
+      "vietnamese_variants": [
+        "Dữ liệu kiểm duyệt phải vs kiểm duyệt trái",
+        "Hiện tượng Censoring trong Survival Analysis"
       ],
-      "core_definition": "Hiện tượng đối tượng kết thúc theo dõi trước khi xảy ra biến cố hoặc đã biến cố từ trước.",
-      "seminal_citation": "Klein & Moeschberger (2003)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phân tích Sống sót (Survival Analysis)",
+        "Thống kê Y sinh & Kinh tế học",
+        "Phương pháp Định lượng"
+      ],
+      "core_definition": "Hiện tượng dữ liệu bị khuyết thông tin về thời gian chính xác xảy ra biến cố (event of interest) trong phân tích sống sót. Right Censoring (cắt cụt phải - phổ biến nhất) xảy ra khi thời gian theo dõi kết thúc mà biến cố vẫn chưa xảy ra hoặc đối tượng bị mất dấu (loss to follow-up); Left Censoring (cắt cụt trái) xảy ra khi biến cố đã diễn ra tại một thời điểm nào đó trước khi đối tượng bắt đầu được đưa vào quan sát theo dõi nhưng không rõ chính xác thời điểm nào.",
+      "seminal_citation": "Kaplan, E. L., & Meier, P. (1958). Nonparametric estimation from incomplete observations. Journal of the American Statistical Association, 53(282), 457–481. https://doi.org/10.1080/01621459.1958.10501452; Cox, D. R. (1972). Regression models and life-tables. Journal of the Royal Statistical Society: Series B (Methodological), 34(2), 187–202.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Right Censoring vs. Left Censoring according to Klein & Moeschberger (2003).",
       "domain_tags_en": [
         "Survival Analysis"
-      ]
+      ],
+      "benchmarks": "Xử lý mô hình: Giả định cơ bản là cắt cụt không mang tính thông tin (non-informative censoring - thời điểm bị cắt cụt độc lập với xác suất xảy ra biến cố). Các mô hình Kaplan-Meier và Cox Proportional Hazards được thiết kế đặc thù để xử lý Right Censoring mà không làm thiên lệch ước lượng hàm sống sót S(t).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Loại bỏ các quan sát bị cắt cụt phải (censored observations) ra khỏi phân tích rồi chạy hồi quy OLS thông thường, dẫn đến sai số thiên lệch nghiêm trọng (selection/survivorship bias); không kiểm định giả định non-informative censoring khi tỷ lệ bỏ cuộc cao.",
+      "apa_reference": "Kaplan, E. L., & Meier, P. (1958). Nonparametric estimation from incomplete observations. Journal of the American Statistical Association, 53(282), 457–481.",
+      "is_flagship": true
     },
     {
       "id": "risk-of-bias-in-non-randomized-studies---of-interventions",
@@ -49333,125 +49622,182 @@
     },
     {
       "id": "rmr",
-      "term": "RMR",
-      "vietnamese": "Căn bậc hai Phần dư Toàn phương Trung bình",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "CB-SEM Diagnostics"
+      "term": "Root Mean Square Residual (RMR)",
+      "vietnamese": "Căn bậc hai trung bình bình phương phần dư (Chỉ số RMR)",
+      "vietnamese_variants": [
+        "Chỉ số RMR trong CB-SEM",
+        "Sai số phần dư căn bậc hai trung bình"
       ],
-      "core_definition": "Đo độ lớn trung bình của phần dư giữa ma trận hiệp phương sai quan sát và ma trận hiệp phương sai do mô hình ước lượng. Ngưỡng thực nghiệm tham chiếu: Càng nhỏ càng tốt; tuy nhiên vì phụ thuộc vào đơn vị đo của các biến nên ngày nay hầu hết reviewer yêu cầu dùng phiên bản chuẩn hóa SRMR (< 0.08).",
-      "seminal_citation": "Càng nhỏ càng tốt; tuy nhiên vì phụ thuộc vào đơn vị đo của các biến nên ngày nay hầu hết reviewer yêu cầu dùng phiên bản chuẩn hóa SRMR (< 0.08).",
-      "tier": "acronym",
+      "domain_tags": [
+        "Độ phù hợp Mô hình (Model Fit)",
+        "CB-SEM & CFA",
+        "Phương pháp Định lượng"
+      ],
+      "core_definition": "Chỉ số độ phù hợp mô hình tuyệt đối (absolute fit index) trong phân tích nhân tố khẳng định (CFA) và mô hình phương trình cấu trúc (CB-SEM), đo lường giá trị căn bậc hai của trung bình bình phương các phần dư hiệp phương sai (hiệu số giữa ma trận hiệp phương sai mẫu S và ma trận hiệp phương sai hàm ý bởi mô hình Σ). Vì giá trị RMR phụ thuộc trực tiếp vào đơn vị thang đo của các biến quan sát, chỉ số SRMR (Standardized RMR) chuẩn hóa đã được phát triển để thay thế trong thực hành.",
+      "seminal_citation": "Jöreskog, K. G., & Sörbom, D. (1981). LISREL V: Analysis of Linear Structural Relationships by Maximum Likelihood and Least Squares Methods. University of Uppsala; Hu, L. T., & Bentler, P. M. (1999). Cutoff criteria for fit indexes in covariance structure analysis: Conventional criteria versus new alternatives. Structural Equation Modeling, 6(1), 1–55. https://doi.org/10.1080/10705519909540118",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of RMR according to Càng nhỏ càng tốt; tuy nhiên vì phụ thuộc vào đơn vị đo của các biến nên ngày nay hầu hết reviewer yêu cầu dùng phiên bản chuẩn hóa SRMR (< 0.08)..",
       "domain_tags_en": [
         "CB-SEM Diagnostics"
       ],
-      "benchmarks": "Càng nhỏ càng tốt; tuy nhiên vì phụ thuộc vào đơn vị đo của các biến nên ngày nay hầu hết reviewer yêu cầu dùng phiên bản chuẩn hóa SRMR (< 0.08)."
+      "benchmarks": "Ngưỡng đánh giá: Đối với dữ liệu thô, RMR càng nhỏ càng tốt (RMR = 0 biểu thị độ khớp hoàn hảo). Tuy nhiên, vì nhạy cảm với thang đo, các tạp chí Q1 luôn yêu cầu báo cáo chỉ số chuẩn hóa SRMR (Standardized Root Mean Square Residual) với ngưỡng chuẩn: SRMR ≤ 0.08 là độ phù hợp chấp nhận được, và SRMR ≤ 0.05 là độ phù hợp tuyệt vời (Hu & Bentler, 1999).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Báo cáo chỉ số RMR chưa chuẩn hóa khi các biến quan sát có thang đo khác biệt (ví dụ: biến thu nhập hàng triệu đồng kết hợp biến Likert 5 điểm), khiến giá trị RMR bị phóng đại phi lý; nhầm lẫn giữa RMR (đo phần dư hiệp phương sai) và RMSEA (đo phần dư xấp xỉ trên bậc tự do).",
+      "apa_reference": "Hu, L. T., & Bentler, P. M. (1999). Cutoff criteria for fit indexes in covariance structure analysis: Conventional criteria versus new alternatives. Structural Equation Modeling, 6(1), 1–55.",
+      "is_flagship": true
     },
     {
       "id": "robins-i",
-      "term": "ROBINS-I",
-      "vietnamese": "Công cụ Đánh giá Nguy cơ Thiên lệch trong Nghiên cứu Không ngẫu nhiên hóa (Risk Of Bias In Non-randomized Studies - of Interventions)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Evidence-Based Research"
+      "term": "ROBINS-I (Risk Of Bias In Non-randomized Studies - of Interventions)",
+      "vietnamese": "Công cụ đánh giá nguy cơ sai lệch trong các nghiên cứu can thiệp không ngẫu nhiên (ROBINS-I)",
+      "vietnamese_variants": [
+        "Thang đo rủi ro thiên lệch ROBINS-I",
+        "Tiêu chuẩn Cochrane đánh giá nghiên cứu phi ngẫu nhiên"
       ],
-      "core_definition": "Công cụ Đánh giá Nguy cơ Thiên lệch trong Nghiên cứu Không ngẫu nhiên hóa (Risk Of Bias In Non-randomized Studies - of Interventions).",
-      "seminal_citation": "Đánh giá qua 7 miền (domains), phân loại rủi ro: Low, Moderate, Serious, Critical, hoặc No information.",
-      "tier": "acronym",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phân tích Tổng hợp (Meta-Analysis)",
+        "Đánh giá Chất lượng Nghiên cứu",
+        "Thiết kế Bán thực nghiệm"
+      ],
+      "core_definition": "Công cụ đánh giá nguy cơ sai lệch (Risk of Bias) chuẩn vàng quốc tế do tổ chức Cochrane và nhóm Sterne et al. phát triển năm 2016, chuyên dùng để thẩm định chất lượng phương pháp luận của các nghiên cứu can thiệp phi ngẫu nhiên (Non-randomized Studies of Interventions - NRSI) như nghiên cứu thuần tập (cohort), bệnh-chứng (case-control), hoặc nghiên cứu bán thực nghiệm.",
+      "seminal_citation": "Sterne, J. A., Hernán, M. A., Reeves, B. C., Savović, J., Berkman, N. D., Viswanathan, M., ... & Higgins, J. P. (2016). ROBINS-I: A tool for assessing risk of bias in non-randomised studies of interventions. BMJ, 355, i4919. https://doi.org/10.1136/bmj.i4919",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Nguồn ghi ngưỡng",
       "core_definition_en": "Academic definition of ROBINS-I according to Đánh giá qua 7 miền (domains), phân loại rủi ro: Low, Moderate, Serious, Critical, hoặc No information..",
       "domain_tags_en": [
         "Evidence-Based Research"
-      ]
+      ],
+      "benchmarks": "7 miền sai lệch (Domains): (1) Sai lệch do yếu tố gây nhiễu (Confounding), (2) Chọn lựa đối tượng (Selection of participants), (3) Phân loại can thiệp (Classification of interventions), (4) Sai lệch khỏi can thiệp dự kiến (Deviations from intended interventions), (5) Dữ liệu bị thiếu (Missing data), (6) Đo lường kết quả (Measurement of outcomes), và (7) Lựa chọn kết quả báo cáo (Selection of reported result). Mỗi miền được phân hạng: Low, Moderate, Serious, Critical risk of bias.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Đánh giá một nghiên cứu phi ngẫu nhiên có nguy cơ sai lệch 'Low' khi chưa kiểm soát toàn diện các yếu tố gây nhiễu chính (trong ROBINS-I, một nghiên cứu NRSI hiếm khi đạt 'Low' ở mọi miền so với thử nghiệm ngẫu nhiên lý tưởng); gộp chung các nghiên cứu có nguy cơ 'Critical' vào phân tích meta-analysis làm sai lệch toàn bộ kết luận tổng hợp.",
+      "apa_reference": "Sterne, J. A., Hernán, M. A., Reeves, B. C., Savović, J., Berkman, N. D., Viswanathan, M., ... & Higgins, J. P. (2016). ROBINS-I: A tool for assessing risk of bias in non-randomised studies of interventions. BMJ, 355, i4919.",
+      "is_flagship": true
     },
     {
       "id": "robins-i-tool",
-      "term": "ROBINS-I Tool",
-      "vietnamese": "Công cụ ROBINS-I",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Evidence Appraisal"
+      "term": "ROBINS-I Tool Implementation",
+      "vietnamese": "Quy trình triển khai công cụ ROBINS-I trong tổng quan hệ thống",
+      "vietnamese_variants": [
+        "Thực hành áp dụng công cụ ROBINS-I",
+        "Quy trình chấm điểm nguy cơ sai lệch ROBINS-I"
       ],
-      "core_definition": "Đánh giá nguy cơ sai lệch trong các nghiên cứu can thiệp không ngẫu nhiên.",
-      "seminal_citation": "Sterne et al. (2016)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phân tích Tổng hợp (Meta-Analysis)",
+        "Tổng quan Hệ thống (Systematic Review)",
+        "Thẩm định Y văn"
+      ],
+      "core_definition": "Quy trình tác nghiệp chuẩn hóa nhiều bước để vận hành công cụ ROBINS-I trong các tổng quan hệ thống. Quy trình bắt đầu bằng việc xác định 'nghiên cứu thử nghiệm ngẫu nhiên lý tưởng giả định' (target randomized trial), xác định danh mục các biến gây nhiễu tiềm tàng và các đồng can thiệp (co-interventions), trả lời các câu hỏi chỉ dẫn (signaling questions) theo thuật toán định trước để đưa ra phán quyết rủi ro cho từng miền.",
+      "seminal_citation": "Sterne, J. A., Hernán, M. A., Reeves, B. C., Savović, J., Berkman, N. D., Viswanathan, M., ... & Higgins, J. P. (2016). ROBINS-I: A tool for assessing risk of bias in non-randomised studies of interventions. BMJ, 355, i4919. https://doi.org/10.1136/bmj.i4919; McGuinness, L. A., & Higgins, J. P. (2021). Risk-of-bias VISualization (robvis): An R package and SE Shiny web app for visualizing risk-of-bias assessments. Research Synthesis Methods, 12(1), 55–61.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of ROBINS-I Tool according to Sterne et al. (2016).",
       "domain_tags_en": [
         "Evidence Appraisal"
-      ]
+      ],
+      "benchmarks": "Đảm bảo độ tin cậy liên thẩm định: Bắt buộc tối thiểu 2 nhà nghiên cứu độc lập thực hiện chấm điểm ROBINS-I cho từng bài báo; tính toán chỉ số đồng thuận Cohen's Kappa hoặc giải quyết bất đồng thông qua trọng tài thứ ba (consensus arbiter); vẽ biểu đồ trực quan hóa rủi ro sai lệch (traffic-light plot và summary plot bằng công cụ robvis).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Chỉ có một người tự đánh giá rủi ro sai lệch mà không có thẩm định chéo độc lập; bỏ qua bước xác định trước danh mục biến gây nhiễu (confounders) quan trọng trong đề cương (protocol) đã đăng ký PROSPERO.",
+      "apa_reference": "Sterne, J. A., Hernán, M. A., Reeves, B. C., Savović, J., Berkman, N. D., Viswanathan, M., ... & Higgins, J. P. (2016). ROBINS-I: A tool for assessing risk of bias in non-randomised studies of interventions. BMJ, 355, i4919.",
+      "is_flagship": true
     },
     {
       "id": "robustness-check-results",
       "term": "Robustness Check Results",
-      "vietnamese": "Kết quả Kiểm tra Độ vững",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Applied Econometrics"
+      "vietnamese": "Kết quả kiểm tra tính vững của mô hình thực nghiệm",
+      "vietnamese_variants": [
+        "Kiểm định độ bền vững kết quả",
+        "Phân tích độ nhạy mô hình (Sensitivity analysis)"
       ],
-      "core_definition": "Báo cáo kết quả kiểm định mô hình với các thông số, mẫu hoặc phương pháp thay thế.",
-      "seminal_citation": "Lu & White (2014)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Kinh tế lượng & Thống kê",
+        "Suy luận Nhân quả",
+        "Độ tin cậy Mô hình"
+      ],
+      "core_definition": "Tập hợp các phân tích thực nghiệm bổ sung được thực hiện nhằm chứng minh rằng các kết luận cốt lõi và các hệ số ước lượng chính của nghiên cứu không bị phụ thuộc một cách mong manh vào các giả định mô hình hóa cụ thể, phương pháp chọn mẫu, định nghĩa đo lường biến số, hoặc kỹ thuật ước lượng được áp dụng trong mô hình đường cơ sở (baseline model).",
+      "seminal_citation": "Lu, X., & White, H. (2014). Robustness checks and robustness tests in applied economics. Journal of Econometrics, 178(1), 194–206. https://doi.org/10.1016/j.jeconom.2013.08.016; Leamer, E. E. (1983). Let's take the con out of econometrics. The American Economic Review, 73(1), 31–43.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Robustness Check Results according to Lu & White (2014).",
       "domain_tags_en": [
         "Applied Econometrics"
-      ]
+      ],
+      "benchmarks": "Các trục kiểm tra tính vững chuẩn Q1: (1) Thay đổi đặc tả mô hình (thêm/bớt biến kiểm soát, dạng hàm bậc hai/logarit), (2) Thay đổi phương pháp ước lượng (OLS vs FE/RE, GMM, 2SLS), (3) Thay đổi định nghĩa đo lường của biến độc lập/phụ thuộc (alternative proxies), (4) Chia mẫu kiểm tra tính dị biệt (sub-sample analysis / split-half), và (5) Kiểm định giả định giả dược (placebo test).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Chỉ báo cáo các kiểm định tính vững thành công và che giấu các kiểm định thất bại (selective reporting / confirmation bias); ngụy biện rằng kết quả vững khi dấu của hệ số ước lượng bị đổi chiều hoặc mất hoàn toàn ý nghĩa thống kê trong các bài test cơ bản.",
+      "apa_reference": "Lu, X., & White, H. (2014). Robustness checks and robustness tests in applied economics. Journal of Econometrics, 178(1), 194–206.",
+      "is_flagship": true
     },
     {
       "id": "roc-curve-receiver-operating-characteristic",
       "term": "ROC Curve (Receiver Operating Characteristic)",
-      "vietnamese": "Đường cong ROC",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Diagnostic Metrics"
+      "vietnamese": "Đường cong đặc trưng hoạt động của bộ thu (Đường cong ROC)",
+      "vietnamese_variants": [
+        "Đường cong ROC",
+        "Biểu đồ đánh giá năng lực phân loại nhị phân"
       ],
-      "core_definition": "Đồ thị biểu diễn mối đánh đổi giữa độ nhạy True Positive và tỷ lệ dương tính giả False Positive.",
-      "seminal_citation": "Hanley & McNeil (1982)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Học máy & Phân loại Thống kê",
+        "Chẩn đoán Y sinh",
+        "Đánh giá Hiệu năng Mô hình"
+      ],
+      "core_definition": "Đồ thị biểu diễn hiệu năng của mô hình phân loại nhị phân (binary classifier) trên tất cả các ngưỡng phân loại (classification thresholds) khả dĩ. Đồ thị vẽ tỷ lệ dương tính thật (True Positive Rate - TPR hay Sensitivity / Recall) trên trục tung so với tỷ lệ dương tính giả (False Positive Rate - FPR hay 1 - Specificity) trên trục hoành. Diện tích dưới đường cong ROC (AUC - Area Under the Curve) là chỉ số chuẩn mực đo lường năng lực phân biệt của mô hình.",
+      "seminal_citation": "Hanley, J. A., & McNeil, B. J. (1982). The meaning and use of the area under a receiver operating characteristic (ROC) curve. Radiology, 143(1), 29–36. https://doi.org/10.1148/radiology.143.1.7063747; Fawcett, T. (2006). An introduction to ROC analysis. Pattern Recognition Letters, 27(8), 861–874.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of ROC Curve (Receiver Operating Characteristic) according to Hanley & McNeil (1982).",
       "domain_tags_en": [
         "Diagnostic Metrics"
-      ]
+      ],
+      "benchmarks": "Ngưỡng đánh giá AUC-ROC: AUC = 0.50 tương đương đoán ngẫu nhiên (không có giá trị phân biệt); 0.70 ≤ AUC < 0.80: chấp nhận được (acceptable); 0.80 ≤ AUC < 0.90: xuất sắc (excellent); AUC ≥ 0.90: vượt trội (outstanding). Điểm cắt tối ưu (optimal cutoff) thường được xác định qua chỉ số Youden's Index J = Sensitivity + Specificity - 1.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Sử dụng AUC-ROC để kết luận hiệu năng cao trên các bộ dữ liệu mất cân bằng nghiêm trọng (imbalanced datasets - ví dụ: chỉ có 1% gian lận), trong đó đường cong Precision-Recall (PR AUC) là bắt buộc vì ROC có xu hướng lạc quan giả tạo khi số lượng âm tính thật quá áp đảo.",
+      "apa_reference": "Hanley, J. A., & McNeil, B. J. (1982). The meaning and use of the area under a receiver operating characteristic (ROC) curve. Radiology, 143(1), 29–36.",
+      "is_flagship": true
     },
     {
       "id": "root-cause-analysis-5-whys-technique",
       "term": "Root Cause Analysis (5 Whys Technique)",
-      "vietnamese": "Phân tích Nguyên nhân Cốt lõi",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Quality Management"
+      "vietnamese": "Phân tích nguyên nhân gốc rễ (Kỹ thuật 5 Tại sao)",
+      "vietnamese_variants": [
+        "Phương pháp 5 Whys tìm nguyên nhân cốt lõi",
+        "Phân tích truy nguyên vấn đề"
       ],
-      "core_definition": "Hỏi 'Tại sao?' 5 lần liên tiếp để đào sâu đến tận nguồn gốc vấn đề.",
-      "seminal_citation": "Ohno (1988)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Nghiên cứu Hành động (Action Research)",
+        "Quản lý Chất lượng & Vận hành",
+        "Giải quyết Vấn đề"
+      ],
+      "core_definition": "Kỹ thuật giải quyết vấn đề lặp đi lặp lại do Sakichi Toyoda sáng tạo và được tập đoàn Toyota phổ biến rộng rãi trong Hệ thống Sản xuất Toyota (TPS). Kỹ thuật này khám phá mối quan hệ nhân quả nền tảng bằng cách đặt câu hỏi 'Tại sao?' liên tiếp năm lần (hoặc cho đến khi chạm tới nguyên nhân cơ bản) trước một sự cố, nhằm vượt qua các triệu chứng bề mặt để chạm tới khiếm khuyết trong quy trình hoặc hệ thống quản trị cốt lõi.",
+      "seminal_citation": "Ohno, T. (1988). Toyota Production System: Beyond Large-Scale Production. Productivity Press; Andersen, B., & Fagerhaug, T. (2006). Root Cause Analysis: Simplified Tools and Techniques (2nd ed.). ASQ Quality Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Root Cause Analysis (5 Whys Technique) according to Ohno (1988).",
       "domain_tags_en": [
         "Quality Management"
-      ]
+      ],
+      "benchmarks": "Nguyên tắc vận dụng: Tập trung vào quy trình vận hành và cơ chế hệ thống chứ không đổ lỗi cho cá nhân; mỗi câu trả lời cho chữ 'Tại sao' trước đó phải là một điều kiện cần và đủ có bằng chứng thực nghiệm xác thực (factual evidence) chứ không dựa trên suy đoán chủ quan; kết hợp với biểu đồ xương cá Ishikawa để không bỏ sót các nhánh nguyên nhân khác.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Dừng lại quá sớm ở triệu chứng bên ngoài; theo đuổi một chuỗi nguyên nhân tuyến tính duy nhất (single linear path) trong khi các vấn đề tổ chức phức tạp thường do nhiều nguyên nhân đa chiều tương tác gây ra; thiếu bằng chứng khách quan xác minh từng bước 'Tại sao'.",
+      "apa_reference": "Ohno, T. (1988). Toyota Production System: Beyond Large-Scale Production. Productivity Press.",
+      "is_flagship": true
     },
     {
       "id": "root-mean-square-error",
-      "term": "Root Mean Square Error",
-      "vietnamese": "Căn bậc hai Sai số Toàn phương Trung bình",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Model Evaluation",
-        "Predictive Statistics"
+      "term": "Root Mean Square Error (RMSE)",
+      "vietnamese": "Căn bậc hai sai số trung bình bình phương (Chỉ số RMSE)",
+      "vietnamese_variants": [
+        "Sai số toàn phương trung bình",
+        "Độ lệch chuẩn của phần dư hồi quy"
       ],
-      "core_definition": "Thước đo độ lớn của sai số dự báo giữa giá trị ước lượng và giá trị thực tế quan sát được trong mô hình hồi quy, rất nhạy cảm với các sai số lớn (outliers). Ngưỡng thực nghiệm tham chiếu: Càng nhỏ càng tốt; dùng để so sánh hiệu năng dự báo ngoài mẫu giữa các mô hình cạnh tranh trên cùng một tập dữ liệu.",
-      "seminal_citation": "Càng nhỏ càng tốt; dùng để so sánh hiệu năng dự báo ngoài mẫu giữa các mô hình cạnh tranh trên cùng một tập dữ liệu.",
-      "tier": "acronym",
+      "domain_tags": [
+        "Phân tích Hồi quy OLS",
+        "Độ chính xác Dự báo",
+        "Thống kê Mô tả & Suy luận"
+      ],
+      "core_definition": "Thước đo độ chính xác dự báo và mức độ khớp của mô hình hồi quy, tính bằng căn bậc hai của trung bình các sai số bình phương giữa giá trị thực tế và giá trị dự báo: RMSE = √[ (1/n) ∑ (y_i - ŷ_i)² ]. RMSE có cùng đơn vị đo lường với biến phụ thuộc, biểu thị độ phân tán trung bình của các điểm dữ liệu thực tế xung quanh đường hồi quy.",
+      "seminal_citation": "Hyndman, R. J., & Koehler, A. B. (2006). Another look at measures of forecast accuracy. International Journal of Forecasting, 22(4), 679–688. https://doi.org/10.1016/j.ijforecast.2006.03.001; Chai, T., & Draxler, R. R. (2014). Root mean square error (RMSE) or mean absolute error (MAE)? – Arguments against avoiding RMSE in the literature. Geoscientific Model Development, 7(3), 1247–1250.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of Root Mean Square Error according to Càng nhỏ càng tốt; dùng để so sánh hiệu năng dự báo ngoài mẫu giữa các mô hình cạnh tranh trên cùng một tập dữ liệu..",
@@ -49459,7 +49805,10 @@
         "Model Evaluation",
         "Predictive Statistics"
       ],
-      "benchmarks": "Càng nhỏ càng tốt; dùng để so sánh hiệu năng dự báo ngoài mẫu giữa các mô hình cạnh tranh trên cùng một tập dữ liệu."
+      "benchmarks": "Đặc tính so sánh: RMSE luôn lớn hơn hoặc bằng Sai số tuyệt đối trung bình (MAE) do cơ chế bình phương trừng phạt các sai số lớn (large errors/outliers) nặng nề hơn. Giá trị RMSE càng tiến gần về 0 chứng tỏ mô hình dự báo càng chuẩn xác. Thường được so sánh với độ lệch chuẩn của biến phụ thuộc SD(y); một mô hình tốt thường có RMSE < 0.5 * SD(y).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: So sánh trực tiếp RMSE giữa hai tập dữ liệu có thang đo biến khác nhau mà không chuẩn hóa (NRMSE); sử dụng RMSE trên tập dữ liệu có các giá trị ngoại lai cực đoan bị nhiễu làm bóp méo đánh giá hiệu năng tổng thể.",
+      "apa_reference": "Hyndman, R. J., & Koehler, A. B. (2006). Another look at measures of forecast accuracy. International Journal of Forecasting, 22(4), 679–688.",
+      "is_flagship": true
     },
     {
       "id": "root-mean-square-error-of-approximation",
@@ -49490,211 +49839,303 @@
     },
     {
       "id": "root-mean-square-residual",
-      "term": "Root Mean Square Residual",
-      "vietnamese": "Căn bậc hai Phần dư Toàn phương Trung bình",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "CB-SEM Diagnostics"
+      "term": "Root Mean Square Residual (RMR in Covariance Structures)",
+      "vietnamese": "Căn bậc hai trung bình bình phương phần dư hiệp phương sai (RMR trong SEM)",
+      "vietnamese_variants": [
+        "Chỉ số sai số phần dư hiệp phương sai RMR",
+        "RMR trong cấu trúc hiệp phương sai"
       ],
-      "core_definition": "Đo độ lớn trung bình của phần dư giữa ma trận hiệp phương sai quan sát và ma trận hiệp phương sai do mô hình ước lượng. Ngưỡng thực nghiệm tham chiếu: Càng nhỏ càng tốt; tuy nhiên vì phụ thuộc vào đơn vị đo của các biến nên ngày nay hầu hết reviewer yêu cầu dùng phiên bản chuẩn hóa SRMR (< 0.08).",
-      "seminal_citation": "Càng nhỏ càng tốt; tuy nhiên vì phụ thuộc vào đơn vị đo của các biến nên ngày nay hầu hết reviewer yêu cầu dùng phiên bản chuẩn hóa SRMR (< 0.08).",
-      "tier": "acronym",
+      "domain_tags": [
+        "Độ phù hợp Mô hình (Model Fit)",
+        "CB-SEM & CFA",
+        "Phương pháp Định lượng"
+      ],
+      "core_definition": "Chỉ số độ phù hợp mô hình tuyệt đối trong phân tích nhân tố khẳng định (CFA) và CB-SEM, lượng hóa căn bậc hai của giá trị trung bình các phần dư trong ma trận hiệp phương sai còn sót lại giữa ma trận thực nghiệm S và ma trận hàm ý Σ: RMR = √[ (2 / (p(p+1))) ∑∑ (s_ij - σ_ij)² ]. RMR đo lường trực tiếp mức độ sai khác tuyệt đối giữa hiệp phương sai quan sát và hiệp phương sai lý thuyết.",
+      "seminal_citation": "Jöreskog, K. G., & Sörbom, D. (1986). LISREL VI: Analysis of Linear Structural Relationships by Maximum Likelihood, Instrumental Variables, and Least Squares Methods. Scientific Software International; Hu, L. T., & Bentler, P. M. (1999). Cutoff criteria for fit indexes in covariance structure analysis: Conventional criteria versus new alternatives. Structural Equation Modeling, 6(1), 1–55.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Định nghĩa và ngưỡng kiểm định chuẩn hóa từ Cơ sở dữ liệu Viết tắt Học thuật (Acronym Registry).",
       "core_definition_en": "Academic definition of Root Mean Square Residual according to Càng nhỏ càng tốt; tuy nhiên vì phụ thuộc vào đơn vị đo của các biến nên ngày nay hầu hết reviewer yêu cầu dùng phiên bản chuẩn hóa SRMR (< 0.08)..",
       "domain_tags_en": [
         "CB-SEM Diagnostics"
       ],
-      "benchmarks": "Càng nhỏ càng tốt; tuy nhiên vì phụ thuộc vào đơn vị đo của các biến nên ngày nay hầu hết reviewer yêu cầu dùng phiên bản chuẩn hóa SRMR (< 0.08)."
+      "benchmarks": "Quy chuẩn đánh giá: Giá trị RMR phụ thuộc trực tiếp vào thang đo của các biến quan sát. Do đó, trong các nghiên cứu quốc tế, chỉ số chuẩn hóa SRMR (Standardized RMR) luôn được ưu tiên bắt buộc báo cáo: SRMR ≤ 0.08 là ngưỡng chấp nhận được, và SRMR ≤ 0.05 thể hiện sự phù hợp xuất sắc (Hu & Bentler, 1999).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Báo cáo chỉ số RMR thô khi thang đo các biến không đồng nhất khiến con số không thể diễn giải; lầm tưởng RMR thấp đồng nghĩa với việc mô hình có ý nghĩa lý thuyết vững chắc (cần kết hợp kiểm tra độ hội tụ và độ phân biệt của các nhân tố).",
+      "apa_reference": "Jöreskog, K. G., & Sörbom, D. (1986). LISREL VI: Analysis of Linear Structural Relationships by Maximum Likelihood, Instrumental Variables, and Least Squares Methods. Scientific Software International.",
+      "is_flagship": true
     },
     {
       "id": "root-mean-squared-error-rmse",
-      "term": "Root Mean Squared Error (RMSE)",
-      "vietnamese": "Căn bậc Hai Sai số Trung bình",
+      "term": "Root Mean Squared Error (RMSE in Machine Learning & Forecasting)",
+      "vietnamese": "Độ đo RMSE trong học máy và dự báo chuỗi thời gian",
       "vietnamese_variants": [
-        "RMSE"
+        "Chỉ số sai số RMSE trong mô hình hóa dự báo",
+        "Độ đo đánh giá hàm mất mát hồi quy"
       ],
       "domain_tags": [
-        "Model Evaluation"
+        "Học máy & Khoa học Dữ liệu",
+        "Dự báo Chuỗi Thời gian",
+        "Đánh giá Hiệu năng Mô hình"
       ],
-      "core_definition": "Thước đo độ lớn tuyệt đối của sai số dự báo cùng đơn vị với biến phụ thuộc.",
-      "seminal_citation": "Hyndman & Koehler (2006)",
-      "tier": "textbook",
+      "core_definition": "Hàm mất mát (loss function) và độ đo đánh giá hiệu năng tiêu chuẩn trong học máy có giám sát (supervised regression) và dự báo chuỗi thời gian. RMSE đo lường khoảng cách Euclidean giữa vector giá trị thực tế và vector giá trị dự báo chia cho căn bậc hai của số quan sát. Do có tính chất khả vi (differentiable), RMSE thường được dùng làm mục tiêu tối ưu hóa trực tiếp trong quá trình huấn luyện mô hình (Gradient Descent).",
+      "seminal_citation": "Hastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction (2nd ed.). Springer. https://doi.org/10.1007/978-0-387-84858-7; Willmott, C. J., & Matsuura, K. (2005). Advantages of the mean absolute error (MAE) over the root mean squared error (RMSE) in assessing average model performance. Climate Research, 30(1), 79–82.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Root Mean Squared Error (RMSE) according to Hyndman & Koehler (2006).",
       "domain_tags_en": [
         "Model Evaluation"
-      ]
+      ],
+      "benchmarks": "Đánh giá qua kiểm định chéo (Cross-Validation): So sánh RMSE trên tập huấn luyện (Train RMSE) và tập kiểm thử (Test RMSE) là thước đo chẩn đoán hiện tượng quá khớp (Overfitting): Nếu Train RMSE rất thấp nhưng Test RMSE tăng vọt, mô hình đã bị học vẹt nhiễu ngẫu nhiên. Ngưỡng tương đối Normalized RMSE (NRMSE = RMSE / (y_max - y_min) hoặc RMSE / y_mean) < 10% được coi là rất tốt.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Chỉ tối ưu hóa RMSE trên tập dữ liệu đầy đủ mà không áp dụng K-fold cross-validation hoặc out-of-time validation; báo cáo RMSE trên chuỗi thời gian không dừng (non-stationary time series) mà không lấy sai phân.",
+      "apa_reference": "Hastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction (2nd ed.). Springer.",
+      "is_flagship": true
     },
     {
       "id": "roys-largest-root",
-      "term": "Roy's Largest Root",
-      "vietnamese": "Căn Lớn nhất của Roy",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Multivariate Statistics"
+      "term": "Roy's Largest Root (Roy's Greatest Characteristic Root - GCR)",
+      "vietnamese": "Thống kê căn lớn nhất của Roy (Chỉ số Roy's GCR trong MANOVA)",
+      "vietnamese_variants": [
+        "Thống kê giá trị riêng cực đại Roy",
+        "Roy's Largest Root trong phân tích đa biến"
       ],
-      "core_definition": "Thống kê kiểm định dựa trên giá trị riêng cực đại của ma trận trong MANOVA.",
-      "seminal_citation": "Roy (1953)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phân tích Đa biến (MANOVA)",
+        "Thống kê Đa biến",
+        "Kiểm định Giả thuyết"
+      ],
+      "core_definition": "Một trong bốn thống kê kiểm định đa biến chính trong phân tích phương sai đa biến (MANOVA) và phân tích tương quan chính tắc (Canonical Correlation Analysis) do S. N. Roy đề xuất năm 1953. Roy's Largest Root tính toán giá trị riêng (eigenvalue) lớn nhất của ma trận H*E⁻¹ (trong đó H là ma trận tổng bình phương và tích chéo giữa các nhóm, E là ma trận sai số nội nhóm), biểu thị tỷ lệ phương sai lớn nhất có thể giải thích được bởi một hàm phân biệt đơn lẻ.",
+      "seminal_citation": "Roy, S. N. (1953). On a heuristic method of test construction and its use in multivariate analysis. The Annals of Mathematical Statistics, 24(2), 220–238. https://doi.org/10.1214/aoms/1177729029; Olson, C. L. (1976). On choosing a test statistic in multivariate analysis of variance. Psychological Bulletin, 83(4), 579–586.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Roy's Largest Root according to Roy (1953).",
       "domain_tags_en": [
         "Multivariate Statistics"
-      ]
+      ],
+      "benchmarks": "Năng lực kiểm định (Statistical Power): Roy's Largest Root là kiểm định có năng lực thống kê mạnh nhất trong tất cả các tiêu chuẩn MANOVA khi các biến phụ thuộc chỉ tập trung khác biệt trên một chiều phân biệt duy nhất (collinear differences). Tuy nhiên, nếu các biến phụ thuộc phân tán trên nhiều chiều, Wilks' Lambda hoặc Pillai's Trace sẽ vững vàng hơn.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Sử dụng Roy's Largest Root khi vi phạm nghiêm trọng giả định phân phối chuẩn đa biến hoặc tính đồng nhất của ma trận hiệp phương sai (Homogeneity of covariance matrices - Box's M test p < 0.001); trong trường hợp này, Pillai's Trace là chỉ số duy nhất được khuyến nghị.",
+      "apa_reference": "Roy, S. N. (1953). On a heuristic method of test construction and its use in multivariate analysis. The Annals of Mathematical Statistics, 24(2), 220–238.",
+      "is_flagship": true
     },
     {
       "id": "rra",
-      "term": "RRA",
-      "vietnamese": "Phân tích Phản hồi Ngẫu nhiên hóa",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Survey Methodology"
+      "term": "Rapid Rural Appraisal (RRA)",
+      "vietnamese": "Đánh giá nhanh nông thôn (Phương pháp RRA)",
+      "vietnamese_variants": [
+        "Phương pháp RRA trong phát triển cộng đồng",
+        "Kỹ thuật khảo sát thực địa nhanh"
       ],
-      "core_definition": "Kỹ thuật Khảo sát Nhạy cảm) (Randomized Response Analysis.",
-      "seminal_citation": "Cho phép ước lượng tỷ lệ thực tế của quần thể mà không ai có thể biết chính xác từng cá nhân đã trả lời Có hay Không.",
-      "tier": "acronym",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Phương pháp Định tính Điền dã",
+        "Nghiên cứu Phát triển & Xã hội học",
+        "Thu thập Dữ liệu Thực địa"
+      ],
+      "core_definition": "Tập hợp các kỹ thuật và phương pháp điều tra điền dã đa ngành có sự tham gia, được phát triển từ cuối thập niên 1970 bởi Robert Chambers và các nhà nghiên cứu phát triển quốc tế. RRA ra đời nhằm khắc phục hai căn bệnh kinh niên: 'chủ nghĩa du lịch phát triển ngắn ngủi' (brief rural development tourism) và 'khảo sát bảng hỏi đồ sộ kéo dài' (prolonged questionnaire survey), giúp các chuyên gia thu thập thông tin định tính và bối cảnh nhanh chóng, tiết kiệm chi phí nhưng vẫn đảm bảo độ tin cậy.",
+      "seminal_citation": "Chambers, R. (1981). Rapid rural appraisal: Rationale and repertoire. Public Administration and Development, 1(2), 95–106. https://doi.org/10.1002/pad.4230010202; Chambers, R. (1994). The origins and practice of participatory rural appraisal. World Development, 22(7), 953–969.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Nguồn ghi ngưỡng",
       "core_definition_en": "Academic definition of RRA according to Cho phép ước lượng tỷ lệ thực tế của quần thể mà không ai có thể biết chính xác từng cá nhân đã trả lời Có hay Không..",
       "domain_tags_en": [
         "Survey Methodology"
-      ]
+      ],
+      "benchmarks": "Nguyên tắc cốt lõi: (1) Tam giác đạc thông tin (Triangulation qua nhiều nguồn, nhiều phương pháp và góc nhìn đa ngành), (2) Học hỏi trực tiếp từ người dân bản địa, (3) Tinh giản tối ưu (optimal ignorance - chỉ thu thập những thông tin thực sự cần thiết), và (4) Tính linh hoạt thích ứng tại hiện trường.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Nhầm lẫn giữa RRA (chuyên gia ngoại vi đóng vai trò người điều tra và sở hữu kết quả) và PRA (Participatory Rural Appraisal - nơi người dân bản địa tự điều tra, phân tích và làm chủ kế hoạch); thực hiện khảo sát hời hợt vài giờ rồi khái quát hóa cho cả một vùng kinh tế xã hội.",
+      "apa_reference": "Chambers, R. (1981). Rapid rural appraisal: Rationale and repertoire. Public Administration and Development, 1(2), 95–106.",
+      "is_flagship": true
     },
     {
       "id": "rubin-causal-model-rcm",
       "term": "Rubin Causal Model (RCM)",
-      "vietnamese": "Mô hình Nhân quả Rubin dựa trên khung lý thuyết Kết quả Tiềm năng (Potential Outcomes Framework)",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Causal Inference"
+      "vietnamese": "Mô hình Nhân quả Rubin (Khung RCM)",
+      "vietnamese_variants": [
+        "Khung nhân quả Donald Rubin",
+        "Khuôn khổ kết quả tiềm năng RCM"
       ],
-      "core_definition": "Mô hình Nhân quả Rubin dựa trên khung lý thuyết Kết quả Tiềm năng (Potential Outcomes Framework).",
-      "seminal_citation": "Rubin (1974)",
-      "tier": "encyclopedia",
+      "domain_tags": [
+        "Suy luận Nhân quả",
+        "Kinh tế lượng & Thống kê",
+        "Thiết kế Thực nghiệm"
+      ],
+      "core_definition": "Khung lý thuyết toán học và thống kê nền tảng cho suy luận nhân quả hiện đại do Donald B. Rubin phát triển (mở rộng từ ý tưởng ban đầu của Jerzy Neyman năm 1923). RCM định nghĩa tác động nhân quả cấp độ cá thể là sự khác biệt giữa hai 'kết quả tiềm năng' (potential outcomes): kết quả nếu đối tượng nhận can thiệp Y(1) so với kết quả nếu đối tượng không nhận can thiệp Y(0). Vì không thể quan sát đồng thời cả hai trạng thái trên cùng một đối tượng tại cùng một thời điểm, suy luận nhân quả thực chất là bài toán ước lượng dữ liệu bị thiếu (missing data problem).",
+      "seminal_citation": "Rubin, D. B. (1974). Estimating causal effects of treatments in randomized and nonrandomized studies. Journal of Educational Psychology, 66(5), 688–701. https://doi.org/10.1037/h0037350; Holland, P. W. (1986). Statistics and causal inference. Journal of the American Statistical Association, 81(396), 945–960.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Rubin Causal Model (RCM) according to Rubin (1974).",
       "domain_tags_en": [
         "Causal Inference"
-      ]
+      ],
+      "benchmarks": "Giả định tiên quyết SUTVA: Đòi hỏi thỏa mãn giả định Giá trị đơn vị can thiệp ổn định (Stable Unit Treatment Value Assumption): (1) Can thiệp lên một cá thể không ảnh hưởng đến kết quả tiềm năng của cá thể khác (không có ngoại ứng/lan tỏa), và (2) Can thiệp không có nhiều dị bản khác nhau. Các ước lượng chính gồm ATE (Average Treatment Effect) và ATT (Average Treatment Effect on the Treated).",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Vi phạm giả định SUTVA (ví dụ: nghiên cứu vắc-xin hoặc mạng xã hội có hiệu ứng lan tỏa bầy đàn); gán nhãn tác động nhân quả cho mối tương quan quan sát được mà không giải quyết bài toán lựa chọn tự thân (selection bias) của đối tượng.",
+      "apa_reference": "Rubin, D. B. (1974). Estimating causal effects of treatments in randomized and nonrandomized studies. Journal of Educational Psychology, 66(5), 688–701.",
+      "is_flagship": true
     },
     {
       "id": "rubin-s-potential-outcomes-framework",
-      "term": "Rubin's Potential Outcomes Framework (Rubin Causal Model)",
-      "vietnamese": "Khung Kết cục Tiềm năng của Rubin (Mô hình Nhân quả Rubin - RCM)",
-      "vietnamese_variants": [],
+      "term": "Rubin's Potential Outcomes Framework",
+      "vietnamese": "Khuôn khổ Kết quả Tiềm năng của Rubin",
+      "vietnamese_variants": [
+        "Khung phân tích Potential Outcomes",
+        "Khuôn khổ kết quả tiềm tàng Neyman-Rubin"
+      ],
       "domain_tags": [
         "Suy luận Nhân quả",
-        "Kinh tế lượng",
-        "Thiết kế Thực nghiệm"
+        "Kinh tế lượng Nâng cao",
+        "Phương pháp Luận Định lượng"
       ],
-      "core_definition": "Khung lý thuyết toán học và thống kê nền tảng cho suy luận nhân quả hiện đại do Donald Rubin đề xuất. Mỗi đối tượng nghiên cứu được giả định có hai kết cục tiềm năng: Y(1) nếu được nhận can thiệp và Y(0) nếu không nhận can thiệp. Hiệu ứng nhân quả cá thể là Y(1) - Y(0). 'Vấn đề cơ bản của suy luận nhân quả' (Holland, 1986) là trong thực tế ta chỉ có thể quan sát được một trong hai kết cục trên một cá thể tại một thời điểm (kết cục còn lại là phản thực tế - Counterfactual), đòi hỏi các thiết kế như Thử nghiệm ngẫu nhiên (RCT), Biến công cụ (IV), Ghép cặp (Matching) hoặc Sai phân trong sai phân (DID) để ước lượng hiệu ứng can thiệp trung bình (ATE).",
-      "seminal_citation": "Rubin, D. B. (1974). Estimating causal effects of treatments in randomized and nonrandomized studies. Journal of Educational Psychology, 66(5), 688–701.",
-      "tier": "textbook",
+      "core_definition": "Khuôn khổ phương pháp luận chính thức hóa 'Vấn đề Cơ bản của Suy luận Nhân quả' (Fundamental Problem of Causal Inference). Khuôn khổ này quy định rằng với mỗi đơn vị i, tồn tại một cặp biến ngẫu nhiên {Y_i(1), Y_i(0)}. Kết quả quan sát thực tế Y_i là: Y_i = D_i * Y_i(1) + (1 - D_i) * Y_i(0), trong đó D_i ∈ {0, 1} là chỉ báo nhận can thiệp. Trọng tâm của khuôn khổ là mô hình hóa cơ chế phân bổ can thiệp (assignment mechanism).",
+      "seminal_citation": "Rubin, D. B. (2005). Causal inference using potential outcomes: Design, modeling, decisions. Journal of the American Statistical Association, 100(469), 322–331. https://doi.org/10.1198/016214504000001880; Imbens, G. W., & Rubin, D. B. (2015). Causal Inference in Statistics, Social, and Biomedical Sciences. Cambridge University Press.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "Đã được chuẩn hóa định nghĩa học thuật chuyên sâu chuẩn mực.",
       "core_definition_en": "Academic definition of Rubin s Potential Outcomes Framework according to Shadish, Cook & Campbell (2002).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Điều kiện xác định tham số (Identification conditions): Can thiệp phải đạt tính độc lập có điều kiện (Conditional Independence Assumption - CIA hay Unconfoundedness): {Y(1), Y(0)} ⊥ D | X; và điều kiện trùng lặp (Overlap / Common Support): 0 < P(D = 1 | X) < 1 với mọi X trong tập hỗ trợ.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Vi phạm điều kiện Common Support (vùng nâng đỡ chung) khi có những nhóm đối tượng có xác suất nhận can thiệp bằng 0 hoặc bằng 1, khiến việc ngoại suy nhân quả qua ghép cặp (matching) bị sai số trầm trọng; bỏ qua các biến gây nhiễu chưa quan sát được (unobserved confounders).",
+      "apa_reference": "Imbens, G. W., & Rubin, D. B. (2015). Causal Inference in Statistics, Social, and Biomedical Sciences. Cambridge University Press.",
+      "is_flagship": true
     },
     {
       "id": "rubin-s-potential-outcomes-model",
-      "term": "Rubin's potential outcomes model",
-      "vietnamese": "Mô hình kết quả tiềm năng Rubin",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Rubin's Potential Outcomes Model (Estimation & Identification)",
+      "vietnamese": "Mô hình ước lượng Kết quả Tiềm năng Rubin",
+      "vietnamese_variants": [
+        "Mô hình kinh tế lượng Potential Outcomes",
+        "Các kỹ thuật ước lượng theo khung Rubin"
       ],
-      "core_definition": "Khung lý thuyết phản thực tế: So sánh trạng thái Y(1) và Y(0) của cùng đối tượng.",
-      "seminal_citation": "Shadish, Cook & Campbell (2002)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Kinh tế lượng Nâng cao",
+        "Suy luận Nhân quả",
+        "Đánh giá Tác động Chính sách"
+      ],
+      "core_definition": "Triển khai cụ thể các phương pháp ước lượng bán tham số và phi tham số dựa trên mô hình kết quả tiềm năng Rubin trong kinh tế lượng thực nghiệm và khoa học dữ liệu. Mô hình bao gồm các bộ ước lượng: Ghép cặp điểm xu hướng (Propensity Score Matching - PSM), Nghịch đảo xác suất nhận can thiệp (Inverse Probability Weighting - IPW), Ước lượng Vững kép (Doubly Robust Estimation), và Hồi quy gián đoạn (RDD).",
+      "seminal_citation": "Rosenbaum, P. R., & Rubin, D. B. (1983). The central role of the propensity score in observational studies for causal effects. Biometrika, 70(1), 41–55. https://doi.org/10.1093/biomet/70.1.41; Bang, H., & Robins, J. M. (2005). Doubly robust estimation in missing data and causal inference models. Biometrics, 61(4), 962–973.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Rubin s potential outcomes model according to Shadish, Cook & Campbell (2002).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Tiêu chuẩn Vững kép (Doubly Robust): Bộ ước lượng Doubly Robust kết hợp giữa mô hình hóa xác suất can thiệp (propensity score) và mô hình hóa kết quả (outcome regression). Ước lượng tác động nhân quả ATE sẽ hội tụ chuẩn xác và không chệch chỉ cần MỘT TRONG HAI mô hình được đặc tả đúng.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Lạm dụng PSM và tuyên bố đã giải quyết được vấn đề nội sinh, trong khi PSM CHỈ KIỂM SOÁT ĐƯỢC CÁC BIẾN QUAN SÁT ĐƯỢC (selection on observables) và hoàn toàn bất lực trước thiên lệch do biến ẩn chưa quan sát được; không kiểm tra cân bằng hiệp biến (covariate balance check) sau ghép cặp.",
+      "apa_reference": "Rosenbaum, P. R., & Rubin, D. B. (1983). The central role of the propensity score in observational studies for causal effects. Biometrika, 70(1), 41–55.",
+      "is_flagship": true
     },
     {
       "id": "ruling-out-irrelevancies-principle",
-      "term": "Ruling out irrelevancies principle",
-      "vietnamese": "Nguyên tắc loại trừ yếu tố không liên quan",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Methodology",
-        "Research Design"
+      "term": "Ruling Out Irrelevancies Principle",
+      "vietnamese": "Nguyên tắc loại trừ các yếu tố không liên quan (trong suy luận nhân quả)",
+      "vietnamese_variants": [
+        "Nguyên lý gạt bỏ yếu tố ngoại lai",
+        "Quy tắc loại trừ các giả thuyết cạnh tranh"
       ],
-      "core_definition": "Khái quát hóa bằng cách chứng minh các khác biệt ngoại cảnh không làm đổi.",
-      "seminal_citation": "Shadish, Cook & Campbell (2002)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Triết học Khoa học",
+        "Thiết kế Thực nghiệm",
+        "Phương pháp Luận Nghiên cứu"
+      ],
+      "core_definition": "Nguyên lý phương pháp luận trong thiết kế thực nghiệm và lập luận khoa học, khẳng định rằng để xác lập một mối quan hệ nhân quả xác thực giữa X và Y, nhà nghiên cứu không chỉ cần chứng minh sự cùng biến thiên giữa X và Y, mà phải chủ động thiết kế các biện pháp thực nghiệm hoặc kiểm soát thống kê để loại trừ một cách có hệ thống tất cả các yếu tố không liên quan, các biến ngoại lai ngẫu nhiên và các cách giải thích cạnh tranh (rival plausible hypotheses).",
+      "seminal_citation": "Campbell, D. T. (1969). Reforms as experiments. American Psychologist, 24(4), 409–429. https://doi.org/10.1037/h0027982; Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). Experimental and Quasi-Experimental Designs for Generalized Causal Inference. Houghton Mifflin.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Đã chuẩn hóa từ bảng trích xuất sang định dạng từ điển chuẩn.",
       "core_definition_en": "Academic definition of Ruling out irrelevancies principle according to Shadish, Cook & Campbell (2002).",
       "domain_tags_en": [
         "Methodology",
         "Research Design"
-      ]
+      ],
+      "benchmarks": "Thao tác hóa nguyên lý: Thực hiện thông qua kiểm định giả dược (placebo/falsification tests), kiểm định biến trễ và biến dẫn dắt (leads and lags in event studies), và phân tích nhóm chứng âm (negative control outcomes / negative control exposures) để chứng minh rằng hiệu ứng chỉ xuất hiện đúng nơi, đúng lúc và đúng cơ chế dự kiến.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Chỉ đưa ra lập luận ủng hộ giả thuyết của mình mà phớt lờ việc kiểm chứng các giải thích thay thế; không thực hiện falsification test khi chạy các mô hình bán thực nghiệm (DiD, RDD) trên tạp chí Q1.",
+      "apa_reference": "Campbell, D. T. (1969). Reforms as experiments. American Psychologist, 24(4), 409–429.",
+      "is_flagship": true
     },
     {
       "id": "sage-journals-online",
-      "term": "Sage Journals Online",
-      "vietnamese": "Nền tảng Tạp chí Sage",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Scholarly Publishing"
+      "term": "SAGE Journals Online (Methodological Search & Indexing)",
+      "vietnamese": "Cơ sở dữ liệu học thuật SAGE Journals (trong rà soát y văn phương pháp luận)",
+      "vietnamese_variants": [
+        "Nền tảng xuất bản SAGE",
+        "Hệ thống tạp chí phương pháp nghiên cứu SAGE"
       ],
-      "core_definition": "Hệ thống xuất bản hàng đầu thế giới về phương pháp luận nghiên cứu và khoa học xã hội.",
-      "seminal_citation": "Sage (2004)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Tổng quan Y văn (Literature Review)",
+        "Khoa học Dữ liệu & Xuất bản",
+        "Phương pháp Luận Nghiên cứu"
+      ],
+      "core_definition": "Nền tảng xuất bản học thuật điện tử của SAGE Publications, nhà xuất bản hàng đầu thế giới về phương pháp nghiên cứu khoa học xã hội và hành vi. Trong quy trình tổng quan hệ thống (Systematic Literature Review), SAGE Journals là nguồn tài nguyên cốt lõi lưu trữ các tạp chí phương pháp luận kinh điển như Organizational Research Methods, Sociological Methods & Research, Qualitative Inquiry, Educational and Psychological Measurement, và Journal of Mixed Methods Research.",
+      "seminal_citation": "Booth, A., Sutton, A., & Papaioannou, D. (2016). Systematic Approaches to a Successful Literature Review (2nd ed.). SAGE Publications; Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., ... & Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. BMJ, 372, n71.",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Sage Journals Online according to Sage (2004).",
       "domain_tags_en": [
         "Scholarly Publishing"
-      ]
+      ],
+      "benchmarks": "Chiến lược tra cứu chuẩn mực: Cần xây dựng chuỗi truy vấn logic Boolean (AND, OR, NOT) kết hợp toán tử tìm kiếm trường (TITLE-ABS-KEY), giới hạn phạm vi thời gian, và lọc theo danh mục chủ đề để trích xuất danh mục bài báo phục vụ biểu đồ PRISMA flow diagram.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Chỉ tra cứu trên một cơ sở dữ liệu đơn lẻ như SAGE mà không tích hợp chéo với Scopus, Web of Science và Google Scholar; không lưu trữ chuỗi câu lệnh tìm kiếm chính xác (search strings) và ngày truy xuất gây mất khả năng tái lặp tổng quan y văn.",
+      "apa_reference": "Booth, A., Sutton, A., & Papaioannou, D. (2016). Systematic Approaches to a Successful Literature Review (2nd ed.). SAGE Publications.",
+      "is_flagship": true
     },
     {
       "id": "salami-slicing-salami-publishing",
-      "term": "Salami Slicing (Salami Publishing)",
-      "vietnamese": "Thực hành Cắt lát Salami",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Research Ethics"
+      "term": "Salami Slicing (Salami Publishing / Segmented Publication)",
+      "vietnamese": "Xuất bản thái lát xúc xích (Salami Slicing / Phân mảnh dữ liệu xuất bản)",
+      "vietnamese_variants": [
+        "Cắt lát dữ liệu để xuất bản nhiều bài",
+        "Tình trạng phân mảnh công trình nghiên cứu"
       ],
-      "core_definition": "Hành vi chia nhỏ một công trình nghiên cứu lớn thành nhiều bài báo nhỏ lẻ để tối đa hóa số lượng.",
-      "seminal_citation": "Abraham (2000)",
-      "tier": "textbook",
-      "expert_status": "needs_review",
+      "domain_tags": [
+        "Liêm chính Khoa học (Research Integrity)",
+        "Đạo đức Nghiên cứu",
+        "Xuất bản Học thuật"
+      ],
+      "core_definition": "Một dạng hành vi sai trái hoặc thực hành nghiên cứu đáng ngờ (QRP) trong xuất bản khoa học, trong đó tác giả cố tình băm nhỏ một tập dữ liệu hoặc một dự án nghiên cứu quy mô lớn thành nhiều bài báo nhỏ lẻ với 'đơn vị có thể xuất bản tối thiểu' (least publishable units - LPUs) nhằm thổi phồng nhân tạo số lượng bài báo trong hồ sơ khoa học của mình.",
+      "seminal_citation": "Broad, W. J. (1981). The publishing game: Getting more for less. Science, 211(4487), 1137–1139. https://doi.org/10.1126/science.7008199; COPE Council. (2019). Salami Slicing Guidelines. Committee on Publication Ethics.",
+      "tier": "flagship",
+      "expert_status": "verified",
       "expert_notes": "Trùng #2258",
       "core_definition_en": "Academic definition of Salami Slicing (Salami Publishing) according to Abraham (2000).",
       "domain_tags_en": [
         "Research Ethics"
-      ]
+      ],
+      "benchmarks": "Nhận diện theo hướng dẫn COPE (Committee on Publication Ethics): Hành vi bị coi là Salami Slicing khi hai hay nhiều bài báo chia sẻ cùng một mẫu nghiên cứu, cùng giả thuyết, cùng biến số hoặc chỉ bổ sung một vài biến phụ thứ yếu mà không đem lại đóng góp lý thuyết độc lập mới; thiếu việc dẫn nguồn chéo minh bạch tới bài báo gốc trước đó.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Bị phát hiện trùng lặp dữ liệu dẫn đến từ chối bài lập tức hoặc thông cáo thu hồi bài báo (retraction); làm sai lệch kết quả của các phân tích tổng hợp (meta-analysis) khi một tập dữ liệu bệnh nhân/người khảo sát bị đếm hai lần do xuất hiện trong nhiều bài báo phân mảnh.",
+      "apa_reference": "Broad, W. J. (1981). The publishing game: Getting more for less. Science, 211(4487), 1137–1139.",
+      "is_flagship": true
     },
     {
       "id": "sample-integration-legitimation",
       "term": "Sample Integration Legitimation",
-      "vietnamese": "Tính Hợp thức Tích hợp Mẫu",
-      "vietnamese_variants": [],
-      "domain_tags": [
-        "Mixed Methods Legitimation"
+      "vietnamese": "Tính chính danh của việc tích hợp mẫu (trong phương pháp hỗn hợp)",
+      "vietnamese_variants": [
+        "Độ giá trị tích hợp mẫu nghiên cứu hỗn hợp",
+        "Tính hợp thức trong phối hợp mẫu định lượng - định tính"
       ],
-      "core_definition": "Đảm bảo mối quan hệ tương thích giữa mẫu định tính và mẫu định lượng.",
-      "seminal_citation": "Onwuegbuzie & Johnson (2006)",
-      "tier": "textbook",
+      "domain_tags": [
+        "Phương pháp Hỗn hợp (Mixed Methods)",
+        "Độ giá trị & Tính Chính danh",
+        "Thiết kế Chọn mẫu"
+      ],
+      "core_definition": "Một trong chín tiêu chuẩn chính danh (legitimation types) trong khung đánh giá chất lượng nghiên cứu hỗn hợp do Anthony Onwuegbuzie và R. Burke Johnson đề xuất năm 2006. Tiêu chuẩn này đánh giá mức độ mà mối quan hệ giữa mẫu nghiên cứu định lượng và mẫu nghiên cứu định tính cho phép nhà nghiên cứu đưa ra các suy luận tích hợp (meta-inferences) hợp lý, không bị sai lệch hoặc mâu thuẫn do sự khác biệt về quy mô hoặc thành phần mẫu.",
+      "seminal_citation": "Onwuegbuzie, A. J., & Johnson, R. B. (2006). The validity issue in mixed research. Research in the Schools, 13(1), 48–63; Teddlie, C., & Yu, F. (2007). Mixed methods sampling: A typology with examples. Journal of Mixed Methods Research, 1(1), 77–100. https://doi.org/10.1177/1558689806292430",
+      "tier": "flagship",
       "expert_status": "verified",
       "expert_notes": "",
       "core_definition_en": "Academic definition of Sample Integration Legitimation according to Onwuegbuzie & Johnson (2006).",
       "domain_tags_en": [
         "Mixed Methods Legitimation"
-      ]
+      ],
+      "benchmarks": "Yêu cầu cấu trúc thiết kế: Nếu là thiết kế giải thích tuần tự (Sequential Explanatory: QUAN -> qual), mẫu định tính phải là một tập con có chủ đích (nested purposive subsample) được rút ra trực tiếp từ các trường hợp cực đoan hoặc ngoại lai của mẫu định lượng; nếu hai mẫu hoàn toàn tách biệt về đặc tính nhân khẩu học hoặc bối cảnh, tính chính danh tích hợp mẫu bị phá vỡ.",
+      "pitfalls": "BẪY TỬ HUYỆT HỌC THUẬT: Rút ra kết luận tổng hợp khái quát hóa từ một nhóm đối tượng định tính hoàn toàn không liên quan đến tập dữ liệu khảo sát định lượng ban đầu; không giải thích cơ chế bắc cầu và tiêu chí lựa chọn các ca định tính từ kết quả khảo sát định lượng.",
+      "apa_reference": "Onwuegbuzie, A. J., & Johnson, R. B. (2006). The validity issue in mixed research. Research in the Schools, 13(1), 48–63.",
+      "is_flagship": true
     },
     {
       "id": "sample-size-determination-via-power-analysis",
