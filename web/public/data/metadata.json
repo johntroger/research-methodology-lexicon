@@ -1,6 +1,6 @@
 {
   "version": "10.2-peer-reviewed-cleaned",
-  "last_updated": "2026-10-27T02:45:32.557Z",
+  "last_updated": "2026-10-27T03:04:11.514Z",
   "statistics": {
     "total_flagship_terms": 518,
     "total_corpus_terms": 2571,
@@ -16,6 +16,6 @@
     "status": "Đã Thẩm Định Hoàn Tất Hồ Sơ Toàn Văn (V10.2 Cleaned)"
   },
   "total_terms": 1874,
-  "flagship_count": 1130,
-  "flagship_percentage": 60.3
+  "flagship_count": 1181,
+  "flagship_percentage": 63.02
 }
