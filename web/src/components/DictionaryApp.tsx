@@ -44,7 +44,8 @@ import {
   Trophy,
   Award,
   Users,
-  Cpu
+  Cpu,
+  Network
 } from "lucide-react";
 import { MethodologyTerm, AcademicAcronym, SearchItem } from "@/lib/types";
 import { getSearchEngine, SearchOutputItem } from "@/lib/search-engine";
@@ -123,6 +124,9 @@ export default function DictionaryApp({
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [bookmarks, setBookmarks] = useState<string[]>([]);
   const [authLoading, setAuthLoading] = useState(false);
+
+  // Map tra cứu nhanh mục từ theo ID phục vụ liên kết chéo (Cross-reference lookup)
+  const termsMap = useMemo(() => new Map(initialTerms.map((t) => [t.id, t])), [initialTerms]);
 
   // Lắng nghe trạng thái đăng nhập và tải Bookmarks & Ngôn ngữ đã lưu
   useEffect(() => {
@@ -1389,6 +1393,74 @@ export default function DictionaryApp({
                     <p className="text-slate-800 dark:text-slate-200 text-xs sm:text-sm leading-relaxed font-sans">
                       {activeTerm.expert_notes}
                     </p>
+                  </section>
+                )}
+
+                {/* 6.5 KHỐI THUẬT NGỮ LIÊN QUAN & XEM THÊM (RELATED TERMS & CROSS-REFERENCES) */}
+                {activeTerm.related_terms && activeTerm.related_terms.length > 0 && (
+                  <section className="p-4 sm:p-5 rounded-xl border border-blue-200/80 dark:border-blue-900/50 bg-blue-50/30 dark:bg-blue-950/20 space-y-3">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <div className="p-1.5 rounded-lg bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400">
+                          <Network size={16} />
+                        </div>
+                        <div>
+                          <h3 className="text-xs font-bold text-slate-900 dark:text-slate-100 uppercase tracking-wider">
+                            {t.sec_related_terms}
+                          </h3>
+                          <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                            {t.related_terms_hint}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 pt-1">
+                      {activeTerm.related_terms.map((relId) => {
+                        const relTerm = termsMap.get(relId);
+                        if (!relTerm) return null;
+                        return (
+                          <button
+                            key={relId}
+                            onClick={() => {
+                              setSelectedId(relId);
+                              setMobileTab("detail");
+                              contentScrollRef.current?.scrollTo({ top: 0, behavior: "smooth" });
+                              const el = document.getElementById(`list-item-${relId}`);
+                              if (el) {
+                                el.scrollIntoView({ block: "nearest", behavior: "smooth" });
+                              }
+                            }}
+                            className="group text-left p-3 rounded-lg border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-800/90 hover:border-blue-500 dark:hover:border-blue-400 hover:shadow-xs hover:bg-blue-50/40 dark:hover:bg-slate-800 transition flex flex-col justify-between gap-1.5"
+                            title={t.jump_tooltip}
+                          >
+                            <div className="flex items-start justify-between gap-2">
+                              <span className="font-semibold text-xs sm:text-sm text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition line-clamp-1">
+                                {relTerm.term}
+                              </span>
+                              <ArrowRight size={13} className="shrink-0 text-slate-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 group-hover:translate-x-0.5 transition" />
+                            </div>
+                            {languageMode === "vi" && relTerm.vietnamese && (
+                              <p className="text-[11px] text-slate-600 dark:text-slate-400 line-clamp-1">
+                                {relTerm.vietnamese}
+                              </p>
+                            )}
+                            <div className="flex items-center gap-1.5 pt-0.5">
+                              {relTerm.category && (
+                                <span className="text-[9px] px-1.5 py-0.5 rounded bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 font-medium">
+                                  {relTerm.category}
+                                </span>
+                              )}
+                              {relTerm.domain_tags && relTerm.domain_tags[0] && relTerm.domain_tags[0] !== relTerm.category && (
+                                <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-700/60 text-slate-500 dark:text-slate-400 font-mono">
+                                  #{relTerm.domain_tags[0]}
+                                </span>
+                              )}
+                            </div>
+                          </button>
+                        );
+                      })}
+                    </div>
                   </section>
                 )}
 
