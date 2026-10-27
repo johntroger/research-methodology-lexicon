@@ -56,6 +56,7 @@ import NewTermModal from "./NewTermModal";
 import TermHistoryView from "./TermHistoryView";
 import TermDiscussionView from "./TermDiscussionView";
 import LoginModal from "./LoginModal";
+import FormattedAcademicText from "./FormattedAcademicText";
 import {
   UI_I18N,
   getTermDefinition,
@@ -1126,9 +1127,11 @@ export default function DictionaryApp({
                       </button>
                     </div>
                   </div>
-                  <p className="text-slate-800 dark:text-slate-200 leading-relaxed font-serif text-base sm:text-lg">
-                    {getTermDefinition(activeTerm, languageMode)}
-                  </p>
+                  <FormattedAcademicText
+                    content={getTermDefinition(activeTerm, languageMode)}
+                    className="text-slate-800 dark:text-slate-200 font-serif text-base sm:text-lg"
+                    variant="definition"
+                  />
                 </section>
 
                 {/* 2.5 KHỐI CƠ CHẾ VẬN HÀNH & MÔ HÌNH PHƯƠNG PHÁP LUẬN */}
@@ -1148,9 +1151,11 @@ export default function DictionaryApp({
                         </button>
                       </div>
                     </div>
-                    <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
-                      {getTermOperationalMechanism(activeTerm, languageMode)}
-                    </p>
+                    <FormattedAcademicText
+                      content={getTermOperationalMechanism(activeTerm, languageMode)}
+                      className="text-slate-700 dark:text-slate-300 text-sm sm:text-base"
+                      variant="mechanism"
+                    />
                   </section>
                 )}
 
@@ -1182,9 +1187,11 @@ export default function DictionaryApp({
                         </button>
                       </div>
                     </div>
-                    <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
-                      {getTermPitfalls(activeTerm, languageMode)}
-                    </p>
+                    <FormattedAcademicText
+                      content={getTermPitfalls(activeTerm, languageMode)}
+                      className="text-slate-700 dark:text-slate-300 text-sm sm:text-base"
+                      variant="pitfalls"
+                    />
                   </section>
                 )}
 
@@ -1218,9 +1225,11 @@ export default function DictionaryApp({
                             </button>
                           </div>
                         </div>
-                        <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm sm:text-base font-mono">
-                          {getTermBenchmarks(activeTerm, languageMode)}
-                        </p>
+                        <FormattedAcademicText
+                          content={getTermBenchmarks(activeTerm, languageMode)}
+                          className="text-slate-700 dark:text-slate-300 text-sm sm:text-base font-mono"
+                          variant="benchmarks"
+                        />
                       </div>
                     )}
 
@@ -1229,9 +1238,11 @@ export default function DictionaryApp({
                         <span className="text-xs font-bold text-emerald-900 dark:text-emerald-300 uppercase tracking-wider">
                           {t.sec_debates}
                         </span>
-                        <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
-                          {getTermDebates(activeTerm, languageMode)}
-                        </p>
+                        <FormattedAcademicText
+                          content={getTermDebates(activeTerm, languageMode)}
+                          className="text-slate-700 dark:text-slate-300 text-sm sm:text-base"
+                          variant="default"
+                        />
                       </div>
                     )}
                   </section>
@@ -1531,9 +1542,11 @@ export default function DictionaryApp({
                       )}
                     </button>
                   </div>
-                  <p className="text-slate-800 dark:text-slate-200 leading-relaxed font-serif text-base sm:text-lg">
-                    {getAcronymPurpose(activeAcronym, languageMode)}
-                  </p>
+                  <FormattedAcademicText
+                    content={getAcronymPurpose(activeAcronym, languageMode)}
+                    className="text-slate-800 dark:text-slate-200 font-serif text-base sm:text-lg"
+                    variant="definition"
+                  />
                 </section>
 
                 {/* Ngưỡng tham chiếu */}
@@ -1542,9 +1555,11 @@ export default function DictionaryApp({
                     <div className="text-xs font-bold text-emerald-900 dark:text-emerald-300 uppercase tracking-wider flex items-center gap-1.5">
                       <Sparkles size={14} /> {t.sec_acronym_benchmark}
                     </div>
-                    <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm sm:text-base font-mono">
-                      {getAcronymBenchmark(activeAcronym, languageMode)}
-                    </p>
+                    <FormattedAcademicText
+                      content={getAcronymBenchmark(activeAcronym, languageMode)}
+                      className="text-slate-700 dark:text-slate-300 text-sm sm:text-base font-mono"
+                      variant="benchmarks"
+                    />
                   </section>
                 )}
 
