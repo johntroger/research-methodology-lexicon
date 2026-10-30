@@ -633,6 +633,24 @@ export default function ModerationPage() {
 
                       {/* GIAO DIỆN SO SÁNH TRỰC QUAN RED/GREEN VISUAL DIFF */}
                       <div className="space-y-3 pt-2">
+                        {/* Diff Bản dịch tiếng Việt */}
+                        {(rev.proposedContent.vietnamese !== undefined && rev.proposedContent.vietnamese !== rev.originalContent.vietnamese) && (
+                          <VisualDiffViewer
+                            label="Bản dịch tiếng Việt (Vietnamese Term)"
+                            original={rev.originalContent.vietnamese || ""}
+                            proposed={rev.proposedContent.vietnamese || ""}
+                          />
+                        )}
+
+                        {/* Diff Dị bản tiếng Việt */}
+                        {(rev.proposedContent.vietnameseVariants !== undefined && JSON.stringify(rev.proposedContent.vietnameseVariants) !== JSON.stringify(rev.originalContent.vietnameseVariants || [])) && (
+                          <VisualDiffViewer
+                            label="Dị bản tiếng Việt (Vietnamese Variants)"
+                            original={(rev.originalContent.vietnameseVariants || []).join(", ")}
+                            proposed={(rev.proposedContent.vietnameseVariants || []).join(", ")}
+                          />
+                        )}
+
                         {/* Diff Định nghĩa cốt lõi */}
                         {(rev.proposedContent.coreDefinition !== undefined && rev.proposedContent.coreDefinition !== rev.originalContent.coreDefinition) && (
                           <VisualDiffViewer

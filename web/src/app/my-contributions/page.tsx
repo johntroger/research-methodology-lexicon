@@ -288,7 +288,10 @@ export default function MyContributionsPage() {
 
                 let orig = "";
                 let prop = "";
-                if (rev.section === "definition") {
+                if (rev.section === "vietnamese") {
+                  orig = `${rev.originalContent?.vietnamese || ""}${rev.originalContent?.vietnameseVariants?.length ? ` (Dị bản: ${rev.originalContent.vietnameseVariants.join(", ")})` : ""}`;
+                  prop = `${rev.proposedContent?.vietnamese || ""}${rev.proposedContent?.vietnameseVariants?.length ? ` (Dị bản: ${rev.proposedContent.vietnameseVariants.join(", ")})` : ""}`;
+                } else if (rev.section === "definition") {
                   orig = rev.originalContent?.coreDefinition || "";
                   prop = rev.proposedContent?.coreDefinition || "";
                 } else if (rev.section === "benchmarks") {

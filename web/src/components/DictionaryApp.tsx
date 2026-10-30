@@ -127,11 +127,11 @@ export default function DictionaryApp({
 
   // Wiki Community Contribution State (Phase 1 & Phase 3)
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
-  const [editSection, setEditSection] = useState<"all" | "definition" | "benchmarks" | "pitfalls" | "debates" | "citations">("all");
+  const [editSection, setEditSection] = useState<"all" | "vietnamese" | "definition" | "benchmarks" | "pitfalls" | "debates" | "citations">("all");
   const [isNewTermModalOpen, setIsNewTermModalOpen] = useState(false);
   const [termSubTab, setTermSubTab] = useState<"article" | "history" | "talk">("article");
 
-  const handleOpenSectionEdit = (section: "all" | "definition" | "benchmarks" | "pitfalls" | "debates" | "citations") => {
+  const handleOpenSectionEdit = (section: "all" | "vietnamese" | "definition" | "benchmarks" | "pitfalls" | "debates" | "citations") => {
     setEditSection(section);
     setIsEditModalOpen(true);
   };
@@ -1343,10 +1343,20 @@ export default function DictionaryApp({
 
                   {/* Bản dịch tiếng Việt chuẩn hóa & Dị bản: CHỈ HIỂN THỊ KHI Ở CHẾ ĐỘ 'vi' */}
                   {languageMode === "vi" && activeTerm.vietnamese && (
-                    <div className="space-y-1">
-                      <p className="text-lg font-bold text-blue-800 dark:text-blue-400">
-                        {activeTerm.vietnamese}
-                      </p>
+                    <div className="space-y-1 group/vn relative">
+                      <div className="flex items-center gap-2">
+                        <p className="text-lg font-bold text-blue-800 dark:text-blue-400">
+                          {activeTerm.vietnamese}
+                        </p>
+                        <button
+                          onClick={() => handleOpenSectionEdit("vietnamese")}
+                          className="no-print opacity-60 hover:opacity-100 hover:text-blue-600 dark:hover:text-blue-400 transition p-1 rounded hover:bg-blue-50 dark:hover:bg-slate-800 inline-flex items-center gap-1 text-[11px] font-medium text-slate-400"
+                          title="Đề xuất sửa bản dịch tiếng Việt hoặc dị bản"
+                        >
+                          <Edit3 size={13} />
+                          <span className="hidden sm:inline">Sửa bản dịch</span>
+                        </button>
+                      </div>
                       {activeTerm.vietnamese_variants && activeTerm.vietnamese_variants.length > 0 && (
                         <p className="text-xs text-slate-500 italic">
                           Dị bản thường gặp: {activeTerm.vietnamese_variants.join(" • ")}

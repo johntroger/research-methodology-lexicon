@@ -98,7 +98,7 @@ export interface SearchItem {
 export interface TermRevisionInput {
   termId: string;
   termName: string;
-  section: "all" | "definition" | "benchmarks" | "pitfalls" | "debates" | "citations";
+  section: "all" | "vietnamese" | "definition" | "benchmarks" | "pitfalls" | "debates" | "citations";
   languageMode: "vi" | "en";
   authorUid?: string;
   authorName: string;
@@ -107,6 +107,8 @@ export interface TermRevisionInput {
   editSummary: string;               // Lý do chỉnh sửa (bắt buộc)
   supportingSources: string;          // Nguồn trích dẫn / DOI (bắt buộc)
   originalContent: {
+    vietnamese?: string;
+    vietnameseVariants?: string[];
     coreDefinition?: string;
     benchmarks?: string;
     pitfalls?: string;
@@ -115,6 +117,8 @@ export interface TermRevisionInput {
     apaReference?: string;
   };
   proposedContent: {
+    vietnamese?: string;
+    vietnameseVariants?: string[];
     coreDefinition?: string;
     benchmarks?: string;
     pitfalls?: string;

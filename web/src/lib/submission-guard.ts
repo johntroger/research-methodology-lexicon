@@ -36,6 +36,8 @@ export function validateRevisionLocally(input: TermRevisionInput): ValidationRes
   const prop = input.proposedContent || {};
 
   const hasDiff = 
+    (prop.vietnamese !== undefined && prop.vietnamese.trim() !== (orig.vietnamese || "").trim()) ||
+    (prop.vietnameseVariants !== undefined && JSON.stringify(prop.vietnameseVariants) !== JSON.stringify(orig.vietnameseVariants || [])) ||
     (prop.coreDefinition !== undefined && prop.coreDefinition.trim() !== (orig.coreDefinition || "").trim()) ||
     (prop.benchmarks !== undefined && prop.benchmarks.trim() !== (orig.benchmarks || "").trim()) ||
     (prop.pitfalls !== undefined && prop.pitfalls.trim() !== (orig.pitfalls || "").trim()) ||

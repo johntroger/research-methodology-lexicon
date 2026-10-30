@@ -757,7 +757,11 @@ export async function fetchTermRevisionHistory(
     let diffProposed = "";
     let sectionName: string = rev.section;
 
-    if (rev.section === "definition") {
+    if (rev.section === "vietnamese") {
+      diffOriginal = `${rev.originalContent?.vietnamese || ""}${rev.originalContent?.vietnameseVariants?.length ? ` (Dị bản: ${rev.originalContent.vietnameseVariants.join(", ")})` : ""}`;
+      diffProposed = `${rev.proposedContent?.vietnamese || ""}${rev.proposedContent?.vietnameseVariants?.length ? ` (Dị bản: ${rev.proposedContent.vietnameseVariants.join(", ")})` : ""}`;
+      sectionName = "Bản dịch tiếng Việt";
+    } else if (rev.section === "definition") {
       diffOriginal = rev.originalContent?.coreDefinition || "";
       diffProposed = rev.proposedContent?.coreDefinition || "";
       sectionName = "Định nghĩa Cốt lõi";

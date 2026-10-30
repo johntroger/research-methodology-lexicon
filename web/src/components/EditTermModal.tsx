@@ -33,7 +33,7 @@ import type { User } from "firebase/auth";
 
 interface EditTermModalProps {
   term: MethodologyTerm;
-  section?: "all" | "definition" | "benchmarks" | "pitfalls" | "debates" | "citations";
+  section?: "all" | "vietnamese" | "definition" | "benchmarks" | "pitfalls" | "debates" | "citations";
   isOpen: boolean;
   onClose: () => void;
   languageMode?: "vi" | "en";
@@ -60,6 +60,8 @@ export default function EditTermModal({
   const [supportingSources, setSupportingSources] = useState("");
 
   // Content Fields
+  const [vietnamese, setVietnamese] = useState("");
+  const [vietnameseVariants, setVietnameseVariants] = useState("");
   const [coreDef, setCoreDef] = useState("");
   const [benchmarks, setBenchmarks] = useState("");
   const [pitfalls, setPitfalls] = useState("");
@@ -81,6 +83,8 @@ export default function EditTermModal({
   // Khởi tạo giá trị ban đầu từ mục từ hiện tại
   useEffect(() => {
     if (isOpen) {
+      setVietnamese(term.vietnamese || "");
+      setVietnameseVariants((term.vietnamese_variants || []).join(", "));
       setCoreDef(getTermDefinition(term, languageMode));
       setBenchmarks(getTermBenchmarks(term, languageMode) || "");
       setPitfalls(getTermPitfalls(term, languageMode) || "");
@@ -136,6 +140,12 @@ export default function EditTermModal({
 
     setErrorMessage(null);
 
+    // Parse variants thành array chuỗi
+    const parsedVariants = vietnameseVariants
+      .split(/[,;\n•]+/)
+      .map((s) => s.trim())
+      .filter(Boolean);
+
     const revisionData: TermRevisionInput = {
       termId: term.id,
       termName: term.term,
@@ -148,6 +158,8 @@ export default function EditTermModal({
       editSummary: editSummary.trim(),
       supportingSources: supportingSources.trim(),
       originalContent: {
+        vietnamese: term.vietnamese,
+        vietnameseVariants: term.vietnamese_variants || [],
         coreDefinition: getTermDefinition(term, languageMode),
         benchmarks: getTermBenchmarks(term, languageMode),
         pitfalls: getTermPitfalls(term, languageMode),
@@ -156,6 +168,8 @@ export default function EditTermModal({
         apaReference: term.apa_reference
       },
       proposedContent: {
+        vietnamese: vietnamese.trim() || undefined,
+        vietnameseVariants: parsedVariants.length > 0 ? parsedVariants : undefined,
         coreDefinition: coreDef.trim(),
         benchmarks: benchmarks.trim() || undefined,
         pitfalls: pitfalls.trim() || undefined,
@@ -425,6 +439,36 @@ export default function EditTermModal({
                 <BookOpen size={14} className="text-blue-600" />
                 {isEn ? "Propose Content Changes" : "Nội dung đề xuất chỉnh sửa"}
               </h4>
+
+              {/* Bản dịch tiếng Việt chuẩn hóa & Dị bản thường gặp (Chỉ hiển thị khi ở chế độ VI) */}
+              {!isEn && (section === "all" || section === "vietnamese") && (
+                <div className="p-3.5 rounded-xl border border-blue-200/90 dark:border-blue-900/60 bg-blue-50/40 dark:bg-blue-950/20 space-y-3">
+                  <div>
+                    <label className="block font-bold text-blue-900 dark:text-blue-300 mb-1">
+                      Bản dịch tiếng Việt chuẩn hóa
+                    </label>
+                    <input
+                      type="text"
+                      value={vietnamese}
+                      onChange={(e) => setVietnamese(e.target.value)}
+                      placeholder="Ví dụ: Độ giá trị khái niệm"
+                      className="w-full px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-bold text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                  </div>
+                  <div>
+                    <label className="block font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                      Các dị bản dịch thường gặp tại Việt Nam (ngăn cách bằng dấu phẩy)
+                    </label>
+                    <input
+                      type="text"
+                      value={vietnameseVariants}
+                      onChange={(e) => setVietnameseVariants(e.target.value)}
+                      placeholder="Ví dụ: Độ giá trị cấu trúc, Độ giá trị cấu niệm"
+                      className="w-full px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                  </div>
+                </div>
+              )}
 
               {/* Định nghĩa Cốt lõi */}
               {(section === "all" || section === "definition") && (
