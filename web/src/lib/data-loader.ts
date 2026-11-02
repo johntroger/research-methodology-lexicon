@@ -36,8 +36,17 @@ export function getAllTerms(): MethodologyTerm[] {
       if (parsed.success) {
         return parsed.data as MethodologyTerm;
       } else {
-        // Fallback tự động nếu data đang làm sạch thiếu trường
+        const normalizeText = (val: unknown): string => {
+          if (Array.isArray(val)) {
+            return val
+              .map((s) => (String(s).trim().startsWith("•") ? String(s).trim() : `• ${String(s).trim()}`))
+              .join("\n");
+          }
+          return typeof val === "string" ? val : "";
+        };
+        // Fallback tự động nếu data đang làm sạch thiếu trường, giữ nguyên đầy đủ các trường tiếng Anh & thẩm định
         return {
+          ...item,
           id: item.id || `term-${Math.random().toString(36).substring(2, 9)}`,
           term: item.term || "Thuật ngữ chưa đặt tên",
           ipa: item.ipa || "",
@@ -49,8 +58,8 @@ export function getAllTerms(): MethodologyTerm[] {
           core_definition: item.core_definition || "Nội dung đang được cập nhật...",
           operational_mechanism: item.operational_mechanism || "",
           paradigm_debates: item.paradigm_debates || "",
-          benchmarks: item.benchmarks || "",
-          pitfalls: item.pitfalls || "",
+          benchmarks: normalizeText(item.benchmarks),
+          pitfalls: normalizeText(item.pitfalls),
           academic_example: item.academic_example || "",
           syntactic_patterns: item.syntactic_patterns || "",
           apa_reporting_rules: item.apa_reporting_rules || "",
@@ -62,7 +71,16 @@ export function getAllTerms(): MethodologyTerm[] {
           corpus_variants: item.corpus_variants || [],
           related_terms: item.related_terms || [],
           tier: item.tier || (item.apa_reference ? "flagship" : "textbook"),
-          is_flagship: item.is_flagship ?? Boolean(item.apa_reference && item.apa_reference.trim().length > 0)
+          is_flagship: item.is_flagship ?? Boolean(item.apa_reference && item.apa_reference.trim().length > 0),
+          core_definition_en: item.core_definition_en,
+          operational_mechanism_en: item.operational_mechanism_en,
+          benchmarks_en: normalizeText(item.benchmarks_en) || undefined,
+          pitfalls_en: normalizeText(item.pitfalls_en) || undefined,
+          paradigm_debates_en: item.paradigm_debates_en,
+          domain_tags_en: item.domain_tags_en,
+          expert_status: item.expert_status,
+          expert_notes: item.expert_notes,
+          expert_checks: item.expert_checks,
         } as MethodologyTerm;
       }
     });

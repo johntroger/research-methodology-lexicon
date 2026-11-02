@@ -22,7 +22,13 @@ import {
 } from "lucide-react";
 import { MethodologyTerm, AcademicAcronym } from "@/lib/types";
 import { SearchOutputItem } from "@/lib/search-engine";
-import { getTermDomainTags, getTermDefinition } from "@/lib/monolingual-academic-data";
+import {
+  getTermDomainTags,
+  getTermDefinition,
+  getAcronymPurpose,
+  getAcronymDomain
+} from "@/lib/monolingual-academic-data";
+import { formatAcademicPlainText } from "./FormattedAcademicText";
 
 export interface RecentSearchItem {
   id: string;
@@ -85,7 +91,7 @@ export default function CommandPalette({
         title: languageMode === "en" ? "Random Methodological Term" : "Xem ngẫu nhiên một từ phương pháp luận",
         subtitle: languageMode === "en" ? "Jump to a random research concept" : "Khám phá ngẫu nhiên 1 trong 1,874 thuật ngữ chuẩn mực",
         icon: Shuffle,
-        badge: "🎲 Khám phá",
+        badge: languageMode === "en" ? "🎲 Explore" : "🎲 Khám phá",
         handler: () => {
           if (terms.length > 0) {
             const randomIndex = Math.floor(Math.random() * terms.length);
@@ -101,9 +107,9 @@ export default function CommandPalette({
         id: "action-toggle-lang",
         type: "action" as const,
         title: languageMode === "vi" ? "Chuyển sang bản Tiếng Anh (Monolingual English)" : "Switch to Bilingual English - Vietnamese",
-        subtitle: languageMode === "vi" ? "Chuyển toàn bộ định nghĩa, bẫy từ và tranh luận sang Anh ngữ học thuật" : "Chuyển sang ấn bản song ngữ với đối chiếu dịch nghĩa tiếng Việt",
+        subtitle: languageMode === "vi" ? "Chuyển toàn bộ định nghĩa, bẫy từ và tranh luận sang Anh ngữ học thuật" : "Switch to the bilingual edition with Vietnamese translations and equivalents",
         icon: Globe,
-        badge: "🌐 Ngôn ngữ",
+        badge: languageMode === "en" ? "🌐 Language" : "🌐 Ngôn ngữ",
         handler: () => {
           onToggleLanguage();
           onClose();
@@ -127,7 +133,7 @@ export default function CommandPalette({
         title: languageMode === "en" ? "View Bookmarked Terms" : "Xem danh sách thuật ngữ đã lưu (Bookmarks)",
         subtitle: languageMode === "en" ? "Filter list to your saved research concepts" : "Mở nhanh các mục từ đã đánh dấu sao",
         icon: Bookmark,
-        badge: "⭐ Đã lưu",
+        badge: languageMode === "en" ? "⭐ Saved" : "⭐ Đã lưu",
         handler: () => {
           onFilterSaved();
           onClose();
@@ -139,7 +145,7 @@ export default function CommandPalette({
         title: languageMode === "en" ? "Propose New Methodology Term" : "Đề xuất bổ sung thuật ngữ phương pháp mới",
         subtitle: languageMode === "en" ? "Contribute a doctoral/Q1 research concept to the community" : "Đóng góp thuật ngữ chuẩn mực cho cộng đồng học thuật",
         icon: PlusCircle,
-        badge: "➕ Đóng góp",
+        badge: languageMode === "en" ? "➕ Contribute" : "➕ Đóng góp",
         handler: () => {
           onClose();
           onOpenNewTermModal();
@@ -150,6 +156,16 @@ export default function CommandPalette({
 
   // Danh mục chuyên ngành gợi ý để lọc nhanh
   const domainSuggestions = useMemo(() => {
+    if (languageMode === "en") {
+      return [
+        "Econometrics",
+        "SEM & PLS-SEM",
+        "Experimental Design",
+        "Qualitative Research",
+        "Scale Development",
+        "Consumer Behavior"
+      ];
+    }
     return [
       "Kinh tế lượng",
       "Mô hình SEM/PLS-SEM",
@@ -158,7 +174,7 @@ export default function CommandPalette({
       "Thiết kế thang đo",
       "Hành vi người tiêu dùng"
     ];
-  }, []);
+  }, [languageMode]);
 
   // Lọc kết quả tìm kiếm tức thì
   const filteredResults = useMemo(() => {
@@ -195,9 +211,9 @@ export default function CommandPalette({
           type: "acronym",
           key,
           term: `${key} - ${val.full_name}`,
-          vietnamese: val.vietnamese,
-          domain: "Từ viết tắt",
-          snippet: val.purpose
+          vietnamese: languageMode === "en" ? "" : val.vietnamese,
+          domain: languageMode === "en" ? getAcronymDomain(val, "en", key) : "Từ viết tắt",
+          snippet: getAcronymPurpose(val, languageMode, key)
         });
       }
       if (matchingAcronyms.length >= 5) break;
@@ -343,7 +359,7 @@ export default function CommandPalette({
                     <button
                       onClick={onClearRecentSearches}
                       className="text-[11px] text-slate-400 hover:text-red-500 transition flex items-center gap-1 font-normal lowercase"
-                      title="Xóa toàn bộ lịch sử"
+                      title={languageMode === "en" ? "Clear recent search history" : "Xóa toàn bộ lịch sử"}
                     >
                       <Trash2 size={11} /> {languageMode === "en" ? "Clear" : "Xóa"}
                     </button>
@@ -359,7 +375,7 @@ export default function CommandPalette({
                         className="px-2.5 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:text-blue-600 dark:hover:text-blue-300 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/80 transition flex items-center gap-1.5"
                       >
                         <span className="font-medium">{item.term}</span>
-                        {item.vietnamese && (
+                        {languageMode === "vi" && item.vietnamese && (
                           <span className="text-[11px] text-slate-400 truncate max-w-[120px]">
                             • {item.vietnamese}
                           </span>
@@ -573,7 +589,7 @@ export default function CommandPalette({
                             isSelected ? "text-blue-100/80" : "text-slate-400 dark:text-slate-500"
                           }`}
                         >
-                          {item.snippet}
+                          {formatAcademicPlainText(item.snippet)}
                         </p>
                       </div>
 

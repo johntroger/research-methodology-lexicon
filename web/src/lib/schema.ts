@@ -8,6 +8,18 @@ export const CorpusVariantSchema = z.object({
   rel_en: z.string().optional(),
 });
 
+const StringOrStringArraySchema = z
+  .union([
+    z.string(),
+    z.array(z.string()).transform((arr) =>
+      arr
+        .map((s) => (s.trim().startsWith("•") ? s.trim() : `• ${s.trim()}`))
+        .join("\n")
+    ),
+  ])
+  .optional()
+  .default("");
+
 export const MethodologyTermSchema = z.object({
   id: z.string().min(1, "ID không được để trống"),
   term: z.string().min(1, "Thuật ngữ không được để trống"),
@@ -20,8 +32,8 @@ export const MethodologyTermSchema = z.object({
   core_definition: z.string().min(1, "Định nghĩa cốt lõi không được để trống"),
   operational_mechanism: z.string().optional().default(""),
   paradigm_debates: z.string().optional().default(""),
-  benchmarks: z.string().optional().default(""),
-  pitfalls: z.string().optional().default(""),
+  benchmarks: StringOrStringArraySchema,
+  pitfalls: StringOrStringArraySchema,
   academic_example: z.string().optional().default(""),
   syntactic_patterns: z.string().optional().default(""),
   apa_reporting_rules: z.string().optional().default(""),
@@ -34,11 +46,15 @@ export const MethodologyTermSchema = z.object({
   related_terms: z.array(z.string()).optional().default([]),
   tier: z.string().optional().default("flagship"),
   is_flagship: z.boolean().optional(),
+  stt: z.number().optional(),
+  expert_status: z.enum(["verified", "needs_review"]).optional(),
+  expert_notes: z.string().optional(),
+  expert_checks: z.record(z.string(), z.boolean()).optional(),
   // English Monolingual Fields
   core_definition_en: z.string().optional(),
   operational_mechanism_en: z.string().optional(),
-  benchmarks_en: z.string().optional(),
-  pitfalls_en: z.string().optional(),
+  benchmarks_en: StringOrStringArraySchema,
+  pitfalls_en: StringOrStringArraySchema,
   paradigm_debates_en: z.string().optional(),
   domain_tags_en: z.array(z.string()).optional(),
 }).passthrough();

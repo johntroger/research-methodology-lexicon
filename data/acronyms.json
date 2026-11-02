@@ -11,9 +11,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: 'phù hợp mẫu nhỏ' là ngộ nhận phổ biến (Hair et al., 2019 đã cảnh báo); Q² blindfolding nên thay/bổ sung PLSpredict (Shmueli et al., 2019); 'R² cao' cần ngưỡng theo ngành.",
-      "purpose_en": "Academic purpose and contextual usage of Partial Least Squares Structural Equation Modeling in research methodology.",
-      "benchmark_en": "Hệ số R² theo chuẩn ngành; f² (0.02 nhỏ, 0.15 vừa, 0.35 lớn); HTMT < 0.85/0.90; đánh giá năng lực dự báo qua thủ tục PLSpredict (Shmueli et al., 2019).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Variance-based structural equation modeling focusing on causal-predictive analysis and theoretical development, optimal for complex structural models, composite indicators, and exploratory research.",
+      "benchmark_en": "Evaluate R² in-sample explanatory power, f² effect size (0.02 small, 0.15 medium, 0.35 large), HTMT < 0.85/0.90, and out-of-sample predictive power via PLSpredict (Shmueli et al., 2019).",
+      "domain_en": "Psychometrics & SEM"
     },
     "CB-SEM": {
       "full_name": "Covariance-Based Structural Equation Modeling",
@@ -23,9 +23,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa Lưu ý: χ² p > 0.05 hiếm đạt với mẫu lớn – báo cáo kèm, không dùng làm tiêu chí loại mô hình.",
-      "purpose_en": "Academic purpose and contextual usage of Covariance-Based Structural Equation Modeling in research methodology.",
-      "benchmark_en": "RMSEA < 0.06 - 0.08, CFI > 0.95, TLI > 0.95, SRMR < 0.08. Lưu ý: Chi-square p > 0.05 rất khó đạt với cỡ mẫu lớn, nên báo cáo kèm nhưng không dùng làm tiêu chí duy nhất để bác bỏ mô hình (Kline, 2023).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Covariance-based structural equation modeling (Jöreskog, Kline) emphasizing confirmatory theory testing and reproduction of the empirical covariance matrix.",
+      "benchmark_en": "RMSEA < 0.06–0.08, CFI >= 0.95, TLI >= 0.95, SRMR < 0.08. Note: Chi-square p > 0.05 is sensitive to large sample sizes and should be reported alongside incremental and absolute fit indices (Kline, 2023).",
+      "domain_en": "Psychometrics & SEM"
     },
     "SEM": {
       "full_name": "Structural Equation Modeling",
@@ -35,9 +35,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Structural Equation Modeling in research methodology.",
-      "benchmark_en": "Mô hình đo lường đạt độ tin cậy và giá trị hội tụ/phân biệt trước khi đánh giá mô hình cấu trúc.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Second-generation multivariate analysis combining confirmatory factor analysis (CFA) and simultaneous path analysis to estimate latent variables and structural relationships while accounting for measurement error.",
+      "benchmark_en": "Two-step evaluation (Anderson & Gerbing, 1988): Establish measurement model reliability, convergent validity, and discriminant validity prior to testing structural path hypotheses.",
+      "domain_en": "Psychometrics & SEM"
     },
     "AVE": {
       "full_name": "Average Variance Extracted",
@@ -47,9 +47,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Average Variance Extracted in research methodology.",
-      "benchmark_en": "AVE > 0.50 (Fornell & Larcker, 1981; Hair et al., 2018).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A foundational psychometric metric measuring the grand mean value of the squared loadings of the indicators associated with a latent construct (convergent validity).",
+      "benchmark_en": "AVE >= 0.50, indicating that the latent construct explains at least 50% of the variance of its observed indicators (Fornell & Larcker, 1981; Hair et al., 2018).",
+      "domain_en": "Psychometrics & SEM"
     },
     "HTMT": {
       "full_name": "Heterotrait-Monotrait Ratio of Correlations",
@@ -59,9 +59,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Heterotrait-Monotrait Ratio of Correlations in research methodology.",
-      "benchmark_en": "HTMT < 0.85 (nghiêm ngặt / khái niệm khác biệt rõ) hoặc HTMT < 0.90 (các khái niệm có quan hệ gần) (Henseler et al., 2015).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The ratio of between-trait correlations to within-trait correlations, serving as the premier diagnostic criterion for assessing discriminant validity in variance-based and covariance-based SEM.",
+      "benchmark_en": "HTMT < 0.85 for conceptually distinct constructs, or HTMT < 0.90 for conceptually similar constructs; bootstrap 95% confidence interval must not include 1.0 (Henseler et al., 2015).",
+      "domain_en": "Psychometrics & SEM"
     },
     "CR": {
       "full_name": "Composite Reliability",
@@ -71,9 +71,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Composite Reliability in research methodology.",
-      "benchmark_en": "CR ≥ 0.70 (chấp nhận trong nghiên cứu khám phá), ≥ 0.80 (nghiên cứu khẳng định), không nên > 0.95 vì có thể trùng lặp câu hỏi (Hair et al., 2018).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A measure of internal consistency reliability (Jöreskog's rho_c) that weights individual indicators according to their actual factor loadings rather than assuming tau-equivalence.",
+      "benchmark_en": "CR between 0.70 and 0.90 (0.60–0.70 acceptable in exploratory research); values >= 0.95 indicate undesirable indicator redundancy (Hair et al., 2018).",
+      "domain_en": "Psychometrics & SEM"
     },
     "VIF": {
       "full_name": "Variance Inflation Factor",
@@ -83,9 +83,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: VIF < 3 trong PLS-SEM là khuyến nghị của Hair et al. (2019/2022); Kock (2015) là ngưỡng 3.3 cho full collinearity test.",
-      "purpose_en": "Academic purpose and contextual usage of Variance Inflation Factor in research methodology.",
-      "benchmark_en": "VIF < 3.0 (ngưỡng khuyến nghị lý tưởng trong PLS-SEM / Hair et al., 2019); VIF ≤ 3.3 (ngưỡng Full Collinearity test / Kock, 2015); VIF < 5.0 (chấp nhận được trong hồi quy CB-SEM); VIF > 10 biểu thị đa cộng tuyến nghiêm trọng.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A collinearity diagnostic quantifying how much the variance of an estimated regression coefficient or formative indicator weight is inflated due to multicollinearity.",
+      "benchmark_en": "VIF < 3.0 (ideal in PLS-SEM & full collinearity CMB check; Kock, 2015), VIF < 5.0 (acceptable threshold; Hair et al., 2018), VIF >= 10.0 indicates severe multicollinearity.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "CMB": {
       "full_name": "Common Method Bias",
@@ -95,9 +95,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Common Method Bias in research methodology.",
-      "benchmark_en": "Harman's single factor < 50% phương sai, kiểm định Full Collinearity VIF < 3.3 (Kock, 2015), hoặc Marker Variable technique (Lindell & Whitney, 2001).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Systematic measurement error distorting observed relationships between constructs when independent and dependent variables are captured using the same source or survey instrument at a single point in time.",
+      "benchmark_en": "Requires both ex-ante procedural remedies (temporal/source separation) and ex-post statistical tests: Full Collinearity VIF < 3.3 (Kock, 2015), CFA Marker Variable (Lindell & Whitney, 2001), or ULMC.",
+      "domain_en": "Psychometrics & SEM"
     },
     "CMV": {
       "full_name": "Common Method Variance",
@@ -107,9 +107,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Common Method Variance in research methodology.",
-      "benchmark_en": "Khuyến nghị áp dụng cả biện pháp thủ tục (procedural remedies) và kỹ thuật thống kê (statistical remedies / Podsakoff et al., 2003, 2011).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Spurious systematic variance shared among variables attributable to the common measurement method rather than the underlying theoretical constructs being measured.",
+      "benchmark_en": "Combine procedural design controls with statistical diagnostics such as latent marker variable modeling (Podsakoff et al., 2003, 2012); do not rely solely on Harman's single-factor test (< 50%).",
+      "domain_en": "Psychometrics & SEM"
     },
     "2SLS": {
       "full_name": "Two-Stage Least Squares",
@@ -119,9 +119,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa Lưu ý: bổ sung ngưỡng tF của Lee et al. (2022) và cảnh báo Hansen p quá cao (quá nhiều công cụ).",
-      "purpose_en": "Academic purpose and contextual usage of Two-Stage Least Squares in research methodology.",
-      "benchmark_en": "Kiểm định biến công cụ yếu F-statistic > 10 (Stock & Yogo, 2005), kiểm định ngoại sinh Sargan/Hansen p > 0.05.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An econometric instrumental variable (IV) estimator that isolates exogenous variation in an endogenous regressor in Stage 1 to obtain consistent causal estimates in Stage 2.",
+      "benchmark_en": "First-stage F-statistic > 10 (or Stock & Yogo, 2005 critical value > 16.38); Sargan/Hansen J overidentification test p > 0.05; Durbin-Wu-Hausman endogeneity test p < 0.05.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "GMM": {
       "full_name": "Generalized Method of Moments",
@@ -131,9 +131,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Generalized Method of Moments in research methodology.",
-      "benchmark_en": "Kiểm định tự tương quan Arellano-Bond AR(1) p < 0.05, AR(2) p > 0.05, Hansen test p > 0.05 (nhưng không được p = 1.000).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A semiparametric econometric estimation framework (Arellano-Bond Difference GMM / Blundell-Bond System GMM) addressing dynamic panel endogeneity, unobserved heterogeneity, and simultaneity.",
+      "benchmark_en": "Arellano-Bond serial correlation tests: AR(1) p < 0.05 and AR(2) p > 0.05; Hansen J overidentification test 0.10 <= p < 0.80 (avoid p = 1.000 which signals instrument proliferation; Roodman, 2009).",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "DID": {
       "full_name": "Difference-in-Differences",
@@ -143,9 +143,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Difference-in-Differences in research methodology.",
-      "benchmark_en": "Giả định xu thế song song (Parallel Trends Assumption) bắt buộc phải được kiểm định thỏa mãn trước can thiệp.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A quasi-experimental causal identification strategy estimating treatment effects by comparing pre-to-post outcome changes between a treated group and an untreated comparison group.",
+      "benchmark_en": "Requires verifying the Parallel Trends Assumption via event-study pre-treatment lead coefficients (statistically indistinguishable from zero) and using heterogeneity-robust estimators for staggered treatment timing.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "PSM": {
       "full_name": "Propensity Score Matching",
@@ -155,9 +155,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Propensity Score Matching in research methodology.",
-      "benchmark_en": "Độ lệch chuẩn hóa cân bằng (Standardized Mean Difference / Rubin's B < 25%), tỷ lệ phương sai (Rubin's R từ 0.5 đến 2.0).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An observational causal inference technique (Rosenbaum & Rubin, 1983) that pairs treated and untreated units with similar conditional probabilities of receiving treatment given observed baseline covariates.",
+      "benchmark_en": "Post-matching covariate balance requires Standardized Mean Difference (SMD) < 0.10 (or Rubin's B < 25%) and variance ratio Rubin's R between 0.50 and 2.00 across all covariates.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "RDD": {
       "full_name": "Regression Discontinuity Design",
@@ -167,9 +167,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Regression Discontinuity Design in research methodology.",
-      "benchmark_en": "Sharp RDD (tuân thủ 100%), Fuzzy RDD (dùng IV); kiểm định tính liên tục của hàm mật độ McCrary density test.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A quasi-experimental identification strategy estimating local causal treatment effects by exploiting a deterministic cutoff threshold on a continuous running assignment variable.",
+      "benchmark_en": "Verify absence of manipulation at the cutoff via McCrary (2008) / Cattaneo et al. (2020) density test (p > 0.05), baseline covariate continuity, and MSE-optimal bandwidth robustness checks.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "ITS": {
       "full_name": "Interrupted Time-Series Design",
@@ -179,9 +179,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: số điểm quan sát tối thiểu cần dẫn nguồn (vd. Cochrane EPOC); 10–15 điểm không phải chuẩn chung.",
-      "purpose_en": "Academic purpose and contextual usage of Interrupted Time-Series Design in research methodology.",
-      "benchmark_en": "Cần tối thiểu 10-15 điểm quan sát trước và sau can thiệp; kiểm soát tự tương quan qua mô hình ARIMA / Newey-West.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A strong quasi-experimental longitudinal design that evaluates the immediate level change and slope change of an intervention across multiple equally spaced pre- and post-intervention observations.",
+      "benchmark_en": "Requires at least 10–15 time points before and after the intervention, controlling for serial autocorrelation and seasonality via segmented regression with Newey-West or ARIMA errors.",
+      "domain_en": "Experimental Design & Medicine"
     },
     "RCT": {
       "full_name": "Randomized Controlled Trial",
@@ -191,9 +191,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: 'nhân quả tuyệt đối' quá mức; ngẫu nhiên hóa cân bằng các nhóm về kỳ vọng, không tuyệt đối.",
-      "purpose_en": "Academic purpose and contextual usage of Randomized Controlled Trial in research methodology.",
-      "benchmark_en": "Phân bổ ngẫu nhiên (random assignment), nhóm đối chứng tương đương, làm mù (blinding), phân tích theo dự định ban đầu (ITT).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The gold-standard experimental research design in which eligible participants are randomly assigned to treatment or control conditions to establish unbiased causal efficacy.",
+      "benchmark_en": "Adherence to CONSORT reporting standards: concealed random allocation, baseline equivalence, double-blinding where feasible, and Intention-to-Treat (ITT) primary analysis.",
+      "domain_en": "Experimental Design & Medicine"
     },
     "ITT": {
       "full_name": "Intention-to-Treat Analysis",
@@ -203,9 +203,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Intention-to-Treat Analysis in research methodology.",
-      "benchmark_en": "Bảo toàn tính ngẫu nhiên ban đầu, tránh sai lệch hao hụt mẫu (attrition bias); đối lập với Per-protocol analysis.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An analytical principle in randomized trials wherein all randomized participants are analyzed in the group to which they were originally assigned, regardless of non-adherence or protocol deviations.",
+      "benchmark_en": "Preserves baseline prognostic balance generated by randomization and guards against attrition/selection bias; reported alongside Per-Protocol (PP) or CACE sensitivity analyses.",
+      "domain_en": "Experimental Design & Medicine"
     },
     "CACE": {
       "full_name": "Complier Average Causal Effect",
@@ -215,9 +215,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Complier Average Causal Effect in research methodology.",
-      "benchmark_en": "Ước lượng qua biến công cụ (Instrumental Variable): CACE = ITT_Y / ITT_D.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A causal estimand measuring the treatment effect specifically among the latent subpopulation of compliers who adhere to their assigned experimental treatment condition.",
+      "benchmark_en": "Identified via Instrumental Variables (using random assignment as the instrument for actual treatment uptake): CACE = ITT_Y / ITT_D under monotonicity and exclusion restrictions.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "LATE": {
       "full_name": "Local Average Treatment Effect",
@@ -227,9 +227,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Local Average Treatment Effect in research methodology.",
-      "benchmark_en": "Áp dụng trong các mô hình IV và Fuzzy RDD dưới giả định tính đơn điệu (monotonicity).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The causal treatment effect (Imbens & Angrist, 1994) identified by an instrumental variable or fuzzy RDD for the subpopulation of compliers whose treatment status is shifted by the instrument.",
+      "benchmark_en": "Requires four assumptions: Independence, Exclusion Restriction, Instrument Relevance (F > 10), and Monotonicity (no defiers).",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "SUTVA": {
       "full_name": "Stable Unit Treatment Value Assumption",
@@ -239,9 +239,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Stable Unit Treatment Value Assumption in research methodology.",
-      "benchmark_en": "Vi phạm SUTVA khi có hiệu ứng lan tỏa (spillover effects), tương tác xã hội hoặc lây nhiễm giữa các nhóm.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A foundational pillar of Rubin's Potential Outcomes Framework requiring that (1) one unit's potential outcomes are unaffected by other units' treatment assignments (no interference/spillover) and (2) there are no hidden variations of treatment.",
+      "benchmark_en": "Violated when network spillovers, peer contagion, or general equilibrium effects exist between treated and control units; mitigated via cluster randomization at the group/market level.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "DAG": {
       "full_name": "Directed Acyclic Graph",
@@ -251,9 +251,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Directed Acyclic Graph in research methodology.",
-      "benchmark_en": "Tiêu chuẩn chặn cổng sau (Back-door criterion) để chọn tập hợp biến kiểm soát tối thiểu nhằm loại bỏ sai lệch gây nhiễu.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A mathematical causal diagram (Pearl, 2009) using nodes and directed arrows without cycles to map structural causal assumptions, confounders, mediators, and colliders.",
+      "benchmark_en": "Apply Pearl's Backdoor Criterion to select a minimal sufficient adjustment set that blocks all non-causal backdoor paths without conditioning on colliders or post-treatment descendants.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "CTT": {
       "full_name": "Classical Test Theory",
@@ -263,9 +263,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Classical Test Theory in research methodology.",
-      "benchmark_en": "Các giả định: Trung bình sai số bằng 0, không có tương quan giữa điểm thực và sai số, các bài kiểm tra song song có cùng phương sai sai số.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A foundational psychometric framework (Spearman, Novick) modeling an individual's observed score (X) as the linear sum of their unobservable true score (T) and random error (E): X = T + E.",
+      "benchmark_en": "Assumes E(E) = 0, Cov(T, E) = 0, and uncorrelated errors across parallel administrations; evaluated via Cronbach's alpha (>= 0.70), McDonald's omega, and item-total correlations (> 0.30).",
+      "domain_en": "Psychometrics & SEM"
     },
     "IRT": {
       "full_name": "Item Response Theory",
@@ -275,9 +275,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Item Response Theory in research methodology.",
-      "benchmark_en": "Mô hình 1PL (Rasch), 2PL (độ khó + độ phân biệt), 3PL (+ tham số đoán mò); hàm thông tin câu hỏi (IIF) và bài thi (TIF).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A modern latent trait psychometric paradigm modeling the probability of a specific item response as a nonlinear logistic function of person ability (theta) and item parameters.",
+      "benchmark_en": "Requires testing unidimensionality and local independence; estimates item difficulty (b), item discrimination (a), and guessing (c) via 1PL, 2PL, 3PL, or Graded Response Models (GRM).",
+      "domain_en": "Psychometrics & SEM"
     },
     "1PL": {
       "full_name": "One-Parameter Logistic Model (Rasch Model)",
@@ -287,9 +287,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa Lưu ý: với thang Likert, Bond & Fox chấp nhận Infit/Outfit 0.6–1.4.",
-      "purpose_en": "Academic purpose and contextual usage of One-Parameter Logistic Model (Rasch Model) in research methodology.",
-      "benchmark_en": "Kiểm định mức độ vừa vặn của câu hỏi: Infit MNSQ và Outfit MNSQ trong khoảng 0.7 đến 1.3 (Bond & Fox, 2015).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An Item Response Theory model where the probability of a correct response depends solely on the difference between person ability (theta) and item difficulty (b), holding discrimination constant across items.",
+      "benchmark_en": "Item fit evaluated via Infit MNSQ and Outfit MNSQ within the productive measurement range of 0.70 to 1.30 (or 0.50 to 1.50; Bond & Fox, 2015).",
+      "domain_en": "Psychometrics & SEM"
     },
     "2PL": {
       "full_name": "Two-Parameter Logistic Model",
@@ -299,9 +299,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: ngưỡng độ phân biệt (Baker, 2001): 0.65–1.34 trung bình; 1.35–1.69 cao; ≥ 1.70 rất cao.",
-      "purpose_en": "Academic purpose and contextual usage of Two-Parameter Logistic Model in research methodology.",
-      "benchmark_en": "Độ phân biệt a > 0.65 (vừa), a > 1.35 (rất cao); độ khó b thường nằm trong dải từ -3.0 đến +3.0.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An Item Response Theory model (Birnbaum, 1968) that jointly estimates item difficulty (location parameter b) and item discrimination (slope parameter a) for dichotomous or polytomous items.",
+      "benchmark_en": "Item discrimination parameter a > 0.65 indicates moderate discrimination, and a > 1.35 indicates high discrimination (Baker, 2001); item difficulty b typically ranges from -3.0 to +3.0 logits.",
+      "domain_en": "Psychometrics & SEM"
     },
     "3PL": {
       "full_name": "Three-Parameter Logistic Model",
@@ -311,9 +311,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Three-Parameter Logistic Model in research methodology.",
-      "benchmark_en": "Tham số đoán mò c thường dao động quanh 0.20 cho câu hỏi trắc nghiệm 5 lựa chọn (1/5 = 0.20).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An Item Response Theory model incorporating item difficulty (b), item discrimination (a), and a lower-asymptote pseudo-guessing parameter (c) to account for lucky guessing on multiple-choice tests.",
+      "benchmark_en": "Pseudo-guessing parameter c typically hovers near 1/k (e.g., c <= 0.20 for 5-option multiple-choice items); requires large sample sizes (N >= 1,000) for stable parameter convergence.",
+      "domain_en": "Psychometrics & SEM"
     },
     "ICC": {
       "full_name": "Item Characteristic Curve",
@@ -323,9 +323,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Item Characteristic Curve in research methodology.",
-      "benchmark_en": "Đường cong dốc hơn thể hiện câu hỏi có độ phân biệt cao hơn; vị trí dịch sang phải thể hiện câu hỏi khó hơn.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "In IRT, the nonlinear S-shaped curve mapping the probability of item endorsement across latent trait theta; in multilevel modeling and reliability, the proportion of total variance attributable to between-cluster differences.",
+      "benchmark_en": "In IRT: steeper ICC slope at inflection point b reflects higher discrimination. In Multilevel/HLM: ICC(1) > 0.05–0.10 justifies multilevel modeling; in inter-rater reliability: ICC > 0.75 indicates good agreement.",
+      "domain_en": "Psychometrics & SEM"
     },
     "IIF": {
       "full_name": "Item Information Function",
@@ -335,9 +335,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Item Information Function in research methodology.",
-      "benchmark_en": "Thông tin cực đại tại ngưỡng độ khó của câu hỏi: I(theta) = a² * P · (1-P).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An IRT function quantifying the statistical precision (Fisher information) an individual item contributes at each point along the latent trait continuum theta.",
+      "benchmark_en": "For dichotomous items, information peaks at theta = b where I(theta) = a² * P(theta) * [1 - P(theta)]; higher discrimination (a) yields a taller, narrower information peak.",
+      "domain_en": "Psychometrics & SEM"
     },
     "TIF": {
       "full_name": "Test Information Function",
@@ -347,9 +347,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Test Information Function in research methodology.",
-      "benchmark_en": "Sai số chuẩn đo lường SE(theta) = 1 / √(TIF(theta)); TIF càng cao thì sai số đo lường càng nhỏ.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The additive sum of all individual Item Information Functions across a scale, indicating the overall measurement precision of the instrument at every level of the latent trait theta.",
+      "benchmark_en": "Conditional Standard Error of Measurement is inversely proportional to information: SEM(theta) = 1 / sqrt(TIF(theta)); TIF >= 10 corresponds to SEM <= 0.32 (reliability ~ 0.90).",
+      "domain_en": "Psychometrics & SEM"
     },
     "CVR": {
       "full_name": "Content Validity Ratio",
@@ -359,9 +359,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Content Validity Ratio in research methodology.",
-      "benchmark_en": "Ngưỡng chấp nhận CVR tối thiểu của Lawshe (1975) phụ thuộc số chuyên gia: N=5 cần CVR=0.99, N=10 cần CVR=0.62, N=20 cần CVR=0.42.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Lawshe's (1975) quantitative index assessing expert panel consensus on whether each scale item is 'essential' to measuring the target construct domain.",
+      "benchmark_en": "Minimum critical CVR depends on expert panel size (N): for N = 5 experts, CVR >= 0.99; N = 8, CVR >= 0.75; N = 10, CVR >= 0.62; N = 20, CVR >= 0.42 (Lawshe, 1975).",
+      "domain_en": "Psychometrics & SEM"
     },
     "CVI": {
       "full_name": "Content Validity Index",
@@ -371,9 +371,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Content Validity Index in research methodology.",
-      "benchmark_en": "I-CVI ≥ 0.78 (đối với hội đồng 6-10 chuyên gia), S-CVI/Ave ≥ 0.90 (Lynn, 1986; Polit & Beck, 2006).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An empirical psychometric index quantifying the proportion of domain experts who rate an item (I-CVI) or overall scale (S-CVI) as content-relevant (typically ratings of 3 or 4 on a 4-point scale).",
+      "benchmark_en": "Item-level I-CVI >= 0.78 for panels of 6–10 experts; Scale-level S-CVI/Ave >= 0.90 and S-CVI/UA >= 0.80 (Lynn, 1986; Polit & Beck, 2006).",
+      "domain_en": "Psychometrics & SEM"
     },
     "VAS": {
       "full_name": "Visual Analog Scale",
@@ -383,9 +383,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Visual Analog Scale in research methodology.",
-      "benchmark_en": "Thường dùng đo cường độ đau đớn, mức độ hài lòng hoặc cảm xúc; dữ liệu xấp xỉ mức đo tỷ lệ (ratio scale).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A psychometric measurement instrument consisting of a continuous horizontal or vertical line (typically 100 mm) anchored by two extreme verbal descriptors to capture subjective states or attitudes.",
+      "benchmark_en": "Yields continuous ratio/interval-like data suitable for parametric analysis; Minimal Clinically Important Difference (MCID) is typically 10–15 mm on a 100 mm scale.",
+      "domain_en": "Psychometrics & SEM"
     },
     "EDA": {
       "full_name": "Exploratory Data Analysis",
@@ -395,9 +395,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Exploratory Data Analysis in research methodology.",
-      "benchmark_en": "Công cụ chính: Boxplot, Stem-and-leaf, Histogram, Normal Q-Q plot, Scatterplot matrix (Tukey, 1977; Schindler, 2022).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "John Tukey's (1977) diagnostic data inspection philosophy using visual and numerical summaries to examine distributional shapes, missingness, outliers, and nonlinearity prior to formal hypothesis testing.",
+      "benchmark_en": "Standard diagnostics: Boxplots (IQR outlier rule), Q-Q plots, skewness/kurtosis checks (|skew| < 2, |kurtosis| < 7), and bivariate scatterplot matrices (Schindler, 2022).",
+      "domain_en": "Psychometrics & SEM"
     },
     "EFA": {
       "full_name": "Exploratory Factor Analysis",
@@ -407,9 +407,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: không dùng đơn độc quy tắc eigenvalue > 1 – khuyến nghị parallel analysis (Horn, 1965); ngưỡng loading phụ thuộc cỡ mẫu.",
-      "purpose_en": "Academic purpose and contextual usage of Exploratory Factor Analysis in research methodology.",
-      "benchmark_en": "KMO ≥ 0.50 (tốt nếu ≥ 0.80), Bartlett's test p < 0.05, Eigenvalue > 1, Tổng phương sai trích ≥ 50%, Factor loading ≥ 0.50 (Hair et al., 2018).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A multivariate interdependence technique used during initial scale development to uncover the underlying latent factor dimensionality of a set of observed indicators without imposing a priori constraints.",
+      "benchmark_en": "KMO >= 0.60 (ideal >= 0.80), Bartlett's Test of Sphericity p < 0.05, total variance explained >= 50–60%, primary factor loadings >= 0.50, and cross-loading differences > 0.20 (Hair et al., 2018).",
+      "domain_en": "Psychometrics & SEM"
     },
     "CFA": {
       "full_name": "Confirmatory Factor Analysis",
@@ -419,9 +419,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa Lưu ý: 0.707 là mức lý tưởng; CB-SEM chấp nhận loading ≥ 0.50 khi CR/AVE đạt.",
-      "purpose_en": "Academic purpose and contextual usage of Confirmatory Factor Analysis in research methodology.",
-      "benchmark_en": "Factor loadings > 0.707 (p < 0.001), Composite Reliability > 0.70, AVE > 0.50, các chỉ số độ phù hợp GoF đạt chuẩn.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A theory-driven measurement model technique testing whether observed indicators load onto pre-specified latent constructs as hypothesized while evaluating overall covariance fit.",
+      "benchmark_en": "Standardized factor loadings >= 0.708 (acceptable >= 0.50 with p < 0.001), CR >= 0.70, AVE >= 0.50, HTMT < 0.85, CFI/TLI >= 0.95, RMSEA < 0.08, SRMR < 0.08.",
+      "domain_en": "Psychometrics & SEM"
     },
     "PCA": {
       "full_name": "Principal Component Analysis",
@@ -431,9 +431,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Principal Component Analysis in research methodology.",
-      "benchmark_en": "Dùng để nén biến và chống đa cộng tuyến; không phải là mô hình nhân tố tiềm ẩn thực thụ.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A mathematical dimensionality-reduction technique that transforms correlated variables into a smaller set of orthogonal linear composites (principal components) maximizing total variance explained.",
+      "benchmark_en": "Retain components via Kaiser's eigenvalue > 1.0 rule, Horn's Parallel Analysis, or cumulative variance >= 60%; distinct from common factor analysis (EFA) which models only shared variance.",
+      "domain_en": "Psychometrics & SEM"
     },
     "ANOVA": {
       "full_name": "Analysis of Variance",
@@ -443,9 +443,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Analysis of Variance in research methodology.",
-      "benchmark_en": "Giả định: Phân phối chuẩn, phương sai đồng nhất (Levene test p > 0.05). F-statistic ý nghĩa p < 0.05, kiểm định sau phân tích (Post-hoc Tukey / Scheffe).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A parametric statistical technique developed by R. A. Fisher to test whether group means differ significantly across three or more categorical independent conditions by partitioning between-group and within-group variance.",
+      "benchmark_en": "Requires normality and homogeneity of variances (Levene's test p > 0.05; otherwise use Welch's ANOVA). Significant omnibus F-test (p < 0.05) is followed by Tukey HSD or Games-Howell post-hoc tests and eta-squared effect size.",
+      "domain_en": "Experimental Design & Medicine"
     },
     "ANCOVA": {
       "full_name": "Analysis of Covariance",
@@ -455,9 +455,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Analysis of Covariance in research methodology.",
-      "benchmark_en": "Giả định bắt buộc: Tính đồng nhất của các độ dốc hồi quy (Homogeneity of regression slopes / p > 0.05 cho tương tác nhóm · covariate).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A general linear model combining ANOVA and linear regression to test group mean differences on a dependent variable while statistically adjusting for continuous baseline covariates.",
+      "benchmark_en": "Mandatory assumptions: (1) Independence of the covariate and treatment effect; (2) Homogeneity of regression slopes (non-significant treatment-by-covariate interaction, p > 0.05).",
+      "domain_en": "Experimental Design & Medicine"
     },
     "MANOVA": {
       "full_name": "Multivariate Analysis of Variance",
@@ -467,9 +467,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Multivariate Analysis of Variance in research methodology.",
-      "benchmark_en": "Thống kê Wilks' Lambda, Pillai's Trace, Hotelling's Trace; kiểm định tính đồng nhất ma trận hiệp phương sai Box's M test.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A multivariate extension of ANOVA that simultaneously tests group differences across a vector of two or more correlated dependent variables while controlling family-wise Type I error.",
+      "benchmark_en": "Evaluated via Pillai's Trace (most robust to violations), Wilks' Lambda, Hotelling's Trace, and Roy's Largest Root; covariance matrix homogeneity checked via Box's M test (p > 0.001).",
+      "domain_en": "Psychometrics & SEM"
     },
     "HLM": {
       "full_name": "Hierarchical Linear Modeling",
@@ -479,9 +479,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Hierarchical Linear Modeling in research methodology.",
-      "benchmark_en": "Hệ số tương quan nội lớp ICC (Intraclass Correlation Coefficient) > 0.05 hoặc 0.10 chỉ ra sự cần thiết phải dùng mô hình đa tầng.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Multilevel regression modeling (Raudenbush & Bryk, 2002) designed for nested data structures (e.g., employees nested within firms) to estimate fixed effects, random intercepts, and cross-level interactions.",
+      "benchmark_en": "Justified when Intraclass Correlation Coefficient ICC(1) >= 0.05–0.10; requires appropriate centering (Grand-Mean vs. Group-Mean Centering) and sufficient Level-2 clusters (typically >= 30–50 groups).",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "RMSEA": {
       "full_name": "Root Mean Square Error of Approximation",
@@ -491,9 +491,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Root Mean Square Error of Approximation in research methodology.",
-      "benchmark_en": "RMSEA < 0.05 (phù hợp xuất sắc), 0.05 - 0.08 (phù hợp chấp nhận được), > 0.10 (phù hợp kém); p-close > 0.05 (Kline, 2023).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An absolute, parsimony-corrected badness-of-fit index in CB-SEM that measures discrepancy per degree of freedom between the hypothesized model and the population covariance matrix.",
+      "benchmark_en": "RMSEA <= 0.05 indicates close fit, 0.05–0.08 indicates reasonable fit, and >= 0.10 indicates poor fit; report 90% CI and p-close > 0.05 (Hu & Bentler, 1999; Kline, 2023).",
+      "domain_en": "Psychometrics & SEM"
     },
     "CFI": {
       "full_name": "Comparative Fit Index",
@@ -503,9 +503,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Comparative Fit Index in research methodology.",
-      "benchmark_en": "CFI ≥ 0.95 (lý tưởng), CFI ≥ 0.90 (chấp nhận được / Hu & Bentler, 1999; Hair et al., 2018).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Bentler's (1990) normed incremental fit index in SEM that evaluates the relative improvement in fit of the researcher's hypothesized model compared with a baseline independence (null) model.",
+      "benchmark_en": "CFI >= 0.95 indicates excellent fit, and CFI >= 0.90 indicates acceptable fit (Hu & Bentler, 1999; Hair et al., 2018).",
+      "domain_en": "Psychometrics & SEM"
     },
     "TLI": {
       "full_name": "Tucker-Lewis Index (Non-Normed Fit Index / NNFI)",
@@ -515,9 +515,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Tucker-Lewis Index (Non-Normed Fit Index / NNFI) in research methodology.",
-      "benchmark_en": "TLI ≥ 0.95 (lý tưởng), TLI ≥ 0.90 (chấp nhận được).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An incremental goodness-of-fit index in CFA/SEM that compares the chi-square per degree of freedom of the hypothesized model to that of the baseline null model, heavily penalizing unnecessary model complexity.",
+      "benchmark_en": "TLI >= 0.95 indicates strong fit, and TLI >= 0.90 indicates acceptable model fit (Hu & Bentler, 1999).",
+      "domain_en": "Psychometrics & SEM"
     },
     "SRMR": {
       "full_name": "Standardized Root Mean Square Residual",
@@ -527,9 +527,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Standardized Root Mean Square Residual in research methodology.",
-      "benchmark_en": "SRMR < 0.08 (Hu & Bentler, 1999; Kline, 2023).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An absolute fit index in SEM representing the square root of the average squared differences between observed sample correlations and model-implied correlations.",
+      "benchmark_en": "SRMR < 0.08 (or strictly < 0.05) indicates good fit in both CB-SEM and PLS-SEM (Hu & Bentler, 1999; Kline, 2023).",
+      "domain_en": "Psychometrics & SEM"
     },
     "AIC": {
       "full_name": "Akaike Information Criterion",
@@ -539,9 +539,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Akaike Information Criterion in research methodology.",
-      "benchmark_en": "Mô hình có giá trị AIC nhỏ hơn là mô hình vượt trội hơn.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An information-theoretic model selection criterion (AIC = -2*ln(L) + 2k) that balances goodness-of-fit (log-likelihood) against model complexity (number of parameters k) to minimize out-of-sample Kullback-Leibler divergence.",
+      "benchmark_en": "When comparing competing non-nested models on the same dataset, the model with the lowest AIC value is preferred; Delta_AIC > 4–10 indicates substantial support for the lower-AIC model.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "BIC": {
       "full_name": "Bayesian Information Criterion (Schwarz Criterion)",
@@ -551,9 +551,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Bayesian Information Criterion (Schwarz Criterion) in research methodology.",
-      "benchmark_en": "Chênh lệch Delta BIC > 10 cho thấy bằng chứng rất mạnh ủng hộ mô hình có BIC nhỏ hơn (Raftery, 1995).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A Bayesian model selection criterion (BIC = -2*ln(L) + k*ln(N)) that imposes a stricter penalty for parameter proliferation in large samples than AIC, favoring more parsimonious models.",
+      "benchmark_en": "Lower BIC indicates better fit-parsimony trade-off; Delta_BIC > 6 indicates strong evidence and Delta_BIC > 10 indicates very strong evidence in favor of the lower-BIC model (Raftery, 1995).",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "GoF": {
       "full_name": "Goodness of Fit",
@@ -563,9 +563,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: GoF của Tenenhaus không phù hợp để đánh giá mô hình PLS (Henseler & Sarstedt, 2013).",
-      "purpose_en": "Academic purpose and contextual usage of Goodness of Fit in research methodology.",
-      "benchmark_en": "Trong CB-SEM: kết hợp chi-square, RMSEA, CFI, TLI, SRMR. Trong PLS-SEM: Tenenhaus GoF = √(AVE_tb · R²_tb).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The overall statistical correspondence between the observed empirical data matrix and the covariance or composite matrix implied by a specified theoretical model.",
+      "benchmark_en": "In CB-SEM: evaluated via Chi-square, RMSEA (< 0.08), CFI/TLI (>= 0.90–0.95), and SRMR (< 0.08). Note: Tenenhaus GoF in PLS-SEM does not reliably distinguish valid from misspecified models (Henseler & Sarstedt, 2013).",
+      "domain_en": "Psychometrics & SEM"
     },
     "MIMIC": {
       "full_name": "Multiple Indicators, Multiple Causes Model",
@@ -575,9 +575,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Multiple Indicators, Multiple Causes Model in research methodology.",
-      "benchmark_en": "Giải quyết vấn đề xác định mô hình (identification) cho các biến formative (Jarvis et al., 2003; MacKenzie et al., 2011).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A structural equation model in which a latent construct is simultaneously caused by formative indicators and reflected by at least two reflective indicators (or downstream constructs) to achieve statistical identification.",
+      "benchmark_en": "Follows the 2+ emitted paths rule (MacKenzie et al., 2011; Jarvis et al., 2003); used for formative construct identification, redundancy analysis, and testing differential item functioning.",
+      "domain_en": "Psychometrics & SEM"
     },
     "CAQDAS": {
       "full_name": "Computer-Assisted Qualitative Data Analysis Software",
@@ -587,9 +587,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Computer-Assisted Qualitative Data Analysis Software in research methodology.",
-      "benchmark_en": "Các phần mềm tiêu chuẩn toàn cầu: ATLAS.ti, MAXQDA, NVivo (Flick et al., 2004).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Specialized qualitative research software platforms that assist researchers in organizing transcripts, hierarchical coding, memo writing, co-occurrence matrix querying, and audit trail management.",
+      "benchmark_en": "Leading international platforms include NVivo, ATLAS.ti, MAXQDA, and Dedoose; software facilitates systematic data management while analytical interpretation remains the researcher's responsibility (Flick, 2014).",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "TSE": {
       "full_name": "Total Survey Error",
@@ -599,9 +599,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Total Survey Error in research methodology.",
-      "benchmark_en": "Bao gồm sai số đặc tả, sai số người hỏi, sai số bảng hỏi, sai số người trả lời, sai số khung mẫu, sai số không trả lời và sai số trọng số (Groves et al.; Wiley 2020).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The overarching survey methodology paradigm (Groves & Lyberg, 2010) categorizing all sources of bias and variance separating a sample survey estimate from the true population parameter.",
+      "benchmark_en": "Decomposes error into two branches: Measurement Side (validity, measurement error, processing error) and Representation Side (coverage, sampling, non-response, and post-survey adjustment error).",
+      "domain_en": "Psychometrics & SEM"
     },
     "IRB": {
       "full_name": "Institutional Review Board",
@@ -611,9 +611,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Institutional Review Board in research methodology.",
-      "benchmark_en": "Đánh giá sự đồng thuận tự nguyện (Informed consent), bảo mật danh tính, giảm thiểu rủi ro và tỷ lệ lợi ích/rủi ro.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An independent ethics committee formally designated to review, approve, and monitor research involving human participants to safeguard their rights, welfare, and dignity.",
+      "benchmark_en": "Enforces Belmont Report principles (Respect for Persons, Beneficence, Justice): verifies informed consent, data anonymization, risk minimization, and protection of vulnerable populations.",
+      "domain_en": "Experimental Design & Medicine"
     },
     "CAT": {
       "full_name": "Computerized Adaptive Testing",
@@ -623,9 +623,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: con số 'rút ngắn 50% thời gian' cần dẫn nguồn.",
-      "purpose_en": "Academic purpose and contextual usage of Computerized Adaptive Testing in research methodology.",
-      "benchmark_en": "Rút ngắn 50% thời gian thi nhưng vẫn đảm bảo độ chuẩn xác đo lường đồng đều trên toàn bộ dải năng lực.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An IRT-based assessment delivery algorithm that dynamically selects each subsequent test item based on the examinee's previous responses to maximize measurement information around their estimated ability level.",
+      "benchmark_en": "Reduces test length by up to 50% while maintaining uniform measurement precision (SEM <= 0.30) across the entire latent ability spectrum.",
+      "domain_en": "Psychometrics & SEM"
     },
     "IV": {
       "full_name": "Independent Variable / Instrumental Variable",
@@ -635,9 +635,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: gộp hai khái niệm khác nhau dưới IV – tách Independent Variable và Instrumental Variable.",
-      "purpose_en": "Academic purpose and contextual usage of Independent Variable / Instrumental Variable in research methodology.",
-      "benchmark_en": "Kiểm định F > 10 cho biến công cụ; phân biệt rõ biến độc lập thực nghiệm với biến đồng biến (covariate).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "In experimental/regression design, the explanatory predictor or manipulated treatment variable; in econometrics, an exogenous third variable (Z) used to identify causal effects under endogeneity.",
+      "benchmark_en": "For Instrumental Variables: First-stage F-statistic > 10 (relevance) and non-significant Hansen J / Sargan test p > 0.05 (exogeneity/exclusion restriction).",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "DV": {
       "full_name": "Dependent Variable",
@@ -647,9 +647,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Dependent Variable in research methodology.",
-      "benchmark_en": "Cần được đo lường với độ chuẩn xác cao, kiểm tra dạng hàm phân phối và tránh sai số đo lường.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The outcome, criterion, or endogenous response variable whose variation the researcher seeks to explain or predict as a function of independent, mediating, and moderating variables.",
+      "benchmark_en": "Must match the statistical estimator to the DV's measurement scale and distribution (OLS for continuous normal, Logit/Probit for binary, Poisson/Negative Binomial for counts, Tobit for censored DVs).",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "MV": {
       "full_name": "Mediating Variable / Moderating Variable",
@@ -659,9 +659,9 @@
       "domain": "Phương pháp & Thống kê Nghiên cứu",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: 'MV' không phải viết tắt chuẩn; mediator và moderator là hai khái niệm khác bản chất – tách.",
-      "purpose_en": "Academic purpose and contextual usage of Mediating Variable / Moderating Variable in research methodology.",
-      "benchmark_en": "Kiểm định trung gian qua KTC Bootstrap gián tiếp (Hayes); kiểm định điều tiết qua tương tác tích số và Johnson-Neyman.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Third variables in causal models that either transmit an antecedent's effect to an outcome (Mediator: 'how/why') or alter the strength and direction of a relationship (Moderator: 'when/for whom').",
+      "benchmark_en": "Test mediation via 5,000+ bootstrap confidence intervals of the indirect effect (a*b); test moderation via mean-centered interaction terms (X*W) and Johnson-Neyman floodlight regions (Hayes, 2022).",
+      "domain_en": "Psychometrics & SEM"
     },
     "ATE": {
       "full_name": "Average Treatment Effect",
@@ -671,9 +671,9 @@
       "domain": "Causal Inference & Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Average Treatment Effect in research methodology.",
-      "benchmark_en": "Ước lượng không chệch (unbiased) khi giả định gán ngẫu nhiên (random assignment) hoặc conditional independence được thỏa mãn.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The expected causal difference in potential outcomes E[Y(1) - Y(0)] if the entire target population were assigned to the treatment condition versus the control condition.",
+      "benchmark_en": "Unbiasedly estimated under random assignment (RCT) or conditional ignorability/unconfoundedness with full positivity overlap.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "ATT": {
       "full_name": "Average Treatment Effect on the Treated",
@@ -683,9 +683,9 @@
       "domain": "Causal Inference & Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Average Treatment Effect on the Treated in research methodology.",
-      "benchmark_en": "Mục tiêu ước lượng cốt lõi trong phương pháp Propensity Score Matching (PSM) và Difference-in-Differences (DID).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The expected causal gain E[Y(1) - Y(0) | D = 1] experienced specifically by the subpopulation of units that actually received the treatment or policy intervention.",
+      "benchmark_en": "Primary causal estimand in Difference-in-Differences (DID), Propensity Score Matching (PSM), and Synthetic Control evaluations.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "ATU": {
       "full_name": "Average Treatment Effect on the Untreated",
@@ -695,9 +695,9 @@
       "domain": "Causal Inference & Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Average Treatment Effect on the Untreated in research methodology.",
-      "benchmark_en": "Dùng trong đánh giá tiềm năng mở rộng chính sách công hoặc can thiệp y tế/giáo dục.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The expected counterfactual causal effect E[Y(1) - Y(0) | D = 0] that would be realized if the currently untreated control population were extended the intervention.",
+      "benchmark_en": "Critical for policy scaling decisions to determine whether expanding a program to non-participants will yield positive net returns.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "SCM": {
       "full_name": "Synthetic Control Method",
@@ -707,9 +707,9 @@
       "domain": "Causal Inference & Policy Evaluation",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Synthetic Control Method in research methodology.",
-      "benchmark_en": "Trọng số các đơn vị thành phần nằm trong đoạn [0, 1] và tổng bằng 1. Kiểm định độ vững bằng Placebo Test (In-space & In-time placebos).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A data-driven comparative policy evaluation method (Abadie et al., 2010, 2015) that constructs a synthetic counterfactual unit as a convex weighted average of untreated donor pool units.",
+      "benchmark_en": "Donor weights must be non-negative and sum to 1 with minimal pre-intervention RMSPE; statistical significance is evaluated via in-space and in-time placebo permutation tests.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "DWH": {
       "full_name": "Durbin-Wu-Hausman Test",
@@ -719,9 +719,9 @@
       "domain": "Econometrics",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: 'bắt buộc dùng IV' quá mức – còn tùy chất lượng công cụ (IV yếu có thể tệ hơn OLS).",
-      "purpose_en": "Academic purpose and contextual usage of Durbin-Wu-Hausman Test in research methodology.",
-      "benchmark_en": "P-value < 0.05: Bác bỏ giả thuyết H0 (biến ngoại sinh), kết luận có hiện tượng nội sinh và bắt buộc phải dùng biến công cụ (IV / 2SLS).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A formal econometric specification test comparing OLS and Instrumental Variable (2SLS) estimates to determine whether explanatory regressors are endogenous.",
+      "benchmark_en": "p < 0.05 rejects the null hypothesis of exogeneity, confirming that OLS is inconsistent and IV/2SLS estimation is required.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "FE": {
       "full_name": "Fixed Effects Model",
@@ -731,9 +731,9 @@
       "domain": "Panel Data Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Fixed Effects Model in research methodology.",
-      "benchmark_en": "Lựa chọn qua kiểm định Hausman Test (P < 0.05 ưu tiên dùng FE thay vì RE).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A panel data econometric estimator that eliminates all time-invariant unobserved heterogeneity across entities (and/or time periods) via within-group demeaning or unit dummy variables.",
+      "benchmark_en": "Preferred over Random Effects when the Hausman specification test (or Mundlak-Chamberlain correlated random effects test) yields p < 0.05; always report cluster-robust standard errors.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "RE": {
       "full_name": "Random Effects Model",
@@ -743,9 +743,9 @@
       "domain": "Panel Data Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Random Effects Model in research methodology.",
-      "benchmark_en": "Được chọn khi kiểm định Hausman có p-value > 0.05; cho phép ước lượng hệ số của các biến không thay đổi theo thời gian (time-invariant variables).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A generalized least squares (GLS) panel data estimator assuming unit-specific unobserved effects are strictly uncorrelated with all explanatory variables across all time periods.",
+      "benchmark_en": "Valid only when the Hausman test fails to reject (p > 0.05); enables estimating coefficients of time-invariant explanatory variables.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "POLS": {
       "full_name": "Pooled Ordinary Least Squares",
@@ -755,9 +755,9 @@
       "domain": "Panel Data Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Pooled Ordinary Least Squares in research methodology.",
-      "benchmark_en": "Kiểm định Breusch-Pagan Lagrange Multiplier (LM test): Nếu P < 0.05, mô hình POLS bị bác bỏ, bắt buộc dùng Panel Models (FE hoặc RE).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A baseline regression model that pools cross-sectional time-series panel observations without modeling individual-specific intercepts or error components.",
+      "benchmark_en": "Tested via the Breusch-Pagan Lagrange Multiplier (LM) test: if p < 0.05, Pooled OLS is rejected in favor of panel Fixed Effects or Random Effects models.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "SUR": {
       "full_name": "Seemingly Unrelated Regressions",
@@ -767,9 +767,9 @@
       "domain": "Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Seemingly Unrelated Regressions in research methodology.",
-      "benchmark_en": "Hiệu quả hơn OLS độc lập từng phương trình khi các phần dư có tương quan chéo đáng kể (Breusch-Pagan test of independence P < 0.05).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Zellner's (1962) system-of-equations GLS estimator that jointly estimates multiple regression equations whose error terms are contemporaneously correlated across equations.",
+      "benchmark_en": "Asymptotically more efficient than equation-by-equation OLS when the Breusch-Pagan test of error independence rejects (p < 0.05) and equations contain distinct regressors.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "VAR": {
       "full_name": "Vector Autoregression",
@@ -779,9 +779,9 @@
       "domain": "Time Series Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa Lưu ý: VAR không nhất thiết đòi I(0) (VAR mức, Toda–Yamamoto).",
-      "purpose_en": "Academic purpose and contextual usage of Vector Autoregression in research methodology.",
-      "benchmark_en": "Yêu cầu các chuỗi phải dừng I(0); lựa chọn độ trễ tối ưu qua AIC, BIC hoặc HQIC; kiểm định độ ổn định (stability condition) qua nghiệm của đa thức đặc trưng nằm trong đường tròn đơn vị.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Christopher Sims's (1980) multivariate time-series framework modeling each endogenous variable as a linear function of its own lags and the lags of all other variables in the system.",
+      "benchmark_en": "Requires stationary I(0) series, optimal lag selection via AIC/BIC/HQIC, eigenvalue stability (all roots inside the unit circle), and interpretation via Impulse Response Functions (IRFs) and FEVD.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "VECM": {
       "full_name": "Vector Error Correction Model",
@@ -791,9 +791,9 @@
       "domain": "Time Series Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Vector Error Correction Model in research methodology.",
-      "benchmark_en": "Hệ số hiệu chỉnh sai số (ECT) phải mang dấu âm và có ý nghĩa thống kê (p < 0.05), biểu thị tốc độ điều chỉnh về trạng thái cân bằng dài hạn.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A cointegrated multivariate time-series model (Engle & Granger, 1987; Johansen, 1991) that combines short-run first-difference dynamics with an Error Correction Term (ECT) capturing long-run equilibrium adjustment.",
+      "benchmark_en": "Applies to non-stationary I(1) series that are cointegrated; the Error Correction Term (ECT) coefficient must be negative (-1 < phi < 0) and statistically significant (p < 0.05).",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "ARDL": {
       "full_name": "Autoregressive Distributed Lag",
@@ -803,9 +803,9 @@
       "domain": "Time Series Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Autoregressive Distributed Lag in research methodology.",
-      "benchmark_en": "F-statistic trong Bounds Test vượt qua giá trị tới hạn Upper Bound I(1) ở mức ý nghĩa 5%: Kết luận có quan hệ đồng liên kết dài hạn vững chắc.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Pesaran, Shin, & Smith's (2001) dynamic time-series regression framework capable of testing long-run cointegration (Bounds Test) when regressors are a mixture of stationary I(0) and unit-root I(1) processes.",
+      "benchmark_en": "Long-run cointegration is confirmed if the Bounds Test F-statistic exceeds the upper-bound I(1) critical value at the 5% level, and no series is integrated of order I(2).",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "ADF": {
       "full_name": "Augmented Dickey-Fuller Test",
@@ -815,9 +815,9 @@
       "domain": "Time Series Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Augmented Dickey-Fuller Test in research methodology.",
-      "benchmark_en": "P-value < 0.05 (hoặc t-statistic nhỏ hơn giá trị tới hạn MacKinnon): Bác bỏ giả thuyết H0 (có nghiệm đơn vị), chuỗi thời gian là chuỗi dừng.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A standard econometric unit-root test that includes lagged difference terms of the dependent variable to eliminate autocorrelation when testing whether a time series is non-stationary.",
+      "benchmark_en": "Null hypothesis H0 is the presence of a unit root (non-stationary): p < 0.05 (or test statistic more negative than MacKinnon critical value) rejects H0 and confirms stationarity.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "KPSS": {
       "full_name": "Kwiatkowski-Phillips-Schmidt-Shin Test",
@@ -827,9 +827,9 @@
       "domain": "Time Series Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Kwiatkowski-Phillips-Schmidt-Shin Test in research methodology.",
-      "benchmark_en": "P-value > 0.05: Không thể bác bỏ H0, xác nhận chuỗi thời gian dừng. Kết hợp ADF và KPSS giúp kiểm định chéo độ tin cậy.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A complementary stationarity test in time-series econometrics where the null hypothesis H0 is that the series is trend-stationary or level-stationary (reversing the ADF null).",
+      "benchmark_en": "p > 0.05 fails to reject H0, confirming stationarity; cross-checking ADF (p < 0.05) with KPSS (p > 0.05) provides robust confirmatory evidence of stationarity.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "PRISMA": {
       "full_name": "Preferred Reporting Items for Systematic Reviews and Meta-Analyses",
@@ -839,9 +839,9 @@
       "domain": "Systematic Review & Meta-Analysis",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: PRISMA 2020 flow diagram có 3 giai đoạn (Identification – Screening – Included); 'Eligibility' là của PRISMA 2009.",
-      "purpose_en": "Academic purpose and contextual usage of Preferred Reporting Items for Systematic Reviews and Meta-Analyses in research methodology.",
-      "benchmark_en": "Bắt buộc công khai checklist 27 mục và sơ đồ 4 bước chi tiết số lượng bài báo bị loại trừ kèm lý do cụ thể.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The international evidence-based minimum reporting guideline (PRISMA 2020) designed to ensure transparency, completeness, and reproducibility in systematic reviews and meta-analyses.",
+      "benchmark_en": "Mandates reporting the 27-item PRISMA checklist and the 4-phase flow diagram (Identification, Screening, Eligibility, Included) with explicit exclusion reasons.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "SLR": {
       "full_name": "Systematic Literature Review",
@@ -851,9 +851,9 @@
       "domain": "Research Synthesis & Methodology",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Systematic Literature Review in research methodology.",
-      "benchmark_en": "Bắt buộc có chuỗi tìm kiếm (Search String), cơ sở dữ liệu xác định (Scopus, WoS), tiêu chí đưa vào/loại trừ (Inclusion/Exclusion criteria) và quy trình lọc độc lập.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A structured, reproducible methodology that identifies, screens, appraises, and synthesizes all empirical literature meeting pre-specified inclusion and exclusion criteria.",
+      "benchmark_en": "Requires documented Boolean search strings across multiple databases (Web of Science, Scopus), dual independent screening (Cohen's kappa > 0.70), and formal quality appraisal.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "PROSPERO": {
       "full_name": "International Prospective Register of Systematic Reviews",
@@ -863,9 +863,9 @@
       "domain": "Open Science & Meta-Analysis",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of International Prospective Register of Systematic Reviews in research methodology.",
-      "benchmark_en": "Số đăng ký PROSPERO (CRD420...) được các tạp chí y học, xã hội học và quản trị uy tín yêu cầu cung cấp ngay trong phần Phương pháp.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An international open-access database hosted by the University of York's Centre for Reviews and Dissemination for prospectively registering systematic review protocols prior to data extraction.",
+      "benchmark_en": "Prospective registration number (CRD420...) prevents duplication, curbs selective outcome reporting, and is required by top medical, psychology, and social science journals.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "ROBINS-I": {
       "full_name": "Risk Of Bias In Non-randomized Studies - of Interventions",
@@ -875,9 +875,9 @@
       "domain": "Evidence-Based Research",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Risk Of Bias In Non-randomized Studies - of Interventions in research methodology.",
-      "benchmark_en": "Đánh giá qua 7 miền (domains), phân loại rủi ro: Low, Moderate, Serious, Critical, hoặc No information.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A comprehensive Cochrane diagnostic tool evaluating internal validity and risk of bias in non-randomized observational and quasi-experimental studies by comparing them against a target pragmatic trial.",
+      "benchmark_en": "Assesses 7 bias domains (confounding, selection, classification, deviations, missing data, outcome measurement, selective reporting), rated as Low, Moderate, Serious, or Critical risk.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "RoB 2": {
       "full_name": "Cochrane Risk of Bias Tool for Randomized Trials (Version 2)",
@@ -887,9 +887,9 @@
       "domain": "Experimental & Clinical Research",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Cochrane Risk of Bias Tool for Randomized Trials (Version 2) in research methodology.",
-      "benchmark_en": "Thẩm định 5 miền rủi ro: Quá trình ngẫu nhiên hóa, sai lệch do can thiệp, dữ liệu thiếu, đo lường kết quả, và báo cáo chọn lọc.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The gold-standard Cochrane diagnostic instrument (Sterne et al., 2019) for evaluating internal validity and risk of bias across randomized controlled trials in systematic reviews.",
+      "benchmark_en": "Assesses 5 mandatory domains: (1) Randomization process, (2) Deviations from intended interventions, (3) Missing outcome data, (4) Measurement of the outcome, and (5) Selection of the reported result; graded as Low risk, Some concerns, or High risk.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "GRADE": {
       "full_name": "Grading of Recommendations Assessment, Development and Evaluation",
@@ -899,9 +899,9 @@
       "domain": "Evidence-Based Policy & Medicine",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Grading of Recommendations Assessment, Development and Evaluation in research methodology.",
-      "benchmark_en": "Hạ bậc chất lượng bằng chứng khi phát hiện: Risk of Bias, Inconsistency, Indirectness, Imprecision, hoặc Publication Bias.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An internationally adopted framework for rating the overall certainty (quality) of a body of evidence and the strength of clinical or policy recommendations in systematic reviews.",
+      "benchmark_en": "Rates evidence certainty as High, Moderate, Low, or Very Low; downgrades for Risk of Bias, Inconsistency (high I²), Indirectness, Imprecision (wide CIs), or Publication Bias.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "PICO": {
       "full_name": "Population, Intervention, Comparison, Outcome",
@@ -911,9 +911,9 @@
       "domain": "Research Design & Evidence-Based Research",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Population, Intervention, Comparison, Outcome in research methodology.",
-      "benchmark_en": "Bắt buộc xác định rõ ràng cả 4 thành tố trước khi xây dựng từ khóa tìm kiếm trên Web of Science / PubMed / Scopus.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A structured question-formulation framework used in evidence-based medicine and quantitative systematic reviews to define eligibility criteria and Boolean search strategies.",
+      "benchmark_en": "All four PICO components (or PICOS adding Study Design) must be explicitly operationalized prior to executing literature searches in PubMed, Scopus, and Web of Science.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "SPIDER": {
       "full_name": "Sample, Phenomenon of Interest, Design, Evaluation, Research type",
@@ -923,9 +923,9 @@
       "domain": "Qualitative Synthesis & Methodology",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Sample, Phenomenon of Interest, Design, Evaluation, Research type in research methodology.",
-      "benchmark_en": "Được các reviewer Q1 đánh giá cao khi xây dựng tiêu chí sàng lọc tài liệu định tính thay vì ép dùng khung PICO của nghiên cứu y sinh.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A systematic review question-formulation framework (Cooke et al., 2012) specifically tailored for qualitative and mixed-methods evidence synthesis where experimental PICO terms do not fit.",
+      "benchmark_en": "Preferred by Q1 reviewers over PICO when structuring inclusion/exclusion criteria for qualitative meta-synthesis, ethnography, and interview-based systematic reviews.",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "CONSORT": {
       "full_name": "Consolidated Standards of Reporting Trials",
@@ -935,9 +935,9 @@
       "domain": "Experimental Methodology",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: cập nhật CONSORT 2025 (Hopewell et al., 2025) – 30 mục, thay CONSORT 2010 (25 mục).",
-      "purpose_en": "Academic purpose and contextual usage of Consolidated Standards of Reporting Trials in research methodology.",
-      "benchmark_en": "Checklist 25 tiêu chí kèm biểu đồ dòng chảy phân bổ người tham gia (Enrolment, Allocation, Follow-up, Analysis).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An evidence-based international reporting standard established to ensure complete, transparent reporting of randomized controlled trials across medical, psychological, and behavioral sciences.",
+      "benchmark_en": "Requires completing the 25-item CONSORT checklist and the participant flow diagram tracking Enrollment, Allocation, Follow-up, and Analysis.",
+      "domain_en": "Experimental Design & Medicine"
     },
     "STROBE": {
       "full_name": "Strengthening the Reporting of Observational Studies in Epidemiology",
@@ -947,9 +947,9 @@
       "domain": "Observational & Epidemiological Research",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Strengthening the Reporting of Observational Studies in Epidemiology in research methodology.",
-      "benchmark_en": "Checklist 22 mục bao gồm tiêu đề, tóm tắt, phương pháp chọn mẫu, kiểm soát biến gây nhiễu và xử lý dữ liệu khuyết.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "International reporting guidelines designed to improve the methodological transparency and completeness of analytical observational studies (cohort, case-control, and cross-sectional designs).",
+      "benchmark_en": "Mandates a 22-item checklist covering study design, sample size rationale, confounder control, missing data handling, and sensitivity analyses.",
+      "domain_en": "Experimental Design & Medicine"
     },
     "COREQ": {
       "full_name": "Consolidated Criteria for Reporting Qualitative Research",
@@ -959,9 +959,9 @@
       "domain": "Qualitative Research Standards",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Consolidated Criteria for Reporting Qualitative Research in research methodology.",
-      "benchmark_en": "Bắt buộc báo cáo 3 miền: Đặc điểm nhóm nghiên cứu & tính phản tư (reflexivity), thiết kế nghiên cứu, và phân tích dữ liệu.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A 32-item standardized reporting checklist (Tong et al., 2007) for qualitative studies utilizing in-depth interviews and focus groups.",
+      "benchmark_en": "Structured across 3 core domains: (1) Research team and reflexivity, (2) Study design and theoretical framework, and (3) Data analysis and findings (coding tree, saturation, quotations).",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "SRQR": {
       "full_name": "Standards for Reporting Qualitative Research",
@@ -971,9 +971,9 @@
       "domain": "Qualitative Research Standards",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Standards for Reporting Qualitative Research in research methodology.",
-      "benchmark_en": "Tập trung giải trình rõ ràng mối quan hệ giữa câu hỏi nghiên cứu, lập trường nhận thức luận (epistemology) và kỹ thuật phân tích.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A comprehensive 21-item synthesis of reporting standards (O'Brien et al., 2014) applicable across the full spectrum of qualitative methodologies.",
+      "benchmark_en": "Emphasizes explicit alignment between the research question, epistemological paradigm, researcher reflexivity, sampling saturation, and trustworthiness verification.",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "OSF": {
       "full_name": "Open Science Framework",
@@ -983,9 +983,9 @@
       "domain": "Open Science & Research Ethics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Open Science Framework in research methodology.",
-      "benchmark_en": "Tạo DOI vĩnh viễn và timestamp không thể chỉnh sửa, chứng minh giả thuyết nghiên cứu được xác lập trước khi thu thập số liệu.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An open-source scholarly infrastructure managed by the Center for Open Science that supports study preregistration, Registered Reports, open data, and reproducible code sharing.",
+      "benchmark_en": "Generates immutable, timestamped DOIs for preregistrations and analysis scripts, certifying that confirmatory hypotheses were locked prior to data collection.",
+      "domain_en": "Experimental Design & Medicine"
     },
     "COPE": {
       "full_name": "Committee on Publication Ethics",
@@ -995,9 +995,9 @@
       "domain": "Publication Ethics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Committee on Publication Ethics in research methodology.",
-      "benchmark_en": "Mọi tạp chí Scopus/WoS uy tín đều cam kết tuân thủ quy tắc và lưu đồ giải quyết tranh chấp (flowcharts) của COPE.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The international governance body establishing ethical standards and procedural flowcharts for editors, publishers, and authors regarding peer review integrity, authorship disputes, plagiarism, and retractions.",
+      "benchmark_en": "Mandatory ethical benchmark adopted by all reputable SSCI/SCIE and Scopus publishers (Elsevier, Wiley, Springer Nature, SAGE, Taylor & Francis).",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "CRediT": {
       "full_name": "Contributor Roles Taxonomy",
@@ -1007,9 +1007,9 @@
       "domain": "Academic Publishing",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa Lưu ý: 'xóa bỏ tác giả danh dự' quá mức → 'hạn chế'.",
-      "purpose_en": "Academic purpose and contextual usage of Contributor Roles Taxonomy in research methodology.",
-      "benchmark_en": "Bắt buộc khai báo tại các nhà xuất bản hàng đầu (Elsevier, Springer Nature, Wiley, PLOS) nhằm xóa bỏ tình trạng 'tác giả danh dự' (gift authorship).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A high-level 14-role standardized taxonomy (Conceptualization, Methodology, Formal Analysis, Writing - Original Draft, etc.) providing transparent attribution of individual author contributions.",
+      "benchmark_en": "Required by leading international publishers to ensure accountability and eliminate honorary/gift and ghost authorship.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "MGA": {
       "full_name": "Multi-Group Analysis",
@@ -1019,9 +1019,9 @@
       "domain": "SEM & Advanced Quantitative Analysis",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Multi-Group Analysis in research methodology.",
-      "benchmark_en": "Yêu cầu tiên quyết: Phải đạt bất biến đo lường (Measurement Invariance) trước khi so sánh tham số cấu trúc giữa các nhóm (Henseler's MGA, PLS-MGA p < 0.05 hoặc > 0.95).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A structural equation modeling technique testing whether pre-defined data groups (e.g., gender, country, industry) exhibit statistically significant differences in their structural path coefficients.",
+      "benchmark_en": "Mandatory prerequisite: Establish Measurement Invariance (MICOM in PLS-SEM or Configural/Metric invariance in CB-SEM) before testing group differences via permutation test or PLS-MGA (p < 0.05).",
+      "domain_en": "Psychometrics & SEM"
     },
     "IPMA": {
       "full_name": "Importance-Performance Map Analysis",
@@ -1031,9 +1031,9 @@
       "domain": "PLS-SEM & Managerial Applications",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Importance-Performance Map Analysis in research methodology.",
-      "benchmark_en": "Xác định các yếu tố nằm ở góc 'Tầm quan trọng cao nhưng Hiệu quả thấp' (High importance, Low performance) là ưu tiên hành động số 1.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A diagnostic PLS-SEM extension that contrasts the total unstandardized structural effect of predecessor constructs (Importance on the x-axis) against their rescaled average latent variable scores (Performance on the y-axis).",
+      "benchmark_en": "Prioritizes managerial interventions on constructs located in the 'High Importance, Low Performance' (lower-right) quadrant (Ringle & Sarstedt, 2016).",
+      "domain_en": "Psychometrics & SEM"
     },
     "FIMIX-PLS": {
       "full_name": "Finite Mixture Partial Least Squares",
@@ -1043,9 +1043,9 @@
       "domain": "PLS-SEM & Segmentation",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Finite Mixture Partial Least Squares in research methodology.",
-      "benchmark_en": "Đánh giá số lượng phân đoạn tối ưu (K) thông qua các chỉ số thông tin AIC3 (Akaike Information Criterion with factor 3) và CAIC.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A latent class segmentation procedure in PLS-SEM that uncovers unobserved heterogeneity by simultaneously estimating segment-specific path coefficients and finite mixture probabilities.",
+      "benchmark_en": "Determine the optimal number of latent segments (K) by jointly minimizing AIC3 and MDL5 (or AIC4 and BIC) while ensuring normed entropy criterion EN > 0.50 (Sarstedt et al., 2017).",
+      "domain_en": "Psychometrics & SEM"
     },
     "PLSpredict": {
       "full_name": "Partial Least Squares Prediction Assessment",
@@ -1055,9 +1055,9 @@
       "domain": "PLS-SEM & Predictive Analytics",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: theo Shmueli et al. (2019): tất cả chỉ báo có sai số < LM → năng lực dự báo cao; đa số → trung bình; thiểu số → thấp. Dẫn nguồn 2019. | Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Partial Least Squares Prediction Assessment in research methodology.",
-      "benchmark_en": "So sánh RMSE (hoặc MAE) của PLS-SEM với mô hình hồi quy tuyến tính LM: Nếu đa số chỉ báo có sai số nhỏ hơn LM → Mô hình đạt năng lực dự báo cao (High predictive power).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Shmueli et al.'s (2016, 2019) k-fold cross-validation procedure in PLS-SEM designed to evaluate out-of-sample predictive power at the manifest indicator level.",
+      "benchmark_en": "Requires Q²_predict > 0; compare indicator RMSE (or MAE) against a naive linear regression model (LM) benchmark: lower PLS errors across all (high) or a majority (medium) of indicators confirm predictive power.",
+      "domain_en": "Psychometrics & SEM"
     },
     "ULMC": {
       "full_name": "Unmeasured Latent Marker Construct",
@@ -1067,9 +1067,9 @@
       "domain": "Psychometrics & SEM",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: ULMC = Unmeasured Latent METHOD Construct (Podsakoff et al., 2003); kỹ thuật bị phê phán (Richardson et al., 2009) – không thể 'khẳng định không bị CMV'.",
-      "purpose_en": "Academic purpose and contextual usage of Unmeasured Latent Marker Construct in research methodology.",
-      "benchmark_en": "So sánh Model Fit giữa Baseline Model và Constrained Model: Nếu các hệ số đường dẫn chính vẫn giữ nguyên ý nghĩa thống kê thì nghiên cứu không bị CMV đe dọa.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A statistical CFA/SEM remedy for Common Method Bias that models an unmeasured latent method factor loading onto all manifest indicators alongside substantive constructs.",
+      "benchmark_en": "Compare nested models (baseline vs. constrained/unconstrained method factor); CMB is not a pervasive threat if substantive path coefficients remain statistically significant and method variance is < 25%.",
+      "domain_en": "Psychometrics & SEM"
     },
     "QRP": {
       "full_name": "Questionable Research Practices",
@@ -1079,9 +1079,9 @@
       "domain": "Research Ethics & Integrity",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Questionable Research Practices in research methodology.",
-      "benchmark_en": "Bị các tạp chí quốc tế hàng đầu áp dụng các biện pháp trừng phạt, yêu cầu nộp mã nguồn R/Stata và file dữ liệu thô để kiểm chứng độc lập.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Methodological and analytical practices (such as p-hacking, selective outcome reporting, optional stopping, and ad-hoc outlier deletion) that exploit researcher degrees of freedom and inflate false-positive rates.",
+      "benchmark_en": "Eliminated through study preregistration, Registered Reports, multiverse/specification curve analysis, and open data/code deposition.",
+      "domain_en": "Experimental Design & Medicine"
     },
     "HARK": {
       "full_name": "Hypothesizing After the Results are Known",
@@ -1091,9 +1091,9 @@
       "domain": "Research Integrity & Epistemology",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Hypothesizing After the Results are Known in research methodology.",
-      "benchmark_en": "Bị triệt tiêu khi bài báo thực hiện đăng ký trước thiết kế nghiên cứu (Preregistration) tại Open Science Framework.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Kerr's (1998) methodological violation wherein post-hoc exploratory findings discovered during data analysis are retroactively presented in a manuscript as if they were a priori confirmatory hypotheses.",
+      "benchmark_en": "Invalidates frequentist Type I error guarantees (p-values); prevented via timestamped pre-analysis plans and transparent separation of confirmatory vs. exploratory analyses.",
+      "domain_en": "Experimental Design & Medicine"
     },
     "FDR": {
       "full_name": "False Discovery Rate",
@@ -1103,9 +1103,9 @@
       "domain": "Multiple Testing & Biostatistics",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of False Discovery Rate in research methodology.",
-      "benchmark_en": "Thường kiểm soát ở mức q = 0.05 hoặc 0.10; ít khắt khe hơn hiệu chỉnh Bonferroni truyền thống, giúp bảo toàn lực kiểm định thống kê (statistical power).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Benjamini and Hochberg's (1995) multiple-hypothesis testing correction that controls the expected proportion of false positives (Type I errors) among all rejected null hypotheses.",
+      "benchmark_en": "Typically controlled at q < 0.05 or q < 0.10; offers substantially higher statistical power than conservative family-wise Bonferroni corrections when testing many hypotheses simultaneously.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "FWER": {
       "full_name": "Family-Wise Error Rate",
@@ -1115,9 +1115,9 @@
       "domain": "Multiple Testing & Statistics",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: sai lầm loại I = bác bỏ H0 khi H0 ĐÚNG; cụm 'bác bỏ đúng giả thuyết H0' dễ hiểu nhầm. | Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Family-Wise Error Rate in research methodology.",
-      "benchmark_en": "Quy tắc Bonferroni: Chia mức ý nghĩa α (0.05) cho số lượng kiểm định (m), mức ý nghĩa mới là α / m.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The probability of making at least one Type I (false-positive) error across an entire family of simultaneous statistical hypothesis tests.",
+      "benchmark_en": "Controlled via Bonferroni correction (adjusted alpha = alpha / m) or the uniformly more powerful Holm-Bonferroni step-down procedure (alpha = 0.05).",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "LASSO": {
       "full_name": "Least Absolute Shrinkage and Selection Operator",
@@ -1127,9 +1127,9 @@
       "domain": "Machine Learning & Data Science in Research",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Least Absolute Shrinkage and Selection Operator in research methodology.",
-      "benchmark_en": "Tham số phạt λ được tinh chỉnh tối ưu thông qua k-fold Cross-Validation nhằm tối thiểu hóa sai số dự báo.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Tibshirani's (1996) L1-penalized regression and machine learning estimator that simultaneously performs continuous parameter shrinkage and automated variable selection by forcing weak coefficients exactly to zero.",
+      "benchmark_en": "Regularization penalty parameter lambda is tuned via k-fold cross-validation (lambda_min or lambda_1se); for causal inference, combine with Double Machine Learning (Post-Double-Selection Lasso).",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "LDA": {
       "full_name": "Latent Dirichlet Allocation",
@@ -1139,9 +1139,9 @@
       "domain": "Text Mining & Computational Social Science",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: ngưỡng coherence Cv > 0.50 không có nguồn chuẩn.",
-      "purpose_en": "Academic purpose and contextual usage of Latent Dirichlet Allocation in research methodology.",
-      "benchmark_en": "Đánh giá chất lượng chủ đề qua chỉ số Topic Coherence (Cv score > 0.50) và Perplexity.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Blei, Ng, & Jordan's (2003) generative Bayesian probabilistic topic model that discovers latent thematic structures across large textual corpora by modeling documents as mixtures of topics and topics as mixtures of words.",
+      "benchmark_en": "Select optimal topic number (K) by maximizing semantic Topic Coherence (C_v > 0.50 or UMass coherence), minimizing held-out perplexity, and conducting human qualitative validation of top word loadings.",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "XAI": {
       "full_name": "Explainable Artificial Intelligence",
@@ -1151,9 +1151,9 @@
       "domain": "AI & Computational Research",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: 'bắt buộc áp dụng' quá mức.",
-      "purpose_en": "Academic purpose and contextual usage of Explainable Artificial Intelligence in research methodology.",
-      "benchmark_en": "Bắt buộc áp dụng trong các nghiên cứu ra quyết định y khoa, tài chính và chính sách công (SHAP values, LIME).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A suite of post-hoc and intrinsic interpretability methods (such as SHAP, LIME, and Partial Dependence Plots) that make complex black-box machine learning predictions transparent and theoretically auditable.",
+      "benchmark_en": "Mandatory in high-stakes econometric, financial, medical, and management ML applications to quantify feature importance, directionality, and nonlinear interaction effects.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "SHAP": {
       "full_name": "Shapley Additive Explanations",
@@ -1163,9 +1163,9 @@
       "domain": "Explainable AI & Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Shapley Additive Explanations in research methodology.",
-      "benchmark_en": "Đáp ứng đầy đủ 3 tính chất tiên nghiệm toán học: Local accuracy, Missingness, và Consistency.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Lundberg and Lee's (2017) cooperative game-theoretic XAI framework that assigns each explanatory feature a unique marginal contribution value for individual and global machine learning predictions.",
+      "benchmark_en": "Uniquely satisfies three foundational axioms: Local Accuracy (efficiency), Missingness, and Consistency; enables global beeswarm summary plots and local waterfall explanations.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "TA": {
       "full_name": "Thematic Analysis",
@@ -1175,9 +1175,9 @@
       "domain": "Qualitative Research Methodology",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Thematic Analysis in research methodology.",
-      "benchmark_en": "Tuân thủ nghiêm ngặt quy trình 6 bước: Làm quen dữ liệu → Tạo mã ban đầu → Tìm chủ đề → Rà soát chủ đề → Định nghĩa & đặt tên → Viết báo cáo.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A foundational qualitative analytical method (Braun & Clarke, 2006, 2022) for systematically identifying, organizing, and interpreting patterns of meaning (themes) across qualitative datasets.",
+      "benchmark_en": "Follows Braun & Clarke's rigorous 6-phase process: (1) Familiarization, (2) Initial coding, (3) Generating initial themes, (4) Reviewing themes, (5) Defining and naming themes, and (6) Producing the report.",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "GT": {
       "full_name": "Grounded Theory",
@@ -1187,9 +1187,9 @@
       "domain": "Qualitative Research Methodology",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: tên Việt 'Lý thuyết nền tảng' dễ nhầm với lý thuyết nền (underpinning theory).",
-      "purpose_en": "Academic purpose and contextual usage of Grounded Theory in research methodology.",
-      "benchmark_en": "Yêu cầu quy trình so sánh liên tục (Constant Comparative Method), lấy mẫu lý thuyết (Theoretical Sampling) và dừng lại khi đạt điểm bão hòa lý thuyết (Theoretical Saturation).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An inductive/abductive qualitative methodology (Glaser & Strauss, 1967; Corbin & Strauss; Charmaz) aimed at generating a substantive or formal process theory directly grounded in empirical field data.",
+      "benchmark_en": "Requires iterative Theoretical Sampling, the Constant Comparative Method, multi-stage coding (open/initial, axial/focused, selective/theoretical), memo-writing, and Theoretical Saturation.",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "CDA": {
       "full_name": "Critical Discourse Analysis",
@@ -1199,9 +1199,9 @@
       "domain": "Qualitative & Critical Studies",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Critical Discourse Analysis in research methodology.",
-      "benchmark_en": "Phân tích đa tầng theo mô hình 3 chiều của Fairclough: Văn bản (Text) → Thực hành diễn ngôn (Discursive practice) → Thực hành xã hội (Social practice).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An interdisciplinary qualitative methodology (Fairclough, Wodak, van Dijk) examining how language and discursive practices enact, reproduce, and challenge macro-level social power, ideology, and inequality.",
+      "benchmark_en": "Operationalized via Fairclough's 3D framework: (1) Micro-level text analysis, (2) Meso-level discursive production/interpretation practices, and (3) Macro-level sociocultural and institutional practice.",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "NGT": {
       "full_name": "Nominal Group Technique",
@@ -1211,9 +1211,9 @@
       "domain": "Group Decision & Qualitative Consensus",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Nominal Group Technique in research methodology.",
-      "benchmark_en": "Quy trình 4 pha: Tạo ý tưởng thầm lặng → Thu thập vòng tròn → Thảo luận làm rõ → Bỏ phiếu xếp hạng độc lập.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A structured, face-to-face or virtual group consensus methodology (Delbecq & Van de Ven, 1971) that equalizes participation and prevents dominant-individual bias during expert problem identification and prioritization.",
+      "benchmark_en": "Executes 4 strict sequential stages: (1) Silent independent idea generation, (2) Round-robin recording without debate, (3) Structured clarification discussion, and (4) Anonymous independent ranking/voting.",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "ROC": {
       "full_name": "Receiver Operating Characteristic",
@@ -1223,9 +1223,9 @@
       "domain": "Diagnostic & Predictive Modeling",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Receiver Operating Characteristic in research methodology.",
-      "benchmark_en": "Diện tích dưới đường cong (AUC) ≥ 0.80 biểu thị khả năng phân loại tốt; ≥ 0.90 là xuất sắc; 0.50 tương đương đoán mò ngẫu nhiên.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A graphical diagnostic plot illustrating the classification performance of a binary classifier across all possible decision thresholds by plotting True Positive Rate (Sensitivity) against False Positive Rate (1 - Specificity).",
+      "benchmark_en": "Curves arching closely toward the upper-left corner (100% sensitivity, 100% specificity) indicate superior discriminative ability; the 45-degree diagonal represents random chance (AUC = 0.50).",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "AUC": {
       "full_name": "Area Under the ROC Curve",
@@ -1235,9 +1235,9 @@
       "domain": "Predictive Analytics & Statistics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Area Under the ROC Curve in research methodology.",
-      "benchmark_en": "AUC = 0.5 (không có giá trị phân biệt); AUC = 0.7 - 0.8 (chấp nhận được); AUC > 0.8 (tốt); AUC > 0.9 (rất xuất sắc).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A threshold-independent scalar summary metric of binary classification accuracy representing the probability that a randomly chosen positive instance is ranked higher than a randomly chosen negative instance.",
+      "benchmark_en": "AUC = 0.50 (no discrimination / random guessing); 0.70 <= AUC < 0.80 (acceptable); 0.80 <= AUC < 0.90 (excellent); AUC >= 0.90 (outstanding discrimination; Hosmer & Lemeshow).",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "RMSE": {
       "full_name": "Root Mean Square Error",
@@ -1247,9 +1247,9 @@
       "domain": "Model Evaluation & Predictive Statistics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Root Mean Square Error in research methodology.",
-      "benchmark_en": "Càng nhỏ càng tốt; dùng để so sánh hiệu năng dự báo ngoài mẫu giữa các mô hình cạnh tranh trên cùng một tập dữ liệu.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A standard quadratic loss metric measuring the square root of the average squared differences between model-predicted values and observed outcomes, penalizing large prediction errors heavily.",
+      "benchmark_en": "Lower RMSE indicates superior predictive accuracy; used in PLSpredict (comparing RMSE_PLS vs. RMSE_LM) and cross-validation model comparison on identical outcome scales.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "MAE": {
       "full_name": "Mean Absolute Error",
@@ -1259,9 +1259,9 @@
       "domain": "Model Evaluation & Predictive Statistics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Mean Absolute Error in research methodology.",
-      "benchmark_en": "Dùng kết hợp với RMSE; khoảng cách giữa RMSE và MAE càng lớn chứng tỏ dữ liệu có phương sai sai số lớn hoặc nhiều điểm ngoại lai.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A linear prediction error metric measuring the average magnitude of absolute differences between predicted values and observed values without squaring the residuals.",
+      "benchmark_en": "More robust than RMSE when prediction errors exhibit heavy tails or extreme skewness; preferred in PLSpredict when prediction error distributions are highly non-symmetric (Shmueli et al., 2019).",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "WLS": {
       "full_name": "Weighted Least Squares",
@@ -1271,9 +1271,9 @@
       "domain": "Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Weighted Least Squares in research methodology.",
-      "benchmark_en": "Khôi phục tính chất BLUE (Best Linear Unbiased Estimator) của ước lượng hồi quy khi cấu trúc của phương sai sai số đã được biết trước.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A specialization of Generalized Least Squares that corrects for known heteroskedasticity by weighting each observation inversely proportional to the variance of its error term.",
+      "benchmark_en": "Restores the Gauss-Markov BLUE (Best Linear Unbiased Estimator) efficiency property when the exact functional form of error variance is known or consistently modeled.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "GLS": {
       "full_name": "Generalized Least Squares",
@@ -1283,9 +1283,9 @@
       "domain": "Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Generalized Least Squares in research methodology.",
-      "benchmark_en": "Hiệu quả hơn OLS thông thường; được hiện thực hóa qua Feasible Generalized Least Squares (FGLS) khi ma trận hiệp phương sai sai số chưa biết.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Aitken's (1935) regression estimator that generalizes OLS to achieve asymptotic efficiency when error terms exhibit heteroskedasticity and/or serial autocorrelation.",
+      "benchmark_en": "Implemented in practice as Feasible Generalized Least Squares (FGLS) when the error covariance matrix Omega must first be estimated consistently from first-stage OLS residuals.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "3SLS": {
       "full_name": "Three-Stage Least Squares",
@@ -1295,9 +1295,9 @@
       "domain": "Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Three-Stage Least Squares in research methodology.",
-      "benchmark_en": "Hiệu quả hơn 2SLS khi các phần dư có tương quan chéo đáng kể và toàn bộ hệ phương trình được định dạng chuẩn xác.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Zellner and Theil's (1962) full-information system estimator combining Two-Stage Least Squares (2SLS) with Seemingly Unrelated Regressions (SUR) to estimate simultaneous equations with endogenous regressors and cross-equation error correlations.",
+      "benchmark_en": "Asymptotically more efficient than equation-by-equation 2SLS, provided that every equation in the simultaneous system is correctly specified (otherwise misspecification in one equation contaminates the entire system).",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "MLE": {
       "full_name": "Maximum Likelihood Estimation",
@@ -1307,9 +1307,9 @@
       "domain": "Statistical Estimation & CB-SEM",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Maximum Likelihood Estimation in research methodology.",
-      "benchmark_en": "Đạt tính chất tiệm cận tối ưu (Asymptotically efficient và Consistent) khi cỡ mẫu đủ lớn và thỏa mãn giả định phân phối chuẩn đa biến.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "R. A. Fisher's foundational parametric estimation framework that selects parameter values maximizing the log-likelihood function of observing the empirical sample data under a specified probability distribution.",
+      "benchmark_en": "Possesses optimal asymptotic properties — Consistency, Asymptotic Normality, and Asymptotic Efficiency (achieving the Cramér-Rao lower bound) — when distributional assumptions hold and sample size is sufficiently large.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "QMLE": {
       "full_name": "Quasi-Maximum Likelihood Estimation",
@@ -1319,9 +1319,9 @@
       "domain": "Econometrics & Non-linear Models",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Quasi-Maximum Likelihood Estimation in research methodology.",
-      "benchmark_en": "Cho ước lượng vững về các hệ số ngay cả khi vi phạm phân phối chuẩn, miễn là hàm kỳ vọng có điều kiện được định dạng đúng; bắt buộc dùng sai số chuẩn vững (Huber-White Sandwich standard errors).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An estimation framework (White, 1982; Gourieroux et al., 1984) that maximizes a nominal likelihood function (e.g., Poisson or Gaussian) to obtain consistent parameter estimates even when the true underlying distribution is misspecified.",
+      "benchmark_en": "Requires only correct specification of the conditional mean (for linear exponential family models) and mandatory reporting of Huber-White sandwich robust standard errors.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "LAD": {
       "full_name": "Least Absolute Deviations",
@@ -1331,9 +1331,9 @@
       "domain": "Robust Statistics & Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Least Absolute Deviations in research methodology.",
-      "benchmark_en": "Rất vững trước các điểm ngoại lai (outliers) cực đoan và phân phối đuôi dày (heavy-tailed distributions).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A robust L1-norm regression estimator (median regression / quantile regression at tau = 0.50) that minimizes the sum of absolute residuals rather than squared residuals.",
+      "benchmark_en": "Highly resistant to extreme y-axis outliers and heavy-tailed error distributions that severely distort standard OLS mean regression.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "RESET": {
       "full_name": "Ramsey Regression Equation Specification Error Test",
@@ -1343,9 +1343,9 @@
       "domain": "Econometrics Diagnostics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Ramsey Regression Equation Specification Error Test in research methodology.",
-      "benchmark_en": "P-value > 0.05: Không bác bỏ giả thuyết H0, kết luận mô hình không có bằng chứng vi phạm dạng hàm.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Ramsey's (1969) general diagnostic test for functional form misspecification (omitted nonlinearities or interaction terms) in linear regression models by testing the joint significance of powers of the fitted values.",
+      "benchmark_en": "p > 0.05 fails to reject the null hypothesis of correct linear functional form; p < 0.05 indicates functional form misspecification (missing polynomial, logarithmic, or interaction terms).",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "CUSUM": {
       "full_name": "Cumulative Sum Control Chart Test",
@@ -1355,9 +1355,9 @@
       "domain": "Time Series Econometrics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Cumulative Sum Control Chart Test in research methodology.",
-      "benchmark_en": "Đường biểu diễn CUSUM và CUSUMSQ phải nằm hoàn toàn bên trong hai dải biên tới hạn ở mức ý nghĩa 5%.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Brown, Durbin, & Evans's (1975) time-series diagnostic test evaluating the structural stability of regression or ARDL parameters over time using recursive residuals.",
+      "benchmark_en": "Parameter stability is confirmed if both the CUSUM (mean stability) and CUSUM of Squares (CUSUMSQ, variance stability) plots remain entirely within the 5% critical boundary lines.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "GARCH": {
       "full_name": "Generalized Autoregressive Conditional Heteroskedasticity",
@@ -1367,9 +1367,9 @@
       "domain": "Financial Econometrics",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Generalized Autoregressive Conditional Heteroskedasticity in research methodology.",
-      "benchmark_en": "Tổng các hệ số ARCH và GARCH (α + β) phải nhỏ hơn 1 để đảm bảo tính dừng của phương sai có điều kiện.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Bollerslev's (1986) financial econometrics time-series model that captures volatility clustering by modeling conditional error variance as a function of past squared innovations (ARCH terms) and past conditional variances (GARCH terms).",
+      "benchmark_en": "Requires non-negative variance parameters and stationarity condition alpha + beta < 1 (values close to 1 indicate high volatility persistence); tested via Engle's ARCH-LM test.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "CEM": {
       "full_name": "Coarsened Exact Matching",
@@ -1379,9 +1379,9 @@
       "domain": "Causal Inference",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: 'vượt trội hơn PSM' cần nêu điều kiện (King & Nielsen, 2019). | Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Coarsened Exact Matching in research methodology.",
-      "benchmark_en": "Giảm thiểu chỉ số mất cân bằng đa biến L₁ (L₁ statistic sau ghép cặp phải nhỏ hơn đáng kể so với trước ghép cặp).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A monotonic imbalance-bounding matching method (Iacus, King, & Porro, 2012) that temporarily coarsens continuous covariates into substantive strata, performs exact matching on the coarsened bins, and retains original uncoarsened values for analysis.",
+      "benchmark_en": "Directly bounds maximum covariate imbalance ex ante and substantially reduces the multivariate L1 imbalance statistic (L1_post << L1_pre) without iterative propensity model tuning.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "IPW": {
       "full_name": "Inverse Probability Weighting",
@@ -1391,9 +1391,9 @@
       "domain": "Causal Inference & Biostatistics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Inverse Probability Weighting in research methodology.",
-      "benchmark_en": "Kết hợp với mô hình kết quả tạo thành 'Ước lượng Vững kép' (Doubly Robust Estimator: chỉ cần một trong hai mô hình đúng thì ước lượng nhân quả vẫn không chệch).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A causal inference estimator (Horvitz-Thompson / Robins) that reweights observational units by the inverse of their conditional probability of receiving the treatment actually observed, creating a balanced pseudo-population.",
+      "benchmark_en": "Check for extreme weights (use stabilized weights or trim propensity scores outside [0.05, 0.95]); when combined with an outcome regression model, forms the Doubly Robust (AIPW) estimator.",
+      "domain_en": "Causal Inference & Econometrics"
     },
     "ESEM": {
       "full_name": "Exploratory Structural Equation Modeling",
@@ -1403,9 +1403,9 @@
       "domain": "Advanced Psychometrics & SEM",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Exploratory Structural Equation Modeling in research methodology.",
-      "benchmark_en": "So sánh Model Fit giữa CFA truyền thống và ESEM; ESEM thường cho hệ số tương quan giữa các nhân tố thực tế hơn và chỉ số fit vượt trội (CFI tăng, RMSEA giảm).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An overarching psychometric framework (Asparouhov & Muthén, 2009) integrating EFA's flexible cross-loadings (via target or geomin rotation) within the confirmatory SEM architecture.",
+      "benchmark_en": "Prevents artificial inflation of inter-factor correlations caused by forcing small cross-loadings to zero in strict ICM-CFA; evaluated via improved CFI/TLI, lower RMSEA, and theoretically interpretable target loadings.",
+      "domain_en": "Psychometrics & SEM"
     },
     "CLF": {
       "full_name": "Common Latent Factor",
@@ -1415,9 +1415,9 @@
       "domain": "CB-SEM & Psychometrics",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: kỹ thuật CLF và quy tắc Δλ < 0.20 thiếu cơ sở vững – cần kèm cảnh báo. | Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Common Latent Factor in research methodology.",
-      "benchmark_en": "So sánh các hệ số tải chuẩn hóa (standardized factor loadings) trước và sau khi có CLF: nếu độ lệch Δ λ < 0.20, kết luận CMV không làm thay đổi bản chất thang đo.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A confirmatory factor analytic diagnostic used to detect and partial out Common Method Variance by adding a single latent factor connected to all observed indicators.",
+      "benchmark_en": "Compare standardized factor loadings between the CFA model with and without the CLF: differences Delta_lambda < 0.20 across all items indicate negligible common method bias.",
+      "domain_en": "Psychometrics & SEM"
     },
     "DIF": {
       "full_name": "Differential Item Functioning",
@@ -1427,9 +1427,9 @@
       "domain": "Item Response Theory & Psychometrics",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Differential Item Functioning in research methodology.",
-      "benchmark_en": "Kiểm định Mantel-Haenszel hoặc mô hình hồi quy Logistic IRT có p < .05 và độ lệch kích thước hiệu ứng lớn (ETS delta classification: Class C biểu thị DIF nghiêm trọng).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A psychometric bias condition occurring when respondents from different demographic or cultural groups who possess the exact same underlying latent trait level (theta) have systematically different probabilities of endorsing an item.",
+      "benchmark_en": "Diagnosed via Mantel-Haenszel chi-square, IRT Likelihood Ratio test, or logistic regression (testing uniform and non-uniform DIF); ETS Delta scale classifies items into A (negligible), B (moderate), or C (large DIF requiring removal).",
+      "domain_en": "Psychometrics & SEM"
     },
     "PAR": {
       "full_name": "Participatory Action Research",
@@ -1439,9 +1439,9 @@
       "domain": "Qualitative & Community-Based Research",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Participatory Action Research in research methodology.",
-      "benchmark_en": "Chu trình xoắn ốc lặp lặp 4 pha: Lập kế hoạch → Hành động can thiệp → Quan sát → Phản tư đánh giá (Lewin / Kemmis & McTaggart).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A collaborative, emancipatory research methodology (Lewin; Kemmis & McTaggart) in which researchers and community/organizational members co-design inquiry to enact transformative practical change.",
+      "benchmark_en": "Operates through iterative self-reflective spiral cycles: (1) Planning change, (2) Acting and implementing, (3) Observing process and consequences, and (4) Reflecting and replanning.",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "MMAT": {
       "full_name": "Mixed Methods Appraisal Tool",
@@ -1451,9 +1451,9 @@
       "domain": "Mixed Methods & Systematic Review",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Mixed Methods Appraisal Tool in research methodology.",
-      "benchmark_en": "5 tiêu chuẩn cốt lõi đánh giá phần tích hợp: Lý do dùng hỗn hợp, sự kết hợp dữ liệu, tích hợp kết quả, sự giải thích mâu thuẫn, và tuân thủ chuẩn mực từng nhánh.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A validated critical appraisal instrument (Hong et al., 2018) designed for systematic reviews that include qualitative, quantitative randomized, quantitative non-randomized, quantitative descriptive, and mixed-methods studies.",
+      "benchmark_en": "Evaluates 5 core methodological quality criteria per study category; discourages computing a single aggregate numerical score in favor of detailed domain-level quality reporting.",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "CASP": {
       "full_name": "Critical Appraisal Skills Programme",
@@ -1463,9 +1463,9 @@
       "domain": "Evidence-Based Practice",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Critical Appraisal Skills Programme in research methodology.",
-      "benchmark_en": "10 câu hỏi cốt lõi sàng lọc tính giá trị kết quả, phương pháp luận chặt chẽ và khả năng áp dụng tại địa phương.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A widely used suite of study-design-specific checklists (for RCTs, cohort studies, case-control studies, systematic reviews, and qualitative research) used to evaluate methodological validity and clinical/practical utility.",
+      "benchmark_en": "The 10-question CASP Qualitative Checklist is a premier standard in qualitative evidence synthesis for appraising research design, recruitment, data collection, reflexivity, ethics, and rigor.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "NOS": {
       "full_name": "Newcastle-Ottawa Scale",
@@ -1475,9 +1475,9 @@
       "domain": "Meta-Analysis & Epidemiology",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: Lưu ý: ngưỡng ≥ 7 sao là quy ước sử dụng, không có trong hướng dẫn gốc NOS. | Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Newcastle-Ottawa Scale in research methodology.",
-      "benchmark_en": "Hệ thống xếp hạng sao (tối đa 9 sao) qua 3 nhóm tiêu chí: Lựa chọn nhóm nghiên cứu (4 sao), Tính so sánh được (2 sao), và Đo lường kết quả/phơi nhiễm (3 sao). Nghiên cứu ≥ 7 sao được xếp loại chất lượng cao.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A standard quality assessment tool (Wells et al.) used in systematic reviews and meta-analyses to evaluate the methodological quality of non-randomized cohort and case-control studies.",
+      "benchmark_en": "Uses a 9-star rating system across 3 domains: Selection (up to 4 stars), Comparability (up to 2 stars), and Outcome/Exposure ascertainment (up to 3 stars); scores >= 7 stars indicate high methodological quality.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "JIF": {
       "full_name": "Journal Impact Factor",
@@ -1487,9 +1487,9 @@
       "domain": "Scientometrics & Academic Publishing",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Journal Impact Factor in research methodology.",
-      "benchmark_en": "Tính bằng: Tổng số trích dẫn trong năm hiện tại cho các bài báo xuất bản trong 2 năm trước chia cho tổng số bài báo có thể trích dẫn được xuất bản trong 2 năm đó.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Clarivate Analytics's bibliometric index (Journal Citation Reports / Web of Science) measuring the average frequency with which articles published in a journal during the preceding two years were cited in the current year.",
+      "benchmark_en": "Calculated as Cites_t / Citeable_Items_(t-1 + t-2); used to rank journals into JCR Quartiles (Q1–Q4) within subject categories, though DORA warns against using JIF alone to judge individual article quality.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "SJR": {
       "full_name": "SCImago Journal Rank",
@@ -1499,9 +1499,9 @@
       "domain": "Scientometrics & Scopus Indexing",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of SCImago Journal Rank in research methodology.",
-      "benchmark_en": "Phân chia thứ hạng tạp chí thành 4 phân vị: Q1 (top 25%), Q2 (25% - 50%), Q3 (50% - 75%), và Q4 (bottom 25%) theo từng lĩnh vực chuyên ngành.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A prestige-weighted bibliometric indicator derived from the Scopus database that weights citations according to the scientific influence and subject field of the citing journals (eigenfactor/PageRank algorithm).",
+      "benchmark_en": "Categorizes Scopus-indexed journals into field-normalized quartiles: Q1 (top 25%, 75th–99th percentile), Q2 (50th–74th), Q3 (25th–49th), and Q4 (bottom 25%).",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "SNIP": {
       "full_name": "Source Normalized Impact per Paper",
@@ -1511,9 +1511,9 @@
       "domain": "Scientometrics & Library Science",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: ngưỡng SNIP > 1.5 không có nguồn chuẩn.",
-      "purpose_en": "Academic purpose and contextual usage of Source Normalized Impact per Paper in research methodology.",
-      "benchmark_en": "SNIP = 1.0 biểu thị tạp chí đạt mức trích dẫn trung bình của toàn bộ lĩnh vực; SNIP > 1.5 biểu thị tạp chí có tác động vượt trội so với mức bình quân chuyên ngành.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "CWTS Leiden's field-normalized bibliometric metric (Scopus) that measures a journal's contextual citation impact by weighting citations relative to the total citation potential of its specific subject field.",
+      "benchmark_en": "SNIP = 1.0 represents the median citation impact of journals in that discipline; SNIP > 1.5–2.0 indicates substantially above-average impact corrected for cross-disciplinary citation density differences.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "GFI": {
       "full_name": "Goodness of Fit Index",
@@ -1523,9 +1523,9 @@
       "domain": "CB-SEM Fit Indices",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: GFI nhạy với cỡ mẫu – không nên dùng làm tiêu chí chính (Kline, 2023). | Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Goodness of Fit Index in research methodology.",
-      "benchmark_en": "Giá trị GFI ≥ 0.90 (hoặc khắt khe ≥ 0.95) biểu thị mô hình phù hợp tốt với dữ liệu thực tế.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Jöreskog and Sörbom's classic absolute fit index in CB-SEM measuring the proportion of variance and covariance in the empirical sample covariance matrix accounted for by the model-implied matrix.",
+      "benchmark_en": "Traditional threshold is GFI >= 0.90 (or >= 0.95); however, because GFI is sensitive to sample size, modern guidelines (Hu & Bentler, 1999; Kline, 2023) prefer SRMR and RMSEA.",
+      "domain_en": "Psychometrics & SEM"
     },
     "AGFI": {
       "full_name": "Adjusted Goodness of Fit Index",
@@ -1535,9 +1535,9 @@
       "domain": "CB-SEM Fit Indices",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: AGFI nhạy với cỡ mẫu – không nên dùng làm tiêu chí chính. | Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Adjusted Goodness of Fit Index in research methodology.",
-      "benchmark_en": "Giá trị AGFI ≥ 0.85 hoặc ≥ 0.90 biểu thị mô hình đạt chuẩn phù hợp.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A parsimony-adjusted extension of the Goodness of Fit Index (GFI) in CB-SEM that penalizes model complexity by adjusting for the ratio of degrees of freedom to total available variances/covariances.",
+      "benchmark_en": "AGFI >= 0.85 or >= 0.90 indicates acceptable fit; typically reported alongside CFI, TLI, RMSEA, and SRMR.",
+      "domain_en": "Psychometrics & SEM"
     },
     "NFI": {
       "full_name": "Normed Fit Index",
@@ -1547,9 +1547,9 @@
       "domain": "CB-SEM Fit Indices",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Normed Fit Index in research methodology.",
-      "benchmark_en": "Giá trị NFI ≥ 0.90 hoặc ≥ 0.95 biểu thị mô hình phù hợp tốt; nhược điểm là bị đánh giá thấp khi cỡ mẫu nhỏ.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Bentler and Bonett's (1980) incremental fit index in SEM that evaluates model fit by comparing the Chi-square value of the hypothesized model to that of the baseline independence model without degrees-of-freedom adjustment.",
+      "benchmark_en": "NFI >= 0.90 (or >= 0.95) indicates good fit; because NFI underestimates fit in small samples and is not penalty-adjusted, TLI (NNFI) and CFI are generally preferred.",
+      "domain_en": "Psychometrics & SEM"
     },
     "NNFI": {
       "full_name": "Non-Normed Fit Index (Tucker-Lewis Index - TLI)",
@@ -1559,9 +1559,9 @@
       "domain": "CB-SEM Fit Indices",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: trùng với #43 (TLI). | Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Non-Normed Fit Index (Tucker-Lewis Index - TLI) in research methodology.",
-      "benchmark_en": "Giá trị TLI/NNFI ≥ 0.90 là chấp nhận được; ≥ 0.95 là xuất sắc.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An incremental goodness-of-fit index in CFA/SEM (identical to the Tucker-Lewis Index, TLI) that overcomes NFI's small-sample bias by incorporating degrees of freedom to reward model parsimony.",
+      "benchmark_en": "NNFI / TLI >= 0.90 indicates acceptable fit, and >= 0.95 indicates excellent fit (Hu & Bentler, 1999).",
+      "domain_en": "Psychometrics & SEM"
     },
     "IFI": {
       "full_name": "Incremental Fit Index",
@@ -1571,9 +1571,9 @@
       "domain": "CB-SEM Fit Indices",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: Xóa ký hiệu LaTeX thô (…)",
-      "purpose_en": "Academic purpose and contextual usage of Incremental Fit Index in research methodology.",
-      "benchmark_en": "Giá trị IFI ≥ 0.90 biểu thị mô hình cấu trúc phù hợp tốt với dữ liệu khảo sát.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Bollen's (1989) incremental fit index (Delta2) in SEM that adjusts the Normed Fit Index (NFI) for sample size and degrees of freedom.",
+      "benchmark_en": "IFI >= 0.90 indicates acceptable fit, and IFI >= 0.95 indicates strong model fit.",
+      "domain_en": "Psychometrics & SEM"
     },
     "RMR": {
       "full_name": "Root Mean Square Residual",
@@ -1583,9 +1583,9 @@
       "domain": "CB-SEM Diagnostics",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Root Mean Square Residual in research methodology.",
-      "benchmark_en": "Càng nhỏ càng tốt; tuy nhiên vì phụ thuộc vào đơn vị đo của các biến nên ngày nay hầu hết reviewer yêu cầu dùng phiên bản chuẩn hóa SRMR (< 0.08).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "An absolute badness-of-fit measure in CFA/SEM representing the square root of the average squared residuals between observed and model-implied unstandardized covariances.",
+      "benchmark_en": "Values closer to 0 indicate better fit; because unstandardized RMR depends on the raw measurement scales of the indicators, reporting the Standardized RMR (SRMR < 0.08) is universally preferred.",
+      "domain_en": "Psychometrics & SEM"
     },
     "RRA": {
       "full_name": "Randomized Response Analysis",
@@ -1595,9 +1595,9 @@
       "domain": "Survey Methodology",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: 'bảo vệ danh tính tuyệt đối' quá mức.",
-      "purpose_en": "Academic purpose and contextual usage of Randomized Response Analysis in research methodology.",
-      "benchmark_en": "Cho phép ước lượng tỷ lệ thực tế của quần thể mà không ai có thể biết chính xác từng cá nhân đã trả lời Có hay Không.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Warner's (1965) survey questioning technique that uses a randomization device (e.g., coin flip or dice roll) to guarantee respondent anonymity when measuring highly sensitive, stigmatized, or illegal behaviors.",
+      "benchmark_en": "Eliminates social desirability and non-response bias by enabling unbiased population prevalence estimation without revealing any individual respondent's true answer.",
+      "domain_en": "Experimental Design & Medicine"
     },
     "DOR": {
       "full_name": "Diagnostic Odds Ratio",
@@ -1607,9 +1607,9 @@
       "domain": "Diagnostic Meta-Analysis",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Diagnostic Odds Ratio in research methodology.",
-      "benchmark_en": "DOR = 1 biểu thị công cụ không có khả năng phân biệt bệnh tật; DOR càng lớn hơn 1 biểu thị độ chính xác chẩn đoán càng vượt trội.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A single scalar indicator of diagnostic test performance in medical and psychometric meta-analyses, defined as the ratio of the odds of positivity in subjects with the condition relative to the odds in subjects without the condition.",
+      "benchmark_en": "DOR = [Sensitivity / (1 - Sensitivity)] / [(1 - Specificity) / Specificity]; DOR = 1 indicates no discriminative ability, whereas higher values (e.g., DOR > 20) indicate strong diagnostic accuracy.",
+      "domain_en": "Experimental Design & Medicine"
     },
     "SROC": {
       "full_name": "Summary Receiver Operating Characteristic",
@@ -1619,9 +1619,9 @@
       "domain": "Diagnostic Meta-Analysis",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Summary Receiver Operating Characteristic in research methodology.",
-      "benchmark_en": "Diện tích dưới đường cong SROC (AUC) tiệm cận 1.0 biểu thị công cụ đo lường đạt độ tin cậy chẩn đoán tối ưu.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A bivariate meta-analytic curve synthesizing diagnostic accuracy studies that accounts for varying positivity thresholds across primary studies to plot pooled sensitivity against specificity.",
+      "benchmark_en": "Estimated via Moses-Littenberg, bivariate random-effects (Reitsma), or HSROC models; an Area Under the SROC Curve approaching 1.0 (> 0.85) confirms high pooled diagnostic validity.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "IPD": {
       "full_name": "Individual Participant Data",
@@ -1631,9 +1631,9 @@
       "domain": "Advanced Meta-Analysis",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: 'loại bỏ hoàn toàn… chính xác 100%' quá mức.",
-      "purpose_en": "Academic purpose and contextual usage of Individual Participant Data in research methodology.",
-      "benchmark_en": "Loại bỏ hoàn toàn thiên lệch sinh thái (Ecological fallacy) và cho phép phân tích tương tác điều tiết ở cấp độ cá thể chính xác 100%.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The gold standard of meta-analysis (IPD Meta-Analysis) wherein raw line-by-line participant-level data are obtained from original trials rather than relying on published aggregate summary statistics.",
+      "benchmark_en": "Eliminates ecological fallacy (aggregation bias), standardizes covariate definitions and time-to-event analyses across studies, and enables high-powered individual-level treatment-by-covariate interaction testing.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "NMA": {
       "full_name": "Network Meta-Analysis",
@@ -1643,9 +1643,9 @@
       "domain": "Advanced Meta-Analysis",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Network Meta-Analysis in research methodology.",
-      "benchmark_en": "Bắt buộc kiểm tra giả định chuyển tiếp (Transitivity assumption) và tính nhất quán (Inconsistency test giữa direct và indirect p > .05). Xếp hạng can thiệp qua diện tích SUCRA (Surface Under the Cumulative Ranking Curve).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A quantitative evidence synthesis methodology (mixed treatment comparison) that simultaneously compares three or more interventions by combining direct head-to-head trial evidence with indirect evidence across a connected network of studies.",
+      "benchmark_en": "Requires verifying the Transitivity Assumption and statistical consistency between direct and indirect evidence (node-splitting or design-by-treatment inconsistency test p > 0.05); ranks interventions via SUCRA.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "SUCRA": {
       "full_name": "Surface Under the Cumulative Ranking Curve",
@@ -1655,9 +1655,9 @@
       "domain": "Network Meta-Analysis",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Surface Under the Cumulative Ranking Curve in research methodology.",
-      "benchmark_en": "SUCRA = 100%: Can thiệp chắc chắn là tốt nhất; SUCRA = 0%: Can thiệp chắc chắn là tồi tệ nhất.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "A Bayesian or frequentist metric in Network Meta-Analysis that summarizes the cumulative ranking probabilities of each competing treatment into a single percentage from 0% to 100%.",
+      "benchmark_en": "SUCRA = 100% indicates an intervention is certain to be the most effective treatment in the network; SUCRA = 0% indicates it is certain to be the least effective; interpret alongside 95% credible/confidence intervals.",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "QCA": {
       "full_name": "Qualitative Comparative Analysis",
@@ -1667,9 +1667,9 @@
       "domain": "Configural Comparative Methods",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Qualitative Comparative Analysis in research methodology.",
-      "benchmark_en": "Đánh giá qua hai chỉ số cốt lõi: Độ nhất quán (Consistency > 0.80) và Độ bao phủ (Coverage).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Charles Ragin's (1987, 2008) set-theoretic, case-oriented configurational methodology bridging qualitative and quantitative research to identify causal complexity, equifinality, and conjunctural causation.",
+      "benchmark_en": "Evaluated via two foundational set-theoretic parameters: Necessity Consistency (>= 0.90), Sufficiency Consistency (>= 0.80, PRI >= 0.70), and Solution/Unique Coverage.",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "csQCA": {
       "full_name": "Crisp-Set Qualitative Comparative Analysis",
@@ -1679,9 +1679,9 @@
       "domain": "Configural Comparative Methods",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Crisp-Set Qualitative Comparative Analysis in research methodology.",
-      "benchmark_en": "Xây dựng Bảng Chân lý (Truth Table) và giải mã bằng thuật toán tối thiểu hóa Quine-McCluskey.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "The foundational dichotomous variant of Qualitative Comparative Analysis in which causal conditions and outcomes are calibrated into binary set memberships (1 = fully in, 0 = fully out).",
+      "benchmark_en": "Constructs a 2^k Truth Table of binary configurations and applies Boolean minimization (Quine-McCluskey algorithm) with consistency >= 0.80 and zero contradictory configurations.",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "fsQCA": {
       "full_name": "Fuzzy-Set Qualitative Comparative Analysis",
@@ -1691,9 +1691,9 @@
       "domain": "Configural Comparative Methods",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Fuzzy-Set Qualitative Comparative Analysis in research methodology.",
-      "benchmark_en": "Khám phá các cấu hình điều kiện đủ (Sufficient configurations) và điều kiện cần (Necessary conditions, Consistency > 0.90).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Ragin's (2000, 2008) continuous set-theoretic extension of QCA allowing cases to hold partial membership scores anywhere in the interval [0, 1] to capture degrees of set membership alongside qualitative thresholds.",
+      "benchmark_en": "Calibrate data using three qualitative anchors (0.95 full membership, 0.50 crossover point, 0.05 full non-membership); require Necessity Consistency >= 0.90, Sufficiency Consistency >= 0.80, and PRI >= 0.70.",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "mvQCA": {
       "full_name": "Multi-Value Qualitative Comparative Analysis",
@@ -1703,9 +1703,9 @@
       "domain": "Configural Comparative Methods",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Multi-Value Qualitative Comparative Analysis in research methodology.",
-      "benchmark_en": "Giảm thiểu tổn thất thông tin khi phân loại các biến thể chế hoặc chính sách có nhiều trạng thái rõ ràng.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Cronqvist and Berg-Schlosser's (2009) extension of crisp-set QCA that permits multinomial categorical conditions (e.g., values {0, 1, 2}) to prevent information loss when coding multi-category institutional or policy variables.",
+      "benchmark_en": "Preserves categorical granularity in Truth Table minimization while adhering to standard QCA sufficiency consistency (>= 0.80) and coverage thresholds.",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "SEM-PLS": {
       "full_name": "Partial Least Squares Structural Equation Modeling",
@@ -1715,9 +1715,9 @@
       "domain": "Structural Equation Modeling",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: trùng với #1 (PLS-SEM); 'lựa chọn số 1' quá mức.",
-      "purpose_en": "Academic purpose and contextual usage of Partial Least Squares Structural Equation Modeling in research methodology.",
-      "benchmark_en": "Lựa chọn số 1 cho các nghiên cứu dự báo, mô hình có cấu trúc phức tạp, thang đo kết hợp Formative, hoặc dữ liệu không phân phối chuẩn.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Composite-based structural equation modeling (synonymous with PLS-SEM; Wold, Hair, Ringle, Sarstedt) designed to maximize explained variance of endogenous constructs and support out-of-sample prediction.",
+      "benchmark_en": "Recommended when estimating complex structural models with many constructs/indicators, formative measurement models, small-to-medium sample sizes, or when predictive accuracy (PLSpredict) is a primary objective.",
+      "domain_en": "Psychometrics & SEM"
     },
     "MABI": {
       "full_name": "Model of Athlete Brand Image",
@@ -1727,9 +1727,9 @@
       "domain": "Marketing & Sports Management",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: mô hình chuyên ngành thể thao, không phải viết tắt PPNC – chuyển khỏi Phần IV.",
-      "purpose_en": "Academic purpose and contextual usage of Model of Athlete Brand Image in research methodology.",
-      "benchmark_en": "Được áp dụng chuẩn mực trong quản trị thể thao và tiếp thị mạng xã hội (Instagram, Twitter).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Arai, Ko, and Ross's (2014) multidimensional conceptual scale framework in sport management and marketing that operationalizes athlete brand equity across three higher-order dimensions.",
+      "benchmark_en": "Comprises Athletic Performance (athletic expertise, competition style, sportsmanship, rivalry), Attractive Appearance (physical attractiveness, symbol, body fitness), and Marketable Lifestyle (life story, role model, relationship effort).",
+      "domain_en": "Psychometrics & SEM"
     },
     "SPT": {
       "full_name": "Self-Presentation Theory",
@@ -1739,9 +1739,9 @@
       "domain": "Sociology & Consumer Behavior",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: lý thuyết nội dung, không phải viết tắt PPNC – chuyển khỏi Phần IV.",
-      "purpose_en": "Academic purpose and contextual usage of Self-Presentation Theory in research methodology.",
-      "benchmark_en": "Lý thuyết nền tảng trong nghiên cứu hành vi người dùng mạng xã hội và xây dựng thương hiệu cá nhân.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Erving Goffman's (1959) dramaturgical sociological theory (Impression Management) explaining how individuals strategically regulate information, symbols, and behaviors in frontstage and backstage settings to shape audience perceptions.",
+      "benchmark_en": "Foundational theoretical framework in organizational behavior, consumer psychology, personal branding, and digital social media research.",
+      "domain_en": "Qualitative & Mixed Methods"
     },
     "SPAR-4-SLR": {
       "full_name": "Scientific Procedures and Rationales for Systematic Literature Reviews",
@@ -1751,9 +1751,9 @@
       "domain": "Systematic Review Protocol",
       "expert_status": "verified",
       "expert_notes": "[ ] Sửa",
-      "purpose_en": "Academic purpose and contextual usage of Scientific Procedures and Rationales for Systematic Literature Reviews in research methodology.",
-      "benchmark_en": "Tiêu chuẩn báo cáo phương pháp luận xuất sắc cho các bài báo Literature Review trên các tạp chí Q1 (JBR, IJCS).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Paul et al.'s (2021) rigorous methodological protocol designed specifically for business, management, and marketing scholars to conduct transparent, replicable systematic literature reviews.",
+      "benchmark_en": "Structured into 3 sequential stages and 6 substages: (1) Assembling (Identification, Acquisition), (2) Arranging (Organization, Purification), and (3) Assessing (Evaluation, Reporting); widely required in Q1 business review journals (JBR, IJCS).",
+      "domain_en": "Systematic Reviews & Meta-Analysis"
     },
     "CEBs": {
       "full_name": "Consumer Engagement Behaviors",
@@ -1763,9 +1763,9 @@
       "domain": "Consumer Behavior",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: khái niệm marketing, không phải viết tắt PPNC – chuyển khỏi Phần IV.",
-      "purpose_en": "Academic purpose and contextual usage of Consumer Engagement Behaviors in research methodology.",
-      "benchmark_en": "Khung lý thuyết nền tảng trong tiếp thị số và nghiên cứu cộng đồng mạng xã hội.",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Van Doorn et al.'s (2010) behavioral marketing construct capturing customers' behavioral manifestations toward a brand or firm, beyond purchase, resulting from motivational drivers.",
+      "benchmark_en": "Evaluated across five dimensions: valence (positive/negative), form/modality (WOM, co-creation, reviews), scope (temporal/geographic), nature of impact, and customer goals; foundational in digital marketing and brand community research.",
+      "domain_en": "Psychometrics & SEM"
     },
     "OBC": {
       "full_name": "Online Brand Community",
@@ -1775,9 +1775,9 @@
       "domain": "Marketing & Virtual Communities",
       "expert_status": "needs_review",
       "expert_notes": "[x] Sửa: khái niệm marketing, không phải viết tắt PPNC – chuyển khỏi Phần IV.",
-      "purpose_en": "Academic purpose and contextual usage of Online Brand Community in research methodology.",
-      "benchmark_en": "Đối tượng nghiên cứu trọng tâm trong phương pháp Dân tộc học mạng (Netnography).",
-      "domain_en": "Methodology & Statistics"
+      "purpose_en": "Muniz and O'Guinn's (2001) specialized, non-geographically bound community structured around a shared social identity of admirers of a brand on digital platforms.",
+      "benchmark_en": "Characterized by three core sociological markers: Consciousness of Kind, Shared Rituals and Traditions, and a Sense of Moral Responsibility; primary empirical context for Netnography (Kozinets, 2019).",
+      "domain_en": "Qualitative & Mixed Methods"
     }
   }
 }
