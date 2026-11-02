@@ -45,6 +45,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Từ điển Thuật ngữ Phương pháp Nghiên cứu Khoa học",
     description: "Tra cứu chuẩn xác thuật ngữ phương pháp nghiên cứu Anh - Việt & xuất trích dẫn APA 7th."
+  },
+  verification: {
+    google: "EWkHVVv_sCFv6T_iAX4S3VSWh7NT9LVN2CI10p5SGls",
   }
 };
 
