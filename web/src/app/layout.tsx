@@ -80,7 +80,7 @@ export default function RootLayout({
         />
         <GoogleAnalytics />
       </head>
-      <body className="h-full flex flex-col font-sans bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 overflow-hidden">
+      <body className="min-h-full flex flex-col font-sans bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
         {children}
       </body>
     </html>

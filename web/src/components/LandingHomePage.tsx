@@ -20,13 +20,19 @@ import {
   Check,
   Compass,
   Trophy,
-  FileText,
   Scale,
   Database,
   GitBranch,
   Award,
   Terminal,
-  BookMarked
+  BookMarked,
+  Sparkles,
+  ExternalLink,
+  ChevronRight,
+  FileCode2,
+  BookmarkCheck,
+  Cpu,
+  CornerDownRight
 } from "lucide-react";
 
 interface SpecimenTerm {
@@ -308,14 +314,27 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
   const [copiedCite, setCopiedCite] = useState<"apa" | "bibtex" | null>(null);
 
   // Thống kê động (tự động fetch client nếu không truyền SSR)
-  const [stats, setStats] = useState(initialStats || {
-    termsCount: 1872,
-    acronymsCount: 148,
-    totalCount: 2020
-  });
+  const [stats, setStats] = useState(
+    initialStats || {
+      termsCount: 1872,
+      acronymsCount: 148,
+      totalCount: 2020
+    }
+  );
 
   useEffect(() => {
-    // Nếu chưa có stats hoặc muốn đồng bộ chính xác từ client
+    if (typeof window !== "undefined") {
+      const savedLang = localStorage.getItem("rv_lexicon_mode");
+      if (savedLang === "en" || savedLang === "vi") {
+        setLanguageMode(savedLang);
+      }
+      if (document.documentElement.classList.contains("dark")) {
+        setIsDarkMode(true);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
     if (!initialStats && typeof window !== "undefined") {
       Promise.all([
         fetch("/data/methodology_terms.json")
@@ -335,18 +354,6 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
       });
     }
   }, [initialStats]);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const savedLang = localStorage.getItem("rv_lexicon_mode");
-      if (savedLang === "en" || savedLang === "vi") {
-        setLanguageMode(savedLang);
-      }
-      if (document.documentElement.classList.contains("dark")) {
-        setIsDarkMode(true);
-      }
-    }
-  }, []);
 
   const handleToggleLanguage = (mode: "vi" | "en") => {
     setLanguageMode(mode);
@@ -385,225 +392,248 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
   const isEn = languageMode === "en";
 
   return (
-    <div className={isDarkMode ? "dark h-full" : "h-full"}>
-      <div className="h-full overflow-y-auto bg-[#F8FAFC] dark:bg-[#090D16] text-slate-900 dark:text-slate-100 selection:bg-blue-600 selection:text-white">
-        {/* 1. TOP EDITORIAL MASTHEAD */}
-        <header className="sticky top-0 z-40 border-b border-slate-200/90 dark:border-slate-800/90 bg-white/90 dark:bg-[#090D16]/90 backdrop-blur-md">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <Link
-                href="/"
-                className="flex items-center gap-2.5 group"
-                title={isEn ? "Open Research Methodology Lexicon" : "Mở Từ điển Thuật ngữ Phương pháp Nghiên cứu"}
-              >
-                <div className="w-9 h-9 rounded-lg bg-[#1E3A8A] dark:bg-blue-600 text-white flex items-center justify-center shadow-xs group-hover:bg-blue-700 transition">
-                  <BookOpen size={18} />
-                </div>
-                <div>
-                  <span className="text-[11px] font-mono tracking-wider text-blue-700 dark:text-blue-400 block leading-none mb-0.5">
-                    RESEARCH METHODOLOGY LEXICON
-                  </span>
-                  <span className="font-serif font-bold text-sm sm:text-base text-slate-900 dark:text-white tracking-tight">
-                    {isEn ? "Bilingual Academic Reference" : "Từ điển Phương pháp Nghiên cứu Khoa học"}
-                  </span>
-                </div>
-              </Link>
-            </div>
-
-            <nav className="hidden lg:flex items-center gap-6 text-xs font-medium text-slate-600 dark:text-slate-300">
-              <a href="#anatomy" className="hover:text-blue-700 dark:hover:text-blue-400 transition">
-                {isEn ? "Term Anatomy" : "Giải phẫu Mục từ"}
-              </a>
-              <a href="#integrity" className="hover:text-blue-700 dark:hover:text-blue-400 transition">
-                {isEn ? "Provenance & Rigor" : "Chuẩn Thẩm định"}
-              </a>
-              <a href="#atlas" className="hover:text-blue-700 dark:hover:text-blue-400 transition">
-                {isEn ? "Domain Atlas" : "Hệ Phân loại"}
-              </a>
-              <a href="#audiences" className="hover:text-blue-700 dark:hover:text-blue-400 transition">
-                {isEn ? "For Researchers" : "Ứng dụng Học thuật"}
-              </a>
-              <Link href="/hall-of-fame" className="hover:text-amber-600 dark:hover:text-amber-400 transition flex items-center gap-1">
-                <Trophy size={13} className="text-amber-500" />
-                <span>{isEn ? "Hall of Fame" : "Bảng Vinh danh"}</span>
-              </Link>
-            </nav>
-
-            <div className="flex items-center gap-2">
-              {/* Language Switcher */}
-              <div className="flex items-center rounded-lg border border-slate-200 dark:border-slate-800 p-0.5 bg-slate-100 dark:bg-slate-800/80 text-xs font-semibold">
-                <button
-                  onClick={() => handleToggleLanguage("vi")}
-                  className={`px-2.5 py-1 rounded-md transition flex items-center gap-1 ${
-                    !isEn
-                      ? "bg-white dark:bg-slate-700 text-blue-700 dark:text-blue-300 shadow-2xs font-bold"
-                      : "text-slate-500 hover:text-slate-800 dark:hover:text-slate-200"
-                  }`}
-                >
-                  <span>🇻🇳</span>
-                  <span className="hidden sm:inline">Anh - Việt</span>
-                </button>
-                <button
-                  onClick={() => handleToggleLanguage("en")}
-                  className={`px-2.5 py-1 rounded-md transition flex items-center gap-1 ${
-                    isEn
-                      ? "bg-blue-600 text-white shadow-2xs font-bold"
-                      : "text-slate-500 hover:text-slate-800 dark:hover:text-slate-200"
-                  }`}
-                >
-                  <Globe size={12} />
-                  <span className="hidden sm:inline">English</span>
-                </button>
+    <div className={isDarkMode ? "dark w-full min-h-screen" : "w-full min-h-screen"}>
+      <div className="w-full min-h-screen bg-[#070B14] text-slate-100 selection:bg-blue-600 selection:text-white">
+        
+        {/* 1. TOP EDITORIAL MASTHEAD (Full-width edge-to-edge) */}
+        <header className="sticky top-0 z-50 border-b border-slate-800/80 bg-[#070B14]/90 backdrop-blur-md px-4 sm:px-8 xl:px-12 h-16 flex items-center justify-between gap-4">
+          <div className="flex items-center gap-4">
+            <Link
+              href="/"
+              className="flex items-center gap-3 group"
+              title={isEn ? "Open Dictionary Workspace" : "Mở Không gian Tra cứu Từ điển"}
+            >
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 text-white flex items-center justify-center shadow-lg shadow-blue-900/30 font-bold text-lg">
+                R
               </div>
+              <div>
+                <span className="text-[10px] font-mono tracking-widest text-blue-400 block uppercase">
+                  Research Methodology Lexicon
+                </span>
+                <span className="font-serif font-bold text-base sm:text-lg text-white tracking-tight">
+                  {isEn ? "Scholarly Reference System" : "Từ điển Phương pháp Nghiên cứu"}
+                </span>
+              </div>
+            </Link>
+          </div>
 
+          <nav className="hidden lg:flex items-center gap-8 text-xs font-medium text-slate-300">
+            <a href="#workbench" className="hover:text-blue-400 transition flex items-center gap-1.5">
+              <Terminal size={14} className="text-blue-400" />
+              <span>{isEn ? "Live Specimen Workbench" : "Khung Thực nghiệm Mục từ"}</span>
+            </a>
+            <a href="#taxonomy" className="hover:text-blue-400 transition flex items-center gap-1.5">
+              <Compass size={14} className="text-indigo-400" />
+              <span>{isEn ? "Methodological Atlas" : "Hệ Phân loại Nghiên cứu"}</span>
+            </a>
+            <a href="#rigor" className="hover:text-blue-400 transition flex items-center gap-1.5">
+              <ShieldCheck size={14} className="text-emerald-400" />
+              <span>{isEn ? "Q1 Reviewer Standards" : "Chuẩn Thẩm định Q1"}</span>
+            </a>
+            <Link href="/hall-of-fame" className="hover:text-amber-400 transition flex items-center gap-1.5 text-amber-300">
+              <Trophy size={14} className="text-amber-400" />
+              <span>{isEn ? "Hall of Fame" : "Vinh danh Học giả"}</span>
+            </Link>
+          </nav>
+
+          <div className="flex items-center gap-3">
+            {/* Language Switcher */}
+            <div className="flex items-center rounded-lg border border-slate-800 p-0.5 bg-slate-900/80 text-xs font-semibold">
               <button
-                onClick={handleToggleTheme}
-                className="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
-                title={isDarkMode ? "Chế độ Sáng" : "Chế độ Tối"}
+                onClick={() => handleToggleLanguage("vi")}
+                className={`px-3 py-1 rounded-md transition flex items-center gap-1.5 cursor-pointer ${
+                  !isEn ? "bg-blue-600 text-white shadow-xs font-bold" : "text-slate-400 hover:text-slate-200"
+                }`}
               >
-                {isDarkMode ? <Sun size={15} /> : <Moon size={15} />}
+                <span>🇻🇳</span>
+                <span className="hidden sm:inline">Song ngữ</span>
               </button>
-
-              <Link
-                href={`/?lang=${languageMode}`}
-                className="px-3.5 py-2 rounded-lg bg-[#1E3A8A] hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-500 text-white text-xs font-semibold transition flex items-center gap-1.5 shadow-xs"
+              <button
+                onClick={() => handleToggleLanguage("en")}
+                className={`px-3 py-1 rounded-md transition flex items-center gap-1.5 cursor-pointer ${
+                  isEn ? "bg-blue-600 text-white shadow-xs font-bold" : "text-slate-400 hover:text-slate-200"
+                }`}
               >
-                <span>{isEn ? "Open Lexicon" : "Vào Từ điển"}</span>
-                <ArrowRight size={14} />
-              </Link>
+                <Globe size={13} />
+                <span className="hidden sm:inline">English</span>
+              </button>
             </div>
+
+            <Link
+              href={`/?lang=${languageMode}`}
+              className="px-4 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs sm:text-sm font-semibold transition flex items-center gap-2 shadow-lg shadow-blue-900/40"
+            >
+              <span>{isEn ? "Open Dictionary (/)" : "Vào Từ điển (/)"}</span>
+              <ArrowRight size={15} />
+            </Link>
           </div>
         </header>
 
-        {/* 2. HERO SECTION: EDITORIAL AUTHORITY + LIVE SPECIMEN WORKBENCH */}
-        <section className="relative border-b border-slate-200 dark:border-slate-800/80 bg-gradient-to-b from-white via-[#F8FAFC] to-[#F1F5F9]/70 dark:from-[#090D16] dark:via-[#0D1322] dark:to-[#090D16]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
-              {/* Left Column: Editorial Thesis & Live Search */}
-              <div className="lg:col-span-6 space-y-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200/80 dark:border-blue-800/70 text-blue-800 dark:text-blue-300 text-xs font-medium">
-                  <ShieldCheck size={14} className="text-blue-600 dark:text-blue-400" />
+        {/* 2. FULL-SCREEN HERO COCKPIT (Edge-to-edge layout) */}
+        <section className="relative px-4 sm:px-8 xl:px-12 pt-8 pb-14 border-b border-slate-800/80 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(30,58,138,0.35),rgba(255,255,255,0))]">
+          <div className="w-full max-w-[1720px] mx-auto">
+            
+            {/* Top Stat Banner */}
+            <div className="flex flex-wrap items-center justify-between gap-3 pb-6 mb-8 border-b border-slate-800/70">
+              <div className="flex flex-wrap items-center gap-2.5">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-950/80 border border-blue-800/80 text-blue-300 text-xs font-medium">
+                  <ShieldCheck size={14} className="text-blue-400" />
                   <span>
                     {isEn
-                      ? `${stats.termsCount.toLocaleString("en-US")} Peer-Reviewed Terms · ${stats.acronymsCount.toLocaleString("en-US")} Acronyms · Verified Primary Citations`
-                      : `${stats.termsCount.toLocaleString("vi-VN")} Thuật ngữ thẩm định · ${stats.acronymsCount.toLocaleString("vi-VN")} Từ viết tắt · Chuẩn trích dẫn gốc Q1`}
+                      ? `${stats.termsCount.toLocaleString("en-US")} Methodology Terms · ${stats.acronymsCount.toLocaleString("en-US")} Acronyms`
+                      : `${stats.termsCount.toLocaleString("vi-VN")} Thuật ngữ Phương pháp luận · ${stats.acronymsCount.toLocaleString("vi-VN")} Từ viết tắt`}
                   </span>
+                </span>
+                <span className="hidden sm:inline-block text-slate-600">·</span>
+                <span className="text-xs text-slate-400">
+                  {isEn
+                    ? "Updated with Q1 Journal Standards & APA 7th Edition"
+                    : "Đã thẩm định theo chuẩn Tạp chí Q1 & Trích dẫn APA 7th"}
+                </span>
+              </div>
+
+              <div className="flex items-center gap-4 text-xs font-mono text-slate-400">
+                <span className="flex items-center gap-1.5 text-emerald-400">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span>100% Peer-Reviewed</span>
+                </span>
+                <span>·</span>
+                <span className="text-blue-400">BibTeX / RIS Export</span>
+              </div>
+            </div>
+
+            {/* Split Screen Hero: Search & Context (Left) + Interactive Specimen (Right) */}
+            <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 items-start">
+              
+              {/* Left Column: Mission, Universal Search & Shortcuts (5 cols) */}
+              <div className="xl:col-span-5 space-y-6">
+                <div>
+                  <h1 className="font-serif text-3xl sm:text-4xl lg:text-[46px] font-bold text-white leading-[1.12] tracking-tight">
+                    {isEn
+                      ? "The definitive reference system for empirical & doctoral research."
+                      : "Bách khoa toàn thư thuật ngữ nghiên cứu khoa học chuẩn mực quốc tế."}
+                  </h1>
+                  <p className="mt-4 text-sm sm:text-base text-slate-300 leading-relaxed">
+                    {isEn
+                      ? "Engineered for doctoral candidates, quantitative econometricians, and qualitative researchers. Instant access to mathematical mechanisms, empirical cutoffs, reviewer pitfall warnings, and seminal citations."
+                      : "Thiết kế chuyên biệt cho Nghiên cứu sinh Tiến sĩ, Học viên Cao học, Giảng viên và Phản biện quốc tế. Tra cứu tức thì cơ chế toán học, ngưỡng kiểm định thực nghiệm, cảnh báo bẫy phản biện Q1 và trích dẫn gốc chuẩn APA 7th / BibTeX."}
+                  </p>
                 </div>
 
-                <h1 className="font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
-                  {isEn
-                    ? "The definitive methodological reference for empirical & doctoral research."
-                    : "Bách khoa thư thuật ngữ phương pháp nghiên cứu chuẩn mực quốc tế."}
-                </h1>
-
-                <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl">
-                  {isEn
-                    ? "Built for doctoral candidates, principal investigators, and peer reviewers. Every entry integrates formal definitions, mathematical mechanisms, empirical cutoffs, reviewer pitfalls, and verified APA 7th / BibTeX citations."
-                    : "Được thiết kế chuyên biệt cho Nghiên cứu sinh Tiến sĩ, Học viên Cao học, Giảng viên và Phản biện tạp chí quốc tế. Mỗi mục từ tích hợp định nghĩa học thuật, cơ chế toán học, ngưỡng kiểm định thực nghiệm, cảnh báo bẫy phản biện Q1 và trích dẫn gốc APA 7th / BibTeX."}
-                </p>
-
-                {/* Live Search Bar jumping directly into the Lexicon */}
+                {/* Universal Search Console */}
                 <form onSubmit={handleHeroSearch} className="pt-1">
-                  <div className="flex flex-col sm:flex-row gap-2.5 p-2 rounded-xl bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-700/90 shadow-md focus-within:border-blue-600 dark:focus-within:border-blue-500 transition">
-                    <div className="flex items-center gap-2.5 flex-1 px-2.5 py-1.5">
-                      <Search size={18} className="text-blue-600 dark:text-blue-400 shrink-0" />
+                  <div className="p-2.5 rounded-2xl bg-slate-900/90 border border-slate-700 shadow-2xl focus-within:border-blue-500 focus-within:ring-2 focus-within:ring-blue-500/20 transition">
+                    <div className="flex items-center gap-3 px-3 py-2">
+                      <Search size={20} className="text-blue-400 shrink-0" />
                       <input
                         type="text"
                         value={heroQuery}
                         onChange={(e) => setHeroQuery(e.target.value)}
                         placeholder={
                           isEn
-                            ? "Search any methodology term, test, or acronym (e.g., Endogeneity, HTMT, DID, PRISMA)..."
-                            : "Nhập thuật ngữ tiếng Anh, tiếng Việt hoặc viết tắt (VD: Nội sinh, HTMT, DID, Gioia)..."
+                            ? "Search any term, acronym, or test (e.g., Endogeneity, HTMT, DID, Gioia, PRISMA)..."
+                            : "Nhập thuật ngữ tiếng Anh, tiếng Việt hoặc viết tắt (VD: Nội sinh, HTMT, DID, Gioia, VIF)..."
                         }
-                        className="w-full bg-transparent text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none"
+                        className="w-full bg-transparent text-sm sm:text-base text-white placeholder:text-slate-400 focus:outline-none"
                       />
                     </div>
-                    <button
-                      type="submit"
-                      className="px-5 py-2.5 rounded-lg bg-[#1E3A8A] hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-500 text-white text-xs sm:text-sm font-semibold transition flex items-center justify-center gap-2 shrink-0 cursor-pointer"
-                    >
-                      <span>{isEn ? "Search Lexicon" : "Tra cứu ngay"}</span>
-                      <ArrowRight size={15} />
-                    </button>
+                    <div className="flex items-center justify-between pt-2 border-t border-slate-800/80 px-2">
+                      <span className="text-[11px] text-slate-400 font-mono hidden sm:inline">
+                        Press <kbd className="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">Ctrl + K</kbd> anywhere
+                      </span>
+                      <button
+                        type="submit"
+                        className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs sm:text-sm font-semibold transition flex items-center justify-center gap-2 cursor-pointer shadow-md"
+                      >
+                        <span>{isEn ? "Search Lexicon" : "Tra cứu ngay"}</span>
+                        <ArrowRight size={15} />
+                      </button>
+                    </div>
                   </div>
                 </form>
 
-                {/* Quick Jump Foundational Terms */}
-                <div className="space-y-2">
-                  <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
-                    {isEn ? "Jump directly to foundational entries:" : "Tra cứu nhanh các mục từ trụ cột:"}
-                  </p>
-                  <div className="flex flex-wrap gap-1.5">
+                {/* Direct High-Frequency Jump Tags */}
+                <div>
+                  <div className="text-xs font-mono text-slate-400 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+                    <Sparkles size={13} className="text-blue-400" />
+                    <span>{isEn ? "Frequent Foundational Lookups" : "Mục từ nền tảng tra cứu nhiều nhất"}</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
                     {[
-                      { id: "construct-validity", label: "Construct Validity" },
-                      { id: "endogeneity", label: "Endogeneity (IV / 2SLS)" },
-                      { id: "discriminant-validity-htmt", label: "HTMT < 0.85" },
-                      { id: "difference-in-differences", label: "Difference-in-Differences" },
-                      { id: "common-method-bias", label: "Common Method Bias" },
-                      { id: "gioia-methodology", label: "Gioia Methodology" },
-                      { id: "critical-realism", label: "Critical Realism" }
+                      { id: "construct-validity", label: "Construct Validity", tag: "Psychometrics" },
+                      { id: "endogeneity", label: "Endogeneity (IV / 2SLS)", tag: "Econometrics" },
+                      { id: "discriminant-validity-htmt", label: "HTMT < 0.85", tag: "PLS-SEM" },
+                      { id: "difference-in-differences", label: "Difference-in-Differences", tag: "Quasi-Exp" },
+                      { id: "common-method-bias", label: "Common Method Bias (CMB)", tag: "Survey" },
+                      { id: "gioia-methodology", label: "Gioia Methodology", tag: "Qualitative" },
+                      { id: "critical-realism", label: "Critical Realism (Bhaskar)", tag: "Philosophy" },
+                      { id: "systematic-literature-review", label: "PRISMA 2020", tag: "Review" }
                     ].map((pill) => (
                       <Link
                         key={pill.id}
                         href={`/?term=${pill.id}&lang=${languageMode}`}
-                        className="px-2.5 py-1 rounded-md text-xs font-medium bg-white dark:bg-slate-800/90 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-700 dark:hover:text-blue-300 transition shadow-2xs"
+                        className="group px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900/90 text-slate-200 border border-slate-800 hover:border-blue-500 hover:bg-blue-950/40 transition flex items-center gap-2 shadow-xs"
                       >
-                        {pill.label}
+                        <span>{pill.label}</span>
+                        <span className="text-[10px] font-mono text-slate-500 group-hover:text-blue-400 transition">
+                          {pill.tag}
+                        </span>
                       </Link>
                     ))}
                   </div>
                 </div>
 
-                {/* Key Metrics Bar */}
-                <div className="grid grid-cols-3 gap-4 pt-4 border-t border-slate-200/90 dark:border-slate-800">
-                  <div>
-                    <div className="font-serif text-2xl sm:text-3xl font-bold text-[#1E3A8A] dark:text-blue-400">
+                {/* Metric Summary Counters */}
+                <div className="grid grid-cols-3 gap-4 pt-4 border-t border-slate-800/80">
+                  <div className="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
+                    <div className="font-serif text-2xl sm:text-3xl font-bold text-blue-400">
                       {stats.termsCount.toLocaleString(isEn ? "en-US" : "vi-VN")}
                     </div>
-                    <div className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">
-                      {isEn ? "Verified Methodology Terms" : "Thuật ngữ Phương pháp luận"}
+                    <div className="text-xs text-slate-400 mt-1">
+                      {isEn ? "Methodology Terms" : "Thuật ngữ chuyên sâu"}
                     </div>
                   </div>
-                  <div>
-                    <div className="font-serif text-2xl sm:text-3xl font-bold text-emerald-700 dark:text-emerald-400">
+                  <div className="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
+                    <div className="font-serif text-2xl sm:text-3xl font-bold text-emerald-400">
                       {stats.acronymsCount.toLocaleString(isEn ? "en-US" : "vi-VN")}
                     </div>
-                    <div className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">
-                      {isEn ? "Statistical & SEM Acronyms" : "Từ viết tắt Thống kê & SEM"}
+                    <div className="text-xs text-slate-400 mt-1">
+                      {isEn ? "Statistical Acronyms" : "Từ viết tắt chuẩn"}
                     </div>
                   </div>
-                  <div>
-                    <div className="font-serif text-2xl sm:text-3xl font-bold text-amber-700 dark:text-amber-400">
-                      APA 7th
+                  <div className="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
+                    <div className="font-serif text-2xl sm:text-3xl font-bold text-amber-400">
+                      100%
                     </div>
-                    <div className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">
-                      {isEn ? "BibTeX & RIS Export Ready" : "Xuất BibTeX & RIS tức thì"}
+                    <div className="text-xs text-slate-400 mt-1">
+                      {isEn ? "Seminal APA & BibTeX" : "Trích dẫn gốc Q1"}
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Right Column: Interactive Specimen Card ("Anatomy of a Term") */}
-              <div id="anatomy" className="lg:col-span-6">
-                <div className="rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/90 dark:border-slate-800 shadow-xl overflow-hidden">
-                  {/* Top Bar: Specimen Selector */}
-                  <div className="px-4 sm:px-5 py-3 bg-slate-900 dark:bg-slate-950 text-white flex flex-wrap items-center justify-between gap-2 border-b border-slate-800">
-                    <div className="flex items-center gap-2">
-                      <Terminal size={14} className="text-blue-400" />
-                      <span className="text-xs font-mono text-slate-300">
-                        {isEn ? "INTERACTIVE ENTRY SPECIMEN" : "MÔ PHỎNG CẤU TRÚC MỤC TỪ CHUẨN Q1"}
+              {/* Right Column: High-Density Interactive Specimen Workbench (7 cols) */}
+              <div id="workbench" className="xl:col-span-7">
+                <div className="rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl overflow-hidden">
+                  
+                  {/* Specimen Header & Mode Switchers */}
+                  <div className="px-5 py-3.5 bg-slate-950 border-b border-slate-800 flex flex-wrap items-center justify-between gap-3">
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
+                      <span className="text-xs font-mono font-semibold text-slate-300">
+                        INTERACTIVE SPECIMEN WORKBENCH
                       </span>
                     </div>
-                    <div className="flex items-center gap-1">
+
+                    <div className="flex items-center gap-1.5 bg-slate-900 p-1 rounded-lg border border-slate-800">
                       {SPECIMEN_TERMS.map((item) => (
                         <button
                           key={item.id}
                           onClick={() => setActiveSpecimenId(item.id)}
-                          className={`px-2 py-1 rounded text-[11px] font-medium transition cursor-pointer ${
+                          className={`px-3 py-1 rounded-md text-xs font-medium transition cursor-pointer ${
                             activeSpecimenId === item.id
-                              ? "bg-blue-600 text-white font-semibold"
-                              : "text-slate-400 hover:text-white hover:bg-slate-800"
+                              ? "bg-blue-600 text-white font-semibold shadow-xs"
+                              : "text-slate-400 hover:text-white"
                           }`}
                         >
                           {item.term.split(" ")[0]}
@@ -612,90 +642,97 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
                     </div>
                   </div>
 
-                  {/* Specimen Header */}
-                  <div className="p-5 sm:p-6 border-b border-slate-200/80 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-900/40">
+                  {/* Active Specimen Title Header */}
+                  <div className="p-6 border-b border-slate-800 bg-gradient-to-r from-slate-900 via-slate-900/90 to-slate-950">
                     <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                      <span className="text-xs font-medium px-2.5 py-0.5 rounded-md bg-blue-50 dark:bg-blue-950/70 text-blue-700 dark:text-blue-300 border border-blue-200/60 dark:border-blue-800">
+                      <span className="text-xs font-medium px-2.5 py-1 rounded-md bg-blue-950/80 text-blue-300 border border-blue-800/70">
                         {isEn ? activeSpecimen.categoryEn : activeSpecimen.categoryVi}
                       </span>
-                      <span className="inline-flex items-center gap-1 text-[11px] font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-2 py-0.5 rounded border border-emerald-200/70 dark:border-emerald-800/70">
-                        <CheckCircle2 size={12} />
-                        {isEn ? "Peer-Reviewed & Verified" : "Đã thẩm định học thuật"}
+                      <span className="text-xs font-mono text-emerald-400 flex items-center gap-1">
+                        <CheckCircle2 size={13} />
+                        Verified Peer-Reviewed Provenance
                       </span>
                     </div>
 
-                    <h2 className="font-serif text-2xl font-bold text-slate-900 dark:text-white">
-                      {activeSpecimen.term}
-                    </h2>
-                    {!isEn && (
-                      <p className="text-sm font-medium text-blue-800 dark:text-blue-300 mt-0.5">
-                        {activeSpecimen.vietnamese}
-                      </p>
-                    )}
+                    <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+                      <h2 className="font-serif text-2xl sm:text-3xl font-bold text-white">
+                        {activeSpecimen.term}
+                      </h2>
+                      {!isEn && (
+                        <span className="text-sm font-medium text-blue-300">
+                          {activeSpecimen.vietnamese}
+                        </span>
+                      )}
+                    </div>
 
-                    {/* Mathematical / Structural Formula Strip */}
-                    <div className="mt-3 px-3.5 py-2 rounded-lg bg-slate-900 dark:bg-slate-950 text-blue-200 font-mono text-xs border border-slate-800 flex items-center justify-between gap-2">
+                    {/* Mathematical Formula / Structural Logic Banner */}
+                    <div className="mt-4 px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 font-mono text-xs sm:text-sm text-blue-300 flex items-center justify-between gap-3 overflow-x-auto">
                       <span>{activeSpecimen.formula}</span>
-                      <span className="text-[10px] text-slate-400 shrink-0">
-                        {isEn ? "Formal Notation" : "Ký hiệu chuẩn"}
+                      <span className="text-[10px] text-slate-400 uppercase tracking-wider shrink-0 font-sans">
+                        Formal Logic
                       </span>
                     </div>
                   </div>
 
-                  {/* Specimen Sub-navigation Tabs */}
-                  <div className="px-5 pt-3 border-b border-slate-200 dark:border-slate-800 flex items-center gap-4 text-xs font-semibold bg-white dark:bg-[#111827]">
+                  {/* Specimen Navigation Tabs */}
+                  <div className="px-6 pt-3 border-b border-slate-800 bg-slate-950/60 flex items-center gap-6 text-xs font-semibold">
                     <button
                       onClick={() => setActiveSpecimenTab("overview")}
-                      className={`pb-2.5 border-b-2 transition cursor-pointer ${
+                      className={`pb-3 border-b-2 transition cursor-pointer flex items-center gap-1.5 ${
                         activeSpecimenTab === "overview"
-                          ? "border-blue-600 text-blue-700 dark:text-blue-400"
-                          : "border-transparent text-slate-500 hover:text-slate-800 dark:hover:text-slate-200"
+                          ? "border-blue-500 text-blue-400"
+                          : "border-transparent text-slate-400 hover:text-white"
                       }`}
                     >
-                      {isEn ? "1. Definition & Debates" : "1. Định nghĩa & Tranh luận"}
+                      <BookOpen size={14} />
+                      <span>{isEn ? "1. Academic Definition & Debates" : "1. Định nghĩa Học thuật & Tranh luận"}</span>
                     </button>
+
                     <button
                       onClick={() => setActiveSpecimenTab("benchmarks")}
-                      className={`pb-2.5 border-b-2 transition cursor-pointer ${
+                      className={`pb-3 border-b-2 transition cursor-pointer flex items-center gap-1.5 ${
                         activeSpecimenTab === "benchmarks"
-                          ? "border-emerald-600 text-emerald-700 dark:text-emerald-400"
-                          : "border-transparent text-slate-500 hover:text-slate-800 dark:hover:text-slate-200"
+                          ? "border-emerald-500 text-emerald-400"
+                          : "border-transparent text-slate-400 hover:text-white"
                       }`}
                     >
-                      {isEn ? "2. Cutoffs & Reviewer Pitfalls" : "2. Ngưỡng chuẩn & Bẫy phản biện"}
+                      <Layers size={14} />
+                      <span>{isEn ? "2. Empirical Cutoffs & Pitfalls" : "2. Ngưỡng Kiểm định & Cạm bẫy Q1"}</span>
                     </button>
+
                     <button
                       onClick={() => setActiveSpecimenTab("citations")}
-                      className={`pb-2.5 border-b-2 transition cursor-pointer ${
+                      className={`pb-3 border-b-2 transition cursor-pointer flex items-center gap-1.5 ${
                         activeSpecimenTab === "citations"
-                          ? "border-amber-600 text-amber-700 dark:text-amber-400"
-                          : "border-transparent text-slate-500 hover:text-slate-800 dark:hover:text-slate-200"
+                          ? "border-amber-500 text-amber-400"
+                          : "border-transparent text-slate-400 hover:text-white"
                       }`}
                     >
-                      {isEn ? "3. APA 7th & BibTeX" : "3. Trích dẫn gốc & BibTeX"}
+                      <FileCode2 size={14} />
+                      <span>{isEn ? "3. Seminal Citation & BibTeX" : "3. Trích dẫn Gốc & BibTeX"}</span>
                     </button>
                   </div>
 
-                  {/* Specimen Tab Content */}
-                  <div className="p-5 sm:p-6 space-y-4 min-h-[250px] flex flex-col justify-between">
+                  {/* Specimen Tab Body */}
+                  <div className="p-6 space-y-4 min-h-[300px]">
                     {activeSpecimenTab === "overview" && (
                       <div className="space-y-4">
-                        <div>
-                          <div className="text-xs font-bold text-slate-500 dark:text-slate-400 mb-1 flex items-center gap-1.5">
-                            <BookOpen size={13} className="text-blue-600" />
-                            <span>{isEn ? "Core Scholarly Definition" : "Định nghĩa Học thuật Cốt lõi"}</span>
+                        <div className="p-4 rounded-xl bg-slate-950/70 border border-slate-800/80">
+                          <div className="text-xs font-mono text-blue-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                            <BookOpen size={13} />
+                            <span>{isEn ? "Scholarly Core Definition" : "Định nghĩa Cốt lõi"}</span>
                           </div>
-                          <p className="text-sm text-slate-700 dark:text-slate-200 leading-relaxed">
+                          <p className="text-sm text-slate-200 leading-relaxed">
                             {isEn ? activeSpecimen.definitionEn : activeSpecimen.definitionVi}
                           </p>
                         </div>
 
-                        <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200/80 dark:border-slate-800">
-                          <div className="text-xs font-bold text-slate-700 dark:text-slate-300 mb-1 flex items-center gap-1.5">
-                            <Scale size={13} className="text-indigo-600 dark:text-indigo-400" />
-                            <span>{isEn ? "Paradigm & Methodological Debate" : "Tranh luận Hệ hình & Phương pháp luận"}</span>
+                        <div className="p-4 rounded-xl bg-indigo-950/20 border border-indigo-900/40">
+                          <div className="text-xs font-mono text-indigo-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                            <Scale size={13} />
+                            <span>{isEn ? "Methodological & Paradigm Debate" : "Tranh luận Phương pháp luận & Hệ hình"}</span>
                           </div>
-                          <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                             {isEn ? activeSpecimen.debateEn : activeSpecimen.debateVi}
                           </p>
                         </div>
@@ -703,23 +740,23 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
                     )}
 
                     {activeSpecimenTab === "benchmarks" && (
-                      <div className="space-y-3.5">
-                        <div className="p-3.5 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-200/80 dark:border-emerald-800/70">
-                          <div className="text-xs font-bold text-emerald-800 dark:text-emerald-300 mb-1 flex items-center gap-1.5">
-                            <Layers size={13} />
-                            <span>{isEn ? "Empirical Benchmarks & Cutoffs" : "Ngưỡng Tham chiếu & Tiêu chuẩn Kiểm định"}</span>
+                      <div className="space-y-4">
+                        <div className="p-4 rounded-xl bg-emerald-950/20 border border-emerald-900/40">
+                          <div className="text-xs font-mono text-emerald-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                            <CheckCircle2 size={13} />
+                            <span>{isEn ? "Empirical Evaluation Benchmarks" : "Ngưỡng Thẩm định Thực nghiệm"}</span>
                           </div>
-                          <p className="text-xs text-emerald-950 dark:text-emerald-100 leading-relaxed">
+                          <p className="text-xs sm:text-sm text-emerald-100 leading-relaxed">
                             {isEn ? activeSpecimen.benchmarkEn : activeSpecimen.benchmarkVi}
                           </p>
                         </div>
 
-                        <div className="p-3.5 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200/80 dark:border-amber-800/70">
-                          <div className="text-xs font-bold text-amber-800 dark:text-amber-300 mb-1 flex items-center gap-1.5">
+                        <div className="p-4 rounded-xl bg-amber-950/20 border border-amber-900/40">
+                          <div className="text-xs font-mono text-amber-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                             <AlertTriangle size={13} />
-                            <span>{isEn ? "Common Reviewer Rejection Pitfalls" : "Cạm bẫy Phản biện Q1 Thường gặp"}</span>
+                            <span>{isEn ? "Reviewer Pitfall & Rejection Triggers" : "Cạm bẫy Bị Phản biện Bác bỏ (Desk Reject)"}</span>
                           </div>
-                          <p className="text-xs text-amber-950 dark:text-amber-100 leading-relaxed">
+                          <p className="text-xs sm:text-sm text-amber-100 leading-relaxed">
                             {isEn ? activeSpecimen.pitfallEn : activeSpecimen.pitfallVi}
                           </p>
                         </div>
@@ -727,55 +764,55 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
                     )}
 
                     {activeSpecimenTab === "citations" && (
-                      <div className="space-y-3.5">
-                        <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-                          <div className="flex items-center justify-between mb-1">
-                            <span className="text-xs font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
-                              <Quote size={12} className="text-blue-600" />
+                      <div className="space-y-4">
+                        <div className="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+                          <div className="flex items-center justify-between mb-2">
+                            <span className="text-xs font-mono text-slate-400 flex items-center gap-1.5">
+                              <Quote size={13} className="text-blue-400" />
                               APA 7th Edition Reference
                             </span>
                             <button
                               onClick={() => handleCopySpecimenCite("apa", activeSpecimen.apaReference)}
-                              className="text-[11px] font-medium text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 cursor-pointer"
+                              className="text-xs font-medium text-blue-400 hover:text-blue-300 flex items-center gap-1 cursor-pointer"
                             >
-                              {copiedCite === "apa" ? <Check size={12} /> : <Copy size={12} />}
+                              {copiedCite === "apa" ? <Check size={13} /> : <Copy size={13} />}
                               <span>{copiedCite === "apa" ? (isEn ? "Copied" : "Đã chép") : (isEn ? "Copy APA" : "Chép APA")}</span>
                             </button>
                           </div>
-                          <p className="text-xs text-slate-600 dark:text-slate-300 font-serif italic leading-relaxed">
+                          <p className="text-xs sm:text-sm text-slate-300 font-serif italic leading-relaxed">
                             {activeSpecimen.apaReference}
                           </p>
                         </div>
 
-                        <div className="p-3 rounded-xl bg-slate-900 text-slate-200 border border-slate-800">
-                          <div className="flex items-center justify-between mb-1">
-                            <span className="text-[11px] font-mono text-slate-400">BibTeX Record (.bib)</span>
+                        <div className="p-4 rounded-xl bg-slate-950 border border-slate-800">
+                          <div className="flex items-center justify-between mb-2">
+                            <span className="text-xs font-mono text-slate-400">BibTeX Citation Record (.bib)</span>
                             <button
                               onClick={() => handleCopySpecimenCite("bibtex", activeSpecimen.bibtex)}
-                              className="text-[11px] font-mono text-blue-400 hover:underline flex items-center gap-1 cursor-pointer"
+                              className="text-xs font-mono text-blue-400 hover:text-blue-300 flex items-center gap-1 cursor-pointer"
                             >
-                              {copiedCite === "bibtex" ? <Check size={12} /> : <Copy size={12} />}
+                              {copiedCite === "bibtex" ? <Check size={13} /> : <Copy size={13} />}
                               <span>{copiedCite === "bibtex" ? "Copied" : "Copy BibTeX"}</span>
                             </button>
                           </div>
-                          <pre className="text-[11px] font-mono text-slate-300 overflow-x-auto leading-snug">
+                          <pre className="text-xs font-mono text-slate-300 overflow-x-auto leading-relaxed">
                             {activeSpecimen.bibtex}
                           </pre>
                         </div>
                       </div>
                     )}
 
-                    {/* Footer inside Specimen Card */}
-                    <div className="pt-3 border-t border-slate-200/80 dark:border-slate-800 flex items-center justify-between text-xs">
-                      <span className="text-slate-500 dark:text-slate-400 truncate max-w-[65%]">
-                        {isEn ? "Foundational:" : "Nguồn gốc:"} {activeSpecimen.seminalCitation}
+                    {/* Specimen Action Bar */}
+                    <div className="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3 text-xs">
+                      <span className="text-slate-400 font-mono">
+                        Primary Source: <span className="text-slate-200">{activeSpecimen.seminalCitation}</span>
                       </span>
                       <Link
                         href={`/?term=${activeSpecimen.id}&lang=${languageMode}`}
-                        className="font-semibold text-blue-700 dark:text-blue-400 hover:underline flex items-center gap-1 shrink-0"
+                        className="px-4 py-2 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-400 hover:text-blue-300 border border-blue-500/40 font-semibold transition flex items-center gap-1.5"
                       >
-                        <span>{isEn ? "Inspect full entry" : "Xem trọn bộ mục từ"}</span>
-                        <ArrowRight size={13} />
+                        <span>{isEn ? "Examine in Dictionary Workspace" : "Mở toàn cảnh trong Từ điển"}</span>
+                        <ArrowRight size={14} />
                       </Link>
                     </div>
                   </div>
@@ -785,127 +822,26 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
           </div>
         </section>
 
-        {/* 3. ACADEMIC PROVENANCE & CITATION INTEGRITY GUARANTEES */}
-        <section id="integrity" className="py-14 lg:py-20 border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0D1322]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mb-10">
-              <div className="text-xs font-mono text-blue-700 dark:text-blue-400 mb-2">
-                {isEn ? "SCHOLARLY PROVENANCE & RIGOR" : "CAM KẾT TÍNH CHÍNH XÁC & NGUỒN GỐC HỌC THUẬT"}
-              </div>
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
-                {isEn
-                  ? "Why researchers trust this lexicon over generic AI summaries"
-                  : "Vì sao giới nghiên cứu tin cậy hệ thống này thay vì bản dịch tự động?"}
-              </h2>
-              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
-                {isEn
-                  ? "Every methodological definition, statistical cutoff, and bibliographic citation undergoes strict verification against seminal methodological works and Q1 journal standards."
-                  : "Trong nghiên cứu khoa học, việc dịch sai một thuật ngữ triết học hay áp dụng nhầm một ngưỡng kiểm định cũ có thể dẫn đến quyết định từ chối bài báo (Desk/Reviewer Rejection). Từ điển được kiểm định nghiêm ngặt trên 4 trụ cột:"}
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="p-6 rounded-xl bg-[#F8FAFC] dark:bg-slate-900/90 border border-slate-200/90 dark:border-slate-800 flex flex-col justify-between">
-                <div>
-                  <div className="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-400 flex items-center justify-center mb-4">
-                    <BookMarked size={20} />
-                  </div>
-                  <h3 className="font-serif font-bold text-lg text-slate-900 dark:text-white mb-2">
-                    {isEn ? "100% Verified Seminal Sources" : "100% Truy nguyên Công trình Gốc"}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                    {isEn
-                      ? "Every entry traces directly to its founding methodological paper or monograph (e.g., Cronbach & Meehl, 1955; Campbell & Stanley, 1963; Pearl, 2009; Hair et al., 2022) with verified DOIs—zero fabricated references."
-                      : "Mỗi khái niệm đều gắn trực tiếp với công trình khai sinh gốc (Cronbach & Meehl, 1955; Shadish, Cook, & Campbell, 2002; Pearl, 2009; Hair et al., 2022; Hayes, 2022) kèm mã DOI xác thực — tuyệt đối không có nguồn trích dẫn bịa đặt."}
-                  </p>
-                </div>
-                <div className="mt-4 pt-3 border-t border-slate-200/70 dark:border-slate-800 text-[11px] font-mono text-blue-700 dark:text-blue-400">
-                  APA 7th · BibTeX · RIS · EndNote
-                </div>
-              </div>
-
-              <div className="p-6 rounded-xl bg-[#F8FAFC] dark:bg-slate-900/90 border border-slate-200/90 dark:border-slate-800 flex flex-col justify-between">
-                <div>
-                  <div className="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-400 flex items-center justify-center mb-4">
-                    <Layers size={20} />
-                  </div>
-                  <h3 className="font-serif font-bold text-lg text-slate-900 dark:text-white mb-2">
-                    {isEn ? "Updated Q1 Statistical Cutoffs" : "Cập nhật Ngưỡng Thống kê Thế hệ mới"}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                    {isEn
-                      ? "Distinguishes classic rules of thumb from modern Q1 standards: tF critical value F ≥ 104.7 (Lee et al., 2022), HTMT one-sided CI (Franke & Sarstedt, 2019), PLSpredict (Shmueli et al., 2019), and PRISMA 2020."
-                      : "Phân biệt rõ ngưỡng kinh điển và chuẩn mực Q1 mới nhất: kiểm định tF (F ≥ 104.7 - Lee et al., 2022), khoảng tin cậy một phía HTMT (Franke & Sarstedt, 2019), PLSpredict (Shmueli et al., 2019), R-hat < 1.01 (Vehtari et al., 2021) và PRISMA 2020."}
-                  </p>
-                </div>
-                <div className="mt-4 pt-3 border-t border-slate-200/70 dark:border-slate-800 text-[11px] font-mono text-emerald-700 dark:text-emerald-400">
-                  Empirical Cutoffs & Decision Rules
-                </div>
-              </div>
-
-              <div className="p-6 rounded-xl bg-[#F8FAFC] dark:bg-slate-900/90 border border-slate-200/90 dark:border-slate-800 flex flex-col justify-between">
-                <div>
-                  <div className="w-10 h-10 rounded-lg bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-400 flex items-center justify-center mb-4">
-                    <AlertTriangle size={20} />
-                  </div>
-                  <h3 className="font-serif font-bold text-lg text-slate-900 dark:text-white mb-2">
-                    {isEn ? "Explicit Reviewer Pitfall Warnings" : "Cảnh báo Bẫy Sai lầm khi Phản biện"}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                    {isEn
-                      ? "Highlights methodological errors that trigger desk rejections: overcontrolling mediators in DAGs, misusing Heckman 2-step for general endogeneity (Certo et al., 2016), or relying solely on Harman's single-factor test."
-                      : "Chỉ rõ các lỗi phương pháp khiến bài báo bị bác bỏ: kiểm soát nhầm biến trung gian khi ước lượng tác động toàn phần, dùng sai mô hình Heckman cho nội sinh tổng quát (Certo et al., 2016), hay chỉ chạy Harman test cho CMB."}
-                  </p>
-                </div>
-                <div className="mt-4 pt-3 border-t border-slate-200/70 dark:border-slate-800 text-[11px] font-mono text-amber-700 dark:text-amber-400">
-                  Q1 Desk-Reject Prevention
-                </div>
-              </div>
-
-              <div className="p-6 rounded-xl bg-[#F8FAFC] dark:bg-slate-900/90 border border-slate-200/90 dark:border-slate-800 flex flex-col justify-between">
-                <div>
-                  <div className="w-10 h-10 rounded-lg bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-400 flex items-center justify-center mb-4">
-                    <Globe size={20} />
-                  </div>
-                  <h3 className="font-serif font-bold text-lg text-slate-900 dark:text-white mb-2">
-                    {isEn ? "Dual-Edition Language Architecture" : "Chuẩn hóa Dịch thuật Học thuật"}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                    {isEn
-                      ? "Switch seamlessly between the Bilingual Vietnamese–English Edition (for doctoral dissertations in Vietnam) and the 100% Monolingual Academic English Edition (for international manuscript preparation)."
-                      : "Chuyển đổi tức thì giữa Ấn bản Song ngữ Anh – Việt (chuẩn hóa các thuật ngữ dễ dịch sai như Scientific Realism, Abduction, Donor Pool, Coarsened Exact Matching) và Ấn bản Tiếng Anh Học thuật thuần túy."}
-                  </p>
-                </div>
-                <div className="mt-4 pt-3 border-t border-slate-200/70 dark:border-slate-800 text-[11px] font-mono text-indigo-700 dark:text-indigo-400">
-                  Bilingual VI–EN & Monolingual EN
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 4. DOMAIN ATLAS: 6 CORE METHODOLOGICAL CLUSTERS */}
-        <section id="atlas" className="py-14 lg:py-20 border-b border-slate-200 dark:border-slate-800 bg-[#F8FAFC] dark:bg-[#090D16]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* 3. METHODOLOGICAL TAXONOMY ATLAS (Full-width grid) */}
+        <section id="taxonomy" className="px-4 sm:px-8 xl:px-12 py-16 border-b border-slate-800/80 bg-[#0A0F1D]">
+          <div className="w-full max-w-[1720px] mx-auto">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
               <div>
-                <div className="text-xs font-mono text-blue-700 dark:text-blue-400 mb-2">
-                  {isEn ? "METHODOLOGICAL TAXONOMY" : "BẢN ĐỒ PHÂN KHU PHƯƠNG PHÁP LUẬN"}
-                </div>
-                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
-                  {isEn
-                    ? "Explore the lexicon across major research traditions"
-                    : "Khám phá kho thuật ngữ theo từng trường phái nghiên cứu"}
+                <span className="text-xs font-mono text-blue-400 uppercase tracking-widest block mb-2">
+                  Systematic Methodological Classification
+                </span>
+                <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
+                  {isEn ? "Domain Atlas of Research Traditions" : "Bản đồ 6 Phân khu Phương pháp luận Nghiên cứu"}
                 </h2>
               </div>
               <Link
                 href={`/?lang=${languageMode}`}
-                className="text-xs sm:text-sm font-semibold text-blue-700 dark:text-blue-400 hover:underline flex items-center gap-1.5"
+                className="text-sm font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1.5"
               >
                 <span>
                   {isEn
-                    ? `Browse all ${stats.termsCount.toLocaleString("en-US")} entries & ${stats.acronymsCount.toLocaleString("en-US")} acronyms`
-                    : `Xem toàn bộ ${stats.termsCount.toLocaleString("vi-VN")} thuật ngữ & ${stats.acronymsCount.toLocaleString("vi-VN")} từ viết tắt`}
+                    ? `Explore all ${stats.termsCount.toLocaleString("en-US")} terms & ${stats.acronymsCount.toLocaleString("en-US")} acronyms`
+                    : `Khám phá toàn bộ ${stats.termsCount.toLocaleString("vi-VN")} thuật ngữ & ${stats.acronymsCount.toLocaleString("vi-VN")} từ viết tắt`}
                 </span>
                 <ArrowRight size={15} />
               </Link>
@@ -915,33 +851,33 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
               {DOMAIN_ATLAS.map((cluster) => (
                 <div
                   key={cluster.code}
-                  className="p-6 rounded-xl bg-white dark:bg-[#111827] border border-slate-200/90 dark:border-slate-800 shadow-2xs hover:border-blue-500/70 transition flex flex-col justify-between"
+                  className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between"
                 >
                   <div>
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="font-mono text-xs font-bold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-md bg-slate-800 text-blue-300 border border-slate-700">
                         CLUSTER {cluster.code}
                       </span>
-                      <Compass size={16} className="text-blue-600 dark:text-blue-400" />
+                      <Compass size={18} className="text-blue-400" />
                     </div>
-                    <h3 className="font-serif font-bold text-lg text-slate-900 dark:text-white mb-1.5">
+                    <h3 className="font-serif font-bold text-xl text-white mb-2">
                       {isEn ? cluster.titleEn : cluster.titleVi}
                     </h3>
-                    <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                    <p className="text-xs sm:text-sm text-slate-400 leading-relaxed mb-6">
                       {isEn ? cluster.descEn : cluster.descVi}
                     </p>
                   </div>
 
-                  <div className="pt-3 border-t border-slate-100 dark:border-slate-800/80">
-                    <div className="text-[11px] font-medium text-slate-400 mb-2">
-                      {isEn ? "Representative terms:" : "Thuật ngữ tiêu biểu:"}
+                  <div className="pt-4 border-t border-slate-800/80">
+                    <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-2.5">
+                      {isEn ? "Representative Concepts:" : "Khái niệm tiêu biểu:"}
                     </div>
-                    <div className="flex flex-wrap gap-1.5">
+                    <div className="flex flex-wrap gap-2">
                       {cluster.terms.map((tItem) => (
                         <Link
                           key={tItem.id}
                           href={`/?term=${tItem.id}&lang=${languageMode}`}
-                          className="px-2 py-1 rounded text-xs font-medium bg-slate-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 hover:bg-blue-50 dark:hover:bg-blue-950/60 hover:text-blue-700 dark:hover:text-blue-300 border border-slate-200/80 dark:border-slate-700 transition"
+                          className="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-950 text-slate-300 hover:text-blue-300 hover:bg-blue-950/40 border border-slate-800 transition"
                         >
                           {tItem.label}
                         </Link>
@@ -954,152 +890,153 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
           </div>
         </section>
 
-        {/* 5. BUILT FOR RESEARCHERS AT EVERY STAGE */}
-        <section id="audiences" className="py-14 lg:py-20 border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0D1322]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mb-10">
-              <div className="text-xs font-mono text-blue-700 dark:text-blue-400 mb-2">
-                {isEn ? "RESEARCH WORKFLOW INTEGRATION" : "ỨNG DỤNG TRONG QUY TRÌNH NGHIÊN CỨU KHOA HỌC"}
-              </div>
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
-                {isEn
-                  ? "Designed for every stage of scholarly production"
-                  : "Đồng hành cùng nhà nghiên cứu ở mọi giai đoạn học thuật"}
+        {/* 4. SCHOLARLY INTEGRITY & Q1 STANDARDS (Full-width grid) */}
+        <section id="rigor" className="px-4 sm:px-8 xl:px-12 py-16 border-b border-slate-800/80 bg-[#070B14]">
+          <div className="w-full max-w-[1720px] mx-auto">
+            <div className="max-w-3xl mb-12">
+              <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest block mb-2">
+                Scholarly Rigor & Provenance
+              </span>
+              <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
+                {isEn ? "Guarantees that set this lexicon apart" : "4 Trụ cột Thẩm định Học thuật Nghiêm cẩn"}
               </h2>
+              <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
+                {isEn
+                  ? "Every definition, cutoff, and citation is audited against primary sources to prevent AI hallucinations and textbook inaccuracies."
+                  : "Mọi mục từ đều được đối chiếu trực tiếp với bài báo sáng lập gốc nhằm ngăn ngừa các lỗi sai khái niệm, định kiến dịch thuật và nguồn trích dẫn bịa đặt."}
+              </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 rounded-xl bg-[#F8FAFC] dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-                <div className="flex items-center gap-2.5 mb-3">
-                  <GraduationCap size={20} className="text-blue-700 dark:text-blue-400" />
-                  <h3 className="font-serif font-bold text-lg text-slate-900 dark:text-white">
-                    {isEn ? "Doctoral & Master's Candidates" : "Nghiên cứu sinh & Học viên Cao học"}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-blue-950 border border-blue-800/60 text-blue-400 flex items-center justify-center mb-5">
+                    <BookMarked size={22} />
+                  </div>
+                  <h3 className="font-serif font-bold text-lg text-white mb-2">
+                    {isEn ? "100% Verified Seminal Citations" : "100% Truy nguyên Nguồn gốc Gốc"}
                   </h3>
+                  <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                    {isEn
+                      ? "Direct attribution to founding works (Cronbach & Meehl, Campbell & Stanley, Pearl, Hair, Hayes) with verified DOIs."
+                      : "Gắn liền với công trình khai sinh (Cronbach & Meehl, 1955; Pearl, 2009; Hair et al., 2022; Hayes, 2022) kèm DOI hợp lệ."}
+                  </p>
                 </div>
-                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
-                  {isEn
-                    ? "Draft your Methodology chapter with accurate bilingual terminology, justify your sampling and estimation choices, and prepare for dissertation defense questions on model assumptions."
-                    : "Chuẩn hóa thuật ngữ khi viết Chương Phương pháp Nghiên cứu của luận án/luận văn; nắm vững cơ sở lý luận để bảo vệ lựa chọn mô hình trước Hội đồng chấm luận án."}
-                </p>
-                <Link
-                  href={`/?term=construct-validity&lang=${languageMode}`}
-                  className="text-xs font-semibold text-blue-700 dark:text-blue-400 hover:underline inline-flex items-center gap-1"
-                >
-                  <span>{isEn ? "Explore measurement & validity terms" : "Tra cứu nhóm Độ giá trị & Thang đo"}</span>
-                  <ArrowRight size={13} />
-                </Link>
+                <div className="mt-6 pt-4 border-t border-slate-800/80 text-[11px] font-mono text-blue-400">
+                  APA 7th · BibTeX · RIS
+                </div>
               </div>
 
-              <div className="p-6 rounded-xl bg-[#F8FAFC] dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-                <div className="flex items-center gap-2.5 mb-3">
-                  <Database size={20} className="text-emerald-700 dark:text-emerald-400" />
-                  <h3 className="font-serif font-bold text-lg text-slate-900 dark:text-white">
-                    {isEn ? "International Journal Authors (Q1/Q2)" : "Tác giả Bài báo Quốc tế Scopus / WoS"}
+              <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-emerald-950 border border-emerald-800/60 text-emerald-400 flex items-center justify-center mb-5">
+                    <Layers size={22} />
+                  </div>
+                  <h3 className="font-serif font-bold text-lg text-white mb-2">
+                    {isEn ? "Modern Q1 Statistical Cutoffs" : "Cập nhật Tiêu chuẩn Q1 Mới nhất"}
                   </h3>
+                  <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                    {isEn
+                      ? "Modern thresholds: Lee et al. (2022) tF F ≥ 104.7, Franke & Sarstedt (2019) HTMT bootstrap CI, and PRISMA 2020."
+                      : "Ngưỡng kiểm định hiện đại: tF F ≥ 104.7 (Lee et al., 2022), khoảng tin cậy HTMT, PLSpredict, và PRISMA 2020."}
+                  </p>
                 </div>
-                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
-                  {isEn
-                    ? "Switch to the Monolingual Academic English edition to verify contemporary robustness checks, diagnostic reporting standards, and export clean BibTeX/RIS references into LaTeX or Zotero."
-                    : "Chuyển sang chế độ Academic English để rà soát các kiểm định độ vững (robustness checks), chuẩn báo cáo PRISMA 2020 / CONSORT 2025 và xuất trích dẫn BibTeX/RIS trực tiếp vào Zotero, EndNote hoặc Overleaf."}
-                </p>
-                <Link
-                  href="/?term=endogeneity&lang=en"
-                  className="text-xs font-semibold text-emerald-700 dark:text-emerald-400 hover:underline inline-flex items-center gap-1"
-                >
-                  <span>{isEn ? "Launch Academic English Edition" : "Trải nghiệm Ấn bản Tiếng Anh (EN)"}</span>
-                  <ArrowRight size={13} />
-                </Link>
+                <div className="mt-6 pt-4 border-t border-slate-800/80 text-[11px] font-mono text-emerald-400">
+                  Current Empirical Cutoffs
+                </div>
               </div>
 
-              <div className="p-6 rounded-xl bg-[#F8FAFC] dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-                <div className="flex items-center gap-2.5 mb-3">
-                  <GitBranch size={20} className="text-amber-700 dark:text-amber-400" />
-                  <h3 className="font-serif font-bold text-lg text-slate-900 dark:text-white">
-                    {isEn ? "Faculty Advisors & Peer Reviewers" : "Giảng viên Hướng dẫn & Phản biện"}
+              <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-amber-950 border border-amber-800/60 text-amber-400 flex items-center justify-center mb-5">
+                    <AlertTriangle size={22} />
+                  </div>
+                  <h3 className="font-serif font-bold text-lg text-white mb-2">
+                    {isEn ? "Reviewer Pitfall Preventions" : "Cảnh báo Lỗi Phản biện Phổ biến"}
                   </h3>
+                  <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                    {isEn
+                      ? "Identifies critical design flaws: mediator overcontrolling in DAGs, cross-sectional mediation bias, or weak IV instruments."
+                      : "Chỉ rõ các bẫy tử huyệt: kiểm soát nhầm trung gian trong DAGs, thiên lệch trung gian cắt ngang, hay công cụ yếu."}
+                  </p>
                 </div>
-                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
-                  {isEn
-                    ? "Share deep-linked URLs (?term=slug) directly in manuscript review reports or student feedback, and contribute scholarly revisions through the peer-reviewed Wiki governance system."
-                    : "Chia sẻ liên kết sâu (?term=slug) của từng thuật ngữ trực tiếp vào phiếu nhận xét khóa luận/luận án hoặc bản phản biện, đồng thời tham gia đóng góp & hiệu đính mở."}
-                </p>
-                <Link
-                  href="/hall-of-fame"
-                  className="text-xs font-semibold text-amber-700 dark:text-amber-400 hover:underline inline-flex items-center gap-1"
-                >
-                  <span>{isEn ? "View Scholarly Hall of Fame" : "Xem Bảng Vinh danh Học giả"}</span>
-                  <ArrowRight size={13} />
-                </Link>
+                <div className="mt-6 pt-4 border-t border-slate-800/80 text-[11px] font-mono text-amber-400">
+                  Desk-Reject Defense
+                </div>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-indigo-950 border border-indigo-800/60 text-indigo-400 flex items-center justify-center mb-5">
+                    <Globe size={22} />
+                  </div>
+                  <h3 className="font-serif font-bold text-lg text-white mb-2">
+                    {isEn ? "Bilingual & Monolingual Editions" : "Chuẩn hóa Thuật ngữ Song ngữ"}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                    {isEn
+                      ? "Switch seamlessly between the Bilingual Vietnamese–English Edition and the pure Monolingual Academic English Edition."
+                      : "Chuyển đổi linh hoạt giữa Ấn bản Song ngữ Anh – Việt và Ấn bản Tiếng Anh Học thuật chuyên biệt cho bài báo quốc tế."}
+                  </p>
+                </div>
+                <div className="mt-6 pt-4 border-t border-slate-800/80 text-[11px] font-mono text-indigo-400">
+                  Bilingual VI–EN & Monolingual EN
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 6. FOOTER & FINAL CALL TO ACTION */}
-        <footer className="py-12 bg-slate-900 dark:bg-slate-950 text-slate-300">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 pb-8 border-b border-slate-800">
-              <div>
-                <h2 className="font-serif text-xl sm:text-2xl font-bold text-white">
-                  {isEn
-                    ? "Ready to explore the complete Research Methodology Lexicon?"
-                    : "Sẵn sàng tra cứu toàn bộ Từ điển Phương pháp Nghiên cứu Khoa học?"}
-                </h2>
-                <p className="text-xs sm:text-sm text-slate-400 mt-1">
-                  {isEn
-                    ? `Instant full-text search across ${stats.termsCount.toLocaleString("en-US")} methodology terms and ${stats.acronymsCount.toLocaleString("en-US")} statistical acronyms—free and open for the scholarly community.`
-                    : `Tra cứu toàn văn tức thì (Ctrl + K) trên ${stats.termsCount.toLocaleString("vi-VN")} thuật ngữ và ${stats.acronymsCount.toLocaleString("vi-VN")} từ viết tắt — hoàn toàn mở và miễn phí cho cộng đồng học thuật.`}
-                </p>
-              </div>
-              <div className="flex flex-wrap items-center gap-3">
-                <Link
-                  href={`/?lang=${languageMode}`}
-                  className="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs sm:text-sm font-semibold transition flex items-center gap-2 shadow-sm"
-                >
-                  <BookOpen size={16} />
-                  <span>{isEn ? "Enter Dictionary Workspace" : "Mở Không gian Tra cứu Từ điển"}</span>
-                  <ArrowRight size={15} />
-                </Link>
-                <Link
-                  href="/hall-of-fame"
-                  className="px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs sm:text-sm font-medium transition flex items-center gap-1.5 border border-slate-700"
-                >
-                  <Award size={15} className="text-amber-400" />
-                  <span>{isEn ? "Scholarly Hall of Fame" : "Bảng Vinh danh Học giả"}</span>
-                </Link>
-              </div>
+        {/* 5. FULL-WIDTH CALL TO ACTION FOOTER */}
+        <footer className="px-4 sm:px-8 xl:px-12 py-12 bg-slate-950 text-slate-400 border-t border-slate-800">
+          <div className="w-full max-w-[1720px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
+            <div>
+              <h3 className="font-serif text-xl sm:text-2xl font-bold text-white">
+                {isEn ? "Ready to dive into the full Lexicon?" : "Sẵn sàng tra cứu toàn bộ Từ điển?"}
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-400 mt-1">
+                {isEn
+                  ? `Full-text search across ${stats.termsCount.toLocaleString("en-US")} terms and ${stats.acronymsCount.toLocaleString("en-US")} acronyms.`
+                  : `Tra cứu toàn văn trên ${stats.termsCount.toLocaleString("vi-VN")} thuật ngữ và ${stats.acronymsCount.toLocaleString("vi-VN")} từ viết tắt.`}
+              </p>
             </div>
 
-            <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-              <div>
-                © {new Date().getFullYear()} Research Methodology Lexicon ·{" "}
-                <a
-                  href="https://vnresearch-dictionary.vercel.app"
-                  className="text-slate-300 hover:underline"
-                >
-                  vnresearch-dictionary.vercel.app
-                </a>
-              </div>
-              <div className="flex items-center gap-5">
-                <Link href="/" className="hover:text-white transition">
-                  {isEn ? "Dictionary (/)" : "Từ điển (/)"}
-                </Link>
-                <Link href="/home" className="hover:text-white transition">
-                  {isEn ? "Overview (/home)" : "Trang chủ (/home)"}
-                </Link>
-                <Link href="/gioi-thieu" className="hover:text-white transition">
-                  {isEn ? "Introduction (/gioi-thieu)" : "Giới thiệu (/gioi-thieu)"}
-                </Link>
-                <Link href="/hall-of-fame" className="hover:text-white transition">
-                  {isEn ? "Hall of Fame" : "Vinh danh"}
-                </Link>
-                <Link href="/my-contributions" className="hover:text-white transition">
-                  {isEn ? "Contributions" : "Hồ sơ Đóng góp"}
-                </Link>
-              </div>
+            <div className="flex flex-wrap items-center gap-3">
+              <Link
+                href={`/?lang=${languageMode}`}
+                className="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition flex items-center gap-2 shadow-lg shadow-blue-900/40"
+              >
+                <BookOpen size={16} />
+                <span>{isEn ? "Enter Dictionary Workspace" : "Mở Không gian Tra cứu"}</span>
+                <ArrowRight size={16} />
+              </Link>
+              <Link
+                href="/hall-of-fame"
+                className="px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 text-sm font-medium transition flex items-center gap-2"
+              >
+                <Trophy size={16} className="text-amber-400" />
+                <span>{isEn ? "Hall of Fame" : "Bảng Vinh danh"}</span>
+              </Link>
+            </div>
+          </div>
+
+          <div className="w-full max-w-[1720px] mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+            <div>
+              © {new Date().getFullYear()} Research Methodology Lexicon ·{" "}
+              <a href="https://vnresearch-dictionary.vercel.app" className="text-slate-300 hover:underline">
+                vnresearch-dictionary.vercel.app
+              </a>
+            </div>
+            <div className="flex items-center gap-6">
+              <Link href="/" className="hover:text-white transition">Từ điển (/)</Link>
+              <Link href="/home" className="hover:text-white transition">Trang chủ (/home)</Link>
+              <Link href="/gioi-thieu" className="hover:text-white transition">Giới thiệu (/gioi-thieu)</Link>
+              <Link href="/hall-of-fame" className="hover:text-white transition">Vinh danh Học giả</Link>
+              <Link href="/my-contributions" className="hover:text-white transition">Đóng góp của tôi</Link>
             </div>
           </div>
         </footer>
+
       </div>
     </div>
   );
