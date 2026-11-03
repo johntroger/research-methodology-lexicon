@@ -722,13 +722,25 @@ export default function DictionaryApp({
         <header className="no-print h-14 border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur sticky top-0 z-40 px-3 sm:px-4 flex items-center justify-between gap-2">
           {/* Logo & Tên từ điển & Nút chuyển đổi Song ngữ / Tiếng Anh thời gian thực */}
           <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
-            <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-base sm:text-lg shadow-sm shrink-0">
+            <Link
+              href="/home"
+              className="w-8 h-8 rounded-lg bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center font-bold text-base sm:text-lg shadow-sm shrink-0 transition"
+              title={languageMode === "en" ? "Overview & Introduction (/home)" : "Trang chủ Giới thiệu Từ điển (/home)"}
+            >
               R
-            </div>
+            </Link>
             <div className="min-w-0 flex items-center gap-2">
               <h1 className="font-bold text-xs sm:text-sm md:text-base tracking-tight text-slate-900 dark:text-white truncate">
                 {t.app_title}
               </h1>
+              <Link
+                href="/home"
+                className="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-semibold bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200/80 dark:border-blue-800 hover:bg-blue-100 dark:hover:bg-blue-900/60 transition shrink-0"
+                title={languageMode === "en" ? "About the Research Methodology Lexicon (/home)" : "Trang chủ Giới thiệu về Từ điển (/home)"}
+              >
+                <BookOpen size={11} />
+                <span>{languageMode === "en" ? "About" : "Giới thiệu"}</span>
+              </Link>
             </div>
           </div>
 
@@ -740,7 +752,7 @@ export default function DictionaryApp({
           >
             <Search size={13} className="text-blue-600 dark:text-blue-400" />
             <span className="text-slate-400 text-xs font-normal">
-              {languageMode === "en" ? "Search 1,874 terms & acronyms..." : "Tra cứu 1,874 thuật ngữ & viết tắt..."}
+              {languageMode === "en" ? "Search 1,872 terms & acronyms..." : "Tra cứu 1,872 thuật ngữ & viết tắt..."}
             </span>
             <kbd className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 font-bold text-slate-600 dark:text-slate-300">
               Ctrl K
