@@ -405,10 +405,10 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
 
   return (
     <div className={isDarkMode ? "dark w-full min-h-screen" : "w-full min-h-screen"}>
-      <div className="w-full min-h-screen bg-[#070B14] text-slate-100 selection:bg-blue-600 selection:text-white">
+      <div className="w-full min-h-screen bg-slate-50 dark:bg-[#070B14] text-slate-900 dark:text-slate-100 selection:bg-blue-600 selection:text-white transition-colors duration-200">
         
         {/* 1. TOP EDITORIAL MASTHEAD (Full-width edge-to-edge) */}
-        <header className="sticky top-0 z-50 border-b border-slate-800/80 bg-[#070B14]/90 backdrop-blur-md px-4 sm:px-8 xl:px-12 h-16 flex items-center justify-between gap-4">
+        <header className="sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800/80 bg-white/90 dark:bg-[#070B14]/90 backdrop-blur-md px-4 sm:px-8 xl:px-12 h-16 flex items-center justify-between gap-4">
           <div className="flex items-center gap-4">
             <Link
               href="/"
@@ -419,42 +419,42 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
                 R
               </div>
               <div>
-                <span className="text-[10px] font-mono tracking-widest text-blue-400 block uppercase">
+                <span className="text-[10px] font-mono tracking-widest text-blue-600 dark:text-blue-400 block uppercase">
                   Research Methodology Lexicon
                 </span>
-                <span className="font-serif font-bold text-base sm:text-lg text-white tracking-tight">
+                <span className="font-serif font-bold text-base sm:text-lg text-slate-900 dark:text-white tracking-tight">
                   {isEn ? "Scholarly Reference System" : "Từ điển Phương pháp Nghiên cứu"}
                 </span>
               </div>
             </Link>
           </div>
 
-          <nav className="hidden lg:flex items-center gap-8 text-xs font-medium text-slate-300">
-            <a href="#workbench" className="hover:text-blue-400 transition flex items-center gap-1.5">
-              <Terminal size={14} className="text-blue-400" />
+          <nav className="hidden lg:flex items-center gap-8 text-xs font-medium text-slate-600 dark:text-slate-300">
+            <a href="#workbench" className="hover:text-blue-600 dark:hover:text-blue-400 transition flex items-center gap-1.5">
+              <Terminal size={14} className="text-blue-600 dark:text-blue-400" />
               <span>{isEn ? "Live Specimen Workbench" : "Khung Thực nghiệm Mục từ"}</span>
             </a>
-            <a href="#taxonomy" className="hover:text-blue-400 transition flex items-center gap-1.5">
-              <Compass size={14} className="text-indigo-400" />
+            <a href="#taxonomy" className="hover:text-blue-600 dark:hover:text-blue-400 transition flex items-center gap-1.5">
+              <Compass size={14} className="text-indigo-600 dark:text-indigo-400" />
               <span>{isEn ? "Methodological Atlas" : "Hệ Phân loại Nghiên cứu"}</span>
             </a>
-            <a href="#rigor" className="hover:text-blue-400 transition flex items-center gap-1.5">
-              <ShieldCheck size={14} className="text-emerald-400" />
+            <a href="#rigor" className="hover:text-blue-600 dark:hover:text-blue-400 transition flex items-center gap-1.5">
+              <ShieldCheck size={14} className="text-emerald-600 dark:text-emerald-400" />
               <span>{isEn ? "Q1 Reviewer Standards" : "Chuẩn Thẩm định Q1"}</span>
             </a>
-            <Link href="/hall-of-fame" className="hover:text-amber-400 transition flex items-center gap-1.5 text-amber-300">
-              <Trophy size={14} className="text-amber-400" />
+            <Link href="/hall-of-fame" className="hover:text-amber-600 dark:hover:text-amber-400 transition flex items-center gap-1.5 text-amber-700 dark:text-amber-300">
+              <Trophy size={14} className="text-amber-500" />
               <span>{isEn ? "Hall of Fame" : "Vinh danh Học giả"}</span>
             </Link>
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2.5 sm:gap-3">
             {/* Language Switcher */}
-            <div className="flex items-center rounded-lg border border-slate-800 p-0.5 bg-slate-900/80 text-xs font-semibold">
+            <div className="flex items-center rounded-lg border border-slate-200 dark:border-slate-800 p-0.5 bg-slate-100 dark:bg-slate-900/80 text-xs font-semibold">
               <button
                 onClick={() => handleToggleLanguage("vi")}
-                className={`px-3 py-1 rounded-md transition flex items-center gap-1.5 cursor-pointer ${
-                  !isEn ? "bg-blue-600 text-white shadow-xs font-bold" : "text-slate-400 hover:text-slate-200"
+                className={`px-2.5 sm:px-3 py-1 rounded-md transition flex items-center gap-1.5 cursor-pointer ${
+                  !isEn ? "bg-white dark:bg-blue-600 text-blue-700 dark:text-white shadow-xs font-bold" : "text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
                 }`}
               >
                 <span>🇻🇳</span>
@@ -462,8 +462,8 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
               </button>
               <button
                 onClick={() => handleToggleLanguage("en")}
-                className={`px-3 py-1 rounded-md transition flex items-center gap-1.5 cursor-pointer ${
-                  isEn ? "bg-blue-600 text-white shadow-xs font-bold" : "text-slate-400 hover:text-slate-200"
+                className={`px-2.5 sm:px-3 py-1 rounded-md transition flex items-center gap-1.5 cursor-pointer ${
+                  isEn ? "bg-blue-600 text-white shadow-xs font-bold" : "text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
                 }`}
               >
                 <Globe size={13} />
@@ -471,9 +471,19 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
               </button>
             </div>
 
+            {/* Dark / Light Mode Toggle Button */}
+            <button
+              onClick={handleToggleTheme}
+              className="p-2 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition cursor-pointer shadow-2xs"
+              title={isDarkMode ? (isEn ? "Switch to Light Mode" : "Chuyển sang Chế độ Sáng") : (isEn ? "Switch to Dark Mode" : "Chuyển sang Chế độ Tối")}
+              aria-label="Toggle theme mode"
+            >
+              {isDarkMode ? <Sun size={16} className="text-amber-400" /> : <Moon size={16} className="text-slate-600" />}
+            </button>
+
             <Link
               href={`/?lang=${languageMode}`}
-              className="px-4 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs sm:text-sm font-semibold transition flex items-center gap-2 shadow-lg shadow-blue-900/40"
+              className="px-3.5 sm:px-4 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs sm:text-sm font-semibold transition flex items-center gap-2 shadow-lg shadow-blue-900/30 shrink-0"
             >
               <span>{isEn ? "Open Dictionary (/)" : "Vào Từ điển (/)"}</span>
               <ArrowRight size={15} />
