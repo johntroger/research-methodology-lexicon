@@ -145,3 +145,16 @@ export function getSearchIndex(): SearchItem[] {
 
   return [...termItems, ...acronymItems];
 }
+
+/**
+ * Lấy số lượng thống kê động (Terms count & Acronyms count)
+ */
+export function getLexiconStats() {
+  const terms = getAllTerms();
+  const acronyms = getAllAcronyms();
+  return {
+    termsCount: terms.length,
+    acronymsCount: Object.keys(acronyms).length,
+    totalCount: terms.length + Object.keys(acronyms).length
+  };
+}

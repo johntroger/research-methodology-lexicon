@@ -89,7 +89,9 @@ export default function CommandPalette({
         id: "action-random",
         type: "action" as const,
         title: languageMode === "en" ? "Random Methodological Term" : "Xem ngẫu nhiên một từ phương pháp luận",
-        subtitle: languageMode === "en" ? "Jump to a random research concept" : "Khám phá ngẫu nhiên 1 trong 1,874 thuật ngữ chuẩn mực",
+        subtitle: languageMode === "en"
+          ? "Jump to a random research concept"
+          : `Khám phá ngẫu nhiên 1 trong ${terms.length.toLocaleString("vi-VN")} thuật ngữ chuẩn mực`,
         icon: Shuffle,
         badge: languageMode === "en" ? "🎲 Explore" : "🎲 Khám phá",
         handler: () => {
@@ -626,7 +628,7 @@ export default function CommandPalette({
           </div>
 
           <div className="font-mono text-[11px] text-slate-400">
-            1,874 {languageMode === "en" ? "Flagship Terms" : "Mục từ Chuẩn mực"}
+            {terms.length.toLocaleString(languageMode === "en" ? "en-US" : "vi-VN")} {languageMode === "en" ? "Flagship Terms" : "Mục từ Chuẩn mực"}
           </div>
         </div>
       </div>

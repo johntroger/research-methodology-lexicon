@@ -290,7 +290,15 @@ const DOMAIN_ATLAS: DomainAtlasItem[] = [
   }
 ];
 
-export default function LandingHomePage() {
+interface LandingHomePageProps {
+  initialStats?: {
+    termsCount: number;
+    acronymsCount: number;
+    totalCount: number;
+  };
+}
+
+export default function LandingHomePage({ initialStats }: LandingHomePageProps) {
   const router = useRouter();
   const [languageMode, setLanguageMode] = useState<"vi" | "en">("vi");
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -298,6 +306,35 @@ export default function LandingHomePage() {
   const [activeSpecimenId, setActiveSpecimenId] = useState<string>(SPECIMEN_TERMS[0].id);
   const [activeSpecimenTab, setActiveSpecimenTab] = useState<"overview" | "benchmarks" | "citations">("overview");
   const [copiedCite, setCopiedCite] = useState<"apa" | "bibtex" | null>(null);
+
+  // Thống kê động (tự động fetch client nếu không truyền SSR)
+  const [stats, setStats] = useState(initialStats || {
+    termsCount: 1872,
+    acronymsCount: 148,
+    totalCount: 2020
+  });
+
+  useEffect(() => {
+    // Nếu chưa có stats hoặc muốn đồng bộ chính xác từ client
+    if (!initialStats && typeof window !== "undefined") {
+      Promise.all([
+        fetch("/data/methodology_terms.json")
+          .then((res) => res.json())
+          .then((data) => data.terms?.length || 1872)
+          .catch(() => 1872),
+        fetch("/data/acronyms.json")
+          .then((res) => res.json())
+          .then((data) => Object.keys(data.acronyms || {}).length || 148)
+          .catch(() => 148)
+      ]).then(([termsLen, acronymsLen]) => {
+        setStats({
+          termsCount: termsLen,
+          acronymsCount: acronymsLen,
+          totalCount: termsLen + acronymsLen
+        });
+      });
+    }
+  }, [initialStats]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -448,8 +485,8 @@ export default function LandingHomePage() {
                   <ShieldCheck size={14} className="text-blue-600 dark:text-blue-400" />
                   <span>
                     {isEn
-                      ? "1,872 Peer-Reviewed Terms · 148 Acronyms · Verified Primary Citations"
-                      : "1.872 Thuật ngữ thẩm định · 148 Từ viết tắt · Chuẩn trích dẫn gốc Q1"}
+                      ? `${stats.termsCount.toLocaleString("en-US")} Peer-Reviewed Terms · ${stats.acronymsCount.toLocaleString("en-US")} Acronyms · Verified Primary Citations`
+                      : `${stats.termsCount.toLocaleString("vi-VN")} Thuật ngữ thẩm định · ${stats.acronymsCount.toLocaleString("vi-VN")} Từ viết tắt · Chuẩn trích dẫn gốc Q1`}
                   </span>
                 </div>
 
@@ -522,7 +559,7 @@ export default function LandingHomePage() {
                 <div className="grid grid-cols-3 gap-4 pt-4 border-t border-slate-200/90 dark:border-slate-800">
                   <div>
                     <div className="font-serif text-2xl sm:text-3xl font-bold text-[#1E3A8A] dark:text-blue-400">
-                      1,872
+                      {stats.termsCount.toLocaleString(isEn ? "en-US" : "vi-VN")}
                     </div>
                     <div className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">
                       {isEn ? "Verified Methodology Terms" : "Thuật ngữ Phương pháp luận"}
@@ -530,7 +567,7 @@ export default function LandingHomePage() {
                   </div>
                   <div>
                     <div className="font-serif text-2xl sm:text-3xl font-bold text-emerald-700 dark:text-emerald-400">
-                      148
+                      {stats.acronymsCount.toLocaleString(isEn ? "en-US" : "vi-VN")}
                     </div>
                     <div className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">
                       {isEn ? "Statistical & SEM Acronyms" : "Từ viết tắt Thống kê & SEM"}
@@ -865,7 +902,11 @@ export default function LandingHomePage() {
                 href={`/?lang=${languageMode}`}
                 className="text-xs sm:text-sm font-semibold text-blue-700 dark:text-blue-400 hover:underline flex items-center gap-1.5"
               >
-                <span>{isEn ? "Browse all 1,872 entries & 148 acronyms" : "Xem toàn bộ 1.872 thuật ngữ & 148 từ viết tắt"}</span>
+                <span>
+                  {isEn
+                    ? `Browse all ${stats.termsCount.toLocaleString("en-US")} entries & ${stats.acronymsCount.toLocaleString("en-US")} acronyms`
+                    : `Xem toàn bộ ${stats.termsCount.toLocaleString("vi-VN")} thuật ngữ & ${stats.acronymsCount.toLocaleString("vi-VN")} từ viết tắt`}
+                </span>
                 <ArrowRight size={15} />
               </Link>
             </div>
@@ -1006,8 +1047,8 @@ export default function LandingHomePage() {
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-400 mt-1">
                   {isEn
-                    ? "Instant full-text search across 1,872 methodology terms and 148 statistical acronyms—free and open for the scholarly community."
-                    : "Tra cứu toàn văn tức thì (Ctrl + K) trên 1.872 thuật ngữ và 148 từ viết tắt — hoàn toàn mở và miễn phí cho cộng đồng học thuật."}
+                    ? `Instant full-text search across ${stats.termsCount.toLocaleString("en-US")} methodology terms and ${stats.acronymsCount.toLocaleString("en-US")} statistical acronyms—free and open for the scholarly community.`
+                    : `Tra cứu toàn văn tức thì (Ctrl + K) trên ${stats.termsCount.toLocaleString("vi-VN")} thuật ngữ và ${stats.acronymsCount.toLocaleString("vi-VN")} từ viết tắt — hoàn toàn mở và miễn phí cho cộng đồng học thuật.`}
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-3">

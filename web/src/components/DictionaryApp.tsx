@@ -752,7 +752,9 @@ export default function DictionaryApp({
           >
             <Search size={13} className="text-blue-600 dark:text-blue-400" />
             <span className="text-slate-400 text-xs font-normal">
-              {languageMode === "en" ? "Search 1,872 terms & acronyms..." : "Tra cứu 1,872 thuật ngữ & viết tắt..."}
+              {languageMode === "en" 
+                ? `Search ${(initialTerms.length + Object.keys(initialAcronyms).length).toLocaleString("en-US")} terms & acronyms...`
+                : `Tra cứu ${(initialTerms.length + Object.keys(initialAcronyms).length).toLocaleString("vi-VN")} thuật ngữ & viết tắt...`}
             </span>
             <kbd className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 font-bold text-slate-600 dark:text-slate-300">
               Ctrl K
