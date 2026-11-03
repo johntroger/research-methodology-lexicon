@@ -160,6 +160,16 @@ export default function DictionaryApp({
       if (savedLang === "en" || savedLang === "vi") {
         setLanguageMode(savedLang);
       }
+
+      const savedTheme = localStorage.getItem("rv_theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const initialDark = savedTheme === "dark" || (!savedTheme && prefersDark);
+      setIsDarkMode(initialDark);
+      if (initialDark) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
     }
 
     const unsubscribe = subscribeToAuth((user) => {
@@ -170,6 +180,19 @@ export default function DictionaryApp({
     });
     return () => unsubscribe();
   }, []);
+
+  const handleToggleTheme = () => {
+    const nextDark = !isDarkMode;
+    setIsDarkMode(nextDark);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("rv_theme", nextDark ? "dark" : "light");
+      if (nextDark) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    }
+  };
 
   const handleToggleLanguage = (mode: "vi" | "en") => {
     setLanguageMode(mode);
@@ -822,8 +845,8 @@ export default function DictionaryApp({
 
             {/* Chế độ Sáng / Tối */}
             <button
-              onClick={() => setIsDarkMode(!isDarkMode)}
-              className="p-1.5 sm:p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+              onClick={handleToggleTheme}
+              className="p-1.5 sm:p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition cursor-pointer"
               title={isDarkMode ? t.mode_light : t.mode_dark}
             >
               {isDarkMode ? <Sun size={16} /> : <Moon size={16} />}

@@ -328,8 +328,15 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
       if (savedLang === "en" || savedLang === "vi") {
         setLanguageMode(savedLang);
       }
-      if (document.documentElement.classList.contains("dark")) {
-        setIsDarkMode(true);
+      
+      const savedTheme = localStorage.getItem("rv_theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const initialDark = savedTheme === "dark" || (!savedTheme && prefersDark);
+      setIsDarkMode(initialDark);
+      if (initialDark) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
       }
     }
   }, []);
@@ -363,10 +370,15 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
   };
 
   const handleToggleTheme = () => {
-    const next = !isDarkMode;
-    setIsDarkMode(next);
+    const nextDark = !isDarkMode;
+    setIsDarkMode(nextDark);
     if (typeof window !== "undefined") {
-      document.documentElement.classList.toggle("dark", next);
+      localStorage.setItem("rv_theme", nextDark ? "dark" : "light");
+      if (nextDark) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
     }
   };
 
