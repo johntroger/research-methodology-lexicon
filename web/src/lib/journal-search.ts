@@ -232,7 +232,10 @@ function formatIssn(issn?: string): string {
 
 export function searchJournals(query: string, mode?: string): JournalSearchResponse {
   const lookupDb = getLookupDatabase();
-  const scopusVer = lookupDb.scopus_version || "Scopus Discontinued Titles";
+  const rawScopusVer = lookupDb.scopus_version || "Scopus Discontinued Titles Sep. 2026";
+  const scopusVer = mode === "discontinued_biz"
+    ? "Danh mục Scopus Discontinued (T9/2026)"
+    : "CSDL Scopus & HĐGSNN (Cập nhật T9/2026)";
   const sjrMap = lookupDb.sjr_rankings || {};
   const discList = lookupDb.discontinued_journals || [];
   const abdcMap = lookupDb.abdc_rankings || {};

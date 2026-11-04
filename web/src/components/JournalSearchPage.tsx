@@ -391,8 +391,10 @@ function JournalSearchContent() {
               <span>
                 Tìm thấy <strong className="text-slate-900 dark:text-white font-bold">{searchResponse.totalFound}</strong> kết quả tạp chí
               </span>
-              <span className="text-xs font-mono text-slate-400">
-                Phiên bản: {searchResponse.scopusVersion}
+              <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
+                {activeFilter === "discontinued_biz"
+                  ? "Danh mục Scopus Discontinued (T9/2026)"
+                  : "Dữ liệu CSDL: Cập nhật T9/2026"}
               </span>
             </div>
           )}

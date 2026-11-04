@@ -304,8 +304,10 @@ export default function JournalVerificationModal({
                 <strong className="text-slate-900 dark:text-white">{searchResponse.totalFound}</strong>{" "}
                 {isEn ? "journal results" : "kết quả tạp chí"}
               </span>
-              <span className="text-[11px] font-mono text-slate-400">
-                {searchResponse.scopusVersion}
+              <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400">
+                {activeFilter === "discontinued_biz"
+                  ? "Danh mục Scopus Discontinued (T9/2026)"
+                  : "Dữ liệu CSDL: Cập nhật T9/2026"}
               </span>
             </div>
           )}
