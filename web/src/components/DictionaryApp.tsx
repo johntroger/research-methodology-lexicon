@@ -57,6 +57,7 @@ import NewTermModal from "./NewTermModal";
 import TermHistoryView from "./TermHistoryView";
 import TermDiscussionView from "./TermDiscussionView";
 import LoginModal from "./LoginModal";
+import JournalVerificationModal from "./JournalVerificationModal";
 import FormattedAcademicText, {
   formatAcademicPlainText,
   renderAcademicInline
@@ -109,6 +110,7 @@ export default function DictionaryApp({
   const [isCitationModalOpen, setIsCitationModalOpen] = useState(false);
   const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  const [isJournalModalOpen, setIsJournalModalOpen] = useState(false);
 
   // Global Command Palette & Lịch sử Tra cứu gần đây (Phase 1)
   const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
@@ -625,6 +627,7 @@ export default function DictionaryApp({
         isCitationModalOpen ||
         isFeedbackModalOpen ||
         isLoginModalOpen ||
+        isJournalModalOpen ||
         isEditModalOpen ||
         isNewTermModalOpen;
 
@@ -707,6 +710,8 @@ export default function DictionaryApp({
           setIsFeedbackModalOpen(false);
         } else if (isLoginModalOpen) {
           setIsLoginModalOpen(false);
+        } else if (isJournalModalOpen) {
+          setIsJournalModalOpen(false);
         } else if (isEditModalOpen) {
           setIsEditModalOpen(false);
         } else if (isNewTermModalOpen) {
@@ -728,6 +733,7 @@ export default function DictionaryApp({
     isCitationModalOpen,
     isFeedbackModalOpen,
     isLoginModalOpen,
+    isJournalModalOpen,
     isEditModalOpen,
     isNewTermModalOpen,
     searchResults,
@@ -767,21 +773,19 @@ export default function DictionaryApp({
             </div>
           </div>
 
-          {/* Nút bấm nhanh mở Command Palette (Ctrl + K) trên Header */}
+          {/* Nút bấm mở Tra cứu & Thẩm định Tạp chí Khoa học (Scopus / WoS / HĐGSNN) */}
           <button
-            onClick={() => setIsCommandPaletteOpen(true)}
-            className="hidden lg:flex items-center gap-2.5 px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800/80 text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 border border-slate-200/90 dark:border-slate-700/80 text-xs transition hover:border-blue-400 shadow-2xs"
-            title={languageMode === "en" ? "Quick search across the entire lexicon (Ctrl + K)" : "Tra cứu nhanh toàn bộ từ điển (Ctrl + K)"}
+            onClick={() => setIsJournalModalOpen(true)}
+            className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-blue-50/90 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900/60 border border-blue-200/90 dark:border-blue-800 text-xs font-semibold transition hover:border-blue-400 shadow-2xs group cursor-pointer"
+            title={languageMode === "en" ? "Journal Integrity & Index Verification (Scopus, WoS, HĐGSNN, ABDC)" : "Tra cứu & Thẩm định Tạp chí Khoa học (Scopus, WoS, HĐGSNN, ABDC)"}
           >
-            <Search size={13} className="text-blue-600 dark:text-blue-400" />
-            <span className="text-slate-400 text-xs font-normal">
-              {languageMode === "en" 
-                ? `Search ${(initialTerms.length + Object.keys(initialAcronyms).length).toLocaleString("en-US")} terms & acronyms...`
-                : `Tra cứu ${(initialTerms.length + Object.keys(initialAcronyms).length).toLocaleString("vi-VN")} thuật ngữ & viết tắt...`}
+            <BookOpen size={14} className="text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
+            <span className="truncate">
+              {languageMode === "en" ? "Journal Verification (Scopus / WoS)" : "Tra cứu Tạp chí (Scopus / WoS / HĐGSNN)"}
             </span>
-            <kbd className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 font-bold text-slate-600 dark:text-slate-300">
-              Ctrl K
-            </kbd>
+            <span className="px-1.5 py-0.2 rounded-full text-[9px] font-bold bg-blue-600 text-white tracking-wider uppercase shrink-0">
+              Bot Zalo
+            </span>
           </button>
 
           {/* Thanh công cụ phải: Bộ chuyển ngôn ngữ Realtime, Góp ý, Phông chữ, Theme, Zen, Auth */}
@@ -2064,6 +2068,13 @@ export default function DictionaryApp({
         onFilterSaved={() => setFilterType("saved")}
         recentSearches={recentSearches}
         onClearRecentSearches={handleClearRecentSearches}
+      />
+
+      {/* MODAL TRA CỨU & THẨM ĐỊNH TẠP CHÍ KHOA HỌC (SCOPUS / WOS / HĐGSNN / ZALO BOT) */}
+      <JournalVerificationModal
+        isOpen={isJournalModalOpen}
+        onClose={() => setIsJournalModalOpen(false)}
+        languageMode={languageMode}
       />
     </div>
   );
