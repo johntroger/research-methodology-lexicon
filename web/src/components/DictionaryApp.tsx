@@ -824,25 +824,6 @@ export default function DictionaryApp({
               <span className="hidden sm:inline">{t.feedback_button}</span>
             </button>
 
-            {/* Nút chỉnh cỡ chữ A- / A+ */}
-            <div className="hidden sm:flex items-center border border-slate-200 dark:border-slate-800 rounded-lg p-0.5 bg-slate-50 dark:bg-slate-800/60">
-              <button
-                onClick={() => setFontSizeLevel((prev) => Math.max(-1, prev - 1))}
-                className="px-2 py-1 text-xs font-medium hover:bg-white dark:hover:bg-slate-700 rounded transition"
-                title={t.font_decrease}
-              >
-                A-
-              </button>
-              <span className="text-xs text-slate-400 px-0.5">|</span>
-              <button
-                onClick={() => setFontSizeLevel((prev) => Math.min(2, prev + 1))}
-                className="px-2 py-1 text-xs font-medium hover:bg-white dark:hover:bg-slate-700 rounded transition"
-                title={t.font_increase}
-              >
-                A+
-              </button>
-            </div>
-
             {/* Chế độ Sáng / Tối */}
             <button
               onClick={handleToggleTheme}
@@ -878,15 +859,6 @@ export default function DictionaryApp({
             >
               <Trophy size={14} className="text-amber-500" />
               <span className="hidden md:inline">{languageMode === "en" ? "Hall of Fame" : "Vinh danh"}</span>
-            </Link>
-
-            {/* Hồ sơ Đóng góp & Chứng nhận (Phase 5) */}
-            <Link
-              href="/my-contributions"
-              className="p-1.5 sm:p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition hidden lg:inline-flex"
-              title={languageMode === "en" ? "My Submissions & Certificates" : "Hồ sơ Đóng góp & Chứng nhận"}
-            >
-              <FileText size={16} className="text-slate-500 dark:text-slate-400" />
             </Link>
 
             {/* Bảng điều khiển Kiểm duyệt Học thuật (Wiki Moderation Phase 2) */}
