@@ -774,10 +774,10 @@ export default function DictionaryApp({
           </div>
 
           {/* Nút bấm mở Tra cứu & Thẩm định Tạp chí Khoa học (Scopus / WoS / HĐGSNN) */}
-          <button
-            onClick={() => setIsJournalModalOpen(true)}
+          <Link
+            href="/tap-chi"
             className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-blue-50/90 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900/60 border border-blue-200/90 dark:border-blue-800 text-xs font-semibold transition hover:border-blue-400 shadow-2xs group cursor-pointer"
-            title={languageMode === "en" ? "Journal Integrity & Index Verification (Scopus, WoS, HĐGSNN, ABDC)" : "Tra cứu & Thẩm định Tạp chí Khoa học (Scopus, WoS, HĐGSNN, ABDC)"}
+            title={languageMode === "en" ? "Journal Integrity & Index Verification (/tap-chi)" : "Tra cứu & Thẩm định Tạp chí Khoa học (/tap-chi)"}
           >
             <BookOpen size={14} className="text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
             <span className="truncate">
@@ -786,7 +786,7 @@ export default function DictionaryApp({
             <span className="px-1.5 py-0.2 rounded-full text-[9px] font-bold bg-blue-600 text-white tracking-wider uppercase shrink-0">
               Bot Zalo
             </span>
-          </button>
+          </Link>
 
           {/* Thanh công cụ phải: Bộ chuyển ngôn ngữ Realtime, Góp ý, Phông chữ, Theme, Zen, Auth */}
           <div className="flex items-center gap-1 sm:gap-1.5 shrink-0">

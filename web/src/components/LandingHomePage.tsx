@@ -442,6 +442,10 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
               <ShieldCheck size={14} className="text-emerald-600 dark:text-emerald-400" />
               <span>{isEn ? "Q1 Reviewer Standards" : "Chuẩn Thẩm định Q1"}</span>
             </a>
+            <Link href="/tap-chi" className="hover:text-blue-600 dark:hover:text-blue-400 transition flex items-center gap-1.5 text-blue-700 dark:text-blue-400 font-semibold">
+              <BookOpen size={14} className="text-blue-600 dark:text-blue-400" />
+              <span>{isEn ? "Journal Verifier" : "Thẩm định Tạp chí"}</span>
+            </Link>
             <Link href="/hall-of-fame" className="hover:text-amber-600 dark:hover:text-amber-400 transition flex items-center gap-1.5 text-amber-700 dark:text-amber-300">
               <Trophy size={14} className="text-amber-500" />
               <span>{isEn ? "Hall of Fame" : "Vinh danh Học giả"}</span>
@@ -1051,6 +1055,7 @@ export default function LandingHomePage({ initialStats }: LandingHomePageProps) 
             </div>
             <div className="flex items-center gap-6">
               <Link href="/" className="hover:text-white transition">Từ điển (/)</Link>
+              <Link href="/tap-chi" className="hover:text-white transition">Tra cứu Tạp chí (/tap-chi)</Link>
               <Link href="/home" className="hover:text-white transition">Trang chủ (/home)</Link>
               <Link href="/gioi-thieu" className="hover:text-white transition">Giới thiệu (/gioi-thieu)</Link>
               <Link href="/hall-of-fame" className="hover:text-white transition">Vinh danh Học giả</Link>
