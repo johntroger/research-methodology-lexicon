@@ -16,7 +16,9 @@ import {
   Sparkles,
   RefreshCw,
   Globe,
-  FileWarning
+  FileWarning,
+  Maximize2,
+  Minimize2
 } from "lucide-react";
 import { JournalItemResult, JournalSearchResponse } from "@/lib/journal-search";
 
@@ -35,6 +37,7 @@ export default function JournalVerificationModal({
   const [loading, setLoading] = useState(false);
   const [searchResponse, setSearchResponse] = useState<JournalSearchResponse | null>(null);
   const [activeFilter, setActiveFilter] = useState<"all" | "vn16" | "discontinued_biz">("all");
+  const [isFullscreen, setIsFullscreen] = useState(true);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const isEn = languageMode === "en";
@@ -116,27 +119,38 @@ export default function JournalVerificationModal({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 dark:bg-black/75 backdrop-blur-sm flex items-start justify-center p-3 sm:p-4 md:p-6 transition-all duration-200">
+    <div
+      className={`fixed inset-0 z-50 bg-slate-900/75 dark:bg-black/85 backdrop-blur-md flex items-center justify-center transition-all duration-200 ${
+        isFullscreen ? "p-0 sm:p-2 lg:p-3" : "p-3 sm:p-4 md:p-6"
+      }`}
+    >
       <div
-        className="w-full max-w-4xl bg-white dark:bg-[#0c1222] border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh] my-auto animate-in fade-in zoom-in-95 duration-200"
+        className={`bg-white dark:bg-[#0c1222] border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden flex flex-col transition-all duration-200 animate-in fade-in zoom-in-95 ${
+          isFullscreen
+            ? "w-full h-full sm:h-[98vh] max-w-full rounded-none sm:rounded-2xl"
+            : "w-full max-w-5xl h-[92vh] max-h-[92vh] rounded-2xl"
+        }`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* 1. Modal Header */}
-        <div className="px-5 py-4 border-b border-slate-200 dark:border-slate-800/80 bg-gradient-to-r from-blue-50/70 via-indigo-50/40 to-white dark:from-[#0d162d] dark:via-[#0c1222] dark:to-[#0c1222] flex items-center justify-between gap-3 shrink-0">
-          <div className="flex items-center gap-3">
+        <div className="px-5 py-3.5 border-b border-slate-200 dark:border-slate-800/80 bg-gradient-to-r from-blue-50/70 via-indigo-50/40 to-white dark:from-[#0d162d] dark:via-[#0c1222] dark:to-[#0c1222] flex items-center justify-between gap-3 shrink-0">
+          <div className="flex items-center gap-3 min-w-0">
             <div className="w-10 h-10 rounded-xl bg-blue-600 dark:bg-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-500/20 shrink-0">
               <BookOpen size={20} className="text-white" />
             </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <h2 className="font-bold text-base sm:text-lg text-slate-900 dark:text-white tracking-tight">
+            <div className="min-w-0">
+              <div className="flex items-center gap-2 flex-wrap">
+                <h2 className="font-bold text-base sm:text-lg text-slate-900 dark:text-white tracking-tight truncate">
                   {isEn ? "Journal Integrity & Index Verification" : "Hệ thống Tra cứu & Thẩm định Tạp chí Khoa học"}
                 </h2>
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300 border border-blue-200/80 dark:border-blue-700">
+                <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300 border border-blue-200/80 dark:border-blue-700 shrink-0">
                   Scopus • WoS • HĐGSNN
                 </span>
+                <span className="hidden xl:inline text-[11px] font-mono text-slate-400 dark:text-slate-500">
+                  (Dữ liệu Zalo Bot tự động)
+                </span>
               </div>
-              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 truncate hidden sm:block">
                 {isEn
                   ? "Verify Scopus Quartile (Q1–Q4), WoS status, Discontinued risk, ABDC rank & HĐGSNN criteria"
                   : "Kiểm tra phân vị Scopus (Q1–Q4), Cảnh báo loại trừ, Giả mạo tên miền, ABDC và khung điểm HĐGSNN"}
@@ -144,13 +158,25 @@ export default function JournalVerificationModal({
             </div>
           </div>
 
-          <button
-            onClick={onClose}
-            className="p-2 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition cursor-pointer"
-            title="Đóng (Esc)"
-          >
-            <X size={18} />
-          </button>
+          <div className="flex items-center gap-1 shrink-0">
+            {/* Nút Phóng to tối đa / Thu gọn */}
+            <button
+              onClick={() => setIsFullscreen(!isFullscreen)}
+              className="p-2 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition cursor-pointer"
+              title={isFullscreen ? "Thu nhỏ cửa sổ" : "Mở rộng tối đa màn hình"}
+            >
+              {isFullscreen ? <Minimize2 size={17} /> : <Maximize2 size={17} />}
+            </button>
+
+            {/* Nút Đóng */}
+            <button
+              onClick={onClose}
+              className="p-2 rounded-lg text-slate-400 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/40 transition cursor-pointer"
+              title="Đóng (Esc)"
+            >
+              <X size={18} />
+            </button>
+          </div>
         </div>
 
         {/* 2. Search Box & Quick Tags */}
@@ -285,7 +311,7 @@ export default function JournalVerificationModal({
 
           {/* Danh sách thẻ Tạp chí */}
           {searchResponse?.results && searchResponse.results.length > 0 ? (
-            <div className="space-y-3.5">
+            <div className={searchResponse.results.length > 1 ? "grid grid-cols-1 xl:grid-cols-2 gap-4" : "space-y-4"}>
               {searchResponse.results.map((item) => (
                 <div
                   key={item.id}
