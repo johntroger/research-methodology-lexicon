@@ -21,6 +21,7 @@ import {
   Minimize2
 } from "lucide-react";
 import { JournalItemResult, JournalSearchResponse } from "@/lib/journal-search";
+import JournalVerificationCard from "./JournalVerificationCard";
 
 interface JournalVerificationModalProps {
   isOpen: boolean;
@@ -311,160 +312,9 @@ export default function JournalVerificationModal({
 
           {/* Danh sách thẻ Tạp chí */}
           {searchResponse?.results && searchResponse.results.length > 0 ? (
-            <div className={searchResponse.results.length > 1 ? "grid grid-cols-1 xl:grid-cols-2 gap-4" : "space-y-4"}>
+            <div className={searchResponse.results.length > 1 ? "grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-6" : "space-y-4"}>
               {searchResponse.results.map((item) => (
-                <div
-                  key={item.id}
-                  className={`p-4 sm:p-5 rounded-xl border transition duration-150 ${
-                    item.status === "discontinued" || item.status === "wos_delisted" || item.status === "hijacked"
-                      ? "bg-red-50/50 dark:bg-red-950/20 border-red-200 dark:border-red-900/60"
-                      : "bg-white dark:bg-slate-900/60 border-slate-200/90 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-600 shadow-2xs"
-                  }`}
-                >
-                  {/* Top Bar: Badges */}
-                  <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-2">
-                    {/* Status Badge */}
-                    <span
-                      className={`px-2.5 py-0.5 rounded-md text-xs font-bold tracking-tight uppercase flex items-center gap-1 ${
-                        item.statusBadge.variant === "danger"
-                          ? "bg-red-600 text-white shadow-xs"
-                          : item.statusBadge.variant === "success"
-                          ? "bg-emerald-600 text-white shadow-xs"
-                          : "bg-blue-600 text-white"
-                      }`}
-                    >
-                      {item.statusBadge.variant === "danger" ? (
-                        <AlertTriangle size={12} />
-                      ) : (
-                        <CheckCircle2 size={12} />
-                      )}
-                      <span>{item.statusBadge.label}</span>
-                    </span>
-
-                    {/* ABDC Badge */}
-                    {item.abdc && (
-                      <span className="px-2 py-0.5 rounded-md text-xs font-semibold bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-800 flex items-center gap-1">
-                        <Award size={12} className="text-amber-600" />
-                        <span>ABDC: {item.abdc.rating}</span>
-                      </span>
-                    )}
-
-                    {/* HĐGSNN Points */}
-                    {item.hdgsnn && (
-                      <span className="px-2 py-0.5 rounded-md text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 flex items-center gap-1">
-                        <span>🇻🇳 HĐGSNN</span>
-                        {item.hdgsnn.maxPoints !== "N/A" && (
-                          <span className="font-bold text-indigo-900 dark:text-indigo-100">
-                            {item.hdgsnn.maxPoints}đ
-                          </span>
-                        )}
-                      </span>
-                    )}
-
-                    {/* Retraction Warning */}
-                    {item.retraction && item.retraction.count > 0 && (
-                      <span className="px-2 py-0.5 rounded-md text-xs font-semibold bg-rose-100 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 border border-rose-300 dark:border-rose-800 flex items-center gap-1">
-                        <Flame size={12} className="text-rose-600" />
-                        <span>{item.retraction.count} bài bị rút</span>
-                      </span>
-                    )}
-
-                    {/* Vietnam National Scopus 16 */}
-                    {item.vietnamNational?.isScopus16 && (
-                      <span className="px-2 py-0.5 rounded-md text-[11px] font-semibold bg-red-100 dark:bg-red-950/60 text-red-800 dark:text-red-300 border border-red-300 dark:border-red-800 flex items-center gap-1">
-                        <span>🇻🇳 Top 16 VN Quốc tế</span>
-                      </span>
-                    )}
-                  </div>
-
-                  {/* Title & Metadata */}
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white tracking-tight leading-snug">
-                    {item.title}
-                  </h3>
-
-                  <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-500 dark:text-slate-400 mt-1.5 font-mono">
-                    {item.issn && (
-                      <span>
-                        ISSN: <strong className="text-slate-700 dark:text-slate-200">{item.issn}</strong>
-                      </span>
-                    )}
-                    {item.eissn && (
-                      <span>
-                        e-ISSN: <strong className="text-slate-700 dark:text-slate-200">{item.eissn}</strong>
-                      </span>
-                    )}
-                    {item.publisher && (
-                      <span className="font-sans">
-                        NXB: <span className="text-slate-700 dark:text-slate-300">{item.publisher}</span>
-                      </span>
-                    )}
-                    {item.country && (
-                      <span className="font-sans">
-                        Quốc gia: <span className="text-slate-700 dark:text-slate-300">{item.country}</span>
-                      </span>
-                    )}
-                  </div>
-
-                  {/* Chi tiết cảnh báo nếu là Discontinued / WoS / Hijacked */}
-                  {item.discontinuedInfo && (
-                    <div className="mt-3 p-3 rounded-lg bg-red-100/70 dark:bg-red-950/40 border border-red-200 dark:border-red-900/60 text-xs text-red-900 dark:text-red-200 space-y-1">
-                      <div className="font-bold flex items-center gap-1.5 text-red-700 dark:text-red-300">
-                        <AlertTriangle size={14} />
-                        <span>Thông tin loại trừ khỏi Scopus:</span>
-                      </div>
-                      <p>• Năm ngừng lập chỉ mục: <strong>{item.discontinuedInfo.year || "Gần đây"}</strong></p>
-                      {item.discontinuedInfo.reason && (
-                        <p>• Lý do đánh giá: <em>{item.discontinuedInfo.reason}</em></p>
-                      )}
-                      {item.discontinuedInfo.coverage && (
-                        <p>• Giai đoạn dữ liệu được bảo lưu: {item.discontinuedInfo.coverage}</p>
-                      )}
-                    </div>
-                  )}
-
-                  {item.hijackedInfo && (
-                    <div className="mt-3 p-3 rounded-lg bg-amber-100/70 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-900/60 text-xs text-amber-950 dark:text-amber-200 space-y-1.5">
-                      <div className="font-bold flex items-center gap-1.5 text-amber-800 dark:text-amber-300">
-                        <AlertTriangle size={14} />
-                        <span>CẢNH BÁO MẠO DANH (HIJACKED JOURNAL):</span>
-                      </div>
-                      {item.hijackedInfo.realUrl && (
-                        <p className="flex items-center gap-1 text-emerald-700 dark:text-emerald-400">
-                          ✓ Website Chuẩn:{" "}
-                          <a href={item.hijackedInfo.realUrl} target="_blank" rel="noreferrer" className="underline font-mono">
-                            {item.hijackedInfo.realUrl}
-                          </a>
-                        </p>
-                      )}
-                      {item.hijackedInfo.fakeUrl && (
-                        <p className="flex items-center gap-1 text-red-700 dark:text-red-400">
-                          ✗ Website Giả mạo cần tránh:{" "}
-                          <span className="font-mono line-through">{item.hijackedInfo.fakeUrl}</span>
-                        </p>
-                      )}
-                      <p className="text-[11px] text-amber-800/80 dark:text-amber-300/80">
-                        {item.hijackedInfo.notes}
-                      </p>
-                    </div>
-                  )}
-
-                  {/* Hội đồng Giáo sư Nhà nước chi tiết */}
-                  {item.hdgsnn && item.hdgsnn.councils && item.hdgsnn.councils.length > 0 && (
-                    <div className="mt-3 pt-2.5 border-t border-slate-200/80 dark:border-slate-800/80 flex flex-wrap items-center gap-2 text-xs">
-                      <span className="font-semibold text-slate-600 dark:text-slate-400">
-                        Khung điểm HĐGSNN:
-                      </span>
-                      {item.hdgsnn.councils.map((c, i) => (
-                        <span
-                          key={i}
-                          className="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-[11px]"
-                        >
-                          HĐ {c.council}: <strong>{c.points}</strong>
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </div>
+                <JournalVerificationCard key={item.id} item={item} />
               ))}
             </div>
           ) : searchResponse && searchResponse.totalFound === 0 ? (
