@@ -45,7 +45,8 @@ import {
   Award,
   Users,
   Cpu,
-  Network
+  Network,
+  Database
 } from "lucide-react";
 import { MethodologyTerm, AcademicAcronym, SearchItem } from "@/lib/types";
 import { getSearchEngine, SearchOutputItem } from "@/lib/search-engine";
@@ -773,20 +774,33 @@ export default function DictionaryApp({
             </div>
           </div>
 
-          {/* Nút bấm mở Tra cứu & Thẩm định Tạp chí Khoa học (Scopus / WoS / HĐGSNN) */}
-          <Link
-            href="/tap-chi"
-            className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-blue-50/90 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900/60 border border-blue-200/90 dark:border-blue-800 text-xs font-semibold transition hover:border-blue-400 shadow-2xs group cursor-pointer"
-            title={languageMode === "en" ? "Journal Integrity & Index Verification (/tap-chi)" : "Tra cứu & Thẩm định Tạp chí Khoa học (/tap-chi)"}
-          >
-            <BookOpen size={14} className="text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
-            <span className="truncate">
-              {languageMode === "en" ? "Journal Verification (Scopus / WoS)" : "Tra cứu Tạp chí (Scopus / WoS / HĐGSNN)"}
-            </span>
-            <span className="px-1.5 py-0.2 rounded-full text-[9px] font-bold bg-blue-600 text-white tracking-wider uppercase shrink-0">
-              Bot Zalo
-            </span>
-          </Link>
+          {/* Nút bấm mở Tra cứu Tạp chí & Kho Dữ liệu Mở */}
+          <div className="hidden md:flex items-center gap-2">
+            <Link
+              href="/tap-chi"
+              className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-blue-50/90 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900/60 border border-blue-200/90 dark:border-blue-800 text-xs font-semibold transition hover:border-blue-400 shadow-2xs group cursor-pointer"
+              title={languageMode === "en" ? "Journal Integrity & Index Verification (/tap-chi)" : "Tra cứu & Thẩm định Tạp chí Khoa học (/tap-chi)"}
+            >
+              <BookOpen size={14} className="text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
+              <span className="truncate">
+                {languageMode === "en" ? "Journal Verifier" : "Tra cứu Tạp chí"}
+              </span>
+              <span className="px-1.5 py-0.2 rounded-full text-[9px] font-bold bg-blue-600 text-white tracking-wider uppercase shrink-0">
+                Bot Zalo
+              </span>
+            </Link>
+
+            <Link
+              href="/data"
+              className="hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-50/90 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 border border-emerald-200/90 dark:border-emerald-800 text-xs font-semibold transition hover:border-emerald-400 shadow-2xs group cursor-pointer"
+              title={languageMode === "en" ? "Open Research Datasets Directory (/data)" : "Kho Dữ liệu Mở cho Nghiên cứu Khoa học (/data)"}
+            >
+              <Database size={14} className="text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform" />
+              <span className="truncate">
+                {languageMode === "en" ? "Open Data" : "Kho Dữ liệu"}
+              </span>
+            </Link>
+          </div>
 
           {/* Thanh công cụ phải: Bộ chuyển ngôn ngữ Realtime, Góp ý, Phông chữ, Theme, Zen, Auth */}
           <div className="flex items-center gap-1 sm:gap-1.5 shrink-0">

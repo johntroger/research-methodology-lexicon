@@ -23,7 +23,8 @@ import {
   Moon,
   Share2,
   Copy,
-  Check
+  Check,
+  Database
 } from "lucide-react";
 import { JournalItemResult, JournalSearchResponse } from "@/lib/journal-search";
 import JournalVerificationCard from "./JournalVerificationCard";
@@ -202,6 +203,16 @@ function JournalSearchContent() {
 
         {/* Action Controls */}
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          {/* Nút dẫn nhẹ sang Kho Dữ liệu Mở (/data) */}
+          <Link
+            href="/data"
+            className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-emerald-200 dark:border-emerald-800 bg-emerald-50/80 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 text-xs font-semibold transition"
+            title="Mở Kho Dữ liệu Mở cho Nghiên cứu Khoa học (/data)"
+          >
+            <Database size={14} />
+            <span>{isEn ? "Open Datasets" : "Kho Dữ liệu Mở"}</span>
+          </Link>
+
           {/* Nút Copy Share Link */}
           <button
             onClick={handleCopyShareLink}
@@ -504,6 +515,8 @@ function JournalSearchContent() {
           <Link href="/" className="hover:text-blue-600 transition">Không gian Tra cứu Từ điển (/)</Link>
           <span>•</span>
           <Link href="/home" className="hover:text-blue-600 transition">Trang chủ Giới thiệu (/home)</Link>
+          <span>•</span>
+          <Link href="/data" className="hover:text-emerald-600 transition">Kho Dữ liệu Mở (/data)</Link>
           <span>•</span>
           <Link href="/hall-of-fame" className="hover:text-blue-600 transition">Bảng Vinh danh Học giả</Link>
           <span>•</span>
