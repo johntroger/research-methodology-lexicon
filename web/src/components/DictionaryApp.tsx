@@ -774,31 +774,24 @@ export default function DictionaryApp({
             </div>
           </div>
 
-          {/* Nút bấm mở Tra cứu Tạp chí & Kho Dữ liệu Mở */}
-          <div className="hidden md:flex items-center gap-2">
+          {/* 2 nút gọn: Tra cứu tạp chí & Tra cứu data */}
+          <div className="hidden md:flex items-center gap-1.5 shrink-0">
             <Link
               href="/tap-chi"
-              className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-blue-50/90 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900/60 border border-blue-200/90 dark:border-blue-800 text-xs font-semibold transition hover:border-blue-400 shadow-2xs group cursor-pointer"
+              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-blue-50/90 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900/60 border border-blue-200/90 dark:border-blue-800 text-xs font-semibold transition hover:border-blue-400 shadow-2xs group whitespace-nowrap cursor-pointer"
               title={languageMode === "en" ? "Journal Integrity & Index Verification (/tap-chi)" : "Tra cứu & Thẩm định Tạp chí Khoa học (/tap-chi)"}
             >
-              <BookOpen size={14} className="text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
-              <span className="truncate">
-                {languageMode === "en" ? "Journal Verifier" : "Tra cứu Tạp chí"}
-              </span>
-              <span className="px-1.5 py-0.2 rounded-full text-[9px] font-bold bg-blue-600 text-white tracking-wider uppercase shrink-0">
-                Bot Zalo
-              </span>
+              <BookOpen size={14} className="text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform shrink-0" />
+              <span>{languageMode === "en" ? "Journals" : "Tra cứu tạp chí"}</span>
             </Link>
 
             <Link
               href="/data"
-              className="hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-50/90 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 border border-emerald-200/90 dark:border-emerald-800 text-xs font-semibold transition hover:border-emerald-400 shadow-2xs group cursor-pointer"
+              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-emerald-50/90 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 border border-emerald-200/90 dark:border-emerald-800 text-xs font-semibold transition hover:border-emerald-400 shadow-2xs group whitespace-nowrap cursor-pointer"
               title={languageMode === "en" ? "Open Research Datasets Directory (/data)" : "Kho Dữ liệu Mở cho Nghiên cứu Khoa học (/data)"}
             >
-              <Database size={14} className="text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform" />
-              <span className="truncate">
-                {languageMode === "en" ? "Open Data" : "Kho Dữ liệu"}
-              </span>
+              <Database size={14} className="text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform shrink-0" />
+              <span>{languageMode === "en" ? "Open Data" : "Tra cứu data"}</span>
             </Link>
           </div>
 
