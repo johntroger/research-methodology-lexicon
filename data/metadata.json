@@ -1,21 +1,21 @@
 {
-  "version": "10.2-peer-reviewed-cleaned",
-  "last_updated": "2026-10-27T06:54:20.619Z",
+  "version": "11.0-peer-reviewed-bilingual-complete",
+  "last_updated": "2026-11-19T02:36:18.298Z",
   "statistics": {
-    "total_flagship_terms": 518,
-    "total_corpus_terms": 2571,
-    "total_all_terms": 2653,
-    "total_acronyms": 148,
-    "total_scholarly_items": 2801
+    "total_flagship_terms": 1717,
+    "total_corpus_terms": 1717,
+    "total_all_terms": 1717,
+    "total_acronyms": 142,
+    "total_scholarly_items": 1859
   },
-  "flagship_terms": 518,
+  "flagship_terms": 1717,
   "acronyms": "data/acronyms.json",
   "editorial_board": {
     "lead_reviewer": "ThS. Trần Thanh Tùng",
     "affiliation": "Trường Đại học Nguyễn Tất Thành (NTTU)",
-    "status": "Đã Thẩm Định Hoàn Tất Hồ Sơ Toàn Văn (V10.2 Cleaned)"
+    "status": "Đã Hoàn Tất Rà Soát & Chuẩn Hóa Song Ngữ Toàn Văn (V11.0)"
   },
-  "total_terms": 1874,
-  "flagship_count": 1874,
+  "total_terms": 1717,
+  "flagship_count": 1717,
   "flagship_percentage": 100
 }
