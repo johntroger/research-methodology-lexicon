@@ -5,16 +5,16 @@ import OpenDatasetsPage from "@/components/OpenDatasetsPage";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Kho Dữ liệu Mở cho Nghiên cứu Khoa học (147+ Bộ dữ liệu) | VNResearch Dictionary",
+  title: "Kho Dữ liệu Mở cho Nghiên cứu Khoa học (175+ Bộ dữ liệu Q1) | VNResearch Dictionary",
   description:
-    "Thư viện tra cứu song ngữ Việt–Anh hơn 147 bộ dữ liệu mở miễn phí cho nghiên cứu Khoa học Xã hội, Kinh tế, Tài chính, Giáo dục, Y tế và Chính sách công. Lọc theo 4 nhóm ngành lớn và 34 chủ đề chuyên sâu.",
+    "Thư viện tra cứu song ngữ Việt–Anh hơn 175 bộ dữ liệu mở miễn phí cho nghiên cứu Quản trị, Marketing, Hành vi tiêu dùng, Kinh tế, Tài chính, Xã hội và Việt Nam – ASEAN. Bộ lọc tối ưu theo 6 nhóm ngành và gần 40 chủ đề chuyên sâu.",
   alternates: {
     canonical: "/data",
   },
   openGraph: {
-    title: "Kho Dữ liệu Mở cho Nghiên cứu Khoa học | VNResearch Dictionary",
+    title: "Kho Dữ liệu Mở cho Nghiên cứu Khoa học (175+ Bộ dữ liệu) | VNResearch Dictionary",
     description:
-      "Tra cứu song ngữ Việt–Anh 147+ bộ dữ liệu mở quốc tế theo 4 nhóm ngành và 34 chủ đề chuyên sâu cho bài báo khoa học và luận án.",
+      "Tra cứu song ngữ Việt–Anh 175+ bộ dữ liệu mở chuẩn Q1 về Business, Management, Marketing, Economics, Social Science & Vietnam/ASEAN.",
     url: "https://vnresearch-dictionary.vercel.app/data",
   },
 };

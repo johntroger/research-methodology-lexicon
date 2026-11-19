@@ -11,7 +11,15 @@ export async function GET(req: NextRequest) {
     const q = searchParams.get("q") || "";
     const cat = searchParams.get("cat") || "all";
     const domainParam = (searchParams.get("domain") || "all") as DomainKey;
-    const validDomains: DomainKey[] = ["all", "econ", "edu_soc", "health_env", "gov_misc"];
+    const validDomains: DomainKey[] = [
+      "all",
+      "biz_mkt",
+      "vn_asean",
+      "econ_fin",
+      "edu_soc",
+      "health_env",
+      "gov_repo",
+    ];
     const domain: DomainKey = validDomains.includes(domainParam) ? domainParam : "all";
 
     const catalog = await fetchDatasetsCatalog();

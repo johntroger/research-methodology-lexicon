@@ -30,11 +30,20 @@ import {
   Scale,
   Layers,
   RotateCcw,
+  Briefcase,
+  Flag,
+  Star,
+  ChevronLeft,
+  ChevronRight,
+  ChevronDown,
+  ChevronUp,
+  ArrowUpDown,
 } from "lucide-react";
 import {
   DatasetsPayload,
   DatasetItem,
   DomainKey,
+  SortMode,
   DOMAIN_GROUPS,
   CAT_VI,
   filterAndScoreDatasets,
@@ -62,7 +71,12 @@ function getAccessBadgeStyle(access?: string): {
     return { tone: "emerald", label: "Mở / Miễn phí" };
   }
   const lower = access.toLowerCase();
-  if (lower.includes("public") || lower.includes("open") || lower.includes("cc0") || lower.includes("cc by")) {
+  if (
+    lower.includes("public") ||
+    lower.includes("open") ||
+    lower.includes("cc0") ||
+    lower.includes("cc by")
+  ) {
     return { tone: "emerald", label: access };
   }
   if (lower.includes("academic") || lower.includes("free") || lower.includes("research")) {
@@ -85,37 +99,56 @@ function formatUpdatedDate(iso: string, isEn: boolean): string {
   }
 }
 
+function buildPaginationRange(current: number, total: number): (number | "...")[] {
+  if (total <= 7) {
+    return Array.from({ length: total }, (_, i) => i + 1);
+  }
+  const pages: (number | "...")[] = [1];
+  const start = Math.max(2, current - 1);
+  const end = Math.min(total - 1, current + 1);
+
+  if (start > 2) pages.push("...");
+  for (let p = start; p <= end; p++) pages.push(p);
+  if (end < total - 1) pages.push("...");
+  pages.push(total);
+  return pages;
+}
+
 const DOMAIN_ICONS: Record<DomainKey, React.ReactNode> = {
-  all: <Layers size={15} />,
-  econ: <Landmark size={15} />,
-  edu_soc: <GraduationCap size={15} />,
-  health_env: <HeartPulse size={15} />,
-  gov_misc: <Scale size={15} />,
+  all: <Layers size={14} />,
+  biz_mkt: <Briefcase size={14} />,
+  vn_asean: <Flag size={14} />,
+  econ_fin: <Landmark size={14} />,
+  edu_soc: <GraduationCap size={14} />,
+  health_env: <HeartPulse size={14} />,
+  gov_repo: <Scale size={14} />,
 };
 
 const QUICK_SEARCH_SUGGESTIONS_VI = [
+  "Marketing",
+  "Quản trị",
+  "Việt Nam",
+  "ESG",
+  "Khởi nghiệp",
   "Tài chính",
-  "Kinh tế vĩ mô",
   "Tiền lương",
   "Giáo dục",
-  "Y tế",
   "Biến đổi khí hậu",
-  "Khảo sát hộ gia đình",
-  "Bất động sản",
-  "OWID",
 ];
 
 const QUICK_SEARCH_SUGGESTIONS_EN = [
+  "Marketing",
+  "Management",
+  "Vietnam",
+  "ESG",
+  "Entrepreneurship",
   "Finance",
-  "Macroeconomics",
-  "Wage",
   "Education",
-  "Health",
   "Climate",
-  "Household",
-  "Housing",
-  "OWID",
+  "Replication",
 ];
+
+const COLLAPSED_TOPICS_LIMIT = 12;
 
 function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
   const searchParams = useSearchParams();
@@ -125,6 +158,15 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
   const [activeDomain, setActiveDomain] = useState<DomainKey>("all");
   const [activeCat, setActiveCat] = useState<string>("all");
   const [onlyPublic, setOnlyPublic] = useState(false);
+  const [onlyFeatured, setOnlyFeatured] = useState(false);
+  const [onlyVietnam, setOnlyVietnam] = useState(false);
+  const [sortBy, setSortBy] = useState<SortMode>("relevance");
+  const [showAllTopics, setShowAllTopics] = useState(false);
+
+  // Phân trang
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pageSize, setPageSize] = useState<number>(12);
+
   const [languageMode, setLanguageMode] = useState<"vi" | "en">("vi");
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [copiedUrl, setCopiedUrl] = useState<string | null>(null);
@@ -132,6 +174,7 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
   const [isRefreshing, setIsRefreshing] = useState(false);
 
   const inputRef = useRef<HTMLInputElement>(null);
+  const resultsTopRef = useRef<HTMLDivElement>(null);
   const isEn = languageMode === "en";
 
   // Đồng bộ Theme & Ngôn ngữ từ localStorage
@@ -159,7 +202,15 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
     const q = searchParams.get("q") || "";
     const cat = searchParams.get("cat") || "all";
     const dom = (searchParams.get("domain") || "all") as DomainKey;
-    const validDomains: DomainKey[] = ["all", "econ", "edu_soc", "health_env", "gov_misc"];
+    const validDomains: DomainKey[] = [
+      "all",
+      "biz_mkt",
+      "vn_asean",
+      "econ_fin",
+      "edu_soc",
+      "health_env",
+      "gov_repo",
+    ];
 
     if (q) setSearchTerm(q);
     if (cat && cat !== "all") {
@@ -169,6 +220,11 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
       setActiveDomain(dom);
     }
   }, [searchParams]);
+
+  // Reset về trang 1 mỗi khi bộ lọc hoặc từ khóa thay đổi
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchTerm, activeDomain, activeCat, onlyPublic, onlyFeatured, onlyVietnam, sortBy, pageSize]);
 
   // Đồng bộ state lọc lên URL (/data?...)
   const syncUrlParams = (next: { q?: string; domain?: DomainKey; cat?: string }) => {
@@ -221,6 +277,7 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
   const handleDomainSelect = (domain: DomainKey) => {
     setActiveDomain(domain);
     setActiveCat("all");
+    setShowAllTopics(false);
     syncUrlParams({ q: searchTerm, domain, cat: "all" });
   };
 
@@ -239,6 +296,8 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
     setSearchTerm(keyword);
     setActiveDomain("all");
     setActiveCat("all");
+    setOnlyFeatured(false);
+    setOnlyVietnam(false);
     syncUrlParams({ q: keyword, domain: "all", cat: "all" });
     inputRef.current?.focus();
   };
@@ -248,8 +307,19 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
     setActiveDomain("all");
     setActiveCat("all");
     setOnlyPublic(false);
+    setOnlyFeatured(false);
+    setOnlyVietnam(false);
+    setSortBy("relevance");
+    setCurrentPage(1);
     syncUrlParams({});
     inputRef.current?.focus();
+  };
+
+  const handlePageChange = (nextPage: number) => {
+    setCurrentPage(nextPage);
+    if (resultsTopRef.current) {
+      resultsTopRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   const handleCopyItemUrl = (url: string) => {
@@ -272,27 +342,65 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
   const domainCounts = useMemo(() => {
     const counts: Record<DomainKey, number> = {
       all: catalog.items.length,
-      econ: 0,
+      biz_mkt: 0,
+      vn_asean: 0,
+      econ_fin: 0,
       edu_soc: 0,
       health_env: 0,
-      gov_misc: 0,
+      gov_repo: 0,
     };
     for (const item of catalog.items) {
       const dom = getDomainForCategory(item.cat_key);
       counts[dom] = (counts[dom] || 0) + 1;
+      if (item.has_vietnam && dom !== "vn_asean") {
+        counts.vn_asean += 1;
+      }
     }
     return counts;
   }, [catalog.items]);
 
   // Danh sách chủ đề hiển thị theo nhóm ngành đang chọn
   const visibleCategories = useMemo(() => {
+    if (activeDomain === "vn_asean") {
+      // Hiện các chủ đề có chứa bộ dữ liệu về Việt Nam
+      const vnCatCounts = new Map<string, number>();
+      for (const it of catalog.items) {
+        if (it.cat_key === "vietnam_and_asean" || it.has_vietnam) {
+          vnCatCounts.set(it.cat_key, (vnCatCounts.get(it.cat_key) || 0) + 1);
+        }
+      }
+      return catalog.categories
+        .filter((c) => vnCatCounts.has(c.key))
+        .map((c) => ({ ...c, count: vnCatCounts.get(c.key) || c.count }))
+        .sort((a, b) => b.count - a.count);
+    }
+
     const domCfg = DOMAIN_GROUPS.find((d) => d.key === activeDomain);
     const list =
       activeDomain === "all"
         ? catalog.categories
         : catalog.categories.filter((c) => domCfg?.categories.includes(c.key));
     return [...list].sort((a, b) => b.count - a.count);
-  }, [catalog.categories, activeDomain]);
+  }, [catalog.categories, catalog.items, activeDomain]);
+
+  // Rút gọn danh sách chip chủ đề khi ở chế độ "Tất cả" để đỡ chiếm chiều cao
+  const displayedCategories = useMemo(() => {
+    if (
+      showAllTopics ||
+      activeDomain !== "all" ||
+      visibleCategories.length <= COLLAPSED_TOPICS_LIMIT
+    ) {
+      return visibleCategories;
+    }
+    const sliced = visibleCategories.slice(0, COLLAPSED_TOPICS_LIMIT);
+    if (activeCat !== "all" && !sliced.some((c) => c.key === activeCat)) {
+      const activeObj = visibleCategories.find((c) => c.key === activeCat);
+      if (activeObj) sliced.push(activeObj);
+    }
+    return sliced;
+  }, [visibleCategories, showAllTopics, activeDomain, activeCat]);
+
+  const hiddenTopicsCount = Math.max(0, visibleCategories.length - displayedCategories.length);
 
   // Kết quả lọc & chấm điểm song ngữ tức thì
   const filteredItems = useMemo(() => {
@@ -301,11 +409,51 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
       cat: activeCat,
       query: searchTerm,
       onlyPublic,
+      onlyFeatured,
+      onlyVietnam,
+      sortBy,
     });
-  }, [catalog.items, activeDomain, activeCat, searchTerm, onlyPublic]);
+  }, [
+    catalog.items,
+    activeDomain,
+    activeCat,
+    searchTerm,
+    onlyPublic,
+    onlyFeatured,
+    onlyVietnam,
+    sortBy,
+  ]);
+
+  // Tính phân trang
+  const totalPages = Math.max(1, Math.ceil(filteredItems.length / pageSize));
+  const safePage = Math.min(currentPage, totalPages);
+  const startIdx = (safePage - 1) * pageSize;
+  const endIdx = Math.min(startIdx + pageSize, filteredItems.length);
+  const paginatedItems = useMemo(
+    () => filteredItems.slice(startIdx, endIdx),
+    [filteredItems, startIdx, endIdx]
+  );
+  const paginationRange = useMemo(
+    () => buildPaginationRange(safePage, totalPages),
+    [safePage, totalPages]
+  );
+
+  const featuredCount = useMemo(
+    () => catalog.items.filter((i) => i.featured).length,
+    [catalog.items]
+  );
+  const vietnamCount = useMemo(
+    () => catalog.items.filter((i) => i.has_vietnam || i.cat_key === "vietnam_and_asean").length,
+    [catalog.items]
+  );
 
   const hasActiveFilter =
-    activeDomain !== "all" || activeCat !== "all" || searchTerm.trim().length > 0 || onlyPublic;
+    activeDomain !== "all" ||
+    activeCat !== "all" ||
+    searchTerm.trim().length > 0 ||
+    onlyPublic ||
+    onlyFeatured ||
+    onlyVietnam;
 
   return (
     <div
@@ -332,30 +480,28 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
                 OPEN RESEARCH DATASETS
               </span>
               <span className="hidden sm:inline-block px-2 py-0.2 rounded-full text-[9px] font-bold bg-emerald-100 dark:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200/80 dark:border-emerald-700 uppercase">
-                Live API Sync
+                {catalog.total} Datasets
               </span>
             </div>
             <h1 className="font-bold text-sm sm:text-base text-slate-900 dark:text-white truncate">
               {isEn
-                ? "Open Datasets Directory for Social Science Research"
-                : "Kho Dữ liệu Mở cho Nghiên cứu Khoa học"}
+                ? "Open Datasets Directory for Social Science, Business & Marketing"
+                : "Kho Dữ liệu Mở cho Nghiên cứu Khoa học, Kinh tế & Quản trị"}
             </h1>
           </div>
         </div>
 
         {/* Action Controls */}
         <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
-          {/* Nút chuyển sang Tra cứu Tạp chí */}
           <Link
             href="/tap-chi"
             className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-blue-200 dark:border-blue-800 bg-blue-50/80 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900/60 text-xs font-semibold transition"
             title="Chuyển sang Cổng Tra cứu & Thẩm định Tạp chí (/tap-chi)"
           >
             <BookOpen size={14} />
-            <span>{isEn ? "Journal Verifier" : "Tra cứu Tạp chí"}</span>
+            <span>{isEn ? "Journals" : "Tra cứu tạp chí"}</span>
           </Link>
 
-          {/* Nút Copy Share Link */}
           <button
             onClick={handleCopyShareLink}
             className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-medium transition cursor-pointer"
@@ -370,14 +516,13 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
               {copiedShareLink
                 ? isEn
                   ? "Copied!"
-                  : "Đã chép link!"
+                  : "Đã chép!"
                 : isEn
                   ? "Share"
                   : "Chia sẻ"}
             </span>
           </button>
 
-          {/* Bộ chọn ngôn ngữ Song ngữ / English */}
           <div className="flex items-center rounded-lg border border-slate-200 dark:border-slate-800 p-0.5 bg-slate-100 dark:bg-slate-800/80 text-xs font-semibold">
             <button
               onClick={() => handleToggleLanguage("vi")}
@@ -403,7 +548,6 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
             </button>
           </div>
 
-          {/* Nút Đổi Sáng / Tối */}
           <button
             onClick={handleToggleTheme}
             className="p-2 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition cursor-pointer"
@@ -412,79 +556,63 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
             {isDarkMode ? <Sun size={16} className="text-amber-400" /> : <Moon size={16} />}
           </button>
 
-          {/* Nút Quay lại Từ điển */}
           <Link
             href="/"
             className="px-3.5 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-semibold transition flex items-center gap-1.5 shadow-sm"
           >
             <ArrowLeft size={15} />
-            <span className="hidden sm:inline">{isEn ? "Back to Lexicon" : "Về Từ điển"}</span>
+            <span className="hidden sm:inline">{isEn ? "Lexicon" : "Về Từ điển"}</span>
           </Link>
         </div>
       </header>
 
       {/* 2. BODY CHÍNH */}
-      <main className="w-full max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-6 sm:py-8 space-y-6">
-        {/* Hero Banner */}
-        <div className="bg-gradient-to-r from-emerald-950 via-teal-950 to-slate-950 text-white rounded-2xl p-6 sm:p-8 shadow-xl relative overflow-hidden border border-emerald-800/40">
-          <div className="absolute -top-24 -right-24 w-80 h-80 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-teal-500/20 rounded-full blur-3xl pointer-events-none" />
+      <main className="w-full max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-5 sm:py-7 space-y-5">
+        {/* Hero Banner (Gọn gàng hơn để người dùng thấy bộ lọc & kết quả ngay) */}
+        <div className="bg-gradient-to-r from-emerald-950 via-teal-950 to-slate-950 text-white rounded-2xl p-5 sm:p-7 shadow-xl relative overflow-hidden border border-emerald-800/40">
+          <div className="absolute -top-24 -right-24 w-72 h-72 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-teal-500/20 rounded-full blur-3xl pointer-events-none" />
 
-          <div className="relative z-10 flex flex-col lg:flex-row lg:items-end justify-between gap-6">
-            <div className="max-w-4xl space-y-3">
+          <div className="relative z-10 flex flex-col lg:flex-row lg:items-end justify-between gap-5">
+            <div className="max-w-4xl space-y-2.5">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-semibold">
                 <Sparkles size={13} className="text-amber-400" />
                 <span>
                   {isEn
-                    ? "Curated Secondary Data Catalog for Quantitative & Empirical Research"
-                    : "Thư viện Dữ liệu Thứ cấp Mở phục vụ Nghiên cứu Định lượng & Thực nghiệm"}
+                    ? "Curated Q1 Empirical Data + Open Social Science Catalog"
+                    : "Thư viện Dữ liệu Thứ cấp Mở chuẩn Q1 — Quản trị, Marketing, Kinh tế & Xã hội"}
                 </span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold tracking-tight">
                 {isEn
-                  ? "Explore 147+ Open Datasets Across Economics, Society, Health & Governance"
-                  : "Kho Dữ liệu Mở cho Nghiên cứu Khoa học Xã hội, Kinh tế & Chính sách"}
+                  ? `Explore ${catalog.total} Free Research Datasets Across 6 Domains`
+                  : `Tra cứu ${catalog.total} Bộ Dữ liệu Mở cho Nghiên cứu Khoa học & Luận án`}
               </h2>
 
-              <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                 {isEn
-                  ? "Instantly search and filter vetted free datasets by 4 major academic domains and 34 specialized topics. Ideal for empirical papers, doctoral dissertations, econometrics, and reproducible social science."
-                  : "Tra cứu song ngữ Việt–Anh tức thì hàng trăm bộ dữ liệu thứ cấp uy tín quốc tế theo 4 nhóm ngành lớn và 34 chủ đề chuyên sâu. Phù hợp cho bài báo quốc tế Q1/Q2, luận án Tiến sĩ, nghiên cứu kinh tế lượng và khoa học xã hội."}
+                  ? "Bilingual Vietnamese–English search across Business, Management, Marketing, Consumer Behavior, Economics, Public Policy, and Vietnam/ASEAN datasets."
+                  : "Kết hợp nguồn dữ liệu quốc tế (Todd Jones) cùng bộ tuyển chọn Q1 cho Quản trị, Marketing, Hành vi tiêu dùng, Tài chính định lượng (Fama-French, WBES, WMS, ResearchBox, Amazon Reviews) và dữ liệu Việt Nam – ASEAN (PCI, PAPI, UNU-WIDER SME, GSO)."}
               </p>
 
-              {/* Quick Stats Pills */}
-              <div className="pt-2 flex flex-wrap items-center gap-2.5 text-xs font-mono text-slate-200">
-                <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur border border-white/10">
-                  📊 <strong>{catalog.total}</strong>{" "}
-                  {isEn ? "Open Datasets" : "Bộ dữ liệu mở"}
+              <div className="pt-1 flex flex-wrap items-center gap-2 text-xs font-mono text-slate-200">
+                <span className="px-2.5 py-1 rounded-lg bg-white/10 border border-white/10">
+                  📊 <strong>{catalog.total}</strong> {isEn ? "Datasets" : "Bộ dữ liệu"}
                 </span>
-                <span className="px-2.5 py-1 rounded-lg bg-emerald-500/20 border border-emerald-400/30 text-emerald-200">
-                  🗂️ <strong>4</strong> {isEn ? "Major Domains" : "Nhóm ngành lớn"}
+                <span className="px-2.5 py-1 rounded-lg bg-amber-500/20 border border-amber-400/30 text-amber-200">
+                  ⭐ <strong>{featuredCount}</strong> {isEn ? "Q1 Curated" : "Tuyển chọn Q1"}
+                </span>
+                <span className="px-2.5 py-1 rounded-lg bg-rose-500/20 border border-rose-400/30 text-rose-200">
+                  🇻🇳 <strong>{vietnamCount}</strong> {isEn ? "Vietnam Coverage" : "Có dữ liệu VN"}
                 </span>
                 <span className="px-2.5 py-1 rounded-lg bg-teal-500/20 border border-teal-400/30 text-teal-200">
-                  🏷️ <strong>{catalog.categories.length}</strong>{" "}
-                  {isEn ? "Research Topics" : "Chủ đề chuyên sâu"}
-                </span>
-                <span className="px-2.5 py-1 rounded-lg bg-blue-500/20 border border-blue-400/30 text-blue-200">
-                  🔄 {isEn ? "Updated:" : "Cập nhật:"}{" "}
-                  <strong>{formatUpdatedDate(catalog.updated_at, isEn)}</strong>
+                  🏷️ <strong>{catalog.categories.length}</strong> {isEn ? "Topics" : "Chủ đề"}
                 </span>
               </div>
             </div>
 
-            {/* Nguồn gốc & Nút đồng bộ */}
-            <div className="flex flex-col sm:flex-row lg:flex-col items-start sm:items-center lg:items-end gap-2.5 shrink-0">
-              <a
-                href={catalog.source_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 text-xs text-slate-200 font-medium transition"
-              >
-                <Database size={13} className="text-emerald-300" />
-                <span>{isEn ? "Source: Todd Jones (GitHub)" : "Nguồn chuẩn: Todd Jones"}</span>
-                <ExternalLink size={12} />
-              </a>
+            <div className="flex flex-wrap items-center gap-2 shrink-0">
               <button
                 onClick={handleRefreshData}
                 disabled={isRefreshing}
@@ -497,15 +625,15 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
                       ? "Syncing..."
                       : "Đang đồng bộ..."
                     : isEn
-                      ? "Sync Latest Data"
-                      : "Đồng bộ dữ liệu mới"}
+                      ? `Updated ${formatUpdatedDate(catalog.updated_at, true)}`
+                      : `Đồng bộ (${formatUpdatedDate(catalog.updated_at, false)})`}
                 </span>
               </button>
             </div>
           </div>
         </div>
 
-        {/* 3. THANH TÌM KIẾM & BỘ LỌC 4 NHÓM NGÀNH / 34 CHỦ ĐỀ */}
+        {/* 3. BỘ LỌC TỐI ƯU: TÌM KIẾM + 6 NHÓM NGÀNH + BỘ LỌC NHANH + CHỦ ĐỀ RÚT GỌN */}
         <div className="p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#0c1222] border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
           {/* Ô tìm kiếm song ngữ Việt-Anh */}
           <div className="relative flex items-center">
@@ -517,10 +645,10 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
               onChange={(e) => handleSearchChange(e.target.value)}
               placeholder={
                 isEn
-                  ? "Search by dataset name, topic, or keywords (e.g., finance, wage, climate, OWID, V-Dem, housing)..."
-                  : "Tìm kiếm song ngữ Việt–Anh tức thì (vd: tài chính, tiền lương, biến đổi khí hậu, giáo dục, OWID, V-Dem, GDP)..."
+                  ? "Search by dataset name, domain, or keyword (e.g., marketing, ESG, Vietnam, Fama-French, WBES, climate)..."
+                  : "Tìm nhanh song ngữ Việt–Anh (vd: marketing, quản trị, Việt Nam, ESG, khởi nghiệp, tài chính, hành vi tiêu dùng, PCI)..."
               }
-              className="w-full pl-12 pr-12 py-3.5 text-sm sm:text-base rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50/70 dark:bg-slate-900/90 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition shadow-inner"
+              className="w-full pl-12 pr-12 py-3 text-sm sm:text-base rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50/70 dark:bg-slate-900/90 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition shadow-inner"
             />
             {searchTerm && (
               <button
@@ -536,7 +664,7 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
           {/* Gợi ý tìm kiếm nhanh */}
           <div className="flex flex-wrap items-center gap-1.5 text-xs">
             <span className="text-slate-500 dark:text-slate-400 font-medium mr-1">
-              {isEn ? "Quick search:" : "Gợi ý nhanh:"}
+              {isEn ? "Popular:" : "Tìm nhanh:"}
             </span>
             {(isEn ? QUICK_SEARCH_SUGGESTIONS_EN : QUICK_SEARCH_SUGGESTIONS_VI).map((kw) => (
               <button
@@ -549,40 +677,65 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
             ))}
           </div>
 
-          {/* Tab 4 Nhóm ngành lớn */}
-          <div className="pt-2 border-t border-slate-100 dark:border-slate-800/80">
-            <div className="flex flex-wrap items-center justify-between gap-3 mb-2.5">
+          {/* Tab Nhóm ngành lớn */}
+          <div className="pt-2.5 border-t border-slate-100 dark:border-slate-800/80 space-y-2.5">
+            <div className="flex flex-wrap items-center justify-between gap-2">
               <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                 <Filter size={13} className="text-emerald-600 dark:text-emerald-400" />
-                <span>
-                  {isEn ? "Filter by 4 Major Domains" : "Lọc theo 4 Nhóm ngành lớn"}
-                </span>
+                <span>{isEn ? "Filter by Domain" : "Nhóm ngành nghiên cứu"}</span>
               </div>
 
-              <div className="flex items-center gap-3">
-                <label className="inline-flex items-center gap-1.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer select-none">
-                  <input
-                    type="checkbox"
-                    checked={onlyPublic}
-                    onChange={(e) => setOnlyPublic(e.target.checked)}
-                    className="rounded border-slate-300 text-emerald-600 focus:ring-emerald-500 cursor-pointer"
-                  />
-                  <span>{isEn ? "Open / Free access only" : "Chỉ hiện mở / miễn phí"}</span>
-                </label>
+              {/* Bộ lọc nhanh dạng pill: Q1 Pick / VN Data / Public */}
+              <div className="flex flex-wrap items-center gap-1.5">
+                <button
+                  onClick={() => setOnlyFeatured((v) => !v)}
+                  className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold border transition cursor-pointer ${
+                    onlyFeatured
+                      ? "bg-amber-500 text-white border-amber-500 shadow-2xs"
+                      : "bg-amber-50/70 dark:bg-amber-950/30 text-amber-700 dark:text-amber-300 border-amber-200/80 dark:border-amber-800/70 hover:bg-amber-100 dark:hover:bg-amber-950/60"
+                  }`}
+                >
+                  <Star size={12} className={onlyFeatured ? "fill-white" : ""} />
+                  <span>{isEn ? "Q1 Curated" : "Tuyển chọn Q1"}</span>
+                </button>
+
+                <button
+                  onClick={() => setOnlyVietnam((v) => !v)}
+                  className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold border transition cursor-pointer ${
+                    onlyVietnam
+                      ? "bg-rose-600 text-white border-rose-600 shadow-2xs"
+                      : "bg-rose-50/70 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300 border-rose-200/80 dark:border-rose-800/70 hover:bg-rose-100 dark:hover:bg-rose-950/60"
+                  }`}
+                >
+                  <span>🇻🇳</span>
+                  <span>{isEn ? "Vietnam Data" : "Có dữ liệu VN"}</span>
+                </button>
+
+                <button
+                  onClick={() => setOnlyPublic((v) => !v)}
+                  className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold border transition cursor-pointer ${
+                    onlyPublic
+                      ? "bg-emerald-600 text-white border-emerald-600 shadow-2xs"
+                      : "bg-emerald-50/70 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 border-emerald-200/80 dark:border-emerald-800/70 hover:bg-emerald-100 dark:hover:bg-emerald-950/60"
+                  }`}
+                >
+                  <LockOpen size={12} />
+                  <span>{isEn ? "Open / Free" : "Mở / Miễn phí"}</span>
+                </button>
 
                 {hasActiveFilter && (
                   <button
                     onClick={handleResetFilters}
-                    className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/40 hover:bg-rose-100 dark:hover:bg-rose-950/70 transition cursor-pointer"
+                    className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition cursor-pointer"
                   >
                     <RotateCcw size={12} />
-                    <span>{isEn ? "Reset all" : "Xóa bộ lọc"}</span>
+                    <span>{isEn ? "Reset" : "Đặt lại"}</span>
                   </button>
                 )}
               </div>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-2">
               {DOMAIN_GROUPS.map((dom) => {
                 const active = activeDomain === dom.key;
                 const count = domainCounts[dom.key] || 0;
@@ -590,14 +743,18 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
                   <button
                     key={dom.key}
                     onClick={() => handleDomainSelect(dom.key)}
-                    className={`px-3 py-2.5 rounded-xl text-left border transition flex items-center justify-between gap-2 cursor-pointer ${
+                    className={`px-2.5 py-2 rounded-xl text-left border transition flex items-center justify-between gap-1.5 cursor-pointer ${
                       active
                         ? "bg-emerald-600 text-white border-emerald-600 shadow-sm"
                         : "bg-slate-50 dark:bg-slate-900/70 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-800 hover:border-emerald-400 dark:hover:border-emerald-600"
                     }`}
                   >
-                    <div className="flex items-center gap-2 min-w-0">
-                      <span className={active ? "text-emerald-100" : "text-emerald-600 dark:text-emerald-400"}>
+                    <div className="flex items-center gap-1.5 min-w-0">
+                      <span
+                        className={
+                          active ? "text-emerald-100 shrink-0" : "text-emerald-600 dark:text-emerald-400 shrink-0"
+                        }
+                      >
                         {DOMAIN_ICONS[dom.key]}
                       </span>
                       <span className="text-xs font-semibold truncate">
@@ -605,7 +762,7 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
                       </span>
                     </div>
                     <span
-                      className={`px-1.5 py-0.5 rounded-md text-[11px] font-mono font-bold shrink-0 ${
+                      className={`px-1.5 py-0.5 rounded-md text-[10px] font-mono font-bold shrink-0 ${
                         active
                           ? "bg-white/20 text-white"
                           : "bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-400"
@@ -619,12 +776,12 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
             </div>
           </div>
 
-          {/* Dải Chip 34 Chủ đề chuyên sâu */}
+          {/* Dải Chip Chủ đề (có thu gọn/mở rộng thông minh) */}
           <div className="pt-2 border-t border-slate-100 dark:border-slate-800/80">
             <div className="flex flex-wrap items-center gap-1.5">
               <button
                 onClick={() => handleCategorySelect("all")}
-                className={`px-2.5 py-1.5 rounded-lg text-xs font-semibold border transition cursor-pointer ${
+                className={`px-2.5 py-1 rounded-lg text-xs font-semibold border transition cursor-pointer ${
                   activeCat === "all"
                     ? "bg-slate-900 dark:bg-white text-white dark:text-slate-900 border-slate-900 dark:border-white"
                     : "bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-slate-400"
@@ -633,7 +790,7 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
                 {isEn ? "All Topics" : "Tất cả chủ đề"} ({visibleCategories.length})
               </button>
 
-              {visibleCategories.map((cat) => {
+              {displayedCategories.map((cat) => {
                 const isSelected = activeCat === cat.key;
                 const label = isEn ? cat.name : cat.name_vi || CAT_VI[cat.key] || cat.name;
                 return (
@@ -641,7 +798,7 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
                     key={cat.key}
                     onClick={() => handleCategorySelect(cat.key)}
                     title={`${cat.name_vi || CAT_VI[cat.key] || cat.name} — ${cat.name}`}
-                    className={`px-2.5 py-1.5 rounded-lg text-xs font-medium border transition inline-flex items-center gap-1.5 cursor-pointer ${
+                    className={`px-2.5 py-1 rounded-lg text-xs font-medium border transition inline-flex items-center gap-1.5 cursor-pointer ${
                       isSelected
                         ? "bg-emerald-600 text-white border-emerald-600 shadow-xs font-semibold"
                         : "bg-slate-50 dark:bg-slate-900/70 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-800 hover:border-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300"
@@ -649,7 +806,7 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
                   >
                     <span>{label}</span>
                     <span
-                      className={`text-[10px] font-mono px-1.5 py-0.2 rounded ${
+                      className={`text-[10px] font-mono px-1 py-0.2 rounded ${
                         isSelected
                           ? "bg-white/20 text-white"
                           : "bg-slate-200/70 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
@@ -660,162 +817,306 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
                   </button>
                 );
               })}
+
+              {hiddenTopicsCount > 0 && (
+                <button
+                  onClick={() => setShowAllTopics(true)}
+                  className="px-2.5 py-1 rounded-lg text-xs font-semibold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 dark:hover:bg-emerald-900/50 transition inline-flex items-center gap-1 cursor-pointer"
+                >
+                  <span>
+                    {isEn ? `+${hiddenTopicsCount} more` : `Xem thêm (+${hiddenTopicsCount} chủ đề)`}
+                  </span>
+                  <ChevronDown size={13} />
+                </button>
+              )}
+
+              {showAllTopics && activeDomain === "all" && visibleCategories.length > COLLAPSED_TOPICS_LIMIT && (
+                <button
+                  onClick={() => setShowAllTopics(false)}
+                  className="px-2.5 py-1 rounded-lg text-xs font-semibold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition inline-flex items-center gap-1 cursor-pointer"
+                >
+                  <span>{isEn ? "Show less" : "Thu gọn chủ đề"}</span>
+                  <ChevronUp size={13} />
+                </button>
+              )}
             </div>
           </div>
         </div>
 
-        {/* 4. KẾT QUẢ HIỂN THỊ */}
-        <section className="space-y-4">
-          <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-slate-500 dark:text-slate-400 px-1">
-            <div>
-              {isEn ? "Showing " : "Hiển thị "}
-              <strong className="text-slate-900 dark:text-white font-bold">
-                {filteredItems.length}
-              </strong>
-              {" / "}
-              <span>{catalog.total}</span>
-              {isEn ? " open research datasets" : " bộ dữ liệu mở"}
-              {activeCat !== "all" && (
-                <span className="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 text-xs font-semibold">
-                  {isEn
-                    ? catalog.categories.find((c) => c.key === activeCat)?.name
-                    : CAT_VI[activeCat] || activeCat}
-                </span>
+        {/* 4. THANH TRẠNG THÁI, SẮP XẾP & PHÂN TRANG ĐẦU DANH SÁCH */}
+        <section ref={resultsTopRef} className="space-y-4 scroll-mt-20">
+          <div className="flex flex-wrap items-center justify-between gap-3 px-1">
+            <div className="text-sm text-slate-600 dark:text-slate-300">
+              {filteredItems.length > 0 ? (
+                <>
+                  {isEn ? "Showing " : "Đang xem "}
+                  <strong className="text-slate-900 dark:text-white font-bold">
+                    {startIdx + 1}–{endIdx}
+                  </strong>
+                  {isEn ? " of " : " trong "}
+                  <strong className="text-slate-900 dark:text-white font-bold">
+                    {filteredItems.length}
+                  </strong>
+                  {isEn ? " datasets" : " bộ dữ liệu"}
+                  {totalPages > 1 && (
+                    <span className="ml-2 text-xs text-slate-400 dark:text-slate-500 font-mono">
+                      ({isEn ? "Page" : "Trang"} {safePage}/{totalPages})
+                    </span>
+                  )}
+                </>
+              ) : (
+                <span>{isEn ? "0 matching datasets" : "Không có bộ dữ liệu phù hợp"}</span>
               )}
             </div>
 
-            <div className="text-xs text-slate-400 dark:text-slate-500 font-mono">
-              API: scopus-wos-zalo-bot / research_datasets.json
+            {/* Điều khiển Sắp xếp & Số lượng mỗi trang */}
+            <div className="flex flex-wrap items-center gap-2 text-xs">
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-white dark:bg-[#0c1222] border border-slate-200 dark:border-slate-800">
+                <ArrowUpDown size={13} className="text-slate-400" />
+                <select
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value as SortMode)}
+                  className="bg-transparent text-slate-700 dark:text-slate-200 font-medium focus:outline-none cursor-pointer"
+                  aria-label="Sắp xếp kết quả"
+                >
+                  <option value="relevance" className="dark:bg-slate-900">
+                    {isEn ? "Sort: Featured / Relevance" : "Sắp xếp: Nổi bật / Phù hợp"}
+                  </option>
+                  <option value="az" className="dark:bg-slate-900">
+                    {isEn ? "Sort: Name A → Z" : "Sắp xếp: Tên A → Z"}
+                  </option>
+                </select>
+              </div>
+
+              <div className="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-white dark:bg-[#0c1222] border border-slate-200 dark:border-slate-800">
+                <span className="text-slate-400 px-1">{isEn ? "Per page:" : "Hiển thị:"}</span>
+                {[12, 24, 36].map((size) => (
+                  <button
+                    key={size}
+                    onClick={() => setPageSize(size)}
+                    className={`px-2 py-0.5 rounded font-mono font-semibold transition cursor-pointer ${
+                      pageSize === size
+                        ? "bg-emerald-600 text-white"
+                        : "text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800"
+                    }`}
+                  >
+                    {size}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 
-          {filteredItems.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5">
-              {filteredItems.map((item: DatasetItem, idx: number) => {
-                const accessBadge = getAccessBadgeStyle(item.access);
-                const hostname = getHostname(item.url);
-                const isCopied = copiedUrl === item.url;
-                const catLabelVi = item.cat_vi || CAT_VI[item.cat_key] || item.cat;
+          {/* 5. LƯỚI THẺ DỮ LIỆU (ĐÃ PHÂN TRANG) */}
+          {paginatedItems.length > 0 ? (
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5">
+                {paginatedItems.map((item: DatasetItem, idx: number) => {
+                  const accessBadge = getAccessBadgeStyle(item.access);
+                  const hostname = getHostname(item.url);
+                  const isCopied = copiedUrl === item.url;
+                  const catLabelVi = item.cat_vi || CAT_VI[item.cat_key] || item.cat;
 
-                const badgeColors = {
-                  emerald:
-                    "bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200/80 dark:border-emerald-800",
-                  blue: "bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border-blue-200/80 dark:border-blue-800",
-                  amber:
-                    "bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border-amber-200/80 dark:border-amber-800",
-                  slate:
-                    "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700",
-                }[accessBadge.tone];
+                  const badgeColors = {
+                    emerald:
+                      "bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200/80 dark:border-emerald-800",
+                    blue: "bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border-blue-200/80 dark:border-blue-800",
+                    amber:
+                      "bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border-amber-200/80 dark:border-amber-800",
+                    slate:
+                      "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700",
+                  }[accessBadge.tone];
 
-                return (
-                  <article
-                    key={`${item.cat_key}-${item.name}-${idx}`}
-                    className="group flex flex-col justify-between p-5 rounded-2xl bg-white dark:bg-[#0c1222] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-400/80 dark:hover:border-emerald-600/80 shadow-xs hover:shadow-md transition-all duration-200"
-                  >
-                    <div className="space-y-3">
-                      {/* Top Badges: Chủ đề + Năm */}
-                      <div className="flex flex-wrap items-center justify-between gap-2">
-                        <button
-                          onClick={() => handleCategorySelect(item.cat_key)}
-                          className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-slate-100 dark:bg-slate-800/90 text-slate-700 dark:text-slate-200 hover:bg-emerald-100 dark:hover:bg-emerald-900/50 hover:text-emerald-800 dark:hover:text-emerald-300 transition cursor-pointer"
-                          title={isEn ? item.cat : `${catLabelVi} (${item.cat})`}
-                        >
-                          <span>{isEn ? item.cat : catLabelVi}</span>
-                        </button>
+                  return (
+                    <article
+                      key={`${item.cat_key}-${item.name}-${startIdx + idx}`}
+                      className="group flex flex-col justify-between p-5 rounded-2xl bg-white dark:bg-[#0c1222] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-400/80 dark:hover:border-emerald-600/80 shadow-xs hover:shadow-md transition-all duration-200"
+                    >
+                      <div className="space-y-3">
+                        {/* Top Badges: Chủ đề + Q1 / VN + Năm */}
+                        <div className="flex flex-wrap items-center justify-between gap-1.5">
+                          <div className="flex flex-wrap items-center gap-1.5">
+                            <button
+                              onClick={() => handleCategorySelect(item.cat_key)}
+                              className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-slate-100 dark:bg-slate-800/90 text-slate-700 dark:text-slate-200 hover:bg-emerald-100 dark:hover:bg-emerald-900/50 hover:text-emerald-800 dark:hover:text-emerald-300 transition cursor-pointer"
+                              title={isEn ? item.cat : `${catLabelVi} (${item.cat})`}
+                            >
+                              <span>{isEn ? item.cat : catLabelVi}</span>
+                            </button>
 
-                        {item.years && (
-                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-mono font-medium bg-indigo-50 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 border border-indigo-200/70 dark:border-indigo-800/70">
-                            <Calendar size={11} />
-                            <span className="truncate max-w-[160px]" title={item.years}>
-                              {item.years}
-                            </span>
-                          </span>
-                        )}
-                      </div>
-
-                      {/* Tên bộ dữ liệu */}
-                      <div>
-                        <a
-                          href={item.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-base font-bold text-slate-900 dark:text-white group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition leading-snug inline-flex items-start gap-1.5"
-                        >
-                          <span>{item.name}</span>
-                        </a>
-                        {!isEn && (
-                          <div className="text-[11px] text-slate-400 dark:text-slate-500 mt-0.5">
-                            {item.cat} • <span className="font-mono">{hostname}</span>
-                          </div>
-                        )}
-                        {isEn && (
-                          <div className="text-[11px] text-slate-400 dark:text-slate-500 mt-0.5 font-mono">
-                            {hostname}
-                          </div>
-                        )}
-                      </div>
-
-                      {/* Mô tả */}
-                      <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-4">
-                        {item.desc ||
-                          (isEn
-                            ? "Open research dataset curated for empirical social science analysis."
-                            : "Bộ dữ liệu mở phục vụ phân tích thực nghiệm và nghiên cứu khoa học.")}
-                      </p>
-                    </div>
-
-                    {/* Footer thẻ: Điều kiện truy cập + Nút hành động */}
-                    <div className="pt-4 mt-4 border-t border-slate-100 dark:border-slate-800/80 space-y-3">
-                      <div
-                        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-[11px] font-medium max-w-full ${badgeColors}`}
-                        title={accessBadge.label}
-                      >
-                        {accessBadge.tone === "emerald" ? (
-                          <LockOpen size={12} className="shrink-0" />
-                        ) : accessBadge.tone === "blue" ? (
-                          <ShieldCheck size={12} className="shrink-0" />
-                        ) : (
-                          <KeyRound size={12} className="shrink-0" />
-                        )}
-                        <span className="truncate">{accessBadge.label}</span>
-                      </div>
-
-                      <div className="flex items-center gap-2">
-                        <a
-                          href={item.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold transition shadow-2xs"
-                        >
-                          <span>{isEn ? "Open Source" : "Mở nguồn dữ liệu"}</span>
-                          <ExternalLink size={13} />
-                        </a>
-
-                        <button
-                          onClick={() => handleCopyItemUrl(item.url)}
-                          className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 text-xs font-medium transition cursor-pointer shrink-0"
-                          title="Sao chép đường dẫn nguồn dữ liệu"
-                        >
-                          {isCopied ? (
-                            <>
-                              <Check size={13} className="text-emerald-500" />
-                              <span className="text-emerald-600 dark:text-emerald-400">
-                                {isEn ? "Copied" : "Đã chép"}
+                            {item.featured && (
+                              <span
+                                className="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-200/80 dark:border-amber-800/70"
+                                title="Nguồn dữ liệu chuẩn Q1 nổi bật"
+                              >
+                                <Star size={10} className="fill-amber-500 text-amber-500" />
+                                <span>Q1 Pick</span>
                               </span>
-                            </>
-                          ) : (
-                            <>
-                              <Copy size={13} />
-                              <span>{isEn ? "Copy" : "Copy link"}</span>
-                            </>
+                            )}
+
+                            {(item.has_vietnam || item.cat_key === "vietnam_and_asean") && (
+                              <span
+                                className="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-rose-50 dark:bg-rose-950/60 text-rose-700 dark:text-rose-300 border border-rose-200/80 dark:border-rose-800/70"
+                                title="Có dữ liệu về Việt Nam"
+                              >
+                                <span>🇻🇳 VN</span>
+                              </span>
+                            )}
+                          </div>
+
+                          {item.years && (
+                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-mono font-medium bg-indigo-50 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 border border-indigo-200/70 dark:border-indigo-800/70">
+                              <Calendar size={11} />
+                              <span className="truncate max-w-[130px]" title={item.years}>
+                                {item.years}
+                              </span>
+                            </span>
                           )}
-                        </button>
+                        </div>
+
+                        {/* Tên bộ dữ liệu */}
+                        <div>
+                          <a
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-base font-bold text-slate-900 dark:text-white group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition leading-snug inline-flex items-start gap-1.5"
+                          >
+                            <span>{item.name}</span>
+                          </a>
+                          <div className="text-[11px] text-slate-400 dark:text-slate-500 mt-0.5 truncate">
+                            {!isEn && <span>{item.cat} • </span>}
+                            <span className="font-mono">{hostname}</span>
+                          </div>
+                        </div>
+
+                        {/* Mô tả */}
+                        <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-4">
+                          {item.desc ||
+                            (isEn
+                              ? "Open research dataset curated for empirical social science analysis."
+                              : "Bộ dữ liệu mở phục vụ phân tích thực nghiệm và nghiên cứu khoa học.")}
+                        </p>
                       </div>
+
+                      {/* Footer thẻ */}
+                      <div className="pt-4 mt-4 border-t border-slate-100 dark:border-slate-800/80 space-y-3">
+                        <div
+                          className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-[11px] font-medium max-w-full ${badgeColors}`}
+                          title={accessBadge.label}
+                        >
+                          {accessBadge.tone === "emerald" ? (
+                            <LockOpen size={12} className="shrink-0" />
+                          ) : accessBadge.tone === "blue" ? (
+                            <ShieldCheck size={12} className="shrink-0" />
+                          ) : (
+                            <KeyRound size={12} className="shrink-0" />
+                          )}
+                          <span className="truncate">{accessBadge.label}</span>
+                        </div>
+
+                        <div className="flex items-center gap-2">
+                          <a
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold transition shadow-2xs"
+                          >
+                            <span>{isEn ? "Open Source" : "Mở nguồn dữ liệu"}</span>
+                            <ExternalLink size={13} />
+                          </a>
+
+                          <button
+                            onClick={() => handleCopyItemUrl(item.url)}
+                            className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 text-xs font-medium transition cursor-pointer shrink-0"
+                            title="Sao chép đường dẫn nguồn dữ liệu"
+                          >
+                            {isCopied ? (
+                              <>
+                                <Check size={13} className="text-emerald-500" />
+                                <span className="text-emerald-600 dark:text-emerald-400">
+                                  {isEn ? "Copied" : "Đã chép"}
+                                </span>
+                              </>
+                            ) : (
+                              <>
+                                <Copy size={13} />
+                                <span>{isEn ? "Copy" : "Copy link"}</span>
+                              </>
+                            )}
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                  );
+                })}
+              </div>
+
+              {/* THANH PHÂN TRANG (PAGINATION BAR) */}
+              {totalPages > 1 && (
+                <nav
+                  aria-label="Phân trang Kho Dữ liệu Mở"
+                  className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-slate-200/80 dark:border-slate-800"
+                >
+                  <div className="text-xs text-slate-500 dark:text-slate-400">
+                    {isEn ? "Page " : "Trang "}
+                    <strong className="text-slate-900 dark:text-white">{safePage}</strong>
+                    {" / "}
+                    <strong>{totalPages}</strong>
+                    {" • "}
+                    <span>
+                      {startIdx + 1}–{endIdx} / {filteredItems.length}{" "}
+                      {isEn ? "datasets" : "bộ dữ liệu"}
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-1.5">
+                    <button
+                      onClick={() => handlePageChange(Math.max(1, safePage - 1))}
+                      disabled={safePage === 1}
+                      className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0c1222] text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-semibold transition cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
+                    >
+                      <ChevronLeft size={14} />
+                      <span className="hidden sm:inline">{isEn ? "Prev" : "Trang trước"}</span>
+                    </button>
+
+                    <div className="flex items-center gap-1">
+                      {paginationRange.map((entry, i) =>
+                        entry === "..." ? (
+                          <span
+                            key={`dots-${i}`}
+                            className="px-2 py-1 text-xs text-slate-400 select-none"
+                          >
+                            …
+                          </span>
+                        ) : (
+                          <button
+                            key={entry}
+                            onClick={() => handlePageChange(entry)}
+                            className={`min-w-[34px] h-[34px] px-2 rounded-xl text-xs font-mono font-bold transition cursor-pointer ${
+                              entry === safePage
+                                ? "bg-emerald-600 text-white shadow-sm"
+                                : "bg-white dark:bg-[#0c1222] border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:border-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300"
+                            }`}
+                          >
+                            {entry}
+                          </button>
+                        )
+                      )}
                     </div>
-                  </article>
-                );
-              })}
-            </div>
+
+                    <button
+                      onClick={() => handlePageChange(Math.min(totalPages, safePage + 1))}
+                      disabled={safePage === totalPages}
+                      className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0c1222] text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-semibold transition cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
+                    >
+                      <span className="hidden sm:inline">{isEn ? "Next" : "Trang sau"}</span>
+                      <ChevronRight size={14} />
+                    </button>
+                  </div>
+                </nav>
+              )}
+            </>
           ) : (
             <div className="p-12 rounded-2xl bg-white dark:bg-[#0c1222] border border-slate-200 dark:border-slate-800 text-center space-y-3">
               <Database className="w-10 h-10 text-slate-300 dark:text-slate-600 mx-auto" />
@@ -840,7 +1141,7 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
           )}
         </section>
 
-        {/* 5. FOOTER CARD KẾT NỐI ZALO BOT KÈM MÃ QR CODE */}
+        {/* 6. FOOTER CARD KẾT NỐI ZALO BOT KÈM MÃ QR CODE */}
         <section className="pt-4">
           <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-blue-900 via-indigo-950 to-slate-950 text-white shadow-2xl relative overflow-hidden border border-blue-800/60">
             <div className="absolute -top-20 -right-20 w-64 h-64 bg-blue-500/25 rounded-full blur-3xl pointer-events-none" />
@@ -897,19 +1198,19 @@ function OpenDatasetsContent({ initialData }: OpenDatasetsPageProps) {
         </section>
       </main>
 
-      {/* 6. BOTTOM FOOTER */}
-      <footer className="mt-12 border-t border-slate-200 dark:border-slate-800 py-6 px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500 dark:text-slate-400 space-y-2">
+      {/* 7. BOTTOM FOOTER */}
+      <footer className="mt-10 border-t border-slate-200 dark:border-slate-800 py-6 px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500 dark:text-slate-400 space-y-2">
         <p>
-          Kho Dữ liệu Mở & Từ điển Phương pháp Nghiên cứu Khoa học — Đồng bộ từ{" "}
+          Kho Dữ liệu Mở & Từ điển Phương pháp Nghiên cứu Khoa học — Tổng hợp từ{" "}
           <a
             href={catalog.source_url}
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-emerald-600"
           >
-            {catalog.source_name}
-          </a>
-          .
+            Todd Jones Open Datasets
+          </a>{" "}
+          & bộ tuyển chọn Q1 (Business, Management, Marketing & Vietnam/ASEAN).
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-medium">
           <Link href="/" className="hover:text-blue-600 transition">
